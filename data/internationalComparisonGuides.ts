@@ -2382,5 +2382,2463 @@ export const internationalComparisonGuides: Record<string, Record<Locale, Editor
         }
       ]
     }
+  },
+  "turkey-vs-monaco-tax": {
+    "fr": {
+      "title": "Turquie ou Monaco 2026 : fiscalité, Français et patrimoine",
+      "metaDescription": "Comparez Monaco sans impôt personnel, l’exception française de 1963 et l’exonération turque de 20 ans. Résidence, patrimoine et budget.",
+      "shortAnswer": "Monaco ne prélève généralement pas d'impôt personnel sur le revenu, mais les Français visés par la convention de 1963 restent imposables en France sur leurs revenus mondiaux. La Turquie applique une exonération ciblée aux nouveaux résidents éligibles.",
+      "bosphorasHelp": "Bosphoras organise votre séjour de découverte, votre recherche de logement et des rendez-vous avec des fiscalistes indépendants. Demandez une étude de votre projet de transfert.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Le régime turc : article 20/D",
+          "body": "La loi 7582, en vigueur depuis le 4 juin 2026, exonère pendant 20 ans les revenus étrangers admissibles des personnes physiques nouvellement résidentes. Les trois années civiles précédentes doivent être sans domicile ni, en principe, assujettissement fiscal turc, avec exceptions pour certains revenus du capital. Le certificat est demandé avant la fin de l'année d'établissement, ou fin février suivante pour novembre et décembre. Aucun investissement minimum n'est imposé par 20/D. Les revenus turcs, impôts étrangers et bénéfices de sociétés ne sont pas exonérés par cette mesure."
+        },
+        {
+          "id": "compare-2",
+          "title": "Monaco : une exception essentielle pour les Français",
+          "body": "La convention du 18 mai 1963, article 7, maintient en principe l'imposition française des ressortissants français établis à Monaco, sauf exceptions historiques et situations particulières. La nationalité et l'historique de résidence doivent être analysés. Un véritable domicile monégasque suppose une installation effective, un logement, des ressources et une carte de séjour appropriée. Les sociétés, activités internationales, donations et successions obéissent à des règles distinctes."
+        },
+        {
+          "id": "compare-3",
+          "title": "Comparer les régimes en 2026",
+          "body": "Les avantages ne portent pas toujours sur les mêmes catégories de revenu. Le tableau suppose que les conditions de chaque régime sont remplies.",
+          "table": {
+            "headers": [
+              "Critère",
+              "Turquie",
+              "Monaco"
+            ],
+            "rows": [
+              [
+                "Impôt personnel",
+                "20/D : revenus étrangers admissibles exonérés",
+                "Pas d'impôt monégasque sur le revenu en principe"
+              ],
+              [
+                "Français",
+                "Nationalité non déterminante pour 20/D",
+                "Convention de 1963 : imposition française en principe"
+              ],
+              [
+                "Durée",
+                "20 ans",
+                "Pas de durée fixe pour l'absence d'impôt"
+              ],
+              [
+                "Logement",
+                "Résidence effective et titre adapté",
+                "Résidence effective et logement"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Budget de logement : scénarios, non prix de marché",
+          "body": "Pour évaluer la capacité de financement d'une installation, testez trois loyers mensuels hypothétiques de 3 000, 6 000 et 10 000 €. Le graphique présente uniquement le loyer annuel, sans charges, dépôt, école, santé ni impôts. Il ne s'agit pas de tarifs observés à Monaco ou en Turquie.",
+          "table": {
+            "headers": [
+              "Loyer mensuel hypothétique",
+              "Loyer annuel"
+            ],
+            "rows": [
+              [
+                "3 000 €/mois",
+                "36 000 €"
+              ],
+              [
+                "6 000 €/mois",
+                "72 000 €"
+              ],
+              [
+                "10 000 €/mois",
+                "120 000 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "Vérifier avant de déménager",
+          "body": "Conservez les preuves de résidence, les avis fiscaux, les relevés et contrats ventilés par nature et source. Comparez les conventions, retenues à la source, obligations de société et couverture sociale. Le titre de séjour ne détermine pas le domicile fiscal. Pour préparer un transfert, comparez aussi la fiscalité des successions et des donations, le logement et la situation du pays d'origine. La convention franco-monégasque ne doit pas être confondue avec la convention franco-turque."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Un Français paie-t-il zéro impôt à Monaco ?",
+          "answer": "En principe non, s'il relève de l'article 7 de la convention franco-monégasque."
+        },
+        {
+          "question": "Une société ou un logement suffit-il ?",
+          "answer": "Non, la résidence doit correspondre aux faits et les autres obligations subsistent."
+        },
+        {
+          "question": "Le changement de visa suffit-il ?",
+          "answer": "Non, il faut établir la résidence fiscale et satisfaire les conditions propres à chaque dispositif."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "BOFiP — Convention 1963, article 7",
+          "href": "https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant%3DBOI-INT-CVB-MCO-10-20210602"
+        },
+        {
+          "label": "Légifrance — article 121 Z quinquies",
+          "href": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000051183437/2026-06-15"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey vs Monaco 2026: tax, French nationals and wealth",
+      "metaDescription": "Compare Monaco’s personal income tax rules, the French treaty exception and Turkey’s 20-year relief, residence and housing scenarios.",
+      "shortAnswer": "Monaco generally levies no personal income tax, but French nationals covered by the 1963 treaty remain taxable in France on worldwide income. Turkey offers targeted relief to qualifying new residents.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing and appointments with independent tax specialists. Request a relocation assessment.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Turkey: Article 20/D",
+          "body": "Law 7582 has been in force since 4 June 2026. It exempts qualifying foreign income of eligible new individual residents for 20 years. The three preceding calendar years must have no Turkish domicile or generally Turkish tax liability, subject to exceptions for certain capital income. Apply for a certificate by settlement year-end, or the following February for November and December arrivals. Article 20/D imposes no minimum investment. Turkish income, foreign taxes and company profits are not exempted by this measure."
+        },
+        {
+          "id": "compare-2",
+          "title": "Monaco: the French nationality exception",
+          "body": "Article 7 of the 18 May 1963 convention generally keeps French citizens settling in Monaco within French income taxation, subject to historic and other specific exceptions. Nationality and residence history matter. Genuine Monaco residence involves actual settlement, accommodation, sufficient resources and appropriate immigration status. Companies, business activities, gifts and inheritances follow separate rules."
+        },
+        {
+          "id": "compare-3",
+          "title": "Compare regimes in 2026",
+          "body": "Benefits do not necessarily cover the same income categories. The table assumes eligibility for each respective regime.",
+          "table": {
+            "headers": [
+              "Criterion",
+              "Turkey",
+              "Monaco"
+            ],
+            "rows": [
+              [
+                "Personal income",
+                "Article 20/D: qualifying foreign income exempt",
+                "Generally no Monaco income tax"
+              ],
+              [
+                "French citizens",
+                "Nationality not decisive for 20/D",
+                "Generally French tax under 1963 treaty"
+              ],
+              [
+                "Duration",
+                "20 years",
+                "No fixed period for absence of income tax"
+              ],
+              [
+                "Housing",
+                "Actual residence and appropriate status",
+                "Actual residence and accommodation"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Housing budget scenarios, not market rents",
+          "body": "Test hypothetical monthly rents of €3,000, €6,000 and €10,000. The chart shows annual rent alone, excluding charges, deposits, schooling, healthcare and tax. These are not observed Monaco or Turkey prices.",
+          "table": {
+            "headers": [
+              "Hypothetical monthly rent",
+              "Annual rent"
+            ],
+            "rows": [
+              [
+                "€3,000/month",
+                "€36,000"
+              ],
+              [
+                "€6,000/month",
+                "€72,000"
+              ],
+              [
+                "€10,000/month",
+                "€120,000"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "Before relocating",
+          "body": "Retain residence evidence, tax assessments, statements and contracts classified by income type and source. Review treaties, withholding, corporate obligations and social insurance. Immigration residence does not establish tax domicile. Compare inheritance and gift taxation, housing and former-country obligations before relocating. The French–Monaco treaty is distinct from the French–Turkey treaty."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do French citizens pay zero tax in Monaco?",
+          "answer": "Generally not if Article 7 of the bilateral treaty applies."
+        },
+        {
+          "question": "Is a company or apartment enough?",
+          "answer": "No; actual residence and remaining obligations matter."
+        },
+        {
+          "question": "Is a new visa sufficient?",
+          "answer": "No; establish tax residence and satisfy the regime-specific conditions."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "BOFiP — Convention 1963, article 7",
+          "href": "https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant%3DBOI-INT-CVB-MCO-10-20210602"
+        },
+        {
+          "label": "Légifrance — article 121 Z quinquies",
+          "href": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000051183437/2026-06-15"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Турция или Монако 2026: налоги, граждане Франции и капитал",
+      "metaDescription": "Сравните налоги Монако, исключение для французов по договору 1963 года и турецкую льготу на 20 лет.",
+      "shortAnswer": "В Монако обычно нет личного подоходного налога, но граждане Франции, подпадающие под договор 1963 года, облагаются во Франции по мировому доходу. Турция предоставляет целевую льготу подходящим новым резидентам.",
+      "bosphorasHelp": "Bosphoras организует ознакомительные поездки, подбор жилья и встречи с независимыми налоговыми специалистами. Запросите оценку переезда.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Турция: статья 20/D",
+          "body": "Закон № 7582 действует с 4 июня 2026 года и освобождает подходящие иностранные доходы новых резидентов-физлиц на 20 лет. В три предыдущих календарных года не должно быть места жительства и, как правило, налоговых обязательств в Турции, кроме отдельных доходов капитала. Сертификат запрашивается до конца года поселения, а при поселении в ноябре или декабре — до конца следующего февраля. Минимальная инвестиция не требуется. Турецкие доходы, иностранные налоги и прибыль компаний не освобождаются этой нормой."
+        },
+        {
+          "id": "compare-2",
+          "title": "Монако: исключение для граждан Франции",
+          "body": "Статья 7 соглашения от 18 мая 1963 года обычно сохраняет французское налогообложение французов, поселившихся в Монако, кроме исторических и отдельных исключений. Проверяются гражданство и история проживания. Необходимы фактическое поселение, жильё, средства и соответствующий миграционный статус. Компании, деятельность, дарение и наследование регулируются отдельно."
+        },
+        {
+          "id": "compare-3",
+          "title": "Сравнение режимов в 2026 году",
+          "body": "Льготы не всегда охватывают одинаковые виды дохода. Таблица предполагает выполнение условий каждого режима.",
+          "table": {
+            "headers": [
+              "Критерий",
+              "Турция",
+              "Монако"
+            ],
+            "rows": [
+              [
+                "Личный налог",
+                "20/D: подходящие зарубежные доходы освобождены",
+                "Обычно нет местного подоходного налога"
+              ],
+              [
+                "Граждане Франции",
+                "Гражданство не решает право на 20/D",
+                "Обычно налог Франции по договору 1963 года"
+              ],
+              [
+                "Срок",
+                "20 лет",
+                "Нет фиксированного срока"
+              ],
+              [
+                "Жильё",
+                "Фактическое проживание и статус",
+                "Фактическое проживание и жильё"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Примеры бюджета жилья, не рыночные цены",
+          "body": "Условная аренда 3 000, 6 000 или 10 000 евро в месяц. На графике только годовая аренда без сборов, депозита, школы, медицины и налогов. Это не цены рынка Монако или Турции.",
+          "table": {
+            "headers": [
+              "Условная аренда в месяц",
+              "Аренда в год"
+            ],
+            "rows": [
+              [
+                "3 000 €/месяц",
+                "36 000 €"
+              ],
+              [
+                "6 000 €/месяц",
+                "72 000 €"
+              ],
+              [
+                "10 000 €/месяц",
+                "120 000 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "До переезда",
+          "body": "Соберите документы о проживании, налогах, доходах и договорах по видам и источникам. Проверьте соглашения, удержание, обязательства компаний и страхование. ВНЖ не определяет налоговый статус. До переезда сравните наследование, дарение, жильё и обязанности прежней страны. Французско-монакское соглашение отличается от французско-турецкого."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Платят ли французы нулевой налог в Монако?",
+          "answer": "Обычно нет при применении статьи 7 договора."
+        },
+        {
+          "question": "Достаточно ли компании или квартиры?",
+          "answer": "Нет, учитываются фактическое проживание и прочие обязанности."
+        },
+        {
+          "question": "Достаточно ли сменить визу?",
+          "answer": "Нет, необходимо установить налоговое резидентство и выполнить условия конкретного режима."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "BOFiP — Convention 1963, article 7",
+          "href": "https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant%3DBOI-INT-CVB-MCO-10-20210602"
+        },
+        {
+          "label": "Légifrance — article 121 Z quinquies",
+          "href": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000051183437/2026-06-15"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تركيا أم موناكو 2026: الضرائب والفرنسيون والثروة",
+      "metaDescription": "قارن ضرائب موناكو واستثناء الفرنسيين باتفاقية 1963 وإعفاء تركيا لعشرين عاماً والإقامة وميزانية السكن.",
+      "shortAnswer": "لا تفرض موناكو عادة ضريبة دخل شخصي، لكن الفرنسيين المشمولين باتفاقية 1963 يخضعون في فرنسا على دخلهم العالمي. تقدم تركيا إعفاءً محدداً للمقيمين الجدد المؤهلين.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلة الاستكشافية والسكن والمواعيد مع مختصين ضريبيين مستقلين. اطلب دراسة مشروع الانتقال.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "تركيا: المادة 20/D",
+          "body": "القانون 7582 نافذ منذ 4 يونيو 2026 ويعفي الدخل الأجنبي المؤهل للمقيمين الجدد من الأفراد لمدة 20 عاماً. يشترط عدم وجود موطن وعدم الخضوع الضريبي عادة في تركيا خلال السنوات التقويمية الثلاث السابقة مع استثناءات لبعض دخل رأس المال. تقدم الشهادة قبل نهاية سنة الاستقرار أو نهاية فبراير التالي للاستقرار في نوفمبر وديسمبر. لا يوجد حد أدنى للاستثمار. لا تعفي المادة الدخل التركي أو الضرائب الأجنبية أو أرباح الشركات."
+        },
+        {
+          "id": "compare-2",
+          "title": "موناكو: استثناء الجنسية الفرنسية",
+          "body": "تبقي المادة 7 من اتفاقية 18 مايو 1963 الفرنسيين المستقرين في موناكو خاضعين عادة لضريبة فرنسا مع استثناءات تاريخية وحالات خاصة. تدرس الجنسية وتاريخ الإقامة. يتطلب الاستقرار الفعلي مسكناً وموارد ووضع إقامة ملائماً. تخضع الشركات والأعمال والهبات والميراث لقواعد منفصلة."
+        },
+        {
+          "id": "compare-3",
+          "title": "مقارنة النظامين في 2026",
+          "body": "لا تشمل المزايا بالضرورة فئات الدخل نفسها. يفترض الجدول استيفاء شروط كل نظام.",
+          "table": {
+            "headers": [
+              "المعيار",
+              "تركيا",
+              "موناكو"
+            ],
+            "rows": [
+              [
+                "ضريبة الفرد",
+                "إعفاء الدخل الأجنبي المؤهل 20/D",
+                "لا ضريبة دخل محلية عادة"
+              ],
+              [
+                "الفرنسيون",
+                "الجنسية ليست معيار 20/D",
+                "ضريبة فرنسا عادة وفق اتفاقية 1963"
+              ],
+              [
+                "المدة",
+                "20 عاماً",
+                "لا مدة ثابتة لغياب الضريبة"
+              ],
+              [
+                "السكن",
+                "إقامة فعلية ووضع مناسب",
+                "إقامة فعلية ومسكن"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "أمثلة ميزانية السكن لا أسعار السوق",
+          "body": "افترض إيجاراً شهرياً 3 آلاف أو 6 آلاف أو 10 آلاف يورو. يوضح الرسم الإيجار السنوي فقط دون رسوم أو ضمان أو تعليم أو صحة أو ضرائب. ليست أسعاراً مرصودة في موناكو أو تركيا.",
+          "table": {
+            "headers": [
+              "الإيجار الشهري المفترض",
+              "الإيجار السنوي"
+            ],
+            "rows": [
+              [
+                "3,000 يورو شهرياً",
+                "36,000 يورو"
+              ],
+              [
+                "6,000 يورو شهرياً",
+                "72,000 يورو"
+              ],
+              [
+                "10,000 يورو شهرياً",
+                "120,000 يورو"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "قبل الانتقال",
+          "body": "احتفظ بإثباتات الإقامة والضرائب والكشوف والعقود بحسب نوع الدخل ومصدره. ادرس الاتفاقيات والاقتطاعات والتزامات الشركات والتأمين الاجتماعي. لا تحدد الإقامة الإدارية الموطن الضريبي. قارن ضريبة الميراث والهبات والسكن والتزامات الدولة السابقة. تختلف اتفاقية فرنسا وموناكو عن اتفاقية فرنسا وتركيا."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يدفع الفرنسي ضريبة صفرية في موناكو؟",
+          "answer": "عادة لا إذا انطبقت المادة 7 من الاتفاقية."
+        },
+        {
+          "question": "هل تكفي شركة أو شقة؟",
+          "answer": "لا، يهم الاستقرار الفعلي والالتزامات الأخرى."
+        },
+        {
+          "question": "هل يكفي تغيير التأشيرة؟",
+          "answer": "لا، يجب إثبات الإقامة الضريبية واستيفاء شروط النظام."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "BOFiP — Convention 1963, article 7",
+          "href": "https://bofip.impots.gouv.fr/bofip/12995-PGP.html/identifiant%3DBOI-INT-CVB-MCO-10-20210602"
+        },
+        {
+          "label": "Légifrance — article 121 Z quinquies",
+          "href": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000051183437/2026-06-15"
+        }
+      ]
+    }
+  },
+  "turkey-vs-switzerland-tax": {
+    "fr": {
+      "title": "Turquie ou Suisse 2026 : forfait fiscal et revenus étrangers",
+      "metaDescription": "Forfait suisse : seuil fédéral de 435 000 CHF, règle des sept loyers, conditions et comparaison avec l’exonération turque de 20 ans.",
+      "shortAnswer": "L'imposition suisse d'après la dépense est réservée à certains étrangers sans activité lucrative en Suisse. Le montant de 435 000 CHF est un plancher de base fédérale, pas un impôt annuel.",
+      "bosphorasHelp": "Bosphoras organise votre séjour de découverte, votre recherche de logement et des rendez-vous avec des fiscalistes indépendants. Demandez une étude de votre projet de transfert.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Le régime turc : article 20/D",
+          "body": "La loi 7582, en vigueur depuis le 4 juin 2026, exonère pendant 20 ans les revenus étrangers admissibles des personnes physiques nouvellement résidentes. Les trois années civiles précédentes doivent être sans domicile ni, en principe, assujettissement fiscal turc, avec exceptions pour certains revenus du capital. Le certificat est demandé avant la fin de l'année d'établissement, ou fin février suivante pour novembre et décembre. Aucun investissement minimum n'est imposé par 20/D. Les revenus turcs, impôts étrangers et bénéfices de sociétés ne sont pas exonérés par cette mesure."
+        },
+        {
+          "id": "compare-2",
+          "title": "Suisse : imposition d'après la dépense",
+          "body": "L'article 14 LIFD vise les personnes sans nationalité suisse, nouvellement imposables à titre illimité ou de retour après dix ans d'absence, sans activité lucrative en Suisse. Les deux époux vivant ensemble doivent remplir les conditions. La base fédérale est au moins le maximum des dépenses mondiales, du plancher 2026 de 435 000 CHF et de sept fois le loyer annuel ou de la règle applicable à la pension. Un calcul de contrôle et les règles cantonales peuvent augmenter l'impôt. Zurich, notamment, a supprimé ce régime."
+        },
+        {
+          "id": "compare-3",
+          "title": "Comparer les régimes en 2026",
+          "body": "Les avantages ne portent pas toujours sur les mêmes catégories de revenu. Le tableau suppose que les conditions de chaque régime sont remplies.",
+          "table": {
+            "headers": [
+              "Critère",
+              "Turquie",
+              "Suisse"
+            ],
+            "rows": [
+              [
+                "Historique",
+                "3 années civiles",
+                "Première installation ou 10 ans d'absence"
+              ],
+              [
+                "Nationalité",
+                "Non déterminante pour 20/D",
+                "Non suisse"
+              ],
+              [
+                "Activité locale",
+                "Revenus locaux normalement imposés",
+                "Activité lucrative suisse incompatible"
+              ],
+              [
+                "Base",
+                "Revenus étrangers admissibles exonérés",
+                "Dépenses, minimums et calcul de contrôle"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Calcul illustratif de la base fédérale suisse",
+          "body": "Seuls le minimum fédéral de 435 000 CHF en 2026 et sept fois le loyer annuel sont comparés. Les dépenses mondiales, le calcul de contrôle et les minimums cantonaux peuvent conduire à une base ou un impôt supérieur. Ce tableau ne calcule pas l'impôt dû.",
+          "table": {
+            "headers": [
+              "Loyer annuel",
+              "Base fédérale illustrative"
+            ],
+            "rows": [
+              [
+                "Loyer 48 000 CHF/an",
+                "435 000 CHF"
+              ],
+              [
+                "Loyer 72 000 CHF/an",
+                "504 000 CHF"
+              ],
+              [
+                "Loyer 120 000 CHF/an",
+                "840 000 CHF"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "Vérifier avant de déménager",
+          "body": "Conservez les preuves de résidence, les avis fiscaux, les relevés et contrats ventilés par nature et source. Comparez les conventions, retenues à la source, obligations de société et couverture sociale. Le titre de séjour ne détermine pas le domicile fiscal. Faites chiffrer séparément la fiscalité fédérale, cantonale et communale, et comparez les cantons pratiquant effectivement le régime. Documentez votre train de vie mondial."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Le minimum de 435 000 CHF est-il un impôt ?",
+          "answer": "Non, c'est un plancher de base imposable fédérale."
+        },
+        {
+          "question": "Puis-je travailler en Suisse avec le forfait ?",
+          "answer": "Une activité lucrative en Suisse est incompatible avec ce régime."
+        },
+        {
+          "question": "Le changement de visa suffit-il ?",
+          "answer": "Non, il faut établir la résidence fiscale et satisfaire les conditions propres à chaque dispositif."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "DFF — Lump-sum taxation",
+          "href": "https://www.efd.admin.ch/en/lump-sum-taxation"
+        },
+        {
+          "label": "Fedlex — LIFD art. 14",
+          "href": "https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/fr"
+        },
+        {
+          "label": "AFC — 2026 thresholds",
+          "href": "https://www.estv.admin.ch/fr/deductions-taux-baremes-impot-federal-direct"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey vs Switzerland 2026: lump-sum taxation and foreign income",
+      "metaDescription": "Swiss expenditure taxation: CHF 435,000 federal base floor, seven-times-rent rule and comparison with Turkey’s 20-year relief.",
+      "shortAnswer": "Swiss expenditure taxation applies to certain foreign nationals without gainful activity in Switzerland. CHF 435,000 is the federal assessment floor, not annual tax.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing and appointments with independent tax specialists. Request a relocation assessment.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Turkey: Article 20/D",
+          "body": "Law 7582 has been in force since 4 June 2026. It exempts qualifying foreign income of eligible new individual residents for 20 years. The three preceding calendar years must have no Turkish domicile or generally Turkish tax liability, subject to exceptions for certain capital income. Apply for a certificate by settlement year-end, or the following February for November and December arrivals. Article 20/D imposes no minimum investment. Turkish income, foreign taxes and company profits are not exempted by this measure."
+        },
+        {
+          "id": "compare-2",
+          "title": "Switzerland: expenditure taxation",
+          "body": "Article 14 DFTA applies to non-Swiss nationals newly subject to unlimited taxation or returning after ten years away, with no gainful activity in Switzerland. Both spouses living together must qualify. The federal base is at least the highest of worldwide living costs, the CHF 435,000 2026 floor and seven times annual rent or the applicable board rule. A control calculation and cantonal rules can increase tax. Zurich is among cantons that abolished the regime."
+        },
+        {
+          "id": "compare-3",
+          "title": "Compare regimes in 2026",
+          "body": "Benefits do not necessarily cover the same income categories. The table assumes eligibility for each respective regime.",
+          "table": {
+            "headers": [
+              "Criterion",
+              "Turkey",
+              "Switzerland"
+            ],
+            "rows": [
+              [
+                "History",
+                "3 calendar years",
+                "First settlement or 10 years away"
+              ],
+              [
+                "Nationality",
+                "Not decisive for 20/D",
+                "Non-Swiss"
+              ],
+              [
+                "Local work",
+                "Domestic income ordinarily taxed",
+                "Swiss gainful work incompatible"
+              ],
+              [
+                "Base",
+                "Qualifying foreign income exempt",
+                "Expenses, floors and control calculation"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Illustrative Swiss federal assessment base",
+          "body": "Compares only the 2026 federal CHF 435,000 floor and seven times annual rent. Worldwide expenses, control calculations and cantonal minima may increase the base or tax. This is not the tax payable.",
+          "table": {
+            "headers": [
+              "Annual rent",
+              "Illustrative federal base"
+            ],
+            "rows": [
+              [
+                "CHF 48,000 annual rent",
+                "CHF 435,000"
+              ],
+              [
+                "CHF 72,000 annual rent",
+                "CHF 504,000"
+              ],
+              [
+                "CHF 120,000 annual rent",
+                "CHF 840,000"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "Before relocating",
+          "body": "Retain residence evidence, tax assessments, statements and contracts classified by income type and source. Review treaties, withholding, corporate obligations and social insurance. Immigration residence does not establish tax domicile. Obtain separate federal, cantonal and municipal estimates. Compare cantons offering the regime and document worldwide living costs."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is CHF 435,000 an annual tax?",
+          "answer": "No, it is a federal taxable-base floor."
+        },
+        {
+          "question": "Can I work in Switzerland under the forfait?",
+          "answer": "Gainful activity in Switzerland is incompatible."
+        },
+        {
+          "question": "Is a new visa sufficient?",
+          "answer": "No; establish tax residence and satisfy the regime-specific conditions."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "DFF — Lump-sum taxation",
+          "href": "https://www.efd.admin.ch/en/lump-sum-taxation"
+        },
+        {
+          "label": "Fedlex — LIFD art. 14",
+          "href": "https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/fr"
+        },
+        {
+          "label": "AFC — 2026 thresholds",
+          "href": "https://www.estv.admin.ch/fr/deductions-taux-baremes-impot-federal-direct"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Турция или Швейцария 2026: налог по расходам и зарубежный доход",
+      "metaDescription": "Швейцарский forfait: федеральная база от 435 000 франков, семь годовых арендных плат и льгота Турции на 20 лет.",
+      "shortAnswer": "Налог по расходам доступен отдельным иностранцам без оплачиваемой деятельности в Швейцарии. 435 000 франков — минимальная федеральная налоговая база, а не налог.",
+      "bosphorasHelp": "Bosphoras организует ознакомительные поездки, подбор жилья и встречи с независимыми налоговыми специалистами. Запросите оценку переезда.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Турция: статья 20/D",
+          "body": "Закон № 7582 действует с 4 июня 2026 года и освобождает подходящие иностранные доходы новых резидентов-физлиц на 20 лет. В три предыдущих календарных года не должно быть места жительства и, как правило, налоговых обязательств в Турции, кроме отдельных доходов капитала. Сертификат запрашивается до конца года поселения, а при поселении в ноябре или декабре — до конца следующего февраля. Минимальная инвестиция не требуется. Турецкие доходы, иностранные налоги и прибыль компаний не освобождаются этой нормой."
+        },
+        {
+          "id": "compare-2",
+          "title": "Швейцария: налогообложение по расходам",
+          "body": "Статья 14 федерального закона применяется к лицам без швейцарского гражданства, впервые получившим неограниченную налоговую обязанность или вернувшимся после десяти лет отсутствия, без оплачиваемой деятельности в стране. Оба супруга должны соответствовать условиям. База не ниже максимума мировых расходов, федерального минимума 435 000 CHF на 2026 год и семикратной годовой аренды либо правила пансиона. Контрольный расчёт и кантональные нормы могут повышать налог. В Цюрихе режим отменён."
+        },
+        {
+          "id": "compare-3",
+          "title": "Сравнение режимов в 2026 году",
+          "body": "Льготы не всегда охватывают одинаковые виды дохода. Таблица предполагает выполнение условий каждого режима.",
+          "table": {
+            "headers": [
+              "Критерий",
+              "Турция",
+              "Швейцария"
+            ],
+            "rows": [
+              [
+                "История",
+                "3 календарных года",
+                "Первый переезд или 10 лет отсутствия"
+              ],
+              [
+                "Гражданство",
+                "Не определяет 20/D",
+                "Не швейцарское"
+              ],
+              [
+                "Местная работа",
+                "Общие налоги на местные доходы",
+                "Оплачиваемая деятельность несовместима"
+              ],
+              [
+                "База",
+                "Подходящие зарубежные доходы освобождены",
+                "Расходы, минимумы и контроль"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Пример федеральной налоговой базы",
+          "body": "Сравниваются только минимум 435 000 CHF и семь годовых арендных плат. Расходы, контроль и кантональные минимумы могут увеличить базу или налог. Это не размер налога.",
+          "table": {
+            "headers": [
+              "Годовая аренда",
+              "Пример федеральной базы"
+            ],
+            "rows": [
+              [
+                "Аренда 48 000 CHF/год",
+                "435 000 CHF"
+              ],
+              [
+                "Аренда 72 000 CHF/год",
+                "504 000 CHF"
+              ],
+              [
+                "Аренда 120 000 CHF/год",
+                "840 000 CHF"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "До переезда",
+          "body": "Соберите документы о проживании, налогах, доходах и договорах по видам и источникам. Проверьте соглашения, удержание, обязательства компаний и страхование. ВНЖ не определяет налоговый статус. Получите отдельный расчёт федерального, кантонального и муниципального налога. Сравните кантоны, сохранившие режим, и подтвердите мировые расходы."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "435 000 CHF — годовой налог?",
+          "answer": "Нет, это минимальная федеральная база."
+        },
+        {
+          "question": "Можно ли работать в стране с forfait?",
+          "answer": "Оплачиваемая деятельность в Швейцарии несовместима."
+        },
+        {
+          "question": "Достаточно ли сменить визу?",
+          "answer": "Нет, необходимо установить налоговое резидентство и выполнить условия конкретного режима."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "DFF — Lump-sum taxation",
+          "href": "https://www.efd.admin.ch/en/lump-sum-taxation"
+        },
+        {
+          "label": "Fedlex — LIFD art. 14",
+          "href": "https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/fr"
+        },
+        {
+          "label": "AFC — 2026 thresholds",
+          "href": "https://www.estv.admin.ch/fr/deductions-taux-baremes-impot-federal-direct"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تركيا أم سويسرا 2026: الضريبة على أساس الإنفاق والدخل الأجنبي",
+      "metaDescription": "قارن حد الوعاء السويسري 435 ألف فرنك وقاعدة سبعة أمثال الإيجار وشروط الإعفاء التركي لعشرين عاماً.",
+      "shortAnswer": "يطبق النظام السويسري على بعض الأجانب الذين لا يمارسون نشاطاً ربحياً في سويسرا. مبلغ 435 ألف فرنك حد أدنى للوعاء الفيدرالي لا الضريبة السنوية.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلة الاستكشافية والسكن والمواعيد مع مختصين ضريبيين مستقلين. اطلب دراسة مشروع الانتقال.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "تركيا: المادة 20/D",
+          "body": "القانون 7582 نافذ منذ 4 يونيو 2026 ويعفي الدخل الأجنبي المؤهل للمقيمين الجدد من الأفراد لمدة 20 عاماً. يشترط عدم وجود موطن وعدم الخضوع الضريبي عادة في تركيا خلال السنوات التقويمية الثلاث السابقة مع استثناءات لبعض دخل رأس المال. تقدم الشهادة قبل نهاية سنة الاستقرار أو نهاية فبراير التالي للاستقرار في نوفمبر وديسمبر. لا يوجد حد أدنى للاستثمار. لا تعفي المادة الدخل التركي أو الضرائب الأجنبية أو أرباح الشركات."
+        },
+        {
+          "id": "compare-2",
+          "title": "سويسرا: الضريبة على أساس الإنفاق",
+          "body": "تخص المادة 14 غير السويسريين الخاضعين لأول مرة بصورة غير محدودة أو العائدين بعد غياب عشر سنوات دون نشاط ربحي في سويسرا. يجب استيفاء الزوجين المقيمين معاً للشروط. لا يقل الوعاء عن أعلى النفقات العالمية والحد الفيدرالي 435 ألف فرنك لعام 2026 وسبعة أمثال الإيجار السنوي أو قاعدة الإقامة الشاملة. قد يزيد حساب الرقابة وقواعد الكانتون الضريبة. ألغت زيورخ هذا النظام."
+        },
+        {
+          "id": "compare-3",
+          "title": "مقارنة النظامين في 2026",
+          "body": "لا تشمل المزايا بالضرورة فئات الدخل نفسها. يفترض الجدول استيفاء شروط كل نظام.",
+          "table": {
+            "headers": [
+              "المعيار",
+              "تركيا",
+              "سويسرا"
+            ],
+            "rows": [
+              [
+                "الفترة السابقة",
+                "3 سنوات تقويمية",
+                "أول استقرار أو غياب 10 سنوات"
+              ],
+              [
+                "الجنسية",
+                "ليست معيار 20/D",
+                "غير سويسرية"
+              ],
+              [
+                "العمل المحلي",
+                "الدخل المحلي وفق القواعد العامة",
+                "النشاط الربحي المحلي غير متوافق"
+              ],
+              [
+                "الوعاء",
+                "إعفاء الدخل الأجنبي المؤهل",
+                "النفقات والحدود وحساب الرقابة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "مثال الوعاء الفيدرالي السويسري",
+          "body": "تقتصر المقارنة على الحد 435 ألف فرنك وسبعة أمثال الإيجار السنوي. قد تزيد النفقات وحساب الرقابة وحدود الكانتون الوعاء أو الضريبة. ليست ضريبة مستحقة.",
+          "table": {
+            "headers": [
+              "الإيجار السنوي",
+              "وعاء فيدرالي توضيحي"
+            ],
+            "rows": [
+              [
+                "إيجار 48,000 فرنك سنوياً",
+                "435,000 فرنك"
+              ],
+              [
+                "إيجار 72,000 فرنك سنوياً",
+                "504,000 فرنك"
+              ],
+              [
+                "إيجار 120,000 فرنك سنوياً",
+                "840,000 فرنك"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "قبل الانتقال",
+          "body": "احتفظ بإثباتات الإقامة والضرائب والكشوف والعقود بحسب نوع الدخل ومصدره. ادرس الاتفاقيات والاقتطاعات والتزامات الشركات والتأمين الاجتماعي. لا تحدد الإقامة الإدارية الموطن الضريبي. اطلب حساب الضرائب الفيدرالية والكانتونية والبلدية منفصلة وقارن الكانتونات التي تطبق النظام ووثق النفقات العالمية."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل 435 ألف فرنك ضريبة سنوية؟",
+          "answer": "لا، حد أدنى للوعاء الفيدرالي."
+        },
+        {
+          "question": "هل يمكن العمل في سويسرا بالنظام؟",
+          "answer": "النشاط الربحي في سويسرا غير متوافق معه."
+        },
+        {
+          "question": "هل يكفي تغيير التأشيرة؟",
+          "answer": "لا، يجب إثبات الإقامة الضريبية واستيفاء شروط النظام."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "DFF — Lump-sum taxation",
+          "href": "https://www.efd.admin.ch/en/lump-sum-taxation"
+        },
+        {
+          "label": "Fedlex — LIFD art. 14",
+          "href": "https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/fr"
+        },
+        {
+          "label": "AFC — 2026 thresholds",
+          "href": "https://www.estv.admin.ch/fr/deductions-taux-baremes-impot-federal-direct"
+        }
+      ]
+    }
+  },
+  "turkey-vs-uk-non-dom": {
+    "fr": {
+      "title": "Turquie ou Royaume-Uni 2026 : fin du non-dom et régime FIG de 4 ans",
+      "metaDescription": "Non-dom britannique supprimé depuis avril 2025 : conditions FIG, dix ans d’absence, quatre ans d’avantage et comparaison avec la Turquie.",
+      "shortAnswer": "Le régime FIG britannique exonère certains revenus et gains étrangers sur demande pendant les quatre premières années fiscales de résidence après dix années de non-résidence. La Turquie prévoit vingt ans sous des conditions différentes.",
+      "bosphorasHelp": "Bosphoras organise votre séjour de découverte, votre recherche de logement et des rendez-vous avec des fiscalistes indépendants. Demandez une étude de votre projet de transfert.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Le régime turc : article 20/D",
+          "body": "La loi 7582, en vigueur depuis le 4 juin 2026, exonère pendant 20 ans les revenus étrangers admissibles des personnes physiques nouvellement résidentes. Les trois années civiles précédentes doivent être sans domicile ni, en principe, assujettissement fiscal turc, avec exceptions pour certains revenus du capital. Le certificat est demandé avant la fin de l'année d'établissement, ou fin février suivante pour novembre et décembre. Aucun investissement minimum n'est imposé par 20/D. Les revenus turcs, impôts étrangers et bénéfices de sociétés ne sont pas exonérés par cette mesure."
+        },
+        {
+          "id": "compare-2",
+          "title": "Royaume-Uni : le FIG remplace la remittance basis",
+          "body": "Depuis le 6 avril 2025, le Royaume-Uni impose en principe les revenus mondiaux à leur naissance. Le FIG permet de demander une exonération annuelle ciblée sur dividendes, intérêts, bénéfices étrangers et gains admissibles après dix années fiscales consécutives de non-résidence. Les années non utilisées ne sont pas reportées. Les revenus d'emploi relèvent notamment du dispositif Overseas Workday Relief distinct. Une demande FIG fait perdre les abattements personnels d'impôt sur le revenu et sur les plus-values. Déclaration Self Assessment, SA109 et annexes pertinentes ; la fiscalité successorale fondée sur la résidence nécessite un examen séparé."
+        },
+        {
+          "id": "compare-3",
+          "title": "Comparer les régimes en 2026",
+          "body": "Les avantages ne portent pas toujours sur les mêmes catégories de revenu. Le tableau suppose que les conditions de chaque régime sont remplies.",
+          "table": {
+            "headers": [
+              "Critère",
+              "Turquie",
+              "Royaume-Uni"
+            ],
+            "rows": [
+              [
+                "Durée",
+                "20 ans",
+                "4 années fiscales"
+              ],
+              [
+                "Antériorité",
+                "3 années civiles",
+                "10 années fiscales consécutives"
+              ],
+              [
+                "Formalité",
+                "Certificat 20/D",
+                "Demande annuelle Self Assessment"
+              ],
+              [
+                "Revenus rapatriés",
+                "Source juridique déterminante",
+                "Flux FIG exonérés rapatriables"
+              ],
+              [
+                "Abattements",
+                "Règles turques distinctes",
+                "Perte d'abattements avec demande FIG"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Exemple : période d'éligibilité restante",
+          "body": "Pour une première résidence fiscale britannique en 2026/27, quatre années consécutives sont possibles jusqu'à 2029/30. Si la première année est 2025/26, il reste trois années à compter de 2026/27 ; si 2023/24, une seule. Le graphique mesure la durée, pas l'économie fiscale.",
+          "table": {
+            "headers": [
+              "Première année fiscale",
+              "Années restantes à partir de 2026/27"
+            ],
+            "rows": [
+              [
+                "Début 2026/27",
+                "4 ans"
+              ],
+              [
+                "Début 2025/26",
+                "3 ans"
+              ],
+              [
+                "Début 2023/24",
+                "1 an"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "Vérifier avant de déménager",
+          "body": "Conservez les preuves de résidence, les avis fiscaux, les relevés et contrats ventilés par nature et source. Comparez les conventions, retenues à la source, obligations de société et couverture sociale. Le titre de séjour ne détermine pas le domicile fiscal. Examinez les revenus antérieurs à avril 2025 et les dispositions transitoires, notamment la Temporary Repatriation Facility si applicable. Les gains passés ne sont pas automatiquement couverts par FIG."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Le non-dom ancien existe-t-il encore ?",
+          "answer": "La remittance basis a été remplacée le 6 avril 2025."
+        },
+        {
+          "question": "Peut-on reporter une année FIG inutilisée ?",
+          "answer": "Non, la période de quatre années est consécutive."
+        },
+        {
+          "question": "Le changement de visa suffit-il ?",
+          "answer": "Non, il faut établir la résidence fiscale et satisfaire les conditions propres à chaque dispositif."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "HMRC — FIG eligibility",
+          "href": "https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime"
+        },
+        {
+          "label": "HMRC — HS266 2026",
+          "href": "https://www.gov.uk/government/publications/foreign-income-and-gains-fig-regime-self-assessment-helpsheet-hs266/hs266-foreign-income-and-gains-fig-regime-2026"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey vs UK 2026: end of non-dom and four-year FIG regime",
+      "metaDescription": "UK non-dom ended in April 2025: FIG eligibility, ten years abroad, four-year relief and comparison with Turkey.",
+      "shortAnswer": "The UK FIG regime provides claim-based relief for eligible foreign income and gains for the first four tax years after ten non-resident years. Turkey offers twenty years under different conditions.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing and appointments with independent tax specialists. Request a relocation assessment.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Turkey: Article 20/D",
+          "body": "Law 7582 has been in force since 4 June 2026. It exempts qualifying foreign income of eligible new individual residents for 20 years. The three preceding calendar years must have no Turkish domicile or generally Turkish tax liability, subject to exceptions for certain capital income. Apply for a certificate by settlement year-end, or the following February for November and December arrivals. Article 20/D imposes no minimum investment. Turkish income, foreign taxes and company profits are not exempted by this measure."
+        },
+        {
+          "id": "compare-2",
+          "title": "UK: FIG replaces the remittance basis",
+          "body": "Since 6 April 2025 the UK generally taxes worldwide income as it arises. FIG allows annual claims for eligible dividends, interest, overseas profits and gains after ten consecutive non-resident tax years. Unused years cannot be carried forward. Employment income may fall under separate Overseas Workday Relief. A FIG claim removes personal income tax and capital gains allowances. File Self Assessment, SA109 and relevant supplementary pages; residence-based inheritance tax requires separate review."
+        },
+        {
+          "id": "compare-3",
+          "title": "Compare regimes in 2026",
+          "body": "Benefits do not necessarily cover the same income categories. The table assumes eligibility for each respective regime.",
+          "table": {
+            "headers": [
+              "Criterion",
+              "Turkey",
+              "United Kingdom"
+            ],
+            "rows": [
+              [
+                "Duration",
+                "20 years",
+                "4 tax years"
+              ],
+              [
+                "History",
+                "3 calendar years",
+                "10 consecutive tax years"
+              ],
+              [
+                "Filing",
+                "20/D certificate",
+                "Annual Self Assessment claim"
+              ],
+              [
+                "Remittance",
+                "Legal source decisive",
+                "Relieved FIG can be remitted"
+              ],
+              [
+                "Allowances",
+                "Separate Turkish rules",
+                "Loss of allowances when claiming FIG"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Illustrative remaining eligibility",
+          "body": "First UK residence in 2026/27 allows four consecutive qualifying years through 2029/30. A 2025/26 start leaves three years from 2026/27; a 2023/24 start leaves one. The chart measures years, not tax savings.",
+          "table": {
+            "headers": [
+              "First tax year",
+              "Years remaining from 2026/27"
+            ],
+            "rows": [
+              [
+                "Start 2026/27",
+                "4 years"
+              ],
+              [
+                "Start 2025/26",
+                "3 years"
+              ],
+              [
+                "Start 2023/24",
+                "1 year"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "Before relocating",
+          "body": "Retain residence evidence, tax assessments, statements and contracts classified by income type and source. Review treaties, withholding, corporate obligations and social insurance. Immigration residence does not establish tax domicile. Review pre-April 2025 income and transitional rules, including the Temporary Repatriation Facility if applicable. Past gains do not automatically qualify for FIG."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does the old non-dom system remain?",
+          "answer": "The remittance basis was replaced on 6 April 2025."
+        },
+        {
+          "question": "Can unused FIG years be carried forward?",
+          "answer": "No, the four-year window is consecutive."
+        },
+        {
+          "question": "Is a new visa sufficient?",
+          "answer": "No; establish tax residence and satisfy the regime-specific conditions."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "HMRC — FIG eligibility",
+          "href": "https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime"
+        },
+        {
+          "label": "HMRC — HS266 2026",
+          "href": "https://www.gov.uk/government/publications/foreign-income-and-gains-fig-regime-self-assessment-helpsheet-hs266/hs266-foreign-income-and-gains-fig-regime-2026"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Турция или Великобритания 2026: отмена non-dom и режим FIG",
+      "metaDescription": "Режим FIG вместо non-dom с апреля 2025 года: десять лет нерезидентства, четыре года льготы и сравнение с Турцией.",
+      "shortAnswer": "FIG освобождает по заявлению подходящие иностранные доходы и прирост в первые четыре налоговых года после десяти лет нерезидентства. Турция предусматривает двадцать лет по другим условиям.",
+      "bosphorasHelp": "Bosphoras организует ознакомительные поездки, подбор жилья и встречи с независимыми налоговыми специалистами. Запросите оценку переезда.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Турция: статья 20/D",
+          "body": "Закон № 7582 действует с 4 июня 2026 года и освобождает подходящие иностранные доходы новых резидентов-физлиц на 20 лет. В три предыдущих календарных года не должно быть места жительства и, как правило, налоговых обязательств в Турции, кроме отдельных доходов капитала. Сертификат запрашивается до конца года поселения, а при поселении в ноябре или декабре — до конца следующего февраля. Минимальная инвестиция не требуется. Турецкие доходы, иностранные налоги и прибыль компаний не освобождаются этой нормой."
+        },
+        {
+          "id": "compare-2",
+          "title": "Великобритания: FIG вместо remittance basis",
+          "body": "С 6 апреля 2025 года Великобритания обычно облагает мировой доход по мере возникновения. Ежегодная заявка FIG охватывает подходящие дивиденды, проценты, зарубежную прибыль и прирост после десяти последовательных лет нерезидентства. Неиспользованные годы не переносятся. Доходы от работы могут подпадать под отдельный Overseas Workday Relief. При заявке FIG теряются личные необлагаемые суммы подоходного налога и прироста капитала. Подаются Self Assessment, SA109 и приложения; наследственный налог оценивается отдельно."
+        },
+        {
+          "id": "compare-3",
+          "title": "Сравнение режимов в 2026 году",
+          "body": "Льготы не всегда охватывают одинаковые виды дохода. Таблица предполагает выполнение условий каждого режима.",
+          "table": {
+            "headers": [
+              "Критерий",
+              "Турция",
+              "Великобритания"
+            ],
+            "rows": [
+              [
+                "Срок",
+                "20 лет",
+                "4 налоговых года"
+              ],
+              [
+                "История",
+                "3 календарных года",
+                "10 последовательных налоговых лет"
+              ],
+              [
+                "Оформление",
+                "Сертификат 20/D",
+                "Ежегодная заявка Self Assessment"
+              ],
+              [
+                "Перевод средств",
+                "Важен юридический источник",
+                "Освобождённый FIG можно переводить"
+              ],
+              [
+                "Вычеты",
+                "Отдельные правила",
+                "Утрата необлагаемых сумм при FIG"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Пример оставшегося срока",
+          "body": "Первое резидентство в 2026/27 позволяет четыре года до 2029/30. При начале в 2025/26 остаются три года с 2026/27, при начале в 2023/24 — один. График показывает годы, а не экономию налога.",
+          "table": {
+            "headers": [
+              "Первый налоговый год",
+              "Осталось лет с 2026/27"
+            ],
+            "rows": [
+              [
+                "Начало 2026/27",
+                "4 года"
+              ],
+              [
+                "Начало 2025/26",
+                "3 года"
+              ],
+              [
+                "Начало 2023/24",
+                "1 год"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "До переезда",
+          "body": "Соберите документы о проживании, налогах, доходах и договорах по видам и источникам. Проверьте соглашения, удержание, обязательства компаний и страхование. ВНЖ не определяет налоговый статус. Проверьте доходы до апреля 2025 и переходные правила, включая Temporary Repatriation Facility при применимости. Прежний прирост не автоматически освобождён FIG."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Сохранился ли старый non-dom?",
+          "answer": "Remittance basis заменён с 6 апреля 2025 года."
+        },
+        {
+          "question": "Можно ли перенести неиспользованный год?",
+          "answer": "Нет, четыре года идут подряд."
+        },
+        {
+          "question": "Достаточно ли сменить визу?",
+          "answer": "Нет, необходимо установить налоговое резидентство и выполнить условия конкретного режима."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "HMRC — FIG eligibility",
+          "href": "https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime"
+        },
+        {
+          "label": "HMRC — HS266 2026",
+          "href": "https://www.gov.uk/government/publications/foreign-income-and-gains-fig-regime-self-assessment-helpsheet-hs266/hs266-foreign-income-and-gains-fig-regime-2026"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تركيا أم المملكة المتحدة 2026: نهاية non-dom ونظام FIG",
+      "metaDescription": "قارن نظام FIG منذ أبريل 2025 وشرط عشر سنوات خارج بريطانيا وأربع سنوات إعفاء مع تركيا.",
+      "shortAnswer": "يعفي FIG الدخل والمكاسب الأجنبية المؤهلة بطلب خلال أول أربع سنوات ضريبية بعد عشر سنوات من عدم الإقامة. تقدم تركيا عشرين عاماً بشروط مختلفة.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلة الاستكشافية والسكن والمواعيد مع مختصين ضريبيين مستقلين. اطلب دراسة مشروع الانتقال.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "تركيا: المادة 20/D",
+          "body": "القانون 7582 نافذ منذ 4 يونيو 2026 ويعفي الدخل الأجنبي المؤهل للمقيمين الجدد من الأفراد لمدة 20 عاماً. يشترط عدم وجود موطن وعدم الخضوع الضريبي عادة في تركيا خلال السنوات التقويمية الثلاث السابقة مع استثناءات لبعض دخل رأس المال. تقدم الشهادة قبل نهاية سنة الاستقرار أو نهاية فبراير التالي للاستقرار في نوفمبر وديسمبر. لا يوجد حد أدنى للاستثمار. لا تعفي المادة الدخل التركي أو الضرائب الأجنبية أو أرباح الشركات."
+        },
+        {
+          "id": "compare-2",
+          "title": "بريطانيا: FIG بدل نظام التحويل",
+          "body": "منذ 6 أبريل 2025 تخضع الدخول العالمية عادة عند تحققها. يسمح FIG بطلب سنوي للدخل والمكاسب الأجنبية المؤهلة مثل التوزيعات والفوائد والأرباح بعد عشر سنوات ضريبية متتالية من عدم الإقامة. لا ترحل السنوات غير المستخدمة. قد يخضع دخل العمل لإعفاء Overseas Workday Relief المنفصل. يفقد طالب FIG المبالغ الشخصية المعفاة لضريبة الدخل ومكاسب رأس المال. يقدم Self Assessment وSA109 والملاحق، وتدرس ضريبة الميراث بشكل منفصل."
+        },
+        {
+          "id": "compare-3",
+          "title": "مقارنة النظامين في 2026",
+          "body": "لا تشمل المزايا بالضرورة فئات الدخل نفسها. يفترض الجدول استيفاء شروط كل نظام.",
+          "table": {
+            "headers": [
+              "المعيار",
+              "تركيا",
+              "المملكة المتحدة"
+            ],
+            "rows": [
+              [
+                "المدة",
+                "20 عاماً",
+                "4 سنوات ضريبية"
+              ],
+              [
+                "الفترة السابقة",
+                "3 سنوات تقويمية",
+                "10 سنوات ضريبية متتالية"
+              ],
+              [
+                "الإجراء",
+                "شهادة 20/D",
+                "طلب سنوي Self Assessment"
+              ],
+              [
+                "تحويل الأموال",
+                "المصدر القانوني حاسم",
+                "يمكن تحويل الدخل المعفى FIG"
+              ],
+              [
+                "المبالغ المعفاة",
+                "قواعد تركية مستقلة",
+                "فقدانها عند طلب FIG"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "مثال المدة المتبقية",
+          "body": "بدء الإقامة الضريبية البريطانية في 2026/27 يتيح أربع سنوات حتى 2029/30. بدء 2025/26 يترك ثلاثاً من 2026/27، وبدء 2023/24 سنة واحدة. يقيس الرسم السنوات لا التوفير الضريبي.",
+          "table": {
+            "headers": [
+              "السنة الأولى",
+              "السنوات المتبقية من 2026/27"
+            ],
+            "rows": [
+              [
+                "بدء 2026/27",
+                "4 سنوات"
+              ],
+              [
+                "بدء 2025/26",
+                "3 سنوات"
+              ],
+              [
+                "بدء 2023/24",
+                "سنة واحدة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "قبل الانتقال",
+          "body": "احتفظ بإثباتات الإقامة والضرائب والكشوف والعقود بحسب نوع الدخل ومصدره. ادرس الاتفاقيات والاقتطاعات والتزامات الشركات والتأمين الاجتماعي. لا تحدد الإقامة الإدارية الموطن الضريبي. ادرس الدخل السابق لأبريل 2025 والقواعد الانتقالية ومنها Temporary Repatriation Facility عند انطباقها؛ لا يشمل FIG المكاسب القديمة تلقائياً."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل بقي نظام non-dom القديم؟",
+          "answer": "استبدل نظام التحويل في 6 أبريل 2025."
+        },
+        {
+          "question": "هل ترحل سنة FIG غير مستخدمة؟",
+          "answer": "لا، السنوات الأربع متتالية."
+        },
+        {
+          "question": "هل يكفي تغيير التأشيرة؟",
+          "answer": "لا، يجب إثبات الإقامة الضريبية واستيفاء شروط النظام."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "HMRC — FIG eligibility",
+          "href": "https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime"
+        },
+        {
+          "label": "HMRC — HS266 2026",
+          "href": "https://www.gov.uk/government/publications/foreign-income-and-gains-fig-regime-self-assessment-helpsheet-hs266/hs266-foreign-income-and-gains-fig-regime-2026"
+        }
+      ]
+    }
+  },
+  "turkey-vs-malta-non-dom": {
+    "fr": {
+      "title": "Turquie ou Malte 2026–2027 : non-dom, 15 % et nouveau minimum de 35 000 €",
+      "metaDescription": "Malte change en 2027 : comparez remittance basis, minimums de 5 000 €, 15 000 € et 35 000 €, transition jusqu’en 2031 et Turquie.",
+      "shortAnswer": "Malte distingue le non-dom ordinaire des programmes spéciaux à 15 %. Les nouveaux programmes à compter du 1er janvier 2027 relèvent le minimum annuel des investisseurs à 35 000 €, contre 15 000 € dans les anciens GRP/RP.",
+      "bosphorasHelp": "Bosphoras organise votre séjour de découverte, votre recherche de logement et des rendez-vous avec des fiscalistes indépendants. Demandez une étude de votre projet de transfert.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Le régime turc : article 20/D",
+          "body": "La loi 7582, en vigueur depuis le 4 juin 2026, exonère pendant 20 ans les revenus étrangers admissibles des personnes physiques nouvellement résidentes. Les trois années civiles précédentes doivent être sans domicile ni, en principe, assujettissement fiscal turc, avec exceptions pour certains revenus du capital. Le certificat est demandé avant la fin de l'année d'établissement, ou fin février suivante pour novembre et décembre. Aucun investissement minimum n'est imposé par 20/D. Les revenus turcs, impôts étrangers et bénéfices de sociétés ne sont pas exonérés par cette mesure."
+        },
+        {
+          "id": "compare-2",
+          "title": "Malte : revenus rapatriés et réforme 2027",
+          "body": "Le régime ordinaire impose les revenus maltais et les revenus étrangers reçus à Malte ; les plus-values étrangères restent généralement hors champ même rapatriées. Le minimum ordinaire de 5 000 € s'applique notamment si le revenu étranger atteint 35 000 €, sous exceptions et crédits. Pour les programmes GRP/RP, le taux spécial de 15 % porte sur les revenus étrangers rapatriés, minimum annuel de 15 000 €. Le Legal Notice 195/2026 crée à compter du 1er janvier 2027 un régime unifié : minimum de 35 000 € pour Global et EU/EEA/Swiss Resident Status, 15 000 € pour retraités et 20 000 € pour pensionnés ONU ; logement acheté dès 700 000 € ou loyer annuel dès 14 000 €, statut cinq ans renouvelable. Les dossiers admissibles déposés avant fin 2026 peuvent conserver les anciennes règles jusqu'à fin 2031, sous conditions."
+        },
+        {
+          "id": "compare-3",
+          "title": "Comparer les régimes en 2026",
+          "body": "Les avantages ne portent pas toujours sur les mêmes catégories de revenu. Le tableau suppose que les conditions de chaque régime sont remplies.",
+          "table": {
+            "headers": [
+              "Critère",
+              "Turquie",
+              "Malte"
+            ],
+            "rows": [
+              [
+                "Revenus étrangers",
+                "Éligibles exonérés pendant 20 ans",
+                "Remittance basis : imposition si reçus à Malte"
+              ],
+              [
+                "Minimum ordinaire",
+                "Aucun forfait 20/D",
+                "5 000 € si applicable"
+              ],
+              [
+                "GRP/RP 2026",
+                "Non applicable",
+                "15 % avec minimum 15 000 €"
+              ],
+              [
+                "Investisseur ITP dès 2027",
+                "Non applicable",
+                "15 % avec minimum 35 000 €"
+              ],
+              [
+                "Qualification",
+                "Certificat fiscal",
+                "Statut spécifique et conditions continues"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Simulation des programmes investisseurs maltais",
+          "body": "Exemple sans crédit d'impôt étranger ni revenu local : impôt égal au maximum entre 15 % du revenu étranger rapatrié et le minimum du programme. Ici le tableau compare le programme spécial 2026 avec le nouveau statut investisseur 2027, pas le non-dom ordinaire.",
+          "table": {
+            "headers": [
+              "Revenu rapatrié",
+              "GRP/RP 2026",
+              "ITP investisseur 2027"
+            ],
+            "rows": [
+              [
+                "50 000 € rapatriés",
+                "15 000 €",
+                "35 000 €"
+              ],
+              [
+                "150 000 € rapatriés",
+                "22 500 €",
+                "35 000 €"
+              ],
+              [
+                "300 000 € rapatriés",
+                "45 000 €",
+                "45 000 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "Vérifier avant de déménager",
+          "body": "Conservez les preuves de résidence, les avis fiscaux, les relevés et contrats ventilés par nature et source. Comparez les conventions, retenues à la source, obligations de société et couverture sociale. Le titre de séjour ne détermine pas le domicile fiscal. Séparez le capital historique, les revenus et les plus-values dans vos relevés bancaires. La qualification des transferts est essentielle. Comparez le minimum de 2027 et les frais d'entrée avant toute demande."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Le minimum de 15 000 € reste-t-il en 2027 ?",
+          "answer": "Pour certains bénéficiaires transitoires, oui ; les nouvelles demandes investisseurs relèvent en principe du minimum de 35 000 €."
+        },
+        {
+          "question": "Tous les non-dom paient-ils 15 % ?",
+          "answer": "Non, le taux vise les programmes spéciaux ; le régime ordinaire est distinct."
+        },
+        {
+          "question": "Le changement de visa suffit-il ?",
+          "answer": "Non, il faut établir la résidence fiscale et satisfaire les conditions propres à chaque dispositif."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "MTCA — Tax residence",
+          "href": "https://mtca.gov.mt/personal-tax/individual/tax-residence"
+        },
+        {
+          "label": "MTCA — Remittance guidance",
+          "href": "https://cfr.gov.mt/en/inlandrevenue/legal-technical/Documents/MTCA%20GUIDELINES%20ON%20THE%20REMITTANCE%20UNDER%20THE%20INCOME%20TAX.pdf"
+        },
+        {
+          "label": "Malta legislation — LN 195/2026",
+          "href": "https://legislation.mt/eli/ln/2026/195/eng/portalpdf"
+        },
+        {
+          "label": "PwC — ITP 2027",
+          "href": "https://www.pwc.com/mt/en/publications/tax-legal/new-individual-tax-programme-rules.html"
+        },
+        {
+          "label": "Deloitte — ITP 2026",
+          "href": "https://www.deloitte.com/mt/en/services/tax/perspectives/tax-alerts/2026/individual-tax-programme-rules-2026.html"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey vs Malta 2026–2027: non-dom, 15% and €35,000 new minimum",
+      "metaDescription": "Malta changes in 2027: remittance basis, €5,000, €15,000 and €35,000 minima, transition to 2031 and Turkey’s exemption.",
+      "shortAnswer": "Malta distinguishes ordinary non-dom taxation from special 15% programmes. From 1 January 2027 the new investor programmes increase the minimum annual tax to €35,000 from €15,000 under legacy GRP/RP.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing and appointments with independent tax specialists. Request a relocation assessment.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Turkey: Article 20/D",
+          "body": "Law 7582 has been in force since 4 June 2026. It exempts qualifying foreign income of eligible new individual residents for 20 years. The three preceding calendar years must have no Turkish domicile or generally Turkish tax liability, subject to exceptions for certain capital income. Apply for a certificate by settlement year-end, or the following February for November and December arrivals. Article 20/D imposes no minimum investment. Turkish income, foreign taxes and company profits are not exempted by this measure."
+        },
+        {
+          "id": "compare-2",
+          "title": "Malta: remittances and the 2027 reform",
+          "body": "Ordinary remittance taxation covers Maltese income and foreign income received in Malta; foreign capital gains generally remain outside tax even if remitted. The €5,000 ordinary minimum applies notably when foreign income reaches €35,000, subject to exceptions and credits. Legacy GRP/RP charge 15% on remitted foreign income with a €15,000 minimum. Legal Notice 195/2026 introduces a unified framework from 1 January 2027: €35,000 minimum for Global and EU/EEA/Swiss Resident Status, €15,000 for retired pensioners and €20,000 for UN pensioners; qualifying property from €700,000 or annual rent from €14,000, five-year renewable status. Eligible applications by end-2026 can retain legacy terms through end-2031 subject to conditions."
+        },
+        {
+          "id": "compare-3",
+          "title": "Compare regimes in 2026",
+          "body": "Benefits do not necessarily cover the same income categories. The table assumes eligibility for each respective regime.",
+          "table": {
+            "headers": [
+              "Criterion",
+              "Turkey",
+              "Malta"
+            ],
+            "rows": [
+              [
+                "Foreign income",
+                "Eligible exempt for 20 years",
+                "Remittance basis: taxable if received in Malta"
+              ],
+              [
+                "Ordinary minimum",
+                "No 20/D flat charge",
+                "€5,000 if applicable"
+              ],
+              [
+                "Legacy GRP/RP 2026",
+                "Not applicable",
+                "15%, €15,000 minimum"
+              ],
+              [
+                "New investor ITP 2027",
+                "Not applicable",
+                "15%, €35,000 minimum"
+              ],
+              [
+                "Qualification",
+                "Tax certificate",
+                "Specific status and ongoing criteria"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Malta investor programme illustration",
+          "body": "Assume no foreign tax credit or domestic income: tax is the greater of 15% of remitted foreign income and the relevant programme minimum. Compares legacy 2026 and new 2027 investor status, not ordinary non-dom.",
+          "table": {
+            "headers": [
+              "Remitted income",
+              "Legacy GRP/RP 2026",
+              "Investor ITP 2027"
+            ],
+            "rows": [
+              [
+                "€50,000 remitted",
+                "€15,000",
+                "€35,000"
+              ],
+              [
+                "€150,000 remitted",
+                "€22,500",
+                "€35,000"
+              ],
+              [
+                "€300,000 remitted",
+                "€45,000",
+                "€45,000"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "Before relocating",
+          "body": "Retain residence evidence, tax assessments, statements and contracts classified by income type and source. Review treaties, withholding, corporate obligations and social insurance. Immigration residence does not establish tax domicile. Separate historical capital, income and gains in bank records. Remittance classification matters. Compare new minimums and entry costs before applying."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does the €15,000 minimum survive 2027?",
+          "answer": "Yes for eligible transitional beneficiaries; new investor applicants generally face €35,000."
+        },
+        {
+          "question": "Do all non-doms pay 15%?",
+          "answer": "No, special programmes and ordinary taxation differ."
+        },
+        {
+          "question": "Is a new visa sufficient?",
+          "answer": "No; establish tax residence and satisfy the regime-specific conditions."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "MTCA — Tax residence",
+          "href": "https://mtca.gov.mt/personal-tax/individual/tax-residence"
+        },
+        {
+          "label": "MTCA — Remittance guidance",
+          "href": "https://cfr.gov.mt/en/inlandrevenue/legal-technical/Documents/MTCA%20GUIDELINES%20ON%20THE%20REMITTANCE%20UNDER%20THE%20INCOME%20TAX.pdf"
+        },
+        {
+          "label": "Malta legislation — LN 195/2026",
+          "href": "https://legislation.mt/eli/ln/2026/195/eng/portalpdf"
+        },
+        {
+          "label": "PwC — ITP 2027",
+          "href": "https://www.pwc.com/mt/en/publications/tax-legal/new-individual-tax-programme-rules.html"
+        },
+        {
+          "label": "Deloitte — ITP 2026",
+          "href": "https://www.deloitte.com/mt/en/services/tax/perspectives/tax-alerts/2026/individual-tax-programme-rules-2026.html"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Турция или Мальта 2026–2027: non-dom, 15% и минимум 35 000 евро",
+      "metaDescription": "Налоги Мальты меняются в 2027 году: remittance basis, минимумы 5 000, 15 000 и 35 000 евро, переход до 2031 года.",
+      "shortAnswer": "Мальта различает обычный non-dom и специальные программы 15%. С 1 января 2027 года минимум новых инвесторских программ возрастает с 15 000 до 35 000 евро в год.",
+      "bosphorasHelp": "Bosphoras организует ознакомительные поездки, подбор жилья и встречи с независимыми налоговыми специалистами. Запросите оценку переезда.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Турция: статья 20/D",
+          "body": "Закон № 7582 действует с 4 июня 2026 года и освобождает подходящие иностранные доходы новых резидентов-физлиц на 20 лет. В три предыдущих календарных года не должно быть места жительства и, как правило, налоговых обязательств в Турции, кроме отдельных доходов капитала. Сертификат запрашивается до конца года поселения, а при поселении в ноябре или декабре — до конца следующего февраля. Минимальная инвестиция не требуется. Турецкие доходы, иностранные налоги и прибыль компаний не освобождаются этой нормой."
+        },
+        {
+          "id": "compare-2",
+          "title": "Мальта: переводы и реформа 2027",
+          "body": "Обычный режим облагает мальтийский доход и зарубежный доход, полученный на Мальте; зарубежный прирост капитала обычно не облагается даже при переводе. Минимум 5 000 евро применяется, в частности, при зарубежном доходе от 35 000 евро с учётом исключений и зачётов. GRP/RP: 15% переведённого иностранного дохода, минимум 15 000 евро. Legal Notice 195/2026 с 1 января 2027 вводит единую программу: минимум 35 000 для Global и EU/EEA/Swiss Resident Status, 15 000 для пенсионеров и 20 000 для пенсионеров ООН; покупка жилья от 700 000 или аренда от 14 000 в год, статус на пять лет с продлением. Подходящие заявки до конца 2026 могут сохранить прежние правила до конца 2031 года."
+        },
+        {
+          "id": "compare-3",
+          "title": "Сравнение режимов в 2026 году",
+          "body": "Льготы не всегда охватывают одинаковые виды дохода. Таблица предполагает выполнение условий каждого режима.",
+          "table": {
+            "headers": [
+              "Критерий",
+              "Турция",
+              "Мальта"
+            ],
+            "rows": [
+              [
+                "Иностранный доход",
+                "Подходящий освобождён 20 лет",
+                "Налог при получении на Мальте"
+              ],
+              [
+                "Обычный минимум",
+                "Нет фиксированного платежа 20/D",
+                "5 000 € при применимости"
+              ],
+              [
+                "GRP/RP 2026",
+                "Не применяется",
+                "15%, минимум 15 000 €"
+              ],
+              [
+                "Новый ITP 2027",
+                "Не применяется",
+                "15%, минимум 35 000 €"
+              ],
+              [
+                "Оформление",
+                "Налоговый сертификат",
+                "Специальный статус и условия"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Пример налога инвестора на Мальте",
+          "body": "Без иностранных зачётов и местного дохода: налог не ниже 15% переведённого дохода и минимума соответствующей программы. Сравниваются прежняя программа 2026 и новая инвесторская 2027, не обычный non-dom.",
+          "table": {
+            "headers": [
+              "Переведённый доход",
+              "GRP/RP 2026",
+              "ITP инвестор 2027"
+            ],
+            "rows": [
+              [
+                "Перевод 50 000 €",
+                "15 000 €",
+                "35 000 €"
+              ],
+              [
+                "Перевод 150 000 €",
+                "22 500 €",
+                "35 000 €"
+              ],
+              [
+                "Перевод 300 000 €",
+                "45 000 €",
+                "45 000 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "До переезда",
+          "body": "Соберите документы о проживании, налогах, доходах и договорах по видам и источникам. Проверьте соглашения, удержание, обязательства компаний и страхование. ВНЖ не определяет налоговый статус. Разделяйте прежний капитал, доходы и прирост в банковских выписках. Важна квалификация переводов. Сравните новые минимумы и расходы до подачи."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Останется ли минимум 15 000 в 2027?",
+          "answer": "Для подходящих переходных участников да, новые инвесторы обычно платят минимум 35 000."
+        },
+        {
+          "question": "Все ли non-dom платят 15%?",
+          "answer": "Нет, специальные программы отличаются от обычного режима."
+        },
+        {
+          "question": "Достаточно ли сменить визу?",
+          "answer": "Нет, необходимо установить налоговое резидентство и выполнить условия конкретного режима."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "MTCA — Tax residence",
+          "href": "https://mtca.gov.mt/personal-tax/individual/tax-residence"
+        },
+        {
+          "label": "MTCA — Remittance guidance",
+          "href": "https://cfr.gov.mt/en/inlandrevenue/legal-technical/Documents/MTCA%20GUIDELINES%20ON%20THE%20REMITTANCE%20UNDER%20THE%20INCOME%20TAX.pdf"
+        },
+        {
+          "label": "Malta legislation — LN 195/2026",
+          "href": "https://legislation.mt/eli/ln/2026/195/eng/portalpdf"
+        },
+        {
+          "label": "PwC — ITP 2027",
+          "href": "https://www.pwc.com/mt/en/publications/tax-legal/new-individual-tax-programme-rules.html"
+        },
+        {
+          "label": "Deloitte — ITP 2026",
+          "href": "https://www.deloitte.com/mt/en/services/tax/perspectives/tax-alerts/2026/individual-tax-programme-rules-2026.html"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تركيا أم مالطا 2026–2027: non-dom و15% وحد 35 ألف يورو",
+      "metaDescription": "تغييرات مالطا 2027: نظام التحويل وحدود 5 و15 و35 ألف يورو والفترة الانتقالية حتى 2031 وإعفاء تركيا.",
+      "shortAnswer": "تميز مالطا بين non-dom العادي والبرامج الخاصة بنسبة 15%. من 1 يناير 2027 يرتفع الحد الأدنى السنوي لبرامج المستثمرين الجدد من 15 إلى 35 ألف يورو.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلة الاستكشافية والسكن والمواعيد مع مختصين ضريبيين مستقلين. اطلب دراسة مشروع الانتقال.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "تركيا: المادة 20/D",
+          "body": "القانون 7582 نافذ منذ 4 يونيو 2026 ويعفي الدخل الأجنبي المؤهل للمقيمين الجدد من الأفراد لمدة 20 عاماً. يشترط عدم وجود موطن وعدم الخضوع الضريبي عادة في تركيا خلال السنوات التقويمية الثلاث السابقة مع استثناءات لبعض دخل رأس المال. تقدم الشهادة قبل نهاية سنة الاستقرار أو نهاية فبراير التالي للاستقرار في نوفمبر وديسمبر. لا يوجد حد أدنى للاستثمار. لا تعفي المادة الدخل التركي أو الضرائب الأجنبية أو أرباح الشركات."
+        },
+        {
+          "id": "compare-2",
+          "title": "مالطا: التحويلات وإصلاح 2027",
+          "body": "يفرض النظام العادي ضريبة على الدخل المالطي والدخل الأجنبي المستلم في مالطا؛ تبقى مكاسب رأس المال الأجنبية عادة خارج الضريبة حتى عند تحويلها. ينطبق حد 5 آلاف يورو خصوصاً عند بلوغ الدخل الأجنبي 35 ألفاً مع الاستثناءات والائتمانات. يفرض GRP/RP القديم 15% على الدخل الأجنبي المحول بحد 15 ألفاً. يبدأ النظام الموحد وفق Legal Notice 195/2026 في يناير 2027: حد 35 ألفاً لفئتي Global وEU/EEA/Swiss، و15 ألفاً للمتقاعدين و20 ألفاً لمتقاعدي الأمم المتحدة؛ شراء مسكن من 700 ألف أو إيجار سنوي من 14 ألفاً، ووضع لخمس سنوات قابل للتجديد. قد تستمر القواعد القديمة للطلبات المؤهلة حتى نهاية 2026 إلى نهاية 2031."
+        },
+        {
+          "id": "compare-3",
+          "title": "مقارنة النظامين في 2026",
+          "body": "لا تشمل المزايا بالضرورة فئات الدخل نفسها. يفترض الجدول استيفاء شروط كل نظام.",
+          "table": {
+            "headers": [
+              "المعيار",
+              "تركيا",
+              "مالطا"
+            ],
+            "rows": [
+              [
+                "الدخل الأجنبي",
+                "المؤهل معفى 20 عاماً",
+                "ضريبة عند استلامه في مالطا"
+              ],
+              [
+                "الحد العادي",
+                "لا مبلغ مقطوع 20/D",
+                "5,000 يورو عند الانطباق"
+              ],
+              [
+                "GRP/RP 2026",
+                "لا ينطبق",
+                "15% بحد 15 ألفاً"
+              ],
+              [
+                "ITP للمستثمر 2027",
+                "لا ينطبق",
+                "15% بحد 35 ألفاً"
+              ],
+              [
+                "الأهلية",
+                "شهادة ضريبية",
+                "وضع خاص وشروط مستمرة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "مثال ضريبة برامج المستثمرين",
+          "body": "دون ائتمان ضريبي أجنبي أو دخل محلي: الضريبة هي الأعلى بين 15% من الدخل الأجنبي المحول والحد الأدنى للبرنامج. نقارن البرنامج القديم 2026 والجديد 2027 لا النظام العادي.",
+          "table": {
+            "headers": [
+              "الدخل المحول",
+              "GRP/RP 2026",
+              "ITP المستثمر 2027"
+            ],
+            "rows": [
+              [
+                "تحويل 50,000 يورو",
+                "15,000 يورو",
+                "35,000 يورو"
+              ],
+              [
+                "تحويل 150,000 يورو",
+                "22,500 يورو",
+                "35,000 يورو"
+              ],
+              [
+                "تحويل 300,000 يورو",
+                "45,000 يورو",
+                "45,000 يورو"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "قبل الانتقال",
+          "body": "احتفظ بإثباتات الإقامة والضرائب والكشوف والعقود بحسب نوع الدخل ومصدره. ادرس الاتفاقيات والاقتطاعات والتزامات الشركات والتأمين الاجتماعي. لا تحدد الإقامة الإدارية الموطن الضريبي. افصل رأس المال القديم والدخل والمكاسب في الكشوف المصرفية. تصنيف التحويلات أساسي. قارن الحدود الجديدة وتكاليف الدخول قبل الطلب."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يبقى حد 15 ألفاً في 2027؟",
+          "answer": "نعم لبعض الحالات الانتقالية، أما المستثمر الجديد فحده عادة 35 ألفاً."
+        },
+        {
+          "question": "هل يدفع كل non-dom نسبة 15%؟",
+          "answer": "لا، تختلف البرامج الخاصة عن النظام العادي."
+        },
+        {
+          "question": "هل يكفي تغيير التأشيرة؟",
+          "answer": "لا، يجب إثبات الإقامة الضريبية واستيفاء شروط النظام."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "MTCA — Tax residence",
+          "href": "https://mtca.gov.mt/personal-tax/individual/tax-residence"
+        },
+        {
+          "label": "MTCA — Remittance guidance",
+          "href": "https://cfr.gov.mt/en/inlandrevenue/legal-technical/Documents/MTCA%20GUIDELINES%20ON%20THE%20REMITTANCE%20UNDER%20THE%20INCOME%20TAX.pdf"
+        },
+        {
+          "label": "Malta legislation — LN 195/2026",
+          "href": "https://legislation.mt/eli/ln/2026/195/eng/portalpdf"
+        },
+        {
+          "label": "PwC — ITP 2027",
+          "href": "https://www.pwc.com/mt/en/publications/tax-legal/new-individual-tax-programme-rules.html"
+        },
+        {
+          "label": "Deloitte — ITP 2026",
+          "href": "https://www.deloitte.com/mt/en/services/tax/perspectives/tax-alerts/2026/individual-tax-programme-rules-2026.html"
+        }
+      ]
+    }
+  },
+  "turkey-vs-andorra-tax": {
+    "fr": {
+      "title": "Turquie ou Andorre 2026 : IRPF à 10 % et exonération des revenus étrangers",
+      "metaDescription": "Comparez la résidence fiscale andorrane, les seuils IRPF 24 000 et 40 000 €, le taux de 10 % et l’exonération turque de 20 ans.",
+      "shortAnswer": "Andorre impose en principe les revenus mondiaux des résidents à un taux général de 10 %, avec franchises et bonifications. La Turquie prévoit une exonération ciblée des revenus étrangers éligibles.",
+      "bosphorasHelp": "Bosphoras organise votre séjour de découverte, votre recherche de logement et des rendez-vous avec des fiscalistes indépendants. Demandez une étude de votre projet de transfert.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Le régime turc : article 20/D",
+          "body": "La loi 7582, en vigueur depuis le 4 juin 2026, exonère pendant 20 ans les revenus étrangers admissibles des personnes physiques nouvellement résidentes. Les trois années civiles précédentes doivent être sans domicile ni, en principe, assujettissement fiscal turc, avec exceptions pour certains revenus du capital. Le certificat est demandé avant la fin de l'année d'établissement, ou fin février suivante pour novembre et décembre. Aucun investissement minimum n'est imposé par 20/D. Les revenus turcs, impôts étrangers et bénéfices de sociétés ne sont pas exonérés par cette mesure."
+        },
+        {
+          "id": "compare-2",
+          "title": "Andorre : résidence et fiscalité générale",
+          "body": "L'article 8 de la loi 5/2014 retient plus de 183 jours dans l'année civile ou le centre principal des activités ou intérêts économiques. Une présomption familiale peut s'appliquer. Le titre de séjour est distinct de la résidence fiscale. Sur certains revenus de base générale, le minimum personnel est de 24 000 € et la bonification maximale de 800 € produit un taux équivalent de 5 % sur la tranche de 24 000 à 40 000 €. Le taux général est de 10 %. Pour la base d'épargne, les premiers 3 000 € sont exonérés, sous les règles applicables. Déclaration du 1er avril au 30 septembre de l'année suivante."
+        },
+        {
+          "id": "compare-3",
+          "title": "Comparer les régimes en 2026",
+          "body": "Les avantages ne portent pas toujours sur les mêmes catégories de revenu. Le tableau suppose que les conditions de chaque régime sont remplies.",
+          "table": {
+            "headers": [
+              "Critère",
+              "Turquie",
+              "Andorre"
+            ],
+            "rows": [
+              [
+                "Assiette",
+                "Éligible : revenus étrangers exonérés",
+                "En principe revenus mondiaux"
+              ],
+              [
+                "Durée",
+                "20 ans",
+                "Régime ordinaire sans terme fixe"
+              ],
+              [
+                "Taux",
+                "Revenus locaux : droit commun",
+                "10 % général"
+              ],
+              [
+                "Résidence",
+                "Domicile ou séjour selon droit turc",
+                "183 jours dépassés ou centre économique"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Simulation IRPF andorran sur revenu général admissible",
+          "body": "Personne seule, revenu net général éligible au minimum de 24 000 € et à la bonification maximale de 800 €, sans autres réductions ni cotisations. Il ne s'agit pas d'une simulation des dividendes ou de l'épargne.",
+          "table": {
+            "headers": [
+              "Revenu net général",
+              "IRPF illustratif"
+            ],
+            "rows": [
+              [
+                "24 000 €",
+                "0 €"
+              ],
+              [
+                "40 000 €",
+                "800 €"
+              ],
+              [
+                "60 000 €",
+                "2 800 €"
+              ],
+              [
+                "100 000 €",
+                "6 800 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "Vérifier avant de déménager",
+          "body": "Conservez les preuves de résidence, les avis fiscaux, les relevés et contrats ventilés par nature et source. Comparez les conventions, retenues à la source, obligations de société et couverture sociale. Le titre de séjour ne détermine pas le domicile fiscal. Comparez les cotisations sociales, le traitement des dividendes et des plus-values, les conventions et les obligations de séjour. Le taux général ne suffit pas à comparer tous les profils."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Le taux de 10 % s'applique-t-il au revenu brut entier ?",
+          "answer": "Non, l'assiette, les franchises et bonifications dépendent de la catégorie."
+        },
+        {
+          "question": "183 jours sont-ils toujours nécessaires ?",
+          "answer": "Le centre des intérêts économiques peut également établir la résidence fiscale."
+        },
+        {
+          "question": "Le changement de visa suffit-il ?",
+          "answer": "Non, il faut établir la résidence fiscale et satisfaire les conditions propres à chaque dispositif."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "Govern d'Andorra — IRPF rates",
+          "href": "https://www.govern.ad/ca/l/4191537"
+        },
+        {
+          "label": "Govern d'Andorra — tax residence",
+          "href": "https://www.govern.ad/ca/l/4191384"
+        },
+        {
+          "label": "Llei 5/2014",
+          "href": "https://www.portaljuridicandorra.ad/L2014005_0"
+        },
+        {
+          "label": "Govern d'Andorra — IRPF",
+          "href": "https://www.govern.ad/ca/impost-sobre-la-renda-de-les-persones-f%C3%ADsiques"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey vs Andorra 2026: 10% income tax and foreign-income relief",
+      "metaDescription": "Compare Andorra’s residence rules, €24,000 and €40,000 thresholds, 10% general rate and Turkey’s 20-year exemption.",
+      "shortAnswer": "Andorra generally taxes residents on worldwide income at a 10% general rate with allowances and reductions. Turkey offers targeted foreign-income relief.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing and appointments with independent tax specialists. Request a relocation assessment.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Turkey: Article 20/D",
+          "body": "Law 7582 has been in force since 4 June 2026. It exempts qualifying foreign income of eligible new individual residents for 20 years. The three preceding calendar years must have no Turkish domicile or generally Turkish tax liability, subject to exceptions for certain capital income. Apply for a certificate by settlement year-end, or the following February for November and December arrivals. Article 20/D imposes no minimum investment. Turkish income, foreign taxes and company profits are not exempted by this measure."
+        },
+        {
+          "id": "compare-2",
+          "title": "Andorra: residence and general taxation",
+          "body": "Article 8 of Law 5/2014 tests more than 183 days in a calendar year or the main centre of economic activities or interests. A family presumption can apply. Immigration residence is separate. For certain general-base income the €24,000 personal allowance and maximum €800 rebate create an effective 5% band between €24,000 and €40,000. The general rate is 10%. The savings base has a €3,000 exempt amount under applicable rules. Returns are filed 1 April to 30 September of the following year."
+        },
+        {
+          "id": "compare-3",
+          "title": "Compare regimes in 2026",
+          "body": "Benefits do not necessarily cover the same income categories. The table assumes eligibility for each respective regime.",
+          "table": {
+            "headers": [
+              "Criterion",
+              "Turkey",
+              "Andorra"
+            ],
+            "rows": [
+              [
+                "Scope",
+                "Eligible foreign income exempt",
+                "Generally worldwide income"
+              ],
+              [
+                "Duration",
+                "20 years",
+                "Ordinary regime without fixed term"
+              ],
+              [
+                "Rate",
+                "Domestic income: ordinary rules",
+                "10% general"
+              ],
+              [
+                "Residence",
+                "Domicile or presence under Turkish law",
+                "Over 183 days or economic centre"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Illustrative Andorran general income tax",
+          "body": "Single person with net general income eligible for the €24,000 allowance and €800 maximum rebate, no other deductions or contributions. Not a dividend or savings-income model.",
+          "table": {
+            "headers": [
+              "Net general income",
+              "Illustrative IRPF"
+            ],
+            "rows": [
+              [
+                "€24,000",
+                "€0"
+              ],
+              [
+                "€40,000",
+                "€800"
+              ],
+              [
+                "€60,000",
+                "€2,800"
+              ],
+              [
+                "€100,000",
+                "€6,800"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "Before relocating",
+          "body": "Retain residence evidence, tax assessments, statements and contracts classified by income type and source. Review treaties, withholding, corporate obligations and social insurance. Immigration residence does not establish tax domicile. Compare social contributions, dividends, gains, treaties and residence requirements. The general rate does not determine every investor's total liability."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does 10% apply to all gross income?",
+          "answer": "No, the base, allowances and rebates depend on income type."
+        },
+        {
+          "question": "Are 183 days always required?",
+          "answer": "The centre of economic interests can also establish tax residence."
+        },
+        {
+          "question": "Is a new visa sufficient?",
+          "answer": "No; establish tax residence and satisfy the regime-specific conditions."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "Govern d'Andorra — IRPF rates",
+          "href": "https://www.govern.ad/ca/l/4191537"
+        },
+        {
+          "label": "Govern d'Andorra — tax residence",
+          "href": "https://www.govern.ad/ca/l/4191384"
+        },
+        {
+          "label": "Llei 5/2014",
+          "href": "https://www.portaljuridicandorra.ad/L2014005_0"
+        },
+        {
+          "label": "Govern d'Andorra — IRPF",
+          "href": "https://www.govern.ad/ca/impost-sobre-la-renda-de-les-persones-f%C3%ADsiques"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Турция или Андорра 2026: IRPF 10% и иностранные доходы",
+      "metaDescription": "Сравните резидентство Андорры, пороги 24 000 и 40 000 евро, общую ставку 10% и льготу Турции на 20 лет.",
+      "shortAnswer": "Андорра обычно облагает мировые доходы резидентов по общей ставке 10% с вычетами и льготами. Турция освобождает подходящий иностранный доход.",
+      "bosphorasHelp": "Bosphoras организует ознакомительные поездки, подбор жилья и встречи с независимыми налоговыми специалистами. Запросите оценку переезда.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "Турция: статья 20/D",
+          "body": "Закон № 7582 действует с 4 июня 2026 года и освобождает подходящие иностранные доходы новых резидентов-физлиц на 20 лет. В три предыдущих календарных года не должно быть места жительства и, как правило, налоговых обязательств в Турции, кроме отдельных доходов капитала. Сертификат запрашивается до конца года поселения, а при поселении в ноябре или декабре — до конца следующего февраля. Минимальная инвестиция не требуется. Турецкие доходы, иностранные налоги и прибыль компаний не освобождаются этой нормой."
+        },
+        {
+          "id": "compare-2",
+          "title": "Андорра: резидентство и налог",
+          "body": "Статья 8 закона 5/2014 учитывает более 183 дней в календарном году или главный центр экономической деятельности и интересов. Возможна семейная презумпция. Миграционный статус отличается от налогового. Для отдельных общих доходов минимум 24 000 евро и максимальная скидка 800 евро дают эквивалентную ставку 5% на часть от 24 000 до 40 000. Общая ставка 10%. Для сберегательной базы первые 3 000 евро освобождены по применимым правилам. Декларация с 1 апреля по 30 сентября следующего года."
+        },
+        {
+          "id": "compare-3",
+          "title": "Сравнение режимов в 2026 году",
+          "body": "Льготы не всегда охватывают одинаковые виды дохода. Таблица предполагает выполнение условий каждого режима.",
+          "table": {
+            "headers": [
+              "Критерий",
+              "Турция",
+              "Андорра"
+            ],
+            "rows": [
+              [
+                "Охват",
+                "Подходящие зарубежные освобождены",
+                "Обычно мировой доход"
+              ],
+              [
+                "Срок",
+                "20 лет",
+                "Общий режим без срока"
+              ],
+              [
+                "Ставка",
+                "Местные доходы по общим правилам",
+                "Общая 10%"
+              ],
+              [
+                "Резидентство",
+                "Место жительства или пребывание",
+                "Более 183 дней или экономический центр"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "Пример IRPF на общий доход",
+          "body": "Один налогоплательщик, чистый общий доход с минимумом 24 000 евро и скидкой до 800 евро, без иных вычетов и взносов. Это не расчёт дивидендов или сбережений.",
+          "table": {
+            "headers": [
+              "Чистый общий доход",
+              "Пример IRPF"
+            ],
+            "rows": [
+              [
+                "24 000 €",
+                "0 €"
+              ],
+              [
+                "40 000 €",
+                "800 €"
+              ],
+              [
+                "60 000 €",
+                "2 800 €"
+              ],
+              [
+                "100 000 €",
+                "6 800 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "До переезда",
+          "body": "Соберите документы о проживании, налогах, доходах и договорах по видам и источникам. Проверьте соглашения, удержание, обязательства компаний и страхование. ВНЖ не определяет налоговый статус. Сравните взносы, дивиденды, прирост, соглашения и условия проживания. Общая ставка не определяет налог любого инвестора."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "10% начисляются на весь валовой доход?",
+          "answer": "Нет, база и льготы зависят от категории."
+        },
+        {
+          "question": "Всегда ли необходимо 183 дня?",
+          "answer": "Центр экономических интересов также может установить резидентство."
+        },
+        {
+          "question": "Достаточно ли сменить визу?",
+          "answer": "Нет, необходимо установить налоговое резидентство и выполнить условия конкретного режима."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "Govern d'Andorra — IRPF rates",
+          "href": "https://www.govern.ad/ca/l/4191537"
+        },
+        {
+          "label": "Govern d'Andorra — tax residence",
+          "href": "https://www.govern.ad/ca/l/4191384"
+        },
+        {
+          "label": "Llei 5/2014",
+          "href": "https://www.portaljuridicandorra.ad/L2014005_0"
+        },
+        {
+          "label": "Govern d'Andorra — IRPF",
+          "href": "https://www.govern.ad/ca/impost-sobre-la-renda-de-les-persones-f%C3%ADsiques"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تركيا أم أندورا 2026: ضريبة 10% وإعفاء الدخل الأجنبي",
+      "metaDescription": "قارن الإقامة الضريبية في أندورا وحدي 24 و40 ألف يورو والمعدل العام 10% وإعفاء تركيا لعشرين عاماً.",
+      "shortAnswer": "تفرض أندورا عادة ضريبة على الدخل العالمي للمقيم بنسبة عامة 10% مع إعفاءات وتخفيضات، بينما تعفي تركيا الدخل الأجنبي المؤهل.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلة الاستكشافية والسكن والمواعيد مع مختصين ضريبيين مستقلين. اطلب دراسة مشروع الانتقال.",
+      "sections": [
+        {
+          "id": "compare-1",
+          "title": "تركيا: المادة 20/D",
+          "body": "القانون 7582 نافذ منذ 4 يونيو 2026 ويعفي الدخل الأجنبي المؤهل للمقيمين الجدد من الأفراد لمدة 20 عاماً. يشترط عدم وجود موطن وعدم الخضوع الضريبي عادة في تركيا خلال السنوات التقويمية الثلاث السابقة مع استثناءات لبعض دخل رأس المال. تقدم الشهادة قبل نهاية سنة الاستقرار أو نهاية فبراير التالي للاستقرار في نوفمبر وديسمبر. لا يوجد حد أدنى للاستثمار. لا تعفي المادة الدخل التركي أو الضرائب الأجنبية أو أرباح الشركات."
+        },
+        {
+          "id": "compare-2",
+          "title": "أندورا: الإقامة والضريبة العامة",
+          "body": "تدرس المادة 8 من القانون 5/2014 البقاء أكثر من 183 يوماً خلال السنة التقويمية أو المركز الرئيسي للنشاط والمصالح الاقتصادية. قد ينطبق افتراض عائلي. الإقامة الإدارية منفصلة. لبعض الدخل العام إعفاء شخصي 24 ألف يورو وتخفيض أقصاه 800 يورو ينتج معدل 5% على الجزء بين 24 و40 ألفاً. المعدل العام 10%. يعفى أول 3 آلاف يورو من وعاء الادخار وفق القواعد. يقدم الإقرار بين 1 أبريل و30 سبتمبر من السنة التالية."
+        },
+        {
+          "id": "compare-3",
+          "title": "مقارنة النظامين في 2026",
+          "body": "لا تشمل المزايا بالضرورة فئات الدخل نفسها. يفترض الجدول استيفاء شروط كل نظام.",
+          "table": {
+            "headers": [
+              "المعيار",
+              "تركيا",
+              "أندورا"
+            ],
+            "rows": [
+              [
+                "النطاق",
+                "الدخل الأجنبي المؤهل معفى",
+                "الدخل العالمي عادة"
+              ],
+              [
+                "المدة",
+                "20 عاماً",
+                "نظام عادي بلا مدة ثابتة"
+              ],
+              [
+                "المعدل",
+                "الدخل المحلي وفق القواعد العامة",
+                "10% عام"
+              ],
+              [
+                "الإقامة",
+                "الموطن أو البقاء وفق القانون التركي",
+                "أكثر من 183 يوماً أو مركز المصالح"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-4",
+          "title": "مثال ضريبة الدخل العام في أندورا",
+          "body": "فرد بدخل عام صاف مؤهل لإعفاء 24 ألف يورو وتخفيض أقصاه 800 دون خصومات أو اشتراكات أخرى. لا يمثل المثال التوزيعات أو دخل الادخار.",
+          "table": {
+            "headers": [
+              "الدخل العام الصافي",
+              "ضريبة توضيحية"
+            ],
+            "rows": [
+              [
+                "24,000 يورو",
+                "0 يورو"
+              ],
+              [
+                "40,000 يورو",
+                "800 يورو"
+              ],
+              [
+                "60,000 يورو",
+                "2,800 يورو"
+              ],
+              [
+                "100,000 يورو",
+                "6,800 يورو"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "compare-5",
+          "title": "قبل الانتقال",
+          "body": "احتفظ بإثباتات الإقامة والضرائب والكشوف والعقود بحسب نوع الدخل ومصدره. ادرس الاتفاقيات والاقتطاعات والتزامات الشركات والتأمين الاجتماعي. لا تحدد الإقامة الإدارية الموطن الضريبي. قارن الاشتراكات والتوزيعات والمكاسب والاتفاقيات وشروط الإقامة. لا يحدد المعدل العام ضريبة كل مستثمر."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يطبق 10% على كل الدخل الإجمالي؟",
+          "answer": "لا، يختلف الوعاء والإعفاءات بحسب الفئة."
+        },
+        {
+          "question": "هل يلزم دائماً 183 يوماً؟",
+          "answer": "قد يثبت مركز المصالح الاقتصادية الإقامة الضريبية أيضاً."
+        },
+        {
+          "question": "هل يكفي تغيير التأشيرة؟",
+          "answer": "لا، يجب إثبات الإقامة الضريبية واستيفاء شروط النظام."
+        }
+      ],
+      "sources": [
+        {
+          "label": "GİB — 20/D",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "GİB — 333",
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874"
+        },
+        {
+          "label": "Govern d'Andorra — IRPF rates",
+          "href": "https://www.govern.ad/ca/l/4191537"
+        },
+        {
+          "label": "Govern d'Andorra — tax residence",
+          "href": "https://www.govern.ad/ca/l/4191384"
+        },
+        {
+          "label": "Llei 5/2014",
+          "href": "https://www.portaljuridicandorra.ad/L2014005_0"
+        },
+        {
+          "label": "Govern d'Andorra — IRPF",
+          "href": "https://www.govern.ad/ca/impost-sobre-la-renda-de-les-persones-f%C3%ADsiques"
+        }
+      ]
+    }
   }
 };

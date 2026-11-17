@@ -222,6 +222,80 @@ const charts: Record<string, ChartSpec | undefined> = {
         ]
       }
     ]
+  },
+  "turkey-vs-monaco-tax": {
+    "section": "compare-4",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          36000,
+          72000,
+          120000
+        ]
+      }
+    ]
+  },
+  "turkey-vs-switzerland-tax": {
+    "section": "compare-4",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          435000,
+          504000,
+          840000
+        ]
+      }
+    ]
+  },
+  "turkey-vs-uk-non-dom": {
+    "section": "compare-4",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          4,
+          3,
+          1
+        ]
+      }
+    ]
+  },
+  "turkey-vs-malta-non-dom": {
+    "section": "compare-4",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          15000,
+          22500,
+          45000
+        ]
+      },
+      {
+        "column": 2,
+        "values": [
+          35000,
+          35000,
+          45000
+        ]
+      }
+    ]
+  },
+  "turkey-vs-andorra-tax": {
+    "section": "compare-4",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          0,
+          800,
+          2800,
+          6800
+        ]
+      }
+    ]
   }
 };
 const captions: Record<Locale,string> = { fr: 'Visualisation des montants du tableau', en: 'Visual comparison of the amounts above', ru: 'Наглядное сравнение сумм из таблицы', ar: 'مقارنة مرئية للمبالغ في الجدول' };
