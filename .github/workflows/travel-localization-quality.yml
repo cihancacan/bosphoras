@@ -2,7 +2,7 @@ name: Localized travel editorial quality
 on:
   push:
     branches: [feature/travel-guides-ru-ar]
-    paths: ['.github/workflows/travel-localization-quality.yml','scripts/check-edited-travel-localizations.cjs','scripts/check-travel-localized-*.cjs','data/travel/localized/**','data/travel/localizedGuides.ts','components/travel/LocalizedFeaturedCityGuide.tsx','components/travel/TravelPages.tsx','data/travel/guideIndexation.ts']
+    paths: ['.github/workflows/travel-localization-quality.yml','scripts/check-edited-travel-localizations.cjs','scripts/check-travel-localized-*.cjs','data/travel/localized/**','data/travel/localizedGuides.ts','components/travel/LocalizedFeaturedCityGuide.tsx','components/travel/TravelPages.tsx','data/travel/guideIndexation.ts','components/Investment*.tsx','components/InternationalInvestmentPage.tsx','lib/investmentPortalI18n.ts','data/investmentVentureTranslations.ts','app/ru/investment/**','app/ar/investment/**','scripts/check-investment-localizations.cjs']
 permissions:
   contents: read
 jobs:
@@ -17,4 +17,5 @@ jobs:
       - run: node -r ./scripts/register-ts.cjs scripts/check-edited-travel-localizations.cjs
       - run: node -r ./scripts/register-ts.cjs scripts/check-travel-localized-seo.cjs
       - run: node -r ./scripts/register-ts.cjs scripts/check-travel-localized-render.cjs
+      - run: node -r ./scripts/register-ts.cjs scripts/check-investment-localizations.cjs
       - run: npm run typecheck
