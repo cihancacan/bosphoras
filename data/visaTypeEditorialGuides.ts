@@ -2055,5 +2055,1907 @@ export const visaTypeEditorialGuides: Record<string, Record<Locale, EditorialGui
         }
       ]
     }
+  },
+  "turkey-work-visa": {
+    "fr": {
+      "title": "Visa de travail Turquie 2026 : permis, employeur, prix et délais",
+      "metaDescription": "Travail en Turquie : procédure consulaire, référence à 16 chiffres, permis d’un an, frais 2026 de 12 574,90 TL et renouvellement.",
+      "shortAnswer": "Pour exercer un emploi en Turquie, un étranger doit généralement obtenir un permis de travail ou relever d’une exemption applicable. Une entrée touristique ou un ikamet ordinaire ne suffit pas.",
+      "bosphorasHelp": "Bosphoras coordonne vos démarches pratiques, la recherche de logement et les rendez-vous avec des professionnels indépendants adaptés à votre situation. Les décisions relèvent des autorités.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Postuler depuis l’étranger",
+          "body": "Présentez votre passeport, formulaire et lettre d’employeur à la représentation turque de votre pays de citoyenneté ou résidence légale. Le consulat remet une référence à 16 chiffres. Transmettez-la immédiatement à votre employeur en Turquie, qui dépose le dossier électronique dans les dix jours ouvrables suivant votre demande consulaire."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Demander depuis la Turquie",
+          "body": "L’employeur peut généralement déposer via e-Devlet si vous possédez un titre de séjour délivré pour au moins six mois et toujours valable. Des exceptions peuvent être prévues par l’administration. Préparez contrat, diplôme si requis, photographie et justificatifs de l’entreprise. Les critères de recrutement et de rémunération dépendent notamment de la profession."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Durées et frais officiels 2026",
+          "body": "Le ministère examine normalement un dossier complet dans les 30 jours. Le premier permis salarié est généralement limité à un an, puis à deux et trois ans lors des prolongations auprès du même employeur, selon conditions. Les droits et la carte sont distincts et doivent être payés dans les 30 jours de notification.",
+          "table": {
+            "headers": [
+              "Poste",
+              "Montant 2026"
+            ],
+            "rows": [
+              [
+                "Permis jusqu’à 1 an",
+                "12 574,90 TL"
+              ],
+              [
+                "Plus d’un an à 2 ans",
+                "25 149,80 TL"
+              ],
+              [
+                "Plus de 2 ans à 3 ans",
+                "37 724,70 TL"
+              ],
+              [
+                "Carte",
+                "964 TL"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Entrer et commencer son activité",
+          "body": "Après approbation depuis l’étranger, payez les frais indiqués, obtenez le visa consulaire et entrez en Turquie. Enregistrez l’adresse dans les 20 jours après l’entrée. L’activité doit commencer dans le mois suivant l’arrivée et au plus tard six mois après le début de validité du permis, avec les formalités sociales nécessaires."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Renouvellement, changement et famille",
+          "body": "Renouvelez au cours des 60 derniers jours avant expiration. Changer d’employeur implique en principe une nouvelle demande. Le permis de travail valide tient lieu de résidence pendant sa validité ; les proches n’acquièrent pas automatiquement un droit au travail ni un titre familial."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Puis-je travailler avec un e-Visa ?",
+          "answer": "Non, le e-Visa touristique ou commercial ne vaut pas permis de travail."
+        },
+        {
+          "question": "Qui dépose le dossier ?",
+          "answer": "L’employeur réalise la demande électronique pour un salarié."
+        },
+        {
+          "question": "Le permis d’un an coûte-t-il seulement 12 574,90 TL ?",
+          "answer": "Il faut ajouter 964 TL pour le document, ainsi que les frais consulaires éventuels."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Ministère turc des Affaires étrangères"
+        },
+        {
+          "href": "https://csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit/",
+          "label": "Ministère du Travail : démarches"
+        },
+        {
+          "href": "https://www.calismaizni.gov.tr/",
+          "label": "Portail des permis de travail"
+        },
+        {
+          "href": "https://csgb.gov.tr/uigm/en/general-information/harc-ve-degerli-k%C3%A2git-bedelinin-odenmesi/",
+          "label": "Tarifs des permis de travail 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de titres de séjour"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey work visa 2026: permits, employer, fees & deadlines",
+      "metaDescription": "Work legally in Turkey: 16-digit consular reference, employer application, 30-day processing, 2026 fees and renewal requirements.",
+      "shortAnswer": "Foreigners generally need a work permit or an applicable exemption to take employment in Turkey. Tourist entry or an ordinary residence permit is insufficient.",
+      "bosphorasHelp": "Bosphoras coordinates practical relocation arrangements, housing and appointments with independent specialists suited to your circumstances. Decisions remain with public authorities.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Apply from abroad",
+          "body": "Present your passport, application and employer letter to the Turkish mission in your country of citizenship or lawful residence. Receive a 16-digit reference number and send it to your Turkish employer immediately; the employer submits the online application within ten working days of your consular application."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Apply from inside Turkey",
+          "body": "An employer can generally apply electronically if you have a still-valid residence permit originally issued for at least six months. Exceptions may apply. Prepare the contract, photograph, qualifications where required and company evidence. Hiring and salary criteria depend partly on the occupation."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "2026 official fees and permit duration",
+          "body": "A complete application is normally assessed within 30 days. The first employment permit is generally limited to one year, followed by extensions of up to two and three years with the same employer, subject to conditions. Pay the separate document and permit charges within 30 days of notice.",
+          "table": {
+            "headers": [
+              "Item",
+              "2026 fee"
+            ],
+            "rows": [
+              [
+                "Up to one year",
+                "TRY 12,574.90"
+              ],
+              [
+                "Over one to two years",
+                "TRY 25,149.80"
+              ],
+              [
+                "Over two to three years",
+                "TRY 37,724.70"
+              ],
+              [
+                "Document",
+                "TRY 964"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Enter and begin employment",
+          "body": "After overseas approval, pay the notified charges, collect the consular visa and enter Turkey. Register your address within 20 days of arrival. Start work within one month of entry and no later than six months from the permit's start, completing social security obligations."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Renewals, new employers and relatives",
+          "body": "Apply for renewal within the final 60 days. A different employer generally requires a new initial application. A valid work permit serves as residence authorisation, but relatives do not automatically gain a family permit or permission to work."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I work on an e-Visa?",
+          "answer": "No; tourist or commercial e-Visas do not authorise employment."
+        },
+        {
+          "question": "Who files the application?",
+          "answer": "The employer submits the online employment application."
+        },
+        {
+          "question": "Is TRY 12,574.90 the entire cost?",
+          "answer": "No; add TRY 964 for the document and any applicable consular charges."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Turkish foreign ministry"
+        },
+        {
+          "href": "https://csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit/",
+          "label": "Ministry of Labour: application procedure"
+        },
+        {
+          "href": "https://www.calismaizni.gov.tr/",
+          "label": "Work permit portal"
+        },
+        {
+          "href": "https://csgb.gov.tr/uigm/en/general-information/harc-ve-degerli-k%C3%A2git-bedelinin-odenmesi/",
+          "label": "2026 work permit fees"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Рабочая виза в Турцию 2026: разрешение, работодатель и стоимость",
+      "metaDescription": "Как оформить разрешение на работу: номер из 16 цифр, заявление работодателя, срок рассмотрения и официальные сборы 2026 года.",
+      "shortAnswer": "Для трудоустройства иностранцу обычно требуется разрешение на работу либо предусмотренное законом освобождение. Туристический въезд и обычный ВНЖ не заменяют разрешение.",
+      "bosphorasHelp": "Bosphoras помогает организовать переезд, поиск жилья и встречи с независимыми специалистами с учётом вашей ситуации. Решения принимают государственные органы.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Подача из-за границы",
+          "body": "Подайте паспорт, анкету и письмо работодателя в турецкое представительство страны гражданства или законного проживания. Получите 16-значный номер и сразу передайте его работодателю в Турции. Работодатель подаёт электронное заявление в течение десяти рабочих дней после консульской подачи."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Подача внутри Турции",
+          "body": "Работодатель обычно может подать заявление через e-Devlet, если у вас есть действующий ВНЖ, выданный на срок не менее шести месяцев. Возможны исключения. Подготовьте договор, фотографию, документы об образовании при необходимости и сведения о компании. Требования к зарплате и найму зависят от профессии."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Сроки и сборы в 2026 году",
+          "body": "Полное заявление обычно рассматривается до 30 дней. Первое разрешение на работу по найму обычно выдаётся до года; последующие продления у того же работодателя — до двух и трёх лет при соблюдении условий. Сборы за разрешение и документ оплачиваются отдельно в течение 30 дней после уведомления.",
+          "table": {
+            "headers": [
+              "Позиция",
+              "Сбор 2026"
+            ],
+            "rows": [
+              [
+                "До одного года",
+                "12 574,90 лиры"
+              ],
+              [
+                "Свыше года до двух лет",
+                "25 149,80 лиры"
+              ],
+              [
+                "Свыше двух до трёх лет",
+                "37 724,70 лиры"
+              ],
+              [
+                "Карточка",
+                "964 лиры"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Въезд и начало работы",
+          "body": "После одобрения заявки из-за рубежа оплатите указанные сборы, получите консульскую визу и въезжайте в страну. Зарегистрируйте адрес в течение 20 дней. Приступите к работе в течение месяца после въезда и не позднее шести месяцев от начала действия разрешения, выполнив требования социального страхования."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Продление, смена работодателя и семья",
+          "body": "Подавайте на продление в последние 60 дней. Смена работодателя обычно требует нового заявления. Действующее разрешение на работу заменяет ВНЖ на срок своего действия, но не даёт родственникам автоматического права на работу или семейный ВНЖ."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли работать по e-Visa?",
+          "answer": "Нет, туристическая или коммерческая электронная виза не разрешает трудоустройство."
+        },
+        {
+          "question": "Кто подаёт заявление?",
+          "answer": "Электронную заявку на наёмного работника подаёт работодатель."
+        },
+        {
+          "question": "Вся стоимость — 12 574,90 лиры?",
+          "answer": "Нет, дополнительно оплачивается карточка за 964 лиры и возможные консульские сборы."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "МИД Турции"
+        },
+        {
+          "href": "https://csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit/",
+          "label": "Министерство труда: оформление"
+        },
+        {
+          "href": "https://www.calismaizni.gov.tr/",
+          "label": "Портал разрешений на работу"
+        },
+        {
+          "href": "https://csgb.gov.tr/uigm/en/general-information/harc-ve-degerli-k%C3%A2git-bedelinin-odenmesi/",
+          "label": "Сборы за разрешения на работу 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تأشيرة العمل في تركيا 2026: التصريح وصاحب العمل والرسوم",
+      "metaDescription": "دليل تصريح العمل في تركيا والرقم القنصلي المكون من 16 خانة وطلب صاحب العمل والرسوم الرسمية ومواعيد التجديد.",
+      "shortAnswer": "يتطلب التوظيف في تركيا عادة تصريح عمل للأجنبي أو إعفاء قانونياً من التصريح. لا يكفي الدخول السياحي أو تصريح الإقامة العادي.",
+      "bosphorasHelp": "تنسق Bosphoras ترتيبات الانتقال والبحث عن السكن والمواعيد مع مختصين مستقلين بحسب حالتك، وتبقى القرارات من اختصاص السلطات.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "التقديم من الخارج",
+          "body": "قدم الجواز والاستمارة وخطاب صاحب العمل إلى البعثة التركية في بلد جنسيتك أو إقامتك القانونية. تحصل على رقم مرجعي من 16 خانة وترسله فوراً إلى صاحب العمل في تركيا، الذي يقدم الطلب الإلكتروني خلال عشرة أيام عمل من التقديم القنصلي."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "التقديم من داخل تركيا",
+          "body": "يمكن لصاحب العمل عادة تقديم الطلب عبر الحكومة الإلكترونية إذا كان لديك تصريح إقامة سار صدر لمدة ستة أشهر على الأقل. قد توجد استثناءات. جهز العقد والصورة والمؤهلات عند طلبها ووثائق الشركة. تختلف معايير التوظيف والأجر بحسب المهنة."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "الرسوم والمدة في 2026",
+          "body": "يدرس الملف المكتمل عادة خلال 30 يوماً. يصدر تصريح الموظف الأول عادة لمدة سنة على الأكثر، ويمكن تجديده لسنتين ثم ثلاث لدى صاحب العمل نفسه وفق الشروط. تدفع رسوم التصريح والوثيقة منفصلة خلال 30 يوماً من الإخطار.",
+          "table": {
+            "headers": [
+              "البند",
+              "رسوم 2026"
+            ],
+            "rows": [
+              [
+                "حتى سنة",
+                "12,574.90 ليرة"
+              ],
+              [
+                "أكثر من سنة وحتى سنتين",
+                "25,149.80 ليرة"
+              ],
+              [
+                "أكثر من سنتين وحتى ثلاث",
+                "37,724.70 ليرة"
+              ],
+              [
+                "البطاقة",
+                "964 ليرة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-4",
+          "title": "الدخول وبدء العمل",
+          "body": "بعد الموافقة على الطلب الخارجي ادفع الرسوم المحددة واحصل على التأشيرة القنصلية وادخل تركيا. سجل العنوان خلال 20 يوماً من الوصول. ابدأ العمل خلال شهر من الدخول وفي غضون ستة أشهر من بداية صلاحية التصريح على الأكثر، مع استكمال التزامات الضمان الاجتماعي."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "التجديد وتغيير صاحب العمل والأسرة",
+          "body": "قدم التجديد في آخر 60 يوماً. يتطلب تغيير صاحب العمل عادة طلباً جديداً. يحل تصريح العمل الساري محل الإقامة خلال صلاحيته، ولا يمنح الأسرة تلقائياً تصريح إقامة عائلية أو حق العمل."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل تسمح التأشيرة الإلكترونية بالتوظيف؟",
+          "answer": "لا، لا تمنح التأشيرة السياحية أو التجارية حق العمل."
+        },
+        {
+          "question": "من يقدم طلب الموظف؟",
+          "answer": "يقدم صاحب العمل الطلب الإلكتروني."
+        },
+        {
+          "question": "هل 12,574.90 ليرة هي التكلفة الكاملة؟",
+          "answer": "لا، تضاف 964 ليرة للبطاقة والرسوم القنصلية إن انطبقت."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "وزارة الخارجية التركية"
+        },
+        {
+          "href": "https://csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit/",
+          "label": "وزارة العمل: إجراءات التقديم"
+        },
+        {
+          "href": "https://www.calismaizni.gov.tr/",
+          "label": "بوابة تصاريح العمل"
+        },
+        {
+          "href": "https://csgb.gov.tr/uigm/en/general-information/harc-ve-degerli-k%C3%A2git-bedelinin-odenmesi/",
+          "label": "رسوم تصاريح العمل 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع تصاريح الإقامة"
+        }
+      ]
+    }
+  },
+  "turkey-student-visa": {
+    "fr": {
+      "title": "Visa étudiant Turquie 2026 : université, ikamet et travail",
+      "metaDescription": "Étudier en Turquie : admission, visa étudiant, carte de séjour à 964 TL, assurance, droit au travail et démarches après le diplôme.",
+      "shortAnswer": "La procédure comprend l’admission dans un établissement, le visa d’études lorsqu’il est requis et un titre étudiant pour poursuivre un cursus en Turquie. L’inscription seule ne remplace pas le statut de séjour.",
+      "bosphorasHelp": "Bosphoras coordonne vos démarches pratiques, la recherche de logement et les rendez-vous avec des professionnels indépendants adaptés à votre situation. Les décisions relèvent des autorités.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Choisir le cursus et préparer le départ",
+          "body": "Obtenez une admission nominative indiquant établissement, niveau et dates. Préparez passeport, diplômes, relevés, éventuelles équivalences et preuve de ressources ; le consulat peut exiger traductions et assurance. Les frais de scolarité varient selon établissement, filière et langue d’enseignement : demandez un échéancier séparant inscription, cours et logement."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Après l’arrivée : titre étudiant",
+          "body": "Les étudiants en licence, cycle court, master, doctorat et spécialisation médicale ou dentaire peuvent demander le titre étudiant. Suivez les instructions du bureau international et du portail e-ikamet. Présentez inscription effective, passeport, adresse, photos et assurance selon votre situation. Le titre ne peut pas dépasser la durée d’un cursus inférieur à un an.",
+          "table": {
+            "headers": [
+              "Situation",
+              "Durée"
+            ],
+            "rows": [
+              [
+                "Cursus inférieur à un an",
+                "Au plus la durée des études"
+              ],
+              [
+                "Enseignement primaire ou secondaire",
+                "Un an renouvelable sous conditions"
+              ],
+              [
+                "Diplôme supérieur obtenu",
+                "Demande courte durée dans les 6 mois, une fois, jusqu’à 1 an"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Assurance, carte et budget",
+          "body": "La carte ikamet coûte 964 TL en 2026 ; les droits de résidence dépendent de la situation et des exemptions. Les étudiants étrangers peuvent demander l’assurance publique dans les trois mois suivant leur première inscription, sous conditions ; sinon prévoyez une assurance conforme. Budgétez séparément le logement, les transports, les repas et le matériel."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Travailler pendant les études",
+          "body": "Un étudiant diplômant peut travailler s’il obtient un permis. Pour les étudiants de cycle court ou licence, le droit commence après la première année. Les conditions sont distinctes de l’admission. Le titre étudiant peut permettre de parrainer uniquement conjoint et enfants pour une résidence familiale, sous conditions, et non tous les proches."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Après le diplôme",
+          "body": "Un diplômé de l’enseignement supérieur turc peut, dans les six mois suivant l’obtention du diplôme, demander une résidence courte durée au plus un an, une seule fois pour ce motif. Pour prendre un emploi, préparez la procédure de permis de travail. Vérifiez l’expiration de votre titre avant la fin du cursus."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Puis-je travailler dès la première année de licence ?",
+          "answer": "En principe non ; le droit commence après la première année et exige un permis."
+        },
+        {
+          "question": "Une admission garantit-elle le titre ?",
+          "answer": "Non, les conditions d’immigration restent à satisfaire."
+        },
+        {
+          "question": "Puis-je rester après mon diplôme ?",
+          "answer": "Une demande spécifique dans les six mois est possible, sous conditions."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Ministère turc des Affaires étrangères"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Règles générales des visas"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de titres de séjour"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Tarifs des cartes de résidence 2026"
+        },
+        {
+          "href": "https://csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit/",
+          "label": "Ministère du Travail : démarches"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey student visa 2026: university, ikamet and work rights",
+      "metaDescription": "Study in Turkey: admission, student visa, residence card fee, health insurance, employment rules and post-graduation options.",
+      "shortAnswer": "Studying in Turkey involves admission, an education visa where required and appropriate student residence status. Enrolment alone does not replace permission to stay.",
+      "bosphorasHelp": "Bosphoras coordinates practical relocation arrangements, housing and appointments with independent specialists suited to your circumstances. Decisions remain with public authorities.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Admission and preparation",
+          "body": "Obtain an acceptance letter specifying institution, programme and dates. Prepare passport, academic records, any required equivalency documents, funds, translations and insurance. Tuition varies by university, discipline and teaching language; request a fee schedule separating tuition, enrolment and housing."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Student residence after arrival",
+          "body": "Associate, undergraduate, master's, doctoral and medical or dental specialisation students can apply for student residence. Follow your international office and e-ikamet instructions. Prepare enrolment evidence, passport, address, photographs and required insurance. A permit for a programme shorter than a year cannot exceed the study period.",
+          "table": {
+            "headers": [
+              "Situation",
+              "Period"
+            ],
+            "rows": [
+              [
+                "Programme shorter than a year",
+                "No longer than the programme"
+              ],
+              [
+                "Primary or secondary school",
+                "One year, renewable subject to conditions"
+              ],
+              [
+                "Higher education graduate",
+                "Apply within 6 months, once, up to 1 year"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Insurance and 2026 costs",
+          "body": "The residence card costs TRY 964 in 2026; residence duties depend on the circumstances and exemptions. Foreign students may apply for public health insurance within three months of first enrolment if eligible; otherwise arrange compliant coverage. Budget separately for housing, transport, food and learning materials."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Employment and dependants",
+          "body": "Degree students need a work permit to work. Associate and undergraduate students gain eligibility after their first year. Employment rules are separate from admission. A student residence permit can support family-permit applications for an eligible spouse and children only, not other relatives."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "After graduation",
+          "body": "Graduates of Turkish higher education can apply once for short-term residence for up to one year within six months of graduation, subject to conditions. For employment, arrange work authorisation. Check your current residence expiry before finishing your course."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I work during the first undergraduate year?",
+          "answer": "Generally no; eligibility starts after year one and requires a work permit."
+        },
+        {
+          "question": "Does admission guarantee residence?",
+          "answer": "No; immigration requirements still apply."
+        },
+        {
+          "question": "Can I stay after graduation?",
+          "answer": "A specific application within six months may be available."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Turkish foreign ministry"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "General visa rules"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "2026 residence card fees"
+        },
+        {
+          "href": "https://csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit/",
+          "label": "Ministry of Labour: application procedure"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Студенческая виза в Турцию 2026: вуз, ВНЖ и работа",
+      "metaDescription": "Поступление в турецкий вуз, учебная виза, карточка ВНЖ за 964 лиры, страховка, право на работу и статус после выпуска.",
+      "shortAnswer": "Для обучения в Турции нужны зачисление, учебная виза при необходимости и соответствующий статус проживания. Само зачисление не заменяет ВНЖ.",
+      "bosphorasHelp": "Bosphoras помогает организовать переезд, поиск жилья и встречи с независимыми специалистами с учётом вашей ситуации. Решения принимают государственные органы.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Поступление и подготовка",
+          "body": "Получите именное письмо о зачислении с учебной программой и датами. Подготовьте паспорт, дипломы, выписки, документы об эквивалентности при необходимости, подтверждение средств, переводы и страховку. Стоимость зависит от вуза, программы и языка преподавания; запросите разбивку оплаты обучения и жилья."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Студенческий ВНЖ после въезда",
+          "body": "Учащиеся программ неполного высшего образования, бакалавриата, магистратуры, докторантуры и медицинской или стоматологической специализации могут оформить студенческий ВНЖ. Следуйте указаниям международного отдела и e-ikamet. Подготовьте документ о зачислении, паспорт, адрес, фото и необходимую страховку. ВНЖ для программы короче года не превышает её срока.",
+          "table": {
+            "headers": [
+              "Ситуация",
+              "Срок"
+            ],
+            "rows": [
+              [
+                "Программа короче года",
+                "Не дольше обучения"
+              ],
+              [
+                "Начальная или средняя школа",
+                "Год с возможностью продления"
+              ],
+              [
+                "Выпускник турецкого вуза",
+                "Подача в течение 6 месяцев, один раз, до года"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Страховка и расходы",
+          "body": "Карточка ВНЖ в 2026 году стоит 964 лиры; сбор за проживание зависит от обстоятельств и льгот. Иностранные студенты могут при соблюдении условий обратиться за государственным страхованием в первые три месяца после первого зачисления; иначе оформите подходящую страховку. Отдельно рассчитайте жильё, транспорт, питание и учебные материалы."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Работа и семья",
+          "body": "Студентам требуется разрешение на работу. Для программ неполного высшего образования и бакалавриата право появляется после первого года. Учебный ВНЖ позволяет выступать спонсором только супруга и детей при соблюдении требований семейного ВНЖ, а не остальных родственников."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "После выпуска",
+          "body": "В течение шести месяцев после окончания турецкой программы высшего образования можно один раз подать на краткосрочный ВНЖ сроком до года по этому основанию. Для трудоустройства оформите разрешение на работу. Проверьте дату окончания действующего ВНЖ заранее."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли работать на первом курсе бакалавриата?",
+          "answer": "Обычно нет: право возникает после первого года при наличии разрешения."
+        },
+        {
+          "question": "Гарантирует ли поступление ВНЖ?",
+          "answer": "Нет, миграционные требования сохраняются."
+        },
+        {
+          "question": "Можно ли остаться после выпуска?",
+          "answer": "При соблюдении условий возможна специальная подача в течение шести месяцев."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "МИД Турции"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Общие визовые правила"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Сборы за карточку ВНЖ в 2026 году"
+        },
+        {
+          "href": "https://csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit/",
+          "label": "Министерство труда: оформление"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تأشيرة الدراسة في تركيا 2026: الجامعة والإقامة والعمل",
+      "metaDescription": "دليل القبول الجامعي وتأشيرة الدراسة وبطاقة الإقامة بـ964 ليرة والتأمين وحق العمل وخيارات البقاء بعد التخرج.",
+      "shortAnswer": "تتطلب الدراسة في تركيا قبولاً وتأشيرة دراسية عند الحاجة ووضع إقامة طلابية مناسباً. لا يغني التسجيل الجامعي وحده عن الإقامة القانونية.",
+      "bosphorasHelp": "تنسق Bosphoras ترتيبات الانتقال والبحث عن السكن والمواعيد مع مختصين مستقلين بحسب حالتك، وتبقى القرارات من اختصاص السلطات.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "القبول والاستعداد للسفر",
+          "body": "احصل على خطاب قبول باسمك يحدد المؤسسة والبرنامج والتواريخ. جهز الجواز والشهادات وكشوف الدرجات والمعادلة عند الحاجة وإثبات الموارد والترجمات والتأمين. تختلف الرسوم الدراسية باختلاف الجامعة والتخصص واللغة؛ اطلب تفصيلاً لرسوم التسجيل والدراسة والسكن."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "الإقامة الطلابية بعد الوصول",
+          "body": "يمكن لطلاب الدبلوم الجامعي والبكالوريوس والماجستير والدكتوراه والتخصص الطبي أو طب الأسنان طلب إقامة طالب. اتبع تعليمات المكتب الدولي والبوابة الرسمية، وجهز إثبات التسجيل والجواز والعنوان والصور والتأمين المطلوب. لا تتجاوز الإقامة مدة برنامج يقل عن سنة.",
+          "table": {
+            "headers": [
+              "الحالة",
+              "المدة"
+            ],
+            "rows": [
+              [
+                "برنامج أقل من سنة",
+                "لا تتجاوز مدة الدراسة"
+              ],
+              [
+                "التعليم الابتدائي أو الثانوي",
+                "سنة قابلة للتجديد بشروط"
+              ],
+              [
+                "خريج التعليم العالي",
+                "طلب خلال 6 أشهر لمرة واحدة حتى سنة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "التأمين وتكاليف 2026",
+          "body": "تبلغ رسوم بطاقة الإقامة 964 ليرة في 2026 وتختلف الرسوم الأخرى بحسب الحالة والإعفاءات. يمكن للطلاب الأجانب طلب التأمين الصحي العام بشروط خلال ثلاثة أشهر من التسجيل الأول؛ وإلا يلزم تأمين ملائم. احسب السكن والنقل والطعام والمواد الدراسية بصورة مستقلة."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "العمل والأسرة",
+          "body": "يحتاج الطالب إلى تصريح عمل. يبدأ حق طلاب الدبلوم والبكالوريوس بعد السنة الأولى. تختلف شروط العمل عن القبول الدراسي. ويمكن للطالب كفالة الزوج والأطفال فقط في طلبات الإقامة العائلية متى استوفوا الشروط، وليس بقية الأقارب."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "بعد التخرج",
+          "body": "يمكن لخريج التعليم العالي التركي طلب إقامة قصيرة الأجل لمدة تصل إلى سنة لمرة واحدة خلال ستة أشهر من التخرج، وفق الشروط. إذا أردت التوظيف فرتب تصريح العمل وتحقق من تاريخ انتهاء إقامتك قبل نهاية البرنامج."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يمكن العمل في السنة الأولى من البكالوريوس؟",
+          "answer": "لا عادة، يبدأ الحق بعد السنة الأولى مع تصريح عمل."
+        },
+        {
+          "question": "هل يضمن القبول الجامعي الإقامة؟",
+          "answer": "لا، تبقى شروط الهجرة واجبة."
+        },
+        {
+          "question": "هل يمكن البقاء بعد التخرج؟",
+          "answer": "قد يتاح طلب خاص خلال ستة أشهر وفق الشروط."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "وزارة الخارجية التركية"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "القواعد العامة للتأشيرات"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع تصاريح الإقامة"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "بوابة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "رسوم بطاقة الإقامة 2026"
+        },
+        {
+          "href": "https://csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit/",
+          "label": "وزارة العمل: إجراءات التقديم"
+        }
+      ]
+    }
+  },
+  "turkey-family-visa": {
+    "fr": {
+      "title": "Visa familial Turquie 2026 : conjoint, enfants et ikamet",
+      "metaDescription": "Vivre en famille en Turquie : visa d’entrée, ikamet jusqu’à 3 ans, revenus du répondant, assurance, actes et scolarité des enfants.",
+      "shortAnswer": "Le visa d’entrée pour motif familial et le titre de séjour familial sont distincts. La résidence familiale peut concerner le conjoint étranger et les enfants mineurs ou à charge d’un répondant admissible.",
+      "bosphorasHelp": "Bosphoras coordonne vos démarches pratiques, la recherche de logement et les rendez-vous avec des professionnels indépendants adaptés à votre situation. Les décisions relèvent des autorités.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Qui peut bénéficier du titre familial ?",
+          "body": "Le répondant peut notamment être citoyen turc, étranger titulaire d’un titre admissible, bénéficiaire de protection subsidiaire ou réfugié. Les enfants du conjoint peuvent être concernés. Un parent adulte, frère ou sœur n’obtient pas automatiquement ce titre. Pour une famille de nationalités différentes, contrôlez les règles d’entrée de chaque passeport."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Revenus, assurance et conditions",
+          "body": "Le répondant doit généralement justifier un revenu global au moins égal au salaire minimum et une part d’au moins un tiers de ce minimum par membre de famille, une assurance couvrant tous, une adresse enregistrée et un casier adapté pour les infractions familiales sur les cinq années précédentes. La condition de résidence d’un an du répondant étranger comporte des exceptions légales.",
+          "table": {
+            "headers": [
+              "Famille au total",
+              "Seuil minimal théorique"
+            ],
+            "rows": [
+              [
+                "2 personnes",
+                "1 salaire minimum"
+              ],
+              [
+                "3 personnes",
+                "1 salaire minimum"
+              ],
+              [
+                "4 personnes",
+                "4/3 du salaire minimum"
+              ],
+              [
+                "5 personnes",
+                "5/3 du salaire minimum"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Préparer les actes et le dossier",
+          "body": "Réunissez passeports, acte de mariage, actes de naissance, justificatifs de garde ou consentement parental, preuves de logement, de revenus et d’assurance. Prévoyez apostille ou légalisation selon le pays émetteur et traduction turque certifiée lorsque requise. Les deux époux doivent avoir au moins 18 ans et le mariage doit être authentique."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Durée, frais et enfants",
+          "body": "Le titre familial est délivré jusqu’à trois ans sans dépasser le titre du répondant. La carte coûte 964 TL par personne en 2026 : pour deux demandeurs, cela représente 1 928 TL hors autres droits. Les enfants titulaires peuvent suivre le primaire et le secondaire jusqu’à 18 ans sans titre étudiant distinct."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Protéger la continuité du séjour",
+          "body": "Déposez avant la fin de votre séjour légal et renouvelez dans les 60 derniers jours. Si le répondant change de statut, décède ou divorce, un autre permis peut être possible selon conditions. Le mariage avec un citoyen turc ne donne pas automatiquement la nationalité ni le droit de travailler."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Les deux parents et les enfants peuvent-ils demander ensemble ?",
+          "answer": "Oui, préparez les dossiers individuels et les justificatifs communs du répondant."
+        },
+        {
+          "question": "Un enfant doit-il obtenir un titre étudiant ?",
+          "answer": "Pas pour le primaire et secondaire avant 18 ans s’il possède un titre familial valide."
+        },
+        {
+          "question": "Le mariage garantit-il l’ikamet ?",
+          "answer": "Non, il faut satisfaire l’ensemble des conditions."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Règles générales des visas"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de titres de séjour"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions officielles sur la résidence"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Tarifs des cartes de résidence 2026"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey family visa 2026: spouse, children and residence",
+      "metaDescription": "Move to Turkey with your family: residence up to 3 years, sponsor income, insurance, marriage documents and children's schooling.",
+      "shortAnswer": "Family entry visas and family residence permits are distinct. Eligible sponsors may support residence applications for a foreign spouse and minor or dependent children.",
+      "bosphorasHelp": "Bosphoras coordinates practical relocation arrangements, housing and appointments with independent specialists suited to your circumstances. Decisions remain with public authorities.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Eligible family members",
+          "body": "Sponsors may include Turkish citizens, foreign holders of eligible residence permits, refugees and subsidiary-protection beneficiaries. A spouse's children may qualify. Adult parents and siblings do not automatically qualify. In mixed-nationality families, check entry rules for every passport."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Sponsor income and insurance",
+          "body": "The sponsor generally needs total monthly income at least equal to the minimum wage, and at least one third of that amount per family member, medical insurance covering everyone, a registered address and evidence of no family-related convictions in the preceding five years. The one-year residence condition for foreign sponsors has statutory exceptions.",
+          "table": {
+            "headers": [
+              "Total family size",
+              "Theoretical minimum"
+            ],
+            "rows": [
+              [
+                "2 people",
+                "1 minimum wage"
+              ],
+              [
+                "3 people",
+                "1 minimum wage"
+              ],
+              [
+                "4 people",
+                "4/3 of minimum wage"
+              ],
+              [
+                "5 people",
+                "5/3 of minimum wage"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Prepare civil records",
+          "body": "Collect passports, marriage and birth records, custody or parental consent, housing, income and insurance evidence. Arrange apostille or legalisation according to the issuing country and certified Turkish translations when required. Both spouses must be at least 18 and the marriage genuine."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Duration, costs and schooling",
+          "body": "Family residence lasts up to three years and cannot outlast the sponsor's permit. The 2026 residence card costs TRY 964 per applicant: two applicants pay TRY 1,928 in card fees alone. Family-permit holders can attend primary and secondary school until age 18 without a separate student permit."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Maintain lawful status",
+          "body": "Apply before lawful stay expires and renew during the final 60 days. If a sponsor's status changes, dies or divorces, another residence basis may be available subject to conditions. Marriage to a Turkish citizen does not automatically confer citizenship or work rights."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can family members apply together?",
+          "answer": "Prepare individual files and shared sponsor evidence."
+        },
+        {
+          "question": "Does a child need a student permit?",
+          "answer": "Not for primary or secondary school before 18 with valid family residence."
+        },
+        {
+          "question": "Does marriage guarantee residence?",
+          "answer": "No, the remaining conditions must also be met."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "General visa rules"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Official residence FAQ"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "2026 residence card fees"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Семейная виза в Турцию 2026: супруг, дети и семейный ВНЖ",
+      "metaDescription": "Семейный переезд в Турцию: ВНЖ до трёх лет, доход спонсора, страховка, документы о браке и обучение детей.",
+      "shortAnswer": "Въездная виза по семейным обстоятельствам и семейный ВНЖ — разные процедуры. Семейный ВНЖ может оформляться иностранному супругу и несовершеннолетним или зависимым детям подходящего спонсора.",
+      "bosphorasHelp": "Bosphoras помогает организовать переезд, поиск жилья и встречи с независимыми специалистами с учётом вашей ситуации. Решения принимают государственные органы.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Кто входит в семью",
+          "body": "Спонсором может быть гражданин Турции, иностранец с подходящим ВНЖ, беженец или получатель дополнительной защиты. Дети супруга также могут иметь право. Родители взрослых заявителей, братья и сёстры автоматически не подпадают под категорию. Для семьи с разными гражданствами проверьте правила каждого паспорта."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Доход, страховка и условия",
+          "body": "Спонсору обычно нужен совокупный доход не ниже минимальной зарплаты и не менее её трети на каждого члена семьи, страховка для всех, зарегистрированный адрес и подтверждение отсутствия судимости за преступления против семьи за последние пять лет. Для требования о годе проживания иностранного спонсора предусмотрены законные исключения.",
+          "table": {
+            "headers": [
+              "Размер семьи",
+              "Расчётный минимум"
+            ],
+            "rows": [
+              [
+                "2 человека",
+                "1 минимальная зарплата"
+              ],
+              [
+                "3 человека",
+                "1 минимальная зарплата"
+              ],
+              [
+                "4 человека",
+                "4/3 минимальной зарплаты"
+              ],
+              [
+                "5 человек",
+                "5/3 минимальной зарплаты"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Документы для заявления",
+          "body": "Соберите паспорта, свидетельства о браке и рождении, документы об опеке или согласии родителей, подтверждения жилья, дохода и страховки. При необходимости оформите апостиль или легализацию и заверенный перевод на турецкий. Оба супруга должны быть старше или не моложе 18 лет, брак должен быть действительным и не фиктивным."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Срок, сборы и школа",
+          "body": "Семейный ВНЖ выдаётся до трёх лет, не дольше разрешения спонсора. В 2026 году одна карточка стоит 964 лиры, две — 1 928 лир без других сборов. До 18 лет обладатель семейного ВНЖ может учиться в начальной и средней школе без отдельного учебного ВНЖ."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Сохранение законного статуса",
+          "body": "Подайте заявление до окончания законного пребывания и продлевайте в последние 60 дней. Изменение статуса спонсора, его смерть или развод могут позволить оформить иной ВНЖ по установленным условиям. Брак с гражданином Турции не даёт автоматически гражданство или право работать."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли подать документы всей семьёй?",
+          "answer": "Да, с индивидуальными заявлениями и общими документами спонсора."
+        },
+        {
+          "question": "Нужен ли ребёнку учебный ВНЖ?",
+          "answer": "До 18 лет для школы не нужен при действующем семейном ВНЖ."
+        },
+        {
+          "question": "Гарантирует ли брак ВНЖ?",
+          "answer": "Нет, необходимо соблюсти все требования."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Общие визовые правила"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Официальные вопросы о ВНЖ"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Сборы за карточку ВНЖ в 2026 году"
+        }
+      ]
+    },
+    "ar": {
+      "title": "التأشيرة العائلية في تركيا 2026: الزوج والأطفال والإقامة",
+      "metaDescription": "دليل الانتقال العائلي إلى تركيا والإقامة حتى ثلاث سنوات ودخل الكفيل والتأمين ووثائق الزواج وتعليم الأطفال.",
+      "shortAnswer": "تختلف تأشيرة الدخول لأسباب عائلية عن تصريح الإقامة العائلية، الذي قد يشمل الزوج الأجنبي والأطفال القاصرين أو المعالين لكفيل مؤهل.",
+      "bosphorasHelp": "تنسق Bosphoras ترتيبات الانتقال والبحث عن السكن والمواعيد مع مختصين مستقلين بحسب حالتك، وتبقى القرارات من اختصاص السلطات.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "من يحق له طلب الإقامة العائلية؟",
+          "body": "قد يكون الكفيل مواطناً تركياً أو أجنبياً يحمل إقامة مؤهلة أو لاجئاً أو مستفيداً من الحماية الفرعية. وقد يشمل الطلب أطفال الزوج. لا يحصل والدا الشخص البالغ أو إخوته على هذه الإقامة تلقائياً. راجع قواعد كل جواز عند اختلاف جنسيات الأسرة."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "الدخل والتأمين والشروط",
+          "body": "يشترط عادة دخل إجمالي لا يقل عن الحد الأدنى للأجور وألا تقل حصة كل فرد عن ثلثه، وتأمين صحي للجميع وعنوان مسجل وإثبات عدم الإدانة بجرائم ضد الأسرة خلال السنوات الخمس السابقة. توجد استثناءات قانونية من شرط إقامة الكفيل الأجنبي سنة واحدة.",
+          "table": {
+            "headers": [
+              "عدد أفراد الأسرة",
+              "الحد الأدنى النظري"
+            ],
+            "rows": [
+              [
+                "شخصان",
+                "حد أدنى واحد للأجر"
+              ],
+              [
+                "3 أشخاص",
+                "حد أدنى واحد للأجر"
+              ],
+              [
+                "4 أشخاص",
+                "أربعة أثلاث الحد الأدنى"
+              ],
+              [
+                "5 أشخاص",
+                "خمسة أثلاث الحد الأدنى"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "الوثائق المطلوبة",
+          "body": "جهز الجوازات وشهادات الزواج والميلاد والحضانة أو موافقة الوالدين وإثبات السكن والدخل والتأمين. احصل على التصديق المناسب بحسب الدولة المصدرة والترجمة التركية المعتمدة عند الطلب. يجب ألا يقل عمر الزوجين عن 18 عاماً وأن يكون الزواج حقيقياً."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "المدة والتكاليف والمدرسة",
+          "body": "تصدر الإقامة العائلية حتى ثلاث سنوات ولا تتجاوز مدة إقامة الكفيل. رسم البطاقة في 2026 هو 964 ليرة لكل شخص، وبطاقتان تكلفان 1,928 ليرة دون الرسوم الأخرى. يستطيع الطفل حامل الإقامة العائلية الدراسة الابتدائية والثانوية حتى 18 عاماً دون إقامة طالب منفصلة."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "استمرار الوضع القانوني",
+          "body": "قدم قبل انتهاء البقاء القانوني وجدد في آخر 60 يوماً. عند تغير وضع الكفيل أو وفاته أو الطلاق قد يتاح تصريح آخر وفق الشروط. لا يمنح الزواج من مواطن تركي الجنسية أو حق العمل تلقائياً."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يمكن تقديم طلبات الأسرة معاً؟",
+          "answer": "نعم، جهز ملفات فردية ووثائق الكفيل المشتركة."
+        },
+        {
+          "question": "هل يحتاج الطفل إلى إقامة دراسية؟",
+          "answer": "لا للتعليم الابتدائي والثانوي قبل 18 عاماً إذا كانت إقامته العائلية سارية."
+        },
+        {
+          "question": "هل يضمن الزواج الإقامة؟",
+          "answer": "لا، يجب استيفاء بقية الشروط."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "القواعد العامة للتأشيرات"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع تصاريح الإقامة"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "بوابة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "الأسئلة الرسمية حول الإقامة"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "رسوم بطاقة الإقامة 2026"
+        }
+      ]
+    }
+  },
+  "turkey-family-reunification-visa": {
+    "fr": {
+      "title": "Regroupement familial Turquie 2026 : étapes, dossier et délais",
+      "metaDescription": "Rejoindre son conjoint en Turquie : visa familial, conditions du répondant, actes étrangers, enfants, délais et renouvellement de l’ikamet.",
+      "shortAnswer": "Rejoindre un proche en Turquie nécessite de vérifier d’abord son statut et la relation familiale admissible, puis l’entrée légale et la demande de résidence familiale. Il n’existe pas de regroupement automatique pour tous les liens familiaux.",
+      "bosphorasHelp": "Bosphoras coordonne vos démarches pratiques, la recherche de logement et les rendez-vous avec des professionnels indépendants adaptés à votre situation. Les décisions relèvent des autorités.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Étape 1 : examiner le répondant",
+          "body": "Un conjoint turc ou un étranger disposant d’un statut admissible peut soutenir la demande du conjoint et des enfants mineurs ou à charge. Vérifiez assurance commune, adresse enregistrée, revenus et casier exigé. En principe, le répondant étranger doit avoir résidé un an ; des exceptions légales existent, notamment selon son statut. Un parent d’un adulte ne relève pas systématiquement de ce régime."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Étape 2 : documents établis à l’étranger",
+          "body": "Demandez des actes récents de mariage et de naissance et les jugements de garde, le cas échéant. Selon l’État émetteur, faites apostiller ou légaliser les documents puis réaliser la traduction certifiée. Comparez les noms, dates et translittérations. Si la garde est partagée et l’autre parent vit à l’étranger, son accord peut être requis."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Étape 3 : entrée et dépôt",
+          "body": "Si une autorisation consulaire est requise pour le motif familial, présentez le dossier à la représentation turque compétente. L’entrée ne vaut pas ikamet. Une fois légalement en Turquie, déposez sur e-ikamet avant expiration, puis remettez les pièces indiquées. Le délai ordinaire de décision est de 90 jours à partir du dossier complet.",
+          "table": {
+            "headers": [
+              "Moments clés",
+              "Repères"
+            ],
+            "rows": [
+              [
+                "Préparation en amont",
+                "Actes, traductions et preuve du répondant"
+              ],
+              [
+                "Dépôt résidence",
+                "Avant fin du séjour légal"
+              ],
+              [
+                "Décision",
+                "90 jours après dossier complet"
+              ],
+              [
+                "Renouvellement",
+                "Derniers 60 jours"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Étape 4 : budget et durée",
+          "body": "Pour trois demandeurs, les cartes 2026 représentent 2 892 TL au total (964 TL chacune), hors droits variables, assurance et formalités. La résidence familiale ne dépasse ni trois ans par délivrance, ni l’échéance du titre du répondant. Un conjoint étranger ne peut pas travailler sur ce seul fondement."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Décès, séparation ou situation de l’enfant",
+          "body": "En cas de divorce d’un citoyen turc, un passage en résidence courte durée peut être possible après trois ans de titre familial ; cette durée n’est pas exigée lorsque la violence domestique est judiciairement établie. Des voies existent également après le décès du répondant et pour certains jeunes de 18 ans ayant détenu le titre familial trois ans. Un refus doit être examiné avec son avis officiel et les voies de recours."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Puis-je faire venir mes parents adultes ?",
+          "answer": "Le titre familial ne les couvre pas automatiquement ; recherchez un autre motif admissible."
+        },
+        {
+          "question": "Le délai de 90 jours commence-t-il à la prise de rendez-vous ?",
+          "answer": "Non, il commence avec la remise du dossier complet."
+        },
+        {
+          "question": "Que faire si mon conjoint perd son statut ?",
+          "answer": "Examinez immédiatement un changement de fondement de résidence avant toute expiration."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Ministère turc des Affaires étrangères"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Règles générales des visas"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de titres de séjour"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions officielles sur la résidence"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Tarifs des cartes de résidence 2026"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey family reunification visa 2026: steps and documents",
+      "metaDescription": "Join your spouse in Turkey: sponsor requirements, foreign marriage records, child consent, residence processing and renewal deadlines.",
+      "shortAnswer": "Family reunification starts with the sponsor's status and the eligible family relationship, followed by lawful entry and the family residence application. Not every family relationship qualifies automatically.",
+      "bosphorasHelp": "Bosphoras coordinates practical relocation arrangements, housing and appointments with independent specialists suited to your circumstances. Decisions remain with public authorities.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Step 1: assess the sponsor",
+          "body": "A Turkish spouse or foreigner with qualifying status may support an eligible spouse and minor or dependent children. Review joint insurance, registered address, income and required criminal record. Foreign sponsors generally need one year of residence, subject to statutory exceptions. An adult applicant's parents do not automatically qualify."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Step 2: prepare foreign civil documents",
+          "body": "Obtain current marriage and birth records and custody orders where applicable. Arrange apostille or legalisation according to the issuing state and certified translations. Compare name spellings and dates. Shared custody may require consent from the parent living abroad."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Step 3: entry and application",
+          "body": "Where consular clearance is required for family travel, apply at the appropriate mission. Entry is not a residence permit. While lawfully in Turkey, file through e-ikamet before expiry and submit the requested evidence. The usual decision deadline starts upon complete submission.",
+          "table": {
+            "headers": [
+              "Milestone",
+              "Timing"
+            ],
+            "rows": [
+              [
+                "Preparation",
+                "Civil records and sponsor evidence"
+              ],
+              [
+                "Residence filing",
+                "Before lawful stay expires"
+              ],
+              [
+                "Decision",
+                "90 days after complete submission"
+              ],
+              [
+                "Renewal",
+                "Final 60 days"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Step 4: fees and duration",
+          "body": "The cards for three applicants in 2026 cost TRY 2,892 total (TRY 964 each), excluding variable duties, insurance and paperwork. Family residence is limited to three years per issue and cannot outlast the sponsor's permit. A foreign spouse needs separate work authorisation."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Bereavement, divorce or children reaching adulthood",
+          "body": "After divorce from a Turkish citizen, transfer to short-term residence may be available after three years on family residence; that period is waived if a court establishes domestic violence. Routes also exist following a sponsor's death and for certain 18-year-olds who held family residence for three years. Review any refusal notice and appeal rights."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I bring my adult parents?",
+          "answer": "They are not automatically covered; consider another eligible basis."
+        },
+        {
+          "question": "Does the 90-day period begin when I book the appointment?",
+          "answer": "No, it starts when complete documents are submitted."
+        },
+        {
+          "question": "What if my spouse loses residence status?",
+          "answer": "Assess a lawful change of residence basis before expiry."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Turkish foreign ministry"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "General visa rules"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Official residence FAQ"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "2026 residence card fees"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Воссоединение семьи в Турции 2026: порядок, документы и сроки",
+      "metaDescription": "Как переехать к супругу в Турцию: требования к спонсору, иностранные свидетельства, согласие родителей, сроки подачи и продления.",
+      "shortAnswer": "Воссоединение семьи начинается с проверки статуса спонсора и семейной связи. Затем оформляются законный въезд и семейный ВНЖ. Не каждое родство даёт автоматическое право.",
+      "bosphorasHelp": "Bosphoras помогает организовать переезд, поиск жилья и встречи с независимыми специалистами с учётом вашей ситуации. Решения принимают государственные органы.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Шаг 1: проверить спонсора",
+          "body": "Турецкий супруг или иностранец с подходящим статусом может поддержать заявление супруга и несовершеннолетних либо зависимых детей. Проверьте страховку, адрес, доход и справку о судимости. Для иностранного спонсора обычно нужен год проживания, но предусмотрены исключения. Родители взрослого заявителя автоматически не входят в эту категорию."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Шаг 2: подготовить документы из другой страны",
+          "body": "Получите актуальные свидетельства о браке и рождении, а при необходимости решения об опеке. В зависимости от страны оформите апостиль или легализацию и заверенный перевод. Сверьте имена и даты. При совместной опеке может требоваться согласие родителя, живущего за границей."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Шаг 3: въезд и подача",
+          "body": "Если для семейной поездки нужна консульская виза, обратитесь в компетентное представительство. Въезд не заменяет ВНЖ. В Турции подайте заявление через e-ikamet до окончания законного пребывания и предоставьте документы. Срок решения отсчитывается от полного комплекта.",
+          "table": {
+            "headers": [
+              "Этап",
+              "Срок"
+            ],
+            "rows": [
+              [
+                "Подготовка",
+                "Свидетельства и документы спонсора"
+              ],
+              [
+                "Подача на ВНЖ",
+                "До окончания законного пребывания"
+              ],
+              [
+                "Решение",
+                "90 дней после полного комплекта"
+              ],
+              [
+                "Продление",
+                "Последние 60 дней"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Шаг 4: расходы и срок",
+          "body": "Три карточки в 2026 году стоят 2 892 лиры (по 964), не считая других сборов, страховки и документов. Семейный ВНЖ не превышает три года и срок разрешения спонсора. Для работы иностранному супругу нужно отдельное разрешение."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Смерть, развод и совершеннолетие",
+          "body": "После развода с гражданином Турции переход на краткосрочный ВНЖ может быть возможен после трёх лет семейного ВНЖ; условие срока не применяется при установленном судом домашнем насилии. Отдельные основания предусмотрены после смерти спонсора и для некоторых достигших 18 лет детей, имевших семейный ВНЖ три года. При отказе изучите уведомление и порядок обжалования."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли перевезти взрослых родителей?",
+          "answer": "Семейный ВНЖ автоматически их не охватывает; рассмотрите иное основание."
+        },
+        {
+          "question": "Начинается ли срок 90 дней с записи на приём?",
+          "answer": "Нет, с подачи полного комплекта."
+        },
+        {
+          "question": "Что делать при потере статуса супругом?",
+          "answer": "Незамедлительно оценить возможность изменения основания до истечения срока."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "МИД Турции"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Общие визовые правила"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Официальные вопросы о ВНЖ"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Сборы за карточку ВНЖ в 2026 году"
+        }
+      ]
+    },
+    "ar": {
+      "title": "لم الشمل في تركيا 2026: الشروط والوثائق وخطوات الإقامة",
+      "metaDescription": "دليل الالتحاق بالزوج في تركيا وشروط الكفيل والوثائق الأجنبية وموافقة الوالدين ومواعيد الطلب والتجديد.",
+      "shortAnswer": "يبدأ لم الشمل بالتحقق من وضع الكفيل وصلة القرابة المؤهلة ثم الدخول القانوني وطلب الإقامة العائلية. لا تشمل الإجراءات جميع الأقارب تلقائياً.",
+      "bosphorasHelp": "تنسق Bosphoras ترتيبات الانتقال والبحث عن السكن والمواعيد مع مختصين مستقلين بحسب حالتك، وتبقى القرارات من اختصاص السلطات.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "الخطوة الأولى: التحقق من الكفيل",
+          "body": "يمكن للزوج التركي أو الأجنبي صاحب الوضع المؤهل دعم طلب الزوج والأطفال القاصرين أو المعالين. تحقق من التأمين والعنوان والدخل والسجل المطلوب. يحتاج الكفيل الأجنبي عادة إلى سنة إقامة مع وجود استثناءات قانونية. لا يشمل هذا المسار والدي الشخص البالغ تلقائياً."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "الخطوة الثانية: الوثائق الأجنبية",
+          "body": "اطلب شهادات الزواج والميلاد الحديثة وأحكام الحضانة عند الحاجة. احصل على الأبوستيل أو التصديق بحسب الدولة المصدرة ثم الترجمة المعتمدة. راجع الأسماء والتواريخ. عند الحضانة المشتركة قد تشترط موافقة الوالد المقيم في الخارج."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "الخطوة الثالثة: الدخول والتقديم",
+          "body": "إذا تطلبت السفر العائلي تأشيرة قنصلية فقدم لدى البعثة المختصة. لا يغني الدخول عن تصريح الإقامة. خلال وجودك القانوني قدم عبر البوابة قبل انتهاء المدة وسلم الوثائق المطلوبة. تبدأ مهلة القرار عند اكتمال الملف.",
+          "table": {
+            "headers": [
+              "المرحلة",
+              "التوقيت"
+            ],
+            "rows": [
+              [
+                "التحضير",
+                "وثائق الحالة المدنية والكفيل"
+              ],
+              [
+                "طلب الإقامة",
+                "قبل انتهاء البقاء القانوني"
+              ],
+              [
+                "القرار",
+                "90 يوماً بعد اكتمال الملف"
+              ],
+              [
+                "التجديد",
+                "آخر 60 يوماً"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-4",
+          "title": "الخطوة الرابعة: الرسوم والمدة",
+          "body": "تكلف ثلاث بطاقات في 2026 مبلغ 2,892 ليرة (964 لكل بطاقة) دون الرسوم المتغيرة والتأمين والوثائق. لا تتجاوز الإقامة العائلية ثلاث سنوات أو صلاحية إقامة الكفيل. يحتاج الزوج الأجنبي إلى إذن منفصل للعمل."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "الوفاة والطلاق وبلوغ سن الرشد",
+          "body": "قد يتاح الانتقال إلى إقامة قصيرة الأجل بعد الطلاق من مواطن تركي لمن حمل الإقامة العائلية ثلاث سنوات؛ يعفى من هذه المدة إذا ثبت العنف الأسري قضائياً. وتوجد مسارات بعد وفاة الكفيل ولأطفال مؤهلين بلغوا 18 عاماً وحملوا الإقامة العائلية ثلاث سنوات. عند الرفض ادرس الإخطار وطرق الطعن."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يمكن إحضار الوالدين البالغين؟",
+          "answer": "لا تشملهم الإقامة العائلية تلقائياً؛ ادرس أساساً آخر مؤهلاً."
+        },
+        {
+          "question": "هل تبدأ مهلة 90 يوماً من حجز الموعد؟",
+          "answer": "لا، تبدأ من تسليم الملف المكتمل."
+        },
+        {
+          "question": "ماذا لو فقد الزوج وضع إقامته؟",
+          "answer": "ادرس تغيير أساس الإقامة قانونياً قبل انتهاء المدة."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "وزارة الخارجية التركية"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "القواعد العامة للتأشيرات"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع تصاريح الإقامة"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "بوابة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "الأسئلة الرسمية حول الإقامة"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "رسوم بطاقة الإقامة 2026"
+        }
+      ]
+    }
+  },
+  "turkey-property-owner-visa": {
+    "fr": {
+      "title": "Visa propriétaire en Turquie 2026 : ikamet dès 200 000 $ ?",
+      "metaDescription": "Acheter en Turquie : conditions du titre de séjour propriétaire à 200 000 $, tapu, adresse, frais et différence avec la citoyenneté à 400 000 $.",
+      "shortAnswer": "L’achat d’un logement peut constituer un motif de résidence courte durée. Pour les acquisitions concernées par le seuil actuel, le formulaire officiel exige une valeur d’au moins 200 000 USD équivalents en livres turques à la date d’acquisition. Le titre n’est pas automatique.",
+      "bosphorasHelp": "Bosphoras coordonne vos démarches pratiques, la recherche de logement et les rendez-vous avec des professionnels indépendants adaptés à votre situation. Les décisions relèvent des autorités.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Choisir le bon objectif",
+          "body": "Un acheteur admissible peut acquérir sans être titulaire d’un ikamet. L’entrée pour visiter un bien dépend des règles touristiques ou commerciales. Le titre propriétaire correspond à un logement effectivement utilisé pour votre résidence ; la citoyenneté immobilière est une procédure exceptionnelle distincte.",
+          "table": {
+            "headers": [
+              "Objectif",
+              "Règle principale"
+            ],
+            "rows": [
+              [
+                "Visiter et acheter",
+                "Régime d’entrée selon passeport"
+              ],
+              [
+                "Résidence propriétaire",
+                "Logement admissible à partir de 200 000 USD pour les acquisitions soumises au seuil"
+              ],
+              [
+                "Citoyenneté par immobilier",
+                "400 000 USD et interdiction de vente 3 ans"
+              ],
+              [
+                "Travail",
+                "Autorisation distincte"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Vérifier le seuil avant l’achat",
+          "body": "Le seuil doit être apprécié à la date d’acquisition selon les justificatifs fonciers et règles applicables. Les biens acquis avant l’entrée en vigueur du régime actuel, les successions et donations peuvent nécessiter une analyse particulière ; le formulaire prévoit un rapport d’évaluation actuel pour les biens hérités ou donnés. Un prix publicitaire seul ne prouve pas l’éligibilité."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Tapu, logement et adresse",
+          "body": "Vérifiez la nature résidentielle, la propriété au nom du demandeur, les charges et restrictions, ainsi que l’admissibilité de l’adresse aux nouvelles inscriptions. Le logement doit servir à y vivre : un bien mis en location pour générer des revenus ne répond pas à ce motif. Pour une copropriété familiale, préparez les preuves du lien familial et de la propriété."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Dossier, durée et frais",
+          "body": "Déposez e-ikamet avant la fin du séjour légal. Préparez le titre de propriété, passeport, photos, assurance, justificatifs de ressources et adresse selon les instructions. Le permis courte durée ordinaire est généralement limité à deux ans par délivrance. La carte coûte 964 TL en 2026, hors droits de séjour et autres frais. Le traitement ordinaire est de 90 jours à compter du dossier complet."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Acheter sans risque inutile",
+          "body": "Avant le versement d’un acompte, faites contrôler par un professionnel indépendant le titre, les droits du vendeur, les restrictions de nationalité et d’adresse, le prix déclaré et les paiements. Budgétez frais fonciers, charges de copropriété et entretien. Si vous visez la citoyenneté, exigez l’examen spécifique du seuil de 400 000 USD et de la conformité de l’opération."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Un logement de 150 000 $ suffit-il ?",
+          "answer": "Pas pour une nouvelle acquisition soumise au seuil de 200 000 USD. Un bien ancien peut relever d’autres règles."
+        },
+        {
+          "question": "Puis-je louer mon logement et obtenir le titre propriétaire ?",
+          "answer": "Le motif exige un logement utilisé pour habiter, non pour générer des revenus locatifs."
+        },
+        {
+          "question": "200 000 $ donnent-ils la nationalité ?",
+          "answer": "Non, le dispositif de citoyenneté immobilière exige notamment 400 000 USD et trois ans sans vente."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de titres de séjour"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/Ikamet/BasvuruFormuOrnegiUzatma/BasvuruFormuBos?tur=0",
+          "label": "Formulaire officiel et justificatifs immobiliers"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/Pages/acquiring-property-and-citizenship.aspx",
+          "label": "Agence nationale d’investissement"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Tarifs des cartes de résidence 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions officielles sur la résidence"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey property owner visa 2026: $200,000 residence route",
+      "metaDescription": "Buying a home in Turkey: $200,000 residence threshold, title deed, eligible address, fees and the separate $400,000 citizenship route.",
+      "shortAnswer": "Home ownership may qualify for short-term residence. For purchases subject to the current threshold, the official form requires a residential value of at least USD 200,000 equivalent in Turkish lira on the acquisition date. Approval is not automatic.",
+      "bosphorasHelp": "Bosphoras coordinates practical relocation arrangements, housing and appointments with independent specialists suited to your circumstances. Decisions remain with public authorities.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Choose your objective",
+          "body": "Eligible foreign buyers may acquire property without residence status. Entry for viewings depends on tourist or commercial rules. Owner residence requires an eligible home used for living; exceptional citizenship through real estate is separate.",
+          "table": {
+            "headers": [
+              "Objective",
+              "Main requirement"
+            ],
+            "rows": [
+              [
+                "Visit and buy",
+                "Passport-specific entry route"
+              ],
+              [
+                "Owner residence",
+                "Eligible home from USD 200,000 for acquisitions subject to threshold"
+              ],
+              [
+                "Property citizenship",
+                "USD 400,000 and 3-year no-sale restriction"
+              ],
+              [
+                "Employment",
+                "Separate authorisation"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Check the threshold before buying",
+          "body": "The threshold is assessed at acquisition under applicable title and evidence rules. Properties acquired before the current regime, inheritance and gifts may require separate assessment; the official form requests a current valuation report for inherited or donated properties. An advertised price alone does not establish eligibility."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Title, residential use and address",
+          "body": "Review residential classification, ownership in the applicant's name, encumbrances and restrictions, and address eligibility for new registrations. The property must be used as a home, not for rental income under this residence basis. Joint family ownership requires evidence of both title and relationship."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Application, duration and cost",
+          "body": "Apply through e-ikamet before lawful stay expires. Prepare title deed, passport, photographs, insurance, financial and address evidence as required. Ordinary short-term residence is usually limited to two years per issue. The 2026 card charge is TRY 964 excluding residence duties and other costs. Complete applications are ordinarily decided within 90 days."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Protect the purchase",
+          "body": "Before paying a deposit, obtain independent review of title, seller authority, nationality and address restrictions, declared value and payments. Budget title fees, building charges and maintenance. If citizenship is your goal, separately check the USD 400,000 threshold and all transaction conditions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is a USD 150,000 home enough?",
+          "answer": "Not for a new purchase subject to the USD 200,000 threshold; earlier acquisitions may follow different rules."
+        },
+        {
+          "question": "Can I rent out the home and use this permit?",
+          "answer": "This basis requires residential use by the owner, not rental-income use."
+        },
+        {
+          "question": "Does USD 200,000 qualify for citizenship?",
+          "answer": "No; real estate citizenship requires at least USD 400,000 and a three-year no-sale commitment, among other conditions."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/Ikamet/BasvuruFormuOrnegiUzatma/BasvuruFormuBos?tur=0",
+          "label": "Official property residence application evidence"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/Pages/acquiring-property-and-citizenship.aspx",
+          "label": "National investment agency"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "2026 residence card fees"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Official residence FAQ"
+        }
+      ]
+    },
+    "ru": {
+      "title": "ВНЖ по недвижимости в Турции 2026: порог 200 000 долларов",
+      "metaDescription": "Покупка жилья для ВНЖ: порог $200 000, тапу, допустимость адреса, расходы и отличие от гражданства за $400 000.",
+      "shortAnswer": "Покупка жилья может служить основанием краткосрочного ВНЖ. Для сделок, подпадающих под действующий порог, официальный формуляр требует стоимость не менее 200 000 долларов США в эквиваленте лир на дату приобретения. Одобрение не гарантировано.",
+      "bosphorasHelp": "Bosphoras помогает организовать переезд, поиск жилья и встречи с независимыми специалистами с учётом вашей ситуации. Решения принимают государственные органы.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Определите цель покупки",
+          "body": "Иностранец, имеющий право приобретения, может купить объект без ВНЖ. Для осмотра действуют туристические или деловые правила въезда. ВНЖ собственника предполагает использование подходящего жилья для проживания, а инвестиционное гражданство оформляется отдельно.",
+          "table": {
+            "headers": [
+              "Цель",
+              "Основное условие"
+            ],
+            "rows": [
+              [
+                "Осмотр и покупка",
+                "Правила въезда по паспорту"
+              ],
+              [
+                "ВНЖ собственника",
+                "Жильё от 200 000 долларов для сделок под действующим порогом"
+              ],
+              [
+                "Гражданство за недвижимость",
+                "400 000 долларов и запрет продажи 3 года"
+              ],
+              [
+                "Работа",
+                "Отдельное разрешение"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Проверка стоимости до сделки",
+          "body": "Порог оценивается на дату приобретения по применимым правилам и документам. Для ранее приобретённых объектов, наследства и дарения может потребоваться отдельная оценка; официальный формуляр предусматривает актуальный отчёт об оценке подаренных или унаследованных объектов. Цена объявления не подтверждает право на ВНЖ."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Тапу, использование и адрес",
+          "body": "Проверьте жилое назначение, право собственности заявителя, обременения и допустимость адреса для новой регистрации. Объект должен использоваться для проживания собственника, а не для получения арендного дохода по этому основанию. При совместной семейной собственности подготовьте документы о родстве и долях."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Документы, сроки и расходы",
+          "body": "Подайте через e-ikamet до окончания законного пребывания. Подготовьте тапу, паспорт, фотографии, страховку, документы о средствах и адресе. Обычный краткосрочный ВНЖ обычно выдаётся до двух лет. Карточка стоит 964 лиры в 2026 году без других сборов. Срок рассмотрения полного комплекта обычно до 90 дней."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Безопасная покупка",
+          "body": "До внесения задатка поручите независимому специалисту проверить титул, полномочия продавца, ограничения по гражданству и адресу, заявленную стоимость и платежи. Учтите регистрационные сборы, коммунальные расходы и обслуживание. Для гражданства отдельно проверьте порог 400 000 долларов и все требования сделки."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Достаточно ли жилья за $150 000?",
+          "answer": "Не для новой сделки под порогом $200 000; для прежних покупок могут действовать иные правила."
+        },
+        {
+          "question": "Можно ли сдавать объект и оформить ВНЖ собственника?",
+          "answer": "По этому основанию жильё используется для проживания, а не получения дохода от аренды."
+        },
+        {
+          "question": "Даёт ли $200 000 право на гражданство?",
+          "answer": "Нет, для гражданства за недвижимость требуется от $400 000 и запрет продажи на три года наряду с другими условиями."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/Ikamet/BasvuruFormuOrnegiUzatma/BasvuruFormuBos?tur=0",
+          "label": "Официальный перечень документов собственника"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/Pages/acquiring-property-and-citizenship.aspx",
+          "label": "Государственное агентство инвестиций"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Сборы за карточку ВНЖ в 2026 году"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Официальные вопросы о ВНЖ"
+        }
+      ]
+    },
+    "ar": {
+      "title": "إقامة مالك العقار في تركيا 2026: شرط 200 ألف دولار",
+      "metaDescription": "شراء منزل في تركيا للإقامة: حد 200 ألف دولار والطابو والعنوان والرسوم والفرق عن الجنسية باستثمار 400 ألف دولار.",
+      "shortAnswer": "قد يوفر شراء مسكن أساساً للإقامة قصيرة الأجل. بالنسبة للمشتريات الخاضعة للحد الحالي يشترط النموذج الرسمي قيمة لا تقل عن 200 ألف دولار بما يعادلها بالليرة يوم الشراء، ولا تضمن الملكية الموافقة.",
+      "bosphorasHelp": "تنسق Bosphoras ترتيبات الانتقال والبحث عن السكن والمواعيد مع مختصين مستقلين بحسب حالتك، وتبقى القرارات من اختصاص السلطات.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "تحديد هدف الشراء",
+          "body": "يمكن للأجنبي المخول بالتملك الشراء دون إقامة مسبقة. يخضع دخول المعاينة لقواعد السياحة أو الأعمال. تتطلب إقامة المالك مسكناً يستخدمه للسكن، بينما الجنسية عبر الاستثمار العقاري مسار مستقل.",
+          "table": {
+            "headers": [
+              "الهدف",
+              "الشرط الرئيسي"
+            ],
+            "rows": [
+              [
+                "المعاينة والشراء",
+                "نظام الدخول بحسب الجواز"
+              ],
+              [
+                "إقامة المالك",
+                "مسكن مؤهل من 200 ألف دولار للمشتريات الخاضعة للحد"
+              ],
+              [
+                "الجنسية العقارية",
+                "400 ألف دولار وعدم البيع ثلاث سنوات"
+              ],
+              [
+                "العمل",
+                "إذن مستقل"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-2",
+          "title": "التحقق من الحد قبل الشراء",
+          "body": "يقيم الحد في تاريخ التملك وفق الوثائق والقواعد المعمول بها. قد تحتاج العقارات المشتراة قبل النظام الحالي أو الموروثة أو الموهوبة إلى تقييم منفصل؛ يطلب النموذج الرسمي تقرير تقييم حديثاً للعقارات الموروثة أو الموهوبة. لا يكفي سعر الإعلان لإثبات الأهلية."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "الطابو والسكن والعنوان",
+          "body": "تحقق من الصفة السكنية والملكية باسم مقدم الطلب والقيود والرهون وأهلية العنوان للتسجيل الجديد. يجب استخدام العقار للسكن لا لتحقيق دخل الإيجار على هذا الأساس. في الملكية العائلية المشتركة جهز مستندات القرابة والملكية."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "الطلب والمدة والتكاليف",
+          "body": "قدم عبر بوابة الإقامة قبل انتهاء البقاء القانوني. جهز الطابو والجواز والصور والتأمين وإثبات الموارد والعنوان بحسب التعليمات. تصدر الإقامة قصيرة الأجل العادية عادة لمدة تصل إلى سنتين. رسوم البطاقة في 2026 هي 964 ليرة دون الحقوق الأخرى. يدرس الملف المكتمل عادة خلال 90 يوماً."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "حماية قرار الشراء",
+          "body": "قبل دفع العربون اطلب مراجعة مستقلة للملكية وصلاحية البائع وقيود الجنسية والعنوان والقيمة المعلنة والتحويلات. احسب رسوم التسجيل والصيانة والمصاريف المشتركة. إذا كانت الجنسية هدفك فافحص بصورة منفصلة حد 400 ألف دولار وجميع شروط العملية."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يكفي عقار بقيمة 150 ألف دولار؟",
+          "answer": "لا لشراء جديد خاضع لحد 200 ألف دولار؛ قد تختلف قواعد العقارات القديمة."
+        },
+        {
+          "question": "هل أستطيع تأجير العقار وطلب إقامة المالك؟",
+          "answer": "يشترط هذا الأساس استخدام المسكن للإقامة لا لتحقيق دخل الإيجار."
+        },
+        {
+          "question": "هل يمنح استثمار 200 ألف دولار الجنسية؟",
+          "answer": "لا، يشترط مسار الجنسية العقارية 400 ألف دولار على الأقل وعدم البيع ثلاث سنوات وغيرها من الشروط."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع تصاريح الإقامة"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "بوابة الإقامة الرسمية"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/Ikamet/BasvuruFormuOrnegiUzatma/BasvuruFormuBos?tur=0",
+          "label": "نموذج الإقامة ووثائق العقار الرسمية"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/Pages/acquiring-property-and-citizenship.aspx",
+          "label": "هيئة الاستثمار الوطنية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "رسوم بطاقة الإقامة 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "الأسئلة الرسمية حول الإقامة"
+        }
+      ]
+    }
   }
 };
