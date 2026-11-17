@@ -4,6 +4,8 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 import type { Locale } from '@/lib/i18n';
+import { getEditorialGuideForSeoKey } from '@/data/highPotentialPages';
+import { HighPotentialGuideRenderer } from '@/components/HighPotentialGuideRenderer';
 import { siteUrl } from '@/lib/routes';
 import type { BosphorasProgrammaticSeoPage } from '@/data/bosphorasProgrammaticSeoPages';
 
@@ -31,6 +33,8 @@ function assessmentHref(locale: Locale) { return locale === 'fr' ? '/diagnostic-
 function titleFor(locale: Locale, fr: string, en: string, ru: string, ar: string) { return locale === 'fr' ? fr : locale === 'en' ? en : locale === 'ru' ? ru : ar; }
 
 export function BosphorasVisaTypeSeoPageV2({ page, locale, allPages }: { page: BosphorasProgrammaticSeoPage; locale: Locale; allPages: BosphorasProgrammaticSeoPage[] }) {
+  const editorial = getEditorialGuideForSeoKey(page.key, locale);
+  if (editorial) return <><Header locale={locale} currentPath={page.slugs[locale]} /><HighPotentialGuideRenderer guide={editorial} /><Footer locale={locale} /></>;
   const p = profileFor(page.key);
   const canonical = `${siteUrl}${page.slugs[locale]}`;
   const related = relatedKeys.map((key) => allPages.find((item) => item.key === key)).filter(Boolean) as BosphorasProgrammaticSeoPage[];

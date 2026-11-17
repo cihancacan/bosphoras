@@ -73,7 +73,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Ministère des Affaires étrangères : conditions générales d'entrée"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "e-Visa : informations officielles et frais"
         },
         {
@@ -160,7 +160,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Foreign Ministry: general visa rules"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "e-Visa: official application information and fees"
         },
         {
@@ -247,7 +247,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "МИД Турции: общие правила въезда"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "e-Visa: официальная информация и сборы"
         },
         {
@@ -334,7 +334,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "وزارة الخارجية: القواعد العامة للدخول"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "التأشيرة الإلكترونية: معلومات الطلب والرسوم"
         },
         {
@@ -427,7 +427,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Pays admis avec carte d'identité"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "e-Visa : informations officielles et frais"
         }
       ]
@@ -506,7 +506,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Countries eligible for national ID entry"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "e-Visa: official application information and fees"
         }
       ]
@@ -585,7 +585,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Страны с правом въезда по удостоверению личности"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "e-Visa: официальная информация и сборы"
         }
       ]
@@ -664,7 +664,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "الدول المؤهلة للدخول ببطاقة الهوية"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "التأشيرة الإلكترونية: معلومات الطلب والرسوم"
         }
       ]
@@ -1021,7 +1021,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Ministère des Affaires étrangères : conditions générales d'entrée"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "Portail officiel e-Visa : modalités et paiement"
         }
       ]
@@ -1376,7 +1376,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Foreign Ministry: general visa rules"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "Official e-Visa portal: applications and payment"
         }
       ]
@@ -1731,7 +1731,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "МИД Турции: общие правила въезда"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "Официальный портал электронной визы: оформление и оплата"
         }
       ]
@@ -2086,7 +2086,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "وزارة الخارجية: القواعد العامة للدخول"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "منصة التأشيرة الإلكترونية الرسمية: الطلب والدفع"
         }
       ]
@@ -2159,7 +2159,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Ministère des Affaires étrangères : conditions générales d'entrée"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "e-Visa : informations officielles et frais"
         },
         {
@@ -2242,7 +2242,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Foreign Ministry: general visa rules"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "e-Visa: official application information and fees"
         },
         {
@@ -2325,7 +2325,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "МИД Турции: общие правила въезда"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "e-Visa: официальная информация и сборы"
         },
         {
@@ -2408,7 +2408,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "وزارة الخارجية: القواعد العامة للدخول"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "التأشيرة الإلكترونية: معلومات الطلب والرسوم"
         },
         {
@@ -2493,7 +2493,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Ministère des Affaires étrangères : conditions générales d'entrée"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "e-Visa : informations officielles et frais"
         },
         {
@@ -2576,7 +2576,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Foreign Ministry: general visa rules"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "e-Visa: official application information and fees"
         },
         {
@@ -2659,7 +2659,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "МИД Турции: общие правила въезда"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "e-Visa: официальная информация и сборы"
         },
         {
@@ -2742,7 +2742,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "وزارة الخارجية: القواعد العامة للدخول"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "التأشيرة الإلكترونية: معلومات الطلب والرسوم"
         },
         {
@@ -3044,7 +3044,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Régime des visas par nationalité — ministère turc des Affaires étrangères"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "Portail officiel e-Visa : modalités et paiement"
         },
         {
@@ -3344,7 +3344,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Visa regime by nationality — Turkish Foreign Ministry"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "Official e-Visa portal: applications and payment"
         },
         {
@@ -3644,7 +3644,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Визовые правила по гражданству — МИД Турции"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "Официальный портал электронной визы: оформление и оплата"
         },
         {
@@ -3944,7 +3944,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "نظام التأشيرات حسب الجنسية — وزارة الخارجية التركية"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "منصة التأشيرة الإلكترونية الرسمية: الطلب والدفع"
         },
         {
@@ -4040,7 +4040,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Régime des visas par nationalité — ministère turc des Affaires étrangères"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "Portail officiel e-Visa : modalités et paiement"
         },
         {
@@ -4138,7 +4138,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Visa regime by nationality — Turkish Foreign Ministry"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "Official e-Visa portal: applications and payment"
         },
         {
@@ -4236,7 +4236,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Визовые правила по гражданству — МИД Турции"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "Официальный портал электронной визы: оформление и оплата"
         },
         {
@@ -4334,7 +4334,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "نظام التأشيرات حسب الجنسية — وزارة الخارجية التركية"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
           "label": "منصة التأشيرة الإلكترونية الرسمية: الطلب والدفع"
         },
         {

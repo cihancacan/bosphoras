@@ -220,6 +220,8 @@ const editorialSeoKeyMap: Record<string, string> = {
   'dubai-investors-look-turkey': 'dubai-investors-turkey',
   'private-concierge-istanbul-investors': 'private-concierge-istanbul',
   'rent-or-buy-before-moving': 'rent-or-buy-before-relocating',
+  'countries-id-card-turkey': 'countries-enter-turkey-id-card',
+  'turkey-e-visa-main': 'turkey-evisa-foreigners',
 };
 
 export function getEditorialGuideForSeoKey(key: string, locale: Locale): HighPotentialGuide | undefined {
