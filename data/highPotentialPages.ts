@@ -166,6 +166,8 @@ export const highPotentialGuides: HighPotentialGuide[] = highPotentialTopics.fla
     internalLinks: internalLinks(locale),
     ...(editorialGuides[topic.id]?.[locale] ? {
       ...editorialGuides[topic.id]![locale],
+      h1: editorialGuides[topic.id]![locale].title,
+      subtitle: editorialGuides[topic.id]![locale].metaDescription,
       updatedAt: editorialGuideUpdatedAt,
       publishedAt: updatedAt,
       internalLinks: [

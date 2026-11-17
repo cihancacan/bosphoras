@@ -559,7 +559,7 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
         {
           "id": "detail-5",
           "title": "Démarches de résidence et première installation",
-          "body": "La demande de VNH (ikamet) se fait sur la plateforme officielle e-ikamet avant la fin du séjour autorisé. Préparez les pièces correspondant à votre motif, l’assurance le cas échéant, le dossier du logement et les justificatifs de ressources. La migration prévoit une décision dans un délai maximal de 90 jours à partir du dépôt complet, sous réserve de prolongation notifiée. Bosphoras peut coordonner logement, traduction et rendez-vous sans se substituer à l’administration."
+          "body": "La demande de titre de séjour (ikamet) se fait sur la plateforme officielle e-ikamet avant la fin du séjour autorisé. Préparez les pièces correspondant à votre motif, l’assurance le cas échéant, le dossier du logement et les justificatifs de ressources. La migration prévoit une décision dans un délai maximal de 90 jours à partir du dépôt complet, sous réserve de prolongation notifiée. Bosphoras peut coordonner logement, traduction et rendez-vous sans se substituer à l’administration."
         }
       ],
       "faqs": [
