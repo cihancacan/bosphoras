@@ -296,6 +296,78 @@ const charts: Record<string, ChartSpec | undefined> = {
         ]
       }
     ]
+  },
+  "turkey-bank-account-non-resident": {
+    "section": "bank-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          400000,
+          650000,
+          950000,
+          1200000
+        ]
+      }
+    ]
+  },
+  "kyc-bank-turkey-foreigners": {
+    "section": "bank-2",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          185000,
+          15000,
+          15000
+        ]
+      },
+      {
+        "column": 2,
+        "values": [
+          370000,
+          30000,
+          30000
+        ]
+      }
+    ]
+  },
+  "source-of-funds-turkey-investors": {
+    "section": "bank-2",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          250000,
+          80000,
+          10000,
+          160000,
+          120000,
+          40000
+        ]
+      }
+    ]
+  },
+  "wealth-transfer-to-turkey": {
+    "section": "bank-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          3270,
+          3500,
+          7000
+        ]
+      },
+      {
+        "column": 2,
+        "values": [
+          1490,
+          3500,
+          4750
+        ]
+      }
+    ]
   }
 };
 const captions: Record<Locale,string> = { fr: 'Visualisation des montants du tableau', en: 'Visual comparison of the amounts above', ru: 'Наглядное сравнение сумм из таблицы', ar: 'مقارنة مرئية للمبالغ في الجدول' };
