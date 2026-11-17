@@ -1,5 +1,6 @@
 const assert=require('node:assert/strict');
-process.env.__NEXT_IMAGE_OPTS=JSON.stringify({unoptimized:true});
+// Next normally injects its full image configuration at build time; use the real context in standalone SSR.
+delete process.env.__NEXT_IMAGE_OPTS;
 const React=require('react');
 const {renderToStaticMarkup}=require('react-dom/server');
 const {ImageConfigContext}=require('next/dist/shared/lib/image-config-context.shared-runtime');
