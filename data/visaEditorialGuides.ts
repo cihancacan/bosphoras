@@ -13971,5 +13971,1779 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
         }
       ]
     }
+  },
+  "turkey-residence-foreign-owner": {
+    "fr": {
+      "title": "Ikamet en Turquie pour propriétaire étranger : conditions 2026 et renouvellement",
+      "metaDescription": "Propriétaire d'un logement en Turquie ? Découvrez les conditions de l'ikamet, la valeur de 200 000 USD, les justificatifs de propriété, l'adresse et le renouvellement.",
+      "shortAnswer": "Posséder un logement turc peut justifier une demande de résidence courte durée lorsque le logement sert à votre habitation. Pour un nouvel achat en 2026, le formulaire officiel indique un seuil de 200 000 USD en équivalent livres turques au jour de l'acquisition. L'achat n'est pas une garantie d'obtention.",
+      "bosphorasHelp": "Bosphoras coordonne les visites, la recherche de logement et les rendez-vous avec des professionnels indépendants. Les autorisations sont délivrées par les autorités compétentes, sans garantie de résultat.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Vérifiez le titre et l'usage réel",
+          "body": "Le tapu doit documenter votre droit de propriété. Le bien doit être résidentiel et vous devez l'utiliser personnellement comme logement. Un investissement locatif, un bureau ou un terrain ne correspond pas à ce motif. Vérifiez également si l'adresse accepte les nouvelles inscriptions de ressortissants étrangers avant la signature.",
+          "table": {
+            "headers": [
+              "Point",
+              "Règle"
+            ],
+            "rows": [
+              [
+                "Nouvel achat 2026",
+                "200 000 USD minimum"
+              ],
+              [
+                "Usage",
+                "Habitation personnelle"
+              ],
+              [
+                "Titre",
+                "Courte durée, généralement 2 ans maximum"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Anciennes acquisitions et transmission",
+          "body": "La date d'acquisition et la nature du transfert sont importantes pour les seuils et les justificatifs. Ne supposez pas qu'un achat antérieur est automatiquement soumis au même régime qu'un nouvel achat. Pour une donation ou succession, le formulaire peut demander une valeur actualisée. Conservez acte, preuve des paiements et documents d'évaluation. Faites déterminer le régime applicable avant un renouvellement."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Dossier individuel et famille",
+          "body": "Préparez le passeport, les photographies demandées, l'assurance admissible, les ressources, les reçus et les documents de propriété. Pour une première demande, le document municipal d'identification de l'adresse peut être requis. Les membres de la famille copropriétaires documentent leurs droits ; les autres doivent choisir leur propre fondement, par exemple familial si les conditions du sponsor sont réunies."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Maintenir la résidence au fil des années",
+          "body": "Le titre de courte durée ne dépasse normalement pas deux ans par délivrance. Conservez le logement et son usage personnel, ainsi que votre adresse enregistrée. Renouvelez pendant les 60 derniers jours avant expiration. La carte coûte 964 TL en 2026, sans les droits de séjour éventuels. Une vente, un changement d'usage ou de résidence doit être évalué avant l'opération."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Résidence ou citoyenneté : deux décisions distinctes",
+          "body": "Le seuil de 200 000 USD concerne le parcours de propriétaire occupant. L'investissement immobilier qualifié pour une demande de citoyenneté répond à d'autres conditions, dont 400 000 USD et une interdiction de revente pendant trois ans. La possession du logement ne donne pas automatiquement le droit de travailler. Organisez vos démarches selon votre objectif, pas seulement selon la valeur du bien."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Un logement loué à des tiers suffit-il ?",
+          "answer": "Non pour le fondement de résidence personnelle du propriétaire."
+        },
+        {
+          "question": "La vente supprime-t-elle le motif ?",
+          "answer": "Elle peut le faire ; prévoyez une autre base légale avant de vendre."
+        },
+        {
+          "question": "Le tapu garantit-il le renouvellement ?",
+          "answer": "Non, les autres conditions sont réévaluées."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de résidence — Migration"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions officielles sur l'ikamet"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Formulaire de courte durée"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey residence for foreign property owners 2026: eligibility and renewal",
+      "metaDescription": "Understand homeowner residence, the USD 200,000 threshold, title evidence, address registration and renewal in Turkey.",
+      "shortAnswer": "Owning a Turkish home may support short-term residence when used as your own dwelling. For a new 2026 purchase, the official form specifies USD 200,000 in lira equivalent on acquisition. Ownership is not a guarantee of approval.",
+      "bosphorasHelp": "Bosphoras coordinates visits, accommodation and meetings with independent professionals. Competent authorities decide applications; approval is not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Check title and genuine use",
+          "body": "The title deed must establish ownership. The property must be residential and used as your own home; a rental investment, office or vacant land does not meet this purpose. Check address eligibility for new foreign registrations before signing.",
+          "table": {
+            "headers": [
+              "Item",
+              "Rule"
+            ],
+            "rows": [
+              [
+                "New purchase 2026",
+                "USD 200,000 minimum"
+              ],
+              [
+                "Use",
+                "Personal dwelling"
+              ],
+              [
+                "Permit",
+                "Short-term, generally max 2 years"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Earlier purchases and transfers",
+          "body": "Acquisition date and transfer type can affect the applicable threshold and evidence. Do not assume that an older acquisition follows the same regime as a new purchase. Gifts or inheritance may require updated valuation evidence. Retain title, payment and valuation records and establish the applicable rules before renewing."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Individual and family documents",
+          "body": "Prepare passport, required photographs, eligible insurance, means, receipts and title evidence. A municipal address identification document may be required for a first application. Relatives with shared title document their rights; others must establish an individual basis, such as qualifying family residence."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Maintain eligibility over time",
+          "body": "Ordinary short-term permits generally last no more than two years per grant. Maintain personal use and the registered address. Renew in the final 60 days before expiry. The 2026 card fee is TRY 964, excluding any residence duty. Assess the effect of selling or changing the property's use before doing so."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Residence and citizenship are separate",
+          "body": "USD 200,000 concerns the owner-occupier residence route. Qualified citizenship investment has separate conditions including USD 400,000 and a three-year resale restriction. Ownership does not automatically authorise employment. Match the route to your actual objectives."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does a home rented to others qualify?",
+          "answer": "Not for the owner's personal-residence basis."
+        },
+        {
+          "question": "Could a sale remove eligibility?",
+          "answer": "Yes; establish a different lawful basis before selling."
+        },
+        {
+          "question": "Does title guarantee renewal?",
+          "answer": "No, other requirements are reassessed."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence categories — Migration Presidency"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Official residence FAQ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Short-term application form"
+        }
+      ]
+    },
+    "ru": {
+      "title": "ВНЖ Турции для иностранного собственника жилья 2026: условия и продление",
+      "metaDescription": "ВНЖ собственника: порог 200 000 долларов, документы на жильё, регистрация адреса и продление.",
+      "shortAnswer": "Собственное жильё в Турции может быть основанием краткосрочного ВНЖ, если используется для личного проживания. Для новой покупки в 2026 году форма указывает порог 200 000 долларов в эквиваленте лир на дату приобретения. Покупка не гарантирует одобрение.",
+      "bosphorasHelp": "Bosphoras координирует поездки, поиск жилья и встречи с независимыми специалистами. Решения принимают компетентные органы; одобрение не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Право собственности и использование",
+          "body": "Tapu подтверждает собственность. Объект должен быть жилым и использоваться лично заявителем; арендная инвестиция, офис или пустой участок не подходят для этого основания. Проверьте доступность регистрации иностранцев по адресу до сделки.",
+          "table": {
+            "headers": [
+              "Параметр",
+              "Условие"
+            ],
+            "rows": [
+              [
+                "Новая покупка 2026",
+                "От 200 000 USD"
+              ],
+              [
+                "Использование",
+                "Личное проживание"
+              ],
+              [
+                "ВНЖ",
+                "Краткосрочный, обычно до 2 лет"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Прежние приобретения и переход права",
+          "body": "Дата и способ приобретения влияют на требования. Не следует автоматически применять правила новой покупки к старому объекту. При наследовании или дарении может требоваться актуальная оценка. Храните документы о собственности, платежах и оценке, выясните применимый режим до продления."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Документы семьи",
+          "body": "Подготовьте паспорт, фотографии по форме, страховку, подтверждение средств, квитанции и документы на жильё. При первой подаче может требоваться муниципальная справка об адресе. Родственники-сособственники подтверждают свои права; остальным нужно отдельное основание, например семейный ВНЖ при соответствии спонсора."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Сохранение основания",
+          "body": "Обычный краткосрочный ВНЖ выдаётся максимум на два года за раз. Сохраняйте личное проживание и зарегистрированный адрес. Подавайте продление в последние 60 дней до окончания. Стоимость карты в 2026 году — 964 лиры без иных сборов. До продажи либо изменения назначения оцените последствия."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "ВНЖ и гражданство",
+          "body": "Порог 200 000 долларов относится к ВНЖ собственника, проживающего в объекте. Для квалифицированной инвестиции с целью гражданства действуют отдельные условия: 400 000 долларов и запрет продажи на три года. Собственность сама по себе не разрешает работу. Выбирайте основание по фактической цели."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Подходит ли жильё, сдаваемое другим?",
+          "answer": "Нет для основания личного проживания собственника."
+        },
+        {
+          "question": "Продажа прекращает основание?",
+          "answer": "Может прекратить; подготовьте другое законное основание."
+        },
+        {
+          "question": "Гарантирует ли tapu продление?",
+          "answer": "Нет, остальные критерии проверяются заново."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ — миграционная служба"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Официальные вопросы о ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Портал e-ikamet"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Форма краткосрочного ВНЖ"
+        }
+      ]
+    },
+    "ar": {
+      "title": "إقامة تركيا لمالك عقار أجنبي 2026: الشروط والتجديد",
+      "metaDescription": "شروط إقامة المالك وحد 200 ألف دولار والطابو وتسجيل العنوان وتجديد التصريح في تركيا.",
+      "shortAnswer": "قد يمنح امتلاك مسكن في تركيا أساساً للإقامة القصيرة إذا كان للسكن الشخصي. وللشراء الجديد عام 2026 يحدد النموذج الرسمي قيمة 200 ألف دولار بما يعادلها بالليرة يوم الشراء. لا يضمن التملك الموافقة.",
+      "bosphorasHelp": "تنسق Bosphoras الزيارات والسكن والمواعيد مع المختصين المستقلين. تبت السلطات المختصة في الطلبات دون ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "الملكية والاستعمال الفعلي",
+          "body": "يجب أن يثبت الطابو ملكيتك وأن يكون العقار سكنياً تستعمله شخصياً. لا يحقق الاستثمار التأجيري أو المكتب أو الأرض الخالية هذا الغرض. تحقق من أهلية العنوان لتسجيل الأجانب الجدد قبل التوقيع.",
+          "table": {
+            "headers": [
+              "البند",
+              "القاعدة"
+            ],
+            "rows": [
+              [
+                "شراء جديد 2026",
+                "200 ألف دولار على الأقل"
+              ],
+              [
+                "الاستعمال",
+                "سكن شخصي"
+              ],
+              [
+                "التصريح",
+                "قصير الأجل، حتى سنتين عموماً"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "المشتريات السابقة ونقل الملكية",
+          "body": "يؤثر تاريخ الشراء وطريقة نقل الملكية في الشروط. لا تفترض تطبيق قواعد الشراء الجديد على كل عقار قديم. قد يلزم تقييم حديث للهبة والميراث. احتفظ بسند الملكية والمدفوعات والتقييم وحدد النظام المطبق قبل التجديد."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "ملفات أفراد الأسرة",
+          "body": "جهز الجواز والصور والتأمين المقبول وإثبات الموارد والإيصالات والطابو. قد يلزم مستند بلدي يحدد العنوان للطلب الأول. يثبت أفراد الأسرة المشتركون في الملكية حقوقهم، ويحتاج الآخرون إلى أساس مستقل مثل الإقامة العائلية عند استيفاء شروط الكفيل."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "الحفاظ على أهلية الإقامة",
+          "body": "الحد العام للإقامة القصيرة سنتان لكل إصدار. حافظ على السكن الشخصي والعنوان المسجل. قدّم التجديد في آخر 60 يوماً قبل الانتهاء. رسم البطاقة لعام 2026 هو 964 ليرة دون الرسوم الأخرى. قيّم أثر البيع أو تغيير الاستعمال قبل تنفيذه."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "الإقامة والجنسية مساران منفصلان",
+          "body": "يخص حد 200 ألف دولار إقامة المالك الساكن. وللاستثمار المؤهل للجنسية شروط منفصلة منها 400 ألف دولار وقيد عدم البيع ثلاث سنوات. لا يمنح التملك حق العمل تلقائياً. اختر المسار وفق هدفك الفعلي."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يصلح مسكن مؤجر للغير؟",
+          "answer": "لا لمسار السكن الشخصي للمالك."
+        },
+        {
+          "question": "هل يزيل البيع أساس الإقامة؟",
+          "answer": "قد يزيله؛ حدد أساساً قانونياً آخر أولاً."
+        },
+        {
+          "question": "هل يضمن الطابو التجديد؟",
+          "answer": "لا، تعاد دراسة بقية الشروط."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامة — إدارة الهجرة"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "الأسئلة الرسمية حول الإقامة"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة e-ikamet الرسمية"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "نموذج الإقامة القصيرة"
+        }
+      ]
+    }
+  },
+  "turkey-residence-family": {
+    "fr": {
+      "title": "Résidence familiale Turquie 2026 : conjoint, enfants, revenus et durée",
+      "metaDescription": "Comment obtenir un ikamet familial en Turquie ? Conditions du sponsor, conjoint et enfants, ressources, assurance et durée maximale de trois ans.",
+      "shortAnswer": "Le titre familial permet à certains conjoints et enfants étrangers de rejoindre un citoyen turc ou un sponsor admissible. Sa durée maximale est de trois ans et ne peut dépasser celle du titre du sponsor lorsqu'il est étranger. Chaque membre a un dossier individuel.",
+      "bosphorasHelp": "Bosphoras coordonne les visites, la recherche de logement et les rendez-vous avec des professionnels indépendants. Les autorisations sont délivrées par les autorités compétentes, sans garantie de résultat.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Qui peut être bénéficiaire ?",
+          "body": "Le conjoint étranger, les enfants mineurs étrangers du couple ou de l'un des conjoints, et les enfants étrangers à charge peuvent relever de cette catégorie. Le mariage doit être réel et les conjoints majeurs. Le consentement du parent détenant l'autorité parentale et vivant à l'étranger peut être nécessaire. Les enfants de deux parents étrangers ne deviennent pas automatiquement titulaires par l'effet du permis de l'un."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Conditions du sponsor",
+          "body": "Le sponsor doit prouver des ressources régulières, un logement approprié, une assurance couvrant la famille, un enregistrement d'adresse et l'absence de condamnation pour certaines infractions familiales pendant les cinq années précédentes. En règle générale, le sponsor étranger a déjà résidé légalement un an ; la loi prévoit des exceptions, notamment pour certains chercheurs et conjoints de citoyens turcs."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Calcul des ressources",
+          "body": "Le revenu total ne peut être inférieur au salaire minimum et doit correspondre à au moins un tiers de ce salaire par membre de la famille. En 2026, le salaire minimum officiel est de 28 075,50 TL net et 33 030 TL brut par mois. Le tableau présente un calcul illustratif sur la base nette ; le service compétent détermine les justificatifs et la base retenue pour le dossier.",
+          "table": {
+            "headers": [
+              "Famille (sponsor inclus)",
+              "Exemple de revenu mensuel net"
+            ],
+            "rows": [
+              [
+                "2",
+                "28 075,50 TL"
+              ],
+              [
+                "3",
+                "28 075,50 TL"
+              ],
+              [
+                "4",
+                "37 434,00 TL"
+              ],
+              [
+                "5",
+                "46 792,50 TL"
+              ],
+              [
+                "6",
+                "56 151,00 TL"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Documents et scolarité",
+          "body": "Préparez les passeports, actes de mariage et naissance, preuves de logement et ressources, assurance et documents du sponsor. Les actes étrangers peuvent nécessiter apostille ou légalisation et traduction certifiée. Le titre familial permet en principe aux enfants de moins de 18 ans de suivre l'enseignement primaire et secondaire sans titre étudiant distinct. Vérifiez les inscriptions scolaires et la proximité des services de santé avant de choisir le logement."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Divorce, majorité et renouvellement",
+          "body": "Après trois ans de résidence familiale, un enfant devenu majeur peut solliciter un titre court. Après divorce d'un citoyen turc, la règle ordinaire de trois ans de titre familial connaît une exception pour les violences domestiques établies judiciairement ; après décès du sponsor, une transition peut être possible sans minimum. Une évolution familiale exige une évaluation du nouveau motif. Déposez le renouvellement avant l'expiration, pendant les 60 derniers jours."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Deux étrangers peuvent-ils être sponsors l'un de l'autre simultanément ?",
+          "answer": "Non, l'un doit remplir les conditions du sponsor."
+        },
+        {
+          "question": "Combien de temps dure le titre familial ?",
+          "answer": "Trois ans au maximum par délivrance, sans dépasser le titre du sponsor."
+        },
+        {
+          "question": "Les enfants doivent-ils avoir un dossier ?",
+          "answer": "Oui, chacun reçoit son propre titre."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de résidence — Migration"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions officielles sur l'ikamet"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/yayinlar/calisma-hayati-istatistikleri-e-bulteni/eylul-2026/ucret-ve-sendikal-istatistikler.html",
+          "label": "Salaire minimum officiel 2026"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey family residence permit 2026: spouse, children and income",
+      "metaDescription": "Family ikamet requirements, sponsor eligibility, income calculation, health insurance, children and the three-year maximum.",
+      "shortAnswer": "Family residence may allow qualifying foreign spouses and children to join a Turkish citizen or eligible sponsor. Its maximum is three years and cannot exceed a foreign sponsor's permit duration. Each applicant has a separate file.",
+      "bosphorasHelp": "Bosphoras coordinates visits, accommodation and meetings with independent professionals. Competent authorities decide applications; approval is not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Eligible family members",
+          "body": "Foreign spouses, foreign minor children of either spouse and dependent foreign children can qualify. Both spouses must be adults in a genuine marriage. Consent from a parent abroad sharing custody may be required. A parent's permit does not automatically grant every child residence."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Sponsor requirements",
+          "body": "The sponsor must establish regular means, suitable housing, health cover for the family, address registration and no conviction for specified family offences in the previous five years. A foreign sponsor generally needs one year of lawful residence, with statutory exceptions including certain researchers and spouses of Turkish citizens."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Income calculation",
+          "body": "The sponsor's income must meet the overall minimum wage and at least one third of that wage for each family member. In 2026 the published wage is TRY 28,075.50 net and TRY 33,030 gross monthly. The table illustrates a net-wage calculation; the competent authority determines the accepted basis and evidence for the application.",
+          "table": {
+            "headers": [
+              "Family (including sponsor)",
+              "Illustrative monthly net income"
+            ],
+            "rows": [
+              [
+                "2",
+                "28,075.50 TL"
+              ],
+              [
+                "3",
+                "28,075.50 TL"
+              ],
+              [
+                "4",
+                "37,434.00 TL"
+              ],
+              [
+                "5",
+                "46,792.50 TL"
+              ],
+              [
+                "6",
+                "56,151.00 TL"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Records and education",
+          "body": "Prepare passports, marriage and birth records, means, housing, insurance and sponsor documentation. Foreign records may need authentication and certified translation. Family residence generally allows children under 18 to attend primary and secondary school without a separate student permit. Assess school enrolment and healthcare access before selecting a home."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Divorce, adulthood and renewal",
+          "body": "A child reaching adulthood after three years on family residence may apply for short-term residence. After divorce from a Turkish citizen the ordinary three-year condition has an exception for judicially established domestic violence; after the sponsor's death a transfer may be available without a minimum period. Reassess the legal basis when family circumstances change and renew within the final 60 days before expiry."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can two foreigners simultaneously sponsor each other?",
+          "answer": "No; one must meet sponsor conditions."
+        },
+        {
+          "question": "How long does family residence last?",
+          "answer": "Up to three years per grant and no longer than the sponsor's permit."
+        },
+        {
+          "question": "Does each child need a file?",
+          "answer": "Yes, each receives an individual permit."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence categories — Migration Presidency"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Official residence FAQ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/yayinlar/calisma-hayati-istatistikleri-e-bulteni/eylul-2026/ucret-ve-sendikal-istatistikler.html",
+          "label": "Official 2026 minimum wage"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Семейный ВНЖ в Турции 2026: супруг, дети, доход и срок",
+      "metaDescription": "Семейный икамет: требования к спонсору, доход, страховка, документы детей и срок до трёх лет.",
+      "shortAnswer": "Семейный ВНЖ позволяет подходящим иностранным супругам и детям воссоединиться с гражданином Турции или соответствующим требованиям спонсором. Максимум — три года, но не дольше ВНЖ иностранного спонсора. Каждый подаёт отдельно.",
+      "bosphorasHelp": "Bosphoras координирует поездки, поиск жилья и встречи с независимыми специалистами. Решения принимают компетентные органы; одобрение не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Кто может получить",
+          "body": "Иностранный супруг, иностранные несовершеннолетние дети обоих или одного супруга и зависимые иностранные дети могут претендовать на ВНЖ. Брак должен быть действительным, супруги совершеннолетними. Может требоваться согласие проживающего за рубежом родителя с правами опеки. ВНЖ родителя не даёт детям право автоматически."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Требования к спонсору",
+          "body": "Подтверждаются регулярные средства, подходящее жильё, страхование семьи, адресная регистрация и отсутствие судимости за определённые преступления против семьи за пять лет. Иностранному спонсору обычно нужен год законного проживания; законом предусмотрены исключения, в том числе для отдельных исследователей и супругов граждан Турции."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Расчёт дохода",
+          "body": "Общий доход не ниже минимальной зарплаты и не менее одной трети минимальной зарплаты на каждого члена семьи. В 2026 году официальная зарплата составляет 28 075,50 лиры нетто и 33 030 лир брутто в месяц. Таблица показывает пример по нетто; орган определяет применяемую базу и документы.",
+          "table": {
+            "headers": [
+              "Семья со спонсором",
+              "Пример чистого дохода в месяц"
+            ],
+            "rows": [
+              [
+                "2",
+                "28 075,50 TL"
+              ],
+              [
+                "3",
+                "28 075,50 TL"
+              ],
+              [
+                "4",
+                "37 434,00 TL"
+              ],
+              [
+                "5",
+                "46 792,50 TL"
+              ],
+              [
+                "6",
+                "56 151,00 TL"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Документы и образование",
+          "body": "Готовятся паспорта, свидетельства о браке и рождении, жильё, доход, страховка и документы спонсора. Иностранные акты могут требовать апостиля или легализации и заверенного перевода. По семейному ВНЖ дети до 18 лет обычно могут учиться в начальной и средней школе без отдельного студенческого ВНЖ. Уточните зачисление и доступность медицины до выбора жилья."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Развод, совершеннолетие и продление",
+          "body": "После трёх лет семейного ВНЖ совершеннолетний ребёнок может подать на краткосрочный. После развода с гражданином Турции для обычного требования трёх лет есть исключение при установленном судом домашнем насилии; после смерти спонсора переход возможен без минимального срока. При изменении обстоятельств оцените новое основание. Продлевайте в последние 60 дней до истечения."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Могут ли два иностранца одновременно быть спонсорами друг друга?",
+          "answer": "Нет, один должен отвечать условиям спонсора."
+        },
+        {
+          "question": "Какой максимальный срок?",
+          "answer": "Три года за выдачу, не дольше разрешения спонсора."
+        },
+        {
+          "question": "Нужно ли ребёнку отдельное заявление?",
+          "answer": "Да, каждый получает собственную карту."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ — миграционная служба"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Официальные вопросы о ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Портал e-ikamet"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/yayinlar/calisma-hayati-istatistikleri-e-bulteni/eylul-2026/ucret-ve-sendikal-istatistikler.html",
+          "label": "Минимальная зарплата 2026 года"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الإقامة العائلية في تركيا 2026: الزوج والأطفال والدخل والمدة",
+      "metaDescription": "شروط الإيكامت العائلي والكفيل والدخل والتأمين ووثائق الأطفال والمدة القصوى ثلاث سنوات.",
+      "shortAnswer": "تتيح الإقامة العائلية للأزواج والأطفال الأجانب المؤهلين الالتحاق بمواطن تركي أو كفيل مستوف للشروط. الحد ثلاث سنوات ولا يتجاوز مدة تصريح الكفيل الأجنبي. لكل فرد ملف مستقل.",
+      "bosphorasHelp": "تنسق Bosphoras الزيارات والسكن والمواعيد مع المختصين المستقلين. تبت السلطات المختصة في الطلبات دون ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "من يحق له التقديم؟",
+          "body": "قد يتأهل الزوج الأجنبي والأطفال الأجانب القصر لأحد الزوجين أو كليهما والأطفال المعالون. يجب أن يكون الزواج حقيقياً والزوجان بالغين. قد تلزم موافقة الوالد المقيم بالخارج إذا شارك في الحضانة. لا تمنح إقامة أحد الوالدين الأطفال حقاً تلقائياً."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "شروط الكفيل",
+          "body": "يثبت الكفيل الموارد المنتظمة والسكن المناسب وتأمين الأسرة والعنوان المسجل وعدم الإدانة بجرائم عائلية محددة في السنوات الخمس السابقة. يحتاج الكفيل الأجنبي عادة إلى سنة من الإقامة القانونية مع استثناءات قانونية لبعض الباحثين وأزواج المواطنين الأتراك."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "حساب الدخل",
+          "body": "لا يقل إجمالي الدخل عن الحد الأدنى للأجر ولا يقل نصيب كل فرد عن ثلثه. في 2026 يبلغ الأجر الرسمي 28,075.50 ليرة صافياً و33,030 ليرة إجمالاً شهرياً. يعرض الجدول مثالاً على الصافي؛ وتحدد السلطة أساس الحساب والمستندات المقبولة.",
+          "table": {
+            "headers": [
+              "الأسرة مع الكفيل",
+              "مثال صافي الدخل الشهري"
+            ],
+            "rows": [
+              [
+                "2",
+                "28,075.50 TL"
+              ],
+              [
+                "3",
+                "28,075.50 TL"
+              ],
+              [
+                "4",
+                "37,434.00 TL"
+              ],
+              [
+                "5",
+                "46,792.50 TL"
+              ],
+              [
+                "6",
+                "56,151.00 TL"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "الوثائق والتعليم",
+          "body": "جهز الجوازات وشهادات الزواج والميلاد والسكن والدخل والتأمين ووثائق الكفيل. قد تحتاج الوثائق الأجنبية إلى تصديق وترجمة معتمدة. يسمح التصريح العائلي عادة للأطفال دون 18 عاماً بالتعليم الابتدائي والثانوي دون إقامة طالب مستقلة. تحقق من التسجيل المدرسي والرعاية الصحية قبل اختيار المنزل."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "الطلاق وبلوغ السن والتجديد",
+          "body": "بعد ثلاث سنوات من الإقامة العائلية يمكن للطفل البالغ طلب إقامة قصيرة. ويستثنى من شرط الثلاث سنوات المعتاد بعد الطلاق من مواطن تركي من ثبت تعرضه للعنف الأسري قضائياً؛ وبعد وفاة الكفيل قد يمكن الانتقال دون حد أدنى. راجع الأساس عند تغير وضع الأسرة وجدّد في آخر 60 يوماً قبل الانتهاء."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يكفل أجنبيان بعضهما في الوقت نفسه؟",
+          "answer": "لا، يجب أن يستوفي أحدهما شروط الكفيل."
+        },
+        {
+          "question": "كم مدة الإقامة العائلية؟",
+          "answer": "حتى ثلاث سنوات دون تجاوز تصريح الكفيل."
+        },
+        {
+          "question": "هل لكل طفل طلب؟",
+          "answer": "نعم، لكل فرد تصريح مستقل."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامة — إدارة الهجرة"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "الأسئلة الرسمية حول الإقامة"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة e-ikamet الرسمية"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/yayinlar/calisma-hayati-istatistikleri-e-bulteni/eylul-2026/ucret-ve-sendikal-istatistikler.html",
+          "label": "الحد الأدنى الرسمي للأجور لعام 2026"
+        }
+      ]
+    }
+  },
+  "turkey-residence-retiree": {
+    "fr": {
+      "title": "Prendre sa retraite en Turquie en 2026 : ikamet, pension et assurance",
+      "metaDescription": "S'installer en Turquie à la retraite : bases légales de résidence, preuve de pension, couverture médicale, logement et préparation financière.",
+      "shortAnswer": "Il n'existe pas de titre de séjour général réservé aux retraités dans les six catégories officielles. Un retraité doit choisir un fondement applicable, par exemple propriétaire occupant, tourisme lorsque justifié, famille ou résidence longue durée s'il satisfait ses conditions. Une pension est un justificatif de ressources, pas une garantie de titre.",
+      "bosphorasHelp": "Bosphoras coordonne les visites, la recherche de logement et les rendez-vous avec des professionnels indépendants. Les autorisations sont délivrées par les autorités compétentes, sans garantie de résultat.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Choisir le fondement avant de déménager",
+          "body": "Un retraité peut préparer un projet de découverte touristique, rejoindre un sponsor familial ou habiter un logement admissible dont il est propriétaire. Un nouvel achat immobilier destiné à la résidence personnelle relève notamment du seuil de 200 000 USD indiqué dans le formulaire. La durée ordinaire courte est au plus deux ans ; ne prenez pas un bail long en supposant une approbation.",
+          "table": {
+            "headers": [
+              "Situation",
+              "Voie possible"
+            ],
+            "rows": [
+              [
+                "Propriétaire occupant",
+                "Courte durée"
+              ],
+              [
+                "Conjoint éligible",
+                "Familiale"
+              ],
+              [
+                "8 ans admissibles et autres conditions",
+                "Longue durée"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Pension et justificatifs",
+          "body": "Demandez à votre caisse une attestation récente de pension, avec montant et périodicité, puis réunissez l'historique bancaire. La migration accepte notamment des documents établissant des revenus de retraite comme preuves possibles. Les documents étrangers peuvent nécessiter une traduction turque assermentée et notariée. Il n'existe pas de seuil universel de pension spécifique à ce statut."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Assurance et âge",
+          "body": "Pour les titres courts et étudiants, le portail prévoit une option d'âge au-delà de 65 ans et en dessous de 18 ans. Ce traitement administratif ne signifie pas une couverture médicale gratuite. Pour la résidence familiale, le sponsor doit couvrir tous les membres. Vérifiez les droits à l'assurance publique, les conventions bilatérales et les contrats privés, surtout pour les soins chroniques."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Organiser ses dépenses et sa fiscalité",
+          "body": "Établissez un budget intégrant logement, copropriété, électricité, soins, transport et réserve pour les variations de change. Conservez un compte permettant de recevoir la pension et comparez les frais bancaires. Une présence prolongée peut modifier la résidence fiscale et l'imposition des pensions selon le droit national et les conventions. Faites analyser votre situation avant le départ définitif."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Choisir un lieu adapté à l'année",
+          "body": "Antalya peut convenir à qui privilégie le littoral et les services urbains ; Istanbul offre un réseau de soins spécialisés et des liaisons internationales ; Bodrum présente un rythme et des coûts plus saisonniers. Testez votre quartier en dehors de l'été, notamment les transports, pharmacies, hôpitaux et accessibilité du logement. Vérifiez la possibilité d'enregistrement à l'adresse avant tout engagement."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Existe-t-il un visa retraite automatique ?",
+          "answer": "Non, il faut un fondement admis de résidence."
+        },
+        {
+          "question": "Une pension étrangère peut-elle servir de preuve ?",
+          "answer": "Oui, les attestations de pension figurent parmi les justificatifs possibles."
+        },
+        {
+          "question": "Plus de 65 ans signifie-t-il soins gratuits ?",
+          "answer": "Non, l'exception administrative d'assurance n'est pas une couverture de santé."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de résidence — Migration"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions officielles sur l'ikamet"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Formulaire de courte durée"
+        }
+      ]
+    },
+    "en": {
+      "title": "Retiring in Turkey 2026: residence, pension and healthcare",
+      "metaDescription": "Plan retirement in Turkey: lawful residence routes, pension evidence, medical cover, housing and financial preparation.",
+      "shortAnswer": "The six official residence categories do not include a general dedicated retiree permit. A retiree needs an applicable basis such as owner-occupier residence, genuine tourism, family residence or qualifying long-term status. A pension can establish means but does not guarantee a permit.",
+      "bosphorasHelp": "Bosphoras coordinates visits, accommodation and meetings with independent professionals. Competent authorities decide applications; approval is not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Choose a lawful route before moving",
+          "body": "A retiree may organise a genuine extended visit, join an eligible sponsor or occupy an eligible home they own. A new personal-home purchase is subject to the USD 200,000 condition specified in the form. The ordinary short-term maximum is two years; do not commit to a long lease assuming approval.",
+          "table": {
+            "headers": [
+              "Situation",
+              "Possible route"
+            ],
+            "rows": [
+              [
+                "Owner-occupier",
+                "Short-term"
+              ],
+              [
+                "Eligible spouse",
+                "Family"
+              ],
+              [
+                "8 qualifying years and other conditions",
+                "Long-term"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Pension and financial evidence",
+          "body": "Request a recent pension statement showing amount and frequency and assemble bank statements. The migration authority lists retirement documents among possible proof of income. Foreign evidence may need sworn Turkish translation and notarisation. There is no universal dedicated retirement-pension threshold."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Insurance and age",
+          "body": "For short-term and student applications the portal provides an age option for those over 65 and under 18. That administrative treatment is not free healthcare. A family sponsor must cover all family members. Review public insurance rights, bilateral arrangements and private cover, particularly for chronic care."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Spending and taxation",
+          "body": "Budget housing, service charges, utilities, healthcare, transport and a currency buffer. Maintain a suitable pension-receiving account and compare bank charges. Extended presence can affect tax residence and pension taxation depending on domestic rules and treaties. Obtain a personalised assessment before moving permanently."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Choose a year-round location",
+          "body": "Antalya combines coastal living and urban services; Istanbul offers specialist healthcare and international connections; Bodrum has more seasonal rhythms and costs. Test the neighbourhood outside summer, including transport, pharmacies, hospitals and accessibility. Confirm address registration eligibility before committing."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is there an automatic retirement visa?",
+          "answer": "No; an admissible residence basis is required."
+        },
+        {
+          "question": "Can a foreign pension be evidence?",
+          "answer": "Yes, pension documentation is listed among possible income evidence."
+        },
+        {
+          "question": "Does being over 65 mean free healthcare?",
+          "answer": "No; the application insurance treatment is not healthcare cover."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence categories — Migration Presidency"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Official residence FAQ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Short-term application form"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Переезд на пенсии в Турцию 2026: ВНЖ, пенсия и медицина",
+      "metaDescription": "Основания ВНЖ пенсионера, подтверждение пенсии, медицинское покрытие, жильё и бюджет.",
+      "shortAnswer": "Среди шести официальных категорий нет общего отдельного ВНЖ для пенсионеров. Необходимо подходящее основание: собственное жильё, обоснованный туризм, семейный или долгосрочный ВНЖ при соблюдении условий. Пенсия подтверждает доход, но не гарантирует разрешение.",
+      "bosphorasHelp": "Bosphoras координирует поездки, поиск жилья и встречи с независимыми специалистами. Решения принимают компетентные органы; одобрение не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Основание до переезда",
+          "body": "Пенсионер может планировать реальную ознакомительную поездку, воссоединение со спонсором или проживание в собственном подходящем жилье. Для новой покупки личного жилья форма указывает порог 200 000 долларов. Обычный краткосрочный ВНЖ — максимум два года; не заключайте долгий договор аренды в расчёте на гарантированное одобрение.",
+          "table": {
+            "headers": [
+              "Ситуация",
+              "Возможное основание"
+            ],
+            "rows": [
+              [
+                "Собственное жильё",
+                "Краткосрочный"
+              ],
+              [
+                "Подходящий супруг",
+                "Семейный"
+              ],
+              [
+                "8 зачтённых лет и другие условия",
+                "Долгосрочный"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Подтверждение пенсии",
+          "body": "Получите свежую справку пенсионного органа о размере и периодичности выплат и банковские выписки. Миграционная служба указывает пенсионные документы среди возможных подтверждений дохода. Иностранным документам могут потребоваться присяжный перевод на турецкий и нотариальное заверение. Единого специального порога пенсии для этой категории нет."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Возраст и страховка",
+          "body": "Для краткосрочного и студенческого ВНЖ портал предусматривает возрастную опцию для лиц старше 65 и младше 18 лет. Это не бесплатное медицинское обслуживание. Семейный спонсор страхует всех членов семьи. Проверьте государственное страхование, международные соглашения и частные полисы, особенно для хронических заболеваний."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Расходы и налоги",
+          "body": "Учтите жильё, обслуживание дома, коммунальные услуги, медицину, транспорт и резерв на колебания курса. Сравните комиссии за получение пенсии. Длительное пребывание может изменить налоговое резидентство и налогообложение пенсии по внутренним нормам и соглашениям. До переезда получите индивидуальную оценку."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Выбор места для круглогодичной жизни",
+          "body": "Анталья совмещает побережье и городские услуги, Стамбул предлагает специализированную медицину и международные рейсы, Бодрум отличается сезонностью. Оцените район вне летнего сезона, транспорт, аптеки, больницы и доступность жилья. Проверьте возможность регистрации по адресу до сделки."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Есть ли автоматическая пенсионная виза?",
+          "answer": "Нет, нужно допустимое основание ВНЖ."
+        },
+        {
+          "question": "Подходит иностранная пенсия?",
+          "answer": "Да, пенсионные документы могут подтверждать доход."
+        },
+        {
+          "question": "После 65 лет медицина бесплатна?",
+          "answer": "Нет, административная особенность страхования не означает медицинское покрытие."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ — миграционная служба"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Официальные вопросы о ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Портал e-ikamet"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Форма краткосрочного ВНЖ"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الإقامة في تركيا للمتقاعدين 2026: المعاش والتأمين والسكن",
+      "metaDescription": "خطط للتقاعد في تركيا: الأساس القانوني للإقامة وإثبات المعاش والتغطية الصحية والسكن والميزانية.",
+      "shortAnswer": "لا تتضمن أنواع الإقامة الرسمية الستة تصريحاً عاماً خاصاً بالمتقاعدين. يحتاج المتقاعد إلى أساس مقبول مثل السكن المملوك للاستعمال الشخصي أو السياحة المبررة أو الأسرة أو الإقامة الطويلة عند استيفاء شروطها. المعاش إثبات للموارد لا ضمان للتصريح.",
+      "bosphorasHelp": "تنسق Bosphoras الزيارات والسكن والمواعيد مع المختصين المستقلين. تبت السلطات المختصة في الطلبات دون ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "اختيار الأساس قبل الانتقال",
+          "body": "يمكن للمتقاعد تنظيم زيارة استطلاعية حقيقية أو الالتحاق بكفيل مؤهل أو السكن في منزل مؤهل يملكه. ويخضع شراء جديد للسكن الشخصي لحد 200 ألف دولار بحسب النموذج. الحد العادي للإقامة القصيرة سنتان؛ لا تلتزم بإيجار طويل بافتراض الموافقة.",
+          "table": {
+            "headers": [
+              "الحالة",
+              "المسار المحتمل"
+            ],
+            "rows": [
+              [
+                "مالك ساكن",
+                "قصيرة الأجل"
+              ],
+              [
+                "زوج مؤهل",
+                "عائلية"
+              ],
+              [
+                "8 سنوات مؤهلة وشروط أخرى",
+                "طويلة الأجل"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "إثبات المعاش",
+          "body": "اطلب شهادة حديثة تبين قيمة المعاش ودورية صرفه واجمع كشوف الحساب. تدرج إدارة الهجرة وثائق التقاعد ضمن إثباتات الدخل الممكنة. قد تحتاج الوثائق الأجنبية إلى ترجمة تركية محلفة وتصديق. لا يوجد حد موحد خاص بالمعاش لهذا الغرض."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "التأمين والعمر",
+          "body": "تتيح المنصة خياراً متعلقاً بالعمر لمن فوق 65 ودون 18 في طلبات الإقامة القصيرة وإقامة الطالب. لا يعني ذلك رعاية صحية مجانية. يجب أن يغطي الكفيل العائلي جميع أفراد الأسرة. راجع التأمين العام والاتفاقيات الثنائية والتأمين الخاص خصوصاً للأمراض المزمنة."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "الميزانية والضرائب",
+          "body": "احسب السكن والخدمات والمرافق والصحة والنقل واحتياط تقلب العملة. قارن رسوم البنوك لاستلام المعاش. قد يغير البقاء الطويل الإقامة الضريبية وضرائب المعاش وفق القوانين والاتفاقيات. احصل على تقييم فردي قبل الانتقال النهائي."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "اختيار مكان مناسب طوال العام",
+          "body": "تجمع أنطاليا الساحل والخدمات الحضرية، وتوفر إسطنبول رعاية متخصصة ورحلات دولية، بينما تتسم بودروم بالموسمية. اختبر الحي خارج الصيف من حيث النقل والصيدليات والمستشفيات وسهولة السكن. تحقق من تسجيل العنوان قبل الالتزام."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل توجد تأشيرة تقاعد تلقائية؟",
+          "answer": "لا، يلزم أساس إقامة مقبول."
+        },
+        {
+          "question": "هل يصلح المعاش الأجنبي إثباتاً؟",
+          "answer": "نعم، وثائق المعاش من الإثباتات الممكنة."
+        },
+        {
+          "question": "هل الرعاية مجانية بعد 65؟",
+          "answer": "لا، الخيار الإداري للتأمين ليس تغطية صحية."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامة — إدارة الهجرة"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "الأسئلة الرسمية حول الإقامة"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة e-ikamet الرسمية"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "نموذج الإقامة القصيرة"
+        }
+      ]
+    }
+  },
+  "turkey-residence-entrepreneur": {
+    "fr": {
+      "title": "Entrepreneur en Turquie 2026 : résidence, société et permis de travail",
+      "metaDescription": "Créer une société en Turquie : différence entre associé, dirigeant actif et investisseur, critères de permis de travail et capital requis.",
+      "shortAnswer": "Créer une entreprise turque ne renouvelle pas automatiquement votre séjour et ne vous autorise pas à travailler. Il faut distinguer une visite commerciale, un titre de résidence pour motif d'affaires, un permis de travail et le régime de l'investisseur qualifié. Le ministère publie des critères spécifiques pour les associés étrangers.",
+      "bosphorasHelp": "Bosphoras coordonne les visites, la recherche de logement et les rendez-vous avec des professionnels indépendants. Les autorisations sont délivrées par les autorités compétentes, sans garantie de résultat.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Prospection, association et activité effective",
+          "body": "Une visite commerciale permet de rencontrer les fournisseurs et partenaires sous le régime d'entrée applicable. Une résidence courte pour relations commerciales peut répondre à certains projets documentés. Détenir des parts sans exercer de travail ne se confond pas avec gérer quotidiennement l'activité. Pour un dirigeant actif, déterminez le permis de travail ou l'exemption réellement applicable."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Critères officiels d'un associé étranger",
+          "body": "Pour les entreprises soumises à la comptabilité au bilan, le régime publié exige en principe un capital libéré de l'entreprise d'au moins 500 000 TL, une participation personnelle d'au moins 500 000 TL et une part d'au moins 20 %. Le premier permis prévoit l'emploi d'au moins cinq citoyens turcs par mois dès le début du septième mois. Ce sont des critères de permis de travail, pas le capital minimum universel de constitution d'une société.",
+          "table": {
+            "headers": [
+              "Critère associé",
+              "Valeur générale"
+            ],
+            "rows": [
+              [
+                "Capital personnel libéré",
+                "500 000 TL"
+              ],
+              [
+                "Participation",
+                "20 % minimum"
+              ],
+              [
+                "Emploi dès le mois 7",
+                "5 citoyens turcs"
+              ],
+              [
+                "Exception spécifique",
+                "Participation ≥ 100 000 USD"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Exception et seuils distincts",
+          "body": "Lorsque la participation en capital de l'associé étranger atteint 100 000 USD, les critères spécifiques de capital et d'emploi susmentionnés ne s'appliquent pas. L'exemption n'est toutefois pas une délivrance automatique. Ne confondez pas ce seuil avec l'investissement qualifié de 500 000 USD en capital fixe pour la voie de résidence investisseur. Des régimes sectoriels ou personnels spécifiques peuvent également exister."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Préparer le budget et les pièces",
+          "body": "Prévoyez les documents constitutifs, justificatifs de participation libérée, inscription commerciale, contrats, comptabilité et éventuels engagements d'emploi. En 2026, le coût employeur mensuel officiel d'un salarié au salaire minimum hors réduction est de 40 874,63 TL ; cinq salariés représentent 204 373,15 TL par mois à titre indicatif, hors autres frais. Vérifiez les réductions et coûts réellement applicables."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Coordonner la société et le séjour",
+          "body": "En amont, définissez précisément le rôle de l'associé, le calendrier de création, l'autorisation de travail et les obligations fiscales et sociales. Un permis de travail valide tient généralement lieu d'autorisation de résidence. Une activité locale ne doit pas commencer sous une simple autorisation touristique. En cas de recrutement, faites également examiner les critères applicables à chaque salarié étranger."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Créer une SARL donne-t-il automatiquement un ikamet ?",
+          "answer": "Non, le titre ou permis approprié nécessite une procédure distincte."
+        },
+        {
+          "question": "Combien faut-il investir pour le permis d'un associé ?",
+          "answer": "Le régime général prévoit 500 000 TL de participation et au moins 20 %, avec les autres conditions et exceptions."
+        },
+        {
+          "question": "Le seuil de 100 000 USD garantit-il le permis ?",
+          "answer": "Non, il écarte certains critères spécifiques, pas l'ensemble de l'examen."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de résidence — Migration"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/uigm/en/calisma-izni/calisma-izni-degerlendirme-kriterleri/",
+          "label": "Ministère du Travail : critères des permis"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/yayinlar/calisma-hayati-istatistikleri-e-bulteni/eylul-2026/ucret-ve-sendikal-istatistikler.html",
+          "label": "Salaire minimum officiel 2026"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey residence for entrepreneurs 2026: company and work permits",
+      "metaDescription": "Understand investor, shareholder and active-manager status, foreign partner work permit criteria, capital and hiring costs.",
+      "shortAnswer": "Creating a Turkish company does not automatically extend stay or authorise employment. Distinguish commercial visits, business-related residence, work permits and qualified investor residence. The labour ministry publishes specific requirements for foreign company partners.",
+      "bosphorasHelp": "Bosphoras coordinates visits, accommodation and meetings with independent professionals. Competent authorities decide applications; approval is not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Scouting, shareholding and actual work",
+          "body": "A qualifying commercial visit can involve supplier and partner meetings. A documented commercial purpose may support short-term residence. Holding shares passively differs from day-to-day management. Active managers need to establish the appropriate work permit or exemption."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Official foreign partner criteria",
+          "body": "For balance-sheet-method businesses, the published general partner rules require paid-in business capital of at least TRY 500,000, the foreign partner's own capital of at least TRY 500,000 and a shareholding of at least 20%. The initial permit requires at least five Turkish employees monthly starting in month seven. These are work permit evaluation criteria, not universal company formation capital rules.",
+          "table": {
+            "headers": [
+              "Partner criterion",
+              "General value"
+            ],
+            "rows": [
+              [
+                "Personal paid-in capital",
+                "TRY 500,000"
+              ],
+              [
+                "Shareholding",
+                "20% minimum"
+              ],
+              [
+                "Employment from month 7",
+                "5 Turkish citizens"
+              ],
+              [
+                "Specific exemption",
+                "Capital share ≥ USD 100,000"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Exceptions and distinct thresholds",
+          "body": "A foreign partner with capital of at least USD 100,000 is exempt from the specific financial and employment criteria above. This does not guarantee approval. Do not confuse it with the USD 500,000 fixed-capital investment route for qualified investor residence. Sectoral and personal exceptions may also apply."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Budget and evidence",
+          "body": "Prepare incorporation, paid-in share, registration, contracts, accounts and employment evidence as applicable. In 2026 the official undiscounted monthly employer cost for one minimum-wage employee is TRY 40,874.63; five represent TRY 204,373.15 before other costs. Establish applicable discounts and actual payroll costs."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Coordinate company and immigration status",
+          "body": "Define the shareholder's actual role, formation timeline, work authorisation and tax and social obligations. A valid work permit generally substitutes for residence permission. Do not commence local work under tourist permission alone. Assess criteria separately for any foreign hires."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does forming a company automatically give residence?",
+          "answer": "No, the appropriate permission requires a separate process."
+        },
+        {
+          "question": "What capital is required for a partner's work permit?",
+          "answer": "The ordinary criteria include TRY 500,000 personal capital and at least 20%, subject to other conditions and exceptions."
+        },
+        {
+          "question": "Does USD 100,000 guarantee approval?",
+          "answer": "No, it removes specific criteria, not the full assessment."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence categories — Migration Presidency"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/uigm/en/calisma-izni/calisma-izni-degerlendirme-kriterleri/",
+          "label": "Labour Ministry: work permit criteria"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/yayinlar/calisma-hayati-istatistikleri-e-bulteni/eylul-2026/ucret-ve-sendikal-istatistikler.html",
+          "label": "Official 2026 minimum wage"
+        }
+      ]
+    },
+    "ru": {
+      "title": "ВНЖ для предпринимателя в Турции 2026: компания и разрешение на работу",
+      "metaDescription": "Создание фирмы, статус собственника и управляющего, капитал и требования к разрешению на работу иностранного партнёра.",
+      "shortAnswer": "Регистрация турецкой компании не продлевает пребывание автоматически и не разрешает работу. Различайте деловой визит, краткосрочный ВНЖ по деловой цели, разрешение на работу и квалифицированное инвестиционное основание. Минтруд публикует специальные критерии для иностранных участников.",
+      "bosphorasHelp": "Bosphoras координирует поездки, поиск жилья и встречи с независимыми специалистами. Решения принимают компетентные органы; одобрение не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Переговоры, доля и фактическая деятельность",
+          "body": "Допустимый деловой визит может включать встречи с поставщиками и партнёрами. Подтверждённая деловая цель может служить основанием краткосрочного ВНЖ. Пассивное владение долей отличается от ежедневного управления. Активному руководителю требуется соответствующее разрешение или исключение."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Официальные критерии иностранного участника",
+          "body": "Для компаний с учётом по балансовому методу общие критерии предусматривают оплаченный капитал компании от 500 000 лир, собственный вклад иностранца от 500 000 лир и долю от 20%. Первое разрешение предусматривает трудоустройство минимум пяти граждан Турции ежемесячно с начала седьмого месяца. Это критерии разрешения на работу, а не универсальный капитал для регистрации фирмы.",
+          "table": {
+            "headers": [
+              "Критерий участника",
+              "Общее значение"
+            ],
+            "rows": [
+              [
+                "Оплаченный вклад",
+                "500 000 TL"
+              ],
+              [
+                "Доля",
+                "От 20%"
+              ],
+              [
+                "Работники с 7-го месяца",
+                "5 граждан Турции"
+              ],
+              [
+                "Специальное исключение",
+                "Вклад ≥ 100 000 USD"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Исключения и разные пороги",
+          "body": "Если доля капитала иностранного участника составляет минимум 100 000 долларов, указанные специальные финансовые и кадровые критерии не применяются. Это не гарантирует выдачу. Не путайте порог с 500 000 долларов основного капитала для квалифицированного инвестиционного ВНЖ. Возможны отраслевые и индивидуальные исключения."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Бюджет и документы",
+          "body": "Подготовьте учредительные документы, подтверждение оплаченного вклада, регистрацию, договоры, отчётность и кадровые документы. В 2026 году официальная месячная стоимость сотрудника на минимальной зарплате без льгот составляет 40 874,63 лиры; пять сотрудников — 204 373,15 лиры без дополнительных расходов. Уточните реальные начисления и льготы."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Согласование бизнеса и миграционного статуса",
+          "body": "Определите фактическую роль участника, график регистрации, разрешение на работу и налоговые и социальные обязательства. Действующее разрешение на работу обычно заменяет ВНЖ. Не начинайте местную работу только по туристическому статусу. При найме иностранцев проверяйте критерии отдельно."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Регистрация фирмы автоматически даёт ВНЖ?",
+          "answer": "Нет, необходима отдельная процедура."
+        },
+        {
+          "question": "Какой капитал нужен участнику?",
+          "answer": "Обычные критерии — вклад от 500 000 лир и доля от 20% с другими условиями и исключениями."
+        },
+        {
+          "question": "Гарантирует ли 100 000 долларов разрешение?",
+          "answer": "Нет, отменяются отдельные критерии, а не вся проверка."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ — миграционная служба"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Портал e-ikamet"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/uigm/en/calisma-izni/calisma-izni-degerlendirme-kriterleri/",
+          "label": "Минтруд: критерии разрешений"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/yayinlar/calisma-hayati-istatistikleri-e-bulteni/eylul-2026/ucret-ve-sendikal-istatistikler.html",
+          "label": "Минимальная зарплата 2026 года"
+        }
+      ]
+    },
+    "ar": {
+      "title": "إقامة تركيا لرائد الأعمال 2026: الشركة وتصريح العمل",
+      "metaDescription": "تأسيس شركة في تركيا والفرق بين الشريك والمدير والمستثمر وشروط رأس المال والتوظيف وتصريح العمل.",
+      "shortAnswer": "لا يمدد تأسيس شركة تركية البقاء تلقائياً ولا يمنح حق العمل. ميز بين الزيارة التجارية والإقامة لغرض الأعمال وتصريح العمل وإقامة المستثمر المؤهل. تنشر وزارة العمل معايير خاصة بالشركاء الأجانب.",
+      "bosphorasHelp": "تنسق Bosphoras الزيارات والسكن والمواعيد مع المختصين المستقلين. تبت السلطات المختصة في الطلبات دون ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "الاستطلاع والملكية والعمل الفعلي",
+          "body": "يمكن أن تتضمن الزيارة التجارية المؤهلة اجتماعات مع الموردين والشركاء. وقد يدعم الغرض التجاري الموثق إقامة قصيرة. تختلف ملكية الحصص دون عمل عن الإدارة اليومية. يحتاج المدير النشط إلى تحديد تصريح العمل أو الإعفاء المناسب."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "المعايير الرسمية للشريك الأجنبي",
+          "body": "للشركات الخاضعة للمحاسبة بالميزانية يشترط النظام العام رأس مال مدفوع للشركة لا يقل عن 500 ألف ليرة ومساهمة شخصية للأجنبي لا تقل عن 500 ألف ليرة وحصة لا تقل عن 20%. ويشترط التصريح الأول خمسة موظفين أتراك على الأقل شهرياً من بداية الشهر السابع. هذه معايير تصريح العمل لا الحد العام لتأسيس الشركات.",
+          "table": {
+            "headers": [
+              "معيار الشريك",
+              "القيمة العامة"
+            ],
+            "rows": [
+              [
+                "المساهمة المدفوعة",
+                "500 ألف ليرة"
+              ],
+              [
+                "الحصة",
+                "20% على الأقل"
+              ],
+              [
+                "التوظيف من الشهر السابع",
+                "5 مواطنين أتراك"
+              ],
+              [
+                "استثناء محدد",
+                "مساهمة ≥ 100 ألف دولار"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "الاستثناءات والحدود المختلفة",
+          "body": "إذا بلغت مساهمة الشريك الأجنبي 100 ألف دولار على الأقل فلا تطبق المعايير المالية والتوظيفية الخاصة المذكورة. لا يضمن ذلك الموافقة. لا تخلط هذا الحد باستثمار رأس المال الثابت البالغ 500 ألف دولار لمسار المستثمر المؤهل. قد توجد استثناءات قطاعية وشخصية."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "الميزانية والمستندات",
+          "body": "جهز وثائق التأسيس والحصة المدفوعة والتسجيل والعقود والمحاسبة والتوظيف حسب الحالة. في 2026 يبلغ إجمالي تكلفة الموظف بالحد الأدنى للأجر دون تخفيض 40,874.63 ليرة شهرياً؛ وخمسة موظفين يكلفون 204,373.15 ليرة قبل المصاريف الأخرى. حدد التخفيضات والتكلفة الفعلية."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "تنسيق الشركة والإقامة",
+          "body": "حدد الدور الفعلي للشريك وجدول التأسيس وتصريح العمل والالتزامات الضريبية والاجتماعية. يعتبر تصريح العمل الساري عادة تصريح إقامة. لا تبدأ العمل المحلي بتصريح سياحي فقط. راجع معايير كل موظف أجنبي عند التوظيف."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يمنح تأسيس شركة الإقامة تلقائياً؟",
+          "answer": "لا، يلزم إجراء مستقل."
+        },
+        {
+          "question": "كم رأس المال المطلوب للشريك؟",
+          "answer": "تشمل المعايير العادية 500 ألف ليرة وحصة 20% على الأقل مع بقية الشروط والاستثناءات."
+        },
+        {
+          "question": "هل تضمن 100 ألف دولار التصريح؟",
+          "answer": "لا، تعفي من معايير محددة لا من التقييم كاملاً."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامة — إدارة الهجرة"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة e-ikamet الرسمية"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/uigm/en/calisma-izni/calisma-izni-degerlendirme-kriterleri/",
+          "label": "وزارة العمل: معايير التصاريح"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/yayinlar/calisma-hayati-istatistikleri-e-bulteni/eylul-2026/ucret-ve-sendikal-istatistikler.html",
+          "label": "الحد الأدنى الرسمي للأجور لعام 2026"
+        }
+      ]
+    }
+  },
+  "turkey-residence-digital-nomad": {
+    "fr": {
+      "title": "Visa digital nomad Turquie 2026 : 36 pays, revenu et démarches",
+      "metaDescription": "Découvrez le visa nomade numérique turc : 36 nationalités, âge de 21 à 55 ans, diplôme, revenu de 3 000 USD et demande consulaire.",
+      "shortAnswer": "Le programme officiel GoTürkiye est destiné aux travailleurs à distance éligibles dont l'activité est liée à des entreprises situées hors de Turquie. Il faut notamment avoir entre 21 et 55 ans, un diplôme universitaire et des revenus de 3 000 USD par mois ou 36 000 USD par an. Le certificat de pré-demande précède la demande de visa.",
+      "bosphorasHelp": "Bosphoras coordonne les visites, la recherche de logement et les rendez-vous avec des professionnels indépendants. Les autorisations sont délivrées par les autorités compétentes, sans garantie de résultat.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Nationalités éligibles",
+          "body": "Le programme publié comprend 36 nationalités. Le tableau les regroupe par région ; une résidence dans l'un de ces pays sans en avoir la nationalité ne suffit pas. Les citoyens de Russie, d'Ukraine et de Biélorussie figurent dans la liste, tout comme les Français et les Canadiens.",
+          "table": {
+            "headers": [
+              "Groupe",
+              "Nationalités"
+            ],
+            "rows": [
+              [
+                "UE (26)",
+                "Autriche, Belgique, Bulgarie, Croatie, Danemark, Espagne, Estonie, Finlande, France, Allemagne, Grèce, Hongrie, Irlande, Italie, Lettonie, Lituanie, Luxembourg, Malte, Pays-Bas, Pologne, Portugal, République tchèque, Roumanie, Slovaquie, Slovénie, Suède"
+              ],
+              [
+                "Autres pays européens (5)",
+                "Norvège, Islande, Liechtenstein, Royaume-Uni, Suisse"
+              ],
+              [
+                "Amérique du Nord (2)",
+                "États-Unis, Canada"
+              ],
+              [
+                "Autres pays (3)",
+                "Russie, Ukraine, Biélorussie"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Les cinq pièces principales",
+          "body": "Le passeport doit être valable au moins six mois à compter de l'arrivée. Ajoutez diplôme universitaire ou équivalent reconnu, contrat salarié avec une entreprise située hors de Turquie ou contrat commercial avec une entreprise étrangère pour un indépendant, photo biométrique et preuve du revenu demandé. Un revenu suffisant à lui seul ne remplace pas les autres pièces."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Procédure en deux étapes",
+          "body": "Inscrivez-vous sur GoTürkiye et téléversez les justificatifs. Après contrôle favorable, le portail délivre le Digital Nomad Identification Certificate. Présentez ce certificat et les autres pièces au centre de visas ou au consulat turc compétent. Le certificat n'est pas le visa. Pour rester au-delà de l'autorisation accordée, organisez le statut de résidence applicable via les autorités."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Durée de séjour et fiscalité",
+          "body": "Les conditions publiées du certificat ne fixent pas une durée universelle de visa ou un délai garanti de délivrance. Lisez la durée et les conditions du visa effectivement délivré. Un visa nomade n'est pas une exonération fiscale automatique et ne permet pas automatiquement de travailler pour une entreprise turque. Évaluez votre résidence fiscale, les cotisations et les obligations de votre employeur ou activité indépendante."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Préparer votre espace de travail",
+          "body": "Avant le départ, comparez les quartiers selon la qualité de la connexion, la tranquillité, le temps d'accès à l'aéroport, l'assurance et l'admissibilité de l'adresse. Testez une connexion de secours et le poste de travail dans le logement. Istanbul, İzmir, Antalya et Bodrum offrent des cadres différents. Privilégiez un hébergement flexible pendant la préparation du dossier afin de limiter le risque financier."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Quel revenu minimum pour le certificat ?",
+          "answer": "3 000 USD mensuels ou 36 000 USD annuels."
+        },
+        {
+          "question": "Un indépendant est-il admissible ?",
+          "answer": "Oui s'il satisfait les conditions, notamment un contrat avec une entreprise hors de Turquie."
+        },
+        {
+          "question": "Le certificat suffit-il pour entrer ?",
+          "answer": "Non, il faut obtenir le visa approprié."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://goturkiye.com/branding/press-releases/would-you-like-to-work-from-one-of-the-most-beautiful-countries-in-the-world",
+          "label": "GoTürkiye : programme officiel digital nomad"
+        },
+        {
+          "href": "https://goturkiye.com/tr/digitalnomads/dijital-gocebe-vize-ve-kisa-donem-ikamet-icin-basvuru-sartlari",
+          "label": "Conditions officielles de pré-demande"
+        },
+        {
+          "href": "https://goturkiye.com/digitalnomads/membership-agreement",
+          "label": "Certificat et procédure consulaire"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey digital nomad visa 2026: 36 countries, income and application",
+      "metaDescription": "Turkey's digital nomad programme: eligible nationalities, age 21–55, degree, USD 3,000 income and consular application.",
+      "shortAnswer": "The official GoTürkiye programme is designed for eligible remote workers whose work is connected with businesses outside Turkey. Applicants need to be aged 21–55, have a university qualification and demonstrate USD 3,000 monthly or USD 36,000 annual income. Pre-application certification precedes the visa application.",
+      "bosphorasHelp": "Bosphoras coordinates visits, accommodation and meetings with independent professionals. Competent authorities decide applications; approval is not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Eligible nationalities",
+          "body": "The published programme includes 36 nationalities, grouped in the table. Living in a listed country without its citizenship does not suffice. Russia, Ukraine and Belarus are included, as are France and Canada.",
+          "table": {
+            "headers": [
+              "Group",
+              "Nationalities"
+            ],
+            "rows": [
+              [
+                "EU (26)",
+                "Austria, Belgium, Bulgaria, Croatia, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden"
+              ],
+              [
+                "Other European countries (5)",
+                "Norway, Iceland, Liechtenstein, United Kingdom, Switzerland"
+              ],
+              [
+                "North America (2)",
+                "United States, Canada"
+              ],
+              [
+                "Other countries (3)",
+                "Russia, Ukraine, Belarus"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Five primary documents",
+          "body": "A passport valid for at least six months from arrival, a university degree or equivalent, and proof of remote work are required. Employees supply a contract with an employer outside Turkey; self-employed applicants supply a business contract with a company outside Turkey. Include a biometric photograph and proof of the required income. Income alone does not replace the other documents."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Two-stage application",
+          "body": "Register on GoTürkiye and upload the evidence. Following favourable review, the portal issues the Digital Nomad Identification Certificate. Take that certificate and other required documents to the appropriate Turkish visa centre or consulate. The certificate is not the visa. Arrange appropriate residence status if staying beyond the permission granted."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Stay duration and tax position",
+          "body": "The published certificate requirements do not set a universal visa duration or guaranteed processing time. Read the conditions and duration on the actual visa. Nomad status does not automatically establish tax exemption or authorise employment by a Turkish company. Assess tax residence, contributions and employer or self-employment obligations."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Set up an effective remote base",
+          "body": "Compare neighbourhood connectivity, quiet working conditions, airport access, insurance and address eligibility. Test a backup connection and the home's workspace. Istanbul, İzmir, Antalya and Bodrum offer different settings. Flexible accommodation can limit financial exposure during application preparation."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What income is required?",
+          "answer": "USD 3,000 monthly or USD 36,000 annually."
+        },
+        {
+          "question": "Can freelancers qualify?",
+          "answer": "Yes, subject to the criteria including a contract with a company outside Turkey."
+        },
+        {
+          "question": "Does the certificate allow entry?",
+          "answer": "No; obtain the appropriate visa."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://goturkiye.com/branding/press-releases/would-you-like-to-work-from-one-of-the-most-beautiful-countries-in-the-world",
+          "label": "GoTürkiye: official digital nomad programme"
+        },
+        {
+          "href": "https://goturkiye.com/tr/digitalnomads/dijital-gocebe-vize-ve-kisa-donem-ikamet-icin-basvuru-sartlari",
+          "label": "Official pre-application requirements"
+        },
+        {
+          "href": "https://goturkiye.com/digitalnomads/membership-agreement",
+          "label": "Certificate and consular procedure"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Виза цифрового кочевника в Турцию 2026: 36 стран, доход и оформление",
+      "metaDescription": "Программа цифровых кочевников: гражданства, возраст 21–55, диплом, доход 3 000 долларов и консульская подача.",
+      "shortAnswer": "Официальная программа GoTürkiye предназначена для подходящих удалённых работников, связанных с компаниями за пределами Турции. Требуются возраст 21–55 лет, высшее образование и доход от 3 000 долларов в месяц или 36 000 в год. Сначала оформляется сертификат для подачи на визу.",
+      "bosphorasHelp": "Bosphoras координирует поездки, поиск жилья и встречи с независимыми специалистами. Решения принимают компетентные органы; одобрение не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Подходящие гражданства",
+          "body": "В опубликованной программе 36 гражданств, сгруппированных в таблице. Проживания в одной из стран без гражданства недостаточно. В списке присутствуют Россия, Украина, Беларусь, Франция и Канада.",
+          "table": {
+            "headers": [
+              "Группа",
+              "Гражданства"
+            ],
+            "rows": [
+              [
+                "ЕС (26)",
+                "Австрия, Бельгия, Болгария, Венгрия, Германия, Греция, Дания, Ирландия, Испания, Италия, Латвия, Литва, Люксембург, Мальта, Нидерланды, Польша, Португалия, Румыния, Словакия, Словения, Финляндия, Франция, Хорватия, Чехия, Швеция, Эстония"
+              ],
+              [
+                "Другие страны Европы (5)",
+                "Норвегия, Исландия, Лихтенштейн, Великобритания, Швейцария"
+              ],
+              [
+                "Северная Америка (2)",
+                "США, Канада"
+              ],
+              [
+                "Другие страны (3)",
+                "Россия, Украина, Беларусь"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Пять основных документов",
+          "body": "Паспорт должен действовать не менее шести месяцев с даты прибытия. Нужны диплом или его эквивалент, подтверждение удалённой работы: трудовой договор с компанией за пределами Турции либо договор с иностранной компанией для самозанятого, биометрическое фото и подтверждение дохода. Доход не заменяет остальные документы."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Два этапа оформления",
+          "body": "Зарегистрируйтесь на GoTürkiye и загрузите документы. При положительной проверке выдаётся Digital Nomad Identification Certificate — сертификат цифрового кочевника. С ним и другими документами обратитесь в компетентный визовый центр или турецкое консульство. Сертификат не является визой. Для более длительного пребывания оформляйте соответствующий статус через органы."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Срок и налоговый статус",
+          "body": "Опубликованные условия сертификата не устанавливают единого срока визы или гарантированного времени выдачи. Изучите условия фактически выданной визы. Статус не освобождает автоматически от налогов и не разрешает работу на турецкую компанию. Оцените налоговое резидентство, взносы и обязанности работодателя или самозанятого."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Подготовка рабочего места",
+          "body": "Сравните интернет, тишину, доступ к аэропорту, страховку и возможность регистрации адреса. Проверьте резервный интернет и рабочее место. Стамбул, Измир, Анталья и Бодрум предлагают разные условия. Гибкое жильё снижает финансовые риски на этапе оформления."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Какой доход нужен?",
+          "answer": "3 000 долларов в месяц или 36 000 в год."
+        },
+        {
+          "question": "Подходит ли фрилансер?",
+          "answer": "Да при выполнении требований, включая договор с компанией за пределами Турции."
+        },
+        {
+          "question": "Можно въехать по сертификату?",
+          "answer": "Нет, нужно получить соответствующую визу."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Портал e-ikamet"
+        },
+        {
+          "href": "https://goturkiye.com/branding/press-releases/would-you-like-to-work-from-one-of-the-most-beautiful-countries-in-the-world",
+          "label": "GoTürkiye: официальная программа цифровых кочевников"
+        },
+        {
+          "href": "https://goturkiye.com/tr/digitalnomads/dijital-gocebe-vize-ve-kisa-donem-ikamet-icin-basvuru-sartlari",
+          "label": "Официальные условия предварительной подачи"
+        },
+        {
+          "href": "https://goturkiye.com/digitalnomads/membership-agreement",
+          "label": "Сертификат и консульская процедура"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تأشيرة الرحالة الرقميين في تركيا 2026: 36 دولة والدخل والإجراءات",
+      "metaDescription": "برنامج الرحالة الرقميين في تركيا: الجنسيات المؤهلة والعمر 21–55 والشهادة الجامعية ودخل 3 آلاف دولار والطلب القنصلي.",
+      "shortAnswer": "يستهدف برنامج GoTürkiye الرسمي العاملين عن بعد المؤهلين الذين يرتبط نشاطهم بشركات خارج تركيا. يشترط العمر بين 21 و55 عاماً وشهادة جامعية ودخل 3 آلاف دولار شهرياً أو 36 ألفاً سنوياً. يسبق الحصول على شهادة الطلب الأولي طلب التأشيرة.",
+      "bosphorasHelp": "تنسق Bosphoras الزيارات والسكن والمواعيد مع المختصين المستقلين. تبت السلطات المختصة في الطلبات دون ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "الجنسيات المؤهلة",
+          "body": "يشمل البرنامج المنشور 36 جنسية موزعة في الجدول. لا تكفي الإقامة في دولة مدرجة دون جنسيتها. تشمل القائمة روسيا وأوكرانيا وبيلاروسيا وفرنسا وكندا.",
+          "table": {
+            "headers": [
+              "المجموعة",
+              "الجنسيات"
+            ],
+            "rows": [
+              [
+                "الاتحاد الأوروبي (26)",
+                "النمسا، بلجيكا، بلغاريا، كرواتيا، التشيك، الدنمارك، إستونيا، فنلندا، فرنسا، ألمانيا، اليونان، المجر، إيرلندا، إيطاليا، لاتفيا، ليتوانيا، لوكسمبورغ، مالطا، هولندا، بولندا، البرتغال، رومانيا، سلوفاكيا، سلوفينيا، إسبانيا، السويد"
+              ],
+              [
+                "دول أوروبية أخرى (5)",
+                "النرويج، آيسلندا، ليختنشتاين، المملكة المتحدة، سويسرا"
+              ],
+              [
+                "أمريكا الشمالية (2)",
+                "الولايات المتحدة، كندا"
+              ],
+              [
+                "دول أخرى (3)",
+                "روسيا، أوكرانيا، بيلاروسيا"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "المستندات الخمسة الرئيسية",
+          "body": "يلزم جواز صالح ستة أشهر على الأقل من تاريخ الوصول وشهادة جامعية أو ما يعادلها وإثبات العمل عن بعد: عقد موظف مع شركة خارج تركيا أو عقد تجاري للمستقل مع شركة خارجها، وصورة بيومترية وإثبات الدخل المطلوب. لا يغني الدخل عن بقية الوثائق."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "الطلب على مرحلتين",
+          "body": "سجل في GoTürkiye وارفع المستندات. بعد مراجعة ناجحة تصدر شهادة تعريف الرحالة الرقمي. قدم الشهادة وبقية الوثائق لمركز التأشيرات أو القنصلية التركية المختصة. الشهادة ليست تأشيرة. نظم وضع الإقامة المناسب عند الرغبة في البقاء بعد المدة الممنوحة."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "مدة البقاء والضرائب",
+          "body": "لا تحدد شروط الشهادة المنشورة مدة تأشيرة موحدة أو وقت إصدار مضموناً. اقرأ شروط التأشيرة الصادرة فعلاً. لا يمنح الوضع إعفاء ضريبياً تلقائياً أو حق العمل لشركة تركية. قيّم الإقامة الضريبية والمساهمات والتزامات جهة العمل أو النشاط المستقل."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "تجهيز بيئة العمل",
+          "body": "قارن اتصال الإنترنت والهدوء والوصول إلى المطار والتأمين وأهلية العنوان. اختبر اتصالاً احتياطياً ومكان العمل في السكن. تقدم إسطنبول وإزمير وأنطاليا وبودروم بيئات مختلفة. يقلل السكن المرن المخاطر المالية أثناء التحضير."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "ما الحد الأدنى للدخل؟",
+          "answer": "3 آلاف دولار شهرياً أو 36 ألفاً سنوياً."
+        },
+        {
+          "question": "هل يتأهل المستقل؟",
+          "answer": "نعم عند استيفاء الشروط ومنها عقد مع شركة خارج تركيا."
+        },
+        {
+          "question": "هل تكفي الشهادة للدخول؟",
+          "answer": "لا، يجب الحصول على التأشيرة المناسبة."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة e-ikamet الرسمية"
+        },
+        {
+          "href": "https://goturkiye.com/branding/press-releases/would-you-like-to-work-from-one-of-the-most-beautiful-countries-in-the-world",
+          "label": "GoTürkiye: برنامج الرحالة الرقميين الرسمي"
+        },
+        {
+          "href": "https://goturkiye.com/tr/digitalnomads/dijital-gocebe-vize-ve-kisa-donem-ikamet-icin-basvuru-sartlari",
+          "label": "الشروط الرسمية للطلب الأولي"
+        },
+        {
+          "href": "https://goturkiye.com/digitalnomads/membership-agreement",
+          "label": "الشهادة والإجراءات القنصلية"
+        }
+      ]
+    }
   }
 };
