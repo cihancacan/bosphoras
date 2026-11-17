@@ -136,7 +136,7 @@ export function HighPotentialGuideRenderer({ guide }: { guide: HighPotentialGuid
               </div>
             </section>
 
-            {guide.sources && <section id="sources" className="border-t border-[#d8c7a1] pt-7"><h2 className="font-serif text-3xl text-[#121826]">{{ fr: 'Sources officielles', en: 'Official sources', ru: 'Официальные источники', ar: 'المصادر الرسمية' }[guide.locale]}</h2><ul className="mt-5 space-y-3">{guide.sources.map((source) => <li key={source.href}><a href={source.href} className="text-[#8a6728] underline underline-offset-4" target="_blank" rel="noopener noreferrer">{source.label}</a></li>)}</ul></section>}
+            {guide.sources && <section id="sources" className="border-t border-[#d8c7a1] pt-7"><h2 className="font-serif text-3xl text-[#121826]">{{ fr: 'Sources et références', en: 'Sources and references', ru: 'Источники и материалы', ar: 'المصادر والمراجع' }[guide.locale]}</h2><ul className="mt-5 space-y-3">{guide.sources.map((source) => <li key={source.href}><a href={source.href} className="text-[#8a6728] underline underline-offset-4" target="_blank" rel="noopener noreferrer">{source.label}</a></li>)}</ul></section>}
 
             <section className="border border-[#d8c7a1] bg-white p-7 md:p-9">
               <h2 className="font-serif text-3xl tracking-[-0.03em] text-[#121826]">{labels.links}</h2>

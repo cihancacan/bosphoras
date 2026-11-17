@@ -11,7 +11,7 @@ import { PrivateAssessmentLocalizedPage } from '@/components/PrivateAssessmentLo
 import { MembershipApplicationLocalizedPage } from '@/components/MembershipApplicationLocalizedPage';
 import { PrivateAccessApplicationNotice } from '@/components/PrivateAccessApplicationNotice';
 import { getPageBySlug, allPages } from '@/data/pages';
-import { getHighPotentialGuideBySlug, highPotentialGuides } from '@/data/highPotentialPages';
+import { getHighPotentialGuideBySlug, highPotentialGuides, getGuideAlternateUrls } from '@/data/highPotentialPages';
 import { getProgrammaticPageBySlug, getProgrammaticPagesForLocale } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES } from '@/lib/launchConfig';
 import { getPublishedProperties, propertyHubPaths, globalPropertyHubPaths, getPropertyPath, isInternationalProperty } from '@/data/propertyDesk';
@@ -87,7 +87,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const guide = getHighPotentialGuideBySlug(params.locale, slug);
   if (guide?.sections) {
-    return buildMetadata({ locale: params.locale, path: guide.slug, title: guide.title, description: guide.metaDescription, alternates: Object.fromEntries(highPotentialGuides.filter((item) => item.id === guide.id).map((item) => [item.locale, `https://www.bosphoras.com${item.locale === 'fr' ? '' : `/${item.locale}`}${item.slug}`])) });
+    return buildMetadata({ locale: params.locale, path: guide.slug, title: guide.title, description: guide.metaDescription, alternates: getGuideAlternateUrls(guide) });
   }
 
   const programmaticPage = getProgrammaticPageBySlug(params.locale, slug);
@@ -103,7 +103,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   if (guide) {
-    return buildMetadata({ locale: params.locale, path: guide.slug, title: guide.title, description: guide.metaDescription, alternates: Object.fromEntries(highPotentialGuides.filter((item) => item.id === guide.id).map((item) => [item.locale, `https://www.bosphoras.com${item.locale === 'fr' ? '' : `/${item.locale}`}${item.slug}`])) });
+    return buildMetadata({ locale: params.locale, path: guide.slug, title: guide.title, description: guide.metaDescription, alternates: getGuideAlternateUrls(guide) });
   }
 
 

@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { AlertTriangle, ArrowRight, CheckCircle2, FileText, Flag, ShieldCheck } from 'lucide-react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { getEditorialGuideForSeoKey } from '@/data/highPotentialPages';
+import { HighPotentialGuideRenderer } from '@/components/HighPotentialGuideRenderer';
 import { StructuredData } from '@/components/StructuredData';
 import type { Locale } from '@/lib/i18n';
 import { siteUrl } from '@/lib/routes';
@@ -167,6 +169,8 @@ function faq(page: BosphorasProgrammaticSeoPage, rule: CountryRule, locale: Loca
 }
 
 export function BosphorasCountryVisaSeoPage({ page, locale }: { page: BosphorasProgrammaticSeoPage; locale: Locale }) {
+  const editorial = getEditorialGuideForSeoKey(page.key, locale);
+  if (editorial) return <><Header locale={locale} currentPath={page.slugs[locale]} /><HighPotentialGuideRenderer guide={editorial} /><Footer locale={locale} /></>;
   const rule = rules[page.key] ?? defaultRule(page);
   const l = labels[locale];
   const pageFaq = faq(page, rule, locale);

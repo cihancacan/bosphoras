@@ -82,9 +82,13 @@ function pageContent(key, locale) {
 
 let written = 0;
 let preserved = 0;
+const generatedPaths = new Set();
+let duplicatePaths = 0;
 for (const page of pages) {
   for (const locale of locales) {
     const filePath = routeFileFromSlug(page.slugs[locale]);
+    if (generatedPaths.has(filePath)) { duplicatePaths += 1; continue; }
+    generatedPaths.add(filePath);
     // Bespoke content and existing redirects are authoritative. Never replace them with a generic template.
     if (fs.existsSync(filePath) && !fs.readFileSync(filePath, 'utf8').startsWith('// AUTO-GENERATED BOSPHORAS')) {
       preserved += 1;
@@ -96,4 +100,4 @@ for (const page of pages) {
   }
 }
 
-console.log(`[bosphoras seo] Generated pages: ${pages.length} subjects, ${written} files written, ${preserved} bespoke pages preserved, ${visaTypeKeys.size} visa type subjects use V2 content, ${visaResidenceKeys.size} visa/residence subjects and ${countryVisaKeys.size} country visa subjects use dedicated content`);
+console.log(`[bosphoras seo] Generated pages: ${pages.length} subjects, ${written} files written, ${preserved} bespoke pages preserved, ${duplicatePaths} duplicate route writes avoided, ${visaTypeKeys.size} visa type subjects use V2 content, ${visaResidenceKeys.size} visa/residence subjects and ${countryVisaKeys.size} country visa subjects use dedicated content`);

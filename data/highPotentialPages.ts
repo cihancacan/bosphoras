@@ -261,3 +261,38 @@ export function getEditorialGuideForSeoKey(key: string, locale: Locale): HighPot
   const id = editorialSeoKeyMap[key] ?? (visaEditorialGuides[key] || allTaxEditorialGuides[key] ? key : undefined);
   return id ? highPotentialGuides.find((guide) => guide.id === id && guide.locale === locale && Boolean(guide.sections)) : undefined;
 }
+
+
+// Related guides: keep navigation useful and canonical instead of linking every guide to every other guide.
+const registryTopics = [...bosphorasProgrammaticSeoPages, ...bosphorasAdditionalSeoPages, ...bosphorasVisaResidenceSeoPages, ...bosphorasCountryVisaSeoPages, ...bosphorasVisaTypeSeoPages];
+const topicByKey = new Map(registryTopics.map(page => [page.key, page]));
+const guideTokens = (id: string) => new Set([id, ...(topicByKey.get(id)?.focus ?? [])].join(' ').toLowerCase().split(/[^a-z0-9]+/).filter(w => w.length > 2 && !['turkey','turkiye','foreigners','foreign','guide','tax','visa','residence','citizens','2026','investors','income'].includes(w)));
+const guideTokenMap = new Map(highPotentialGuides.map(guide => [guide.id, guideTokens(guide.id)]));
+const visaTopicIds = new Set(editorialVisaPages.map(page => page.key));
+const relatedScore = (a: HighPotentialGuide, b: HighPotentialGuide) => {
+  const at = guideTokenMap.get(a.id), bt = guideTokenMap.get(b.id);
+  const common = at && bt ? [...at].filter(token => bt.has(token)).length : 0;
+  const ac = topicByKey.get(a.id)?.category, bc = topicByKey.get(b.id)?.category;
+  return common * 5 + (ac && ac === bc ? 3 : 0) + (a.theme === b.theme ? 2 : 0);
+};
+for (const guide of highPotentialGuides) {
+  if (!guide.sections) continue;
+  const candidates = highPotentialGuides.filter(other => other.locale === guide.locale && other.id !== guide.id && other.slug !== guide.slug && other.sections);
+  const isVisa = visaTopicIds.has(guide.id);
+  const hubs = isVisa ? ['turkey-visa-types-hub','turkey-ikamet-main','relocate-turkey-cities'] : ['tax-exemption-20-years','tax-residency','company-setup-foreigner'];
+  const preferred = candidates.filter(other => hubs.includes(other.id));
+  const ranked = candidates.filter(other => !hubs.includes(other.id)).map(other => ({other, score: relatedScore(guide, other)})).filter(item => item.score > 0).sort((a,b) => b.score-a.score || a.other.id.localeCompare(b.other.id));
+  const selected = [...ranked.slice(0, 7).map(item => item.other), ...preferred];
+  const seen = new Set<string>();
+  guide.internalLinks = selected.flatMap(other => {
+    const href = prefix(other.locale) + other.slug;
+    if (seen.has(href)) return [];
+    seen.add(href);
+    return [{label: other.title, href}];
+  }).slice(0, 10);
+}
+
+export function getGuideAlternateUrls(guide: HighPotentialGuide): Record<string, string> {
+  const languages = Object.fromEntries(highPotentialGuides.filter(item => item.id === guide.id).map(item => [item.locale, `https://www.bosphoras.com${prefix(item.locale)}${item.slug}`]));
+  return languages.fr ? { ...languages, 'x-default': languages.fr } : languages;
+}

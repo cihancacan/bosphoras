@@ -643,5 +643,20 @@
     "source": "/ar/خدمات/العقارات-والانتقال",
     "destination": "/ar/عقارات-تركيا",
     "permanent": true
+  },
+  {
+    "source": "/pays-carte-identite-turquie",
+    "destination": "/pays-entree-turquie-carte-identite",
+    "permanent": true
+  },
+  {
+    "source": "/ru/strany-v-turtsiyu-po-id-karte",
+    "destination": "/ru/strany-kotorye-vezhayut-v-turtsiyu-po-id-karte",
+    "permanent": true
+  },
+  {
+    "source": "/ru/dolgosrochnyy-vnzh-v-turtsii",
+    "destination": "/ru/dolgosrochnyy-vid-na-zhitelstvo-v-turtsii",
+    "permanent": true
   }
 ]
