@@ -6,6 +6,10 @@ import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 import type { Locale } from '@/lib/i18n';
 import { siteUrl } from '@/lib/routes';
+import { getEditorialGuideForSeoKey, highPotentialGuides } from '@/data/highPotentialPages';
+import { HighPotentialGuideRenderer } from '@/components/HighPotentialGuideRenderer';
+import { buildMetadata } from '@/lib/seo';
+import { getCanonicalUrl, getLocalePath } from '@/lib/routes';
 import { type BosphorasProgrammaticSeoPage } from '@/data/bosphorasProgrammaticSeoPages';
 
 const labels: Record<Locale, { guide: string; updated: string; why: string; verify: string; examples: string; mistakes: string; profiles: string; faq: string; cta: string; warning: string; keywords: string }> = {
@@ -173,6 +177,11 @@ function faq(page: BosphorasProgrammaticSeoPage, locale: Locale): Array<[string,
 }
 
 export function getBosphorasProgrammaticSeoMetadata(page: BosphorasProgrammaticSeoPage, locale: Locale): Metadata {
+  const guide = getEditorialGuideForSeoKey(page.key, locale);
+  if (guide) {
+    const languages = Object.fromEntries(highPotentialGuides.filter((item) => item.id === guide.id).map((item) => [item.locale, getCanonicalUrl(item.locale, item.slug)]));
+    return buildMetadata({ locale, path: guide.slug, title: guide.title, description: guide.metaDescription, alternates: { ...languages, 'x-default': languages.fr } });
+  }
   const canonical = baseUrl(page, locale);
   const title = `${page.titles[locale]} | Bosphoras`;
   const desc = description(page, locale);
@@ -180,6 +189,8 @@ export function getBosphorasProgrammaticSeoMetadata(page: BosphorasProgrammaticS
 }
 
 export function BosphorasProgrammaticSeoPage({ page, locale }: { page: BosphorasProgrammaticSeoPage; locale: Locale }) {
+  const guide = getEditorialGuideForSeoKey(page.key, locale);
+  if (guide) return <><Header locale={locale} currentPath={getLocalePath(locale, guide.slug)} /><HighPotentialGuideRenderer guide={guide} /><Footer locale={locale} /></>;
   const l = labels[locale];
   const title = page.titles[locale];
   const desc = description(page, locale);

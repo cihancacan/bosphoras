@@ -5,7 +5,7 @@ import { locales } from '@/lib/i18n';
 import { siteUrl } from '@/lib/routes';
 import { allPages } from '@/data/pages';
 import { getCanonicalUrl } from '@/lib/routes';
-import { highPotentialGuides } from '@/data/highPotentialPages';
+import { highPotentialGuides, getEditorialGuideForSeoKey } from '@/data/highPotentialPages';
 import { programmaticPages } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES, ENABLE_PRIORITY_3_IN_SITEMAP } from '@/lib/launchConfig';
 import { longTailTaxSitemapUrls } from '@/data/longTailTaxRoutes';
@@ -147,7 +147,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   for (const page of allBosphorasSeoPages) {
-    for (const urlPath of Object.values(page.slugs)) {
+    for (const [locale, urlPath] of Object.entries(page.slugs)) {
+      const guide = getEditorialGuideForSeoKey(page.key, locale as (typeof locales)[number]);
+      if (guide) continue; // The authoritative editorial URL was added above.
       addEntry({
         url: absoluteUrl(urlPath),
         changeFrequency: 'weekly',

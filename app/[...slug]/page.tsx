@@ -68,6 +68,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
   }
 
+  const guide = getHighPotentialGuideBySlug(locale, slug);
+  if (guide?.sections) {
+    return buildMetadata({ locale, path: guide.slug, title: guide.title, description: guide.metaDescription, alternates: Object.fromEntries(highPotentialGuides.filter((item) => item.id === guide.id).map((item) => [item.locale, `https://www.bosphoras.com${item.locale === 'fr' ? '' : `/${item.locale}`}${item.slug}`])) });
+  }
+
   const programmaticPage = getProgrammaticPageBySlug(locale, slug);
   if (programmaticPage) {
     return buildMetadata({
@@ -80,10 +85,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     });
   }
 
-  const guide = getHighPotentialGuideBySlug(locale, slug);
   if (guide) {
     return buildMetadata({ locale, path: guide.slug, title: guide.title, description: guide.metaDescription, alternates: Object.fromEntries(highPotentialGuides.filter((item) => item.id === guide.id).map((item) => [item.locale, `https://www.bosphoras.com${item.locale === 'fr' ? '' : `/${item.locale}`}${item.slug}`])) });
   }
+
 
   const page = getPageBySlug(locale, slug);
   if (!page) return {};
@@ -104,6 +109,17 @@ export default async function CatchAllPage({ params }: PageProps) {
     if (property) return <PropertyDetailPage locale={locale} property={property} />;
   }
 
+  const guide = getHighPotentialGuideBySlug(locale, slug);
+  if (guide?.sections) {
+    return (
+      <>
+        <Header locale={locale} currentPath={guide.slug} />
+        <HighPotentialGuideRenderer guide={guide} />
+        <Footer locale={locale} />
+      </>
+    );
+  }
+
   const programmaticPage = ENABLE_ALL_PROGRAMMATIC_PAGES ? getProgrammaticPageBySlug(locale, slug) : undefined;
   if (programmaticPage) {
     return (
@@ -115,7 +131,6 @@ export default async function CatchAllPage({ params }: PageProps) {
     );
   }
 
-  const guide = getHighPotentialGuideBySlug(locale, slug);
   if (guide) {
     return (
       <>
@@ -125,6 +140,7 @@ export default async function CatchAllPage({ params }: PageProps) {
       </>
     );
   }
+
 
   const page = getPageBySlug(locale, slug);
   if (!page) notFound();

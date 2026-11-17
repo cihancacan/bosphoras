@@ -187,3 +187,16 @@ export function getEquivalentHighPotentialSlug(currentPath: string, targetLocale
   const guide = highPotentialGuides.find((g) => g.slug === withoutLocale);
   return guide ? highPotentialGuides.find((g) => g.id === guide.id && g.locale === targetLocale)?.slug : undefined;
 }
+
+// Static SEO routes generated at build time must use the same editorial content and canonical URL.
+const editorialSeoKeyMap: Record<string, string> = {
+  'twenty-year-exemption-foreigners': 'tax-exemption-20-years',
+  'settle-in-turkey': 'relocate-turkey-cities',
+  'settle-bodrum-families-investors': 'moving-bodrum',
+  'tax-residence-foreigners': 'tax-residency',
+};
+
+export function getEditorialGuideForSeoKey(key: string, locale: Locale): HighPotentialGuide | undefined {
+  const id = editorialSeoKeyMap[key];
+  return id ? highPotentialGuides.find((guide) => guide.id === id && guide.locale === locale && Boolean(guide.sections)) : undefined;
+}

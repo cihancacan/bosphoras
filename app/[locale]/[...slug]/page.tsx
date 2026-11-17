@@ -85,6 +85,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
   }
 
+  const guide = getHighPotentialGuideBySlug(params.locale, slug);
+  if (guide?.sections) {
+    return buildMetadata({ locale: params.locale, path: guide.slug, title: guide.title, description: guide.metaDescription, alternates: Object.fromEntries(highPotentialGuides.filter((item) => item.id === guide.id).map((item) => [item.locale, `https://www.bosphoras.com${item.locale === 'fr' ? '' : `/${item.locale}`}${item.slug}`])) });
+  }
+
   const programmaticPage = getProgrammaticPageBySlug(params.locale, slug);
   if (programmaticPage) {
     return buildMetadata({
@@ -97,10 +102,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     });
   }
 
-  const guide = getHighPotentialGuideBySlug(params.locale, slug);
   if (guide) {
     return buildMetadata({ locale: params.locale, path: guide.slug, title: guide.title, description: guide.metaDescription, alternates: Object.fromEntries(highPotentialGuides.filter((item) => item.id === guide.id).map((item) => [item.locale, `https://www.bosphoras.com${item.locale === 'fr' ? '' : `/${item.locale}`}${item.slug}`])) });
   }
+
 
   const page = getPageBySlug(params.locale, slug);
   if (!page) return {};
@@ -125,6 +130,18 @@ export default async function LocaleCatchAllPage({ params }: PageProps) {
 
   if(slug===globalPropertyHubPaths[params.locale]) return <GlobalPropertyInvestmentPage locale={params.locale}/>;
 
+  const guide = getHighPotentialGuideBySlug(params.locale, slug);
+  if (guide?.sections) {
+    const currentPath = `/${params.locale}${guide.slug}`;
+    return (
+      <>
+        <Header locale={params.locale} currentPath={currentPath} />
+        <HighPotentialGuideRenderer guide={guide} />
+        <Footer locale={params.locale} />
+      </>
+    );
+  }
+
   const programmaticPage = ENABLE_ALL_PROGRAMMATIC_PAGES ? getProgrammaticPageBySlug(params.locale, slug) : undefined;
   if (programmaticPage) {
     const currentPath = `/${params.locale}${programmaticPage.slug}`;
@@ -137,7 +154,6 @@ export default async function LocaleCatchAllPage({ params }: PageProps) {
     );
   }
 
-  const guide = getHighPotentialGuideBySlug(params.locale, slug);
   if (guide) {
     const currentPath = `/${params.locale}${guide.slug}`;
     return (
@@ -148,6 +164,7 @@ export default async function LocaleCatchAllPage({ params }: PageProps) {
       </>
     );
   }
+
 
   const page = getPageBySlug(params.locale, slug);
   if (!page) notFound();
