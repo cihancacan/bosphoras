@@ -496,6 +496,57 @@ const charts: Record<string, ChartSpec | undefined> = {
         ]
       }
     ]
+  },
+  "foreign-consulting-income-from-turkey": {
+    "section": "remote-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          232500,
+          0
+        ]
+      }
+    ]
+  },
+  "foreign-company-managed-from-turkey": {
+    "section": "remote-4",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          1000000,
+          250000,
+          750000
+        ]
+      }
+    ]
+  },
+  "digital-nomad-tax": {
+    "section": "remote-4",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          36000,
+          24000,
+          12000
+        ]
+      }
+    ]
+  },
+  "move-istanbul-tax": {
+    "section": "remote-4",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          4500,
+          1500,
+          2000
+        ]
+      }
+    ]
   }
 };
 const captions: Record<Locale,string> = { fr: 'Visualisation des montants du tableau', en: 'Visual comparison of the amounts above', ru: 'Наглядное сравнение сумм из таблицы', ar: 'مقارنة مرئية للمبالغ في الجدول' };
