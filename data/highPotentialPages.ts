@@ -1,6 +1,8 @@
 import type { Locale } from '@/lib/i18n';
 import { visaEditorialGuides as earlierVisaEditorialGuides } from './visaEditorialGuides';
 import { citizenshipEditorialGuides } from './citizenshipEditorialGuides';
+import { countryVisaEditorialGuides } from './countryVisaEditorialGuides';
+import { bosphorasCountryVisaSeoPages } from './bosphorasCountryVisaSeoPages';
 import { bosphorasVisaResidenceSeoPages } from './bosphorasVisaResidenceSeoPages';
 import { editorialGuides, editorialGuideUpdatedAt, type EditorialSection } from './highPotentialEditorialGuides';
 
@@ -180,8 +182,8 @@ export const highPotentialGuides: HighPotentialGuide[] = highPotentialTopics.fla
   }))
 );
 
-const visaEditorialGuides = { ...earlierVisaEditorialGuides, ...citizenshipEditorialGuides };
-const editorialVisaPages = bosphorasVisaResidenceSeoPages.filter((page) => visaEditorialGuides[page.key]);
+const visaEditorialGuides = { ...earlierVisaEditorialGuides, ...citizenshipEditorialGuides, ...countryVisaEditorialGuides };
+const editorialVisaPages = [...bosphorasVisaResidenceSeoPages, ...bosphorasCountryVisaSeoPages].filter((page) => visaEditorialGuides[page.key]);
 const visaLocales: Locale[] = ['fr', 'en', 'ru', 'ar'];
 const visaSlug = (slug: string) => slug.replace(/^\/(en|ru|ar)(?=\/)/, '');
 for (const page of editorialVisaPages) {
