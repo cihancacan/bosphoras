@@ -15745,5 +15745,2035 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
         }
       ]
     }
+  },
+  "turkey-residence-family-office": {
+    "fr": {
+      "title": "Résidence en Turquie pour family office : patrimoine, famille et investissements",
+      "metaDescription": "Préparez une installation patrimoniale en Turquie : résidence des investisseurs, famille, immobilier à 400 000 USD, gouvernance et fiscalité.",
+      "shortAnswer": "Le family office n’est pas une catégorie de titre de séjour turc. Une famille internationale doit distinguer le statut personnel de ses membres, la structure de gestion du patrimoine et les autorisations professionnelles. Un investissement certifié peut ouvrir un titre de courte durée allant jusqu’à cinq ans ; la décision reste individuelle.",
+      "bosphorasHelp": "Bosphoras peut organiser une visite de repérage, la recherche de logement et des rendez-vous avec des professionnels indépendants. Vous déposez votre demande via les autorités, sans promesse d’acceptation.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Choisir un statut pour chaque membre",
+          "body": "Pour une famille qui souhaite se rapprocher d’Istanbul, établissez d’abord les nationalités, droits d’entrée, dates et motifs de chacun. Le conjoint et les enfants mineurs ou à charge d’un investisseur qualifié peuvent relever du dispositif spécifique. Dans les autres cas, examinez le titre familial, les études ou un motif de résidence propre. Une société patrimoniale ne peut pas tenir lieu de titre individuel."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Comparer les voies d’investissement",
+          "body": "L’agence publique distingue notamment l’immobilier admissible à partir de 400 000 USD, les apports en capital fixe à partir de 500 000 USD, les dépôts ou placements qualifiés à 500 000 USD et la création de 50 emplois. Les placements et l’immobilier concernés comportent des obligations de conservation de trois ans. Avant de sélectionner un actif, identifiez l’autorité de certification et vérifiez la liquidité, les coûts, les risques et les droits de sortie.",
+          "table": {
+            "headers": [
+              "Voie",
+              "Seuil / critère"
+            ],
+            "rows": [
+              [
+                "Immobilier qualifié",
+                "400 000 USD, conservation 3 ans"
+              ],
+              [
+                "Capital fixe",
+                "500 000 USD"
+              ],
+              [
+                "Dépôt ou placement admissible",
+                "500 000 USD, conservation 3 ans"
+              ],
+              [
+                "Création d’emplois",
+                "50 personnes"
+              ],
+              [
+                "Titre investisseur",
+                "Jusqu’à 5 ans sous conditions"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Séparer le patrimoine de la gestion opérationnelle",
+          "body": "Une personne qui possède des parts peut avoir un rôle différent d’un dirigeant qui travaille quotidiennement en Turquie. Déterminez qui signe, qui emploie le personnel et qui fournit des services à des tiers. L’autorisation de travail et les éventuelles règles de services financiers doivent être examinées avant l’activité. Le permis de résidence n’est ni une licence de gestion d’actifs ni une autorisation générale de solliciter des investisseurs."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Fiscalité et transmission internationale",
+          "body": "Préparez un inventaire des actifs, de leurs pays de détention et de la résidence fiscale actuelle des personnes et sociétés. Les obligations déclaratives, les conventions fiscales, les successions, la protection des données et l’origine des fonds doivent être analysées de manière coordonnée par des professionnels qualifiés. Le seuil d’investissement ne détermine pas à lui seul le domicile fiscal. Évitez de transférer des fonds avant validation juridique et bancaire."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Planifier une installation en trois phases",
+          "body": "Lors d’une mission exploratoire, organisez les rencontres, présélectionnez les quartiers et comparez les banques sans présumer leur acceptation. Avant tout engagement, validez le fondement de séjour, les documents d’état civil et les conditions de scolarité. Enfin, coordonnez le calendrier des dossiers, de l’adresse et des assurances. Bosphoras intervient dans l’organisation pratique, sans se substituer aux avocats, fiscalistes et gestionnaires autorisés."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Existe-t-il un visa family office ?",
+          "answer": "Non, il faut choisir une catégorie existante de résidence ou de travail."
+        },
+        {
+          "question": "L’investissement garantit-il cinq ans ?",
+          "answer": "Non, cinq ans est un maximum pour les investissements admissibles."
+        },
+        {
+          "question": "La résidence donne-t-elle automatiquement la citoyenneté ?",
+          "answer": "Non, une procédure et une décision distinctes sont nécessaires."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Catégories de résidence"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Agence publique : résidence pour investisseurs"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/Pages/acquiring-property-and-citizenship.aspx",
+          "label": "Agence publique : immobilier et citoyenneté"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey residence for family offices: wealth, family and investment",
+      "metaDescription": "Plan Turkish residence for an international family: qualifying investment, USD 400,000 property route, governance, relocation and tax considerations.",
+      "shortAnswer": "A family office is not a Turkish residence permit category. International families should separate individual immigration status, wealth-holding structures and professional permissions. Certified qualifying investments may support short-term permits of up to five years, subject to individual assessment.",
+      "bosphorasHelp": "Bosphoras can coordinate scouting visits, housing searches and meetings with independent professionals. Applications go through the authorities; approval is not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Assess each family member separately",
+          "body": "Start with nationalities, entry rights, dates and each person's actual purpose. A qualifying investor's spouse and minor or dependent children may fall under the investor route. Other families may use family residence, study or another individual basis. A wealth-holding company cannot replace individual immigration permission."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Compare certified investment routes",
+          "body": "The government investment office identifies qualifying real estate from USD 400,000, fixed capital from USD 500,000, eligible deposits or investments from USD 500,000 and creation of 50 jobs. Relevant property and financial routes require a three-year holding period. Identify the certifying authority and assess liquidity, costs, risk and exit restrictions before selecting assets.",
+          "table": {
+            "headers": [
+              "Route",
+              "Threshold / condition"
+            ],
+            "rows": [
+              [
+                "Qualifying property",
+                "USD 400,000; hold 3 years"
+              ],
+              [
+                "Fixed capital",
+                "USD 500,000"
+              ],
+              [
+                "Eligible deposit or investment",
+                "USD 500,000; hold 3 years"
+              ],
+              [
+                "Job creation",
+                "50 people"
+              ],
+              [
+                "Investor residence",
+                "Up to 5 years subject to eligibility"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Separate ownership from operational management",
+          "body": "A passive shareholder differs from an executive working daily in Turkey. Determine signing authority, staff employment and whether services are supplied to third parties. Work permission and applicable financial-services rules must be assessed before operations. A residence card is neither an asset-management licence nor permission to solicit investors."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "International tax and succession",
+          "body": "Inventory assets, jurisdictions and existing individual and corporate tax residence. Qualified advisers should coordinate reporting obligations, tax treaties, inheritance, data protection and source-of-funds documentation. An investment threshold alone does not determine tax residence. Avoid transferring funds before appropriate legal and banking checks."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Three phases of relocation",
+          "body": "Use exploratory visits for meetings, neighbourhood selection and banking discussions without assuming acceptance. Before commitments, validate residence grounds, civil records and school arrangements. Then coordinate application dates, address registration and insurance. Bosphoras supports practical organisation rather than replacing lawyers, tax advisers or licensed managers."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is there a family office visa?",
+          "answer": "No; an existing residence or work route must apply."
+        },
+        {
+          "question": "Does investment guarantee five years?",
+          "answer": "No, five years is a maximum for qualifying investments."
+        },
+        {
+          "question": "Does residence automatically confer citizenship?",
+          "answer": "No, citizenship requires a separate procedure and decision."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Government investment office: investor residence"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/Pages/acquiring-property-and-citizenship.aspx",
+          "label": "Government investment office: property and citizenship"
+        }
+      ]
+    },
+    "ru": {
+      "title": "ВНЖ в Турции для семейного офиса: семья, капитал и инвестиции",
+      "metaDescription": "Переезд состоятельной семьи в Турцию: инвестиционный ВНЖ, недвижимость от 400 000 долларов, управление и налоги.",
+      "shortAnswer": "Семейный офис не является отдельной категорией турецкого ВНЖ. Международной семье следует разделять миграционный статус каждого человека, структуру владения активами и профессиональные разрешения. Подтверждённые инвестиции могут дать основание для краткосрочного ВНЖ до пяти лет, но решение принимается индивидуально.",
+      "bosphorasHelp": "Bosphoras может организовать ознакомительные поездки, поиск жилья и встречи с независимыми специалистами. Заявления подаются в государственные органы; одобрение не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Статус каждого члена семьи",
+          "body": "Определите гражданства, права въезда, даты и цели каждого. Супруг и несовершеннолетние либо зависимые дети квалифицированного инвестора могут претендовать на соответствующий режим. В иных случаях рассмотрите семейный, студенческий или другой ВНЖ. Компания, владеющая активами, не заменяет личное разрешение."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Сравнение инвестиционных оснований",
+          "body": "Государственное агентство указывает недвижимость от 400 000 долларов, основной капитал от 500 000 долларов, подходящие депозиты и вложения от 500 000 долларов либо создание 50 рабочих мест. Для соответствующих финансовых и имущественных вложений действует трёхлетний срок удержания. До выбора актива определите орган подтверждения, ликвидность, расходы, риски и ограничения выхода.",
+          "table": {
+            "headers": [
+              "Основание",
+              "Порог / условие"
+            ],
+            "rows": [
+              [
+                "Квалифицированное жильё",
+                "400 000 USD; 3 года"
+              ],
+              [
+                "Основной капитал",
+                "500 000 USD"
+              ],
+              [
+                "Допустимый депозит или вложение",
+                "500 000 USD; 3 года"
+              ],
+              [
+                "Создание рабочих мест",
+                "50 человек"
+              ],
+              [
+                "Инвестиционный ВНЖ",
+                "До 5 лет при выполнении условий"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Владение и операционное управление",
+          "body": "Пассивный участник отличается от руководителя, ежедневно работающего в Турции. Определите, кто подписывает документы, нанимает сотрудников и оказывает услуги третьим лицам. До деятельности выясните правила разрешений на работу и финансовых услуг. ВНЖ не является лицензией управления активами или привлечения инвесторов."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Налоги и наследование",
+          "body": "Составьте перечень активов, юрисдикций и действующего налогового резидентства людей и компаний. Квалифицированным специалистам следует согласовать отчётность, налоговые соглашения, наследование, защиту данных и подтверждение происхождения средств. Инвестиционный порог сам по себе не определяет налоговое резидентство. Не переводите средства до правовой и банковской проверки."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Три этапа переезда",
+          "body": "Во время ознакомительной поездки организуйте встречи, выберите районы и обсудите банковские услуги без ожидания гарантии. До обязательств подтвердите основание ВНЖ, семейные документы и условия обучения детей. Затем согласуйте сроки заявлений, регистрацию адреса и страховку. Bosphoras организует практические вопросы, не заменяя адвокатов, налоговых консультантов и лицензированных управляющих."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Есть ли специальная виза семейного офиса?",
+          "answer": "Нет, необходимо существующее основание ВНЖ или работы."
+        },
+        {
+          "question": "Гарантируют ли инвестиции пять лет?",
+          "answer": "Нет, это максимальный срок при соответствии условиям."
+        },
+        {
+          "question": "Даёт ли ВНЖ гражданство автоматически?",
+          "answer": "Нет, необходима отдельная процедура."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Категории ВНЖ"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Инвестиционное агентство: ВНЖ инвесторов"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/Pages/acquiring-property-and-citizenship.aspx",
+          "label": "Инвестиционное агентство: недвижимость и гражданство"
+        }
+      ]
+    },
+    "ar": {
+      "title": "إقامة تركيا للمكاتب العائلية: الثروة والأسرة والاستثمار",
+      "metaDescription": "خطط لانتقال الأسرة الدولية إلى تركيا: إقامة المستثمر والعقار من 400 ألف دولار والحوكمة والضرائب.",
+      "shortAnswer": "المكتب العائلي ليس نوعاً مستقلاً من الإقامة التركية. ينبغي فصل وضع كل فرد وهيكل ملكية الثروة والتصاريح المهنية. قد يتيح الاستثمار المؤهل المعتمد إقامة قصيرة تصل إلى خمس سنوات، مع دراسة كل طلب على حدة.",
+      "bosphorasHelp": "تنظم Bosphoras الزيارات الاستطلاعية والبحث عن السكن والمواعيد مع مختصين مستقلين. تقدم الطلبات عبر السلطات المختصة دون ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "تحديد وضع كل فرد",
+          "body": "حدد الجنسيات وحقوق الدخول والتواريخ والأغراض لكل فرد. قد يتأهل زوج المستثمر المؤهل وأطفاله القصر أو المعالون للمسار الخاص. وفي غير ذلك تُدرس الإقامة العائلية أو الدراسة أو أساس فردي آخر. لا تحل شركة إدارة الثروة محل تصريح الإقامة الشخصي."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "مقارنة مسارات الاستثمار",
+          "body": "يحدد مكتب الاستثمار الحكومي العقار المؤهل من 400 ألف دولار ورأس المال الثابت من 500 ألف دولار والودائع والاستثمارات المؤهلة من 500 ألف دولار أو إيجاد 50 وظيفة. وتخضع المسارات العقارية والمالية المعنية لقيود احتفاظ ثلاث سنوات. حدد جهة الاعتماد والسيولة والتكاليف والمخاطر وقيود التخارج قبل اختيار الأصل.",
+          "table": {
+            "headers": [
+              "المسار",
+              "الحد أو الشرط"
+            ],
+            "rows": [
+              [
+                "عقار مؤهل",
+                "400 ألف دولار؛ 3 سنوات"
+              ],
+              [
+                "رأس مال ثابت",
+                "500 ألف دولار"
+              ],
+              [
+                "وديعة أو استثمار مؤهل",
+                "500 ألف دولار؛ 3 سنوات"
+              ],
+              [
+                "خلق الوظائف",
+                "50 شخصاً"
+              ],
+              [
+                "إقامة المستثمر",
+                "حتى 5 سنوات بشروط"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "فصل الملكية عن الإدارة الفعلية",
+          "body": "يختلف الشريك غير العامل عن المدير الذي يمارس نشاطاً يومياً في تركيا. حدد صلاحيات التوقيع والتوظيف وتقديم الخدمات للغير. ينبغي التحقق من تصريح العمل وقواعد الخدمات المالية قبل النشاط. ليست الإقامة ترخيصاً لإدارة الأصول أو استقطاب المستثمرين."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "الضرائب والإرث الدولي",
+          "body": "احصر الأصول والدول التي توجد فيها والإقامة الضريبية الحالية للأفراد والشركات. ينسق المختصون المؤهلون الإفصاح والاتفاقيات الضريبية والإرث وحماية البيانات وإثبات مصدر الأموال. لا يحدد مبلغ الاستثمار وحده الإقامة الضريبية. تجنب التحويل قبل التحقق القانوني والمصرفي."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "ثلاث مراحل للانتقال",
+          "body": "خصص الزيارة الاستطلاعية للاجتماعات واختيار الأحياء ومناقشة الخدمات المصرفية دون افتراض القبول. قبل الالتزام تحقق من أساس الإقامة ووثائق الأسرة والمدارس. ثم نسق مواعيد الطلبات وتسجيل العنوان والتأمين. تنظم Bosphoras الجوانب العملية دون أن تحل محل المحامين والمستشارين الضريبيين ومديري الأصول المرخصين."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل توجد تأشيرة خاصة بالمكتب العائلي؟",
+          "answer": "لا، يلزم أساس إقامة أو عمل قائم."
+        },
+        {
+          "question": "هل يضمن الاستثمار خمس سنوات؟",
+          "answer": "لا، خمس سنوات حد أقصى للاستثمار المؤهل."
+        },
+        {
+          "question": "هل تمنح الإقامة الجنسية تلقائياً؟",
+          "answer": "لا، يلزم إجراء وقرار منفصلان."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامة"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "مكتب الاستثمار الحكومي: إقامة المستثمرين"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/Pages/acquiring-property-and-citizenship.aspx",
+          "label": "مكتب الاستثمار: العقار والجنسية"
+        }
+      ]
+    }
+  },
+  "residence-istanbul-foreigners": {
+    "fr": {
+      "title": "Résidence à Istanbul 2026 : ikamet, quartiers et conditions d’adresse",
+      "metaDescription": "S’installer à Istanbul : choisir son titre de séjour, vérifier les quartiers et adresses, préparer logement, assurance et rendez-vous.",
+      "shortAnswer": "Les étrangers qui souhaitent vivre à Istanbul après leur séjour autorisé doivent déposer une demande adaptée à leur motif. La province applique les règles nationales de l’ikamet et des restrictions locales de domiciliation. Une annonce immobilière séduisante ne constitue pas une preuve d’admissibilité de l’adresse.",
+      "bosphorasHelp": "Bosphoras peut organiser une visite de repérage, la recherche de logement et des rendez-vous avec des professionnels indépendants. Vous déposez votre demande via les autorités, sans promesse d’acceptation.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Choisir son quartier en fonction du projet",
+          "body": "Pour une famille travaillant sur la rive européenne, comparez notamment Şişli, Beşiktaş et Kağıthane pour les trajets, écoles et services. Sur la rive asiatique, Kadıköy et Üsküdar peuvent offrir un autre équilibre. Ces lieux sont des exemples de recherche, pas une liste de secteurs ouverts aux étrangers. Testez le trajet réel aux heures de pointe et à partir du bâtiment exact."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Restrictions sur les quartiers : ce qui est vérifié",
+          "body": "La direction provinciale a publié le 1er juillet 2022 une annonce de fermeture de quartiers dans le cadre d’une mesure nationale portant sur 1 169 quartiers. Ce nombre historique n’est pas un décompte actuel d’Istanbul. Les annonces, exemptions et conditions varient ; aucune liste exhaustive actualisée au 17 novembre 2026 n’a été confirmée ici. Pour un nouveau dossier, donnez le mahalle, la rue, le numéro du bâtiment et du logement au service compétent avant tout dépôt de garantie.",
+          "table": {
+            "headers": [
+              "Point de contrôle",
+              "Action ou règle"
+            ],
+            "rows": [
+              [
+                "Adresse précise",
+                "Confirmer l’admissibilité avant le dépôt de garantie"
+              ],
+              [
+                "Demande officielle",
+                "Avant la fin du séjour légal"
+              ],
+              [
+                "Carte (2026)",
+                "964 TL par personne"
+              ],
+              [
+                "Décision",
+                "Normalement 90 jours après dossier complet"
+              ],
+              [
+                "Changement d’adresse",
+                "20 jours ouvrables"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Location et preuve de résidence",
+          "body": "Vérifiez l’identité du bailleur, son titre et le droit d’utiliser le bien à titre de logement. Le bail doit répondre aux exigences du dossier, notamment la formalité notariale applicable. Un logement meublé ou une résidence avec services ne dispense pas de fournir une preuve reconnue. Pour un achat à usage personnel, préparez les documents fonciers et vérifiez les conditions du titre de propriétaire."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Déposer dans la bonne province",
+          "body": "Utilisez e-ikamet pendant le séjour légal, choisissez le motif et l’adresse réellement occupée. Le système indique le lieu du rendez-vous et la liste des pièces. Le délai normal de décision est de 90 jours après remise complète. La carte coûte 964 TL en 2026, hors droit variable et assurance. Le rendez-vous officiel est gratuit."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Arrivée, famille et changement d’adresse",
+          "body": "Inscrivez l’adresse dans le délai prévu après approbation. Un changement d’adresse doit être déclaré dans les 20 jours ouvrables. Lors d’un transfert depuis une autre province, une nouvelle démarche est requise ; si la catégorie reste la même, les droits de séjour ne sont pas facturés de nouveau selon la FAQ officielle. Chaque enfant a son propre dossier. Comparez les écoles, la couverture santé et le temps de trajet avant de signer."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Tous les quartiers d’Istanbul sont-ils ouverts ?",
+          "answer": "Non, certaines adresses sont soumises à des restrictions. L’adresse exacte et le type de démarche sont déterminants."
+        },
+        {
+          "question": "Dois-je me rendre à un bureau librement choisi ?",
+          "answer": "Non, suivez le lieu et la date fixés par e-ikamet."
+        },
+        {
+          "question": "Un bail permet-il d’obtenir automatiquement l’ikamet ?",
+          "answer": "Non, le motif et l’ensemble des conditions doivent être remplis."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Catégories de résidence"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions officielles : demandes, délais et déménagement"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Barème des frais 2026"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/-mahalle-kapatma-duyurusu-hk-",
+          "label": "Istanbul : annonce historique des quartiers fermés (2022)"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/",
+          "label": "Direction de la migration d’Istanbul"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157 : aide officielle aux étrangers"
+        }
+      ]
+    },
+    "en": {
+      "title": "Residence in Istanbul 2026: ikamet, neighbourhoods and address eligibility",
+      "metaDescription": "Moving to Istanbul: residence categories, address restrictions, housing, insurance, appointment and family arrangements.",
+      "shortAnswer": "Foreigners planning to live in Istanbul beyond their lawful short visit need appropriate residence permission. National ikamet rules apply alongside local address restrictions. An attractive property listing does not establish residence eligibility.",
+      "bosphorasHelp": "Bosphoras can coordinate scouting visits, housing searches and meetings with independent professionals. Applications go through the authorities; approval is not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Choose a district around daily life",
+          "body": "Families working on the European side might compare Şişli, Beşiktaş and Kağıthane for commutes, schools and services. Kadıköy and Üsküdar offer different options on the Asian side. These are search areas, not a list of locations open to foreign registration. Test the actual commute from the exact building at busy times."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Neighbourhood restrictions: what is verified",
+          "body": "On 1 July 2022 the provincial authority published a closure notice under a national measure covering 1,169 neighbourhoods. That historical number is not today's Istanbul count. Notices, exceptions and restrictions can change; an exhaustive list current to 17 November 2026 has not been confirmed here. Provide the competent office with the mahalle, street, building and apartment before paying a deposit.",
+          "table": {
+            "headers": [
+              "Checkpoint",
+              "Action or rule"
+            ],
+            "rows": [
+              [
+                "Exact address",
+                "Confirm eligibility before paying a deposit"
+              ],
+              [
+                "Official application",
+                "Before the lawful stay ends"
+              ],
+              [
+                "Card (2026)",
+                "TRY 964 per person"
+              ],
+              [
+                "Decision",
+                "Normally 90 days after complete submission"
+              ],
+              [
+                "Address change",
+                "20 working days"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Leasing and accommodation evidence",
+          "body": "Verify the landlord, title and residential use. The lease must meet the application requirements, including applicable notarisation. Furnished or serviced homes do not automatically meet the evidence requirements. For a personal-home purchase, prepare title documents and establish owner-residence eligibility."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Apply in the correct province",
+          "body": "Use e-ikamet while your stay is lawful and select your actual purpose and address. The system identifies the appointment and document list. Normal statutory processing is 90 days from complete submission. The 2026 card fee is TRY 964 besides variable duties and insurance. Government appointments are free."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Arrival, children and address changes",
+          "body": "Register the address within the required period following approval. Notify address changes within 20 working days. Moving from another province requires a new procedure; the official FAQ says duties are not collected again if the permit type stays the same. Each child needs a separate file. Assess education, health cover and commuting before committing."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Are all Istanbul neighbourhoods open?",
+          "answer": "No. The exact address and type of application determine applicable restrictions."
+        },
+        {
+          "question": "Can I choose any migration office?",
+          "answer": "Follow the appointment location and date assigned by e-ikamet."
+        },
+        {
+          "question": "Does a lease guarantee ikamet?",
+          "answer": "No; all requirements and a qualifying purpose must be met."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Official FAQ: applications, deadlines and relocation"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Official 2026 fees"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/-mahalle-kapatma-duyurusu-hk-",
+          "label": "Istanbul: historical neighbourhood closure notice (2022)"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/",
+          "label": "Istanbul Migration Directorate"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157: official assistance"
+        }
+      ]
+    },
+    "ru": {
+      "title": "ВНЖ в Стамбуле 2026: районы, адрес и оформление",
+      "metaDescription": "Переезд в Стамбул: выбор ВНЖ, ограничения регистрации, аренда, страховка, приём и семейные документы.",
+      "shortAnswer": "Иностранцам, планирующим жить в Стамбуле после разрешённой краткой поездки, необходим соответствующий ВНЖ. Общие правила действуют вместе с местными ограничениями регистрации. Объявление о квартире не подтверждает пригодность адреса.",
+      "bosphorasHelp": "Bosphoras может организовать ознакомительные поездки, поиск жилья и встречи с независимыми специалистами. Заявления подаются в государственные органы; одобрение не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Район с учётом повседневной жизни",
+          "body": "Для семьи, работающей на европейской стороне, можно сравнить Шишли, Бешикташ и Кягытхане по транспорту, школам и услугам. Кадыкёй и Ускюдар предлагают другие условия на азиатской стороне. Это варианты поиска, а не перечень открытых для иностранной регистрации районов. Проверьте маршрут от конкретного дома в часы пик."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Ограничения регистрации: подтверждённые сведения",
+          "body": "1 июля 2022 года управление опубликовало сообщение об ограничениях в рамках меры, охватившей 1 169 кварталов по стране. Это историческое число, а не актуальный показатель Стамбула. Правила и исключения меняются; полный список на 17 ноября 2026 года здесь не подтверждён. До внесения залога сообщите компетентному органу квартал, улицу, номер дома и квартиры.",
+          "table": {
+            "headers": [
+              "Проверка",
+              "Действие или правило"
+            ],
+            "rows": [
+              [
+                "Точный адрес",
+                "Подтвердить допустимость до залога"
+              ],
+              [
+                "Официальное заявление",
+                "До окончания законного пребывания"
+              ],
+              [
+                "Карта (2026)",
+                "964 лиры на человека"
+              ],
+              [
+                "Решение",
+                "Обычно 90 дней после полной подачи"
+              ],
+              [
+                "Смена адреса",
+                "20 рабочих дней"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Аренда и подтверждение жилья",
+          "body": "Проверьте арендодателя, право собственности и жилое назначение. Договор должен соответствовать требованиям заявления, включая необходимое нотариальное оформление. Меблированная квартира или апарт-отель не освобождают от подтверждения жилья. Для собственного жилья подготовьте документы на собственность и проверьте основание ВНЖ."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Подача в нужной провинции",
+          "body": "Подавайте через e-ikamet в законный срок с реальной целью и адресом. Система определит место приёма и перечень документов. Обычный срок решения — 90 дней с полной подачи. Карта в 2026 году стоит 964 лиры без переменного сбора и страховки. Официальная запись бесплатна."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Адрес, дети и переезд",
+          "body": "Зарегистрируйте адрес в установленный срок после одобрения. Изменение адреса сообщается в течение 20 рабочих дней. Переезд из другой провинции требует новой процедуры; по официальному разъяснению, при сохранении типа ВНЖ сбор повторно не взимается. Каждому ребёнку нужен отдельный комплект. До договора оцените школы, страховку и транспорт."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Все кварталы Стамбула открыты?",
+          "answer": "Нет, имеют значение точный адрес и вид заявления."
+        },
+        {
+          "question": "Можно выбрать любой офис?",
+          "answer": "Следуйте месту и дате, назначенным e-ikamet."
+        },
+        {
+          "question": "Аренда гарантирует ВНЖ?",
+          "answer": "Нет, требуется соответствие всем условиям."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Категории ВНЖ"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Официальные ответы: заявления, сроки и переезд"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Официальные сборы 2026"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/-mahalle-kapatma-duyurusu-hk-",
+          "label": "Стамбул: объявление об ограничениях 2022 года"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/",
+          "label": "Управление миграции Стамбула"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157: официальная справочная служба"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الإقامة في إسطنبول 2026: الأحياء والعنوان وإجراءات الإيكامت",
+      "metaDescription": "خطط للإقامة في إسطنبول: أنواع التصاريح وقيود تسجيل العنوان والسكن والتأمين والموعد والأسرة.",
+      "shortAnswer": "يحتاج الأجنبي الراغب في العيش بإسطنبول بعد الزيارة القانونية إلى إقامة مناسبة. تطبق القواعد الوطنية مع القيود المحلية على تسجيل العناوين. لا يثبت الإعلان العقاري أهلية العنوان.",
+      "bosphorasHelp": "تنظم Bosphoras الزيارات الاستطلاعية والبحث عن السكن والمواعيد مع مختصين مستقلين. تقدم الطلبات عبر السلطات المختصة دون ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "اختيار الحي وفق الحياة اليومية",
+          "body": "يمكن للأسرة التي تعمل في الجانب الأوروبي مقارنة شيشلي وبشكتاش وكاغتهانة من حيث النقل والمدارس والخدمات. وتقدم كاديكوي وأوسكودار خيارات مختلفة في الجانب الآسيوي. هذه مناطق للبحث وليست قائمة أحياء مفتوحة لتسجيل الأجانب. اختبر الرحلة من المبنى المحدد في ساعات الذروة."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "قيود الأحياء والمعلومات المؤكدة",
+          "body": "نشرت الإدارة في 1 يوليو 2022 إعلاناً ضمن إجراء وطني شمل 1,169 حياً. هذا رقم تاريخي وليس العدد الحالي في إسطنبول. تتغير القيود والاستثناءات ولم تتأكد هنا قائمة شاملة محدثة حتى 17 نوفمبر 2026. قدم للجهة المختصة اسم الحي والشارع ورقم المبنى والشقة قبل دفع التأمين.",
+          "table": {
+            "headers": [
+              "نقطة التحقق",
+              "الإجراء أو القاعدة"
+            ],
+            "rows": [
+              [
+                "العنوان الدقيق",
+                "تحقق من الأهلية قبل دفع التأمين"
+              ],
+              [
+                "الطلب الرسمي",
+                "قبل انتهاء البقاء القانوني"
+              ],
+              [
+                "البطاقة (2026)",
+                "964 ليرة لكل فرد"
+              ],
+              [
+                "القرار",
+                "عادة 90 يوماً بعد اكتمال الملف"
+              ],
+              [
+                "تغيير العنوان",
+                "20 يوم عمل"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "الإيجار وإثبات السكن",
+          "body": "تحقق من المؤجر وسند الملكية والاستعمال السكني. يجب أن يطابق العقد متطلبات الطلب بما فيها التوثيق اللازم. لا يعفي السكن المفروش أو المخدوم من إثبات السكن المقبول. ولشراء السكن الشخصي جهز مستندات الملكية وتحقق من شروط إقامة المالك."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "التقديم في الولاية الصحيحة",
+          "body": "استخدم e-ikamet أثناء البقاء القانوني واختر الغرض والعنوان الفعلي. تحدد المنصة الموعد والمستندات. المدة العادية للبت 90 يوماً من اكتمال الملف. رسم البطاقة لعام 2026 هو 964 ليرة دون الرسم المتغير والتأمين. الموعد الرسمي مجاني."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "الوصول والأطفال وتغيير العنوان",
+          "body": "سجل العنوان في المهلة بعد الموافقة وأبلغ عن تغييره خلال 20 يوم عمل. يتطلب الانتقال من ولاية أخرى إجراء جديداً؛ وتوضح الأسئلة الرسمية عدم تكرار رسم التصريح إذا بقي النوع نفسه. لكل طفل ملف مستقل. قارن المدارس والتأمين والتنقل قبل التوقيع."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل جميع أحياء إسطنبول مفتوحة؟",
+          "answer": "لا، يعتمد الأمر على العنوان الدقيق ونوع الطلب."
+        },
+        {
+          "question": "هل أختار أي مكتب؟",
+          "answer": "اتبع الموعد والمكان المحددين عبر e-ikamet."
+        },
+        {
+          "question": "هل يضمن الإيجار الإيكامت؟",
+          "answer": "لا، يجب استيفاء الغرض والشروط الأخرى."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامة"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "الأسئلة الرسمية: الطلبات والمواعيد والانتقال"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "الرسوم الرسمية لعام 2026"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/-mahalle-kapatma-duyurusu-hk-",
+          "label": "إسطنبول: إعلان إغلاق الأحياء لعام 2022"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/",
+          "label": "إدارة الهجرة في إسطنبول"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157: المساعدة الرسمية للأجانب"
+        }
+      ]
+    }
+  },
+  "residence-bodrum-foreigners": {
+    "fr": {
+      "title": "Résidence à Bodrum 2026 : ikamet, achat immobilier et vie à l’année",
+      "metaDescription": "S’installer à Bodrum dans la province de Muğla : résidence, logement, achat, assurance, restrictions d’adresse et démarches.",
+      "shortAnswer": "Bodrum relève de la province de Muğla pour les démarches de résidence. Qu’il s’agisse d’un projet familial, d’une résidence personnelle ou de retraite, le séjour de longue durée doit reposer sur un motif admissible. Une villa de vacances ne garantit pas un ikamet.",
+      "bosphorasHelp": "Bosphoras peut organiser une visite de repérage, la recherche de logement et des rendez-vous avec des professionnels indépendants. Vous déposez votre demande via les autorités, sans promesse d’acceptation.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Choisir une implantation adaptée à l’année",
+          "body": "Le centre de Bodrum peut faciliter les courses et les services ; Yalıkavak, Turgutreis ou Gümüşlük répondent à d’autres préférences de vie sur la péninsule. Comparez la desserte routière, l’accès aux soins, les écoles et l’activité réelle en hiver. Une adresse à proximité d’une marina ou d’une plage n’est pas nécessairement inscrivable pour une nouvelle demande. Ces secteurs ne constituent pas une liste d’admissibilité."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Location longue durée et contrôle des adresses",
+          "body": "Les restrictions nationales d’enregistrement ont aussi fait l’objet d’annonces dans Muğla. Une liste ancienne ne suffit pas à établir la situation actuelle d’une rue. Présentez les références exactes de l’habitation à la direction compétente ou contactez YİMER 157. Vérifiez aussi si le bail couvre douze mois ou uniquement la basse saison, qui supporte les charges, et si le propriétaire peut fournir les documents requis.",
+          "table": {
+            "headers": [
+              "Point de contrôle",
+              "Action ou règle"
+            ],
+            "rows": [
+              [
+                "Adresse précise",
+                "Confirmer l’admissibilité avant le dépôt de garantie"
+              ],
+              [
+                "Demande officielle",
+                "Avant la fin du séjour légal"
+              ],
+              [
+                "Carte (2026)",
+                "964 TL par personne"
+              ],
+              [
+                "Décision",
+                "Normalement 90 jours après dossier complet"
+              ],
+              [
+                "Changement d’adresse",
+                "20 jours ouvrables"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Achat immobilier et fiscalité des coûts",
+          "body": "Pour le titre de propriétaire occupant, le dossier doit prouver l’usage de logement personnel ainsi que les critères de valeur et d’acquisition applicables. Le seuil de 400 000 USD de l’investissement immobilier qualifié relève d’un autre dispositif. Calculez le coût complet de l’achat : frais d’acte, assurance, charges de copropriété et entretien. Un revenu locatif attendu ne suffit pas à justifier une résidence de propriétaire occupant."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Démarches auprès de Muğla",
+          "body": "Déposez sur e-ikamet avec l’adresse de Bodrum et le motif réel, avant l’expiration du droit de séjour. Le système fixe l’unité compétente et la date du rendez-vous : ne supposez pas qu’il se tiendra nécessairement dans le centre de Bodrum. Le dossier complet est normalement traité sous 90 jours. En 2026, la carte coûte 964 TL, avant les autres dépenses."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Retraite, familles et mobilité saisonnière",
+          "body": "Préparez une preuve de pension si vous êtes retraité, les documents scolaires si vous venez avec des enfants, et une assurance adaptée à votre situation. Testez le logement hors saison et prévoyez les transports vers l’aéroport de Milas-Bodrum. En cas de départ pour une autre province, la déclaration et la procédure de changement doivent être engagées dans le délai réglementaire. Pour une résidence à long terme, conservez vos historiques de voyages et de titres."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Bodrum dispose-t-elle d’un visa spécial ?",
+          "answer": "Non, les catégories nationales s’appliquent dans la province de Muğla."
+        },
+        {
+          "question": "Puis-je utiliser une location saisonnière ?",
+          "answer": "Seulement si les preuves de logement et les conditions du motif sont acceptées."
+        },
+        {
+          "question": "Où obtenir la date du rendez-vous ?",
+          "answer": "Sur e-ikamet, après avoir renseigné votre dossier."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Catégories de résidence"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions officielles : demandes, délais et déménagement"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Barème des frais 2026"
+        },
+        {
+          "href": "https://mugla.goc.gov.tr/",
+          "label": "Direction de la migration de Muğla"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157 : aide officielle aux étrangers"
+        }
+      ]
+    },
+    "en": {
+      "title": "Residence in Bodrum 2026: ikamet, property and year-round living",
+      "metaDescription": "Moving to Bodrum, Muğla: residence eligibility, property, address checks, seasonal housing, insurance and applications.",
+      "shortAnswer": "Residence applications for Bodrum fall within Muğla province. Family relocation, personal-home ownership or retirement requires a qualifying residence basis. Owning or booking a holiday villa does not guarantee a permit.",
+      "bosphorasHelp": "Bosphoras can coordinate scouting visits, housing searches and meetings with independent professionals. Applications go through the authorities; approval is not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Choose a year-round base",
+          "body": "Central Bodrum may simplify shopping and services; Yalıkavak, Turgutreis and Gümüşlük suit different peninsula lifestyles. Compare road access, medical care, schooling and winter services. A marina or beachfront address may not qualify for new foreign registration. These are search areas, not an eligibility list."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Long leases and address checks",
+          "body": "Muğla has published announcements under national neighbourhood restrictions. Historical notices cannot establish today's status of a specific address. Give the competent authority the exact property identifiers or contact YİMER 157. Check whether the contract covers twelve months or only the low season, who pays charges and whether the owner can provide required records.",
+          "table": {
+            "headers": [
+              "Checkpoint",
+              "Action or rule"
+            ],
+            "rows": [
+              [
+                "Exact address",
+                "Confirm eligibility before paying a deposit"
+              ],
+              [
+                "Official application",
+                "Before the lawful stay ends"
+              ],
+              [
+                "Card (2026)",
+                "TRY 964 per person"
+              ],
+              [
+                "Decision",
+                "Normally 90 days after complete submission"
+              ],
+              [
+                "Address change",
+                "20 working days"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Property and acquisition costs",
+          "body": "The owner-occupier route requires proof of genuine residential use and applicable value and acquisition criteria. The USD 400,000 qualifying property investment threshold belongs to a separate route. Budget title-related costs, insurance, service charges and maintenance. Expected rental income alone does not support personal-home residence."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Applying in Muğla province",
+          "body": "Apply through e-ikamet using the actual Bodrum address and purpose before current permission expires. The system assigns a unit and appointment date; do not assume the appointment will be in central Bodrum. Complete applications normally have a 90-day decision period. The 2026 card fee is TRY 964 before other expenses."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Retirement, families and seasonal travel",
+          "body": "Prepare pension evidence for retirees, education records for children and appropriate health cover. Test the home outside peak season and plan journeys to Milas-Bodrum Airport. Moving to another province requires notification and the relevant application within the official period. Retain travel and permit records for any future long-term residence application."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does Bodrum have a special visa?",
+          "answer": "No, national categories apply in Muğla province."
+        },
+        {
+          "question": "Can I use seasonal accommodation?",
+          "answer": "Only if accommodation evidence and the chosen residence purpose are accepted."
+        },
+        {
+          "question": "Where do I obtain my appointment?",
+          "answer": "On e-ikamet after submitting the application details."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Official FAQ: applications, deadlines and relocation"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Official 2026 fees"
+        },
+        {
+          "href": "https://mugla.goc.gov.tr/",
+          "label": "Muğla Migration Directorate"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157: official assistance"
+        }
+      ]
+    },
+    "ru": {
+      "title": "ВНЖ в Бодруме 2026: недвижимость, икамет и жизнь круглый год",
+      "metaDescription": "Переезд в Бодрум, провинция Мугла: основания ВНЖ, жильё, ограничения адресов, страхование и оформление.",
+      "shortAnswer": "Бодрум относится к провинции Мугла. Для семейного переезда, проживания в собственном жилье или на пенсии требуется подходящее законное основание. Курортная вилла не гарантирует ВНЖ.",
+      "bosphorasHelp": "Bosphoras может организовать ознакомительные поездки, поиск жилья и встречи с независимыми специалистами. Заявления подаются в государственные органы; одобрение не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Район для круглогодичной жизни",
+          "body": "В центре Бодрума проще доступны магазины и услуги; Ялыкавак, Тургутрейс и Гюмюшлюк предлагают иной уклад на полуострове. Сравните дороги, медицину, школы и работу услуг зимой. Адрес у марины или пляжа не обязательно подходит для новой регистрации. Это варианты поиска, а не перечень допустимых адресов."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Длительная аренда и проверка адреса",
+          "body": "В Мугле публиковались объявления о национальных ограничениях по кварталам. Старый список не подтверждает нынешний статус конкретного адреса. Сообщите компетентному органу точные данные жилья либо обратитесь в YİMER 157. Проверьте, действует ли договор круглый год или только зимой, кто оплачивает содержание и какие документы предоставит собственник.",
+          "table": {
+            "headers": [
+              "Проверка",
+              "Действие или правило"
+            ],
+            "rows": [
+              [
+                "Точный адрес",
+                "Подтвердить допустимость до залога"
+              ],
+              [
+                "Официальное заявление",
+                "До окончания законного пребывания"
+              ],
+              [
+                "Карта (2026)",
+                "964 лиры на человека"
+              ],
+              [
+                "Решение",
+                "Обычно 90 дней после полной подачи"
+              ],
+              [
+                "Смена адреса",
+                "20 рабочих дней"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Покупка и расходы",
+          "body": "Для ВНЖ собственника необходимо подтвердить личное проживание, стоимость и условия приобретения. Порог 400 000 долларов для квалифицированной инвестиции относится к отдельному режиму. Учитывайте оформление сделки, страховку, содержание и ремонт. Ожидаемая арендная прибыль не обосновывает ВНЖ для личного проживания."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Подача в провинции Мугла",
+          "body": "Подайте через e-ikamet с фактическим адресом в Бодруме и целью до окончания законного срока. Система назначит подразделение и дату: не следует предполагать, что приём будет в центре Бодрума. Срок после полной подачи обычно составляет 90 дней. В 2026 году карта стоит 964 лиры без иных расходов."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Пенсия, семья и сезонные поездки",
+          "body": "Подготовьте документы о пенсии, школьные документы детей и подходящую страховку. Проверьте жильё вне сезона и транспорт до аэропорта Милас-Бодрум. При переезде в другую провинцию соблюдайте сроки уведомления и соответствующей процедуры. Для возможного долгосрочного ВНЖ сохраняйте историю поездок и разрешений."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Есть ли специальная виза Бодрума?",
+          "answer": "Нет, в Мугле действуют общенациональные категории."
+        },
+        {
+          "question": "Подходит сезонная аренда?",
+          "answer": "Если принимаются документы на жильё и основание ВНЖ."
+        },
+        {
+          "question": "Где узнать дату приёма?",
+          "answer": "В e-ikamet после заполнения заявления."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Категории ВНЖ"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Официальные ответы: заявления, сроки и переезд"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Официальные сборы 2026"
+        },
+        {
+          "href": "https://mugla.goc.gov.tr/",
+          "label": "Управление миграции Муглы"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157: официальная справочная служба"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الإقامة في بودروم 2026: الإيكامت والعقار والعيش طوال العام",
+      "metaDescription": "الانتقال إلى بودروم بولاية موغلا: شروط الإقامة والسكن وقيود العنوان والتأمين والإجراءات.",
+      "shortAnswer": "تتبع بودروم ولاية موغلا في إجراءات الإقامة. يحتاج انتقال الأسرة أو التقاعد أو السكن في عقار مملوك إلى أساس قانوني مناسب. لا تضمن فيلا العطلات تصريح الإقامة.",
+      "bosphorasHelp": "تنظم Bosphoras الزيارات الاستطلاعية والبحث عن السكن والمواعيد مع مختصين مستقلين. تقدم الطلبات عبر السلطات المختصة دون ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "اختيار منطقة للعيش طوال العام",
+          "body": "قد يسهل مركز بودروم الوصول للمتاجر والخدمات، بينما تقدم ياليكافاك وتورغوت ريس وغوموشلوك أنماط حياة مختلفة. قارن الطرق والرعاية الصحية والمدارس والخدمات الشتوية. لا يعني قرب المرسى أو الشاطئ أن العنوان مؤهل للتسجيل. هذه خيارات للبحث وليست قائمة عناوين مقبولة."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "الإيجار الطويل والتحقق من العنوان",
+          "body": "نشرت موغلا إعلانات ضمن القيود الوطنية على الأحياء. لا تؤكد القوائم القديمة الوضع الحالي لعنوان معين. قدم بيانات العقار الدقيقة للجهة المختصة أو اتصل بـYİMER 157. تحقق من تغطية العقد للسنة كاملة أو لموسم الشتاء فقط ومن يتحمل الرسوم وما يستطيع المالك تقديمه من وثائق.",
+          "table": {
+            "headers": [
+              "نقطة التحقق",
+              "الإجراء أو القاعدة"
+            ],
+            "rows": [
+              [
+                "العنوان الدقيق",
+                "تحقق من الأهلية قبل دفع التأمين"
+              ],
+              [
+                "الطلب الرسمي",
+                "قبل انتهاء البقاء القانوني"
+              ],
+              [
+                "البطاقة (2026)",
+                "964 ليرة لكل فرد"
+              ],
+              [
+                "القرار",
+                "عادة 90 يوماً بعد اكتمال الملف"
+              ],
+              [
+                "تغيير العنوان",
+                "20 يوم عمل"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "الشراء وتكاليف العقار",
+          "body": "يتطلب مسار المالك إثبات السكن الشخصي والقيمة وشروط الشراء المطبقة. ويخص حد 400 ألف دولار للاستثمار العقاري المؤهل مساراً منفصلاً. احسب تكاليف التسجيل والتأمين والخدمات والصيانة. لا يكفي عائد الإيجار المتوقع لتبرير إقامة المالك الساكن."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "التقديم لدى ولاية موغلا",
+          "body": "قدم عبر e-ikamet بالعنوان الفعلي في بودروم والغرض قبل انتهاء البقاء القانوني. تحدد المنصة الوحدة والموعد؛ لا تفترض أن المقابلة ستتم وسط بودروم. المدة العادية 90 يوماً من اكتمال الملف. رسم البطاقة لعام 2026 هو 964 ليرة دون المصاريف الأخرى."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "التقاعد والأسرة والتنقل الموسمي",
+          "body": "جهز إثبات المعاش ووثائق تعليم الأطفال والتأمين المناسب. اختبر السكن خارج الموسم وخطط للوصول إلى مطار ميلاس بودروم. عند الانتقال لولاية أخرى التزم بمهلة الإبلاغ والإجراء المطلوب. احتفظ بسجل السفر والتصاريح للإقامة الطويلة مستقبلاً."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل توجد تأشيرة خاصة ببودروم؟",
+          "answer": "لا، تطبق الأنواع الوطنية في موغلا."
+        },
+        {
+          "question": "هل يصلح الإيجار الموسمي؟",
+          "answer": "إذا قُبل إثبات السكن والغرض المختار."
+        },
+        {
+          "question": "أين أعرف الموعد؟",
+          "answer": "عبر e-ikamet بعد استكمال بيانات الطلب."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامة"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "الأسئلة الرسمية: الطلبات والمواعيد والانتقال"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "الرسوم الرسمية لعام 2026"
+        },
+        {
+          "href": "https://mugla.goc.gov.tr/",
+          "label": "إدارة الهجرة في موغلا"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157: المساعدة الرسمية للأجانب"
+        }
+      ]
+    }
+  },
+  "residence-antalya-foreigners": {
+    "fr": {
+      "title": "Résidence à Antalya 2026 : ikamet, quartiers, famille et retraite",
+      "metaDescription": "Vivre à Antalya en 2026 : types d’ikamet, restrictions d’adresse, logement, santé, retraite et coordonnées de la migration.",
+      "shortAnswer": "Antalya associe vie urbaine et littoral, mais les étrangers doivent respecter les mêmes conditions d’occupation légale que dans les autres provinces. Le titre est attribué selon un motif admissible, pas selon la popularité d’une destination.",
+      "bosphorasHelp": "Bosphoras peut organiser une visite de repérage, la recherche de logement et des rendez-vous avec des professionnels indépendants. Vous déposez votre demande via les autorités, sans promesse d’acceptation.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Comparer les secteurs de vie",
+          "body": "Muratpaşa et le secteur de Lara peuvent intéresser les personnes qui recherchent les services urbains ; Konyaaltı combine des espaces résidentiels et le littoral ; Döşemealtı offre un environnement plus éloigné du centre. Ces exemples ne confirment pas l’ouverture administrative des adresses. Comparez école, soins, trajet et charges au niveau du bâtiment, et non seulement du district."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Restrictions d’adresse avant de signer",
+          "body": "Antalya a publié le 16 mai 2022 une annonce de fermeture dans le cadre des restrictions nationales. Une annonce de 2022 ne garantit pas le statut d’un logement en 2026, et les listes peuvent évoluer. Demandez la confirmation pour le mahalle, le bâtiment et le logement précis, avec votre nationalité et le type de demande. L’inscription de l’ancien locataire ne garantit pas votre admissibilité.",
+          "table": {
+            "headers": [
+              "Point de contrôle",
+              "Action ou règle"
+            ],
+            "rows": [
+              [
+                "Adresse précise",
+                "Confirmer l’admissibilité avant le dépôt de garantie"
+              ],
+              [
+                "Demande officielle",
+                "Avant la fin du séjour légal"
+              ],
+              [
+                "Carte (2026)",
+                "964 TL par personne"
+              ],
+              [
+                "Décision",
+                "Normalement 90 jours après dossier complet"
+              ],
+              [
+                "Changement d’adresse",
+                "20 jours ouvrables"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Choisir le titre et préparer le budget",
+          "body": "Pour une résidence personnelle, examinez le motif de propriétaire si vous possédez un logement admissible, ou un autre fondement réel. La retraite n’est pas une catégorie autonome ; la pension peut prouver les ressources. Les dossiers familiaux demandent les documents du sponsor et des membres. La carte coûte 964 TL par personne en 2026 ; ajoutez droits de séjour éventuels, assurance et justificatifs."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Déposer et trouver le service compétent",
+          "body": "Le rendez-vous est attribué via e-ikamet. La direction provinciale publie son adresse : Bayındır Mahallesi, Gazi Bulvarı No:2, 07030 Muratpaşa/Antalya ; téléphone +90 242 237 95 51 ou 52, courriel antalya@goc.gov.tr. Ce contact général ne remplace pas le lieu indiqué sur votre convocation. Le délai normal est de 90 jours après dossier complet."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Préparer une installation familiale ou à la retraite",
+          "body": "Vérifiez les soins nécessaires, les assurances couvrant réellement votre situation, l’accès aux pharmacies et la langue d’enseignement. Testez le logement en saison chaude et en hiver. Les dépenses incluent charges de résidence, climatisation, transport et frais scolaires éventuels. Déclarez les changements d’adresse dans les 20 jours ouvrables et préparez le renouvellement dans les 60 derniers jours de validité."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Konyaaltı est-il entièrement ouvert à l’enregistrement ?",
+          "answer": "Une affirmation à l’échelle du district ne suffit pas. Il faut vérifier l’adresse exacte et votre démarche."
+        },
+        {
+          "question": "Existe-t-il un ikamet automatique pour retraités ?",
+          "answer": "Non, il faut un motif de résidence admissible."
+        },
+        {
+          "question": "Comment contacter la migration ?",
+          "answer": "Via antalya@goc.gov.tr ou YİMER 157 ; respectez votre convocation."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Catégories de résidence"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions officielles : demandes, délais et déménagement"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Barème des frais 2026"
+        },
+        {
+          "href": "https://antalya.goc.gov.tr/iletisim",
+          "label": "Coordonnées officielles à Antalya"
+        },
+        {
+          "href": "https://antalya.goc.gov.tr/mahalle-kapatma-duyurusu-hk",
+          "label": "Antalya : annonce historique des restrictions (2022)"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157 : aide officielle aux étrangers"
+        }
+      ]
+    },
+    "en": {
+      "title": "Residence in Antalya 2026: ikamet, neighbourhoods and retirement",
+      "metaDescription": "Living in Antalya: residence categories, address restrictions, housing, family, healthcare and migration office contact details.",
+      "shortAnswer": "Antalya combines urban life and the Mediterranean coast, but foreign residents must meet the same legal conditions as elsewhere. Residence is based on a qualifying purpose rather than a destination's popularity.",
+      "bosphorasHelp": "Bosphoras can coordinate scouting visits, housing searches and meetings with independent professionals. Applications go through the authorities; approval is not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Compare areas for everyday living",
+          "body": "Muratpaşa and Lara may appeal to those prioritising urban services; Konyaaltı combines residential areas and coastal access; Döşemealtı is farther from the centre. These examples do not confirm administrative eligibility. Compare schools, care, commutes and charges for the actual building rather than the district alone."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Address restrictions before committing",
+          "body": "Antalya published a closure notice on 16 May 2022 under national restrictions. A 2022 notice cannot establish an address's current status in 2026. Request confirmation for the specific neighbourhood, building and apartment with your nationality and application type. A previous tenant's registration does not guarantee yours.",
+          "table": {
+            "headers": [
+              "Checkpoint",
+              "Action or rule"
+            ],
+            "rows": [
+              [
+                "Exact address",
+                "Confirm eligibility before paying a deposit"
+              ],
+              [
+                "Official application",
+                "Before the lawful stay ends"
+              ],
+              [
+                "Card (2026)",
+                "TRY 964 per person"
+              ],
+              [
+                "Decision",
+                "Normally 90 days after complete submission"
+              ],
+              [
+                "Address change",
+                "20 working days"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Choose a category and plan costs",
+          "body": "Owners of qualifying homes may assess personal-home residence; others need a genuine alternative basis. Retirement is not a dedicated category, although pension evidence can establish means. Family applications require sponsor and individual documentation. The 2026 card is TRY 964 per person, plus relevant duties, insurance and documentation expenses."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Application and official contacts",
+          "body": "e-ikamet assigns the appointment. The provincial directorate lists Bayındır Mahallesi, Gazi Bulvarı No:2, 07030 Muratpaşa/Antalya; telephone +90 242 237 95 51 or 52 and email antalya@goc.gov.tr. This general contact does not replace the appointment location. The usual decision period is 90 days following complete submission."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Relocation for families and retirees",
+          "body": "Assess medical needs, appropriate insurance, pharmacies and school languages. Test housing in hot weather and winter. Budget service charges, cooling, transport and school expenses. Notify address changes within 20 working days and prepare renewal in the final 60 days before expiry."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is all of Konyaaltı open to registration?",
+          "answer": "District-wide assumptions are insufficient. Check the precise address and application type."
+        },
+        {
+          "question": "Is retirement residence automatic?",
+          "answer": "No, a qualifying purpose is necessary."
+        },
+        {
+          "question": "How can I contact migration?",
+          "answer": "Use antalya@goc.gov.tr or YİMER 157, and follow your assigned appointment."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Official FAQ: applications, deadlines and relocation"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Official 2026 fees"
+        },
+        {
+          "href": "https://antalya.goc.gov.tr/iletisim",
+          "label": "Official Antalya contact details"
+        },
+        {
+          "href": "https://antalya.goc.gov.tr/mahalle-kapatma-duyurusu-hk",
+          "label": "Antalya: historical closure notice (2022)"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157: official assistance"
+        }
+      ]
+    },
+    "ru": {
+      "title": "ВНЖ в Анталье 2026: районы, семья, пенсия и икамет",
+      "metaDescription": "Жизнь в Анталье: основания ВНЖ, ограничения регистрации, жильё, медицина, пенсия и контакты миграционной службы.",
+      "shortAnswer": "Анталья сочетает городской уклад и морское побережье, но для иностранцев действуют общие требования законного проживания. ВНЖ выдаётся по допустимому основанию, а не по популярности курорта.",
+      "bosphorasHelp": "Bosphoras может организовать ознакомительные поездки, поиск жилья и встречи с независимыми специалистами. Заявления подаются в государственные органы; одобрение не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Районы для повседневной жизни",
+          "body": "Муратпаша и Лара интересны доступом к городским услугам; Коньяалты сочетает жилые кварталы и побережье; Дёшемеалты расположен дальше от центра. Эти примеры не подтверждают допустимость регистрации. Оценивайте школы, медицину, маршрут и расходы для конкретного дома."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Адресные ограничения до сделки",
+          "body": "16 мая 2022 года управление Антальи опубликовало объявление в рамках общенациональных ограничений. Старый список не подтверждает статус адреса в 2026 году. Уточните конкретный квартал, дом и квартиру с учётом гражданства и вида заявления. Регистрация прежнего арендатора не гарантирует вашу.",
+          "table": {
+            "headers": [
+              "Проверка",
+              "Действие или правило"
+            ],
+            "rows": [
+              [
+                "Точный адрес",
+                "Подтвердить допустимость до залога"
+              ],
+              [
+                "Официальное заявление",
+                "До окончания законного пребывания"
+              ],
+              [
+                "Карта (2026)",
+                "964 лиры на человека"
+              ],
+              [
+                "Решение",
+                "Обычно 90 дней после полной подачи"
+              ],
+              [
+                "Смена адреса",
+                "20 рабочих дней"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Категория ВНЖ и расходы",
+          "body": "Собственник подходящего жилья может рассмотреть основание личного проживания; другим нужен действительный альтернативный мотив. Отдельного пенсионного ВНЖ нет, но пенсия подтверждает средства. Семейные заявления требуют документов спонсора и каждого лица. Карта в 2026 году стоит 964 лиры на человека без иных сборов, страховки и расходов."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Подача и официальные контакты",
+          "body": "Приём назначается через e-ikamet. Управление указывает адрес Bayındır Mahallesi, Gazi Bulvarı No:2, 07030 Muratpaşa/Antalya, телефоны +90 242 237 95 51 или 52 и электронную почту antalya@goc.gov.tr. Общий адрес не заменяет место, указанное в записи. Срок решения после полной подачи обычно составляет 90 дней."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Подготовка семьи или пенсионера",
+          "body": "Оцените медицинские потребности, страховое покрытие, доступ к аптекам и язык обучения. Проверьте жильё летом и зимой. Учитывайте обслуживание комплекса, охлаждение, транспорт и школу. Об изменении адреса сообщайте в течение 20 рабочих дней, продлевайте ВНЖ в последние 60 дней до окончания."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Весь Коньяалты открыт для регистрации?",
+          "answer": "Нужно проверять точный адрес и вид заявления."
+        },
+        {
+          "question": "Есть автоматический пенсионный икамет?",
+          "answer": "Нет, требуется подходящее основание."
+        },
+        {
+          "question": "Как связаться с управлением?",
+          "answer": "Почта antalya@goc.gov.tr или YİMER 157; следуйте назначенному приёму."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Категории ВНЖ"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Официальные ответы: заявления, сроки и переезд"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Официальные сборы 2026"
+        },
+        {
+          "href": "https://antalya.goc.gov.tr/iletisim",
+          "label": "Контакты миграционной службы Антальи"
+        },
+        {
+          "href": "https://antalya.goc.gov.tr/mahalle-kapatma-duyurusu-hk",
+          "label": "Анталья: объявление об ограничениях 2022 года"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157: официальная справочная служба"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الإقامة في أنطاليا 2026: الإيكامت والأحياء والأسرة والتقاعد",
+      "metaDescription": "العيش في أنطاليا: أنواع الإقامة وقيود العنوان والسكن والصحة والتقاعد وبيانات إدارة الهجرة.",
+      "shortAnswer": "تجمع أنطاليا الحياة الحضرية وساحل المتوسط، لكن تخضع إقامة الأجانب للشروط الوطنية نفسها. يمنح التصريح بحسب أساس قانوني لا بحسب شهرة الوجهة.",
+      "bosphorasHelp": "تنظم Bosphoras الزيارات الاستطلاعية والبحث عن السكن والمواعيد مع مختصين مستقلين. تقدم الطلبات عبر السلطات المختصة دون ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "مقارنة مناطق الحياة اليومية",
+          "body": "قد تلائم مراد باشا ولارا من يفضل الخدمات الحضرية، وتجمع كونيالتي بين السكن والساحل، وتقع دوشمه ألتي بعيداً عن المركز. لا تؤكد هذه الأمثلة أهلية التسجيل. قارن المدارس والرعاية والتنقل والرسوم للمبنى نفسه."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "قيود العنوان قبل الالتزام",
+          "body": "نشرت إدارة أنطاليا في 16 مايو 2022 إعلاناً ضمن القيود الوطنية. لا يؤكد الإعلان القديم وضع عنوان معين في 2026. اطلب التأكد من الحي والمبنى والشقة المحددة بحسب جنسيتك ونوع طلبك. لا يضمن تسجيل مستأجر سابق تسجيلك.",
+          "table": {
+            "headers": [
+              "نقطة التحقق",
+              "الإجراء أو القاعدة"
+            ],
+            "rows": [
+              [
+                "العنوان الدقيق",
+                "تحقق من الأهلية قبل دفع التأمين"
+              ],
+              [
+                "الطلب الرسمي",
+                "قبل انتهاء البقاء القانوني"
+              ],
+              [
+                "البطاقة (2026)",
+                "964 ليرة لكل فرد"
+              ],
+              [
+                "القرار",
+                "عادة 90 يوماً بعد اكتمال الملف"
+              ],
+              [
+                "تغيير العنوان",
+                "20 يوم عمل"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "اختيار نوع الإقامة وتكاليفها",
+          "body": "يمكن لمالك المسكن المؤهل دراسة مسار السكن الشخصي، فيما يحتاج الآخرون إلى أساس حقيقي آخر. لا توجد إقامة عامة مستقلة للتقاعد لكن المعاش قد يثبت الموارد. تتطلب الأسرة مستندات الكفيل والأفراد. رسم بطاقة 2026 هو 964 ليرة لكل فرد إضافة للرسوم الأخرى والتأمين والوثائق."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "التقديم وبيانات الاتصال الرسمية",
+          "body": "تحدد منصة e-ikamet الموعد. تنشر الإدارة عنوان Bayındır Mahallesi, Gazi Bulvarı No:2, 07030 Muratpaşa/Antalya والهاتف +90 242 237 95 51 أو 52 والبريد antalya@goc.gov.tr. لا يحل العنوان العام محل مكان الموعد المحدد. المدة المعتادة للبت 90 يوماً من اكتمال الملف."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "الاستعداد للأسرة أو التقاعد",
+          "body": "قيّم الاحتياجات الطبية والتغطية المناسبة والصيدليات ولغة التعليم. اختبر المسكن صيفاً وشتاء. احسب رسوم المجمع والتبريد والنقل والتعليم. أبلغ عن تغيير العنوان خلال 20 يوم عمل وجهز التجديد في آخر 60 يوماً قبل الانتهاء."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل كل كونيالتي مفتوحة للتسجيل؟",
+          "answer": "يلزم التحقق من العنوان المحدد ونوع الطلب."
+        },
+        {
+          "question": "هل إقامة التقاعد تلقائية؟",
+          "answer": "لا، يلزم أساس مؤهل."
+        },
+        {
+          "question": "كيف أتواصل مع الإدارة؟",
+          "answer": "عبر antalya@goc.gov.tr أو YİMER 157 مع الالتزام بالموعد المحدد."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامة"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "الأسئلة الرسمية: الطلبات والمواعيد والانتقال"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "الرسوم الرسمية لعام 2026"
+        },
+        {
+          "href": "https://antalya.goc.gov.tr/iletisim",
+          "label": "بيانات الاتصال الرسمية في أنطاليا"
+        },
+        {
+          "href": "https://antalya.goc.gov.tr/mahalle-kapatma-duyurusu-hk",
+          "label": "أنطاليا: إعلان القيود لعام 2022"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157: المساعدة الرسمية للأجانب"
+        }
+      ]
+    }
+  },
+  "ikamet-istanbul": {
+    "fr": {
+      "title": "Ikamet Istanbul 2026 : rendez-vous, documents, prix et délais",
+      "metaDescription": "Guide pratique pour demander ou renouveler un ikamet à Istanbul : e-ikamet, UETS, tarif 964 TL, rendez-vous, adresse et suivi.",
+      "shortAnswer": "Pour obtenir un ikamet à Istanbul, créez personnellement une demande officielle avant l’expiration de votre séjour. Le formulaire indique les documents et le rendez-vous. Le délai réglementaire de traitement commence après remise du dossier complet, pas à la réservation du rendez-vous.",
+      "bosphorasHelp": "Bosphoras peut organiser une visite de repérage, la recherche de logement et des rendez-vous avec des professionnels indépendants. Vous déposez votre demande via les autorités, sans promesse d’acceptation.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Première demande : de la saisie au rendez-vous",
+          "body": "Sur e-ikamet sélectionnez la première demande, choisissez le titre correspondant à votre motif et renseignez le passeport et l’adresse. Gardez le numéro de dossier et la confirmation. Respectez la convocation ; une absence injustifiée peut entraîner la perte de la demande. Apportez les originaux et copies demandés, sans vous fier uniquement à une liste générique."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Vérifier l’adresse et les documents",
+          "body": "L’adresse doit être réelle et compatible avec votre type de demande, notamment au regard des restrictions locales. Préparez justificatifs d’hébergement, passeport, photos biométriques selon le formulaire, assurance, ressources et preuves du motif. Chaque membre de famille a un dossier propre. Demandez la confirmation administrative de l’adresse avant de signer un bail non remboursable."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Frais officiels et reçus",
+          "body": "En 2026 la carte coûte 964 TL. Le droit de séjour dépend de la nationalité, de la durée et des exemptions. Le portail calcule le montant. Pour les règlements officiels, les codes publiés sont 9207 pour la carte, 9233 pour le droit de séjour et 9234 pour le droit de visa lorsqu’il est applicable. Payez selon les instructions et gardez les reçus. Le rendez-vous n’est pas facturé.",
+          "table": {
+            "headers": [
+              "Point de contrôle",
+              "Action ou règle"
+            ],
+            "rows": [
+              [
+                "Demande officielle",
+                "Avant la fin du séjour légal"
+              ],
+              [
+                "Carte (2026)",
+                "964 TL par personne"
+              ],
+              [
+                "Décision",
+                "Normalement 90 jours après dossier complet"
+              ],
+              [
+                "Renouvellement",
+                "60 derniers jours avant expiration"
+              ],
+              [
+                "UETS",
+                "Requis en renouvellement et transfert"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Renouvellement et notifications UETS",
+          "body": "À partir du 15 avril 2024, les renouvellements et transferts de catégorie exigent un justificatif de compte UETS. Demandez-le auprès de PTT avec passeport, numéro d’étranger, téléphone et adresse électronique ; les personnes disposant d’une signature électronique peuvent utiliser la voie en ligne prévue. Les mineurs utilisent l’adresse de notification du parent ou tuteur. Déposez le renouvellement pendant les 60 derniers jours avant expiration."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Suivi, livraison et aide officielle",
+          "body": "Un dossier complet est normalement décidé dans les 90 jours. Surveillez les notifications et gardez disponibles les documents réclamés. En cas d’accord, vérifiez la livraison à l’adresse déclarée et accomplissez l’enregistrement dans le délai applicable. YİMER est joignable au 157 en Turquie et au +90 312 157 11 22 depuis l’étranger. Le service d’information fonctionne en semaine de 8 h à 18 h selon l’annonce d’août 2026, en turc, anglais, russe, arabe et persan."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Le rendez-vous est-il payant ?",
+          "answer": "Non, la demande et la prise de rendez-vous officiels sont gratuites."
+        },
+        {
+          "question": "Quel est le coût de la carte ?",
+          "answer": "964 TL en 2026, hors droits éventuels."
+        },
+        {
+          "question": "Le compte UETS est-il requis pour renouveler ?",
+          "answer": "Oui pour les renouvellements et transferts ; les mineurs utilisent le compte du parent ou tuteur."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions officielles : demandes, délais et déménagement"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Barème des frais 2026"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/",
+          "label": "Direction de la migration d’Istanbul"
+        },
+        {
+          "href": "https://en.goc.gov.tr/announcement-on-national-electronic-notification-system-for-residence-permit-extension-applications",
+          "label": "UETS : notifications électroniques"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157 : aide officielle aux étrangers"
+        }
+      ]
+    },
+    "en": {
+      "title": "Istanbul ikamet 2026: appointments, documents, fees and timelines",
+      "metaDescription": "How to apply for or renew Istanbul ikamet: e-ikamet, UETS registration, TRY 964 card fee, appointment and tracking.",
+      "shortAnswer": "Apply personally through the official service before your legal stay expires. The form identifies required documents and the appointment. The statutory processing period begins upon complete submission, not when the appointment is booked.",
+      "bosphorasHelp": "Bosphoras can coordinate scouting visits, housing searches and meetings with independent professionals. Applications go through the authorities; approval is not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "First application and appointment",
+          "body": "Select first application in e-ikamet, choose the category matching your purpose and enter your passport and address. Retain your application number and confirmation. Attend the assigned appointment; unjustified absence can invalidate the application. Bring the requested originals and copies rather than relying solely on a generic list."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Check the address and evidence",
+          "body": "Your address must be real and eligible for the application type under local restrictions. Prepare housing evidence, passport, biometric photos as specified, insurance, means and purpose-specific records. Each family member has an individual file. Confirm address eligibility before signing a non-refundable lease."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Official payments and receipts",
+          "body": "The 2026 card fee is TRY 964. Residence duty varies by nationality, duration and exemptions and is calculated by the portal. Published payment codes are 9207 for the card, 9233 for residence duty and 9234 for visa duty when applicable. Follow official payment instructions and retain receipts. The appointment itself is free.",
+          "table": {
+            "headers": [
+              "Checkpoint",
+              "Action or rule"
+            ],
+            "rows": [
+              [
+                "Official application",
+                "Before the lawful stay ends"
+              ],
+              [
+                "Card (2026)",
+                "TRY 964 per person"
+              ],
+              [
+                "Decision",
+                "Normally 90 days after complete submission"
+              ],
+              [
+                "Renewal",
+                "Final 60 days before expiry"
+              ],
+              [
+                "UETS",
+                "Required for renewal and transfer"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Renewals and UETS notices",
+          "body": "From 15 April 2024, extension and transfer applications require evidence of a UETS account. Obtain one through PTT with passport, foreigner ID number, phone and email, or use the prescribed online route with an electronic signature. Minors use their parent or guardian's notification account. Renew within the final 60 days before expiry."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Tracking, card delivery and official help",
+          "body": "A complete application normally has a 90-day decision period. Monitor notifications and respond to evidence requests. If approved, check card delivery to the declared address and register it within the applicable period. YİMER can be reached at 157 in Turkey or +90 312 157 11 22 abroad. The August 2026 notice specifies weekday information hours of 08:00–18:00 in Turkish, English, Russian, Arabic and Persian."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is the appointment paid?",
+          "answer": "No, official filing and booking are free."
+        },
+        {
+          "question": "What is the card fee?",
+          "answer": "TRY 964 in 2026, apart from any duties."
+        },
+        {
+          "question": "Is UETS required for renewal?",
+          "answer": "Yes, for extension and transfer applications; minors use a parent's or guardian's account."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Official FAQ: applications, deadlines and relocation"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Official 2026 fees"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/",
+          "label": "Istanbul Migration Directorate"
+        },
+        {
+          "href": "https://en.goc.gov.tr/announcement-on-national-electronic-notification-system-for-residence-permit-extension-applications",
+          "label": "UETS electronic notifications"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157: official assistance"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Икамет в Стамбуле 2026: запись, документы, сборы и сроки",
+      "metaDescription": "Порядок оформления и продления ВНЖ в Стамбуле: e-ikamet, UETS, сбор 964 лиры, приём и отслеживание.",
+      "shortAnswer": "Подайте личное заявление через официальный сервис до окончания законного пребывания. Форма определяет документы и запись. Срок рассмотрения начинается с полной подачи, а не с даты записи.",
+      "bosphorasHelp": "Bosphoras может организовать ознакомительные поездки, поиск жилья и встречи с независимыми специалистами. Заявления подаются в государственные органы; одобрение не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Первая подача и запись",
+          "body": "В e-ikamet выберите первичное заявление и категорию по цели, внесите паспорт и адрес. Сохраните номер и подтверждение. Явитесь в назначенное время: неявка без уважительной причины может привести к утрате заявления. Возьмите требуемые оригиналы и копии, не полагаясь только на общий перечень."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Проверка адреса и документов",
+          "body": "Адрес должен быть фактическим и подходить для вида заявления с учётом местных ограничений. Подготовьте жильё, паспорт, фотографии по форме, страховку, доход и подтверждение цели. Для каждого члена семьи отдельное дело. До невозвратного платежа за аренду подтвердите допустимость адреса."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Официальные сборы и квитанции",
+          "body": "Карта в 2026 году стоит 964 лиры. Сбор за проживание зависит от гражданства, срока и освобождений; сумма рассчитывается порталом. Опубликованные коды платежей: 9207 за карту, 9233 за ВНЖ и 9234 за визовый сбор при необходимости. Следуйте официальным инструкциям и храните квитанции. Запись бесплатна.",
+          "table": {
+            "headers": [
+              "Проверка",
+              "Действие или правило"
+            ],
+            "rows": [
+              [
+                "Официальное заявление",
+                "До окончания законного пребывания"
+              ],
+              [
+                "Карта (2026)",
+                "964 лиры на человека"
+              ],
+              [
+                "Решение",
+                "Обычно 90 дней после полной подачи"
+              ],
+              [
+                "Продление",
+                "Последние 60 дней"
+              ],
+              [
+                "UETS",
+                "Для продления и смены категории"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Продление и уведомления UETS",
+          "body": "С 15 апреля 2024 года при продлении и смене категории требуется подтверждение аккаунта UETS. Оформите его в PTT с паспортом, номером иностранца, телефоном и почтой либо онлайн при наличии электронной подписи. Несовершеннолетние используют адрес уведомлений родителя или опекуна. Подайте продление в последние 60 дней до истечения."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Отслеживание, доставка и справочная служба",
+          "body": "Полное заявление обычно рассматривается в течение 90 дней. Следите за уведомлениями и предоставляйте запрошенные документы. При одобрении проверьте доставку на указанный адрес и зарегистрируйте его в установленный срок. YİMER доступен по номеру 157 в Турции и +90 312 157 11 22 из-за рубежа. Согласно сообщению августа 2026 года, справочная служба работает в будни с 8 до 18 на турецком, английском, русском, арабском и персидском."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Запись платная?",
+          "answer": "Нет, официальная подача и запись бесплатны."
+        },
+        {
+          "question": "Сколько стоит карта?",
+          "answer": "964 лиры в 2026 году без других сборов."
+        },
+        {
+          "question": "Нужен ли UETS для продления?",
+          "answer": "Да, для продления и смены категории; дети используют аккаунт родителя или опекуна."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Официальные ответы: заявления, сроки и переезд"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Официальные сборы 2026"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/",
+          "label": "Управление миграции Стамбула"
+        },
+        {
+          "href": "https://en.goc.gov.tr/announcement-on-national-electronic-notification-system-for-residence-permit-extension-applications",
+          "label": "Электронные уведомления UETS"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157: официальная справочная служба"
+        }
+      ]
+    },
+    "ar": {
+      "title": "إيكامت إسطنبول 2026: الموعد والوثائق والرسوم والمدة",
+      "metaDescription": "خطوات طلب الإيكامت وتجديده في إسطنبول: e-ikamet وUETS ورسم البطاقة 964 ليرة والموعد والمتابعة.",
+      "shortAnswer": "قدم طلبك شخصياً عبر الخدمة الرسمية قبل انتهاء البقاء القانوني. تحدد الاستمارة المستندات والموعد. تبدأ مدة دراسة الطلب من اكتمال الملف وليس من حجز الموعد.",
+      "bosphorasHelp": "تنظم Bosphoras الزيارات الاستطلاعية والبحث عن السكن والمواعيد مع مختصين مستقلين. تقدم الطلبات عبر السلطات المختصة دون ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "الطلب الأول وحجز الموعد",
+          "body": "اختر الطلب الأول في e-ikamet والنوع المناسب للغرض وأدخل الجواز والعنوان. احتفظ برقم الملف والتأكيد. احضر الموعد المحدد؛ قد يؤدي الغياب دون عذر إلى إلغاء الطلب. أحضر الأصول والنسخ المطلوبة ولا تعتمد على قائمة عامة فقط."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "التحقق من العنوان والوثائق",
+          "body": "يجب أن يكون العنوان حقيقياً ومؤهلاً لنوع الطلب وفق القيود المحلية. جهز إثبات السكن والجواز والصور وفق الاستمارة والتأمين والموارد وإثبات الغرض. لكل فرد ملف منفصل. تحقق من أهلية العنوان قبل دفع مبلغ إيجار غير قابل للاسترداد."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "الرسوم الرسمية والإيصالات",
+          "body": "رسم بطاقة 2026 هو 964 ليرة. ويتغير رسم التصريح حسب الجنسية والمدة والإعفاءات وتحسبه المنصة. رموز الدفع المنشورة هي 9207 للبطاقة و9233 لرسم الإقامة و9234 لرسم التأشيرة عند انطباقه. اتبع تعليمات الدفع الرسمية واحتفظ بالإيصالات. الموعد مجاني.",
+          "table": {
+            "headers": [
+              "نقطة التحقق",
+              "الإجراء أو القاعدة"
+            ],
+            "rows": [
+              [
+                "الطلب الرسمي",
+                "قبل انتهاء البقاء القانوني"
+              ],
+              [
+                "البطاقة (2026)",
+                "964 ليرة لكل فرد"
+              ],
+              [
+                "القرار",
+                "عادة 90 يوماً بعد اكتمال الملف"
+              ],
+              [
+                "التجديد",
+                "آخر 60 يوماً قبل الانتهاء"
+              ],
+              [
+                "UETS",
+                "مطلوب للتجديد وتغيير النوع"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "التجديد والإخطارات الإلكترونية UETS",
+          "body": "منذ 15 أبريل 2024 يتطلب التجديد وتغيير النوع إثبات حساب UETS. افتحه لدى PTT بالجواز ورقم هوية الأجنبي والهاتف والبريد الإلكتروني أو عبر المسار الإلكتروني عند توفر التوقيع الإلكتروني. يستخدم القاصر حساب إخطار الوالد أو الوصي. قدم التجديد في آخر 60 يوماً قبل الانتهاء."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "المتابعة والتسليم والمساعدة الرسمية",
+          "body": "تدرس الطلبات المكتملة عادة خلال 90 يوماً. راقب الإخطارات واستكمل المطلوب. عند الموافقة تحقق من تسليم البطاقة إلى العنوان المصرح به وسجله ضمن المهلة. يتاح YİMER على 157 داخل تركيا و+90 312 157 11 22 من الخارج. ووفق إعلان أغسطس 2026 تعمل خدمة المعلومات أيام الأسبوع من 8 إلى 18 بالتركية والإنجليزية والروسية والعربية والفارسية."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل الموعد مدفوع؟",
+          "answer": "لا، الطلب والموعد الرسميان مجانيان."
+        },
+        {
+          "question": "ما رسم البطاقة؟",
+          "answer": "964 ليرة لعام 2026 دون الرسوم الأخرى."
+        },
+        {
+          "question": "هل يلزم UETS للتجديد؟",
+          "answer": "نعم للتجديد وتغيير النوع، ويستخدم القاصر حساب الوالد أو الوصي."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "الأسئلة الرسمية: الطلبات والمواعيد والانتقال"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "الرسوم الرسمية لعام 2026"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/",
+          "label": "إدارة الهجرة في إسطنبول"
+        },
+        {
+          "href": "https://en.goc.gov.tr/announcement-on-national-electronic-notification-system-for-residence-permit-extension-applications",
+          "label": "الإخطارات الإلكترونية UETS"
+        },
+        {
+          "href": "https://en.goc.gov.tr/yimer-157-has-been-a-trusted-point-of-contact-for-foreigners-in-turkiye-for-11-years",
+          "label": "YİMER 157: المساعدة الرسمية للأجانب"
+        }
+      ]
+    }
   }
 };
