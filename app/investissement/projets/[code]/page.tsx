@@ -4,7 +4,9 @@ import {investmentVentures,type InvestmentVentureCode} from '@/data/investmentVe
 import {InvestmentProjectDetail} from '@/components/InvestmentProjectDetail';
 import {publicInvestmentListing,publicCoverUrl} from '@/lib/investmentListings';
 import {buildMetadata} from '@/lib/seo';
-export const revalidate=120;
+// Read the current investment terms at request time.
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 export const dynamicParams=false;
 export function generateStaticParams(){return investmentVentures.map(v=>({code:v.code}));}
 export async function generateMetadata({params}:{params:{code:string}}):Promise<Metadata>{

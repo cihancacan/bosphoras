@@ -1,4 +1,5 @@
-import { createIsolatedPortalSupabase, portalSupabaseUrl } from '@/lib/portalSupabase';
+import { createClient } from '@supabase/supabase-js';
+import { portalSupabasePublishableKey, portalSupabaseUrl } from '@/lib/portalSupabase';
 import { investmentVentures, type InvestmentVentureCode } from '@/data/investmentVentures';
 
 import { aqmaEditorial } from '@/data/aqmaInvestmentEditorial';
@@ -48,21 +49,30 @@ export function mergedInvestmentListing(code:InvestmentVentureCode,row?:Partial<
   ...row
  };
 }
+// Anonymous RLS-protected read, with explicit public columns and no cache.
+const publicListingColumns='code,title_fr,title_en,tagline_fr,tagline_en,short_fr,short_en,story_fr,story_en,highlights_fr,highlights_en,sector,location,issuer_name,official_website,currency,target_amount,minimum_ticket,maximum_ticket,investment_type,annual_rate,term_months,first_payment_month,payment_frequency,exit_terms_fr,exit_terms_en,use_of_funds_fr,use_of_funds_en,risk_summary_fr,risk_summary_en,cover_path,featured,display_order,publication_status,published_at' as const;
+function freshPublicClient(){
+ return createClient(portalSupabaseUrl,portalSupabasePublishableKey,{
+  auth:{persistSession:false,autoRefreshToken:false,detectSessionInUrl:false},
+  global:{fetch:(input,init)=>fetch(input,{...init,cache:'no-store'})}
+ });
+}
 export async function publicInvestmentListings():Promise<InvestmentListing[]>{
- const db=createIsolatedPortalSupabase();
- const {data,error}=await db.from('investment_listings').select('*').eq('publication_status','published').order('display_order');
- if(error)return investmentVentures.map(p=>mergedInvestmentListing(p.code));
+ const db=freshPublicClient();
+ const {data,error}=await db.from('investment_listings').select(publicListingColumns).eq('publication_status','published').order('display_order');
+ if(error)throw new Error('Unable to load current public investment listings');
  const map=new Map((data||[]).map(p=>[p.code,p]));
  return investmentVentures.map(p=>mergedInvestmentListing(p.code,map.get(p.code) as Partial<InvestmentListing> |undefined))
    .sort((a,b)=>(a.featured===b.featured?0:a.featured?-1:1)||a.display_order-b.display_order);
 }
 export async function publicInvestmentListing(code:InvestmentVentureCode):Promise<InvestmentListing>{
- const db=createIsolatedPortalSupabase();
- const {data}=await db.from('investment_listings').select('*').eq('code',code).eq('publication_status','published').maybeSingle();
+ const db=freshPublicClient();
+ const {data,error}=await db.from('investment_listings').select(publicListingColumns).eq('code',code).eq('publication_status','published').maybeSingle();
+ if(error)throw new Error('Unable to load current public investment listing');
  return mergedInvestmentListing(code,data as InvestmentListing|null);
 }
 export async function publicInvestmentImages():Promise<InvestmentMediaPublic[]>{
- const db=createIsolatedPortalSupabase();
+ const db=freshPublicClient();
  const {data}=await db.from('investment_listing_media').select('id,listing_code,category,public_path,sort_order').eq('status','approved').order('sort_order');
  return (data||[]) as InvestmentMediaPublic[];
 }

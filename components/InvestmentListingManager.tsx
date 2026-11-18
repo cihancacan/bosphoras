@@ -59,9 +59,11 @@ export function InvestmentListingManager(){
    // Publication has an explicit action; saving text cannot accidentally go live.
    delete (payload as any).code;delete (payload as any).published_at;
    payload.publication_status=current?.publication_status||'draft';
-   const {error}=await db.from('investment_listings').update(payload).eq('code',selected);
+   const {data:saved,error}=await db.from('investment_listings').update(payload).eq('code',selected).select('code,publication_status').single();
    if(error)throw error;
-  },row?.publication_status==='published'?'Annonce publique mise à jour.':success);
+   if(!saved||saved.code!==selected)throw new Error('La sauvegarde n’a pas été confirmée par la base.');
+   if(error)throw error;
+  },row?.publication_status==='published'?'Annonce publique enregistrée. Rechargez la vitrine pour voir les nouvelles conditions.':success);
  }
  async function publish(){
   if(!draft)return;

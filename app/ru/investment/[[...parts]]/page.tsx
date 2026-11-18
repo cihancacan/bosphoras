@@ -3,7 +3,9 @@ import {notFound} from 'next/navigation';
 import {investmentVentures,type InvestmentVentureCode} from '@/data/investmentVentures';
 import {InternationalInvestmentPage,internationalInvestmentCopy,localizedInvestmentPaths} from '@/components/InternationalInvestmentPage';
 import {buildMetadata} from '@/lib/seo';
-export const revalidate=60;
+// Read the current investment terms at request time.
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 export const dynamicParams=false;
 const locale='ru' as const;
 export function generateStaticParams(){return [{parts:[]},...['projects','investors','entrepreneurs'].map(x=>({parts:[x]})),...investmentVentures.flatMap(v=>[{parts:['projects',v.code]},{parts:['request',v.code]}])];}
