@@ -126,7 +126,7 @@ export const taxRelocationEditorial = {
     "compareNote": "Comparaison des dispositifs, pas de l’impôt total : conventions, source, cotisations, taxes patrimoniales et conditions personnelles modifient le résultat. Les guides dédiés permettent d’approfondir Dubaï et les autres destinations.",
     "simTitle": "Imaginez ce que vos revenus pourraient financer",
     "simLabels": [
-      "Revenus étrangers annuels supposés éligibles (€)",
+      "Revenus étrangers annuels supposés éligibles",
       "Taux effectif actuel sur ces revenus (%)",
       "Impôt étranger restant supposé après le départ (%)",
       "Horizon (années, maximum 20)",
@@ -135,7 +135,7 @@ export const taxRelocationEditorial = {
       "Impôt actuel estimé",
       "Impôt étranger restant estimé"
     ],
-    "simNote": "Scénario pédagogique, non un calcul fiscal : taux saisis par vous, revenus et taux constants, hypothèse d’éligibilité complète. Aucun impôt local sur ces revenus dans le scénario, hors frais de vie, exit tax, cotisations, change et autres impôts. Un écart négatif signifie un surcoût.",
+    "simNote": "Scénario pédagogique, non un calcul fiscal : taux saisis par vous, revenus et taux constants, hypothèse d’éligibilité complète. Aucun impôt local sur ces revenus dans le scénario, hors frais de vie, exit tax, cotisations, change et autres impôts. Un écart négatif signifie un surcoût. Les montants sont exprimés dans une seule devise, sans conversion de change.",
     "lifeTitle": "Trois façons de vivre votre projet",
     "cities": [
       [
@@ -219,11 +219,11 @@ export const taxRelocationEditorial = {
   },
   "en": {
     "label": "Tax relocation",
-    "meta": "Tax relocation to Turkey 2026 | 20-year exemption",
-    "description": "Explore Türkiye’s 2026 foreign-income exemption, eligibility, tax scenarios and end-to-end relocation with Bosphoras.",
-    "title": "Tax relocation to Türkiye. A new life, new horizons.",
-    "intro": "Imagine mornings on the Bosphorus, an international business and evenings with your family in a city connecting Europe and Asia. Türkiye’s 2026 reform gives eligible new residents a compelling reason to consider a long-term move.",
-    "cta": "Explore my tax relocation",
+    "meta": "Turkey Tax Residency 2026 | 20-Year Foreign Income Relief",
+    "description": "Moving to Turkey from the UK, US or abroad? Explore the new 20-year foreign income tax exemption, international tax planning, banking and relocation with Bosphoras.",
+    "title": "Make Türkiye your home. Keep your ambitions global.",
+    "intro": "A morning on the Bosphorus, a portfolio that spans continents, and a home with room for the next chapter. For internationally mobile founders, investors and families, Türkiye offers more than a change of address. The 2026 tax reform gives qualifying new residents a 20-year exemption on eligible foreign income and gains. We help turn the opportunity into a coherent international relocation plan.",
+    "cta": "Request a private tax residency review",
     "trust": [
       "International taxation",
       "Lawyers and tax advisers",
@@ -239,8 +239,8 @@ export const taxRelocationEditorial = {
       "Our service",
       "FAQ"
     ],
-    "storyTitle": "What if your next address opened new horizons?",
-    "story": "A morning meeting in Istanbul, lunch by the water, family time after work. Bodrum offers an Aegean lifestyle; Antalya offers sunshine and outdoor living. We build your move around your income, assets, business and family.",
+    "storyTitle": "A Mediterranean lifestyle with international reach",
+    "story": "Build a base in Istanbul, with international schools, business districts, direct connections to major commercial centres and a vibrant cultural life; or choose the Aegean coast for more space and a slower pace. For British retirees, US professionals, internationally mobile founders and investors, the right decision begins with a realistic household budget and the tax treatment of assets and income in every relevant jurisdiction.",
     "reformTitle": "20 years of relief: the 2026 tax reform",
     "reform": "Law 7582, published 4 June 2026, introduced repeated Article 20/D. Qualifying individuals becoming resident from 1 January 2026 may receive a 20-year Turkish income tax exemption on foreign-source income and gains. It is not automatic or a corporate exemption. Turkish-source income and foreign taxes remain subject to separate assessment.",
     "facts": [
@@ -317,33 +317,33 @@ export const taxRelocationEditorial = {
         "Ordinary Turkish rules or separate corporate incentives."
       ]
     ],
-    "compareTitle": "Türkiye, Italy or Portugal?",
+    "compareTitle": "Turkey, UK and Italy: foreign income regimes compared",
     "compareHeaders": [
-      "Destination",
-      "Regime",
-      "Duration / condition"
+      "Jurisdiction",
+      "Relief for qualifying newcomers",
+      "Maximum duration and conditions"
     ],
     "compareRows": [
       [
         "Türkiye",
-        "Exemption on qualifying foreign income",
-        "20 years; 3 calendar years and certificate"
+        "Exemption on qualifying foreign income and gains",
+        "20 years; three preceding calendar years and certification"
+      ],
+      [
+        "United Kingdom",
+        "Foreign Income and Gains (FIG) relief from April 2025",
+        "4 years; at least ten consecutive non-UK tax years beforehand"
       ],
       [
         "Italy",
-        "EUR 300,000 annual lump-sum on covered foreign income for 2026 entrants",
-        "Up to 15 years; residency conditions"
-      ],
-      [
-        "Portugal",
-        "IFICI: qualifying foreign income relief excluding pensions; 20% on selected local activities",
-        "10 years; eligible occupations"
+        "EUR 300,000 annual lump sum on qualifying foreign income for 2026 entrants",
+        "Up to 15 years; residence-history conditions"
       ]
     ],
-    "compareNote": "Regime comparison, not total tax; treaties, source, contributions, wealth taxation and individual eligibility matter.",
-    "simTitle": "What could your income make possible?",
+    "compareNote": "Three distinct regimes, not a ranking of overall tax cost. A move from the UK may bring separate UK-source, temporary non-residence or inheritance tax questions. US citizens and some green-card holders remain subject to US worldwide-income rules.",
+    "simTitle": "Build a cross-border tax scenario in your own currency",
     "simLabels": [
-      "Annual assumed eligible foreign income (EUR)",
+      "Annual assumed eligible foreign income",
       "Current effective tax rate (%)",
       "Assumed remaining foreign tax rate (%)",
       "Horizon (years, max 20)",
@@ -352,20 +352,20 @@ export const taxRelocationEditorial = {
       "Estimated current tax",
       "Estimated remaining foreign tax"
     ],
-    "simNote": "Illustrative only: your assumed rates, constant income and full eligibility. Excludes living costs, exit tax, contributions, exchange rates and other taxes. A negative difference means extra cost.",
-    "lifeTitle": "Three ways to live in Türkiye",
+    "simNote": "Illustrative only: your assumed rates, constant income and full eligibility. Excludes living costs, exit tax, contributions, exchange rates and other taxes. A negative difference means extra cost. Choose one currency for all amounts; no exchange-rate conversion is performed.",
+    "lifeTitle": "Choose the base that fits your next chapter",
     "cities": [
       [
         "Istanbul",
-        "Business, international schools and waterfront neighbourhoods."
+        "A cosmopolitan business base with English-language education options, international healthcare and waterfront neighbourhoods."
       ],
       [
         "Bodrum",
-        "Aegean marinas, villas and villages; consider year-round services."
+        "An Aegean retreat for remote founders, investors and retirees; assess year-round transport and healthcare."
       ],
       [
         "Antalya",
-        "Mediterranean outdoor life; consider schools, healthcare and travel."
+        "Mediterranean living, outdoor activities and family-friendly areas; compare schools and healthcare before selecting a home."
       ]
     ],
     "serviceTitle": "Your move, coordinated end to end",
@@ -416,11 +416,19 @@ export const taxRelocationEditorial = {
       [
         "How can Bosphoras help?",
         "We coordinate the assessment, qualified advisers, documents and move; authorities decide eligibility."
+      ],
+      [
+        "Can a UK resident leave and return after a few years?",
+        "UK tax residence depends on the Statutory Residence Test. Certain gains and income can become taxable on return under temporary non-residence rules. Review the plan with a UK adviser before selling assets or taking distributions."
+      ],
+      [
+        "Does the Turkish exemption remove US tax filing obligations?",
+        "No. US citizens and US tax residents generally retain worldwide-income tax obligations even abroad. Tax credits, applicable exclusions, reporting of accounts and treaty exceptions require US-specific advice."
       ]
     ],
     "sources": "Regulatory sources and comparisons — 18 November 2026",
-    "endTitle": "Your next chapter starts with a conversation.",
-    "end": "Share your current residence, activity and goals. We coordinate a personalised assessment and the practical steps for your move.",
+    "endTitle": "Plan the next chapter with clarity.",
+    "end": "Tell us where you live, where your income arises and how you plan to spend your time in Türkiye. We coordinate a confidential review with qualified advisers and prepare a practical relocation roadmap.",
     "photos": [
       "Bosphorus waterfront in Ortaköy",
       "Modern Galataport promenade",
@@ -432,15 +440,15 @@ export const taxRelocationEditorial = {
       "Foreign-income guide",
       "20-year exemption guide"
     ],
-    "home": "Explore Türkiye’s new 20-year foreign-income exemption for eligible residents."
+    "home": "Considering a move from the UK, US or another country? Explore Türkiye’s new 20-year foreign-income tax regime."
   },
   "ru": {
-    "label": "Налоговая релокация",
-    "meta": "Налоговая релокация в Турцию 2026 | Льгота на 20 лет",
-    "description": "Налоговое резидентство Турции, освобождение иностранных доходов на 20 лет, условия и сопровождение Bosphoras.",
-    "title": "Налоговая релокация в Турцию. Новая жизнь, новые горизонты.",
-    "intro": "Представьте утро на Босфоре, международный бизнес и вечер с семьёй. Реформа 2026 года открывает новые возможности для тех, кто действительно переезжает в Турцию и выполняет условия.",
-    "cta": "Обсудить налоговую релокацию",
+    "label": "Налоговое резидентство",
+    "meta": "Налоговое резидентство Турции 2026 — льгота на 20 лет",
+    "description": "Переезд в Турцию из России, Казахстана и других стран: налоги на зарубежные доходы, ВНЖ, недвижимость, банки и сопровождение Bosphoras.",
+    "title": "Налоговое резидентство Турции. Ваш бизнес и семья в новом доме.",
+    "intro": "Стамбул может стать удобной базой для международного бизнеса, а побережье — местом, где хочется жить круглый год. Для предпринимателей и инвесторов из России, Казахстана и других стран реформа 2026 года открывает возможность освободить определённые зарубежные доходы от турецкого подоходного налога на 20 лет. Мы поможем оценить налоговые последствия в обеих странах и организовать реальный переезд семьи.",
+    "cta": "Получить индивидуальный план переезда",
     "trust": [
       "Международные налоги",
       "Юристы и налоговые специалисты",
@@ -456,8 +464,8 @@ export const taxRelocationEditorial = {
       "Сопровождение",
       "Вопросы"
     ],
-    "storyTitle": "Новый адрес — новые возможности",
-    "story": "Стамбул соединяет бизнес и жизнь на Босфоре. Бодрум предлагает эгейское побережье, Анталья — средиземноморский образ жизни. Мы учитываем доходы, бизнес, активы и семью.",
+    "storyTitle": "Турция как новый центр вашей жизни и бизнеса",
+    "story": "Сохраняйте деловые связи с Москвой, Алматы или другими городами, развивайте новые рынки и выбирайте комфортную среду для семьи. В Стамбуле доступны деловые кварталы и международное образование; в Анталье и Бодруме — морской климат и иной темп жизни. Вместе мы оцениваем жильё, школы, банковскую доступность, легальный статус и расстояния, а не только налоговую льготу.",
     "reformTitle": "20 лет освобождения: реформа 2026 года",
     "reform": "Закон № 7582 опубликован 4 июня 2026 года. Статья 20/D предусматривает освобождение соответствующих иностранных доходов физических лиц, ставших резидентами с 1 января 2026 года, на 20 лет. Льгота не автоматическая и не относится к компаниям. Турецкие доходы и иностранные налоги анализируются отдельно.",
     "facts": [
@@ -534,33 +542,33 @@ export const taxRelocationEditorial = {
         "Общие правила либо отдельные режимы."
       ]
     ],
-    "compareTitle": "Турция, Италия и Португалия",
+    "compareTitle": "Турция, Россия и Казахстан: ключевые различия при смене резидентства",
     "compareHeaders": [
       "Страна",
-      "Режим",
-      "Срок"
+      "Налоговый режим / критерий",
+      "Что проверить перед переездом"
     ],
     "compareRows": [
       [
         "Турция",
-        "Освобождение соответствующего иностранного дохода",
-        "20 лет; 3 года и сертификат"
+        "Льгота на соответствующие зарубежные доходы на 20 лет",
+        "Фактическое резидентство, история за три календарных года, сертификат"
       ],
       [
-        "Италия",
-        "300 000 EUR в год на соответствующий иностранный доход для новых резидентов 2026 года",
-        "До 15 лет"
+        "Россия",
+        "Обычно резидентство определяется пребыванием не менее 183 дней в календарном году для итогового статуса",
+        "Налогообложение российских доходов, исключения, декларации и применимые соглашения"
       ],
       [
-        "Португалия",
-        "IFICI, иностранные доходы с исключениями и ставка 20% на отдельную местную деятельность",
-        "10 лет; подходящие профессии"
+        "Казахстан",
+        "Не менее 183 дней в последовательном 12-месячном периоде либо центр жизненных интересов",
+        "Семья, жильё, статус проживания, доходы и обязательства по декларациям"
       ]
     ],
-    "compareNote": "Сравниваются режимы, а не итоговые налоги. Важны соглашения, источник, взносы и индивидуальные условия.",
-    "simTitle": "Оцените возможную разницу",
+    "compareNote": "Это сравнение критериев резидентства и режима, а не ставок налога. Гражданство и язык сами по себе не определяют результат; правила страны источника, банковские требования и соглашения проверяются отдельно.",
+    "simTitle": "Смоделируйте возможный результат в удобной валюте",
     "simLabels": [
-      "Годовой предполагаемый иностранный доход (EUR)",
+      "Годовой предполагаемый зарубежный доход",
       "Текущая эффективная ставка (%)",
       "Остающаяся иностранная ставка (%)",
       "Срок (лет, до 20)",
@@ -569,20 +577,20 @@ export const taxRelocationEditorial = {
       "Текущий налог",
       "Остающийся иностранный налог"
     ],
-    "simNote": "Условная иллюстрация при неизменных доходах и ставках и полной применимости льготы. Без расходов, взносов, налога при выезде и других налогов. Отрицательная разница означает рост расходов.",
+    "simNote": "Условная иллюстрация при неизменных доходах и ставках и полной применимости льготы. Без расходов, взносов, налога при выезде и других налогов. Отрицательная разница означает рост расходов. Все суммы указываются в одной валюте, без пересчёта курса.",
     "lifeTitle": "Три образа жизни",
     "cities": [
       [
         "Стамбул",
-        "Бизнес, школы и Босфор."
+        "Деловые связи и международные школы, районы Левент, Маслак, Нишанташы и азиатская часть города."
       ],
       [
         "Бодрум",
-        "Эгейские марины и виллы; важна доступность услуг круглый год."
+        "Виллы, марины и эгейское побережье; стоит сравнить инфраструктуру в летний и зимний сезоны."
       ],
       [
         "Анталья",
-        "Средиземноморская жизнь, школы и медицина."
+        "Семейная жизнь, морские прогулки и районы с международной средой. Важно проверить регистрацию адреса, школы и медицину."
       ]
     ],
     "serviceTitle": "Сопровождение от А до Я",
@@ -633,11 +641,19 @@ export const taxRelocationEditorial = {
       [
         "Что делает Bosphoras?",
         "Координируем специалистов, документы и переезд; решение принимают органы."
+      ],
+      [
+        "Гражданство РФ или Казахстана автоматически определяет налоговое резидентство?",
+        "Нет. Анализируются обстоятельства по правилам каждой юрисдикции: периоды пребывания, критерии центра жизненных интересов, если они применяются, и международное соглашение."
+      ],
+      [
+        "Можно открыть счёт и перевести средства в Турцию?",
+        "Мы координируем банковскую заявку. Банк самостоятельно проверяет источник средств, владельцев, документы, санкционные ограничения и допустимость переводов; гарантии открытия счёта нет."
       ]
     ],
     "sources": "Источники — 18 ноября 2026 года",
-    "endTitle": "Начните новую главу с разговора.",
-    "end": "Расскажите о резидентстве, бизнесе и целях. Организуем индивидуальную оценку и переезд.",
+    "endTitle": "Организуйте переезд с понятным планом.",
+    "end": "Расскажите, где вы живёте, откуда получаете доход, где находится семья и бизнес. Мы согласуем этапы с профильными специалистами, поможем с жильём, документами и банковскими процедурами.",
     "photos": [
       "Босфор в Ортакёе",
       "Современная набережная Галатапорт",
@@ -649,15 +665,15 @@ export const taxRelocationEditorial = {
       "Иностранные доходы",
       "Льгота на 20 лет"
     ],
-    "home": "Узнайте о новой 20-летней льготе для соответствующих налоговых резидентов Турции."
+    "home": "Налоговая реформа Турции: изучите условия 20-летней льготы для новых резидентов и план переезда семьи."
   },
   "ar": {
-    "label": "الانتقال الضريبي",
-    "meta": "الانتقال الضريبي إلى تركيا 2026 | إعفاء 20 عاماً",
-    "description": "اكتشف نظام الإقامة الضريبية وإعفاء الدخل الأجنبي في تركيا وشروطه وخدمات الانتقال المتكاملة مع بوسفوراس.",
-    "title": "الانتقال الضريبي إلى تركيا. حياة جديدة وآفاق أوسع.",
-    "intro": "تخيّل صباحاً على البوسفور وأعمالاً دولية وأمسية مع عائلتك. يتيح إصلاح 2026 فرصاً جديدة للمقيمين المؤهلين الذين ينقلون حياتهم فعلياً إلى تركيا.",
-    "cta": "ادرس مشروع انتقالك الضريبي",
+    "label": "الإقامة الضريبية في تركيا",
+    "meta": "الإقامة الضريبية في تركيا 2026 | إعفاء 20 عاماً للدخل الأجنبي",
+    "description": "انتقل إلى تركيا من الخليج أو أي دولة أخرى: شروط الإعفاء الضريبي، إدارة الاستثمارات العائلية، تأسيس الشركات، السكن والبنوك مع بوسفوراس.",
+    "title": "تركيا، عنوان جديد لاستثماراتك وحياة عائلتك.",
+    "intro": "بين ضفاف البوسفور ومرسى على بحر إيجة، يمكنك الجمع بين إدارة أعمالك الدولية والحياة العائلية. يتيح إصلاح 2026 للمقيمين الجدد المؤهلين إعفاء الدخل الأجنبي المؤهل لمدة عشرين عاماً في تركيا. نساعد المستثمرين وأصحاب الشركات والعائلات على دراسة الانتقال من الخليج أو غيره مع الحفاظ على وضوح الالتزامات الضريبية في كل دولة.",
+    "cta": "اطلب دراسة خاصة لإقامتك الضريبية",
     "trust": [
       "الضرائب الدولية",
       "محامون ومستشارون",
@@ -673,8 +689,8 @@ export const taxRelocationEditorial = {
       "خدماتنا",
       "الأسئلة"
     ],
-    "storyTitle": "عنوان جديد وآفاق جديدة",
-    "story": "تجمع إسطنبول بين الأعمال والحياة على البوسفور. وتوفر بودروم المرافئ والفلل وأنطاليا الحياة المتوسطية. نخطط وفق دخلك وأصولك وأعمالك وأسرتك.",
+    "storyTitle": "حياة عائلية راقية وقاعدة أعمال دولية",
+    "story": "من إسطنبول يمكن إدارة الاجتماعات والاستثمارات بين أوروبا والشرق الأوسط، مع خيارات للمدارس الدولية والرعاية الصحية الخاصة والسكن قرب البوسفور. وتمنح بودروم وأنطاليا العائلة تجربة مختلفة قرب البحر. ندرس الخصوصية والسكن واللغة والمدارس والتنقل والاحتياجات الخاصة بكل أسرة قبل اتخاذ القرار.",
     "reformTitle": "20 عاماً من الإعفاء: إصلاح 2026",
     "reform": "أدخل القانون 7582 المنشور في 4 يونيو 2026 المادة 20/D، التي تمنح الأفراد المؤهلين المقيمين بدءاً من 1 يناير 2026 إعفاءً للدخل والمكاسب من مصادر أجنبية لمدة 20 عاماً. ليس تلقائياً ولا يشمل الشركات. يبقى الدخل التركي والضرائب الأجنبية بحاجة إلى دراسة.",
     "facts": [
@@ -751,33 +767,33 @@ export const taxRelocationEditorial = {
         "القواعد العادية أو أنظمة مستقلة."
       ]
     ],
-    "compareTitle": "تركيا أم إيطاليا أم البرتغال؟",
+    "compareTitle": "تركيا والإمارات والسعودية: ما الفرق بالنسبة للمستثمر؟",
     "compareHeaders": [
-      "الوجهة",
-      "النظام",
-      "المدة"
+      "الدولة",
+      "المعاملة الضريبية الأساسية",
+      "ما يجب مراجعته"
     ],
     "compareRows": [
       [
         "تركيا",
-        "إعفاء الدخل الأجنبي المؤهل",
-        "20 عاماً؛ 3 سنوات وشهادة"
+        "إعفاء الدخل الأجنبي المؤهل لمدة 20 عاماً",
+        "إقامة فعلية وشهادة وشروط السنوات الثلاث السابقة"
       ],
       [
-        "إيطاليا",
-        "300,000 يورو سنوياً للدخل الأجنبي المشمول للمقيمين الجدد في 2026",
-        "حتى 15 عاماً"
+        "الإمارات",
+        "الأجور والاستثمارات الشخصية والعقارية الخاصة خارج نطاق ضريبة الشركات للأفراد؛ قد تخضع الأنشطة التجارية عند تجاوز مليون درهم من الإيرادات سنوياً",
+        "الإقامة الفعلية وشهادة الإقامة والنشاط ومكان إدارة الشركة"
       ],
       [
-        "البرتغال",
-        "IFICI: إعفاء مشروط مع استثناء المعاشات ومعدل 20% لأنشطة محلية محددة",
-        "10 سنوات؛ وظائف مؤهلة"
+        "السعودية",
+        "دخل العمل الوظيفي وحده لا يخضع لضريبة دخل فردية؛ تختلف معاملة الأنشطة غير الوظيفية",
+        "النشاط التجاري والزكاة أو الضريبة والاقتطاعات بحسب الحالة"
       ]
     ],
-    "compareNote": "مقارنة الأنظمة لا الضرائب النهائية. تختلف النتيجة حسب الاتفاقيات والمصدر والاشتراكات والأهلية.",
-    "simTitle": "قدّر الفرق المحتمل",
+    "compareNote": "هذه أنظمة مختلفة ولا تعني المقارنة أن الانتقال يخفض الضريبة في كل حالة. يجب تقييم الإقامة الحقيقية ومصدر الدخل وضريبة النشاط والاستثمارات والاتفاقيات في كل بلد.",
+    "simTitle": "احسب سيناريو توضيحياً بعملتك المفضلة",
     "simLabels": [
-      "الدخل الأجنبي السنوي المفترض المؤهل (يورو)",
+      "الدخل الأجنبي السنوي المفترض المؤهل",
       "معدل الضريبة الفعلي الحالي (%)",
       "معدل الضريبة الأجنبية المتبقية (%)",
       "المدة (سنوات، حتى 20)",
@@ -786,20 +802,20 @@ export const taxRelocationEditorial = {
       "الضريبة الحالية المقدرة",
       "الضريبة الأجنبية المتبقية"
     ],
-    "simNote": "مثال توضيحي بافتراض ثبات الدخل والمعدلات وكامل الأهلية. لا يشمل تكاليف الانتقال أو الاشتراكات أو ضرائب الخروج. الفرق السلبي يعني تكلفة إضافية.",
+    "simNote": "مثال توضيحي بافتراض ثبات الدخل والمعدلات وكامل الأهلية. لا يشمل تكاليف الانتقال أو الاشتراكات أو ضرائب الخروج. الفرق السلبي يعني تكلفة إضافية. تُستخدم عملة واحدة لجميع المبالغ دون تحويل أسعار الصرف.",
     "lifeTitle": "ثلاث طرق للعيش في تركيا",
     "cities": [
       [
         "إسطنبول",
-        "الأعمال والمدارس والبوسفور."
+        "مراكز مالية وتجارية، أحياء راقية على البوسفور، مدارس دولية وخدمات صحية خاصة."
       ],
       [
         "بودروم",
-        "المرافئ والفلل؛ راع الخدمات طوال العام."
+        "فلل ومرافئ وإطلالات على بحر إيجة، مع مراجعة الخدمات المتاحة على مدار العام."
       ],
       [
         "أنطاليا",
-        "حياة متوسطية ومدارس ورعاية صحية."
+        "حياة متوسطية قريبة من البحر، خيارات للعائلات والأنشطة، مع دراسة المدارس والرعاية الصحية."
       ]
     ],
     "serviceTitle": "انتقالك من الألف إلى الياء",
@@ -850,11 +866,19 @@ export const taxRelocationEditorial = {
       [
         "كيف تساعد بوسفوراس؟",
         "ننسق التقييم والمختصين والوثائق والاستقرار؛ السلطات تقرر الأهلية."
+      ],
+      [
+        "هل تكفي الإقامة الإماراتية أو امتلاك شركة في الخليج لتحديد الإقامة الضريبية؟",
+        "لا. الإقامة الفعلية وشروط شهادة الإقامة والاتفاقيات وإدارة الشركة تُدرس لكل دولة. امتلاك شركة أو تصريح إقامة لا يحدد النتيجة وحده."
+      ],
+      [
+        "هل الانتقال من الخليج إلى تركيا يوفر الضريبة دائماً؟",
+        "لا. قد تكون بعض إيراداتك غير خاضعة للضريبة أصلاً في بلدك الحالي، بينما يخضع الدخل التركي لقواعد تركيا. ندرس صافي النتيجة وتكاليف الأسرة والأعمال قبل القرار."
       ]
     ],
     "sources": "المصادر — 18 نوفمبر 2026",
-    "endTitle": "ابدأ فصلاً جديداً بمحادثة.",
-    "end": "شارك بلد إقامتك ونشاطك وأهدافك، لننسق دراسة شخصية وخطوات الانتقال.",
+    "endTitle": "خطط لعنوانك الجديد بثقة وخصوصية.",
+    "end": "أخبرنا بمكان إقامتك الحالي، وبلدان استثماراتك وطبيعة أعمالك واحتياجات أسرتك. ننسق الدراسة مع المختصين ونضع خطة للسكن والإقامة والخدمات المصرفية.",
     "photos": [
       "البوسفور في أورتاكوي",
       "واجهة غالاطابورت الحديثة",
@@ -866,6 +890,6 @@ export const taxRelocationEditorial = {
       "دليل الدخل الأجنبي",
       "دليل إعفاء 20 عاماً"
     ],
-    "home": "اكتشف إعفاء الدخل الأجنبي لمدة 20 عاماً للمقيمين المؤهلين في تركيا."
+    "home": "اكتشف فرص الإقامة الضريبية الجديدة في تركيا للمستثمرين والعائلات الدولية."
   }
 } satisfies Record<Locale,unknown>;

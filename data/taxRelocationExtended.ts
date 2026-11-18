@@ -142,20 +142,20 @@ export const taxRelocationExtended = {
     "profilesTitle": "How the regime may fit your wealth",
     "profiles": [
       [
-        "Foreign company shareholder",
-        "Separate corporate tax, dividends, withholding and effective management. Directing a foreign business from Türkiye can change corporate obligations."
+        "UK business owner or landlord",
+        "Review UK residence days and ties, UK property income, distributions from a UK company and management from Türkiye. Do not assume a Turkish exemption overrides UK tax rights."
       ],
       [
-        "Portfolio investor",
-        "Classify dividends, interest, securities gains and fund distributions; assess source-country tax and residence before selling assets."
+        "US citizen or green-card holder",
+        "Examine federal reporting, foreign accounts, treaty positions and available exclusions or credits before assuming any tax savings."
       ],
       [
-        "International property owner",
-        "Foreign rents may qualify in Türkiye while the property country may continue to tax rent and gains. Review wealth and succession tax."
+        "International founder or investor",
+        "Assess share disposals, dividends, the effective management of each company and the jurisdiction of the investment vehicle. Coordinate accounting and cross-border banking."
       ],
       [
-        "Remote worker or retiree",
-        "Assess where services are performed and work authorisation, or the pension type and treaty. The payer’s location alone does not settle the tax result."
+        "Retiree or remote professional",
+        "Review pension type, the country of source, health cover and whether work from Turkey needs authorisation. Build a practical plan around family and travel."
       ]
     ],
     "localTitle": "What remains taxable in Türkiye?",
@@ -187,8 +187,8 @@ export const taxRelocationExtended = {
       ]
     ],
     "taxNote": "TRY 1 million of net non-employment taxable income yields TRY 232,500 under the scale before credits. Corporate tax, VAT, property taxes and social contributions are separate.",
-    "exitTitle": "Plan the departure country too",
-    "exitText": "For a move from France, the treaty tie-breaker considers permanent home, personal and economic ties, habitual abode and nationality. French exit tax may concern those resident for six of the last ten years with qualifying holdings worth at least EUR 800,000 or conferring at least 50% of company profit rights; deferral and relief may apply. Other countries have different rules.",
+    "exitTitle": "Moving from the UK, the US or another tax jurisdiction",
+    "exitText": "For a move from the United Kingdom, review the Statutory Residence Test, possible split-year treatment, continuing UK rental and pension income and temporary non-residence rules. Returning within a short period may bring certain gains or distributions back into UK taxation. US citizens and US tax residents generally remain subject to worldwide-income reporting and taxation; US foreign-account rules and potential credits or exclusions need separate review. Other English-speaking jurisdictions, including Canada and Australia, have their own departure and residency rules. We coordinate the assessment with relevant qualified advisers rather than treating language as nationality.",
     "docsTitle": "What we prepare with you",
     "docs": [
       [
@@ -261,20 +261,20 @@ export const taxRelocationExtended = {
     "profilesTitle": "Как льгота соотносится с вашим капиталом",
     "profiles": [
       [
-        "Владелец зарубежной компании",
-        "Разделяем налоги компании, дивиденды, удержания и место управления. Управление из Турции может изменить обязательства."
+        "Собственник бизнеса в России или Казахстане",
+        "Сравнить налоги компании и владельца, страну фактического управления, дивиденды и применимые правила трансграничных платежей."
       ],
       [
-        "Инвестор",
-        "Различаем дивиденды, проценты, продажу бумаг и выплаты фондов; оцениваем налоги страны источника."
+        "Инвестор с активами в нескольких странах",
+        "Разделить ценные бумаги, проценты и доходы от фондов; проверить источники, документы и допустимость банковских операций."
       ],
       [
-        "Владелец недвижимости",
-        "Зарубежная аренда может подпадать под льготу, но страна недвижимости сохраняет право налогообложения."
+        "Семья с недвижимостью в Алматы, Москве или за рубежом",
+        "Сохранить документы об аренде и владении; проверить налог в стране недвижимости и статус членов семьи при переезде."
       ],
       [
-        "Удалённая работа или пенсия",
-        "Проверяем место оказания услуг, право на работу, вид пенсии и соглашение. Иностранный перевод не определяет источник."
+        "Предприниматель с дистанционной работой",
+        "Проверить место оказания услуг и право на работу в Турции. Наличие иностранного договора не гарантирует иностранный источник дохода."
       ]
     ],
     "localTitle": "Какие налоги остаются в Турции?",
@@ -306,8 +306,8 @@ export const taxRelocationExtended = {
       ]
     ],
     "taxNote": "При 1 млн TRY чистого облагаемого дохода без зарплаты налог по шкале составляет 232 500 TRY до зачётов. НДС, налог компании, недвижимость и взносы анализируются отдельно.",
-    "exitTitle": "Подготовьте выезд из прежней страны",
-    "exitText": "При двойном резидентстве договор Франции и Турции учитывает постоянное жильё, личные и экономические связи, обычное место пребывания и гражданство. Французский exit tax может применяться к резидентам шести из десяти лет при долях от 800 000 EUR или правах на 50% прибыли компании; возможны отсрочка и освобождение. В других странах правила отличаются.",
+    "exitTitle": "Переезд из России, Казахстана и других стран: что проверить",
+    "exitText": "Для итогового российского налогового статуса за календарный год ФНС обычно учитывает 183 дня пребывания. Российские источники дохода могут оставаться облагаемыми после выезда. В Казахстане необходимо оценить не только 183 дня за последовательные 12 месяцев, но и критерии центра жизненных интересов. При двойной резиденции проверяются применимые соглашения и их действующие положения. Если переезд связан с зарубежной компанией, недвижимостью или банковскими активами, отдельно изучаются обязанности по отчётности, валютные правила, источник средств и ограничения банков. Мы координируем законный маршрут без обещаний обойти ограничения.",
     "docsTitle": "Что готовим вместе",
     "docs": [
       [
@@ -380,20 +380,20 @@ export const taxRelocationExtended = {
     "profilesTitle": "كيف يتناسب النظام مع أصولك؟",
     "profiles": [
       [
-        "مالك شركة أجنبية",
-        "فصل ضرائب الشركة والأرباح والاقتطاعات ومكان الإدارة الفعلية. الإدارة من تركيا قد تغير الالتزامات."
+        "صاحب شركة في دبي أو الرياض",
+        "دراسة مكان الإدارة الفعلية للشركة، وتوزيعات الأرباح والاستثمارات، وأثر العمل من تركيا مع مستشاري البلدين."
       ],
       [
-        "مستثمر مالي",
-        "تصنيف الأرباح والفوائد ومكاسب الأوراق المالية وتوزيعات الصناديق مع دراسة ضريبة المصدر."
+        "عائلة لديها محفظة استثمارات دولية",
+        "تنظيم الأصول والأرباح والفوائد والعوائد العقارية والملكية والميراث، مع مراعاة خصوصية الأسرة."
       ],
       [
-        "مالك عقارات دولية",
-        "قد يشمل الإعفاء الإيجارات الأجنبية بينما تحتفظ دولة العقار بحق الضريبة."
+        "مستثمر عقاري بين الخليج وتركيا",
+        "مقارنة الإقامة الفعلية والدخل العقاري والضرائب في بلد العقار قبل شراء مسكن جديد."
       ],
       [
-        "العمل عن بعد أو التقاعد",
-        "تقييم مكان أداء الخدمات وتصريح العمل أو نوع المعاش والاتفاقية؛ مكان الدافع لا يحدد المصدر وحده."
+        "رائد أعمال أو مدير إقليمي",
+        "دراسة مركز أعماله، وتصاريح العمل والإقامة، والاتصالات المصرفية والمدارس والسكن العائلي."
       ]
     ],
     "localTitle": "ما الضرائب التي تبقى في تركيا؟",
@@ -425,8 +425,8 @@ export const taxRelocationExtended = {
       ]
     ],
     "taxNote": "مثال: مليون ليرة من صافي الدخل الخاضع غير الأجور ينتج عنه 232,500 ليرة وفق الشرائح قبل التسويات. ضريبة الشركات والقيمة المضافة والعقار والاشتراكات منفصلة.",
-    "exitTitle": "خطط أيضاً للمغادرة من بلدك السابق",
-    "exitText": "عند ازدواج الإقامة، تراعي اتفاقية فرنسا وتركيا المسكن الدائم والروابط الشخصية والاقتصادية والإقامة المعتادة والجنسية. قد تنطبق ضريبة الخروج الفرنسية على المقيمين ست سنوات من عشر ممن يملكون حقوقاً بقيمة 800,000 يورو أو 50% من أرباح شركة؛ قد ينطبق التأجيل أو التخفيض. تختلف القواعد في البلدان الأخرى.",
+    "exitTitle": "الانتقال من دول الخليج: دراسة الأعمال والإقامة معاً",
+    "exitText": "إذا كنت مقيماً في الإمارات، نراجع شروط الإقامة الضريبية وشهادتها، ومكان إدارة الشركات، وتصنيف دخلك الشخصي والنشاط التجاري. تفرض الإمارات ضريبة الشركات على الشخص الطبيعي الذي يمارس نشاطاً تجارياً داخل الدولة عندما تتجاوز إيراداته التجارية مليون درهم في السنة التقويمية؛ الأجور والاستثمار الشخصي والاستثمار العقاري الخاص خارج هذا النطاق حسب الشروط. في السعودية لا تخضع الأجور الوظيفية وحدها لضريبة دخل فردية، لكن الأعمال غير الوظيفية تخضع لقواعد مختلفة. أما الكويت وقطر والبحرين وعمان والدول الأخرى فلها أنظمتها الخاصة. ندرس الالتزامات وشروط الاتفاقيات ومصدر الأموال والمستفيدين الفعليين مع المختصين في الدول المعنية.",
     "docsTitle": "ما نعده معك",
     "docs": [
       [
