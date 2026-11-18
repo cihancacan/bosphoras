@@ -37,6 +37,7 @@ export const moneyLabel=(amount:number|null|undefined,cur='EUR',locale='fr')=>{
 };
 export function mergedInvestmentListing(code:InvestmentVentureCode,row?:Partial<InvestmentListing>|null):InvestmentListing {
  const v=investmentVentures.find(x=>x.code===code)!;
+ const editorial: Partial<InvestmentListing> = code==='aqma' ? aqmaEditorial : code==='cliniqeo'?cliniqeoEditorial:code==='medsestra'?{...medsestraEditorial,investment_type:'equity',currency:'USD',target_amount:300000,minimum_ticket:1000,maximum_ticket:300000,equity_share_percent:20}:{};
  return {
   code,title_fr:v.name,title_en:v.name,tagline_fr:'',tagline_en:'',
   short_fr:v.summary,short_en:v.englishSummary,story_fr:'',story_en:'',highlights_fr:'',highlights_en:'',
@@ -45,7 +46,7 @@ export function mergedInvestmentListing(code:InvestmentVentureCode,row?:Partial<
   investment_type:'',equity_share_percent:null,annual_rate:null,term_months:null,first_payment_month:null,payment_frequency:'',
   exit_terms_fr:'',exit_terms_en:'',use_of_funds_fr:'',use_of_funds_en:'',
   risk_summary_fr:'',risk_summary_en:'',cover_path:'',featured:false,display_order:50,publication_status:'draft',published_at:null,
-  ...(code==='aqma' ? aqmaEditorial : code==='cliniqeo'?cliniqeoEditorial:code==='medsestra'?{...medsestraEditorial,investment_type:'equity',currency:'USD',target_amount:300000,minimum_ticket:1000,maximum_ticket:300000,equity_share_percent:20}:{}),
+  ...editorial,
   ...row
  };
 }
