@@ -1,3 +1,4 @@
+import { nonDomPaths } from '@/data/nonDomGuide';
 import { taxRelocationPaths, taxRelocationLabels } from '@/data/taxRelocationPaths';
 import Link from 'next/link';
 import type { Locale } from '@/lib/i18n';
@@ -38,6 +39,7 @@ export function Footer({ locale }: FooterProps) {
   ];
 
   const informationLinks = [
+    { label: locale === 'fr' ? 'Régime Non-Dom Turquie' : locale === 'en' ? 'Turkey Non-Dom Tax Regime' : locale === 'ru' ? 'Non-Dom в Турции' : 'نظام Non-Dom في تركيا', href: nonDomPaths[locale] },
     { label: locale === 'fr' ? 'À propos' : locale === 'en' ? 'About' : locale === 'ru' ? 'О нас' : 'من نحن', href: linkTo('about') },
     { label: locale === 'fr' ? 'Conformité & confiance' : locale === 'en' ? 'Compliance & Trust' : locale === 'ru' ? 'Комплаенс и доверие' : 'الامتثال والثقة', href: linkTo('compliance') },
     { label: locale === 'fr' ? 'Partenaires & réseau' : locale === 'en' ? 'Partners & Network' : locale === 'ru' ? 'Партнеры и сеть' : 'الشركاء والشبكة', href: linkTo('partners') },
