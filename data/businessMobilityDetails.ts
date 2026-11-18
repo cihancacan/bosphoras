@@ -59,7 +59,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         ],
         [
           "Puis-je diriger ma société depuis la Turquie ?",
-          "Détenir des parts et exercer une activité professionnelle sont deux questions différentes. Le permis de travail du dirigeant étranger obéit à des critères spécifiques ; une création de société ne donne pas automatiquement un droit de travail ni un titre de séjour. Nous coordonnons ce volet avec la mobilité du fondateur."
+          "Détenir des parts et exercer une activité professionnelle sont deux questions différentes. Le permis de travail du dirigeant étranger obéit à des critères spécifiques ; une création de société ne donne pas automatiquement un droit de travail ni un titre de séjour. Nous coordonnons ce volet avec la mobilité du fondateur. Pour un associé étranger qui souhaite travailler dans une société relevant de la comptabilité au bilan, les critères généraux prévoient une participation d’au moins 20 %, un apport personnel de 500 000 TRY minimum et un capital libéré total d’au moins 500 000 TRY. L’emploi de cinq citoyens turcs est exigé à partir du septième mois du premier permis. Un associé détenant une part de capital d’au moins 100 000 USD bénéficie d’une exemption de ces critères précis, sans garantie de permis. Il existe d’autres exceptions individuelles."
         ],
         [
           "Comment organiser la fiscalité et les flux internationaux ?",
@@ -68,6 +68,22 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         [
           "Puis-je ouvrir une filiale ou transférer mon équipe ?",
           "Pour un groupe étranger, nous relions l’ouverture d’une filiale ou d’une succursale au recrutement, aux contrats, à l’espace de travail et à la mobilité des cadres. Un calendrier commun permet à la direction de suivre les dépendances et les décisions."
+        ],
+        [
+          "Domicilier sa société à Istanbul ou ailleurs en Turquie",
+          "L’adresse du siège doit correspondre à une solution admissible pour l’activité : bureau, local commercial ou domiciliation appropriée. Pour une activité physique, vérifier autorisations municipales, bail, destination des lieux et obligations sectorielles avant de signer. Nous coordonnons les recherches et le dossier avec les professionnels locaux."
+        ],
+        [
+          "Exemple : entrepreneur international en solo",
+          "Un consultant souhaitant facturer des clients étrangers étudie d’abord la Ltd. Şti., son lieu de résidence, la TVA sur les prestations et la banque. S’il souhaite travailler en Turquie, le capital minimal de constitution ne suffit pas nécessairement au permis de travail. Le plan financier doit différencier capital, frais de départ et trésorerie disponible."
+        ],
+        [
+          "Exemple : groupe étranger ouvrant une filiale",
+          "Une entreprise qui veut employer des commerciaux et des ingénieurs doit comparer A.Ş., Ltd. Şti. et succursale, préciser les pouvoirs de signature et organiser les contrats intragroupe, la paie, les assurances, les locaux et les permis. Nous construisons le calendrier d’implantation avec le siège."
+        ],
+        [
+          "Que se passe-t-il après l’immatriculation ?",
+          "Le lancement comprend les accès fiscaux et comptables, les livres et registres requis, le suivi des factures électroniques si applicable, les déclarations, la paie et les décisions des associés. Nous coordonnons le passage de la constitution au fonctionnement quotidien."
         ]
       ],
       "related": "Relocation des dirigeants et salariés en Turquie",
@@ -118,7 +134,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
       "answers": [
         [
           "Quelles sont les obligations de l’employeur ?",
-          "Les critères généraux de permis de travail incluent notamment des exigences d’emploi local et de capacité financière. Pour certaines entreprises, le principe est de cinq salariés turcs par étranger ; il existe des exceptions et des règles spécifiques. Depuis le 3 août 2026, certains dossiers intérieurs de petites structures peuvent relever d’un assouplissement conditionnel. Nous identifions le régime applicable avec l’employeur avant les engagements."
+          "Pour une société nouvelle relevant de la comptabilité au bilan, le capital libéré requis en principe est de 500 000 TRY. Une société déjà établie peut satisfaire au critère financier avec ce capital, ou 8 millions TRY de ventes nettes, ou 150 000 USD d’exportations. La règle générale d’emploi est de cinq citoyens turcs par étranger ; les entreprises réalisant au moins 50 millions TRY de ventes nettes peuvent être exemptées de ce critère pour cinq étrangers. Depuis le 3 août 2026, une dispense des critères d’emploi et financiers peut aussi concerner jusqu’à trois demandeurs internes ayant séjourné légalement au moins un an sur les trois années précédentes sous un statut éligible, sous conditions d’effectifs. Des règles sectorielles et personnelles distinctes existent."
         ],
         [
           "Quels documents préparer avant le départ ?",
@@ -139,6 +155,22 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         [
           "Que se passe-t-il après l’arrivée ?",
           "Nous coordonnons les rendez-vous, l’installation du logement, les services essentiels et le suivi des points ouverts. Pour les RH, le dossier distingue les livrables achevés, les renouvellements à anticiper et les responsabilités de chacun."
+        ],
+        [
+          "Relocation à Istanbul : où installer un cadre expatrié ?",
+          "Levent et Maslak concentrent les bureaux et offrent des accès au métro M2 ; Nişantaşı et Şişli permettent une vie urbaine centrale ; Etiler et Ulus sont des options résidentielles proches des pôles d’affaires ; Zekeriyaköy et Sarıyer peuvent convenir aux familles recherchant davantage d’espace, à condition d’évaluer les trajets. Sur la rive asiatique, considérer Kadıköy, Ataşehir ou Üsküdar selon le bureau. Le choix dépend du trajet réel plutôt que du prestige du quartier."
+        ],
+        [
+          "Écoles internationales et rentrée des enfants",
+          "Parmi les établissements à étudier figurent le lycée Pierre Loti pour le cursus français, Istanbul International Community School et British International School Istanbul pour des parcours internationaux. Admissions, disponibilité, frais et conditions d’accès dépendent de l’établissement. Nous coordonnons la présélection et les démarches en fonction de l’âge, du cursus, de la langue et du domicile."
+        ],
+        [
+          "Exemple : directeur transféré avec sa famille",
+          "Le service RH fixe une date cible tandis que le collaborateur précise ses besoins. Le parcours de travail est étudié en premier ; la recherche de logement et d’école avance en parallèle. Les engagements non remboursables sont planifiés en fonction des autorisations. À l’arrivée, les services essentiels et le suivi familial sont coordonnés."
+        ],
+        [
+          "Exemple : transfert d’une équipe technique",
+          "Pour une équipe affectée à Bursa ou Kocaeli, nous distinguons chaque dossier de travail, le transport vers le site, les contrats de location, les besoins de traduction et le reporting centralisé. Un dossier par salarié et un calendrier consolidé limitent les démarches répétitives."
         ]
       ],
       "related": "Créer une filiale ou une société en Turquie",
@@ -203,7 +235,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         ],
         [
           "Can a foreign shareholder work in the company?",
-          "Ownership does not automatically confer work or residence rights. Foreign working shareholders may need a work permit under specific criteria. We coordinate this with the founder's relocation."
+          "Ownership does not automatically confer work or residence rights. Foreign working shareholders may need a work permit under specific criteria. We coordinate this with the founder's relocation. For a foreign working shareholder in a business using balance-sheet accounting, the general criteria require at least 20% ownership, a personal capital contribution of at least TRY 500,000 and total paid-up company capital of at least TRY 500,000. Five Turkish citizens must generally be employed from month seven of the first permit. A capital share of USD 100,000 or more exempts the shareholder from these specific criteria, not from obtaining a permit. Other individual exceptions exist."
         ],
         [
           "How do taxes and international payments work?",
@@ -212,6 +244,22 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         [
           "Can you support a subsidiary and team move?",
           "We connect company formation with recruitment, contracts, offices and executive or employee relocation, with shared milestones for management."
+        ],
+        [
+          "Registered address and business premises",
+          "Select premises compatible with the activity, including permitted offices, commercial premises or appropriate registered-address services. Check lease use, municipal and sector licensing before committing."
+        ],
+        [
+          "Example: independent international consultant",
+          "A solo consultant should assess an LLC, personal tax residency, cross-border VAT and banking. If working locally, incorporation capital alone may not satisfy work-permit criteria. Separate capital, setup costs and working cash."
+        ],
+        [
+          "Example: foreign group opening a subsidiary",
+          "Compare a JSC, LLC and branch; define signature powers, intercompany contracts, payroll, premises and work permits before the launch."
+        ],
+        [
+          "After registration",
+          "Arrange tax and accounting access, statutory records, e-invoicing where required, filings, payroll and shareholder decisions. We coordinate operational launch."
         ]
       ],
       "related": "Corporate relocation in Türkiye",
@@ -262,7 +310,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
       "answers": [
         [
           "What must employers consider?",
-          "General work-permit criteria include local employment and financial capacity; a five Turkish employees per foreign worker principle applies in certain cases, with exceptions. Conditional flexibility for eligible domestic applications at some small employers applies from 3 August 2026. We identify the applicable route with qualified professionals."
+          "Under the general balance-sheet accounting criteria, a new company needs TRY 500,000 paid-up capital. An established business can qualify with that capital, TRY 8 million net sales or USD 150,000 exports. Five Turkish employees per foreign worker is the general rule; businesses with at least TRY 50 million net sales can be exempt for up to five foreigners. From 3 August 2026, up to three qualifying domestic applicants with at least one year of lawful eligible residence in the preceding three years may be exempt from employment and financial criteria, subject to workforce conditions. Sector and personal exceptions also apply."
         ],
         [
           "Which documents should be ready?",
@@ -283,6 +331,22 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         [
           "What happens after arrival?",
           "We coordinate appointments, accommodation setup, practical necessities and remaining items, including renewal planning and reporting to HR."
+        ],
+        [
+          "Where to live in Istanbul for an assignment?",
+          "Levent and Maslak are business hubs on the M2 metro corridor. Nişantaşı and Şişli offer central urban living; Etiler and Ulus are residential options near business districts. Zekeriyaköy and Sarıyer offer more space but commuting matters. On the Asian side, consider Kadıköy, Ataşehir or Üsküdar according to the workplace."
+        ],
+        [
+          "International schools",
+          "Examples to consider include Lycée Pierre Loti, Istanbul International Community School and British International School Istanbul. Entry requirements, fees and availability are school-specific. We shortlist according to age, curriculum, language and commute."
+        ],
+        [
+          "Example: executive and family move",
+          "Agree the target date with HR, review the work-permit route, then coordinate housing and schooling in parallel. Non-refundable commitments should depend on authorisation milestones."
+        ],
+        [
+          "Example: technical team transfer",
+          "For a Bursa or Kocaeli assignment, track individual permit files, site transport, housing and translations against one consolidated HR schedule."
         ]
       ],
       "related": "Establish a company in Türkiye",
@@ -347,7 +411,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         ],
         [
           "Можно ли работать в своей компании?",
-          "Владение долей не даёт автоматически права на работу или проживание. Иностранному работающему учредителю может требоваться разрешение по специальным критериям."
+          "Владение долей не даёт автоматически права на работу или проживание. Иностранному работающему учредителю может требоваться разрешение по специальным критериям. Для иностранного работающего участника компании с балансовым учётом общие критерии предусматривают долю не менее 20%, личный вклад не менее 500 000 TRY и общий оплаченный капитал не менее 500 000 TRY. С седьмого месяца первого разрешения обычно требуется пять граждан Турции в штате. При доле капитала от 100 000 USD действует освобождение от этих конкретных критериев, но не от получения разрешения. Есть и другие индивидуальные исключения."
         ],
         [
           "Как организовать налоги и международные платежи?",
@@ -356,6 +420,22 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         [
           "Можно ли открыть филиал и перевести сотрудников?",
           "Мы связываем создание компании с наймом, офисом, договорами и переездом руководителей и сотрудников, согласуя этапы с руководством."
+        ],
+        [
+          "Юридический адрес и офис",
+          "Адрес должен соответствовать деятельности. До подписания договора проверяются назначение помещения, муниципальные и отраслевые разрешения."
+        ],
+        [
+          "Пример: международный консультант",
+          "Оценить ООО, личное налоговое резидентство, НДС международных услуг и банковский счёт. При работе в Турции минимального капитала регистрации может не хватить для разрешения. Отдельно планируются капитал, расходы и оборотные средства."
+        ],
+        [
+          "Пример: дочерняя компания иностранной группы",
+          "Сравнить ООО, АО и филиал, определить полномочия, внутригрупповые договоры, зарплату, офис и разрешения сотрудников."
+        ],
+        [
+          "После регистрации",
+          "Организовать бухгалтерию, доступ к налоговым системам, обязательные регистры, электронные счета при необходимости, отчётность и зарплату."
         ]
       ],
       "related": "Корпоративная релокация в Турцию",
@@ -406,7 +486,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
       "answers": [
         [
           "Что должен учитывать работодатель?",
-          "Общие критерии разрешения на работу включают численность местных сотрудников и финансовые показатели. В ряде случаев действует правило пяти граждан Турции на одного иностранца с исключениями. С 3 августа 2026 года для отдельных внутренних заявлений малых работодателей действуют условные послабления. Применимый порядок уточняется со специалистами."
+          "Для новой компании с балансовым учётом обычно требуется оплаченный капитал 500 000 TRY. Действующая компания может выполнить финансовый критерий этим капиталом, чистыми продажами от 8 млн TRY или экспортом от 150 000 USD. Общее правило — пять граждан Турции на одного иностранца; при чистых продажах от 50 млн TRY возможно освобождение для пяти иностранцев. С 3 августа 2026 года отдельное исключение действует для не более трёх заявителей внутри страны, проживавших законно не менее года за последние три года на подходящем основании, при соблюдении условий численности. Есть отраслевые и личные исключения."
         ],
         [
           "Какие документы подготовить?",
@@ -427,6 +507,22 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         [
           "Что происходит после приезда?",
           "Координация встреч, обустройство жилья, подключение услуг, контроль оставшихся вопросов и планирование продлений с отчётностью для HR."
+        ],
+        [
+          "Где жить в Стамбуле?",
+          "Левент и Маслак — деловые районы вдоль метро M2, Нишанташы и Шишли — центральные районы. Этилер и Улус расположены рядом с деловыми центрами; Зекериякёй и Сарыер предлагают больше пространства, но важно время в пути. На азиатской стороне можно рассмотреть Кадыкёй, Аташехир или Ускюдар."
+        ],
+        [
+          "Международные школы",
+          "Можно изучить Lycée Pierre Loti, Istanbul International Community School и British International School Istanbul. Условия приёма, стоимость и места зависят от школы. Учитываем язык, программу и дорогу."
+        ],
+        [
+          "Пример: переезд директора с семьёй",
+          "Согласовать дату с HR, проверить право на работу, параллельно организовать жильё и школу. Невозвратные расходы планировать с учётом разрешений."
+        ],
+        [
+          "Пример: перевод технической команды",
+          "Для Бурсы или Коджаэли вести индивидуальные документы, транспорт до объекта, жильё, переводы и общий график для HR."
         ]
       ],
       "related": "Создание компании в Турции",
@@ -491,7 +587,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         ],
         [
           "هل يستطيع الشريك الأجنبي العمل في شركته؟",
-          "امتلاك الحصص لا يمنح تلقائياً حق العمل أو الإقامة. قد يحتاج الشريك العامل إلى تصريح عمل وفق شروط خاصة."
+          "امتلاك الحصص لا يمنح تلقائياً حق العمل أو الإقامة. قد يحتاج الشريك العامل إلى تصريح عمل وفق شروط خاصة. بالنسبة للشريك الأجنبي العامل في شركة تخضع للمحاسبة على أساس الميزانية، تشترط المعايير العامة حصة لا تقل عن 20% ومساهمة شخصية لا تقل عن 500,000 ليرة ورأس مال مدفوع للشركة لا يقل عن 500,000 ليرة. ويشترط عادةً توظيف خمسة مواطنين أتراك ابتداءً من الشهر السابع للتصريح الأول. ويُعفى الشريك صاحب حصة رأسمالية تبلغ 100,000 دولار أو أكثر من هذه المعايير المحددة دون ضمان الحصول على التصريح. توجد استثناءات فردية أخرى."
         ],
         [
           "كيف تُنظّم الضرائب والمدفوعات الدولية؟",
@@ -500,6 +596,22 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         [
           "هل يمكن تأسيس فرع ونقل فريق العمل؟",
           "نربط تأسيس الشركة بالتوظيف والعقود والمكاتب وانتقال المديرين والموظفين ضمن خطة مشتركة مع الإدارة."
+        ],
+        [
+          "العنوان القانوني والمقر",
+          "اختيار مقر مناسب للنشاط والتحقق من عقد الإيجار والاستخدام المسموح والتراخيص البلدية والقطاعية قبل الالتزام."
+        ],
+        [
+          "مثال: مستشار دولي مستقل",
+          "دراسة الشركة المحدودة والإقامة الضريبية وضريبة القيمة المضافة للخدمات الدولية والبنك. قد لا يكفي رأس مال التأسيس لتصريح العمل. يجب فصل رأس المال عن تكاليف التأسيس والسيولة."
+        ],
+        [
+          "مثال: مجموعة أجنبية تؤسس شركة تابعة",
+          "مقارنة الشركة المساهمة والمحدودة والفرع وتحديد صلاحيات التوقيع والعقود والرواتب والمقر والتصاريح."
+        ],
+        [
+          "بعد التسجيل",
+          "تنظيم المحاسبة والأنظمة الضريبية والسجلات والفوترة الإلكترونية عند انطباقها والإقرارات والرواتب."
         ]
       ],
       "related": "خدمات انتقال الموظفين والشركات إلى تركيا",
@@ -550,7 +662,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
       "answers": [
         [
           "ما الالتزامات التي يراجعها صاحب العمل؟",
-          "تشمل الشروط العامة لتصريح العمل التوظيف المحلي والقدرة المالية. تنطبق في حالات معينة قاعدة خمسة موظفين أتراك لكل أجنبي مع وجود استثناءات. ومن 3 أغسطس 2026 توجد تسهيلات مشروطة لبعض الطلبات الداخلية لدى المنشآت الصغيرة. نحدد المسار المناسب مع المختصين."
+          "تتطلب المعايير العامة للشركة الجديدة الخاضعة للمحاسبة على أساس الميزانية رأس مال مدفوعاً لا يقل عن 500,000 ليرة. ويمكن للشركة القائمة استيفاء الشرط المالي بهذا المبلغ أو بمبيعات صافية قدرها 8 ملايين ليرة أو صادرات بقيمة 150,000 دولار. والقاعدة العامة خمسة موظفين أتراك لكل أجنبي، مع إمكانية الإعفاء لخمسة أجانب لدى شركات تبلغ مبيعاتها الصافية 50 مليون ليرة على الأقل. ومن 3 أغسطس 2026 يمكن إعفاء ثلاثة متقدمين داخليين مؤهلين كحد أقصى ممن أقاموا قانونياً سنة على الأقل خلال السنوات الثلاث السابقة وفق وضع مؤهل، مع مراعاة شروط عدد العاملين. توجد استثناءات قطاعية وشخصية."
         ],
         [
           "ما الوثائق التي تُجهز قبل السفر؟",
@@ -571,11 +683,141 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         [
           "ماذا بعد الوصول؟",
           "ننسق المواعيد وتجهيز السكن والخدمات الأساسية وإغلاق النقاط المتبقية والتخطيط للتجديدات والمتابعة مع الموارد البشرية."
+        ],
+        [
+          "أين يسكن الموظف في إسطنبول؟",
+          "ليفنت ومسلك منطقتان للأعمال على خط المترو M2. نيشانتاشي وشيشلي مناسبتان للحياة المركزية، وإتيلر وأولوس قريبتان من مراكز الأعمال. زكرياكوي وساريير توفران مساحة أوسع مع ضرورة تقييم التنقل. وفي الجانب الآسيوي يمكن دراسة كاديكوي وأتاشهير وأوسكودار حسب موقع العمل."
+        ],
+        [
+          "المدارس الدولية",
+          "من الخيارات للدراسة Lycée Pierre Loti وIstanbul International Community School وBritish International School Istanbul. تختلف شروط القبول والرسوم والمقاعد حسب المدرسة. نراعي اللغة والمنهج والعمر والمسافة."
+        ],
+        [
+          "مثال: انتقال مدير مع أسرته",
+          "تحديد الموعد مع الموارد البشرية ودراسة مسار تصريح العمل وتنظيم السكن والمدرسة بالتوازي. ترتبط الالتزامات غير القابلة للاسترداد بمراحل التصاريح."
+        ],
+        [
+          "مثال: نقل فريق تقني",
+          "في بورصة أو كوجالي، نتابع الملفات الفردية والنقل إلى موقع العمل والسكن والترجمة ضمن جدول موحد للموارد البشرية."
         ]
       ],
       "related": "تأسيس شركة في تركيا",
       "sources": "المصادر الرسمية: تصاريح العمل والإقامة",
       "photoAlt": "إسطنبول، وجهة للموظفين الدوليين"
     }
+  }
+};
+export const mobilityEditorial = {
+  "fr": {
+    "sal": [
+      "Rémunération brute minimale selon le poste — règles générales 2026",
+      "Poste",
+      "Multiple du SMIC brut",
+      "Minimum mensuel (TRY)",
+      "Cadres dirigeants et pilotes",
+      "Ingénieurs et architectes",
+      "Autres managers",
+      "Fonctions nécessitant expertise ou qualification",
+      "Autres fonctions",
+      "Ces montants réglementaires ne sont ni des salaires de marché ni le coût employeur. Des critères particuliers et exemptions peuvent s’appliquer. Le SMIC brut 2026 est de 33 030 TRY."
+    ],
+    "cta": [
+      "Parlons de votre implantation en Turquie",
+      "Présentez votre activité, vos associés, la ville et la date de lancement. Nous définirons le parcours, les responsabilités et les postes de budget.",
+      "Étudier mon projet d’entreprise",
+      "Préparons la mobilité de vos équipes",
+      "Indiquez le nombre de salariés, le lieu de travail, la date souhaitée et les besoins des familles. Nous cadrons le périmètre de mission avec vos RH.",
+      "Organiser ma relocation"
+    ],
+    "photos": [
+      "Galataport, quartier de Karaköy à Istanbul",
+      "Avenue Abdi İpekçi, quartier de Nişantaşı à Istanbul",
+      "Le Bosphore et le quartier d’Ortaköy à Istanbul"
+    ],
+    "faq": "Questions pratiques et cas concrets"
+  },
+  "en": {
+    "sal": [
+      "Minimum gross pay by role — general 2026 criteria",
+      "Role",
+      "Gross minimum wage multiple",
+      "Monthly minimum (TRY)",
+      "Senior executives and pilots",
+      "Engineers and architects",
+      "Other managers",
+      "Specialist or skilled roles",
+      "Other roles",
+      "These regulatory thresholds are not market salaries or total employer costs. Specific criteria and exemptions may apply. The 2026 gross minimum wage is TRY 33,030."
+    ],
+    "cta": [
+      "Let's plan your business in Türkiye",
+      "Share your activity, shareholders, location and target launch date so we can define the scope and budget.",
+      "Discuss my company setup",
+      "Plan your team's relocation",
+      "Share headcount, workplace, target arrival and family needs so we can scope the assignment with HR.",
+      "Plan my relocation"
+    ],
+    "photos": [
+      "Galataport, Karaköy district in Istanbul",
+      "Abdi İpekçi Avenue in Nişantaşı, Istanbul",
+      "Bosphorus waterfront in Ortaköy, Istanbul"
+    ],
+    "faq": "Practical questions and examples"
+  },
+  "ru": {
+    "sal": [
+      "Минимальная зарплата брутто по должности — общие критерии 2026",
+      "Должность",
+      "Кратность МРОТ брутто",
+      "Минимум в месяц (TRY)",
+      "Высшие руководители и пилоты",
+      "Инженеры и архитекторы",
+      "Другие руководители",
+      "Квалифицированные специалисты",
+      "Другие должности",
+      "Это нормативные пороги, не рыночные зарплаты и не полная стоимость работодателя. Возможны специальные критерии и исключения. МРОТ брутто в 2026 году — 33 030 TRY."
+    ],
+    "cta": [
+      "Запланируем открытие бизнеса в Турции",
+      "Расскажите о деятельности, учредителях, городе и дате запуска.",
+      "Обсудить создание компании",
+      "Подготовим переезд вашей команды",
+      "Укажите сотрудников, место работы, сроки и потребности семей.",
+      "Организовать переезд"
+    ],
+    "photos": [
+      "Галатапорт, район Каракёй в Стамбуле",
+      "Улица Абди Ипекчи в Нишанташы, Стамбул",
+      "Босфор и район Ортакёй, Стамбул"
+    ],
+    "faq": "Практические вопросы и примеры"
+  },
+  "ar": {
+    "sal": [
+      "الحد الأدنى للأجر الإجمالي حسب الوظيفة — المعايير العامة لعام 2026",
+      "الوظيفة",
+      "مضاعف الحد الأدنى الإجمالي",
+      "الحد الشهري بالليرة التركية",
+      "كبار المديرين والطيارون",
+      "المهندسون والمعماريون",
+      "المديرون الآخرون",
+      "الوظائف التخصصية والمهارية",
+      "الوظائف الأخرى",
+      "هذه حدود تنظيمية وليست رواتب السوق أو التكلفة الكاملة لصاحب العمل. قد توجد شروط خاصة وإعفاءات. الحد الأدنى الإجمالي للأجر في 2026 هو 33,030 ليرة."
+    ],
+    "cta": [
+      "لنخطط لتأسيس شركتك في تركيا",
+      "شاركنا النشاط والشركاء والمدينة وموعد الإطلاق لتحديد نطاق العمل والميزانية.",
+      "ناقش مشروع تأسيس شركتك",
+      "لنخطط لانتقال فريقك",
+      "شارك عدد الموظفين وموقع العمل والموعد واحتياجات الأسر.",
+      "خطط لانتقالك"
+    ],
+    "photos": [
+      "غالاطابورت في حي كاراكوي بإسطنبول",
+      "شارع عبدي إيبكجي في نيشانتاشي بإسطنبول",
+      "البوسفور وحي أورتاكوي في إسطنبول"
+    ],
+    "faq": "أسئلة عملية وأمثلة"
   }
 };

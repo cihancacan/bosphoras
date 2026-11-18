@@ -8,7 +8,7 @@ export const businessSetupSeoOverrides: Partial<Record<Locale, MainPageContent[]
       locale: 'fr',
       slug: '/creation-entreprise-turquie',
       title: "Créer une entreprise en Turquie : coûts, démarches | Bosphoras",
-      h1: 'Créer une entreprise en Turquie avec structure, banque et conformité',
+      h1: 'Création d’entreprise en Turquie : constituez votre société et lancez votre activité',
       metaDescription:
         "Créez votre société en Turquie : capital, statuts, MERSİS, fiscalité, banque et comptabilité. Bosphoras coordonne votre implantation de A à Z.",
       shortIntro:

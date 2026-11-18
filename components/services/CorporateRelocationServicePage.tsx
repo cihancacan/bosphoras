@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { BusinessMobilityDetails } from './BusinessMobilityDetails';
 import type { Metadata } from 'next';
 import {
@@ -77,11 +78,11 @@ type Copy = {
 
 const content: Record<Locale, Copy> = {
   fr: {
-    metaTitle: "Relocation corporate Turquie : cadres, salariés, RH | Bosphoras",
-    title: 'Relocation corporate en Turquie pour cadres dirigeants, salariés expatriés et familles internationales',
+    metaTitle: "Relocation Turquie : entreprises, cadres et expatriés | Bosphoras",
+    title: 'Relocation en Turquie : entreprises, cadres et salariés expatriés',
     eyebrow: 'Bosphoras · Bureau Privé · Corporate Relocation',
     description: "Organisez la mobilité de vos cadres et salariés en Turquie : permis de travail, logement, écoles, famille et suivi RH. Un interlocuteur local Bosphoras.",
-    hero: 'Bosphoras coordonne l’installation d’un collaborateur en Turquie comme un projet unique : statut d’entrée, permis de travail ou résidence selon le dossier, logement, famille, assurance, banque, mobilité et mise en place pratique. L’entreprise garde un interlocuteur local unique, tandis que les actes réglementés sont traités par les professionnels compétents.',
+    hero: 'Votre agence de relocation en Turquie pour entreprises, cadres et salariés. Bosphoras coordonne l’installation d’un collaborateur en Turquie comme un projet unique : statut d’entrée, permis de travail ou résidence selon le dossier, logement, famille, assurance, banque, mobilité et mise en place pratique. L’entreprise garde un interlocuteur local unique, tandis que les actes réglementés sont traités par les professionnels compétents.',
     cta: 'Organiser une relocation',
     toc: 'Sur cette page',
     directTitle: 'Corporate relocation en Turquie : que prend réellement en charge Bosphoras ?',
@@ -399,19 +400,20 @@ export function getCorporateRelocationMetadata(locale: Locale): Metadata {
         'x-default': siteUrl + paths.fr,
       },
     },
+    robots: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 },
     openGraph: {
       title: c.metaTitle,
       description: c.description,
       url: canonical,
       siteName: 'Bosphoras',
       type: 'website',
-      images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: c.title }],
+      images: [{ url: '/images/travel/istanbul/city/nisantasi-abdi-ipekci.webp', width: 1200, height: 630, alt: c.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: c.metaTitle,
       description: c.description,
-      images: ['/images/og-default.jpg'],
+      images: ['/images/travel/istanbul/city/nisantasi-abdi-ipekci.webp'],
     },
   };
 }
@@ -502,7 +504,7 @@ export function CorporateRelocationServicePage({ locale }: { locale: Locale }) {
       <main dir={dir} className="min-h-screen bg-[hsl(45,30%,98%)] text-[#101827]">
         <section className="border-b border-[hsl(42,15%,88%)] pb-12 pt-32 md:pb-16 md:pt-40">
           <div className="container-editorial">
-            <div className="max-w-5xl">
+            <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center"><div className="max-w-5xl">
               <p className="mb-6 text-[0.7rem] font-medium uppercase tracking-[0.35em] text-[hsl(42,65%,45%)]">{c.eyebrow}</p>
               <h1 className="max-w-5xl font-serif text-4xl leading-[1.06] tracking-tight text-[hsl(220,45%,12%)] md:text-5xl lg:text-6xl">{c.title}</h1>
               <p className="mt-8 max-w-4xl text-base font-normal leading-8 text-[hsl(220,18%,22%)] md:text-lg">{c.hero}</p>
@@ -514,7 +516,7 @@ export function CorporateRelocationServicePage({ locale }: { locale: Locale }) {
                   +90 546 769 99 96
                 </a>
               </div>
-            </div>
+            </div><div className="relative min-h-[300px] aspect-[4/3] overflow-hidden"><Image src="/images/travel/istanbul/city/nisantasi-abdi-ipekci.webp" alt={{fr:"Nişantaşı, quartier résidentiel et commercial d’Istanbul",en:"Nişantaşı residential and commercial district in Istanbul",ru:"Жилой и торговый район Нишанташы в Стамбуле",ar:"حي نيشانتاشي السكني والتجاري في إسطنبول"}[locale]} fill priority sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover"/></div></div>
           </div>
         </section>
 

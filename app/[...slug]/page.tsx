@@ -97,6 +97,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     path: page.slug,
     title: page.title,
     description: page.metaDescription,
+    image: page.id === 'business-setup' ? '/images/travel/istanbul/city/karakoy-galataport.webp' : undefined,
   });
 }
 

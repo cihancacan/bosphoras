@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { BusinessMobilityDetails } from './services/BusinessMobilityDetails';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { t, localeDir } from '@/lib/i18n';
@@ -103,7 +104,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
             <Breadcrumbs items={breadcrumbItems} locale={locale} />
           )}
 
-          <div className="max-w-4xl mt-6">
+          <div className={page.id==='business-setup' ? "mt-6 grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center" : "max-w-4xl mt-6"}><div>
             <p className="text-[hsl(42,65%,45%)] text-[0.7rem] tracking-[0.35em] uppercase font-medium mb-6">
               {locale === 'fr' && 'Bosphoras · Bureau Privé'}
               {locale === 'en' && 'Bosphoras · Private Office'}
@@ -121,7 +122,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
                 {priceText(page.cta.label)}<ArrowIcon size={18} aria-hidden="true" />
               </Link>
             )}
-          </div>
+          </div>{page.id==='business-setup' && <div className="relative min-h-[300px] aspect-[4/3] overflow-hidden"><Image src="/images/travel/istanbul/city/karakoy-galataport.webp" alt={{fr:"Quartier de Karaköy et Galataport à Istanbul",en:"Karaköy and Galataport district in Istanbul",ru:"Каракёй и Галатапорт в Стамбуле",ar:"حي كاراكوي وغالاطابورت في إسطنبول"}[locale]} fill priority sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover"/></div>}</div>
         </div>
       </section>
 
