@@ -365,12 +365,6 @@ const assessmentPaths: Record<Locale, string> = {
   ar: '/ar/تقييم-خاص',
 };
 
-const serviceCards = [
-  { key: 'before' as const, icon: Plane },
-  { key: 'arrival' as const, icon: Home },
-  { key: 'immigration' as const, icon: Landmark },
-  { key: 'family' as const, icon: Users },
-];
 
 export function getCorporateRelocationMetadata(locale: Locale): Metadata {
   const c = content[locale];
