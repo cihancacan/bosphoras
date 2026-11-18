@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/en/finance-fintech-turkey-istanbul-finance-center';
+const url = 'https://www.bosphoras.com/en/finance-fintech-turkey-istanbul-finance-center';
 const title = 'Finance and Fintech in Turkey: Istanbul Finance Center | Bosphoras';
 const description = 'Bosphoras guide to finance and fintech in Turkey: Istanbul Finance Center, Law No. 7582, financial services, banking, fintech, payments, compliance, license, residence, tax and substance.';
 const updatedAt = '2026-06-05';
@@ -26,7 +26,7 @@ const faqs = [
   ['What is Bosphoras’ role?', 'Bosphoras coordinates the private assessment with lawyer, tax advisor, accountant, bank, offices, recruitment and local partners.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/finance-fintech-turquie-istanbul-finance-center', en: url, ru: 'https://bosphoras.com/ru/finansy-fintech-turtsiya-istanbul-finance-center', ar: 'https://bosphoras.com/ar/finance-fintech-turkey-istanbul-finance-center', 'x-default': 'https://bosphoras.com/finance-fintech-turquie-istanbul-finance-center' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'en_US', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/finance-fintech-turquie-istanbul-finance-center', en: url, ru: 'https://www.bosphoras.com/ru/finansy-fintech-turtsiya-istanbul-finance-center', ar: 'https://www.bosphoras.com/ar/finance-fintech-turkey-istanbul-finance-center', 'x-default': 'https://www.bosphoras.com/finance-fintech-turquie-istanbul-finance-center' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'en_US', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/en/agribusiness-turkey-investment-tax';
+const url = 'https://www.bosphoras.com/en/agribusiness-turkey-investment-tax';
 const title = 'Agribusiness in Turkey: Investment, Tax and Export | Bosphoras';
 const description = 'Bosphoras guide to agribusiness in Turkey for foreign investors: food processing, packaging, export, Law No. 7582, production, logistics, quality standards, customs, energy, cold chain and industrial substance.';
 const updatedAt = '2026-06-05';
@@ -33,7 +33,7 @@ const faqs = [
   ['What is Bosphoras’ role?', 'Bosphoras coordinates local contacts: lawyer, tax advisor, accountant, bank, industrial zone, property, insurance, transport, energy and operational partners.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/agro-industrie-turquie-investissement-fiscalite', en: url, ru: 'https://bosphoras.com/ru/agropromyshlennost-turtsiya-investitsii-nalogi', ar: 'https://bosphoras.com/ar/agribusiness-turkey-investment-tax', 'x-default': 'https://bosphoras.com/agro-industrie-turquie-investissement-fiscalite' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'en_US', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/agro-industrie-turquie-investissement-fiscalite', en: url, ru: 'https://www.bosphoras.com/ru/agropromyshlennost-turtsiya-investitsii-nalogi', ar: 'https://www.bosphoras.com/ar/agribusiness-turkey-investment-tax', 'x-default': 'https://www.bosphoras.com/agro-industrie-turquie-investissement-fiscalite' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'en_US', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

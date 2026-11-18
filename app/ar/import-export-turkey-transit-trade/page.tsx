@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/ar/import-export-turkey-transit-trade';
+const url = 'https://www.bosphoras.com/ar/import-export-turkey-transit-trade';
 const title = 'الاستيراد والتصدير في تركيا: التجارة العابرة والتجارة الدولية | Bosphoras';
 const description = 'دليل Bosphoras حول الاستيراد والتصدير في تركيا: transit trade، شركة تركية، تجارة دولية، موردون، عملاء، جمارك، لوجستيك، بنك، مدفوعات، ضرائب ووجود حقيقي.';
 const updatedAt = '2026-06-05';
@@ -26,7 +26,7 @@ const faqs = [
   ['ما هو دور Bosphoras؟', 'ينسق Bosphoras التحليل مع محام ومستشار ضريبي ومحاسب وبنك ووكلاء شحن وتأمين وشركاء محليين.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/import-export-turquie-transit-trade', en: 'https://bosphoras.com/en/import-export-turkey-transit-trade', ru: 'https://bosphoras.com/ru/import-export-turtsiya-tranzitnaya-torgovlya', ar: url, 'x-default': 'https://bosphoras.com/import-export-turquie-transit-trade' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/import-export-turquie-transit-trade', en: 'https://www.bosphoras.com/en/import-export-turkey-transit-trade', ru: 'https://www.bosphoras.com/ru/import-export-turtsiya-tranzitnaya-torgovlya', ar: url, 'x-default': 'https://www.bosphoras.com/import-export-turquie-transit-trade' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

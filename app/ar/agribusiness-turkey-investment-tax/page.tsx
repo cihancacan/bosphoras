@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/ar/agribusiness-turkey-investment-tax';
+const url = 'https://www.bosphoras.com/ar/agribusiness-turkey-investment-tax';
 const title = 'الصناعات الغذائية في تركيا: الاستثمار والضرائب والتصدير | Bosphoras';
 const description = 'دليل Bosphoras حول الصناعات الغذائية في تركيا: تصنيع غذائي، تغليف، تصدير، القانون رقم 7582، إنتاج، لوجستيك، معايير، جمارك، طاقة ووجود صناعي حقيقي.';
 const updatedAt = '2026-06-05';
@@ -26,7 +26,7 @@ const faqs = [
   ['ما هو دور Bosphoras؟', 'ينسق Bosphoras المتخصصين والشركاء المحليين: محام، مستشار ضريبي، محاسب، بنك، منطقة صناعية، تأمين، نقل وطاقة.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/agro-industrie-turquie-investissement-fiscalite', en: 'https://bosphoras.com/en/agribusiness-turkey-investment-tax', ru: 'https://bosphoras.com/ru/agropromyshlennost-turtsiya-investitsii-nalogi', ar: url, 'x-default': 'https://bosphoras.com/agro-industrie-turquie-investissement-fiscalite' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/agro-industrie-turquie-investissement-fiscalite', en: 'https://www.bosphoras.com/en/agribusiness-turkey-investment-tax', ru: 'https://www.bosphoras.com/ru/agropromyshlennost-turtsiya-investitsii-nalogi', ar: url, 'x-default': 'https://www.bosphoras.com/agro-industrie-turquie-investissement-fiscalite' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

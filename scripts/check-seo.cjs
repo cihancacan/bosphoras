@@ -20,8 +20,8 @@ for (const [locale, pages] of Object.entries(allPages)) for (const page of pages
 for (const page of [...highPotentialGuides, ...programmaticPages]) known.add(normalize(getCanonicalUrl(page.locale, page.slug)));
 for (const page of allBosphorasSeoPages) for (const slug of Object.values(page.slugs)) known.add(slug);
 for (const locale of transferLocales) {
-  known.add(transferMainPaths[locale]);
-  for (const cluster of transferKeywordClusters[locale]) for (const term of cluster.terms) known.add(getTransferKeywordHref(locale, term));
+  known.add(normalize(transferMainPaths[locale]));
+  for (const cluster of transferKeywordClusters[locale]) for (const term of cluster.terms) known.add(normalize(getTransferKeywordHref(locale, term)));
 }
 function walk(directory) {
   for (const item of fs.readdirSync(directory, { withFileTypes: true })) {

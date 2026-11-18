@@ -4,7 +4,7 @@ import { ArrowRight, Building2, CheckCircle2 } from 'lucide-react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
-const url = 'https://bosphoras.com/ar/holding-regional-headquarters-turkey';
+const url = 'https://www.bosphoras.com/ar/holding-regional-headquarters-turkey';
 const title = 'الهولدينغ والمقر الإقليمي في تركيا | Bosphoras';
 const description = 'دليل Bosphoras حول الهولدينغ والمقر الإقليمي في تركيا: الشركة، الفريق، المكتب، البنك، العقود، الإدارة والوجود الحقيقي.';
 
@@ -15,7 +15,7 @@ const points = [
   'Bosphoras ينسق التحليل الخاص والشركاء المحليين.'
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/holding-siege-regional-turquie', en: 'https://bosphoras.com/en/holding-regional-headquarters-turkey', ru: 'https://bosphoras.com/ru/holding-regionalnyy-ofis-turtsiya', ar: url, 'x-default': 'https://bosphoras.com/holding-siege-regional-turquie' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/holding-siege-regional-turquie', en: 'https://www.bosphoras.com/en/holding-regional-headquarters-turkey', ru: 'https://www.bosphoras.com/ru/holding-regionalnyy-ofis-turtsiya', ar: url, 'x-default': 'https://www.bosphoras.com/holding-siege-regional-turquie' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] } };
 
 export default function Page() {
   return (
