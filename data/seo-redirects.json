@@ -688,5 +688,10 @@
     "source": "/ar/اعفاء-ضريبي-تركيا-الدخل-الأجنبي",
     "destination": "/ar/foreign-income-exemption-turkey",
     "permanent": true
+  },
+  {
+    "source": "/services/creation-entreprise",
+    "destination": "/creation-entreprise-turquie",
+    "permanent": true
   }
 ]

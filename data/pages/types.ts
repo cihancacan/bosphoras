@@ -62,7 +62,7 @@ export const pageSlugs: PageSlugMap[] = [
   { id: 'bodrum', jsonLdType: 'Place', slugs: { fr: '/destinations/bodrum', en: '/destinations/bodrum', ru: '/napravleniya/bodrum', ar: '/وجهات/بودروم' } },
   { id: 'antalya', jsonLdType: 'Place', slugs: { fr: '/destinations/antalya', en: '/destinations/antalya', ru: '/napravleniya/antalya', ar: '/وجهات/أنطاليا' } },
   { id: 'legal-tax', jsonLdType: 'Service', slugs: { fr: '/services/conseil-juridique-fiscal', en: '/services/legal-tax-advisory', ru: '/uslugi/yuridicheskie-nalogovye-konsultatsii', ar: '/خدمات/استشارات-قانونية-ضريبية' } },
-  { id: 'business-setup', jsonLdType: 'Service', slugs: { fr: '/services/creation-entreprise', en: '/services/business-setup', ru: '/uslugi/sozdanie-kompanii', ar: '/خدمات/تأسيس-الشركات' } },
+  { id: 'business-setup', jsonLdType: 'Service', slugs: { fr: '/creation-entreprise-turquie', en: '/services/business-setup', ru: '/uslugi/sozdanie-kompanii', ar: '/خدمات/تأسيس-الشركات' } },
   { id: 'health-insurance', jsonLdType: 'Service', slugs: { fr: '/services/sante-assurance', en: '/services/health-insurance', ru: '/uslugi/zdorove-strakhovanie', ar: '/خدمات/الصحة-والتأمين' } },
   { id: 'property', jsonLdType: 'CollectionPage', slugs: { fr: '/immobilier-turquie', en: '/property-turkey', ru: '/nedvizhimost-v-turtsii', ar: '/عقارات-تركيا' } },
   { id: 'offices', jsonLdType: 'Service', slugs: { fr: '/services/bureaux', en: '/services/offices', ru: '/uslugi/ofisy', ar: '/خدمات/المكاتب' } },

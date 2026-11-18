@@ -6,7 +6,7 @@ export const businessSetupSeoOverrides: Partial<Record<Locale, MainPageContent[]
     {
       id: 'business-setup',
       locale: 'fr',
-      slug: '/services/creation-entreprise',
+      slug: '/creation-entreprise-turquie',
       title: 'Création d’entreprise en Turquie : société, banque, comptabilité | Bosphoras',
       h1: 'Créer une entreprise en Turquie avec structure, banque et conformité',
       metaDescription:

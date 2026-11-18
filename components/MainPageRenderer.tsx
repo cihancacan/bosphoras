@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { BusinessMobilityDetails } from './services/BusinessMobilityDetails';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { t, localeDir } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
@@ -135,6 +136,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
                   </ul>
                 </nav>
               )}
+              {page.id === 'business-setup' && <BusinessMobilityDetails locale={locale} kind="business" />}
               {page.sections.map((section, idx) => (
                 <article key={idx} id={`section-${idx + 1}`} className="prose-editorial scroll-mt-32">
                   <div className="flex items-center gap-3 mb-5">

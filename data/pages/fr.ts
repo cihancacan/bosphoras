@@ -405,7 +405,7 @@ export const frPages: MainPageContent[] = [
   {
     id: 'business-setup',
     locale: 'fr',
-    slug: '/services/creation-entreprise',
+    slug: '/creation-entreprise-turquie',
     title: "Création d'entreprise en Turquie — Accompagnement | Bosphoras",
     h1: 'Créer une société en Turquie, étape par étape',
     metaDescription:

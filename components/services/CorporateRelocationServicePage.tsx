@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { BusinessMobilityDetails } from './BusinessMobilityDetails';
 import type { Metadata } from 'next';
 import {
   ArrowRight,
@@ -337,7 +338,7 @@ const relatedLinks: Record<Locale, Array<[string, string]>> = {
     ['/services/sante-assurance', 'Santé & assurance'],
     ['/immobilier-turquie', 'Immobilier en Turquie'],
     ['/transfert-aeroport-istanbul', 'Transfert & chauffeur'],
-    ['/services/creation-entreprise', 'Création d’entreprise'],
+    ['/creation-entreprise-turquie', 'Création d’entreprise'],
     ['/services/conseil-juridique-fiscal', 'Juridique & fiscal'],
   ],
   en: [
@@ -541,6 +542,8 @@ export function CorporateRelocationServicePage({ locale }: { locale: Locale }) {
                     {serviceCards.map(({ key, icon }, index) => <ServiceCard key={key} title={c.cardTitles[index]} items={c[key]} icon={icon} />)}
                   </div>
                 </section>
+
+                <BusinessMobilityDetails locale={locale} kind="relocation" />
 
                 <section id="permits" className="scroll-mt-32 border-y border-[#d8c7a1] bg-[#fffaf0] p-7 md:p-9">
                   <div className="flex items-start gap-4">
