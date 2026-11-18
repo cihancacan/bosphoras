@@ -733,5 +733,10 @@
     "source": "/ar/chastnyy-klub",
     "destination": "/ar/النادي-الخاص",
     "permanent": true
+  },
+  {
+    "source": "/private-assessment",
+    "destination": "/en/private-assessment",
+    "permanent": true
   }
 ]
