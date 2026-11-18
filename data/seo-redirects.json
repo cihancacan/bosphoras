@@ -718,5 +718,20 @@
     "source": "/legal-notice",
     "destination": "/en/legal-notice",
     "permanent": true
+  },
+  {
+    "source": "/ar/arendovat-ili-pokupat-v-turtsii",
+    "destination": "/ar/rent-or-buy-in-turkey-before-relocating",
+    "permanent": true
+  },
+  {
+    "source": "/en/chastnyy-klub",
+    "destination": "/en/private-access-club",
+    "permanent": true
+  },
+  {
+    "source": "/ar/chastnyy-klub",
+    "destination": "/ar/النادي-الخاص",
+    "permanent": true
   }
 ]

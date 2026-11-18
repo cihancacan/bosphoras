@@ -7,7 +7,7 @@ export const businessSetupSeoOverrides: Partial<Record<Locale, MainPageContent[]
       id: 'business-setup',
       locale: 'fr',
       slug: '/creation-entreprise-turquie',
-      title: "Création d’entreprise en Turquie | Fiscalité 2026, banque, bureaux",
+      title: "Création d’entreprise en Turquie | Guide 2026",
       h1: 'Création d’entreprise en Turquie : constituez votre société et lancez votre activité',
       metaDescription:
         "Créez votre société en Turquie de A à Z : nouvelle fiscalité 2026, avocats, comptabilité, domiciliation, banques et zones franches. Bosphoras.",
