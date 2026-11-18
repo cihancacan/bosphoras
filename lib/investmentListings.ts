@@ -11,7 +11,7 @@ export type InvestmentListing = {
  short_fr:string;short_en:string;story_fr:string;story_en:string;highlights_fr:string;highlights_en:string;
  sector:string;location:string;issuer_name:string;official_website:string;currency:string;
  target_amount:number|null;minimum_ticket:number|null;maximum_ticket:number|null;
- investment_type:string;annual_rate:number|null;term_months:number|null;first_payment_month:number|null;
+ investment_type:string;equity_share_percent?:number|null;annual_rate:number|null;term_months:number|null;first_payment_month:number|null;
  payment_frequency:string;exit_terms_fr:string;exit_terms_en:string;use_of_funds_fr:string;use_of_funds_en:string;
  risk_summary_fr:string;risk_summary_en:string;cover_path:string;featured:boolean;display_order:number;publication_status:string;
  published_at:string|null;
@@ -42,15 +42,15 @@ export function mergedInvestmentListing(code:InvestmentVentureCode,row?:Partial<
   short_fr:v.summary,short_en:v.englishSummary,story_fr:'',story_en:'',highlights_fr:'',highlights_en:'',
   sector:v.sector,location:v.region,issuer_name:'',official_website:officialSites[code]||'',currency:'EUR',
   target_amount:null,minimum_ticket:null,maximum_ticket:null,
-  investment_type:'',annual_rate:null,term_months:null,first_payment_month:null,payment_frequency:'',
+  investment_type:'',equity_share_percent:null,annual_rate:null,term_months:null,first_payment_month:null,payment_frequency:'',
   exit_terms_fr:'',exit_terms_en:'',use_of_funds_fr:'',use_of_funds_en:'',
   risk_summary_fr:'',risk_summary_en:'',cover_path:'',featured:false,display_order:50,publication_status:'draft',published_at:null,
-  ...(code==='aqma' ? aqmaEditorial : code==='cliniqeo'?cliniqeoEditorial:code==='medsestra'?medsestraEditorial:{}),
+  ...(code==='aqma' ? aqmaEditorial : code==='cliniqeo'?cliniqeoEditorial:code==='medsestra'?{...medsestraEditorial,investment_type:'equity',currency:'USD',target_amount:300000,minimum_ticket:1000,maximum_ticket:300000,equity_share_percent:20}:{}),
   ...row
  };
 }
 // Anonymous RLS-protected read, with explicit public columns and no cache.
-const publicListingColumns='code,title_fr,title_en,tagline_fr,tagline_en,short_fr,short_en,story_fr,story_en,highlights_fr,highlights_en,sector,location,issuer_name,official_website,currency,target_amount,minimum_ticket,maximum_ticket,investment_type,annual_rate,term_months,first_payment_month,payment_frequency,exit_terms_fr,exit_terms_en,use_of_funds_fr,use_of_funds_en,risk_summary_fr,risk_summary_en,cover_path,featured,display_order,publication_status,published_at' as const;
+const publicListingColumns='code,title_fr,title_en,tagline_fr,tagline_en,short_fr,short_en,story_fr,story_en,highlights_fr,highlights_en,sector,location,issuer_name,official_website,currency,target_amount,minimum_ticket,maximum_ticket,investment_type,equity_share_percent,annual_rate,term_months,first_payment_month,payment_frequency,exit_terms_fr,exit_terms_en,use_of_funds_fr,use_of_funds_en,risk_summary_fr,risk_summary_en,cover_path,featured,display_order,publication_status,published_at' as const;
 function freshPublicClient(){
  return createClient(portalSupabaseUrl,portalSupabasePublishableKey,{
   auth:{persistSession:false,autoRefreshToken:false,detectSessionInUrl:false},

@@ -5,7 +5,7 @@ export type InvestmentSeoCopy={title:string;description:string};
 const sectors:Record<InvestmentVentureCode,[string,string,string,string]>={
  aqma:['Rénovation et bâtiment en France','Construction and renovation in France','Строительство и ремонт во Франции','البناء والتجديد في فرنسا'],
  cliniqeo:['Tourisme médical en Turquie','Medical travel in Türkiye','Медицинский туризм в Турции','السياحة الطبية في تركيا'],
- medsestra:['Soins à domicile au Kazakhstan','Home healthcare in Kazakhstan','Медицинская помощь на дому в Казахстане','الرعاية الصحية المنزلية في كازاخستان'],
+ medsestra:['Soins à domicile au Kazakhstan – projet de croissance','Home healthcare in Kazakhstan – growth project','Медицинская помощь на дому в Казахстане – проект роста','الرعاية الصحية المنزلية في كازاخستان – مشروع توسع'],
  lovelockparis:['Tourisme et expériences numériques','Travel and digital experiences','Туризм и цифровые технологии','السياحة والتجارب الرقمية'],
  qenerzy:['Projet solaire de 30 MW au Kazakhstan','Proposed 30 MW solar project in Kazakhstan','Проект солнечной станции 30 МВт в Казахстане','مشروع طاقة شمسية بقدرة 30 ميغاواط في كازاخستان'],
  'bosphoras-luxury-stays':['Hôtellerie de luxe et travel tech','Luxury stays and travel technology','Отели высокого класса и туристические технологии','الفنادق الفاخرة وتقنيات السفر']

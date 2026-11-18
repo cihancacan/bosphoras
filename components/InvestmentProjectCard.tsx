@@ -1,3 +1,5 @@
+import {investmentEquityTerms} from '@/data/investmentEquityTerms';
+import {EquityRoundFigures} from '@/components/InvestmentEquityRound';
 import Link from 'next/link';
 import { ArrowRight, CalendarDays, MapPin, Wallet, Landmark, Percent } from 'lucide-react';
 import { investmentVentures } from '@/data/investmentVentures';
@@ -30,7 +32,7 @@ export function InvestmentProjectCard({project:p,locale,priority=false}:{project
    <Link href={detail} className="mt-4 block text-[clamp(1.45rem,2vw,2rem)] font-normal leading-tight tracking-[-.045em] text-[#193344] hover:underline hover:underline-offset-4">{title}</Link>
    {tagline&&<p className="mt-2 text-sm font-medium leading-6 text-[#3d5e6e]">{tagline}</p>}
    <p className="mt-4 line-clamp-3 flex-1 text-sm leading-7 text-[#5b6c75]">{short}</p>
-   {proposedLoan(code)&&!isPublic?<div className="mt-6"><ProposedLoanFigures locale={locale} code={code}/></div>:<div className="mt-7 grid grid-cols-2 gap-x-5 gap-y-4 border-t border-[#e2e8eb] pt-6">
+   {investmentEquityTerms(p)?<div className="mt-6"><EquityRoundFigures project={p} locale={locale}/></div>:proposedLoan(code)&&!isPublic?<div className="mt-6"><ProposedLoanFigures locale={locale} code={code}/></div>:<div className="mt-7 grid grid-cols-2 gap-x-5 gap-y-4 border-t border-[#e2e8eb] pt-6">
     <div><p className="text-[11px] uppercase tracking-[.08em] text-[#7b8a92]">{fr?'Financement recherché':'Funding target'}</p><p className="mt-2 text-lg font-semibold tracking-[-.02em] text-[#193344]">{hasFinance?moneyLabel(p.target_amount,p.currency,locale):(fr?'Sur demande':'On enquiry')}</p></div>
     <div><p className="text-[11px] uppercase tracking-[.08em] text-[#7b8a92]">{fr?'Investissement minimum':'Minimum investment'}</p><p className="mt-2 text-lg font-semibold tracking-[-.02em] text-[#193344]">{isPublic&&p.minimum_ticket!==null?moneyLabel(p.minimum_ticket,p.currency,locale):(fr?'À préciser':'To be confirmed')}</p></div>
     {isPublic&&p.annual_rate!==null&&<div><p className="text-[11px] uppercase tracking-[.08em] text-[#7b8a92]">{['loan','bond'].includes(p.investment_type)?(fr?'Taux annuel sur capital initial':'Annual rate on initial principal'):(fr?'Taux annuel indicatif':'Indicative annual rate')}</p><p className="mt-2 text-base font-semibold text-[#193344]">{p.annual_rate}% / {fr?'an':'year'}</p></div>}

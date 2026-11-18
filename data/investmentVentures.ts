@@ -40,8 +40,8 @@ export const investmentVentures: InvestmentVenture[] = [
     sector: 'Services médicaux',
     englishSector: 'Medical services',
     financing: 'Capital de développement à étudier',
-    summary: 'Medsestra.kz développe une activité de coordination de services médicaux et d’assistance au Kazakhstan, avec l’ambition de simplifier l’accès aux prestations pour les entreprises, les organisateurs d’événements et leurs équipes.',
-    englishSummary: 'Medsestra.kz develops medical support and assistance coordination services in Kazakhstan, connecting companies and event organisers with suitable healthcare service providers.'
+    summary: 'Medsestra.kz a identifié une demande organique de soins infirmiers à domicile et de transport médical à Almaty. Le projet envisage une levée en capital afin de transformer ces demandes non encore encaissées en prestations et de développer un réseau national.',
+    englishSummary: 'Medsestra.kz has identified organic demand for home nursing and medical transport in Almaty. The project is considering an equity round to convert unfulfilled enquiries into delivered services and expand nationally.'
   },
   {
     code: 'lovelockparis',

@@ -1,6 +1,8 @@
 'use client';
 import {useMemo,useState} from 'react';
 import type {InvestmentListing} from '@/lib/investmentListings';
+import {investmentEquityTerms} from '@/data/investmentEquityTerms';
+import {EquityRoundSimulator} from '@/components/InvestmentEquityRound';
 import {proposedLoan} from '@/data/investmentLoanScenarios';
 type Locale='fr'|'en'|'ru'|'ar';
 const words={
@@ -33,7 +35,10 @@ function annualisedReturn(principal:number,rows:Row[]){
  for(let i=0;i<65;i++){const mid=(lo+hi)/2;if(pv(mid)>principal)lo=mid;else hi=mid;}
  return (Math.pow(1+(lo+hi)/2,12)-1)*100;
 }
-export function InvestmentSimulator({project:p,locale}:{project:InvestmentListing;locale:Locale}){
+export function InvestmentSimulator({project,locale}:{project:InvestmentListing;locale:Locale}){
+ return investmentEquityTerms(project)?<EquityRoundSimulator project={project} locale={locale}/>:<StandardInvestmentSimulator project={project} locale={locale}/>;
+}
+function StandardInvestmentSimulator({project:p,locale}:{project:InvestmentListing;locale:Locale}){
  const t=words[locale],scenario=p.publication_status!=='published'?proposedLoan(p.code):undefined;
  const knownDebt=['loan','bond'].includes(p.investment_type)||!!scenario,knownEquity=p.investment_type==='equity';
  const [model,setModel]=useState<'loan'|'bullet'|'equity'>(knownEquity?'equity':'loan');

@@ -6,6 +6,7 @@ import {getPortalSupabase} from '@/lib/portalSupabase';
 import {investmentVentures} from '@/data/investmentVentures';
 import {mergedInvestmentListing,moneyLabel,publicCoverUrl,safeInvestmentWebsite,type InvestmentListing} from '@/lib/investmentListings';
 import {automaticInvestmentSeo,investmentSeoLocales,type InvestmentSeoLocale,type InvestmentSeoCopy} from '@/data/investmentProjectSeo';
+import {investmentEquityTerms} from '@/data/investmentEquityTerms';
 import {InvestmentProjectCard} from '@/components/InvestmentProjectCard';
 
 const db:any=getPortalSupabase();
@@ -79,6 +80,7 @@ export function InvestmentListingManager(){
   if(!draft.title_fr.trim()||!draft.short_fr.trim()||!draft.story_fr.trim())return setError('Renseignez le titre, le résumé et la présentation détaillée.');
   if(!draft.cover_path)return setError('Choisissez une photo principale approuvée avant publication.');
   if(!draft.target_amount||!draft.minimum_ticket||!draft.investment_type)return setError('Montant recherché, ticket minimum et instrument financier sont nécessaires avant publication.');
+  if(draft.investment_type==='equity'&&!investmentEquityTerms(draft))return setError('Vérifiez le montant de la levée, le ticket minimum et le pourcentage de capital ouvert.');
   if(!draft.risk_summary_fr||!draft.exit_terms_fr)return setError('Renseignez les risques et les conditions de sortie.');
   if(!confirm('Publier cette annonce et ses conditions financières sur le site public ? Vérifiez tous les montants, visuels, droits et autorisations.'))return;
   await run(async()=>{
@@ -166,10 +168,11 @@ export function InvestmentListingManager(){
       <label className={label}>Ticket maximum<input type="number" min="0" step="1" className={input} value={draft.maximum_ticket??''} onChange={e=>change('maximum_ticket',e.target.value===''?null:Number(e.target.value))}/></label>
       <label className={label}>Devise<select value={draft.currency} onChange={e=>change('currency',e.target.value)} className={input}><option value="EUR">EUR</option><option value="USD">USD</option><option value="AED">AED</option></select></label>
       <label className={label}>Type d’investissement<select className={input} value={draft.investment_type} onChange={e=>change('investment_type',e.target.value)}><option value="">À définir</option><option value="loan">Prêt à intérêts fixes sur capital initial (simulation in fine disponible)</option><option value="bond">Obligation</option><option value="equity">Capital / actions</option><option value="project_finance">Financement de projet</option><option value="other">Autre</option></select></label>
-      <label className={label}>Taux annuel sur capital initial (%) pour les prêts ; taux indicatif pour les autres instruments<input type="number" min="0" max="100" step="0.01" className={input} value={draft.annual_rate??''} onChange={e=>change('annual_rate',e.target.value===''?null:Number(e.target.value))}/></label>
+      {draft.investment_type==='equity'?<div className="min-w-0 space-y-3"><label className={label}>Capital ouvert après levée (%)<input type="number" min="0.0001" max="100" step="0.01" className={input} value={draft.equity_share_percent??''} onChange={e=>change('equity_share_percent',e.target.value===''?null:Number(e.target.value))}/></label>{investmentEquityTerms(draft)&&<p className="text-xs leading-6 break-words">Valorisation avant levée : {moneyLabel(investmentEquityTerms(draft)!.pre,draft.currency)} · après levée : {moneyLabel(investmentEquityTerms(draft)!.post,draft.currency)}</p>}</div>:<><label className={label}>Taux annuel sur capital initial (%) pour les prêts ; taux indicatif pour les autres instruments<input type="number" min="0" max="100" step="0.01" className={input} value={draft.annual_rate??''} onChange={e=>change('annual_rate',e.target.value===''?null:Number(e.target.value))}/></label>
       <label className={label}>Durée (mois)<input type="number" min="1" max="600" step="1" className={input} value={draft.term_months??''} onChange={e=>change('term_months',e.target.value===''?null:Number(e.target.value))}/></label>
       <label className={label}>Premier paiement (mois)<input type="number" min="1" max="600" step="1" className={input} value={draft.first_payment_month??''} onChange={e=>change('first_payment_month',e.target.value===''?null:Number(e.target.value))}/></label>
       <label className={label}>Fréquence des paiements<select className={input} value={draft.payment_frequency} onChange={e=>change('payment_frequency',e.target.value)}><option value="">À déterminer</option><option value="monthly">Mensuelle</option><option value="quarterly">Trimestrielle</option><option value="annual">Annuelle</option><option value="at_maturity">À échéance</option><option value="variable">Variable</option></select></label>
+      </>}
       <label className={label}>Ordre d’affichage<input type="number" min="0" step="1" className={input} value={draft.display_order} onChange={e=>change('display_order',Number(e.target.value))}/></label>
       {financeFields.map(([k,t])=><label key={k} className={label+' md:col-span-2'}>{t}<textarea className={input} rows={3} maxLength={4000} value={value(k)} onChange={e=>change(k,e.target.value)}/></label>)}
      </div>}
