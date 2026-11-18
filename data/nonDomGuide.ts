@@ -200,11 +200,12 @@ export const nonDomGuide = {
       ]
     ],
     "photoAlt": [
-      "Terrasse du Four Seasons Bosphorus, Istanbul",
+      "Panorama contemporain du Bosphore depuis Raffles Istanbul, au Zorlu Center",
       "Palais Ottoman de Dolmabahçe, Istanbul",
-      "Toits de Sultanahmet et skyline historique",
+      "Mosquée historique d’Ortaköy et pont du Bosphore",
       "Terrasse de l’hôtel Bodrum Edition",
-      "Panorama méditerranéen de Kemer, Antalya"
+      "Panorama méditerranéen de Kemer, Antalya",
+      "Sur un balcon du Ritz-Carlton Istanbul, face au Bosphore"
     ],
     "serviceTitle": "Passer du régime fiscal à votre projet de vie",
     "serviceText": "Bosphoras coordonne votre étude avec les professionnels compétents en Turquie et, selon votre situation, dans le pays de départ. Nous organisons les aspects pratiques : calendrier, résidence, immobilier, société, banque, écoles et assurance. Vous obtenez une feuille de route sur mesure, non une promesse d’exonération.",
@@ -467,11 +468,12 @@ export const nonDomGuide = {
       ]
     ],
     "photoAlt": [
-      "Four Seasons Bosphorus waterfront terrace",
+      "Contemporary Bosphorus panorama from Raffles Istanbul at Zorlu Center",
       "Dolmabahçe Palace, Istanbul",
-      "Historic Sultanahmet skyline",
+      "Historic Ortaköy Mosque and Bosphorus Bridge",
       "The Bodrum Edition hotel terrace",
-      "Kemer coastline, Antalya"
+      "Kemer coastline, Antalya",
+      "Bosphorus-view balcony at The Ritz-Carlton Istanbul"
     ],
     "serviceTitle": "Turn research into a relocation plan",
     "serviceText": "Bosphoras coordinates qualified Turkish and overseas advisers as appropriate, residence, property search, banking applications, company formation and family logistics. Our independent role is to make the project executable, not to guarantee relief.",
@@ -734,11 +736,12 @@ export const nonDomGuide = {
       ]
     ],
     "photoAlt": [
-      "Four Seasons Bosphorus, терраса у воды",
+      "Современная панорама Босфора из Raffles Istanbul в Zorlu Center",
       "Дворец Долмабахче",
-      "Исторический Султанахмет",
+      "Историческая мечеть Ортакёй и мост через Босфор",
       "Терраса отеля Bodrum Edition",
-      "Побережье Кемера"
+      "Побережье Кемера",
+      "Балкон с видом на Босфор в The Ritz-Carlton Istanbul"
     ],
     "serviceTitle": "От изучения закона к реальному переезду",
     "serviceText": "Bosphoras координирует оценку с квалифицированными специалистами, помощь с жильём, документами, банком, компанией, школами и страхованием. Решение о льготе принимает налоговая инспекция.",
@@ -993,11 +996,12 @@ export const nonDomGuide = {
       ]
     ],
     "photoAlt": [
-      "واجهة فور سيزونز على البوسفور",
+      "إطلالة البوسفور العصرية من رافلز إسطنبول في زورلو سنتر",
       "قصر دولمة بهجة",
-      "أفق السلطان أحمد التاريخي",
+      "مسجد أورتاكوي التاريخي وجسر البوسفور",
       "شرفة فندق بودروم إديشن",
-      "ساحل كيمير في أنطاليا"
+      "ساحل كيمير في أنطاليا",
+      "شرفة مطلة على البوسفور في ريتز كارلتون إسطنبول"
     ],
     "serviceTitle": "من دراسة النظام إلى تنفيذ المشروع",
     "serviceText": "تنسق بوسفوراس المتخصصين المؤهلين والإقامة والسكن والبنوك والشركات والمدارس والتأمين، وفق احتياجات المستثمر والعائلة. يبقى القرار الضريبي للسلطات المختصة.",
