@@ -1,7 +1,8 @@
 'use client';
-import {useEffect,useState,type ChangeEvent} from 'react';
+import {useEffect,useRef,useState,type ChangeEvent} from 'react';
 import Link from 'next/link';
 import {ArrowDownToLine,ArrowRight,Camera,Check,Loader2,Eye,ImagePlus,Save,ShieldCheck,Star,Trash2} from 'lucide-react';
+import {prepareInvestmentImage,investmentImageError} from '@/lib/prepareInvestmentImage';
 import {getPortalSupabase} from '@/lib/portalSupabase';
 import {investmentVentures} from '@/data/investmentVentures';
 import {mergedInvestmentListing,moneyLabel,publicCoverUrl,safeInvestmentWebsite,type InvestmentListing} from '@/lib/investmentListings';
@@ -12,13 +13,14 @@ import {InvestmentProjectCard} from '@/components/InvestmentProjectCard';
 const db:any=getPortalSupabase();
 type Media={id:string;owner_id:string;draft_id:string|null;listing_code:string|null;category:string;original_name:string;private_path:string;public_path:string;status:string;content_type:string;size_bytes:number;sort_order:number;created_at:string};
 const statuses:Record<string,string>={pending:'À valider',approved:'Approuvée',rejected:'Refusée'};
-const allowed=new Set(['image/jpeg','image/png','image/webp']);
+
 const input='mt-2 block w-full min-w-0 max-w-full rounded-lg border border-[#cbd6db] bg-white px-4 py-3 text-sm text-[#243b46] outline-none focus:border-[#193344]';
 const label='block text-sm font-medium leading-6 text-[#506570]';
 const fieldsIntro:[keyof InvestmentListing,string][]=[['title_fr','Titre français'],['title_en','English title'],['tagline_fr','Accroche FR'],['tagline_en','Tagline EN'],['short_fr','Présentation courte FR'],['short_en','Short summary EN'],['story_fr','Présentation détaillée FR'],['story_en','Detailed description EN'],['highlights_fr','Atouts du projet FR — un par ligne'],['highlights_en','Highlights EN — one per line'],['sector','Secteur'],['location','Localisation'],['issuer_name','Société juridique porteuse'],['official_website','Site web officiel (https://)']];
 const financeFields:[keyof InvestmentListing,string][]=[['exit_terms_fr','Conditions de sortie FR'],['exit_terms_en','Exit terms EN'],['use_of_funds_fr','Utilisation des fonds FR'],['use_of_funds_en','Use of funds EN'],['risk_summary_fr','Risques FR'],['risk_summary_en','Risks EN']];
 export function InvestmentListingManager(){
  const [items,setItems]=useState<InvestmentListing[]>([]),[media,setMedia]=useState<Media[]>([]),[selected,setSelected]=useState('aqma'),[draft,setDraft]=useState<InvestmentListing|null>(null),[busy,setBusy]=useState(false),[loading,setLoading]=useState(true),[error,setError]=useState(''),[notice,setNotice]=useState(''),[section,setSection]=useState<'content'|'finance'|'media'|'publish'|'seo'>('content'),[imageCategory,setImageCategory]=useState('cover'),[targetForMedia,setTargetForMedia]=useState('aqma'),[previewUrls,setPreviewUrls]=useState<Record<string,string>>({});
+ const uploadInput=useRef<HTMLInputElement>(null),uploadLock=useRef(false);
  const [seo,setSeo]=useState<Partial<Record<InvestmentSeoLocale,InvestmentSeoCopy>>>({}),[seoReady,setSeoReady]=useState(false),[uploadState,setUploadState]=useState<{done:number;total:number;stage:string}|null>(null);
  useEffect(()=>{let live=true;setSeoReady(false);setSeo({});db.from('investment_project_seo').select('locale,title,description').eq('code',selected).then(({data,error}:any)=>{if(!live)return;if(error){setError('SEO : '+error.message);return;}setSeo(Object.fromEntries((data||[]).map((r:any)=>[r.locale,{title:r.title,description:r.description}])));setSeoReady(true);}).catch((e:any)=>{if(live)setError('SEO : '+(e?.message||String(e)));});return()=>{live=false;};},[selected]);
  async function saveSeo(){
@@ -95,30 +97,41 @@ export function InvestmentListingManager(){
   await run(async()=>{const {error}=await db.from('investment_listings').update({publication_status:'draft',published_at:null,updated_at:new Date().toISOString()}).eq('code',selected);if(error)throw error;},'Annonce dépubliée. La présentation éditoriale du projet reste visible.');
  }
  async function uploadAdminImages(e:ChangeEvent<HTMLInputElement>){
-  const files=Array.from(e.target.files||[]);e.target.value='';if(!files.length||busy)return;
-  if(files.length>8){setError('Sélectionnez 8 images maximum par envoi.');return;}const invalid=files.find(f=>!allowed.has(f.type)||f.size>10485760||f.size<1);if(invalid){setError('Image non compatible : '+invalid.name+' (JPG, PNG, WebP ; 10 Mo maximum).');return;}setUploadState({done:0,total:files.length,stage:'Préparation de l’envoi…'});
-  let completed=0;
-  await run(async()=>{
-   const {data:{user}}=await db.auth.getUser();if(!user)throw Error('Session expirée.');
+  const files=Array.from(e.currentTarget.files||[]);e.currentTarget.value='';
+  if(!files.length||busy||uploadLock.current)return;
+  setError('');setNotice('');
+  if(files.length>8){setError('Sélectionnez 8 images maximum par envoi.');return;}
+  uploadLock.current=true;setBusy(true);
+  setUploadState({done:0,total:files.length,stage:'Vérification de la connexion…'});
+  let completed=0;const failures:string[]=[];
+  try{
+   const {data:{user},error:authError}=await db.auth.getUser();
+   if(authError||!user)throw Error('Session expirée. Reconnectez-vous à l’administration.');
    let coverAssigned=false;
-   for(const file of files){
-    setUploadState({done:completed,total:files.length,stage:'Envoi de '+file.name+'…'});
-    if(!allowed.has(file.type)||file.size>10485760||file.size<1)throw Error('Image JPG, PNG ou WebP, 10 Mo maximum.');
-    const path='projects/'+selected+'/'+crypto.randomUUID()+'.'+(file.type==='image/png'?'png':file.type==='image/webp'?'webp':'jpg');
-    const {error:uploadError}=await db.storage.from('investment-listing-public').upload(path,file,{contentType:file.type,upsert:false,cacheControl:'3600'});
-    if(uploadError)throw Error('Envoi de '+file.name+' impossible : '+uploadError.message);
-    setUploadState({done:completed,total:files.length,stage:'Enregistrement de '+file.name+'…'});
-    const {data,error:insertError}=await db.from('investment_listing_media').insert({owner_id:user.id,draft_id:null,listing_code:selected,category:imageCategory,original_name:file.name.slice(0,240),private_path:'',public_path:path,content_type:file.type,size_bytes:file.size,sort_order:Math.max(-1,...media.filter(x=>x.listing_code===selected).map(x=>x.sort_order))+1+completed,status:'approved'}).select('id').single();
-    if(insertError){await db.storage.from('investment-listing-public').remove([path]);throw Error('Enregistrement de '+file.name+' impossible : '+insertError.message);}
-    completed++;setUploadState({done:completed,total:files.length,stage:'Image enregistrée : '+file.name});
-    if(imageCategory==='cover'&&!coverAssigned){
-     const {error:ce}=await db.from('investment_listings').update({cover_path:path}).eq('code',selected);
-     if(ce)throw Error('Image enregistrée, mais couverture non modifiée : '+ce.message);coverAssigned=true;
-    }
+   for(const original of files){
+    try{
+     setUploadState({done:completed,total:files.length,stage:'Préparation de '+original.name+'…'});
+     const file=await prepareInvestmentImage(original);
+     const path='projects/'+selected+'/'+crypto.randomUUID()+'.'+(file.type==='image/png'?'png':file.type==='image/webp'?'webp':'jpg');
+     setUploadState({done:completed,total:files.length,stage:'Transfert de '+original.name+'…'});
+     const {error:uploadError}=await db.storage.from('investment-listing-public').upload(path,file,{contentType:file.type,upsert:false,cacheControl:'3600'});
+     if(uploadError)throw Error('Stockage : '+uploadError.message);
+     setUploadState({done:completed,total:files.length,stage:'Enregistrement de '+original.name+'…'});
+     const {data:record,error:insertError}=await db.from('investment_listing_media').insert({owner_id:user.id,draft_id:null,listing_code:selected,category:imageCategory,original_name:original.name.slice(0,240),private_path:'',public_path:path,content_type:file.type,size_bytes:file.size,sort_order:Math.max(-1,...media.filter(x=>x.listing_code===selected).map(x=>x.sort_order))+1+completed,status:'approved'}).select('*').single();
+     if(insertError||!record){const {error:cleanup}=await db.storage.from('investment-listing-public').remove([path]);throw Error('Médiathèque : '+(insertError?.message||'enregistrement non confirmé')+(cleanup?' ; nettoyage du fichier non confirmé.':''));}
+     setMedia(items=>[record,...items]);completed++;
+     if(imageCategory==='cover'&&!coverAssigned){
+      const {data:cover,error:ce}=await db.from('investment_listings').update({cover_path:path}).eq('code',selected).select('code,cover_path').single();
+      if(ce||cover?.cover_path!==path)failures.push(original.name+' : image enregistrée mais couverture non confirmée ('+(ce?.message||'réponse inattendue')+').');
+      else {coverAssigned=true;setDraft(d=>d?{...d,cover_path:path}:d);setItems(items=>items.map(item=>item.code===selected?{...item,cover_path:path}:item));}
+     }
+     setUploadState({done:completed,total:files.length,stage:'Image enregistrée : '+original.name});
+    }catch(err){failures.push(original.name+' : '+investmentImageError(err));}
    }
-  },'Images enregistrées et disponibles dans la médiathèque.');
-  setUploadState(null);
-  if(completed>0&&completed<files.length){try{await reload();}catch{/* keep upload error */}}
+   if(completed)setNotice(completed+' / '+files.length+' image(s) enregistrée(s) dans la médiathèque.'+(row?.publication_status!=='published'?' Ce projet est en brouillon : les photos restent visibles ici avant publication.':''));
+   if(failures.length)setError(failures.join(' | '));
+  }catch(err){setError(investmentImageError(err));}
+  finally{setUploadState(null);setBusy(false);uploadLock.current=false;}
  }
  async function approvePhoto(image:Media){
   if(!image.private_path)return;
@@ -177,7 +190,8 @@ export function InvestmentListingManager(){
       {financeFields.map(([k,t])=><label key={k} className={label+' md:col-span-2'}>{t}<textarea className={input} rows={3} maxLength={4000} value={value(k)} onChange={e=>change(k,e.target.value)}/></label>)}
      </div>}
      {section==='media'&&<div className="mt-7 space-y-10">
-      <div className="rounded-lg bg-[#f3f6f7] p-5"><p className="text-sm font-medium text-[#193344]">Ajouter une photo depuis l’administration</p><div className="mt-4 flex flex-wrap items-end gap-3"><label className={label}>Catégorie<select className={input} disabled={busy} value={imageCategory} onChange={e=>setImageCategory(e.target.value)}><option value="cover">Couverture</option><option value="gallery">Galerie</option><option value="logo">Logo</option></select></label><label className={'inline-flex cursor-pointer items-center gap-2 rounded-lg bg-[#193344] px-5 py-3 text-sm text-white '+(busy?'opacity-50':'')}>{busy&&uploadState?<Loader2 size={17} className="animate-spin"/>:<ImagePlus size={17}/>} {busy&&uploadState?'Envoi en cours…':'Télécharger des images'}<input className="sr-only" type="file" multiple accept=".jpg,.jpeg,.png,.webp" disabled={busy} onChange={uploadAdminImages}/></label></div><p className="mt-3 text-xs text-[#657781]">JPG, PNG ou WebP · 10 Mo maximum par image · 8 images par envoi. Une nouvelle image de couverture remplacera la couverture actuelle.</p>{uploadState&&<div role="status" aria-live="polite" className="mt-4 min-w-0 rounded-lg border border-[#cbd8dc] bg-white p-3"><p className="break-all text-sm">{uploadState.stage}</p><progress className="mt-3 w-full accent-[#193344]" max={uploadState.total} value={uploadState.done}/><p className="mt-1 text-xs">{uploadState.done} / {uploadState.total} images enregistrées</p></div>}</div>
+      <div className="rounded-lg bg-[#f3f6f7] p-5"><p className="text-sm font-medium text-[#193344]">Ajouter une photo depuis l’administration</p><div className="mt-4 flex flex-wrap items-end gap-3"><label className={label}>Catégorie<select className={input} disabled={busy} value={imageCategory} onChange={e=>setImageCategory(e.target.value)}><option value="cover">Couverture</option><option value="gallery">Galerie</option><option value="logo">Logo</option></select></label><button type="button" disabled={busy} onClick={()=>uploadInput.current?.click()} className="inline-flex items-center gap-2 rounded-lg bg-[#193344] px-5 py-3 text-sm text-white disabled:opacity-50">{busy&&uploadState?<Loader2 size={17} className="animate-spin"/>:<ImagePlus size={17}/>} {busy&&uploadState?'Envoi en cours…':'Choisir et envoyer des images'}</button><input ref={uploadInput} className="hidden" type="file" multiple accept="image/*,.heic,.heif,.avif" disabled={busy} onChange={uploadAdminImages}/></div><p className="mt-3 text-xs text-[#657781]">JPG, PNG, WebP et autres formats lisibles par le navigateur · 30 Mo maximum avant optimisation · 8 images par envoi. La première couverture enregistrée remplace l’ancienne.</p>{uploadState&&<div role="status" aria-live="polite" className="mt-4 min-w-0 rounded-lg border border-[#cbd8dc] bg-white p-3"><p className="break-all text-sm">{uploadState.stage}</p><progress className="mt-3 w-full accent-[#193344]" max={uploadState.total} value={uploadState.done}/><p className="mt-1 text-xs">{uploadState.done} / {uploadState.total} images enregistrées</p></div>}</div>
+      {draft?.cover_path&&<div className="min-w-0"><h3 className="text-lg font-medium text-[#193344]">Couverture actuelle du projet</h3><img src={publicCoverUrl(draft.cover_path)} alt="Couverture actuelle" className="mt-3 max-h-64 w-full rounded-lg object-cover"/>{row?.publication_status!=='published'&&<p className="mt-2 text-xs text-[#637781]">Projet en brouillon : cette couverture est enregistrée dans l’administration. La vitrine éditoriale utilise son visuel par défaut jusqu’à la publication.</p>}</div>}
       <div><h3 className="text-lg font-medium text-[#193344]">Médiathèque validée ({associated.length})</h3><div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{associated.map(m=><div className="overflow-hidden rounded-lg border border-[#dbe4e7]" key={m.id}><div className="aspect-[4/3] bg-[#e2e8eb]"><img alt={m.original_name} src={publicCoverUrl(m.public_path)} className="h-full w-full object-cover"/></div><div className="p-3"><p className="truncate text-xs text-[#405966]">{m.original_name}</p><div className="mt-3 flex flex-wrap gap-2"><button onClick={()=>makeCover(m)} disabled={busy} className="inline-flex items-center gap-1 rounded border border-[#cbd8dc] px-2 py-1 text-xs text-[#193344]"><Star size={13}/>{draft?.cover_path===m.public_path?'Couverture actuelle':'Couverture'}</button><button onClick={()=>movePhoto(m,-1)} disabled={busy} className="rounded border border-[#d6dfe3] px-2 py-1 text-xs">↑</button><button onClick={()=>movePhoto(m,1)} disabled={busy} className="rounded border border-[#d6dfe3] px-2 py-1 text-xs">↓</button></div></div></div>)}</div>{associated.length===0&&<p className="mt-4 text-sm text-[#6c7c84]">Téléchargez une photo ou validez un média transmis par l’entreprise.</p>}</div>
       <div><h3 className="text-lg font-medium text-[#193344]">Photos proposées par les entreprises ({pending.length})</h3><p className="mt-2 text-sm leading-7 text-[#6b7d86]">Vous choisissez le projet auquel rattacher chaque image avant qu’elle soit publiée.</p><label className="mt-4 block max-w-sm text-sm text-[#4b5d66]">Projet destinataire<select className={input} value={targetForMedia} onChange={e=>setTargetForMedia(e.target.value)}>{investmentVentures.map(v=><option value={v.code} key={v.code}>{v.name}</option>)}</select></label><div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{pending.map(m=><div key={m.id} className="overflow-hidden rounded-lg border border-[#dbe4e7]"><div className="aspect-[4/3] bg-[#e1e9ed]">{previewUrls[m.id]?<img className="h-full w-full object-cover" src={previewUrls[m.id]} alt={m.original_name}/>:<div className="flex h-full items-center justify-center text-xs text-[#71818a]">Image privée</div>}</div><div className="p-4"><p className="truncate text-xs font-medium text-[#193344]">{m.original_name}</p><p className="mt-1 text-xs text-[#687b83]">{m.category==='cover'?'Photo principale':m.category==='logo'?'Logo':'Galerie'}</p><div className="mt-3 flex flex-wrap gap-2"><button disabled={busy} onClick={()=>approvePhoto(m)} className="rounded bg-[#193344] px-3 py-2 text-xs text-white">Approuver</button><button disabled={busy} onClick={()=>rejectPhoto(m)} className="rounded border border-[#d8dfe3] px-3 py-2 text-xs">Refuser</button></div></div></div>)}</div></div>
      </div>}
