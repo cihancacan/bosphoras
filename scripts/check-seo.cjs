@@ -31,6 +31,17 @@ function walk(directory) {
   }
 }
 walk('app');
+
+const { investmentVentures } = require('../data/investmentVentures');
+for(const locale of ['fr','en','ru','ar']) {
+  const base = locale === 'fr' ? '/investissement' : '/'+locale+'/investment';
+  known.add(base);
+  for(const suffix of locale==='fr'?['/projets','/investisseurs','/entrepreneurs']:['/projects','/investors','/entrepreneurs']) known.add(base+suffix);
+  for(const venture of investmentVentures) known.add(base+(locale==='fr'?'/projets/':'/projects/')+venture.code);
+}
+const { globalPropertyHubPaths } = require('../data/propertyDesk');
+for (const [locale, path] of Object.entries(globalPropertyHubPaths)) known.add(normalize(getCanonicalUrl(locale,path)));
+
 for (const locale of ['en', 'ru', 'ar']) { known.add(`/${locale}/contact`); known.add(`/${locale}/peninsula-istanbul`); known.add(`/${locale}/carrieres`); }
 const redirectMap = new Map(redirects.map(({ source, destination }) => [source, destination]));
 assert.equal(redirectMap.size, redirects.length, 'Duplicate redirect source');
