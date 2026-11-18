@@ -693,5 +693,30 @@
     "source": "/services/creation-entreprise",
     "destination": "/creation-entreprise-turquie",
     "permanent": true
+  },
+  {
+    "source": "/nalogovaya-lgota-turtsiya-20-let-inostrantsy",
+    "destination": "/ru/turtsiya-20-let-nalogovaya-lgota-novye-rezidenty",
+    "permanent": true
+  },
+  {
+    "source": "/en/nalogovaya-lgota-turtsiya-20-let-inostrantsy",
+    "destination": "/en/turkey-20-year-tax-exemption-new-residents",
+    "permanent": true
+  },
+  {
+    "source": "/ar/nalogovaya-lgota-turtsiya-20-let-inostrantsy",
+    "destination": "/ar/turkey-20-year-tax-exemption-new-residents",
+    "permanent": true
+  },
+  {
+    "source": "/chastnyy-klub",
+    "destination": "/ru/chastnyy-klub",
+    "permanent": true
+  },
+  {
+    "source": "/legal-notice",
+    "destination": "/en/legal-notice",
+    "permanent": true
   }
 ]

@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/turquie-vs-dubai-investisseurs-fiscalite';
+const url = 'https://www.bosphoras.com/turquie-vs-dubai-investisseurs-fiscalite';
 const title = 'Turquie vs Dubaï pour investisseurs : fiscalité, résidence et business | Bosphoras';
 const description = 'Comparatif Bosphoras Turquie vs Dubaï pour investisseurs étrangers : fiscalité, résidence, loi n°7582, revenus étrangers, Istanbul Finance Center, transit trade, industrie, family office, banque, substance et stratégie patrimoniale.';
 const updatedAt = '2026-06-05';
@@ -34,7 +34,7 @@ const faqs = [
   ['Quel est le rôle de Bosphoras ?', 'Bosphoras coordonne l’analyse privée Turquie avec les bons interlocuteurs : fiscaliste, avocat, banque, comptable, immobilier, assurance, santé, bureaux et services privés.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: url, en: 'https://bosphoras.com/en/turkey-vs-dubai-investors-tax', ru: 'https://bosphoras.com/ru/turtsiya-vs-dubai-investory-nalogi', ar: 'https://bosphoras.com/ar/turkey-vs-dubai-investors-tax', 'x-default': url } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'fr_FR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: url, en: 'https://www.bosphoras.com/en/turkey-vs-dubai-investors-tax', ru: 'https://www.bosphoras.com/ru/turtsiya-vs-dubai-investory-nalogi', ar: 'https://www.bosphoras.com/ar/turkey-vs-dubai-investors-tax', 'x-default': url } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'fr_FR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

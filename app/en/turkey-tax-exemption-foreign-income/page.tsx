@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/en/turkey-tax-exemption-foreign-income';
+const url = 'https://www.bosphoras.com/en/turkey-tax-exemption-foreign-income';
 const title = 'Turkey tax exemption on foreign income | Bosphoras';
 const description = 'Private Bosphoras guide to Turkey’s 2026 tax proposal: foreign income, new residents, qualified service centers, Istanbul Finance Center and relocation strategy.';
 
@@ -47,7 +47,7 @@ const faqs = [
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/exoneration-fiscale-turquie-revenus-etrangers', en: url, ru: 'https://bosphoras.com/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody', ar: 'https://bosphoras.com/ar/turkey-tax-exemption-foreign-income', 'x-default': 'https://bosphoras.com/exoneration-fiscale-turquie-revenus-etrangers' } },
+  alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/exoneration-fiscale-turquie-revenus-etrangers', en: url, ru: 'https://www.bosphoras.com/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody', ar: 'https://www.bosphoras.com/ar/turkey-tax-exemption-foreign-income', 'x-default': 'https://www.bosphoras.com/exoneration-fiscale-turquie-revenus-etrangers' } },
   openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'en_US', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] },
   twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] },
 };

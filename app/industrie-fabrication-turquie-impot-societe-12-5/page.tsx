@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/industrie-fabrication-turquie-impot-societe-12-5';
+const url = 'https://www.bosphoras.com/industrie-fabrication-turquie-impot-societe-12-5';
 const title = 'Industrie en Turquie : impôt société 12,5 %, fabrication et investissement | Bosphoras';
 const description = 'Guide Bosphoras sur l’industrie et la fabrication en Turquie après la loi n°7582 : impôt société 12,5 % à analyser pour certains revenus de production, usine, export, zone industrielle, société, permis, fiscalité, SGK, énergie, logistique et substance.';
 const updatedAt = '2026-06-05';
@@ -34,7 +34,7 @@ const faqs = [
   ['Quels risques vérifier avant d’investir ?', 'Permis, terrain, énergie, conformité, environnement, SGK, douane, fiscalité, contrats fournisseurs, qualité, financement, assurance et gouvernance locale.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: url, en: 'https://bosphoras.com/en/turkey-manufacturing-corporate-tax-12-5', ru: 'https://bosphoras.com/ru/proizvodstvo-turtsiya-nalog-na-pribyl-12-5', ar: 'https://bosphoras.com/ar/turkey-manufacturing-corporate-tax-12-5', 'x-default': url } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'fr_FR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: url, en: 'https://www.bosphoras.com/en/turkey-manufacturing-corporate-tax-12-5', ru: 'https://www.bosphoras.com/ru/proizvodstvo-turtsiya-nalog-na-pribyl-12-5', ar: 'https://www.bosphoras.com/ar/turkey-manufacturing-corporate-tax-12-5', 'x-default': url } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'fr_FR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

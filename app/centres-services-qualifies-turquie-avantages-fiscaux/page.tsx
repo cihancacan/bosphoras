@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/centres-services-qualifies-turquie-avantages-fiscaux';
+const url = 'https://www.bosphoras.com/centres-services-qualifies-turquie-avantages-fiscaux';
 const title = 'Centres de services qualifiés en Turquie : avantages fiscaux, conditions et exemples | Bosphoras';
 const description = 'Guide SEO Bosphoras sur les centres de services qualifiés en Turquie après la loi n°7582 publiée au Resmî Gazete n°33270 : Nitelikli hizmet merkezi, revenus étrangers, fonctions support, groupes internationaux, substance locale, bureaux, salariés, contrats et fiscalité.';
 const updatedAt = '2026-06-05';
@@ -44,7 +44,7 @@ const faqs = [
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: url, languages: { fr: url, en: 'https://bosphoras.com/en/qualified-service-centers-turkey-tax-benefits', ru: 'https://bosphoras.com/ru/kvalifitsirovannye-servisnye-tsentry-turtsiya', ar: 'https://bosphoras.com/ar/qualified-service-centers-turkey-tax-benefits', 'x-default': url } },
+  alternates: { canonical: url, languages: { fr: url, en: 'https://www.bosphoras.com/en/qualified-service-centers-turkey-tax-benefits', ru: 'https://www.bosphoras.com/ru/kvalifitsirovannye-servisnye-tsentry-turtsiya', ar: 'https://www.bosphoras.com/ar/qualified-service-centers-turkey-tax-benefits', 'x-default': url } },
   openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'fr_FR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] },
   twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] },
 };

@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/ar/family-office-turkey-istanbul';
+const url = 'https://www.bosphoras.com/ar/family-office-turkey-istanbul';
 const title = 'Family office في تركيا وإسطنبول: الضرائب والثروة والإقامة | Bosphoras';
 const description = 'دليل Bosphoras حول family office في تركيا وإسطنبول: القانون رقم 7582، الدخل الأجنبي، الإقامة الضريبية، الميراث، البنوك، العقار، التأمين، الشركة، الوجود الحقيقي، الصحة الخاصة والتنسيق الخاص.';
 const updatedAt = '2026-06-05';
@@ -34,7 +34,7 @@ const faqs = [
   ['ما الذي يجب فحصه قبل الانتقال؟', 'الإقامة الضريبية، مصدر الدخل، الاتفاقيات الضريبية، البنك، مصدر الأموال، التأمين، العقار، الميراث، الشركة والالتزامات التصريحية.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/family-office-turquie-istanbul', en: 'https://bosphoras.com/en/family-office-turkey-istanbul', ru: 'https://bosphoras.com/ru/family-office-turtsiya-stambul', ar: url, 'x-default': 'https://bosphoras.com/family-office-turquie-istanbul' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/family-office-turquie-istanbul', en: 'https://www.bosphoras.com/en/family-office-turkey-istanbul', ru: 'https://www.bosphoras.com/ru/family-office-turtsiya-stambul', ar: url, 'x-default': 'https://www.bosphoras.com/family-office-turquie-istanbul' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/ru/kvalifitsirovannye-servisnye-tsentry-turtsiya';
+const url = 'https://www.bosphoras.com/ru/kvalifitsirovannye-servisnye-tsentry-turtsiya';
 const title = 'Квалифицированные сервисные центры в Турции: налоговые преимущества, условия и примеры | Bosphoras';
 const description = 'Гид Bosphoras по квалифицированным сервисным центрам в Турции после Закона №7582, опубликованного в Resmî Gazete №33270: Nitelikli hizmet merkezi, международные группы, иностранные доходы, функции поддержки, substance, офисы, сотрудники и контракты.';
 const updatedAt = '2026-06-05';
@@ -34,7 +34,7 @@ const faqs = [
   ['Какова роль Bosphoras?', 'Bosphoras координирует частный анализ с юристами, налоговыми консультантами, бухгалтерами, банками, офисами, рекрутингом и локальными партнерами. Bosphoras не заменяет регулируемых специалистов.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/centres-services-qualifies-turquie-avantages-fiscaux', en: 'https://bosphoras.com/en/qualified-service-centers-turkey-tax-benefits', ru: url, ar: 'https://bosphoras.com/ar/qualified-service-centers-turkey-tax-benefits', 'x-default': 'https://bosphoras.com/centres-services-qualifies-turquie-avantages-fiscaux' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ru_RU', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/centres-services-qualifies-turquie-avantages-fiscaux', en: 'https://www.bosphoras.com/en/qualified-service-centers-turkey-tax-benefits', ru: url, ar: 'https://www.bosphoras.com/ar/qualified-service-centers-turkey-tax-benefits', 'x-default': 'https://www.bosphoras.com/centres-services-qualifies-turquie-avantages-fiscaux' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ru_RU', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

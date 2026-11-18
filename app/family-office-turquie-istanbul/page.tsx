@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/family-office-turquie-istanbul';
+const url = 'https://www.bosphoras.com/family-office-turquie-istanbul';
 const title = 'Family office en Turquie à Istanbul : fiscalité, patrimoine et résidence | Bosphoras';
 const description = 'Guide Bosphoras pour créer ou coordonner un family office en Turquie à Istanbul : loi n°7582, revenus étrangers, résidence fiscale, héritage, banque, immobilier, assurance, société, substance, fiscalité et accompagnement privé.';
 const updatedAt = '2026-06-05';
@@ -34,7 +34,7 @@ const faqs = [
   ['Quels sujets doivent être vérifiés avant de s’installer ?', 'Résidence fiscale, source des revenus, conventions fiscales, banque, origine des fonds, assurances, immobilier, succession, société et obligations déclaratives.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: url, en: 'https://bosphoras.com/en/family-office-turkey-istanbul', ru: 'https://bosphoras.com/ru/family-office-turtsiya-stambul', ar: 'https://bosphoras.com/ar/family-office-turkey-istanbul', 'x-default': url } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'fr_FR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: url, en: 'https://www.bosphoras.com/en/family-office-turkey-istanbul', ru: 'https://www.bosphoras.com/ru/family-office-turtsiya-stambul', ar: 'https://www.bosphoras.com/ar/family-office-turkey-istanbul', 'x-default': url } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'fr_FR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/en/family-office-turkey-istanbul';
+const url = 'https://www.bosphoras.com/en/family-office-turkey-istanbul';
 const title = 'Family Office in Turkey and Istanbul: Tax, Wealth and Residence | Bosphoras';
 const description = 'Bosphoras guide to coordinating a family office in Turkey and Istanbul: Law No. 7582, foreign income, tax residence, inheritance, banking, property, insurance, company structuring, substance, private healthcare and private coordination.';
 const updatedAt = '2026-06-05';
@@ -34,7 +34,7 @@ const faqs = [
   ['What must be checked before relocating?', 'Tax residence, income source, tax treaties, banking, source of funds, insurance, property, succession, company structure and reporting obligations.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/family-office-turquie-istanbul', en: url, ru: 'https://bosphoras.com/ru/family-office-turtsiya-stambul', ar: 'https://bosphoras.com/ar/family-office-turkey-istanbul', 'x-default': 'https://bosphoras.com/family-office-turquie-istanbul' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'en_US', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/family-office-turquie-istanbul', en: url, ru: 'https://www.bosphoras.com/ru/family-office-turtsiya-stambul', ar: 'https://www.bosphoras.com/ar/family-office-turkey-istanbul', 'x-default': 'https://www.bosphoras.com/family-office-turquie-istanbul' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'en_US', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/ru/family-office-turtsiya-stambul';
+const url = 'https://www.bosphoras.com/ru/family-office-turtsiya-stambul';
 const title = 'Family office в Турции и Стамбуле: налоги, капитал и резиденция | Bosphoras';
 const description = 'Гид Bosphoras по family office в Турции и Стамбуле: Закон №7582, иностранные доходы, налоговая резиденция, наследование, банки, недвижимость, страхование, компания, substance, частная медицина и координация.';
 const updatedAt = '2026-06-05';
@@ -34,7 +34,7 @@ const faqs = [
   ['Что нужно проверить до переезда?', 'Налоговую резиденцию, источник доходов, налоговые соглашения, банк, источник средств, страховки, недвижимость, наследование, компанию и отчетные обязанности.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/family-office-turquie-istanbul', en: 'https://bosphoras.com/en/family-office-turkey-istanbul', ru: url, ar: 'https://bosphoras.com/ar/family-office-turkey-istanbul', 'x-default': 'https://bosphoras.com/family-office-turquie-istanbul' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ru_RU', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/family-office-turquie-istanbul', en: 'https://www.bosphoras.com/en/family-office-turkey-istanbul', ru: url, ar: 'https://www.bosphoras.com/ar/family-office-turkey-istanbul', 'x-default': 'https://www.bosphoras.com/family-office-turquie-istanbul' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ru_RU', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

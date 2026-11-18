@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/ru/proizvodstvo-turtsiya-nalog-na-pribyl-12-5';
+const url = 'https://www.bosphoras.com/ru/proizvodstvo-turtsiya-nalog-na-pribyl-12-5';
 const title = 'Производство в Турции: налог на прибыль 12,5%, фабрика и инвестиции | Bosphoras';
 const description = 'Гид Bosphoras по производству и промышленным инвестициям в Турции после Закона №7582: налог 12,5% для анализа по отдельным производственным доходам, фабрика, экспорт, промышленные зоны, компания, разрешения, налоги, SGK, энергия, логистика и substance.';
 const updatedAt = '2026-06-05';
@@ -34,7 +34,7 @@ const faqs = [
   ['Какие риски проверить до инвестиций?', 'Разрешения, земля, энергия, compliance, environment, SGK, таможня, налоги, контракты поставщиков, качество, финансирование, страхование и local governance.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/industrie-fabrication-turquie-impot-societe-12-5', en: 'https://bosphoras.com/en/turkey-manufacturing-corporate-tax-12-5', ru: url, ar: 'https://bosphoras.com/ar/turkey-manufacturing-corporate-tax-12-5', 'x-default': 'https://bosphoras.com/industrie-fabrication-turquie-impot-societe-12-5' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ru_RU', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/industrie-fabrication-turquie-impot-societe-12-5', en: 'https://www.bosphoras.com/en/turkey-manufacturing-corporate-tax-12-5', ru: url, ar: 'https://www.bosphoras.com/ar/turkey-manufacturing-corporate-tax-12-5', 'x-default': 'https://www.bosphoras.com/industrie-fabrication-turquie-impot-societe-12-5' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ru_RU', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

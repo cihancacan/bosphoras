@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/ar/turkey-manufacturing-corporate-tax-12-5';
+const url = 'https://www.bosphoras.com/ar/turkey-manufacturing-corporate-tax-12-5';
 const title = 'الصناعة في تركيا: ضريبة شركات 12.5%، التصنيع والاستثمار | Bosphoras';
 const description = 'دليل Bosphoras حول الصناعة والاستثمار الصناعي في تركيا بعد القانون رقم 7582: ضريبة شركات 12.5% للتحليل على بعض دخل الإنتاج، مصنع، تصدير، مناطق صناعية منظمة، شركة، تصاريح، ضرائب، SGK، طاقة، لوجستيك ووجود حقيقي.';
 const updatedAt = '2026-06-05';
@@ -34,7 +34,7 @@ const faqs = [
   ['ما المخاطر التي يجب فحصها قبل الاستثمار؟', 'التصاريح، الأرض، الطاقة، compliance، البيئة، SGK، الجمارك، الضرائب، عقود الموردين، الجودة، التمويل، التأمين والحوكمة المحلية.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/industrie-fabrication-turquie-impot-societe-12-5', en: 'https://bosphoras.com/en/turkey-manufacturing-corporate-tax-12-5', ru: 'https://bosphoras.com/ru/proizvodstvo-turtsiya-nalog-na-pribyl-12-5', ar: url, 'x-default': 'https://bosphoras.com/industrie-fabrication-turquie-impot-societe-12-5' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/industrie-fabrication-turquie-impot-societe-12-5', en: 'https://www.bosphoras.com/en/turkey-manufacturing-corporate-tax-12-5', ru: 'https://www.bosphoras.com/ru/proizvodstvo-turtsiya-nalog-na-pribyl-12-5', ar: url, 'x-default': 'https://www.bosphoras.com/industrie-fabrication-turquie-impot-societe-12-5' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

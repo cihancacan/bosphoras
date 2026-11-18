@@ -145,15 +145,15 @@ const content: Record<Locale, PageContent> = {
 
 export function getMarketExpatTurkeyTaxMetadata(locale: Locale): Metadata {
   const c = content[locale];
-  const canonical = `https://bosphoras.com${paths[locale]}`;
-  return { title: `${c.metaTitle} | Bosphoras`, description: c.description, alternates: { canonical, languages: { fr: `https://bosphoras.com${paths.fr}`, en: `https://bosphoras.com${paths.en}`, ru: `https://bosphoras.com${paths.ru}`, ar: `https://bosphoras.com${paths.ar}`, 'x-default': `https://bosphoras.com${paths.fr}` } }, openGraph: { title: c.title, description: c.description, url: canonical, siteName: 'Bosphoras', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: c.title }] }, twitter: { card: 'summary_large_image', title: c.title, description: c.description, images: ['/images/og-default.jpg'] } };
+  const canonical = `https://www.bosphoras.com${paths[locale]}`;
+  return { title: `${c.metaTitle} | Bosphoras`, description: c.description, alternates: { canonical, languages: { fr: `https://www.bosphoras.com${paths.fr}`, en: `https://www.bosphoras.com${paths.en}`, ru: `https://www.bosphoras.com${paths.ru}`, ar: `https://www.bosphoras.com${paths.ar}`, 'x-default': `https://www.bosphoras.com${paths.fr}` } }, openGraph: { title: c.title, description: c.description, url: canonical, siteName: 'Bosphoras', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: c.title }] }, twitter: { card: 'summary_large_image', title: c.title, description: c.description, images: ['/images/og-default.jpg'] } };
 }
 
 export function MarketExpatTurkeyTaxClientPage({ locale }: { locale: Locale }) {
   const c = content[locale];
   return (
     <>
-      <StructuredData data={[{ '@context': 'https://schema.org', '@type': 'Article', headline: c.title, description: c.description, inLanguage: locale, datePublished: '2026-05-11', dateModified: '2026-05-11', author: { '@type': 'Organization', name: 'Bosphoras' }, publisher: { '@type': 'Organization', name: 'Bosphoras' }, mainEntityOfPage: `https://bosphoras.com${paths[locale]}` }, { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: c.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }]} />
+      <StructuredData data={[{ '@context': 'https://schema.org', '@type': 'Article', headline: c.title, description: c.description, inLanguage: locale, datePublished: '2026-05-11', dateModified: '2026-05-11', author: { '@type': 'Organization', name: 'Bosphoras' }, publisher: { '@type': 'Organization', name: 'Bosphoras' }, mainEntityOfPage: `https://www.bosphoras.com${paths[locale]}` }, { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: c.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }]} />
       <Header locale={locale} currentPath={paths[locale]} />
       <main dir={locale === 'ar' ? 'rtl' : 'ltr'} className="bg-[#f8f1e7] text-[#101827]">
         <section className="bg-[#121826] px-5 pb-20 pt-32 text-white md:px-8 md:pt-40"><div className="mx-auto max-w-[1400px]"><p className="text-xs font-bold uppercase tracking-[0.28em] text-[#d2a863]">{c.eyebrow}</p><h1 className="mt-6 max-w-6xl font-serif text-4xl leading-[1.05] tracking-[-0.045em] md:text-7xl">{c.title}</h1><p className="mt-8 max-w-4xl text-lg leading-9 text-white/80">{c.hero}</p><Link href={assessmentHref[locale]} className="mt-10 inline-flex items-center justify-center gap-3 bg-[#d2a863] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#101827]">{c.cta}<ArrowRight size={16} /></Link></div></section>

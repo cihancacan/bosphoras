@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody';
+const url = 'https://www.bosphoras.com/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody';
 const title = 'Налоговая льгота в Турции на иностранные доходы | Закон 7582 | Bosphoras';
 const description = 'Частный гид Bosphoras по Закону Турции №7582, опубликованному в Resmî Gazete №33270: 20-летняя льгота на отдельные иностранные доходы, условия, ограничения, наследование 1%, налоговая резиденция и переезд в Турцию.';
 const updatedAt = '2026-06-05';
@@ -58,7 +58,7 @@ const faqs = [
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/exoneration-fiscale-turquie-revenus-etrangers', en: 'https://bosphoras.com/en/turkey-tax-exemption-foreign-income', ru: url, ar: 'https://bosphoras.com/ar/turkey-tax-exemption-foreign-income', 'x-default': 'https://bosphoras.com/exoneration-fiscale-turquie-revenus-etrangers' } },
+  alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/exoneration-fiscale-turquie-revenus-etrangers', en: 'https://www.bosphoras.com/en/turkey-tax-exemption-foreign-income', ru: url, ar: 'https://www.bosphoras.com/ar/turkey-tax-exemption-foreign-income', 'x-default': 'https://www.bosphoras.com/exoneration-fiscale-turquie-revenus-etrangers' } },
   openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ru_RU', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] },
   twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] },
 };

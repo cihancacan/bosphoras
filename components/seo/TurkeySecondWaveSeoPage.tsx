@@ -62,10 +62,10 @@ function pageBullets(key: SecondWaveKey, locale: Locale): Array<[string,string]>
 function assessmentHref(locale: Locale) { return locale === 'fr' ? '/diagnostic-prive' : locale === 'en' ? '/en/private-assessment' : locale === 'ru' ? '/ru/chastnaya-konsultatsiya' : '/ar/تقييم-خاص'; }
 
 export function getSecondWaveMetadata(pageKey: SecondWaveKey, locale: Locale): Metadata {
-  const canonical = `https://bosphoras.com${slugs[pageKey][locale]}`;
+  const canonical = `https://www.bosphoras.com${slugs[pageKey][locale]}`;
   const title = `${titles[pageKey][locale]} | Bosphoras`;
   const description = `${titles[pageKey][locale]} — ${labels[locale].intro}`;
-  return { title, description, alternates: { canonical, languages: { fr: `https://bosphoras.com${slugs[pageKey].fr}`, en: `https://bosphoras.com${slugs[pageKey].en}`, ru: `https://bosphoras.com${slugs[pageKey].ru}`, ar: `https://bosphoras.com${slugs[pageKey].ar}`, 'x-default': `https://bosphoras.com${slugs[pageKey].fr}` } }, openGraph: { title, description, url: canonical, siteName: 'Bosphoras', locale: locale === 'fr' ? 'fr_FR' : locale === 'en' ? 'en_US' : locale === 'ru' ? 'ru_RU' : 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+  return { title, description, alternates: { canonical, languages: { fr: `https://www.bosphoras.com${slugs[pageKey].fr}`, en: `https://www.bosphoras.com${slugs[pageKey].en}`, ru: `https://www.bosphoras.com${slugs[pageKey].ru}`, ar: `https://www.bosphoras.com${slugs[pageKey].ar}`, 'x-default': `https://www.bosphoras.com${slugs[pageKey].fr}` } }, openGraph: { title, description, url: canonical, siteName: 'Bosphoras', locale: locale === 'fr' ? 'fr_FR' : locale === 'en' ? 'en_US' : locale === 'ru' ? 'ru_RU' : 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 }
 
 export const secondWaveFooterLinks: Record<Locale, Array<{ href: string; label: string }>> = {
@@ -75,7 +75,7 @@ export const secondWaveFooterLinks: Record<Locale, Array<{ href: string; label: 
   ar: secondWaveKeys.map((k) => ({ href: slugs[k].ar, label: titles[k].ar })),
 };
 export const secondWaveLocalizedPaths = secondWaveKeys.map((k) => slugs[k]);
-export const secondWaveSitemapUrls = secondWaveKeys.flatMap((k) => Object.values(slugs[k]).map((slug) => `https://bosphoras.com${slug}`));
+export const secondWaveSitemapUrls = secondWaveKeys.flatMap((k) => Object.values(slugs[k]).map((slug) => `https://www.bosphoras.com${slug}`));
 
 export function TurkeySecondWaveSeoPage({ pageKey, locale }: { pageKey: SecondWaveKey; locale: Locale }) {
   const l = labels[locale];
@@ -87,7 +87,7 @@ export function TurkeySecondWaveSeoPage({ pageKey, locale }: { pageKey: SecondWa
   ];
   return (
     <>
-      <StructuredData data={[{ '@context': 'https://schema.org', '@type': 'Article', headline: title, description: l.intro, inLanguage: locale, datePublished: '2026-05-07', dateModified: '2026-05-07', author: { '@type': 'Organization', name: 'Bosphoras' }, publisher: { '@type': 'Organization', name: 'Bosphoras' }, mainEntityOfPage: `https://bosphoras.com${slugs[pageKey][locale]}` }, { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }]} />
+      <StructuredData data={[{ '@context': 'https://schema.org', '@type': 'Article', headline: title, description: l.intro, inLanguage: locale, datePublished: '2026-05-07', dateModified: '2026-05-07', author: { '@type': 'Organization', name: 'Bosphoras' }, publisher: { '@type': 'Organization', name: 'Bosphoras' }, mainEntityOfPage: `https://www.bosphoras.com${slugs[pageKey][locale]}` }, { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }]} />
       <Header locale={locale} currentPath={slugs[pageKey][locale]} />
       <main dir={locale === 'ar' ? 'rtl' : 'ltr'} className="bg-[#f8f1e7] text-[#101827]">
         <section className="bg-[#121826] px-5 pb-20 pt-32 text-white md:px-8 md:pt-40"><div className="mx-auto max-w-[1400px]"><p className="text-xs font-bold uppercase tracking-[0.28em] text-[#d2a863]">{l.guide}</p><h1 className="mt-6 max-w-5xl font-serif text-4xl leading-[1.05] tracking-[-0.045em] md:text-7xl">{title}</h1><p className="mt-8 max-w-3xl text-lg leading-9 text-white/80">{l.intro}</p><div className="mt-10"><Link href={assessmentHref(locale)} className="inline-flex items-center justify-center gap-3 bg-[#d2a863] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#101827]">{l.cta}<ArrowRight size={16} /></Link></div></div></section>

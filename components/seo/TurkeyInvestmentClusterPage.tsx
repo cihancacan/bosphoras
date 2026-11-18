@@ -117,19 +117,19 @@ function pageFaq(pageKey: TaxClusterKey, locale: Locale) {
 }
 
 export function getTaxClusterMetadata(pageKey: TaxClusterKey, locale: Locale): Metadata {
-  const canonical = `https://bosphoras.com${slugs[pageKey][locale]}`;
+  const canonical = `https://www.bosphoras.com${slugs[pageKey][locale]}`;
   const title = `${names[pageKey][locale]} | Bosphoras`;
   const description = pageIntro(pageKey, locale);
-  return { title, description, alternates: { canonical, languages: { fr: `https://bosphoras.com${slugs[pageKey].fr}`, en: `https://bosphoras.com${slugs[pageKey].en}`, ru: `https://bosphoras.com${slugs[pageKey].ru}`, ar: `https://bosphoras.com${slugs[pageKey].ar}`, 'x-default': `https://bosphoras.com${slugs[pageKey].fr}` } }, openGraph: { title, description, url: canonical, siteName: 'Bosphoras', locale: locale === 'fr' ? 'fr_FR' : locale === 'en' ? 'en_US' : locale === 'ru' ? 'ru_RU' : 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+  return { title, description, alternates: { canonical, languages: { fr: `https://www.bosphoras.com${slugs[pageKey].fr}`, en: `https://www.bosphoras.com${slugs[pageKey].en}`, ru: `https://www.bosphoras.com${slugs[pageKey].ru}`, ar: `https://www.bosphoras.com${slugs[pageKey].ar}`, 'x-default': `https://www.bosphoras.com${slugs[pageKey].fr}` } }, openGraph: { title, description, url: canonical, siteName: 'Bosphoras', locale: locale === 'fr' ? 'fr_FR' : locale === 'en' ? 'en_US' : locale === 'ru' ? 'ru_RU' : 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 }
 
 export function getTurkeyInvestmentClusterLinks(locale: Locale) { return taxClusterKeys.map((key) => ({ href: slugs[key][locale], label: names[key][locale] })); }
-export function getTurkeyInvestmentClusterUrls() { return taxClusterKeys.flatMap((key) => Object.values(slugs[key]).map((slug) => `https://bosphoras.com${slug}`)); }
+export function getTurkeyInvestmentClusterUrls() { return taxClusterKeys.flatMap((key) => Object.values(slugs[key]).map((slug) => `https://www.bosphoras.com${slug}`)); }
 
 export function TurkeyInvestmentClusterPage({ pageKey, locale }: { pageKey: TaxClusterKey; locale: Locale }) {
   const l = labels[locale];
   const title = names[pageKey][locale];
-  const url = `https://bosphoras.com${slugs[pageKey][locale]}`;
+  const url = `https://www.bosphoras.com${slugs[pageKey][locale]}`;
   const intro = pageIntro(pageKey, locale);
   const bullets = topicBullets(pageKey, locale);
   const faq = pageFaq(pageKey, locale);

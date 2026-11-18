@@ -153,18 +153,18 @@ const content: Record<SupportedLocale, PageContent> = {
 
 export function getTaxResidenceForeignIncomeClientIntlMetadata(locale: SupportedLocale): Metadata {
   const c = content[locale];
-  const canonical = `https://bosphoras.com${paths[locale]}`;
+  const canonical = `https://www.bosphoras.com${paths[locale]}`;
   return {
     title: `${c.metaTitle} | Bosphoras`,
     description: c.description,
     alternates: {
       canonical,
       languages: {
-        fr: 'https://bosphoras.com/residence-fiscale-turquie-revenus-etrangers',
-        en: 'https://bosphoras.com/en/turkey-tax-residence-foreign-income',
-        ru: 'https://bosphoras.com/ru/nalogovaya-rezidentsiya-turtsiya-inostrannye-dohody',
-        ar: 'https://bosphoras.com/ar/turkey-tax-residence-foreign-income',
-        'x-default': 'https://bosphoras.com/residence-fiscale-turquie-revenus-etrangers',
+        fr: 'https://www.bosphoras.com/residence-fiscale-turquie-revenus-etrangers',
+        en: 'https://www.bosphoras.com/en/turkey-tax-residence-foreign-income',
+        ru: 'https://www.bosphoras.com/ru/nalogovaya-rezidentsiya-turtsiya-inostrannye-dohody',
+        ar: 'https://www.bosphoras.com/ar/turkey-tax-residence-foreign-income',
+        'x-default': 'https://www.bosphoras.com/residence-fiscale-turquie-revenus-etrangers',
       },
     },
     openGraph: { title: c.title, description: c.description, url: canonical, siteName: 'Bosphoras', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: c.title }] },
@@ -176,7 +176,7 @@ export function TaxResidenceForeignIncomeClientIntlPage({ locale }: { locale: Su
   const c = content[locale];
   return (
     <>
-      <StructuredData data={[{ '@context': 'https://schema.org', '@type': 'Article', headline: c.title, description: c.description, inLanguage: locale, datePublished: '2026-05-11', dateModified: '2026-05-11', author: { '@type': 'Organization', name: 'Bosphoras' }, publisher: { '@type': 'Organization', name: 'Bosphoras' }, mainEntityOfPage: `https://bosphoras.com${paths[locale]}` }, { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: c.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }]} />
+      <StructuredData data={[{ '@context': 'https://schema.org', '@type': 'Article', headline: c.title, description: c.description, inLanguage: locale, datePublished: '2026-05-11', dateModified: '2026-05-11', author: { '@type': 'Organization', name: 'Bosphoras' }, publisher: { '@type': 'Organization', name: 'Bosphoras' }, mainEntityOfPage: `https://www.bosphoras.com${paths[locale]}` }, { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: c.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }]} />
       <Header locale={locale} currentPath={paths[locale]} />
       <main dir={locale === 'ar' ? 'rtl' : 'ltr'} className="bg-[#f8f1e7] text-[#101827]">
         <section className="bg-[#121826] px-5 pb-20 pt-32 text-white md:px-8 md:pt-40">
