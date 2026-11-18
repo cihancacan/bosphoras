@@ -1,22 +1,30 @@
 'use client';
 import {useEffect,useState,type ChangeEvent} from 'react';
 import Link from 'next/link';
-import {ArrowDownToLine,ArrowRight,Camera,Check,Eye,ImagePlus,Save,ShieldCheck,Star,Trash2} from 'lucide-react';
+import {ArrowDownToLine,ArrowRight,Camera,Check,Loader2,Eye,ImagePlus,Save,ShieldCheck,Star,Trash2} from 'lucide-react';
 import {getPortalSupabase} from '@/lib/portalSupabase';
 import {investmentVentures} from '@/data/investmentVentures';
 import {mergedInvestmentListing,moneyLabel,publicCoverUrl,safeInvestmentWebsite,type InvestmentListing} from '@/lib/investmentListings';
+import {automaticInvestmentSeo,investmentSeoLocales,type InvestmentSeoLocale,type InvestmentSeoCopy} from '@/data/investmentProjectSeo';
 import {InvestmentProjectCard} from '@/components/InvestmentProjectCard';
 
 const db:any=getPortalSupabase();
 type Media={id:string;owner_id:string;draft_id:string|null;listing_code:string|null;category:string;original_name:string;private_path:string;public_path:string;status:string;content_type:string;size_bytes:number;sort_order:number;created_at:string};
 const statuses:Record<string,string>={pending:'À valider',approved:'Approuvée',rejected:'Refusée'};
 const allowed=new Set(['image/jpeg','image/png','image/webp']);
-const input='mt-2 block w-full rounded-lg border border-[#cbd6db] bg-white px-4 py-3 text-sm text-[#243b46] outline-none focus:border-[#193344]';
+const input='mt-2 block w-full min-w-0 max-w-full rounded-lg border border-[#cbd6db] bg-white px-4 py-3 text-sm text-[#243b46] outline-none focus:border-[#193344]';
 const label='block text-sm font-medium leading-6 text-[#506570]';
 const fieldsIntro:[keyof InvestmentListing,string][]=[['title_fr','Titre français'],['title_en','English title'],['tagline_fr','Accroche FR'],['tagline_en','Tagline EN'],['short_fr','Présentation courte FR'],['short_en','Short summary EN'],['story_fr','Présentation détaillée FR'],['story_en','Detailed description EN'],['highlights_fr','Atouts du projet FR — un par ligne'],['highlights_en','Highlights EN — one per line'],['sector','Secteur'],['location','Localisation'],['issuer_name','Société juridique porteuse'],['official_website','Site web officiel (https://)']];
 const financeFields:[keyof InvestmentListing,string][]=[['exit_terms_fr','Conditions de sortie FR'],['exit_terms_en','Exit terms EN'],['use_of_funds_fr','Utilisation des fonds FR'],['use_of_funds_en','Use of funds EN'],['risk_summary_fr','Risques FR'],['risk_summary_en','Risks EN']];
 export function InvestmentListingManager(){
- const [items,setItems]=useState<InvestmentListing[]>([]),[media,setMedia]=useState<Media[]>([]),[selected,setSelected]=useState('aqma'),[draft,setDraft]=useState<InvestmentListing|null>(null),[busy,setBusy]=useState(false),[loading,setLoading]=useState(true),[error,setError]=useState(''),[notice,setNotice]=useState(''),[section,setSection]=useState<'content'|'finance'|'media'|'publish'>('content'),[imageCategory,setImageCategory]=useState('cover'),[targetForMedia,setTargetForMedia]=useState('aqma'),[previewUrls,setPreviewUrls]=useState<Record<string,string>>({});
+ const [items,setItems]=useState<InvestmentListing[]>([]),[media,setMedia]=useState<Media[]>([]),[selected,setSelected]=useState('aqma'),[draft,setDraft]=useState<InvestmentListing|null>(null),[busy,setBusy]=useState(false),[loading,setLoading]=useState(true),[error,setError]=useState(''),[notice,setNotice]=useState(''),[section,setSection]=useState<'content'|'finance'|'media'|'publish'|'seo'>('content'),[imageCategory,setImageCategory]=useState('cover'),[targetForMedia,setTargetForMedia]=useState('aqma'),[previewUrls,setPreviewUrls]=useState<Record<string,string>>({});
+ const [seo,setSeo]=useState<Partial<Record<InvestmentSeoLocale,InvestmentSeoCopy>>>({}),[seoReady,setSeoReady]=useState(false),[uploadState,setUploadState]=useState<{done:number;total:number;stage:string}|null>(null);
+ useEffect(()=>{let live=true;setSeoReady(false);setSeo({});db.from('investment_project_seo').select('locale,title,description').eq('code',selected).then(({data,error}:any)=>{if(!live)return;if(error){setError('SEO : '+error.message);return;}setSeo(Object.fromEntries((data||[]).map((r:any)=>[r.locale,{title:r.title,description:r.description}])));setSeoReady(true);}).catch((e:any)=>{if(live)setError('SEO : '+(e?.message||String(e)));});return()=>{live=false;};},[selected]);
+ async function saveSeo(){
+  if(!seoReady||busy)return;
+  if(!confirm('Ces métadonnées SEO seront publiques, même si les conditions financières du projet restent en brouillon. Continuer ?'))return;
+  await run(async()=>{const payload=investmentSeoLocales.map(locale=>({code:selected,locale,title:(seo[locale]?.title||'').trim(),description:(seo[locale]?.description||'').trim()}));const {error}=await db.from('investment_project_seo').upsert(payload,{onConflict:'code,locale'});if(error)throw error;},'Métadonnées SEO enregistrées pour les quatre langues.');
+ }
  async function reload(){
   const [l,m]=await Promise.all([
    db.from('investment_listings').select('*').order('display_order'),
@@ -43,7 +51,7 @@ export function InvestmentListingManager(){
  async function run(fn:()=>Promise<void>,text:string){
   setBusy(true);setError('');setNotice('');
   try{await fn();await reload();setNotice(text);}
-  catch(e){setError(e instanceof Error?e.message:String(e));}
+  catch(e){setError(typeof e==='object'&&e&&'message' in e?String(e.message):String(e));}
   finally{setBusy(false);}
  }
  const value=(key:keyof InvestmentListing)=>String(draft?.[key]??'');
@@ -85,22 +93,30 @@ export function InvestmentListingManager(){
   await run(async()=>{const {error}=await db.from('investment_listings').update({publication_status:'draft',published_at:null,updated_at:new Date().toISOString()}).eq('code',selected);if(error)throw error;},'Annonce dépubliée. La présentation éditoriale du projet reste visible.');
  }
  async function uploadAdminImages(e:ChangeEvent<HTMLInputElement>){
-  const files=Array.from(e.target.files||[]);e.target.value='';if(!files.length)return;
+  const files=Array.from(e.target.files||[]);e.target.value='';if(!files.length||busy)return;
+  if(files.length>8){setError('Sélectionnez 8 images maximum par envoi.');return;}const invalid=files.find(f=>!allowed.has(f.type)||f.size>10485760||f.size<1);if(invalid){setError('Image non compatible : '+invalid.name+' (JPG, PNG, WebP ; 10 Mo maximum).');return;}setUploadState({done:0,total:files.length,stage:'Préparation de l’envoi…'});
+  let completed=0;
   await run(async()=>{
    const {data:{user}}=await db.auth.getUser();if(!user)throw Error('Session expirée.');
-   for(const file of files.slice(0,8)){
+   let coverAssigned=false;
+   for(const file of files){
+    setUploadState({done:completed,total:files.length,stage:'Envoi de '+file.name+'…'});
     if(!allowed.has(file.type)||file.size>10485760||file.size<1)throw Error('Image JPG, PNG ou WebP, 10 Mo maximum.');
     const path='projects/'+selected+'/'+crypto.randomUUID()+'.'+(file.type==='image/png'?'png':file.type==='image/webp'?'webp':'jpg');
     const {error:uploadError}=await db.storage.from('investment-listing-public').upload(path,file,{contentType:file.type,upsert:false,cacheControl:'3600'});
-    if(uploadError)throw uploadError;
-    const {data,error:insertError}=await db.from('investment_listing_media').insert({owner_id:user.id,draft_id:null,listing_code:selected,category:imageCategory,original_name:file.name.slice(0,240),private_path:'',public_path:path,content_type:file.type,size_bytes:file.size,sort_order:media.length,status:'approved'}).select('id').single();
-    if(insertError){await db.storage.from('investment-listing-public').remove([path]);throw insertError;}
-    if(imageCategory==='cover'&&!draft?.cover_path){
+    if(uploadError)throw Error('Envoi de '+file.name+' impossible : '+uploadError.message);
+    setUploadState({done:completed,total:files.length,stage:'Enregistrement de '+file.name+'…'});
+    const {data,error:insertError}=await db.from('investment_listing_media').insert({owner_id:user.id,draft_id:null,listing_code:selected,category:imageCategory,original_name:file.name.slice(0,240),private_path:'',public_path:path,content_type:file.type,size_bytes:file.size,sort_order:Math.max(-1,...media.filter(x=>x.listing_code===selected).map(x=>x.sort_order))+1+completed,status:'approved'}).select('id').single();
+    if(insertError){await db.storage.from('investment-listing-public').remove([path]);throw Error('Enregistrement de '+file.name+' impossible : '+insertError.message);}
+    completed++;setUploadState({done:completed,total:files.length,stage:'Image enregistrée : '+file.name});
+    if(imageCategory==='cover'&&!coverAssigned){
      const {error:ce}=await db.from('investment_listings').update({cover_path:path}).eq('code',selected);
-     if(ce)throw ce;
+     if(ce)throw Error('Image enregistrée, mais couverture non modifiée : '+ce.message);coverAssigned=true;
     }
    }
   },'Images enregistrées et disponibles dans la médiathèque.');
+  setUploadState(null);
+  if(completed>0&&completed<files.length){try{await reload();}catch{/* keep upload error */}}
  }
  async function approvePhoto(image:Media){
   if(!image.private_path)return;
@@ -132,16 +148,17 @@ export function InvestmentListingManager(){
  const pending=media.filter(x=>x.status==='pending');
  if(loading)return <div className="rounded-xl bg-white p-7 text-sm text-[#526672]">Chargement des annonces Investment…</div>;
  return <div className="space-y-6">
-  <div className="grid gap-5 lg:grid-cols-[270px_1fr]">
+  <div className="grid gap-5 lg:grid-cols-[270px_minmax(0,1fr)]">
    <aside className="self-start rounded-xl border border-[#dbe4e7] bg-white p-5"><h2 className="text-lg font-semibold text-[#193344]">Annonces Investment</h2><p className="mt-2 text-xs leading-6 text-[#6e808a]">Sélectionnez un projet pour préparer sa vitrine.</p>
-    <div className="mt-5 space-y-2">{investmentVentures.map(v=>{const item=items.find(x=>x.code===v.code);return <button key={v.code} onClick={()=>{setSelected(v.code);setSection('content');setError('');setNotice('');}} className={'w-full rounded-lg border p-3 text-left '+(selected===v.code?'border-[#193344] bg-[#eaf1f4]':'border-[#e2e9eb] bg-white')}><p className="text-sm font-medium text-[#193344]">{v.name}</p><p className="mt-1 text-[11px] text-[#72818a]">{item?.publication_status==='published'?'Publié':'Brouillon privé'}</p></button>})}</div>
+    <div className="mt-5 space-y-2">{investmentVentures.map(v=>{const item=items.find(x=>x.code===v.code);return <button key={v.code} disabled={busy} onClick={()=>{setSelected(v.code);setSection('content');setError('');setNotice('');}} className={'w-full rounded-lg border p-3 text-left '+(selected===v.code?'border-[#193344] bg-[#eaf1f4]':'border-[#e2e9eb] bg-white')}><p className="text-sm font-medium text-[#193344]">{v.name}</p><p className="mt-1 text-[11px] text-[#72818a]">{item?.publication_status==='published'?'Publié':'Brouillon privé'}</p></button>})}</div>
    </aside>
-   <div className="space-y-6">
+   <div className="min-w-0 space-y-6">
     <section className="rounded-xl border border-[#dbe4e7] bg-white p-6 md:p-8">
      <div className="flex flex-wrap justify-between gap-3"><div><p className="text-xs uppercase tracking-[.12em] text-[#6a7a83]">ÉDITEUR D'OPPORTUNITÉS</p><h2 className="mt-3 text-2xl font-semibold text-[#193344]">{investmentVentures.find(v=>v.code===selected)?.name}</h2></div><span className={'self-start rounded-lg px-3 py-2 text-xs font-medium '+(row?.publication_status==='published'?'bg-[#e8f5ec] text-[#236441]':'bg-[#f3f1ea] text-[#746438]')}>{row?.publication_status==='published'?'Publiée':'Brouillon'}</span></div>
-     <div className="mt-7 flex flex-wrap gap-2 border-b border-[#dce5e8] pb-4">{([['content','Présentation'],['finance','Financement'],['media','Photos et médias'],['publish','Publication']] as const).map(([k,t])=><button key={k} onClick={()=>setSection(k)} className={'rounded-md px-4 py-3 text-sm '+(section===k?'bg-[#193344] text-white':'bg-[#edf2f4] text-[#405763]')}>{t}</button>)}</div>
+     <div className="mt-7 flex flex-wrap gap-2 border-b border-[#dce5e8] pb-4">{([['content','Présentation'],['finance','Financement'],['media','Photos et médias'],['seo','SEO et métadonnées'],['publish','Publication']] as const).map(([k,t])=><button key={k} disabled={busy} onClick={()=>setSection(k)} className={'rounded-md px-4 py-3 text-sm '+(section===k?'bg-[#193344] text-white':'bg-[#edf2f4] text-[#405763]')}>{t}</button>)}</div>
      {error&&<p role="alert" className="mt-5 rounded-lg bg-red-50 p-4 text-sm text-red-800">{error}</p>}
      {notice&&<p role="status" className="mt-5 rounded-lg bg-[#e8f3ed] p-4 text-sm text-[#285c42]">{notice}</p>}
+     {section==='seo'&&<div className="mt-7 space-y-5 min-w-0"><p className="text-sm leading-7 text-[#586e78]">Titres et descriptions générés automatiquement pour chaque langue. Modifiez-les librement. Un champ vide utilise le texte automatique. Ces textes sont publics indépendamment du statut financier de l’annonce.</p>{!seoReady?<p role="status" className="text-sm">Chargement des métadonnées…</p>:<><button disabled={busy} type="button" onClick={()=>setSeo(Object.fromEntries(investmentSeoLocales.map(l=>[l,automaticInvestmentSeo(selected as InvestmentListing['code'],l)])))} className="rounded-lg border px-4 py-3 text-sm">Générer les quatre langues</button>{investmentSeoLocales.map(l=>{const fallback=automaticInvestmentSeo(selected as InvestmentListing['code'],l);return <div key={l} className="rounded-lg border border-[#dce4e7] p-4 min-w-0"><h3 className="font-medium text-[#193344]">{({fr:'Français',en:'English',ru:'Русский',ar:'العربية'})[l]}</h3><label className={label+' mt-3'}>Meta title<input className={input} dir={l==='ar'?'rtl':'auto'} maxLength={100} value={seo[l]?.title||''} placeholder={fallback.title} onChange={e=>setSeo(x=>({...x,[l]:{title:e.target.value,description:x[l]?.description||''}}))}/></label><label className={label+' mt-3'}>Meta description<textarea rows={3} className={input} dir={l==='ar'?'rtl':'auto'} maxLength={200} value={seo[l]?.description||''} placeholder={fallback.description} onChange={e=>setSeo(x=>({...x,[l]:{title:x[l]?.title||'',description:e.target.value}}))}/></label><div className="mt-3 break-words rounded-md bg-[#f5f7f8] p-3" dir={l==='ar'?'rtl':'auto'}><p className="text-sm text-[#193344]">{seo[l]?.title||fallback.title}</p><p className="mt-1 text-xs text-[#647780]">{seo[l]?.description||fallback.description}</p></div></div>})}<button disabled={busy} onClick={saveSeo} className="rounded-lg bg-[#193344] px-5 py-3 text-sm text-white disabled:opacity-60">{busy?'Enregistrement…':'Enregistrer les métadonnées'}</button></>}</div>}
      {draft&&section==='content'&&<div className="mt-7 grid gap-5 md:grid-cols-2">{fieldsIntro.map(([k,t])=><label key={k} className={label+' '+(String(k).includes('story')||String(k).includes('short')||String(k).includes('highlights')?'md:col-span-2':'')}>{t}{['short_fr','short_en','story_fr','story_en','highlights_fr','highlights_en'].includes(k)?<textarea rows={String(k).includes('story')?6:3} className={input} maxLength={k==='story_fr'||k==='story_en'?10000:1800} value={value(k)} onChange={e=>change(k,e.target.value)}/>:<input maxLength={230} className={input} value={value(k)} onChange={e=>change(k,e.target.value)}/>}</label>)}</div>}
      {draft&&section==='finance'&&<div className="mt-7 grid gap-5 md:grid-cols-2">
       <label className={label}>Montant recherché<input type="number" min="0" step="1" className={input} value={draft.target_amount??''} onChange={e=>change('target_amount',e.target.value===''?null:Number(e.target.value))}/></label>
@@ -157,7 +174,7 @@ export function InvestmentListingManager(){
       {financeFields.map(([k,t])=><label key={k} className={label+' md:col-span-2'}>{t}<textarea className={input} rows={3} maxLength={4000} value={value(k)} onChange={e=>change(k,e.target.value)}/></label>)}
      </div>}
      {section==='media'&&<div className="mt-7 space-y-10">
-      <div className="rounded-lg bg-[#f3f6f7] p-5"><p className="text-sm font-medium text-[#193344]">Ajouter une photo depuis l’administration</p><div className="mt-4 flex flex-wrap items-end gap-3"><label className={label}>Catégorie<select className={input} value={imageCategory} onChange={e=>setImageCategory(e.target.value)}><option value="cover">Couverture</option><option value="gallery">Galerie</option><option value="logo">Logo</option></select></label><label className={'inline-flex cursor-pointer items-center gap-2 rounded-lg bg-[#193344] px-5 py-3 text-sm text-white '+(busy?'opacity-50':'')}><ImagePlus size={17}/>Télécharger des images<input className="sr-only" type="file" multiple accept=".jpg,.jpeg,.png,.webp" disabled={busy} onChange={uploadAdminImages}/></label></div></div>
+      <div className="rounded-lg bg-[#f3f6f7] p-5"><p className="text-sm font-medium text-[#193344]">Ajouter une photo depuis l’administration</p><div className="mt-4 flex flex-wrap items-end gap-3"><label className={label}>Catégorie<select className={input} disabled={busy} value={imageCategory} onChange={e=>setImageCategory(e.target.value)}><option value="cover">Couverture</option><option value="gallery">Galerie</option><option value="logo">Logo</option></select></label><label className={'inline-flex cursor-pointer items-center gap-2 rounded-lg bg-[#193344] px-5 py-3 text-sm text-white '+(busy?'opacity-50':'')}>{busy&&uploadState?<Loader2 size={17} className="animate-spin"/>:<ImagePlus size={17}/>} {busy&&uploadState?'Envoi en cours…':'Télécharger des images'}<input className="sr-only" type="file" multiple accept=".jpg,.jpeg,.png,.webp" disabled={busy} onChange={uploadAdminImages}/></label></div><p className="mt-3 text-xs text-[#657781]">JPG, PNG ou WebP · 10 Mo maximum par image · 8 images par envoi. Une nouvelle image de couverture remplacera la couverture actuelle.</p>{uploadState&&<div role="status" aria-live="polite" className="mt-4 min-w-0 rounded-lg border border-[#cbd8dc] bg-white p-3"><p className="break-all text-sm">{uploadState.stage}</p><progress className="mt-3 w-full accent-[#193344]" max={uploadState.total} value={uploadState.done}/><p className="mt-1 text-xs">{uploadState.done} / {uploadState.total} images enregistrées</p></div>}</div>
       <div><h3 className="text-lg font-medium text-[#193344]">Médiathèque validée ({associated.length})</h3><div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{associated.map(m=><div className="overflow-hidden rounded-lg border border-[#dbe4e7]" key={m.id}><div className="aspect-[4/3] bg-[#e2e8eb]"><img alt={m.original_name} src={publicCoverUrl(m.public_path)} className="h-full w-full object-cover"/></div><div className="p-3"><p className="truncate text-xs text-[#405966]">{m.original_name}</p><div className="mt-3 flex flex-wrap gap-2"><button onClick={()=>makeCover(m)} disabled={busy} className="inline-flex items-center gap-1 rounded border border-[#cbd8dc] px-2 py-1 text-xs text-[#193344]"><Star size={13}/>{draft?.cover_path===m.public_path?'Couverture actuelle':'Couverture'}</button><button onClick={()=>movePhoto(m,-1)} disabled={busy} className="rounded border border-[#d6dfe3] px-2 py-1 text-xs">↑</button><button onClick={()=>movePhoto(m,1)} disabled={busy} className="rounded border border-[#d6dfe3] px-2 py-1 text-xs">↓</button></div></div></div>)}</div>{associated.length===0&&<p className="mt-4 text-sm text-[#6c7c84]">Téléchargez une photo ou validez un média transmis par l’entreprise.</p>}</div>
       <div><h3 className="text-lg font-medium text-[#193344]">Photos proposées par les entreprises ({pending.length})</h3><p className="mt-2 text-sm leading-7 text-[#6b7d86]">Vous choisissez le projet auquel rattacher chaque image avant qu’elle soit publiée.</p><label className="mt-4 block max-w-sm text-sm text-[#4b5d66]">Projet destinataire<select className={input} value={targetForMedia} onChange={e=>setTargetForMedia(e.target.value)}>{investmentVentures.map(v=><option value={v.code} key={v.code}>{v.name}</option>)}</select></label><div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{pending.map(m=><div key={m.id} className="overflow-hidden rounded-lg border border-[#dbe4e7]"><div className="aspect-[4/3] bg-[#e1e9ed]">{previewUrls[m.id]?<img className="h-full w-full object-cover" src={previewUrls[m.id]} alt={m.original_name}/>:<div className="flex h-full items-center justify-center text-xs text-[#71818a]">Image privée</div>}</div><div className="p-4"><p className="truncate text-xs font-medium text-[#193344]">{m.original_name}</p><p className="mt-1 text-xs text-[#687b83]">{m.category==='cover'?'Photo principale':m.category==='logo'?'Logo':'Galerie'}</p><div className="mt-3 flex flex-wrap gap-2"><button disabled={busy} onClick={()=>approvePhoto(m)} className="rounded bg-[#193344] px-3 py-2 text-xs text-white">Approuver</button><button disabled={busy} onClick={()=>rejectPhoto(m)} className="rounded border border-[#d8dfe3] px-3 py-2 text-xs">Refuser</button></div></div></div>)}</div></div>
      </div>}

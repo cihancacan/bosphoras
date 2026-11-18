@@ -18,14 +18,14 @@ export function InvestmentProjectCard({project:p,locale,priority=false}:{project
  const request=(fr?'/investissement/demande/':'/en/investment/request/')+code;
  const isPublic=p.publication_status==='published';
  const hasFinance=isPublic && p.target_amount!==null;
- return <article className="group flex h-full flex-col overflow-hidden rounded-xl border border-[#d8e1e5] bg-white shadow-[0_10px_45px_rgba(14,42,58,.045)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(14,42,58,.12)]">
+ return <article className="group flex min-w-0 h-full flex-col overflow-hidden rounded-xl border border-[#d8e1e5] bg-white shadow-[0_10px_45px_rgba(14,42,58,.045)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(14,42,58,.12)]">
   <Link href={detail} className="relative block aspect-[16/10] overflow-hidden bg-[#dce5e9]" aria-label={(fr?'Découvrir ':'Explore ')+title}>
    {picture?<img src={picture} alt={p.cover_path===aqmaIllustrationPath?(fr?'Illustration de travaux de rénovation':'Illustrative renovation work'):title+' — '+p.location} loading={priority?'eager':'lazy'} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.045]"/>:
     <div className="relative flex h-full flex-col justify-between overflow-hidden bg-[linear-gradient(135deg,#17384a,#557080_60%,#e0e7e5)] p-7 text-white"><div className="absolute -right-16 -top-10 h-64 w-64 rounded-full border border-white/25"/><div className="absolute bottom-0 right-6 h-28 w-48 rotate-[-15deg] border border-white/15"/><span className="relative z-10 text-xs tracking-[.24em]">BOSPHORAS INVESTMENT</span><strong className="relative z-10 max-w-[95%] text-[clamp(2.0rem,3vw,3.4rem)] font-normal leading-tight tracking-[-.055em]">{title}</strong></div>}
    {[aqmaIllustrationPath,cliniqeoIllustrationPath,medsestraIllustrationPath].includes(p.cover_path)&&<span className="absolute bottom-3 right-3 rounded bg-black/65 px-2 py-1 text-[10px] text-white">{fr?'Photo d’illustration':'Illustrative photo'}</span>}
    {isPublic&&p.investment_type&&<span className="absolute left-5 top-5 rounded bg-white/95 px-3 py-2 text-[11px] font-medium uppercase tracking-[.08em] text-[#193344]">{(fr?kindFr:kindEn)[p.investment_type]||p.investment_type}</span>}
   </Link>
-  <div className="flex flex-1 flex-col p-6 md:p-7">
+  <div className="flex min-w-0 break-words flex-1 flex-col p-6 md:p-7">
    <div className="flex items-center gap-2 text-xs text-[#687b85]"><MapPin size={14}/>{p.location||'International'}<span className="mx-1 text-[#b1bfc5]">·</span>{p.sector}</div>
    <Link href={detail} className="mt-4 block text-[clamp(1.45rem,2vw,2rem)] font-normal leading-tight tracking-[-.045em] text-[#193344] hover:underline hover:underline-offset-4">{title}</Link>
    {tagline&&<p className="mt-2 text-sm font-medium leading-6 text-[#3d5e6e]">{tagline}</p>}
@@ -37,9 +37,10 @@ export function InvestmentProjectCard({project:p,locale,priority=false}:{project
     {isPublic&&p.term_months!==null&&<div><p className="text-[11px] uppercase tracking-[.08em] text-[#7b8a92]">{fr?'Durée':'Term'}</p><p className="mt-2 text-base font-semibold text-[#193344]">{p.term_months} {fr?'mois':'months'}</p></div>}
     {isPublic&&p.first_payment_month!==null&&p.first_payment_month>0&&<div className="col-span-2"><p className="text-[11px] uppercase tracking-[.08em] text-[#7b8a92]">{fr?'Remboursement à partir du':'Repayments starting in'}</p><p className="mt-2 text-base font-semibold text-[#193344]">{fr?p.first_payment_month+(p.first_payment_month===1?'er mois':'e mois'):'Month '+p.first_payment_month}</p></div>}
    </div>}
+   <Link href={request+'?kind=proposal'} className="mt-4 block text-sm font-medium text-[#193344] underline underline-offset-4">{fr?'Faire une autre proposition':'Make an alternative proposal'}</Link>
    <Link href={detail+'#simulation'} className="mt-5 text-sm font-medium text-[#193344] underline underline-offset-4">{fr?'Simuler mon investissement':'Simulate my investment'}</Link>
    {safeInvestmentWebsite(p.official_website)&&<a href={safeInvestmentWebsite(p.official_website)} target="_blank" rel="noopener noreferrer" className="mt-5 text-sm text-[#193344] underline underline-offset-4">{fr?'Site officiel':'Official website'} ↗</a>}
-   <div className="mt-7 grid grid-cols-2 gap-3"><Link href={detail} className="flex min-h-12 items-center justify-center gap-2 rounded-md border border-[#cad6dc] px-4 py-3 text-center text-xs font-medium text-[#193344] transition hover:border-[#193344]">{fr?'Voir le projet':'View project'}<ArrowRight size={15}/></Link><Link href={request} className="flex min-h-12 items-center justify-center rounded-md bg-[#193344] px-4 py-3 text-center text-xs font-medium text-white hover:bg-[#305364]">{fr?'Demander un placement':'Request investment'}</Link></div>
+   <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2"><Link href={detail} className="flex min-h-12 items-center justify-center gap-2 rounded-md border border-[#cad6dc] px-4 py-3 text-center text-xs font-medium text-[#193344] transition hover:border-[#193344]">{fr?'Voir le projet':'View project'}<ArrowRight size={15}/></Link><Link href={request} className="flex min-h-12 items-center justify-center rounded-md bg-[#193344] px-4 py-3 text-center text-xs font-medium text-white hover:bg-[#305364]">{fr?'Demander un placement':'Request investment'}</Link></div>
   </div>
  </article>;
 }

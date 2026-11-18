@@ -7,7 +7,7 @@ const db:any=getPortalSupabase();
 type Media={id:string;owner_id:string;draft_id:string;category:string;original_name:string;private_path:string;public_path:string;status:string;created_at:string};
 const allowed=new Set(['image/jpeg','image/png','image/webp']);
 export function InvestmentEntrepreneurPhotos({draftId,userId,adminPreview=false,locale='fr'}:{draftId:string;userId:string;adminPreview?:boolean;locale?:PortalLocale}){
- const [items,setItems]=useState<Media[]>([]),[previews,setPreviews]=useState<Record<string,string>>({}),[category,setCategory]=useState('cover'),[busy,setBusy]=useState(false),[error,setError]=useState(''),[notice,setNotice]=useState('');
+ const [items,setItems]=useState<Media[]>([]),[previews,setPreviews]=useState<Record<string,string>>({}),[category,setCategory]=useState('cover'),[busy,setBusy]=useState(false),[error,setError]=useState(''),[notice,setNotice]=useState(''),[progress,setProgress]=useState<{done:number;total:number;name:string}|null>(null);
  useEffect(()=>{let alive=true;if(!draftId||adminPreview)return;
   (async()=>{
    const {data,error}=await db.from('investment_listing_media').select('*').eq('draft_id',draftId).eq('owner_id',userId).order('created_at',{ascending:false});
@@ -26,9 +26,9 @@ export function InvestmentEntrepreneurPhotos({draftId,userId,adminPreview=false,
  },[draftId,userId,adminPreview]);
  async function upload(e:ChangeEvent<HTMLInputElement>){
   const files=Array.from(e.target.files||[]);e.target.value='';
-  if(!files.length||adminPreview)return;setBusy(true);setError('');setNotice('');
+  if(!files.length||adminPreview||busy)return;if(files.length>8){setError(pick(locale,'8 images maximum.','Up to 8 images.','Не более 8 изображений.','ثماني صور كحد أقصى.'));return;}setBusy(true);let completed=0;setProgress({done:0,total:files.length,name:files[0].name});setError('');setNotice('');
   try{
-   for(const file of files.slice(0,8)){
+   for(const file of files){setProgress({done:completed,total:files.length,name:file.name});
     if(!allowed.has(file.type)||file.size>10485760||file.size===0)throw Error(pick(locale,"Choisissez une image JPG, PNG ou WebP de 10 Mo maximum.","Choose a JPG, PNG or WebP image up to 10 MB.","Выберите JPG, PNG или WebP до 10 МБ.","اختر صورة JPG أو PNG أو WebP لا تتجاوز 10 ميغابايت."));
     const path=userId+'/'+draftId+'/'+crypto.randomUUID()+'-'+file.name.replace(/[^a-z0-9._-]/gi,'-').slice(-100);
     const {error:storageError}=await db.storage.from('investment-dossiers').upload(path,file,{contentType:file.type,upsert:false});
@@ -37,13 +37,13 @@ export function InvestmentEntrepreneurPhotos({draftId,userId,adminPreview=false,
       owner_id:userId,draft_id:draftId,category,original_name:file.name.slice(0,240),private_path:path,content_type:file.type,size_bytes:file.size,sort_order:items.length
     }).select('*').single();
     if(dbError){await db.storage.from('investment-dossiers').remove([path]);throw dbError;}
-    setItems(x=>[row,...x]);
+    setItems(x=>[row,...x]);completed++;setProgress({done:completed,total:files.length,name:file.name});
     const {data:signed}=await db.storage.from('investment-dossiers').createSignedUrl(path,360);
     if(signed?.signedUrl)setPreviews(x=>({...x,[row.id]:signed.signedUrl}));
    }
    setNotice(pick(locale,"Photos enregistrées. Leur publication sera effectuée depuis l’administration Bosphoras.","Photos saved. Publication is managed by Bosphoras administration.","Фотографии сохранены. Публикацией управляет администрация Bosphoras.","تم حفظ الصور. يتولى مسؤولو بوسفوراس نشرها."));
-  }catch(e){setError(e instanceof Error?e.message:pick(locale,"Erreur pendant l’envoi.","Upload error.","Ошибка загрузки.","خطأ أثناء التحميل."));}
-  finally{setBusy(false);}
+  }catch(e){setError(typeof e==='object'&&e&&'message' in e?String(e.message):pick(locale,"Erreur pendant l’envoi.","Upload error.","Ошибка загрузки.","خطأ أثناء التحميل."));}
+  finally{setBusy(false);setProgress(null);}
  }
  async function remove(item:Media){
   if(item.status==='approved')return;
@@ -65,6 +65,7 @@ export function InvestmentEntrepreneurPhotos({draftId,userId,adminPreview=false,
    <label className={'inline-flex cursor-pointer items-center gap-3 rounded-lg bg-[#193344] px-5 py-3 text-sm text-white '+(busy?'opacity-60':'')}><ImagePlus size={18}/>{busy?pick(locale,"Envoi…","Uploading…","Загрузка…","جارٍ التحميل…"):pick(locale,"Ajouter des photos","Add photos","Добавить фотографии","إضافة صور")}<input type="file" accept=".jpg,.jpeg,.png,.webp" multiple disabled={busy||adminPreview} className="sr-only" onChange={upload}/></label>
   </div>
   <p className="mt-3 text-xs text-[#78878d]">{pick(locale,"Formats JPG, PNG ou WebP · 10 Mo par image · jusqu’à huit images par envoi.","JPG, PNG or WebP · 10 MB per image · up to eight per upload.","JPG, PNG или WebP · до 10 МБ на изображение · до восьми за раз.","JPG أو PNG أو WebP · 10 ميغابايت للصورة · حتى ثماني صور دفعة واحدة.")}</p>
+  {progress&&<div role="status" aria-live="polite" className="mt-4 min-w-0 rounded-md border p-3 text-xs"><p className="break-all">{progress.name}</p><progress max={progress.total} value={progress.done} className="mt-2 w-full"/><p>{progress.done} / {progress.total}</p></div>}
   {notice&&<p className="mt-5 rounded-lg bg-[#eef6f1] p-3 text-sm text-[#34634c]" role="status">{notice}</p>}
   {error&&<p className="mt-5 rounded-lg bg-red-50 p-3 text-sm text-red-800" role="alert">{error}</p>}
   <div className="mt-7 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">{items.map(item=><div key={item.id} className="overflow-hidden rounded-lg border border-[#dce5e8] bg-[#f7f9fa]">

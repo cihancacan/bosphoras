@@ -26,10 +26,10 @@ export async function POST(request:NextRequest){
   const source=clean(data?.source_path,300);
   const currency=data?.currency==='USD'?'USD':data?.currency==='AED'?'AED':'EUR';
   const amount=data?.requested_amount===null||data?.requested_amount===''||data?.requested_amount===undefined?null:Number(data.requested_amount);
-  if(!['placement','project_access','company_finance'].includes(kind)||!name||name.length<2||!emails.test(email)||!data.consent
+  if(!['placement','project_access','company_finance','counterproposal'].includes(kind)||!name||name.length<2||!emails.test(email)||!data.consent
     ||(kind!=='company_finance'&&!codes.has(code))
     ||(amount!==null&&(!Number.isFinite(amount)||amount<1000||amount>100000000))
-    ||(kind==='placement'&&amount===null)
+    ||(kind==='placement'&&amount===null)||(kind==='counterproposal'&&notes.trim().length<10)
   )return NextResponse.json({ok:false,error:'INVALID_REQUEST'},{status:400});
   const db:any=createIsolatedPortalSupabase();
   const {error}=await db.from('investment_leads').insert({

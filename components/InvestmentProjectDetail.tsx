@@ -35,8 +35,8 @@ export async function InvestmentProjectDetail({code,locale}:{code:InvestmentVent
   <main lang={locale} className="bg-[#f5f6f5] pb-24 pt-[4.85rem] text-[#243941]">
    <div className="mx-auto max-w-[1450px] px-6 pt-9 md:px-12">
     <Link href={index} className="inline-flex items-center gap-2 text-sm text-[#546d79] hover:text-[#193344]"><ArrowLeft size={16}/>{fr?'Tous les projets':'All projects'}</Link>
-    <div className="mt-10 flex flex-wrap items-end justify-between gap-5"><div><p className="text-xs font-medium uppercase tracking-[.17em] text-[#657982]">{p.sector||v.sector} · {p.location||v.region}</p><h1 className="mt-4 text-[clamp(2.8rem,5.7vw,5.5rem)] font-normal tracking-[-.06em] leading-[1.08] text-[#193344]">{title}</h1>{(fr?p.tagline_fr:p.tagline_en)&&<p className="mt-6 max-w-4xl text-xl leading-8 text-[#536b77]">{fr?p.tagline_fr:p.tagline_en}</p>}</div><Link href={request} className="inline-flex min-h-13 items-center gap-3 rounded-md bg-[#193344] px-7 py-4 text-sm font-medium text-white hover:bg-[#30576a]">{fr?'Demander un placement':'Request investment'}<ArrowRight size={16}/></Link></div>
-    <div className="mt-10 grid gap-3 lg:grid-cols-[1.65fr_.75fr]">
+    <div className="mt-10 flex min-w-0 flex-wrap items-end justify-between gap-5"><div className="min-w-0 max-w-full break-words"><p className="text-xs font-medium uppercase tracking-[.17em] text-[#657982]">{p.sector||v.sector} · {p.location||v.region}</p><h1 className="mt-4 text-[clamp(2.8rem,5.7vw,5.5rem)] font-normal tracking-[-.06em] leading-[1.08] text-[#193344]">{title}</h1>{(fr?p.tagline_fr:p.tagline_en)&&<p className="mt-6 max-w-4xl text-xl leading-8 text-[#536b77]">{fr?p.tagline_fr:p.tagline_en}</p>}</div><Link href={request} className="inline-flex min-h-13 items-center gap-3 rounded-md bg-[#193344] px-7 py-4 text-sm font-medium text-white hover:bg-[#30576a]">{fr?'Demander un placement':'Request investment'}<ArrowRight size={16}/></Link></div>
+    <div className="mt-10 grid gap-3 lg:grid-cols-[minmax(0,1.65fr)_minmax(0,.75fr)]">
      <div className="relative min-h-[300px] overflow-hidden rounded-xl bg-[linear-gradient(135deg,#12334a,#748b99)] md:min-h-[540px]">
       {cover?<img src={cover} alt={p.cover_path===aqmaIllustrationPath?(fr?'Illustration de travaux de rénovation':'Illustrative renovation work'):title+' — '+p.location} className="absolute inset-0 h-full w-full object-cover"/>:<div className="absolute inset-0 flex items-end p-8 md:p-14"><span className="max-w-xl text-[clamp(2.5rem,4.5vw,4.5rem)] leading-tight tracking-[-.06em] text-white">{title}</span></div>}
      </div>
@@ -49,8 +49,8 @@ export async function InvestmentProjectDetail({code,locale}:{code:InvestmentVent
      </div>
     </div>
    </div>
-   <div className="mx-auto mt-11 grid max-w-[1450px] gap-8 px-6 md:px-12 lg:grid-cols-[1.3fr_.7fr] lg:gap-12">
-    <div className="space-y-8">
+   <div className="mx-auto mt-11 grid max-w-[1450px] gap-8 px-6 md:px-12 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,.7fr)] lg:gap-12">
+    <div className="min-w-0 break-words space-y-8">
      <InvestmentSimulator project={p} locale={locale}/>
      <section className="rounded-xl border border-[#dce4e8] bg-white p-7 md:p-10"><p className="text-xs uppercase tracking-[.18em] text-[#71848c]">{fr?'L’entreprise':'The company'}</p><h2 className="mt-4 text-3xl font-normal tracking-[-.045em] text-[#193344]">{fr?'L’opportunité en détail':'Opportunity overview'}</h2><div className="mt-6 space-y-5">{story.split(/\n\n+/).map((part,i)=><p key={i} className="whitespace-pre-line text-base leading-9 text-[#506570]">{part}</p>)}</div></section>
      {highlights.length>0&&<section className="rounded-xl border border-[#dce4e8] bg-white p-7 md:p-10"><h2 className="text-2xl font-normal tracking-[-.04em] text-[#193344]">{fr?'Les points forts':'Key highlights'}</h2><div className="mt-7 grid gap-4 md:grid-cols-2">{highlights.map(x=><div key={x} className="flex gap-3 rounded-lg bg-[#f5f8f8] p-4"><span className="mt-1 text-[#193344]">✓</span><p className="text-sm leading-7 text-[#4c626c]">{x}</p></div>)}</div></section>}
@@ -61,7 +61,7 @@ export async function InvestmentProjectDetail({code,locale}:{code:InvestmentVent
     </div>
     <aside className="self-start space-y-5 lg:sticky lg:top-28">
      <section className="rounded-xl border border-[#dce4e8] bg-white p-7 shadow-[0_14px_45px_rgba(17,45,61,.08)]"><p className="text-xs uppercase tracking-[.18em] text-[#6c8088]">{fr?'En bref':'At a glance'}</p><h2 className="mt-4 text-2xl font-normal text-[#193344]">{fr?'Données clés':'Key figures'}</h2>
-      {proposedLoan(code)&&p.publication_status!=='published'?<div className="mt-6"><ProposedLoanFigures locale={locale} code={code}/></div>:<div className="mt-6 grid grid-cols-2 gap-x-4 gap-y-6">
+      {proposedLoan(code)&&p.publication_status!=='published'?<div className="mt-6"><ProposedLoanFigures locale={locale} code={code}/></div>:<div className="mt-6 grid min-w-0 grid-cols-2 gap-x-4 gap-y-6 break-words">
        <div><p className="text-xs text-[#71858e]">{fr?'Financement recherché':'Funding target'}</p><p className="mt-2 text-xl font-semibold text-[#193344]">{target||(fr?'Sur demande':'On enquiry')}</p></div>
        <div><p className="text-xs text-[#71858e]">{fr?'Ticket minimum':'Minimum ticket'}</p><p className="mt-2 text-xl font-semibold text-[#193344]">{ticket||(fr?'Sur demande':'On enquiry')}</p></div>
        {p.publication_status==='published'&&p.annual_rate!==null&&<div><p className="text-xs text-[#71858e]">{['loan','bond'].includes(p.investment_type)?(fr?'Taux annuel sur capital initial':'Annual rate on initial principal'):(fr?'Taux annuel indicatif':'Indicative annual rate')}</p><p className="mt-2 text-xl font-semibold text-[#193344]">{p.annual_rate}%</p></div>}
@@ -72,6 +72,7 @@ export async function InvestmentProjectDetail({code,locale}:{code:InvestmentVent
        {p.payment_frequency&&<div><p className="text-xs text-[#71858e]">{fr?'Paiements':'Payment frequency'}</p><p className="mt-2 text-sm font-semibold text-[#193344]">{freq[p.payment_frequency]?.[fr?0:1]||p.payment_frequency}</p></div>}
       </div>}
       <Link href={request} className="mt-8 flex min-h-14 items-center justify-center gap-3 rounded-lg bg-[#193344] px-5 py-4 text-sm font-medium text-white">{fr?'Demander un placement':'Request investment'}<ArrowRight size={17}/></Link>
+      <Link href={request+'?kind=proposal'} className="mt-3 block rounded-lg border border-[#cad6dc] px-4 py-3 text-center text-sm font-medium text-[#193344]">{fr?'Faire une autre proposition':'Make an alternative proposal'}</Link>
       <Link href={request+'?kind=access'} className="mt-4 block text-center text-sm font-medium text-[#193344] underline underline-offset-4">{fr?'Demander l’accès au dossier':'Request dossier access'}</Link>
       {proposedLoan(code)&&<a href="/documents/panorama-grup-projet-contrat-pret.pdf" download className="mt-4 flex items-center justify-center gap-2 rounded-lg border border-[#cad6dc] px-5 py-3 text-center text-sm text-[#193344]"><FileText size={16}/>{fr?'Consulter le projet de contrat (PDF)':'View draft loan agreement (French PDF)'}</a>}
       {safeInvestmentWebsite(p.official_website)&&<a href={safeInvestmentWebsite(p.official_website)} target="_blank" rel="noopener noreferrer" className="mt-5 block rounded-lg border border-[#cad6dc] px-5 py-3 text-center text-sm text-[#193344]">{fr?'Visiter le site officiel':'Visit official website'} ↗</a>}
