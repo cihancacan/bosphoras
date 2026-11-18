@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/en/import-export-turkey-transit-trade';
+const url = 'https://www.bosphoras.com/en/import-export-turkey-transit-trade';
 const title = 'Import-export in Turkey: Transit Trade and International Commerce | Bosphoras';
 const description = 'Bosphoras guide to import-export in Turkey: transit trade, Turkish company, international commerce, suppliers, clients, customs, logistics, banking, payments, tax and substance.';
 const updatedAt = '2026-06-05';
@@ -26,7 +26,7 @@ const faqs = [
   ['What is Bosphoras’ role?', 'Bosphoras coordinates the assessment with lawyer, tax advisor, accountant, bank, freight forwarders, insurers and local partners.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/import-export-turquie-transit-trade', en: url, ru: 'https://bosphoras.com/ru/import-export-turtsiya-tranzitnaya-torgovlya', ar: 'https://bosphoras.com/ar/import-export-turkey-transit-trade', 'x-default': 'https://bosphoras.com/import-export-turquie-transit-trade' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'en_US', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/import-export-turquie-transit-trade', en: url, ru: 'https://www.bosphoras.com/ru/import-export-turtsiya-tranzitnaya-torgovlya', ar: 'https://www.bosphoras.com/ar/import-export-turkey-transit-trade', 'x-default': 'https://www.bosphoras.com/import-export-turquie-transit-trade' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'en_US', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

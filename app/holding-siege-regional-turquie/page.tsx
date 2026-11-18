@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/holding-siege-regional-turquie';
+const url = 'https://www.bosphoras.com/holding-siege-regional-turquie';
 const title = 'Holding et siège régional en Turquie : structure, fiscalité et substance | Bosphoras';
 const description = 'Guide Bosphoras sur la holding et le siège régional en Turquie : société, gouvernance, services qualifiés, substance, fiscalité, banque, management, équipes, contrats et investisseurs étrangers.';
 const updatedAt = '2026-06-05';
@@ -26,7 +26,7 @@ const faqs = [
   ['Quel est le rôle de Bosphoras ?', 'Bosphoras coordonne le diagnostic avec avocat, fiscaliste, comptable, banque, bureaux, recrutement et partenaires locaux.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: url, en: 'https://bosphoras.com/en/holding-regional-headquarters-turkey', ru: 'https://bosphoras.com/ru/holding-regionalnyy-ofis-turtsiya', ar: 'https://bosphoras.com/ar/holding-regional-headquarters-turkey', 'x-default': url } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'fr_FR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: url, en: 'https://www.bosphoras.com/en/holding-regional-headquarters-turkey', ru: 'https://www.bosphoras.com/ru/holding-regionalnyy-ofis-turtsiya', ar: 'https://www.bosphoras.com/ar/holding-regional-headquarters-turkey', 'x-default': url } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'fr_FR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

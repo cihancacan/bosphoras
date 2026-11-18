@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/ru/startup-turtsiya-nalogovye-lgoty-investory';
+const url = 'https://www.bosphoras.com/ru/startup-turtsiya-nalogovye-lgoty-investory';
 const title = 'Стартапы в Турции: налоги, опционы и инвесторы | Bosphoras';
 const description = 'Гид Bosphoras для стартапов в Турции: налоги, опционы, иностранные инвесторы, technopark, R&D, компания, банк, fundraising, команда, IP, контракты, резиденция и substance.';
 const updatedAt = '2026-06-05';
@@ -26,7 +26,7 @@ const faqs = [
   ['Роль Bosphoras?', 'Bosphoras координирует частный анализ с юристом, налоговым консультантом, бухгалтером, банком, офисами, рекрутингом и локальными партнерами.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/startup-turquie-avantages-fiscaux-investisseurs', en: 'https://bosphoras.com/en/startup-turkey-tax-benefits-investors', ru: url, ar: 'https://bosphoras.com/ar/startup-turkey-tax-benefits-investors', 'x-default': 'https://bosphoras.com/startup-turquie-avantages-fiscaux-investisseurs' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ru_RU', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/startup-turquie-avantages-fiscaux-investisseurs', en: 'https://www.bosphoras.com/en/startup-turkey-tax-benefits-investors', ru: url, ar: 'https://www.bosphoras.com/ar/startup-turkey-tax-benefits-investors', 'x-default': 'https://www.bosphoras.com/startup-turquie-avantages-fiscaux-investisseurs' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ru_RU', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

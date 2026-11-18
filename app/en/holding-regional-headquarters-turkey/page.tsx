@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/en/holding-regional-headquarters-turkey';
+const url = 'https://www.bosphoras.com/en/holding-regional-headquarters-turkey';
 const title = 'Holding and Regional Headquarters in Turkey: Structure, Tax and Substance | Bosphoras';
 const description = 'Bosphoras guide to holding and regional headquarters in Turkey: company, governance, qualified services, substance, tax, banking, management, teams, contracts and foreign investors.';
 const updatedAt = '2026-06-05';
@@ -26,7 +26,7 @@ const faqs = [
   ['What is Bosphoras’ role?', 'Bosphoras coordinates the private assessment with lawyer, tax advisor, accountant, bank, offices, recruitment and local partners.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/holding-siege-regional-turquie', en: url, ru: 'https://bosphoras.com/ru/holding-regionalnyy-ofis-turtsiya', ar: 'https://bosphoras.com/ar/holding-regional-headquarters-turkey', 'x-default': 'https://bosphoras.com/holding-siege-regional-turquie' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'en_US', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://www.bosphoras.com/holding-siege-regional-turquie', en: url, ru: 'https://www.bosphoras.com/ru/holding-regionalnyy-ofis-turtsiya', ar: 'https://www.bosphoras.com/ar/holding-regional-headquarters-turkey', 'x-default': 'https://www.bosphoras.com/holding-siege-regional-turquie' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'en_US', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

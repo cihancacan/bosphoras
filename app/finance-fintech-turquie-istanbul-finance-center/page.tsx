@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/finance-fintech-turquie-istanbul-finance-center';
+const url = 'https://www.bosphoras.com/finance-fintech-turquie-istanbul-finance-center';
 const title = 'Finance et fintech en Turquie : Istanbul Finance Center | Bosphoras';
 const description = 'Guide Bosphoras sur la finance et la fintech en Turquie : Istanbul Finance Center, loi n°7582, services financiers, banques, fintech, paiement, conformité, licence, résidence, fiscalité et substance.';
 const updatedAt = '2026-06-05';
@@ -26,7 +26,7 @@ const faqs = [
   ['Quel est le rôle de Bosphoras ?', 'Bosphoras coordonne le diagnostic avec avocat, fiscaliste, comptable, banque, bureaux, recrutement et partenaires locaux.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: url, en: 'https://bosphoras.com/en/finance-fintech-turkey-istanbul-finance-center', ru: 'https://bosphoras.com/ru/finansy-fintech-turtsiya-istanbul-finance-center', ar: 'https://bosphoras.com/ar/finance-fintech-turkey-istanbul-finance-center', 'x-default': url } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'fr_FR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: url, en: 'https://www.bosphoras.com/en/finance-fintech-turkey-istanbul-finance-center', ru: 'https://www.bosphoras.com/ru/finansy-fintech-turtsiya-istanbul-finance-center', ar: 'https://www.bosphoras.com/ar/finance-fintech-turkey-istanbul-finance-center', 'x-default': url } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'fr_FR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (

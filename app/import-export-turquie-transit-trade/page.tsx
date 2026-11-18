@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
-const url = 'https://bosphoras.com/import-export-turquie-transit-trade';
+const url = 'https://www.bosphoras.com/import-export-turquie-transit-trade';
 const title = 'Import-export en Turquie : transit trade et commerce international | Bosphoras';
 const description = 'Guide Bosphoras sur l’import-export en Turquie : transit trade, société turque, commerce international, fournisseurs, clients, douane, logistique, banque, paiements, fiscalité et substance.';
 const updatedAt = '2026-06-05';
@@ -26,7 +26,7 @@ const faqs = [
   ['Quel est le rôle de Bosphoras ?', 'Bosphoras coordonne l’analyse avec avocat, fiscaliste, comptable, banque, transitaires, assureurs et partenaires locaux.'],
 ];
 
-export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: url, en: 'https://bosphoras.com/en/import-export-turkey-transit-trade', ru: 'https://bosphoras.com/ru/import-export-turtsiya-tranzitnaya-torgovlya', ar: 'https://bosphoras.com/ar/import-export-turkey-transit-trade', 'x-default': url } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'fr_FR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: url, en: 'https://www.bosphoras.com/en/import-export-turkey-transit-trade', ru: 'https://www.bosphoras.com/ru/import-export-turtsiya-tranzitnaya-torgovlya', ar: 'https://www.bosphoras.com/ar/import-export-turkey-transit-trade', 'x-default': url } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'fr_FR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
 
 export default function Page() {
   return (
