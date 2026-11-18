@@ -1,3 +1,4 @@
+import { taxRelocationPaths } from '@/data/taxRelocationPaths';
 import type { MetadataRoute } from 'next';
 import { indexedTravelUrls } from '@/data/travel/guideIndexation';
 import seoRedirects from '@/data/seo-redirects.json';
@@ -69,6 +70,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for(const locale of ['ru','ar']) addEntry({url:absoluteUrl('/'+locale+'/investment/projects/'+code),changeFrequency:'weekly',priority:0.85});
   }
 
+  for (const path of Object.values(taxRelocationPaths)) addEntry({url:absoluteUrl(path),changeFrequency:'monthly',priority:0.95,lastModified:new Date('2026-11-18')});
   // Additional public editorial and institutional routes.
   for (const path of [
   "/agro-industrie-turquie-investissement-fiscalite",

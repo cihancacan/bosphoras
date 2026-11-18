@@ -1,3 +1,5 @@
+import { taxRelocationPaths, taxRelocationLabels } from '@/data/taxRelocationPaths';
+import { taxRelocationEditorial } from '@/data/taxRelocationEditorial';
 import Link from 'next/link';
 import {
   ArrowRight,
@@ -326,6 +328,7 @@ export async function HomeProjectPaths({ locale }: { locale: Locale }) {
             ))}
           </div>
 
+          <Link href={taxRelocationPaths[locale]} className="mt-8 block border border-[#d9e0e2] bg-[#193344] text-white p-7 md:p-9"><h3 className="font-serif text-3xl">{taxRelocationLabels[locale]}</h3><p className="mt-3 leading-7">{taxRelocationEditorial[locale].home}</p><span className="inline-block mt-4 underline underline-offset-4">{taxRelocationEditorial[locale].cta}</span></Link>
           <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-[#465159]">
             <span>{c.complexProject}</span>
             <Link href={assessmentHref} className={textLink}>{c.complexProjectCta}<ArrowRight size={15} aria-hidden="true" /></Link>

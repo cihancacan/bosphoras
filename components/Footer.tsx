@@ -1,3 +1,4 @@
+import { taxRelocationPaths, taxRelocationLabels } from '@/data/taxRelocationPaths';
 import Link from 'next/link';
 import type { Locale } from '@/lib/i18n';
 import { t, localeDir } from '@/lib/i18n';
@@ -19,6 +20,7 @@ export function Footer({ locale }: FooterProps) {
     { label: locale === 'fr' ? 'Installation en Turquie' : locale === 'en' ? 'Relocate to Turkey' : locale === 'ru' ? 'Переезд в Турцию' : 'الانتقال إلى تركيا', href: linkTo('relocate') },
     { label: locale === 'fr' ? 'Conseil Juridique & Fiscal' : locale === 'en' ? 'Legal & Tax Advisory' : locale === 'ru' ? 'Юридические и налоговые услуги' : 'الاستشارات القانونية والضريبية', href: linkTo('legal-tax') },
     { label: locale === 'fr' ? "Création d'Entreprise" : locale === 'en' ? 'Company Formation' : locale === 'ru' ? 'Создание компании' : 'تأسيس الشركات', href: linkTo('business-setup') },
+    { label: taxRelocationLabels[locale], href: taxRelocationPaths[locale] },
     { label: locale === 'fr' ? 'Santé & Assurance' : locale === 'en' ? 'Health & Insurance' : locale === 'ru' ? 'Здоровье и страхование' : 'الصحة والتأمين', href: linkTo('health-insurance') },
     { label: locale === 'fr' ? 'Immobilier & Relocation' : locale === 'en' ? 'Property & Relocation' : locale === 'ru' ? 'Недвижимость и переезд' : 'العقارات والانتقال', href: linkTo('property') },
     { label: locale === 'fr' ? 'Investissement' : locale === 'en' ? 'Investment Partners' : locale === 'ru' ? 'Инвестиции' : 'الاستثمار', href: locale === 'fr' ? '/investissement' : '/'+locale+'/investment' },

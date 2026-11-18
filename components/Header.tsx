@@ -1,5 +1,6 @@
 'use client';
 
+import { taxRelocationPaths, taxRelocationLabels } from '@/data/taxRelocationPaths';
 import Link from 'next/link';
 import { useState } from 'react';
 import { Globe2, KeyRound, Menu, Search, X } from 'lucide-react';
@@ -31,6 +32,7 @@ const specialLocalizedPaths: Array<Record<Locale, string>> = [
   { fr: '/peninsula-istanbul', en: '/en/peninsula-istanbul', ru: '/ru/peninsula-istanbul', ar: '/ar/peninsula-istanbul' },
   { fr: '/transfert-aeroport-istanbul', en: '/en/istanbul-airport-transfer', ru: '/ru/transfer-aeroport-stambul', ar: '/ar/istanbul-airport-transfer' },
   corporateRelocationPaths,
+  taxRelocationPaths,
   { fr: '/investissement', en: '/en/investment', ru: '/ru/investment', ar: '/ar/investment' },
   { fr: '/exoneration-fiscale-turquie-revenus-etrangers', en: '/en/turkey-tax-exemption-foreign-income', ru: '/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody', ar: '/ar/turkey-tax-exemption-foreign-income' },
   { fr: '/strategie-fiscale-turquie-investisseurs-etrangers', en: '/en/turkey-tax-strategy-foreign-investors', ru: '/ru/nalogovaya-strategiya-turtsii-inostrannye-investory', ar: '/ar/turkey-tax-strategy-foreign-investors' },
@@ -81,10 +83,11 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
 
   const groups: MenuGroup[] = [
     { label: labels.services, href: linkTo('services'), items: [
+      { label: locale === 'fr' ? "Creation d'Entreprise" : locale === 'en' ? 'Company Formation' : locale === 'ru' ? 'Создание компании' : 'تأسيس الشركات', href: linkTo('business-setup'), description: locale === 'fr' ? 'Societe, comptabilite, bureaux.' : locale === 'en' ? 'Company, accounting, offices.' : locale === 'ru' ? 'Компания, бухгалтерия, офисы.' : 'شركة، محاسبة ومكاتب.' },
+      { label: taxRelocationLabels[locale], href: taxRelocationPaths[locale], description: locale === 'fr' ? 'Réforme fiscale 2026, résidence et exonération de 20 ans.' : locale === 'en' ? '2026 tax reform, residence and 20-year exemption.' : locale === 'ru' ? 'Реформа 2026, резидентство и льгота на 20 лет.' : 'إصلاح 2026 والإقامة والإعفاء لمدة 20 عاماً.' },
       { label: locale === 'fr' ? 'Installation en Turquie' : locale === 'en' ? 'Relocate to Turkey' : locale === 'ru' ? 'Переезд в Турцию' : 'الانتقال إلى تركيا', href: linkTo('relocate'), description: locale === 'fr' ? 'Residence, famille, ville, demarches.' : locale === 'en' ? 'Residence, family, city, formalities.' : locale === 'ru' ? 'Резиденция, семья, город, процедуры.' : 'الإقامة، العائلة، المدينة والإجراءات.' },
       { label: locale === 'fr' ? 'Relocation corporate' : locale === 'en' ? 'Corporate Relocation' : locale === 'ru' ? 'Корпоративная релокация' : 'انتقال الشركات', href: corporateRelocationLink, description: locale === 'fr' ? 'Logement, titre de sejour, immigration et installation des cadres expatries.' : locale === 'en' ? 'Housing, residence permit, immigration and executive relocation.' : locale === 'ru' ? 'Жильё, ВНЖ, иммиграция и сопровождение руководителей.' : 'السكن والإقامة والهجرة وانتقال المدراء.' },
       { label: locale === 'fr' ? 'Conseil Juridique & Fiscal' : locale === 'en' ? 'Legal & Tax Advisory' : locale === 'ru' ? 'Право и налоги' : 'القانون والضرائب', href: linkTo('legal-tax'), description: locale === 'fr' ? 'Avocats, fiscalistes, conformite.' : locale === 'en' ? 'Lawyers, tax advisors, compliance.' : locale === 'ru' ? 'Юристы, налоги, compliance.' : 'محامون، ضرائب وامتثال.' },
-      { label: locale === 'fr' ? "Creation d'Entreprise" : locale === 'en' ? 'Company Formation' : locale === 'ru' ? 'Создание компании' : 'تأسيس الشركات', href: linkTo('business-setup'), description: locale === 'fr' ? 'Societe, comptabilite, bureaux.' : locale === 'en' ? 'Company, accounting, offices.' : locale === 'ru' ? 'Компания, бухгалтерия, офисы.' : 'شركة، محاسبة ومكاتب.' },
       { label: locale === 'fr' ? 'Sante & Assurance' : locale === 'en' ? 'Health & Insurance' : locale === 'ru' ? 'Здоровье и страхование' : 'الصحة والتأمين', href: linkTo('health-insurance'), description: locale === 'fr' ? 'Medecins, cliniques, assurances.' : locale === 'en' ? 'Doctors, clinics, insurance.' : locale === 'ru' ? 'Врачи, клиники, страхование.' : 'أطباء، عيادات وتأمين.' },
       { label: locale === 'fr' ? 'Transfert & chauffeur à la demande' : locale === 'en' ? 'Transfer & chauffeur on demand' : locale === 'ru' ? 'Трансфер и водитель по запросу' : 'نقل وسائق عند الطلب', href: mobilityLink, tone: 'transfer', description: locale === 'fr' ? 'Réservation immédiate ou programmée · Istanbul & Turquie.' : locale === 'en' ? 'Immediate or scheduled booking · Istanbul & Turkey.' : locale === 'ru' ? 'Немедленное или запланированное бронирование · Стамбул и Турция.' : 'حجز فوري أو مسبق · إسطنبول وتركيا.' },
       { label: locale === 'fr' ? 'Conciergerie de Luxe' : locale === 'en' ? 'Luxury Concierge' : locale === 'ru' ? 'Консьерж-сервис премиум-класса' : 'كونسيرج فاخر', href: linkTo('luxury-concierge'), description: locale === 'fr' ? 'Transport privé, palaces, yachts, jets, shopping.' : locale === 'en' ? 'Private transport, palaces, yachts, jets, shopping.' : locale === 'ru' ? 'Частный транспорт, отели класса люкс, яхты, самолёты и покупки.' : 'نقل خاص، فنادق فاخرة، يخوت، طائرات وتسوق.' },

@@ -1,3 +1,4 @@
+import { taxRelocationPaths, taxRelocationLabels } from '@/data/taxRelocationPaths';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { ArrowRight, CheckCircle2, FileText, Landmark, ShieldCheck } from 'lucide-react';
@@ -155,7 +156,7 @@ export function TaxResidenceForeignIncomeClientFrPage() {
             <ShieldCheck className="h-8 w-8 text-[#8a6728]" />
             <h2 className="mt-6 font-serif text-4xl tracking-[-0.03em] md:text-6xl">Une décision fiscale doit être préparée, pas improvisée</h2>
             <p className="mt-6 text-lg leading-9 text-[#3e4857]">Avant de transférer votre résidence, votre famille, vos revenus ou vos actifs, Bosphoras peut organiser une analyse privée de votre situation : résidence actuelle, revenus étrangers, sociétés, banque, immobilier, assurance, conformité et stratégie d’installation en Turquie.</p>
-            <Link href="/diagnostic-prive" className="mt-8 inline-flex items-center justify-center gap-3 bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-white">Demander une analyse privée<ArrowRight size={16} /></Link>
+            <Link href={taxRelocationPaths.fr} className="block mt-6 underline underline-offset-4">{taxRelocationLabels.fr}</Link><Link href="/diagnostic-prive" className="mt-8 inline-flex items-center justify-center gap-3 bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-white">Demander une analyse privée<ArrowRight size={16} /></Link>
           </div>
         </section>
 
