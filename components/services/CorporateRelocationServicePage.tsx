@@ -1,27 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { BusinessMobilityDetails } from './BusinessMobilityDetails';
+import { corporateRelocationEditorial } from '@/data/corporateRelocationEditorial';
+import { mobilityDetails } from '@/data/businessMobilityDetails';
+import { getSlugForPage } from '@/data/pages/types';
+import { getLocalePath } from '@/lib/routes';
 import type { Metadata } from 'next';
-import {
-  ArrowRight,
-  BriefcaseBusiness,
-  Building2,
-  CheckCircle2,
-  ClipboardCheck,
-  FileText,
-  Home,
-  Landmark,
-  MapPin,
-  Plane,
-  School,
-  ShieldCheck,
-  Users,
-} from 'lucide-react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 import type { Locale } from '@/lib/i18n';
-import { organizationSchema, breadcrumbSchema } from '@/lib/seo';
+import { organizationSchema, breadcrumbSchema, serviceSchema, faqSchema } from '@/lib/seo';
 import { siteUrl } from '@/lib/routes';
 import { withAssessmentContext } from '@/lib/assessmentContext';
 
@@ -78,10 +66,10 @@ type Copy = {
 
 const content: Record<Locale, Copy> = {
   fr: {
-    metaTitle: "Relocation Turquie : entreprises, cadres et expatriés | Bosphoras",
+    metaTitle: "Relocation Turquie & Istanbul | Entreprises, RH | Bosphoras",
     title: 'Relocation en Turquie : entreprises, cadres et salariés expatriés',
     eyebrow: 'Bosphoras · Bureau Privé · Corporate Relocation',
-    description: "Organisez la mobilité de vos cadres et salariés en Turquie : permis de travail, logement, écoles, famille et suivi RH. Un interlocuteur local Bosphoras.",
+    description: "Agence de relocation en Turquie et à Istanbul : permis de travail, logement, écoles, mobilité des cadres et salariés. Accompagnement RH de A à Z.",
     hero: 'Votre agence de relocation en Turquie pour entreprises, cadres et salariés. Bosphoras coordonne l’installation d’un collaborateur en Turquie comme un projet unique : statut d’entrée, permis de travail ou résidence selon le dossier, logement, famille, assurance, banque, mobilité et mise en place pratique. L’entreprise garde un interlocuteur local unique, tandis que les actes réglementés sont traités par les professionnels compétents.',
     cta: 'Organiser une relocation',
     toc: 'Sur cette page',
@@ -389,6 +377,7 @@ export function getCorporateRelocationMetadata(locale: Locale): Metadata {
   const canonical = siteUrl + paths[locale];
   return {
     title: { absolute: c.metaTitle },
+    metadataBase: new URL(siteUrl),
     description: c.description,
     alternates: {
       canonical,
@@ -418,266 +407,42 @@ export function getCorporateRelocationMetadata(locale: Locale): Metadata {
   };
 }
 
-function ServiceCard({ title, items, icon: Icon }: { title: string; items: string[]; icon: typeof Plane }) {
-  return (
-    <article className="border border-[hsl(42,15%,86%)] bg-white p-7">
-      <div className="flex items-center gap-3">
-        <Icon className="h-6 w-6 text-[#8a6728]" strokeWidth={1.4} />
-        <h3 className="font-serif text-2xl leading-tight text-[#121826]">{title}</h3>
-      </div>
-      <ul className="mt-6 space-y-3">
-        {items.map((item) => (
-          <li key={item} className="flex gap-3 text-base leading-7 text-[hsl(220,16%,25%)]">
-            <CheckCircle2 className="mt-1 h-4 w-4 flex-none text-[#8a6728]" strokeWidth={1.6} />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-    </article>
-  );
+
+const relocationSources=[
+ ['Ministry of Labour — work permit criteria','https://www.csgb.gov.tr/uigm/en/calisma-izni/calisma-izni-degerlendirme-kriterleri/'],
+ ['Ministry of Labour — application and review','https://www.csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit/'],
+ ['Ministry of Labour — application documents','https://www.csgb.gov.tr/uigm/en/general-information/information-and-documents-required-in-the-work-permit-evaluation-process/'],
+ ['Ministry of Labour — fees','https://csgb.gov.tr/uigm/en/general-information/harc-ve-degerli-k%C3%A2git-bedelinin-odenmesi/'],
+ ['Migration Management — residence permits','https://en.goc.gov.tr/residence-permit-types'],
+ ['IICS — admissions','https://www.iics.k12.tr/admissions/']
+];
+function RelocationTable({headers,rows}:{headers:string[],rows:string[][]}){return <div className="overflow-x-auto border-y border-[#d9e0e2]"><table className="w-full min-w-[520px] text-sm md:text-base"><thead className="bg-[#193344] text-white"><tr>{headers.map(h=><th key={h} scope="col" className="p-4 text-start font-medium">{h}</th>)}</tr></thead><tbody>{rows.map((r,i)=><tr key={i} className="border-b border-[#d9e0e2]">{r.map((x,j)=>j===0?<th key={j} scope="row" className="p-4 text-start align-top font-medium">{x}</th>:<td key={j} className="p-4 align-top">{x}</td>)}</tr>)}</tbody></table></div>}
+export function CorporateRelocationServicePage({locale}:{locale:Locale}){
+ const c=corporateRelocationEditorial[locale],d=mobilityDetails[locale].relocation,previous=content[locale];
+ const path=paths[locale],url=siteUrl+path;
+ const contact=withAssessmentContext(assessmentPaths[locale],path,c.title,'corporate-relocation');
+ const company=getLocalePath(locale,getSlugForPage('business-setup',locale)||'/');
+ const questions=Array.from(new Map([...d.answers,...previous.faq].map(a=>[a[0],a])).values());
+ const btn=<Link href={contact} className="inline-flex min-h-[48px] items-center bg-[#193344] text-white px-7 py-4 font-medium hover:bg-[#25485e]">{c.cta}</Link>;
+ const img=(src:string,index:number,priority=false)=><figure><div className="relative aspect-[4/3] overflow-hidden bg-[#e6ebed]"><Image src={src} alt={c.photos[index]} fill priority={priority} sizes="(max-width:1024px) 100vw,50vw" className="object-cover"/></div><figcaption className="mt-2 text-xs">{c.photos[index]}</figcaption></figure>;
+ return <main lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="min-h-screen bg-[#faf9f6] text-[#193344]">
+ <Header locale={locale} currentPath={path}/>
+ <StructuredData data={organizationSchema()}/><StructuredData data={serviceSchema({name:c.title,description:previous.description,url})}/><StructuredData data={faqSchema(questions.map(([question,answer])=>({question,answer})))}/><StructuredData data={breadcrumbSchema([{name:'Bosphoras',url:siteUrl},{name:c.title,url}])}/>
+ <section className="pt-32 md:pt-40 pb-12"><div className="container-editorial grid gap-10 lg:grid-cols-2 lg:items-center"><div><h1 className="font-serif text-4xl md:text-6xl leading-tight">{c.title}</h1><p className="mt-6 text-lg leading-8">{c.intro}</p><div className="mt-7 flex flex-wrap items-center gap-5">{btn}<a href="tel:+905467699996" className="underline underline-offset-4" dir="ltr">+90 546 769 99 96</a></div></div>{img('/images/travel/istanbul/city/nisantasi-abdi-ipekci.webp',0,true)}</div></section>
+ <div className="border-y border-[#d9e0e2]"><div className="container-editorial grid grid-cols-2 md:grid-cols-4 gap-5 py-6">{c.trust.map(x=><p key={x} className="text-sm font-medium">{x}</p>)}</div></div>
+ <nav className="container-editorial flex flex-wrap gap-x-6 gap-y-3 py-7 text-sm" aria-label={previous.toc}>{['services','hr','permits','housing','budget','faq'].map((id,i)=><a key={id} href={'#'+id} className="underline underline-offset-4">{c.nav[i]}</a>)}</nav>
+ <div className="container-editorial space-y-20 pb-20">
+ <section><h2 className="font-serif text-3xl md:text-4xl">{c.why}</h2><p className="mt-5 max-w-4xl text-lg leading-8">{c.whyText}</p><h2 className="mt-10 font-serif text-3xl">{c.profilesTitle}</h2><div className="grid md:grid-cols-2 gap-x-12 gap-y-7 mt-7">{c.profiles.map(([h,p])=><article key={h} className="border-t border-[#b9c5ca] pt-5"><h3 className="font-serif text-2xl">{h}</h3><p className="mt-3 leading-8">{p}</p></article>)}</div></section>
+ <section id="services" className="scroll-mt-32"><h2 className="font-serif text-3xl md:text-4xl">{c.serviceTitle}</h2><div className="mt-8 grid md:grid-cols-2 gap-x-12 gap-y-7">{c.services.map(([h,p])=><article key={h} className="border-t border-[#b9c5ca] pt-5"><h3 className="font-serif text-2xl">{h}</h3><p className="mt-3 leading-8">{p}</p></article>)}</div><div className="mt-8">{btn}</div></section>
+ <section id="hr" className="scroll-mt-32 space-y-7"><h2 className="font-serif text-3xl md:text-4xl">{c.hrTitle}</h2><p className="max-w-4xl leading-8 text-lg">{c.hrIntro}</p><RelocationTable headers={c.hrHeaders} rows={c.hrRows}/><p className="text-sm leading-7 max-w-4xl">{c.privacy}</p><h3 className="font-serif text-3xl pt-3">{c.timelineTitle}</h3><ol className="grid gap-4 md:grid-cols-3">{c.timelineLabels.map((h,i)=><li key={h} className="border-t-2 border-[#193344] pt-4"><h4 className="font-medium">{h}</h4><p className="mt-2 text-sm leading-7">{d.steps[i]}</p></li>)}</ol><p className="text-sm leading-7">{c.timelineNote}</p></section>
+ <section id="permits" className="scroll-mt-32 space-y-7"><h2 className="font-serif text-3xl md:text-4xl">{c.permitTitle}</h2><p className="max-w-4xl leading-8 text-lg">{c.permitLead}</p><div className="bg-[#193344] text-white p-7 md:p-10"><p className="font-serif text-5xl">{c.timing}</p><p className="mt-4 leading-8">{c.timingLabel}</p></div><RelocationTable headers={d.headers} rows={d.rows}/><p className="leading-8 max-w-4xl">{d.note}</p><figure className="max-w-4xl border border-[#d9e0e2] bg-white p-6 md:p-9"><figcaption className="font-serif text-2xl">{c.payTitle}</figcaption><div className="mt-6 space-y-5">{[5,4,3,2,1].map((n,i)=><div key={n}><div className="flex justify-between gap-4 mb-2"><span>{c.payLabels[i]}</span><strong dir="ltr">{(33030*n).toLocaleString(locale)} TRY</strong></div><div className="bg-[#e6ebed] h-3" aria-hidden="true"><div className="bg-[#193344] h-3" style={{width:n/5*100+'%'}}/></div></div>)}</div><p className="mt-5 text-sm leading-7">{c.payNote}</p></figure><div>{btn}</div></section>
+ <section id="housing" className="scroll-mt-32"><h2 className="font-serif text-3xl md:text-4xl">{c.housingTitle}</h2><p className="mt-4 leading-8 max-w-4xl">{c.housingIntro}</p><div className="grid gap-9 mt-7 lg:grid-cols-2">{img('/images/travel/istanbul/raffles/raffles-03-suite.webp',1)}<div className="space-y-5">{c.neighborhoods.map(([h,p])=><article key={h}><h3 className="font-serif text-2xl">{h}</h3><p className="mt-2 leading-7">{p}</p></article>)}</div></div><div className="mt-12 grid gap-9 lg:grid-cols-2 lg:items-center"><div><h2 className="font-serif text-3xl md:text-4xl">{c.schoolTitle}</h2><p className="mt-4 leading-8">{c.schoolText}</p></div>{img('/images/travel/istanbul/city/ortakoy-bosphorus.webp',2)}</div></section>
+ <section className="grid gap-9 lg:grid-cols-2 lg:items-center">{img('/images/home.driver.jpg',3)}<div><h2 className="font-serif text-3xl md:text-4xl">{c.coverageTitle}</h2><p className="mt-4 leading-8">{c.coverage}</p></div></section>
+ <section id="budget" className="scroll-mt-32 space-y-7"><h2 className="font-serif text-3xl md:text-4xl">{c.budgetTitle}</h2><p className="max-w-4xl leading-8 text-lg">{c.budgetIntro}</p><RelocationTable headers={c.budgetHeaders} rows={c.budgetRows}/><p className="max-w-4xl leading-8">{d.answers[2][1]}</p><div>{btn}</div></section>
+ <section className="border-y border-[#b9c5ca] py-9"><h2 className="font-serif text-3xl md:text-4xl">{c.taxTitle}</h2><p className="mt-4 leading-8 max-w-4xl">{c.taxText}</p><Link href={company} className="inline-block mt-5 underline underline-offset-4">{c.companyLink}</Link></section>
+ <section id="faq" className="scroll-mt-32"><h2 className="font-serif text-3xl md:text-4xl">{c.faqTitle}</h2><div className="mt-7 divide-y divide-[#d9e0e2]">{questions.map(([q,a])=><details key={q} className="py-5"><summary className="cursor-pointer font-medium text-lg">{q}</summary><p className="mt-4 leading-8 max-w-4xl">{a}</p></details>)}</div></section>
+ <section className="border-t border-[#d9e0e2] pt-7"><h2 className="font-serif text-xl">{c.sources}</h2><div className="mt-3 flex flex-wrap gap-x-6 gap-y-3 text-sm">{relocationSources.map(([label,href])=><a key={href} href={href} target="_blank" rel="noreferrer" className="underline underline-offset-4">{label}</a>)}</div><div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm">{relatedLinks[locale].map(([href,label])=><Link key={href} href={href} className="underline underline-offset-4">{label}</Link>)}</div></section>
+ <section className="bg-[#193344] text-white p-8 md:p-12"><h2 className="font-serif text-3xl md:text-4xl">{c.endTitle}</h2><p className="mt-5 max-w-3xl leading-8">{c.endText}</p><Link href={contact} className="inline-flex mt-7 bg-white text-[#193344] px-7 py-4 font-medium">{c.cta}</Link></section>
+ </div><Footer locale={locale}/></main>
 }
-
-export function CorporateRelocationServicePage({ locale }: { locale: Locale }) {
-  const c = content[locale];
-  const dir = locale === 'ar' ? 'rtl' : 'ltr';
-  const canonical = siteUrl + paths[locale];
-  const assessmentHref = withAssessmentContext(assessmentPaths[locale], paths[locale], c.title, 'corporate-relocation');
-  const officialLinks = [
-    ['https://www.csgb.gov.tr/uigm/en/calisma-izni/basvuru-kilavuzlari/', locale === 'fr' ? 'Ministère du Travail — permis de travail' : locale === 'en' ? 'Ministry of Labour — work permits' : locale === 'ru' ? 'Министерство труда — разрешения на работу' : 'وزارة العمل — تصاريح العمل'],
-    ['https://en.goc.gov.tr/residence-permit-types', locale === 'fr' ? 'Migration Management — titres de séjour' : locale === 'en' ? 'Migration Management — residence permits' : locale === 'ru' ? 'Migration Management — виды ВНЖ' : 'إدارة الهجرة — أنواع الإقامة'],
-  ] as const;
-  const toc = [
-    ['scope', c.scopeTitle],
-    ['business-mobility-details', {"fr":"Permis, budget et étapes de mobilité","en":"Permits, budget and mobility timeline","ru":"Разрешения, бюджет и этапы переезда","ar":"التصاريح والميزانية ومراحل الانتقال"}[locale]],
-    ['permits', c.permitTitle],
-    ['hr', c.hrTitle],
-    ['housing', c.housingTitle],
-    ['process', c.processTitle],
-    ['cities', c.citiesTitle],
-    ['faq', c.faqTitle],
-  ];
-
-  const serviceSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: c.title,
-    description: c.description,
-    url: canonical,
-    provider: { '@type': 'Organization', name: 'Bosphoras', url: siteUrl },
-    areaServed: [
-      { '@type': 'Country', name: 'Turkey' },
-      { '@type': 'City', name: 'Istanbul' },
-      { '@type': 'City', name: 'Ankara' },
-      { '@type': 'City', name: 'Izmir' },
-      { '@type': 'City', name: 'Bursa' },
-      { '@type': 'City', name: 'Kocaeli' },
-      { '@type': 'City', name: 'Antalya' },
-    ],
-    serviceType: ['Corporate relocation', 'Expatriate relocation', 'Executive relocation', 'House hunting', 'Settling-in coordination'],
-    audience: {
-      '@type': 'Audience',
-      audienceType: 'Companies, HR departments, executives, expatriate employees and international families',
-    },
-  };
-
-  const faqStructuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: c.faq.map(([q, a]) => ({
-      '@type': 'Question',
-      name: q,
-      acceptedAnswer: { '@type': 'Answer', text: a },
-    })),
-  };
-
-  return (
-    <>
-      <StructuredData data={organizationSchema()} />
-      <StructuredData data={serviceSchema} />
-      <StructuredData data={faqStructuredData} />
-      <StructuredData data={breadcrumbSchema([
-        { name: 'Bosphoras', url: siteUrl },
-        { name: c.title, url: canonical },
-      ])} />
-      <Header locale={locale} currentPath={paths[locale]} />
-
-      <main dir={dir} className="min-h-screen bg-[hsl(45,30%,98%)] text-[#101827]">
-        <section className="border-b border-[hsl(42,15%,88%)] pb-12 pt-32 md:pb-16 md:pt-40">
-          <div className="container-editorial">
-            <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center"><div className="max-w-5xl">
-              <p className="mb-6 text-[0.7rem] font-medium uppercase tracking-[0.35em] text-[hsl(42,65%,45%)]">{c.eyebrow}</p>
-              <h1 className="max-w-5xl font-serif text-4xl leading-[1.06] tracking-tight text-[hsl(220,45%,12%)] md:text-5xl lg:text-6xl">{c.title}</h1>
-              <p className="mt-8 max-w-4xl text-base font-normal leading-8 text-[hsl(220,18%,22%)] md:text-lg">{c.hero}</p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Link href={assessmentHref} className="inline-flex min-h-[48px] items-center gap-3 bg-[#121826] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#263246]">
-                  {c.cta}<ArrowRight size={17} aria-hidden="true" />
-                </Link>
-                <a href="tel:+905467699996" className="inline-flex min-h-[48px] items-center gap-3 border border-[#d8c7a1] bg-white px-6 py-3 text-sm font-semibold text-[#121826] transition hover:border-[#8a6728]">
-                  +90 546 769 99 96
-                </a>
-              </div>
-            </div><div className="relative min-h-[300px] aspect-[4/3] overflow-hidden"><Image src="/images/travel/istanbul/city/nisantasi-abdi-ipekci.webp" alt={{fr:"Nişantaşı, quartier résidentiel et commercial d’Istanbul",en:"Nişantaşı residential and commercial district in Istanbul",ru:"Жилой и торговый район Нишанташы в Стамбуле",ar:"حي نيشانتاشي السكني والتجاري في إسطنبول"}[locale]} fill priority sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover"/></div></div>
-          </div>
-        </section>
-
-        <section className="py-16 md:py-24">
-          <div className="container-editorial">
-            <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
-              <div className="space-y-16 lg:col-span-8">
-                <nav aria-label={c.toc} className="border border-[#d8c7a1] bg-white p-6">
-                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#8a6728]">{c.toc}</p>
-                  <ul className="mt-4 grid gap-3 text-base md:grid-cols-2">
-                    {toc.map(([id, label]) => <li key={id}><a href={'#' + id} className="underline decoration-[#d8c7a1] underline-offset-4 hover:text-[#8a6728]">{label}</a></li>)}
-                  </ul>
-                </nav>
-
-                <article>
-                  <div className="mb-5 flex items-center gap-3"><span className="text-xs font-medium tracking-[0.3em] text-[#8a6728]">01</span><span className="h-px w-8 bg-[#d2a863]" /></div>
-                  <h2 className="font-serif text-3xl leading-tight tracking-tight text-[#121826] md:text-4xl">{c.directTitle}</h2>
-                  <p className="mt-5 text-base leading-8 text-[hsl(220,18%,22%)] md:text-lg">{c.directText}</p>
-                </article>
-
-                <section id="scope" className="scroll-mt-32">
-                  <div className="mb-5 flex items-center gap-3"><span className="text-xs font-medium tracking-[0.3em] text-[#8a6728]">02</span><span className="h-px w-8 bg-[#d2a863]" /></div>
-                  <h2 className="font-serif text-3xl leading-tight tracking-tight text-[#121826] md:text-4xl">{c.scopeTitle}</h2>
-                  <p className="mt-5 max-w-3xl text-base leading-8 text-[hsl(220,18%,22%)]">{c.scopeIntro}</p>
-                  <div className="mt-8 grid gap-5 md:grid-cols-2">
-                    {serviceCards.map(({ key, icon }, index) => <ServiceCard key={key} title={c.cardTitles[index]} items={c[key]} icon={icon} />)}
-                  </div>
-                </section>
-
-                <BusinessMobilityDetails locale={locale} kind="relocation" />
-
-                <section id="permits" className="scroll-mt-32 border-y border-[#d8c7a1] bg-[#fffaf0] p-7 md:p-9">
-                  <div className="flex items-start gap-4">
-                    <Landmark className="mt-1 h-6 w-6 shrink-0 text-[#8a6728]" strokeWidth={1.4} />
-                    <div>
-                      <h2 className="font-serif text-3xl leading-tight tracking-tight text-[#121826]">{c.permitTitle}</h2>
-                      <p className="mt-5 text-base leading-8 text-[hsl(220,18%,22%)]">{c.permitText}</p>
-                    </div>
-                  </div>
-                  <ul className="mt-7 grid gap-3 md:grid-cols-2">
-                    {c.permitItems.map((item) => <li key={item} className="flex gap-3 bg-white p-4 text-sm leading-7 text-[hsl(220,16%,25%)]"><ClipboardCheck className="mt-1 h-4 w-4 shrink-0 text-[#8a6728]" />{item}</li>)}
-                  </ul>
-                  <div className="mt-7 border-t border-[#d8c7a1] pt-6">
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8a6728]">{c.officialTitle}</p>
-                    <p className="mt-3 text-sm leading-7 text-[hsl(220,16%,30%)]">{c.officialText}</p>
-                    <div className="mt-4 flex flex-wrap gap-4">
-                      {officialLinks.map(([href, label]) => <a key={href} href={href} target="_blank" rel="noreferrer" className="text-sm font-semibold text-[#795a22] underline decoration-[#d8c7a1] underline-offset-4">{label}</a>)}
-                    </div>
-                  </div>
-                </section>
-
-                <section id="hr" className="scroll-mt-32">
-                  <div className="mb-5 flex items-center gap-3"><span className="text-xs font-medium tracking-[0.3em] text-[#8a6728]">03</span><span className="h-px w-8 bg-[#d2a863]" /></div>
-                  <h2 className="font-serif text-3xl leading-tight tracking-tight text-[#121826] md:text-4xl">{c.hrTitle}</h2>
-                  <p className="mt-5 text-base leading-8 text-[hsl(220,18%,22%)]">{c.hrText}</p>
-                  <div className="mt-8 grid gap-3 md:grid-cols-2">
-                    {c.hrItems.map((item) => <div key={item} className="flex gap-3 border border-[#d8c7a1] bg-white p-5 text-base leading-7 text-[hsl(220,16%,25%)]"><FileText className="mt-1 h-4 w-4 shrink-0 text-[#8a6728]" />{item}</div>)}
-                  </div>
-                </section>
-
-                <section id="housing" className="scroll-mt-32">
-                  <div className="mb-5 flex items-center gap-3"><span className="text-xs font-medium tracking-[0.3em] text-[#8a6728]">04</span><span className="h-px w-8 bg-[#d2a863]" /></div>
-                  <h2 className="font-serif text-3xl leading-tight tracking-tight text-[#121826] md:text-4xl">{c.housingTitle}</h2>
-                  <p className="mt-5 text-base leading-8 text-[hsl(220,18%,22%)]">{c.housingText}</p>
-                  <div className="mt-8 grid gap-3 md:grid-cols-2">
-                    {c.housingItems.map((item) => <div key={item} className="flex gap-3 border-t border-[#d8c7a1] py-4 text-base leading-7 text-[hsl(220,16%,25%)]"><Building2 className="mt-1 h-4 w-4 shrink-0 text-[#8a6728]" />{item}</div>)}
-                  </div>
-                </section>
-
-                <section id="process" className="scroll-mt-32">
-                  <div className="mb-5 flex items-center gap-3"><span className="text-xs font-medium tracking-[0.3em] text-[#8a6728]">05</span><span className="h-px w-8 bg-[#d2a863]" /></div>
-                  <h2 className="font-serif text-3xl leading-tight tracking-tight text-[#121826] md:text-4xl">{c.processTitle}</h2>
-                  <div className="mt-8 grid gap-4 md:grid-cols-2">
-                    {c.steps.map((step, index) => (
-                      <article key={step.title} className="border border-[#d8c7a1] bg-white p-6">
-                        <span className="text-xs font-semibold tracking-[0.2em] text-[#8a6728]">0{index + 1}</span>
-                        <h3 className="mt-4 font-serif text-2xl leading-tight text-[#121826]">{step.title}</h3>
-                        <p className="mt-3 text-sm leading-7 text-[hsl(220,16%,30%)]">{step.text}</p>
-                      </article>
-                    ))}
-                  </div>
-                </section>
-
-                <section id="cities" className="scroll-mt-32">
-                  <div className="mb-5 flex items-center gap-3"><span className="text-xs font-medium tracking-[0.3em] text-[#8a6728]">06</span><span className="h-px w-8 bg-[#d2a863]" /></div>
-                  <h2 className="font-serif text-3xl leading-tight tracking-tight text-[#121826] md:text-4xl">{c.citiesTitle}</h2>
-                  <div className="mt-8 grid gap-4 md:grid-cols-3">
-                    {c.cities.map((city) => <article key={city.name} className="border border-[#d8c7a1] bg-white p-6"><MapPin className="h-5 w-5 text-[#8a6728]" /><h3 className="mt-5 font-serif text-2xl text-[#121826]">{city.name}</h3><p className="mt-3 text-sm leading-7 text-[hsl(220,16%,30%)]">{city.text}</p></article>)}
-                  </div>
-                </section>
-
-                <section className="bg-[#121826] p-7 text-white md:p-9">
-                  <BriefcaseBusiness className="h-7 w-7 text-[#d2a863]" strokeWidth={1.4} />
-                  <h2 className="mt-6 font-serif text-3xl leading-tight tracking-tight md:text-4xl">{c.privateOffice}</h2>
-                  <p className="mt-5 text-base leading-8 text-white/75">{c.privateText}</p>
-                  <div className="mt-7 grid gap-3 md:grid-cols-2">
-                    {c.tags.map((item) => <div key={item} className="border-t border-white/15 py-4 text-sm text-white/80">{item}</div>)}
-                  </div>
-                </section>
-
-                <section>
-                  <h2 className="font-serif text-3xl leading-tight tracking-tight text-[#121826]">{c.related}</h2>
-                  <div className="mt-7 grid gap-3 md:grid-cols-2">
-                    {relatedLinks[locale].map(([href, label]) => <Link key={href} href={href} className="group flex items-center justify-between gap-4 border border-[#d8c7a1] bg-white p-5 text-sm font-semibold text-[#121826] transition hover:border-[#8a6728]"><span>{label}</span><ArrowRight size={15} className="shrink-0 text-[#8a6728] transition group-hover:translate-x-1" /></Link>)}
-                  </div>
-                </section>
-
-                <section id="faq" className="scroll-mt-32">
-                  <h2 className="font-serif text-3xl leading-tight tracking-tight text-[#121826] md:text-4xl">{c.faqTitle}</h2>
-                  <div className="mt-7 divide-y divide-[#d8c7a1] border-y border-[#d8c7a1]">
-                    {c.faq.map(([q, a]) => (
-                      <details key={q} className="group py-6">
-                        <summary className="flex cursor-pointer list-none items-start justify-between gap-5">
-                          <h3 className="font-serif text-xl leading-snug text-[#121826]">{q}</h3>
-                          <span className="text-2xl leading-none text-[#8a6728] transition group-open:rotate-45">+</span>
-                        </summary>
-                        <p className="mt-4 max-w-3xl text-base leading-8 text-[hsl(220,18%,22%)]">{a}</p>
-                      </details>
-                    ))}
-                  </div>
-                </section>
-              </div>
-
-              <aside className="space-y-8 lg:col-span-4">
-                <div className="lg:sticky lg:top-28">
-                  <div className="bg-[#121826] p-8 text-white">
-                    <p className="text-[0.65rem] font-medium uppercase tracking-[0.3em] text-[#d2a863]">{c.confidential}</p>
-                    <h2 className="mt-5 font-serif text-2xl leading-snug">{c.finalTitle}</h2>
-                    <p className="mt-4 text-sm leading-7 text-white/75">{c.finalText}</p>
-                    <Link href={assessmentHref} className="mt-7 inline-flex items-center gap-2 border-b border-[#d2a863]/50 pb-1 text-xs font-semibold uppercase tracking-[0.16em] text-[#d2a863]">
-                      {c.finalCta}<ArrowRight size={14} />
-                    </Link>
-                  </div>
-                  <div className="border border-[#d8c7a1] bg-white p-6">
-                    <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6728]">Bosphoras Private Office</p>
-                    <div className="mt-5 space-y-4 text-sm leading-6 text-[hsl(220,16%,30%)]">
-                      <p className="flex gap-3"><ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-[#8a6728]" />{c.tags[0]}</p>
-                      <p className="flex gap-3"><Users className="mt-0.5 h-4 w-4 shrink-0 text-[#8a6728]" />{c.tags[1]}</p>
-                      <p className="flex gap-3"><School className="mt-0.5 h-4 w-4 shrink-0 text-[#8a6728]" />{c.tags[4]}</p>
-                    </div>
-                  </div>
-                </div>
-              </aside>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-[#121826] py-20 text-white md:py-24">
-          <div className="container-editorial mx-auto max-w-4xl text-center">
-            <div className="mx-auto mb-7 h-px w-12 bg-[#d2a863]" />
-            <h2 className="font-serif text-3xl leading-tight tracking-tight md:text-5xl">{c.finalTitle}</h2>
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-white/75">{c.finalText}</p>
-            <Link href={assessmentHref} className="mt-8 inline-flex min-h-[50px] items-center gap-3 bg-[#d2a863] px-8 py-4 text-sm font-semibold text-[#121826]">
-              {c.finalCta}<ArrowRight size={16} />
-            </Link>
-          </div>
-        </section>
-      </main>
-      <Footer locale={locale} />
-    </>
-  );
-}
-
 export { paths as corporateRelocationPaths, content as corporateRelocationContent };
