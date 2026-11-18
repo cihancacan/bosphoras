@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import { BusinessMobilityDetails } from './services/BusinessMobilityDetails';
+import { CompanyFormationPage } from './services/CompanyFormationPage';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { t, localeDir } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
@@ -26,6 +25,7 @@ interface MainPageRendererProps {
 }
 
 export function MainPageRenderer({ page }: MainPageRendererProps) {
+  if (page.id === 'business-setup') return <CompanyFormationPage page={page} />;
   const { locale } = page;
   const isRtl = localeDir[locale] === 'rtl';
   const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
@@ -104,7 +104,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
             <Breadcrumbs items={breadcrumbItems} locale={locale} />
           )}
 
-          <div className={page.id==='business-setup' ? "mt-6 grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center" : "max-w-4xl mt-6"}><div>
+          <div className="max-w-4xl mt-6"><div>
             <p className="text-[hsl(42,65%,45%)] text-[0.7rem] tracking-[0.35em] uppercase font-medium mb-6">
               {locale === 'fr' && 'Bosphoras · Bureau Privé'}
               {locale === 'en' && 'Bosphoras · Private Office'}
@@ -122,7 +122,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
                 {priceText(page.cta.label)}<ArrowIcon size={18} aria-hidden="true" />
               </Link>
             )}
-          </div>{page.id==='business-setup' && <div className="relative min-h-[300px] aspect-[4/3] overflow-hidden"><Image src="/images/travel/istanbul/city/karakoy-galataport.webp" alt={{fr:"Quartier de Karaköy et Galataport à Istanbul",en:"Karaköy and Galataport district in Istanbul",ru:"Каракёй и Галатапорт в Стамбуле",ar:"حي كاراكوي وغالاطابورت في إسطنبول"}[locale]} fill priority sizes="(max-width: 1024px) 100vw, 40vw" className="object-cover"/></div>}</div>
+          </div></div>
         </div>
       </section>
 
@@ -133,12 +133,10 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
               {page.sections.length > 2 && (
                 <nav aria-label={locale === 'fr' ? 'Sur cette page' : locale === 'en' ? 'On this page' : locale === 'ru' ? 'На этой странице' : 'في هذه الصفحة'} className="border border-[#d8c7a1] p-6">
                   <ul className="grid gap-3 text-base">
-                    {page.id === 'business-setup' && <li><a href="#business-mobility-details" className="underline decoration-[#d8c7a1] underline-offset-4">{{"fr":"Capitaux, coûts, documents et délais","en":"Capital, costs, documents and timing","ru":"Капитал, расходы, документы и сроки","ar":"رأس المال والتكاليف والوثائق والمدد"}[locale]}</a></li>}
                     {page.sections.map((section, idx) => <li key={idx}><a href={`#section-${idx + 1}`} className="underline decoration-[#d8c7a1] underline-offset-4 hover:text-[#8a6728]">{priceText(section.heading)}</a></li>)}
                   </ul>
                 </nav>
               )}
-              {page.id === 'business-setup' && <BusinessMobilityDetails locale={locale} kind="business" />}
               {page.sections.map((section, idx) => (
                 <article key={idx} id={`section-${idx + 1}`} className="prose-editorial scroll-mt-32">
                   <div className="flex items-center gap-3 mb-5">

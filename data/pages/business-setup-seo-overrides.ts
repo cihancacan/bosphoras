@@ -7,10 +7,10 @@ export const businessSetupSeoOverrides: Partial<Record<Locale, MainPageContent[]
       id: 'business-setup',
       locale: 'fr',
       slug: '/creation-entreprise-turquie',
-      title: "Créer une entreprise en Turquie : coûts, démarches | Bosphoras",
+      title: "Création d’entreprise en Turquie | Fiscalité 2026, banque, bureaux",
       h1: 'Création d’entreprise en Turquie : constituez votre société et lancez votre activité',
       metaDescription:
-        "Créez votre société en Turquie : capital, statuts, MERSİS, fiscalité, banque et comptabilité. Bosphoras coordonne votre implantation de A à Z.",
+        "Créez votre société en Turquie de A à Z : nouvelle fiscalité 2026, avocats, comptabilité, domiciliation, banques et zones franches. Bosphoras.",
       shortIntro:
         'Créer une entreprise en Turquie peut sembler rapide. Créer la bonne structure, utilisable par un entrepreneur international, un investisseur ou une famille, demande une méthode. Le vrai sujet n’est pas seulement l’immatriculation : c’est la banque, la comptabilité, la fiscalité, les flux, les contrats, les bureaux, l’équipe, la conformité et la cohérence avec votre résidence personnelle. Bosphoras coordonne la création d’entreprise comme un bureau privé : avant de signer, on structure.',
       sections: [
@@ -94,10 +94,10 @@ export const businessSetupSeoOverrides: Partial<Record<Locale, MainPageContent[]
       id: 'business-setup',
       locale: 'en',
       slug: '/services/business-setup',
-      title: "Company Formation in Turkey: Costs & Steps | Bosphoras",
+      title: "Company Formation in Turkey | 2026 Tax & Banking",
       h1: 'Set up a company in Turkey with structure, banking and compliance',
       metaDescription:
-        "Set up a company in Türkiye with a clear plan: legal form, capital, registration, banking, tax and accounting. Bosphoras coordinates your local launch.",
+        "Set up your company in Türkiye: 2026 tax reform, legal support, accounting, offices, free zones and bank account coordination with Bosphoras.",
       shortIntro:
         'Creating a company in Turkey can look fast. Creating the right structure for an international entrepreneur, investor or family requires method. The real subject is not only registration: it is banking, accounting, tax, flows, contracts, offices, team, compliance and the link with your personal residence. Bosphoras coordinates company formation as a private desk: before registration, we structure.',
       sections: [
@@ -131,10 +131,10 @@ export const businessSetupSeoOverrides: Partial<Record<Locale, MainPageContent[]
       id: 'business-setup',
       locale: 'ru',
       slug: '/uslugi/sozdanie-kompanii',
-      title: "Открыть компанию в Турции: стоимость и этапы | Bosphoras",
+      title: "Открыть компанию в Турции | Налоги 2026, банк, офис",
       h1: 'Создать компанию в Турции со структурой, банком и соблюдение требований',
       metaDescription:
-        "Создание бизнеса в Турции: капитал, регистрация, налоги, банк и бухгалтерия. Bosphoras координирует запуск компании и переезд команды.",
+        "Создание компании в Турции: реформа 2026, юристы, бухгалтерия, банковское сопровождение, офисы и свободные зоны.",
       shortIntro:
         'Создать компанию в Турции может казаться быстрым процессом. Создать правильную структуру для международного предпринимателя, инвестора или семьи — это другой уровень. Вопрос не только в регистрации: важны банк, бухгалтерия, налоги, потоки, договоры, офис, команда, соблюдение требований и связь с личной резиденцией. Bosphoras координирует создание компании как частный офис: сначала структура, потом регистрация.',
       sections: [
@@ -168,10 +168,10 @@ export const businessSetupSeoOverrides: Partial<Record<Locale, MainPageContent[]
       id: 'business-setup',
       locale: 'ar',
       slug: '/خدمات/تأسيس-الشركات',
-      title: "تأسيس شركة في تركيا: التكاليف والإجراءات | Bosphoras",
+      title: "تأسيس شركة في تركيا | الضرائب 2026 والبنوك والمكاتب",
       h1: 'تأسيس شركة في تركيا بهيكل واضح وبنك وامتثال',
       metaDescription:
-        "تأسيس شركتك في تركيا: رأس المال والتسجيل والضرائب والبنك والمحاسبة. تنسق بوسفوراس مراحل التأسيس وبدء النشاط.",
+        "أسس شركتك في تركيا مع بوسفوراس: الإصلاح الضريبي 2026 والمحامون والمحاسبة والعنوان والبنوك والمناطق الحرة.",
       shortIntro:
         'قد يبدو تأسيس شركة في تركيا سريعاً. لكن بناء الهيكل الصحيح لرائد أعمال دولي أو مستثمر أو عائلة يحتاج إلى منهجية. الموضوع الحقيقي ليس التسجيل فقط: البنك، المحاسبة، الضرائب، التدفقات، العقود، المكاتب، الفريق، الامتثال والعلاقة مع الإقامة الشخصية كلها عناصر أساسية. ينسق Bosphoras تأسيس الشركة كمكتب خاص: قبل التسجيل، نضع الهيكل.',
       sections: [

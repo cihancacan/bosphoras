@@ -97,7 +97,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     path: page.slug,
     title: page.title,
     description: page.metaDescription,
-    image: page.id === 'business-setup' ? '/images/travel/istanbul/city/karakoy-galataport.webp' : undefined,
+    image: page.id === 'business-setup' ? 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/IFM_G%C3%B6rsel.jpg/1280px-IFM_G%C3%B6rsel.jpg' : undefined,
   });
 }
 
