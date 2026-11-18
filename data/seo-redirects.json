@@ -658,5 +658,35 @@
     "source": "/ru/dolgosrochnyy-vnzh-v-turtsii",
     "destination": "/ru/dolgosrochnyy-vid-na-zhitelstvo-v-turtsii",
     "permanent": true
+  },
+  {
+    "source": "/exoneration-impot-turquie-revenus-etrangers",
+    "destination": "/exoneration-revenus-etrangers-turquie",
+    "permanent": true
+  },
+  {
+    "source": "/impots-turquie-exoneration-revenus-etrangers",
+    "destination": "/exoneration-revenus-etrangers-turquie",
+    "permanent": true
+  },
+  {
+    "source": "/ru/nalogovoe-osvobozhdenie-turtsiya-inostrannye-dohody",
+    "destination": "/ru/osvobozhdenie-inostrannyh-dohodov-v-turtsii",
+    "permanent": true
+  },
+  {
+    "source": "/en/turkey-tax-exemption-foreign-income-investors",
+    "destination": "/en/foreign-income-exemption-turkey",
+    "permanent": true
+  },
+  {
+    "source": "/ru/nalogi-turtsiya-osvobozhdenie-inostrannye-dokhody",
+    "destination": "/ru/osvobozhdenie-inostrannyh-dohodov-v-turtsii",
+    "permanent": true
+  },
+  {
+    "source": "/ar/اعفاء-ضريبي-تركيا-الدخل-الأجنبي",
+    "destination": "/ar/foreign-income-exemption-turkey",
+    "permanent": true
   }
 ]

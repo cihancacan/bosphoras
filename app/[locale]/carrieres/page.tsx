@@ -17,8 +17,9 @@ export function generateMetadata({params}:{params:{locale:string}}):Metadata {
   const locale=params.locale as Supported;
   return {
     title:titles[locale],
-    description:'Bosphoras Istanbul — client relations, property advisory, private concierge and operations. Apply in your preferred language.',
-    alternates:{canonical:'https://www.bosphoras.com/'+locale+'/carrieres',languages:{'fr':'/carrieres','en':'/en/carrieres','ru':'/ru/carrieres','ar':'/ar/carrieres'}},
+    description:{en:'Bosphoras Istanbul — client relations, property advisory, private concierge and operations. Apply in your preferred language.',ru:'Работа в Bosphoras в Стамбуле: обслуживание клиентов, недвижимость, консьерж-сервис и координация. Подайте заявку онлайн.',ar:'انضم إلى Bosphoras في إسطنبول: علاقات العملاء والعقارات والكونسيرج الخاص والتنسيق. قدم طلبك عبر الإنترنت.'}[locale],
+    robots:{index:true,follow:true},
+    alternates:{canonical:'https://www.bosphoras.com/'+locale+'/carrieres',languages:{'fr':'/carrieres','en':'/en/carrieres','ru':'/ru/carrieres','ar':'/ar/carrieres','x-default':'/carrieres'}},
   };
 }
 export default function Page({params,searchParams}:{params:{locale:string};searchParams?:{lang?:string}}){

@@ -5,8 +5,9 @@ import { careerLanguageNames, type CareerLocale } from '@/lib/careers/copy';
 export const metadata:Metadata={
   title:'Carrières et recrutement | Bosphoras Istanbul',
   description:'Rejoignez Bosphoras à Istanbul : relations clients premium, immobilier, conciergerie et coordination. Candidatures en plusieurs langues.',
+  robots:{index:true,follow:true},
   alternates:{canonical:'https://www.bosphoras.com/carrieres',
-    languages:{'fr':'/carrieres','en':'/en/carrieres','ru':'/ru/carrieres','ar':'/ar/carrieres'}},
+    languages:{'fr':'/carrieres','en':'/en/carrieres','ru':'/ru/carrieres','ar':'/ar/carrieres','x-default':'/carrieres'}},
 };
 export default function Page({searchParams}:{searchParams?:{lang?:string}}){
   const candidate=searchParams?.lang;

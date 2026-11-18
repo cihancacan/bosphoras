@@ -31,7 +31,7 @@ function walk(directory) {
   }
 }
 walk('app');
-for (const locale of ['en', 'ru', 'ar']) { known.add(`/${locale}/contact`); known.add(`/${locale}/peninsula-istanbul`); }
+for (const locale of ['en', 'ru', 'ar']) { known.add(`/${locale}/contact`); known.add(`/${locale}/peninsula-istanbul`); known.add(`/${locale}/carrieres`); }
 const redirectMap = new Map(redirects.map(({ source, destination }) => [source, destination]));
 assert.equal(redirectMap.size, redirects.length, 'Duplicate redirect source');
 for (const [source, destination] of redirectMap) {
@@ -50,9 +50,15 @@ const entries = await sitemap();
 assert.equal(entries.length, new Set(entries.map((entry) => entry.url)).size, 'Duplicate sitemap URLs');
 for (const entry of entries) {
   assert.equal(new URL(entry.url).origin, siteUrl);
+  assert(!/%25[0-9a-f]{2}/i.test(entry.url), `Double-encoded sitemap URL: ${entry.url}`);
+  assert(!/\/(?:admin|api|dashboard|login|checkout|staging|preview)(?:\/|$)/.test(new URL(entry.url).pathname), `Private or staging URL in sitemap: ${entry.url}`);
   assert(known.has(normalize(entry.url)), `Unknown sitemap URL: ${entry.url}`);
   assert(!redirectMap.has(normalize(entry.url)), `Redirect in sitemap: ${entry.url}`);
   if (entry.lastModified) assert(new Date(entry.lastModified) <= new Date(), 'Future sitemap modification date');
+}
+for (const locale of ['fr','en','ru','ar']) {
+  const career = locale === 'fr' ? '/carrieres' : `/${locale}/carrieres`;
+  assert(entries.some(e => normalize(e.url) === career), 'Missing careers URL: '+career);
 }
 let alternates = 0;
 for (const [locale, pages] of Object.entries(allPages)) for (const page of pages) {

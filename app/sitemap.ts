@@ -34,8 +34,11 @@ function normalizeDomain(url: string) {
 }
 
 function encodeSitemapUrl(url: string) {
-  return encodeURI(normalizeDomain(url));
+  // URL preserves existing percent escapes instead of encoding them twice.
+  return new URL(normalizeDomain(url)).href;
 }
+
+export const revalidate = 3600;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [];
@@ -64,6 +67,46 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     addEntry({ url: absoluteUrl('/investissement/projets/'+code), changeFrequency:'weekly', priority:0.85 });
     addEntry({ url: absoluteUrl('/en/investment/projects/'+code), changeFrequency:'weekly', priority:0.85 });
     for(const locale of ['ru','ar']) addEntry({url:absoluteUrl('/'+locale+'/investment/projects/'+code),changeFrequency:'weekly',priority:0.85});
+  }
+
+  // Additional public editorial and institutional routes.
+  for (const path of [
+  "/agro-industrie-turquie-investissement-fiscalite",
+  "/ar/agribusiness-turkey-investment-tax",
+  "/ar/finance-fintech-turkey-istanbul-finance-center",
+  "/ar/holding-regional-headquarters-turkey",
+  "/ar/import-export-turkey-transit-trade",
+  "/ar/startup-turkey-tax-benefits-investors",
+  "/ar/الانتقال-المؤسسي-إلى-تركيا",
+  "/en/agribusiness-turkey-investment-tax",
+  "/en/corporate-relocation-turkey",
+  "/en/finance-fintech-turkey-istanbul-finance-center",
+  "/en/holding-regional-headquarters-turkey",
+  "/en/import-export-turkey-transit-trade",
+  "/en/startup-turkey-tax-benefits-investors",
+  "/finance-fintech-turquie-istanbul-finance-center",
+  "/holding-siege-regional-turquie",
+  "/import-export-turquie-transit-trade",
+  "/relocation-corporate-turquie",
+  "/ru/agropromyshlennost-turtsiya-investitsii-nalogi",
+  "/ru/finansy-fintech-turtsiya-istanbul-finance-center",
+  "/ru/holding-regionalnyy-ofis-turtsiya",
+  "/ru/import-export-turtsiya-tranzitnaya-torgovlya",
+  "/ru/korporativnyy-relokeyshn-v-turtsiyu",
+  "/ru/startup-turtsiya-nalogovye-lgoty-investory",
+  "/startup-turquie-avantages-fiscaux-investisseurs",
+  "/carrieres",
+  "/en/carrieres",
+  "/ru/carrieres",
+  "/ar/carrieres",
+  "/mentions-legales",
+  "/cgu",
+  "/cgv",
+  "/confidentialite",
+  "/cookies",
+  "/protection-informations-confidentielles"
+]) {
+    addEntry({ url: absoluteUrl(path), changeFrequency: 'monthly', priority: 0.7 });
   }
 
   for (const locale of locales) {
