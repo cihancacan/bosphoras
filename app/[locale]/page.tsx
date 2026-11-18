@@ -1,3 +1,4 @@
+import { homeEditorial } from '@/data/homeEditorial';
 import { conversionCopy } from '@/data/conversion';
 import { HomeHero } from '@/components/HomeHero';
 import { HomeProjectPaths, HomeFinalContact } from '@/components/HomeProjectPaths';
@@ -62,7 +63,7 @@ const copy: Record<SupportedLocale, Copy> = {
 function isSupportedLocale(value: string): value is SupportedLocale { return supportedLocales.includes(value as SupportedLocale); }
 interface PageProps { params: { locale: string } }
 export function generateStaticParams() { return supportedLocales.map((locale) => ({ locale })); }
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> { if (!isSupportedLocale(params.locale)) return {}; const c = copy[params.locale]; return buildMetadata({ locale: params.locale, path: '/', title: c.metaTitle, description: c.metaDescription }); }
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> { if (!isSupportedLocale(params.locale)) return {}; const c = homeEditorial[params.locale]; return buildMetadata({ locale: params.locale, path: '/', title: c.metaTitle, description: c.metaDescription }); }
 function hrefFor(locale: SupportedLocale, page: string, fallback: string) { return getLocalePath(locale as Locale, getSlugForPage(page, locale as Locale) ?? fallback); }
 
 export default function LocaleHomePage({ params }: PageProps) {
@@ -81,7 +82,7 @@ export default function LocaleHomePage({ params }: PageProps) {
       <main lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className="bosphoras-home bg-white text-[#202629]">
 <HomeHero locale={locale} />
 <HomeProjectPaths locale={locale} />
-<section className="px-5 py-20 md:px-8 md:py-28"><div className="mx-auto grid max-w-[1500px] gap-14 lg:grid-cols-[0.82fr_1.18fr] lg:gap-24"><div><p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#8a6728]">{c.faqEyebrow}</p><h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-6xl">{c.faqTitle}</h2></div><div className="grid gap-px bg-[#d8c7a1]">{conversionCopy[locale].faqs.map((faq) => <article key={faq.question} className="bg-[#f8f1e7] p-8"><h3 className="font-serif text-3xl leading-snug text-[#121826]">{faq.question}</h3><p className="mt-4 text-base leading-8 text-[#3e4857]">{faq.answer}</p></article>)}</div></div></section>
+<section className="px-5 py-14 md:px-8 md:py-20"><div className="mx-auto grid max-w-[1320px] gap-9 lg:grid-cols-[0.85fr_1.15fr]"><h2 className="font-sans font-normal text-3xl tracking-tight text-[#193344] md:text-5xl">{homeEditorial[locale].faqTitle}</h2><div className="divide-y divide-[#d9e0e2] border-y border-[#d9e0e2]">{conversionCopy[locale].faqs.map(faq=><details key={faq.question} className="py-5"><summary className="cursor-pointer text-lg font-medium text-[#193344]">{faq.question}</summary><p className="mt-4 leading-8 text-[#465159]">{faq.answer}</p></details>)}</div></div></section>
 <HomeFinalContact locale={locale} />
 </main>
       <Footer locale={locale} />

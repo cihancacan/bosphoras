@@ -1,3 +1,4 @@
+import { homeEditorial } from '@/data/homeEditorial';
 import Link from 'next/link';
 import type { Locale } from '@/lib/i18n';
 import { withAssessmentContext } from '@/lib/assessmentContext';
@@ -63,60 +64,21 @@ const heroCopy: Record<Locale, HomeHeroCopy> = {
 
 export function HomeHero({ locale }: { locale: Locale }) {
   const copy = heroCopy[locale];
-  const assessmentHref = withAssessmentContext(copy.assessmentHref, '/', copy.h1, 'home');
+  const editorial = homeEditorial[locale];
+  const assessmentHref = withAssessmentContext(copy.assessmentHref, '/', editorial.h1, 'home');
 
   return (
-    <section className="relative overflow-hidden bg-[#f5f5f3] pt-20 text-[#202629] md:min-h-[70vh] md:pt-24">
-      <picture>
-        <source media="(min-width: 768px)" srcSet="/images/hero-istanbul.jpg" />
-        <img
-          src="/images/mobile-istanbul.jpg"
-          alt=""
-          width={1200}
-          height={1600}
-          loading="eager"
-          fetchPriority="high"
-          decoding="async"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-      </picture>
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(245,245,243,0.94)_0%,rgba(245,245,243,0.86)_33%,rgba(245,245,243,0.45)_60%,rgba(245,245,243,0.02)_100%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(25,51,68,0.08)_0%,transparent_44%,rgba(255,255,255,0.06)_100%)]" />
-
-      <div className="container-editorial relative z-10 flex items-center py-12 md:min-h-[calc(70vh-6rem)] md:py-20">
-        <div className="max-w-[740px]">
-          <p className="mb-5 max-w-3xl font-sans text-base font-light normal-case leading-relaxed tracking-normal text-[#193344] md:text-lg">
-            “{copy.quote}”
-          </p>
-          <h1 className="max-w-[740px] font-sans text-[2.5rem] font-normal leading-[1.12] tracking-[-0.045em] text-[#202629] md:text-[3.4rem] lg:text-[3.9rem]">
-            {copy.h1}
-          </h1>
-          <p className="mt-6 max-w-3xl text-base leading-7 text-[#202629] md:text-xl md:leading-8">
-            {copy.subtitle}
-          </p>
-          <p className="mt-5 text-xs font-medium tracking-[0.02em] text-[#193344] md:text-sm">
-            {copy.pillars}
-          </p>
-
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row md:mt-10">
-            <Link
-              href={assessmentHref}
-              data-cta-id="home_hero_adviser"
-              className="inline-flex min-h-[52px] items-center justify-center bg-[#193344] px-7 py-4 text-sm font-medium text-white transition hover:bg-[#25485e] md:px-8"
-            >
-              {copy.primaryCta}
-            </Link>
-            <Link
-              href={copy.propertyHref}
-              data-cta-id="home_hero_property"
-              className="inline-flex min-h-[52px] items-center justify-center border border-[#202629] bg-white/50 px-7 py-4 text-sm font-medium text-[#202629] transition hover:bg-white/85 md:px-8"
-            >
-              {copy.secondaryCta}
-            </Link>
-          </div>
-
-          <p className="mt-5 max-w-3xl text-sm leading-6 text-[#202629]">{copy.reassurance}</p>
+    <section className="bg-[#f5f5f0] pt-20 text-[#202629] md:pt-24">
+      <div className="mx-auto grid max-w-[1600px] lg:min-h-[620px] lg:grid-cols-[0.94fr_1.06fr] items-stretch">
+        <div className="flex flex-col justify-center px-6 py-12 md:px-12 md:py-16 lg:px-14 xl:px-20">
+          <p className="mb-5 font-sans text-base font-light leading-relaxed text-[#53616b] md:text-lg">“{copy.quote}”</p>
+          <h1 className="whitespace-pre-line font-sans text-[2.4rem] font-normal leading-[1.13] tracking-[-0.04em] text-[#193344] md:text-5xl xl:text-[3.65rem]">{editorial.h1}</h1>
+          <p className="mt-6 max-w-2xl text-base leading-8 text-[#465159] md:text-lg">{editorial.subtitle}</p>
+          <div className="mt-7 flex flex-wrap items-center gap-x-7 gap-y-4"><Link href={assessmentHref} data-cta-id="home_hero_adviser" className="inline-flex min-h-[52px] items-center bg-[#193344] px-7 py-4 text-sm font-medium text-white hover:bg-[#25485e]">{editorial.cta}</Link><a href="#votre-projet" className="text-sm font-medium text-[#193344] underline underline-offset-4">{editorial.explore}</a></div>
+          <p className="mt-6 text-sm leading-6 text-[#53616b]">{editorial.reassurance}</p>
+          <p className="mt-4 text-sm tracking-wide text-[#193344]">Istanbul · Bodrum · Antalya</p>
         </div>
+        <div className="relative min-h-[260px] sm:min-h-[360px] lg:min-h-full overflow-hidden"><picture><source media="(min-width:768px)" srcSet="/images/hero-istanbul.jpg"/><img src="/images/mobile-istanbul.jpg" alt={locale==='fr'?'Istanbul et le Bosphore':locale==='en'?'Istanbul and the Bosphorus':locale==='ru'?'Стамбул и Босфор':'إسطنبول والبوسفور'} width={1200} height={900} loading="eager" fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover"/></picture></div>
       </div>
     </section>
   );

@@ -1,3 +1,4 @@
+import { homeEditorial } from '@/data/homeEditorial';
 import { conversionCopy } from '@/data/conversion';
 import { HomeHero } from '@/components/HomeHero';
 import { HomeProjectPaths, HomeFinalContact } from '@/components/HomeProjectPaths';
@@ -21,8 +22,8 @@ const homeFaqs = [
 export const metadata: Metadata = buildMetadata({
   locale,
   path: '/',
-  title: 'Bosphoras | Bureau privé en Turquie, Istanbul, Bodrum, Antalya',
-  description: 'Bosphoras, marque de Panorama Grup, est votre bureau privé en Turquie : avocat, fiscalité, société, comptabilité, santé, assurance, immobilier, bureaux, transport VIP, hôtels, événements et accès privé.',
+  title: homeEditorial.fr.metaTitle,
+  description: homeEditorial.fr.metaDescription,
 });
 
 const expertises = [
@@ -66,7 +67,7 @@ export default function HomePage() {
       <main lang={locale} dir="ltr" className="bg-white text-[#202629]">
 <HomeHero locale={locale} />
 <HomeProjectPaths locale={locale} />
-<section className="px-5 py-20 md:px-8 md:py-28"><div className="mx-auto grid max-w-[1500px] gap-14 lg:grid-cols-[0.82fr_1.18fr] lg:gap-24"><div><p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#193344]">Questions fréquentes</p><h2 className="font-sans font-normal text-4xl leading-tight tracking-[-0.04em] md:text-6xl">Avant de venir en Turquie.</h2></div><div className="grid gap-px bg-[#e5e8e8]">{conversionCopy[locale].faqs.map((faq) => <article key={faq.question} className="bg-[#f5f5f3] p-8"><h3 className="font-sans font-normal text-2xl leading-snug text-[#202629]">{faq.question}</h3><p className="mt-4 text-base leading-8 text-[#465159]">{faq.answer}</p></article>)}</div></div></section>
+<section className="px-5 py-14 md:px-8 md:py-20"><div className="mx-auto grid max-w-[1320px] gap-9 lg:grid-cols-[0.85fr_1.15fr]"><h2 className="font-sans font-normal text-3xl tracking-tight text-[#193344] md:text-5xl">{homeEditorial[locale].faqTitle}</h2><div className="divide-y divide-[#d9e0e2] border-y border-[#d9e0e2]">{conversionCopy[locale].faqs.map(faq=><details key={faq.question} className="py-5"><summary className="cursor-pointer text-lg font-medium text-[#193344]">{faq.question}</summary><p className="mt-4 leading-8 text-[#465159]">{faq.answer}</p></details>)}</div></div></section>
 <HomeFinalContact locale={locale} />
 </main>
       <Footer locale={locale} />

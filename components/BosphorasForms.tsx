@@ -1,5 +1,6 @@
 'use client';
 
+import { homeEditorial, homeIntentIds } from '@/data/homeEditorial';
 import { ArrowRight } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { conversionCopy, projectIds } from '@/data/conversion';
@@ -264,7 +265,18 @@ function BosphorasAssessmentForm({ locale, embedded }: { locale: Locale; embedde
 
     if(!(propertyTitle||propertyRef) && (source || sourceLabel || subject)){
       const contextMessage=contextualAssessmentMessage(locale,sourceLabel,source,subject);
-      if(contextMessage)setPrefillMessage(contextMessage);
+      if(params.get('home_intake')==='1'){
+        const home=homeEditorial[locale];
+        const intentIndex=homeIntentIds.findIndex(id=>id===subject);
+        const homeProject= intentIndex>=0&&intentIndex<6?home.paths[intentIndex][0]:home.other;
+        const country=(params.get('country')||'').trim().slice(0,80);
+        const h=params.get('horizon');
+        const horizon=h!==null&&h!==''&&/^[0-3]$/.test(h)?home.horizons[Number(h)]:'';
+        const mapped=[1,2,0,2,0,2,-1][intentIndex]??-1;
+        if(mapped>=0)setSelectedProject(c.projects[mapped][0]);
+        const details=[home.formLabels[0]+': '+homeProject,country?copy.residence+': '+country:'',horizon?copy.timeline+': '+horizon:''].filter(Boolean).join('\n');
+        setPrefillMessage(details+'\n\n'+contextMessage);
+      }else if(contextMessage)setPrefillMessage(contextMessage);
     }
   }, [locale, c]);
 

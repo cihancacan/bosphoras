@@ -8,7 +8,9 @@ export function ConversionTracking() {
       const link = event.target.closest('a');
       if (!link) return;
       const href = link.getAttribute('href') || '';
-      if (href.startsWith('tel:') || href.startsWith('mailto:')) {
+      if (/^https:\/\/(wa\.me|api\.whatsapp\.com)\//i.test(href)) {
+        trackConversion('contact_click', { contact_method: 'whatsapp' });
+      } else if (href.startsWith('tel:') || href.startsWith('mailto:')) {
         trackConversion('contact_click', { contact_method: href.startsWith('tel:') ? 'phone' : 'email' });
       } else if (link.dataset.ctaId) {
         trackConversion('assessment_cta_click', { cta_id: link.dataset.ctaId });
