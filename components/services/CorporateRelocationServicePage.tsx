@@ -77,10 +77,10 @@ type Copy = {
 
 const content: Record<Locale, Copy> = {
   fr: {
-    metaTitle: 'Relocation corporate Turquie | Expatriés, cadres & RH | Bosphoras',
+    metaTitle: "Relocation corporate Turquie : cadres, salariés, RH | Bosphoras",
     title: 'Relocation corporate en Turquie pour cadres dirigeants, salariés expatriés et familles internationales',
     eyebrow: 'Bosphoras · Bureau Privé · Corporate Relocation',
-    description: 'Relocation corporate en Turquie pour entreprises, RH, cadres dirigeants, salariés expatriés et familles : immigration, permis de travail, résidence, logement, école, assurance, banque, mobilité et installation.',
+    description: "Organisez la mobilité de vos cadres et salariés en Turquie : permis de travail, logement, écoles, famille et suivi RH. Un interlocuteur local Bosphoras.",
     hero: 'Bosphoras coordonne l’installation d’un collaborateur en Turquie comme un projet unique : statut d’entrée, permis de travail ou résidence selon le dossier, logement, famille, assurance, banque, mobilité et mise en place pratique. L’entreprise garde un interlocuteur local unique, tandis que les actes réglementés sont traités par les professionnels compétents.',
     cta: 'Organiser une relocation',
     toc: 'Sur cette page',
@@ -140,10 +140,10 @@ const content: Record<Locale, Copy> = {
     ],
   },
   en: {
-    metaTitle: 'Corporate Relocation Turkey | Executives, Expats & HR | Bosphoras',
+    metaTitle: "Corporate Relocation Turkey: Executives & HR | Bosphoras",
     title: 'Corporate relocation in Turkey for executives, expatriate employees and international families',
     eyebrow: 'Bosphoras · Private Office · Corporate Relocation',
-    description: 'Corporate relocation in Turkey for companies, HR teams, executives, expatriate employees and families: work permits, residence, housing, school, insurance, banking, mobility and settling-in.',
+    description: "Move your executives and employees to Türkiye: work permits, housing, schooling, family support and HR coordination with one local point of contact.",
     hero: 'Bosphoras coordinates an employee’s move to Turkey as one project: entry status, work permit or residence depending on the case, housing, family, insurance, banking, mobility and practical setup. The company keeps one local point of contact while regulated matters are handled by qualified professionals.',
     cta: 'Plan a relocation',
     toc: 'On this page',
@@ -203,10 +203,10 @@ const content: Record<Locale, Copy> = {
     ],
   },
   ru: {
-    metaTitle: 'Корпоративный релокейшн в Турцию | Руководители, экспаты, HR | Bosphoras',
+    metaTitle: "Релокация сотрудников и руководителей в Турцию | Bosphoras",
     title: 'Корпоративный релокейшн в Турцию для руководителей, сотрудников-экспатов и международных семей',
     eyebrow: 'Bosphoras · Частный офис · Corporate Relocation',
-    description: 'Корпоративный релокейшн в Турцию для компаний, HR, руководителей, сотрудников-экспатов и семей: разрешение на работу, ВНЖ, жильё, школа, страхование, банк, мобильность и адаптация.',
+    description: "Корпоративная релокация в Турцию: разрешение на работу, жильё, школы, семья и координация с HR. Единый локальный контакт Bosphoras.",
     hero: 'Bosphoras координирует переезд сотрудника в Турцию как единый проект: въезд, разрешение на работу или ВНЖ в зависимости от ситуации, жильё, семья, страхование, банк, мобильность и бытовая адаптация. У компании остаётся один локальный контакт, а регулируемые вопросы ведут квалифицированные специалисты.',
     cta: 'Организовать релокейшн',
     toc: 'На этой странице',
@@ -266,10 +266,10 @@ const content: Record<Locale, Copy> = {
     ],
   },
   ar: {
-    metaTitle: 'الانتقال المؤسسي إلى تركيا | المدراء والموظفون وHR | Bosphoras',
+    metaTitle: "الانتقال المؤسسي إلى تركيا للمديرين والموظفين | Bosphoras",
     title: 'الانتقال المؤسسي إلى تركيا للمديرين التنفيذيين والموظفين المغتربين والعائلات الدولية',
     eyebrow: 'Bosphoras · مكتب خاص · Corporate Relocation',
-    description: 'خدمة انتقال مؤسسي إلى تركيا للشركات وفرق HR والمديرين والموظفين المغتربين والعائلات: تصريح العمل، الإقامة، السكن، المدرسة، التأمين، البنك والتنقل والاستقرار.',
+    description: "انتقال المديرين والموظفين إلى تركيا: تصاريح العمل والسكن والمدارس والأسرة والتنسيق مع الموارد البشرية عبر جهة اتصال محلية واحدة.",
     hero: 'ينسق Bosphoras انتقال الموظف إلى تركيا كمشروع واحد: وضع الدخول، تصريح العمل أو الإقامة حسب الحالة، السكن، العائلة، التأمين، البنك، التنقل والاستقرار العملي. تحتفظ الشركة بنقطة اتصال محلية واحدة بينما يتولى المهنيون المؤهلون المسائل المنظمة.',
     cta: 'تنظيم انتقال موظف',
     toc: 'في هذه الصفحة',
@@ -446,6 +446,7 @@ export function CorporateRelocationServicePage({ locale }: { locale: Locale }) {
   ] as const;
   const toc = [
     ['scope', c.scopeTitle],
+    ['business-mobility-details', {"fr":"Permis, budget et étapes de mobilité","en":"Permits, budget and mobility timeline","ru":"Разрешения, бюджет и этапы переезда","ar":"التصاريح والميزانية ومراحل الانتقال"}[locale]],
     ['permits', c.permitTitle],
     ['hr', c.hrTitle],
     ['housing', c.housingTitle],

@@ -132,6 +132,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
               {page.sections.length > 2 && (
                 <nav aria-label={locale === 'fr' ? 'Sur cette page' : locale === 'en' ? 'On this page' : locale === 'ru' ? 'На этой странице' : 'في هذه الصفحة'} className="border border-[#d8c7a1] p-6">
                   <ul className="grid gap-3 text-base">
+                    {page.id === 'business-setup' && <li><a href="#business-mobility-details" className="underline decoration-[#d8c7a1] underline-offset-4">{{"fr":"Capitaux, coûts, documents et délais","en":"Capital, costs, documents and timing","ru":"Капитал, расходы, документы и сроки","ar":"رأس المال والتكاليف والوثائق والمدد"}[locale]}</a></li>}
                     {page.sections.map((section, idx) => <li key={idx}><a href={`#section-${idx + 1}`} className="underline decoration-[#d8c7a1] underline-offset-4 hover:text-[#8a6728]">{priceText(section.heading)}</a></li>)}
                   </ul>
                 </nav>

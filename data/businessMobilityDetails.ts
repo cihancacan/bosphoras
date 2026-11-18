@@ -63,7 +63,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         ],
         [
           "Comment organiser la fiscalité et les flux internationaux ?",
-          "Le cabinet comptable doit déterminer les obligations de TVA, d’impôt sur les bénéfices, de paie et de déclaration. Les conventions fiscales, les prix de transfert, la résidence du dirigeant et les prestations transfrontalières influencent le résultat. Un business plan de trésorerie et des preuves d’activité facilitent le dossier bancaire, sans garantir son acceptation."
+          "Le cabinet comptable doit déterminer les obligations de TVA, d’impôt sur les bénéfices, de paie et de déclaration. Les conventions fiscales, les prix de transfert, la résidence du dirigeant et les prestations transfrontalières influencent le résultat. Un business plan de trésorerie et des preuves d’activité facilitent le dossier bancaire, sans garantir son acceptation. En novembre 2026, le taux ordinaire d’impôt sur les sociétés est de 25 % (30 % pour les entreprises financières concernées). La TVA de droit commun est de 20 %, avec des taux de 10 % et 1 % pour certaines opérations. Les entreprises exportatrices éligibles peuvent bénéficier d’une réduction de cinq points sur les bénéfices d’exportation ; un impôt minimum domestique de 10 % peut aussi s’appliquer selon les règles de calcul. Les exonérations et incitations ne sont pas automatiques."
         ],
         [
           "Puis-je ouvrir une filiale ou transférer mon équipe ?",
@@ -126,7 +126,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         ],
         [
           "Comment calculer un budget de relocation ?",
-          "Séparer immigration et honoraires, logements temporaires et loyers, dépôt de garantie, déménagement, école, assurance, transport et éventuels frais de retour. Pour le budget employeur, ajouter paie, protection sociale et traitement fiscal des avantages. Nous présentons le périmètre et les postes de coût avant engagement."
+          "Séparer immigration et honoraires, logements temporaires et loyers, dépôt de garantie, déménagement, école, assurance, transport et éventuels frais de retour. Pour le budget employeur, ajouter paie, protection sociale et traitement fiscal des avantages. Nous présentons le périmètre et les postes de coût avant engagement. En 2026, le droit officiel d’un permis de travail à durée déterminée jusqu’à un an s’élève à 12 574,90 TRY, auquel s’ajoute 964 TRY pour le document sécurisé. Ces montants ne comprennent pas les traductions, les éventuels frais consulaires ou l’accompagnement. Ils évoluent chaque année."
         ],
         [
           "Comment choisir le logement et l’école ?",
@@ -207,7 +207,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         ],
         [
           "How do taxes and international payments work?",
-          "The accountant reviews corporate income tax, VAT, payroll and filings, alongside tax treaties, transfer pricing, personal residency and cross-border services. A documented business plan supports the bank's own decision."
+          "The accountant reviews corporate income tax, VAT, payroll and filings, alongside tax treaties, transfer pricing, personal residency and cross-border services. A documented business plan supports the bank's own decision. As of November 2026, the standard corporate income tax rate is 25% (30% for relevant financial-sector companies). Standard VAT is 20%, with 10% and 1% rates for certain supplies. Eligible export profits may benefit from a five-percentage-point reduction; a domestic minimum corporate tax of 10% may also apply under its specific calculation rules. Incentives are not automatic."
         ],
         [
           "Can you support a subsidiary and team move?",
@@ -270,7 +270,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         ],
         [
           "What should a relocation budget cover?",
-          "Immigration, professional fees, temporary accommodation, rent, deposit, shipment, schooling, insurance, transport and potential return costs. Employer planning should also consider payroll, social security and tax treatment of benefits."
+          "Immigration, professional fees, temporary accommodation, rent, deposit, shipment, schooling, insurance, transport and potential return costs. Employer planning should also consider payroll, social security and tax treatment of benefits. For 2026, the official fee for a fixed-term work permit of up to one year is TRY 12,574.90, plus TRY 964 for the secure certificate. Translation, potential consular costs and professional assistance are separate. Fees change annually."
         ],
         [
           "How do you select housing and schools?",
@@ -351,7 +351,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         ],
         [
           "Как организовать налоги и международные платежи?",
-          "Бухгалтер определяет обязательства по налогу на прибыль, НДС, зарплате и отчётности с учётом международных соглашений, налогового резидентства и трансграничных операций. Решение об открытии счёта принимает банк."
+          "Бухгалтер определяет обязательства по налогу на прибыль, НДС, зарплате и отчётности с учётом международных соглашений, налогового резидентства и трансграничных операций. Решение об открытии счёта принимает банк. В ноябре 2026 года стандартная ставка налога на прибыль компаний составляет 25% (30% для соответствующих финансовых организаций). Основная ставка НДС — 20%, для отдельных операций действуют ставки 10% и 1%. Для соответствующей экспортной прибыли возможно снижение ставки на пять процентных пунктов; также может применяться внутренний минимальный налог 10% по специальным правилам расчёта. Льготы не предоставляются автоматически."
         ],
         [
           "Можно ли открыть филиал и перевести сотрудников?",
@@ -414,7 +414,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         ],
         [
           "Как рассчитать бюджет?",
-          "Иммиграционные процедуры, услуги специалистов, временное жильё, аренда, депозит, перевозка вещей, школа, страхование, транспорт и возможный возврат. Для работодателя также важны зарплата, социальные взносы и налогообложение компенсаций."
+          "Иммиграционные процедуры, услуги специалистов, временное жильё, аренда, депозит, перевозка вещей, школа, страхование, транспорт и возможный возврат. Для работодателя также важны зарплата, социальные взносы и налогообложение компенсаций. В 2026 году официальный сбор за срочное разрешение на работу сроком до одного года составляет 12 574,90 TRY, дополнительно взимается 964 TRY за бланк документа. Переводы, возможные консульские расходы и услуги специалистов оплачиваются отдельно. Сборы меняются ежегодно."
         ],
         [
           "Как выбрать жильё и школу?",
@@ -495,7 +495,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         ],
         [
           "كيف تُنظّم الضرائب والمدفوعات الدولية؟",
-          "يحدد المحاسب التزامات ضريبة الأرباح والقيمة المضافة والرواتب والتصاريح مع مراعاة الاتفاقيات الضريبية والإقامة والمعاملات العابرة للحدود. القرار المصرفي مستقل."
+          "يحدد المحاسب التزامات ضريبة الأرباح والقيمة المضافة والرواتب والتصاريح مع مراعاة الاتفاقيات الضريبية والإقامة والمعاملات العابرة للحدود. القرار المصرفي مستقل. في نوفمبر 2026 يبلغ المعدل العام لضريبة أرباح الشركات 25% و30% للشركات المالية المعنية. والمعدل العام لضريبة القيمة المضافة 20% مع معدلي 10% و1% لبعض المعاملات. وقد تستفيد أرباح التصدير المؤهلة من تخفيض خمس نقاط مئوية، كما قد تنطبق ضريبة محلية دنيا قدرها 10% وفق قواعد احتساب خاصة. الحوافز ليست تلقائية."
         ],
         [
           "هل يمكن تأسيس فرع ونقل فريق العمل؟",
@@ -558,7 +558,7 @@ export const mobilityDetails: Record<Locale,Record<MobilityKind,MobilityDetails>
         ],
         [
           "ما عناصر ميزانية الانتقال؟",
-          "إجراءات الهجرة وأتعاب المختصين والسكن المؤقت والإيجار والتأمين النقدي ونقل الأمتعة والمدرسة والتأمين والمواصلات والعودة المحتملة. ويراعي صاحب العمل الرواتب والضمان الاجتماعي والمعالجة الضريبية للمزايا."
+          "إجراءات الهجرة وأتعاب المختصين والسكن المؤقت والإيجار والتأمين النقدي ونقل الأمتعة والمدرسة والتأمين والمواصلات والعودة المحتملة. ويراعي صاحب العمل الرواتب والضمان الاجتماعي والمعالجة الضريبية للمزايا. في عام 2026 تبلغ الرسوم الرسمية لتصريح العمل محدد المدة حتى سنة واحدة 12,574.90 ليرة تركية، إضافة إلى 964 ليرة لإصدار الوثيقة المؤمنة. وهي لا تشمل الترجمة أو الرسوم القنصلية المحتملة أو أتعاب المختصين، وتتغير سنوياً."
         ],
         [
           "كيف نختار السكن والمدرسة؟",
