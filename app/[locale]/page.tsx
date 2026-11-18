@@ -82,7 +82,7 @@ export default function LocaleHomePage({ params }: PageProps) {
       <main lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className="bosphoras-home bg-white text-[#202629]">
 <HomeHero locale={locale} />
 <HomeProjectPaths locale={locale} />
-<section className="px-5 py-14 md:px-8 md:py-20"><div className="mx-auto grid max-w-[1320px] gap-9 lg:grid-cols-[0.85fr_1.15fr]"><h2 className="font-sans font-normal text-3xl tracking-tight text-[#193344] md:text-5xl">{homeEditorial[locale].faqTitle}</h2><div className="divide-y divide-[#d9e0e2] border-y border-[#d9e0e2]">{conversionCopy[locale].faqs.map(faq=><details key={faq.question} className="py-5"><summary className="cursor-pointer text-lg font-medium text-[#193344]">{faq.question}</summary><p className="mt-4 leading-8 text-[#465159]">{faq.answer}</p></details>)}</div></div></section>
+<section className="px-4 py-9 sm:px-6 md:px-8 md:py-14"><div className="mx-auto grid max-w-[1320px] gap-5 lg:gap-9 lg:grid-cols-[0.85fr_1.15fr]"><h2 className="font-sans font-normal text-2xl tracking-tight text-[#193344] md:text-4xl">{homeEditorial[locale].faqTitle}</h2><div className="divide-y divide-[#d9e0e2] border-y border-[#d9e0e2]">{conversionCopy[locale].faqs.map(faq=><details key={faq.question} className="py-5"><summary className="cursor-pointer text-lg font-medium text-[#193344]">{faq.question}</summary><p className="mt-4 leading-8 text-[#465159]">{faq.answer}</p></details>)}</div></div></section>
 <HomeFinalContact locale={locale} />
 </main>
       <Footer locale={locale} />

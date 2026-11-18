@@ -68,17 +68,20 @@ export function HomeHero({ locale }: { locale: Locale }) {
   const assessmentHref = withAssessmentContext(copy.assessmentHref, '/', editorial.h1, 'home');
 
   return (
-    <section className="bg-[#f5f5f0] pt-20 text-[#202629] md:pt-24">
-      <div className="mx-auto grid max-w-[1600px] lg:min-h-[620px] lg:grid-cols-[0.94fr_1.06fr] items-stretch">
-        <div className="flex flex-col justify-center px-6 py-12 md:px-12 md:py-16 lg:px-14 xl:px-20">
-          <p className="mb-5 font-sans text-base font-light leading-relaxed text-[#53616b] md:text-lg">“{copy.quote}”</p>
-          <h1 className="whitespace-pre-line font-sans text-[2.4rem] font-normal leading-[1.13] tracking-[-0.04em] text-[#193344] md:text-5xl xl:text-[3.65rem]">{editorial.h1}</h1>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-[#465159] md:text-lg">{editorial.subtitle}</p>
-          <div className="mt-7 flex flex-wrap items-center gap-x-7 gap-y-4"><Link href={assessmentHref} data-cta-id="home_hero_adviser" className="inline-flex min-h-[52px] items-center bg-[#193344] px-7 py-4 text-sm font-medium text-white hover:bg-[#25485e]">{editorial.cta}</Link><a href="#votre-projet" className="text-sm font-medium text-[#193344] underline underline-offset-4">{editorial.explore}</a></div>
-          <p className="mt-6 text-sm leading-6 text-[#53616b]">{editorial.reassurance}</p>
-          <p className="mt-4 text-sm tracking-wide text-[#193344]">Istanbul · Bodrum · Antalya</p>
+    <section className="relative isolate overflow-hidden bg-[#f5f5f3] pt-20 text-[#202629] md:pt-24">
+      <picture>
+        <source media="(min-width:768px)" srcSet="/images/hero-istanbul.jpg"/>
+        <img src="/images/mobile-istanbul.jpg" alt="" width={1200} height={1600} loading="eager" fetchPriority="high" decoding="async" className="absolute inset-0 -z-20 h-full w-full object-cover object-center"/>
+      </picture>
+      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(245,245,243,0.96)_0%,rgba(245,245,243,0.9)_45%,rgba(245,245,243,0.68)_100%)] md:bg-[linear-gradient(90deg,rgba(245,245,243,0.96)_0%,rgba(245,245,243,0.90)_31%,rgba(245,245,243,0.52)_58%,rgba(245,245,243,0.02)_100%)] rtl:md:bg-[linear-gradient(270deg,rgba(245,245,243,0.96)_0%,rgba(245,245,243,0.90)_31%,rgba(245,245,243,0.52)_58%,rgba(245,245,243,0.02)_100%)]"/>
+      <div className="mx-auto flex max-w-[1320px] items-center px-5 py-10 sm:px-8 sm:py-14 md:min-h-[min(540px,66vh)] md:py-12">
+        <div className="w-full max-w-[690px]">
+          <p className="mb-4 max-w-[620px] font-sans text-sm font-light leading-relaxed text-[#53616b] sm:text-base md:text-lg">“{copy.quote}”</p>
+          <h1 className="whitespace-pre-line font-sans text-[clamp(1.85rem,5.8vw,2.65rem)] font-normal leading-[1.16] tracking-[-0.035em] text-[#193344] md:text-[3rem] lg:text-[3.45rem]">{editorial.h1}</h1>
+          <p className="mt-4 max-w-[590px] text-sm leading-6 text-[#26343d] sm:text-base md:mt-5 md:text-lg md:leading-8">{editorial.subtitle}</p>
+          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3"><Link href={assessmentHref} data-cta-id="home_hero_adviser" className="inline-flex min-h-[48px] items-center bg-[#193344] px-5 py-3 text-sm font-medium text-white hover:bg-[#25485e] sm:px-7">{editorial.cta}</Link><a href="#votre-projet" className="inline-flex min-h-[44px] items-center text-sm font-medium text-[#193344] underline underline-offset-4">{editorial.explore}</a></div>
+          <p className="mt-4 max-w-[580px] text-xs leading-5 text-[#465159] md:text-sm md:leading-6">{editorial.reassurance}</p>
         </div>
-        <div className="relative min-h-[260px] sm:min-h-[360px] lg:min-h-full overflow-hidden"><picture><source media="(min-width:768px)" srcSet="/images/hero-istanbul.jpg"/><img src="/images/mobile-istanbul.jpg" alt={locale==='fr'?'Istanbul et le Bosphore':locale==='en'?'Istanbul and the Bosphorus':locale==='ru'?'Стамбул и Босфор':'إسطنبول والبوسفور'} width={1200} height={900} loading="eager" fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover"/></picture></div>
       </div>
     </section>
   );
