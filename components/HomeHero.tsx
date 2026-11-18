@@ -3,7 +3,6 @@ import type { Locale } from '@/lib/i18n';
 import { withAssessmentContext } from '@/lib/assessmentContext';
 
 type HomeHeroCopy = {
-  eyebrow: string;
   h1: string;
   subtitle: string;
   pillars: string;
@@ -17,7 +16,6 @@ type HomeHeroCopy = {
 
 const heroCopy: Record<Locale, HomeHeroCopy> = {
   fr: {
-    eyebrow: 'Bosphoras Private Office',
     h1: 'Investir, s’installer ou entreprendre en Turquie.',
     subtitle: 'Immobilier sélectionné, création de société, résidence et relocation. Bosphoras coordonne les professionnels, les démarches et l’exécution sur place à Istanbul, Bodrum et Antalya.',
     pillars: 'Immobilier sélectionné · Société · Résidence · Relocation',
@@ -29,7 +27,6 @@ const heroCopy: Record<Locale, HomeHeroCopy> = {
     propertyHref: '/immobilier-turquie',
   },
   en: {
-    eyebrow: 'Bosphoras Private Office',
     h1: 'Invest, relocate or build your business in Turkey.',
     subtitle: 'Selected property, company formation, residence and relocation. Bosphoras coordinates the right professionals, formalities and local execution in Istanbul, Bodrum and Antalya.',
     pillars: 'Selected property · Company setup · Residence · Relocation',
@@ -41,7 +38,6 @@ const heroCopy: Record<Locale, HomeHeroCopy> = {
     propertyHref: '/en/property-turkey',
   },
   ru: {
-    eyebrow: 'Bosphoras Private Office',
     h1: 'Инвестировать, переехать или вести бизнес в Турции.',
     subtitle: 'Отобранная недвижимость, создание компании, резиденция и relocation. Bosphoras координирует специалистов, процедуры и исполнение на месте в Стамбуле, Бодруме и Анталье.',
     pillars: 'Недвижимость · Компания · Резиденция · Relocation',
@@ -53,7 +49,6 @@ const heroCopy: Record<Locale, HomeHeroCopy> = {
     propertyHref: '/ru/nedvizhimost-v-turtsii',
   },
   ar: {
-    eyebrow: 'Bosphoras Private Office',
     h1: 'استثمروا أو انتقلوا أو أسسوا أعمالكم في تركيا.',
     subtitle: 'عقارات مختارة، تأسيس شركات، إقامة وانتقال. ينسق Bosphoras المهنيين والإجراءات والتنفيذ المحلي في إسطنبول وبودروم وأنطاليا.',
     pillars: 'عقارات مختارة · تأسيس شركة · إقامة · انتقال',
@@ -90,8 +85,8 @@ export function HomeHero({ locale }: { locale: Locale }) {
 
       <div className="container-editorial relative z-10 flex items-center py-12 md:min-h-[calc(70vh-6rem)] md:py-20">
         <div className="max-w-[740px]">
-          <p className="mb-5 text-[0.7rem] font-medium uppercase tracking-[0.28em] text-[#193344]">
-            {copy.eyebrow}
+          <p className="mb-5 max-w-3xl font-sans text-base font-light normal-case leading-relaxed tracking-normal text-[#193344] md:text-lg">
+            “{copy.quote}”
           </p>
           <h1 className="max-w-[740px] font-sans text-[2.5rem] font-normal leading-[1.12] tracking-[-0.045em] text-[#202629] md:text-[3.4rem] lg:text-[3.9rem]">
             {copy.h1}
@@ -121,9 +116,6 @@ export function HomeHero({ locale }: { locale: Locale }) {
           </div>
 
           <p className="mt-5 max-w-3xl text-sm leading-6 text-[#202629]">{copy.reassurance}</p>
-          <blockquote className="mt-7 max-w-3xl border-t border-[#193344]/20 pt-5 text-lg font-normal leading-7 tracking-[-0.01em] text-[#202629] md:text-xl">
-            “{copy.quote}”
-          </blockquote>
         </div>
       </div>
     </section>
