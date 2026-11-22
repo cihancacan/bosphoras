@@ -164,6 +164,7 @@ import { destinationBySlug, travelCategories, travelDestinations, travelRegions,
 import type { TravelCategory, TravelDestination } from '@/data/travel/destinations';
 import { travelHref, travelLocaleCodes, travelKeywordTitles, travelText } from '@/lib/travel/i18n';
 import { BosphorasTravelGuideHeader, BosphorasTravelFooter } from '@/components/travel/BosphorasTravelChrome';
+import { TravelContextualSearch } from '@/components/travel/TravelContextualSearch';
 import { TravelMobileMenu } from './TravelMobileMenu';
 import type { TravelLocale } from '@/lib/travel/i18n';
 
@@ -287,7 +288,7 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     const city=featuredCityGuide(route.destination?.slug);
     const image=city?(getApprovedDestinationPhotos(city).find(p=>p.src===city.photos[city.hero]?.src)||getApprovedDestinationPhotos(city)[0]):undefined;
     const imageAlt=localizedGuide.name;
-    return {title:title+' | Bosphoras Luxury Stays',description,alternates:{canonical,...(ready?{languages}:{})},openGraph:{title,description,url:canonical,siteName:'Bosphoras Luxury Stays',type:'website',...(image?{images:[{url:new URL(image.src,ORIGIN).href,alt:imageAlt}]}:{})},twitter:{card:'summary_large_image',title,description,...(image?{images:[new URL(image.src,ORIGIN).href]}:{})},robots:{index:ready,follow:true,googleBot:{index:ready,follow:true,'max-image-preview':'large'}}};
+    return {title:title+' | BOSPHORAS',description,alternates:{canonical,...(ready?{languages}:{})},openGraph:{title,description,url:canonical,siteName:'BOSPHORAS',type:'website',...(image?{images:[{url:new URL(image.src,ORIGIN).href,alt:imageAlt}]}:{})},twitter:{card:'summary_large_image',title,description,...(image?{images:[new URL(image.src,ORIGIN).href]}:{})},robots:{index:ready,follow:true,googleBot:{index:ready,follow:true,'max-image-preview':'large'}}};
   }
   const isFlagship = route.kind === 'keyword' && route.destination?.slug === 'istanbul' && route.category === 'hotels' && (locale === 'fr' || locale === 'en');
   const featureGuide = (locale === 'fr' || locale === 'en') ? featuredCityGuide(route.destination?.slug) : undefined;
@@ -328,7 +329,7 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     ? Object.fromEntries(travelLocaleCodes.filter((code) => isApproved(route, code)).map((code) => [travelText(code).hreflang, ORIGIN + travelHref(code, route.slug)]))
     : {};
   return {
-    title: pageTitle + ' | Bosphoras Luxury Stays',
+    title: pageTitle + ' | BOSPHORAS',
     description,
     alternates: { canonical, ...(Object.keys(languageAlternates).length ? { languages: languageAlternates } : {}) },
     openGraph: { title: pageTitle, description: (featureGuide?.slug==='hoi-an'||featureGuide?.slug==='da-nang'||featureGuide?.slug==='vinh-hy-bay'||featureGuide?.slug==='hakone'||featureGuide?.slug==='kyoto'||featureGuide?.slug==='tokyo'||featureGuide?.slug==='palawan'||featureGuide?.slug==='sumba'||featureGuide?.slug==='chiang-mai'||featureGuide?.slug==='bangkok'||featureGuide?.slug==='koh-yao-noi'||featureGuide?.slug==='krabi'||featureGuide?.slug==='san-miguel-de-allende'||featureGuide?.slug === 'mayakoba'||featureGuide?.slug === 'los-angeles'||featureGuide?.slug === 'miami'||featureGuide?.slug === 'new-york'||featureGuide?.slug === 'costa-careyes'||featureGuide?.slug === 'st-moritz'||featureGuide?.slug==='aspen'||featureGuide?.slug==='niseko'||featureGuide?.slug==='megeve'||featureGuide?.slug==='jackson-hole'||featureGuide?.slug==='big-sky'||featureGuide?.slug==='val-disere'||featureGuide?.slug==='verbier'||featureGuide?.slug==='gstaad'||featureGuide?.slug==='zermatt'||featureGuide?.slug==='monaco'||featureGuide?.slug==='saint-jean-cap-ferrat'||featureGuide?.slug==='cap-dantibes'||featureGuide?.slug==='lake-como'||featureGuide?.slug==='capri'||featureGuide?.slug==='positano'||featureGuide?.slug==='ravello'||featureGuide?.slug==='mykonos'||featureGuide?.slug==='antiparos'||featureGuide?.slug==='ibiza'||featureGuide?.slug==='formentera'||featureGuide?.slug==='deia'||featureGuide?.slug==='port-andratx'||featureGuide?.slug==='comporta'||featureGuide?.slug==='melides'||featureGuide?.slug==='tivat'||featureGuide?.slug==='the-hamptons'||featureGuide?.slug==='palm-beach'||featureGuide?.slug==='nantucket'||featureGuide?.slug==='harbour-island'||featureGuide?.slug==='turks-and-caicos'||featureGuide?.slug==='canouan'||featureGuide?.slug==='necker-island'||featureGuide?.slug==='north-island-seychelles'||featureGuide?.slug==='pamalican-island'||featureGuide?.slug==='laucala-island'||featureGuide?.slug==='jumby-bay'||featureGuide?.slug === 'koh-samui'||featureGuide?.slug==='maldives'||featureGuide?.slug==='los-cabos'||featureGuide?.slug==='saint-barthelemy'||featureGuide?.slug==='porto-cervo') ? description : t.value, url: canonical, siteName: 'Bosphoras Luxury Stays', type: 'website' },
@@ -484,7 +485,7 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
   const node = {
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'WebPage', '@id': base + '#webpage', url: base, name: route.hotel?.name || route.destination?.name || 'Bosphoras Luxury Stays', inLanguage: travelText(locale).hreflang, isPartOf: { '@type': 'WebSite', name: 'Bosphoras Luxury Stays', url: ORIGIN + '/travel' } },
+      { '@type': 'WebPage', '@id': base + '#webpage', url: base, name: route.hotel?.name || route.destination?.name || 'Bosphoras Luxury Stays', inLanguage: travelText(locale).hreflang, isPartOf: { '@type': 'WebSite', name: 'BOSPHORAS', url: ORIGIN + '/travel' } },
       { '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Travel', item: ORIGIN + travelHref(locale) },
         ...crumbs.map((crumb, index) => ({ '@type': 'ListItem', position: index + 2, name: crumb.label, item: ORIGIN + travelHref(locale, crumb.slug) }))
@@ -498,8 +499,8 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
           inLanguage: locale,
           mainEntityOfPage: base,
           dateModified: istanbulEditorialSourceDate,
-          author: { '@type': 'Organization', name: 'Bosphoras Luxury Stays', url: ORIGIN + '/travel' },
-          publisher: { '@type': 'Organization', name: 'Bosphoras Luxury Stays', url: ORIGIN + '/travel' }
+          author: { '@type': 'Organization', name: 'BOSPHORAS', url: ORIGIN + '/travel' },
+          publisher: { '@type': 'Organization', name: 'BOSPHORAS', url: ORIGIN + '/travel' }
         },
         {
           '@type': 'ItemList',
@@ -589,7 +590,10 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
     return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
       <Schema locale={locale} route={route}/>
       <Header locale={locale} slug={route.slug} limitedLocales/>
-      <HotelEditorialDetail hotel={route.hotel} locale={locale}/>
+      <div className="mx-auto max-w-7xl px-5 pt-5">
+         <TravelContextualSearch locale={locale} category="hotels" destinationName="Istanbul" destinationSlug="istanbul" sourceSlug={route.slug} compact/>
+       </div>
+       <HotelEditorialDetail hotel={route.hotel} locale={locale}/>
       <Footer locale={locale}/>
     </div>;
   }
@@ -597,7 +601,10 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
     return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
       <Schema locale={locale} route={route}/>
       <Header locale={locale} slug={route.slug}/>
-      <IstanbulFlagship locale={locale}/>
+      <div className="mx-auto max-w-7xl px-5 pt-5">
+        <TravelContextualSearch locale={locale} category="hotels" destinationName="Istanbul" destinationSlug="istanbul" sourceSlug={route.slug} compact/>
+       </div>
+       <IstanbulFlagship locale={locale}/>
       <Footer locale={locale}/>
     </div>;
   }
@@ -606,7 +613,11 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
   if(selectedCity&&localGuide&&isEditorialLocale(locale)&&(route.kind==='destination'||(route.kind==='keyword'&&category==='hotels'))){return <div lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="min-h-screen bg-[#f8f5ee]">
       <LocalizedGuideSchema city={selectedCity} data={localGuide} locale={locale} path={route.slug}/>
       <Header locale={locale} slug={route.slug} limitedLocales/>
-      <LocalizedFeaturedCityGuide city={selectedCity} data={localGuide} locale={locale} variant={route.kind==='destination'?'destination':'hotels'}/>
+      <div className="mx-auto max-w-7xl px-5 pt-5">
+         <TravelContextualSearch locale={locale} category="hotels" destinationName={destination?.name} destinationSlug={destination?.slug}
+           availableCategories={route.kind==='destination'?destination?.categories:undefined} sourceSlug={route.slug} compact/>
+       </div>
+       <LocalizedFeaturedCityGuide city={selectedCity} data={localGuide} locale={locale} variant={route.kind==='destination'?'destination':'hotels'}/>
       <Footer locale={locale}/>
     </div>;}
   if (selectedCity && (locale === 'fr' || locale === 'en') &&
@@ -614,7 +625,11 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
     return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
       <Schema locale={locale} route={route}/>
       <Header locale={locale} slug={route.slug} limitedLocales/>
-      <FeaturedCityGuide city={selectedCity} locale={locale} variant={route.kind === 'destination' ? 'destination' : 'hotels'}/>
+      <div className="mx-auto max-w-7xl px-5 pt-5">
+         <TravelContextualSearch locale={locale} category="hotels" destinationName={destination?.name} destinationSlug={destination?.slug}
+           availableCategories={route.kind==='destination'?destination?.categories:undefined} sourceSlug={route.slug} compact/>
+       </div>
+       <FeaturedCityGuide city={selectedCity} locale={locale} variant={route.kind === 'destination' ? 'destination' : 'hotels'}/>
       <Footer locale={locale}/>
     </div>;
   }
@@ -624,7 +639,7 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
     <main lang={t.hreflang} dir={locale==='ar'?'rtl':'ltr'}>
       <section className="border-b border-[#e1e5e5] bg-[#f5f5f3] px-5 py-16 text-[#202629] sm:py-24">
         <div className="mx-auto max-w-7xl">
-          <p className="mb-6 text-xs font-medium uppercase tracking-[0.16em] text-[#193344]">BOSPHORAS · LUXURY STAYS</p>
+          <p className="mb-6 text-xs font-medium uppercase tracking-[0.16em] text-[#193344]">BOSPHORAS</p>
           <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl leading-tight max-w-5xl">{focus}</h1>
           <p className="mt-8 max-w-2xl text-lg leading-8 text-[#465159]">{t.tagline}</p>
           <p className="mt-5 max-w-3xl text-sm text-[#53616b]">{t.value}</p>
@@ -632,7 +647,12 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
         </div>
       </section>
       <div className="mx-auto max-w-7xl px-5 py-12">
-        {route.kind !== 'home' && <BreadCrumb locale={locale} items={travelCrumbs(locale, route)}/>}
+        {(category||route.kind==='destination'||route.kind==='home')&&
+          <TravelContextualSearch locale={locale} category={category||'hotels'}
+           destinationName={destination?nativeTravelName(destination.slug,locale,destination.name):undefined}
+           destinationSlug={destination?.slug}
+           availableCategories={route.kind==='destination'?destination?.categories:undefined} sourceSlug={route.slug}/>}
+         {route.kind !== 'home' && <BreadCrumb locale={locale} items={travelCrumbs(locale, route)}/>}
         {route.kind === 'home' && <>
           <section className="mb-16">
             <h2 className="font-serif text-3xl sm:text-4xl">{t.collections}</h2>

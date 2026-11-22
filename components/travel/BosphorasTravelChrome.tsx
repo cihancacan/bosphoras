@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
+import { rememberTravelLanguage } from '@/lib/travel/languagePreference';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { ArrowRight, BookOpenText, ChevronDown, Compass, Globe2, Headphones, Home, Menu, Plane, Search, X } from 'lucide-react';
@@ -40,6 +42,7 @@ export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,
  const router=useRouter();
  const [menuOpen,setMenuOpen]=useState(false);
  const [languagesOpen,setLanguagesOpen]=useState(false);
+ const [menuLanguagesOpen,setMenuLanguagesOpen]=useState(false);
  const label=labels[locale];
  const currentService=activeService==='homes'?'villas':activeService;
  const languageHref=(loc:TravelLocale)=>guideSlug!==undefined?travelHref(loc,guideSlug):bookingPageHref(loc,currentService);
@@ -65,7 +68,7 @@ export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,
    <div className="grid max-h-[60vh] grid-cols-2 gap-1 overflow-y-auto p-2" role="group" aria-label={label.languages}>
     {travelLanguageInfo.filter(item=>!allowedLanguages||allowedLanguages.includes(item.code)).map(item=>(
       <Link href={languageHref(item.code)} key={item.code} lang={item.code} hrefLang={item.hreflang} prefetch={false}
-       onClick={()=>{setLanguagesOpen(false);setMenuOpen(false);}}
+       onClick={()=>{rememberTravelLanguage(item.code);setLanguagesOpen(false);setMenuOpen(false);setMenuLanguagesOpen(false);}}
        className={'flex min-h-11 items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-[#f5f8fa] '+
          (item.code===locale?'bg-[#fff0f6] font-semibold text-[#922555]':'text-[#26414f]')}>
        <span className="min-w-9 text-[10px] font-semibold tracking-wide text-[#8a9ba5]">{keyForLanguage(item.code)}</span>
@@ -79,12 +82,12 @@ export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,
    <div className="container-editorial flex h-[66px] items-center justify-between gap-3 md:h-[74px]">
     <Link href={bookingPageHref(locale)} className="inline-flex shrink-0 items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#C23674]" aria-label="Bosphoras">
       <span style={{fontFamily:'var(--font-bosphoras-logo),sans-serif'}} className="text-[1.17rem] font-normal uppercase tracking-[0.16em] text-[#172f3f] sm:text-[1.45rem]">BOSPHORAS</span>
-      <span className="ms-2 h-1.5 w-1.5 rounded-full bg-[#C23674]" aria-hidden="true"/>
+      <Image src="/images/brand/bosphoras-mask-rose.png" width={36} height={17} alt="" aria-hidden="true" className="ms-2 h-[17px] w-[36px] shrink-0 object-contain"/>
     </Link>
     <nav aria-label={label.book} className="hidden items-center gap-7 lg:flex">
       <button type="button" onClick={searchClick} className="min-h-11 text-sm font-semibold text-[#172f3f] hover:text-[#C23674]">{label.search}</button>
       <Link href={exploreHref} className="inline-flex min-h-11 items-center text-sm font-medium text-[#4a6271] hover:text-[#C23674]">{label.destinations}</Link>
-      <button type="button" onClick={privateClick} className="min-h-11 text-sm font-medium text-[#4a6271] hover:text-[#C23674]">{label.private} <span aria-hidden="true" className="ms-1 text-[#C23674]">●</span></button>
+      <button type="button" onClick={privateClick} className="min-h-11 text-sm font-medium text-[#4a6271] hover:text-[#C23674]">{label.private}</button>
     </nav>
     <div className="flex items-center gap-2">
      <div className="relative">
@@ -96,7 +99,7 @@ export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,
       {languagesOpen&&<div id="bosphoras-travel-languages" className={'absolute top-[calc(100%+8px)] z-[60] w-[325px] max-w-[calc(100vw-24px)] overflow-hidden rounded-xl border border-[#e0e8ed] bg-white shadow-[0_18px_45px_rgba(20,49,70,0.13)] '+(locale==='ar'?'left-0':'right-0')}>{languages}</div>}
      </div>
      <a href="mailto:contact@bosphoras.com" aria-label={label.support} title={label.support} className="hidden min-h-11 items-center gap-2 rounded-lg px-3 text-sm font-medium text-[#526c7a] transition-colors hover:bg-[#f5f8fa] lg:flex"><Headphones size={17} className="text-[#C23674]"/>{label.support}</a>
-     <button type="button" onClick={()=>{setMenuOpen(v=>!v);setLanguagesOpen(false);}} aria-expanded={menuOpen} aria-controls="bosphoras-travel-mobile-menu" aria-label={menuOpen?label.close:label.menu}
+     <button type="button" onClick={()=>{setMenuOpen(v=>!v);setLanguagesOpen(false);setMenuLanguagesOpen(false);}} aria-expanded={menuOpen} aria-controls="bosphoras-travel-mobile-menu" aria-label={menuOpen?label.close:label.menu}
       className="inline-flex h-11 w-11 items-center justify-center rounded-lg text-[#203b4c] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#C23674] lg:hidden">
       {menuOpen?<X size={24}/>:<Menu size={24}/>}
      </button>
@@ -108,7 +111,15 @@ export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,
      <Link href={exploreHref} onClick={()=>setMenuOpen(false)} className="flex min-h-12 items-center gap-3 border-b border-[#e8edef] py-2 text-sm font-medium"><Compass size={19} className="text-[#C23674]"/>{label.destinations}</Link>
      <button type="button" onClick={privateClick} className="flex min-h-12 w-full items-center gap-3 border-b border-[#e8edef] py-2 text-start text-sm font-medium"><Plane size={19} className="text-[#C23674]"/>{label.private}</button>
      <a href="mailto:contact@bosphoras.com" className="flex min-h-12 items-center gap-3 py-2 text-sm font-medium"><Headphones size={19} className="text-[#C23674]"/>{label.contact}</a>
-     <p className="mt-4 mb-1 text-xs font-semibold uppercase tracking-[0.13em] text-[#607886]">{label.languages}</p>{languages}
+     <button type="button" aria-expanded={menuLanguagesOpen} aria-controls="bosphoras-travel-menu-languages"
+        onClick={()=>setMenuLanguagesOpen(v=>!v)}
+        className="mt-3 flex min-h-12 w-full items-center gap-3 border-t border-[#e8edef] py-2 text-start text-sm font-medium text-[#26414f]">
+        <Globe2 size={19} className="text-[#C23674]" aria-hidden="true"/>
+        <span>{label.languages}</span>
+        <span className="ms-auto rounded-md bg-[#fff0f6] px-2 py-1 text-xs font-semibold text-[#922555]">{keyForLanguage(locale)}</span>
+        <ChevronDown size={16} className={menuLanguagesOpen?'rotate-180':''} aria-hidden="true"/>
+      </button>
+      {menuLanguagesOpen&&<div id="bosphoras-travel-menu-languages" className="mt-1 rounded-lg border border-[#e8edef] bg-[#fafcfd]">{languages}</div>}
     </div>
    </div>}
   </header>
@@ -119,7 +130,7 @@ export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,
     <button type="button" onClick={searchClick} className="flex min-h-[62px] flex-col items-center justify-center gap-1 px-1 text-[#C23674]" aria-label={label.search}><Search size={22} strokeWidth={1.9}/><span className="text-[11px] font-semibold">{label.search}</span></button>
     <Link href={exploreHref} className="flex min-h-[62px] flex-col items-center justify-center gap-1 px-1 text-[#526878]"><Compass size={22} strokeWidth={1.75}/><span className="text-[11px] font-medium">{label.explore}</span></Link>
     <button type="button" onClick={privateClick} className="flex min-h-[62px] flex-col items-center justify-center gap-1 px-1 text-[#526878]" aria-label={label.private}><Plane size={22} strokeWidth={1.75}/><span className="text-[11px] font-medium">{label.private}</span></button>
-    <button type="button" onClick={()=>{setMenuOpen(v=>!v);setLanguagesOpen(false);}} className="flex min-h-[62px] flex-col items-center justify-center gap-1 px-1 text-[#526878]" aria-label={label.menu}><Menu size={22} strokeWidth={1.75}/><span className="text-[11px] font-medium">{label.menu}</span></button>
+    <button type="button" onClick={()=>{setMenuOpen(v=>!v);setLanguagesOpen(false);setMenuLanguagesOpen(false);}} className="flex min-h-[62px] flex-col items-center justify-center gap-1 px-1 text-[#526878]" aria-label={label.menu}><Menu size={22} strokeWidth={1.75}/><span className="text-[11px] font-medium">{label.menu}</span></button>
    </div>
   </nav>
  </>;
@@ -140,7 +151,7 @@ export function BosphorasTravelFooter({locale}:{locale:TravelLocale}){
    <div className="container-editorial py-12 md:py-14">
     <div className="grid gap-7 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-10">
      <div>
-      <Link href={home} className="inline-flex items-center gap-2" aria-label="Bosphoras"><span style={{fontFamily:'var(--font-bosphoras-logo),sans-serif'}} className="text-xl font-normal uppercase tracking-[0.16em]">BOSPHORAS</span><span className="h-1.5 w-1.5 rounded-full bg-[#C23674]"/></Link>
+      <Link href={home} className="inline-flex items-center gap-2" aria-label="Bosphoras"><span style={{fontFamily:'var(--font-bosphoras-logo),sans-serif'}} className="text-xl font-normal uppercase tracking-[0.16em]">BOSPHORAS</span><Image src="/images/brand/bosphoras-mask-rose.png" width={36} height={17} alt="" aria-hidden="true" className="h-[17px] w-[36px] shrink-0 object-contain"/></Link>
       <p className="mt-4 max-w-[340px] text-sm leading-6 text-[#607684]">{info.slogan}</p>
       <p className="mt-3 max-w-[360px] text-xs leading-6 text-[#768b96]">{t.partnerInfo}</p>
      </div>
