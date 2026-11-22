@@ -8,7 +8,7 @@ import { Footer } from '@/components/Footer';
 import type { Locale } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
 import { getSlugForPage } from '@/data/pages/types';
-import { getNuiteeWhiteLabelSearchHref } from '@/lib/travel/nuiteeWhiteLabel';
+import { getNuiteeWhiteLabelSearchHref, getNuiteeExperiencesHref } from '@/lib/travel/nuiteeWhiteLabel';
 import { withAssessmentContext } from '@/lib/assessmentContext';
 
 type Service = 'flights' | 'hotels' | 'villas' | 'chalets' | 'jets' | 'helicopters' | 'yachts' | 'activities';
@@ -31,7 +31,7 @@ const translations: Record<Locale, {
   privacy: string; explore: string;
   flightDestination: string; activityDestination: string; activityDate: string; passengers: string;
   tripType: string; roundTrip: string; oneWay: string; cabin: string; cabinOptions: Record<'economy'|'premium'|'business'|'first', string>;
-  flightsNote: string; activitiesNote: string;
+  flightsNote: string; activitiesNote: string; activitySearch: string;
 }> = {
   fr: {
     eyebrow: 'BOSPHORAS · PRIVATE TRAVEL',
@@ -49,7 +49,8 @@ const translations: Record<Locale, {
     tripType: 'Type de trajet', roundTrip: 'Aller-retour', oneWay: 'Aller simple', cabin: 'Classe',
     cabinOptions: {economy:'Économique', premium:'Premium Éco', business:'Affaires', first:'Première'},
     flightsNote: 'Billets d’avion : recherche et tarifs en direct à venir après accord avec le partenaire aérien.',
-    activitiesNote: 'Activités et excursions : offres réservables après validation du programme partenaire.',
+    activitiesNote: 'Activités via Nuitée Connect Experiences. L’accès à la réservation doit être activé pour le compte Bosphoras et sa marque blanche.',
+    activitySearch: 'Rechercher des activités',
     services: {
       flights:{label:'Vols',description:'Billets d’avion et itinéraires internationaux'},
       hotels:{label:'Hôtels',description:'Hôtels et resorts sélectionnés'},
@@ -58,7 +59,7 @@ const translations: Record<Locale, {
       jets:{label:'Jets privés',description:'Charters et vols sur mesure'},
       helicopters:{label:'Hélicoptères',description:'Transferts privés et survols'},
       yachts:{label:'Yachts',description:'Charters et croisières privées'},
-      activities:{label:'Activités',description:'Expériences, visites et excursions'}
+      activities:{label:'Activités',description:'Expériences et excursions via Nuitée'}
     }
   },
   en: {
@@ -75,8 +76,9 @@ const translations: Record<Locale, {
     tripType:'Journey type', roundTrip:'Return', oneWay:'One way', cabin:'Cabin',
     cabinOptions:{economy:'Economy',premium:'Premium economy',business:'Business',first:'First'},
     flightsNote:'Commercial flights: live tickets and fares will be available once the airline partner is connected.',
-    activitiesNote:'Activities and excursions: bookable options will be added after partner approval.',
-    services:{flights:{label:'Flights',description:'Airline tickets and international routes'},hotels:{label:'Hotels',description:'Curated hotels and resorts'},villas:{label:'Villas',description:'Private pools and exceptional homes'},chalets:{label:'Chalets',description:'Alpine escapes and mountain estates'},jets:{label:'Private jets',description:'Charters and tailored flights'},helicopters:{label:'Helicopters',description:'Private transfers and scenic flights'},yachts:{label:'Yachts',description:'Private charters and cruises'},activities:{label:'Activities',description:'Experiences, tours and excursions'}}
+    activitiesNote:'Activities via Nuitee Connect Experiences. Booking requires activation for the Bosphoras account and its white-label storefront.',
+    activitySearch:'Browse activities',
+    services:{flights:{label:'Flights',description:'Airline tickets and international routes'},hotels:{label:'Hotels',description:'Curated hotels and resorts'},villas:{label:'Villas',description:'Private pools and exceptional homes'},chalets:{label:'Chalets',description:'Alpine escapes and mountain estates'},jets:{label:'Private jets',description:'Charters and tailored flights'},helicopters:{label:'Helicopters',description:'Private transfers and scenic flights'},yachts:{label:'Yachts',description:'Private charters and cruises'},activities:{label:'Activities',description:'Tours and experiences via Nuitee'}}
   },
   ru: {
     eyebrow:'BOSPHORAS · PRIVATE TRAVEL',title:'Места, ради которых стоит отправиться в путь.',
@@ -92,8 +94,9 @@ const translations: Record<Locale, {
     tripType:'Тип перелёта', roundTrip:'Туда и обратно', oneWay:'В одну сторону', cabin:'Класс обслуживания',
     cabinOptions:{economy:'Эконом',premium:'Премиум-эконом',business:'Бизнес',first:'Первый класс'},
     flightsNote:'Авиабилеты и актуальные цены появятся после подключения авиационного партнёра.',
-    activitiesNote:'Экскурсии и развлечения станут доступны для бронирования после подключения партнёра.',
-    services:{flights:{label:'Авиабилеты',description:'Регулярные международные рейсы'},hotels:{label:'Отели',description:'Избранные отели и курорты'},villas:{label:'Виллы',description:'Частные дома и бассейны'},chalets:{label:'Шале',description:'Отдых в Альпах'},jets:{label:'Частные самолёты',description:'Перелёты по запросу'},helicopters:{label:'Вертолёты',description:'Трансферы и экскурсии'},yachts:{label:'Яхты',description:'Частные круизы'},activities:{label:'Впечатления',description:'Экскурсии и мероприятия'}}
+    activitiesNote:'Экскурсии и мероприятия через Nuitée Connect Experiences. Для бронирования необходимо активировать продукт на аккаунте и витрине Bosphoras.',
+    activitySearch:'Найти экскурсии',
+    services:{flights:{label:'Авиабилеты',description:'Регулярные международные рейсы'},hotels:{label:'Отели',description:'Избранные отели и курорты'},villas:{label:'Виллы',description:'Частные дома и бассейны'},chalets:{label:'Шале',description:'Отдых в Альпах'},jets:{label:'Частные самолёты',description:'Перелёты по запросу'},helicopters:{label:'Вертолёты',description:'Трансферы и экскурсии'},yachts:{label:'Яхты',description:'Частные круизы'},activities:{label:'Впечатления',description:'Экскурсии и мероприятия через Nuitée'}}
   },
   ar: {
     eyebrow:'BOSPHORAS · PRIVATE TRAVEL',title:'أماكن تستحق الرحلة. وطريقة استثنائية للوصول.',
@@ -109,8 +112,9 @@ const translations: Record<Locale, {
     tripType:'نوع الرحلة', roundTrip:'ذهاب وعودة', oneWay:'ذهاب فقط', cabin:'درجة السفر',
     cabinOptions:{economy:'اقتصادية',premium:'اقتصادية ممتازة',business:'رجال الأعمال',first:'الأولى'},
     flightsNote:'ستتوفر أسعار وتذاكر الرحلات الجوية بعد تفعيل الشريك المتخصص.',
-    activitiesNote:'ستتوفر الأنشطة والجولات للحجز بعد تفعيل الشريك.',
-    services:{flights:{label:'رحلات الطيران',description:'تذاكر الرحلات الجوية الدولية'},hotels:{label:'الفنادق',description:'فنادق ومنتجعات مختارة'},villas:{label:'الفلل',description:'منازل خاصة ومسابح'},chalets:{label:'الشاليهات',description:'ملاذات جبلية فاخرة'},jets:{label:'الطائرات الخاصة',description:'رحلات حسب الطلب'},helicopters:{label:'المروحيات',description:'انتقالات وجولات جوية'},yachts:{label:'اليخوت',description:'رحلات بحرية خاصة'},activities:{label:'الأنشطة',description:'تجارب وجولات ورحلات'} }
+    activitiesNote:'الأنشطة والجولات عبر Nuitée Connect Experiences. يتطلب الحجز تفعيل المنتج لحساب بوسفوراس والمتجر الخاص به.',
+    activitySearch:'استكشف الأنشطة',
+    services:{flights:{label:'رحلات الطيران',description:'تذاكر الرحلات الجوية الدولية'},hotels:{label:'الفنادق',description:'فنادق ومنتجعات مختارة'},villas:{label:'الفلل',description:'منازل خاصة ومسابح'},chalets:{label:'الشاليهات',description:'ملاذات جبلية فاخرة'},jets:{label:'الطائرات الخاصة',description:'رحلات حسب الطلب'},helicopters:{label:'المروحيات',description:'انتقالات وجولات جوية'},yachts:{label:'اليخوت',description:'رحلات بحرية خاصة'},activities:{label:'الأنشطة',description:'تجارب وجولات عبر Nuitée'} }
   }
 };
 
@@ -132,6 +136,7 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
   const assessment = getLocalePath(locale,getSlugForPage('private-assessment',locale) || '/diagnostic-prive');
   const isFlight = service === 'flights';
   const isActivity = service === 'activities';
+  const nuiteeActivitiesHref = getNuiteeExperiencesHref();
   const isTransport = isFlight || service === 'jets' || service === 'helicopters';
   const isHotel = service === 'hotels';
   const inquiryHref = useMemo(() => withAssessmentContext(
@@ -238,12 +243,16 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
                 <a href={getNuiteeWhiteLabelSearchHref(locale)} rel="sponsored" className="inline-flex min-h-12 items-center gap-3 bg-[#193344] px-7 py-3 text-sm font-medium text-white hover:bg-[#28495a]">
                   {tr.hotelCta}<ArrowRight size={17}/>
                 </a>
+              ) : (isActivity && nuiteeActivitiesHref) ? (
+                <a href={nuiteeActivitiesHref} rel="sponsored" className="inline-flex min-h-12 items-center gap-3 bg-[#193344] px-7 py-3 text-sm font-medium text-white hover:bg-[#28495a]">
+                  {tr.activitySearch}<ArrowRight size={17}/>
+                </a>
               ) : (
                 <Link href={inquiryHref} className="inline-flex min-h-12 items-center gap-3 bg-[#193344] px-7 py-3 text-sm font-medium text-white hover:bg-[#28495a]">
                   {tr.cta}<ArrowRight size={17}/>
                 </Link>
               )}
-              <p className="max-w-lg text-xs leading-5 text-[#67747c]">{isHotel ? tr.footnote : isFlight ? tr.flightsNote : isActivity ? tr.activitiesNote : tr.empty}</p>
+              <p className="max-w-lg text-xs leading-5 text-[#67747c]">{isHotel ? tr.footnote : isFlight ? tr.flightsNote : isActivity ? (nuiteeActivitiesHref ? tr.footnote : tr.activitiesNote) : tr.empty}</p>
             </div>
           </div>
         </section>
