@@ -10,6 +10,7 @@ import { getLocalePath } from '@/lib/routes';
 import { getSlugForPage } from '@/data/pages/types';
 import { getNuiteeWhiteLabelSearchHref, getNuiteeExperiencesHref } from '@/lib/travel/nuiteeWhiteLabel';
 import { withAssessmentContext } from '@/lib/assessmentContext';
+import { getApprovedPartnerUrl, getPrivateTravelPartnerName, type PrivateTravelPartnerService } from '@/lib/travel/privateTravelSupplierGateways';
 
 type Service = 'flights' | 'hotels' | 'villas' | 'chalets' | 'jets' | 'helicopters' | 'yachts' | 'activities';
 const services: { id: Service; icon: typeof Home }[] = [
@@ -48,7 +49,7 @@ const translations: Record<Locale, {
     flightDestination: 'Aéroport d’arrivée', activityDestination: 'Ville ou destination', activityDate: 'Date de l’activité', passengers: 'Passagers',
     tripType: 'Type de trajet', roundTrip: 'Aller-retour', oneWay: 'Aller simple', cabin: 'Classe',
     cabinOptions: {economy:'Économique', premium:'Premium Éco', business:'Affaires', first:'Première'},
-    flightsNote: 'Billets d’avion : recherche et tarifs en direct à venir après accord avec le partenaire aérien.',
+    flightsNote: 'Vols commerciaux : l’activation a déjà été demandée à Nuitée. Les tarifs en direct seront disponibles après confirmation.',
     activitiesNote: 'Activités via Nuitée Connect Experiences. L’accès à la réservation doit être activé pour le compte Bosphoras et sa marque blanche.',
     activitySearch: 'Rechercher des activités',
     services: {
@@ -75,7 +76,7 @@ const translations: Record<Locale, {
     flightDestination:'Arrival airport', activityDestination:'City or destination', activityDate:'Activity date', passengers:'Passengers',
     tripType:'Journey type', roundTrip:'Return', oneWay:'One way', cabin:'Cabin',
     cabinOptions:{economy:'Economy',premium:'Premium economy',business:'Business',first:'First'},
-    flightsNote:'Commercial flights: live tickets and fares will be available once the airline partner is connected.',
+    flightsNote:'Commercial flights: activation has already been requested from Nuitée. Live pricing awaits confirmation.',
     activitiesNote:'Activities via Nuitee Connect Experiences. Booking requires activation for the Bosphoras account and its white-label storefront.',
     activitySearch:'Browse activities',
     services:{flights:{label:'Flights',description:'Airline tickets and international routes'},hotels:{label:'Hotels',description:'Curated hotels and resorts'},villas:{label:'Villas',description:'Private pools and exceptional homes'},chalets:{label:'Chalets',description:'Alpine escapes and mountain estates'},jets:{label:'Private jets',description:'Charters and tailored flights'},helicopters:{label:'Helicopters',description:'Private transfers and scenic flights'},yachts:{label:'Yachts',description:'Private charters and cruises'},activities:{label:'Activities',description:'Tours and experiences via Nuitee'}}
@@ -93,7 +94,7 @@ const translations: Record<Locale, {
     flightDestination:'Аэропорт прибытия', activityDestination:'Город или направление', activityDate:'Дата мероприятия', passengers:'Пассажиры',
     tripType:'Тип перелёта', roundTrip:'Туда и обратно', oneWay:'В одну сторону', cabin:'Класс обслуживания',
     cabinOptions:{economy:'Эконом',premium:'Премиум-эконом',business:'Бизнес',first:'Первый класс'},
-    flightsNote:'Авиабилеты и актуальные цены появятся после подключения авиационного партнёра.',
+    flightsNote:'Подключение авиабилетов уже запрошено у Nuitée. Актуальные цены станут доступны после подтверждения.',
     activitiesNote:'Экскурсии и мероприятия через Nuitée Connect Experiences. Для бронирования необходимо активировать продукт на аккаунте и витрине Bosphoras.',
     activitySearch:'Найти экскурсии',
     services:{flights:{label:'Авиабилеты',description:'Регулярные международные рейсы'},hotels:{label:'Отели',description:'Избранные отели и курорты'},villas:{label:'Виллы',description:'Частные дома и бассейны'},chalets:{label:'Шале',description:'Отдых в Альпах'},jets:{label:'Частные самолёты',description:'Перелёты по запросу'},helicopters:{label:'Вертолёты',description:'Трансферы и экскурсии'},yachts:{label:'Яхты',description:'Частные круизы'},activities:{label:'Впечатления',description:'Экскурсии и мероприятия через Nuitée'}}
@@ -111,11 +112,18 @@ const translations: Record<Locale, {
     flightDestination:'مطار الوصول', activityDestination:'المدينة أو الوجهة', activityDate:'تاريخ النشاط', passengers:'المسافرون',
     tripType:'نوع الرحلة', roundTrip:'ذهاب وعودة', oneWay:'ذهاب فقط', cabin:'درجة السفر',
     cabinOptions:{economy:'اقتصادية',premium:'اقتصادية ممتازة',business:'رجال الأعمال',first:'الأولى'},
-    flightsNote:'ستتوفر أسعار وتذاكر الرحلات الجوية بعد تفعيل الشريك المتخصص.',
+    flightsNote:'تم طلب تفعيل الرحلات الجوية من Nuitée بالفعل. ستظهر الأسعار بعد تأكيد التفعيل.',
     activitiesNote:'الأنشطة والجولات عبر Nuitée Connect Experiences. يتطلب الحجز تفعيل المنتج لحساب بوسفوراس والمتجر الخاص به.',
     activitySearch:'استكشف الأنشطة',
     services:{flights:{label:'رحلات الطيران',description:'تذاكر الرحلات الجوية الدولية'},hotels:{label:'الفنادق',description:'فنادق ومنتجعات مختارة'},villas:{label:'الفلل',description:'منازل خاصة ومسابح'},chalets:{label:'الشاليهات',description:'ملاذات جبلية فاخرة'},jets:{label:'الطائرات الخاصة',description:'رحلات حسب الطلب'},helicopters:{label:'المروحيات',description:'انتقالات وجولات جوية'},yachts:{label:'اليخوت',description:'رحلات بحرية خاصة'},activities:{label:'الأنشطة',description:'تجارب وجولات عبر Nuitée'} }
   }
+};
+
+const privateServiceLabels: Record<Locale,{collection:string;curated:string;signature:string;redirect:string;pending:string;skippered:string;crewed:string;charterInfo:string;rooms:string}> = {
+ fr:{collection:'Type de sélection',curated:'Collection sélectionnée',signature:'Propriétés signature',redirect:'Continuer chez le partenaire',pending:'Catalogue partenaire en cours de connexion — demande privée disponible.',skippered:'Yacht avec skipper',crewed:'Superyacht avec équipage',charterInfo:'Les superyachts avec équipage restent sur devis individuel.',rooms:'Chambres'},
+ en:{collection:'Collection',curated:'Curated stays',signature:'Signature properties',redirect:'Continue with partner',pending:'Partner catalogue being connected — private enquiry available.',skippered:'Skippered yacht',crewed:'Fully crewed superyacht',charterInfo:'Fully crewed superyachts require a custom quote.',rooms:'Bedrooms'},
+ ru:{collection:'Подборка',curated:'Избранные варианты',signature:'Особые резиденции',redirect:'Перейти к партнёру',pending:'Каталог партнёра подключается — доступен индивидуальный запрос.',skippered:'Яхта со шкипером',crewed:'Суперъяхта с экипажем',charterInfo:'Суперъяхты с экипажем — индивидуальный расчёт.',rooms:'Спальни'},
+ ar:{collection:'المجموعة',curated:'إقامات مختارة',signature:'إقامات استثنائية',redirect:'المتابعة لدى الشريك',pending:'نعمل على ربط كتالوج الشريك، ويمكن إرسال طلب خاص.',skippered:'يخت مع قبطان',crewed:'يخت بطاقم كامل',charterInfo:'تتطلب اليخوت بطاقم كامل عرض سعر مخصصاً.',rooms:'غرف النوم'}
 };
 
 export function PrivateTravelCollection({ locale }: { locale: Locale }) {
@@ -127,6 +135,9 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
   const [guests,setGuests] = useState('2');
   const [tripType,setTripType] = useState<'round'|'one'>('round');
   const [cabin,setCabin] = useState<'economy'|'premium'|'business'|'first'>('economy');
+  const [homeCollection,setHomeCollection] = useState<'curated'|'signature'>('curated');
+  const [bedrooms,setBedrooms] = useState('3');
+  const [yachtType,setYachtType] = useState<'skippered'|'crewed'>('skippered');
   useEffect(() => {
     const requested = new URLSearchParams(window.location.search).get('service');
     if (services.some(item => item.id === requested)) setService(requested as Service);
@@ -138,11 +149,17 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
   const isActivity = service === 'activities';
   const nuiteeActivitiesHref = getNuiteeExperiencesHref();
   const isTransport = isFlight || service === 'jets' || service === 'helicopters';
+  const privateService = (['villas','chalets','jets','helicopters','yachts'] as Service[]).includes(service);
+  const selectedPartner = privateService ? getPrivateTravelPartnerName(service as PrivateTravelPartnerService,homeCollection) : '';
+  const bookingHref = privateService && !(service==='yachts' && yachtType==='crewed')
+    ? getApprovedPartnerUrl(service as PrivateTravelPartnerService,homeCollection)
+    : null;
+  const privateLabels = privateServiceLabels[locale];
   const isHotel = service === 'hotels';
   const inquiryHref = useMemo(() => withAssessmentContext(
     assessment,currentPath,'Bosphoras Private Travel',
-    [tr.services[service].label, origin && ('From: ' + origin), destination && ('To: ' + destination), departure && ('Departure: ' + departure), (!isFlight || tripType === 'round') && returnDate && ('Return: ' + returnDate), 'Guests: ' + guests, isFlight && ('Trip: ' + tripType), isFlight && ('Cabin: ' + cabin)].filter(Boolean).join(' · ')
-  ),[assessment,currentPath,tr,service,origin,destination,departure,returnDate,guests,isFlight,tripType,cabin]);
+    [tr.services[service].label, origin && ('From: ' + origin), destination && ('To: ' + destination), departure && ('Departure: ' + departure), (!isFlight || tripType === 'round') && returnDate && ('Return: ' + returnDate), 'Guests: ' + guests, isFlight && ('Trip: ' + tripType), isFlight && ('Cabin: ' + cabin), (service==='villas'||service==='chalets') && ('Bedrooms: '+bedrooms),selectedPartner && ('Preferred supplier: '+selectedPartner),service==='yachts' && ('Charter type: '+yachtType)].filter(Boolean).join(' · ')
+  ),[assessment,currentPath,tr,service,origin,destination,departure,returnDate,guests,isFlight,tripType,cabin,bedrooms,selectedPartner,yachtType]);
 
   return (
     <>
@@ -167,7 +184,7 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
             <h2 className="text-2xl font-normal tracking-[-0.015em] md:text-3xl">{tr.panelTitle}</h2>
             <p className="mt-2 text-sm text-[#626d73]">{tr.panelIntro}</p>
           </div>
-          <div role="tablist" aria-label={tr.panelTitle} className="mt-7 grid grid-cols-2 gap-2 sm:grid-cols-4 xl:grid-cols-8">
+          <div role="tablist" aria-label={tr.panelTitle} className="mt-7 grid grid-cols-2 gap-2 sm:grid-cols-4 xl:grid-cols-4">
             {services.map(({id,icon:Icon}) => {
               const active = id === service;
               return (
@@ -182,6 +199,33 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
           </div>
 
           <div role="tabpanel" className="mt-6 border border-[#e1e6e8] bg-white p-5 shadow-[0_8px_36px_rgba(25,51,68,0.045)] md:p-8">
+            {privateService && (
+              <div className="mb-6">
+                {(service==='villas'||service==='chalets') && (
+                  <fieldset>
+                    <legend className="mb-3 text-xs font-medium text-[#43515a]">{privateLabels.collection}</legend>
+                    <div className="flex flex-wrap gap-2">
+                      {([{id:'curated' as const,label:privateLabels.curated},{id:'signature' as const,label:privateLabels.signature}]).map(option=>
+                        <button type="button" key={option.id} aria-pressed={homeCollection===option.id} onClick={()=>setHomeCollection(option.id)}
+                          className={'min-h-11 border px-5 py-3 text-sm ' + (homeCollection===option.id?'border-[#193344] bg-[#193344] text-white':'border-[#dce2e5] bg-white text-[#243741]')}>{option.label}</button>
+                      )}
+                    </div>
+                  </fieldset>
+                )}
+                {service==='yachts' && (
+                  <fieldset>
+                    <legend className="mb-3 text-xs font-medium text-[#43515a]">{tr.services.yachts.label}</legend>
+                    <div className="flex flex-wrap gap-2">
+                      {([{id:'skippered' as const,label:privateLabels.skippered},{id:'crewed' as const,label:privateLabels.crewed}]).map(option=>
+                        <button type="button" key={option.id} aria-pressed={yachtType===option.id} onClick={()=>setYachtType(option.id)}
+                          className={'min-h-11 border px-5 py-3 text-sm ' + (yachtType===option.id?'border-[#193344] bg-[#193344] text-white':'border-[#dce2e5] bg-white text-[#243741]')}>{option.label}</button>
+                      )}
+                    </div>
+                    <p className="mt-3 text-xs text-[#62707a]">{privateLabels.charterInfo}</p>
+                  </fieldset>
+                )}
+              </div>
+            )}
             {isFlight && (
               <div className="mb-6 flex flex-wrap items-center gap-3" role="group" aria-label={tr.tripType}>
                 {(['round','one'] as const).map(mode => <button type="button" key={mode} aria-pressed={tripType === mode}
@@ -227,6 +271,14 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
                   </select>
                 </label>
               )}
+              {(service==='villas'||service==='chalets') && (
+                <label className="block">
+                  <span className="mb-2 block text-xs font-medium">{privateLabels.rooms}</span>
+                  <select value={bedrooms} onChange={e=>setBedrooms(e.target.value)} className="h-12 w-full min-w-0 border border-[#dce2e5] bg-white px-3 text-sm">
+                    {[1,2,3,4,5,6,7,8,10,12].map(n=><option key={n} value={n}>{n}</option>)}
+                  </select>
+                </label>
+              )}
               {isFlight && (
                 <label className="block">
                   <span className="mb-2 block text-xs font-medium">{tr.cabin}</span>
@@ -247,12 +299,16 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
                 <a href={nuiteeActivitiesHref} rel="sponsored" className="inline-flex min-h-12 items-center gap-3 bg-[#193344] px-7 py-3 text-sm font-medium text-white hover:bg-[#28495a]">
                   {tr.activitySearch}<ArrowRight size={17}/>
                 </a>
+              ) : bookingHref ? (
+                <a href={bookingHref} rel="sponsored noopener noreferrer" className="inline-flex min-h-12 items-center gap-3 bg-[#193344] px-7 py-3 text-sm font-medium text-white hover:bg-[#28495a]">
+                  {privateLabels.redirect}<ArrowRight size={17}/>
+                </a>
               ) : (
                 <Link href={inquiryHref} className="inline-flex min-h-12 items-center gap-3 bg-[#193344] px-7 py-3 text-sm font-medium text-white hover:bg-[#28495a]">
                   {tr.cta}<ArrowRight size={17}/>
                 </Link>
               )}
-              <p className="max-w-lg text-xs leading-5 text-[#67747c]">{isHotel ? tr.footnote : isFlight ? tr.flightsNote : isActivity ? (nuiteeActivitiesHref ? tr.footnote : tr.activitiesNote) : tr.empty}</p>
+              <p className="max-w-lg text-xs leading-5 text-[#67747c]">{isHotel ? tr.footnote : isFlight ? tr.flightsNote : isActivity ? (nuiteeActivitiesHref ? tr.footnote : tr.activitiesNote) : privateService && !bookingHref ? privateLabels.pending : tr.footnote}</p>
             </div>
           </div>
         </section>

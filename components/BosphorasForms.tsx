@@ -264,7 +264,17 @@ function BosphorasAssessmentForm({ locale, embedded }: { locale: Locale; embedde
     }
 
     if(!(propertyTitle||propertyRef) && (source || sourceLabel || subject)){
-      const contextMessage=contextualAssessmentMessage(locale,sourceLabel,source,subject);
+      // Preserve private-travel dates, passengers and partner preference in the CRM message.
+      const travel = /\/travel\/private-collection/.test(source);
+      const details = travel ? subject.trim().slice(0,1200) : '';
+      const contextMessage = travel && details
+        ? ({
+          fr:'Bonjour, voici ma demande de voyage privé :',
+          en:'Hello, here is my private travel enquiry:',
+          ru:'Здравствуйте, мой запрос на частное путешествие:',
+          ar:'مرحباً، هذا طلبي للرحلة الخاصة:'
+        }[locale] + '\n\n' + details)
+        : contextualAssessmentMessage(locale,sourceLabel,source,subject);
       if(params.get('home_intake')==='1'){
         const home=homeEditorial[locale];
         const intentIndex=homeIntentIds.findIndex(id=>id===subject);
