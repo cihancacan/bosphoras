@@ -328,14 +328,15 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
   },[isTransfer,kiwitaxiPath]);
   const showKiwitaxi=isTransfer&&kiwitaxiReady;
   const [hotelSearchReady,setHotelSearchReady]=useState(false);
+  const useCompactHotelSearch=isHotel&&(locale==='fr'||locale==='en');
   useEffect(()=>{
-    if(!isHotel) return;
+    if(!useCompactHotelSearch) return;
     const controller=new AbortController();
     fetch('/api/travel/booking/search',{method:'HEAD',signal:controller.signal})
       .then(response=>setHotelSearchReady(response.status===204))
       .catch(()=>{if(!controller.signal.aborted) setHotelSearchReady(false);});
     return ()=>controller.abort();
-  },[isHotel]);
+  },[useCompactHotelSearch]);
   const isActivity=service==='activities';
   const isMulti=isFlight&&tripType==='multi';
   const isHome=service==='villas'||service==='chalets';
@@ -526,7 +527,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                   </fieldset>
                 )}
 
-                {isHotel&&hotelSearchReady?(
+                {useCompactHotelSearch&&hotelSearchReady?(
                   <HotelReservationSearch compact locale={locale==='fr'?'fr':'en'} origin={NUITEE_WHITE_LABEL_ORIGIN} initialUrl={null}/>
                 ):showKiwitaxi?(
                   <>
@@ -535,11 +536,11 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                       <input type="hidden" name="locale" value={locale}/>
                       <label className="min-w-0">
                         <span className={labelClass}><MapPin size={14} aria-hidden="true"/>{copy.flightDeparture}</span>
-                        <input className={fieldClass} name="from" required maxLength={120} placeholder="Ex. IST" />
+                        <input className={fieldClass} name="from" required maxLength={120} placeholder="IST" />
                       </label>
                       <label className="min-w-0">
                         <span className={labelClass}><MapPin size={14} aria-hidden="true"/>{copy.flightArrival}</span>
-                        <input className={fieldClass} name="to" required maxLength={120} placeholder="Ex. Istanbul" />
+                        <input className={fieldClass} name="to" required maxLength={120} placeholder="Istanbul" />
                       </label>
                       <button type="submit" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#0071ad] px-6 py-3 text-sm font-semibold text-white hover:bg-[#005b90] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0071ad]">
                         <Search size={18} aria-hidden="true"/>{kiwitaxiPriceLabel[baseLocale]}
