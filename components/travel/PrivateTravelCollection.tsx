@@ -250,6 +250,13 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
   const [bedrooms,setBedrooms]=useState('3');
   const [yachtType,setYachtType]=useState<'skippered'|'crewed'>('skippered');
   const [privateOpen,setPrivateOpen]=useState(false);
+  const [privateChoice,setPrivateChoice]=useState<'jets'|'helicopters'|'yachts'>('jets');
+  const [privateOrigin,setPrivateOrigin]=useState('');
+  const [privateDestination,setPrivateDestination]=useState('');
+  const [privateDeparture,setPrivateDeparture]=useState('');
+  const [privateReturn,setPrivateReturn]=useState('');
+  const [privateGuests,setPrivateGuests]=useState('2');
+  const [privateYachtType,setPrivateYachtType]=useState<'skippered'|'crewed'>('skippered');
   const [returnSame,setReturnSame]=useState(true);
   const [pickupTime,setPickupTime]=useState('10:00');
   const [dropoffTime,setDropoffTime]=useState('10:00');
@@ -257,9 +264,11 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
   useEffect(()=>{
     const requested=new URLSearchParams(window.location.search).get('service');
     if(requested==='homes')setService('villas');
-    else if(requested==='chalets'||mainServices.concat(privateServices).some(item=>item.id===requested)){
+    else if(requested==='jets'||requested==='helicopters'||requested==='yachts'){
+      setPrivateChoice(requested);
+      setPrivateOpen(true);
+    }else if(requested==='chalets'||mainServices.some(item=>item.id===requested)||requested==='villas'||requested==='transfers'){
       setService(requested as Service);
-      if(privateServices.some(item=>item.id===requested))setPrivateOpen(true);
     }
   },[]);
 
@@ -283,7 +292,7 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
   const isMulti=isFlight&&tripType==='multi';
   const isHome=service==='villas'||service==='chalets';
   const isPrivate=privateServices.some(item=>item.id===service);
-  const discoveryContext:DiscoveryContext=isPrivate?'private':isActivity?'activities':(isCar||isTransfer)?'mobility':isFlight?'flights':'stays';
+  const discoveryContext:DiscoveryContext=privateOpen?'private':isPrivate?'private':isActivity?'activities':(isCar||isTransfer)?'mobility':isFlight?'flights':'stays';
   const privateService=isHome||isPrivate;
   const isTransport=isFlight||service==='jets'||service==='helicopters'||isCar;
   const selectedPartner=privateService?getPrivateTravelPartnerName(service as PrivateTravelPartnerService,homeCollection):'';
@@ -317,6 +326,25 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
   const inquiryHref=useMemo(
     ()=>withAssessmentContext(assessment,currentPath,'Bosphoras Private Travel',requestInfo),
     [assessment,currentPath,requestInfo]
+  );
+  // Private travel has an independent in-place enquiry: never switch the
+  // four main search tabs or scroll away from the private travel card.
+  const privateSelectedPartner=getPrivateTravelPartnerName(privateChoice,'curated');
+  const privateApprovedHref=!(privateChoice==='yachts'&&privateYachtType==='crewed')
+    ?getApprovedPartnerUrl(privateChoice,'curated'):null;
+  const privateRequestInfo=[
+    tr.services[privateChoice].label,
+    privateOrigin&&('From: '+privateOrigin),
+    privateDestination&&('To: '+privateDestination),
+    privateDeparture&&('Departure: '+privateDeparture),
+    privateReturn&&('Return: '+privateReturn),
+    'Passengers: '+privateGuests,
+    privateChoice==='yachts'&&('Charter: '+privateYachtType),
+    privateSelectedPartner&&('Preferred supplier: '+privateSelectedPartner)
+  ].filter(Boolean).join(' · ');
+  const privateInquiryHref=useMemo(
+    ()=>withAssessmentContext(assessment,currentPath,'Bosphoras Private Travel',privateRequestInfo),
+    [assessment,currentPath,privateRequestInfo]
   );
   const actionHref=ctaHref||inquiryHref;
   const buttonLabel=isHotel?copy.hotelStart:
@@ -649,37 +677,112 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
               </div>
             </div>
 
-            <div className="mt-5 rounded-2xl border border-[#dae6ec] bg-white">
+            <section aria-label={copy.privateAccess} className="mt-5 overflow-hidden rounded-2xl border border-[#dae6ec] bg-white shadow-[0_6px_25px_rgba(20,49,70,0.055)]">
               <button type="button" aria-expanded={privateOpen} aria-controls="travel-private-options"
-                onClick={()=>setPrivateOpen(!privateOpen)}
-                className="flex min-h-[74px] w-full items-center justify-between gap-4 px-5 py-4 text-start transition-colors hover:bg-[#f8fbfd]">
+                onClick={()=>setPrivateOpen(open=>!open)}
+                className="flex min-h-[84px] w-full items-center justify-between gap-4 px-5 py-4 text-start transition-colors hover:bg-[#f8fbfd] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#0071ad]">
                 <span className="flex items-center gap-3">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#eaf3f8] text-[#1e678d]">
-                    <Plane size={19} strokeWidth={1.6} aria-hidden="true"/>
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eaf3f8] text-[#1e678d]">
+                    <Plane size={20} strokeWidth={1.6} aria-hidden="true"/>
                   </span>
                   <span>
-                    <span className="block text-sm font-semibold text-[#233c4a]">{copy.privateAccess}</span>
-                    <span className="mt-1 block text-xs text-[#637784]">{copy.privateDesc}</span>
+                    <span className="block text-base font-semibold text-[#203b4b]">{copy.privateAccess}</span>
+                    <span className="mt-1 block text-xs leading-5 text-[#647985] sm:text-sm">{copy.privateDesc}</span>
                   </span>
                 </span>
-                <ChevronDown size={18} className={'shrink-0 text-[#476577] transition-transform '+(privateOpen?'rotate-180':'')} aria-hidden="true"/>
+                <ChevronDown size={20} className={'shrink-0 text-[#476577] transition-transform duration-200 '+(privateOpen?'rotate-180':'')} aria-hidden="true"/>
               </button>
+
               {privateOpen&&(
-                <div id="travel-private-options" className="grid grid-cols-1 gap-2 border-t border-[#e4ebef] p-3 sm:grid-cols-3">
-                  {privateServices.map(({id,icon:Icon})=>(
-                    <button type="button" key={id} aria-pressed={service===id}
-                      onClick={()=>{
-                        choose(id);
-                        document.getElementById('travel-service-panel')?.scrollIntoView({behavior:'smooth',block:'center'});
-                      }}
-                      className={'flex min-h-14 items-center gap-3 rounded-xl border px-4 py-3 text-start text-sm font-medium transition-colors '+
-                        (service===id?'border-[#0475ad] bg-[#edf7fc] text-[#006ba4]':'border-[#e1e9ee] bg-white text-[#324d5e] hover:border-[#83b5ce]')}>
-                      <Icon size={19} strokeWidth={1.6} aria-hidden="true"/>{tr.services[id].label}
-                    </button>
-                  ))}
+                <div id="travel-private-options" className="border-t border-[#e4ebef] px-4 pb-6 pt-5 md:px-6 md:pb-7">
+                  <div role="group" aria-label={copy.privateAccess} className="grid grid-cols-3 gap-2 sm:gap-3">
+                    {privateServices.map(({id,icon:Icon})=>(
+                      <button type="button" key={id} aria-pressed={privateChoice===id}
+                        onClick={()=>{
+                          setPrivateChoice(id as 'jets'|'helicopters'|'yachts');
+                          trackConversion('travel_service_selected',{service_id:id,language:locale,section:'private_travel'});
+                        }}
+                        className={'flex min-h-[88px] flex-col items-center justify-center gap-2 rounded-xl border px-2 py-3 text-center text-xs font-semibold leading-tight transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0071ad] sm:min-h-[95px] sm:text-sm '+
+                          (privateChoice===id?'border-[#0475ad] bg-[#edf7fc] text-[#006ba4]':'border-[#e1e9ee] bg-white text-[#324d5e] hover:border-[#83b5ce]')}>
+                        <Icon size={24} strokeWidth={1.7} aria-hidden="true"/>{tr.services[id].label}
+                      </button>
+                    ))}
+                  </div>
+
+                  <div className="mt-5 rounded-xl bg-[#f5f9fb] p-4 sm:p-5">
+                    <p className="text-base font-semibold text-[#203d4d]">{tr.services[privateChoice].label}</p>
+                    <p className="mt-2 max-w-[720px] text-sm leading-6 text-[#607584]">{tr.services[privateChoice].description}</p>
+
+                    {privateApprovedHref ? (
+                      <div className="mt-5 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+                        <a href={privateApprovedHref} rel="sponsored noopener noreferrer" onClick={()=>trackConversion('travel_booking_action',{service_id:privateChoice,action:'private_partner',language:locale})}
+                          className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#0071ad] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#005b90]">
+                          {privateLabels.redirect}<ArrowRight size={17} aria-hidden="true"/>
+                        </a>
+                        <p className="text-xs leading-5 text-[#667a85]">{copy.partnerIntro}</p>
+                      </div>
+                    ) : (
+                      <>
+                        {privateChoice==='yachts'&&(
+                          <fieldset className="mt-5">
+                            <legend className={labelClass}>{tr.services.yachts.label}</legend>
+                            <div className="flex flex-wrap gap-2">
+                              {([{id:'skippered' as const,label:privateLabels.skippered},{id:'crewed' as const,label:privateLabels.crewed}]).map(choice=>(
+                                <button type="button" key={choice.id} aria-pressed={privateYachtType===choice.id}
+                                  onClick={()=>setPrivateYachtType(choice.id)}
+                                  className={'min-h-11 rounded-lg border px-4 py-2 text-sm font-medium '+(privateYachtType===choice.id?'border-[#0475ad] bg-white text-[#006ba4]':'border-[#dce6ec] bg-white text-[#526b79]')}>
+                                  {choice.label}
+                                </button>
+                              ))}
+                            </div>
+                          </fieldset>
+                        )}
+                        <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                          <label className="block min-w-0">
+                            <span className={labelClass}><MapPin size={14} aria-hidden="true"/>{tr.origin}</span>
+                            <input type="text" value={privateOrigin} onChange={e=>setPrivateOrigin(e.target.value)}
+                              placeholder={copy.placeHint} autoComplete="off" className={fieldClass}/>
+                          </label>
+                          <label className="block min-w-0">
+                            <span className={labelClass}><MapPin size={14} aria-hidden="true"/>{tr.destination}</span>
+                            <input type="text" value={privateDestination} onChange={e=>setPrivateDestination(e.target.value)}
+                              placeholder={copy.placeHint} autoComplete="off" className={fieldClass}/>
+                          </label>
+                          <label className="block min-w-0">
+                            <span className={labelClass}><CalendarDays size={14} aria-hidden="true"/>{copy.date}</span>
+                            <input type="date" value={privateDeparture} onChange={e=>setPrivateDeparture(e.target.value)} className={fieldClass}/>
+                          </label>
+                          <label className="block min-w-0">
+                            <span className={labelClass}><UsersRound size={14} aria-hidden="true"/>{tr.passengers}</span>
+                            <select value={privateGuests} onChange={e=>setPrivateGuests(e.target.value)} className={fieldClass}>
+                              {[1,2,3,4,5,6,8,10,12,16].map(n=><option key={n} value={n}>{n}</option>)}
+                            </select>
+                          </label>
+                        </div>
+                        {privateChoice==='jets'&&(
+                          <label className="mt-3 block max-w-[280px]">
+                            <span className={labelClass}><CalendarDays size={14} aria-hidden="true"/>{copy.dateReturn}</span>
+                            <input type="date" min={privateDeparture||undefined} value={privateReturn}
+                              onChange={e=>setPrivateReturn(e.target.value)} className={fieldClass}/>
+                          </label>
+                        )}
+                        <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                          <p className="max-w-[600px] text-xs leading-5 text-[#677b87]">
+                            <ShieldCheck size={15} className="me-1 inline align-[-3px]" aria-hidden="true"/>
+                            {privateLabels.pending}
+                          </p>
+                          <Link href={privateInquiryHref}
+                            onClick={()=>trackConversion('travel_booking_action',{service_id:privateChoice,action:'private_enquiry',language:locale})}
+                            className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-xl bg-[#0071ad] px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#005b90]">
+                            {ux.requestQuote}<ArrowRight size={17} aria-hidden="true"/>
+                          </Link>
+                        </div>
+                      </>
+                    )}
+                  </div>
                 </div>
               )}
-            </div>
+            </section>
 
             <p className="mt-4 inline-flex items-center gap-2 text-xs text-[#6d808c]">
               <ShieldCheck size={15} className="shrink-0" aria-hidden="true"/>{ux.trust}
