@@ -2,6 +2,7 @@ export const dynamic = 'force-dynamic';
 
 const scriptUrl = 'https://widget-white-label.kiwitaxi.com/js/kiwitaxi-white-label.js';
 const languages = new Set(['de', 'en', 'es', 'fr', 'it', 'pt', 'ru']);
+const pageLocales = new Set([...languages,'ar','tr','zh']);
 const headers = {
   'Cache-Control': 'private, no-store',
   'Content-Type': 'text/html; charset=utf-8',
@@ -12,7 +13,7 @@ const headers = {
     'frame-src https://*.kiwitaxi.com https://kiwitaxi.com',
     'connect-src https://*.kiwitaxi.com https://kiwitaxi.com',
     'img-src https://*.kiwitaxi.com https://kiwitaxi.com data:',
-    "frame-ancestors 'self'",
+    "frame-ancestors 'none'",
     "base-uri 'none'",
   ].join('; '),
   'Referrer-Policy': 'no-referrer',
@@ -43,6 +44,8 @@ export function GET(request: Request) {
 
   const requestedLanguage = new URL(request.url).searchParams.get('locale') ?? '';
   const language = languages.has(requestedLanguage) ? requestedLanguage : 'en';
+  const pageLocale = pageLocales.has(requestedLanguage) ? requestedLanguage : 'en';
+  const backUrl = `${pageLocale === 'fr' ? '' : `/${pageLocale}`}/travel/private-collection?service=transfers`;
   const config = JSON.stringify({
     language,
     transfers_limit: 10,
@@ -66,14 +69,23 @@ export function GET(request: Request) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kiwitaxi</title>
-  <style>body { margin: 0; background: #fff; } iframe { display: block; max-width: 100%; }</style>
+  <title>BOSPHORAS · Kiwitaxi</title>
+  <style>
+    body { margin: 0; background: #fff; color: #172c3c; font: 16px system-ui, sans-serif; }
+    main { max-width: 72rem; margin: auto; padding: 1rem; }
+    nav { margin-bottom: 1.25rem; }
+    a { color: #006dad; }
+    iframe { display: block; max-width: 100%; }
+  </style>
 </head>
 <body>
+  <main>
+  <nav><a href="${backUrl}">← BOSPHORAS</a></nav>
   <div data-kiwitaxi-white-label>
     <div data-kiwitaxi-white-label-element></div>
     <script type="application/json" data-kiwitaxi-white-label-config>${config}</script>
   </div>
+  </main>
   <script src="${scriptUrl}"></script>
 </body>
 </html>`, { headers });

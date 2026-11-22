@@ -511,7 +511,10 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
 
                 {showKiwitaxi?(
                   <>
-                    <iframe src={kiwitaxiPath} title="Kiwitaxi" sandbox="allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox" className="h-[720px] w-full rounded-xl border border-[#dde6eb] md:h-[650px]"/>
+                    <a href={kiwitaxiPath} rel="sponsored" onClick={()=>trackAction('kiwitaxi_transfer')}
+                      className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#0071ad] px-6 py-3 text-sm font-semibold text-white hover:bg-[#005b90] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0071ad]">
+                      <Search size={18} aria-hidden="true"/>{copy.transferStart}
+                    </a>
                     <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-sm text-[#637782]">
                       <p>{kiwitaxiCopy[baseLocale]}</p>
                       <Link href={transferHref[locale]} className="font-semibold text-[#006dad] underline" onClick={()=>trackAction('mobility')}>
