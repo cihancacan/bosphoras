@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
-import { ArrowRight, ArrowLeftRight, Building2, CalendarDays, CarFront, CarTaxiFront, Check, ChevronDown, Clock3, Compass, Home, MapPin, Plane, PlaneTakeoff, Search, ShieldCheck, Ship, Ticket, UsersRound } from 'lucide-react';
+import { ArrowRight, ArrowLeftRight, BedDouble, Building2, CalendarDays, CarFront, CarTaxiFront, Check, ChevronDown, Clock3, Compass, Home, MapPin, Plane, PlaneTakeoff, Search, ShieldCheck, Ship, Ticket, UsersRound } from 'lucide-react';
 import { trackConversion } from '@/lib/conversionAnalytics';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -15,8 +15,8 @@ import { getApprovedPartnerUrl, getPrivateTravelPartnerName, type PrivateTravelP
 
 type Service = 'flights' | 'hotels' | 'villas' | 'chalets' | 'cars' | 'transfers' | 'jets' | 'helicopters' | 'yachts' | 'activities';
 const mainServices: { id: Service; icon: typeof Home }[] = [
- {id:'flights',icon:PlaneTakeoff},{id:'hotels',icon:Building2},{id:'villas',icon:Home},
- {id:'cars',icon:CarFront},{id:'transfers',icon:CarTaxiFront},{id:'activities',icon:Ticket}
+ {id:'hotels',icon:BedDouble},{id:'flights',icon:PlaneTakeoff},
+ {id:'cars',icon:CarFront},{id:'activities',icon:Ticket}
 ];
 const privateServices: { id: Service; icon: typeof Home }[] = [
  {id:'jets',icon:Plane},{id:'helicopters',icon:Compass},{id:'yachts',icon:Ship}
@@ -142,9 +142,16 @@ type SearchCopy = {
  pending:string;flightDeparture:string;flightArrival:string;guestLabel:string;scrollHint:string;
  noDuplicate:string;privateAccess:string;privateDesc:string;discover:string;
  placeHint:string;flightHint:string;carHint:string;searchType:string;
+ stays:string;carsTab:string;hotelsShort:string;villaShort:string;chaletShort:string;
+ rentalShort:string;transferShort:string;multiCity:string;flightSegment:string;
+ addFlight:string;removeFlight:string;swap:string;flightLimit:string;
 };
 const searchCopy:Record<Locale,SearchCopy> = {
  fr:{
+  stays:'Séjours',carsTab:'Voitures',hotelsShort:'Hôtels',villaShort:'Villas',chaletShort:'Chalets',
+  rentalShort:'Location de voitures',transferShort:'Transfert aéroport',
+  multiCity:'Multidestination',flightSegment:'Vol',addFlight:'Ajouter un vol',removeFlight:'Supprimer le dernier vol',
+  swap:'Inverser départ et arrivée',flightLimit:'Jusqu’à cinq vols par demande.',
   title:'Où souhaitez-vous aller ?',subtitle:'Vols, séjours, voitures et expériences : trouvez votre prochain voyage en quelques gestes.',
   eyebrow:'BOSPHORAS TRAVEL',destination:'Destination',dates:'Dates',travelers:'Voyageurs',
   go:'Rechercher',back:'Retour',where:'Ville, hôtel ou destination',departure:'Départ',arrival:'Arrivée',
@@ -161,6 +168,10 @@ const searchCopy:Record<Locale,SearchCopy> = {
   placeHint:'Ex. Istanbul, Paris, Bodrum',flightHint:'Ex. Paris, CDG',carHint:'Ville, adresse ou aéroport',searchType:'Votre recherche'
  },
  en:{
+  stays:'Stays',carsTab:'Cars',hotelsShort:'Hotels',villaShort:'Villas',chaletShort:'Chalets',
+  rentalShort:'Car rental',transferShort:'Airport transfer',
+  multiCity:'Multi-city',flightSegment:'Flight',addFlight:'Add a flight',removeFlight:'Remove last flight',
+  swap:'Swap departure and arrival',flightLimit:'Up to five flights per enquiry.',
   title:'Where would you like to go?',subtitle:'Flights, stays, cars and experiences. Start your next journey in just a few steps.',
   eyebrow:'BOSPHORAS TRAVEL',destination:'Destination',dates:'Dates',travelers:'Travellers',
   go:'Search',back:'Back',where:'City, hotel or destination',departure:'Departure',arrival:'Arrival',
@@ -177,6 +188,10 @@ const searchCopy:Record<Locale,SearchCopy> = {
   placeHint:'E.g. Istanbul, Paris, Bodrum',flightHint:'E.g. Paris, CDG',carHint:'City, address or airport',searchType:'Your search'
  },
  ru:{
+  stays:'Проживание',carsTab:'Авто',hotelsShort:'Отели',villaShort:'Виллы',chaletShort:'Шале',
+  rentalShort:'Аренда авто',transferShort:'Трансфер',
+  multiCity:'Сложный маршрут',flightSegment:'Рейс',addFlight:'Добавить рейс',removeFlight:'Удалить последний рейс',
+  swap:'Поменять местами отправление и прибытие',flightLimit:'До пяти рейсов в одной заявке.',
   title:'Куда хотите отправиться?',subtitle:'Авиабилеты, проживание, автомобили и впечатления. Всё для путешествия в одном месте.',
   eyebrow:'BOSPHORAS TRAVEL',destination:'Направление',dates:'Даты',travelers:'Путешественники',
   go:'Найти',back:'Назад',where:'Город, отель или направление',departure:'Отправление',arrival:'Прибытие',
@@ -193,6 +208,10 @@ const searchCopy:Record<Locale,SearchCopy> = {
   placeHint:'Например: Стамбул, Париж, Бодрум',flightHint:'Например: Париж, CDG',carHint:'Город, адрес или аэропорт',searchType:'Ваш поиск'
  },
  ar:{
+  stays:'الإقامات',carsTab:'السيارات',hotelsShort:'فنادق',villaShort:'فلل',chaletShort:'شاليهات',
+  rentalShort:'تأجير السيارات',transferShort:'النقل من المطار',
+  multiCity:'وجهات متعددة',flightSegment:'رحلة',addFlight:'إضافة رحلة',removeFlight:'إزالة الرحلة الأخيرة',
+  swap:'تبديل المغادرة والوصول',flightLimit:'ما يصل إلى خمس رحلات في الطلب.',
   title:'إلى أين ترغب بالسفر؟',subtitle:'رحلات الطيران والإقامات والسيارات والتجارب في مكان واحد وبخطوات بسيطة.',
   eyebrow:'BOSPHORAS TRAVEL',destination:'الوجهة',dates:'التواريخ',travelers:'المسافرون',
   go:'ابحث',back:'رجوع',where:'المدينة أو الفندق أو الوجهة',departure:'المغادرة',arrival:'الوصول',
@@ -219,7 +238,12 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
   const [departure,setDeparture]=useState('');
   const [returnDate,setReturnDate]=useState('');
   const [guests,setGuests]=useState('2');
-  const [tripType,setTripType]=useState<'round'|'one'>('round');
+  const [tripType,setTripType]=useState<'round'|'one'|'multi'>('round');
+  const [flightLegs,setFlightLegs]=useState<Array<{from:string;to:string;date:string}>>([
+    {from:'',to:'',date:''},{from:'',to:'',date:''}
+  ]);
+  const updateLeg=(i:number,field:'from'|'to'|'date',value:string)=>
+    setFlightLegs(current=>current.map((leg,j)=>j===i?{...leg,[field]:value}:leg));
   const [cabin,setCabin]=useState<'economy'|'premium'|'business'|'first'>('economy');
   const [homeCollection,setHomeCollection]=useState<'curated'|'signature'>('curated');
   const [bedrooms,setBedrooms]=useState('3');
@@ -255,6 +279,7 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
   const isCar=service==='cars';
   const isTransfer=service==='transfers';
   const isActivity=service==='activities';
+  const isMulti=isFlight&&tripType==='multi';
   const isHome=service==='villas'||service==='chalets';
   const isPrivate=privateServices.some(item=>item.id===service);
   const privateService=isHome||isPrivate;
@@ -275,13 +300,14 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
   const heroLabel=isHome?ux.homes:tr.services[service].label;
   const requestInfo=[
     heroLabel,
-    origin&&('From: '+origin),
-    destination&&(!isCar||!returnSame)&&('To: '+destination),
-    departure&&('Date: '+departure),
-    returnDate&&('Return: '+returnDate),
+    !isMulti&&origin&&('From: '+origin),
+    !isMulti&&destination&&(!isCar||!returnSame)&&('To: '+destination),
+    !isMulti&&departure&&('Date: '+departure),
+    !isMulti&&returnDate&&('Return: '+returnDate),
     !isCar&&('People: '+guests),
     isCar&&('Pickup: '+pickupTime+'; Return: '+dropoffTime),
     isFlight&&('Journey: '+tripType+'; Cabin: '+cabin),
+    isMulti&&flightLegs.map((leg,i)=>'Flight '+(i+1)+': '+(leg.from||'?')+' → '+(leg.to||'?')+' ('+(leg.date||'?')+')').join(' | '),
     isHome&&('Bedrooms: '+bedrooms),
     selectedPartner&&('Preferred supplier: '+selectedPartner),
     service==='yachts'&&('Charter: '+yachtType)
@@ -331,16 +357,17 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
 
             <div className="overflow-hidden rounded-2xl border border-[#e2e9ee] bg-white shadow-[0_18px_55px_rgba(20,49,70,0.08)]">
               <div className="border-b border-[#e2e9ee]">
-                <div role="tablist" aria-label={copy.selection} className="flex snap-x snap-mandatory items-stretch overflow-x-auto overscroll-x-contain px-2 sm:px-3 lg:grid lg:grid-cols-6 lg:overflow-visible">
+                <div role="tablist" aria-label={copy.selection} className="grid grid-cols-4 gap-0 px-1 sm:px-3">
                   {mainServices.map(({id,icon:Icon})=>{
-                    const active=id==='villas'?isHome:service===id;
+                    const active=id==='hotels' ? (isHotel||isHome) : id==='cars' ? (isCar||isTransfer) : service===id;
+                    const label=id==='hotels'?copy.stays:id==='cars'?copy.carsTab:tr.services[id].label;
                     return (
                       <button type="button" key={id} role="tab" aria-selected={active} aria-controls="travel-service-panel"
                         onClick={()=>choose(id)}
-                        className={'relative flex min-h-[68px] min-w-[112px] snap-start flex-col items-center justify-center gap-1.5 whitespace-nowrap border-b-[3px] px-3 py-3 text-[0.83rem] font-medium transition-colors hover:bg-[#f2f7fa] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-[#0b6a9e] sm:min-w-[138px] lg:min-w-0 '+
-                          (active?'border-[#0475ad] bg-[#f1f8fc] text-[#005f93]':'border-transparent text-[#596d7a]')}>
-                        <Icon size={19} strokeWidth={1.8} aria-hidden="true"/>
-                        <span>{id==='villas'?ux.homes:tr.services[id].label}</span>
+                        className={'relative flex min-h-[73px] min-w-0 flex-col items-center justify-center gap-1.5 border-b-[3px] px-0.5 py-2 text-center text-[11px] font-semibold leading-tight transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-[#0b6a9e] sm:min-h-[80px] sm:px-3 sm:text-sm '+
+                          (active?'border-[#0475ad] bg-[#f1f8fc] text-[#005f93]':'border-transparent text-[#536a77] hover:bg-[#f4f8fb]')}>
+                        <Icon size={25} strokeWidth={1.7} aria-hidden="true" className="shrink-0 sm:h-7 sm:w-7"/>
+                        <span className="block max-w-full whitespace-normal">{label}</span>
                       </button>
                     );
                   })}
@@ -357,30 +384,49 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
                   ):null}
                 </div>
 
-                {isHome&&(
-                  <fieldset className="mb-5">
-                    <legend className={labelClass}>{ux.accommodation}</legend>
-                    <div className="inline-flex flex-wrap gap-2 rounded-xl bg-[#f3f6f7] p-1">
-                      {(['villas','chalets'] as const).map(id=>(
-                        <button type="button" key={id} aria-pressed={service===id} onClick={()=>choose(id)}
-                          className={'min-h-11 rounded-lg px-5 py-2 text-sm font-medium transition-colors '+
-                            (service===id?'bg-white text-[#0a587e] shadow-sm':'text-[#5c6f7d] hover:bg-white/60')}>
-                          {tr.services[id].label}
-                        </button>
-                      ))}
-                    </div>
-                  </fieldset>
+                {(isHotel||isHome)&&(
+                  <div role="group" aria-label={copy.stays} className="mb-5 grid grid-cols-3 border-b border-[#e2e9ee]">
+                    {(['hotels','villas','chalets'] as const).map(id=>{
+                      const label=id==='hotels'?copy.hotelsShort:id==='villas'?copy.villaShort:copy.chaletShort;
+                      return <button type="button" key={id} aria-pressed={service===id} onClick={()=>choose(id)}
+                        className={'min-h-[48px] border-b-[3px] px-2 py-2 text-center text-[13px] font-semibold transition-colors sm:text-sm '+
+                          (service===id?'border-[#0475ad] text-[#006dad]':'border-transparent text-[#4f6371] hover:text-[#006dad]')}>
+                        {label}
+                      </button>;
+                    })}
+                  </div>
+                )}
+                {(isCar||isTransfer)&&(
+                  <div role="group" aria-label={copy.carsTab} className="mb-5 grid grid-cols-2 border-b border-[#e2e9ee]">
+                    {(['cars','transfers'] as const).map(id=><button type="button" key={id}
+                      aria-pressed={service===id} onClick={()=>choose(id)}
+                      className={'min-h-[48px] border-b-[3px] px-2 py-2 text-center text-[13px] font-semibold transition-colors sm:text-sm '+
+                        (service===id?'border-[#0475ad] text-[#006dad]':'border-transparent text-[#4f6371] hover:text-[#006dad]')}>
+                      {id==='cars'?copy.rentalShort:copy.transferShort}
+                    </button>)}
+                  </div>
                 )}
 
                 {isFlight&&(
-                  <div role="group" aria-label={tr.tripType} className="mb-5 flex flex-wrap gap-5">
-                    {(['round','one'] as const).map(mode=>(
-                      <label key={mode} className="inline-flex min-h-11 cursor-pointer items-center gap-2 text-sm font-medium text-[#253f4f]">
-                        <input type="radio" name="journey-type" value={mode} checked={tripType===mode}
-                          onChange={()=>setTripType(mode)} className="h-4 w-4 accent-[#0475ad]"/>
-                        {mode==='round'?tr.roundTrip:tr.oneWay}
-                      </label>
+                  <div role="group" aria-label={tr.tripType} className="mb-5 grid grid-cols-3 border-b border-[#e2e9ee]">
+                    {(['round','one','multi'] as const).map(mode=>(
+                      <button type="button" key={mode} aria-pressed={tripType===mode}
+                        onClick={()=>setTripType(mode)}
+                        className={'min-h-[48px] border-b-[3px] px-1.5 py-2 text-center text-[12px] font-semibold leading-snug transition-colors sm:text-sm '+
+                          (tripType===mode?'border-[#0475ad] text-[#006dad]':'border-transparent text-[#4f6371] hover:text-[#006dad]')}>
+                        {mode==='round'?tr.roundTrip:mode==='one'?tr.oneWay:copy.multiCity}
+                      </button>
                     ))}
+                  </div>
+                )}
+
+
+                {isFlight&&tripType!=='multi'&&(
+                  <div className="mb-4 flex justify-end">
+                    <button type="button" onClick={()=>{setOrigin(destination);setDestination(origin);}}
+                      className="inline-flex min-h-11 items-center gap-2 rounded-lg px-3 text-xs font-medium text-[#076c9f] hover:bg-[#ecf6fa]">
+                      <ArrowLeftRight size={16} aria-hidden="true"/>{copy.swap}
+                    </button>
                   </div>
                 )}
 
@@ -437,7 +483,7 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
                   </>
                 ):(
                   <>
-                    <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                    {!isMulti&&<div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
                       {hasOrigin&&(
                         <label className="block min-w-0">
                           <span className={labelClass}><MapPin size={14} aria-hidden="true"/>{isCar?ux.pickup:copy.flightDeparture}</span>
@@ -491,7 +537,57 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
                           </select>
                         </label>
                       )}
-                    </div>
+                    </div>}
+                    {isMulti&&(
+                      <div className="space-y-3">
+                        {flightLegs.map((leg,i)=>(
+                          <div key={i} className="rounded-xl border border-[#dde6ec] bg-[#fafcfd] p-3 sm:p-4">
+                            <div className="mb-3 flex items-center justify-between">
+                              <p className="text-sm font-semibold text-[#234557]">{copy.flightSegment} {i+1}</p>
+                              <button type="button" aria-label={copy.swap}
+                                onClick={()=>setFlightLegs(current=>current.map((l,j)=>j===i?{...l,from:l.to,to:l.from}:l))}
+                                className="inline-flex min-h-11 items-center gap-2 rounded-lg px-3 text-xs font-medium text-[#076c9f] hover:bg-[#e9f4f9]">
+                                <ArrowLeftRight size={16} aria-hidden="true"/>{copy.swap}
+                              </button>
+                            </div>
+                            <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+                              <label className="block min-w-0"><span className={labelClass}>{copy.flightDeparture}</span>
+                                <input type="text" autoComplete="off" value={leg.from}
+                                  onChange={e=>updateLeg(i,'from',e.target.value)} placeholder={copy.flightHint} className={fieldClass}/>
+                              </label>
+                              <label className="block min-w-0"><span className={labelClass}>{copy.flightArrival}</span>
+                                <input type="text" autoComplete="off" value={leg.to}
+                                  onChange={e=>updateLeg(i,'to',e.target.value)} placeholder={copy.flightHint} className={fieldClass}/>
+                              </label>
+                              <label className="block min-w-0"><span className={labelClass}>{copy.date}</span>
+                                <input type="date" value={leg.date} min={i>0?flightLegs[i-1].date||undefined:undefined}
+                                  onChange={e=>updateLeg(i,'date',e.target.value)} className={fieldClass}/>
+                              </label>
+                            </div>
+                          </div>
+                        ))}
+                        <div className="flex flex-wrap items-center gap-2">
+                          {flightLegs.length<5&&<button type="button" onClick={()=>setFlightLegs(legs=>[...legs,{from:legs[legs.length-1]?.to||'',to:'',date:''}])}
+                            className="min-h-11 rounded-lg border border-[#b8d4e1] bg-white px-4 py-2 text-sm font-semibold text-[#026b9d] hover:bg-[#f0f8fc]">+ {copy.addFlight}</button>}
+                          {flightLegs.length>2&&<button type="button" onClick={()=>setFlightLegs(legs=>legs.slice(0,-1))}
+                            className="min-h-11 rounded-lg border border-[#dde6ec] px-4 py-2 text-sm text-[#4e6473] hover:bg-[#f7fafb]">{copy.removeFlight}</button>}
+                          <span className="text-xs text-[#70818d]">{copy.flightLimit}</span>
+                        </div>
+                        <div className="grid gap-3 sm:grid-cols-2">
+                          <label className="block"><span className={labelClass}><UsersRound size={14}/>{copy.travelers}</span>
+                            <select value={guests} onChange={e=>setGuests(e.target.value)} className={fieldClass}>
+                              {[1,2,3,4,5,6,8,10,12,16].map(n=><option value={n} key={n}>{n}</option>)}
+                            </select>
+                          </label>
+                          <label className="block"><span className={labelClass}><Plane size={14}/>{tr.cabin}</span>
+                            <select value={cabin} onChange={e=>setCabin(e.target.value as typeof cabin)} className={fieldClass}>
+                              {(Object.keys(tr.cabinOptions) as Array<keyof typeof tr.cabinOptions>).map(id=>
+                                <option key={id} value={id}>{tr.cabinOptions[id]}</option>)}
+                            </select>
+                          </label>
+                        </div>
+                      </div>
+                    )}
 
                     {isCar&&(
                       <div className="mt-4 flex flex-wrap items-center gap-4">
