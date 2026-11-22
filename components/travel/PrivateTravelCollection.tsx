@@ -16,6 +16,12 @@ import { withAssessmentContext } from '@/lib/assessmentContext';
 import { getApprovedPartnerUrl, getPrivateTravelPartnerName, type PrivateTravelPartnerService } from '@/lib/travel/privateTravelSupplierGateways';
 
 type Service = 'flights' | 'hotels' | 'villas' | 'chalets' | 'cars' | 'transfers' | 'jets' | 'helicopters' | 'yachts' | 'activities';
+const kiwitaxiCopy: Record<Locale, string> = {
+  fr: 'Réservation, paiement et assistance auprès de Kiwitaxi.',
+  en: 'Kiwitaxi handles booking, payment and customer support.',
+  ru: 'Бронирование, оплата и поддержка предоставляются Kiwitaxi.',
+  ar: 'تتولى Kiwitaxi الحجز والدفع ودعم العملاء.',
+};
 const mainServices: { id: Service; icon: typeof Home }[] = [
  {id:'hotels',icon:BedDouble},{id:'flights',icon:PlaneTakeoff},
  {id:'cars',icon:CarFront},{id:'activities',icon:Ticket}
@@ -302,6 +308,17 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
   const setActiveGuests=(value:string)=>isFlight?setFlightGuests(value):setGuests(value);
   const isCar=service==='cars';
   const isTransfer=service==='transfers';
+  const [kiwitaxiReady,setKiwitaxiReady]=useState(false);
+  const kiwitaxiPath=`/api/travel/kiwitaxi-widget?locale=${locale}`;
+  useEffect(()=>{
+    if(!isTransfer) return;
+    const controller=new AbortController();
+    fetch(kiwitaxiPath,{method:'HEAD',signal:controller.signal})
+      .then(response=>setKiwitaxiReady(response.ok))
+      .catch(()=>{if(!controller.signal.aborted) setKiwitaxiReady(false);});
+    return ()=>controller.abort();
+  },[isTransfer,kiwitaxiPath]);
+  const showKiwitaxi=isTransfer&&kiwitaxiReady;
   const isActivity=service==='activities';
   const isMulti=isFlight&&tripType==='multi';
   const isHome=service==='villas'||service==='chalets';
@@ -425,7 +442,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                   <p className="text-sm font-semibold text-[#1c3849]">{copy.searchType} · {heroLabel}</p>
                   {isHotel||isTransfer?(
                     <span className="inline-flex items-center gap-1.5 rounded-full bg-[#eff7f3] px-3 py-1.5 text-[11px] font-medium text-[#22684e]">
-                      <Check size={13} aria-hidden="true"/>{isHotel?'Nuitée':'Bosphoras Mobility'}
+                      <Check size={13} aria-hidden="true"/>{isHotel?'Nuitée':showKiwitaxi?'Kiwitaxi':'Bosphoras Mobility'}
                     </span>
                   ):null}
                 </div>
@@ -492,7 +509,17 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                   </fieldset>
                 )}
 
-                {delegated?(
+                {showKiwitaxi?(
+                  <>
+                    <iframe src={kiwitaxiPath} title="Kiwitaxi" sandbox="allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox" className="h-[720px] w-full rounded-xl border border-[#dde6eb] md:h-[650px]"/>
+                    <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-sm text-[#637782]">
+                      <p>{kiwitaxiCopy[baseLocale]}</p>
+                      <Link href={transferHref[locale]} className="font-semibold text-[#006dad] underline" onClick={()=>trackAction('mobility')}>
+                        Bosphoras Mobility
+                      </Link>
+                    </div>
+                  </>
+                ):delegated?(
                   <>
                     <div className="grid grid-cols-1 gap-2 sm:grid-cols-3 lg:grid-cols-[1.3fr_1fr_1fr_auto] lg:items-stretch">
                       <div className="flex min-h-[70px] items-center gap-3 rounded-xl border border-[#dde6eb] bg-[#f8fafb] px-4">
