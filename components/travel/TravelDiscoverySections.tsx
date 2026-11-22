@@ -84,9 +84,12 @@ const copy:Record<Locale,Localized>={
   note:'هذه توصيات تحريرية من Bosphoras، وليست أسعاراً أو خصومات أو توافراً مؤكداً من Nuitée.'
  }
 };
+// Da Nang featured guide hero (scene-1, My Khe Beach).
+// Source: Wikimedia Commons; credit is displayed under the collection cards.
+const daNangHeroImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/My_Khe_Beach%2C_Da_Nang%2C_Vietnam.jpg/1280px-My_Khe_Beach%2C_Da_Nang%2C_Vietnam.jpg';
 const collectionImages=[
  '/images/travel/paris-premium/destination/paris-pont-alexandre.webp',
- '/images/travel/bali-premium/destination/bali-uluwatu-ocean-hero.webp',
+ daNangHeroImage,
  '/images/travel/courchevel-1850-premium/destination/alps-3.webp'
 ];
 export function TravelDiscoverySections({locale,context,onSelect}:{
@@ -136,7 +139,12 @@ export function TravelDiscoverySections({locale,context,onSelect}:{
      {(['hotels','villas','chalets'] as const).map((id,i)=><button key={id} type="button" onClick={()=>select(id)}
        className="group overflow-hidden rounded-2xl bg-white text-start shadow-[0_5px_24px_rgba(20,49,70,0.05)] hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0071ad]">
        <div className="relative h-[190px] overflow-hidden bg-[#dfeaf0]">
-        <Image src={collectionImages[i]} alt="" fill sizes="(max-width: 640px) 100vw, 33vw" className="object-cover transition-transform duration-500 motion-reduce:transform-none group-hover:scale-[1.035]"/>
+        {i===1 ? (
+         <div role="img" aria-label="Plage My Khe à Da Nang, Vietnam" className="h-full w-full bg-cover bg-center transition-transform duration-500 motion-reduce:transform-none group-hover:scale-[1.035]"
+          style={{backgroundImage:`url("${daNangHeroImage}")`}}/>
+        ) : (
+         <Image src={collectionImages[i]} alt="" fill sizes="(max-width: 640px) 100vw, 33vw" className="object-cover transition-transform duration-500 motion-reduce:transform-none group-hover:scale-[1.035]"/>
+        )}
        </div>
        <span className="flex items-center justify-between gap-3 p-5">
         <span><span className="block text-base font-semibold text-[#203e4f]">{t.collectionNames[i]}</span><span className="mt-2 block text-sm leading-6 text-[#647987]">{t.collectionDescriptions[i]}</span></span>
@@ -144,6 +152,11 @@ export function TravelDiscoverySections({locale,context,onSelect}:{
        </span>
       </button>)}
     </div>
+    <p className="mt-3 text-[11px] leading-5 text-[#607583]">
+      {locale==='fr'?'Photo Villas au soleil':locale==='ru'?'Фото Виллы у моря':locale==='ar'?'صورة الفلل':'Sunlit villas photo'} :
+      {' '}<a href="https://commons.wikimedia.org/wiki/File:My_Khe_Beach,_Da_Nang,_Vietnam.jpg" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">. Ray in Manila</a>
+      {' · '}<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">CC BY 2.0</a>{' · '}{locale==='fr'?'Recadrée':locale==='ru'?'Кадрировано':locale==='ar'?'تم اقتصاص الصورة':'Cropped'}.
+    </p>
    </div>
   </section>
   <section className="bg-white py-11 md:py-16" aria-labelledby="travel-guide-tips-title">
