@@ -42,10 +42,15 @@ export function GET(request: Request) {
   const attribution = getAttribution();
   if (!attribution) return new Response(null, { status: 404, headers });
 
-  const requestedLanguage = new URL(request.url).searchParams.get('locale') ?? '';
+  const params = new URL(request.url).searchParams;
+  const requestedLanguage = params.get('locale') ?? '';
   const language = languages.has(requestedLanguage) ? requestedLanguage : 'en';
   const pageLocale = pageLocales.has(requestedLanguage) ? requestedLanguage : 'en';
   const backUrl = `${pageLocale === 'fr' ? '' : `/${pageLocale}`}/travel/private-collection?service=transfers`;
+  const getPlace = (name: 'from' | 'to') => {
+    const value = params.get(name)?.trim();
+    return value && value.length <= 120 && !/[\u0000-\u001f\u007f]/.test(value) ? value : '';
+  };
   const config = JSON.stringify({
     language,
     transfers_limit: 10,
@@ -53,8 +58,8 @@ export function GET(request: Request) {
     transfer_options_limit: 12,
     display_currency: 'EUR',
     country: {},
-    place_from: {},
-    place_to: {},
+    place_from: getPlace('from') || {},
+    place_to: getPlace('to') || {},
     max_height: 0,
     disable_currency_selector: false,
     hide_form_extras: false,
@@ -62,7 +67,7 @@ export function GET(request: Request) {
     hide_external_links: false,
     ref_params: attribution,
     scroll_offset: 0,
-  });
+  }).replace(/</g, '\\u003c');
 
   return new Response(`<!doctype html>
 <html lang="${language}">

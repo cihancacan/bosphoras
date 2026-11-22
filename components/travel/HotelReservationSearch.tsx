@@ -28,7 +28,9 @@ const cities = [
 ];
 
 /** Official supplier search and hosted booking. No keys, guest data or payment API. */
-export function HotelReservationSearch({ locale, origin, initialUrl }: { locale: 'fr' | 'en'; origin: string; initialUrl: string | null }) {
+export function HotelReservationSearch({ locale, origin, initialUrl, compact = false }: {
+  locale: 'fr' | 'en'; origin: string; initialUrl: string | null; compact?: boolean;
+}) {
   const fr = locale === 'fr';
   const widgetId = `booking-search-${useId().replace(/:/g, '')}`;
   const widget = useRef<HTMLDivElement>(null);
@@ -113,12 +115,14 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
 
   return <>
     <Script src="https://components.liteapi.travel/v1.0/sdk.umd.js" strategy="afterInteractive" onReady={() => setSdkReady(true)} onError={() => setError(fr ? 'Le moteur de recherche n’a pas pu être chargé.' : 'The search engine could not load.')} />
-    {!bookingUrl && <section className={s.searchHero} aria-labelledby="reservation-title">
-      <div className={s.heroPhotos} aria-hidden="true"><span className={s.heroSlide} /><span className={s.heroSlide} /><span className={s.heroSlide} /><span className={s.heroVeil} /></div>
-      <div className={s.heroInner}>
-        <h1 id="reservation-title">{fr ? 'Des adresses qui valent le voyage.' : 'Hotels worth travelling for.'}</h1>
-        <p className={s.heroText}>{fr ? 'Découvrez des hôtels remarquables, aux quatre coins du monde.' : 'Discover remarkable hotels around the world.'}</p>
-        <div className={s.searchPanel} aria-label={fr ? 'Rechercher des hôtels' : 'Search hotels'} aria-busy={busy}>
+    {!bookingUrl && <section className={compact ? undefined : s.searchHero} aria-labelledby={compact ? undefined : 'reservation-title'}>
+      {!compact && <div className={s.heroPhotos} aria-hidden="true"><span className={s.heroSlide} /><span className={s.heroSlide} /><span className={s.heroSlide} /><span className={s.heroVeil} /></div>}
+      <div className={compact ? undefined : s.heroInner}>
+        {!compact && <>
+          <h1 id="reservation-title">{fr ? 'Des adresses qui valent le voyage.' : 'Hotels worth travelling for.'}</h1>
+          <p className={s.heroText}>{fr ? 'Découvrez des hôtels remarquables, aux quatre coins du monde.' : 'Discover remarkable hotels around the world.'}</p>
+        </>}
+        <div className={compact ? s.compactPanel : s.searchPanel} aria-label={fr ? 'Rechercher des hôtels' : 'Search hotels'} aria-busy={busy}>
           {!widgetReady && <div className={s.widgetLoading} role="status"><Search size={20} />{fr ? 'Chargement de la recherche…' : 'Loading hotel search…'}</div>}
           <div ref={widget} id={widgetId} className={s.widget} />
           {pending && <form className={s.allocation} onSubmit={event => { event.preventDefault(); if (allocated) void submitSearch(pending.data, allocated); }} aria-labelledby={`${widgetId}-allocation-title`}>
@@ -132,7 +136,9 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
           {error && <p className={s.error} role="alert">{error} <a href={engineUrl} target="_blank" rel="sponsored noopener noreferrer">{fr ? 'Ouvrir la réservation' : 'Open the booking engine'} ↗</a></p>}
           <noscript><a href={engineUrl} rel="sponsored">{fr ? 'Rechercher et réserver' : 'Search and book'} →</a></noscript>
         </div>
-        <p className={s.searchNote}><LockKeyhole size={13} />{fr ? 'Tarifs et disponibilités actualisés · Réservation sécurisée' : 'Live rates and availability · Secure booking'}</p>
+        {compact
+          ? <p className={s.compactNote}>{fr ? 'Les tarifs et la réservation sont gérés par Nuitée.' : 'Nuitée handles rates and booking.'}{' '}<a href={engineUrl} rel="sponsored">{fr ? 'Ouvrir le moteur Nuitée' : 'Open the Nuitée search'}</a></p>
+          : <p className={s.searchNote}><LockKeyhole size={13} />{fr ? 'Tarifs et disponibilités actualisés · Réservation sécurisée' : 'Live rates and availability · Secure booking'}</p>}
       </div>
     </section>}
 
@@ -144,7 +150,7 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
         <a href={bookingUrl} rel="sponsored noopener noreferrer">{fr ? 'Accéder aux résultats maintenant' : 'Open hotel results now'} <ArrowUpRight size={16} /></a>
       </div>
       <p className={s.frameNote}>{fr ? 'La réservation, les paiements et le service après-vente sont gérés par Nuitée.' : 'Nuitee handles reservations, payments and after-sales support.'}</p>
-    </section> : <>
+    </section> : compact ? null : <>
       <div className={s.benefits}>
         <div><SlidersHorizontal size={22} /><p><strong>{fr ? 'Comparez à votre rythme' : 'Compare at your pace'}</strong><span>{fr ? 'Prix, emplacement, équipements : affinez votre recherche.' : 'Refine your search by price, location and amenities.'}</span></p></div>
         <div><Check size={22} /><p><strong>{fr ? 'Choisissez en toute clarté' : 'Choose with clarity'}</strong><span>{fr ? 'Chambre, repas et conditions d’annulation avant de réserver.' : 'Room, meals and cancellation conditions before booking.'}</span></p></div>

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowRight, ArrowLeftRight, BedDouble, Building2, CalendarDays, CarFront, CarTaxiFront, Check, ChevronDown, Clock3, Compass, Home, MapPin, Plane, PlaneTakeoff, Search, ShieldCheck, Ship, Ticket, UsersRound } from 'lucide-react';
 import { trackConversion } from '@/lib/conversionAnalytics';
@@ -11,16 +12,23 @@ import { travelHref, type TravelLocale } from '@/lib/travel/i18n';
 import type { Locale } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
 import { getSlugForPage } from '@/data/pages/types';
-import { getNuiteeWhiteLabelSearchHref, getNuiteeExperiencesHref } from '@/lib/travel/nuiteeWhiteLabel';
+import { getNuiteeWhiteLabelSearchHref, getNuiteeExperiencesHref, NUITEE_WHITE_LABEL_ORIGIN } from '@/lib/travel/nuiteeWhiteLabel';
 import { withAssessmentContext } from '@/lib/assessmentContext';
 import { getApprovedPartnerUrl, getPrivateTravelPartnerName, type PrivateTravelPartnerService } from '@/lib/travel/privateTravelSupplierGateways';
 
 type Service = 'flights' | 'hotels' | 'villas' | 'chalets' | 'cars' | 'transfers' | 'jets' | 'helicopters' | 'yachts' | 'activities';
+const HotelReservationSearch = dynamic(() => import('./HotelReservationSearch').then(module => module.HotelReservationSearch));
 const kiwitaxiCopy: Record<Locale, string> = {
   fr: 'Réservation, paiement et assistance auprès de Kiwitaxi.',
   en: 'Kiwitaxi handles booking, payment and customer support.',
   ru: 'Бронирование, оплата и поддержка предоставляются Kiwitaxi.',
   ar: 'تتولى Kiwitaxi الحجز والدفع ودعم العملاء.',
+};
+const kiwitaxiPriceLabel: Record<Locale, string> = {
+  fr: 'Voir les prix',
+  en: 'See prices',
+  ru: 'Смотреть цены',
+  ar: 'عرض الأسعار',
 };
 const mainServices: { id: Service; icon: typeof Home }[] = [
  {id:'hotels',icon:BedDouble},{id:'flights',icon:PlaneTakeoff},
@@ -319,6 +327,15 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
     return ()=>controller.abort();
   },[isTransfer,kiwitaxiPath]);
   const showKiwitaxi=isTransfer&&kiwitaxiReady;
+  const [hotelSearchReady,setHotelSearchReady]=useState(false);
+  useEffect(()=>{
+    if(!isHotel) return;
+    const controller=new AbortController();
+    fetch('/api/travel/booking/search',{method:'HEAD',signal:controller.signal})
+      .then(response=>setHotelSearchReady(response.status===204))
+      .catch(()=>{if(!controller.signal.aborted) setHotelSearchReady(false);});
+    return ()=>controller.abort();
+  },[isHotel]);
   const isActivity=service==='activities';
   const isMulti=isFlight&&tripType==='multi';
   const isHome=service==='villas'||service==='chalets';
@@ -509,12 +526,25 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                   </fieldset>
                 )}
 
-                {showKiwitaxi?(
+                {isHotel&&hotelSearchReady?(
+                  <HotelReservationSearch compact locale={locale==='fr'?'fr':'en'} origin={NUITEE_WHITE_LABEL_ORIGIN} initialUrl={null}/>
+                ):showKiwitaxi?(
                   <>
-                    <a href={kiwitaxiPath} rel="sponsored" onClick={()=>trackAction('kiwitaxi_transfer')}
-                      className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#0071ad] px-6 py-3 text-sm font-semibold text-white hover:bg-[#005b90] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0071ad]">
-                      <Search size={18} aria-hidden="true"/>{copy.transferStart}
-                    </a>
+                    <form action="/api/travel/kiwitaxi-widget" method="get" onSubmit={()=>trackAction('kiwitaxi_transfer')}
+                      className="grid items-end gap-3 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_auto]">
+                      <input type="hidden" name="locale" value={locale}/>
+                      <label className="min-w-0">
+                        <span className={labelClass}><MapPin size={14} aria-hidden="true"/>{copy.flightDeparture}</span>
+                        <input className={fieldClass} name="from" required maxLength={120} placeholder="Ex. IST" />
+                      </label>
+                      <label className="min-w-0">
+                        <span className={labelClass}><MapPin size={14} aria-hidden="true"/>{copy.flightArrival}</span>
+                        <input className={fieldClass} name="to" required maxLength={120} placeholder="Ex. Istanbul" />
+                      </label>
+                      <button type="submit" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#0071ad] px-6 py-3 text-sm font-semibold text-white hover:bg-[#005b90] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0071ad]">
+                        <Search size={18} aria-hidden="true"/>{kiwitaxiPriceLabel[baseLocale]}
+                      </button>
+                    </form>
                     <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-sm text-[#637782]">
                       <p>{kiwitaxiCopy[baseLocale]}</p>
                       <Link href={transferHref[locale]} className="font-semibold text-[#006dad] underline" onClick={()=>trackAction('mobility')}>
