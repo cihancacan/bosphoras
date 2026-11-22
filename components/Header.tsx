@@ -32,6 +32,7 @@ const specialLocalizedPaths: Array<Record<Locale, string>> = [
   { fr: '/peninsula-istanbul', en: '/en/peninsula-istanbul', ru: '/ru/peninsula-istanbul', ar: '/ar/peninsula-istanbul' },
   { fr: '/transfert-aeroport-istanbul', en: '/en/istanbul-airport-transfer', ru: '/ru/transfer-aeroport-stambul', ar: '/ar/istanbul-airport-transfer' },
   corporateRelocationPaths,
+  { fr: '/travel/private-collection', en: '/en/travel/private-collection', ru: '/ru/travel/private-collection', ar: '/ar/travel/private-collection' },
   taxRelocationPaths,
   { fr: '/investissement', en: '/en/investment', ru: '/ru/investment', ar: '/ar/investment' },
   { fr: '/exoneration-fiscale-turquie-revenus-etrangers', en: '/en/turkey-tax-exemption-foreign-income', ru: '/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody', ar: '/ar/turkey-tax-exemption-foreign-income' },
@@ -107,6 +108,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
       },
     ]},
     { label: labels.destinations, href: travelHomeHref, items: [
+      { label: locale === 'fr' ? 'Voyages privés · Villas, chalets, jets & yachts' : locale === 'en' ? 'Private Travel · Villas, chalets, jets & yachts' : locale === 'ru' ? 'Частные путешествия · Виллы, шале, самолёты и яхты' : 'رحلات خاصة · فلل وشاليهات وطائرات ويخوت', href: locale === 'fr' ? '/travel/private-collection' : '/'+locale+'/travel/private-collection', description: locale === 'fr' ? 'Six univers, une expérience haut de gamme : séjours et transports privés.' : locale === 'en' ? 'Six services, one refined experience: private stays and journeys.' : locale === 'ru' ? 'Шесть направлений для особенного путешествия.' : 'ست خدمات للإقامة والتنقل الفاخر.' },
       {
         label: locale === 'fr' ? 'Rechercher un hôtel' : locale === 'en' ? 'Find a hotel' : locale === 'ru' ? 'Найти отель' : 'البحث عن فندق',
         href: hotelSearchHref,
