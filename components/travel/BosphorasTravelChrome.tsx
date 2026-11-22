@@ -122,7 +122,7 @@ export function BosphorasTravelFooter({locale}:{locale:TravelLocale}){
  const info=travelLanguageInfo.find(item=>item.code===locale)!;
  const home=bookingPageHref(locale);
  const linkClass='flex min-h-10 items-center text-sm text-[#576b77] transition-colors hover:text-[#C23674]';
- const privacy=locale==='fr'?'/politique-de-confidentialite':'/en/privacy-policy';
+ const privacy=locale==='fr'?'/confidentialite':'/en/privacy-policy';
  const legal=locale==='fr'?'/mentions-legales':'/en/legal-notice';
  return (
   <footer lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="border-t border-[#e2e9ee] bg-[#f5f8fa] text-[#244252] pb-[calc(80px+env(safe-area-inset-bottom))] lg:pb-0" aria-label={t.footer}>

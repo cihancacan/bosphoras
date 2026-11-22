@@ -7,7 +7,8 @@ export const NUITEE_WHITE_LABEL_ORIGIN = 'https://bosphoras.nuitee.link';
 
 export function getNuiteeWhiteLabelSearchHref(locale: string): string {
   const url = new URL(NUITEE_WHITE_LABEL_ORIGIN);
-  url.searchParams.set('language', locale === 'fr' ? 'fr' : 'en');
+  const nuiteeLocales=['fr','en','ru','ar','de','tr','es','pt','it'];
+  url.searchParams.set('language', nuiteeLocales.includes(locale) ? locale : 'en');
   url.searchParams.set('currency', 'EUR');
   url.searchParams.set('clientReference', 'bosphoras_worldwide');
   return url.toString();

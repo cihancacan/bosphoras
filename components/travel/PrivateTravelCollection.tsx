@@ -5,8 +5,9 @@ import { useEffect, useMemo, useState } from 'react';
 import { ArrowRight, ArrowLeftRight, BedDouble, Building2, CalendarDays, CarFront, CarTaxiFront, Check, ChevronDown, Clock3, Compass, Home, MapPin, Plane, PlaneTakeoff, Search, ShieldCheck, Ship, Ticket, UsersRound } from 'lucide-react';
 import { trackConversion } from '@/lib/conversionAnalytics';
 import { TravelDiscoverySections, type DiscoveryContext } from '@/components/travel/TravelDiscoverySections';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
+import { BosphorasTravelHeader, BosphorasTravelFooter } from '@/components/travel/BosphorasTravelChrome';
+import { extraBookingCopy, type ExtraBookingLocale } from '@/components/travel/travelBookingExtraCopy';
+import { travelHref, type TravelLocale } from '@/lib/travel/i18n';
 import type { Locale } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
 import { getSlugForPage } from '@/data/pages/types';
@@ -154,7 +155,7 @@ const searchCopy:Record<Locale,SearchCopy> = {
   multiCity:'Multidestination',flightSegment:'Vol',addFlight:'Ajouter un vol',removeFlight:'Supprimer le dernier vol',
   swap:'Inverser départ et arrivée',flightLimit:'Jusqu’à cinq vols par demande.',
   title:'Où souhaitez-vous aller ?',subtitle:'Vols, séjours, voitures et expériences : trouvez votre prochain voyage en quelques gestes.',
-  eyebrow:'BOSPHORAS TRAVEL',destination:'Destination',dates:'Dates',travelers:'Voyageurs',
+  eyebrow:'BOSPHORAS',destination:'Destination',dates:'Dates',travelers:'Voyageurs',
   go:'Rechercher',back:'Retour',where:'Ville, hôtel ou destination',departure:'Départ',arrival:'Arrivée',
   selection:'Choisissez votre recherche',hotelStart:'Rechercher des hôtels',transferStart:'Réserver un transfert',partnerStart:'Continuer vers le partenaire',
   request:'Demander une proposition',date:'Date de départ',dateReturn:'Date de retour',oneTime:'Date souhaitée',
@@ -174,7 +175,7 @@ const searchCopy:Record<Locale,SearchCopy> = {
   multiCity:'Multi-city',flightSegment:'Flight',addFlight:'Add a flight',removeFlight:'Remove last flight',
   swap:'Swap departure and arrival',flightLimit:'Up to five flights per enquiry.',
   title:'Where would you like to go?',subtitle:'Flights, stays, cars and experiences. Start your next journey in just a few steps.',
-  eyebrow:'BOSPHORAS TRAVEL',destination:'Destination',dates:'Dates',travelers:'Travellers',
+  eyebrow:'BOSPHORAS',destination:'Destination',dates:'Dates',travelers:'Travellers',
   go:'Search',back:'Back',where:'City, hotel or destination',departure:'Departure',arrival:'Arrival',
   selection:'Choose what to search',hotelStart:'Find hotels',transferStart:'Book a transfer',partnerStart:'Continue to partner',
   request:'Request a proposal',date:'Departure date',dateReturn:'Return date',oneTime:'Preferred date',
@@ -194,7 +195,7 @@ const searchCopy:Record<Locale,SearchCopy> = {
   multiCity:'Сложный маршрут',flightSegment:'Рейс',addFlight:'Добавить рейс',removeFlight:'Удалить последний рейс',
   swap:'Поменять местами отправление и прибытие',flightLimit:'До пяти рейсов в одной заявке.',
   title:'Куда хотите отправиться?',subtitle:'Авиабилеты, проживание, автомобили и впечатления. Всё для путешествия в одном месте.',
-  eyebrow:'BOSPHORAS TRAVEL',destination:'Направление',dates:'Даты',travelers:'Путешественники',
+  eyebrow:'BOSPHORAS',destination:'Направление',dates:'Даты',travelers:'Путешественники',
   go:'Найти',back:'Назад',where:'Город, отель или направление',departure:'Отправление',arrival:'Прибытие',
   selection:'Выберите услугу',hotelStart:'Найти отель',transferStart:'Заказать трансфер',partnerStart:'Перейти к партнёру',
   request:'Запросить предложение',date:'Дата отправления',dateReturn:'Дата возвращения',oneTime:'Желаемая дата',
@@ -214,7 +215,7 @@ const searchCopy:Record<Locale,SearchCopy> = {
   multiCity:'وجهات متعددة',flightSegment:'رحلة',addFlight:'إضافة رحلة',removeFlight:'إزالة الرحلة الأخيرة',
   swap:'تبديل المغادرة والوصول',flightLimit:'ما يصل إلى خمس رحلات في الطلب.',
   title:'إلى أين ترغب بالسفر؟',subtitle:'رحلات الطيران والإقامات والسيارات والتجارب في مكان واحد وبخطوات بسيطة.',
-  eyebrow:'BOSPHORAS TRAVEL',destination:'الوجهة',dates:'التواريخ',travelers:'المسافرون',
+  eyebrow:'BOSPHORAS',destination:'الوجهة',dates:'التواريخ',travelers:'المسافرون',
   go:'ابحث',back:'رجوع',where:'المدينة أو الفندق أو الوجهة',departure:'المغادرة',arrival:'الوصول',
   selection:'اختر نوع البحث',hotelStart:'ابحث عن فندق',transferStart:'احجز خدمة النقل',partnerStart:'المتابعة لدى الشريك',
   request:'اطلب عرضاً',date:'تاريخ المغادرة',dateReturn:'تاريخ العودة',oneTime:'التاريخ المطلوب',
@@ -232,7 +233,7 @@ const searchCopy:Record<Locale,SearchCopy> = {
 const fieldClass = 'block h-[58px] w-full min-w-0 rounded-xl border border-[#dde5eb] bg-white px-4 text-sm font-medium text-[#172c3c] placeholder:font-normal placeholder:text-[#8d9ca8] transition-colors focus:border-[#006da8] focus:outline-none focus:ring-2 focus:ring-[#b7dfed]';
 const labelClass = 'mb-1.5 flex items-center gap-1.5 text-xs font-medium text-[#536575]';
 
-export function PrivateTravelCollection({ locale }: { locale: Locale }) {
+export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
   const [service,setService]=useState<Service>('hotels');
   const [destination,setDestination]=useState('');
   const [origin,setOrigin]=useState('');
@@ -272,17 +273,27 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
     }
   },[]);
 
-  const tr=translations[locale];
-  const ux=travelChoiceCopy[locale];
-  const copy=searchCopy[locale];
-  const privateLabels=privateServiceLabels[locale];
-  const currentPath=getLocalePath(locale,'/travel/private-collection');
-  const assessment=getLocalePath(locale,getSlugForPage('private-assessment',locale)||'/diagnostic-prive');
-  const transferHref:Record<Locale,string>={
+  const baseLocale:Locale=(locale==='fr'||locale==='en'||locale==='ru'||locale==='ar')?locale:'en';
+  const additional=(extraBookingCopy as Partial<Record<TravelLocale,(typeof extraBookingCopy)[ExtraBookingLocale]>>)[locale];
+  const tr=additional?{...translations.en,...additional.tr,services:additional.tr.services,cabinOptions:additional.tr.cabinOptions}:translations[baseLocale];
+  const ux=additional?{...travelChoiceCopy.en,...additional.ux}:travelChoiceCopy[baseLocale];
+  const copy=additional?{...searchCopy.en,...additional.search}:searchCopy[baseLocale];
+  const privateLabels=additional?{...privateServiceLabels.en,...additional.private}:privateServiceLabels[baseLocale];
+  const currentPath=travelHref(locale,'private-collection');
+  // The corporate assessment is offered in the supported core language where needed.
+  // Include the guest's chosen booking-page language in the request context.
+  const assessment=getLocalePath(baseLocale,getSlugForPage('private-assessment',baseLocale)||'/diagnostic-prive');
+  const transferHref:Record<TravelLocale,string>={
     fr:'/transfert-aeroport-istanbul',
     en:'/en/istanbul-airport-transfer',
     ru:'/ru/transfer-aeroport-stambul',
-    ar:'/ar/istanbul-airport-transfer'
+    ar:'/ar/istanbul-airport-transfer',
+    de:'/de/flughafentransfer-istanbul',
+    tr:'/en/istanbul-airport-transfer',
+    es:'/es/traslado-aeropuerto-estambul',
+    zh:'/zh/istanbul-airport-transfer',
+    pt:'/pt/transfer-aeroporto-istambul',
+    it:'/it/transfer-aeroporto-istanbul'
   };
   const isHotel=service==='hotels';
   const isFlight=service==='flights';
@@ -311,6 +322,7 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
   const heroLabel=isHome?ux.homes:tr.services[service].label;
   const requestInfo=[
     heroLabel,
+    'Language: '+locale,
     !isMulti&&origin&&('From: '+origin),
     !isMulti&&destination&&(!isCar||!returnSame)&&('To: '+destination),
     !isMulti&&departure&&('Date: '+departure),
@@ -334,6 +346,7 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
     ?getApprovedPartnerUrl(privateChoice,'curated'):null;
   const privateRequestInfo=[
     tr.services[privateChoice].label,
+    'Language: '+locale,
     privateOrigin&&('From: '+privateOrigin),
     privateDestination&&('To: '+privateDestination),
     privateDeparture&&('Departure: '+privateDeparture),
@@ -370,11 +383,8 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
 
   return (
     <>
-      <Header locale={locale} currentPath={currentPath} localizedPaths={{
-        fr:'/travel/private-collection',en:'/en/travel/private-collection',
-        ru:'/ru/travel/private-collection',ar:'/ar/travel/private-collection'
-      }}/>
-      <main lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="bg-white pt-[4.85rem] text-[#172c3c]">
+      <BosphorasTravelHeader locale={locale} activeService={privateOpen?privateChoice:service} onPrivate={()=>setPrivateOpen(true)}/>
+      <main lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="bg-white pt-[66px] text-[#172c3c] md:pt-[74px]">
         <section id="private-travel-top" className="relative isolate overflow-hidden bg-[#f5f8fa] pb-11 pt-8 md:pb-16 md:pt-12">
           <div className="pointer-events-none absolute inset-x-0 top-0 h-[465px] bg-cover bg-center md:h-[455px]"
             aria-hidden="true"
@@ -677,7 +687,7 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
               </div>
             </div>
 
-            <section aria-label={copy.privateAccess} className="mt-5 overflow-hidden rounded-2xl border border-[#dae6ec] bg-white shadow-[0_6px_25px_rgba(20,49,70,0.055)]">
+            <section id="travel-private-section" aria-label={copy.privateAccess} className="mt-5 scroll-mt-[92px] overflow-hidden rounded-2xl border border-[#dae6ec] bg-white shadow-[0_6px_25px_rgba(20,49,70,0.055)]">
               <button type="button" aria-expanded={privateOpen} aria-controls="travel-private-options"
                 onClick={()=>setPrivateOpen(open=>!open)}
                 className="flex min-h-[84px] w-full items-center justify-between gap-4 px-5 py-4 text-start transition-colors hover:bg-[#f8fbfd] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#0071ad]">
@@ -793,7 +803,7 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
         <TravelDiscoverySections locale={locale} context={discoveryContext} onSelect={choose}/>
         <p className="container-editorial py-7 text-xs leading-6 text-[#70838e]">{tr.footnote}</p>
       </main>
-      <Footer locale={locale}/>
+      <BosphorasTravelFooter locale={locale}/>
     </>
   );
 }

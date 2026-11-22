@@ -3,7 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Compass, MapPin, Sparkles, ShieldCheck } from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
-import { getLocalePath } from '@/lib/routes';
+import { travelHref, type TravelLocale } from '@/lib/travel/i18n';
+import { extraDiscoveryCopy, type ExtraDiscoveryLocale } from '@/components/travel/travelDiscoveryExtraCopy';
 
 export type DiscoveryContext='stays'|'flights'|'mobility'|'activities'|'private';
 type Choice='hotels'|'villas'|'chalets'|'transfers'|'activities';
@@ -93,10 +94,13 @@ const collectionImages=[
  '/images/travel/courchevel-1850-premium/destination/alps-3.webp'
 ];
 export function TravelDiscoverySections({locale,context,onSelect}:{
- locale:Locale;context:DiscoveryContext;onSelect:(service:Choice)=>void;
+ locale:TravelLocale;context:DiscoveryContext;onSelect:(service:Choice)=>void;
 }){
- const t=copy[locale];const story=t.stories[context];
- const href=(slug:string)=>getLocalePath(locale,'/travel/destinations/'+slug);
+ const baseLocale:Locale=(locale==='fr'||locale==='en'||locale==='ru'||locale==='ar')?locale:'en';
+ const additional=(extraDiscoveryCopy as Partial<Record<TravelLocale,(typeof extraDiscoveryCopy)[ExtraDiscoveryLocale]>>)[locale];
+ const t=additional||copy[baseLocale];
+ const story=t.stories[context];
+ const href=(slug:string)=>travelHref(locale,'destinations/'+slug);
  function select(service:Choice){
    onSelect(service);
    document.getElementById('private-travel-top')?.scrollIntoView({behavior:'smooth',block:'start'});
@@ -110,7 +114,7 @@ export function TravelDiscoverySections({locale,context,onSelect}:{
       <h2 id="travel-stories-title" className="mt-2 text-2xl font-semibold text-[#193748] md:text-[2rem]">{story[0]}</h2>
       <p className="mt-3 text-sm leading-6 text-[#5c7180]">{story[1]}</p>
      </div>
-     <Link href={getLocalePath(locale,'/travel/destinations')} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[#006da5] underline underline-offset-4">{t.all}<ArrowRight size={16}/></Link>
+     <Link href={travelHref(locale,'destinations')} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[#006da5] underline underline-offset-4">{t.all}<ArrowRight size={16}/></Link>
     </div>
     <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-5">
      {sets[context].map(slug=>{
@@ -122,7 +126,7 @@ export function TravelDiscoverySections({locale,context,onSelect}:{
        <div className="p-3.5 md:p-5">
         <p className="text-[10px] font-semibold uppercase tracking-[0.09em] text-[#748b99]">{t.eyebrow}</p>
         <h3 className="mt-1 text-base font-semibold text-[#203f50] md:text-lg">{p.name}</h3>
-        <p className="mt-2 line-clamp-3 text-xs leading-5 text-[#5f7380] md:text-sm">{p.copy[locale]}</p>
+        <p className="mt-2 line-clamp-3 text-xs leading-5 text-[#5f7380] md:text-sm">{additional?additional.scenes[slug]:p.copy[baseLocale]}</p>
         <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-[#0073a9] md:text-sm">{t.viewGuide}<ArrowRight size={14}/></span>
        </div>
       </Link>;
@@ -153,7 +157,7 @@ export function TravelDiscoverySections({locale,context,onSelect}:{
       </button>)}
     </div>
     <p className="mt-3 text-[11px] leading-5 text-[#607583]">
-      {locale==='fr'?'Photo Villas au soleil':locale==='ru'?'Фото Виллы у моря':locale==='ar'?'صورة الفلل':'Sunlit villas photo'} :
+      {t.collectionNames[1]} :
       {' '}<a href="https://commons.wikimedia.org/wiki/File:My_Khe_Beach,_Da_Nang,_Vietnam.jpg" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">. Ray in Manila</a>
       {' · '}<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">CC BY 2.0</a>{' · '}{locale==='fr'?'Recadrée':locale==='ru'?'Кадрировано':locale==='ar'?'تم اقتصاص الصورة':'Cropped'}.
     </p>
@@ -170,7 +174,7 @@ export function TravelDiscoverySections({locale,context,onSelect}:{
       </span>
       <h3 className="text-base font-semibold text-[#203b4b]">{title}</h3>
       <p className="mt-2 flex-1 text-sm leading-6 text-[#627783]">{t.tipDescriptions[i]}</p>
-      {i===0?<Link href={getLocalePath(locale,'/travel/destinations')} className="mt-4 inline-flex min-h-11 items-center gap-2 self-start text-sm font-semibold text-[#0074aa]">{t.tipLinks[i]}<ArrowRight size={15}/></Link>:
+      {i===0?<Link href={travelHref(locale,'destinations')} className="mt-4 inline-flex min-h-11 items-center gap-2 self-start text-sm font-semibold text-[#0074aa]">{t.tipLinks[i]}<ArrowRight size={15}/></Link>:
        <button type="button" onClick={()=>select(i===1?'transfers':'activities')} className="mt-4 inline-flex min-h-11 items-center gap-2 self-start text-sm font-semibold text-[#0074aa]">{t.tipLinks[i]}<ArrowRight size={15}/></button>}
      </div>)}
     </div>
