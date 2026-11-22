@@ -64,7 +64,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
 
   const labels = {
     services: locale === 'fr' ? 'Services' : locale === 'en' ? 'Services' : locale === 'ru' ? 'Услуги' : 'الخدمات',
-    destinations: locale === 'fr' ? 'Hôtels & Séjours' : locale === 'en' ? 'Hotels & Stays' : locale === 'ru' ? 'Отели и отдых' : 'الفنادق والإقامات',
+    destinations: locale === 'fr' ? 'Voyages & Séjours' : locale === 'en' ? 'Travel & Stays' : locale === 'ru' ? 'Путешествия и отдых' : 'السفر والإقامات',
     property: locale === 'fr' ? 'Immobilier' : locale === 'en' ? 'Property' : locale === 'ru' ? 'Недвижимость' : 'العقار',
     investment: locale === 'fr' ? 'Investissement' : locale === 'en' ? 'Investment' : locale === 'ru' ? 'Инвестиции' : 'الاستثمار',
     privateAccess: 'Private Access',
@@ -108,7 +108,8 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
       },
     ]},
     { label: labels.destinations, href: travelHomeHref, items: [
-      { label: locale === 'fr' ? 'Voyages privés · Villas, chalets, jets & yachts' : locale === 'en' ? 'Private Travel · Villas, chalets, jets & yachts' : locale === 'ru' ? 'Частные путешествия · Виллы, шале, самолёты и яхты' : 'رحلات خاصة · فلل وشاليهات وطائرات ويخوت', href: locale === 'fr' ? '/travel/private-collection' : '/'+locale+'/travel/private-collection', description: locale === 'fr' ? 'Six univers, une expérience haut de gamme : séjours et transports privés.' : locale === 'en' ? 'Six services, one refined experience: private stays and journeys.' : locale === 'ru' ? 'Шесть направлений для особенного путешествия.' : 'ست خدمات للإقامة والتنقل الفاخر.' },
+      { label: locale === 'fr' ? 'Voyages · Vols, séjours & expériences' : locale === 'en' ? 'Travel · Flights, stays & experiences' : locale === 'ru' ? 'Путешествия · Авиабилеты, отдых и впечатления' : 'سفر وإقامات · رحلات جوية وتجارب', href: locale === 'fr' ? '/travel/private-collection' : '/'+locale+'/travel/private-collection', description: locale === 'fr' ? 'Huit services : vols, hôtels, villas, chalets, jets, hélicoptères, yachts et activités.' : locale === 'en' ? 'Eight services: flights, stays, private transport and activities.' : locale === 'ru' ? 'Авиабилеты, отели, виллы, шале, частный транспорт и впечатления.' : 'رحلات جوية وإقامات مميزة وتنقل خاص وأنشطة.' },
+      { label: locale === 'fr' ? 'Vols commerciaux' : locale === 'en' ? 'Commercial flights' : locale === 'ru' ? 'Авиабилеты' : 'رحلات الطيران', href: (locale === 'fr' ? '/travel/private-collection' : '/'+locale+'/travel/private-collection') + '?service=flights', description: locale === 'fr' ? 'Recherchez votre itinéraire ; tarifs et réservations après validation partenaire.' : locale === 'en' ? 'Plan your route; fares and booking after partner approval.' : locale === 'ru' ? 'Планирование перелёта; билеты после подключения партнёра.' : 'خطط لرحلتك؛ الحجز بعد تفعيل الشريك.' },
       {
         label: locale === 'fr' ? 'Rechercher un hôtel' : locale === 'en' ? 'Find a hotel' : locale === 'ru' ? 'Найти отель' : 'البحث عن فندق',
         href: hotelSearchHref,
@@ -118,6 +119,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
           : locale === 'ru' ? 'Поиск и бронирование у партнёра — интерфейс на английском.'
           : 'البحث والحجز عبر شريكنا — الواجهة باللغة الإنجليزية.',
       },
+      { label: locale === 'fr' ? 'Activités & expériences' : locale === 'en' ? 'Activities & experiences' : locale === 'ru' ? 'Экскурсии и впечатления' : 'الأنشطة والتجارب', href: (locale === 'fr' ? '/travel/private-collection' : '/'+locale+'/travel/private-collection') + '?service=activities', description: locale === 'fr' ? 'Excursions, visites privées et expériences sélectionnées.' : locale === 'en' ? 'Tours, private visits and curated experiences.' : locale === 'ru' ? 'Экскурсии, частные туры и особенные впечатления.' : 'جولات خاصة وتجارب مختارة.' },
       {
         label: locale === 'fr' ? 'Explorer les destinations' : locale === 'en' ? 'Explore destinations' : locale === 'ru' ? 'Исследовать направления' : 'استكشف الوجهات',
         href: travelDestinationsHref,
