@@ -240,6 +240,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
   const [departure,setDeparture]=useState('');
   const [returnDate,setReturnDate]=useState('');
   const [guests,setGuests]=useState('2');
+  const [flightGuests,setFlightGuests]=useState('1');
   const [tripType,setTripType]=useState<'round'|'one'|'multi'>('round');
   const [flightLegs,setFlightLegs]=useState<Array<{from:string;to:string;date:string}>>([
     {from:'',to:'',date:''},{from:'',to:'',date:''}
@@ -297,6 +298,8 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
   };
   const isHotel=service==='hotels';
   const isFlight=service==='flights';
+  const activeGuests=isFlight?flightGuests:guests;
+  const setActiveGuests=(value:string)=>isFlight?setFlightGuests(value):setGuests(value);
   const isCar=service==='cars';
   const isTransfer=service==='transfers';
   const isActivity=service==='activities';
@@ -327,7 +330,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
     !isMulti&&destination&&(!isCar||!returnSame)&&('To: '+destination),
     !isMulti&&departure&&('Date: '+departure),
     !isMulti&&returnDate&&('Return: '+returnDate),
-    !isCar&&('People: '+guests),
+    !isCar&&('People: '+activeGuests),
     isCar&&('Pickup: '+pickupTime+'; Return: '+dropoffTime),
     isFlight&&('Journey: '+tripType+'; Cabin: '+cabin),
     isMulti&&flightLegs.map((leg,i)=>'Flight '+(i+1)+': '+(leg.from||'?')+' → '+(leg.to||'?')+' ('+(leg.date||'?')+')').join(' | '),
@@ -557,7 +560,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                       {!isCar&&(
                         <label className="block min-w-0">
                           <span className={labelClass}><UsersRound size={14} aria-hidden="true"/>{isTransport?tr.passengers:copy.travelers}</span>
-                          <select value={guests} onChange={e=>setGuests(e.target.value)} className={fieldClass}>
+                          <select value={activeGuests} onChange={e=>setActiveGuests(e.target.value)} className={fieldClass}>
                             {[1,2,3,4,5,6,8,10,12,16].map(n=><option value={n} key={n}>{n}</option>)}
                           </select>
                         </label>
@@ -618,7 +621,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                         </div>
                         <div className="grid gap-3 sm:grid-cols-2">
                           <label className="block"><span className={labelClass}><UsersRound size={14}/>{copy.travelers}</span>
-                            <select value={guests} onChange={e=>setGuests(e.target.value)} className={fieldClass}>
+                            <select value={activeGuests} onChange={e=>setActiveGuests(e.target.value)} className={fieldClass}>
                               {[1,2,3,4,5,6,8,10,12,16].map(n=><option value={n} key={n}>{n}</option>)}
                             </select>
                           </label>

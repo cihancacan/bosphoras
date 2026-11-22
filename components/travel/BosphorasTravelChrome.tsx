@@ -6,7 +6,7 @@ import { rememberTravelLanguage } from '@/lib/travel/languagePreference';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { ArrowRight, BookOpenText, ChevronDown, Compass, Globe2, Headphones, Home, Menu, Plane, Search, X } from 'lucide-react';
-import { travelLanguageInfo, type TravelLocale, travelHref } from '@/lib/travel/i18n';
+import { travelLanguageInfo, type TravelLocale, travelHref, travelKeywordTitles } from '@/lib/travel/i18n';
 
 const labels:Record<TravelLocale,{
   search:string;explore:string;private:string;menu:string;close:string;
@@ -82,7 +82,7 @@ export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,
    <div className="container-editorial flex h-[66px] items-center justify-between gap-3 md:h-[74px]">
     <Link href={bookingPageHref(locale)} className="inline-flex shrink-0 items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#C23674]" aria-label="Bosphoras">
       <span style={{fontFamily:'var(--font-bosphoras-logo),sans-serif'}} className="text-[1.17rem] font-normal uppercase tracking-[0.16em] text-[#172f3f] sm:text-[1.45rem]">BOSPHORAS</span>
-      <Image src="/images/brand/bosphoras-mask-rose.png" width={36} height={17} alt="" aria-hidden="true" className="ms-2 h-[17px] w-[36px] shrink-0 object-contain"/>
+      <Image src="/images/brand/bosphoras-mask-rose.svg" width={44} height={22} alt="" aria-hidden="true" className="ms-2 h-[22px] w-[44px] shrink-0 object-contain"/>
     </Link>
     <nav aria-label={label.book} className="hidden items-center gap-7 lg:flex">
       <button type="button" onClick={searchClick} className="min-h-11 text-sm font-semibold text-[#172f3f] hover:text-[#C23674]">{label.search}</button>
@@ -146,12 +146,33 @@ export function BosphorasTravelFooter({locale}:{locale:TravelLocale}){
  const terms=locale==='fr'?'/cgu':locale==='ru'?'/ru/usloviya-ispolzovaniya':locale==='ar'?'/ar/terms-of-use':'/en/terms-of-use';
  const legalIsEnglish= !['fr','ru','ar'].includes(locale);
  const legalCode=legalIsEnglish?'en':locale;
+ const seoLabels:Record<TravelLocale,{collections:string;popular:string}>={
+  fr:{collections:'Nos univers',popular:'Destinations populaires'},
+  en:{collections:'Our collections',popular:'Popular destinations'},
+  ru:{collections:'Наши услуги',popular:'Популярные направления'},
+  ar:{collections:'خدماتنا',popular:'وجهات مميزة'},
+  de:{collections:'Unsere Reisewelten',popular:'Beliebte Reiseziele'},
+  tr:{collections:'Hizmetlerimiz',popular:'Popüler destinasyonlar'},
+  es:{collections:'Nuestras colecciones',popular:'Destinos populares'},
+  zh:{collections:'旅行服务',popular:'热门目的地'},
+  pt:{collections:'Nossos serviços',popular:'Destinos populares'},
+  it:{collections:'Le nostre collezioni',popular:'Destinazioni popolari'}
+ };
+ const serviceCategories=['hotels','villas','chalets','yachts','helicopters','private-jets'] as const;
+ const featuredSeoPages=[
+   {category:'hotels',slug:'istanbul',city:'Istanbul'},
+   {category:'villas',slug:'bodrum',city:'Bodrum'},
+   {category:'chalets',slug:'courchevel-1850',city:'Courchevel 1850'},
+   {category:'yachts',slug:'istanbul',city:'Istanbul'},
+   {category:'helicopters',slug:'saint-tropez',city:'Saint-Tropez'},
+   {category:'private-jets',slug:'dubai',city:'Dubai'}
+ ] as const;
  return (
   <footer lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="border-t border-[#e2e9ee] bg-[#f5f8fa] text-[#244252] pb-[calc(80px+env(safe-area-inset-bottom))] lg:pb-0" aria-label={t.footer}>
    <div className="container-editorial py-12 md:py-14">
     <div className="grid gap-7 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-10">
      <div>
-      <Link href={home} className="inline-flex items-center gap-2" aria-label="Bosphoras"><span style={{fontFamily:'var(--font-bosphoras-logo),sans-serif'}} className="text-xl font-normal uppercase tracking-[0.16em]">BOSPHORAS</span><Image src="/images/brand/bosphoras-mask-rose.png" width={36} height={17} alt="" aria-hidden="true" className="h-[17px] w-[36px] shrink-0 object-contain"/></Link>
+      <Link href={home} className="inline-flex items-center gap-2" aria-label="Bosphoras"><span style={{fontFamily:'var(--font-bosphoras-logo),sans-serif'}} className="text-xl font-normal uppercase tracking-[0.16em]">BOSPHORAS</span><Image src="/images/brand/bosphoras-mask-rose.svg" width={44} height={22} alt="" aria-hidden="true" className="h-[22px] w-[44px] shrink-0 object-contain"/></Link>
       <p className="mt-4 max-w-[340px] text-sm leading-6 text-[#607684]">{info.slogan}</p>
       <p className="mt-3 max-w-[360px] text-xs leading-6 text-[#768b96]">{t.partnerInfo}</p>
      </div>
@@ -183,6 +204,24 @@ export function BosphorasTravelFooter({locale}:{locale:TravelLocale}){
       </Link>
      </div>
     </div>
+     <nav aria-label={seoLabels[locale].collections} className="mt-9 grid gap-7 border-t border-[#e0e8ec] pt-8 md:grid-cols-2">
+       <div>
+         <h2 className="text-sm font-semibold text-[#203b4d]">{seoLabels[locale].collections}</h2>
+         <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 sm:grid-cols-3">
+           {serviceCategories.map(category=><Link key={category} href={travelHref(locale,category)} className={linkClass}>
+             {travelKeywordTitles[category][locale]}
+           </Link>)}
+         </div>
+       </div>
+       <div>
+         <h2 className="text-sm font-semibold text-[#203b4d]">{seoLabels[locale].popular}</h2>
+         <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 sm:grid-cols-3">
+           {featuredSeoPages.map(({category,slug,city})=><Link key={category+slug} href={travelHref(locale,category+'/'+slug)} className={linkClass}>
+             {travelKeywordTitles[category][locale]} · {city}
+           </Link>)}
+         </div>
+       </div>
+     </nav>
     <div className="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-[#e0e8ec] pt-6 text-xs text-[#718591]">
      <span>© {new Date().getFullYear()} BOSPHORAS</span>
      <span>{t.partner}</span>
