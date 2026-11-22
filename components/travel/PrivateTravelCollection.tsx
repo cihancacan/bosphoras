@@ -399,7 +399,7 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
                         onClick={()=>choose(id)}
                         className={'relative flex min-h-[73px] min-w-0 flex-col items-center justify-center gap-1.5 border-b-[3px] px-0.5 py-2 text-center text-[11px] font-semibold leading-tight transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-[#0b6a9e] sm:min-h-[80px] sm:px-3 sm:text-sm '+
                           (active?'border-[#0475ad] bg-[#f1f8fc] text-[#005f93]':'border-transparent text-[#536a77] hover:bg-[#f4f8fb]')}>
-                        <Icon size={25} strokeWidth={1.7} aria-hidden="true" className="shrink-0 sm:h-7 sm:w-7"/>
+                        <Icon size={25} strokeWidth={1.7} aria-hidden="true" className="shrink-0 text-[#C23674] sm:h-7 sm:w-7"/>
                         <span className="block max-w-full whitespace-normal">{label}</span>
                       </button>
                     );
@@ -682,7 +682,7 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
                 onClick={()=>setPrivateOpen(open=>!open)}
                 className="flex min-h-[84px] w-full items-center justify-between gap-4 px-5 py-4 text-start transition-colors hover:bg-[#f8fbfd] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#0071ad]">
                 <span className="flex items-center gap-3">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eaf3f8] text-[#1e678d]">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#fff0f6] text-[#C23674]">
                     <Plane size={20} strokeWidth={1.6} aria-hidden="true"/>
                   </span>
                   <span>
@@ -704,7 +704,7 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
                         }}
                         className={'flex min-h-[88px] flex-col items-center justify-center gap-2 rounded-xl border px-2 py-3 text-center text-xs font-semibold leading-tight transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0071ad] sm:min-h-[95px] sm:text-sm '+
                           (privateChoice===id?'border-[#0475ad] bg-[#edf7fc] text-[#006ba4]':'border-[#e1e9ee] bg-white text-[#324d5e] hover:border-[#83b5ce]')}>
-                        <Icon size={24} strokeWidth={1.7} aria-hidden="true"/>{tr.services[id].label}
+                        <Icon size={24} strokeWidth={1.7} aria-hidden="true" className="text-[#C23674]"/>{tr.services[id].label}
                       </button>
                     ))}
                   </div>
