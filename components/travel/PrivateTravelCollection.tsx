@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowRight, ArrowLeftRight, BedDouble, Building2, CalendarDays, CarFront, CarTaxiFront, Check, ChevronDown, Clock3, Compass, Home, MapPin, Plane, PlaneTakeoff, Search, ShieldCheck, Ship, Ticket, UsersRound } from 'lucide-react';
 import { trackConversion } from '@/lib/conversionAnalytics';
+import { TravelDiscoverySections, type DiscoveryContext } from '@/components/travel/TravelDiscoverySections';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import type { Locale } from '@/lib/i18n';
@@ -282,6 +283,7 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
   const isMulti=isFlight&&tripType==='multi';
   const isHome=service==='villas'||service==='chalets';
   const isPrivate=privateServices.some(item=>item.id===service);
+  const discoveryContext:DiscoveryContext=isPrivate?'private':isActivity?'activities':(isCar||isTransfer)?'mobility':isFlight?'flights':'stays';
   const privateService=isHome||isPrivate;
   const isTransport=isFlight||service==='jets'||service==='helicopters'||isCar;
   const selectedPartner=privateService?getPrivateTravelPartnerName(service as PrivateTravelPartnerService,homeCollection):'';
@@ -345,14 +347,17 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
         ru:'/ru/travel/private-collection',ar:'/ar/travel/private-collection'
       }}/>
       <main lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="bg-white pt-[4.85rem] text-[#172c3c]">
-        <section id="private-travel-top" className="bg-[#f5f8fa] pb-11 pt-8 md:pb-16 md:pt-12">
-          <div className="container-editorial">
+        <section id="private-travel-top" className="relative isolate overflow-hidden bg-[#f5f8fa] pb-11 pt-8 md:pb-16 md:pt-12">
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-[465px] bg-cover bg-center md:h-[455px]"
+            aria-hidden="true"
+            style={{backgroundImage:"linear-gradient(180deg,rgba(7,30,45,0.69) 0%,rgba(9,38,53,0.42) 58%,#f5f8fa 100%),url('/images/travel/saint-tropez-premium/destination/saint-tropez-pampelonne-bay.webp')"}}/>
+          <div className="container-editorial relative z-10">
             <div className="mb-6 md:mb-8">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.20em] text-[#527184]">{copy.eyebrow}</p>
-              <h1 className="mt-3 max-w-5xl text-[2rem] font-semibold leading-[1.13] tracking-[-0.035em] text-[#122b3b] sm:text-[2.5rem] md:text-[3.3rem]">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.20em] text-white/90">{copy.eyebrow}</p>
+              <h1 className="mt-3 max-w-5xl text-[2rem] font-semibold leading-[1.13] tracking-[-0.035em] text-white drop-shadow-[0_3px_18px_rgba(5,20,30,0.24)] sm:text-[2.5rem] md:text-[3.3rem]">
                 {copy.title}
               </h1>
-              <p className="mt-3 max-w-[790px] text-sm leading-6 text-[#5c6f7c] md:text-base">{copy.subtitle}</p>
+              <p className="mt-3 max-w-[790px] text-sm leading-6 text-white/90 md:text-base">{copy.subtitle}</p>
             </div>
 
             <div className="overflow-hidden rounded-2xl border border-[#e2e9ee] bg-white shadow-[0_18px_55px_rgba(20,49,70,0.08)]">
@@ -682,42 +687,7 @@ export function PrivateTravelCollection({ locale }: { locale: Locale }) {
           </div>
         </section>
 
-        <section className="bg-white py-10 md:py-14">
-          <div className="container-editorial">
-            <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
-              <div>
-                <p className="text-[11px] uppercase tracking-[0.17em] text-[#6b8695]">{tr.inspirations}</p>
-                <h2 className="mt-2 text-2xl font-medium tracking-tight text-[#183446] md:text-[2rem]">{tr.inspireTitle}</h2>
-              </div>
-              <Link href={getLocalePath(locale,'/travel/destinations')}
-                className="inline-flex min-h-11 items-center gap-2 text-sm font-medium text-[#086f9e] underline underline-offset-4">
-                {tr.explore}<ArrowRight size={16} aria-hidden="true"/>
-              </Link>
-            </div>
-            <div className="grid gap-4 md:grid-cols-2">
-              <button type="button" onClick={()=>{
-                  choose('villas');
-                  document.getElementById('private-travel-top')?.scrollIntoView({behavior:'smooth'});
-                }}
-                className="group overflow-hidden rounded-2xl border border-[#e7edf0] bg-white text-start transition-shadow hover:shadow-lg">
-                <div className="h-[220px] bg-cover bg-center transition-transform duration-300 group-hover:scale-[1.02]"
-                  style={{backgroundImage:"url('/images/travel/bali-premium/destination/bali-uluwatu-ocean-hero.webp')"}}
-                  aria-hidden="true"/>
-                <span className="flex items-center justify-between px-5 py-4 text-base font-medium">{tr.villa}<ArrowRight size={17} aria-hidden="true"/></span>
-              </button>
-              <button type="button" onClick={()=>{
-                  choose('chalets');
-                  document.getElementById('private-travel-top')?.scrollIntoView({behavior:'smooth'});
-                }}
-                className="group overflow-hidden rounded-2xl border border-[#e7edf0] bg-white text-start transition-shadow hover:shadow-lg">
-                <div className="h-[220px] bg-cover bg-center transition-transform duration-300 group-hover:scale-[1.02]"
-                  style={{backgroundImage:"url('/images/travel/courchevel-1850-premium/destination/alps-1.webp')"}}
-                  aria-hidden="true"/>
-                <span className="flex items-center justify-between px-5 py-4 text-base font-medium">{tr.chalet}<ArrowRight size={17} aria-hidden="true"/></span>
-              </button>
-            </div>
-          </div>
-        </section>
+        <TravelDiscoverySections locale={locale} context={discoveryContext} onSelect={choose}/>
         <p className="container-editorial py-7 text-xs leading-6 text-[#70838e]">{tr.footnote}</p>
       </main>
       <Footer locale={locale}/>
