@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { ArrowRight, BookOpenText, ChevronDown, Compass, Globe2, Headphones, Home, Menu, Plane, Search, X } from 'lucide-react';
 import { travelLanguageInfo, type TravelLocale, travelHref } from '@/lib/travel/i18n';
 
@@ -32,21 +33,28 @@ function jump(id:string) {
  const target=document.getElementById(id);
  if (target) target.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
 }
-export function BosphorasTravelHeader({locale,activeService,onPrivate}:{
- locale:TravelLocale;activeService:string;onPrivate:()=>void;
+export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,allowedLanguages}:{
+ locale:TravelLocale;activeService:string;onPrivate?:()=>void;
+ guideSlug?:string; allowedLanguages?:TravelLocale[];
 }){
+ const router=useRouter();
  const [menuOpen,setMenuOpen]=useState(false);
  const [languagesOpen,setLanguagesOpen]=useState(false);
  const label=labels[locale];
  const currentService=activeService==='homes'?'villas':activeService;
- const languageHref=(loc:TravelLocale)=>bookingPageHref(loc,currentService);
+ const languageHref=(loc:TravelLocale)=>guideSlug!==undefined?travelHref(loc,guideSlug):bookingPageHref(loc,currentService);
  const exploreHref=travelHref(locale,'destinations');
  const privateClick=()=>{
-   onPrivate();
    setMenuOpen(false);setLanguagesOpen(false);
+   if(guideSlug!==undefined){router.push(bookingPageHref(locale,'jets'));return;}
+   onPrivate?.();
    jump('travel-private-section');
  };
- const searchClick=()=>{setMenuOpen(false);jump('private-travel-top');};
+ const searchClick=()=>{
+   setMenuOpen(false);setLanguagesOpen(false);
+   if(guideSlug!==undefined){router.push(bookingPageHref(locale));return;}
+   jump('private-travel-top');
+ };
  useEffect(()=>{
    if(!menuOpen&&!languagesOpen)return;
    const onKey=(event:KeyboardEvent)=>{if(event.key==='Escape'){setMenuOpen(false);setLanguagesOpen(false);}};
@@ -55,7 +63,7 @@ export function BosphorasTravelHeader({locale,activeService,onPrivate}:{
  },[menuOpen,languagesOpen]);
  const languages=(
    <div className="grid max-h-[60vh] grid-cols-2 gap-1 overflow-y-auto p-2" role="group" aria-label={label.languages}>
-    {travelLanguageInfo.map(item=>(
+    {travelLanguageInfo.filter(item=>!allowedLanguages||allowedLanguages.includes(item.code)).map(item=>(
       <Link href={languageHref(item.code)} key={item.code} lang={item.code} hrefLang={item.hreflang} prefetch={false}
        onClick={()=>{setLanguagesOpen(false);setMenuOpen(false);}}
        className={'flex min-h-11 items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-[#f5f8fa] '+
@@ -122,8 +130,11 @@ export function BosphorasTravelFooter({locale}:{locale:TravelLocale}){
  const info=travelLanguageInfo.find(item=>item.code===locale)!;
  const home=bookingPageHref(locale);
  const linkClass='flex min-h-10 items-center text-sm text-[#576b77] transition-colors hover:text-[#C23674]';
- const privacy=locale==='fr'?'/confidentialite':'/en/privacy-policy';
- const legal=locale==='fr'?'/mentions-legales':'/en/legal-notice';
+ const privacy=locale==='fr'?'/confidentialite':locale==='ru'?'/ru/politika-konfidentsialnosti':locale==='ar'?'/ar/privacy-policy':'/en/privacy-policy';
+ const legal=locale==='fr'?'/mentions-legales':locale==='ru'?'/ru/pravovaya-informatsiya':locale==='ar'?'/ar/legal-notice':'/en/legal-notice';
+ const terms=locale==='fr'?'/cgu':locale==='ru'?'/ru/usloviya-ispolzovaniya':locale==='ar'?'/ar/terms-of-use':'/en/terms-of-use';
+ const legalIsEnglish= !['fr','ru','ar'].includes(locale);
+ const legalCode=legalIsEnglish?'en':locale;
  return (
   <footer lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="border-t border-[#e2e9ee] bg-[#f5f8fa] text-[#244252] pb-[calc(80px+env(safe-area-inset-bottom))] lg:pb-0" aria-label={t.footer}>
    <div className="container-editorial py-12 md:py-14">
@@ -153,8 +164,12 @@ export function BosphorasTravelFooter({locale}:{locale:TravelLocale}){
       <a className={'mt-2 '+linkClass} href="mailto:contact@bosphoras.com">{t.contact}</a>
       <a className={linkClass} href="mailto:contact@bosphoras.com">contact@bosphoras.com</a>
       <p className="mt-3 text-xs font-medium text-[#657986]">{t.legal}</p>
-      <Link className={linkClass} href={privacy} lang={locale==='fr'?'fr':'en'}>{t.privacy}{locale!=='fr'?' (EN)':''}</Link>
-      <Link className={linkClass} href={legal} lang={locale==='fr'?'fr':'en'}>{t.legal}{locale!=='fr'?' (EN)':''}</Link>
+      <Link className={linkClass} href={privacy} lang={legalCode}>{t.privacy}{legalIsEnglish?' (EN)':''}</Link>
+      <Link className={linkClass} href={terms} lang={legalCode}>{t.terms}{legalIsEnglish?' (EN)':''}</Link>
+      <Link className={linkClass} href={legal} lang={legalCode}>{t.legal}{legalIsEnglish?' (EN)':''}</Link>
+      <Link className={linkClass} href={travelHref(locale,'credits')}>
+        {locale==='fr'?'Crédits photos':locale==='ru'?'Авторы фотографий':locale==='ar'?'حقوق الصور':locale==='de'?'Bildnachweise':locale==='tr'?'Fotoğraf kredileri':locale==='es'?'Créditos de fotos':locale==='zh'?'图片来源':locale==='pt'?'Créditos das fotos':locale==='it'?'Crediti fotografici':'Photo credits'}
+      </Link>
      </div>
     </div>
     <div className="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-[#e0e8ec] pt-6 text-xs text-[#718591]">
@@ -165,4 +180,16 @@ export function BosphorasTravelFooter({locale}:{locale:TravelLocale}){
    </div>
   </footer>
  );
+}
+
+
+/** Consistent travel-app chrome for destination pages; availability of individual guide
+ * translations is determined by the server and passed in allowedLanguages. */
+export function BosphorasTravelGuideHeader({locale,slug,allowedLanguages}:{
+ locale:TravelLocale;slug:string;allowedLanguages:TravelLocale[];
+}){
+ return <>
+   <BosphorasTravelHeader locale={locale} activeService="hotels" guideSlug={slug} allowedLanguages={allowedLanguages}/>
+   <div aria-hidden="true" className="h-[66px] md:h-[74px]"/>
+ </>;
 }
