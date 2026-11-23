@@ -338,6 +338,17 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
     return ()=>controller.abort();
   },[useCompactHotelSearch]);
   const showHotelSearch=useCompactHotelSearch&&hotelSearchReady;
+  const [cosmosWidgetReady,setCosmosWidgetReady]=useState(false);
+  const needsCosmosWidget=service==='yachts'||(privateOpen&&privateChoice==='yachts');
+  const cosmosWidgetPath=`/api/travel/cosmos-widget?locale=${locale}`;
+  useEffect(()=>{
+    if(!needsCosmosWidget) return;
+    const controller=new AbortController();
+    fetch(cosmosWidgetPath,{method:'HEAD',signal:controller.signal})
+      .then(response=>setCosmosWidgetReady(response.status===204))
+      .catch(()=>{if(!controller.signal.aborted) setCosmosWidgetReady(false);});
+    return ()=>controller.abort();
+  },[cosmosWidgetPath,needsCosmosWidget]);
   const isActivity=service==='activities';
   const isMulti=isFlight&&tripType==='multi';
   const isHome=service==='villas'||service==='chalets';
@@ -346,8 +357,10 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
   const privateService=isHome||isPrivate;
   const isTransport=isFlight||service==='jets'||service==='helicopters'||isCar;
   const selectedPartner=privateService?getPrivateTravelPartnerName(service as PrivateTravelPartnerService,homeCollection):'';
-  const bookingHref=privateService&&!(service==='yachts'&&yachtType==='crewed')
-    ?getApprovedPartnerUrl(service as PrivateTravelPartnerService,homeCollection):null;
+  const useCosmosYachtSearch=service==='yachts'&&yachtType==='skippered'&&cosmosWidgetReady;
+  const bookingHref=useCosmosYachtSearch?cosmosWidgetPath:
+    privateService&&!(service==='yachts'&&yachtType==='crewed')
+      ?getApprovedPartnerUrl(service as PrivateTravelPartnerService,homeCollection):null;
   const activityHref=getNuiteeExperiencesHref();
 
   // No dummy search fields for partners: until a supported deep link or widget exists,
@@ -381,8 +394,10 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
   // Private travel has an independent in-place enquiry: never switch the
   // four main search tabs or scroll away from the private travel card.
   const privateSelectedPartner=getPrivateTravelPartnerName(privateChoice,'curated');
-  const privateApprovedHref=!(privateChoice==='yachts'&&privateYachtType==='crewed')
-    ?getApprovedPartnerUrl(privateChoice,'curated'):null;
+  const usePrivateCosmosSearch=privateChoice==='yachts'&&privateYachtType==='skippered'&&cosmosWidgetReady;
+  const privateApprovedHref=usePrivateCosmosSearch?cosmosWidgetPath:
+    !(privateChoice==='yachts'&&privateYachtType==='crewed')?getApprovedPartnerUrl(privateChoice,'curated'):null;
+  const cosmosSearchLabel=locale==='fr'?'Rechercher des yachts avec Cosmos':'Search yachts with Cosmos';
   const privateRequestInfo=[
     tr.services[privateChoice].label,
     'Language: '+locale,
@@ -399,7 +414,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
     [assessment,currentPath,privateRequestInfo]
   );
   const actionHref=ctaHref||inquiryHref;
-  const buttonLabel=isHotel?copy.hotelStart:
+  const buttonLabel=useCosmosYachtSearch?cosmosSearchLabel:isHotel?copy.hotelStart:
     isTransfer?copy.transferStart:
     (isActivity&&activityHref)||bookingHref?copy.partnerStart:
     isCar?ux.requestCar:isFlight?ux.requestFlight:copy.request;
@@ -790,30 +805,31 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                     <p className="text-base font-semibold text-[#203d4d]">{tr.services[privateChoice].label}</p>
                     <p className="mt-2 max-w-[720px] text-sm leading-6 text-[#607584]">{tr.services[privateChoice].description}</p>
 
+                    {privateChoice==='yachts'&&(
+                      <fieldset className="mt-5">
+                        <legend className={labelClass}>{tr.services.yachts.label}</legend>
+                        <div className="flex flex-wrap gap-2">
+                          {([{id:'skippered' as const,label:privateLabels.skippered},{id:'crewed' as const,label:privateLabels.crewed}]).map(choice=>(
+                            <button type="button" key={choice.id} aria-pressed={privateYachtType===choice.id}
+                              onClick={()=>setPrivateYachtType(choice.id)}
+                              className={'min-h-11 rounded-lg border px-4 py-2 text-sm font-medium '+(privateYachtType===choice.id?'border-[#0475ad] bg-white text-[#006ba4]':'border-[#dce6ec] bg-white text-[#526b79]')}>
+                              {choice.label}
+                            </button>
+                          ))}
+                        </div>
+                      </fieldset>
+                    )}
                     {privateApprovedHref ? (
                       <div className="mt-5 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
-                        <a href={privateApprovedHref} rel="sponsored noopener noreferrer" onClick={()=>trackConversion('travel_booking_action',{service_id:privateChoice,action:'private_partner',language:locale})}
+                        <a href={privateApprovedHref} rel={usePrivateCosmosSearch?undefined:'sponsored noopener noreferrer'}
+                          onClick={()=>trackConversion('travel_booking_action',{service_id:privateChoice,action:usePrivateCosmosSearch?'cosmos_yachts':'private_partner',language:locale})}
                           className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#0071ad] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#005b90]">
-                          {privateLabels.redirect}<ArrowRight size={17} aria-hidden="true"/>
+                          {usePrivateCosmosSearch?cosmosSearchLabel:privateLabels.redirect}<ArrowRight size={17} aria-hidden="true"/>
                         </a>
                         <p className="text-xs leading-5 text-[#667a85]">{copy.partnerIntro}</p>
                       </div>
                     ) : (
                       <>
-                        {privateChoice==='yachts'&&(
-                          <fieldset className="mt-5">
-                            <legend className={labelClass}>{tr.services.yachts.label}</legend>
-                            <div className="flex flex-wrap gap-2">
-                              {([{id:'skippered' as const,label:privateLabels.skippered},{id:'crewed' as const,label:privateLabels.crewed}]).map(choice=>(
-                                <button type="button" key={choice.id} aria-pressed={privateYachtType===choice.id}
-                                  onClick={()=>setPrivateYachtType(choice.id)}
-                                  className={'min-h-11 rounded-lg border px-4 py-2 text-sm font-medium '+(privateYachtType===choice.id?'border-[#0475ad] bg-white text-[#006ba4]':'border-[#dce6ec] bg-white text-[#526b79]')}>
-                                  {choice.label}
-                                </button>
-                              ))}
-                            </div>
-                          </fieldset>
-                        )}
                         <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
                           <label className="block min-w-0">
                             <span className={labelClass}><MapPin size={14} aria-hidden="true"/>{tr.origin}</span>
