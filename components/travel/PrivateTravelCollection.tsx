@@ -337,6 +337,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
       .catch(()=>{if(!controller.signal.aborted) setHotelSearchReady(false);});
     return ()=>controller.abort();
   },[useCompactHotelSearch]);
+  const showHotelSearch=useCompactHotelSearch&&hotelSearchReady;
   const isActivity=service==='activities';
   const isMulti=isFlight&&tripType==='multi';
   const isHome=service==='villas'||service==='chalets';
@@ -423,7 +424,8 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
     <>
       <BosphorasTravelHeader locale={locale} activeService={privateOpen?privateChoice:service} onPrivate={()=>setPrivateOpen(true)}/>
       <main lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="bg-white pt-[66px] text-[#172c3c] md:pt-[74px]">
-        <section id="private-travel-top" className="relative isolate overflow-hidden bg-[#f5f8fa] pb-11 pt-8 md:pb-16 md:pt-12">
+        <section id="private-travel-top" className={'relative isolate bg-[#f5f8fa] pb-11 pt-8 md:pb-16 md:pt-12 '+
+          (showHotelSearch?'z-10':'overflow-hidden')}>
           <div className="pointer-events-none absolute inset-x-0 top-0 h-[465px] bg-cover bg-center md:h-[455px]"
             aria-hidden="true"
             style={{backgroundImage:"linear-gradient(180deg,rgba(7,30,45,0.69) 0%,rgba(9,38,53,0.42) 58%,#f5f8fa 100%),url('/images/travel/saint-tropez-premium/destination/saint-tropez-pampelonne-bay.webp')"}}/>
@@ -436,7 +438,8 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
               <p className="mt-3 max-w-[790px] text-sm leading-6 text-white/90 md:text-base">{copy.subtitle}</p>
             </div>
 
-            <div className="overflow-hidden rounded-2xl border border-[#e2e9ee] bg-white shadow-[0_18px_55px_rgba(20,49,70,0.08)]">
+            <div className={'rounded-2xl border border-[#e2e9ee] bg-white shadow-[0_18px_55px_rgba(20,49,70,0.08)] '+
+              (showHotelSearch?'relative z-10':'overflow-hidden')}>
               <div className="border-b border-[#e2e9ee]">
                 <div role="tablist" aria-label={copy.selection} className="grid grid-cols-4 gap-0 px-1 sm:px-3">
                   {mainServices.map(({id,icon:Icon})=>{
@@ -527,7 +530,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                   </fieldset>
                 )}
 
-                {useCompactHotelSearch&&hotelSearchReady?(
+                {showHotelSearch?(
                   <HotelReservationSearch compact locale={locale==='fr'?'fr':'en'} origin={NUITEE_WHITE_LABEL_ORIGIN} initialUrl={null}/>
                 ):showKiwitaxi?(
                   <>
