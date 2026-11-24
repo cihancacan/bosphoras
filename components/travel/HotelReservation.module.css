@@ -236,6 +236,21 @@
   display: none !important;
 }
 
+.compactPanel .widget :global(.simple-typeahead-list) {
+  border: 1px solid #dce3e9;
+  box-shadow: 0 8px 20px rgb(21 43 59 / 12%);
+}
+
+.compactPanel .widget :global(.simple-typeahead-list-item) {
+  background: #fff !important;
+  color: #384250 !important;
+}
+
+.compactPanel .widget :global(.simple-typeahead-list-item):hover,
+.compactPanel .widget :global(.simple-typeahead-list-item-active) {
+  background: #eef3f4 !important;
+}
+
 .compactPanel .widget :global(.simple-typeahead-list-item):has(.suggestion) {
   min-height: 46px;
   padding: 5px 10px;
