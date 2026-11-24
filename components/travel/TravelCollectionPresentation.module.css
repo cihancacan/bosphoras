@@ -1,6 +1,12 @@
 .page {
-  font-family: var(--font-travel-booking), var(--font-sans);
+  --bosphoras-font: var(--font-travel-booking), var(--font-sans);
+  font-family: var(--bosphoras-font);
   font-variant-numeric: lining-nums tabular-nums;
+}
+
+.page :global(#private-travel-top) h1,
+.page :global(#assistance-nuitee) h2 {
+  font-weight: 700;
 }
 
 .page :is(h1,h2,h3,h4,button,input,select,textarea) {
