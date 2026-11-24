@@ -41,7 +41,7 @@ export function NuiteeBookingSupport({ locale }: { locale: TravelLocale }) {
   const documents = new URL(getNuiteeWhiteLabelSearchHref(french ? 'fr' : 'en'));
   const terms = new URL(documents);
   const cookies = new URL(documents);
-  terms.hash = ':~:text=' + encodeURIComponent(french ? 'Conditions générales' : 'Terms and conditions');
+  terms.hash = ':~:text=' + encodeURIComponent(french ? 'Conditions générales' : 'Terms & Conditions');
   cookies.hash = ':~:text=' + encodeURIComponent(french ? 'Préférences en matière de cookies' : 'Cookie preferences');
   const help = new URL('/help-center', NUITEE_WHITE_LABEL_ORIGIN);
   help.search = new URL(getNuiteeWhiteLabelSearchHref(locale)).search;
