@@ -13,7 +13,7 @@ import { getEquivalentHighPotentialSlug } from '@/data/highPotentialPages';
 import { longTailTaxRouteGroups } from '@/data/longTailTaxRoutes';
 import { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';
 import { globalPropertyHubPaths, propertyHubPaths } from '@/data/propertyDesk';
-import { getNuiteeWhiteLabelSearchHref } from '@/lib/travel/nuiteeWhiteLabel';
+import { bookingCollectionPath } from '@/lib/travel/collectionPresentation';
 import dynamic from 'next/dynamic';
 const SearchOverlay = dynamic(() => import('@/components/SearchOverlay').then((module) => module.SearchOverlay));
 
@@ -64,7 +64,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
 
   const labels = {
     services: locale === 'fr' ? 'Services' : locale === 'en' ? 'Services' : locale === 'ru' ? 'Услуги' : 'الخدمات',
-    destinations: locale === 'fr' ? 'Voyages & Séjours' : locale === 'en' ? 'Travel & Stays' : locale === 'ru' ? 'Путешествия и отдых' : 'السفر والإقامات',
+    destinations: {fr:'Vols et hôtels',en:'Flights and hotels',ru:'Авиабилеты и отели',ar:'الرحلات الجوية والفنادق'}[locale],
     property: locale === 'fr' ? 'Immobilier' : locale === 'en' ? 'Property' : locale === 'ru' ? 'Недвижимость' : 'العقار',
     investment: locale === 'fr' ? 'Investissement' : locale === 'en' ? 'Investment' : locale === 'ru' ? 'Инвестиции' : 'الاستثمار',
     privateAccess: 'Private Access',
@@ -74,9 +74,8 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
   const compactAssessmentLabel = locale === 'fr' ? 'Diagnostic' : locale === 'en' ? 'Assessment' : locale === 'ru' ? 'Консультация' : 'تقييم';
   const mobilityLink = locale === 'fr' ? '/transfert-aeroport-istanbul' : locale === 'en' ? '/en/istanbul-airport-transfer' : locale === 'ru' ? '/ru/transfer-aeroport-stambul' : '/ar/istanbul-airport-transfer';
   const peninsulaLink = locale === 'fr' ? '/peninsula-istanbul' : `/${locale}/peninsula-istanbul`;
-  const travelHomeHref = locale === 'fr' ? '/travel' : `/${locale}/travel`;
+  const travelHomeHref = bookingCollectionPath(locale);
   const investmentHref = locale === 'fr' ? '/investissement' : '/'+locale+'/investment';
-  const hotelSearchHref = getNuiteeWhiteLabelSearchHref(locale);
   const travelDestinationsHref = locale === 'fr' ? '/travel/destinations' : `/${locale}/travel/destinations`;
   const corporateRelocationLink = corporateRelocationPaths[locale];
   const propertyTurkeyLink = getLocalePath(locale, propertyHubPaths[locale]);
@@ -108,21 +107,8 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
       },
     ]},
     { label: labels.destinations, href: travelHomeHref, items: [
-      { label: locale === 'fr' ? 'Voyages · Vols, séjours & expériences' : locale === 'en' ? 'Travel · Flights, stays & experiences' : locale === 'ru' ? 'Путешествия · Авиабилеты, отдых и впечатления' : 'سفر وإقامات · رحلات جوية وتجارب', href: locale === 'fr' ? '/travel/private-collection' : '/'+locale+'/travel/private-collection', description: locale === 'fr' ? 'Six recherches simples et un espace réservé aux voyages privés.' : locale === 'en' ? 'Six familiar searches and a dedicated private-travel section.' : locale === 'ru' ? 'Авиабилеты, отели, виллы, шале, частный транспорт и впечатления.' : 'رحلات جوية وإقامات مميزة وتنقل خاص وأنشطة.' },
-      { label: locale === 'fr' ? 'Vols commerciaux' : locale === 'en' ? 'Commercial flights' : locale === 'ru' ? 'Авиабилеты' : 'رحلات الطيران', href: (locale === 'fr' ? '/travel/private-collection' : '/'+locale+'/travel/private-collection') + '?service=flights', description: locale === 'fr' ? 'Recherchez votre itinéraire ; tarifs et réservations après validation partenaire.' : locale === 'en' ? 'Plan your route; fares and booking after partner approval.' : locale === 'ru' ? 'Планирование перелёта; билеты после подключения партнёра.' : 'خطط لرحلتك؛ الحجز بعد تفعيل الشريك.' },
-      {
-        label: locale === 'fr' ? 'Rechercher un hôtel' : locale === 'en' ? 'Find a hotel' : locale === 'ru' ? 'Найти отель' : 'البحث عن فندق',
-        href: hotelSearchHref,
-        tone: 'hotel',
-        description: locale === 'fr' ? 'Disponibilités en temps réel et réservation auprès de notre partenaire.'
-          : locale === 'en' ? 'Live availability and booking through our partner.'
-          : locale === 'ru' ? 'Поиск и бронирование у партнёра — интерфейс на английском.'
-          : 'البحث والحجز عبر شريكنا — الواجهة باللغة الإنجليزية.',
-      },
-      { label: locale === 'fr' ? 'Villas & chalets' : locale === 'en' ? 'Villas & chalets' : locale === 'ru' ? 'Виллы и шале' : 'فلل وشاليهات', href: (locale === 'fr' ? '/travel/private-collection' : '/'+locale+'/travel/private-collection') + '?service=homes' },
-      { label: locale === 'fr' ? 'Location de voitures' : locale === 'en' ? 'Car rental' : locale === 'ru' ? 'Аренда авто' : 'تأجير السيارات', href: (locale === 'fr' ? '/travel/private-collection' : '/'+locale+'/travel/private-collection') + '?service=cars' },
-      { label: locale === 'fr' ? 'Transferts' : locale === 'en' ? 'Transfers' : locale === 'ru' ? 'Трансферы' : 'التنقلات', href: (locale === 'fr' ? '/travel/private-collection' : '/'+locale+'/travel/private-collection') + '?service=transfers' },
-      { label: locale === 'fr' ? 'Activités & expériences' : locale === 'en' ? 'Activities & experiences' : locale === 'ru' ? 'Экскурсии и впечатления' : 'الأنشطة والتجارب', href: (locale === 'fr' ? '/travel/private-collection' : '/'+locale+'/travel/private-collection') + '?service=activities', description: locale === 'fr' ? 'Excursions, visites privées et expériences sélectionnées.' : locale === 'en' ? 'Tours, private visits and curated experiences.' : locale === 'ru' ? 'Экскурсии, частные туры и особенные впечатления.' : 'جولات خاصة وتجارب مختارة.' },
+      { label: {fr:'Rechercher un vol',en:'Find a flight',ru:'Найти авиабилет',ar:'البحث عن رحلة جوية'}[locale], href: travelHomeHref + '?service=flights' },
+      { label: {fr:'Rechercher un hôtel',en:'Find a hotel',ru:'Найти отель',ar:'البحث عن فندق'}[locale], href: travelHomeHref + '?service=hotels' },
       {
         label: locale === 'fr' ? 'Explorer les destinations' : locale === 'en' ? 'Explore destinations' : locale === 'ru' ? 'Исследовать направления' : 'استكشف الوجهات',
         href: travelDestinationsHref,
@@ -205,7 +191,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
               </button>
               {openGroup === group.label && <div className="mt-2 space-y-1 pl-2">
                 <Link href={group.href} onClick={() => setMenuOpen(false)} className="block py-2 text-sm font-medium text-[#193344]">{group.href === travelHomeHref
-                    ? locale === 'fr' ? 'Découvrir Luxury Stays' : locale === 'en' ? 'Discover Luxury Stays' : locale === 'ru' ? 'Открыть Luxury Stays' : 'اكتشف Luxury Stays'
+                    ? group.label
                     : locale === 'fr' ? 'Voir tout' : locale === 'en' ? 'View all' : locale === 'ru' ? 'Смотреть всё' : 'عرض الكل'}</Link>
                 {group.items.map((item) => <Link
                   key={item.href}

@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { preferredSiteLanguage, siteLanguageCookie } from './lib/siteLanguage';
+import { bookingCollectionPath, collectionBookingEnabled } from './lib/travel/collectionPresentation';
 import { preferredTravelLanguage, travelLanguageCookie } from './lib/travel/languagePreference';
 
 export function middleware(request: NextRequest) {
@@ -14,6 +15,11 @@ export function middleware(request: NextRequest) {
   response.headers.set('Cache-Control','private, no-store');
   response.headers.append('Vary','Accept-Language, Cookie');
   return response;
+ }
+ if(pathname==='/travel/private-collection'&&collectionBookingEnabled){
+  const destination=request.nextUrl.clone();
+  destination.pathname=bookingCollectionPath('fr');
+  return NextResponse.redirect(destination,308);
  }
  // Only neutral travel entrances are negotiated, never keyword SEO pages or
  // explicitly selected /de/travel, /en/travel, /ru/travel etc.

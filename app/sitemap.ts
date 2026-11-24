@@ -1,7 +1,8 @@
 import { taxRelocationPaths } from '@/data/taxRelocationPaths';
 import type { MetadataRoute } from 'next';
 import { indexedTravelUrls } from '@/data/travel/guideIndexation';
-import { collectionReleased } from '@/lib/travel/collectionPresentation';
+import { bookingCollectionPath, collectionReleased } from '@/lib/travel/collectionPresentation';
+import { collectionLanguageAlternates } from '@/lib/travel/collectionMetadata';
 import { travelHref, travelLanguageInfo } from '@/lib/travel/i18n';
 import seoRedirects from '@/data/seo-redirects.json';
 import { locales } from '@/lib/i18n';
@@ -227,7 +228,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for(const url of indexedTravelUrls(siteUrl)) addEntry({url,changeFrequency:'monthly',priority:0.8});
   if (collectionReleased) {
     for (const {code} of travelLanguageInfo) addEntry({
-      url: siteUrl + travelHref(code, 'private-collection'), changeFrequency: 'weekly', priority: 0.85,
+      url: siteUrl + bookingCollectionPath(code), changeFrequency: 'weekly', priority: 0.85,
+      alternates: { languages: collectionLanguageAlternates() },
     });
   }
 

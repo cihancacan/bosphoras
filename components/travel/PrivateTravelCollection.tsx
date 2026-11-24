@@ -9,6 +9,8 @@ import { trackConversion } from '@/lib/conversionAnalytics';
 import { TravelDiscoverySections, type DiscoveryContext } from '@/components/travel/TravelDiscoverySections';
 import { BosphorasTravelHeader, BosphorasTravelFooter } from '@/components/travel/BosphorasTravelChrome';
 import { extraBookingCopy, type ExtraBookingLocale } from '@/components/travel/travelBookingExtraCopy';
+import { BookingGuide } from './BookingGuide';
+import { collectionDescriptions } from '@/lib/travel/collectionMetadata';
 import { NuiteeFlightSearch } from '@/components/travel/NuiteeFlightSearch';
 import { travelHref, type TravelLocale } from '@/lib/travel/i18n';
 import type { Locale } from '@/lib/i18n';
@@ -17,7 +19,7 @@ import { getSlugForPage } from '@/data/pages/types';
 import { getNuiteeWhiteLabelSearchHref, getNuiteeExperiencesHref, NUITEE_WHITE_LABEL_ORIGIN } from '@/lib/travel/nuiteeWhiteLabel';
 import { withAssessmentContext } from '@/lib/assessmentContext';
 import { getApprovedPartnerUrl, getPrivateTravelPartnerName, type PrivateTravelPartnerService } from '@/lib/travel/privateTravelSupplierGateways';
-import { additionalBookingServicesPaused, collectionBookingEnabled, hotelBookingLabels, travelCollectionTitles } from '@/lib/travel/collectionPresentation';
+import { additionalBookingServicesPaused, bookingCollectionPath, collectionBookingEnabled, hotelBookingLabels, travelCollectionTitles } from '@/lib/travel/collectionPresentation';
 import presentation from './TravelCollectionPresentation.module.css';
 
 type Service = 'flights' | 'hotels' | 'villas' | 'chalets' | 'cars' | 'transfers' | 'jets' | 'helicopters' | 'yachts' | 'activities';
@@ -306,7 +308,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
   const ux=additional?{...travelChoiceCopy.en,...additional.ux}:travelChoiceCopy[baseLocale];
   const copy=additional?{...searchCopy.en,...additional.search}:searchCopy[baseLocale];
   const privateLabels=additional?{...privateServiceLabels.en,...additional.private}:privateServiceLabels[baseLocale];
-  const currentPath=travelHref(locale,'private-collection');
+  const currentPath=bookingCollectionPath(locale);
   // The corporate assessment is offered in the supported core language where needed.
   // Include the guest's chosen booking-page language in the request context.
   const assessment=getLocalePath(baseLocale,getSlugForPage('private-assessment',baseLocale)||'/diagnostic-prive');
@@ -464,7 +466,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
               <h1 className="max-w-5xl text-[2rem] font-bold leading-[1.12] tracking-[-0.035em] text-white drop-shadow-[0_3px_18px_rgba(5,20,30,0.24)] sm:text-[2.5rem] md:text-[3.3rem]">
                 {travelCollectionTitles[locale]}
               </h1>
-              <p className="mt-3 max-w-[790px] text-sm leading-6 text-white/90 md:text-base">{additionalBookingServicesPaused ? (locale==='fr' ? 'Comparez les vols et les hôtels pour votre prochain voyage.' : locale==='en' ? 'Compare flights and hotels for your next journey.' : copy.subtitle) : copy.subtitle}</p>
+              <p className="mt-3 max-w-[790px] text-sm leading-6 text-white/90 md:text-base">{additionalBookingServicesPaused ? collectionDescriptions[locale] : copy.subtitle}</p>
             </div>
 
             <div className={'rounded-2xl border border-[#e2e9ee] bg-white shadow-[0_18px_55px_rgba(20,49,70,0.08)] '+
@@ -901,6 +903,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
         </section>
 
         <TravelDiscoverySections locale={locale} context={discoveryContext} onSelect={choose}/>
+        {collectionBookingEnabled&&<BookingGuide locale={locale}/>}
         {!collectionBookingEnabled&&<p className="container-editorial py-7 text-xs leading-6 text-[#70838e]">{tr.footnote}</p>}
       </main>
       <BosphorasTravelFooter locale={locale} bookingSupport/>

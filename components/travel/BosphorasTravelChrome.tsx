@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { ArrowRight, BedDouble, BookOpenText, ChevronDown, Compass, Globe2, Headphones, Home, Menu, Plane, PlaneTakeoff, Search, X } from 'lucide-react';
 import { travelLanguageInfo, type TravelLocale, travelHref, travelKeywordTitles } from '@/lib/travel/i18n';
-import { additionalBookingServicesPaused, hotelBookingLabels, privateTravelLabels } from '@/lib/travel/collectionPresentation';
+import { additionalBookingServicesPaused, bookingCollectionPath, hotelBookingLabels, privateTravelLabels } from '@/lib/travel/collectionPresentation';
 import { NuiteeBookingSupport, reservationSupportId, reservationSupportLabel } from '@/components/travel/NuiteeBookingSupport';
 
 const labels:Record<TravelLocale,{
@@ -30,7 +30,7 @@ const labels:Record<TravelLocale,{
 
 const keyForLanguage=(loc:TravelLocale)=>(loc==='fr'?'FR':loc==='pt'?'PT-BR':loc.toUpperCase());
 export function bookingPageHref(locale:TravelLocale,service?:string){
- const url=travelHref(locale,'private-collection');
+ const url=bookingCollectionPath(locale);
  return url+(service?'?service='+encodeURIComponent(service):'');
 }
 function jump(id:string) {
@@ -189,7 +189,7 @@ export function BosphorasTravelFooter({locale,bookingSupport=false}:{locale:Trav
  return (
   <footer lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="border-t border-[#e2e9ee] bg-[#f5f8fa] text-[#244252] pb-[calc(80px+env(safe-area-inset-bottom))] lg:pb-0" aria-label={t.footer}>
    <div className="container-editorial py-12 md:py-14">
-    {bookingSupport&&<NuiteeBookingSupport locale={locale} termsHref={terms}/>}
+    {bookingSupport&&<NuiteeBookingSupport locale={locale}/>}
     <div className="grid gap-7 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-10">
      <div>
       <Link href={home} className="inline-flex items-center gap-2" aria-label="Bosphoras"><span style={{fontFamily:'var(--font-bosphoras-logo),sans-serif'}} className="text-xl font-normal uppercase tracking-[0.16em]">BOSPHORAS</span><Image src="/images/brand/bosphoras-mask-rose.svg" width={44} height={22} alt="" aria-hidden="true" className="h-[22px] w-[44px] shrink-0 object-contain"/></Link>
