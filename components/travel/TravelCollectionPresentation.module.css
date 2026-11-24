@@ -44,8 +44,14 @@
   outline: none;
 }
 
+.calendarPopover {
+  max-height: var(--radix-popover-content-available-height);
+  overflow-y: auto;
+}
+
 .calendar {
   --calendar-day: clamp(31px, 8.3vw, 36px);
+  --calendar-row: clamp(27px, calc((var(--radix-popover-content-available-height, 346px) - 130px) / 6), 36px);
   padding: 12px;
 }
 
@@ -60,8 +66,8 @@
 .calendarNext { inset-inline-end: 0; }
 .calendar[dir='rtl'] .calendarArrow svg { transform: scaleX(-1); }
 .weekday { width: var(--calendar-day); height: 30px; text-align: center; font-size: 12px; font-weight: 700; color: #58697c; }
-.calendarCell { display: grid; width: var(--calendar-day); height: var(--calendar-day); place-items: center; }
-.calendarDay { width: 30px; height: 30px; border-radius: 50%; text-align: center; font-size: 13px; font-weight: 650; }
+.calendarCell { display: grid; width: var(--calendar-day); height: var(--calendar-row); place-items: center; }
+.calendarDay { width: 30px; height: min(30px, var(--calendar-row)); border-radius: 50%; text-align: center; font-size: 13px; font-weight: 650; }
 .calendarDay:not(:disabled):hover { background: #eeeaff; }
 .calendarDay:focus-visible, .calendarArrow:focus-visible { outline: 2px solid #6555cd; outline-offset: 1px; }
 .today { color: #5140bd; }
