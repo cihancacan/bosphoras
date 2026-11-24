@@ -178,7 +178,7 @@ export function NuiteeFlightSearch({ locale, trip, initialDestination, labels, f
   const airportProps = { airports, fieldClass, labelClass, placeholder: french ? 'Ville ou code IATA' : 'City or IATA code' };
 
   return (
-    <form onSubmit={search} className="space-y-4" aria-label={french ? 'Recherche de vols Nuitée' : 'Nuitée flight search'}>
+    <form onSubmit={search} className="space-y-4" aria-label={french ? 'Recherche de vols' : 'Flight search'}>
       {displayedLegs.map((leg, index) => (
         <fieldset key={index} className="min-w-0 rounded-xl border border-[#dde6eb] bg-[#f8fafb] p-3 sm:p-4">
           {trip === 'multi'&&<legend className="px-1 text-sm font-semibold text-[#375264]">{labels.segment} {index + 1}</legend>}
@@ -219,7 +219,6 @@ export function NuiteeFlightSearch({ locale, trip, initialDestination, labels, f
         </button>
       </div>
       {error&&<p role="alert" className="text-sm text-[#a23121]">{error}</p>}
-      <p className="text-sm text-[#637782]">{french ? 'Les tarifs et la réservation s’ouvrent sur la marque blanche Nuitée BOSPHORAS.' : 'Flight prices and booking open on the BOSPHORAS Nuitée storefront.'}</p>
     </form>
   );
 }

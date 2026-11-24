@@ -25,8 +25,6 @@
 .heroText{font-family:var(--font-sans);font-size:clamp(16px,1.55vw,19px);color:#203b43;margin:18px 0 38px;max-width:750px;font-weight:400;line-height:1.55;letter-spacing:0;text-shadow:0 1px 8px rgba(255,255,255,.34)}
 .searchPanel{margin-top:26px;background:rgba(255,255,255,.98);border:1px solid #dbcba8;border-radius:12px;box-shadow:0 16px 44px rgba(25,56,61,.15);color:#172b2c;position:relative;z-index:20;overflow:visible;min-height:70px}
 .compactPanel{position:relative;z-index:20;min-height:70px;border:1px solid #dde6eb;border-radius:12px;background:#fff;color:#172c3c}
-.compactNote{margin:12px 0 0;font-size:13px;line-height:1.5;color:#637782}
-.compactNote a{font-weight:600;text-decoration:underline;text-underline-offset:2px}
 .widget{position:relative;z-index:21;width:100%;min-width:0;overflow:visible}
 .widget :global(.search-bar){width:100%!important;max-width:none!important;box-sizing:border-box!important;margin:0!important;box-shadow:none!important;border:0!important;border-radius:6px!important;overflow:visible!important}
 .widget :global(.search-button){display:flex!important;align-items:center!important;min-width:142px!important;flex-shrink:0;padding:12px 18px!important;gap:10px;justify-content:center}
@@ -234,7 +232,34 @@
   font-weight: 500 !important;
 }
 
-.compactPanel .widget :global(.simple-typeahead-list-item-text) strong { font-weight: 600; }
+.compactPanel .widget :global(.simple-typeahead-list-item-text):has(+ .suggestion) {
+  display: none !important;
+}
+
+.compactPanel .widget :global(.simple-typeahead-list-item):has(.suggestion) {
+  min-height: 46px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.suggestion {
+  display: grid;
+  gap: 0;
+  min-width: 0;
+  pointer-events: none;
+}
+
+.suggestionTitle,
+.suggestionAddress {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.suggestionTitle { color: #384250; font-size: 14px; font-weight: 500; line-height: 20px; }
+.suggestionTitle strong { font-weight: 700; }
+.suggestionAddress { color: #6c737f; font-size: 12px; font-weight: 400; line-height: 18px; }
 
 .compactPanel .widget :global(.guest-control) input,
 .compactPanel .widget :global(.guests-popup) select {

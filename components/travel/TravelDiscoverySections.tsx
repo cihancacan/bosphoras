@@ -133,7 +133,7 @@ export function TravelDiscoverySections({locale,context,onSelect}:{
       </Link>;
      })}
     </div>
-    <p className="mt-5 text-[11px] leading-5 text-[#7b8c95]"><ShieldCheck size={14} className="me-1 inline align-[-3px]"/>{t.note}</p>
+    {!additionalBookingServicesPaused&&<p className="mt-5 text-[11px] leading-5 text-[#7b8c95]"><ShieldCheck size={14} className="me-1 inline align-[-3px]"/>{t.note}</p>}
    </div>
   </section>
   {!additionalBookingServicesPaused&&<>

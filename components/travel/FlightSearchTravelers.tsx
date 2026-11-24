@@ -72,8 +72,8 @@ export function FlightSearchTravelers({ french, passengers, onChange, fieldClass
             value={infants} min={0} max={Math.min(adults, infants + remaining)} onChange={value => onChange({ ...passengers, infants: value })}/>
           <p className="text-xs leading-5 text-[#536d78]">
             {french ? 'Pour un bébé avec son propre siège, ' : 'For an infant with their own seat, '}
-            <a href="#assistance-nuitee" onClick={() => setOpen(false)} className="font-semibold text-[#076c9f] underline underline-offset-2">
-              {french ? 'contactez l’assistance Nuitée' : 'contact Nuitée support'}
+            <a href="#assistance-reservation" onClick={() => setOpen(false)} className="font-semibold text-[#076c9f] underline underline-offset-2">
+              {french ? 'contactez l’assistance réservation' : 'contact booking support'}
             </a>.
           </p>
           <button type="button" onClick={() => setOpen(false)} className="w-full rounded-lg bg-[#0071ad] py-2.5 text-sm font-semibold text-white hover:bg-[#005b90]">

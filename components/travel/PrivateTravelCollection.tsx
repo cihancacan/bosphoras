@@ -4,7 +4,7 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { Raleway } from 'next/font/google';
 import { useEffect, useMemo, useState } from 'react';
-import { ArrowRight, ArrowLeftRight, BedDouble, Building2, CalendarDays, CarFront, CarTaxiFront, Check, ChevronDown, Clock3, Compass, Home, MapPin, Plane, PlaneTakeoff, Search, ShieldCheck, Ship, Ticket, UsersRound } from 'lucide-react';
+import { ArrowRight, ArrowLeftRight, BedDouble, Building2, CalendarDays, CarFront, CarTaxiFront, ChevronDown, Clock3, Compass, Home, MapPin, Plane, PlaneTakeoff, Search, ShieldCheck, Ship, Ticket, UsersRound } from 'lucide-react';
 import { trackConversion } from '@/lib/conversionAnalytics';
 import { TravelDiscoverySections, type DiscoveryContext } from '@/components/travel/TravelDiscoverySections';
 import { BosphorasTravelHeader, BosphorasTravelFooter } from '@/components/travel/BosphorasTravelChrome';
@@ -490,11 +490,6 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
               <div id="travel-service-panel" role="tabpanel" aria-label={heroLabel} className="px-4 pb-5 pt-5 md:px-7 md:pb-7 md:pt-6">
                 <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
                   <p className="text-sm font-semibold text-[#1c3849]">{copy.searchType} · {heroLabel}</p>
-                  {isHotel||isTransfer||showNuiteeFlightSearch?(
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-[#eff7f3] px-3 py-1.5 text-[11px] font-medium text-[#22684e]">
-                      <Check size={13} aria-hidden="true"/>{isHotel||showNuiteeFlightSearch?'Nuitée':showKiwitaxi?'Kiwitaxi':'Bosphoras Mobility'}
-                    </span>
-                  ):null}
                 </div>
 
                 {!additionalBookingServicesPaused&&(isHotel||isHome)&&(
@@ -621,10 +616,10 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                         <Search size={18} aria-hidden="true"/><span className="whitespace-nowrap">{buttonLabel}</span>
                       </Link>
                     </div>
-                    <p className="mt-3 flex items-start gap-2 text-xs leading-5 text-[#637782]">
+                    {(!collectionBookingEnabled||!isHotel)&&<p className="mt-3 flex items-start gap-2 text-xs leading-5 text-[#637782]">
                       <ShieldCheck size={16} className="mt-0.5 shrink-0" aria-hidden="true"/>
                       {isHotel?copy.hotelPartner:isTransfer?copy.transferPartner:isActivity?copy.activityPartner:copy.partnerIntro}
-                    </p>
+                    </p>}
                   </>
                 ):(
                   <>
@@ -899,14 +894,14 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
             </section>
             )}
 
-            <p className="mt-4 inline-flex items-center gap-2 text-xs text-[#6d808c]">
+            {!collectionBookingEnabled&&<p className="mt-4 inline-flex items-center gap-2 text-xs text-[#6d808c]">
               <ShieldCheck size={15} className="shrink-0" aria-hidden="true"/>{ux.trust}
-            </p>
+            </p>}
           </div>
         </section>
 
         <TravelDiscoverySections locale={locale} context={discoveryContext} onSelect={choose}/>
-        <p className="container-editorial py-7 text-xs leading-6 text-[#70838e]">{tr.footnote}</p>
+        {!collectionBookingEnabled&&<p className="container-editorial py-7 text-xs leading-6 text-[#70838e]">{tr.footnote}</p>}
       </main>
       <BosphorasTravelFooter locale={locale} bookingSupport/>
     </div>

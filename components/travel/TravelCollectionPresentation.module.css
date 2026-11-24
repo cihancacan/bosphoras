@@ -5,7 +5,7 @@
 }
 
 .page :global(#private-travel-top) h1,
-.page :global(#assistance-nuitee) h2 {
+.page :global(#assistance-reservation) h2 {
   font-weight: 700;
 }
 

@@ -8,6 +8,7 @@ import { ArrowRight, ArrowUpRight, Check, Headphones, LockKeyhole, Search, Slide
 import { travelHref } from '@/lib/travel/i18n';
 import { readWidgetOccupancy, completeRoomAllocation, type RoomAllocation, type SearchRoom } from '@/lib/travel/nuiteeWidgetOccupancy';
 import s from './HotelReservation.module.css';
+import { presentHotelSuggestions } from './hotelSuggestionPresentation';
 import { findVerifiedHotelForPlace } from '@/lib/travel/verifiedHotelMatch';
 
 type SearchPayload = {
@@ -117,8 +118,14 @@ export function HotelReservationSearch({ locale, origin, initialUrl, compact = f
       setWidgetReady(true);
     } catch { setError(fr ? 'Le moteur de recherche n’a pas pu être chargé.' : 'The search engine could not load.'); }
     const element = widget.current;
-    return () => { element.replaceChildren(); };
-  }, [sdkReady, fr, locale, origin, search, widgetId, bookingUrl]);
+    const stopPresentingSuggestions = compact ? presentHotelSuggestions(element, {
+      suggestion: s.suggestion, suggestionTitle: s.suggestionTitle, suggestionAddress: s.suggestionAddress,
+    }) : null;
+    return () => {
+      stopPresentingSuggestions?.();
+      element.replaceChildren();
+    };
+  }, [sdkReady, fr, locale, origin, search, widgetId, bookingUrl, compact]);
 
   return <>
     <Script src="https://components.liteapi.travel/v1.0/sdk.umd.js" strategy="afterInteractive" onReady={() => { setSdkUnavailable(false); setSdkReady(true); }} onError={() => setSdkUnavailable(true)} />
@@ -132,7 +139,7 @@ export function HotelReservationSearch({ locale, origin, initialUrl, compact = f
         <div className={compact ? s.compactPanel : s.searchPanel} lang={locale} aria-label={fr ? 'Rechercher des hôtels' : 'Search hotels'} aria-busy={busy}>
           {sdkUnavailable && <p className={s.error} role="status">
             {fr ? 'Le formulaire hôtel est momentanément indisponible.' : 'The hotel search form is temporarily unavailable.'}{' '}
-            <a href={engineUrl} rel="sponsored">{fr ? 'Rechercher sur Nuitée' : 'Search on Nuitée'} ↗</a>
+            <a href={engineUrl} rel="sponsored">{fr ? 'Ouvrir la recherche d’hôtels' : 'Open hotel search'} ↗</a>
           </p>}
           {!widgetReady && !sdkUnavailable && !error && <div className={s.widgetLoading} role="status"><Search size={20} />{fr ? 'Chargement de la recherche…' : 'Loading hotel search…'}</div>}
           <div ref={widget} id={widgetId} className={s.widget} />
@@ -147,20 +154,18 @@ export function HotelReservationSearch({ locale, origin, initialUrl, compact = f
           {error && <p className={s.error} role="alert">{error} <a href={engineUrl} target="_blank" rel="sponsored noopener noreferrer">{fr ? 'Ouvrir la réservation' : 'Open the booking engine'} ↗</a></p>}
           <noscript><a href={engineUrl} rel="sponsored">{fr ? 'Rechercher et réserver' : 'Search and book'} →</a></noscript>
         </div>
-        {compact
-          ? <p className={s.compactNote}>{fr ? 'Les tarifs et la réservation sont gérés par Nuitée.' : 'Nuitée handles rates and booking.'}{' '}<a href={engineUrl} rel="sponsored">{fr ? 'Ouvrir le moteur Nuitée' : 'Open the Nuitée search'}</a></p>
-          : <p className={s.searchNote}><LockKeyhole size={13} />{fr ? 'Tarifs et disponibilités actualisés · Réservation sécurisée' : 'Live rates and availability · Secure booking'}</p>}
+        {!compact && <p className={s.searchNote}><LockKeyhole size={13} />{fr ? 'Tarifs et disponibilités actualisés · Réservation sécurisée' : 'Live rates and availability · Secure booking'}</p>}
       </div>
     </section>}
 
     {bookingUrl ? <section className={s.results} aria-labelledby="hotel-results-title">
       <div className={s.resultsHeading}><div><p className={s.eyebrow}>{fr ? 'VOTRE RECHERCHE' : 'YOUR SEARCH'}</p><h1 id="hotel-results-title">{summary || (fr ? 'Choisissez votre chambre' : 'Choose your room')}</h1></div><div className={s.resultsActions}><button type="button" onClick={resetSearch}>{fr ? 'Nouvelle recherche' : 'New search'}</button><a href={bookingUrl} target="_blank" rel="sponsored noopener noreferrer">{fr ? 'Ouvrir en plein écran' : 'Open full screen'} <ArrowUpRight size={15} /></a></div></div>
       <div className={s.directBookingHandoff} role="status">
-        <strong>{fr ? 'Ouverture des disponibilités chez Nuitée…' : 'Opening availability with Nuitee…'}</strong>
-        <p>{fr ? 'Vous allez accéder directement aux résultats et aux tarifs de notre partenaire de réservation, sans chargement intégré.' : 'You are being taken directly to our booking partner’s hotel results and rates, without the embedded page.'}</p>
+        <strong>{fr ? 'Ouverture des disponibilités…' : 'Opening availability…'}</strong>
+        <p>{fr ? 'Vos résultats vont s’ouvrir.' : 'Your search results will open shortly.'}</p>
         <a href={bookingUrl} rel="sponsored noopener noreferrer">{fr ? 'Accéder aux résultats maintenant' : 'Open hotel results now'} <ArrowUpRight size={16} /></a>
       </div>
-      <p className={s.frameNote}>{fr ? 'La réservation, les paiements et le service après-vente sont gérés par Nuitée.' : 'Nuitee handles reservations, payments and after-sales support.'}</p>
+      {!compact&&<p className={s.frameNote}>{fr ? 'La réservation, les paiements et le service après-vente sont gérés par Nuitée.' : 'Nuitee handles reservations, payments and after-sales support.'}</p>}
     </section> : compact ? null : <>
       <div className={s.benefits}>
         <div><SlidersHorizontal size={22} /><p><strong>{fr ? 'Comparez à votre rythme' : 'Compare at your pace'}</strong><span>{fr ? 'Prix, emplacement, équipements : affinez votre recherche.' : 'Refine your search by price, location and amenities.'}</span></p></div>
