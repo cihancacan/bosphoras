@@ -94,17 +94,18 @@ export function NuiteeFlightSearch({ locale, trip, labels, fieldClass, labelClas
 
   function search(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const fields = new FormData(event.currentTarget);
     const resolved: FlightLeg[] = [];
-    for (const leg of trip === 'multi' ? legs : legs.slice(0, 1)) {
+    for (const [index, leg] of (trip === 'multi' ? legs : legs.slice(0, 1)).entries()) {
       const from = findAirport(leg.from, airports);
       const to = findAirport(leg.to, airports);
       if (!from || !to) {
         setError(french ? 'Choisissez un aéroport dans les suggestions ou saisissez son code IATA, par exemple CDG.' : 'Choose an airport from the suggestions or enter its IATA code, for example CDG.');
         return;
       }
-      resolved.push({ from, to, date: leg.date });
+      resolved.push({ from, to, date: String(fields.get(`departure-${index}`) ?? '') });
     }
-    if (trip === 'round') resolved.push({ from: resolved[0].to, to: resolved[0].from, date: returnDate });
+    if (trip === 'round') resolved.push({ from: resolved[0].to, to: resolved[0].from, date: String(fields.get('return-date') ?? '') });
     const href = getNuiteeFlightSearchHref({ locale, trip, legs: resolved, adults, cabin });
     if (!href || resolved[0].date < today) {
       setError(french ? 'Vérifiez que les aéroports sont différents et que les dates sont dans l’ordre.' : 'Check that the airports differ and that the dates are in order.');
@@ -128,13 +129,13 @@ export function NuiteeFlightSearch({ locale, trip, labels, fieldClass, labelClas
             <AirportField {...airportProps} label={labels.to} value={leg.to} onChange={to => setLeg(index, {to})}/>
             <label className="block min-w-0">
               <span className={labelClass}>{labels.departure}</span>
-              <input type="date" required min={index > 0 ? legs[index - 1].date || today : today}
+              <input type="date" name={`departure-${index}`} required min={index > 0 ? legs[index - 1].date || today : today}
                 value={leg.date} onChange={event => setLeg(index, {date: event.target.value})} className={fieldClass}/>
             </label>
             {trip === 'round'&&(
               <label className="block min-w-0">
                 <span className={labelClass}>{labels.returnDate}</span>
-                <input type="date" required min={leg.date || today} value={returnDate}
+                <input type="date" name="return-date" required min={leg.date || today} value={returnDate}
                   onChange={event => setReturnDate(event.target.value)} className={fieldClass}/>
               </label>
             )}
