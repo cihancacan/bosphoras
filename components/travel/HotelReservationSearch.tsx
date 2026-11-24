@@ -36,6 +36,7 @@ export function HotelReservationSearch({ locale, origin, initialUrl, compact = f
   const widget = useRef<HTMLDivElement>(null);
   const submitting = useRef(false);
   const [sdkReady, setSdkReady] = useState(false);
+  const [sdkUnavailable, setSdkUnavailable] = useState(false);
   const [widgetReady, setWidgetReady] = useState(false);
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
@@ -100,6 +101,12 @@ export function HotelReservationSearch({ locale, origin, initialUrl, compact = f
   }, [initialUrl, locale]);
 
   useEffect(() => {
+    if (sdkReady || bookingUrl) return;
+    const timer = window.setTimeout(() => setSdkUnavailable(true), 12000);
+    return () => window.clearTimeout(timer);
+  }, [sdkReady, bookingUrl]);
+
+  useEffect(() => {
     if (bookingUrl || !sdkReady || !widget.current) return;
     const sdk = (window as Window & { LiteAPI?: SearchSDK }).LiteAPI;
     if (!sdk?.SearchBar) { setError(fr ? 'Le moteur de recherche n’a pas pu être chargé.' : 'The search engine could not load.'); return; }
@@ -114,7 +121,7 @@ export function HotelReservationSearch({ locale, origin, initialUrl, compact = f
   }, [sdkReady, fr, locale, origin, search, widgetId, bookingUrl]);
 
   return <>
-    <Script src="https://components.liteapi.travel/v1.0/sdk.umd.js" strategy="afterInteractive" onReady={() => setSdkReady(true)} onError={() => setError(fr ? 'Le moteur de recherche n’a pas pu être chargé.' : 'The search engine could not load.')} />
+    <Script src="https://components.liteapi.travel/v1.0/sdk.umd.js" strategy="afterInteractive" onReady={() => { setSdkUnavailable(false); setSdkReady(true); }} onError={() => setSdkUnavailable(true)} />
     {!bookingUrl && <section className={compact ? undefined : s.searchHero} aria-labelledby={compact ? undefined : 'reservation-title'}>
       {!compact && <div className={s.heroPhotos} aria-hidden="true"><span className={s.heroSlide} /><span className={s.heroSlide} /><span className={s.heroSlide} /><span className={s.heroVeil} /></div>}
       <div className={compact ? undefined : s.heroInner}>
@@ -122,8 +129,12 @@ export function HotelReservationSearch({ locale, origin, initialUrl, compact = f
           <h1 id="reservation-title">{fr ? 'Des adresses qui valent le voyage.' : 'Hotels worth travelling for.'}</h1>
           <p className={s.heroText}>{fr ? 'Découvrez des hôtels remarquables, aux quatre coins du monde.' : 'Discover remarkable hotels around the world.'}</p>
         </>}
-        <div className={compact ? s.compactPanel : s.searchPanel} aria-label={fr ? 'Rechercher des hôtels' : 'Search hotels'} aria-busy={busy}>
-          {!widgetReady && <div className={s.widgetLoading} role="status"><Search size={20} />{fr ? 'Chargement de la recherche…' : 'Loading hotel search…'}</div>}
+        <div className={compact ? s.compactPanel : s.searchPanel} lang={locale} aria-label={fr ? 'Rechercher des hôtels' : 'Search hotels'} aria-busy={busy}>
+          {sdkUnavailable && <p className={s.error} role="status">
+            {fr ? 'Le formulaire hôtel est momentanément indisponible.' : 'The hotel search form is temporarily unavailable.'}{' '}
+            <a href={engineUrl} rel="sponsored">{fr ? 'Rechercher sur Nuitée' : 'Search on Nuitée'} ↗</a>
+          </p>}
+          {!widgetReady && !sdkUnavailable && !error && <div className={s.widgetLoading} role="status"><Search size={20} />{fr ? 'Chargement de la recherche…' : 'Loading hotel search…'}</div>}
           <div ref={widget} id={widgetId} className={s.widget} />
           {pending && <form className={s.allocation} onSubmit={event => { event.preventDefault(); if (allocated) void submitSearch(pending.data, allocated); }} aria-labelledby={`${widgetId}-allocation-title`}>
             <h2 id={`${widgetId}-allocation-title`}>{fr ? 'Qui séjourne dans chaque chambre ?' : 'Who is staying in each room?'}</h2>

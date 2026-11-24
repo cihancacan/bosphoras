@@ -20,6 +20,11 @@ export const travelCollectionTitles: Record<TravelLocale, string> = {
   zh: '非凡旅程',
 };
 
+export const hotelBookingLabels: Record<TravelLocale, string> = {
+  fr: 'Hôtels', en: 'Hotels', de: 'Hotels', tr: 'Oteller', es: 'Hoteles',
+  it: 'Hotel', pt: 'Hotéis', ru: 'Отели', ar: 'الفنادق', zh: '酒店',
+};
+
 export const privateTravelLabels: Record<TravelLocale, string> = {
   fr: 'Voyages privés', en: 'Private travel', de: 'Privatreisen', tr: 'Özel seyahatler',
   es: 'Viajes privados', it: 'Viaggi privati', pt: 'Viagens privadas',

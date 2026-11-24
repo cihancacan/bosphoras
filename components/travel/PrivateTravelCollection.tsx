@@ -9,7 +9,6 @@ import { trackConversion } from '@/lib/conversionAnalytics';
 import { TravelDiscoverySections, type DiscoveryContext } from '@/components/travel/TravelDiscoverySections';
 import { BosphorasTravelHeader, BosphorasTravelFooter } from '@/components/travel/BosphorasTravelChrome';
 import { extraBookingCopy, type ExtraBookingLocale } from '@/components/travel/travelBookingExtraCopy';
-import { BookingComingSoon } from './BookingComingSoon';
 import { NuiteeFlightSearch } from '@/components/travel/NuiteeFlightSearch';
 import { travelHref, type TravelLocale } from '@/lib/travel/i18n';
 import type { Locale } from '@/lib/i18n';
@@ -18,7 +17,7 @@ import { getSlugForPage } from '@/data/pages/types';
 import { getNuiteeWhiteLabelSearchHref, getNuiteeExperiencesHref, NUITEE_WHITE_LABEL_ORIGIN } from '@/lib/travel/nuiteeWhiteLabel';
 import { withAssessmentContext } from '@/lib/assessmentContext';
 import { getApprovedPartnerUrl, getPrivateTravelPartnerName, type PrivateTravelPartnerService } from '@/lib/travel/privateTravelSupplierGateways';
-import { additionalBookingServicesPaused, collectionBookingEnabled, privateTravelLabels, travelCollectionTitles } from '@/lib/travel/collectionPresentation';
+import { additionalBookingServicesPaused, collectionBookingEnabled, hotelBookingLabels, travelCollectionTitles } from '@/lib/travel/collectionPresentation';
 import presentation from './TravelCollectionPresentation.module.css';
 
 type Service = 'flights' | 'hotels' | 'villas' | 'chalets' | 'cars' | 'transfers' | 'jets' | 'helicopters' | 'yachts' | 'activities';
@@ -40,7 +39,7 @@ const flightsTab = {id:'flights' as const,icon:PlaneTakeoff};
 const staysTab = {id:'hotels' as const,icon:BedDouble};
 const mainServices: { id: Service; icon: typeof Home }[] = [
  ...(collectionBookingEnabled ? [flightsTab, staysTab] : [staysTab, flightsTab]),
- {id:'cars',icon:CarFront},{id:'activities',icon:Ticket}
+ ...(additionalBookingServicesPaused ? [] : [{id:'cars' as const,icon:CarFront},{id:'activities' as const,icon:Ticket}])
 ];
 const privateServices: { id: Service; icon: typeof Home }[] = [
  {id:'jets',icon:Plane},{id:'helicopters',icon:Compass},{id:'yachts',icon:Ship}
@@ -471,19 +470,17 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
             <div className={'rounded-2xl border border-[#e2e9ee] bg-white shadow-[0_18px_55px_rgba(20,49,70,0.08)] '+
               (searchHasPopovers?'relative z-10':'overflow-hidden')}>
               <div className="border-b border-[#e2e9ee]">
-                <div role="tablist" aria-label={copy.selection} className="grid grid-cols-4 gap-0 px-1 sm:px-3">
+                <div role="tablist" aria-label={copy.selection} className={'grid gap-0 px-1 sm:px-3 '+(additionalBookingServicesPaused?'grid-cols-2':'grid-cols-4')}>
                   {mainServices.map(({id,icon:Icon})=>{
                     const active=id==='hotels' ? (isHotel||isHome) : id==='cars' ? (isCar||isTransfer) : service===id;
-                    const disabled=additionalBookingServicesPaused&&(id==='cars'||id==='activities');
-                    const label=id==='hotels'?copy.stays:id==='cars'?copy.carsTab:tr.services[id].label;
+                    const label=id==='hotels'?(additionalBookingServicesPaused?hotelBookingLabels[locale]:copy.stays):id==='cars'?copy.carsTab:tr.services[id].label;
                     return (
-                      <button type="button" key={id} role="tab" aria-selected={active} aria-controls={disabled?undefined:"travel-service-panel"} disabled={disabled}
+                      <button type="button" key={id} role="tab" aria-selected={active} aria-controls="travel-service-panel"
                         onClick={()=>choose(id)}
                         className={'relative flex min-h-[73px] min-w-0 flex-col items-center justify-center gap-1.5 border-b-[3px] px-0.5 py-2 text-center text-[11px] font-semibold leading-tight transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-[#0b6a9e] sm:min-h-[80px] sm:px-3 sm:text-sm '+
-                          (active?'border-[#0475ad] bg-[#f1f8fc] text-[#005f93]':disabled?'cursor-default border-transparent text-[#536a77]':'border-transparent text-[#536a77] hover:bg-[#f4f8fb]')}>
+                          (active?'border-[#0475ad] bg-[#f1f8fc] text-[#005f93]':'border-transparent text-[#536a77] hover:bg-[#f4f8fb]')}>
                         <Icon size={25} strokeWidth={1.7} aria-hidden="true" className="shrink-0 text-[#C23674] sm:h-7 sm:w-7"/>
                         <span className="block max-w-full whitespace-normal">{label}</span>
-                        {disabled&&<BookingComingSoon locale={locale}/>}
                       </button>
                     );
                   })}
@@ -500,15 +497,14 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                   ):null}
                 </div>
 
-                {(isHotel||isHome)&&(
+                {!additionalBookingServicesPaused&&(isHotel||isHome)&&(
                   <div role="group" aria-label={copy.stays} className="mb-5 grid grid-cols-3 border-b border-[#e2e9ee]">
                     {(['hotels','villas','chalets'] as const).map(id=>{
                       const label=id==='hotels'?copy.hotelsShort:id==='villas'?copy.villaShort:copy.chaletShort;
-                      const disabled=additionalBookingServicesPaused&&id!=='hotels';
-                      return <button type="button" key={id} disabled={disabled} aria-pressed={service===id} onClick={()=>choose(id)}
+                      return <button type="button" key={id} aria-pressed={service===id} onClick={()=>choose(id)}
                         className={'min-h-[48px] border-b-[3px] px-2 py-2 text-center text-[13px] font-semibold transition-colors sm:text-sm '+
-                          (service===id?'border-[#0475ad] text-[#006dad]':disabled?'cursor-default border-transparent text-[#536a77]':'border-transparent text-[#4f6371] hover:text-[#006dad]')}>
-                        {label}{disabled&&<span className="mt-0.5 block"><BookingComingSoon locale={locale}/></span>}
+                          (service===id?'border-[#0475ad] text-[#006dad]':'border-transparent text-[#4f6371] hover:text-[#006dad]')}>
+                        {label}
                       </button>;
                     })}
                   </div>
@@ -793,20 +789,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
               </div>
             </div>
 
-            {additionalBookingServicesPaused ? (
-              <section id="travel-private-section" aria-label={privateTravelLabels[locale]} className="mt-5 scroll-mt-[92px] rounded-2xl border border-[#dae6ec] bg-white px-4 py-4 sm:px-6">
-                <h2 className="text-base font-semibold text-[#203b4b]">{privateTravelLabels[locale]}</h2>
-                <ul className="mt-3 grid grid-cols-3 gap-2 sm:gap-3">
-                  {privateServices.map(({id,icon:Icon})=>(
-                    <li key={id} className="flex min-h-[76px] flex-col items-center justify-center gap-1.5 rounded-lg bg-[#f7fafb] px-2 py-2 text-center text-xs font-semibold text-[#536a77] sm:text-sm">
-                      <Icon size={21} strokeWidth={1.65} className="text-[#9b536f]" aria-hidden="true"/>
-                      {tr.services[id].label}
-                      <BookingComingSoon locale={locale}/>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            ) : (
+            {!additionalBookingServicesPaused && (
             <section id="travel-private-section" aria-label={copy.privateAccess} className="mt-5 scroll-mt-[92px] overflow-hidden rounded-2xl border border-[#dae6ec] bg-white shadow-[0_6px_25px_rgba(20,49,70,0.055)]">
               <button type="button" aria-expanded={privateOpen} aria-controls="travel-private-options"
                 onClick={()=>setPrivateOpen(open=>!open)}

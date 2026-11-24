@@ -17,13 +17,6 @@
   font-variant-numeric: lining-nums tabular-nums;
 }
 
-.page :global(.search-bar),
-.page :global(.search-bar) *,
-.page :global(.vc-popover-content-wrapper) * {
-  font-family: var(--font-travel-booking), var(--font-sans) !important;
-  font-variant-numeric: lining-nums tabular-nums;
-}
-
 @media (max-width: 640px) {
   .page :is(input,select,textarea) {
     font-size: 16px;
@@ -112,19 +105,3 @@
   outline: none;
 }
 .cabinOption[data-highlighted] { background: #edf7fb; color: #005f93; }
-
-/* Match the type scale of the airport list while keeping the supplier calendar. */
-.page :global(.search-bar) :global(.search-input),
-.page :global(.search-bar) :global(.date-description),
-.page :global(.search-bar) :global(.guest-control) input {
-  font-weight: 600 !important;
-}
-
-.page :global(.search-bar) :global(.simple-typeahead-list-item-text) {
-  font-weight: 650 !important;
-  color: #183341;
-}
-
-.page :global(.search-bar) :global(.simple-typeahead-list-item-text) strong {
-  font-weight: 750 !important;
-}

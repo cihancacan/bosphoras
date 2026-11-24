@@ -7,8 +7,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { ArrowRight, BedDouble, BookOpenText, ChevronDown, Compass, Globe2, Headphones, Home, Menu, Plane, PlaneTakeoff, Search, X } from 'lucide-react';
 import { travelLanguageInfo, type TravelLocale, travelHref, travelKeywordTitles } from '@/lib/travel/i18n';
-import { BookingComingSoon } from './BookingComingSoon';
-import { additionalBookingServicesPaused, privateTravelLabels } from '@/lib/travel/collectionPresentation';
+import { additionalBookingServicesPaused, hotelBookingLabels, privateTravelLabels } from '@/lib/travel/collectionPresentation';
 import { NuiteeBookingSupport, nuiteeSupportId } from '@/components/travel/NuiteeBookingSupport';
 
 const labels:Record<TravelLocale,{
@@ -47,6 +46,7 @@ export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,
  const [languagesOpen,setLanguagesOpen]=useState(false);
  const [menuLanguagesOpen,setMenuLanguagesOpen]=useState(false);
  const label=labels[locale];
+ const hotelLabel=additionalBookingServicesPaused?hotelBookingLabels[locale]:label.stays;
  const currentService=activeService==='homes'?'villas':activeService;
  const languageHref=(loc:TravelLocale)=>guideSlug!==undefined?travelHref(loc,guideSlug):bookingPageHref(loc,currentService);
  const exploreHref=travelHref(locale,'destinations');
@@ -54,7 +54,7 @@ export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,
  const privateLabel=serviceNavigation?privateTravelLabels[locale]:label.private;
  const primaryServices=[
    {id:'flights',title:label.flights,Icon:PlaneTakeoff,active:activeService==='flights'},
-   {id:'hotels',title:label.stays,Icon:BedDouble,active:['hotels','villas','chalets'].includes(activeService)},
+   {id:'hotels',title:hotelLabel,Icon:BedDouble,active:['hotels','villas','chalets'].includes(activeService)},
  ];
  const privateClick=()=>{
    setMenuOpen(false);setLanguagesOpen(false);
@@ -99,9 +99,7 @@ export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,
           className={'inline-flex min-h-11 items-center text-sm hover:text-[#175d74] '+(active?'font-bold text-[#175d74]':'font-semibold text-[#3f5867]')}>{title}</a>
       ):<button type="button" onClick={searchClick} className="min-h-11 text-sm font-semibold text-[#172f3f] hover:text-[#C23674]">{label.search}</button>}
       <Link href={exploreHref} className="inline-flex min-h-11 items-center text-sm font-medium text-[#4a6271] hover:text-[#C23674]">{label.destinations}</Link>
-      {additionalBookingServicesPaused
-        ? <span className="flex flex-col items-start text-sm font-medium text-[#4a6271]">{privateLabel}<BookingComingSoon locale={locale}/></span>
-        : <button type="button" onClick={privateClick} className="min-h-11 text-sm font-medium text-[#4a6271] hover:text-[#C23674]">{privateLabel}</button>}
+      {!additionalBookingServicesPaused&&<button type="button" onClick={privateClick} className="min-h-11 text-sm font-medium text-[#4a6271] hover:text-[#C23674]">{privateLabel}</button>}
     </nav>
     <div className="flex items-center gap-2">
      <div className="relative">
@@ -126,9 +124,7 @@ export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,
          className="flex min-h-12 items-center gap-3 border-b border-[#e8edef] py-2 text-sm font-semibold"><Icon size={19} aria-hidden="true" className="text-[#175d74]"/>{title}</a>
      ):<button type="button" onClick={searchClick} className="flex min-h-12 w-full items-center gap-3 border-b border-[#e8edef] py-2 text-start text-sm font-medium"><Search size={19} className="text-[#C23674]"/>{label.search}</button>}
      <Link href={exploreHref} onClick={()=>setMenuOpen(false)} className="flex min-h-12 items-center gap-3 border-b border-[#e8edef] py-2 text-sm font-medium"><Compass size={19} className="text-[#C23674]"/>{label.destinations}</Link>
-     {additionalBookingServicesPaused
-      ? <span className="flex min-h-12 items-center justify-between gap-3 border-b border-[#e8edef] py-2 text-sm font-medium text-[#536a77]">{privateLabel}<BookingComingSoon locale={locale}/></span>
-      : <button type="button" onClick={privateClick} className="flex min-h-12 w-full items-center gap-3 border-b border-[#e8edef] py-2 text-start text-sm font-medium"><Plane size={19} className="text-[#C23674]"/>{privateLabel}</button>}
+     {!additionalBookingServicesPaused&&<button type="button" onClick={privateClick} className="flex min-h-12 w-full items-center gap-3 border-b border-[#e8edef] py-2 text-start text-sm font-medium"><Plane size={19} className="text-[#C23674]"/>{privateLabel}</button>}
      <a href={helpHref} onClick={()=>setMenuOpen(false)} className="flex min-h-12 items-center gap-3 py-2 text-sm font-medium"><Headphones size={19} className="text-[#C23674]"/>{label.support}</a>
      <button type="button" aria-expanded={menuLanguagesOpen} aria-controls="bosphoras-travel-menu-languages"
         onClick={()=>setMenuLanguagesOpen(v=>!v)}
@@ -145,12 +141,10 @@ export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,
   <nav lang={locale} dir={locale==='ar'?'rtl':'ltr'} aria-label={label.menu}
    className="fixed inset-x-0 bottom-0 z-50 border-t border-[#e0e7ed] bg-white/95 shadow-[0_-4px_30px_rgba(20,49,70,0.06)] backdrop-blur-md lg:hidden"
    style={{paddingBottom:'max(env(safe-area-inset-bottom), 5px)'}}>
-   <div className="mx-auto grid max-w-[550px] grid-cols-4 gap-0">
+   <div className={'mx-auto grid max-w-[550px] gap-0 '+(additionalBookingServicesPaused?'grid-cols-3':'grid-cols-4')}>
     <button type="button" onClick={searchClick} className="flex min-h-[62px] flex-col items-center justify-center gap-1 px-1 text-[#C23674]" aria-label={label.search}><Search size={22} strokeWidth={1.9}/><span className="text-[11px] font-semibold">{label.search}</span></button>
     <Link href={exploreHref} className="flex min-h-[62px] flex-col items-center justify-center gap-1 px-1 text-[#526878]"><Compass size={22} strokeWidth={1.75}/><span className="text-[11px] font-medium">{label.explore}</span></Link>
-    {additionalBookingServicesPaused
-      ? <span className="flex min-h-[62px] flex-col items-center justify-center gap-0.5 px-1 text-[#526878]"><Plane size={18} aria-hidden="true"/><span className="text-[11px] font-medium">{label.private}</span><BookingComingSoon locale={locale}/></span>
-      : <button type="button" onClick={privateClick} className="flex min-h-[62px] flex-col items-center justify-center gap-1 px-1 text-[#526878]" aria-label={label.private}><Plane size={22} strokeWidth={1.75}/><span className="text-[11px] font-medium">{label.private}</span></button>}
+    {!additionalBookingServicesPaused&&<button type="button" onClick={privateClick} className="flex min-h-[62px] flex-col items-center justify-center gap-1 px-1 text-[#526878]" aria-label={label.private}><Plane size={22} strokeWidth={1.75}/><span className="text-[11px] font-medium">{label.private}</span></button>}
     <button type="button" onClick={()=>{setMenuOpen(v=>!v);setLanguagesOpen(false);setMenuLanguagesOpen(false);}} className="flex min-h-[62px] flex-col items-center justify-center gap-1 px-1 text-[#526878]" aria-label={label.menu}><Menu size={22} strokeWidth={1.75}/><span className="text-[11px] font-medium">{label.menu}</span></button>
    </div>
   </nav>
@@ -205,11 +199,8 @@ export function BosphorasTravelFooter({locale,bookingSupport=false}:{locale:Trav
       <h2 className="text-sm font-semibold text-[#203b4d]">{t.book}</h2>
       <div className="mt-2 grid grid-cols-2 gap-x-4 md:block">
        <Link className={linkClass} href={bookingPageHref(locale,'flights')}>{t.flights}</Link>
-       <Link className={linkClass} href={bookingPageHref(locale,'hotels')}>{t.stays}</Link>
-       {additionalBookingServicesPaused ? (
-        <><span className={linkClass}>{t.cars} <BookingComingSoon locale={locale}/></span>
-        <span className={linkClass}>{t.activities} <BookingComingSoon locale={locale}/></span></>
-       ) : (
+       <Link className={linkClass} href={bookingPageHref(locale,'hotels')}>{additionalBookingServicesPaused?hotelBookingLabels[locale]:t.stays}</Link>
+       {!additionalBookingServicesPaused&&(
         <><Link className={linkClass} href={bookingPageHref(locale,'cars')}>{t.cars}</Link>
         <Link className={linkClass} href={bookingPageHref(locale,'activities')}>{t.activities}</Link></>
        )}
@@ -218,9 +209,7 @@ export function BosphorasTravelFooter({locale,bookingSupport=false}:{locale:Trav
      <div className="border-b border-[#e3eaee] pb-4 md:border-0 md:pb-0">
       <h2 className="text-sm font-semibold text-[#203b4d]">{t.explore}</h2>
       <Link className={'mt-2 '+linkClass} href={travelHref(locale,'destinations')}>{t.destinations}</Link>
-      {additionalBookingServicesPaused
-        ? <span className={linkClass}>{privateTravelLabels[locale]} <BookingComingSoon locale={locale}/></span>
-        : <Link className={linkClass} href={bookingPageHref(locale,'jets')}>{t.private} · {t.privateDesc}</Link>}
+      {!additionalBookingServicesPaused&&<Link className={linkClass} href={bookingPageHref(locale,'jets')}>{t.private} · {t.privateDesc}</Link>}
      </div>
      <div>
       <h2 className="text-sm font-semibold text-[#203b4d]">{bookingSupport?t.legal:t.support}</h2>
@@ -238,18 +227,18 @@ export function BosphorasTravelFooter({locale,bookingSupport=false}:{locale:Trav
      </div>
     </div>
      <nav aria-label={seoLabels[locale].collections} className="mt-9 grid gap-7 border-t border-[#e0e8ec] pt-8 md:grid-cols-2">
-       <div>
+       {!additionalBookingServicesPaused&&<div>
          <h2 className="text-sm font-semibold text-[#203b4d]">{seoLabels[locale].collections}</h2>
          <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 sm:grid-cols-3">
            {serviceCategories.map(category=><Link key={category} href={travelHref(locale,category)} className={linkClass}>
              {travelKeywordTitles[category][locale]}
            </Link>)}
          </div>
-       </div>
+       </div>}
        <div>
          <h2 className="text-sm font-semibold text-[#203b4d]">{seoLabels[locale].popular}</h2>
          <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 sm:grid-cols-3">
-           {bookingSupport?destinationGuides.map(([slug,name])=><Link key={slug} href={travelHref(locale,'destinations/'+slug)} className={linkClass}>{name}</Link>):featuredSeoPages.map(({category,slug,city})=><Link key={category+slug} href={travelHref(locale,category+'/'+slug)} className={linkClass}>
+           {(bookingSupport||additionalBookingServicesPaused)?destinationGuides.map(([slug,name])=><Link key={slug} href={travelHref(locale,'destinations/'+slug)} className={linkClass}>{name}</Link>):featuredSeoPages.map(({category,slug,city})=><Link key={category+slug} href={travelHref(locale,category+'/'+slug)} className={linkClass}>
              {travelKeywordTitles[category][locale]} · {city}
            </Link>)}
          </div>
@@ -272,7 +261,7 @@ export function BosphorasTravelGuideHeader({locale,slug,allowedLanguages}:{
  locale:TravelLocale;slug:string;allowedLanguages:TravelLocale[];
 }){
  return <>
-   <BosphorasTravelHeader locale={locale} activeService="hotels" guideSlug={slug} allowedLanguages={allowedLanguages}/>
+   <BosphorasTravelHeader locale={locale} activeService="hotels" guideSlug={slug} allowedLanguages={allowedLanguages} serviceNavigation={additionalBookingServicesPaused}/>
    <div aria-hidden="true" className="h-[66px] md:h-[74px]"/>
  </>;
 }
