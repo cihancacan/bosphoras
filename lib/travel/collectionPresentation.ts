@@ -4,6 +4,9 @@ export const collectionReleased = process.env.NEXT_PUBLIC_VERCEL_ENV === 'produc
   && process.env.NEXT_PUBLIC_BOSPHORAS_BOOKING_RELEASE === 'true';
 export const collectionBookingEnabled = process.env.NEXT_PUBLIC_VERCEL_ENV === 'preview' || collectionReleased;
 
+// Keep the existing partner integrations available for future activation.
+export const additionalBookingServicesPaused = collectionBookingEnabled;
+
 export const travelCollectionTitles: Record<TravelLocale, string> = {
   fr: 'Voyages d’exception',
   en: 'Exceptional journeys',
@@ -24,10 +27,19 @@ export const privateTravelLabels: Record<TravelLocale, string> = {
 };
 
 const destinationAirports: Readonly<Partial<Record<string, string>>> = {
-  istanbul: 'IST', bodrum: 'BJV', paris: 'PAR', dubai: 'DXB', maldives: 'MLE',
+  istanbul: 'IST', bodrum: 'BJV', antalya: 'AYT', paris: 'PAR', dubai: 'DXB', bali: 'DPS',
+  'new-york': 'JFK', miami: 'MIA', 'los-angeles': 'LAX', 'saint-barthelemy': 'SBH',
+  mykonos: 'JMK', ibiza: 'IBZ', tivat: 'TIV', aspen: 'ASE', 'jackson-hole': 'JAC',
+  nantucket: 'ACK', 'turks-and-caicos': 'PLS', maldives: 'MLE', 'los-cabos': 'SJD',
+  phuket: 'HKT', 'koh-samui': 'USM', krabi: 'KBV', bangkok: 'BKK', 'chiang-mai': 'CNX',
+  sumba: 'WGP', palawan: 'PPS', tokyo: 'HND', 'da-nang': 'DAD', 'phu-quoc': 'PQC',
+  singapore: 'SIN', sentosa: 'SIN', udaipur: 'UDR', jaipur: 'JAI', paro: 'PBH',
+  'siem-reap': 'SAI', 'luang-prabang': 'LPQ', langkawi: 'LGK',
 };
 
-export function destinationFlightHref(locale: TravelLocale, destinationSlug: string): string | null {
+export function destinationFlightHref(locale: TravelLocale, destinationSlug: string): string {
   const airport = destinationAirports[destinationSlug];
-  return airport ? `${travelHref(locale, 'private-collection')}?service=flights&arrival=${airport}` : null;
+  const params = new URLSearchParams({ service: 'flights' });
+  if (airport) params.set('arrival', airport);
+  return travelHref(locale, 'private-collection') + '?' + params;
 }

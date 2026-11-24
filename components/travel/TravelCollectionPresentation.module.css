@@ -29,3 +29,96 @@
     font-size: 16px;
   }
 }
+
+.calendarPopover,
+.travelersPopover,
+.cabinMenu {
+  z-index: 45;
+  box-sizing: border-box;
+  max-width: calc(100vw - 24px);
+  border: 1px solid #dce3e9;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgb(21 43 59 / 14%);
+  color: #172c3c;
+  outline: none;
+}
+
+.calendar {
+  --calendar-day: clamp(31px, 8.3vw, 36px);
+  padding: 12px;
+}
+
+.calendarMonths { display: flex; gap: 14px; }
+.calendarMonth { min-width: 0; }
+.calendarCaption { position: relative; display: flex; min-height: 34px; align-items: center; justify-content: center; }
+.calendarHeading { white-space: nowrap; font-size: 15px; font-weight: 750; }
+.calendarArrow { position: absolute; top: 3px; display: grid; width: 28px; height: 28px; place-items: center; border-radius: 50%; }
+.calendarArrow:hover { background: #f2efff; }
+.calendarArrow:disabled { color: #a0a9b4; }
+.calendarPrevious { inset-inline-start: 0; }
+.calendarNext { inset-inline-end: 0; }
+.calendar[dir='rtl'] .calendarArrow svg { transform: scaleX(-1); }
+.weekday { width: var(--calendar-day); height: 30px; text-align: center; font-size: 12px; font-weight: 700; color: #58697c; }
+.calendarCell { display: grid; width: var(--calendar-day); height: var(--calendar-day); place-items: center; }
+.calendarDay { width: 30px; height: 30px; border-radius: 50%; text-align: center; font-size: 13px; font-weight: 650; }
+.calendarDay:not(:disabled):hover { background: #eeeaff; }
+.calendarDay:focus-visible, .calendarArrow:focus-visible { outline: 2px solid #6555cd; outline-offset: 1px; }
+.today { color: #5140bd; }
+.unavailableDate { color: #9aa7b4; }
+.bookedDate, .calendarDay.bookedDate:hover { background: #6555cd; color: #fff; }
+.betweenDates { width: 100%; border-radius: 0; background: #eeeaff; color: #3c307d; }
+.calendarInstruction { border-top: 1px solid #edf2f4; padding: 9px 12px; color: #536d78; font-size: 12px; }
+
+.travelersPopover {
+  display: grid;
+  width: 340px;
+  max-height: min(460px, var(--radix-popover-content-available-height));
+  gap: 13px;
+  overflow: auto;
+  padding: 15px;
+}
+
+.counter {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid #bed4df;
+  border-radius: 8px;
+  color: #076c9f;
+}
+.counter:not(:disabled):hover { background: #eef7fb; }
+.counter:disabled { border-color: #e4eaee; color: #8495a3; }
+
+.cabinMenu { min-width: var(--radix-select-trigger-width); padding: 4px; }
+.cabinOption {
+  display: flex;
+  min-height: 40px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-radius: 6px;
+  padding: 7px 9px;
+  font-size: 14px;
+  font-weight: 650;
+  outline: none;
+}
+.cabinOption[data-highlighted] { background: #edf7fb; color: #005f93; }
+
+/* Match the type scale of the airport list while keeping the supplier calendar. */
+.page :global(.search-bar) :global(.search-input),
+.page :global(.search-bar) :global(.date-description),
+.page :global(.search-bar) :global(.guest-control) input {
+  font-weight: 600 !important;
+}
+
+.page :global(.search-bar) :global(.simple-typeahead-list-item-text) {
+  font-weight: 650 !important;
+  color: #183341;
+}
+
+.page :global(.search-bar) :global(.simple-typeahead-list-item-text) strong {
+  font-weight: 750 !important;
+}

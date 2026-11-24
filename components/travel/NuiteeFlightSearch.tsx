@@ -1,8 +1,11 @@
 'use client';
 
 import { useEffect, useId, useState, type FormEvent, type KeyboardEvent } from 'react';
-import { Armchair, ArrowLeftRight, CalendarDays, PlaneLanding, PlaneTakeoff, Search, UsersRound } from 'lucide-react';
+import { ArrowLeftRight, PlaneLanding, PlaneTakeoff, Search } from 'lucide-react';
 import { getNuiteeFlightSearchHref, type FlightCabin, type FlightLeg, type FlightTrip, type SearchAirport } from '@/lib/travel/nuiteeFlightSearch';
+
+import { FlightSearchDateField } from './FlightSearchDateField';
+import { FlightSearchCabin, FlightSearchTravelers, type FlightPassengers } from './FlightSearchTravelers';
 
 type Airport = [code: string, city: string, name: string];
 type LegInput = { from: string; to: string; date: string };
@@ -114,7 +117,7 @@ export function NuiteeFlightSearch({ locale, trip, initialDestination, labels, f
   const [airports, setAirports] = useState<Airport[]>([paris]);
   const [legs, setLegs] = useState<LegInput[]>([{ ...emptyLeg, to: initialDestination }, emptyLeg]);
   const [returnDate, setReturnDate] = useState('');
-  const [adults, setAdults] = useState(1);
+  const [passengers, setPassengers] = useState<FlightPassengers>({ adults: 1, children: [], infants: 0 });
   const [cabin, setCabin] = useState<FlightCabin>('all');
   const [error, setError] = useState('');
   const [today, setToday] = useState('');
@@ -124,10 +127,19 @@ export function NuiteeFlightSearch({ locale, trip, initialDestination, labels, f
     const controller = new AbortController();
     fetch('/data/nuitee-flight-airports.json', { signal: controller.signal })
       .then(response => response.ok ? response.json() : null)
-      .then(data => { if (Array.isArray(data?.airports)) setAirports([paris, ...data.airports]); })
+      .then(data => {
+        if (!Array.isArray(data?.airports)) return;
+        const list: Airport[] = [paris, ...data.airports];
+        setAirports(list);
+        const arrival = list.find(([code]) => code === initialDestination);
+        if (!arrival) return;
+        const [code, city, name] = arrival;
+        setLegs(previous => previous.map((leg, i) => i === 0 && leg.to === initialDestination
+          ? { ...leg, to: `${city || name} (${code})` } : leg));
+      })
       .catch(() => { /* IATA codes can still be entered if suggestions fail to load. */ });
     return () => controller.abort();
-  }, []);
+  }, [initialDestination]);
 
   function setLeg(index: number, changes: Partial<LegInput>) {
     setLegs(previous => previous.map((leg, i) => i === index ? { ...leg, ...changes } : leg));
@@ -136,19 +148,23 @@ export function NuiteeFlightSearch({ locale, trip, initialDestination, labels, f
 
   function search(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const fields = new FormData(event.currentTarget);
+    const childrenAges = passengers.children.filter((age): age is number => age !== null);
+    if (childrenAges.length !== passengers.children.length) {
+      setError(french ? 'Indiquez l’âge de chaque enfant dans le menu Passagers.' : 'Enter each child’s age in the Passengers menu.');
+      return;
+    }
     const resolved: FlightLeg[] = [];
-    for (const [index, leg] of (trip === 'multi' ? legs : legs.slice(0, 1)).entries()) {
+    for (const leg of displayedLegs) {
       const from = findAirport(leg.from, airports);
       const to = findAirport(leg.to, airports);
       if (!from || !to) {
         setError(french ? 'Choisissez un aéroport dans les suggestions ou saisissez son code IATA, par exemple CDG.' : 'Choose an airport from the suggestions or enter its IATA code, for example CDG.');
         return;
       }
-      resolved.push({ from, to, date: String(fields.get(`departure-${index}`) ?? '') });
+      resolved.push({ from, to, date: leg.date });
     }
-    if (trip === 'round') resolved.push({ from: resolved[0].to, to: resolved[0].from, date: String(fields.get('return-date') ?? '') });
-    const href = getNuiteeFlightSearchHref({ locale, trip, legs: resolved, adults, cabin });
+    if (trip === 'round') resolved.push({ from: resolved[0].to, to: resolved[0].from, date: returnDate });
+    const href = getNuiteeFlightSearchHref({ locale, trip, legs: resolved, adults: passengers.adults, childrenAges, infants: passengers.infants, cabin });
     if (!href || resolved[0].date < today) {
       setError(french ? 'Vérifiez que les aéroports sont différents et que les dates sont dans l’ordre.' : 'Check that the airports differ and that the dates are in order.');
       return;
@@ -169,18 +185,14 @@ export function NuiteeFlightSearch({ locale, trip, initialDestination, labels, f
           <div className={`grid min-w-0 items-end gap-3 sm:grid-cols-2 ${trip === 'round' ? 'lg:grid-cols-4' : 'lg:grid-cols-3'}`}>
             <AirportField {...airportProps} label={labels.from} value={leg.from} onChange={from => setLeg(index, {from})}/>
             <AirportField {...airportProps} label={labels.to} value={leg.to} onChange={to => setLeg(index, {to})} arrival/>
-            <label className="block min-w-0">
-              <span className={labelClass}><CalendarDays size={15} aria-hidden="true"/>{labels.departure}</span>
-              <input type="date" name={`departure-${index}`} required min={index > 0 ? legs[index - 1].date || today : today}
-                value={leg.date} onChange={event => setLeg(index, {date: event.target.value})} className={fieldClass}/>
-            </label>
-            {trip === 'round'&&(
-              <label className="block min-w-0">
-                <span className={labelClass}><CalendarDays size={15} aria-hidden="true"/>{labels.returnDate}</span>
-                <input type="date" name="return-date" required min={leg.date || today} value={returnDate}
-                  onChange={event => setReturnDate(event.target.value)} className={fieldClass}/>
-              </label>
-            )}
+            <FlightSearchDateField locale={locale} labelClass={labelClass} fieldClass={fieldClass}
+              start={leg.date} end={trip === 'round' ? returnDate : undefined}
+              min={index > 0 ? legs[index - 1].date || today : today}
+              departureLabel={labels.departure} returnLabel={labels.returnDate}
+              onChange={(date, nextReturn) => {
+                setLeg(index, { date });
+                if (nextReturn !== undefined) setReturnDate(nextReturn);
+              }}/>
           </div>
           <button type="button" onClick={() => setLeg(index, {from: leg.to, to: leg.from})}
             className="mt-1 inline-flex min-h-10 items-center gap-2 rounded-lg px-2 text-xs font-medium text-[#076c9f] hover:bg-[#ecf6fa]">
@@ -197,21 +209,11 @@ export function NuiteeFlightSearch({ locale, trip, initialDestination, labels, f
         </div>
       )}
       <div className="grid items-end gap-3 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_auto]">
-        <label className="min-w-0">
-          <span className={labelClass}><UsersRound size={15} aria-hidden="true"/>{french ? 'Adultes' : 'Adults'}</span>
-          <select value={adults} onChange={event => setAdults(Number(event.target.value))} className={fieldClass}>
-            {Array.from({length: 9}, (_,i) => i + 1).map(count => <option key={count}>{count}</option>)}
-          </select>
-        </label>
-        <label className="min-w-0">
-          <span className={labelClass}><Armchair size={15} aria-hidden="true"/>{labels.cabin}</span>
-          <select value={cabin} onChange={event => setCabin(event.target.value as FlightCabin)} className={fieldClass}>
-            <option value="all">{french ? 'Toutes les classes' : 'All cabins'}</option>
-            <option value="Economy">{labels.economy}</option>
-            <option value="Business">{labels.business}</option>
-            <option value="First">{labels.first}</option>
-          </select>
-        </label>
+        <FlightSearchTravelers french={french} passengers={passengers} fieldClass={fieldClass} labelClass={labelClass}
+          onChange={value => { setPassengers(value); setError(''); }}/>
+        <FlightSearchCabin value={cabin} onChange={setCabin} label={labels.cabin} fieldClass={fieldClass} labelClass={labelClass}
+          rtl={locale === 'ar'} options={{ all: french ? 'Toutes les classes' : 'All cabins',
+            Economy: labels.economy, Business: labels.business, First: labels.first }}/>
         <button type="submit" className="inline-flex min-h-[58px] items-center justify-center gap-2 rounded-xl bg-[#0071ad] px-6 py-3 text-sm font-semibold text-white hover:bg-[#005b90]">
           <Search size={18} aria-hidden="true"/>{french ? 'Rechercher des vols' : 'Search flights'}
         </button>

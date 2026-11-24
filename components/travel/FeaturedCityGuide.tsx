@@ -1,3 +1,4 @@
+import { DestinationFlightLink } from './DestinationFlightLink';
 import {jaipurDraftFaq} from '@/data/travel/jaipurDraftFaq';
 import {galleDraftFaq} from '@/data/travel/galleDraftFaq';
 import {tangalleDraftFaq} from '@/data/travel/tangalleDraftFaq';
@@ -516,6 +517,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         <a href="#conseils" className="shrink-0 hover:text-[#193344]">{fr?'Les conseils':'Advice'}</a>
       </div>
     </nav>
+    <DestinationFlightLink locale={locale} slug={city.slug} name={city.name} afterHero/>
     {earlyPreviewPhotos.length > 0 && <section aria-label={fr?'Images de la destination':'Destination photographs'} className="mx-auto max-w-7xl px-5 pt-8 sm:pt-12">
       <div className={earlyPreviewPhotos.length > 1 ? 'grid gap-3 sm:grid-cols-2 lg:grid-cols-3' : 'grid gap-3'}>
         {earlyPreviewPhotos.map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}

@@ -8,7 +8,6 @@ import { travelHref, travelKeywordTitles, type TravelLocale } from '@/lib/travel
 import { getNuiteeWhiteLabelSearchHref } from '@/lib/travel/nuiteeWhiteLabel';
 import { withAssessmentContext } from '@/lib/assessmentContext';
 import { trackConversion } from '@/lib/conversionAnalytics';
-import { collectionBookingEnabled, destinationFlightHref } from '@/lib/travel/collectionPresentation';
 
 type Words={title:string;destination:string;from:string;to:string;arrival:string;leave:string;date:string;returnDate:string;people:string;bedrooms:string;harbour:string;charter:string;skipper:string;crew:string;submit:string;hotels:string;hotelNote:string;note:string;guide:string;other:string};
 const words:Record<TravelLocale,Words>={
@@ -52,7 +51,6 @@ export function TravelContextualSearch({locale,category,destinationName,destinat
   return withAssessmentContext(form,sourcePath,travelKeywordTitles[choice][locale],context);
  },[locale,choice,context,sourcePath]);
  const guideUrl=destinationSlug?travelHref(locale,'destinations/'+destinationSlug):travelHref(locale,'destinations');
- const flightsUrl=collectionBookingEnabled&&destinationSlug?destinationFlightHref(locale,destinationSlug):null;
  const label='flex min-w-0 flex-col gap-1.5 text-xs font-semibold text-[#587080]';
  const field='min-h-12 w-full min-w-0 rounded-xl border border-[#d8e4eb] bg-white px-3.5 py-2 text-sm text-[#1f3b4b] outline-none focus:border-[#C23674] focus:ring-2 focus:ring-[#C23674]/15';
  const button='inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#146c95] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#0d5577] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C23674]';
@@ -66,9 +64,6 @@ export function TravelContextualSearch({locale,category,destinationName,destinat
     </div>
    </div>
    <div className="flex flex-wrap items-center gap-x-5">
-    {flightsUrl&&<Link href={flightsUrl} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[#176e96] underline underline-offset-4">
-     <Plane size={16} aria-hidden="true"/>{locale==='fr'?`Vols vers ${destinationName}`:`Flights to ${destinationName}`}
-    </Link>}
     {sourceSlug!==`destinations/${destinationSlug}`&&<Link href={guideUrl} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[#176e96] underline underline-offset-4">
      <MapPin size={16} aria-hidden="true"/>{t.guide}<ArrowRight size={15} aria-hidden="true"/>
     </Link>}

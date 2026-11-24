@@ -164,6 +164,8 @@ import { destinationBySlug, travelCategories, travelDestinations, travelRegions,
 import type { TravelCategory, TravelDestination } from '@/data/travel/destinations';
 import { travelHref, travelLocaleCodes, travelKeywordTitles, travelText } from '@/lib/travel/i18n';
 import { BosphorasTravelGuideHeader, BosphorasTravelFooter } from '@/components/travel/BosphorasTravelChrome';
+import { collectionBookingEnabled } from '@/lib/travel/collectionPresentation';
+import { DestinationFlightLink } from './DestinationFlightLink';
 import { TravelContextualSearch } from '@/components/travel/TravelContextualSearch';
 import { TravelMobileMenu } from './TravelMobileMenu';
 import type { TravelLocale } from '@/lib/travel/i18n';
@@ -590,9 +592,9 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
     return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
       <Schema locale={locale} route={route}/>
       <Header locale={locale} slug={route.slug} limitedLocales/>
-      <div className="mx-auto max-w-7xl px-5 pt-5">
+      {!collectionBookingEnabled&&<div className="mx-auto max-w-7xl px-5 pt-5">
          <TravelContextualSearch locale={locale} category="hotels" destinationName="Istanbul" destinationSlug="istanbul" sourceSlug={route.slug} compact/>
-       </div>
+       </div>}
        <HotelEditorialDetail hotel={route.hotel} locale={locale}/>
       <Footer locale={locale}/>
     </div>;
@@ -601,9 +603,9 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
     return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
       <Schema locale={locale} route={route}/>
       <Header locale={locale} slug={route.slug}/>
-      <div className="mx-auto max-w-7xl px-5 pt-5">
+      {!collectionBookingEnabled&&<div className="mx-auto max-w-7xl px-5 pt-5">
         <TravelContextualSearch locale={locale} category="hotels" destinationName="Istanbul" destinationSlug="istanbul" sourceSlug={route.slug} compact/>
-       </div>
+       </div>}
        <IstanbulFlagship locale={locale}/>
       <Footer locale={locale}/>
     </div>;
@@ -613,10 +615,10 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
   if(selectedCity&&localGuide&&isEditorialLocale(locale)&&(route.kind==='destination'||(route.kind==='keyword'&&category==='hotels'))){return <div lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="min-h-screen bg-[#f8f5ee]">
       <LocalizedGuideSchema city={selectedCity} data={localGuide} locale={locale} path={route.slug}/>
       <Header locale={locale} slug={route.slug} limitedLocales/>
-      <div className="mx-auto max-w-7xl px-5 pt-5">
+      {!collectionBookingEnabled&&<div className="mx-auto max-w-7xl px-5 pt-5">
          <TravelContextualSearch locale={locale} category="hotels" destinationName={destination?.name} destinationSlug={destination?.slug}
            availableCategories={route.kind==='destination'?destination?.categories:undefined} sourceSlug={route.slug} compact/>
-       </div>
+       </div>}
        <LocalizedFeaturedCityGuide city={selectedCity} data={localGuide} locale={locale} variant={route.kind==='destination'?'destination':'hotels'}/>
       <Footer locale={locale}/>
     </div>;}
@@ -625,10 +627,10 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
     return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
       <Schema locale={locale} route={route}/>
       <Header locale={locale} slug={route.slug} limitedLocales/>
-      <div className="mx-auto max-w-7xl px-5 pt-5">
+      {!collectionBookingEnabled&&<div className="mx-auto max-w-7xl px-5 pt-5">
          <TravelContextualSearch locale={locale} category="hotels" destinationName={destination?.name} destinationSlug={destination?.slug}
            availableCategories={route.kind==='destination'?destination?.categories:undefined} sourceSlug={route.slug} compact/>
-       </div>
+       </div>}
        <FeaturedCityGuide city={selectedCity} locale={locale} variant={route.kind === 'destination' ? 'destination' : 'hotels'}/>
       <Footer locale={locale}/>
     </div>;
@@ -647,12 +649,13 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
         </div>
       </section>
       <div className="mx-auto max-w-7xl px-5 py-12">
-        {(category||route.kind==='destination'||route.kind==='home')&&
+        {(!collectionBookingEnabled||(!destination&&(!category||category==='hotels')))&&(category||route.kind==='home'||route.kind==='destination')&&
           <TravelContextualSearch locale={locale} category={category||'hotels'}
            destinationName={destination?nativeTravelName(destination.slug,locale,destination.name):undefined}
            destinationSlug={destination?.slug}
            availableCategories={route.kind==='destination'?destination?.categories:undefined} sourceSlug={route.slug}/>}
          {route.kind !== 'home' && <BreadCrumb locale={locale} items={travelCrumbs(locale, route)}/>}
+         {destination&&collectionBookingEnabled&&<div className="mb-6"><DestinationFlightLink locale={locale} slug={destination.slug} name={nativeTravelName(destination.slug,locale,destination.name)}/></div>}
         {route.kind === 'home' && <>
           <section className="mb-16">
             <h2 className="font-serif text-3xl sm:text-4xl">{t.collections}</h2>

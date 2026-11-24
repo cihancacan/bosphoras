@@ -1,3 +1,5 @@
+import { collectionBookingEnabled } from '@/lib/travel/collectionPresentation';
+import { DestinationFlightLink } from './DestinationFlightLink';
 import Link from 'next/link';
 import Image from 'next/image';
 import { EditorialProse } from '@/components/travel/EditorialProse';
@@ -58,6 +60,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
           <p className="text-[#193344] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? 'Comprendre Istanbul' : 'Read the city'}</p>
           <h2 className="font-sans font-normal text-4xl sm:text-5xl">{fr ? 'Où dormir à Istanbul ? Les cinq ambiances à comparer.' : 'Where to stay in Istanbul: five different moods.'}</h2>
 
+          {collectionBookingEnabled&&<div className="mt-4"><DestinationFlightLink locale={locale} slug="istanbul" name="Istanbul"/></div>}
         </div>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
           {istanbulDistricts.map((d)=><article key={d.id} className="bg-[#ffffff] p-7 border border-[#e1e5e5] flex flex-col gap-5">

@@ -1,5 +1,6 @@
 'use client';
 
+import { DestinationFlightLink } from './DestinationFlightLink';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { EditorialProse } from '@/components/travel/EditorialProse';
@@ -56,6 +57,7 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
       </section>
 
       <div className="mx-auto max-w-7xl px-5 py-6 sm:py-10">
+        <DestinationFlightLink locale={locale} slug="istanbul" name="Istanbul"/>
         {photos.length > 0 ? (
           <section aria-label={fr ? 'Photographies de l’hôtel' : 'Hotel photo gallery'} className="mb-16">
             <button type="button" className="relative block aspect-[16/9] w-full overflow-hidden bg-[#f5f5f3] text-left lg:aspect-[2/1]"

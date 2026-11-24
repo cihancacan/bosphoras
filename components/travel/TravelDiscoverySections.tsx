@@ -1,6 +1,8 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { BookingComingSoon } from './BookingComingSoon';
+import { additionalBookingServicesPaused } from '@/lib/travel/collectionPresentation';
 import { ArrowRight, Compass, MapPin, Sparkles, ShieldCheck } from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
 import { travelHref, type TravelLocale } from '@/lib/travel/i18n';
@@ -140,8 +142,8 @@ export function TravelDiscoverySections({locale,context,onSelect}:{
     <h2 id="travel-collections-title" className="text-2xl font-semibold text-[#193748] md:text-[2rem]">{t.collections[0]}</h2>
     <p className="mt-3 text-sm leading-6 text-[#617582]">{t.collections[1]}</p>
     <div className="mt-7 grid gap-4 sm:grid-cols-3">
-     {(['hotels','villas','chalets'] as const).map((id,i)=><button key={id} type="button" onClick={()=>select(id)}
-       className="group overflow-hidden rounded-2xl bg-white text-start shadow-[0_5px_24px_rgba(20,49,70,0.05)] hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0071ad]">
+     {(['hotels','villas','chalets'] as const).map((id,i)=><button key={id} type="button" disabled={additionalBookingServicesPaused&&id!=='hotels'} onClick={()=>select(id)}
+       className="group overflow-hidden rounded-2xl bg-white text-start shadow-[0_5px_24px_rgba(20,49,70,0.05)] enabled:hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0071ad]">
        <div className="relative h-[190px] overflow-hidden bg-[#dfeaf0]">
         {i===1 ? (
          <div role="img" aria-label="Plage My Khe à Da Nang, Vietnam" className="h-full w-full bg-cover bg-center transition-transform duration-500 motion-reduce:transform-none group-hover:scale-[1.035]"
@@ -152,7 +154,7 @@ export function TravelDiscoverySections({locale,context,onSelect}:{
        </div>
        <span className="flex items-center justify-between gap-3 p-5">
         <span><span className="block text-base font-semibold text-[#203e4f]">{t.collectionNames[i]}</span><span className="mt-2 block text-sm leading-6 text-[#647987]">{t.collectionDescriptions[i]}</span></span>
-        <ArrowRight size={19} className="shrink-0 text-[#0073a9]"/>
+        {additionalBookingServicesPaused&&id!=='hotels' ? <BookingComingSoon locale={locale}/> : <ArrowRight size={19} className="shrink-0 text-[#0073a9]"/>}
        </span>
       </button>)}
     </div>
@@ -175,6 +177,7 @@ export function TravelDiscoverySections({locale,context,onSelect}:{
       <h3 className="text-base font-semibold text-[#203b4b]">{title}</h3>
       <p className="mt-2 flex-1 text-sm leading-6 text-[#627783]">{t.tipDescriptions[i]}</p>
       {i===0?<Link href={travelHref(locale,'destinations')} className="mt-4 inline-flex min-h-11 items-center gap-2 self-start text-sm font-semibold text-[#0074aa]">{t.tipLinks[i]}<ArrowRight size={15}/></Link>:
+       additionalBookingServicesPaused ? <div className="mt-4 self-start"><BookingComingSoon locale={locale}/></div> :
        <button type="button" onClick={()=>select(i===1?'transfers':'activities')} className="mt-4 inline-flex min-h-11 items-center gap-2 self-start text-sm font-semibold text-[#0074aa]">{t.tipLinks[i]}<ArrowRight size={15}/></button>}
      </div>)}
     </div>
