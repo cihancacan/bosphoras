@@ -1,6 +1,8 @@
 import { taxRelocationPaths } from '@/data/taxRelocationPaths';
 import type { MetadataRoute } from 'next';
 import { indexedTravelUrls } from '@/data/travel/guideIndexation';
+import { collectionReleased } from '@/lib/travel/collectionPresentation';
+import { travelHref, travelLanguageInfo } from '@/lib/travel/i18n';
 import seoRedirects from '@/data/seo-redirects.json';
 import { locales } from '@/lib/i18n';
 import { siteUrl } from '@/lib/routes';
@@ -223,6 +225,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Same approval gate as page robots and reciprocal HTML hreflang. No drafts in sitemap.
   for(const url of indexedTravelUrls(siteUrl)) addEntry({url,changeFrequency:'monthly',priority:0.8});
+  if (collectionReleased) {
+    for (const {code} of travelLanguageInfo) addEntry({
+      url: siteUrl + travelHref(code, 'private-collection'), changeFrequency: 'weekly', priority: 0.85,
+    });
+  }
 
   for(const locale of locales) addEntry({url:getCanonicalUrl(locale,globalPropertyHubPaths[locale]),changeFrequency:'weekly',priority:0.9});
   const publishedProperties = await fetchPublishedProperties();

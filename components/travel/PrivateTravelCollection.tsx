@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import { Raleway } from 'next/font/google';
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowRight, ArrowLeftRight, BedDouble, Building2, CalendarDays, CarFront, CarTaxiFront, Check, ChevronDown, Clock3, Compass, Home, MapPin, Plane, PlaneTakeoff, Search, ShieldCheck, Ship, Ticket, UsersRound } from 'lucide-react';
 import { trackConversion } from '@/lib/conversionAnalytics';
@@ -16,9 +17,12 @@ import { getSlugForPage } from '@/data/pages/types';
 import { getNuiteeWhiteLabelSearchHref, getNuiteeExperiencesHref, NUITEE_WHITE_LABEL_ORIGIN } from '@/lib/travel/nuiteeWhiteLabel';
 import { withAssessmentContext } from '@/lib/assessmentContext';
 import { getApprovedPartnerUrl, getPrivateTravelPartnerName, type PrivateTravelPartnerService } from '@/lib/travel/privateTravelSupplierGateways';
+import { collectionBookingEnabled, travelCollectionTitles } from '@/lib/travel/collectionPresentation';
+import presentation from './TravelCollectionPresentation.module.css';
 
 type Service = 'flights' | 'hotels' | 'villas' | 'chalets' | 'cars' | 'transfers' | 'jets' | 'helicopters' | 'yachts' | 'activities';
 const HotelReservationSearch = dynamic(() => import('./HotelReservationSearch').then(module => module.HotelReservationSearch));
+const raleway = Raleway({subsets:['latin','latin-ext'],variable:'--font-travel-booking',display:'swap'});
 const kiwitaxiCopy: Record<Locale, string> = {
   fr: 'Réservation, paiement et assistance auprès de Kiwitaxi.',
   en: 'Kiwitaxi handles booking, payment and customer support.',
@@ -31,11 +35,10 @@ const kiwitaxiPriceLabel: Record<Locale, string> = {
   ru: 'Смотреть цены',
   ar: 'عرض الأسعار',
 };
-const nuiteeFlightsPreview = process.env.NEXT_PUBLIC_VERCEL_ENV === 'preview';
 const flightsTab = {id:'flights' as const,icon:PlaneTakeoff};
 const staysTab = {id:'hotels' as const,icon:BedDouble};
 const mainServices: { id: Service; icon: typeof Home }[] = [
- ...(nuiteeFlightsPreview ? [flightsTab, staysTab] : [staysTab, flightsTab]),
+ ...(collectionBookingEnabled ? [flightsTab, staysTab] : [staysTab, flightsTab]),
  {id:'cars',icon:CarFront},{id:'activities',icon:Ticket}
 ];
 const privateServices: { id: Service; icon: typeof Home }[] = [
@@ -252,7 +255,8 @@ const fieldClass = 'block h-[58px] w-full min-w-0 rounded-xl border border-[#dde
 const labelClass = 'mb-1.5 flex items-center gap-1.5 text-xs font-medium text-[#536575]';
 
 export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
-  const [service,setService]=useState<Service>(nuiteeFlightsPreview ? 'flights' : 'hotels');
+  const [service,setService]=useState<Service>(collectionBookingEnabled ? 'flights' : 'hotels');
+  const [flightArrival,setFlightArrival]=useState('');
   const [destination,setDestination]=useState('');
   const [origin,setOrigin]=useState('');
   const [departure,setDeparture]=useState('');
@@ -282,7 +286,10 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
   const [dropoffTime,setDropoffTime]=useState('10:00');
 
   useEffect(()=>{
-    const requested=new URLSearchParams(window.location.search).get('service');
+    const params=new URLSearchParams(window.location.search);
+    const requested=params.get('service');
+    const arrival=params.get('arrival')??'';
+    if(requested==='flights'&&/^[A-Z]{3}$/.test(arrival))setFlightArrival(arrival);
     if(requested==='homes')setService('villas');
     else if(requested==='jets'||requested==='helicopters'||requested==='yachts'){
       setPrivateChoice(requested);
@@ -316,7 +323,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
   };
   const isHotel=service==='hotels';
   const isFlight=service==='flights';
-  const showNuiteeFlightSearch=isFlight&&nuiteeFlightsPreview;
+  const showNuiteeFlightSearch=isFlight&&collectionBookingEnabled;
   const activeGuests=isFlight?flightGuests:guests;
   const setActiveGuests=(value:string)=>isFlight?setFlightGuests(value):setGuests(value);
   const isCar=service==='cars';
@@ -439,27 +446,27 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
   const hasReturn=isCar||isHome||service==='yachts'||(isFlight&&tripType==='round');
   const hasOrigin=isTransport;
   const hasDestination=!isCar||!returnSame;
+  const searchHasPopovers=showHotelSearch||showNuiteeFlightSearch;
 
   return (
-    <>
-      <BosphorasTravelHeader locale={locale} activeService={privateOpen?privateChoice:service} onPrivate={()=>setPrivateOpen(true)}/>
+    <div className={`${raleway.variable} ${presentation.page}`}>
+      <BosphorasTravelHeader locale={locale} activeService={privateOpen?privateChoice:service} onPrivate={()=>setPrivateOpen(true)} bookingSupport serviceNavigation/>
       <main lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="bg-white pt-[66px] text-[#172c3c] md:pt-[74px]">
         <section id="private-travel-top" className={'relative isolate bg-[#f5f8fa] pb-11 pt-8 md:pb-16 md:pt-12 '+
-          (showHotelSearch?'z-10':'overflow-hidden')}>
+          (searchHasPopovers?'z-10':'overflow-hidden')}>
           <div className="pointer-events-none absolute inset-x-0 top-0 h-[465px] bg-cover bg-center md:h-[455px]"
             aria-hidden="true"
             style={{backgroundImage:"linear-gradient(180deg,rgba(7,30,45,0.69) 0%,rgba(9,38,53,0.42) 58%,#f5f8fa 100%),url('/images/travel/saint-tropez-premium/destination/saint-tropez-pampelonne-bay.webp')"}}/>
           <div className="container-editorial relative z-10">
             <div className="mb-6 md:mb-8">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.20em] text-white/90">{copy.eyebrow}</p>
-              <h1 className="mt-3 max-w-5xl text-[2rem] font-semibold leading-[1.13] tracking-[-0.035em] text-white drop-shadow-[0_3px_18px_rgba(5,20,30,0.24)] sm:text-[2.5rem] md:text-[3.3rem]">
-                {copy.title}
+              <h1 className="max-w-5xl text-[2rem] font-bold leading-[1.12] tracking-[-0.035em] text-white drop-shadow-[0_3px_18px_rgba(5,20,30,0.24)] sm:text-[2.5rem] md:text-[3.3rem]">
+                {travelCollectionTitles[locale]}
               </h1>
               <p className="mt-3 max-w-[790px] text-sm leading-6 text-white/90 md:text-base">{copy.subtitle}</p>
             </div>
 
             <div className={'rounded-2xl border border-[#e2e9ee] bg-white shadow-[0_18px_55px_rgba(20,49,70,0.08)] '+
-              (showHotelSearch?'relative z-10':'overflow-hidden')}>
+              (searchHasPopovers?'relative z-10':'overflow-hidden')}>
               <div className="border-b border-[#e2e9ee]">
                 <div role="tablist" aria-label={copy.selection} className="grid grid-cols-4 gap-0 px-1 sm:px-3">
                   {mainServices.map(({id,icon:Icon})=>{
@@ -551,7 +558,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                 )}
 
                 {showNuiteeFlightSearch?(
-                  <NuiteeFlightSearch locale={locale} trip={tripType} fieldClass={fieldClass} labelClass={labelClass}
+                  <NuiteeFlightSearch key={flightArrival} locale={locale} trip={tripType} initialDestination={flightArrival} fieldClass={fieldClass} labelClass={labelClass}
                     labels={{from:copy.flightDeparture,to:copy.flightArrival,departure:copy.date,returnDate:copy.dateReturn,
                       cabin:tr.cabin,segment:copy.flightSegment,add:copy.addFlight,remove:copy.removeFlight,swap:copy.swap,
                       economy:tr.cabinOptions.economy,business:tr.cabinOptions.business,first:tr.cabinOptions.first}}
@@ -897,7 +904,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
         <TravelDiscoverySections locale={locale} context={discoveryContext} onSelect={choose}/>
         <p className="container-editorial py-7 text-xs leading-6 text-[#70838e]">{tr.footnote}</p>
       </main>
-      <BosphorasTravelFooter locale={locale}/>
-    </>
+      <BosphorasTravelFooter locale={locale} bookingSupport/>
+    </div>
   );
 }

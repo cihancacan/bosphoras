@@ -1,0 +1,25 @@
+.page {
+  font-family: var(--font-travel-booking), var(--font-sans);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.page :is(h1,h2,h3,h4,button,input,select,textarea) {
+  font-family: inherit;
+}
+
+.page :is(input,select,textarea) {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.page :global(.search-bar),
+.page :global(.search-bar) *,
+.page :global(.vc-popover-content-wrapper) * {
+  font-family: var(--font-travel-booking), var(--font-sans) !important;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .page :is(input,select,textarea) {
+    font-size: 16px;
+  }
+}

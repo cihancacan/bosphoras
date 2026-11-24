@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect, useId, useState, type FormEvent } from 'react';
-import { ArrowLeftRight, Search } from 'lucide-react';
+import { useEffect, useId, useState, type FormEvent, type KeyboardEvent } from 'react';
+import { Armchair, ArrowLeftRight, CalendarDays, PlaneLanding, PlaneTakeoff, Search, UsersRound } from 'lucide-react';
 import { getNuiteeFlightSearchHref, type FlightCabin, type FlightLeg, type FlightTrip, type SearchAirport } from '@/lib/travel/nuiteeFlightSearch';
 
 type Airport = [code: string, city: string, name: string];
@@ -28,7 +28,7 @@ function findAirport(value: string, airports: Airport[]): SearchAirport | null {
   return matches.length === 0 && /^[A-Z]{3}$/.test(possibleCode) ? { code: possibleCode, name: possibleCode } : null;
 }
 
-function AirportField({ label, value, onChange, airports, fieldClass, labelClass, placeholder }: {
+function AirportField({ label, value, onChange, airports, fieldClass, labelClass, placeholder, arrival }: {
   label: string;
   value: string;
   onChange: (value: string) => void;
@@ -36,30 +36,72 @@ function AirportField({ label, value, onChange, airports, fieldClass, labelClass
   fieldClass: string;
   labelClass: string;
   placeholder: string;
+  arrival?: boolean;
 }) {
   const id = useId();
+  const [focused, setFocused] = useState(false);
+  const [option, setOption] = useState(-1);
   const query = normalize(value);
-  const suggestions = query.length >= 2 && !/\([A-Z]{3}\)$/.test(value)
+  const suggestions = focused && query.length >= 2 && !/\([A-Z]{3}\)$/.test(value)
     ? airports.filter(airport => airport.some(word => normalize(word).includes(query)))
       .sort((a,b) => Number(normalize(b[0]) === query) - Number(normalize(a[0]) === query))
-      .slice(0, 25)
+      .slice(0, 8)
     : [];
+  const Icon = arrival ? PlaneLanding : PlaneTakeoff;
+  const open = suggestions.length > 0;
+
+  function select([code,city,name]: Airport) {
+    onChange(`${city || name} (${code})`);
+    setFocused(false);
+    setOption(-1);
+  }
+
+  function onKeyDown(event: KeyboardEvent<HTMLInputElement>) {
+    if (!open) return;
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      setFocused(false);
+      setOption(-1);
+    } else if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+      event.preventDefault();
+      setOption(previous => event.key === 'ArrowDown' ? Math.min(previous + 1, suggestions.length - 1)
+        : previous <= 0 ? suggestions.length - 1 : previous - 1);
+    } else if (event.key === 'Enter' && suggestions[option]) {
+      event.preventDefault();
+      select(suggestions[option]);
+    }
+  }
 
   return (
-    <label className="block min-w-0">
-      <span className={labelClass}>{label}</span>
-      <input value={value} onChange={event => onChange(event.target.value)} autoComplete="off"
-        required maxLength={130} list={id} placeholder={placeholder} className={fieldClass}/>
-      <datalist id={id}>
-        {suggestions.map(([code,city,name]) => <option key={code} value={`${city ? `${city} · ` : ''}${name} (${code})`}/>)}
-      </datalist>
-    </label>
+    <div className="relative min-w-0">
+      <label htmlFor={`${id}-airport`} className={labelClass}><Icon size={15} aria-hidden="true"/>{label}</label>
+      <input id={`${id}-airport`} value={value} onChange={event => {onChange(event.target.value);setOption(-1);setFocused(true);}}
+        onFocus={()=>setFocused(true)} onBlur={()=>{setFocused(false);setOption(-1);}} onKeyDown={onKeyDown}
+        role="combobox" aria-expanded={open} aria-autocomplete="list" aria-controls={open?`${id}-results`:undefined}
+        aria-activedescendant={suggestions[option]?`${id}-airport-${option}`:undefined}
+        required maxLength={130} autoComplete="off" placeholder={placeholder} className={fieldClass}/>
+      {open&&<ul id={`${id}-results`} role="listbox" aria-label={label}
+        className="absolute inset-x-0 top-full z-30 mt-1.5 overflow-hidden rounded-xl border border-[#dce6ec] bg-white shadow-[0_12px_36px_rgba(17,42,59,0.16)]">
+        {suggestions.map((airport,index)=>{
+          const [code,city,name]=airport;
+          return <li key={code} id={`${id}-airport-${index}`} role="option" aria-selected={index===option}
+            onMouseDown={event=>event.preventDefault()} onClick={()=>select(airport)}
+            className={`flex min-h-12 cursor-pointer items-center justify-between gap-3 border-b border-[#edf2f4] px-3 py-2 last:border-0 ${index===option?'bg-[#edf6f8]':'hover:bg-[#f3f8fa]'}`}>
+            <span className="min-w-0"><span className="block truncate text-sm font-bold text-[#183341]">{city||name}</span>
+              {city&&<span className="block truncate text-xs text-[#536d78]">{name}</span>}
+            </span>
+            <span className="text-xs font-bold tracking-wide text-[#376171]">{code}</span>
+          </li>;
+        })}
+      </ul>}
+    </div>
   );
 }
 
-export function NuiteeFlightSearch({ locale, trip, labels, fieldClass, labelClass, onSearch }: {
+export function NuiteeFlightSearch({ locale, trip, initialDestination, labels, fieldClass, labelClass, onSearch }: {
   locale: string;
   trip: FlightTrip;
+  initialDestination: string;
   labels: {
     from: string; to: string; departure: string; returnDate: string; cabin: string; segment: string;
     add: string; remove: string; swap: string; economy: string; business: string; first: string;
@@ -70,7 +112,7 @@ export function NuiteeFlightSearch({ locale, trip, labels, fieldClass, labelClas
 }) {
   const french = locale === 'fr';
   const [airports, setAirports] = useState<Airport[]>([paris]);
-  const [legs, setLegs] = useState<LegInput[]>([emptyLeg, emptyLeg]);
+  const [legs, setLegs] = useState<LegInput[]>([{ ...emptyLeg, to: initialDestination }, emptyLeg]);
   const [returnDate, setReturnDate] = useState('');
   const [adults, setAdults] = useState(1);
   const [cabin, setCabin] = useState<FlightCabin>('all');
@@ -126,15 +168,15 @@ export function NuiteeFlightSearch({ locale, trip, labels, fieldClass, labelClas
           {trip === 'multi'&&<legend className="px-1 text-sm font-semibold text-[#375264]">{labels.segment} {index + 1}</legend>}
           <div className={`grid min-w-0 items-end gap-3 sm:grid-cols-2 ${trip === 'round' ? 'lg:grid-cols-4' : 'lg:grid-cols-3'}`}>
             <AirportField {...airportProps} label={labels.from} value={leg.from} onChange={from => setLeg(index, {from})}/>
-            <AirportField {...airportProps} label={labels.to} value={leg.to} onChange={to => setLeg(index, {to})}/>
+            <AirportField {...airportProps} label={labels.to} value={leg.to} onChange={to => setLeg(index, {to})} arrival/>
             <label className="block min-w-0">
-              <span className={labelClass}>{labels.departure}</span>
+              <span className={labelClass}><CalendarDays size={15} aria-hidden="true"/>{labels.departure}</span>
               <input type="date" name={`departure-${index}`} required min={index > 0 ? legs[index - 1].date || today : today}
                 value={leg.date} onChange={event => setLeg(index, {date: event.target.value})} className={fieldClass}/>
             </label>
             {trip === 'round'&&(
               <label className="block min-w-0">
-                <span className={labelClass}>{labels.returnDate}</span>
+                <span className={labelClass}><CalendarDays size={15} aria-hidden="true"/>{labels.returnDate}</span>
                 <input type="date" name="return-date" required min={leg.date || today} value={returnDate}
                   onChange={event => setReturnDate(event.target.value)} className={fieldClass}/>
               </label>
@@ -156,13 +198,13 @@ export function NuiteeFlightSearch({ locale, trip, labels, fieldClass, labelClas
       )}
       <div className="grid items-end gap-3 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_auto]">
         <label className="min-w-0">
-          <span className={labelClass}>{french ? 'Adultes' : 'Adults'}</span>
+          <span className={labelClass}><UsersRound size={15} aria-hidden="true"/>{french ? 'Adultes' : 'Adults'}</span>
           <select value={adults} onChange={event => setAdults(Number(event.target.value))} className={fieldClass}>
             {Array.from({length: 9}, (_,i) => i + 1).map(count => <option key={count}>{count}</option>)}
           </select>
         </label>
         <label className="min-w-0">
-          <span className={labelClass}>{labels.cabin}</span>
+          <span className={labelClass}><Armchair size={15} aria-hidden="true"/>{labels.cabin}</span>
           <select value={cabin} onChange={event => setCabin(event.target.value as FlightCabin)} className={fieldClass}>
             <option value="all">{french ? 'Toutes les classes' : 'All cabins'}</option>
             <option value="Economy">{labels.economy}</option>

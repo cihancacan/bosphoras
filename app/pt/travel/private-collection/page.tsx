@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
+import { collectionMetadata } from '@/lib/travel/collectionMetadata';
 import { PrivateTravelCollection } from '@/components/travel/PrivateTravelCollection';
 export const metadata:Metadata={
- title:"Bosphoras | Hotéis, voos, villas, carros e experiências",
  description:"Explore hotéis, voos, villas, chalés, traslados e experiências especiais. Planeje sua próxima viagem com Bosphoras.",
- robots:{index:false,follow:true}
+ ...collectionMetadata('pt')
 };
 export default function Page(){return <PrivateTravelCollection locale="pt"/>;}
