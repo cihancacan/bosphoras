@@ -7,7 +7,7 @@ import { getPortalSupabase } from '@/lib/portalSupabase';
 
 export function PortalLogin() {
   const supabase = getPortalSupabase();
-  const [email, setEmail] = useState('cacancihan@gmail.com');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState('');
