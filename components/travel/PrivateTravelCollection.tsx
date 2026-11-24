@@ -8,6 +8,7 @@ import { trackConversion } from '@/lib/conversionAnalytics';
 import { TravelDiscoverySections, type DiscoveryContext } from '@/components/travel/TravelDiscoverySections';
 import { BosphorasTravelHeader, BosphorasTravelFooter } from '@/components/travel/BosphorasTravelChrome';
 import { extraBookingCopy, type ExtraBookingLocale } from '@/components/travel/travelBookingExtraCopy';
+import { NuiteeFlightSearch } from '@/components/travel/NuiteeFlightSearch';
 import { travelHref, type TravelLocale } from '@/lib/travel/i18n';
 import type { Locale } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
@@ -30,8 +31,11 @@ const kiwitaxiPriceLabel: Record<Locale, string> = {
   ru: 'Смотреть цены',
   ar: 'عرض الأسعار',
 };
+const nuiteeFlightsPreview = process.env.NEXT_PUBLIC_VERCEL_ENV === 'preview';
+const flightsTab = {id:'flights' as const,icon:PlaneTakeoff};
+const staysTab = {id:'hotels' as const,icon:BedDouble};
 const mainServices: { id: Service; icon: typeof Home }[] = [
- {id:'hotels',icon:BedDouble},{id:'flights',icon:PlaneTakeoff},
+ ...(nuiteeFlightsPreview ? [flightsTab, staysTab] : [staysTab, flightsTab]),
  {id:'cars',icon:CarFront},{id:'activities',icon:Ticket}
 ];
 const privateServices: { id: Service; icon: typeof Home }[] = [
@@ -248,7 +252,7 @@ const fieldClass = 'block h-[58px] w-full min-w-0 rounded-xl border border-[#dde
 const labelClass = 'mb-1.5 flex items-center gap-1.5 text-xs font-medium text-[#536575]';
 
 export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
-  const [service,setService]=useState<Service>('hotels');
+  const [service,setService]=useState<Service>(nuiteeFlightsPreview ? 'flights' : 'hotels');
   const [destination,setDestination]=useState('');
   const [origin,setOrigin]=useState('');
   const [departure,setDeparture]=useState('');
@@ -312,6 +316,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
   };
   const isHotel=service==='hotels';
   const isFlight=service==='flights';
+  const showNuiteeFlightSearch=isFlight&&nuiteeFlightsPreview;
   const activeGuests=isFlight?flightGuests:guests;
   const setActiveGuests=(value:string)=>isFlight?setFlightGuests(value):setGuests(value);
   const isCar=service==='cars';
@@ -476,9 +481,9 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
               <div id="travel-service-panel" role="tabpanel" aria-label={heroLabel} className="px-4 pb-5 pt-5 md:px-7 md:pb-7 md:pt-6">
                 <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
                   <p className="text-sm font-semibold text-[#1c3849]">{copy.searchType} · {heroLabel}</p>
-                  {isHotel||isTransfer?(
+                  {isHotel||isTransfer||showNuiteeFlightSearch?(
                     <span className="inline-flex items-center gap-1.5 rounded-full bg-[#eff7f3] px-3 py-1.5 text-[11px] font-medium text-[#22684e]">
-                      <Check size={13} aria-hidden="true"/>{isHotel?'Nuitée':showKiwitaxi?'Kiwitaxi':'Bosphoras Mobility'}
+                      <Check size={13} aria-hidden="true"/>{isHotel||showNuiteeFlightSearch?'Nuitée':showKiwitaxi?'Kiwitaxi':'Bosphoras Mobility'}
                     </span>
                   ):null}
                 </div>
@@ -520,7 +525,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                 )}
 
 
-                {isFlight&&tripType!=='multi'&&(
+                {isFlight&&!showNuiteeFlightSearch&&tripType!=='multi'&&(
                   <div className="mb-4 flex justify-end">
                     <button type="button" onClick={()=>{setOrigin(destination);setDestination(origin);}}
                       className="inline-flex min-h-11 items-center gap-2 rounded-lg px-3 text-xs font-medium text-[#076c9f] hover:bg-[#ecf6fa]">
@@ -545,7 +550,13 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                   </fieldset>
                 )}
 
-                {showHotelSearch?(
+                {showNuiteeFlightSearch?(
+                  <NuiteeFlightSearch locale={locale} trip={tripType} fieldClass={fieldClass} labelClass={labelClass}
+                    labels={{from:copy.flightDeparture,to:copy.flightArrival,departure:copy.date,returnDate:copy.dateReturn,
+                      cabin:tr.cabin,segment:copy.flightSegment,add:copy.addFlight,remove:copy.removeFlight,swap:copy.swap,
+                      economy:tr.cabinOptions.economy,business:tr.cabinOptions.business,first:tr.cabinOptions.first}}
+                    onSearch={()=>trackAction('nuitee_flights')}/>
+                ):showHotelSearch?(
                   <HotelReservationSearch compact locale={locale==='fr'?'fr':'en'} origin={NUITEE_WHITE_LABEL_ORIGIN} initialUrl={null}/>
                 ):showKiwitaxi?(
                   <>
