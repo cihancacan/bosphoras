@@ -165,15 +165,33 @@
   min-width: 0;
   min-height: 59px;
   box-sizing: border-box;
-  padding-top: 18px !important;
+  justify-content: flex-start !important;
+  gap: 8px;
+  padding: 18px 12px 0 !important;
   background-color: #fff !important;
   color: #1f2a37 !important;
   font-size: 14px;
   font-weight: 500;
 }
 
-.compactPanel .widget :global(.search-bar) :global(.field.first) {
-  flex: 1.8 1 0%;
+.compactPanel .widget :global(.field.first) :global(.simple-typeahead) {
+  flex: 1 1 auto;
+  min-width: 0;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .compactPanel .widget :global(.search-bar) :global(.field.first) {
+    flex: 2 1 0%;
+    margin-inline-start: 0;
+  }
+
+  .compactPanel .widget :global(.search-bar) :global(.desktop-dates),
+  .compactPanel .widget :global(.search-bar) :global(.field.last) {
+    flex: 1 1 0%;
+  }
+
+  .compactPanel .widget :global(.search-button) { margin-inline-start: 0 !important; }
 }
 
 .compactPanel .widget :global(.search-bar) :global(.field.first)::before { content: var(--hotel-where-label); }
@@ -185,7 +203,7 @@
 .compactPanel .widget :global(.search-bar) :global(.field)::before {
   position: absolute;
   inset-block-start: 8px;
-  inset-inline-start: 38px;
+  inset-inline-start: 35px;
   color: #4b5664;
   font-size: 12px;
   font-weight: 600;
@@ -253,7 +271,7 @@
 
 @media (max-width: 1023px) {
   .compactPanel .widget :global(.search-bar) { gap: 6px !important; }
-  .compactPanel .widget :global(.search-bar) :global(.field.first) { flex-basis: auto; }
+  .compactPanel .widget :global(.search-button) { margin-inline-start: 0 !important; }
 }
 
 @media (max-width: 700px) {
