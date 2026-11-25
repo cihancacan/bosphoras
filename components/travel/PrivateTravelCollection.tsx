@@ -463,7 +463,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
           <div className="container-editorial relative z-10">
             <div className="mb-6 md:mb-8">
               <h1 className="max-w-5xl text-[2rem] font-bold leading-[1.12] tracking-[-0.035em] text-white drop-shadow-[0_3px_18px_rgba(5,20,30,0.24)] sm:text-[2.5rem] md:text-[3.3rem]">
-                {travelCollectionTitles[locale]}
+                {locale === 'fr' ? <>{'Vous avez trouvé votre voyage. ' }<span className="md:block">Et le bon prix ?</span></> : travelCollectionTitles[locale]}
               </h1>
               <p className="mt-3 max-w-[790px] text-sm leading-6 text-white/90 md:text-base">{collectionIntroductions[locale]}</p>
             </div>
