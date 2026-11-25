@@ -5,7 +5,9 @@ import Script from 'next/script';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, ArrowUpRight, Check, Headphones, LockKeyhole, Search, SlidersHorizontal } from 'lucide-react';
-import { travelHref } from '@/lib/travel/i18n';
+import { bookingSearchCopy } from '@/lib/travel/bookingSearchCopy';
+import { getNuiteeProviderLocale } from '@/lib/travel/nuiteeWhiteLabel';
+import { travelHref, type TravelLocale } from '@/lib/travel/i18n';
 import { readWidgetOccupancy, completeRoomAllocation, type RoomAllocation, type SearchRoom } from '@/lib/travel/nuiteeWidgetOccupancy';
 import s from './HotelReservation.module.css';
 import { presentHotelSuggestions } from './hotelSuggestionPresentation';
@@ -30,9 +32,11 @@ const cities = [
 
 /** Official supplier search and hosted booking. No keys, guest data or payment API. */
 export function HotelReservationSearch({ locale, origin, initialUrl, compact = false }: {
-  locale: 'fr' | 'en'; origin: string; initialUrl: string | null; compact?: boolean;
+  locale: TravelLocale; origin: string; initialUrl: string | null; compact?: boolean;
 }) {
   const fr = locale === 'fr';
+  const copy = bookingSearchCopy[locale];
+  const providerLocale = getNuiteeProviderLocale(locale);
   const widgetId = `booking-search-${useId().replace(/:/g, '')}`;
   const widget = useRef<HTMLDivElement>(null);
   const submitting = useRef(false);
@@ -47,13 +51,13 @@ export function HotelReservationSearch({ locale, origin, initialUrl, compact = f
   const [roomAdults, setRoomAdults] = useState<string[]>([]);
   const [childRooms, setChildRooms] = useState<string[]>([]);
   const allocated = pending ? completeRoomAllocation(pending.plan, roomAdults.map(Number), childRooms.map(value => value === '' ? -1 : Number(value))) : null;
-  const engineUrl = `${origin}/?${new URLSearchParams({ language: locale, currency: 'EUR', clientReference: 'bosphoras_search' })}`;
+  const engineUrl = `${origin}/?${new URLSearchParams({ language: providerLocale, currency: 'EUR', clientReference: 'bosphoras_search' })}`;
 
   const submitSearch = useCallback(async (data: SearchPayload, rooms: SearchRoom[]) => {
     if (submitting.current) return;
     setError('');
     if (!data.place?.place_id || !data.place.description || !data.checkin || !data.checkout) {
-      setError(fr ? 'Choisissez une destination proposée et vos dates.' : 'Choose a suggested destination and your dates.'); return;
+      setError(copy.chooseDates); return;
     }
     submitting.current = true; setBusy(true);
     const hotel = findVerifiedHotelForPlace(data.place.description);
@@ -75,9 +79,9 @@ export function HotelReservationSearch({ locale, origin, initialUrl, compact = f
       const date = (day: string) => new Date(`${day}T12:00:00`).toLocaleDateString(fr ? 'fr-FR' : 'en-GB', { day: 'numeric', month: 'short' });
       setSummary(`${hotel?.name || data.place.description} · ${date(data.checkin)} – ${date(data.checkout)}`);
       window.location.assign(body.url);
-    } catch { setError(fr ? 'La recherche n’a pas abouti. Réessayez ou ouvrez le moteur en plein écran.' : 'Search could not complete. Try again or open the full-screen booking engine.'); }
+    } catch { setError(copy.searchFailed); }
     finally { window.clearTimeout(timeout); submitting.current = false; setBusy(false); }
-  }, [fr, locale, origin]);
+  }, [fr, locale, origin, copy]);
 
   const search = useCallback((data: SearchPayload) => {
     if (submitting.current) return;
@@ -89,8 +93,8 @@ export function HotelReservationSearch({ locale, origin, initialUrl, compact = f
         setRoomAdults(Array(selection.roomCount).fill(''));
         setChildRooms(Array(selection.children.length).fill(''));
       } else void submitSearch(data, selection.rooms);
-    } catch { setError(fr ? 'Veuillez vérifier les voyageurs et les chambres.' : 'Please check your guests and rooms.'); }
-  }, [fr, submitSearch]);
+    } catch { setError(copy.checkGuests); }
+  }, [fr, submitSearch, copy]);
 
   const resetSearch = useCallback(() => {
     if (initialUrl) { window.location.assign(travelHref(locale, 'search')); return; }
@@ -110,13 +114,13 @@ export function HotelReservationSearch({ locale, origin, initialUrl, compact = f
   useEffect(() => {
     if (bookingUrl || !sdkReady || !widget.current) return;
     const sdk = (window as Window & { LiteAPI?: SearchSDK }).LiteAPI;
-    if (!sdk?.SearchBar) { setError(fr ? 'Le moteur de recherche n’a pas pu être chargé.' : 'The search engine could not load.'); return; }
+    if (!sdk?.SearchBar) { setError(copy.engineFailed); return; }
     widget.current.replaceChildren();
     try {
-      sdk.init({ domain: new URL(origin).hostname, deepLinkParams: new URLSearchParams({ language: locale, currency: 'EUR', clientReference: 'bosphoras_search' }).toString(), labelsOverride: { searchAction: fr ? 'Rechercher' : 'Search', placePlaceholderText: fr ? 'Ville, région ou hôtel' : 'City, region or hotel' } });
+      sdk.init({ domain: new URL(origin).hostname, deepLinkParams: new URLSearchParams({ language: providerLocale, currency: 'EUR', clientReference: 'bosphoras_search' }).toString(), labelsOverride: { searchAction: copy.hotelSearch, placePlaceholderText: copy.placePlaceholder } });
       sdk.SearchBar.create({ selector: `#${widgetId}`, primaryColor: '#172b2c', onSearchClick: search });
       setWidgetReady(true);
-    } catch { setError(fr ? 'Le moteur de recherche n’a pas pu être chargé.' : 'The search engine could not load.'); }
+    } catch { setError(copy.engineFailed); }
     const element = widget.current;
     const stopPresentingSuggestions = compact ? presentHotelSuggestions(element, {
       suggestion: s.suggestion, suggestionTitle: s.suggestionTitle, suggestionAddress: s.suggestionAddress,
@@ -125,7 +129,7 @@ export function HotelReservationSearch({ locale, origin, initialUrl, compact = f
       stopPresentingSuggestions?.();
       element.replaceChildren();
     };
-  }, [sdkReady, fr, locale, origin, search, widgetId, bookingUrl, compact]);
+  }, [sdkReady, fr, locale, origin, search, widgetId, bookingUrl, compact, copy, providerLocale]);
 
   return <>
     <Script src="https://components.liteapi.travel/v1.0/sdk.umd.js" strategy="afterInteractive" onReady={() => { setSdkUnavailable(false); setSdkReady(true); }} onError={() => setSdkUnavailable(true)} />
