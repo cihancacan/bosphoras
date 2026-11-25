@@ -75,7 +75,7 @@ test('requires exact room allocation and valid guest counts and ages', () => {
 });
 
 test('uses listing-only protocol, exact rooms and whitelisted nonpersonal parameters', () => {
-  for (const locale of ['fr', 'en']) {
+  for (const locale of ['fr','en','ru','ar','de','tr','es','zh','pt','it']) {
     const rooms = [{ adults: 2, children: [8] }, { adults: 1, children: [] }];
     const result = handoff({ ...request, rooms, locale, email: 'never@example.invalid', offerId: 'never', xData: 'never' });
     assert.equal(result.status, 'ready');
@@ -89,7 +89,7 @@ test('uses listing-only protocol, exact rooms and whitelisted nonpersonal parame
     assert.equal(url.searchParams.get('rooms'), '2');
     assert.equal(url.searchParams.get('adults'), '3');
     assert.deepEqual(JSON.parse(Buffer.from(url.searchParams.get('occupancies'), 'base64').toString()), rooms);
-    assert.equal(url.searchParams.get('language'), locale);
+    assert.equal(url.searchParams.get('language'), locale === 'zh' ? 'en' : locale);
     assert.equal(url.searchParams.get('currency'), 'EUR');
     assert.equal(url.searchParams.get('clientReference'), connection.clientReference);
     assert.deepEqual([...url.searchParams.keys()].sort(), ['adults', 'checkin', 'checkout', 'clientReference', 'currency', 'language', 'name', 'occupancies', 'placeId', 'rooms']);
