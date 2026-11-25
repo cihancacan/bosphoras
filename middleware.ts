@@ -27,8 +27,12 @@ export function middleware(request: NextRequest) {
  const saved=request.cookies.get(travelLanguageCookie)?.value || request.cookies.get(siteLanguageCookie)?.value;
  const language=preferredTravelLanguage(request.headers.get('accept-language'),saved);
  const destination=request.nextUrl.clone();
- if(language!=='fr')destination.pathname='/'+language+pathname;
- const response=language==='fr'?NextResponse.next():NextResponse.redirect(destination,307);
+ if(pathname==='/travel'&&collectionBookingEnabled){
+  destination.pathname=bookingCollectionPath(language);
+ }else if(language!=='fr'){
+  destination.pathname='/'+language+pathname;
+ }
+ const response=destination.pathname===pathname?NextResponse.next():NextResponse.redirect(destination,307);
  response.headers.set('Cache-Control','private, no-store');
  response.headers.append('Vary','Accept-Language, Cookie');
  return response;
