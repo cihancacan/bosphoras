@@ -37,7 +37,7 @@ function jump(id:string) {
  const target=document.getElementById(id);
  if (target) target.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
 }
-export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,allowedLanguages,bookingSupport=false,serviceNavigation=false}:{
+export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,allowedLanguages,bookingSupport=additionalBookingServicesPaused,serviceNavigation=false}:{
  locale:TravelLocale;activeService:string;onPrivate?:()=>void;
  guideSlug?:string; allowedLanguages?:TravelLocale[]; bookingSupport?:boolean; serviceNavigation?:boolean;
 }){
@@ -152,7 +152,7 @@ export function BosphorasTravelHeader({locale,activeService,onPrivate,guideSlug,
  </>;
 }
 
-export function BosphorasTravelFooter({locale,bookingSupport=false}:{locale:TravelLocale;bookingSupport?:boolean}){
+export function BosphorasTravelFooter({locale,bookingSupport=additionalBookingServicesPaused}:{locale:TravelLocale;bookingSupport?:boolean}){
  const t=labels[locale];
  const info=travelLanguageInfo.find(item=>item.code===locale)!;
  const home=bookingPageHref(locale);
@@ -219,9 +219,9 @@ export function BosphorasTravelFooter({locale,bookingSupport=false}:{locale:Trav
         <a className={linkClass} href="mailto:contact@bosphoras.com">contact@bosphoras.com</a>
         <p className="mt-3 text-xs font-medium text-[#657986]">{t.legal}</p>
       </>}
-      <Link className={linkClass} href={privacy} lang={legalCode}>{t.privacy}{legalIsEnglish?' (EN)':''}</Link>
-      {!bookingSupport&&<Link className={linkClass} href={terms} lang={legalCode}>{t.terms}{legalIsEnglish?' (EN)':''}</Link>}
-      <Link className={linkClass} href={legal} lang={legalCode}>{t.legal}{legalIsEnglish?' (EN)':''}</Link>
+      <Link className={linkClass} href={privacy} lang={legalCode} target="_blank" rel="noopener noreferrer">{t.privacy}{legalIsEnglish?' (EN)':''}</Link>
+      {!bookingSupport&&<Link className={linkClass} href={terms} lang={legalCode} target="_blank" rel="noopener noreferrer">{t.terms}{legalIsEnglish?' (EN)':''}</Link>}
+      <Link className={linkClass} href={legal} lang={legalCode} target="_blank" rel="noopener noreferrer">{t.legal}{legalIsEnglish?' (EN)':''}</Link>
       <Link className={linkClass} href={travelHref(locale,'credits')}>
         {locale==='fr'?'Crédits photos':locale==='ru'?'Авторы фотографий':locale==='ar'?'حقوق الصور':locale==='de'?'Bildnachweise':locale==='tr'?'Fotoğraf kredileri':locale==='es'?'Créditos de fotos':locale==='zh'?'图片来源':locale==='pt'?'Créditos das fotos':locale==='it'?'Crediti fotografici':'Photo credits'}
       </Link>

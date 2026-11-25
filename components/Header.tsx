@@ -32,7 +32,7 @@ const specialLocalizedPaths: Array<Record<Locale, string>> = [
   { fr: '/peninsula-istanbul', en: '/en/peninsula-istanbul', ru: '/ru/peninsula-istanbul', ar: '/ar/peninsula-istanbul' },
   { fr: '/transfert-aeroport-istanbul', en: '/en/istanbul-airport-transfer', ru: '/ru/transfer-aeroport-stambul', ar: '/ar/istanbul-airport-transfer' },
   corporateRelocationPaths,
-  { fr: '/travel/private-collection', en: '/en/travel/private-collection', ru: '/ru/travel/private-collection', ar: '/ar/travel/private-collection' },
+  { fr: bookingCollectionPath('fr'), en: bookingCollectionPath('en'), ru: bookingCollectionPath('ru'), ar: bookingCollectionPath('ar') },
   taxRelocationPaths,
   { fr: '/investissement', en: '/en/investment', ru: '/ru/investment', ar: '/ar/investment' },
   { fr: '/exoneration-fiscale-turquie-revenus-etrangers', en: '/en/turkey-tax-exemption-foreign-income', ru: '/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody', ar: '/ar/turkey-tax-exemption-foreign-income' },

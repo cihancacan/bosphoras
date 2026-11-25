@@ -738,5 +738,55 @@
     "source": "/private-assessment",
     "destination": "/en/private-assessment",
     "permanent": true
+  },
+  {
+    "source": "/travel/private-collection",
+    "destination": "/voyages",
+    "permanent": true
+  },
+  {
+    "source": "/en/travel/private-collection",
+    "destination": "/en/trips",
+    "permanent": true
+  },
+  {
+    "source": "/de/travel/private-collection",
+    "destination": "/de/reisen",
+    "permanent": true
+  },
+  {
+    "source": "/tr/travel/private-collection",
+    "destination": "/tr/seyahat",
+    "permanent": true
+  },
+  {
+    "source": "/es/travel/private-collection",
+    "destination": "/es/viajes",
+    "permanent": true
+  },
+  {
+    "source": "/it/travel/private-collection",
+    "destination": "/it/viaggi",
+    "permanent": true
+  },
+  {
+    "source": "/pt/travel/private-collection",
+    "destination": "/pt/viagens",
+    "permanent": true
+  },
+  {
+    "source": "/ru/travel/private-collection",
+    "destination": "/ru/puteshestviya",
+    "permanent": true
+  },
+  {
+    "source": "/ar/travel/private-collection",
+    "destination": "/ar/rihlat",
+    "permanent": true
+  },
+  {
+    "source": "/zh/travel/private-collection",
+    "destination": "/zh/trips",
+    "permanent": true
   }
 ]

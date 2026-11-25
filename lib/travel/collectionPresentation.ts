@@ -1,4 +1,4 @@
-import { travelHref, type TravelLocale } from './i18n';
+import type { TravelLocale } from './i18n';
 
 export const collectionReleased = process.env.NEXT_PUBLIC_VERCEL_ENV === 'production';
 export const collectionBookingEnabled = process.env.NEXT_PUBLIC_VERCEL_ENV === 'preview' || collectionReleased;
@@ -54,8 +54,21 @@ const destinationAirports: Readonly<Partial<Record<string, string>>> = {
   'siem-reap': 'SAI', 'luang-prabang': 'LPQ', langkawi: 'LGK',
 };
 
+export const bookingCollectionPaths: Record<TravelLocale, string> = {
+  "fr": "/voyages",
+  "en": "/en/trips",
+  "de": "/de/reisen",
+  "tr": "/tr/seyahat",
+  "es": "/es/viajes",
+  "it": "/it/viaggi",
+  "pt": "/pt/viagens",
+  "ru": "/ru/puteshestviya",
+  "ar": "/ar/rihlat",
+  "zh": "/zh/trips"
+};
+
 export function bookingCollectionPath(locale: TravelLocale): string {
-  return locale === 'fr' && collectionBookingEnabled ? '/voyages' : travelHref(locale, 'private-collection');
+  return bookingCollectionPaths[locale];
 }
 
 export function destinationFlightHref(locale: TravelLocale, destinationSlug: string): string {
