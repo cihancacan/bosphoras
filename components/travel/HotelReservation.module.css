@@ -296,9 +296,10 @@
   font-weight: 500;
 }
 
-.compactPanel .widget :global(.search-button) :global(.search-text) {
+.compactPanel .widget :global(.search-bar) :global(.search-button),
+.compactPanel .widget :global(.search-bar) :global(.search-button) * {
   color: #fff !important;
-  -webkit-text-fill-color: #fff;
+  -webkit-text-fill-color: #fff !important;
 }
 
 .compactPanel .widget :global(.search-button):hover { background: #284749 !important; }
