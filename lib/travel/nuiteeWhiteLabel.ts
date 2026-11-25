@@ -6,7 +6,7 @@
 export const NUITEE_WHITE_LABEL_ORIGIN = 'https://bosphoras.nuitee.link';
 
 export function getNuiteeProviderLocale(locale: string): string {
-  return ['fr','en','ru','ar','de','tr','es','pt','it'].includes(locale) ? locale : 'en';
+  return ['fr','en','ru','ar','de','tr','es','pt','it','zh'].includes(locale) ? locale : 'en';
 }
 
 export function getNuiteeWhiteLabelSearchHref(locale: string): string {

@@ -155,7 +155,7 @@ test('supplier search entry preserves supported language and attribution', () =>
     const url = new URL(getNuiteeWhiteLabelSearchHref(code));
     assert.equal(url.origin, NUITEE_WHITE_LABEL_ORIGIN);
     assert.equal(url.pathname, '/');
-    assert.equal(url.searchParams.get('language'), code === 'zh' ? 'en' : code);
+    assert.equal(url.searchParams.get('language'), code);
     assert.equal(url.searchParams.get('currency'),'EUR');
     assert.equal(url.searchParams.get('clientReference'),'bosphoras_worldwide');
   }

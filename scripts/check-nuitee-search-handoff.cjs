@@ -89,7 +89,7 @@ test('uses listing-only protocol, exact rooms and whitelisted nonpersonal parame
     assert.equal(url.searchParams.get('rooms'), '2');
     assert.equal(url.searchParams.get('adults'), '3');
     assert.deepEqual(JSON.parse(Buffer.from(url.searchParams.get('occupancies'), 'base64').toString()), rooms);
-    assert.equal(url.searchParams.get('language'), locale === 'zh' ? 'en' : locale);
+    assert.equal(url.searchParams.get('language'), locale);
     assert.equal(url.searchParams.get('currency'), 'EUR');
     assert.equal(url.searchParams.get('clientReference'), connection.clientReference);
     assert.deepEqual([...url.searchParams.keys()].sort(), ['adults', 'checkin', 'checkout', 'clientReference', 'currency', 'language', 'name', 'occupancies', 'placeId', 'rooms']);
