@@ -342,7 +342,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
   },[isTransfer,kiwitaxiPath]);
   const showKiwitaxi=isTransfer&&kiwitaxiReady;
   const [hotelSearchReady,setHotelSearchReady]=useState(false);
-  const useCompactHotelSearch=isHotel&&(locale==='fr'||locale==='en');
+  const useCompactHotelSearch=isHotel;
   useEffect(()=>{
     if(!useCompactHotelSearch) return;
     const controller=new AbortController();
@@ -562,7 +562,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
                       economy:tr.cabinOptions.economy,business:tr.cabinOptions.business,first:tr.cabinOptions.first}}
                     onSearch={()=>trackAction('nuitee_flights')}/>
                 ):showHotelSearch?(
-                  <HotelReservationSearch compact locale={locale==='fr'?'fr':'en'} origin={NUITEE_WHITE_LABEL_ORIGIN} initialUrl={null}/>
+                  <HotelReservationSearch compact locale={locale} origin={NUITEE_WHITE_LABEL_ORIGIN} initialUrl={null}/>
                 ):showKiwitaxi?(
                   <>
                     <form action="/api/travel/kiwitaxi-widget" method="get" onSubmit={()=>trackAction('kiwitaxi_transfer')}

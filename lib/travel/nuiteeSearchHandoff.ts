@@ -1,3 +1,5 @@
+import { isTravelLocale, type TravelLocale } from './i18n';
+import { getNuiteeProviderLocale } from './nuiteeWhiteLabel';
 import { hotelProviders, supplierResponsibilities, type HotelProvider } from './hotelPartners';
 
 /** Search context only: never accept names, emails, payment data or checkout tokens. */
@@ -10,7 +12,7 @@ export type NuiteeSearchRequest = {
   displayName?: string;
   checkin: string;
   checkout: string;
-  locale: 'fr' | 'en';
+  locale: TravelLocale;
   /** Explicit occupancy per room; never guess how a total party is distributed. */
   rooms: readonly { adults: number; children: readonly number[] }[];
 };
@@ -100,7 +102,7 @@ export function getNuiteeSearchHandoff(
         !Array.isArray(room.children) || room.children.length > 6 ||
         room.children.some((age: number) => !Number.isInteger(age) || age < 0 || age > 17)) ||
       request.rooms.reduce((total, room) => total + room.adults, 0) > 12) return { status: 'blocked', reason: 'occupancy' };
-  if (request.locale !== 'fr' && request.locale !== 'en') return { status: 'blocked', reason: 'locale' };
+  if (!isTravelLocale(request.locale)) return { status: 'blocked', reason: 'locale' };
 
   // Only the documented listing route and parameters. No arbitrary query passthrough.
   const url = new URL(hotel ? '/hotels/' + hotel.hotelId : '/hotels', origin);
@@ -115,7 +117,7 @@ export function getNuiteeSearchHandoff(
   url.searchParams.set('rooms', String(request.rooms.length));
   url.searchParams.set('adults', String(request.rooms.reduce((total, room) => total + room.adults, 0)));
   url.searchParams.set('occupancies', btoa(JSON.stringify(request.rooms.map(room => ({ adults: room.adults, children: [...room.children] })))));
-  url.searchParams.set('language', request.locale);
+  url.searchParams.set('language', getNuiteeProviderLocale(request.locale));
   url.searchParams.set('currency', 'EUR');
   url.searchParams.set('clientReference', connection.clientReference);
   return { status: 'ready', url: url.toString(), supportUrl: connection.supportUrl, termsUrl: connection.termsUrl, sellerLegalName: connection.sellerLegalName };

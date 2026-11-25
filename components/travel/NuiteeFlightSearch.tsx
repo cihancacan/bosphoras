@@ -4,6 +4,8 @@ import { useEffect, useId, useState, type FormEvent, type KeyboardEvent } from '
 import { ArrowLeftRight, PlaneLanding, PlaneTakeoff, Search } from 'lucide-react';
 import { getNuiteeFlightSearchHref, type FlightCabin, type FlightLeg, type FlightTrip, type SearchAirport } from '@/lib/travel/nuiteeFlightSearch';
 
+import { bookingSearchCopy } from '@/lib/travel/bookingSearchCopy';
+import { isTravelLocale } from '@/lib/travel/i18n';
 import { FlightSearchDateField } from './FlightSearchDateField';
 import { FlightSearchCabin, FlightSearchTravelers, type FlightPassengers } from './FlightSearchTravelers';
 
@@ -114,6 +116,7 @@ export function NuiteeFlightSearch({ locale, trip, initialDestination, labels, f
   onSearch: () => void;
 }) {
   const french = locale === 'fr';
+  const copy = bookingSearchCopy[isTravelLocale(locale) ? locale : 'en'];
   const [airports, setAirports] = useState<Airport[]>([paris]);
   const [legs, setLegs] = useState<LegInput[]>([{ ...emptyLeg, to: initialDestination }, emptyLeg]);
   const [returnDate, setReturnDate] = useState('');
@@ -150,7 +153,7 @@ export function NuiteeFlightSearch({ locale, trip, initialDestination, labels, f
     event.preventDefault();
     const childrenAges = passengers.children.filter((age): age is number => age !== null);
     if (childrenAges.length !== passengers.children.length) {
-      setError(french ? 'Indiquez l’âge de chaque enfant dans le menu Passagers.' : 'Enter each child’s age in the Passengers menu.');
+      setError(copy.childAgeRequired);
       return;
     }
     const resolved: FlightLeg[] = [];
@@ -158,7 +161,7 @@ export function NuiteeFlightSearch({ locale, trip, initialDestination, labels, f
       const from = findAirport(leg.from, airports);
       const to = findAirport(leg.to, airports);
       if (!from || !to) {
-        setError(french ? 'Choisissez un aéroport dans les suggestions ou saisissez son code IATA, par exemple CDG.' : 'Choose an airport from the suggestions or enter its IATA code, for example CDG.');
+        setError(copy.airportRequired);
         return;
       }
       resolved.push({ from, to, date: leg.date });
@@ -166,7 +169,7 @@ export function NuiteeFlightSearch({ locale, trip, initialDestination, labels, f
     if (trip === 'round') resolved.push({ from: resolved[0].to, to: resolved[0].from, date: returnDate });
     const href = getNuiteeFlightSearchHref({ locale, trip, legs: resolved, adults: passengers.adults, childrenAges, infants: passengers.infants, cabin });
     if (!href || resolved[0].date < today) {
-      setError(french ? 'Vérifiez que les aéroports sont différents et que les dates sont dans l’ordre.' : 'Check that the airports differ and that the dates are in order.');
+      setError(copy.invalidFlight);
       return;
     }
 
@@ -175,10 +178,10 @@ export function NuiteeFlightSearch({ locale, trip, initialDestination, labels, f
   }
 
   const displayedLegs = trip === 'multi' ? legs : legs.slice(0, 1);
-  const airportProps = { airports, fieldClass, labelClass, placeholder: french ? 'Ville ou code IATA' : 'City or IATA code' };
+  const airportProps = { airports, fieldClass, labelClass, placeholder: copy.airportPlaceholder };
 
   return (
-    <form onSubmit={search} className="space-y-4" aria-label={french ? 'Recherche de vols' : 'Flight search'}>
+    <form onSubmit={search} className="space-y-4" aria-label={copy.flightSearch}>
       {displayedLegs.map((leg, index) => (
         <fieldset key={index} className="min-w-0 rounded-xl border border-[#dde6eb] bg-[#f8fafb] p-3 sm:p-4">
           {trip === 'multi'&&<legend className="px-1 text-sm font-semibold text-[#375264]">{labels.segment} {index + 1}</legend>}
@@ -215,7 +218,7 @@ export function NuiteeFlightSearch({ locale, trip, initialDestination, labels, f
           rtl={locale === 'ar'} options={{ all: french ? 'Toutes les classes' : 'All cabins',
             Economy: labels.economy, Business: labels.business, First: labels.first }}/>
         <button type="submit" className="inline-flex min-h-[58px] items-center justify-center gap-2 rounded-xl bg-[#0071ad] px-6 py-3 text-sm font-semibold text-white hover:bg-[#005b90]">
-          <Search size={18} aria-hidden="true"/>{french ? 'Rechercher des vols' : 'Search flights'}
+          <Search size={18} aria-hidden="true"/>{copy.flightSearch}
         </button>
       </div>
       {error&&<p role="alert" className="text-sm text-[#a23121]">{error}</p>}
