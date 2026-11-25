@@ -5,10 +5,13 @@
  */
 export const NUITEE_WHITE_LABEL_ORIGIN = 'https://bosphoras.nuitee.link';
 
+export function getNuiteeProviderLocale(locale: string): string {
+  return ['fr','en','ru','ar','de','tr','es','pt','it'].includes(locale) ? locale : 'en';
+}
+
 export function getNuiteeWhiteLabelSearchHref(locale: string): string {
   const url = new URL(NUITEE_WHITE_LABEL_ORIGIN);
-  const nuiteeLocales=['fr','en','ru','ar','de','tr','es','pt','it'];
-  url.searchParams.set('language', nuiteeLocales.includes(locale) ? locale : 'en');
+  url.searchParams.set('language', getNuiteeProviderLocale(locale));
   url.searchParams.set('currency', 'EUR');
   url.searchParams.set('clientReference', 'bosphoras_worldwide');
   return url.toString();
