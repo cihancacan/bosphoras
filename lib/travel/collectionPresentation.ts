@@ -7,16 +7,29 @@ export const collectionBookingEnabled = process.env.NEXT_PUBLIC_VERCEL_ENV === '
 export const additionalBookingServicesPaused = collectionBookingEnabled;
 
 export const travelCollectionTitles: Record<TravelLocale, string> = {
-  fr: 'Voyages d’exception',
-  en: 'Exceptional journeys',
-  de: 'Außergewöhnliche Reisen',
-  tr: 'Benzersiz seyahatler',
-  es: 'Viajes de excepción',
-  it: 'Viaggi d’eccezione',
-  pt: 'Viagens excepcionais',
-  ru: 'Особенные путешествия',
-  ar: 'رحلات استثنائية',
-  zh: '非凡旅程',
+  fr: "Vous avez trouvé votre voyage. Et le bon prix ?",
+  en: "Found your trip. Found the right price?",
+  de: "Ihre Reise steht fest. Stimmt auch der Preis?",
+  tr: "Seyahatinizi buldunuz. Peki ya doğru fiyatı?",
+  es: "Ya encontraste tu viaje. ¿Y el mejor precio?",
+  it: "Hai trovato il tuo viaggio. E il prezzo giusto?",
+  pt: "Já encontrou sua viagem. E o melhor preço?",
+  ru: "Поездку уже выбрали. А выгодную цену?",
+  ar: "وجدت رحلتك. فهل وجدت السعر الأنسب؟",
+  zh: "行程选好了，价格也合适吗？",
+};
+
+export const collectionIntroductions: Record<TravelLocale, string> = {
+  fr: "Retrouvez le vol ou l’hôtel que vous avez repéré. Pour les mêmes dates, voyez si vous pouvez réserver moins cher avec Bosphoras.",
+  en: "Find the flight or hotel you have your eye on. Check the same dates to see if you could book for less with Bosphoras.",
+  de: "Suchen Sie den Flug oder das Hotel, das Sie bereits gefunden haben. Prüfen Sie, ob Sie für dieselben Daten bei Bosphoras günstiger buchen können.",
+  tr: "Beğendiğiniz uçuşu veya oteli yeniden arayın. Aynı tarihler için Bosphoras ile daha uygun fiyata rezervasyon yapıp yapamayacağınızı görün.",
+  es: "Busca el vuelo o el hotel que te interesa. Comprueba si puedes reservar por menos con Bosphoras para las mismas fechas.",
+  it: "Cerca il volo o l’hotel che hai scelto. Per le stesse date, scopri se puoi prenotare a meno con Bosphoras.",
+  pt: "Busque o voo ou o hotel que você escolheu. Para as mesmas datas, veja se pode reservar por menos com a Bosphoras.",
+  ru: "Найдите выбранный рейс или отель. Проверьте, можно ли забронировать на те же даты дешевле с Bosphoras.",
+  ar: "ابحث عن رحلة الطيران أو الفندق الذي اخترته. تحقّق مما إذا كان بإمكانك الحجز بسعر أقل مع بوسفوراس للتواريخ نفسها.",
+  zh: "搜索您看中的航班或酒店，选择相同日期，看看通过 Bosphoras 预订是否更划算。",
 };
 
 export const hotelBookingLabels: Record<TravelLocale, string> = {
