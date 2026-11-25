@@ -10,7 +10,6 @@ import { TravelDiscoverySections, type DiscoveryContext } from '@/components/tra
 import { BosphorasTravelHeader, BosphorasTravelFooter } from '@/components/travel/BosphorasTravelChrome';
 import { extraBookingCopy, type ExtraBookingLocale } from '@/components/travel/travelBookingExtraCopy';
 import { BookingGuide } from './BookingGuide';
-import { collectionDescriptions } from '@/lib/travel/collectionMetadata';
 import { NuiteeFlightSearch } from '@/components/travel/NuiteeFlightSearch';
 import { travelHref, type TravelLocale } from '@/lib/travel/i18n';
 import type { Locale } from '@/lib/i18n';
@@ -19,7 +18,7 @@ import { getSlugForPage } from '@/data/pages/types';
 import { getNuiteeWhiteLabelSearchHref, getNuiteeExperiencesHref, NUITEE_WHITE_LABEL_ORIGIN } from '@/lib/travel/nuiteeWhiteLabel';
 import { withAssessmentContext } from '@/lib/assessmentContext';
 import { getApprovedPartnerUrl, getPrivateTravelPartnerName, type PrivateTravelPartnerService } from '@/lib/travel/privateTravelSupplierGateways';
-import { additionalBookingServicesPaused, bookingCollectionPath, collectionBookingEnabled, hotelBookingLabels, travelCollectionTitles } from '@/lib/travel/collectionPresentation';
+import { additionalBookingServicesPaused, bookingCollectionPath, collectionBookingEnabled, collectionIntroductions, hotelBookingLabels, travelCollectionTitles } from '@/lib/travel/collectionPresentation';
 import presentation from './TravelCollectionPresentation.module.css';
 
 type Service = 'flights' | 'hotels' | 'villas' | 'chalets' | 'cars' | 'transfers' | 'jets' | 'helicopters' | 'yachts' | 'activities';
@@ -466,7 +465,7 @@ export function PrivateTravelCollection({ locale }: { locale: TravelLocale }) {
               <h1 className="max-w-5xl text-[2rem] font-bold leading-[1.12] tracking-[-0.035em] text-white drop-shadow-[0_3px_18px_rgba(5,20,30,0.24)] sm:text-[2.5rem] md:text-[3.3rem]">
                 {travelCollectionTitles[locale]}
               </h1>
-              <p className="mt-3 max-w-[790px] text-sm leading-6 text-white/90 md:text-base">{additionalBookingServicesPaused ? collectionDescriptions[locale] : copy.subtitle}</p>
+              <p className="mt-3 max-w-[790px] text-sm leading-6 text-white/90 md:text-base">{collectionIntroductions[locale]}</p>
             </div>
 
             <div className={'rounded-2xl border border-[#e2e9ee] bg-white shadow-[0_18px_55px_rgba(20,49,70,0.08)] '+
