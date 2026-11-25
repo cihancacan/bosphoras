@@ -1,25 +1,32 @@
 import type { Metadata } from 'next';
 import { siteUrl } from '@/lib/routes';
-import { bookingCollectionPath, collectionReleased, travelCollectionTitles } from './collectionPresentation';
+import { bookingCollectionPath, collectionReleased } from './collectionPresentation';
 import { travelLanguageInfo, type TravelLocale } from './i18n';
 
-const searchTitles: Record<TravelLocale, string> = {
-  fr: 'Vols et hôtels', en: 'Flights and hotels', de: 'Flüge und Hotels', tr: 'Uçuşlar ve oteller',
-  es: 'Vuelos y hoteles', it: 'Voli e hotel', pt: 'Voos e hotéis',
-  ru: 'Авиабилеты и отели', ar: 'الرحلات الجوية والفنادق', zh: '机票与酒店',
+export const collectionSearchTitles: Record<TravelLocale, string> = {
+  fr: "Vols et hôtels – Comparez les prix",
+  en: "Flights and hotels – Compare prices",
+  de: "Flüge und Hotels – Preise vergleichen",
+  tr: "Uçuşlar ve oteller – Fiyatları karşılaştırın",
+  es: "Vuelos y hoteles – Compara precios",
+  it: "Voli e hotel – Confronta i prezzi",
+  pt: "Voos e hotéis – Compare preços",
+  ru: "Авиабилеты и отели – Сравните цены",
+  ar: "رحلات الطيران والفنادق – قارن الأسعار",
+  zh: "机票与酒店 – 比较价格",
 };
 
 export const collectionDescriptions: Record<TravelLocale, string> = {
-  fr: 'Comparez les vols et les hôtels avec BOSPHORAS. Choisissez vos dates, consultez les tarifs et explorez nos guides pour préparer votre prochain voyage.',
-  en: 'Compare flights and hotels with BOSPHORAS. Pick your dates, check prices and explore our destination guides to plan your next journey.',
-  de: 'Vergleichen Sie Flüge und Hotels mit BOSPHORAS. Wählen Sie Ihre Reisedaten, prüfen Sie Preise und entdecken Sie unsere Reiseführer.',
-  tr: 'BOSPHORAS ile uçuşları ve otelleri karşılaştırın. Tarihlerinizi seçin, fiyatları inceleyin ve seyahat rehberlerimizi keşfedin.',
-  es: 'Compara vuelos y hoteles con BOSPHORAS. Elige tus fechas, consulta los precios y explora nuestras guías de destino para tu próximo viaje.',
-  it: 'Confronta voli e hotel con BOSPHORAS. Scegli le date, consulta i prezzi e scopri le nostre guide per organizzare il tuo prossimo viaggio.',
-  pt: 'Compare voos e hotéis com a BOSPHORAS. Escolha as datas, confira os preços e explore nossos guias de destinos para planejar sua próxima viagem.',
-  ru: 'Сравните авиабилеты и отели с BOSPHORAS. Выберите даты, проверьте цены и изучите путеводители, чтобы спланировать следующую поездку.',
-  ar: 'قارن الرحلات الجوية والفنادق مع بوسفوراس. اختر التواريخ واطّلع على الأسعار واستكشف أدلة الوجهات للتخطيط لرحلتك المقبلة.',
-  zh: '通过 BOSPHORAS 比较机票与酒店。选择出行日期、查看价格，并浏览目的地指南，为下一次旅行做好准备。',
+  fr: "Avant de réserver un vol ou un hôtel, comparez le prix que vous avez trouvé avec le tarif Bosphoras pour les mêmes dates. À vous de choisir la meilleure offre.",
+  en: "Before booking a flight or hotel, compare the price you found with Bosphoras for the same dates. Check the total and conditions to choose the best offer.",
+  de: "Vergleichen Sie vor der Flug- oder Hotelbuchung Ihren gefundenen Preis mit Bosphoras für dieselben Daten. Prüfen Sie Gesamtpreis und Konditionen.",
+  tr: "Uçuş veya otel rezervasyonundan önce bulduğunuz fiyatı aynı tarihler için Bosphoras ile karşılaştırın. Toplam fiyatı ve koşulları inceleyip seçiminizi yapın.",
+  es: "Antes de reservar un vuelo o un hotel, compara el precio que encontraste con Bosphoras para las mismas fechas. Revisa el total y las condiciones.",
+  it: "Prima di prenotare un volo o un hotel, confronta il prezzo che hai trovato con Bosphoras per le stesse date. Verifica il totale e le condizioni.",
+  pt: "Antes de reservar um voo ou hotel, compare o preço que encontrou com a Bosphoras para as mesmas datas. Confira o valor total e as condições.",
+  ru: "Перед бронированием рейса или отеля сравните найденную цену с Bosphoras на те же даты. Проверьте итоговую стоимость и условия и выберите предложение.",
+  ar: "قبل حجز رحلة طيران أو فندق، قارن السعر الذي وجدته بسعر بوسفوراس للتواريخ نفسها. راجع السعر الإجمالي والشروط واختر العرض الأنسب لك.",
+  zh: "预订机票或酒店前，将您找到的价格与 Bosphoras 相同日期的报价进行比较。查看总价及预订条件，选择适合您的优惠。",
 };
 
 export function collectionLanguageAlternates() {
@@ -29,7 +36,7 @@ export function collectionLanguageAlternates() {
 
 export function collectionMetadata(locale: TravelLocale): Metadata {
   const url = siteUrl + bookingCollectionPath(locale);
-  const title = searchTitles[locale] + ' | ' + travelCollectionTitles[locale] + ' | BOSPHORAS';
+  const title = collectionSearchTitles[locale] + ' | Bosphoras';
   const description = collectionDescriptions[locale];
   const image = siteUrl + '/images/travel/saint-tropez-premium/destination/saint-tropez-pampelonne-bay.webp';
   return {
