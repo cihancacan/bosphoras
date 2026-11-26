@@ -335,6 +335,7 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
     <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl sm:text-5xl">{fr
       ? 'Quatre styles, quatre raisons de choisir.'
       : 'Four distinctive reasons to stay.'}</h2>
+    <div className="mt-5"><DestinationFlightLink locale={locale} slug={guide.slug} name={guide.name} mode="prices"/></div>
     <div className="mt-8 grid gap-5 md:grid-cols-2">
       {guide.hotels.map((hotel)=><article key={hotel.name} className="flex flex-col border border-[#e1e5e5] bg-white p-7 sm:p-9">
         <p className="text-xs uppercase tracking-[.14em] text-[#193344]">
@@ -517,7 +518,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         <a href="#conseils" className="shrink-0 hover:text-[#193344]">{fr?'Les conseils':'Advice'}</a>
       </div>
     </nav>
-    <DestinationFlightLink locale={locale} slug={city.slug} name={city.name} afterHero/>
+    <DestinationFlightLink locale={locale} slug={city.slug} name={city.name} afterHero mode={hotelPage?'prices':'both'}/>
     {earlyPreviewPhotos.length > 0 && <section aria-label={fr?'Images de la destination':'Destination photographs'} className="mx-auto max-w-7xl px-5 pt-8 sm:pt-12">
       <div className={earlyPreviewPhotos.length > 1 ? 'grid gap-3 sm:grid-cols-2 lg:grid-cols-3' : 'grid gap-3'}>
         {earlyPreviewPhotos.map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}
@@ -531,6 +532,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl sm:text-5xl">{fr
         ?city.slug==='porto-cervo'?'Une côte mythique, cinq façons de séjourner.':city.slug==='saint-barthelemy'?'Une île, cinq atmosphères à découvrir.':city.slug==='los-cabos'?'Entre désert et océan, cinq paysages à choisir.':city.slug==='maldives'?'Un archipel, plusieurs façons de vivre le luxe.':'Une ville, plusieurs façons de séjourner.'
         :city.slug==='porto-cervo'?'One legendary coast, five ways to stay.':city.slug==='saint-barthelemy'?'One island, five distinct atmospheres.':city.slug==='los-cabos'?'Five distinctive landscapes between desert and sea.':city.slug==='maldives'?'An archipelago, many ways to experience luxury.':'One destination, very different places to stay.'}</h2>
+      <div className="mt-5"><DestinationFlightLink locale={locale} slug={city.slug} name={city.name} mode="find"/></div>
       <div className="mt-8 grid gap-4 md:grid-cols-3">
         {city.areas.map((area,i)=><article key={area.name} className="flex flex-col border border-[#e1e5e5] bg-white p-7">
           

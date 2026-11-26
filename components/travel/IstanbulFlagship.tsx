@@ -60,7 +60,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
           <p className="text-[#193344] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? 'Comprendre Istanbul' : 'Read the city'}</p>
           <h2 className="font-sans font-normal text-4xl sm:text-5xl">{fr ? 'Où dormir à Istanbul ? Les cinq ambiances à comparer.' : 'Where to stay in Istanbul: five different moods.'}</h2>
 
-          {collectionBookingEnabled&&<div className="mt-4"><DestinationFlightLink locale={locale} slug="istanbul" name="Istanbul"/></div>}
+          {collectionBookingEnabled&&<div className="mt-4"><DestinationFlightLink locale={locale} slug="istanbul" name="Istanbul" mode="find"/></div>}
         </div>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
           {istanbulDistricts.map((d)=><article key={d.id} className="bg-[#ffffff] p-7 border border-[#e1e5e5] flex flex-col gap-5">
@@ -105,6 +105,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
         </div>
         <p className="max-w-sm text-sm leading-7 text-[#637077]">{fr ? 'Neuf adresses choisies pour leurs expériences distinctes. Les chambres et les conditions se consultent directement via Nuitée.' : 'Nine addresses chosen for their distinct experiences. Rooms and conditions can be checked directly through Nuitée.'}</p>
       </div>
+      <div className="mb-6"><DestinationFlightLink locale={locale} slug="istanbul" name="Istanbul" mode="prices"/></div>
       <div className="space-y-4">
         {istanbulHotels.map((hotel,i)=><EditorialHotelCard key={hotel.id} hotel={hotel} index={i} locale={locale}/>)}
       </div>

@@ -655,7 +655,7 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
            destinationSlug={destination?.slug}
            availableCategories={route.kind==='destination'?destination?.categories:undefined} sourceSlug={route.slug}/>}
          {route.kind !== 'home' && <BreadCrumb locale={locale} items={travelCrumbs(locale, route)}/>}
-         {destination&&collectionBookingEnabled&&<div className="mb-6"><DestinationFlightLink locale={locale} slug={destination.slug} name={nativeTravelName(destination.slug,locale,destination.name)}/></div>}
+         {destination&&collectionBookingEnabled&&<div className="mb-6"><DestinationFlightLink locale={locale} slug={destination.slug} name={nativeTravelName(destination.slug,locale,destination.name)} mode={route.kind==='destination'?'both':category==='hotels'?'prices':'flights'}/></div>}
         {route.kind === 'home' && <>
           <section className="mb-16">
             <h2 className="font-serif text-3xl sm:text-4xl">{t.collections}</h2>
