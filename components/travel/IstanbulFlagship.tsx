@@ -1,5 +1,6 @@
 import { collectionBookingEnabled } from '@/lib/travel/collectionPresentation';
 import { DestinationFlightLink } from './DestinationFlightLink';
+import { HotelComparisonTable } from './HotelComparisonTable';
 import Link from 'next/link';
 import Image from 'next/image';
 import { EditorialProse } from '@/components/travel/EditorialProse';
@@ -106,6 +107,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
         <p className="max-w-sm text-sm leading-7 text-[#637077]">{fr ? 'Neuf adresses choisies pour leurs expériences distinctes. Les chambres et les conditions se consultent directement via Nuitée.' : 'Nine addresses chosen for their distinct experiences. Rooms and conditions can be checked directly through Nuitée.'}</p>
       </div>
       <div className="mb-6"><DestinationFlightLink locale={locale} slug="istanbul" name="Istanbul" mode="prices"/></div>
+      <div className="mb-8"><HotelComparisonTable locale={locale} rows={istanbulHotels.map(hotel=>({name:hotel.name,area:hotel.zone,best:fr?hotel.frBest:hotel.enBest}))}/></div>
       <div className="space-y-4">
         {istanbulHotels.map((hotel,i)=><EditorialHotelCard key={hotel.id} hotel={hotel} index={i} locale={locale}/>)}
       </div>

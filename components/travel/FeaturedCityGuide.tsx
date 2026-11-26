@@ -1,4 +1,5 @@
 import { DestinationFlightLink } from './DestinationFlightLink';
+import { HotelComparisonTable } from './HotelComparisonTable';
 import {jaipurDraftFaq} from '@/data/travel/jaipurDraftFaq';
 import {galleDraftFaq} from '@/data/travel/galleDraftFaq';
 import {tangalleDraftFaq} from '@/data/travel/tangalleDraftFaq';
@@ -336,6 +337,7 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
       ? 'Quatre styles, quatre raisons de choisir.'
       : 'Four distinctive reasons to stay.'}</h2>
     <div className="mt-5"><DestinationFlightLink locale={locale} slug={guide.slug} name={guide.name} mode="prices"/></div>
+    <HotelComparisonTable locale={locale} rows={guide.hotels.map(hotel=>({name:hotel.name,area:hotel.area,best:fr?hotelEditorialByCity[guide.slug]?.[hotel.name]?.frBest:hotelEditorialByCity[guide.slug]?.[hotel.name]?.enBest}))}/>
     <div className="mt-8 grid gap-5 md:grid-cols-2">
       {guide.hotels.map((hotel)=><article key={hotel.name} className="flex flex-col border border-[#e1e5e5] bg-white p-7 sm:p-9">
         <p className="text-xs uppercase tracking-[.14em] text-[#193344]">

@@ -18,6 +18,8 @@ for(const d of travelDestinations){
   assert.ok(isTravelGuideIndexable(d.slug,variant,locale),id);
   const m=travelPageMetadata(locale,[variant,d.slug]);
   assert.equal(m.robots.index,true,id);assert.ok(known.has(m.alternates.canonical),id);
+  assert.ok(typeof m.title==='string'&&m.title.length>0&&typeof m.description==='string'&&m.description.length>0&&m.description.length<=160,id+' complete metadata');
+  assert.ok(m.openGraph&&m.twitter,id+' social metadata');
   assert.equal(m.alternates.canonical,root+(locale==='fr'?'':'/'+locale)+'/travel/'+variant+'/'+d.slug,id);
   assert.deepEqual(Object.keys(m.alternates.languages).sort(),['ar','en','fr','ru'],id);
   for(const [lang,url] of Object.entries(m.alternates.languages))assert.equal(url,root+(lang==='fr'?'':'/'+lang)+'/travel/'+variant+'/'+d.slug,id);

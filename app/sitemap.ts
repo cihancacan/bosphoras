@@ -224,7 +224,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   // Same approval gate as page robots and reciprocal HTML hreflang. No drafts in sitemap.
-  for(const url of indexedTravelUrls(siteUrl)) addEntry({url,changeFrequency:'monthly',priority:0.8});
+  for(const url of indexedTravelUrls(siteUrl)) {
+    // The neutral French /travel entrance redirects to the booking engine in production.
+    if(collectionReleased&&url===siteUrl+'/travel') continue;
+    const updatedGuide=/\/travel\/(destinations|hotels)\/[^/]+$/.test(new URL(url).pathname);
+    addEntry({url,changeFrequency:'monthly',priority:0.8,...(updatedGuide?{lastModified:new Date('2026-11-27')}: {})});
+  }
   if (collectionReleased) {
     for (const {code} of travelLanguageInfo) addEntry({
       url: siteUrl + bookingCollectionPath(code), changeFrequency: 'weekly', priority: 0.85,

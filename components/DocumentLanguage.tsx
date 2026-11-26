@@ -8,7 +8,7 @@ export function DocumentLanguage() {
     const first = pathname?.split('/')[1] || '';
     const locale = languages.has(first) ? first : 'fr';
     // Travel uses country-specific language variants without changing legacy pages.
-    const isTravel = pathname?.split('/').includes('travel') ?? false;
+    const isTravel = (pathname?.split('/').includes('travel') ?? false) || /\/(voyages|trips|reisen|seyahat|viajes|viaggi|viagens|puteshestviya|rihlat)$/.test(pathname||'');
     const htmlLocale = isTravel && locale === 'zh' ? 'zh-CN'
       : isTravel && locale === 'pt' ? 'pt-BR'
       : locale;
