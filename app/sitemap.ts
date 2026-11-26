@@ -228,7 +228,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // The neutral French /travel entrance redirects to the booking engine in production.
     if(collectionReleased&&url===siteUrl+'/travel') continue;
     const updatedGuide=/\/travel\/(destinations|hotels)\/[^/]+$/.test(new URL(url).pathname);
-    addEntry({url,changeFrequency:'monthly',priority:0.8,...(updatedGuide?{lastModified:new Date('2026-11-27')}: {})});
+    addEntry({url,changeFrequency:'monthly',priority:0.8,...(updatedGuide?{lastModified:new Date('2026-11-26')}: {})});
   }
   if (collectionReleased) {
     for (const {code} of travelLanguageInfo) addEntry({
