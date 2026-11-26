@@ -6,17 +6,19 @@ import ctranslate2
 from transformers import MarianTokenizer
 
 parser=argparse.ArgumentParser()
-parser.add_argument('--locale',choices=['ru','ar'],required=True)
+parser.add_argument('--locale',choices=['ru','ar','de','tr','es','it','pt','zh'],required=True)
 parser.add_argument('--source',required=True)
+parser.add_argument('--model-id',default=None)
+parser.add_argument('--include-desaru',action='store_true')
 parser.add_argument('--model-dir',required=True)
 parser.add_argument('--output',required=True)
 args=parser.parse_args()
 source=json.loads(Path(args.source).read_text())
 assert len(source)==88
-model_id='Helsinki-NLP/opus-mt-en-'+args.locale
+model_id=args.model_id or 'Helsinki-NLP/opus-mt-en-'+args.locale
 tokenizer=MarianTokenizer.from_pretrained(model_id)
 engine=ctranslate2.Translator(args.model_dir,device='cpu',compute_type='int8',inter_threads=1,intra_threads=4)
-script=re.compile('[\u0400-\u052f]' if args.locale=='ru' else '[\u0600-\u06ff]')
+script=re.compile({'ru':r'[\u0400-\u052f]','ar':r'[\u0600-\u06ff]','zh':r'[\u3400-\u9fff]'}.get(args.locale,r'[A-Za-zÀ-ž]'))
 outpath=Path(args.output);outpath.parent.mkdir(parents=True,exist_ok=True)
 result=json.loads(outpath.read_text()) if outpath.exists() else {}
 cache={}
@@ -67,12 +69,12 @@ def translate(city):
   if len(script.findall(translated[key]))<8:raise ValueError('Missing target-language text: '+key)
  return translated
 for slug,city in source.items():
- if slug=='desaru-coast' or slug in result:continue
+ if (slug=='desaru-coast' and not args.include_desaru) or slug in result:continue
  result[slug]=translate(city)
  # Each completed guide is persisted atomically; no partial guide is published.
  tmp=outpath.with_suffix('.tmp')
  tmp.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
  tmp.replace(outpath)
- print(args.locale,slug,len(result),'/87',flush=True)
-assert len(result)==87
+ print(args.locale,slug,len(result),'/' + str(88 if args.include_desaru else 87),flush=True)
+assert len(result)==(88 if args.include_desaru else 87)
 print('Draft generation complete; manual editorial review required.',flush=True)
