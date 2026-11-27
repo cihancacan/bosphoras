@@ -1,0 +1,161 @@
+{
+  "name": "Mykonos",
+  "country": "Griechenland",
+  "eyebrow": "Ägäis · Kykladenvillen und Buchten",
+  "heading": "Wo auf Mykonos übernachten? Vier Arten von Inselurlaub",
+  "intro": "Weiße Gassen in Chora, die private Halbinsel von Ornos, der angesagte Psarou-Strand und ruhige Villen in Aleomandra zeigen die Vielfalt von Mykonos. Wählen Sie nach Stränden, Sonnenuntergang, Transport und Familienbedürfnissen.",
+  "editorial": "Cavo Tagoo liegt im Viertel Tagoo nahe Chora und dem Alten Hafen. Die berühmten Höhlenpools gehören nur bestimmten Kategorien; das Hotel nennt die Saison vom 15. Mai bis 14. Oktober. Santa Marina besitzt eine private Halbinsel in der Ornos-Bucht mit Sandstrand; Poolvillen mit Butler unterscheiden sich von Standardzimmern. Kalesma liegt erhöht in Aleomandra mit Blick Richtung Delos; Strände und Restaurants erfordern Transport. Mykonos Blu in Psarou kündigte die Wiedereröffnung im Sommer 2027 an, nicht die Verfügbarkeit 2026.\n\nDer Nordwind Meltemi beeinflusst Fähren, Baden und Bootsausflüge. Prüfen Sie, ob Ihr Schiff den Neuen Hafen Tourlos oder den Alten Hafen Chora anfährt. Familien sollten Stufen, offene Terrassen und Poolsicherheit berücksichtigen. Eine Zimmerbuchung garantiert weder Beachclub-Tisch noch Privatjacht. Preise und Verfügbarkeit bestätigt der autorisierte Anbieter.",
+  "hotelIntro": "Kalesma in Höhenlage, Santa Marina auf der Ornos-Halbinsel, Cavo Tagoo nahe Chora und Mykonos Blu in Psarou: vier eigenständige Adressen.",
+  "areas": [
+    [
+      "Chora und Klein-Venedig",
+      "Weiße Fußgängergassen, Balkone über dem Wasser, Windmühlen und lebhafte Restaurants. Cavo Tagoo liegt im benachbarten Tagoo.",
+      "Nicht jede Gasse ist befahrbar; Gepäcktransport klären."
+    ],
+    [
+      "Tagoo und Alter Hafen",
+      "Felsküste und Panoramaterrassen, von denen Chora zu Fuß oder per Shuttle erreichbar ist.",
+      "Alter Hafen und Neuer Hafen Tourlos sind verschieden; Fähranleger bestätigen."
+    ],
+    [
+      "Ornos · Bucht und private Halbinsel",
+      "Strand, Restaurants und Bootsausflüge. Santa Marina besitzt eine eigene Halbinsel mit Sandstrand.",
+      "Liegenstandort sowie Strand- und Restaurantzugang prüfen."
+    ],
+    [
+      "Aleomandra und Agios Ioannis",
+      "Ruhiges Villenviertel westlich von Ornos mit Blick Richtung Delos und Sonnenuntergang; hier liegt Kalesma.",
+      "Villenausrichtung, Weg nach Ornos und Windschutz prüfen."
+    ],
+    [
+      "Psarou und Platis Gialos",
+      "Angesagte Strände, Jachten und Beachclubs. Mykonos Blu oberhalb Psarou kündigt Öffnung 2027 an.",
+      "Öffnung und Strandleistungen bestätigen."
+    ]
+  ],
+  "experiences": [
+    [
+      "Klein-Venedig nach dem Strand",
+      "Besuchen Sie Windmühlen und Ufer am Abend; Restaurant und Fußweg vorab wählen."
+    ],
+    [
+      "Delos nach aktuellem Fahrplan",
+      "Besuchen Sie die antike Insel per Linienschiff. Wind kann die Fahrt verhindern; Wasser, Sonnenschutz und Alternative einplanen."
+    ],
+    [
+      "Baden in Ornos und Psarou",
+      "Vergleichen Sie die geschütztere Ornos-Bucht und lebhaftes Psarou; Liegen, Restaurants und Wassersport separat buchen."
+    ],
+    [
+      "Mit dem Meltemi planen",
+      "Nordwind verändert Bade- und Seebedingungen. Route mit dem Anbieter abstimmen und Landalternative vorbereiten."
+    ],
+    [
+      "Ano Mera und ruhiges Mykonos",
+      "Besuchen Sie das Kloster Panagia Tourliani und eine Dorftaverne; Gottesdienste und Anfahrt beachten."
+    ]
+  ],
+  "checks": [
+    "Cavo Tagoo nennt die Saison 15. Mai bis 14. Oktober; Reisedaten prüfen.",
+    "Mykonos Blu kündigt Öffnung im Sommer 2027 an, nicht Betrieb 2026.",
+    "Ankunftshafen prüfen: Tourlos oder Alter Hafen Chora.",
+    "Meltemi kann Bootsausflüge und Delos-Fahrten stören.",
+    "Privatpools, Strandangebote und Verpflegung hängen von den Buchungsbedingungen ab."
+  ],
+  "hotels": [
+    [
+      "Aleomandra · Agios Ioannis und Ornos",
+      "Kalesma liegt auf einem Hügel zwischen Ornos und Agios Ioannis mit Blick Richtung Delos und westliche Ägäis. Moderne kykladische Interieurs, Villen und Freiflächen bieten Ruhe. Das Hotel liegt nicht direkt am Ornos-Strand. Kategorien unterscheiden sich nach Pool, Terrasse und Ausrichtung.",
+      "Villa, Pool, Kindersicherheit, Restaurantsaison und Transport prüfen.",
+      "Für Privatsphäre, Architektur und Sonnenuntergänge.",
+      ""
+    ],
+    [
+      "Private Ornos-Halbinsel",
+      "Santa Marina bietet einen eigenen Sandstrand und Gebäude am Hang. Zimmer, Suiten und separate Villen unterscheiden sich in Grundriss und Service. Marriott beschreibt Villen mit Privatpool und persönlichem Service; nicht alle Zimmer bieten diese Vorteile. Höhenunterschiede besonders mit Kindern beachten.",
+      "Kategorie, Strandweg, Pool, Saison, Restaurants und Liegen prüfen.",
+      "Für Familienresort mit eigenem Sandstrand.",
+      ""
+    ],
+    [
+      "Tagoo · Zwischen Chora und Altem Hafen",
+      "Cavo Tagoo ist für weiße skulpturale Architektur und den Panoramapool bekannt. Das Hotel nennt rund zehn Minuten Fußweg nach Chora und einen Gästeshuttle. Familien sind willkommen, doch offene Terrassen und Wasserflächen erfordern Aufsicht. Cave Pool, Privatpool und Whirlpool sind unterschiedliche Kategorien. Publizierte Saison: 15. Mai bis 14. Oktober.",
+      "Saison, Poolkategorie, Shuttle und Kindersicherheit prüfen.",
+      "Für eindrucksvolle Architektur, Pools und Nähe zu Chora.",
+      ""
+    ],
+    [
+      "Psarou-Strand · Villen und Meerblick",
+      "Mykonos Blu, Grecotel, liegt oberhalb Psarou in weißen kykladischen Gebäuden mit Blick auf die Jachtbucht. Manche Suiten und Villen haben Privatpools, nicht alle liegen am Sand. Offizielle Ankündigung: Wiedereröffnung Sommer 2027. Nicht von Betrieb 2026 ausgehen. Unabhängige Beachclubs separat prüfen.",
+      "Öffnung 2027, Kategorie und Strandleistungen bestätigen.",
+      "Für Psarou-Urlaub nach bestätigter Eröffnung.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Wo übernachtet man nahe Chora?",
+      "Cavo Tagoo in Tagoo liegt nahebei. Das Hotel nennt rund zehn Minuten Fußweg und Shuttle; Transport und Gepäck prüfen."
+    ],
+    [
+      "Hat Santa Marina einen Sandstrand?",
+      "Ja, Marriott nennt einen eigenen Strand auf der Ornos-Halbinsel. Privatpools und Zusatzleistungen hängen von der Buchung ab."
+    ],
+    [
+      "Liegt Kalesma direkt am Ornos-Strand?",
+      "Nein, es liegt erhöht in Aleomandra; Strand und Restaurants erfordern Transport."
+    ],
+    [
+      "Sind kleine Kinder im Cavo Tagoo willkommen?",
+      "Offizielle Angaben erlauben alle Altersgruppen, verlangen aber wegen Pools und Architektur Aufsicht durch Erwachsene."
+    ],
+    [
+      "Ist Mykonos Blu 2026 geöffnet?",
+      "Grecotel kündigt die Wiedereröffnung im Sommer 2027 an. Aktuelle offizielle Angaben und Verfügbarkeit prüfen."
+    ],
+    [
+      "Kann man Delos immer besuchen?",
+      "Nein, Fahrplan und Wind bestimmen die Fahrten. Tickets prüfen und Alternativen einplanen."
+    ],
+    [
+      "Wie buche ich Hotel oder Jacht?",
+      "Vergleichen Sie Unterkünfte bei Bosphoras; der autorisierte Anbieter bestätigt Preise, Verfügbarkeit und Bedingungen."
+    ]
+  ],
+  "photoCaptions": [
+    "Weiße Windmühle in Chora",
+    "Häuser von Klein-Venedig über dem Wasser",
+    "Ornos-Bucht aus der Luft",
+    "Sonnenuntergang an Aleomandras Küste",
+    "Türkisfarbene Psarou-Bucht",
+    "Alter Hafen und Chora",
+    "Antike Ruinen von Delos",
+    "Kloster Panagia Tourliani in Ano Mera",
+    "Agios-Ioannis-Strand"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Kalesma-Architektur und Pool bei Sonnenuntergang",
+      "Kalesma-Suite mit Meerblick",
+      "Pool und blühende Bougainvillea"
+    ],
+    [
+      "Ruhebereich in den Gärten von Santa Marina",
+      "Poolvilla über der Ornos-Bucht",
+      "Poolterrasse mit Meerblick"
+    ],
+    [
+      "Cavo-Tagoo-Pool bei Sonnenuntergang",
+      "Weißes Villenwohnzimmer mit Naturfelsen",
+      "Panoramapool des Cavo Tagoo"
+    ],
+    [
+      "Mykonos-Blu-Privatpool über Psarou",
+      "Weiße Terrasse über der Jachtbucht",
+      "Pool und kykladische Bögen"
+    ]
+  ],
+  "seoTitle": "Mykonos: Wo übernachten? Luxushotels, Villen und Strände",
+  "hotelSeoTitle": "Beste Hotels auf Mykonos: Kalesma, Santa Marina und Cavo Tagoo",
+  "seoDescription": "Vergleichen Sie Chora, Ornos, Aleomandra und Psarou. Entdecken Sie vier Luxushotels auf Mykonos, Strände und Anreisetipps."
+}
