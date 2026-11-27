@@ -95,6 +95,30 @@ def collect_pages(pages):
 DIRECT = {
   "kuala-lumpur/city": [
     [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Batu_Caves_Stairs.jpg",
+      "Batu Caves temple stairs and statue of Murugan",
+      "https://commons.wikimedia.org/wiki/File:Batu_Caves_Stairs.jpg",
+      "EasyKL / CC BY-SA 4.0 / resized WebP"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Batu_Caves_statue.JPG",
+      "Batu Caves staircase and Murugan statue",
+      "https://commons.wikimedia.org/wiki/File:Batu_Caves_statue.JPG",
+      "Kawaputra / CC BY 3.0 / resized WebP"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Menara_KL.JPG",
+      "KL Tower from Petronas Square",
+      "https://commons.wikimedia.org/wiki/File:Menara_KL.JPG",
+      "Rintojiang / CC BY-SA 3.0 / resized WebP"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/KL_Tower_Kuala_Lumpur.jpg",
+      "KL Tower in Kuala Lumpur",
+      "https://commons.wikimedia.org/wiki/File:KL_Tower_Kuala_Lumpur.jpg",
+      "PhilipNalangan / CC BY 4.0 / resized WebP"
+    ],
+    [
       "https://upload.wikimedia.org/wikipedia/commons/1/10/Little_India%2C_Brickfields%2C_Kuala_Lumpur.jpg",
       "Little India Brickfields Kuala Lumpur Jalan Tun Sambanthan",
       "https://commons.wikimedia.org/wiki/File:Little_India,_Brickfields,_Kuala_Lumpur.jpg",
@@ -335,7 +359,7 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
 def city_job(c):
  base=ROOT/(c['slug']+'-premium')
  old=PREVIOUS.get(c['slug'],{})
- existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='orlando' and r['key'] in ('scene-5','scene-6')) and not (c['slug']=='las-vegas' and r['key'] in ('scene-1','scene-5','scene-9','scene-12')) and not (c['slug']=='cancun' and r['key'] in ('scene-4','scene-8','scene-9','scene-11','scene-12')) and not (c['slug']=='rome' and r['key'] in ('scene-3','scene-7')) and not (c['slug']=='london' and r['key'] in ('scene-1','scene-2','scene-3')) and not (c['slug']=='las-vegas' and r['key']=='scene-6') and not (c['slug']=='barcelona' and r['key'] in ('scene-3','scene-5'))]
+ existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='kuala-lumpur' and r['key'] in ('scene-6','scene-7')) and not (c['slug']=='orlando' and r['key'] in ('scene-5','scene-6')) and not (c['slug']=='las-vegas' and r['key'] in ('scene-1','scene-5','scene-9','scene-12')) and not (c['slug']=='cancun' and r['key'] in ('scene-4','scene-8','scene-9','scene-11','scene-12')) and not (c['slug']=='rome' and r['key'] in ('scene-3','scene-7')) and not (c['slug']=='london' and r['key'] in ('scene-1','scene-2','scene-3')) and not (c['slug']=='las-vegas' and r['key']=='scene-6') and not (c['slug']=='barcelona' and r['key'] in ('scene-3','scene-5'))]
  if os.environ.get('TRAVEL_OTA_ONLY')=='1':return c['slug'],'city',old.get('destinationScenes',[]),[]
  if len(existing)>=9:return c['slug'],'city',existing,[]
  cand,errors=collect_pages(c['cityPages'])
