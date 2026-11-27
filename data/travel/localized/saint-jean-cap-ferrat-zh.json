@@ -1,0 +1,162 @@
+{
+  "name": "圣让卡普费拉",
+  "country": "法国",
+  "eyebrow": "法国里维埃拉 · 花园与海湾半岛",
+  "heading": "圣让卡普费拉住哪里？酒店与海滩指南",
+  "intro": "松树、露台及变幻的海色构成卡普费拉特色。按位置、景观、季节及服务比较历史宫殿酒店、五星海滨酒店和小型独立酒店。",
+  "editorial": "Grand-Hôtel du Cap-Ferrat 位于半岛南端，拥有花园及 Club Dauphin。Fourmis 海湾的 Royal-Riviera 靠近 Maurice Rouvier 海滨步道。村庄上方的四星 La Villa 提供泳池及康养设施，三星 Brise Marine 则体现历史别墅风情。其服务等级并不等同于宫殿酒店。\n\n探索港口、Saint-Hospice 海角、Paloma 海滩、西岸 Passable 及 Ephrussi 花园。Maurice Rouvier 步道比岩石海岸小径更易行走。灯塔至 Passable 路段可能因海岸加固工程封闭，出行前查看官方公告与天气。私人海滩季节性运营；餐厅预约不保证躺椅。价格及房量由预订伙伴确认。",
+  "hotelIntro": "四种住宿等级：Four Seasons 宫殿酒店、五星 Royal-Riviera、四星 La Villa 及三星 Brise Marine。",
+  "areas": [
+    [
+      "南端海角 · Grand-Hôtel 与灯塔",
+      "松林与开阔海景营造宁静氛围；酒店园区和公共步道通行规则不同。",
+      "确认 Club Dauphin 开放季节及灯塔至 Passable 的封闭情况。"
+    ],
+    [
+      "村庄与港口 · Cros dei Pin",
+      "小港口、咖啡馆、船艇与缓坡街巷。",
+      "考虑坡道、台阶、停车及另行安排的海上交通。"
+    ],
+    [
+      "Saint-Hospice 海角 · Paloma",
+      "东岸松林、Scaletta 海湾及 Paloma 海滩；教堂路线有台阶。",
+      "确认海滩俱乐部季节、躺椅、海况及步道。"
+    ],
+    [
+      "Fourmis 海湾 · Maurice Rouvier 步道",
+      "Royal-Riviera 面向海湾；步行至 Beaulieu 比岩石海岸小径更容易。",
+      "确认海湾景房型，区分私人海滩服务与公共海岸。"
+    ],
+    [
+      "Passable · 滨海自由城与 Ephrussi 花园",
+      "西岸面向滨海自由城海湾；沙滩休闲与建筑遗产是不同体验。",
+      "确认季节性服务、博物馆开放时间及步道封闭情况。"
+    ]
+  ],
+  "experiences": [
+    [
+      "Ephrussi 花园的清晨",
+      "参观 Villa Ephrussi de Rothschild 主题花园；这里是博物馆而非酒店。"
+    ],
+    [
+      "步行至 Beaulieu",
+      "选择 Maurice Rouvier 步道，考虑高温、儿童年龄及施工。"
+    ],
+    [
+      "Paloma 与海湾",
+      "天气适宜时欣赏 Saint-Hospice；私人海滩和躺椅需另行确认。"
+    ],
+    [
+      "Club Dauphin 一日",
+      "确认 Grand-Hôtel 著名海水泳池的开放季节及使用条件。"
+    ],
+    [
+      "乘船游览",
+      "选择合格运营商前往 Saint-Hospice 或滨海自由城，确认天气、码头及价格。"
+    ]
+  ],
+  "checks": [
+    "比较宫殿酒店、五星、四星及三星住宿等级。",
+    "确认 Grand-Hôtel、Club Dauphin、海滩设施和 Brise Marine 的营业季节。",
+    "确认海景房型；泳池照片不保证私人露台。",
+    "确认灯塔至 Passable 路段是否因海岸加固而封闭。",
+    "按朝向、海况及私人服务比较 Paloma 和 Passable。",
+    "价格与房量由授权预订伙伴确认。"
+  ],
+  "hotels": [
+    [
+      "南端海角 · 宫殿酒店与花园",
+      "Grand-Hôtel du Cap-Ferrat 是历史酒店，拥有宽广花园、Club Dauphin 海水泳池、Le Cap 餐厅及水疗。客房及别墅景观和私密性各异，并非全部面向海洋。确认未来营业季节。",
+      "区分历史主楼、Residence、套房及别墅，确认泳池使用、景观和季节服务。",
+      "适合在传奇酒店享受完整度假体验。",
+      ""
+    ],
+    [
+      "Fourmis 海湾 · 五星酒店",
+      "Royal-Riviera 提供海滨花园、泳池、露台和餐厅，靠近 Maurice Rouvier 步道。拥有94间客房与套房；景观和私人海滩服务需确认。",
+      "确认海景房型、海滩、餐厅季节及尼斯或摩纳哥接送。",
+      "适合优雅海湾度假及步行至 Beaulieu。",
+      ""
+    ],
+    [
+      "村庄上方 · 四星精品酒店",
+      "La Villa 拥有22间客房、室外泳池、桑拿及按摩池。没有电梯；部分房型有海景露台。停车位有限，需提前安排。",
+      "确认楼层、无障碍条件、露台、停车及康养设施。",
+      "适合村庄附近小型精品住宿。",
+      ""
+    ],
+    [
+      "Avenue Jean Mermoz · 三星别墅",
+      "Brise Marine 是19世纪意式别墅内的16间客房季节性酒店，拥有花卉露台及花园景或海景房。不提供宫殿酒店级服务或大型水疗。",
+      "确认营业日期、海景房型、楼梯及服务等级。",
+      "适合历史风情及小规模住宿。",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Grand-Hôtel 与 Royal-Riviera 属于同类酒店吗？",
+      "不。Four Seasons 是海角宫殿酒店，拥有 Club Dauphin；Royal-Riviera 是 Fourmis 海湾五星酒店。"
+    ],
+    [
+      "可以入住 Villa Ephrussi de Rothschild 吗？",
+      "不可以。这里是博物馆及花园，需确认参观时间。"
+    ],
+    [
+      "灯塔步道全程开放吗？",
+      "不一定。至 Passable 路段可能因施工封闭，遵守官方公告及围栏。"
+    ],
+    [
+      "Paloma 还是 Passable？",
+      "Paloma 在东岸，Passable 在西岸面向滨海自由城。风向、海况、季节及通行条件不同。"
+    ],
+    [
+      "Club Dauphin 全年开放吗？",
+      "不保证。确认开放季节与使用条件，护理及躺椅不一定包含。"
+    ],
+    [
+      "有哪些小型酒店？",
+      "La Villa 是四星泳池精品酒店，Brise Marine 是三星历史别墅；注意楼梯及营业季节。"
+    ],
+    [
+      "如何预订酒店或船艇？",
+      "通过 Bosphoras 比较住宿，价格、房量和商业条款由授权服务商确认。"
+    ]
+  ],
+  "photoCaptions": [
+    "卡普费拉半岛、灯塔及岩石海岸航拍",
+    "松林中的 Grand-Hôtel 与 Club Dauphin",
+    "Paloma 海滩及碧蓝海湾",
+    "Villa Ephrussi de Rothschild 与花园",
+    "圣让卡普费拉港口",
+    "Passable 海滩及清澈海水",
+    "岩石上的卡普费拉灯塔",
+    "松林间 Maurice Rouvier 步道",
+    "卡普费拉与 Beaulieu 之间的 Fourmis 海湾"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Grand-Hôtel 白色外观及花园",
+      "Grand-Hôtel 明亮客房",
+      "Club Dauphin 海水泳池"
+    ],
+    [
+      "棕榈树间 Royal-Riviera 粉色外观",
+      "带露台的套房起居室",
+      "Royal-Riviera 泳池与 Fourmis 海湾"
+    ],
+    [
+      "La Villa 泳池及海岸",
+      "海景露台客房",
+      "泳池旁早餐露台"
+    ],
+    [
+      "Brise Marine 花园亭",
+      "花园早餐露台",
+      "历史别墅与花园"
+    ]
+  ],
+  "seoTitle": "圣让卡普费拉住哪里？酒店、海滩与花园",
+  "hotelSeoTitle": "圣让卡普费拉酒店推荐：Four Seasons 与 Royal-Riviera",
+  "seoDescription": "比较卡普费拉四家精选酒店、Paloma 与 Passable 海滩、历史花园及预订建议。"
+}

@@ -1,0 +1,162 @@
+{
+  "name": "Saint-Jean-Cap-Ferrat",
+  "country": "Francia",
+  "eyebrow": "Riviera francesa · Península de jardines y calas",
+  "heading": "Dónde alojarse en Saint-Jean-Cap-Ferrat: hoteles y playas",
+  "intro": "Pinos, terrazas y tonos cambiantes del mar definen Cap-Ferrat. Compara un hotel palaciego, un cinco estrellas junto al mar y pequeños hoteles independientes según ubicación, vistas, temporada y servicios.",
+  "editorial": "Grand-Hôtel du Cap-Ferrat ocupa la punta sur, con jardines y Club Dauphin. Royal-Riviera, en la bahía de Fourmis, queda junto al paseo Maurice Rouvier. Sobre el pueblo, La Villa, de cuatro estrellas, ofrece piscina y bienestar; Brise Marine, de tres, conserva el encanto de una villa histórica. No tienen el mismo nivel de servicio que el hotel palaciego.\n\nExplora el puerto, Saint-Hospice, Paloma, la playa occidental de Passable y los jardines Ephrussi. El paseo Maurice Rouvier es más sencillo que el sendero rocoso. El tramo entre el faro y Passable puede estar cerrado por obras de protección costera: consulta avisos oficiales y meteorología. Las playas privadas son estacionales y reservar restaurante no garantiza tumbona. El proveedor confirma precios y disponibilidad.",
+  "hotelIntro": "Cuatro categorías de alojamiento: Four Seasons palaciego, Royal-Riviera de cinco estrellas, La Villa de cuatro y Brise Marine de tres.",
+  "areas": [
+    [
+      "Punta sur · Grand-Hôtel y faro",
+      "Pinares y vistas a mar abierto crean tranquilidad; el recinto hotelero y sendero público tienen accesos distintos.",
+      "Comprueba temporada del Club Dauphin y cierre entre faro y Passable."
+    ],
+    [
+      "Pueblo y puerto · Cros dei Pin",
+      "Puerto pequeño, cafés, barcos y calles tranquilas en pendiente.",
+      "Considera desniveles, escaleras, aparcamiento y transporte marítimo independiente."
+    ],
+    [
+      "Cabo Saint-Hospice · Paloma",
+      "Pinos, cala Scaletta y playa Paloma en la costa este; la ruta de la capilla tiene escalones.",
+      "Comprueba temporada de club de playa, tumbonas, mar y sendero."
+    ],
+    [
+      "Bahía de Fourmis · Paseo Maurice Rouvier",
+      "Royal-Riviera se abre a la bahía; caminar a Beaulieu es más fácil que recorrer el cabo rocoso.",
+      "Confirma vistas a la bahía y distingue servicios privados de costa pública."
+    ],
+    [
+      "Passable · Villefranche y jardines Ephrussi",
+      "La costa oeste mira a Villefranche; playa y patrimonio arquitectónico son experiencias distintas.",
+      "Consulta servicios estacionales, horario del museo y cierres."
+    ]
+  ],
+  "experiences": [
+    [
+      "Mañana en los jardines Ephrussi",
+      "Visita los jardines temáticos de Villa Ephrussi de Rothschild; es un museo, no un hotel."
+    ],
+    [
+      "Paseo a Beaulieu",
+      "Elige el paseo Maurice Rouvier; considera calor, edad de los niños y obras."
+    ],
+    [
+      "Paloma y las calas",
+      "Disfruta de Saint-Hospice con buen tiempo; confirma por separado playa privada y tumbonas."
+    ],
+    [
+      "Un día en Club Dauphin",
+      "Consulta temporada y acceso a la famosa piscina de agua de mar del Grand-Hôtel."
+    ],
+    [
+      "Paseo en barco",
+      "Elige operador cualificado hacia Saint-Hospice o Villefranche; acuerda tiempo, embarcadero y precio."
+    ]
+  ],
+  "checks": [
+    "Compara categorías: hotel palaciego, cinco, cuatro y tres estrellas.",
+    "Confirma temporadas de Grand-Hôtel, Club Dauphin, establecimientos de playa y Brise Marine.",
+    "Confirma categoría con vistas al mar; una foto de piscina no garantiza terraza privada.",
+    "Consulta cierre del sendero entre faro y Passable por obras costeras.",
+    "Distingue Paloma y Passable por orientación, mar y servicios privados.",
+    "El proveedor autorizado confirma precios y disponibilidad."
+  ],
+  "hotels": [
+    [
+      "Punta sur · Hotel palaciego y jardines",
+      "Grand-Hôtel du Cap-Ferrat es un hotel histórico con amplios jardines, piscina de agua de mar Club Dauphin, restaurante Le Cap y spa. Habitaciones y villas varían en vistas y privacidad; no todas miran al mar. Confirma próximas temporadas.",
+      "Distingue edificio histórico, Residence, suites y villas; confirma Club Dauphin, vistas y temporada.",
+      "Para una estancia completa en el hotel legendario.",
+      ""
+    ],
+    [
+      "Bahía de Fourmis · Cinco estrellas",
+      "Royal-Riviera ofrece jardines, piscina, terrazas y restaurantes junto al mar y al paseo Maurice Rouvier. Cuenta con 94 habitaciones y suites; vistas y playa privada deben confirmarse.",
+      "Confirma vistas al mar, playa, temporada de restaurantes y traslado desde Niza o Mónaco.",
+      "Para una estancia elegante junto a la bahía y paseos a Beaulieu.",
+      ""
+    ],
+    [
+      "Parte alta del pueblo · Boutique de cuatro estrellas",
+      "La Villa tiene 22 habitaciones, piscina exterior, sauna e hidromasaje. No tiene ascensor; algunas habitaciones tienen terraza con vistas al mar. Aparcamiento limitado con gestión previa.",
+      "Consulta planta, accesibilidad, terraza, aparcamiento y bienestar.",
+      "Para un pequeño hotel boutique cerca del pueblo.",
+      ""
+    ],
+    [
+      "Avenue Jean Mermoz · Villa de tres estrellas",
+      "Brise Marine es un hotel estacional de 16 habitaciones en una villa italiana del siglo XIX. Terrazas floridas y vistas al jardín o mar; no ofrece servicios palaciegos ni gran spa.",
+      "Confirma apertura, vistas al mar, escaleras y nivel de servicio.",
+      "Para encanto histórico y ambiente íntimo.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Son equivalentes Grand-Hôtel y Royal-Riviera?",
+      "No. Four Seasons es un hotel palaciego en el cabo con Club Dauphin; Royal-Riviera es un cinco estrellas en la bahía de Fourmis."
+    ],
+    [
+      "¿Se puede dormir en Villa Ephrussi de Rothschild?",
+      "No, es museo y jardines. Consulta horarios de visita."
+    ],
+    [
+      "¿Está abierto todo el sendero del faro?",
+      "No necesariamente. El tramo hasta Passable puede cerrarse por obras; respeta avisos y barreras oficiales."
+    ],
+    [
+      "¿Qué playa elegir: Paloma o Passable?",
+      "Paloma está al este; Passable mira a Villefranche al oeste. Viento, mar, temporada y acceso varían."
+    ],
+    [
+      "¿Club Dauphin abre todo el año?",
+      "No está garantizado. Confirma temporada y acceso; tratamientos y tumbonas no están incluidos automáticamente."
+    ],
+    [
+      "¿Qué hoteles pequeños elegir?",
+      "La Villa es boutique de cuatro estrellas con piscina; Brise Marine, villa histórica de tres. Considera escaleras y temporada."
+    ],
+    [
+      "¿Cómo reservar hotel o barco?",
+      "Compara alojamiento en Bosphoras; el proveedor autorizado confirma precios, disponibilidad y condiciones."
+    ]
+  ],
+  "photoCaptions": [
+    "Vista aérea de Cap-Ferrat, faro y costa rocosa",
+    "Grand-Hôtel entre pinos y Club Dauphin",
+    "Playa Paloma y cala turquesa",
+    "Villa Ephrussi de Rothschild y jardines",
+    "Puerto de Saint-Jean-Cap-Ferrat",
+    "Playa Passable y agua clara",
+    "Faro de Cap-Ferrat sobre rocas",
+    "Paseo Maurice Rouvier entre pinos",
+    "Bahía de Fourmis entre Cap-Ferrat y Beaulieu"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Fachada blanca y jardines del Grand-Hôtel",
+      "Habitación luminosa del Grand-Hôtel",
+      "Piscina de agua de mar Club Dauphin"
+    ],
+    [
+      "Fachada rosa de Royal-Riviera entre palmeras",
+      "Salón de suite con terraza",
+      "Royal-Riviera, piscina y bahía de Fourmis"
+    ],
+    [
+      "La Villa, piscina y costa",
+      "Habitación con terraza al mar",
+      "Terraza de desayuno junto a piscina"
+    ],
+    [
+      "Pabellón de jardín de Brise Marine",
+      "Terraza de desayuno en jardín",
+      "Villa histórica y jardín florido"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Saint-Jean-Cap-Ferrat: hoteles y playas",
+  "hotelSeoTitle": "Hoteles en Saint-Jean-Cap-Ferrat: Four Seasons y Royal-Riviera",
+  "seoDescription": "Compara cuatro hoteles de Cap-Ferrat, playas de Paloma y Passable, jardines históricos y consejos de reserva."
+}
