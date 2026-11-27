@@ -171,6 +171,12 @@ DIRECT = {
   ],
   "osaka/city": [
     [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kuromon_Market_-_panoramio.jpg",
+      "Kuromon Market Osaka shopping arcade",
+      "https://commons.wikimedia.org/wiki/File:Kuromon_Market_-_panoramio.jpg",
+      "DVMG / CC BY 3.0 / resized WebP"
+    ],
+    [
       "https://commons.wikimedia.org/wiki/Special:FilePath/Osaka_Abeno_Harukas.jpg",
       "Abeno Harukas and surrounding area in Tennoji Osaka",
       "https://commons.wikimedia.org/wiki/File:Osaka_Abeno_Harukas.jpg",
