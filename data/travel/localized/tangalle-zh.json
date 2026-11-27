@@ -1,0 +1,179 @@
+{
+  "name": "坦加勒",
+  "country": "斯里兰卡",
+  "eyebrow": "斯里兰卡南部 · 椰林海湾与潟湖",
+  "heading": "坦加勒住哪里？悠闲时光的奢华",
+  "intro": "南岸四种度假村：Amanwella、Anantara Peace Haven、Kayaam Wellness 与 Buckingham Place。",
+  "editorial": "坦加勒首先要选海岸。Goyambokka 海湾、Godellawela 椰林、城镇附近绵长沙滩及 Rekawa 潟湖适合不同旅程。面向开阔印度洋，海浪、水流及季风每天影响游泳安全。空旷海滩照片不保证海况平静或从客房步行可达。\n\nAmanwella 隐于 Godellawela 椰林，现代套房有小型私人泳池及露台，确认具体房型、景观、儿童人数、私密性及步道。Goyambokka 的 Anantara Peace Haven 提供152间客房及泳池别墅、餐厅、水疗和儿童俱乐部。适合需要多样服务的家庭，但客房不等于别墅，海景不代表安全游泳。\n\n东部 Wellodeya 及 Rekawa 区域的 Kayaam Wellness 专注休养与阿育吠陀。通常接待17岁及以上宾客，低龄儿童仅在按运营商规则包下整家酒店时可能入住。确认项目、包含护理及适用性。Buckingham Place 是 Rekawa 海岸与潟湖之间的独立精品酒店，自2026年5月1日起仅经事先协商接待7岁及以上儿童。携幼童家庭应选其他住宿。开放海岸浪涌不保证安全游泳。\n\n留时间参加 Rekawa 负责任的海龟保护观察项目，不用闪光灯、不触碰动物、不保证遇见。Kalametiya 湿地适合观鸟，Mulkirigala 岩石寺庙需得体着装并攀爬台阶。三至四晚可悠闲度假并按天气选一至两次游览。结合加勒体验古堡与南岸的对比。从科伦坡接送可能数小时，协调路线、接机、行李及儿童座椅。12月至4月通常较适宜，但不保证晴天或平静海况。确认房型、服务、税费、餐饮、取消及支持。Bosphoras 提供独立编辑精选，价格及房量由预订供应商确认。",
+  "hotelIntro": "四种住宿：Amanwella 私密套房、家庭 Anantara、阿育吠陀 Kayaam 及精品 Buckingham Place。",
+  "areas": [
+    [
+      "Godellawela 与 Amanwella",
+      "市中心以西椰林海湾及现代度假村。",
+      "即使海面看似平静也确认入水及水流。"
+    ],
+    [
+      "Goyambokka 与 Anantara",
+      "海湾、岩石海岸及提供家庭服务的大型度假村。",
+      "并非所有岸段适合游泳。"
+    ],
+    [
+      "坦加勒与 Medaketiya",
+      "港口、当地美食及度假村外开放海滩。",
+      "私密性较低，确认距离。"
+    ],
+    [
+      "Rekawa 与 Wellodeya",
+      "自然海岸、潟湖及私密 Kayaam 与 Buckingham Place。",
+      "确认年龄、项目及海浪。"
+    ],
+    [
+      "Kalametiya 湿地",
+      "鸟类保护区及适合悠闲游览的自然风景。",
+      "尊重保护区，选择负责任向导。"
+    ],
+    [
+      "Mulkirigala 与内陆寺庙",
+      "岩石寺庙、陡峭台阶及宗教艺术。",
+      "考虑着装、高温与攀登。"
+    ]
+  ],
+  "experiences": [
+    [
+      "悠闲海岸",
+      "欣赏风景，仅在安全条件下游泳。"
+    ],
+    [
+      "酒店一日",
+      "比较私密性、服务及具体套房或别墅类别。"
+    ],
+    [
+      "Rekawa 海龟保护",
+      "随向导观察，不用闪光灯、不触碰，不保证遇见。"
+    ],
+    [
+      "Kalametiya 观鸟",
+      "留时间随当地向导探索湿地。"
+    ],
+    [
+      "Mulkirigala 岩石寺庙",
+      "尊重并悠闲参观仍在使用的宗教圣地。"
+    ]
+  ],
+  "checks": [
+    "确认房型、景观及私人泳池。",
+    "确认具体海滩海况及水流。",
+    "注意 Kayaam 与 Buckingham Place 年龄规则。",
+    "协调科伦坡或加勒接送、儿童座椅及路线。",
+    "确认餐饮、水疗及阿育吠陀护理。",
+    "向卖方确认预订、修改及支持。"
+  ],
+  "hotels": [
+    [
+      "Godellawela · 坦加勒西部",
+      "椰林中私密 Aman 度假村，现代套房有小型私人泳池。",
+      "确认房型、景观、人数及海滩状态。",
+      "适合宁静、简洁建筑及私人泳池。",
+      ""
+    ],
+    [
+      "Goyambokka · 坦加勒",
+      "设施完整度假村，有客房、泳池别墅、餐厅、水疗及儿童服务。",
+      "区分客房与别墅，确认服务及游泳条件。",
+      "适合家庭及多样设施。",
+      ""
+    ],
+    [
+      "Wellodeya Road · Rekawa",
+      "开放海岸的小型阿育吠陀度假村。",
+      "通常17岁及以上，确认项目及条件。",
+      "适合休养及阿育吠陀。",
+      ""
+    ],
+    [
+      "Rekawa 海滩与潟湖",
+      "海洋与潟湖之间带花园的独立精品酒店。",
+      "2026年5月起7岁及以上儿童需事先协商，海岸面向海浪。",
+      "适合潟湖附近花园静休。",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "所有海滩都能安全游泳吗？",
+      "不能，面向开阔印度洋，每天确认海浪及水流。"
+    ],
+    [
+      "四家酒店在哪里？",
+      "Amanwella 在 Godellawela，Anantara 在 Goyambokka，Kayaam 在 Wellodeya，Buckingham Place 在 Rekawa 潟湖旁。"
+    ],
+    [
+      "Amanwella 有私人泳池吗？",
+      "有，套房配小型泳池，确认房型、景观及人数。"
+    ],
+    [
+      "Anantara 适合家庭吗？",
+      "有儿童服务及泳池别墅，确认房型及房量。"
+    ],
+    [
+      "Kayaam 接待幼童吗？",
+      "通常仅包下整家酒店才可能，标准规则为17岁及以上。"
+    ],
+    [
+      "Buckingham Place 接待儿童吗？",
+      "2026年5月1日起，7岁及以上儿童需事先协商。"
+    ],
+    [
+      "住几晚？",
+      "三至四晚适合酒店、海岸及一至两次游览。"
+    ],
+    [
+      "Rekawa 能看到海龟吗？",
+      "可参加负责任向导观察，不保证遇见。"
+    ],
+    [
+      "何时前往？",
+      "12月至4月通常较适宜，不保证晴天或平静海况。"
+    ],
+    [
+      "Bosphoras 收款吗？",
+      "提供编辑精选，付款、确认及支持由预订供应商处理。"
+    ]
+  ],
+  "photoCaptions": [
+    "Goyambokka 海湾金色沙滩",
+    "坦加勒岩石海岸及棕榈树",
+    "印度洋坦加勒海岸",
+    "Marakolliya 潟湖暮光",
+    "Kalametiya 鸟类保护湿地",
+    "Mulkirigala 岩石寺庙",
+    "坦加勒传统港口",
+    "Marakolliya 椰林海滩",
+    "Hummanaya 附近岩石海岸"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Amanwella 椰林泳池",
+      "Amanwella 海景套房",
+      "Amanwella 入口楼阁"
+    ],
+    [
+      "Anantara Peace Haven 航拍",
+      "Anantara 海景泳池别墅",
+      "Anantara 海景客房"
+    ],
+    [
+      "Kayaam Wellness 泳池旁客房",
+      "Kayaam Wellness 宁静氛围",
+      "Kayaam Wellness 阿育吠陀护理"
+    ],
+    [
+      "Buckingham Place 建筑及园区",
+      "Buckingham Place 环境",
+      "Buckingham Place 精品氛围"
+    ]
+  ],
+  "seoTitle": "坦加勒住哪里？斯里兰卡南岸最佳度假村",
+  "hotelSeoTitle": "坦加勒酒店：Amanwella、Anantara、Kayaam 与 Buckingham Place",
+  "seoDescription": "比较坦加勒四家酒店，了解私人泳池、阿育吠陀、家庭入住条件、海滩及 Rekawa 潟湖。"
+}

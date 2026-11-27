@@ -1,0 +1,179 @@
+{
+  "name": "Tangalle",
+  "country": "Sri Lanka",
+  "eyebrow": "Sur de Sri Lanka · Calas de palmeras y lagunas",
+  "heading": "Dónde alojarse en Tangalle: el lujo del tiempo libre",
+  "intro": "Cuatro resorts distintos en la costa sur: Amanwella, Anantara Peace Haven, Kayaam Wellness y Buckingham Place.",
+  "editorial": "En Tangalle elige primero la costa. La cala Goyambokka, los cocoteros de Godellawela, las playas largas cerca de la ciudad y las lagunas Rekawa responden a viajes distintos. En océano Índico abierto, oleaje, corrientes y monzones determinan cada día la seguridad del baño. Una foto de playa vacía no garantiza mar tranquilo ni acceso a pie desde habitación.\n\nAmanwella es resort apartado entre cocoteros de Godellawela. Suites modernas con pequeñas piscinas privadas y terrazas; confirma categoría, vistas, capacidad infantil, privacidad y caminos. Anantara Peace Haven en Goyambokka ofrece 152 habitaciones y villas con piscina, restaurantes, spa y club infantil. Conviene a familias que buscan servicios variados, pero habitación no equivale a villa ni vista mar a baño seguro.\n\nAl este, Kayaam Wellness, en Wellodeya y Rekawa, se centra en recuperación y ayurveda. Generalmente admite huéspedes desde 17 años; menores solo si se alquila todo el hotel según operador. Comprueba programa, tratamientos incluidos e idoneidad. Buckingham Place es boutique independiente entre costa y laguna Rekawa. Desde el 1 de mayo de 2026 admite niños desde siete años únicamente por acuerdo previo. Familias con pequeños deben elegir otro alojamiento. Oleaje abierto no garantiza baño seguro.\n\nDedica tiempo a observar tortugas en programas responsables de conservación en Rekawa: sin flash, contacto ni garantía de avistamiento. Humedales de Kalametiya convienen para aves; templo rupestre Mulkirigala exige ropa respetuosa y escalones. Tres o cuatro noches permiten descansar y elegir una o dos excursiones según clima. Combina con Galle para contrastar fuerte histórico y costa sur. Traslado desde Colombo puede tardar varias horas; coordina ruta, recogida, equipaje y sillas infantiles. Diciembre–abril suele ser favorable, sin garantía de sol ni mar tranquilo. Confirma categoría, servicios, impuestos, comidas, cancelación y asistencia. Bosphoras ofrece selección editorial independiente; proveedor de reserva confirma precio y disponibilidad.",
+  "hotelIntro": "Cuatro estilos: suites privadas Amanwella, familiar Anantara, ayurveda Kayaam y boutique Buckingham Place.",
+  "areas": [
+    [
+      "Godellawela y Amanwella",
+      "Cala de cocoteros y resort moderno al oeste del centro.",
+      "Comprueba entrada al agua y corrientes incluso si parece tranquilo."
+    ],
+    [
+      "Goyambokka y Anantara",
+      "Cala, costa rocosa y gran resort con servicios familiares.",
+      "No todos los tramos son aptos para baño."
+    ],
+    [
+      "Tangalle y Medaketiya",
+      "Puerto, cocina local y playa abierta fuera de resorts.",
+      "Menos aislamiento; comprueba distancias."
+    ],
+    [
+      "Rekawa y Wellodeya",
+      "Costa salvaje, lagunas e íntimos Kayaam y Buckingham Place.",
+      "Confirma edades, programas y oleaje."
+    ],
+    [
+      "Humedales Kalametiya",
+      "Reserva de aves y naturaleza para excursión tranquila.",
+      "Respeta protección y elige guías responsables."
+    ],
+    [
+      "Mulkirigala y templos del interior",
+      "Templo rupestre, escalones empinados y arte religioso.",
+      "Considera ropa, calor y subida."
+    ]
+  ],
+  "experiences": [
+    [
+      "Costa sin prisas",
+      "Disfruta paisaje y nada solo con condiciones seguras."
+    ],
+    [
+      "Día en hotel",
+      "Compara privacidad, servicios y categoría exacta de suite o villa."
+    ],
+    [
+      "Conservación de tortugas en Rekawa",
+      "Observa con guía sin flash ni tocar; sin garantía de avistamiento."
+    ],
+    [
+      "Aves de Kalametiya",
+      "Dedica tiempo a humedales con guía local."
+    ],
+    [
+      "Templo rupestre Mulkirigala",
+      "Visita santuario activo con respeto y calma."
+    ]
+  ],
+  "checks": [
+    "Confirma categoría, vistas y piscina privada.",
+    "Comprueba mar y corrientes de playa concreta.",
+    "Considera reglas de edad Kayaam y Buckingham Place.",
+    "Coordina traslado, sillas infantiles y ruta desde Colombo o Galle.",
+    "Confirma comidas, spa y tratamientos ayurvédicos.",
+    "Comprueba reserva, cambios y asistencia con vendedor."
+  ],
+  "hotels": [
+    [
+      "Godellawela · Oeste de Tangalle",
+      "Aman apartado entre palmeras con suites modernas y pequeñas piscinas privadas.",
+      "Confirma categoría, vistas, capacidad y estado de playa.",
+      "Para calma, arquitectura depurada y piscina privada.",
+      ""
+    ],
+    [
+      "Goyambokka · Tangalle",
+      "Resort completo con habitaciones, villas con piscina, restaurantes, spa y servicios infantiles.",
+      "Distingue habitación y villa; comprueba servicios y baño.",
+      "Para familias e instalaciones variadas.",
+      ""
+    ],
+    [
+      "Wellodeya Road · Rekawa",
+      "Resort ayurvédico íntimo en costa abierta.",
+      "Generalmente desde 17 años; confirma programa y condiciones.",
+      "Para recuperación y ayurveda.",
+      ""
+    ],
+    [
+      "Playa y laguna Rekawa",
+      "Boutique independiente con jardines entre océano y laguna.",
+      "Desde mayo de 2026 niños desde siete años por acuerdo previo; costa expuesta a olas.",
+      "Para calma entre jardines junto a laguna.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Es seguro bañarse en todas las playas?",
+      "No, océano Índico abierto; comprueba oleaje y corrientes cada día."
+    ],
+    [
+      "¿Dónde están los cuatro hoteles?",
+      "Amanwella en Godellawela, Anantara en Goyambokka, Kayaam en Wellodeya, Buckingham Place junto a laguna Rekawa."
+    ],
+    [
+      "¿Amanwella tiene piscinas privadas?",
+      "Sí, suites con pequeñas piscinas; confirma categoría, vistas y capacidad."
+    ],
+    [
+      "¿Anantara conviene a familias?",
+      "Servicios infantiles y villas con piscina; confirma categoría y disponibilidad."
+    ],
+    [
+      "¿Kayaam admite niños pequeños?",
+      "Generalmente solo si se alquila todo el hotel; regla habitual desde 17 años."
+    ],
+    [
+      "¿Buckingham Place admite niños?",
+      "Desde el 1 de mayo de 2026, niños desde siete años por acuerdo previo."
+    ],
+    [
+      "¿Cuántas noches?",
+      "Tres o cuatro para hotel, costa y una o dos excursiones."
+    ],
+    [
+      "¿Se ven tortugas en Rekawa?",
+      "Observación guiada responsable posible, sin garantía."
+    ],
+    [
+      "¿Cuándo viajar?",
+      "Diciembre–abril suele ser favorable, sin garantía de sol ni mar tranquilo."
+    ],
+    [
+      "¿Bosphoras recibe pagos?",
+      "Selección editorial; proveedor de reserva gestiona pago, confirmación y asistencia."
+    ]
+  ],
+  "photoCaptions": [
+    "Playa dorada de Goyambokka",
+    "Costa rocosa y palmeras Tangalle",
+    "Costa Tangalle en océano Índico",
+    "Luz vespertina sobre laguna Marakolliya",
+    "Humedales reserva de aves Kalametiya",
+    "Templo rupestre Mulkirigala",
+    "Puerto tradicional Tangalle",
+    "Playa de palmeras Marakolliya",
+    "Costa rocosa cerca de Hummanaya"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Piscina Amanwella entre palmeras",
+      "Suite Amanwella con vista al océano",
+      "Pabellón de entrada Amanwella"
+    ],
+    [
+      "Anantara Peace Haven desde el aire",
+      "Villa Anantara con piscina y vistas mar",
+      "Habitación Anantara con vista al océano"
+    ],
+    [
+      "Habitación Kayaam Wellness junto a piscina",
+      "Ambiente tranquilo Kayaam Wellness",
+      "Tratamiento ayurvédico Kayaam Wellness"
+    ],
+    [
+      "Arquitectura y recinto Buckingham Place",
+      "Ambiente Buckingham Place",
+      "Atmósfera boutique Buckingham Place"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Tangalle: mejores resorts del sur de Sri Lanka",
+  "hotelSeoTitle": "Hoteles de Tangalle: Amanwella, Anantara, Kayaam y Buckingham Place",
+  "seoDescription": "Compara cuatro hoteles de Tangalle: piscinas privadas, ayurveda, condiciones familiares, playas y laguna Rekawa."
+}
