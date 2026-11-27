@@ -1,0 +1,43 @@
+name: Travel Chinese draft recovery
+on:
+  push:
+    branches: [feature/travel-six-language-drafts]
+    paths: ['.github/workflows/travel-zh-draft-recovery.yml','scripts/translate-travel-zh-recovery.py']
+permissions:
+  contents: read
+  actions: read
+jobs:
+  chinese:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - uses: actions/download-artifact@v4
+        with:
+          name: travel-source
+          path: /tmp/translation
+          run-id: 45913565425
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: unpublished-zh-drafts
+          path: /tmp/out
+          run-id: 45913565425
+          github-token: ${{ github.token }}
+      - name: Install local translation engine
+        run: |
+          python -m pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install --quiet 'transformers>=4.48,<5' 'ctranslate2>=4.5,<5' sentencepiece sacremoses
+          ct2-transformers-converter --model Helsinki-NLP/opus-mt-en-zh --output_dir /tmp/ct2-model --quantization int8
+      - name: Resume drafts and isolate entries needing review
+        run: python -u scripts/translate-travel-zh-recovery.py --locale zh --include-desaru --source /tmp/translation/travel-source.json --model-dir /tmp/ct2-model --output /tmp/out/zh-drafts.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: unpublished-zh-recovery
+          path: /tmp/out/*.json
+          if-no-files-found: warn
+          retention-days: 7
