@@ -345,6 +345,130 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
+        "key": "rosewood-3",
+        "sourcePage": "https://www.rosewoodhotels.com/en/hong-kong/wellness/pool",
+        "sourceResolvedUrl": "https://picasso.rosewoodhotelgroup.com/transform/52e3be4c-ee2f-4177-b3e7-8d1f567868d4/RWHKG_3-0_Brand-com_Assets_Facilities_Wellness_Asaya_Pool_5",
+        "sourceRequestedUrl": "https://picasso.rosewoodhotelgroup.com/transform/52e3be4c-ee2f-4177-b3e7-8d1f567868d4/RWHKG_3-0_Brand-com_Assets_Facilities_Wellness_Asaya_Pool_5",
+        "originalAlt": "Rosewood Hong Kong Asaya infinity pool facing Victoria Harbour",
+        "originalCaption": "Rosewood Hong Kong official property photography",
+        "credit": "Rosewood Hong Kong official property photography",
+        "publisher": "Rosewood Hong Kong",
+        "hotel": "Rosewood Hong Kong",
+        "localPath": "/images/travel/hong-kong-premium/rosewood/rosewood-3.webp",
+        "sourceSHA256": "84c33322c31a1cdca62c4de8df23c7f28d926d21665e72f870b5305b9782530d",
+        "webpSHA256": "7f9c84840b3328c357d03e4d581b55c982eee485942b8e123cb665fef29f95d5",
+        "sourcePixels": [
+          2000,
+          1461
+        ],
+        "webpPixels": [
+          1164,
+          850
+        ],
+        "webpBytes": 68172,
+        "pixelFingerprint": "9f7ef5d3d8f9feff",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "four-seasons-1",
+        "sourcePage": "https://www.expedia.com/Hong-Kong-Hotels-Four-Seasons-Hotel-Hong-Kong.h1418778.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/2000000/1420000/1418800/1418778/3d0d0b07.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/2000000/1420000/1418800/1418778/3d0d0b07.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Four Seasons Hotel Hong Kong exterior and waterfront towers",
+        "originalCaption": "Expedia / Four Seasons Hotel Hong Kong",
+        "credit": "Expedia / Four Seasons Hotel Hong Kong",
+        "publisher": "Four Seasons Hotel Hong Kong",
+        "hotel": "Four Seasons Hotel Hong Kong",
+        "localPath": "/images/travel/hong-kong-premium/four-seasons/four-seasons-1.webp",
+        "sourceSHA256": "bb8e9e74d110120d6c8c970c0e651d9dc55bac1ee795b9b07eec41c8de2f3b08",
+        "webpSHA256": "0dccacdc93159e7f9b69847521aec76bfaece4936c3cdd5cc9c7ba4e91de57fe",
+        "sourcePixels": [
+          1280,
+          854
+        ],
+        "webpPixels": [
+          1274,
+          850
+        ],
+        "webpBytes": 140028,
+        "pixelFingerprint": "9039eccecececec8",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "four-seasons-2",
+        "sourcePage": "https://www.expedia.com/Hong-Kong-Hotels-Four-Seasons-Hotel-Hong-Kong.h1418778.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/2000000/1420000/1418800/1418778/9ad71391.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/2000000/1420000/1418800/1418778/9ad71391.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Four Seasons Hotel Hong Kong Deluxe King Harbour View guest room",
+        "originalCaption": "Expedia / Four Seasons Hotel Hong Kong",
+        "credit": "Expedia / Four Seasons Hotel Hong Kong",
+        "publisher": "Four Seasons Hotel Hong Kong",
+        "hotel": "Four Seasons Hotel Hong Kong",
+        "localPath": "/images/travel/hong-kong-premium/four-seasons/four-seasons-2.webp",
+        "sourceSHA256": "851dd2aaf124b11922612b6d6233412f35998a17a98adf6ddfc1e5d639d19074",
+        "webpSHA256": "6e39a1df5c8675bc5c2741a44f6e056b23fddeca6807cb019a5b4c3bb016b238",
+        "sourcePixels": [
+          1280,
+          853
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 116568,
+        "pixelFingerprint": "c5ccfecce4d3c9cc",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "four-seasons-3",
+        "sourcePage": "https://www.expedia.com/Hong-Kong-Hotels-Four-Seasons-Hotel-Hong-Kong.h1418778.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/2000000/1420000/1418800/1418778/2d1af58f.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/2000000/1420000/1418800/1418778/2d1af58f.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Four Seasons Hotel Hong Kong bar lounge overlooking city",
+        "originalCaption": "Expedia / Four Seasons Hotel Hong Kong",
+        "credit": "Expedia / Four Seasons Hotel Hong Kong",
+        "publisher": "Four Seasons Hotel Hong Kong",
+        "hotel": "Four Seasons Hotel Hong Kong",
+        "localPath": "/images/travel/hong-kong-premium/four-seasons/four-seasons-3.webp",
+        "sourceSHA256": "7d77cdeef49002d06caadb4937ef9554fc0e74c9001c8bd097f7b60043419be9",
+        "webpSHA256": "2e418165a7d9bcccd5a3d474e2e10d9d4134aefd33a0c03b01f89fe0cf1aad66",
+        "sourcePixels": [
+          1280,
+          982
+        ],
+        "webpPixels": [
+          1108,
+          850
+        ],
+        "webpBytes": 201130,
+        "pixelFingerprint": "3979f070e8d25479",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "peninsula-1",
         "sourcePage": "https://www.peninsula.com/en/hong-kong/photos-and-videos",
         "sourceResolvedUrl": "https://www.peninsula.com/-/media/01-hong-kong-property/exterior-2_5000x2811.jpg",
@@ -467,64 +591,86 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
-      }
-    ],
-    "gaps": [
-      {
-        "group": "rosewood",
-        "expected": 3,
-        "found": 2
       },
       {
-        "group": "four-seasons",
-        "expected": 3,
-        "found": 0
+        "key": "mandarin-oriental-2",
+        "sourcePage": "https://www.hotels.com/ho213848/mandarin-oriental-hong-kong-hong-kong-hong-kong-sar/",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/1000000/10000/6100/6095/638e28f8.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/1000000/10000/6100/6095/638e28f8.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Mandarin Oriental Hong Kong King Harbour View guest room",
+        "originalCaption": "Hotels.com / Mandarin Oriental Hong Kong",
+        "credit": "Hotels.com / Mandarin Oriental Hong Kong",
+        "publisher": "Mandarin Oriental, Hong Kong",
+        "hotel": "Mandarin Oriental, Hong Kong",
+        "localPath": "/images/travel/hong-kong-premium/mandarin-oriental/mandarin-oriental-2.webp",
+        "sourceSHA256": "ada5515ee385d1e9e531244faa7dca96676bb4afe7be844fe120914255cefc64",
+        "webpSHA256": "c877328a71b33d75448c821b68bd9d75b127a0ffaa580be37c8a63734648cee3",
+        "sourcePixels": [
+          1280,
+          720
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 72592,
+        "pixelFingerprint": "70f88e0612919616",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "group": "mandarin-oriental",
-        "expected": 3,
-        "found": 1
+        "key": "mandarin-oriental-3",
+        "sourcePage": "https://www.hotels.com/ho213848/mandarin-oriental-hong-kong-hong-kong-hong-kong-sar/",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/1000000/10000/6100/6095/982aec24.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/1000000/10000/6100/6095/982aec24.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Mandarin Oriental Hong Kong bar lounge",
+        "originalCaption": "Hotels.com / Mandarin Oriental Hong Kong",
+        "credit": "Hotels.com / Mandarin Oriental Hong Kong",
+        "publisher": "Mandarin Oriental, Hong Kong",
+        "hotel": "Mandarin Oriental, Hong Kong",
+        "localPath": "/images/travel/hong-kong-premium/mandarin-oriental/mandarin-oriental-3.webp",
+        "sourceSHA256": "2329242f5aedebc346d7fa7d5c12338603bf0cc47efb83c05fc3c318cc1c1716",
+        "webpSHA256": "af0388342044bc6fdefaa75797f220208f25944825022d9657c51e1b46364852",
+        "sourcePixels": [
+          1280,
+          853
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 207298,
+        "pixelFingerprint": "c3c12c3cb0d8cf9d",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
+    "gaps": [],
     "errors": [
       {
         "page": "https://m.rosewoodhotels.com/en/hong-kong/gallery",
         "error": "503 Server Error: Service Unavailable for url: https://m.rosewoodhotels.com/en/hong-kong/gallery"
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Rosewood_Hong_Kong_Level_6_Swimming_Pool_2020.jpg",
-        "error": "429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/commons/c/c6/Rosewood_Hong_Kong_Level_6_Swimming_Pool_2020.jpg"
-      },
-      {
-        "page": "https://www.expedia.com/Kowloon-Hotels-Rosewood-Hong-Kong.h29356032.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Kowloon-Hotels-Rosewood-Hong-Kong.h29356032.Hotel-Information"
-      },
-      {
-        "page": "https://www.booking.com/hotel/hk/rosewood-hong-kong.en-gb.html",
-        "error": "exact property identity not confirmed on page"
-      },
-      {
         "page": "https://www.fourseasons.com/hongkong/photos-and-videos/",
         "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/hongkong/photos-and-videos/"
-      },
-      {
-        "url": "https://www.fourseasons.com/alt/img-opt/~75.701.0%2C0000-156%2C7500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/HKG/HKG_7143_original.jpg",
-        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~75.701.0%2C0000-156%2C7500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/HKG/HKG_"
-      },
-      {
-        "url": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2499-2997%2C2576-1685%2C9574/publish/content/dam/fourseasons/images/web/HKG/HKG_2462_original.jpg",
-        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2499-2997%2C2576-1685%2C9574/publish/content/dam/fourseasons/images/web/HKG/HKG"
-      },
-      {
-        "url": "https://www.fourseasons.com/alt/img-opt/~75.701.0%2C0000-313%2C0734-2998%2C9807-1686%2C9266/publish/content/dam/fourseasons/images/web/HKG/HKG_1632_original.jpg",
-        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~75.701.0%2C0000-313%2C0734-2998%2C9807-1686%2C9266/publish/content/dam/fourseasons/images/web/HKG/HKG_"
       }
     ],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
     "excludedCandidates": [],
     "cityCount": 9,
-    "hotelCount": 6,
-    "totalBytes": 2028354
+    "hotelCount": 12,
+    "totalBytes": 2834142
   }
 }
