@@ -1,0 +1,161 @@
+{
+  "name": "Comer See",
+  "country": "Italien",
+  "eyebrow": "Historische Villen und ruhige Ufer",
+  "heading": "Wo am Comer See übernachten? Die schönsten Orte und Luxushotels",
+  "intro": "Gärten in Cernobbio, Villen in Moltrasio, modernes Design in Torno und Terrassen in Tremezzina zeigen die Vielfalt des Comer Sees. Wählen Sie zuerst das Ufer und die Zimmerkategorie und berücksichtigen Sie saisonale Schiffsfahrpläne.",
+  "editorial": "Villa d’Este in Cernobbio bietet klassische historische Hotellerie, Passalacqua in Moltrasio das Ambiente einer privaten Villa aus dem 18. Jahrhundert. Am gegenüberliegenden Ufer in Torno steht Il Sereno für das zeitgenössische Design von Patricia Urquiola. Das Grand Hotel Tremezzo liegt weiter nördlich gegenüber Bellagio und ist für seinen schwimmenden Pool und seine Gärten bekannt.\n\nLinienschiffe können praktischer sein als die engen Straßen. Die Linie Como–Colico und die zentralen Verbindungen zwischen Bellagio, Cadenabbia, Varenna und Menaggio bedienen jedoch nicht jeden Privatsteg. Private Bootsausflüge erfordern eine separate Buchung. Villa Carlotta und Villa del Balbianello haben eigene Besuchsregeln. Prüfen Sie im Herbst und Winter Hotelöffnungen und Fahrpläne. Aktuelle Preise und Verfügbarkeit bestätigt der Buchungspartner.",
+  "hotelIntro": "Vier Hotels an unterschiedlichen Ufern: Villa d’Este in Cernobbio, Grand Hotel Tremezzo am mittleren Westufer, Passalacqua in Moltrasio und Il Sereno in Torno.",
+  "areas": [
+    [
+      "Como · Altstadt und Uferpromenade",
+      "Dom, Stadtgassen, Bahnhöfe und öffentliche Schiffsanleger erleichtern die Erkundung des Sees.",
+      "Cernobbio und Torno sind eigenständige Orte außerhalb des Zentrums von Como."
+    ],
+    [
+      "Cernobbio und Moltrasio · Villengärten",
+      "Historische Anwesen und ruhige Wohnviertel nördlich von Como am Westufer.",
+      "Prüfen Sie Anlegestelle, Zugang und Transfer; Villa d’Este und Passalacqua sind verschiedene Hotels."
+    ],
+    [
+      "Torno und Blevio · Ostufer",
+      "Modernes Design und Blick auf die gegenüberliegenden Hügel; Il Sereno liegt in Torno.",
+      "Unterscheiden Sie öffentliche Anleger, Straßenverbindungen und Privatboote."
+    ],
+    [
+      "Tremezzina und Lenno · Paläste und Gärten",
+      "Grand Hotel Tremezzo liegt nahe Villa Carlotta; Villa del Balbianello befindet sich bei Lenno.",
+      "Villenbesuche erfordern eigene Tickets und Zugangsregeln."
+    ],
+    [
+      "Bellagio, Menaggio und Varenna · Seemitte",
+      "Beliebte Orte mit öffentlichen Schiffsverbindungen.",
+      "Prüfen Sie Fahrpläne von Navigazione Laghi und die letzte Rückfahrt."
+    ]
+  ],
+  "experiences": [
+    [
+      "Mit dem Linienschiff über den See",
+      "Vergleichen Sie reguläre und schnelle Verbindungen von Navigazione Laghi, Anleger und Rückfahrt; Privatboote sind separat."
+    ],
+    [
+      "Botanischer Garten der Villa Carlotta",
+      "Verbinden Sie historische Sammlungen mit einem Gartenbesuch; prüfen Sie Zeiten und Tickets."
+    ],
+    [
+      "Villa del Balbianello",
+      "Organisieren Sie den Besuch nach FAI-Regeln, mit eigenem Ticket und gegebenenfalls Bootszugang."
+    ],
+    [
+      "Ein Morgen zwischen Bellagio und Varenna",
+      "Wählen Sie eine passende Fähre statt mehrerer langer Autofahrten; eine Restaurantbuchung sichert keinen Fährplatz."
+    ],
+    [
+      "Die richtige Hotelatmosphäre",
+      "Vergleichen Sie klassische Villa d’Este, lebhaftes Tremezzo, intimes Passalacqua und modernes Il Sereno."
+    ]
+  ],
+  "checks": [
+    "Ein schwimmender Hotelpool ist kein öffentliches Bad und keine garantierte Privatleistung.",
+    "Linienschiffe bedienen nicht automatisch jeden Hotelsteg.",
+    "Prüfen Sie Saisonzeiten von Hotels, Gärten, Museen und Schiffen.",
+    "Bestätigen Sie die Aussicht Ihrer konkreten Suite, nicht nur das Panorama des Anwesens.",
+    "Unterscheiden Sie Zimmer, eigenständige Villen und separat gebuchte Bootsausflüge."
+  ],
+  "hotels": [
+    [
+      "Cernobbio · Via Regina 40",
+      "Villa d’Este liegt in einem ehemaligen Adelssitz am See. Formale Gärten, historische Pavillons und Terrassen prägen den klassischen Stil. Zimmer im Cardinal’s Building und Queen’s Pavilion unterscheiden sich in Aussicht und Entfernung zu Einrichtungen. Privatvillen sind eigene Kategorien; der schwimmende Pool gehört zum Hotelbetrieb.",
+      "Prüfen Sie Gebäude, Seeblickkategorie, Poolregeln, Saison und Villenbedingungen.",
+      "Für klassische Gastlichkeit und historische Gärten.",
+      ""
+    ],
+    [
+      "Tremezzina · Tremezzo gegenüber Bellagio",
+      "Belle-Époque-Palast mit farbenfrohen Interieurs, Gärten und dem berühmten Water-on-the-Water-Pool. Zum Angebot gehören drei Pools und der separate T Beach. Gartenblickzimmer, Seeblickzimmer und Terrassensuiten unterscheiden sich. Villa Carlotta liegt nebenan; Bellagio und Varenna erfordern eine Seeüberquerung.",
+      "Prüfen Sie Aussicht, Pool- und T-Beach-Regeln, Saison und Schiffsverbindungen.",
+      "Für lebhafte historische Hotellerie und die Seemitte.",
+      ""
+    ],
+    [
+      "Moltrasio · Westufer",
+      "Passalacqua vermittelt das Ambiente eines privaten italienischen Hauses aus dem 18. Jahrhundert mit terrassierten Gärten, historischen Interieurs und ruhiger Gastlichkeit. Kategorien unterscheiden sich nach Gebäude, Größe und Gartenzugang. Es liegt weder in Bellagio noch im Zentrum von Como; Privatboote und Transfers separat bestätigen.",
+      "Prüfen Sie Gebäude, Suite, Aussicht, Gartenzugang, Saison und Wassertransport.",
+      "Für einen intimen Aufenthalt im historischen Villenambiente.",
+      ""
+    ],
+    [
+      "Torno · Ostufer",
+      "Il Sereno setzt mit Patricia Urquiolas moderner Architektur aus Stein, Holz und Glas einen Kontrast zu klassischen Palästen. Die 40 Seeblicksuiten unterscheiden sich bei Terrassen, Blickwinkel und Privatsphäre. Für Moltrasio und Tremezzina ist ein Transfer erforderlich.",
+      "Bestätigen Sie Suitengröße, Terrasse, saisonale Leistungen und Transfers ab Torno.",
+      "Für modernes Design direkt am See.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Welches Hotel eignet sich für einen klassischen Urlaub am Comer See?",
+      "Villa d’Este ist ein historisches Anwesen in Cernobbio, Grand Hotel Tremezzo ein Belle-Époque-Palast bei Villa Carlotta. Prüfen Sie Kategorie und Leistungen."
+    ],
+    [
+      "Liegt Passalacqua in Bellagio?",
+      "Nein, in Moltrasio. Bellagio liegt weiter nördlich in der Seemitte; ein Transfer ist erforderlich."
+    ],
+    [
+      "Welches Hotel bietet modernes Design?",
+      "Il Sereno in Torno ist für Patricia Urquiolas Architektur und Seeblicksuiten bekannt."
+    ],
+    [
+      "Ist der schwimmende Pool des Grand Hotel Tremezzo öffentlich?",
+      "Nicht von öffentlichem Zugang ausgehen. Prüfen Sie Poolregeln, Saison und Zugang getrennt vom T Beach."
+    ],
+    [
+      "Wie reist man zwischen Tremezzo, Bellagio und Varenna?",
+      "Öffentliche Schiffe und Fähren verbinden die Orte; Fahrpläne und Routen unterscheiden sich. Prüfen Sie die letzte Rückfahrt."
+    ],
+    [
+      "Sind Villa Carlotta und Villa del Balbianello im Hotelaufenthalt enthalten?",
+      "Nein, es sind eigenständige Besuchsorte mit eigenen Tickets und Regeln."
+    ],
+    [
+      "Wie buche ich Hotels, Villen und Boote?",
+      "Vergleichen Sie Angebote auf Bosphoras; Preise, Verfügbarkeit und Buchungsbedingungen bestätigt der autorisierte Anbieter."
+    ]
+  ],
+  "photoCaptions": [
+    "Luftaufnahme der Seemitte des Comer Sees",
+    "Cernobbio und Villa d’Este vom See",
+    "Berge bei Bellagio vom Schiff",
+    "Villa Carlotta und Gärten am See",
+    "Panorama von Punta Spartivento in Bellagio",
+    "Bunte Uferhäuser in Varenna",
+    "Villa del Balbianello auf der Halbinsel bei Lenno",
+    "Dom und Dächer der Altstadt von Como",
+    "Anleger und Häuser in Moltrasio"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Historische Fassade und Gärten der Villa d’Este",
+      "Klassische Suite mit geschnitzten Möbeln",
+      "Außenpool am See"
+    ],
+    [
+      "Fassade des Grand Hotel Tremezzo und schwimmender Pool",
+      "Goldfarbene Suite mit Balkon",
+      "Water-on-the-Water-Pool"
+    ],
+    [
+      "Villa Passalacqua über den Gärten",
+      "Wohnzimmer der Suite Agnese mit Kamin",
+      "Terrassengärten und Pool"
+    ],
+    [
+      "Moderne Fassade des Il Sereno",
+      "Wohnbereich und Terrasse der Corner Suite",
+      "Pool am See und Boote"
+    ]
+  ],
+  "seoTitle": "Comer See: Wo übernachten? Luxushotels und schönste Orte",
+  "hotelSeoTitle": "Beste Hotels am Comer See: Villa d’Este, Tremezzo und Il Sereno",
+  "seoDescription": "Vergleichen Sie Villa d’Este, Tremezzo, Passalacqua und Il Sereno. Entdecken Sie die schönsten Orte, Villen und Schiffsverbindungen am Comer See."
+}

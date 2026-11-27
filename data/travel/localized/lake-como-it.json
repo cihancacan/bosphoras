@@ -1,0 +1,161 @@
+{
+  "name": "Lago di Como",
+  "country": "Italia",
+  "eyebrow": "Ville storiche e rive tranquille",
+  "heading": "Dove alloggiare sul lago di Como: borghi e hotel di lusso",
+  "intro": "I giardini di Cernobbio, le ville di Moltrasio, il design di Torno e le terrazze della Tremezzina raccontano un lago dalle molte anime. Scegli la sponda e la categoria della suite prima di farti conquistare dalle fotografie; considera gli orari stagionali dei battelli.",
+  "editorial": "Villa d’Este a Cernobbio offre l'eleganza classica di un albergo storico, mentre Passalacqua a Moltrasio ricorda una dimora privata del Settecento. Sulla sponda opposta Il Sereno, a Torno, esprime il design contemporaneo di Patricia Urquiola. Grand Hotel Tremezzo si trova più a nord, di fronte a Bellagio, ed è celebre per la piscina galleggiante e i giardini.\n\nI battelli di linea possono essere più pratici delle strade strette, ma la linea Como–Colico e i collegamenti del centro lago tra Bellagio, Cadenabbia, Varenna e Menaggio non servono ogni pontile privato. Le escursioni in barca privata richiedono una prenotazione separata. Villa Carlotta e Villa del Balbianello hanno proprie regole di visita. In autunno e inverno verifica aperture e orari. Prezzi e disponibilità sono confermati dal partner di prenotazione.",
+  "hotelIntro": "Quattro hotel in zone diverse: Villa d’Este a Cernobbio, Grand Hotel Tremezzo sulla sponda occidentale del centro lago, Passalacqua a Moltrasio e Il Sereno a Torno.",
+  "areas": [
+    [
+      "Como · Centro storico e lungolago",
+      "Duomo, vie storiche, stazioni ferroviarie e imbarcaderi pubblici facilitano la scoperta del lago.",
+      "Cernobbio e Torno sono comuni distinti dal centro di Como."
+    ],
+    [
+      "Cernobbio e Moltrasio · Giardini delle ville",
+      "Dimore storiche e quartieri residenziali tranquilli a nord di Como, sulla sponda occidentale.",
+      "Verifica pontile, accesso alla proprietà e trasporti; Villa d’Este e Passalacqua sono hotel diversi."
+    ],
+    [
+      "Torno e Blevio · Sponda orientale",
+      "Design contemporaneo e vista sulle colline opposte; Il Sereno si trova a Torno.",
+      "Distingui imbarcaderi pubblici, percorsi stradali e barche private."
+    ],
+    [
+      "Tremezzina e Lenno · Palazzi e giardini",
+      "Grand Hotel Tremezzo è vicino a Villa Carlotta; Villa del Balbianello sorge nei pressi di Lenno.",
+      "Le visite alle ville richiedono biglietti e regole di accesso propri."
+    ],
+    [
+      "Bellagio, Menaggio e Varenna · Centro lago",
+      "Borghi frequentati collegati dalla navigazione pubblica.",
+      "Controlla gli orari di Navigazione Laghi e l'ultima corsa di ritorno."
+    ]
+  ],
+  "experiences": [
+    [
+      "Sul lago in battello",
+      "Confronta corse ordinarie e rapide di Navigazione Laghi, imbarcaderi e ritorno; la barca privata è un servizio separato."
+    ],
+    [
+      "Giardini botanici di Villa Carlotta",
+      "Abbina le collezioni storiche alla passeggiata nei giardini; verifica orari e biglietti."
+    ],
+    [
+      "Villa del Balbianello",
+      "Organizza la visita secondo le regole del FAI, con biglietto separato ed eventuale accesso via acqua."
+    ],
+    [
+      "Una mattina tra Bellagio e Varenna",
+      "Scegli un traghetto comodo anziché lunghi tragitti in auto; una prenotazione al ristorante non garantisce posto a bordo."
+    ],
+    [
+      "Scegliere l'atmosfera dell'hotel",
+      "Confronta Villa d’Este classica, Tremezzo vivace, Passalacqua raccolta e Il Sereno contemporaneo."
+    ]
+  ],
+  "checks": [
+    "La piscina galleggiante dell'hotel non è pubblica né garantita in esclusiva.",
+    "I battelli pubblici non raggiungono automaticamente ogni pontile alberghiero.",
+    "Verifica le aperture stagionali di hotel, giardini, musei e navigazione.",
+    "Conferma la vista della specifica suite, non soltanto il panorama della proprietà.",
+    "Distingui camere, ville indipendenti e gite in barca da prenotare separatamente."
+  ],
+  "hotels": [
+    [
+      "Cernobbio · Via Regina 40",
+      "Villa d’Este occupa un'antica residenza aristocratica sul lago. Giardini all'italiana, padiglioni storici e terrazze ne definiscono il carattere classico. Le camere del Cardinal’s Building e del Queen’s Pavilion differiscono per vista e distanza dai servizi. Le ville private sono categorie autonome; la piscina galleggiante è una struttura alberghiera.",
+      "Verifica edificio, categoria vista lago, regole della piscina, stagione e condizioni delle ville.",
+      "Per ospitalità classica e giardini storici.",
+      ""
+    ],
+    [
+      "Tremezzina · Tremezzo di fronte a Bellagio",
+      "Palazzo Belle Époque con interni vivaci, giardini e celebre piscina Water-on-the-Water. L'offerta comprende tre piscine e la zona separata T Beach. Camere vista giardino, vista lago e suite con terrazza sono diverse. Villa Carlotta è vicina, mentre per Bellagio e Varenna occorre attraversare il lago.",
+      "Conferma vista, condizioni della piscina galleggiante e di T Beach, stagione e collegamenti.",
+      "Per l'atmosfera vivace di un hotel storico e il centro lago.",
+      ""
+    ],
+    [
+      "Moltrasio · Sponda occidentale",
+      "Passalacqua ricrea l'atmosfera di una dimora italiana privata del Settecento con giardini terrazzati, interni storici e ospitalità senza fretta. Le categorie differiscono per edificio, dimensioni e accesso al giardino. Non si trova a Bellagio né nel centro di Como; barche private e trasferimenti vanno confermati separatamente.",
+      "Verifica edificio, suite, vista, giardino, stagione e trasporto via acqua.",
+      "Per un soggiorno raccolto in una villa storica.",
+      ""
+    ],
+    [
+      "Torno · Sponda orientale",
+      "Il Sereno contrappone ai palazzi classici l'architettura contemporanea di Patricia Urquiola, tra pietra, legno, vetro e acqua. Le 40 suite vista lago hanno terrazze differenti per disposizione, angolo visuale e privacy. Per Moltrasio o Tremezzina occorre organizzare il trasporto.",
+      "Conferma metratura della suite, terrazza, servizi stagionali e trasferimenti da Torno.",
+      "Per design contemporaneo direttamente sul lago.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Quale hotel scegliere per una vacanza classica sul lago di Como?",
+      "Villa d’Este è una dimora storica a Cernobbio, Grand Hotel Tremezzo un palazzo Belle Époque vicino a Villa Carlotta. Verifica categoria e accesso ai servizi."
+    ],
+    [
+      "Passalacqua si trova a Bellagio?",
+      "No, è a Moltrasio. Bellagio è più a nord, nel centro lago; occorre organizzare il trasporto."
+    ],
+    [
+      "Quale hotel si distingue per il design contemporaneo?",
+      "Il Sereno a Torno è noto per l'architettura di Patricia Urquiola e le suite vista lago."
+    ],
+    [
+      "La piscina galleggiante del Grand Hotel Tremezzo è aperta a tutti?",
+      "Non dare per scontato l'accesso pubblico. Verifica regole, stagione e condizioni, separatamente da T Beach."
+    ],
+    [
+      "È facile spostarsi tra Tremezzo, Bellagio e Varenna?",
+      "Ci sono battelli e traghetti pubblici, con percorsi e orari diversi. Controlla l'ultima corsa di ritorno."
+    ],
+    [
+      "Le visite a Villa Carlotta e Villa del Balbianello sono comprese?",
+      "No, sono luoghi di visita autonomi con biglietti e regole propri."
+    ],
+    [
+      "Come prenotare hotel, ville e barche?",
+      "Confronta le offerte su Bosphoras; prezzi, disponibilità e condizioni sono confermati dal fornitore autorizzato."
+    ]
+  ],
+  "photoCaptions": [
+    "Veduta aerea del centro lago di Como",
+    "Cernobbio e Villa d’Este dal lago",
+    "Montagne presso Bellagio viste dal battello",
+    "Villa Carlotta e giardini sul lago",
+    "Panorama da Punta Spartivento a Bellagio",
+    "Case colorate di Varenna sull'acqua",
+    "Villa del Balbianello sulla penisola di Lenno",
+    "Duomo e tetti del centro storico di Como",
+    "Imbarcadero e case di Moltrasio"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Facciata storica e giardini di Villa d’Este",
+      "Suite classica con mobili intagliati",
+      "Piscina all'aperto sul lago"
+    ],
+    [
+      "Facciata di Grand Hotel Tremezzo e piscina galleggiante",
+      "Suite dai toni dorati con balcone",
+      "Piscina Water-on-the-Water"
+    ],
+    [
+      "Villa Passalacqua sopra i giardini",
+      "Salotto della Suite Agnese con camino",
+      "Giardini terrazzati e piscina"
+    ],
+    [
+      "Facciata contemporanea di Il Sereno",
+      "Salotto e terrazza della Corner Suite",
+      "Piscina sul lago e barche"
+    ]
+  ],
+  "seoTitle": "Dove dormire sul lago di Como: borghi e hotel di lusso",
+  "hotelSeoTitle": "Migliori hotel del lago di Como: Villa d’Este, Tremezzo e Il Sereno",
+  "seoDescription": "Confronta Villa d’Este, Tremezzo, Passalacqua e Il Sereno. Scopri i borghi più belli del lago di Como, le ville e i collegamenti in battello."
+}
