@@ -99,9 +99,27 @@ DIRECT = {
       "Little India Brickfields Kuala Lumpur Jalan Tun Sambanthan",
       "https://commons.wikimedia.org/wiki/File:Little_India,_Brickfields,_Kuala_Lumpur.jpg",
       "Yun Huang Yong / CC BY 2.0 / resized WebP"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Little_India%2C_Brickfields%2C_Kuala_Lumpur.jpg",
+      "Little India Brickfields Kuala Lumpur Jalan Tun Sambanthan",
+      "https://commons.wikimedia.org/wiki/File:Little_India,_Brickfields,_Kuala_Lumpur.jpg",
+      "Yun Huang Yong / CC BY 2.0 / resized WebP"
     ]
   ],
   "kuala-lumpur/mandarin-oriental": [
+    [
+      "https://re-lief.net/southeast-asia/wp-content/uploads/sites/7/mandarin-oriental-kualalumpur_2.jpg",
+      "Mandarin Oriental Kuala Lumpur exterior entrance with flags",
+      "https://re-lief.net/southeast-asia/mandarin-oriental-kualalumpur/",
+      "Relief Southeast Asia / hotel exterior"
+    ],
+    [
+      "https://storage.unitedwebnetwork.com/files/801/0b2db6c460968c79e866a84849f65b5a.png",
+      "Mandarin Oriental Kuala Lumpur exterior entrance at night",
+      "https://www.kualalumpurhospitality.com/blog/top-5-kl-hotels-directly-connected-to-malls-for-your-ultimate-shopping-getaway",
+      "Kuala Lumpur Hospitality"
+    ],
     [
       "https://d19lgisewk9l6l.cloudfront.net/wexas/www/images/largeimages/destinations/Malaysia/mandarin_oriental_kl/kuala-03pc_lo_autoresized.jpg",
       "Mandarin Oriental Kuala Lumpur exterior beside Petronas towers",
@@ -139,6 +157,12 @@ DIRECT = {
       "Four Seasons Kuala Lumpur cocktail bar lounge overlooking city",
       "https://www.expedia.com/Kuala-Lumpur-Hotels-Four-Seasons-Hotel-Kuala-Lumpur.h21122615.Hotel-Information",
       "Expedia / Four Seasons Hotel Kuala Lumpur"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/22000000/21130000/21122700/21122615/c0c2d6fd.jpg?impolicy=resizecrop&ra=fit&rw=598",
+      "Four Seasons Kuala Lumpur lobby lounge with city views",
+      "https://www.expedia.com/Kuala-Lumpur-Hotels-Four-Seasons-Hotel-Kuala-Lumpur.h21122615.Hotel-Information",
+      "Expedia / Four Seasons Hotel Kuala Lumpur"
     ]
   ],
   "kuala-lumpur/ruma": [
@@ -159,6 +183,14 @@ DIRECT = {
       "The RuMa Hotel and Residences outdoor infinity pool",
       "https://www.expedia.com/Kuala-Lumpur-Hotels-The-RuMa-Hotel-And-Residences.h31929867.Hotel-Information",
       "Expedia / The RuMa Hotel and Residences"
+    ]
+  ],
+  "kuala-lumpur/eq": [
+    [
+      "https://www.eqkualalumpur.com/wp-content/uploads/sites/10/2019/04/2019-04-01_Architecture-Malaysia-EQ-Shot2.jpg",
+      "EQ Kuala Lumpur exterior Equatorial Plaza tower",
+      "https://www.eqkualalumpur.equatorial.com/press-media/the-grand-opening-of-equatorial-plaza/",
+      "EQ / Architecture Malaysia"
     ]
   ]
 }
@@ -345,7 +377,7 @@ def hotel_job(c,h):
  # These were specifically identified by source filenames/alt as unsuitable or ambiguous.
  bad={'ritz-carlton-2','portofino-2','claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4','savoy-2','shangri-la-2','shangri-la-3','venetian-3','le-blanc-1','le-blanc-3','coral-beach-3','nizuc-4','hyatt-ziva-2','coral-beach-4','coral-beach-5','le-blanc-5','le-blanc-6','le-blanc-7','le-blanc-8'}
  rejected=[r for r in allprevious if r['key'] in bad]
- existing=[r for r in allprevious if r['key'] not in bad]
+ existing=[r for r in allprevious if r['key'] not in bad and not (c['slug']=='kuala-lumpur' and key=='eq' and r['key']=='eq-1')]
  if len(existing)>=3:return c['slug'],key,existing,[]
  avoid=rejected+[r for r in old.get('excludedCandidates',[]) if r.get('hotel')==name]
  patterns=[EXTERIOR.pattern,ROOM.pattern,FACILITY.pattern]
