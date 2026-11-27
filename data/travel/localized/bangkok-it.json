@@ -1,0 +1,168 @@
+{
+  "name": "Bangkok",
+  "country": "Thailandia",
+  "eyebrow": "Bangkok · Fiume, giardini e cultura urbana",
+  "heading": "Dove alloggiare a Bangkok: il lusso al proprio ritmo",
+  "intro": "Barche davanti ai templi sul Chao Phraya, cortili dietro antiche facciate di Charoen Krung e giardini Nai Lert che attenuano il rumore urbano. La zona cambia tutto il viaggio.",
+  "editorial": "A Bangkok il lusso dipende dalla geografia quanto dalle stelle dell'hotel. Il Chao Phraya ha plasmato la città prima dei grattacieli; i quartieri fluviali hanno ritmi diversi dal centro finanziario e dai suoi giardini. Mandarin Oriental è in fondo a Oriental Avenue, Bang Rak. Lo storico Authors' Wing non è River Wing, dove sono catalogate le Author's Suites. Una foto della scala storica non rappresenta ogni camera. Più a sud Capella Bangkok a Charoen Krung offre 101 camere, suite e ville in architettura moderna bassa; idromassaggi esterni solo nelle ville specifiche.\n\nA nord, a Dusit, The Siam unisce giardini, art déco, arte e antiquariato. Ville con piscina diverse dalle suite sul fiume; barca per Sathorn secondo orari. Lontano dal fiume, Aman Nai Lert Bangkok ha aperto nel 2025 nel parco storico Nai Lert, Pathum Wan, con 52 ampie suite e centro benessere di 1.500 m². È un giardino urbano, non un hotel sul fiume.\n\nNelle ore di punta il traffico è lento; barche degli hotel non servono tutti i moli e l'ultima corsa può precedere la fine della cena. Pianifica traversata per Wat Arun e templi antichi. Charoen Krung e Talat Noi offrono piccoli ristoranti, gallerie e spazi creativi. Famiglie: verifica capienza, camere comunicanti, piscine e spa. Caldo e piogge incidono su passeggiate e barche. Balcone non garantisce vista Wat Arun o Grande Palazzo. Confronta su Bosphoras; prezzi, disponibilità e assistenza confermati dal fornitore autorizzato.",
+  "hotelIntro": "Quattro indirizzi: Mandarin Oriental classico fluviale, Capella contemporaneo, The Siam arte e giardini, Aman Nai Lert oasi urbana.",
+  "areas": [
+    [
+      "Bang Rak · Hotel storici sul fiume",
+      "Storia alberghiera, gallerie e barche da lavoro attorno Oriental Avenue; transfer via acqua a volte più comodo.",
+      "Verifica molo, ultima barca e ala hotel."
+    ],
+    [
+      "Charoen Krung · Riva creativa",
+      "Vecchie facciate, cortili, nuovi ristoranti e gallerie vicino Capella.",
+      "Pianifica percorso tra marciapiedi stretti e vie animate."
+    ],
+    [
+      "Dusit · Giardini e The Siam",
+      "A monte palazzi, moli e quartieri tranquilli; The Siam è rifugio, non hotel presso centri commerciali.",
+      "Verifica tempi e orari barche."
+    ],
+    [
+      "Pathum Wan · Oasi Nai Lert",
+      "Giardino storico tra negozi e torri Wireless Road; Aman offre quiete urbana, non panorama fluviale.",
+      "Considera caldo, tragitto, piano e orientamento suite."
+    ],
+    [
+      "Thonburi · Templi oltre il fiume",
+      "Wat Arun e canali di fronte al quartiere reale ricordano la storia sull'acqua.",
+      "Rispetta abbigliamento, orari e moli ufficiali."
+    ]
+  ],
+  "experiences": [
+    [
+      "Wat Arun dal fiume",
+      "Scegli punto panoramico o barca per luce serale, senza presumere vista da ogni hotel fluviale."
+    ],
+    [
+      "Charoen Krung creativo",
+      "Esplora gallerie, laboratori, caffè e moli con itinerario breve per il caldo."
+    ],
+    [
+      "Bangkok dall'acqua",
+      "Barche pubbliche e hotel hanno orari diversi; concorda percorso privato."
+    ],
+    [
+      "Tempo per spa",
+      "Confronta Aman Nai Lert e The Oriental Spa; verifica trattamenti, accesso e disponibilità."
+    ],
+    [
+      "Gastronomia senza fretta",
+      "Unisci ristoranti storici, nuovi locali e mercati; prenota tavolo e ritorno."
+    ]
+  ],
+  "checks": [
+    "Confronta Bang Rak, Charoen Krung, Dusit e giardini Pathum Wan.",
+    "Breve distanza sulla mappa non garantisce transfer veloce.",
+    "Verifica ala e categoria; balcone, piscina, vista e maggiordomo non universali.",
+    "Aman Nai Lert è in parco urbano, non sul fiume.",
+    "Controlla molo, ultima barca, meteo e supplementi.",
+    "Prenota ristoranti e spa; verifica abbigliamento e regole bambini.",
+    "Rispetta templi, orari e biglietti.",
+    "Prezzi, disponibilità e prenotazione confermati dal fornitore autorizzato."
+  ],
+  "hotels": [
+    [
+      "Bang Rak · Oriental Avenue · Chao Phraya",
+      "Storico Mandarin Oriental con servizio attento e più ali. Authors' Wing diverso da River Wing con Author's Suites. Facciata storica non descrive ogni camera; verifica traversate per spa e ristoranti.",
+      "Conferma ala, vista, barche, spa, abbigliamento e bambini.",
+      "Per storia e ospitalità fluviale classica.",
+      ""
+    ],
+    [
+      "Charoen Krung · Riva orientale",
+      "Capella, moderno hotel basso con vetrate panoramiche, terrazze e ville con giardino. 101 camere, suite e ville; idromassaggi esterni solo in ville specifiche.",
+      "Distingui camera, suite e villa; piscina e servizio secondo categoria.",
+      "Per architettura moderna e vita sul fiume.",
+      ""
+    ],
+    [
+      "Dusit · Riva storica nord",
+      "The Siam unisce art déco, arte e antiquariato nei giardini. Courtyard e Riverside Pool Villas differiscono da River View Suite; barca Sathorn secondo orari.",
+      "Dusit non è Silom; verifica tragitto, barca, villa e capienza familiare.",
+      "Per arte e privacy.",
+      ""
+    ],
+    [
+      "Pathum Wan · Wireless Road · Parco Nai Lert",
+      "Aman Nai Lert aperto nel 2025 nel parco storico, 52 suite e centro benessere 1.500 m². Hotel urbano tranquillo vicino a negozi e uffici, non sul fiume.",
+      "Verifica piano, categoria, benessere e ristoranti.",
+      "Per giardini urbani e benessere.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Quale quartiere per hotel di lusso a Bangkok?",
+      "Bang Rak e Charoen Krung per fiume e ristoranti, Dusit per quiete, Pathum Wan per negozi e giardini. Confronta itinerari."
+    ],
+    [
+      "Quali quattro hotel sono selezionati?",
+      "Mandarin Oriental per storia, Capella per architettura, The Siam per art déco e ville, Aman Nai Lert per giardini e benessere."
+    ],
+    [
+      "Tutte le camere Mandarin Oriental sono in Authors' Wing?",
+      "No, ali e categorie diverse; Author's Suites in River Wing."
+    ],
+    [
+      "Ogni camera Capella ha piscina privata?",
+      "No, idromassaggi esterni solo in ville specifiche."
+    ],
+    [
+      "The Siam è vicino ai centri commerciali?",
+      "No, a monte in Dusit; barca Sathorn secondo orari, Siam Paragon non a piedi."
+    ],
+    [
+      "Aman Nai Lert affaccia sul Chao Phraya?",
+      "No, è nel parco Nai Lert a Pathum Wan; vista secondo suite."
+    ],
+    [
+      "Come visitare Wat Arun e templi fluviali?",
+      "Pianifica traversata da molo preciso, orari e abbigliamento. Non tutti gli hotel fluviali vedono Wat Arun."
+    ],
+    [
+      "Come prenotare su Bosphoras?",
+      "Confronta alloggi; prezzi, disponibilità, pagamento e assistenza confermati dal fornitore autorizzato."
+    ]
+  ],
+  "photoCaptions": [
+    "Wat Arun oltre il fiume e barca sul Chao Phraya",
+    "Wat Arun dalla riva opposta al mattino",
+    "Tetti Grande Palazzo al tramonto",
+    "Via storica e facciate Charoen Krung",
+    "Sala del trono Ananta Samakhom a Dusit",
+    "Parco Lumphini e grattacieli, non Nai Lert",
+    "Yaowarat Chinatown di notte",
+    "Barche a coda lunga Chao Phraya",
+    "Panorama Bangkok da Mahanakhon"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Authors' Wing storico Mandarin Oriental, foto 2022",
+      "Lobby storica Mandarin Oriental, archivio",
+      "Camera d'archivio Mandarin Oriental, categoria attuale da confermare"
+    ],
+    [
+      "Salotto suite familiare sul fiume con due camere Capella",
+      "Area relax camera fluviale Capella",
+      "Riverfront Premier con vista fiume"
+    ],
+    [
+      "Terrazza Riverside Pool Villa The Siam",
+      "Camera e cortile villa The Siam",
+      "Piscina privata e cortile verde The Siam"
+    ],
+    [
+      "Ingresso Aman Nai Lert al crepuscolo",
+      "Piscina Aman Nai Lert tra alberi",
+      "Architettura Aman Nai Lert nei giardini"
+    ]
+  ],
+  "seoTitle": "Dove dormire a Bangkok: hotel di lusso e migliori quartieri",
+  "hotelSeoTitle": "Hotel di Bangkok: Mandarin Oriental, Capella, The Siam e Aman",
+  "seoDescription": "Confronta quattro hotel di lusso a Bangkok, sul Chao Phraya e nel parco Nai Lert: quartieri, suite, transfer fluviali e spa."
+}
