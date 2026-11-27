@@ -95,37 +95,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "scene-4",
-        "sourcePage": "https://osaka-info.jp/en/special/universal/course03/",
-        "sourceResolvedUrl": "https://osaka-info.jp/special/universal/wp-content/themes/universal-tourism/assets_irasshai/common/img/tennojizoo/tennojizoo_exterior_2.jpg",
-        "sourceRequestedUrl": "https://osaka-info.jp/special/universal/wp-content/themes/universal-tourism/assets_irasshai/common/img/tennojizoo/tennojizoo_exterior_2.jpg",
-        "originalAlt": "",
-        "originalCaption": "",
-        "credit": "Japan National Tourism Organization / Osaka Convention & Tourism Bureau",
-        "publisher": "Japan National Tourism Organization / Osaka Convention & Tourism Bureau",
-        "hotel": null,
-        "localPath": "/images/travel/osaka-premium/destination/scene-4.webp",
-        "sourceSHA256": "0067846aa98b3b595d925d4dcbda1521c8fd614190504a07805e01ca1f21194c",
-        "webpSHA256": "4d0b45425434f5932d3efb9b5b4cf4da9b1f4c7aff032a7a36d1cb844d1adfc3",
-        "sourcePixels": [
-          4608,
-          3456
-        ],
-        "webpPixels": [
-          1133,
-          850
-        ],
-        "webpBytes": 236392,
-        "pixelFingerprint": "594bdadc8cdc4948",
-        "candidateSubject": "abeno harukas|tennoji",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "scene-5",
         "sourcePage": "https://www.suito-osaka.jp/en/gallery/",
         "sourceResolvedUrl": "https://www.suito-osaka.jp/wp-content/uploads/2024/11/dotonbori_ukiniwabashi_cruise_day_2016.jpg",
@@ -242,6 +211,37 @@
         "webpBytes": 138614,
         "pixelFingerprint": "184260661f319100",
         "candidateSubject": "osaka bay|tempozan|kaiyukan",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-9",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Osaka_Abeno_Harukas.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Osaka_Abeno_Harukas.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Osaka_Abeno_Harukas.jpg",
+        "originalAlt": "Abeno Harukas and surrounding area in Tennoji Osaka",
+        "originalCaption": "Type specimen / CC BY-SA 3.0 / resized WebP",
+        "credit": "Type specimen / CC BY-SA 3.0 / resized WebP",
+        "publisher": "Japan National Tourism Organization / Osaka Convention & Tourism Bureau",
+        "hotel": null,
+        "localPath": "/images/travel/osaka-premium/destination/scene-9.webp",
+        "sourceSHA256": "a44ebd74a54f4ee195c56cf9a5d761b82ed12b66baece9d004522ad7caad0e81",
+        "webpSHA256": "b3c87e5912f877ed530f5aeb0d6c37a366915524873cd3997dcf566839150291",
+        "sourcePixels": [
+          2931,
+          1949
+        ],
+        "webpPixels": [
+          1278,
+          850
+        ],
+        "webpBytes": 164774,
+        "pixelFingerprint": "d9edd87cecfccce9",
+        "candidateSubject": "abeno harukas|tennoji",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -635,14 +635,6 @@
       {
         "page": "https://web-japan.org/trends/11_food/jfd202312_tourist-attractions-in-osaka.html",
         "error": "403 Client Error: Forbidden for url: https://web-japan.org/trends/11_food/jfd202312_tourist-attractions-in-osaka.html"
-      },
-      {
-        "page": "https://www.hilton.com/en/hotels/osacici-conrad-osaka/gallery/",
-        "error": "403 Client Error: Forbidden for url: https://www.hilton.com/en/hotels/osacici-conrad-osaka/gallery/"
-      },
-      {
-        "url": "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/e5ea272e.jpg?h=800&impolicy=fcrop&w=1200",
-        "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/e5ea272e.jpg?h=800&impolicy=fcrop&w=1200"
       }
     ],
     "publicUseApproved": false,
@@ -678,10 +670,41 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-4",
+        "sourcePage": "https://osaka-info.jp/en/special/universal/course03/",
+        "sourceResolvedUrl": "https://osaka-info.jp/special/universal/wp-content/themes/universal-tourism/assets_irasshai/common/img/tennojizoo/tennojizoo_exterior_2.jpg",
+        "sourceRequestedUrl": "https://osaka-info.jp/special/universal/wp-content/themes/universal-tourism/assets_irasshai/common/img/tennojizoo/tennojizoo_exterior_2.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Japan National Tourism Organization / Osaka Convention & Tourism Bureau",
+        "publisher": "Japan National Tourism Organization / Osaka Convention & Tourism Bureau",
+        "hotel": null,
+        "localPath": "/images/travel/osaka-premium/destination/scene-4.webp",
+        "sourceSHA256": "0067846aa98b3b595d925d4dcbda1521c8fd614190504a07805e01ca1f21194c",
+        "webpSHA256": "4d0b45425434f5932d3efb9b5b4cf4da9b1f4c7aff032a7a36d1cb844d1adfc3",
+        "sourcePixels": [
+          4608,
+          3456
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 236392,
+        "pixelFingerprint": "594bdadc8cdc4948",
+        "candidateSubject": "abeno harukas|tennoji",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "cityCount": 8,
     "hotelCount": 12,
-    "totalBytes": 2709762
+    "totalBytes": 2638144
   }
 }
