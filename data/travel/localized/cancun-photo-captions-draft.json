@@ -6,7 +6,8 @@
       "scene-2",
       "scene-3",
       "scene-5",
-      "scene-6"
+      "scene-6",
+      "scene-7"
     ],
     [
       "nizuc-1",
@@ -37,7 +38,8 @@
       "hyatt-ziva-1": "Vue aérienne du Hyatt Ziva à Punta Cancún",
       "coral-beach-1": "Piscines et plage du Coral Beach",
       "coral-beach-2": "Suite avec vue sur la mer au Coral Beach",
-      "scene-6": "Lagune Nichupté"
+      "scene-6": "Lagune Nichupté",
+      "scene-7": "Playa Tortugas"
     },
     "en": {
       "scene-1": "Delfines Beach",
@@ -51,7 +53,8 @@
       "hyatt-ziva-1": "Aerial view of Hyatt Ziva at Punta Cancún",
       "coral-beach-1": "Coral Beach pools and beach",
       "coral-beach-2": "Coral Beach ocean-view suite",
-      "scene-6": "Nichupté Lagoon"
+      "scene-6": "Nichupté Lagoon",
+      "scene-7": "Tortugas Beach"
     },
     "tr": {
       "scene-1": "Delfines Plajı",
@@ -65,7 +68,8 @@
       "hyatt-ziva-1": "Punta Cancún'daki Hyatt Ziva'nın havadan görünümü",
       "coral-beach-1": "Coral Beach havuzları ve plajı",
       "coral-beach-2": "Coral Beach deniz manzaralı süiti",
-      "scene-6": "Nichupté Lagünü"
+      "scene-6": "Nichupté Lagünü",
+      "scene-7": "Tortugas Plajı"
     },
     "de": {
       "scene-1": "Strand Delfines",
@@ -79,7 +83,8 @@
       "hyatt-ziva-1": "Luftaufnahme des Hyatt Ziva an Punta Cancún",
       "coral-beach-1": "Pools und Strand des Coral Beach",
       "coral-beach-2": "Suite mit Meerblick im Coral Beach",
-      "scene-6": "Lagune Nichupté"
+      "scene-6": "Lagune Nichupté",
+      "scene-7": "Strand Playa Tortugas"
     },
     "es": {
       "scene-1": "Playa Delfines",
@@ -93,7 +98,8 @@
       "hyatt-ziva-1": "Vista aérea de Hyatt Ziva en Punta Cancún",
       "coral-beach-1": "Piscinas y playa de Coral Beach",
       "coral-beach-2": "Suite con vista al mar en Coral Beach",
-      "scene-6": "Laguna Nichupté"
+      "scene-6": "Laguna Nichupté",
+      "scene-7": "Playa Tortugas"
     },
     "it": {
       "scene-1": "Spiaggia Delfines",
@@ -107,7 +113,8 @@
       "hyatt-ziva-1": "Veduta aerea di Hyatt Ziva a Punta Cancún",
       "coral-beach-1": "Piscine e spiaggia del Coral Beach",
       "coral-beach-2": "Suite con vista mare del Coral Beach",
-      "scene-6": "Laguna Nichupté"
+      "scene-6": "Laguna Nichupté",
+      "scene-7": "Spiaggia Tortugas"
     },
     "pt": {
       "scene-1": "Praia Delfines",
@@ -121,7 +128,8 @@
       "hyatt-ziva-1": "Vista aérea do Hyatt Ziva em Punta Cancún",
       "coral-beach-1": "Piscinas e praia do Coral Beach",
       "coral-beach-2": "Suite com vista para o mar no Coral Beach",
-      "scene-6": "Lagoa Nichupté"
+      "scene-6": "Lagoa Nichupté",
+      "scene-7": "Praia Tortugas"
     },
     "zh": {
       "scene-1": "海豚海滩",
@@ -135,7 +143,8 @@
       "hyatt-ziva-1": "坎昆角 Hyatt Ziva 酒店航拍",
       "coral-beach-1": "Coral Beach 酒店泳池与海滩",
       "coral-beach-2": "Coral Beach 酒店海景套房",
-      "scene-6": "尼丘普特潟湖"
+      "scene-6": "尼丘普特潟湖",
+      "scene-7": "托尔图加斯海滩"
     },
     "ru": {
       "scene-1": "Пляж Дельфинес",
@@ -149,7 +158,8 @@
       "hyatt-ziva-1": "Hyatt Ziva на Пунта-Канкун с высоты",
       "coral-beach-1": "Бассейны и пляж Coral Beach",
       "coral-beach-2": "Люкс Coral Beach с видом на море",
-      "scene-6": "Лагуна Ничупте"
+      "scene-6": "Лагуна Ничупте",
+      "scene-7": "Пляж Тортугас"
     },
     "ar": {
       "scene-1": "شاطئ دلفينيس",
@@ -163,7 +173,8 @@
       "hyatt-ziva-1": "صورة جوية لفندق Hyatt Ziva في بونتا كانكون",
       "coral-beach-1": "مسابح وشاطئ Coral Beach",
       "coral-beach-2": "جناح في Coral Beach بإطلالة على البحر",
-      "scene-6": "بحيرة نيشوبتي"
+      "scene-6": "بحيرة نيشوبتي",
+      "scene-7": "شاطئ تورتوغاس"
     }
   },
   "visualReview": {
