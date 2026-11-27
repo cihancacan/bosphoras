@@ -158,6 +158,7 @@ DIRECT = {
 }
 DIRECT['london/city'].insert(0,['https://www.londonandpartners.com/-/media/images/london/visit/things-to-do/london-areas/river-thames/panorama-london-skyline-b-1920x582.jpg?hash=5A94C794E75E3F410D7360AC4BB956CF&mw=1920&rev=90d7c2e3ee1e4018859464d28c8a8e20','London skyline and Thames panorama','https://www.visitlondon.com/things-to-do','London & Partners'])
 DIRECT['cancun/le-blanc']=[['https://www.palaceproagents.com/lbc_Room_Royale_Deluxe_Partial_Ocean_View_bg_3600x1800_7207f3f7a0.jpg','Le Blanc Cancun Royale Deluxe partial ocean view room','https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun','Palace PRO Agents']]
+DIRECT['london/savoy']=[['https://www.ahstatic.com/photos/a597_br_00_p_2048x1536.jpg','The Savoy London exterior entrance and canopy','https://all.accor.com/hotel/A597/index.en.shtml','Accor / The Savoy']]
 def direct_candidates(slug,key):
  return [{'url':u,'sourcePage':page,'originalAlt':alt,'originalCaption':credit,'targeted':True} for u,alt,page,credit in DIRECT.get(slug+'/'+key,[])]
 
