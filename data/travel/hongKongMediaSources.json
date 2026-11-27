@@ -4,6 +4,9 @@
     "city": "Hong Kong",
     "publisher": "Hong Kong Tourism Board",
     "cityPages": [
+      "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-central-plaza.html",
+      "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-golden-bauhinia-square.html",
+      "https://www.gohk.gov.hk/en/districts/wc.php",
       "https://www.discoverhongkong.com/eng/neighbourhoods.html",
       "https://www.discoverhongkong.com/eng/neighbourhoods/central-and-western-district.html",
       "https://www.discoverhongkong.com/eng/neighbourhoods/wan-chai.html",
@@ -20,7 +23,7 @@
       "star ferry",
       "tai kwun|old town central|central market",
       "west kowloon|m\\+ museum|palace museum",
-      "wan chai|central plaza",
+      "wan chai|central plaza|golden bauhinia",
       "mong kok|temple street|yau ma tei",
       "causeway bay|victoria park",
       "big buddha|ngong ping|lantau"
@@ -31,7 +34,9 @@
         "Rosewood Hong Kong",
         [
           "https://www.rosewoodhotels.com/en/hong-kong/overview/gallery",
-          "https://m.rosewoodhotels.com/en/hong-kong/gallery"
+          "https://m.rosewoodhotels.com/en/hong-kong/gallery",
+          "https://www.rosewoodhotels.com/en/hong-kong/accommodation/rooms/harbour-view-room",
+          "https://www.kpf.com/project/rosewood-hong-kong"
         ]
       ],
       [
@@ -47,7 +52,8 @@
         "The Peninsula Hong Kong",
         [
           "https://www.peninsula.com/en/hong-kong/photos-and-videos",
-          "https://www.peninsula.com/en/hong-kong/5-star-luxury-hotel-kowloon"
+          "https://www.peninsula.com/en/hong-kong/5-star-luxury-hotel-kowloon",
+          "https://www.peninsula.com/en/hong-kong/luxury-hotel-room-suite-types/deluxe-harbour-view-suite"
         ]
       ],
       [

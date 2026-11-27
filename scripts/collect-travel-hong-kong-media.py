@@ -99,6 +99,98 @@ DIRECT = {
       "Victoria Harbour skyline from Tsim Sha Tsui promenade",
       "https://www.discoverhongkong.cn/place-to-go/travel.guide-tsim-sha-tsui-promenade.html",
       "Hong Kong Tourism Board"
+    ],
+    [
+      "https://images.trvl-media.com/place/184245/c18d2f96-1ae3-44f7-8cf8-33fc5a9b4e79.jpg",
+      "Causeway Bay shopping street and double-decker trams",
+      "https://www.expedia.com/Causeway-Bay-Shopping-Plaza-Wan-Chai.d6191740.Vacation-Attraction",
+      "Expedia / destination gallery"
+    ]
+  ],
+  "hong-kong/rosewood": [
+    [
+      "https://ian.marieclaire.com.tw/assets/mc/202309/65122A25C7A5D1695689253.jpeg?format=jpg&t=sc&w=1200%2C675",
+      "Rosewood Hong Kong exterior tower at dusk on Victoria Dockside",
+      "https://www.marieclaire.com.tw/lifestyle/travel/75116",
+      "Marie Claire Taiwan / Rosewood Hong Kong"
+    ],
+    [
+      "https://files.gqthailand.com/uploads/20251101232459.jpg",
+      "Rosewood Hong Kong exterior tower on the Kowloon waterfront",
+      "https://www.gqthailand.com/article/10-the-worlds-50-best-hotels-2025",
+      "GQ Thailand / hotel photography"
+    ],
+    [
+      "https://media.vogue.com.tw/photos/651cdec91af9bb70c836b0ea/3%3A2/w_7392%2Ch_4928%2Cc_limit/RWHKG_Grand%20Harbour%20View%20King.jpg",
+      "Rosewood Hong Kong Grand Harbour View King room",
+      "https://www.vogue.com.tw/article/rosewood-hongkong",
+      "Vogue Taiwan / Rosewood Hong Kong"
+    ],
+    [
+      "https://upload.wikimedia.org/wikipedia/commons/c/c6/Rosewood_Hong_Kong_Level_6_Swimming_Pool_2020.jpg",
+      "Rosewood Hong Kong Level 6 infinity swimming pool",
+      "https://commons.wikimedia.org/wiki/File:Rosewood_Hong_Kong_Level_6_Swimming_Pool_2020.jpg",
+      "Wikimedia Commons — verify author and licence"
+    ]
+  ],
+  "hong-kong/four-seasons": [
+    [
+      "https://pub-7a32c51aec044bc88f150505acf01675.r2.dev/hotel-images/four-seasons-hotel-hong-kong.jpg",
+      "Four Seasons Hotel Hong Kong exterior towers at dusk",
+      "https://www.michelinkeyhotels.com/hotels/four-seasons-hotel-hong-kong",
+      "Michelin Key Hotels directory / hotel image, credit to confirm"
+    ],
+    [
+      "https://www.fourseasons.com/alt/img-opt/~75.701.0%2C0000-156%2C7500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/HKG/HKG_7143_original.jpg",
+      "Four Seasons Hotel Hong Kong harbour-view bedroom",
+      "https://www.fourseasons.com/hongkong/",
+      "Four Seasons Hotel Hong Kong"
+    ],
+    [
+      "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2499-2997%2C2576-1685%2C9574/publish/content/dam/fourseasons/images/web/HKG/HKG_2462_original.jpg",
+      "Four Seasons Hong Kong Deluxe Harbour-View Room",
+      "https://www.fourseasons.com/hongkong/accommodations/guest_rooms/deluxe-harbour-view-room/",
+      "Four Seasons Hotel Hong Kong"
+    ],
+    [
+      "https://www.fourseasons.com/alt/img-opt/~75.701.0%2C0000-313%2C0734-2998%2C9807-1686%2C9266/publish/content/dam/fourseasons/images/web/HKG/HKG_1632_original.jpg",
+      "Four Seasons Hotel Hong Kong infinity pool overlooking Victoria Harbour",
+      "https://www.fourseasons.com/hongkong/dining/",
+      "Four Seasons Hotel Hong Kong"
+    ]
+  ],
+  "hong-kong/peninsula": [
+    [
+      "https://www.peninsula.com/-/media/images/hong-kong/rooms/deluxe-harbour-view-suite/deluxe-harbour-view-suite---living-room-2/deluxe-harbour-view-suite---bedroom-1.jpg?hash=753C7655948B3FA570D62CA4EB125BA2&mw=1520",
+      "The Peninsula Hong Kong Deluxe Harbour View Suite bedroom",
+      "https://www.peninsula.com/en/hong-kong/luxury-hotel-room-suite-types/deluxe-harbour-view-suite",
+      "The Peninsula Hong Kong"
+    ],
+    [
+      "https://destinasian.com/_next/image?q=75&url=https%3A%2F%2Fstaging.destinasian.com%2Fwp-content%2Fuploads%2F2023%2F06%2FThe-Peninsula-Hong-Kong-7.jpg&w=3840",
+      "The Peninsula Hong Kong indoor swimming pool",
+      "https://destinasian.com/hong-kong-hotels-the-peninsula-hong-kong",
+      "DestinAsian / The Peninsula Hong Kong"
+    ]
+  ],
+  "hong-kong/mandarin-oriental": [
+    [
+      "https://www.oberoihotels.com/-/media/oberoi-hotel/omo/featured-hotels/desktop820x646/mandarin_oriental_hongkong.jpg",
+      "Mandarin Oriental Hong Kong exterior in Central at dusk",
+      "https://www.oberoihotels.com/omoalliance/",
+      "Oberoi Hotels / Mandarin Oriental alliance"
+    ],
+    [
+      "https://www.cathaypacific.com/content/dam/focal-point/cx/inspiration/2025/05/A_masterclass_in_hospitality_at_Mandarin_Oriental-Hotel_Room-courtesyimages-2.renditionimage.900.900.jpg",
+      "Mandarin Oriental Hong Kong harbour view guest room",
+      "https://www.cathaypacific.com/cx/en_KH/inspiration/holidays/masterclass-hospitality-mandarin-oriental-hong-kong.html",
+      "Cathay Pacific / courtesy Mandarin Oriental Hong Kong"
+    ],
+    [
+      "https://hongkong.mandarinorientalshop.com/cdn/shop/products/Mandarin-Oriental-Hong-Kong-Hotel-Spa-Kukui-Suite_2048x.jpg?v=1737966386",
+      "Mandarin Oriental Hong Kong Mandarin Spa treatment suite",
+      "https://hongkong.mandarinorientalshop.com/collections/mandarin-spa",
+      "Mandarin Oriental Hong Kong"
     ]
   ]
 }
