@@ -1,0 +1,162 @@
+{
+  "name": "Melides",
+  "country": "Portugal",
+  "eyebrow": "Alentejo · Arte, playas salvajes y luz atlántica",
+  "heading": "Dónde alojarse en Melides: cuatro refugios entre pueblo, laguna y océano",
+  "intro": "Al sur de Comporta, Melides es un pueblo del Alentejo donde artesanía, casas de arquitectura contemporánea, pinares y largas playas atlánticas crean un ambiente singular. El aislamiento implica distancias reales y, a veces, accesos complicados.",
+  "editorial": "Melides no es un resort de playa convencional. Destacan la luz del Alentejo, los talleres artesanos, la laguna, las dunas y las casas rurales contemporáneas. Vermelho Melides, creado por Christian Louboutin, ofrece trece habitaciones decoradas individualmente, restaurante Xtian y una pequeña zona de bienestar. Pa.te.os son cuatro casas de Manuel Aires Mateus en una finca agrícola y vitivinícola de 80 hectáreas. Miran al océano, pero no están en la playa; los últimos dos kilómetros de camino no están asfaltados y los propietarios recomiendan todoterreno.\n\nQuinta Amala, inaugurada en 2026, está entre arrozales a aproximadamente un kilómetro del pueblo. Cabañas, habitaciones con terraza o balcón y un amplio apartamento en villa difieren en capacidad y servicios. CASAVADIA reúne tres casas independientes separadas unos 150 metros: alojamiento autónomo, no hotel convencional. La laguna de Melides no es una piscina vigilada; las playas atlánticas de Melides, Aberta Nova y Galé están expuestas a oleaje y corrientes. La laguna de Santo André, más al sur, es un espacio natural distinto. Usa los senderos autorizados de las dunas. Restaurantes, equitación, tratamientos y traslados requieren confirmación aparte. El proveedor autorizado confirma precios y disponibilidad.",
+  "hotelIntro": "Cuatro formatos: hotel boutique artístico, cuatro casas de arquitectura, cabañas acogedoras y tres casas rurales independientes.",
+  "areas": [
+    [
+      "Pueblo histórico de Melides",
+      "Casas bajas, talleres y calles tranquilas; Vermelho está en el pueblo, no en la costa.",
+      "Comprueba horarios de comercios y aparcamiento."
+    ],
+    [
+      "Laguna de Melides",
+      "Ecosistema frágil entre campos y dunas, con nivel de agua y aves variables según estación.",
+      "No es una piscina vigilada; protege la naturaleza."
+    ],
+    [
+      "Playas de Melides y Aberta Nova",
+      "Arena atlántica entre pinos, horizonte abierto y fuerte oleaje ocasional.",
+      "Respeta banderas y usa accesos oficiales."
+    ],
+    [
+      "Playa de Galé y acantilados",
+      "Playa bajo rocas de tonos cálidos; admíralas desde senderos seguros y permitidos.",
+      "Evita acantilados inestables y escaleras deterioradas."
+    ],
+    [
+      "Colinas de Grândola y Santo André",
+      "Alcornoques y caminos rurales conducen a la laguna protegida de Santo André.",
+      "No confundas Santo André con la laguna de Melides."
+    ]
+  ],
+  "experiences": [
+    [
+      "Mañana en el pueblo y artesanía",
+      "Pasea por calles tranquilas, conoce artesanos y respeta horarios y privacidad vecinal."
+    ],
+    [
+      "Observación de aves en la laguna",
+      "Elige un mirador autorizado y no molestes a las aves."
+    ],
+    [
+      "Un día en Aberta Nova",
+      "Lleva agua y calzado adecuado; sigue avisos de oleaje."
+    ],
+    [
+      "Arte y gastronomía de Vermelho",
+      "Descubre detalles artísticos y reserva mesa en Xtian por separado."
+    ],
+    [
+      "Descanso arquitectónico en las colinas",
+      "Aprecia patios de Pa.te.os o cabañas de Quinta Amala respetando privacidad de huéspedes."
+    ]
+  ],
+  "checks": [
+    "No confundas Melides con Comporta al norte ni Santo André al sur.",
+    "Respeta indicaciones de socorristas en playas atlánticas, especialmente con niños.",
+    "Vermelho tiene trece habitaciones diferentes; Pa.te.os son cuatro casas independientes.",
+    "Quinta Amala ofrece categorías distintas; CASAVADIA es alojamiento autónomo.",
+    "Pa.te.os recomienda vehículo adecuado para los últimos dos kilómetros.",
+    "Comidas, tratamientos, piscinas, actividades y traslados requieren confirmación escrita."
+  ],
+  "hotels": [
+    [
+      "Pueblo de Melides · Centro histórico",
+      "Vermelho Melides fue concebido por Christian Louboutin como casa de arte y artesanía. Trece habitaciones individualizadas con frescos, azulejos portugueses artesanales, antigüedades y obras de arte. Xtian presenta cocina del Alentejo y la pequeña zona de bienestar ofrece tratamientos separados. Jardín y piscina no lo convierten en resort de playa; para el océano hace falta transporte. Familias deben confirmar capacidad, habitaciones comunicadas y edades.",
+      "Confirma categoría, condiciones infantiles, restaurante y tratamientos.",
+      "Para arte, diseño y gastronomía alentejana.",
+      ""
+    ],
+    [
+      "Alrededores de Melides · Finca rural",
+      "Pa.te.os son cuatro casas diseñadas por Manuel Aires Mateus. Patios, terrazas sombreadas y grandes ventanales abren vistas al campo y océano lejano. Se alquilan casas individuales, no habitaciones estándar. Dormitorios, piscinas, comidas y servicios dependen de la casa. Los últimos dos kilómetros son pista de tierra; los propietarios recomiendan todoterreno o tracción integral. Playa y pueblo requieren transporte.",
+      "Confirma casa, camas, servicios, piscina y vehículo adecuado.",
+      "Para arquitectura, privacidad y naturaleza.",
+      ""
+    ],
+    [
+      "Melides · Arrozales y EN261",
+      "Quinta Amala abrió en 2026 a aproximadamente un kilómetro del pueblo. Cabañas de madera de unos 30 m², habitaciones con balcón o terraza y un amplio apartamento en villa ofrecen distintas estancias. Piscina, restaurante estacional, yoga y sauna completan la experiencia; la playa atlántica requiere transporte. Una habitación estándar en villa puede carecer de espacio exterior propio. Comprueba capacidad, camas, servicios y seguridad de piscina.",
+      "Distingue cabaña, habitación con balcón y apartamento independiente en villa.",
+      "Para descanso tranquilo entre arrozales.",
+      ""
+    ],
+    [
+      "Estrada da Boa Vista · Casas independientes",
+      "CASAVADIA son tres casas rurales rehabilitadas en una finca, separadas unos 150 metros. Ofrecen privacidad y autonomía, no servicio hotelero permanente. Confirma cocina, camas, piscina, equipamiento infantil y limpieza de cada casa. Para la playa hace falta transporte. Bienestar y equitación pueden correr a cargo de empresas locales externas.",
+      "Confirma equipamiento de la casa; no presupongas restaurante hotelero ni piscina común.",
+      "Para vacaciones autónomas con privacidad.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Dónde están los cuatro alojamientos?",
+      "Vermelho en el pueblo, Pa.te.os en finca rural, Quinta Amala junto a arrozales y CASAVADIA en Estrada da Boa Vista. Ninguno está directamente en la arena."
+    ],
+    [
+      "¿Todas las habitaciones de Vermelho son iguales?",
+      "No, las trece tienen interiores, distribuciones y vistas distintas. Xtian y tratamientos se confirman por separado."
+    ],
+    [
+      "¿Se puede llegar a Pa.te.os en coche normal?",
+      "Los propietarios indican unos dos kilómetros de pista y recomiendan todoterreno o tracción integral por comodidad. Confirma estado del camino y equipamiento."
+    ],
+    [
+      "¿Quinta Amala es adecuada para familias grandes?",
+      "Hay cabañas, habitaciones y un apartamento más amplio en villa. Confirma capacidad, camas, espacios exteriores y piscina."
+    ],
+    [
+      "¿CASAVADIA es hotel con restaurante y spa?",
+      "No, son tres casas independientes. Bienestar y equitación pueden ser servicios externos."
+    ],
+    [
+      "¿Pueden bañarse los niños en la laguna de Melides?",
+      "Es ecosistema natural con condiciones variables, no piscina vigilada. En playas atlánticas respeta banderas y avisos de corrientes."
+    ],
+    [
+      "¿Cómo reservar estos hoteles y casas?",
+      "Compara alojamientos en Bosphoras; proveedor autorizado confirma precios, disponibilidad y condiciones; las fotos no confirman reserva."
+    ]
+  ],
+  "photoCaptions": [
+    "Laguna de Melides junto al Atlántico",
+    "Arena y vegetación costera de la playa de Melides",
+    "Humedales protegidos de Melides",
+    "Aguas naturales de la laguna",
+    "Dunas entre laguna y océano",
+    "Costa rocosa de la playa de Galé",
+    "Luz del atardecer sobre Melides",
+    "Orilla natural de la laguna",
+    "Laguna de Santo André al sur de Melides"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Entrada artística de Vermelho",
+      "Habitación de Vermelho decorada individualmente",
+      "Pequeña zona de bienestar"
+    ],
+    [
+      "Arquitectura contemporánea de Pa.te.os",
+      "Salón de casa Pa.te.os",
+      "Piscina con vistas al Alentejo"
+    ],
+    [
+      "Cabaña Quinta Amala de materiales naturales",
+      "Terraza y arquitectura de madera Quinta Amala",
+      "Restaurante Quinta Amala"
+    ],
+    [
+      "Casa rural privada CASAVADIA",
+      "Interior de casa independiente CASAVADIA",
+      "Alojamiento apartado CASAVADIA"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Melides: hoteles de lujo, casas y playas del Alentejo",
+  "hotelSeoTitle": "Mejores alojamientos de Melides: Vermelho, Pa.te.os, Quinta Amala y CASAVADIA",
+  "seoDescription": "Descubre cuatro alojamientos en Melides, casas de diseño, lagunas y playas atlánticas. Consejos de ubicación, acceso y servicios."
+}
