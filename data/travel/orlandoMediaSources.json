@@ -4,6 +4,10 @@
     "city": "Orlando",
     "publisher": "Visit Orlando",
     "cityPages": [
+      "https://www.celebration.fl.us/",
+      "https://www.experiencekissimmee.com/things-to-do/celebration",
+      "https://media.universalparksusa.com/photos/",
+      "https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/islands-of-adventure/",
       "https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/magic-kingdom/",
       "https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/epic-universe/",
       "https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/universal-studios-florida/",
@@ -46,6 +50,11 @@
         "waldorf",
         "Waldorf Astoria Orlando",
         [
+          "https://www.waldorfastoriaorlando.com/gallery/",
+          "https://www.waldorfastoriaorlando.com/photo-gallery/",
+          "https://www.waldorfastoriaorlando.com/resort/",
+          "https://www.waldorfastoriaorlando.com/experiences/",
+          "https://www.fivestaralliance.com/luxury-hotels/orlando-fl/waldorf-astoria-orlando",
           "https://www.waldorfastoriaorlando.com/",
           "https://www.waldorfastoriaorlando.com/reimagined/",
           "https://www.waldorfastoriaorlando.com/accommodations/suites/",
