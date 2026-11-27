@@ -1,0 +1,157 @@
+{
+  "name": "Roma",
+  "country": "Itália",
+  "eyebrow": "Itália · Património, praças e hotéis emblemáticos",
+  "heading": "Roma: descubra a Cidade Eterna a partir do bairro certo.",
+  "intro": "As praças do centro histórico, os jardins do Pincio e as ruelas de Trastevere fazem de Roma uma cidade para descobrir a pé. Um hotel perto da Piazza di Spagna oferece uma experiência diferente de um alojamento numa colina ou junto ao Vaticano.",
+  "editorial": "O centro histórico permite ligar o Panteão, Piazza Navona e a Fonte de Trevi. Campo Marzio e os arredores da Piazza di Spagna reúnem grandes hotéis e boutiques. Prati facilita as visitas ao Vaticano, Monti ao Coliseu e aos fóruns, enquanto Trastevere é especialmente agradável para as noites e trattorias.\n\nQuatro noites permitem dedicar um dia à Roma antiga, outro ao Vaticano, outro ao centro e outro aos jardins ou bairros residenciais. Reserve bilhetes oficiais para os locais com lotação limitada e evite deslocações desnecessárias. No verão, privilegie as visitas de manhã cedo e as pausas à sombra.\n\nA partir de Fiumicino, compare comboio para Termini, táxis oficiais e transferes privados; Ciampino exige outra organização. A calçada, as inclinações e as zonas de tráfego limitado podem dificultar os percursos com bagagem ou carrinhos de bebé. Compare preço final, taxa turística e serviços incluídos na categoria escolhida.",
+  "hotelIntro": "Quatro endereços históricos ou contemporâneos: Bvlgari Hotel Roma, Hotel de Russie, Hassler Roma e Hotel Eden.",
+  "areas": [
+    [
+      "Centro histórico",
+      "Panteão, Piazza Navona, Trevi e passeios entre praças.",
+      "A calçada e as restrições de trânsito complicam alguns transferes."
+    ],
+    [
+      "Campo Marzio e Piazza di Spagna",
+      "Boutiques, palácios, grandes hotéis e acesso ao Pincio.",
+      "Confirme escadas e inclinações a partir do hotel."
+    ],
+    [
+      "Monti e Coliseu",
+      "Património antigo, cafés e pequenas ruas.",
+      "Reserve visitas com horário marcado."
+    ],
+    [
+      "Prati e Vaticano",
+      "Avenidas, comércio e proximidade dos Museus do Vaticano.",
+      "Estar perto do Vaticano não significa estar perto do Coliseu."
+    ],
+    [
+      "Trastevere",
+      "Ruelas, restaurantes e ambiente noturno.",
+      "O ruído e a calçada variam consoante a rua."
+    ]
+  ],
+  "experiences": [
+    [
+      "Roma antiga",
+      "Dedique pelo menos meio dia ao Coliseu e ao Fórum, conforme os bilhetes disponíveis."
+    ],
+    [
+      "Praças do centro",
+      "Ligue Panteão, Trevi e Piazza Navona sem multiplicar as deslocações."
+    ],
+    [
+      "Villa Borghese",
+      "Combine jardins e visita à galeria se houver bilhetes disponíveis."
+    ],
+    [
+      "Uma noite em Trastevere",
+      "Escolha uma trattoria e passeie junto ao Tibre."
+    ]
+  ],
+  "checks": [
+    "Compare inclinações e acessibilidade do alojamento.",
+    "Reserve atrações com lotação limitada.",
+    "Confirme camas e quartos comunicantes.",
+    "Compare preço final, taxa turística e serviços incluídos.",
+    "Organize o transfer do aeroporto e a chegada ao centro histórico."
+  ],
+  "hotels": [
+    [
+      "Campo Marzio · Piazza Augusto Imperatore",
+      "Endereço contemporâneo com materiais italianos, quartos e suites de estilos diversos e gastronomia. Via del Corso e boutiques ficam perto.",
+      "Compare vistas para a praça e ruas adjacentes.",
+      "Para design italiano contemporâneo e compras.",
+      "Bvlgari Hotel Roma valoriza materiais italianos, quartos e suites diversos e gastronomia. Via del Corso e boutiques ficam perto. Compare as vistas para a praça e ruas adjacentes."
+    ],
+    [
+      "Via del Babuino · Piazza del Popolo",
+      "O jardim interior cria um refúgio perto da Piazza del Popolo. Quartos, suites e restauração são uma base para descobrir Campo Marzio e Pincio.",
+      "Confirme vista para o jardim e configuração familiar.",
+      "Para um oásis verde no centro histórico.",
+      "O jardim interior do Hotel de Russie oferece um refúgio perto da Piazza del Popolo e uma base para Campo Marzio e Pincio. Confirme vista para o jardim e configuração familiar."
+    ],
+    [
+      "Trinità dei Monti · Piazza di Spagna",
+      "No topo da escadaria, Hassler combina tradição e quartos decorados individualmente. Algumas categorias oferecem terraços ou vistas amplas.",
+      "Confirme escadas, acessos e categoria exata.",
+      "Para a localização panorâmica sobre Piazza di Spagna.",
+      "Hassler Roma combina tradição e quartos com decoração individual. Algumas categorias dispõem de terraço ou vistas amplas. Confirme escadas, acessos e categoria exata."
+    ],
+    [
+      "Via Ludovisi · Villa Borghese",
+      "Ambiente clássico, spa e vistas sobre os telhados romanos. A localização perto de Villa Borghese difere de um endereço numa praça central.",
+      "Compare orientação, terraço, percursos a pé e serviços incluídos.",
+      "Para elegância clássica e panoramas de Roma.",
+      "Hotel Eden oferece ambiente clássico, spa e vistas sobre os telhados. A localização perto de Villa Borghese difere de um hotel numa praça central. Compare orientação, terraço, percursos a pé e serviços incluídos."
+    ]
+  ],
+  "faq": [
+    [
+      "Onde ficar em Roma numa primeira visita?",
+      "Centro histórico e Campo Marzio são centrais; Monti facilita as visitas antigas."
+    ],
+    [
+      "Que bairro escolher perto do Vaticano?",
+      "Prati reduz os percursos até aos Museus do Vaticano."
+    ],
+    [
+      "Quantas noites reservar?",
+      "Quatro noites são uma boa base, com mais tempo para museus e bairros."
+    ],
+    [
+      "Que hotel oferece vistas panorâmicas?",
+      "Compare categorias do Hassler e Hotel Eden; uma vista específica não é garantida em todos os quartos."
+    ],
+    [
+      "É necessário carro?",
+      "No centro histórico, caminhar e usar transportes públicos é geralmente mais prático devido às restrições de trânsito."
+    ],
+    [
+      "Como chegar de Fiumicino?",
+      "Compare comboio para Termini, táxi oficial e transfer privado."
+    ],
+    [
+      "Como comparar hotéis?",
+      "Na Bosphoras compare categorias, vistas, camas, taxa turística e condições para as mesmas datas."
+    ]
+  ],
+  "seoTitle": "Onde ficar em Roma: melhores bairros e hotéis de luxo",
+  "hotelSeoTitle": "Hotéis de luxo em Roma: Bvlgari, de Russie, Hassler e Eden",
+  "seoDescription": "Compare bairros e hotéis de luxo em Roma: centro histórico, Piazza di Spagna, Vaticano, vistas e preços totais.",
+  "photoCaptions": [
+    "O Coliseu",
+    "O Panteão e a sua praça",
+    "Pormenor da Fonte de Trevi",
+    "Piazza Navona vista de cima",
+    "Lago da Villa Borghese",
+    "Panorama de Roma e do Coliseu",
+    "Escadaria da Praça de Espanha",
+    "Arquitetura histórica de Trastevere",
+    "Praça de São Pedro vista de cima"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Entrada do Bvlgari e estátua de Augusto",
+      "Quarto do Bvlgari Hotel Roma",
+      "Piscina interior do spa Bvlgari"
+    ],
+    [
+      "Fachada do Hotel de Russie",
+      "Terraço da suite Nijinsky",
+      "Sala de tratamentos do Irene Forte Spa"
+    ],
+    [
+      "Fachada do Hassler Roma",
+      "Quarto do Hassler Roma",
+      "Terraço do Hassler com vista sobre Roma"
+    ],
+    [
+      "Fachada do Hotel Eden",
+      "Sala da suite Bellavista Penthouse",
+      "Salão La Libreria"
+    ]
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "name": "Rom",
+  "country": "Italien",
+  "eyebrow": "Italien · Kulturerbe, Plätze und Grandhotels",
+  "heading": "Rom: die Ewige Stadt vom richtigen Viertel aus erleben.",
+  "intro": "Die Plätze der Altstadt, die Gärten des Pincio und die Gassen von Trastevere machen Rom zu einer Stadt für Spaziergänge. Ein Hotel an der Spanischen Treppe bietet ein anderes Erlebnis als ein Haus auf einem Hügel oder nahe dem Vatikan.",
+  "editorial": "In der Altstadt lassen sich Pantheon, Piazza Navona und Trevi-Brunnen zu Fuß verbinden. Campo Marzio und die Gegend um die Spanische Treppe bieten Grandhotels und Boutiquen. Prati ist günstig für den Vatikan, Monti für das Kolosseum und die Foren; Trastevere eignet sich für Abende in Trattorien.\n\nVier Nächte erlauben einen Tag für das antike Rom, einen für den Vatikan, einen für die Altstadt und einen für Gärten oder Wohnviertel. Buchen Sie offizielle Eintrittskarten für Sehenswürdigkeiten mit begrenzter Kapazität. Im Sommer bieten sich frühe Besuche und Pausen im Schatten an.\n\nAb Fiumicino vergleichen Sie den Zug nach Termini, offizielle Taxis und Privattransfers; ab Ciampino ist eine andere Anreiseplanung nötig. Kopfsteinpflaster, Steigungen und verkehrsbeschränkte Zonen können Wege mit Gepäck oder Kinderwagen erschweren. Vergleichen Sie Gesamtpreis, Übernachtungssteuer und enthaltene Leistungen der gewählten Zimmerkategorie.",
+  "hotelIntro": "Vier historische oder moderne Adressen: Bvlgari Hotel Roma, Hotel de Russie, Hassler Roma und Hotel Eden.",
+  "areas": [
+    [
+      "Historische Altstadt",
+      "Pantheon, Piazza Navona, Trevi-Brunnen und Spaziergänge zwischen Plätzen.",
+      "Kopfsteinpflaster und Verkehrsbeschränkungen erschweren manche Transfers."
+    ],
+    [
+      "Campo Marzio und Spanische Treppe",
+      "Boutiquen, Paläste, Grandhotels und Zugang zum Pincio.",
+      "Treppen und Steigungen vom Hotel aus prüfen."
+    ],
+    [
+      "Monti und Kolosseum",
+      "Antikes Kulturerbe, Cafés und kleine Gassen.",
+      "Besuche mit Zeitfenster vorab buchen."
+    ],
+    [
+      "Prati und Vatikan",
+      "Breite Straßen, Geschäfte und Nähe zu den Vatikanischen Museen.",
+      "Die Nähe zum Vatikan bedeutet nicht Nähe zum Kolosseum."
+    ],
+    [
+      "Trastevere",
+      "Gassen, Restaurants und abendliches Flair.",
+      "Lärm und Pflaster variieren je nach Straße."
+    ]
+  ],
+  "experiences": [
+    [
+      "Antikes Rom",
+      "Je nach Ticket mindestens einen halben Tag für Kolosseum und Forum einplanen."
+    ],
+    [
+      "Plätze der Altstadt",
+      "Pantheon, Trevi-Brunnen und Piazza Navona ohne zusätzliche Fahrten verbinden."
+    ],
+    [
+      "Villa Borghese",
+      "Gärten mit einem Galeriebesuch verbinden, wenn Tickets verfügbar sind."
+    ],
+    [
+      "Ein Abend in Trastevere",
+      "Eine Trattoria wählen und am Tiber spazieren."
+    ]
+  ],
+  "checks": [
+    "Steigungen und Zugänglichkeit der Adresse vergleichen.",
+    "Sehenswürdigkeiten mit begrenzter Kapazität reservieren.",
+    "Betten und Zimmer mit Verbindungstür prüfen.",
+    "Gesamtpreis, Übernachtungssteuer und enthaltene Leistungen vergleichen.",
+    "Flughafentransfer und Ankunft in der Altstadt planen."
+  ],
+  "hotels": [
+    [
+      "Campo Marzio · Piazza Augusto Imperatore",
+      "Moderne Adresse mit italienischen Materialien, vielseitigen Zimmern und Suiten sowie Gastronomie. Via del Corso und Boutiquen liegen nahe.",
+      "Ausblicke auf den Platz und Nebenstraßen vergleichen.",
+      "Für italienisches Design und Shopping.",
+      "Das Bvlgari Hotel Roma verbindet italienische Materialien, vielseitige Zimmer und Suiten sowie Gastronomie. Via del Corso und Boutiquen liegen nahe. Ausblicke auf den Platz und Nebenstraßen vergleichen."
+    ],
+    [
+      "Via del Babuino · Piazza del Popolo",
+      "Der Innengarten schafft eine Ruheoase nahe Piazza del Popolo. Zimmer, Suiten und Restaurants sind ein Ausgangspunkt für Campo Marzio und Pincio.",
+      "Gartenblick und Familienkonfiguration bestätigen.",
+      "Für eine grüne Oase in der Altstadt.",
+      "Der Innengarten des Hotel de Russie schafft eine Ruheoase nahe Piazza del Popolo. Das Hotel eignet sich für Campo Marzio und Pincio. Gartenblick und Familienkonfiguration bestätigen."
+    ],
+    [
+      "Trinità dei Monti · Spanische Treppe",
+      "Oberhalb der Spanischen Treppe verbindet das Hassler Tradition mit individuell eingerichteten Zimmern. Einige Kategorien bieten Terrassen oder weite Ausblicke.",
+      "Treppen, Zugänge und Zimmerkategorie prüfen.",
+      "Für die Panoramalage über der Spanischen Treppe.",
+      "Das Hassler verbindet Tradition und individuell gestaltete Zimmer. Einige Kategorien bieten Terrassen oder weite Ausblicke. Treppen, Zugänge und Zimmerkategorie prüfen."
+    ],
+    [
+      "Via Ludovisi · Villa Borghese",
+      "Klassisches Ambiente, Spa und Blick über Roms Dächer. Die Lage nahe Villa Borghese unterscheidet sich von einem Hotel direkt an einem zentralen Platz.",
+      "Ausrichtung, Terrasse, Fußwege und enthaltene Leistungen vergleichen.",
+      "Für klassische Eleganz und Stadtpanorama.",
+      "Hotel Eden bietet klassisches Ambiente, Spa und Ausblicke über Roms Dächer. Die Lage nahe Villa Borghese unterscheidet sich von einer Adresse direkt an einem zentralen Platz. Ausrichtung, Terrasse, Fußwege und Leistungen vergleichen."
+    ]
+  ],
+  "faq": [
+    [
+      "Wo übernachten beim ersten Rombesuch?",
+      "Altstadt und Campo Marzio sind zentral; Monti eignet sich für antike Sehenswürdigkeiten."
+    ],
+    [
+      "Welches Viertel liegt nahe dem Vatikan?",
+      "Prati verkürzt den Weg zu den Vatikanischen Museen."
+    ],
+    [
+      "Wie viele Nächte einplanen?",
+      "Vier Nächte sind eine gute Basis; mehr Zeit für Museen und weitere Viertel ist sinnvoll."
+    ],
+    [
+      "Welches Hotel bietet Panoramablick?",
+      "Vergleichen Sie die Kategorien im Hassler und Hotel Eden; ein bestimmter Ausblick ist nicht überall garantiert."
+    ],
+    [
+      "Braucht man ein Auto?",
+      "In der Altstadt sind Fußwege und öffentliche Verkehrsmittel wegen Verkehrsbeschränkungen meist praktischer."
+    ],
+    [
+      "Wie kommt man von Fiumicino nach Rom?",
+      "Zug nach Termini, offizielle Taxis und Privattransfers vergleichen."
+    ],
+    [
+      "Wie vergleicht man Hotels?",
+      "Auf Bosphoras Kategorien, Ausblick, Betten, Übernachtungssteuer und Bedingungen für identische Daten vergleichen."
+    ]
+  ],
+  "seoTitle": "Rom: die besten Viertel und Luxushotels für Ihren Aufenthalt",
+  "hotelSeoTitle": "Luxushotels Rom: Bvlgari, de Russie, Hassler und Eden",
+  "seoDescription": "Vergleichen Sie Roms Viertel, Luxushotels, Zimmer mit Aussicht, Anreise und Gesamtpreise rund um Altstadt, Spanische Treppe und Vatikan.",
+  "photoCaptions": [
+    "Das Kolosseum",
+    "Pantheon und Vorplatz",
+    "Detail des Trevi-Brunnens",
+    "Piazza Navona von oben",
+    "See der Villa Borghese",
+    "Panorama Roms mit dem Kolosseum",
+    "Spanische Treppe",
+    "Historische Architektur in Trastevere",
+    "Petersplatz von oben"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Bvlgari-Eingang mit Augustusstatue",
+      "Schlafzimmer im Bvlgari Hotel Roma",
+      "Innenpool des Bvlgari-Spas"
+    ],
+    [
+      "Fassade des Hotel de Russie",
+      "Terrasse der Nijinsky Suite",
+      "Behandlungsraum des Irene Forte Spa"
+    ],
+    [
+      "Fassade des Hassler Roma",
+      "Schlafzimmer im Hassler Roma",
+      "Hassler-Terrasse mit Blick auf Rom"
+    ],
+    [
+      "Fassade des Hotel Eden",
+      "Wohnzimmer der Bellavista Penthouse Suite",
+      "Lounge La Libreria"
+    ]
+  ]
+}
