@@ -591,6 +591,37 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "shangri-la-5",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Shard_-_London.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/The_Shard_-_London.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Shard_-_London.jpg",
+        "originalAlt": "The Shard exterior building housing Shangri-La London",
+        "originalCaption": "Simone Ramella / Wikimedia Commons / CC BY 2.0; https://creativecommons.org/licenses/by/2.0/; resized and converted to WebP",
+        "credit": "Simone Ramella / Wikimedia Commons / CC BY 2.0; https://creativecommons.org/licenses/by/2.0/; resized and converted to WebP",
+        "publisher": "Shangri-La The Shard, London",
+        "hotel": "Shangri-La The Shard, London",
+        "localPath": "/images/travel/london-premium/shangri-la/shangri-la-5.webp",
+        "sourceSHA256": "55722a57344ebec701f4cb3db541a6229db75de0a693ce5bcbbfbf9f666ed0f4",
+        "webpSHA256": "1a52a25d8c3df59bd0071d3114e70841ebc94b95732473026af0273131c38703",
+        "sourcePixels": [
+          6000,
+          4000
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 98674,
+        "pixelFingerprint": "5ede14b6beb8e97e",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "gaps": [
@@ -598,18 +629,9 @@
         "group": "city",
         "expected": 9,
         "found": 8
-      },
-      {
-        "group": "shangri-la",
-        "expected": 3,
-        "found": 2
       }
     ],
     "errors": [
-      {
-        "page": "https://www.stpauls.co.uk/",
-        "error": "HTTPSConnectionPool(host='www.stpauls.co.uk', port=443): Read timed out. (read timeout=16)"
-      },
       {
         "page": "https://www.visitlondon.com/things-to-do",
         "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do"
@@ -695,6 +717,10 @@
         "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/london-areas/kensington-and-south-kensington/things-to-do-south-kensington"
       },
       {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Mount_Street_and_Carlos_Place%2C_Mayfair.jpg",
+        "error": "429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/commons/e/e0/Mount_Street_and_Carlos_Place%2C_Mayfair.jpg"
+      },
+      {
         "page": "https://www.shangri-la.com/london/shangrila/photos-videos/",
         "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/london/shangrila/photos-videos/"
       },
@@ -705,18 +731,6 @@
       {
         "page": "https://www.shangri-la.com/en/london/shangrila/rooms-suites/",
         "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/en/london/shangrila/rooms-suites/"
-      },
-      {
-        "page": "https://www.expedia.com/London-Hotels-Shangri-La-The-Shard.h8035714.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/London-Hotels-Shangri-La-The-Shard.h8035714.Hotel-Information"
-      },
-      {
-        "page": "https://www.booking.com/hotel/gb/shangri-la-at-the-shard-london.html",
-        "error": "exact property identity not confirmed on page"
-      },
-      {
-        "page": "https://www.hotels.com/ho456469/shangri-la-the-shard-london-london-united-kingdom/",
-        "error": "429 Client Error: Too Many Requests for url: https://www.hotels.com/ho456469/shangri-la-the-shard-london-london-united-kingdom/"
       }
     ],
     "publicUseApproved": false,
@@ -941,8 +955,8 @@
       }
     ],
     "cityCount": 8,
-    "hotelCount": 11,
-    "totalBytes": 2518840
+    "hotelCount": 12,
+    "totalBytes": 2617514
   },
   "las-vegas": {
     "destinationScenes": [
