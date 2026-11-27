@@ -1,0 +1,136 @@
+{
+  "name": "Osaka",
+  "country": "Japonya",
+  "eyebrow": "Japonya · Kansai, gastronomi ve şehir otelleri",
+  "heading": "Osaka'da konaklama: gastronomi, tarihi miras ve şehir manzaraları.",
+  "intro": "Osaka, Namba'nın hareketli sokaklarını, Umeda'nın tren bağlantılarını ve Nakanoshima'nın nehir kıyılarını bir araya getirir. Otelinizi gezilere, Kansai seyahatlerine ve tatil temponuza göre seçin.",
+  "editorial": "Umeda ve Kita bölgesel trenler ve alışveriş için uygundur. Dojima ve Nakanoshima müzeler ve nehir kıyılarında daha sakin bir ortam sunar. Namba, Dotonbori ve Shinsaibashi gastronomi ve alışveriş için idealdir. Osaka Kalesi çevresi yürüyüş ve tarihi miras, Tennoji, Abeno ve Shinsekai tapınaklar ve şehir manzaraları sunar. Osaka Körfezi, Universal Studios Japan ve akvaryum odaklı aileler için uygundur, ancak merkeze daha uzaktır.\n\nÜç veya dört gece şehir ve bir günlük gezi için iyi bir başlangıçtır. Kyoto, Nara veya Kobe için kullanacağınız hatlara göre istasyonu seçin. Metro ve şehir trenleri pratiktir; büyük aktarma merkezlerinde yürüyüş sürelerini ve son seferleri kontrol edin.\n\nKIX havalimanından Namba'ya Nankai, JR trenleri ve otobüsleri karşılaştırın. Pasaportunuza göre giriş şartlarını kontrol edin. Oda büyüklüğü, yatak, kişi kapasitesi, manzara, vergiler ve iptal koşulları dahil toplamı karşılaştırın. Şehir manzarası nehir veya kale manzarasını garanti etmez.",
+  "hotelIntro": "Dört seçenek: Nakanoshima manzaraları için Conrad, Japon esintili çağdaş tasarım için Four Seasons, Umeda'da klasik lüks için Ritz-Carlton ve Midosuji'de tasarım için W Osaka.",
+  "areas": [
+    [
+      "Umeda ve Kita",
+      "Osaka Station, büyük mağazalar, Umeda Sky Building ve bölgesel trenler.",
+      "Her gezi için istasyonu ve hattı doğrulayın."
+    ],
+    [
+      "Dojima ve Nakanoshima",
+      "Nehir kıyıları, müzeler, mimari ve panoramik oteller.",
+      "İstasyonlara erişimi ve oda yönünü kontrol edin."
+    ],
+    [
+      "Namba, Dotonbori ve Shinsaibashi",
+      "Restoranlar, ışıklı tabelalar, kanal ve alışveriş.",
+      "Gece gürültüsünü ve bagajla yürüyüşü hesaba katın."
+    ],
+    [
+      "Osaka Kalesi çevresi",
+      "Kale parkı, tarihi miras ve yürüyüşler.",
+      "Park ile istasyonlar arasındaki mesafeleri kontrol edin."
+    ],
+    [
+      "Tennoji, Abeno ve Shinsekai",
+      "Shitennoji, Tsutenkaku, Abeno Harukas ve tarihi sokaklar.",
+      "Diğer bölgelere bağlantıları karşılaştırın."
+    ],
+    [
+      "Osaka Körfezi ve Universal City",
+      "Universal Studios Japan, Kaiyukan akvaryumu ve Tempozan.",
+      "Biletleri ve merkeze ulaşım süresini kontrol edin."
+    ]
+  ],
+  "experiences": [
+    [
+      "Osaka Kalesi ve parkını keşfetmek",
+      "Tarihi ziyareti park yürüyüşüyle birleştirin."
+    ],
+    [
+      "Minami mutfağını keşfetmek",
+      "Kuromon Market, Dotonbori ve Shinsaibashi'yi birleştirin."
+    ],
+    [
+      "Şehri yüksekten görmek",
+      "Hava ve rotaya göre Umeda Sky Building veya Abeno Harukas'ı seçin."
+    ],
+    [
+      "Körfezde bir gün geçirmek",
+      "Universal Studios Japan veya Kaiyukan ve Tempozan'ı seçin."
+    ]
+  ],
+  "checks": [
+    "Gezilere göre istasyon seçin.",
+    "Yatakları, oda büyüklüğünü ve manzarayı doğrulayın.",
+    "Pasaporta göre giriş şartlarını kontrol edin.",
+    "Vergi, kahvaltı ve iptal dahil toplam fiyatı karşılaştırın.",
+    "Biletleri ve sefer saatlerini kontrol edin."
+  ],
+  "hotels": [
+    [
+      "Nakanoshima · Festival Tower West",
+      "Geniş pencereler, odalar, süitler, restoranlar, spa ve kapalı havuz sunan yüksek katlı otel.",
+      "Oda yönünü ve kategorisini doğrulayın.",
+      "Panoramik manzaralar için.",
+      "Geniş pencereler, odalar, süitler, restoranlar, spa ve kapalı havuz sunan yüksek katlı otel. Oda yönünü ve kategorisini doğrulayın."
+    ],
+    [
+      "Dojima · Kita",
+      "Japon ryokan esintili seçenekleri de olan çağdaş odalar ve süitler, spa, havuz ve restoranlar.",
+      "Yatak türünü ve kategori koşullarını kontrol edin.",
+      "Çağdaş Japon tasarımı için.",
+      "Japon ryokan esintili seçenekleri de olan çağdaş odalar ve süitler, spa, havuz ve restoranlar. Yatak türünü ve kategori koşullarını kontrol edin."
+    ],
+    [
+      "Umeda · Kita",
+      "Klasik otel, odalar, süitler, salonlar, restoranlar ve spa.",
+      "Kategorileri, salon erişimini ve Osaka Station güzergâhını karşılaştırın.",
+      "Geleneksel lüks ve tren bağlantıları için.",
+      "Klasik otel, odalar, süitler, salonlar, restoranlar ve spa. Kategorileri, salon erişimini ve Osaka Station güzergâhını karşılaştırın."
+    ],
+    [
+      "Shinsaibashi · Midosuji",
+      "Midosuji'de çağdaş tasarım, alışveriş, restoranlar ve eğlence alanlarına yakınlık.",
+      "Atmosferi, yatakları ve tesis erişimini kontrol edin.",
+      "Tasarım ve şehir hayatı için.",
+      "Midosuji'de çağdaş tasarım, alışveriş, restoranlar ve eğlence alanlarına yakınlık. Atmosferi, yatakları ve tesis erişimini kontrol edin."
+    ]
+  ],
+  "faq": [
+    [
+      "İlk Osaka ziyaretinde nerede kalınır?",
+      "Gezilere ve akşam planlarına göre Umeda veya Namba uygundur."
+    ],
+    [
+      "Kyoto ve Nara için hangi bölge?",
+      "Hatları karşılaştırın; Umeda birçok bölgesel hat, Namba bazı Nara hatları için uygundur."
+    ],
+    [
+      "Kaç gece kalınmalı?",
+      "Şehir için üç dört gece; geziler için ek geceler planlayın."
+    ],
+    [
+      "Çocuklarla hangi bölge?",
+      "Eğlence parkları için Osaka Körfezi, farklı ziyaretler için Umeda veya Namba."
+    ],
+    [
+      "KIX'ten Osaka'ya nasıl gidilir?",
+      "Otele yakın istasyona göre Nankai, JR ve otobüsleri karşılaştırın."
+    ],
+    [
+      "Araç kiralamak gerekir mi?",
+      "Çoğu ziyaret için hayır; metro, tren ve yürüyüş pratiktir."
+    ],
+    [
+      "Oteller nasıl karşılaştırılır?",
+      "Aynı tarih, kişi, oda, yatak, vergi ve iptal şartlarını karşılaştırın."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Osaka'da nerede kalınır? Umeda, Namba ve en iyi bölgeler",
+  "hotelSeoTitle": "Osaka lüks otelleri: Conrad, Four Seasons, Ritz-Carlton ve W",
+  "seoDescription": "Osaka otellerini ve bölgelerini karşılaştırın: Umeda, Namba, Nakanoshima, ulaşım ve Japonya seyahat önerileri."
+}

@@ -1,0 +1,136 @@
+{
+  "name": "Osaka",
+  "country": "Japan",
+  "eyebrow": "Japan · Kansai, Gastronomie und Stadthotels",
+  "heading": "Osaka: das passende Viertel für Gastronomie, Kultur und Panorama wählen.",
+  "intro": "Osaka verbindet die lebhaften Straßen Nambas, die Bahnverbindungen Umedas und die Ufer Nakanoshimas. Wählen Sie Ihr Hotel nach Besichtigungen, Ausflügen in Kansai und Ihrem Reisetempo.",
+  "editorial": "Umeda und Kita sind praktisch für Regionalzüge und Einkaufsmöglichkeiten. Dojima und Nakanoshima bieten Ruhe nahe Museen und Flüssen. Namba, Dotonbori und Shinsaibashi eignen sich für Gastronomie und Shopping. Rund um die Burg Osaka stehen Spaziergänge und Geschichte im Vordergrund. Tennoji, Abeno und Shinsekai verbinden Tempel und Ausblicke. Osaka Bay eignet sich für Familien mit Universal Studios Japan und Aquarium als Schwerpunkt, liegt aber weniger zentral.\n\nDrei bis vier Nächte erlauben Stadtbesichtigungen und einen Ausflug. Für Kyoto, Nara oder Kobe den Bahnhof nach den benötigten Linien wählen. U-Bahn und Stadtzüge sind praktisch; lange Fußwege in großen Knotenpunkten und letzte Verbindungen beachten.\n\nAb KIX Nankai-Züge nach Namba, JR-Züge und Busse nach Hotel vergleichen. Einreisebestimmungen zum Reisepass prüfen. Zimmergröße, Betten, Belegung, Aussicht und Gesamtpreis mit Steuern und Stornierung vergleichen. Stadtblick garantiert keinen Fluss- oder Burgblick.",
+  "hotelIntro": "Conrad für Nakanoshima-Panorama, Four Seasons für modernes japanisch inspiriertes Design, Ritz-Carlton für klassischen Luxus in Umeda und W Osaka für Design an der Midosuji.",
+  "areas": [
+    [
+      "Umeda und Kita",
+      "Osaka Station, Kaufhäuser, Umeda Sky Building und Regionalzüge.",
+      "Bahnhof und Linie für jeden Ausflug bestimmen."
+    ],
+    [
+      "Dojima und Nakanoshima",
+      "Flussufer, Museen, Architektur und Panoramahotels.",
+      "Zugang zu Stationen und Zimmerausrichtung prüfen."
+    ],
+    [
+      "Namba, Dotonbori und Shinsaibashi",
+      "Restaurants, Leuchtreklamen, Kanal und Shopping.",
+      "Nachtleben, Lärm und Wege mit Gepäck beachten."
+    ],
+    [
+      "Umgebung der Burg Osaka",
+      "Burgpark, Geschichte und Spaziergänge.",
+      "Entfernungen zwischen Park und Stationen prüfen."
+    ],
+    [
+      "Tennoji, Abeno und Shinsekai",
+      "Shitennoji, Tsutenkaku, Abeno Harukas und historische Straßen.",
+      "Verbindungen zu anderen Vierteln vergleichen."
+    ],
+    [
+      "Osaka Bay und Universal City",
+      "Universal Studios Japan, Kaiyukan-Aquarium und Tempozan.",
+      "Tickets und Fahrtzeit ins Zentrum prüfen."
+    ]
+  ],
+  "experiences": [
+    [
+      "Burg Osaka und Park entdecken",
+      "Kulturbesuch mit einem Spaziergang im Park verbinden."
+    ],
+    [
+      "Minamis Gastronomie erkunden",
+      "Kuromon Market, Dotonbori und Shinsaibashi kombinieren."
+    ],
+    [
+      "Stadt von oben sehen",
+      "Umeda Sky Building oder Abeno Harukas nach Route und Wetter wählen."
+    ],
+    [
+      "Einen Tag an der Bucht planen",
+      "Universal Studios Japan oder Kaiyukan und Tempozan auswählen."
+    ]
+  ],
+  "checks": [
+    "Bahnhof nach Ausflügen wählen.",
+    "Betten, Zimmergröße und Aussicht bestätigen.",
+    "Einreisebestimmungen zum Reisepass prüfen.",
+    "Gesamtpreise mit Steuern, Frühstück und Stornierung vergleichen.",
+    "Tickets und Fahrpläne prüfen."
+  ],
+  "hotels": [
+    [
+      "Nakanoshima · Festival Tower West",
+      "Hochhaushotel mit großen Fenstern, Zimmern, Suiten, Gastronomie, Spa und Innenpool.",
+      "Zimmerausrichtung und Kategorie bestätigen.",
+      "Für Panorama-Aufenthalte.",
+      "Hochhaushotel mit großen Fenstern, Zimmern, Suiten, Gastronomie, Spa und Innenpool. Zimmerausrichtung und Kategorie bestätigen."
+    ],
+    [
+      "Dojima · Kita",
+      "Modernes Hotel mit japanisch inspirierten Zimmern, Ryokan-Optionen, Spa, Pool und Restaurants.",
+      "Betten und Bedingungen der Kategorien prüfen.",
+      "Für modernes japanisches Design.",
+      "Modernes Hotel mit japanisch inspirierten Zimmern, Ryokan-Optionen, Spa, Pool und Restaurants. Betten und Bedingungen der Kategorien prüfen."
+    ],
+    [
+      "Umeda · Kita",
+      "Klassische Adresse mit Zimmern, Suiten, Lounges, Restaurants und Spa.",
+      "Kategorien, Loungezugang und Wege von Osaka Station vergleichen.",
+      "Für klassischen Luxus und Bahnanschlüsse.",
+      "Klassische Adresse mit Zimmern, Suiten, Lounges, Restaurants und Spa. Kategorien, Loungezugang und Wege von Osaka Station vergleichen."
+    ],
+    [
+      "Shinsaibashi · Midosuji",
+      "Modernes Designhotel an der Midosuji nahe Geschäften und Nachtleben.",
+      "Atmosphäre, Betten und Zugang zu Einrichtungen prüfen.",
+      "Für Design und Stadtleben.",
+      "Modernes Designhotel an der Midosuji nahe Geschäften und Nachtleben. Atmosphäre, Betten und Zugang zu Einrichtungen prüfen."
+    ]
+  ],
+  "faq": [
+    [
+      "Wo beim ersten Osaka-Besuch übernachten?",
+      "Umeda und Namba sind je nach Ausflügen und Abendprogramm praktisch."
+    ],
+    [
+      "Welches Viertel für Kyoto und Nara?",
+      "Umeda bietet mehrere regionale Verbindungen, Namba einige Linien nach Nara; konkrete Routen prüfen."
+    ],
+    [
+      "Wie viele Nächte einplanen?",
+      "Drei bis vier für die Stadt, zusätzliche Nächte für Ausflüge."
+    ],
+    [
+      "Welches Viertel für Familien?",
+      "Osaka Bay für Freizeitattraktionen, Umeda oder Namba für vielseitige Besuche."
+    ],
+    [
+      "Wie kommt man von KIX nach Osaka?",
+      "Nankai, JR und Busse nach dem nächstgelegenen Bahnhof vergleichen."
+    ],
+    [
+      "Braucht man einen Mietwagen?",
+      "Meist nicht: U-Bahn, Züge und Fußwege sind praktisch."
+    ],
+    [
+      "Wie vergleicht man Hotels?",
+      "Gleiche Termine, Gästezahl, Zimmer, Betten, Steuern und Stornierung vergleichen."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Osaka: beste Viertel für Umeda und Namba",
+  "hotelSeoTitle": "Luxushotels Osaka: Conrad, Four Seasons, Ritz-Carlton und W",
+  "seoDescription": "Osakas Viertel und Hotels vergleichen: Umeda, Namba, Nakanoshima, Verkehr und Reisetipps für Japan."
+}
