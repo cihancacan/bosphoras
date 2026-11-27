@@ -157,68 +157,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "scene-6",
-        "sourcePage": "https://www.malaysia.travel/explore/top-places-to-visit-in-kuala-lumpur",
-        "sourceResolvedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(13).jpg",
-        "sourceRequestedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(13).jpg",
-        "originalAlt": "Batu Caves",
-        "originalCaption": "",
-        "credit": "Tourism Malaysia",
-        "publisher": "Tourism Malaysia",
-        "hotel": null,
-        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-6.webp",
-        "sourceSHA256": "797ee160dc6a5c0159d29270ba2d9892f3189991adf6cc1d8fdb04033ffc5b9f",
-        "webpSHA256": "0bee5910926b4c6eb26520c5efa89e020736b9f490e69a02fdc261a4dbfd5705",
-        "sourcePixels": [
-          7008,
-          4672
-        ],
-        "webpPixels": [
-          1275,
-          850
-        ],
-        "webpBytes": 114782,
-        "pixelFingerprint": "75f0e9b332dcd8c8",
-        "candidateSubject": "batu caves",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
-        "key": "scene-7",
-        "sourcePage": "https://www.malaysia.travel/explore/top-places-to-visit-in-kuala-lumpur",
-        "sourceResolvedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(18).jpg",
-        "sourceRequestedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(18).jpg",
-        "originalAlt": "KL Tower",
-        "originalCaption": "",
-        "credit": "Tourism Malaysia",
-        "publisher": "Tourism Malaysia",
-        "hotel": null,
-        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-7.webp",
-        "sourceSHA256": "0d9be623d2278bd5d0954ed24ca62cb0c33b1b85b28fb1372587c5dc79b1d034",
-        "webpSHA256": "e36eeced8fe75d0f7b25081773d7a41f75838b9d31f31ff15279662f44d2193a",
-        "sourcePixels": [
-          4607,
-          3455
-        ],
-        "webpPixels": [
-          1133,
-          850
-        ],
-        "webpBytes": 290680,
-        "pixelFingerprint": "c14ceeb799c89031",
-        "candidateSubject": "kl tower|menara kuala lumpur",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "scene-8",
         "sourcePage": "https://www.malaysia.travel/explore/top-places-to-visit-in-kuala-lumpur",
         "sourceResolvedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(31).jpg",
@@ -273,6 +211,68 @@
         "webpBytes": 155290,
         "pixelFingerprint": "c0d3e2c4c7c1c888",
         "candidateSubject": "brickfields|little india|kl sentral",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-10",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Batu_Caves_statue.JPG",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Batu_Caves_statue.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Batu_Caves_statue.JPG",
+        "originalAlt": "Batu Caves staircase and Murugan statue",
+        "originalCaption": "Kawaputra / CC BY 3.0 / resized WebP",
+        "credit": "Kawaputra / CC BY 3.0 / resized WebP",
+        "publisher": "Tourism Malaysia",
+        "hotel": null,
+        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-10.webp",
+        "sourceSHA256": "7ad31faf34448b53b887f6471a724befd0153b21ce728085f86c1a526a6a0848",
+        "webpSHA256": "47ce54e4959239b2b046f3c674318e05cc495d2c1c01e002b59fa93145dbc9d2",
+        "sourcePixels": [
+          2048,
+          1536
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 110058,
+        "pixelFingerprint": "90908181c181c2d2",
+        "candidateSubject": "batu caves",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-11",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Menara_KL.JPG",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Menara_KL.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Menara_KL.JPG",
+        "originalAlt": "KL Tower from Petronas Square",
+        "originalCaption": "Rintojiang / CC BY-SA 3.0 / resized WebP",
+        "credit": "Rintojiang / CC BY-SA 3.0 / resized WebP",
+        "publisher": "Tourism Malaysia",
+        "hotel": null,
+        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-11.webp",
+        "sourceSHA256": "fc45fa436df53b3227093f029b25bd2f1874fac677300e4964cb5f86895e4d3e",
+        "webpSHA256": "3b4cf7e68a872f9ea7d6f81810235c75de6b3de6cc3a626431f900b54778ed2a",
+        "sourcePixels": [
+          1000,
+          668
+        ],
+        "webpPixels": [
+          1000,
+          668
+        ],
+        "webpBytes": 78798,
+        "pixelFingerprint": "c7d52eaef6c6aea6",
+        "candidateSubject": "kl tower|menara kuala lumpur",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -656,24 +656,7 @@
       }
     ],
     "gaps": [],
-    "errors": [
-      {
-        "page": "https://www.tatlerasia.com/lifestyle/travel/hotel-review-tatler-checks-into-four-seasons-hotel-kuala-lumpur",
-        "error": "403 Client Error: Forbidden for url: https://www.tatlerasia.com/lifestyle/travel/hotel-review-tatler-checks-into-four-seasons-hotel-kuala-lumpur"
-      },
-      {
-        "page": "https://www.fourseasons.com/kualalumpur/photos-and-videos/",
-        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/kualalumpur/photos-and-videos/"
-      },
-      {
-        "url": "https://press.fourseasons.com/kualalumpur/hotel-news/2026/introducing-the-longevity-lounge",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72e9b48f65c0>"
-      },
-      {
-        "page": "https://www.eqkualalumpur.equatorial.com/rooms-suites/",
-        "error": "404 Client Error: Not Found for url: https://www.eqkualalumpur.equatorial.com/en/rooms-suites/"
-      }
-    ],
+    "errors": [],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
     "excludedCandidates": [
@@ -738,10 +721,72 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-6",
+        "sourcePage": "https://www.malaysia.travel/explore/top-places-to-visit-in-kuala-lumpur",
+        "sourceResolvedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(13).jpg",
+        "sourceRequestedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(13).jpg",
+        "originalAlt": "Batu Caves",
+        "originalCaption": "",
+        "credit": "Tourism Malaysia",
+        "publisher": "Tourism Malaysia",
+        "hotel": null,
+        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-6.webp",
+        "sourceSHA256": "797ee160dc6a5c0159d29270ba2d9892f3189991adf6cc1d8fdb04033ffc5b9f",
+        "webpSHA256": "0bee5910926b4c6eb26520c5efa89e020736b9f490e69a02fdc261a4dbfd5705",
+        "sourcePixels": [
+          7008,
+          4672
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 114782,
+        "pixelFingerprint": "75f0e9b332dcd8c8",
+        "candidateSubject": "batu caves",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-7",
+        "sourcePage": "https://www.malaysia.travel/explore/top-places-to-visit-in-kuala-lumpur",
+        "sourceResolvedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(18).jpg",
+        "sourceRequestedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(18).jpg",
+        "originalAlt": "KL Tower",
+        "originalCaption": "",
+        "credit": "Tourism Malaysia",
+        "publisher": "Tourism Malaysia",
+        "hotel": null,
+        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-7.webp",
+        "sourceSHA256": "0d9be623d2278bd5d0954ed24ca62cb0c33b1b85b28fb1372587c5dc79b1d034",
+        "webpSHA256": "e36eeced8fe75d0f7b25081773d7a41f75838b9d31f31ff15279662f44d2193a",
+        "sourcePixels": [
+          4607,
+          3455
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 290680,
+        "pixelFingerprint": "c14ceeb799c89031",
+        "candidateSubject": "kl tower|menara kuala lumpur",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "cityCount": 9,
     "hotelCount": 12,
-    "totalBytes": 3397250
+    "totalBytes": 3180644
   }
 }
