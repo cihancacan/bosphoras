@@ -2,60 +2,29 @@
   "london": {
     "destinationScenes": [
       {
-        "key": "scene-1",
-        "sourcePage": "https://www.visitbritain.com/en/destinations/england/london",
-        "sourceResolvedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/iiaejr3312743d4e677iyu44rg5k54f2/t/re_w_1440,re_h_1800,re_rm_Stretch/c_w_1440,c_h_810,c_whu_Pixel,c_x_0.0000,c_y_0.2750/VB8KHM.jpeg",
-        "sourceRequestedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/iiaejr3312743d4e677iyu44rg5k54f2/t/re_w_1440,re_h_1800,re_rm_Stretch/c_w_1440,c_h_810,c_whu_Pixel,c_x_0.0000,c_y_0.2750/VB8KHM.jpeg",
-        "originalAlt": "Girls sitting by Christmas trees in Covent Garden",
-        "originalCaption": "",
+        "key": "scene-3",
+        "sourcePage": "https://www.towerbridge.org.uk/filming-and-photography",
+        "sourceResolvedUrl": "https://www.towerbridge.org.uk/uploads/Filming/_article_image_2x/3621/Spiderman-TowerBridge.webp?v=1784645302",
+        "sourceRequestedUrl": "https://www.towerbridge.org.uk/uploads/Filming/_article_image_2x/3621/Spiderman-TowerBridge.webp?v=1784645302",
+        "originalAlt": "Spiderman dressed in his suit is hanging from Tower Bridge",
+        "originalCaption": "Spider Man: Far from Home, 2019\n\t\t\t\t\t\t\t© Entertainment Pictures / Alamy",
         "credit": "Visit London / London & Partners",
         "publisher": "Visit London / London & Partners",
         "hotel": null,
-        "localPath": "/images/travel/london-premium/destination/scene-1.webp",
-        "sourceSHA256": "654f833af478b16b4f49ca0b282c0538538a7fc827eb0481d1ba1874c1577042",
-        "webpSHA256": "7718226f5efb521a154a0d3bb9d2164f7607264a4129942f4f7d9b77925b1724",
+        "localPath": "/images/travel/london-premium/destination/scene-3.webp",
+        "sourceSHA256": "34201a6d652fd494ae28d0df7835eba2e09836aa3acf489e618984f014b9f70e",
+        "webpSHA256": "c4313c997f2f0d51e45a8e1a04e6374d6d44c2580a22a74660a9b80667ae1e19",
         "sourcePixels": [
-          1440,
-          810
+          1474,
+          617
         ],
         "webpPixels": [
-          1440,
-          810
+          1474,
+          617
         ],
-        "webpBytes": 360704,
-        "pixelFingerprint": "666270c4e1b19972",
-        "candidateSubject": "covent garden",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
-        "key": "scene-2",
-        "sourcePage": "https://www.visitbritain.com/en/destinations/england/london",
-        "sourceResolvedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/g0g777461b1vixs584g1gevjo31an388/t/re_w_1014,re_h_725,re_rm_Stretch/c_w_1014,c_h_570,c_whu_Pixel,c_x_0.0000,c_y_0.1069/VB8NY9.jpg",
-        "sourceRequestedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/g0g777461b1vixs584g1gevjo31an388/t/re_w_1014,re_h_725,re_rm_Stretch/c_w_1014,c_h_570,c_whu_Pixel,c_x_0.0000,c_y_0.1069/VB8NY9.jpg",
-        "originalAlt": "Three women carrying small crates containing fruit and vegetables at Borough Market",
-        "originalCaption": "",
-        "credit": "Visit London / London & Partners",
-        "publisher": "Visit London / London & Partners",
-        "hotel": null,
-        "localPath": "/images/travel/london-premium/destination/scene-2.webp",
-        "sourceSHA256": "e48ac6368eddafc4af333b3064e4762e740447aae7e2db352331efc11395e0ee",
-        "webpSHA256": "7108cb0fe620cb1f14c49530dd86fc0202d2d74dd32d9f2b515482717c261bb4",
-        "sourcePixels": [
-          1014,
-          570
-        ],
-        "webpPixels": [
-          1014,
-          570
-        ],
-        "webpBytes": 84050,
-        "pixelFingerprint": "90b4f4f4ecfcd8ca",
-        "candidateSubject": "borough market",
+        "webpBytes": 52358,
+        "pixelFingerprint": "6d0d0b095d193c18",
+        "candidateSubject": "tower bridge",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -349,7 +318,7 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 2
+        "found": 1
       },
       {
         "group": "savoy",
@@ -393,24 +362,20 @@
         "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/london-areas/london-bridge/top-things-to-do-in-london-bridge"
       },
       {
-        "url": "https://www.visitbritain.com/en/itineraries/c_y_0.0000/VB8NIF.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/itineraries/c_y_0.0000/VB8NIF.jpg"
+        "url": "https://www.visitbritain.com/en/c_y_0.0006/VB8IBL.png",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/c_y_0.0006/VB8IBL.png"
       },
       {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NIF.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NIF.jpg"
+        "url": "https://www.visitbritain.com/en/c_y_0.0000/VB8IBL.png",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/c_y_0.0000/VB8IBL.png"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/c_y_0.0010/VB8IBL.png",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/c_y_0.0010/VB8IBL.png"
       },
       {
         "url": "https://www.visitbritain.com/en/itineraries/c_y_0.0000/VB8MLD.jpeg",
         "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/itineraries/c_y_0.0000/VB8MLD.jpeg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.2750/VB8KHM.jpeg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.2750/VB8KHM.jpeg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.1000/VB8KHM.jpeg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.1000/VB8KHM.jpeg"
       },
       {
         "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NDB.jpg",
@@ -441,16 +406,20 @@
         "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8LX3.jpg"
       },
       {
-        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.1066/VB8NY9.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.1066/VB8NY9.jpg"
+        "url": "https://www.visitbritain.org/destinations/c_y_0.0000/VB8LWI.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.org/destinations/c_y_0.0000/VB8LWI.jpg"
       },
       {
-        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.1067/VB8NY9.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.1067/VB8NY9.jpg"
+        "url": "https://www.visitbritain.org/destinations/c_y_0.0000/VB8LVY.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.org/destinations/c_y_0.0000/VB8LVY.jpg"
       },
       {
-        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.1065/VB8NY9.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.1065/VB8NY9.jpg"
+        "url": "https://www.visitbritain.org/destinations/c_y_0.0000/VB8L1D.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.org/destinations/c_y_0.0000/VB8L1D.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.org/destinations/c_y_0.0000/VB8LTA.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.org/destinations/c_y_0.0000/VB8LTA.jpg"
       },
       {
         "url": "https://www.visitbritain.com/en/itineraries/c_y_0.0000/VB8L1D.jpg",
@@ -475,10 +444,6 @@
       {
         "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8LTA.jpg",
         "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8LTA.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8L1D.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8L1D.jpg"
       },
       {
         "page": "https://www.thesavoylondon.com/rooms-and-suites/",
@@ -530,11 +495,73 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-1",
+        "sourcePage": "https://www.visitbritain.com/en/destinations/england/london",
+        "sourceResolvedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/iiaejr3312743d4e677iyu44rg5k54f2/t/re_w_1440,re_h_1800,re_rm_Stretch/c_w_1440,c_h_810,c_whu_Pixel,c_x_0.0000,c_y_0.2750/VB8KHM.jpeg",
+        "sourceRequestedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/iiaejr3312743d4e677iyu44rg5k54f2/t/re_w_1440,re_h_1800,re_rm_Stretch/c_w_1440,c_h_810,c_whu_Pixel,c_x_0.0000,c_y_0.2750/VB8KHM.jpeg",
+        "originalAlt": "Girls sitting by Christmas trees in Covent Garden",
+        "originalCaption": "",
+        "credit": "Visit London / London & Partners",
+        "publisher": "Visit London / London & Partners",
+        "hotel": null,
+        "localPath": "/images/travel/london-premium/destination/scene-1.webp",
+        "sourceSHA256": "654f833af478b16b4f49ca0b282c0538538a7fc827eb0481d1ba1874c1577042",
+        "webpSHA256": "7718226f5efb521a154a0d3bb9d2164f7607264a4129942f4f7d9b77925b1724",
+        "sourcePixels": [
+          1440,
+          810
+        ],
+        "webpPixels": [
+          1440,
+          810
+        ],
+        "webpBytes": 360704,
+        "pixelFingerprint": "666270c4e1b19972",
+        "candidateSubject": "covent garden",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-2",
+        "sourcePage": "https://www.visitbritain.com/en/destinations/england/london",
+        "sourceResolvedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/g0g777461b1vixs584g1gevjo31an388/t/re_w_1014,re_h_725,re_rm_Stretch/c_w_1014,c_h_570,c_whu_Pixel,c_x_0.0000,c_y_0.1069/VB8NY9.jpg",
+        "sourceRequestedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/g0g777461b1vixs584g1gevjo31an388/t/re_w_1014,re_h_725,re_rm_Stretch/c_w_1014,c_h_570,c_whu_Pixel,c_x_0.0000,c_y_0.1069/VB8NY9.jpg",
+        "originalAlt": "Three women carrying small crates containing fruit and vegetables at Borough Market",
+        "originalCaption": "",
+        "credit": "Visit London / London & Partners",
+        "publisher": "Visit London / London & Partners",
+        "hotel": null,
+        "localPath": "/images/travel/london-premium/destination/scene-2.webp",
+        "sourceSHA256": "e48ac6368eddafc4af333b3064e4762e740447aae7e2db352331efc11395e0ee",
+        "webpSHA256": "7108cb0fe620cb1f14c49530dd86fc0202d2d74dd32d9f2b515482717c261bb4",
+        "sourcePixels": [
+          1014,
+          570
+        ],
+        "webpPixels": [
+          1014,
+          570
+        ],
+        "webpBytes": 84050,
+        "pixelFingerprint": "90b4f4f4ecfcd8ca",
+        "candidateSubject": "borough market",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 2,
+    "cityCount": 1,
     "hotelCount": 9,
-    "totalBytes": 1321486
+    "totalBytes": 929090
   },
   "las-vegas": {
     "destinationScenes": [
@@ -656,6 +683,68 @@
         "pixelFingerprint": "bcb0322c4e16ec2e",
         "candidateSubject": "fremont",
         "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-6",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/outdoor-fun-in-las-vegas/",
+        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1100/v1/clients/lasvegas/113755_RedRockCanyon_Afterglow_Girls_HIking_Close_246A7084_4x5_Sm_6693ea3c-b373-4230-98e8-c8b36fa62424.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1100/v1/clients/lasvegas/113755_RedRockCanyon_Afterglow_Girls_HIking_Close_246A7084_4x5_Sm_6693ea3c-b373-4230-98e8-c8b36fa62424.jpg",
+        "originalAlt": "Two women enjoying hiking the beautiful Red Rock Canyon close to Las Vegas.",
+        "originalCaption": "",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-6.webp",
+        "sourceSHA256": "6a0ac18f3c6b012cc23f7945198b8cc5d53f7301d8f4eaaff010d0f953bb8e3e",
+        "webpSHA256": "c025fabfd0fd0f4c7ccfe21d36a70bdeff9db8fa565b553b9f970173e3102f92",
+        "sourcePixels": [
+          1100,
+          733
+        ],
+        "webpPixels": [
+          1100,
+          733
+        ],
+        "webpBytes": 211448,
+        "pixelFingerprint": "e3733989d2e44a33",
+        "candidateSubject": "red rock",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-7",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/a-brief-history-of-the-welcome-to-fabulous-las-vegas-sign/",
+        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1100/v1/clients/lasvegas/welcomesign_3add9c41-6f6e-4e45-b8fb-fa554d69bee5.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1100/v1/clients/lasvegas/welcomesign_3add9c41-6f6e-4e45-b8fb-fa554d69bee5.jpg",
+        "originalAlt": "Welcome to Las Vegas Sign",
+        "originalCaption": "",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-7.webp",
+        "sourceSHA256": "c1a56b7a5467afb7ad4cb40285faee8bfd0bc20335051140ba7567d7f1a510b2",
+        "webpSHA256": "cdbd0d047bb7934f7643c8f5e0b5f4a9f1cdfa59ccc242295b997523f156769f",
+        "sourcePixels": [
+          1100,
+          619
+        ],
+        "webpPixels": [
+          1100,
+          619
+        ],
+        "webpBytes": 63674,
+        "pixelFingerprint": "ca92f1d9e931b8c0",
+        "candidateSubject": "las vegas sign",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
         "visuallyVerified": false,
@@ -789,18 +878,18 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "wynn-3",
+        "key": "wynn-4",
         "sourcePage": "https://www.wynnlasvegas.com/experiences/pools",
-        "sourceResolvedUrl": "https://assets.ctfassets.net/nmhu6zvnbnyf/5ykyUor8eTtILvr1EI3Cik/856dbd347b91ff3e66599f75e67e51dc/WLV-Pools-Wynn_Resort_Pool-with_Encore-828x466.avif",
-        "sourceRequestedUrl": "https://assets.ctfassets.net/nmhu6zvnbnyf/5ykyUor8eTtILvr1EI3Cik/856dbd347b91ff3e66599f75e67e51dc/WLV-Pools-Wynn_Resort_Pool-with_Encore-828x466.avif",
-        "originalAlt": "WLV-Pools-Wynn_Resort_Pool-with_Encore-828x466",
+        "sourceResolvedUrl": "https://assets.ctfassets.net/nmhu6zvnbnyf/4uN2tJX3oIgRHzLy7Wnsoa/818a59bc3922294bb41c7029e241564b/WLV-Pools-Encore_Resort_Pool-828x466.avif",
+        "sourceRequestedUrl": "https://assets.ctfassets.net/nmhu6zvnbnyf/4uN2tJX3oIgRHzLy7Wnsoa/818a59bc3922294bb41c7029e241564b/WLV-Pools-Encore_Resort_Pool-828x466.avif",
+        "originalAlt": "WLV-Pools-Encore_Resort_Pool-828x466",
         "originalCaption": "",
         "credit": "Wynn Las Vegas",
         "publisher": "Wynn Las Vegas",
         "hotel": "Wynn Las Vegas",
-        "localPath": "/images/travel/las-vegas-premium/wynn/wynn-3.webp",
-        "sourceSHA256": "7967f18bc79c73c7914539c4ccdde3026c5a9355b93b798b2f2379662d39d961",
-        "webpSHA256": "58eb2b9a794d775b6ee0c3e66b86b4d87bc44fd7d08cc2f805ae9fc096b788f9",
+        "localPath": "/images/travel/las-vegas-premium/wynn/wynn-4.webp",
+        "sourceSHA256": "15c700bd72548831a045700b1e7503b3884bd7a1c1df01e2f41eedc1c9c7b371",
+        "webpSHA256": "f906650c63f3007ae43c06e74f15610bf442e0d5c80e935e70d06655b9571b05",
         "sourcePixels": [
           828,
           466
@@ -809,8 +898,8 @@
           828,
           466
         ],
-        "webpBytes": 75904,
-        "pixelFingerprint": "9cccf0f8d8f072f2",
+        "webpBytes": 102076,
+        "pixelFingerprint": "da928ae8d4f07822",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
@@ -979,7 +1068,7 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 4
+        "found": 6
       },
       {
         "group": "wynn",
@@ -992,16 +1081,7 @@
         "found": 2
       }
     ],
-    "errors": [
-      {
-        "page": "https://bellagio.mgmresorts.com/en/hotel.html",
-        "error": "HTTPSConnectionPool(host='bellagio.mgmresorts.com', port=443): Read timed out. (read timeout=16)"
-      },
-      {
-        "page": "https://bellagio.mgmresorts.com/en.html",
-        "error": "HTTPSConnectionPool(host='bellagio.mgmresorts.com', port=443): Read timed out. (read timeout=16)"
-      }
-    ],
+    "errors": [],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
     "excludedCandidates": [
@@ -1128,11 +1208,42 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "wynn-3",
+        "sourcePage": "https://www.wynnlasvegas.com/experiences/pools",
+        "sourceResolvedUrl": "https://assets.ctfassets.net/nmhu6zvnbnyf/5ykyUor8eTtILvr1EI3Cik/856dbd347b91ff3e66599f75e67e51dc/WLV-Pools-Wynn_Resort_Pool-with_Encore-828x466.avif",
+        "sourceRequestedUrl": "https://assets.ctfassets.net/nmhu6zvnbnyf/5ykyUor8eTtILvr1EI3Cik/856dbd347b91ff3e66599f75e67e51dc/WLV-Pools-Wynn_Resort_Pool-with_Encore-828x466.avif",
+        "originalAlt": "WLV-Pools-Wynn_Resort_Pool-with_Encore-828x466",
+        "originalCaption": "",
+        "credit": "Wynn Las Vegas",
+        "publisher": "Wynn Las Vegas",
+        "hotel": "Wynn Las Vegas",
+        "localPath": "/images/travel/las-vegas-premium/wynn/wynn-3.webp",
+        "sourceSHA256": "7967f18bc79c73c7914539c4ccdde3026c5a9355b93b798b2f2379662d39d961",
+        "webpSHA256": "58eb2b9a794d775b6ee0c3e66b86b4d87bc44fd7d08cc2f805ae9fc096b788f9",
+        "sourcePixels": [
+          828,
+          466
+        ],
+        "webpPixels": [
+          828,
+          466
+        ],
+        "webpBytes": 75904,
+        "pixelFingerprint": "9cccf0f8d8f072f2",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 4,
+    "cityCount": 6,
     "hotelCount": 10,
-    "totalBytes": 1776956
+    "totalBytes": 2078250
   },
   "rome": {
     "destinationScenes": [
@@ -1292,18 +1403,18 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "scene-7",
+        "key": "scene-8",
         "sourcePage": "https://www.italia.it/en/lazio/rome/guide-history-facts",
-        "sourceResolvedUrl": "https://tourismmedia.italia.it/is/image/mitur/1600X1000_cosa_fare_a_roma_7_proposte_tra_cultura_sport_shopping_3-1?wid=800&hei=500&fit=constrain,1&fmt=webp",
-        "sourceRequestedUrl": "https://tourismmedia.italia.it/is/image/mitur/1600X1000_cosa_fare_a_roma_7_proposte_tra_cultura_sport_shopping_3-1?wid=800&hei=500&fit=constrain,1&fmt=webp",
-        "originalAlt": "culture, sport and shopping in rome",
+        "sourceResolvedUrl": "https://tourismmedia.italia.it/is/image/mitur/1600X1000_storia_e_curiosita_su_roma_1?wid=800&hei=500&fit=constrain,1&fmt=webp",
+        "sourceRequestedUrl": "https://tourismmedia.italia.it/is/image/mitur/1600X1000_storia_e_curiosita_su_roma_1?wid=800&hei=500&fit=constrain,1&fmt=webp",
+        "originalAlt": "history and fun facts about rome",
         "originalCaption": "",
         "credit": "Turismo Roma / Roma Capitale",
         "publisher": "Turismo Roma / Roma Capitale",
         "hotel": null,
-        "localPath": "/images/travel/rome-premium/destination/scene-7.webp",
-        "sourceSHA256": "994e378fc5da862b4e65b5dd4e6bfbba0a8940741ba9b316af17e757f8b59d59",
-        "webpSHA256": "53697bfb3a6b47dc5526637ca7681e835b186d42ff2c1351a7c93af12a2255c5",
+        "localPath": "/images/travel/rome-premium/destination/scene-8.webp",
+        "sourceSHA256": "2d50ab22b29a0d3b4e07b86d615f3633803292cb61215382c5a734d1d7ae869d",
+        "webpSHA256": "a19e9044220eb5df05730aacdeaff152b8d6ee5af36d4b62e2655feb69725f43",
         "sourcePixels": [
           800,
           500
@@ -1312,8 +1423,8 @@
           800,
           500
         ],
-        "webpBytes": 95192,
-        "pixelFingerprint": "f0f4613b0e078109",
+        "webpBytes": 98722,
+        "pixelFingerprint": "46045c7867478d32",
         "candidateSubject": "roma|rome|panorama",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
@@ -1324,6 +1435,68 @@
       }
     ],
     "hotels": [
+      {
+        "key": "de-russie-1",
+        "sourcePage": "https://press.roccofortehotels.com/summer-suite-shopping-in-rome/?lang=en",
+        "sourceResolvedUrl": "https://press.roccofortehotels.com/wp-content/uploads/2025/06/d148cd2716c63972fdd29d6eace61c4f-1500x1000.jpg",
+        "sourceRequestedUrl": "https://press.roccofortehotels.com/wp-content/uploads/2025/06/d148cd2716c63972fdd29d6eace61c4f-1500x1000.jpg",
+        "originalAlt": "RFH Hotel de Russie - Nijinsky Suite 22046 JG May 23 (1)-jpg",
+        "originalCaption": "",
+        "credit": "Hotel de Russie",
+        "publisher": "Hotel de Russie",
+        "hotel": "Hotel de Russie",
+        "localPath": "/images/travel/rome-premium/de-russie/de-russie-1.webp",
+        "sourceSHA256": "4595b24edd4eb960f4dca0dcc2b9452d6c7c13849de80921cccd06876951916f",
+        "webpSHA256": "623a5709fc15e064566dc6137943654931fe07e827024d42f32dc5edef904fca",
+        "sourcePixels": [
+          1500,
+          1000
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 225952,
+        "pixelFingerprint": "9c4c0c2c7398eece",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "de-russie-2",
+        "sourcePage": "https://press.roccofortehotels.com/hotel-de-russie-launches-a-new-irene-forte-spa-in-rome/?lang=en",
+        "sourceResolvedUrl": "https://press.roccofortehotels.com/wp-content/uploads/2026/03/558c9692f5bd040d406908476576d2e7-1500x1011.jpg",
+        "sourceRequestedUrl": "https://press.roccofortehotels.com/wp-content/uploads/2026/03/558c9692f5bd040d406908476576d2e7-1500x1011.jpg",
+        "originalAlt": "RFH Hotel de Russie - Irene Forte Spa 0263 MA June 25-jpg",
+        "originalCaption": "",
+        "credit": "Hotel de Russie",
+        "publisher": "Hotel de Russie",
+        "hotel": "Hotel de Russie",
+        "localPath": "/images/travel/rome-premium/de-russie/de-russie-2.webp",
+        "sourceSHA256": "0cb62c1cb70473c1fd7169142218483d2b5d7cc2e2dfe8a525f724a4e5f346d8",
+        "webpSHA256": "855dcef499d99631139c051600a5064c45d003d9d1bf6fa785b18827234b97e7",
+        "sourcePixels": [
+          1500,
+          1011
+        ],
+        "webpPixels": [
+          1261,
+          850
+        ],
+        "webpBytes": 53042,
+        "pixelFingerprint": "01455143331373f1",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
       {
         "key": "hassler-1",
         "sourcePage": "https://www.hotelhasslerroma.com/stay/",
@@ -1385,6 +1558,68 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "eden-1",
+        "sourcePage": "https://www.dorchestercollection.com/rome/hotel-eden",
+        "sourceResolvedUrl": "https://www.dorchestercollection.com/media/x04deanq/hotel-eden-roma-bellavista-penthouse-suite-living-room-view.jpg?format=webp&height=540&rmode=crop&rxy=0.48621553884711777%2C0.5767808303807276&width=1600",
+        "sourceRequestedUrl": "https://www.dorchestercollection.com/media/x04deanq/hotel-eden-roma-bellavista-penthouse-suite-living-room-view.jpg?format=webp&height=540&rmode=crop&rxy=0.48621553884711777%2C0.5767808303807276&width=1600",
+        "originalAlt": "Bellavista Penthouse Suite living room with city view",
+        "originalCaption": "Dorchester Collection",
+        "credit": "Dorchester Collection",
+        "publisher": "Hotel Eden",
+        "hotel": "Hotel Eden",
+        "localPath": "/images/travel/rome-premium/eden/eden-1.webp",
+        "sourceSHA256": "b75a0b6ef2459bac933feda772f7e881413a8df4a09d2c48a0d53dc6ed63e312",
+        "webpSHA256": "d76a4ee1cec16186df668b06547fed5bc0d78c122886d94ac96eead7f801ceb9",
+        "sourcePixels": [
+          1600,
+          540
+        ],
+        "webpPixels": [
+          1280,
+          432
+        ],
+        "webpBytes": 75496,
+        "pixelFingerprint": "c64f5ca69492eb9b",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "eden-2",
+        "sourcePage": "https://www.dorchestercollection.com/rome/hotel-eden",
+        "sourceResolvedUrl": "https://www.dorchestercollection.com/media/s10do3um/hotel-eden-la-libreria-lobby-lounge-hero-dorchester-collection.jpg?format=webp&height=765&rmode=crop&width=1200",
+        "sourceRequestedUrl": "https://www.dorchestercollection.com/media/s10do3um/hotel-eden-la-libreria-lobby-lounge-hero-dorchester-collection.jpg?format=webp&height=765&rmode=crop&width=1200",
+        "originalAlt": "La Libreria lobby lounge",
+        "originalCaption": "Dorchester Collection",
+        "credit": "Dorchester Collection",
+        "publisher": "Hotel Eden",
+        "hotel": "Hotel Eden",
+        "localPath": "/images/travel/rome-premium/eden/eden-2.webp",
+        "sourceSHA256": "438bb16286bfbdda631912355fa0fdebc65fbb92290594705ca12790769d38b2",
+        "webpSHA256": "4ad66a132d710a95f3a5cf98d0701fa4669c85f1bc1c93d3f5ffa0812616a070",
+        "sourcePixels": [
+          1200,
+          765
+        ],
+        "webpPixels": [
+          1200,
+          765
+        ],
+        "webpBytes": 164084,
+        "pixelFingerprint": "8ececc6167232d59",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "gaps": [
@@ -1401,7 +1636,7 @@
       {
         "group": "de-russie",
         "expected": 3,
-        "found": 0
+        "found": 2
       },
       {
         "group": "hassler",
@@ -1411,7 +1646,7 @@
       {
         "group": "eden",
         "expected": 3,
-        "found": 0
+        "found": 2
       }
     ],
     "errors": [
@@ -1424,6 +1659,14 @@
         "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/en-US/rome/rooms-and-suites"
       },
       {
+        "url": "https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/Accommodation/Bulgari-Hotel-Roma-7.jpg/jcr%3Acontent",
+        "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/Accommodation/Bulgari-Hotel-Roma-7.jpg/jcr%3Acontent"
+      },
+      {
+        "url": "https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/Bulgari-Spa/Bulgari-Hotel-Roma-1.jpg/jcr%3Acontent",
+        "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/Bulgari-Spa/Bulgari-Hotel-Roma-1.jpg/jcr%3Acontent"
+      },
+      {
         "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/gallery/",
         "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/gallery/"
       },
@@ -1434,6 +1677,10 @@
       {
         "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/accommodation/",
         "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/accommodation/"
+      },
+      {
+        "page": "https://www.dorchestercollection.com/rome/hotel-eden/about",
+        "error": "403 Client Error: Forbidden for url: https://www.dorchestercollection.com/rome/hotel-eden/about"
       },
       {
         "page": "https://media.dorchestercollection.com/hotel-eden-1/?lang=eng",
@@ -1520,11 +1767,42 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-7",
+        "sourcePage": "https://www.italia.it/en/lazio/rome/guide-history-facts",
+        "sourceResolvedUrl": "https://tourismmedia.italia.it/is/image/mitur/1600X1000_cosa_fare_a_roma_7_proposte_tra_cultura_sport_shopping_3-1?wid=800&hei=500&fit=constrain,1&fmt=webp",
+        "sourceRequestedUrl": "https://tourismmedia.italia.it/is/image/mitur/1600X1000_cosa_fare_a_roma_7_proposte_tra_cultura_sport_shopping_3-1?wid=800&hei=500&fit=constrain,1&fmt=webp",
+        "originalAlt": "culture, sport and shopping in rome",
+        "originalCaption": "",
+        "credit": "Turismo Roma / Roma Capitale",
+        "publisher": "Turismo Roma / Roma Capitale",
+        "hotel": null,
+        "localPath": "/images/travel/rome-premium/destination/scene-7.webp",
+        "sourceSHA256": "994e378fc5da862b4e65b5dd4e6bfbba0a8940741ba9b316af17e757f8b59d59",
+        "webpSHA256": "53697bfb3a6b47dc5526637ca7681e835b186d42ff2c1351a7c93af12a2255c5",
+        "sourcePixels": [
+          800,
+          500
+        ],
+        "webpPixels": [
+          800,
+          500
+        ],
+        "webpBytes": 95192,
+        "pixelFingerprint": "f0f4613b0e078109",
+        "candidateSubject": "roma|rome|panorama",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "cityCount": 6,
-    "hotelCount": 2,
-    "totalBytes": 959644
+    "hotelCount": 6,
+    "totalBytes": 1481748
   },
   "barcelona": {
     "destinationScenes": [
@@ -1591,37 +1869,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "scene-3",
-        "sourcePage": "https://www.spain.info/en/route/barcelona-two-days/",
-        "sourceResolvedUrl": "https://www.spain.info/export/sites/segtur/.content/imagenes/rutas/barcelona-dos-dias/barrio-gotico-entrada-catedral-puente-barcelona.jpg",
-        "sourceRequestedUrl": "https://www.spain.info/export/sites/segtur/.content/imagenes/rutas/barcelona-dos-dias/barrio-gotico-entrada-catedral-puente-barcelona.jpg",
-        "originalAlt": "Left: Entrance to the Gothic Quarter / Centre: Barcelona Cathedral / Right: Puente del Bisbe in Barcelona, Catalonia",
-        "originalCaption": "",
-        "credit": "Turisme de Barcelona",
-        "publisher": "Turisme de Barcelona",
-        "hotel": null,
-        "localPath": "/images/travel/barcelona-premium/destination/scene-3.webp",
-        "sourceSHA256": "f7f4823dbe96ed3aa0cdc48941c64d14101b0ba8461c55a74105efa6243a3911",
-        "webpSHA256": "81935e27dbcc29f1dab32efc4dabbecbf930922f9bd6d3615e294806ca53a2e9",
-        "sourcePixels": [
-          1110,
-          468
-        ],
-        "webpPixels": [
-          1110,
-          468
-        ],
-        "webpBytes": 136584,
-        "pixelFingerprint": "a98a91a9a9aa628e",
-        "candidateSubject": "gothic|gotic|gòtic|catedral",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "scene-4",
         "sourcePage": "https://www.spain.info/en/top/best-views-barcelona/",
         "sourceResolvedUrl": "https://www.spain.info/export/sites/segtur/.content/imagenes/top10/cataluna/barcelona-castillo-montjuic-s333211196.jpg",
@@ -1645,37 +1892,6 @@
         "webpBytes": 64886,
         "pixelFingerprint": "3aaa0aa8689969c9",
         "candidateSubject": "montju",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
-        "key": "scene-5",
-        "sourcePage": "https://www.spain.info/en/route/barcelona-two-days/",
-        "sourceResolvedUrl": "https://www.spain.info/export/sites/segtur/.content/imagenes/rutas/barcelona-dos-dias/paseo-gracia-park-guell-barcelona.jpg",
-        "sourceRequestedUrl": "https://www.spain.info/export/sites/segtur/.content/imagenes/rutas/barcelona-dos-dias/paseo-gracia-park-guell-barcelona.jpg",
-        "originalAlt": "Left: Passeig de Gràcia / Right: Park Güell in Barcelona, Catalonia",
-        "originalCaption": "",
-        "credit": "Turisme de Barcelona",
-        "publisher": "Turisme de Barcelona",
-        "hotel": null,
-        "localPath": "/images/travel/barcelona-premium/destination/scene-5.webp",
-        "sourceSHA256": "a14e0a27af48c2745dc823b20e1d3d8de477d088dfb57d3dada1fe31c2f7c20a",
-        "webpSHA256": "4ecddaa070ad369c8c375ef1a13e09483e5ff5f29dfbdac8d9fa452ed7cd646d",
-        "sourcePixels": [
-          1110,
-          468
-        ],
-        "webpPixels": [
-          1110,
-          468
-        ],
-        "webpBytes": 121204,
-        "pixelFingerprint": "dbfcd9d9d9c9d9db",
-        "candidateSubject": "gracia|gràcia",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -1738,6 +1954,37 @@
         "webpBytes": 144332,
         "pixelFingerprint": "e09872f2f3f0f4e4",
         "candidateSubject": "panoram|skyline",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-8",
+        "sourcePage": "https://www.spain.info/en/top/best-views-barcelona/",
+        "sourceResolvedUrl": "https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/cataluna/fachada-catedral-de-santa-eulalia-barcelona-s377587309.jpg",
+        "sourceRequestedUrl": "https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/cataluna/fachada-catedral-de-santa-eulalia-barcelona-s377587309.jpg",
+        "originalAlt": "Façade of the Cathedral of Santa Eulalia in Barcelona",
+        "originalCaption": "",
+        "credit": "Turisme de Barcelona",
+        "publisher": "Turisme de Barcelona",
+        "hotel": null,
+        "localPath": "/images/travel/barcelona-premium/destination/scene-8.webp",
+        "sourceSHA256": "391e77db9d3e154f84b1bdf9573c014d7afd233f3d5dd6c56b0d2d451fa7a500",
+        "webpSHA256": "7212a6281928bc454754ce1e86f38946cea6526ccacf81c0066b81f0964fa2ca",
+        "sourcePixels": [
+          1920,
+          864
+        ],
+        "webpPixels": [
+          1280,
+          576
+        ],
+        "webpBytes": 128350,
+        "pixelFingerprint": "6e34d60b8cc8c8c8",
+        "candidateSubject": "gothic|gotic|gòtic|catedral",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -1969,7 +2216,7 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 7
+        "found": 6
       },
       {
         "group": "mandarin",
@@ -2088,11 +2335,73 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-3",
+        "sourcePage": "https://www.spain.info/en/route/barcelona-two-days/",
+        "sourceResolvedUrl": "https://www.spain.info/export/sites/segtur/.content/imagenes/rutas/barcelona-dos-dias/barrio-gotico-entrada-catedral-puente-barcelona.jpg",
+        "sourceRequestedUrl": "https://www.spain.info/export/sites/segtur/.content/imagenes/rutas/barcelona-dos-dias/barrio-gotico-entrada-catedral-puente-barcelona.jpg",
+        "originalAlt": "Left: Entrance to the Gothic Quarter / Centre: Barcelona Cathedral / Right: Puente del Bisbe in Barcelona, Catalonia",
+        "originalCaption": "",
+        "credit": "Turisme de Barcelona",
+        "publisher": "Turisme de Barcelona",
+        "hotel": null,
+        "localPath": "/images/travel/barcelona-premium/destination/scene-3.webp",
+        "sourceSHA256": "f7f4823dbe96ed3aa0cdc48941c64d14101b0ba8461c55a74105efa6243a3911",
+        "webpSHA256": "81935e27dbcc29f1dab32efc4dabbecbf930922f9bd6d3615e294806ca53a2e9",
+        "sourcePixels": [
+          1110,
+          468
+        ],
+        "webpPixels": [
+          1110,
+          468
+        ],
+        "webpBytes": 136584,
+        "pixelFingerprint": "a98a91a9a9aa628e",
+        "candidateSubject": "gothic|gotic|gòtic|catedral",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-5",
+        "sourcePage": "https://www.spain.info/en/route/barcelona-two-days/",
+        "sourceResolvedUrl": "https://www.spain.info/export/sites/segtur/.content/imagenes/rutas/barcelona-dos-dias/paseo-gracia-park-guell-barcelona.jpg",
+        "sourceRequestedUrl": "https://www.spain.info/export/sites/segtur/.content/imagenes/rutas/barcelona-dos-dias/paseo-gracia-park-guell-barcelona.jpg",
+        "originalAlt": "Left: Passeig de Gràcia / Right: Park Güell in Barcelona, Catalonia",
+        "originalCaption": "",
+        "credit": "Turisme de Barcelona",
+        "publisher": "Turisme de Barcelona",
+        "hotel": null,
+        "localPath": "/images/travel/barcelona-premium/destination/scene-5.webp",
+        "sourceSHA256": "a14e0a27af48c2745dc823b20e1d3d8de477d088dfb57d3dada1fe31c2f7c20a",
+        "webpSHA256": "4ecddaa070ad369c8c375ef1a13e09483e5ff5f29dfbdac8d9fa452ed7cd646d",
+        "sourcePixels": [
+          1110,
+          468
+        ],
+        "webpPixels": [
+          1110,
+          468
+        ],
+        "webpBytes": 121204,
+        "pixelFingerprint": "dbfcd9d9d9c9d9db",
+        "candidateSubject": "gracia|gràcia",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 7,
+    "cityCount": 6,
     "hotelCount": 7,
-    "totalBytes": 1875054
+    "totalBytes": 1745616
   },
   "cancun": {
     "destinationScenes": [
@@ -2285,6 +2594,37 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
+        "key": "hyatt-ziva-1",
+        "sourcePage": "https://newsroom.hyatt.com/media-gallery?cat=2774",
+        "sourceResolvedUrl": "https://filecache.mediaroom.com/mr5mr_hyatt2/188973/download/Hyatt%20Ziva%20Cancun%20-%20Aerial.jpg",
+        "sourceRequestedUrl": "https://newsroom.hyatt.com/download/Hyatt+Ziva+Cancun+-+Aerial.jpg",
+        "originalAlt": "Hi Res (7.6 MB)",
+        "originalCaption": "",
+        "credit": "Hyatt Ziva Cancun",
+        "publisher": "Hyatt Ziva Cancun",
+        "hotel": "Hyatt Ziva Cancun",
+        "localPath": "/images/travel/cancun-premium/hyatt-ziva/hyatt-ziva-1.webp",
+        "sourceSHA256": "ca22a62e347e0dd83d86570a575990e5a6b7803a58fdaed60a452c1d40622519",
+        "webpSHA256": "e4bd76a9cdba061e72ab3fff7f171fd71dfe475e366e0a55f4713da7a28d3fc8",
+        "sourcePixels": [
+          5464,
+          3070
+        ],
+        "webpPixels": [
+          1280,
+          719
+        ],
+        "webpBytes": 104470,
+        "pixelFingerprint": "87edb9d1c031218d",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "coral-beach-1",
         "sourcePage": "https://www.coralbeachcancunresort.com/",
         "sourceResolvedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/09/fagcb_pool_ocean_exterior.jpg",
@@ -2397,10 +2737,14 @@
       {
         "group": "hyatt-ziva",
         "expected": 3,
-        "found": 0
+        "found": 1
       }
     ],
     "errors": [
+      {
+        "page": "https://cancun.leblancsparesorts.com/es/galeria",
+        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/es/galeria"
+      },
       {
         "page": "https://cancun.leblancsparesorts.com/gallery",
         "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/gallery"
@@ -2424,6 +2768,10 @@
       {
         "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms",
         "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms"
+      },
+      {
+        "url": "https://newsroom.hyatt.com/download/Hyatt%2BZiva%2BCancun%2B-%2BAerial.jpg",
+        "error": "404 Client Error: Not Found for url: https://newsroom.hyatt.com/download/Hyatt%2BZiva%2BCancun%2B-%2BAerial.jpg"
       }
     ],
     "publicUseApproved": false,
@@ -2493,7 +2841,7 @@
       }
     ],
     "cityCount": 4,
-    "hotelCount": 5,
-    "totalBytes": 974414
+    "hotelCount": 6,
+    "totalBytes": 1078884
   }
 }
