@@ -1,0 +1,136 @@
+{
+  "name": "London",
+  "country": "Vereinigtes Königreich",
+  "eyebrow": "Vereinigtes Königreich · Themse und renommierte Hotels",
+  "heading": "London: das passende Viertel wählen und die Stadt im eigenen Tempo entdecken.",
+  "intro": "Von den Plätzen Mayfairs über die Theater des West End bis zu den Museen Kensingtons und dem Blick auf die Themse bietet London ganz unterschiedliche Reiseerlebnisse. Wählen Sie Ihr Hotel nach Reiseplan, Verkehrsanbindung und gewünschter Atmosphäre.",
+  "editorial": "Bei einem ersten Besuch verkürzen Covent Garden und Westminster die Wege zu bekannten Sehenswürdigkeiten und Theatern. Mayfair und St James’s eignen sich für Shopping, besondere Restaurants und klassische Luxushotels. South Kensington ist mit seinen Museen und Grünanlagen ideal für Familien. London Bridge bietet mit Borough Market und Spaziergängen an der Themse eine andere Perspektive.\n\nDrei bis vier Nächte reichen als Ausgangspunkt, um Westminster, das West End, Kensingtons Museen und das Flussufer ohne Eile zu erkunden. Bei einem längeren Aufenthalt lohnen sich Greenwich oder Hampstead. London ist weitläufig: Auch ein zentral gelegenes Hotel liegt nicht nahe an allen Sehenswürdigkeiten. Gute Verkehrsverbindungen sind ebenso wichtig wie Entfernungen auf der Karte.\n\nVergleichen Sie ab Heathrow die Elizabeth line, Piccadilly line, Heathrow Express und private Transfers entsprechend Terminal und Hotel. Verwenden Sie bei TfL-Fahrten dasselbe kontaktlose Zahlungsmittel, damit die geltenden Preisobergrenzen korrekt berücksichtigt werden. Die britischen Einreisebestimmungen hängen von Pass und Aufenthaltsstatus ab; prüfen Sie diese vor der Abreise.\n\nVergleichen Sie Preise für identische Reisedaten, Gästezahl, Zimmerkategorie und Stornobedingungen. Frühstück, Zusatzbetten und Spa-Leistungen sind nicht automatisch enthalten.",
+  "hotelIntro": "Vier Facetten Londons: die historische Eleganz von Claridge’s, The Savoy zwischen Theater und Themse, The Peninsula am Hyde Park Corner und Shangri-La hoch über der Stadt.",
+  "areas": [
+    [
+      "Mayfair und St James’s",
+      "Historische Hotels, Galerien, Bond Street und Green Park.",
+      "Zimmer zur Straße können weniger ruhig sein."
+    ],
+    [
+      "Covent Garden und Strand",
+      "Theater, Märkte, Restaurants und Zugang zum Flussufer.",
+      "Abendlichen Lärm und Fußwege berücksichtigen."
+    ],
+    [
+      "Westminster und Victoria",
+      "Parlament, Westminster Abbey, Buckingham Palace und Bahnverbindungen.",
+      "Beliebte Sehenswürdigkeiten möglichst vorab reservieren."
+    ],
+    [
+      "South Kensington und Knightsbridge",
+      "Museen, Hyde Park, Boutiquen und Wohnstraßen.",
+      "Mit Kindern den tatsächlichen Fußweg zur U-Bahn prüfen."
+    ],
+    [
+      "South Bank und London Bridge",
+      "Spaziergänge an der Themse, Tate Modern und Borough Market.",
+      "Das passende Flussufer und die Brückenverbindungen berücksichtigen."
+    ],
+    [
+      "Soho und Marylebone",
+      "Soho bietet Nachtleben, Marylebone ruhigere Einkaufsstraßen mit dörflichem Charakter.",
+      "Die Straße nach gewünschter Ruhe auswählen."
+    ]
+  ],
+  "experiences": [
+    [
+      "Westminster zu Fuß",
+      "St James’s Park, Westminster Abbey und das Flussufer im eigenen Tempo verbinden."
+    ],
+    [
+      "Ein Theaterabend",
+      "Abendessen und Vorstellung im selben Viertel des West End planen."
+    ],
+    [
+      "Museen und Parks mit Kindern",
+      "Natural History Museum oder V&A mit einem Spaziergang durch Kensington Gardens verbinden."
+    ],
+    [
+      "Die Themse anders erleben",
+      "Uferwege, Brücken und Märkte rund um London Bridge erkunden."
+    ]
+  ],
+  "checks": [
+    "Zimmerkategorie, Betten und Gesamtpreis vergleichen.",
+    "Das Viertel nach den wichtigsten Besichtigungszielen auswählen.",
+    "Die Anreise vom richtigen Flughafen und Terminal planen.",
+    "Einreisebestimmungen entsprechend dem Reisepass prüfen.",
+    "Sehenswürdigkeiten mit Zeitfenstern und gewünschte Vorstellungen vorab buchen."
+  ],
+  "hotels": [
+    [
+      "Mayfair · Brook Street",
+      "Historisches Hotel mit Art-déco-Zimmern, unterschiedlichen Suiten, Restaurants und Spa.",
+      "Zimmerkategorien, Ausblick und Zusatzbetten vergleichen.",
+      "Für klassische Londoner Eleganz und Shopping.",
+      "Claridge’s verbindet historische Gastlichkeit in Mayfair mit Art-déco-Zimmern, vielseitigen Suiten, Gastronomie und Spa. Ideal für Gäste, die klassische Londoner Atmosphäre und nahe Boutiquen statt Themsepanorama suchen. Zimmerkategorien, Ausblick und Zusatzbetten vergleichen."
+    ],
+    [
+      "Strand · Covent Garden",
+      "Historische Innenräume, American Bar und Afternoon Tea zwischen Strand und Themse.",
+      "Flussblick für das konkrete Zimmer bestätigen.",
+      "Für Theaterabende und besondere Anlässe.",
+      "The Savoy liegt zwischen Strand und Themse. Historische Innenräume, die American Bar und Afternoon Tea machen das Hotel zu einer passenden Adresse für Theaterabende und Feiern. Flussblick für das konkrete Zimmer bestätigen."
+    ],
+    [
+      "Hyde Park Corner · Belgravia",
+      "Von Peter Marino gestaltete Zimmer mit modernem Wohnambiente und guter Lage zwischen Hyde Park, Belgravia und Knightsbridge.",
+      "Ausblick auf Wellington Arch, Hyde Park Corner oder Belgravia und Familienzimmer vergleichen.",
+      "Für modernen Luxus am Hyde Park.",
+      "Die von Peter Marino gestalteten Zimmer bieten ein zeitgemäßes Wohnambiente. Hyde Park, Belgravia und Knightsbridge sind gut erreichbar. Ausblick und Zimmerkonfiguration für Familien vergleichen."
+    ],
+    [
+      "London Bridge · The Shard",
+      "Hoch gelegene Zimmer mit bodentiefen Fenstern, nahe Borough Market und den Uferwegen der Themse.",
+      "Ausrichtung, Zimmerkategorie und Verbindungstüren prüfen; ein bestimmter Ausblick ist nicht garantiert.",
+      "Für den Panoramablick über die Stadt.",
+      "Die hoch gelegenen Zimmer mit bodentiefen Fenstern bieten ein anderes Erlebnis als klassische Grandhotels. Borough Market und Spazierwege am Südufer liegen nahe. Ausrichtung, Kategorie und Zimmer mit Verbindungstür prüfen."
+    ]
+  ],
+  "faq": [
+    [
+      "Wo sollte man beim ersten Londonbesuch übernachten?",
+      "Covent Garden, Westminster und South Bank liegen günstig für viele Sehenswürdigkeiten. Mayfair eignet sich für einen Luxusaufenthalt."
+    ],
+    [
+      "Welches Viertel eignet sich für Familien?",
+      "South Kensington für Museen und Gärten, South Bank für Sehenswürdigkeiten am Fluss."
+    ],
+    [
+      "Wie viele Nächte sollte man einplanen?",
+      "Drei bis vier Nächte sind ein guter Ausgangspunkt; fünf oder mehr erlauben weitere Erkundungen."
+    ],
+    [
+      "Wie kommt man von Heathrow nach London?",
+      "Elizabeth line, Piccadilly line, Heathrow Express oder Straßentransfer, je nach Ziel."
+    ],
+    [
+      "Welche Hotels bieten Themseblick?",
+      "The Savoy und Shangri-La bieten einzelne Kategorien mit Flussblick; das konkrete Zimmer bestätigen."
+    ],
+    [
+      "Braucht man in London ein Auto?",
+      "Für Besichtigungen im Zentrum sind öffentliche Verkehrsmittel und Fußwege meist praktischer."
+    ],
+    [
+      "Wie vergleicht man Hotels?",
+      "Auf Bosphoras Gesamtpreise für identische Reisedaten, Gästezahl, Zimmerkategorie und Stornobedingungen vergleichen."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "London: die besten Viertel und Luxushotels für Ihren Aufenthalt",
+  "hotelSeoTitle": "Luxushotels London: Claridge’s, Savoy, Peninsula und Shangri-La",
+  "seoDescription": "Londons Viertel und Luxushotels vergleichen: Mayfair, Covent Garden, Kensington, Themseblick und Anreise ab Heathrow."
+}
