@@ -1,0 +1,162 @@
+{
+  "name": "Harbour Island",
+  "country": "Bahamas",
+  "eyebrow": "Harbour Island · Rosafarbener Sand und pastellfarbene Häuser",
+  "heading": "Wo auf Harbour Island übernachten? Vier Adressen zwischen Strand und Hafen",
+  "intro": "Nahe North Eleuthera vereint Harbour Island einen langen, zartrosa Sandstrand, pastellfarbene Holzhäuser und kleine Hotels. The Dunmore, Coral Sands und Pink Sands Resort liegen an der Ostküste; The Landing am Hafen von Dunmore Town.",
+  "editorial": "Harbour Island ist durch eine Meerenge von North Eleuthera getrennt. Vom Flughafen North Eleuthera fährt man meist per Taxi zum Three Island Dock und dann per Wassertaxi weiter. Es gibt keine Brücke; Ankunft hängt von Bootsfahrplan und Wetter ab. Auf der Insel geht man zu Fuß oder mietet einen Golfcart nach lokalen Regeln.\n\nPink Sands Beach erstreckt sich etwa drei Meilen am Atlantik. Die natürliche Rosafärbung stammt teilweise von winzigen Foraminiferenpartikeln und variiert mit Licht und Feuchtigkeit. Dunmore Town blickt westwärts auf den geschützteren Hafen mit pastellfarbenen Verandahäusern, kleinen Läden und Anlegern.\n\nThe Dunmore bietet intimes Beachclub-Ambiente mit 19 Zimmern, Gartencottages und größeren Residenzen. Privatpools gibt es nur in bestimmten Kategorien. Coral Sands umfasst Inn-Zimmer, Briland-House-Suiten, Cottages und King’s Beach Homes mit unterschiedlicher Ausstattung und Kapazität. Pink Sands Resort bietet Cottages, Villen und Häuser in tropischen Gärten; Malcolm 51 und Blue Bar & Kitchen haben eigene Reservierungsregeln.\n\nThe Landing liegt in einem historischen Gästehaus von 1800 mit 13 Zimmern am Hafen. Das Hotel nennt etwa fünf Gehminuten zum Strand; Liegen und Schirme separat prüfen. Ein Gartenzimmer bietet nicht automatisch Hafenblick. An der Atlantikseite sind Wellen und Strömungen möglich; Rettungsschwimmer vor Ort prüfen. Während der Hurrikansaison, meist Juni bis November, offizielle Warnungen und Transferänderungen beachten. Ausflüge nach Spanish Wells, zu Sandbänken und North Eleuthera separat mit lizenzierten Anbietern organisieren.",
+  "hotelIntro": "Drei Adressen nahe dem Oststrand und ein historisches Gästehaus am Hafen: vier unterschiedliche Inselerlebnisse.",
+  "areas": [
+    [
+      "Pink Sands Beach",
+      "Langer Atlantikstrand mit zartrosa Sand.",
+      "Farbe und Brandung variieren; ständige Badeaufsicht nicht garantiert."
+    ],
+    [
+      "Historisches Dunmore Town",
+      "Pastellfarbene Holzhäuser, weiße Zäune, Geschäfte und Cafés.",
+      "Privathöfe und Ruhe der Bewohner respektieren."
+    ],
+    [
+      "Hafenpromenade und Anleger",
+      "Fischerboote und Wassertaxis nach North Eleuthera an der Westküste.",
+      "Anleger, Wetter und Kinderrettungswesten bestätigen."
+    ],
+    [
+      "Inselnorden und Küstenwege",
+      "Niedrige Häuser, tropisches Grün und Meerzugänge an lokalen Straßen.",
+      "Erlaubte Wege nutzen; Dünen nicht befahren."
+    ],
+    [
+      "Südliches Harbour Island",
+      "Ruhigere Ufer, Vegetation und Meerenge nach Eleuthera.",
+      "Öffentlichen Zugang und Strömungen vor dem Baden prüfen."
+    ]
+  ],
+  "experiences": [
+    [
+      "Sonnenaufgang am Pink Sands Beach",
+      "Morgens auf öffentlichen Wegen die natürlichen Sandfarben erleben."
+    ],
+    [
+      "Pastellhäuser in Dunmore Town",
+      "Holzfassaden und Inselgeschäfte entdecken, ohne Bewohner zu stören."
+    ],
+    [
+      "Mittagessen im Dunmore Clubhouse",
+      "Retro-Clubambiente genießen und vorher einen Tisch reservieren."
+    ],
+    [
+      "Abendlicht am Hafen",
+      "Boote von öffentlich zugänglichen Uferbereichen beobachten."
+    ],
+    [
+      "Bootsausflug",
+      "Lizenzierten Anbieter wählen, Wetter, Strömung und Kinderausrüstung berücksichtigen."
+    ]
+  ],
+  "checks": [
+    "Ab North Eleuthera ist ein Boot nötig; keine Autobrücke.",
+    "Die natürliche Rosafärbung am Pink Sands Beach variiert mit dem Licht.",
+    "The Landing liegt am Hafen, getrennt von den drei Oststrandhotels.",
+    "Cottages, Suiten, Residenzen und ganze Häuser haben unterschiedliche Ausstattung.",
+    "Brandung, Bootsüberfahrten und Hurrikansaison beachten.",
+    "Boote, Golfcarts, Tische und Preise bei Buchung bestätigen."
+  ],
+  "hotels": [
+    [
+      "Pink Sands Beach · Ostküste",
+      "The Dunmore erinnert mit 19 Zimmern, Gartencottages und größeren Residenzen an einen privaten Beachclub. Manche Residenzen haben separate Wohnräume und Privatpools, nicht jedoch jedes Cottage. Das Clubhouse verbindet Riviera-Flair mit Stil der 1960er; Mittag- und Abendessen bestätigen. Aussicht, Kinderbetten und Strandservice für die Kategorie prüfen.",
+      "Privatpool nicht in jeder Kategorie.",
+      "Für intimen Strandurlaub und Retro-Clubhouse.",
+      ""
+    ],
+    [
+      "Pink Sands Beach · Cottages und Residenzen",
+      "Coral Sands Inn & Cottages bietet Inn-Zimmer, Briland-House-Suiten, separate Gartencottages und King’s Beach Homes. Ein Haus mit mehreren Schlafzimmern, Küche und Terrasse unterscheidet sich vom Standardzimmer. Pools, Restaurants und Racketsportanlagen ergänzen den Strandurlaub. Familien sollten Schlafzimmerzahl, Treppen, Kinderausstattung und Weg zum Sand prüfen.",
+      "Aussicht, Küche und Kapazität hängen von Gebäude und Kategorie ab.",
+      "Für die Wahl zwischen Hotelzimmer und großem Familienhaus.",
+      ""
+    ],
+    [
+      "Ostküste · Tropische Gärten",
+      "Pink Sands Resort bietet Cottages, Villen und Häuser im Grünen nahe dem rosa Atlantikstrand. Schlafzimmerzahl, Terrassen und Strandentfernung variieren. Malcolm 51, Blue Bar & Kitchen und private Dinner haben eigene Bedingungen; Verpflegung nur bei bestätigtem Tarif als inklusive betrachten. Grundriss, Kinderbetten, Angebote und Aufpreise prüfen.",
+      "Cottages und Villen unterscheiden sich; Restaurants separat buchen.",
+      "Für tropische Gartenruhe nahe Pink Sands Beach.",
+      ""
+    ],
+    [
+      "Dunmore Town · Hafenseite",
+      "The Landing befindet sich in einem Gästehaus von 1800 mit 13 kolonial gestalteten Zimmern, inspiriert von India Hicks. Himmelbetten, Holzböden und leichte Stoffe vermitteln Inselwohnlichkeit. Zimmer blicken teils auf Hafen, teils in Garten. Das Hotel nennt rund fünf Gehminuten zum Pink Sands Beach und bietet dort Stühle und Schirme nach eigenen Bedingungen. Restaurant und Weinkeller ergänzen die Zentrumslage.",
+      "Historisches Gästehaus am Hafen; zum Atlantikstrand zu Fuß.",
+      "Für historisches Haus, Restaurants und Dunmore-Town-Spaziergänge.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Wie komme ich vom Flughafen North Eleuthera an?",
+      "Meist Taxi zum Three Island Dock, dann Wassertaxi. Keine Brücke; Anleger, Gepäck, Fahrplan und Wetter beim Anbieter bestätigen."
+    ],
+    [
+      "Liegen alle vier Hotels am Pink Sands Beach?",
+      "Nein. Dunmore, Coral Sands und Pink Sands Resort an oder nahe der Ostküste; The Landing am Hafen und laut Hotel etwa fünf Gehminuten vom Strand."
+    ],
+    [
+      "Ist der Sand immer leuchtend rosa?",
+      "Nein, die natürliche Färbung durch Foraminiferenpartikel variiert mit Licht und Feuchtigkeit."
+    ],
+    [
+      "Welche Optionen eignen sich für Familien?",
+      "Coral Sands bietet King’s Beach Homes, Dunmore größere Residenzen, Pink Sands Resort Villen und Häuser. Betten, Küchen, Pools und Strandentfernung je Kategorie prüfen."
+    ],
+    [
+      "Braucht man einen Golfcart?",
+      "Dunmore Town ist gut zu Fuß erreichbar, manche Hotels und Strände liegen weiter weg. Miete hängt von Verfügbarkeit, Verkehrsregeln, Versicherung und Kinderbeförderung ab; nicht immer inklusive."
+    ],
+    [
+      "Was bei Baden und Bootsausflügen beachten?",
+      "Atlantikwellen und Strömungen variieren; Hurrikansaison meist Juni bis November. Prognosen, Transfers und kinderfreundliche Badebereiche prüfen."
+    ],
+    [
+      "Garantiert der Guide Preise und Transfers?",
+      "Nein. Auf Bosphoras vergleichen; der autorisierte Anbieter bestätigt Zimmer, Boote, Restaurants, Transfers und Preise."
+    ]
+  ],
+  "photoCaptions": [
+    "Rosafarbener Atlantiksand am Pink Sands Beach",
+    "Dunmore Town auf Archivfoto von 1989",
+    "Spaziergang am Pink Sands Beach",
+    "Historischer Hafenblick 1989",
+    "Pink Sands Beach im Morgenlicht",
+    "Historisches Hausfoto in Dunmore Town",
+    "Türkisfarbenes Meer und rosa Sand",
+    "Küstenlandschaft Harbour Island, Archiv 1989",
+    "Naturküste Harbour Island"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Dunmore Clubhouse am Strand",
+      "Architektur und Wohnbereiche The Dunmore",
+      "Retro-Interieur The Dunmore"
+    ],
+    [
+      "Eingang und Garten Coral Sands",
+      "Coral-Sands-Pool zwischen Palmen",
+      "Sea Suite im Coral Sands"
+    ],
+    [
+      "Garten und Strandresort Pink Sands Resort",
+      "Separates Cottage Pink Sands Resort",
+      "Unterkunftsoption Pink Sands Resort"
+    ],
+    [
+      "Historisches Haus und Garten The Landing",
+      "Zimmer mit Himmelbett The Landing",
+      "Zimmer im India-Hicks-Stil The Landing"
+    ]
+  ],
+  "seoTitle": "Harbour Island: Wo übernachten? Rosa Strand und Luxushotels",
+  "hotelSeoTitle": "Hotels auf Harbour Island: Dunmore, Coral Sands, Pink Sands und Landing",
+  "seoDescription": "Entdecken Sie Pink Sands Beach, Dunmore Town und vier Hotels. Vergleichen Sie Villen, Cottages, Hafenlage und Transfer ab North Eleuthera."
+}
