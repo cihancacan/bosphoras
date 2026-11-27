@@ -1,0 +1,162 @@
+{
+  "name": "Formentera",
+  "country": "İspanya",
+  "eyebrow": "Balear Adaları · Sakin ada ritmi",
+  "heading": "Formentera'da nerede kalınır? Dört farklı ada deneyimi",
+  "intro": "Formentera'da lüks, öncelikle sessizlik, denize yakınlık ve acele etmeden geçirilen zamandır. Es Pujols sahili, Migjorn'un çamlarla çevrili kıyıları ve Cala Saona gün batımları farklı tatiller sunar.",
+  "editorial": "Formentera'da havalimanı yoktur; çoğu misafir İbiza'dan La Savina'ya feribotla gelir. Uçuş sonrasında yeterli aktarma süresi bırakın, tarife ve hava durumunu kontrol edin. 1 Haziran–30 Eylül arasında adaya araç getirmek için resmî turizm tavsiyelerine göre izin gerekir; güncel kuralları formentera.eco adresinde doğrulayın.\n\nFive Flowers, Es Pujols'ta plaja yaklaşık 150 metre uzaklıktadır. Migjorn'un Ca Marí kesimindeki Gecko Hotel & Beach Club, konaklamayı plaj kulübüyle birleştirir. Es Arenals yakınındaki Teranka, çam ve kumullar arasında 35 oda ve süitli küçük bir oteldir; SLH bilgisine göre çocuklar 12 yaşından itibaren kabul edilir. Batıdaki Hotel Cala Saona & Spa gün batımıyla öne çıkar; bahçe, çamlık, havuz ve deniz manzarası ayrı kategorilerdir. Yüzme güvenliğini, mesafeleri, sezonluk hizmetleri ve kesin oda kategorisini doğrulayın. Fiyat ve müsaitliği yetkili sağlayıcı teyit eder.",
+  "hotelIntro": "Dört farklı seçenek: Es Pujols'ta tasarım, Ca Marí'de plaj kulübü, Es Arenals yakınında sakinlik ve Cala Saona'da gün batımı.",
+  "areas": [
+    [
+      "Es Pujols ve sahil",
+      "Restoran, mağaza ve küçük plajları olan sahil köyü akşam yürüyüşlerine elverişlidir.",
+      "Yazın hareketlidir; her oda denize bakmaz."
+    ],
+    [
+      "Ca Marí ve merkez Migjorn",
+      "Uzun güney kıyısında kum, kumullar arasında ahşap yollar ve deniz kenarı restoranları bulunur.",
+      "Rüzgâr, dalga ve suya giriş koydan koya değişir."
+    ],
+    [
+      "Es Arenals ve Es Caló",
+      "Migjorn'un doğusu açık manzaralar, Es Caló ise kayalık koylar ve balıkçı köyü atmosferi sunar.",
+      "Çocuklarla yüzmede kayaları, iskeleleri ve deniz koşullarını dikkate alın."
+    ],
+    [
+      "Cala Saona ve batı kıyısı",
+      "Kayalıklar arasındaki kum koy özellikle gün batımında güzeldir.",
+      "Akşam daha kalabalıktır; uçurum kenarı patikalarda dikkatli olun."
+    ],
+    [
+      "La Savina, Ses Illetes ve kuzey",
+      "Limandan beyaz kumlu ve berrak sulu koruma alanı Ses Illetes'e ulaşılır.",
+      "Araç giriş, park ve tekne demirleme kurallarını ayırt edin."
+    ]
+  ],
+  "experiences": [
+    [
+      "Sabah erken Ses Illetes",
+      "İzinli patika ve kıyılarda yürüyün; koruma altındaki posidonia çayırlarına zarar vermeyin."
+    ],
+    [
+      "Migjorn'da öğle yemeği",
+      "Otele yakın restoran seçin, sezonu doğrulayın ve masayı ayrıca rezerve edin."
+    ],
+    [
+      "Cala Saona'da gün batımı",
+      "Koyun akşam ışığını seyredin; oda manzarası kategoriye bağlıdır."
+    ],
+    [
+      "La Mola yolu",
+      "Adanın doğusunu ve seyir noktalarını yol koşulları ve saatlere göre keşfedin."
+    ],
+    [
+      "Sakin bisiklet gezileri",
+      "Rüzgârı, sıcağı ve çocukların yaşını dikkate alarak uygun rotalar seçin."
+    ]
+  ],
+  "checks": [
+    "Kıyıyı ve oda kategorisini seçin; Teranka'nın 12 yaş alt sınırını doğrulayın.",
+    "İbiza–La Savina feribotlarını ve aktarma süresini kontrol edin.",
+    "1 Haziran–30 Eylül arasında araç getirme iznini doğrulayın.",
+    "Konaklama, plaj hizmeti, spa ve restoranları ayrı değerlendirin.",
+    "Rüzgâr, kayalık kıyılar, çocuk güvenliği ve sezonu dikkate alın.",
+    "Fiyat ve hizmet müsaitliğini sağlayıcı doğrular."
+  ],
+  "hotels": [
+    [
+      "Es Pujols · Köy ve plaj",
+      "Five Flowers canlı çağdaş iç mekânlar, Sky çatı alanı ve mağaza ile restoranlara yakınlık sunar. Otel bilgisine göre plaj yaklaşık 150 metre uzaklıktadır, kapısının önünde değildir. Standart odalar ve Grand Flower Suite plan ve manzara açısından farklıdır. Yayımlanan kurallara göre spa 16 yaş ve üzeri misafirlere açıktır.",
+      "Spa yaş sınırını, kategoriyi, aile planını ve sezonu doğrulayın.",
+      "Tasarım ve sahil köyünde yürüyüşler için.",
+      ""
+    ],
+    [
+      "Ca Marí · Migjorn plajı",
+      "Gecko doğrudan plajda yer alır; odaları, Orilla restoranını, bahçeleri ve plaj kulübünü birleştirir. Özel villadan daha sosyal bir atmosfer sunar; etkinlikler gürültüyü etkileyebilir. Genel fotoğraf manzara, şezlong veya yemek garantisi değildir. Aile planını, deniz girişini ve hizmet şartlarını doğrulayın.",
+      "Odayı, şezlongları, restoranları ve etkinlik türünü doğrulayın.",
+      "Plaj yaşamı ve gastronomi için.",
+      ""
+    ],
+    [
+      "Es Arenals · Doğu Migjorn",
+      "Teranka, korunan kumullar ve çamlar arasında Mar, Tierra ve Cielo binalarındaki 35 oda ve süitten oluşur. Sanat, okuma ve sağlıklı yaşam programları karakterini belirler. Manzara, bahçe ve deniz yolları farklıdır. SLH, çocuklar için asgari yaşı 12 olarak belirtir. Bakım ve yoga her tarifede dahil değildir.",
+      "Yaş politikasını, plaj yolunu, kategoriyi ve bakım koşullarını doğrulayın.",
+      "Sakinlik, sanat ve doğa için.",
+      ""
+    ],
+    [
+      "Cala Saona · Batı kıyısı",
+      "Hotel Cala Saona & Spa kayalıklarla çevrili küçük kum koyuna bakar; havuz, restoran ve spa sunar. Katalog Garden View, Pine View, Pool View, Sea View, süit, bağlantılı oda ve aile seçeneklerini ayırır. Terastaki jakuzi belirli bir kategoriye aittir. Deniz erişimini ve yüzme koşullarını doğrulayın.",
+      "Manzarayı, yatak düzenini, terası, erişilebilirliği ve spa şartlarını doğrulayın.",
+      "Batı koyunda gün batımı ve dinlenme için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "İbiza Havalimanı'ndan Formentera'ya nasıl gidilir?",
+      "Adada havalimanı yoktur. İbiza limanına gidip La Savina feribotuna binin, ardından taksi veya transfer kullanın. Son seferi kontrol edin."
+    ],
+    [
+      "Restoranlara yürüyerek nerede ulaşılır?",
+      "Es Pujols akşam yürüyüşleri, mağaza ve restoranlar için uygundur. Five Flowers plaja yaklaşık 150 metre uzaklıktadır; diğer oteller ulaşım gerektirebilir."
+    ],
+    [
+      "Gecko ve Teranka yan yana mı?",
+      "İkisi de Migjorn güney kıyısındadır ancak Gecko Ca Marí'de, Teranka Es Arenals yakınındadır; farklı plaj girişleri vardır."
+    ],
+    [
+      "Cala Saona'nın her odası denize bakar mı?",
+      "Hayır; bahçe, çam, havuz ve deniz manzaraları vardır. Jakuzi yalnızca belirli kategorilerdedir."
+    ],
+    [
+      "Çocuklar Five Flowers spa'sına girebilir mi?",
+      "Yayımlanan kurallar 16 yaş ve üzerini kabul eder. Güncel kuralı ve alternatif havuzları doğrulayın."
+    ],
+    [
+      "Yazın adaya araç getirilebilir mi?",
+      "Resmî tavsiyelere göre 1 Haziran–30 Eylül arasında izin gerekir. formentera.eco üzerinden güncel kuralları inceleyin."
+    ],
+    [
+      "Otel veya yat nasıl rezerve edilir?",
+      "Bosphoras'ta seçenekleri karşılaştırın; yetkili sağlayıcı fiyat, müsaitlik, konaklama ve ek hizmetleri ayrı doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Doğa koruma alanında Ses Illetes plajı",
+    "Es Pujols sahili",
+    "Migjorn güney plajı",
+    "Migjorn doğusunda Es Arenals",
+    "Cala Saona üzerinde akşam ışığı",
+    "La Mola deniz feneri",
+    "Es Caló de Sant Agustí balıkçı limanı",
+    "La Savina tekneleri ve iskeleleri",
+    "Cap de Barbaria deniz feneri"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Five Flowers mimarisi ve ortak alanları",
+      "Five Flowers çağdaş iç mekânı",
+      "Aydınlık otel odası"
+    ],
+    [
+      "Migjorn kıyısında Gecko havadan",
+      "Gecko Double oda",
+      "Gecko plaj kulübü havuzu"
+    ],
+    [
+      "Teranka Akdeniz mimarisi",
+      "Teranka oda iç mekânı",
+      "Teranka ortak alanları"
+    ],
+    [
+      "Hotel Cala Saona odası",
+      "Cala Saona otel arazisi",
+      "Cala Saona oda iç mekânı"
+    ]
+  ],
+  "seoTitle": "Formentera'da Nerede Kalınır? Lüks Oteller ve Plajlar",
+  "hotelSeoTitle": "Formentera'nın En İyi Otelleri: Five Flowers, Gecko, Teranka ve Cala Saona",
+  "seoDescription": "Es Pujols, Migjorn, Es Arenals ve Cala Saona'yı karşılaştırın. Formentera'nın dört seçkin otelini, plajlarını ve feribot ulaşımını keşfedin."
+}

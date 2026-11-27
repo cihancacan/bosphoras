@@ -1,0 +1,162 @@
+{
+  "name": "Formentera",
+  "country": "Espanha",
+  "eyebrow": "Ilhas Baleares · Ritmo tranquilo",
+  "heading": "Onde ficar em Formentera: quatro formas de viver a ilha",
+  "intro": "Em Formentera, luxo é sobretudo tranquilidade, proximidade do mar e tempo sem pressa. A orla de Es Pujols, as costas de pinheiros de Migjorn e os pores do sol de Cala Saona oferecem experiências diferentes.",
+  "editorial": "Formentera não tem aeroporto: a maioria dos hóspedes chega de barco de Ibiza a La Savina. Confira horários, clima e margem após o voo. De 1º de junho a 30 de setembro, orientações turísticas oficiais preveem autorização para levar carro; consulte regras vigentes em formentera.eco.\n\nFive Flowers fica em Es Pujols, a cerca de 150 metros da praia. Gecko Hotel & Beach Club em Ca Marí, na costa de Migjorn, une hospedagem e vida de beach club. Teranka perto de Es Arenals é um hotel intimista de 35 quartos e suítes entre pinheiros e dunas; segundo SLH, aceita crianças a partir de 12 anos. Hotel Cala Saona & Spa na costa oeste destaca-se pelos pores do sol, mas vistas de jardim, pinheiros, piscina e mar são categorias diferentes. Confira segurança do banho de mar, distâncias, temporada e quarto específico. Preços e disponibilidade são confirmados pelo fornecedor autorizado.",
+  "hotelIntro": "Quatro opções: design em Es Pujols, beach club em Ca Marí, tranquilidade perto de Es Arenals e pôr do sol em Cala Saona.",
+  "areas": [
+    [
+      "Es Pujols e orla",
+      "Vila litorânea com restaurantes, lojas e pequenas praias, conveniente para passeios noturnos.",
+      "No verão é movimentada; nem todo quarto olha para o mar."
+    ],
+    [
+      "Ca Marí e Migjorn central",
+      "Longa costa sul com areia, passarelas entre dunas e restaurantes à beira-mar.",
+      "Vento, ondas e acesso à água variam entre enseadas."
+    ],
+    [
+      "Es Arenals e Es Caló",
+      "Leste de Migjorn oferece paisagens abertas; Es Caló tem enseadas rochosas e ambiente pesqueiro.",
+      "Com crianças, considere rochas, píeres e condições do mar."
+    ],
+    [
+      "Cala Saona e costa oeste",
+      "Enseada de areia entre rochas, especialmente bonita no pôr do sol.",
+      "No fim do dia aumenta o movimento; cuidado nas trilhas perto de falésias."
+    ],
+    [
+      "La Savina, Ses Illetes e norte",
+      "Do porto chega-se à área protegida de Ses Illetes, com areia branca e água transparente.",
+      "Diferencie regras de entrada, estacionamento e ancoragem."
+    ]
+  ],
+  "experiences": [
+    [
+      "Ses Illetes de manhã cedo",
+      "Caminhe por trilhas permitidas e orla sem danificar as pradarias protegidas de posidônia."
+    ],
+    [
+      "Almoço em Migjorn",
+      "Escolha restaurante perto do hotel, confira temporada e reserve mesa separadamente."
+    ],
+    [
+      "Pôr do sol em Cala Saona",
+      "Admire a luz sobre a baía; vista do quarto depende da categoria."
+    ],
+    [
+      "Caminho para La Mola",
+      "Visite leste da ilha e mirantes, considerando condições das estradas e horários."
+    ],
+    [
+      "Passeios tranquilos de bicicleta",
+      "Escolha rotas adequadas ao vento, calor e idade das crianças."
+    ]
+  ],
+  "checks": [
+    "Escolha costa e categoria; confirme idade mínima de 12 anos no Teranka.",
+    "Confira barcos Ibiza–La Savina e margem entre conexões.",
+    "De 1º de junho a 30 de setembro, confirme autorização para levar carro.",
+    "Diferencie hospedagem, serviços de praia, spa e restaurantes.",
+    "Considere vento, rochas, segurança infantil e temporada.",
+    "Preços e disponibilidade são confirmados pelo fornecedor."
+  ],
+  "hotels": [
+    [
+      "Es Pujols · Vila e praia",
+      "Five Flowers oferece interiores contemporâneos vibrantes, espaço Sky na cobertura e proximidade de lojas e restaurantes. Segundo o hotel, a praia fica a cerca de 150 metros, não na porta. Quartos comuns e Grand Flower Suite diferem em planta e vista. Regras publicadas permitem acesso ao spa a partir de 16 anos.",
+      "Confirme idade mínima do spa, categoria, configuração familiar e temporada.",
+      "Para design e passeios pela vila litorânea.",
+      ""
+    ],
+    [
+      "Ca Marí · Praia de Migjorn",
+      "Gecko fica diretamente na praia e reúne quartos, restaurante Orilla, jardins e beach club. Ambiente mais social que villa privada; eventos podem afetar o ruído. Foto geral não garante vista, espreguiçadeiras ou refeições. Confira configuração familiar, acesso à água e condições dos serviços.",
+      "Confirme quarto, espreguiçadeiras, restaurantes e tipo de eventos.",
+      "Para vida de praia e gastronomia.",
+      ""
+    ],
+    [
+      "Es Arenals · Migjorn oriental",
+      "Teranka é um hotel isolado entre pinheiros e dunas protegidas, com 35 quartos e suítes nos prédios Mar, Tierra e Cielo. Arte, leitura e programas de bem-estar definem o estilo. Vistas, jardins e caminhos ao mar variam. SLH informa idade mínima de 12 anos. Tratamentos e yoga não estão necessariamente incluídos.",
+      "Confirme idade, caminho à praia, categoria e condições dos tratamentos.",
+      "Para tranquilidade, arte e natureza.",
+      ""
+    ],
+    [
+      "Cala Saona · Costa oeste",
+      "Hotel Cala Saona & Spa olha para uma pequena enseada de areia entre rochas e oferece piscina, restaurantes e spa. Catálogo distingue Garden View, Pine View, Pool View, Sea View, suítes e opções conjugadas e familiares. Banheira de hidromassagem no terraço pertence a uma categoria específica. Confira acesso ao mar e condições de banho.",
+      "Confirme vista, camas, terraço, acessibilidade e condições do spa.",
+      "Para pôr do sol e descanso na baía ocidental.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Como chegar do aeroporto de Ibiza a Formentera?",
+      "A ilha não tem aeroporto. Vá ao porto de Ibiza, pegue o barco para La Savina e siga de táxi ou traslado. Confira a última saída."
+    ],
+    [
+      "Onde há restaurantes acessíveis a pé?",
+      "Es Pujols é conveniente para passeios, lojas e restaurantes. Five Flowers fica a cerca de 150 metros da praia; outros hotéis podem exigir transporte."
+    ],
+    [
+      "Gecko e Teranka ficam lado a lado?",
+      "Ambos na costa sul de Migjorn, mas Gecko fica em Ca Marí e Teranka perto de Es Arenals. Os acessos à praia são diferentes."
+    ],
+    [
+      "Todos os quartos de Cala Saona têm vista para o mar?",
+      "Não, há vistas de jardim, pinheiros, piscina e mar. Hidromassagem apenas em categorias específicas."
+    ],
+    [
+      "Crianças podem usar o spa Five Flowers?",
+      "Segundo as regras publicadas, a partir de 16 anos. Confira regras atuais e piscinas alternativas."
+    ],
+    [
+      "É possível levar carro no verão?",
+      "De 1º de junho a 30 de setembro é necessária autorização segundo orientações oficiais. Consulte formentera.eco."
+    ],
+    [
+      "Como reservar hotel ou iate?",
+      "Compare hospedagens na Bosphoras; fornecedor autorizado confirma preços, disponibilidade e condições de hospedagem e extras separadamente."
+    ]
+  ],
+  "photoCaptions": [
+    "Praia de Ses Illetes na área protegida",
+    "Orla de Es Pujols",
+    "Praia sul de Migjorn",
+    "Es Arenals a leste de Migjorn",
+    "Luz do fim de tarde sobre Cala Saona",
+    "Farol de La Mola",
+    "Porto pesqueiro de Es Caló de Sant Agustí",
+    "Barcos e píeres de La Savina",
+    "Farol de Cap de Barbaria"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Arquitetura e áreas comuns Five Flowers",
+      "Interiores contemporâneos Five Flowers",
+      "Quarto iluminado"
+    ],
+    [
+      "Gecko na costa de Migjorn visto do alto",
+      "Quarto Gecko Double",
+      "Piscina do beach club Gecko"
+    ],
+    [
+      "Arquitetura mediterrânea de Teranka",
+      "Interior do quarto Teranka",
+      "Áreas comuns Teranka"
+    ],
+    [
+      "Quarto Hotel Cala Saona",
+      "Propriedade Hotel Cala Saona",
+      "Interior de quarto Cala Saona"
+    ]
+  ],
+  "seoTitle": "Onde ficar em Formentera: hotéis de luxo e praias",
+  "hotelSeoTitle": "Melhores hotéis de Formentera: Five Flowers, Gecko, Teranka e Cala Saona",
+  "seoDescription": "Compare Es Pujols, Migjorn, Es Arenals e Cala Saona. Conheça quatro hotéis em Formentera, praias e travessias de barco."
+}
