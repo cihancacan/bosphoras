@@ -217,6 +217,10 @@
     "city": "Rome",
     "publisher": "Turismo Roma / Roma Capitale",
     "cityPages": [
+      "https://turismoroma.it/en/places/spanish-steps",
+      "https://www.turismoroma.it/en/node/1509",
+      "https://www.turismoroma.it/en/places/saint-peter%E2%80%99s-square",
+      "https://www.basilicasanpietro.va/en/san-pietro/the-square",
       "https://www.turismoroma.it/en/page/rione-ii-trevi",
       "https://turismoroma.it/en/node/1286",
       "https://turismoroma.it/en/places/navona-square",
@@ -236,10 +240,10 @@
       "trevi",
       "pantheon",
       "navona",
-      "spagna|spanish steps",
+      "spagna|spanish steps|scalinata di trinit",
       "borghese",
       "trastevere",
-      "san pietro|st peter",
+      "san pietro|st peter|saint peter",
       "roma|rome|panorama"
     ],
     "hotels": [
@@ -247,6 +251,10 @@
         "bvlgari",
         "Bvlgari Hotel Roma",
         [
+          "https://www.bulgari.com/fr-fr/stories/bvlgari-hotel-roma",
+          "https://www.marriott.com/en-gb/destinations/italy/rome.mi",
+          "https://www.lvmh.com/it/novita-lvmh/bulgari-apre-un-hotel-a-roma-unode-al-patrimonio-della-maison",
+          "https://www.bulgarihotels.com/en-US/rome/spa-and-fitness/the-bvlgari-spa",
           "https://www.lvmh.com/en/news-lvmh/bulgari-opens-hotel-in-rome-a-celebration-of-the-maisons-heritage",
           "https://www.bulgarihotels.com/en-US/rome/image-gallery",
           "https://www.bulgarihotels.com/it_IT/rome/image-gallery",
@@ -261,6 +269,8 @@
         "de-russie",
         "Hotel de Russie",
         [
+          "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/story/",
+          "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/hotel-information/",
           "https://press.roccofortehotels.com/summer-suite-shopping-in-rome/?lang=en",
           "https://press.roccofortehotels.com/hotel-de-russie-launches-a-new-irene-forte-spa-in-rome/?lang=en",
           "https://press.roccofortehotels.com/tiber-and-foliage-the-eternal-citys-autumn-at-hotel-de-russie/?lang=en",
@@ -274,6 +284,7 @@
         "hassler",
         "Hassler Roma",
         [
+          "https://www.lhw.com/hotel/Hassler-Roma-Rome-Italy",
           "https://www.hotelhasslerroma.com/stay/",
           "https://www.hotelhasslerroma.com/"
         ]
@@ -282,6 +293,7 @@
         "eden",
         "Hotel Eden",
         [
+          "https://www.dorchestercollection.com/worldwide-sales",
           "https://www.dorchestercollection.com/rome/hotel-eden/about",
           "https://media.dorchestercollection.com/hotel-eden-1/?lang=eng",
           "https://media.dorchestercollection.com/hotel-eden/?lang=eng",
