@@ -257,8 +257,13 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
    if property_name=='Hyatt Ziva Cancun' and 'newsroom.hyatt.com' in r['sourcePage'] and not re.search(r'cancun|cancún',label,re.I):continue
    if property_name=='Hotel de Russie' and 'press.roccofortehotels.com' in r['sourcePage'] and not re.search(r'de.russie|nijinsky|stravinskij',label,re.I):continue
    if property_name and re.search(r'sant.?pau|/dining/|/restaurants?/|city.?attraction|city.?guide|/explore/|destination.?guide',label,re.I):continue
-   if property_name and pattern==EXTERIOR.pattern and (ROOM.search(label) or re.search(r'\b(?:lobby|salon|spa|interior|restaurant|bar|terrace|reception|registration|desk)\b',label,re.I)):continue
-   if property_name and pattern==FACILITY.pattern and ROOM.search(label):continue
+   # Explicit file labels describe the subject; property names such as Hotel & Spa do not imply a spa photograph.
+   category_label = r['originalAlt'] if r.get('targeted') else label
+   if property_name:
+    category_label=re.sub(re.escape(property_name), '', category_label, flags=re.I)
+    category_label=re.sub(r'\b(?:NIZUC Resort(?: & Spa)?|Le Blanc Spa Resort(?: Cancun)?|Majestic Hotel(?: & Spa)?(?: Barcelona)?)\b','',category_label,flags=re.I)
+   if property_name and pattern==EXTERIOR.pattern and (ROOM.search(category_label) or re.search(r'\b(?:lobby|salon|spa|interior|restaurant|bar|terrace|reception|registration|desk)\b',category_label,re.I)):continue
+   if property_name and pattern==FACILITY.pattern and ROOM.search(category_label):continue
    # Group-wide galleries require property identity in the actual asset label.
    if property_name and (('press.mandarinoriental.com' in r['sourcePage'] and 'barcelona' not in label.lower()) or ('leblancsparesorts.com/gallery' in r['sourcePage'] and 'cancun' not in label.lower() and 'cancún' not in label.lower())):continue
    score=30*bool(r.get('targeted'))+8*bool(re.search(pattern,r['originalAlt'],re.I))+4*bool(re.search(pattern,unquote(r['url']),re.I))+2*bool(r['originalCaption'])
