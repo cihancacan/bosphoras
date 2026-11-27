@@ -117,6 +117,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               }
 
               function walk(root) {
+                // Travel pages are intentionally excluded from private-office pricing edits.
+                // Skip the whole DOM walk rather than checking every individual text node.
+                if (location.pathname.split('/').indexOf('travel') !== -1) return;
                 var walker = document.createTreeWalker(root || document.body, NodeFilter.SHOW_TEXT, {
                   acceptNode: function(node) {
                     if (isEditorialText(node)) return NodeFilter.FILTER_REJECT;
@@ -133,6 +136,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
               walk(document.body);
               var observer = new MutationObserver(function(mutations) {
+                if (location.pathname.split('/').indexOf('travel') !== -1) return;
                 mutations.forEach(function(mutation) {
                   mutation.addedNodes.forEach(function(node) {
                     if (node.nodeType === 3) replaceTextNode(node);
