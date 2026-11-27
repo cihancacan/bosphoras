@@ -2953,6 +2953,99 @@
     ],
     "hotels": [
       {
+        "key": "mandarin-1",
+        "sourcePage": "https://registration.forbestravelguide.com/hotels/barcelona-spain/mandarin-oriental-barcelona",
+        "sourceResolvedUrl": "https://secure.s.forbestravelguide.com/img/properties/mandarin-oriental-barcelona/extra-large/mandarin-oriental-barcelona-exterior-night.jpg",
+        "sourceRequestedUrl": "https://secure.s.forbestravelguide.com/img/properties/mandarin-oriental-barcelona/extra-large/mandarin-oriental-barcelona-exterior-night.jpg",
+        "originalAlt": "mandarin oriental barcelona exterior night",
+        "originalCaption": "",
+        "credit": "Mandarin Oriental, Barcelona",
+        "publisher": "Mandarin Oriental, Barcelona",
+        "hotel": "Mandarin Oriental, Barcelona",
+        "localPath": "/images/travel/barcelona-premium/mandarin/mandarin-1.webp",
+        "sourceSHA256": "41a574434bae81bb9321d55f1a45a217e4acfa2c761a802d1047ce05667b407b",
+        "webpSHA256": "55b7442d4e46ae41b36e6830015826beb938ca8f72d00e40207c0ab0df9617a3",
+        "sourcePixels": [
+          1900,
+          1063
+        ],
+        "webpPixels": [
+          1280,
+          716
+        ],
+        "webpBytes": 171462,
+        "pixelFingerprint": "ccc2b08955b1f470",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "mandarin-2",
+        "sourcePage": "https://registration.forbestravelguide.com/hotels/barcelona-spain/mandarin-oriental-barcelona",
+        "sourceResolvedUrl": "https://secure.s.forbestravelguide.com/img/properties/mandarin-oriental-barcelona/extra-large/mandarin-oriental-barcelona-deluxe-garden-room.jpg",
+        "sourceRequestedUrl": "https://secure.s.forbestravelguide.com/img/properties/mandarin-oriental-barcelona/extra-large/mandarin-oriental-barcelona-deluxe-garden-room.jpg",
+        "originalAlt": "mandarin oriental barcelona deluxe garden room",
+        "originalCaption": "",
+        "credit": "Mandarin Oriental, Barcelona",
+        "publisher": "Mandarin Oriental, Barcelona",
+        "hotel": "Mandarin Oriental, Barcelona",
+        "localPath": "/images/travel/barcelona-premium/mandarin/mandarin-2.webp",
+        "sourceSHA256": "329542758135f18253e6bc9704f07be56f7d618044b3dcd926095342f4079c22",
+        "webpSHA256": "c744589480affa259bf56bf24adfcb4224255945cce6ad36a15e4927fbfbee0d",
+        "sourcePixels": [
+          1900,
+          1063
+        ],
+        "webpPixels": [
+          1280,
+          716
+        ],
+        "webpBytes": 106906,
+        "pixelFingerprint": "932b6cf4f06cecac",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "mandarin-3",
+        "sourcePage": "https://registration.forbestravelguide.com/hotels/barcelona-spain/mandarin-oriental-barcelona",
+        "sourceResolvedUrl": "https://secure.s.forbestravelguide.com/img/properties/mandarin-oriental-barcelona/extra-large/mandarin-oriental-barcelona-penthouse-terrace.jpg",
+        "sourceRequestedUrl": "https://secure.s.forbestravelguide.com/img/properties/mandarin-oriental-barcelona/extra-large/mandarin-oriental-barcelona-penthouse-terrace.jpg",
+        "originalAlt": "mandarin oriental barcelona penthouse terrace",
+        "originalCaption": "",
+        "credit": "Mandarin Oriental, Barcelona",
+        "publisher": "Mandarin Oriental, Barcelona",
+        "hotel": "Mandarin Oriental, Barcelona",
+        "localPath": "/images/travel/barcelona-premium/mandarin/mandarin-3.webp",
+        "sourceSHA256": "0d9e5fb6b35d16a2d3ffa9355f1e67ff23059db8ff5cabcbf51a1aeb48d56b40",
+        "webpSHA256": "6ef82cb7fc6fc185abb69324ad5fbb4fbd4027dbc7e628d7efcb2c43785b939a",
+        "sourcePixels": [
+          1900,
+          1063
+        ],
+        "webpPixels": [
+          1280,
+          716
+        ],
+        "webpBytes": 171610,
+        "pixelFingerprint": "f3c948645a4a0f1b",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "arts-2",
         "sourcePage": "https://www.ritzcarlton.com/en/hotels/bcnrz-hotel-arts-barcelona/overview/",
         "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/rz-bcnrz-suite-views--13762:Feature-Hor?wid=1920&fit=constrain",
@@ -3008,6 +3101,37 @@
         "pixelFingerprint": "f5b4924acccec48c",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "arts-4",
+        "sourcePage": "https://www.ritzcarlton.com/en/hotels/bcnrz-hotel-arts-barcelona/photos/",
+        "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/arts-hotel-010:Classic-Hor?wid=1336&fit=constrain",
+        "sourceRequestedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/arts-hotel-010:Classic-Hor?wid=1336&fit=constrain",
+        "originalAlt": "Aerial view of a city overlooking the sea",
+        "originalCaption": "",
+        "credit": "Hotel Arts Barcelona",
+        "publisher": "Hotel Arts Barcelona",
+        "hotel": "Hotel Arts Barcelona",
+        "localPath": "/images/travel/barcelona-premium/arts/arts-4.webp",
+        "sourceSHA256": "30e7370299b490026b6fdf9a2b376515590550325241b7b500d30a4dee6f8529",
+        "webpSHA256": "73d331cbad9bd3467ccc0da501ec0c6e765588a2e5ec573e71e0e0123329929e",
+        "sourcePixels": [
+          1336,
+          891
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 168892,
+        "pixelFingerprint": "e5f57bdbe0f8cf24",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
         "visuallyVerified": false,
@@ -3177,16 +3301,6 @@
         "found": 6
       },
       {
-        "group": "mandarin",
-        "expected": 3,
-        "found": 0
-      },
-      {
-        "group": "arts",
-        "expected": 3,
-        "found": 2
-      },
-      {
         "group": "majestic",
         "expected": 3,
         "found": 2
@@ -3194,16 +3308,20 @@
     ],
     "errors": [
       {
-        "page": "https://www.expedia.com/es/Barcelona-Hoteles-Mandarin-Oriental.h3013270.Informacion-Hotel",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/es/Barcelona-Hoteles-Mandarin-Oriental.h3013270.Informacion-Hotel"
+        "page": "https://www.businesstravelnews.com/Hotels/Barcelona/Mandarin-Oriental-Barcelona/Images-p3074705",
+        "error": "403 Client Error: Forbidden for url: https://www.businesstravelnews.com/Hotels/Barcelona/Mandarin-Oriental-Barcelona/Images-p3074705"
       },
       {
-        "page": "https://www.expedia.com/Barcelona-Hotels-Hotel-Arts-Barcelona.h3780.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Barcelona-Hotels-Hotel-Arts-Barcelona.h3780.Hotel-Information"
+        "page": "https://www.marriott.com/en-us/hotels/bcnrz-hotel-arts-barcelona/photos/",
+        "error": "404 Client Error: Not Found for url: https://www.marriott.com/en-us/hotels/bcnrz-hotel-arts-barcelona/photos/"
       },
       {
-        "page": "https://www.booking.com/hotel/es/arts-barcelona.html",
-        "error": "exact property identity not confirmed on page"
+        "page": "https://www.marriott.com/es/hotels/bcnrz-hotel-arts-barcelona/photos/",
+        "error": "500 Server Error: Internal Server Error for url: https://www.marriott.com/es/hotels/bcnrz-hotel-arts-barcelona/photos/"
+      },
+      {
+        "page": "https://majestichotelgroup.com/en/barcelona/hotel-majestic/gallery",
+        "error": "500 Server Error: Internal Server Error for url: https://majestichotelgroup.com/en/barcelona/hotel-majestic/gallery"
       },
       {
         "page": "https://www.expedia.com/Barcelona-Hotels-Majestic-Hotel-Spa-Barcelona.h5002.Hotel-Information",
@@ -3370,8 +3488,8 @@
       }
     ],
     "cityCount": 6,
-    "hotelCount": 7,
-    "totalBytes": 1745616
+    "hotelCount": 11,
+    "totalBytes": 2364486
   },
   "cancun": {
     "destinationScenes": [
