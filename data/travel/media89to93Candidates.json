@@ -4031,30 +4031,32 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "le-blanc-8",
-        "sourcePage": "https://sportvac.com/en/hotels/le-blanc-spa-resort-adult-only/",
-        "sourceResolvedUrl": "https://sportvac.com/wp-content/uploads/2026/11/old_loans_exterior_entrance.jpg",
-        "sourceRequestedUrl": "https://sportvac.com/wp-content/uploads/2026/11/old_loans_exterior_entrance.jpg",
-        "originalAlt": "",
-        "originalCaption": "",
-        "credit": "Le Blanc Spa Resort Cancun",
-        "publisher": "Le Blanc Spa Resort Cancun",
+        "key": "le-blanc-9",
+        "sourcePage": "https://s3.eu-west-2.amazonaws.com/hosmarkhotels.com/website/documents/28/Le%20Blanc%20Cancun%20Sales%20Kits%20Refresh_Eng.pdf",
+        "sourceResolvedUrl": "https://s3.eu-west-2.amazonaws.com/hosmarkhotels.com/website/documents/28/Le%20Blanc%20Cancun%20Sales%20Kits%20Refresh_Eng.pdf",
+        "sourceRequestedUrl": "https://s3.eu-west-2.amazonaws.com/hosmarkhotels.com/website/documents/28/Le%20Blanc%20Cancun%20Sales%20Kits%20Refresh_Eng.pdf#page=2&xref=9",
+        "originalAlt": "Le Blanc Spa Resort Cancun beachfront exterior from Palace Resorts sales kit",
+        "originalCaption": "Le Blanc Spa Resort Cancun beachfront exterior from Palace Resorts sales kit",
+        "credit": "Palace Resorts / Le Blanc Spa Resort Cancun — Sales Kit 2022",
+        "publisher": "Palace Resorts",
         "hotel": "Le Blanc Spa Resort Cancun",
-        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-8.webp",
-        "sourceSHA256": "7f34f7c401819dab1d2dbe3591e02417e53ca7afb5a21c1715900ac6415ddbcd",
-        "webpSHA256": "0f9b394380f319ec47021e1693523cc5428cdf24f9711a6bf03cf727d7c32b5c",
+        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-9.webp",
+        "sourceSHA256": "ee7f5dbb1ab0ced4613fe4dfa27d5a62afdd426be2742629e6adf1a63dc81ade",
+        "webpSHA256": "416ba4d62d4ee8b5cc31e6d9f4047b348008c98d1761ed207f3605398c6c7dc8",
         "sourcePixels": [
-          1000,
-          641
+          2001,
+          1336
         ],
         "webpPixels": [
-          1000,
-          641
+          1273,
+          850
         ],
-        "webpBytes": 146750,
-        "pixelFingerprint": "69e9d3d7c944b5f1",
+        "webpBytes": 115114,
+        "pixelFingerprint": "bcb6e3e361c088c8",
         "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "pdfPage": 2,
+        "pdfImageXref": 9,
+        "rightsEvidenceType": "Owner permission declared; property-specific original sales kit and embedded image retained",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
         "visuallyVerified": false,
@@ -4249,16 +4251,7 @@
       }
     ],
     "gaps": [],
-    "errors": [
-      {
-        "page": "https://www.businesstravelnews.com/Hotels/Cancun/Nizuc-Resort-Spa/Images-p54477288",
-        "error": "403 Client Error: Forbidden for url: https://www.businesstravelnews.com/Hotels/Cancun/Nizuc-Resort-Spa/Images-p54477288"
-      },
-      {
-        "page": "https://www.travelweekly.com/Hotels/Cancun/Nizuc-Resort-Spa-p6721792",
-        "error": "403 Client Error: Forbidden for url: https://www.travelweekly.com/Hotels/Cancun/Nizuc-Resort-Spa-p6721792"
-      }
-    ],
+    "errors": [],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
     "excludedCandidates": [
@@ -4757,10 +4750,41 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "le-blanc-8",
+        "sourcePage": "https://sportvac.com/en/hotels/le-blanc-spa-resort-adult-only/",
+        "sourceResolvedUrl": "https://sportvac.com/wp-content/uploads/2026/11/old_loans_exterior_entrance.jpg",
+        "sourceRequestedUrl": "https://sportvac.com/wp-content/uploads/2026/11/old_loans_exterior_entrance.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Le Blanc Spa Resort Cancun",
+        "publisher": "Le Blanc Spa Resort Cancun",
+        "hotel": "Le Blanc Spa Resort Cancun",
+        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-8.webp",
+        "sourceSHA256": "7f34f7c401819dab1d2dbe3591e02417e53ca7afb5a21c1715900ac6415ddbcd",
+        "webpSHA256": "0f9b394380f319ec47021e1693523cc5428cdf24f9711a6bf03cf727d7c32b5c",
+        "sourcePixels": [
+          1000,
+          641
+        ],
+        "webpPixels": [
+          1000,
+          641
+        ],
+        "webpBytes": 146750,
+        "pixelFingerprint": "69e9d3d7c944b5f1",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "cityCount": 9,
     "hotelCount": 12,
-    "totalBytes": 2522218
+    "totalBytes": 2490582
   }
 }
