@@ -970,37 +970,6 @@
   "las-vegas": {
     "destinationScenes": [
       {
-        "key": "scene-1",
-        "sourcePage": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/",
-        "sourceResolvedUrl": "https://res.cloudinary.com/simpleview/image/upload/v1582569548/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_1280x720_2e878ce0-857b-4342-ac04-1597f31d8983.jpg",
-        "sourceRequestedUrl": "https://res.cloudinary.com/simpleview/image/upload/v1582569548/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_1280x720_2e878ce0-857b-4342-ac04-1597f31d8983.jpg",
-        "originalAlt": "",
-        "originalCaption": "",
-        "credit": "Visit Las Vegas / LVCVA",
-        "publisher": "Visit Las Vegas / LVCVA",
-        "hotel": null,
-        "localPath": "/images/travel/las-vegas-premium/destination/scene-1.webp",
-        "sourceSHA256": "b5e6d6b6f45e3b070bf3f45aca1aea8fbab4b485124e2a4419bbb31e3603f978",
-        "webpSHA256": "aad898c3814e3af6c4212dc2c8fd92b2de3a9a05cf16661c84c7b80f9a6c9968",
-        "sourcePixels": [
-          1280,
-          720
-        ],
-        "webpPixels": [
-          1280,
-          720
-        ],
-        "webpBytes": 186454,
-        "pixelFingerprint": "34bcccdcde583c26",
-        "candidateSubject": "venetian|gondola",
-        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "scene-2",
         "sourcePage": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/",
         "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1024/v1/clients/lasvegas/RR_LVCVA_2024_Strip_Aerial_NYNY_2605_compressed_c823f1a8-5aa1-4dec-a558-2f737c89f45b.jpg",
@@ -1117,6 +1086,161 @@
         "webpBytes": 63674,
         "pixelFingerprint": "ca92f1d9e931b8c0",
         "candidateSubject": "las vegas sign",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-8",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/free-things-to-do-in-las-vegas/",
+        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_800,q_65,w_1200/v1/clients/lasvegas/bellagio_conservatory_1_69b416f8_5469_compressed_65a76ed7-f0c1-427c-98a5-4c88582f9a4e.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_800,q_65,w_1200/v1/clients/lasvegas/bellagio_conservatory_1_69b416f8_5469_compressed_65a76ed7-f0c1-427c-98a5-4c88582f9a4e.jpg",
+        "originalAlt": "Bellagio Conservatory & Botanical Gardens",
+        "originalCaption": "Bellagio Conservatory & Botanical Gardens.",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-8.webp",
+        "sourceSHA256": "383209e022d45707f8944194d63f288dcdfccd15509dca1b6caa3e42760b54bf",
+        "webpSHA256": "f7542740aa727aceda2375f68d13a130089613193f936c3ab3995b3a98f5d4c7",
+        "sourcePixels": [
+          1200,
+          800
+        ],
+        "webpPixels": [
+          1200,
+          800
+        ],
+        "webpBytes": 207136,
+        "pixelFingerprint": "3d34353c6d2d2959",
+        "candidateSubject": "bellagio|fountains",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-9",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/",
+        "sourceResolvedUrl": "https://res.cloudinary.com/simpleview/image/upload/v1673659670/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_hirez_bcb8247a-e3d6-4787-99f5-334b6f0916c9.jpg",
+        "sourceRequestedUrl": "https://res.cloudinary.com/simpleview/image/upload/v1673659670/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_hirez_bcb8247a-e3d6-4787-99f5-334b6f0916c9.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-9.webp",
+        "sourceSHA256": "e284fccf85739a6f6f567fe105d42dd8b946b126c81e8ad1a28fce9c1214a916",
+        "webpSHA256": "a157fa021ec3fc30b9d659a71a2a4774dfa345d48724fc33821211e4a532ae35",
+        "sourcePixels": [
+          1200,
+          800
+        ],
+        "webpPixels": [
+          1200,
+          800
+        ],
+        "webpBytes": 144498,
+        "pixelFingerprint": "3cbcccdcd83c2636",
+        "candidateSubject": "venetian|gondola",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-10",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/intro-to-the-18b-arts-district/",
+        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_900,q_65,w_1200/v1/clients/lasvegas/Vintage_Stores_Arts_District_66_9778576e-07b2-47d6-94ec-cf5c7819fc30.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_900,q_65,w_1200/v1/clients/lasvegas/Vintage_Stores_Arts_District_66_9778576e-07b2-47d6-94ec-cf5c7819fc30.jpg",
+        "originalAlt": "Vintage Stores - Arts District 66",
+        "originalCaption": "The Red Kat Vintage",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-10.webp",
+        "sourceSHA256": "6712ba28affc767b9c1aa0110b5c3907537260cf4b42c82c293c921a2fd226a4",
+        "webpSHA256": "96fe17ffeaaff59f91bc8fc586a42682e6e38fd48fb7ee003af0818d9d98d7f5",
+        "sourcePixels": [
+          1200,
+          900
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 189608,
+        "pixelFingerprint": "77b35367f1bdb9ba",
+        "candidateSubject": "arts district",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-11",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/a-monthly-guide-of-things-to-do-in-las-vegas/",
+        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_675,q_65,w_1200/v1/clients/lasvegas/Landscape_RedRock_sm_JPG_da82be10-2ffd-455b-a26e-b41a778f9c85.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_675,q_65,w_1200/v1/clients/lasvegas/Landscape_RedRock_sm_JPG_da82be10-2ffd-455b-a26e-b41a778f9c85.jpg",
+        "originalAlt": "red rock canyon",
+        "originalCaption": "Red Rock Canyon National Conservation Area",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-11.webp",
+        "sourceSHA256": "101feeb6bb0611623c2f7d5c968c4c14fca1aed603d2e0b9871cce9c2a62e71f",
+        "webpSHA256": "075ee56417095c34f2cfd95dd38c5653f1b09531d61fb345d87101e93622db8b",
+        "sourcePixels": [
+          1200,
+          675
+        ],
+        "webpPixels": [
+          1200,
+          675
+        ],
+        "webpBytes": 126174,
+        "pixelFingerprint": "a1d2c29c4c4c64d8",
+        "candidateSubject": "red rock",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-12",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/",
+        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_541,q_80,w_1100/v1/clients/lasvegas/RR_Downtown_0271_Lights_On_1200x800_182abd6e-225b-41b6-9531-586ed2f50888.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_541,q_80,w_1100/v1/clients/lasvegas/RR_Downtown_0271_Lights_On_1200x800_182abd6e-225b-41b6-9531-586ed2f50888.jpg",
+        "originalAlt": "The beautiful and retro signage for the Fremont Street experience in downtown Las Vegas.",
+        "originalCaption": "",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-12.webp",
+        "sourceSHA256": "a867fed7aad7681a12518268d639a4512e503a44d8d66e209c026207c1868da2",
+        "webpSHA256": "f7bab2cee974c231db64086555efc60d54e15016d86feed68d5f769f0abad5b9",
+        "sourcePixels": [
+          1100,
+          541
+        ],
+        "webpPixels": [
+          1100,
+          541
+        ],
+        "webpBytes": 122190,
+        "pixelFingerprint": "b8322a6c4c0656ec",
+        "candidateSubject": "downtown",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -1282,6 +1406,37 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
+        "key": "wynn-6",
+        "sourcePage": "https://www.newsroom.wynnresorts.com/en/wynnresorts/wynn-las-vegas-resort-fact-sheet/s/d68e3fea-7a3a-44d1-8a15-c445ecfedc30",
+        "sourceResolvedUrl": "https://preview.thenewsmarket.com/Previews/WYNN/StillAssets/1920x1080/495812_v2.jpg",
+        "sourceRequestedUrl": "https://preview.thenewsmarket.com/Previews/WYNN/StillAssets/1920x1080/495812_v2.jpg",
+        "originalAlt": "Wynn Las Vegas exterior and gardens with Encore tower in background",
+        "originalCaption": "Wynn Resorts newsroom / Exterior – Daytime",
+        "credit": "Wynn Resorts newsroom / Exterior – Daytime",
+        "publisher": "Wynn Las Vegas",
+        "hotel": "Wynn Las Vegas",
+        "localPath": "/images/travel/las-vegas-premium/wynn/wynn-6.webp",
+        "sourceSHA256": "e86e391f7118f2ea53ebc952cbf54c253334b4ee03307e1150cd8884df557a53",
+        "webpSHA256": "1e67d1f8649c69357f5905d043476e6bf043350c63347b2e01496cafeead581d",
+        "sourcePixels": [
+          1920,
+          1080
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 228916,
+        "pixelFingerprint": "a7326b29a6231367",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "venetian-1",
         "sourcePage": "https://www.venetianlasvegas.com/",
         "sourceResolvedUrl": "https://www.venetianlasvegas.com/adobe/dynamicmedia/deliver/dm-aid--78c0f379-bd99-45dc-9e9b-7d5660234573/exterior-3-1200x800.jpg?preferwebp=true&quality=64",
@@ -1344,30 +1499,30 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "venetian-3",
-        "sourcePage": "https://www.venetianlasvegas.com/hotel/suites.html",
-        "sourceResolvedUrl": "https://www.venetianlasvegas.com/content/dam/vlvweb/resort/prestige-club-lounge/view_1200x800.jpg",
-        "sourceRequestedUrl": "https://www.venetianlasvegas.com/content/dam/vlvweb/resort/prestige-club-lounge/view_1200x800.jpg",
-        "originalAlt": "",
-        "originalCaption": "",
+        "key": "venetian-4",
+        "sourcePage": "https://www.venetianlasvegas.com/resort/pools/pool-garden.html",
+        "sourceResolvedUrl": "https://www.venetianlasvegas.com/adobe/dynamicmedia/deliver/dm-aid--c56ed76b-4602-4e7d-9e3b-2275065db1f4/pool-1-2000x1000.jpg?preferwebp=true&quality=64",
+        "sourceRequestedUrl": "https://www.venetianlasvegas.com/adobe/dynamicmedia/deliver/dm-aid--c56ed76b-4602-4e7d-9e3b-2275065db1f4/pool-1-2000x1000.jpg?preferwebp=true&quality=64",
+        "originalAlt": "The Venetian Pool Garden outdoor swimming pool",
+        "originalCaption": "The Venetian Resort Las Vegas",
         "credit": "The Venetian Resort Las Vegas",
         "publisher": "The Venetian Resort Las Vegas",
         "hotel": "The Venetian Resort Las Vegas",
-        "localPath": "/images/travel/las-vegas-premium/venetian/venetian-3.webp",
-        "sourceSHA256": "457371d5505a5a3c62564ce45b32b94ce2143b722806c63f29ac1fb6f2aa9f75",
-        "webpSHA256": "588de90a9ef6fcecf757da40e1e57fa2559c943fa3ba9c42600336fcc74bb7a7",
+        "localPath": "/images/travel/las-vegas-premium/venetian/venetian-4.webp",
+        "sourceSHA256": "207df6af30ced1bc7ec17aa3e9e38608acd6ed88aea4a707e44ccc6ffaa49fe4",
+        "webpSHA256": "595bf8a3733440da0d761027a697b5f456959b076f591b6e910a2098c6fea6f5",
         "sourcePixels": [
-          1200,
-          800
+          1280,
+          640
         ],
         "webpPixels": [
-          1200,
-          800
+          1280,
+          640
         ],
-        "webpBytes": 120626,
-        "pixelFingerprint": "ccc2b0ecc4c0d4d4",
+        "webpBytes": 130636,
+        "pixelFingerprint": "31a39a312bf1bc3c",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
-        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
         "visuallyVerified": false,
@@ -1468,22 +1623,15 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "gaps": [
-      {
-        "group": "city",
-        "expected": 9,
-        "found": 5
-      },
-      {
-        "group": "wynn",
-        "expected": 3,
-        "found": 2
-      }
-    ],
+    "gaps": [],
     "errors": [
       {
-        "page": "https://www.expedia.com/Las-Vegas-Hotels-Wynn-Las-Vegas.h1184243.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Las-Vegas-Hotels-Wynn-Las-Vegas.h1184243.Hotel-Information"
+        "url": "http://res.cloudinary.com/simpleview/image/upload/v1582569548/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_1280x720_2e878ce0-857b-4342-ac04-1597f31d8983.jpg",
+        "error": "not HTTPS"
+      },
+      {
+        "url": "http://res.cloudinary.com/simpleview/image/upload/v1673659670/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_hirez_bcb8247a-e3d6-4787-99f5-334b6f0916c9.jpg",
+        "error": "not HTTPS"
       }
     ],
     "publicUseApproved": false,
@@ -1705,11 +1853,73 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-1",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/",
+        "sourceResolvedUrl": "https://res.cloudinary.com/simpleview/image/upload/v1582569548/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_1280x720_2e878ce0-857b-4342-ac04-1597f31d8983.jpg",
+        "sourceRequestedUrl": "https://res.cloudinary.com/simpleview/image/upload/v1582569548/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_1280x720_2e878ce0-857b-4342-ac04-1597f31d8983.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-1.webp",
+        "sourceSHA256": "b5e6d6b6f45e3b070bf3f45aca1aea8fbab4b485124e2a4419bbb31e3603f978",
+        "webpSHA256": "aad898c3814e3af6c4212dc2c8fd92b2de3a9a05cf16661c84c7b80f9a6c9968",
+        "sourcePixels": [
+          1280,
+          720
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 186454,
+        "pixelFingerprint": "34bcccdcde583c26",
+        "candidateSubject": "venetian|gondola",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "venetian-3",
+        "sourcePage": "https://www.venetianlasvegas.com/hotel/suites.html",
+        "sourceResolvedUrl": "https://www.venetianlasvegas.com/content/dam/vlvweb/resort/prestige-club-lounge/view_1200x800.jpg",
+        "sourceRequestedUrl": "https://www.venetianlasvegas.com/content/dam/vlvweb/resort/prestige-club-lounge/view_1200x800.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "The Venetian Resort Las Vegas",
+        "publisher": "The Venetian Resort Las Vegas",
+        "hotel": "The Venetian Resort Las Vegas",
+        "localPath": "/images/travel/las-vegas-premium/venetian/venetian-3.webp",
+        "sourceSHA256": "457371d5505a5a3c62564ce45b32b94ce2143b722806c63f29ac1fb6f2aa9f75",
+        "webpSHA256": "588de90a9ef6fcecf757da40e1e57fa2559c943fa3ba9c42600336fcc74bb7a7",
+        "sourcePixels": [
+          1200,
+          800
+        ],
+        "webpPixels": [
+          1200,
+          800
+        ],
+        "webpBytes": 120626,
+        "pixelFingerprint": "ccc2b0ecc4c0d4d4",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 5,
-    "hotelCount": 11,
-    "totalBytes": 1936888
+    "cityCount": 9,
+    "hotelCount": 12,
+    "totalBytes": 2778966
   },
   "rome": {
     "destinationScenes": [
