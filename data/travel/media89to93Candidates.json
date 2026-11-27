@@ -93,6 +93,37 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-7",
+        "sourcePage": "https://www.visitbritain.com/en/things-to-do/visit-mary-poppins-returns-filming-locations",
+        "sourceResolvedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/45jygny88451ysn2rk301645bb26e5u0/t/re_w_1380,re_h_921,re_rm_Stretch/c_w_1380,c_h_776,c_whu_Pixel,c_x_0.0000,c_y_0.0787/VB8NMX.jpg",
+        "sourceRequestedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/45jygny88451ysn2rk301645bb26e5u0/t/re_w_1380,re_h_921,re_rm_Stretch/c_w_1380,c_h_776,c_whu_Pixel,c_x_0.0000,c_y_0.0787/VB8NMX.jpg",
+        "originalAlt": "View of Buckingham Palace early morning with gardens in the foreground",
+        "originalCaption": "",
+        "credit": "Visit London / London & Partners",
+        "publisher": "Visit London / London & Partners",
+        "hotel": null,
+        "localPath": "/images/travel/london-premium/destination/scene-7.webp",
+        "sourceSHA256": "eea892b38433aa9e392f1c7760a0c485760d4b61a180adddf259c1c7461a65e3",
+        "webpSHA256": "0725154e906016afdefe5e4dc413c9ec00d5de0f3e44c4e21ec5b92463058e20",
+        "sourcePixels": [
+          1380,
+          776
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 207838,
+        "pixelFingerprint": "00364dea3a598006",
+        "candidateSubject": "buckingham palace",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -314,6 +345,37 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
+        "key": "peninsula-3",
+        "sourcePage": "https://www.peninsula.com/en/london/wellness/pool",
+        "sourceResolvedUrl": "https://www.peninsula.com/-/media/12---london-property/wellness/pln-london-spa-wellness-pool.jpg",
+        "sourceRequestedUrl": "https://www.peninsula.com/-/media/12---london-property/wellness/pln-london-spa-wellness-pool.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "The Peninsula London",
+        "publisher": "The Peninsula London",
+        "hotel": "The Peninsula London",
+        "localPath": "/images/travel/london-premium/peninsula/peninsula-3.webp",
+        "sourceSHA256": "6c7ce2abceecc7a690827e7062e8f0b9530995e8c15e6e2a874e29639fb17230",
+        "webpSHA256": "d1cbde4efb184a19d4daea465b04e81b751fbfbfde891d2cfdc10f1230f90f59",
+        "sourcePixels": [
+          2144,
+          1202
+        ],
+        "webpPixels": [
+          1280,
+          718
+        ],
+        "webpBytes": 117222,
+        "pixelFingerprint": "ab2a08cc0e1728e8",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "shangri-la-1",
         "sourcePage": "https://www.the-shard.com/shangri-la-the-shard-london/rooms-suites",
         "sourceResolvedUrl": "https://www.the-shard.com/media/wcxnmxps/shangri-la-suite-living-room-with-view-shangri-la-hotel-at-the-shard-london.jpg?height=731&heightratio=0.6756007393715342&quality=95&rmode=crop&rxy=0.5%2C0.5&width=1082",
@@ -380,15 +442,10 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 3
+        "found": 4
       },
       {
         "group": "savoy",
-        "expected": 3,
-        "found": 2
-      },
-      {
-        "group": "peninsula",
         "expected": 3,
         "found": 2
       },
@@ -484,62 +541,6 @@
         "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/london-areas/kensington-and-south-kensington/things-to-do-south-kensington"
       },
       {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8MLD.jpeg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8MLD.jpeg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/itineraries/c_y_0.0000/VB8MLD.jpeg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/itineraries/c_y_0.0000/VB8MLD.jpeg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NDB.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NDB.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NJH.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NJH.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0787/VB8NMX.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0787/VB8NMX.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0784/VB8NMX.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0784/VB8NMX.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0790/VB8NMX.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0790/VB8NMX.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0776/VB8NMX.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0776/VB8NMX.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0786/VB8NMX.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0786/VB8NMX.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.1246/VB8N9D.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.1246/VB8N9D.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.1250/VB8N9D.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.1250/VB8N9D.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.1244/VB8N9D.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.1244/VB8N9D.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.1245/VB8N9D.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.1245/VB8N9D.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8LX3.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8LX3.jpg"
-      },
-      {
         "page": "https://www.thesavoylondon.com/rooms-and-suites/",
         "error": "404 Client Error: Not Found for url: https://www.thesavoylondon.com/rooms-and-suites"
       },
@@ -550,18 +551,6 @@
       {
         "page": "https://uk.hotels.com/ho172847/the-savoy-london-united-kingdom/?equalTargetTab=tab-0",
         "error": "429 Client Error: Too Many Requests for url: https://uk.hotels.com/ho172847/the-savoy-london-united-kingdom/?equalTargetTab=tab-0"
-      },
-      {
-        "page": "https://www.expedia.co.uk/London-Hotels-The-Peninsula-London.h91642864.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.co.uk/London-Hotels-The-Peninsula-London.h91642864.Hotel-Information"
-      },
-      {
-        "page": "https://www.booking.com/hotel/gb/the-peninsula-london.en-gb.html",
-        "error": "exact property identity not confirmed on page"
-      },
-      {
-        "page": "https://uk.hotels.com/ho2933571648/the-peninsula-london-london-united-kingdom/",
-        "error": "429 Client Error: Too Many Requests for url: https://uk.hotels.com/ho2933571648/the-peninsula-london-london-united-kingdom/"
       },
       {
         "page": "https://www.shangri-la.com/london/shangrila/photos-videos/",
@@ -716,9 +705,9 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 3,
-    "hotelCount": 9,
-    "totalBytes": 1231424
+    "cityCount": 4,
+    "hotelCount": 10,
+    "totalBytes": 1556484
   },
   "las-vegas": {
     "destinationScenes": [
