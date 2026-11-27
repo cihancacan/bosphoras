@@ -400,132 +400,24 @@
     ],
     "errors": [
       {
-        "page": "https://www.visitlondon.com/things-to-do",
-        "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do"
+        "page": "https://www.expedia.com/London-Hotels-The-Savoy.h27158.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/London-Hotels-The-Savoy.h27158.Hotel-Information"
       },
       {
-        "page": "https://www.visitlondon.com/things-to-do/sightseeing/best-views-in-london",
-        "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/sightseeing/best-views-in-london"
+        "page": "https://www.expedia.co.uk/London-Hotels-The-Peninsula-London.h91642864.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.co.uk/London-Hotels-The-Peninsula-London.h91642864.Hotel-Information"
       },
       {
-        "page": "https://www.londonandpartners.com/newsroom/essential-info",
-        "error": "403 Client Error: Forbidden for url: https://www.londonandpartners.com/newsroom/essential-info"
+        "page": "https://www.booking.com/hotel/gb/the-peninsula-london.en-gb.html",
+        "error": "exact property identity not confirmed on page"
       },
       {
-        "page": "https://www.londonandpartners.com/what-we-do/travel-trade",
-        "error": "403 Client Error: Forbidden for url: https://www.londonandpartners.com/what-we-do/travel-trade"
+        "page": "https://www.expedia.com/London-Hotels-Shangri-La-The-Shard.h8035714.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/London-Hotels-Shangri-La-The-Shard.h8035714.Hotel-Information"
       },
       {
-        "page": "https://www.visitlondon.com/things-to-do/sightseeing/top-10-photo-opportunities-in-london",
-        "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/sightseeing/top-10-photo-opportunities-in-london"
-      },
-      {
-        "page": "https://www.visitlondon.com/things-to-do/sightseeing/famous-landmarks-london",
-        "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/sightseeing/famous-landmarks-london"
-      },
-      {
-        "page": "https://www.visitlondon.com/things-to-do/london-areas/westminster",
-        "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/london-areas/westminster"
-      },
-      {
-        "page": "https://www.visitlondon.com/things-to-do/london-areas/london-bridge/top-things-to-do-in-london-bridge",
-        "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/london-areas/london-bridge/top-things-to-do-in-london-bridge"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0639/VB8OK0.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0639/VB8OK0.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0640/VB8OK0.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0640/VB8OK0.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.2605/VB8NIF.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.2605/VB8NIF.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.2106/VB8NIF.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.2106/VB8NIF.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.2603/VB8NIF.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.2603/VB8NIF.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NIF.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NIF.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8MLD.jpeg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8MLD.jpeg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/itineraries/c_y_0.0000/VB8MLD.jpeg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/itineraries/c_y_0.0000/VB8MLD.jpeg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NDB.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NDB.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NJH.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NJH.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0787/VB8NMX.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0787/VB8NMX.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0784/VB8NMX.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0784/VB8NMX.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0790/VB8NMX.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0790/VB8NMX.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0776/VB8NMX.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0776/VB8NMX.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0786/VB8NMX.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0786/VB8NMX.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.1246/VB8N9D.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.1246/VB8N9D.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.1250/VB8N9D.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.1250/VB8N9D.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.1244/VB8N9D.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.1244/VB8N9D.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.1245/VB8N9D.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.1245/VB8N9D.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8LX3.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8LX3.jpg"
-      },
-      {
-        "page": "https://www.thesavoylondon.com/rooms-and-suites/",
-        "error": "404 Client Error: Not Found for url: https://www.thesavoylondon.com/rooms-and-suites"
-      },
-      {
-        "page": "https://www.shangri-la.com/london/shangrila/photos-videos/",
-        "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/london/shangrila/photos-videos/"
-      },
-      {
-        "page": "https://www.shangri-la.com/en/london/shangrila/",
-        "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/en/london/shangrila/"
-      },
-      {
-        "page": "https://www.shangri-la.com/en/london/shangrila/rooms-suites/",
-        "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/en/london/shangrila/rooms-suites/"
+        "page": "https://www.booking.com/hotel/gb/shangri-la-at-the-shard-london.html",
+        "error": "exact property identity not confirmed on page"
       }
     ],
     "publicUseApproved": false,
@@ -1173,7 +1065,12 @@
         "found": 2
       }
     ],
-    "errors": [],
+    "errors": [
+      {
+        "page": "https://www.expedia.com/Las-Vegas-Hotels-Wynn-Las-Vegas.h1184243.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Las-Vegas-Hotels-Wynn-Las-Vegas.h1184243.Hotel-Information"
+      }
+    ],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
     "excludedCandidates": [
@@ -1805,56 +1702,24 @@
     ],
     "errors": [
       {
-        "page": "https://www.bulgarihotels.com/en_US/rome.html",
-        "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/en_US/rome.html"
+        "page": "https://fr.hotels.com/ho2974602208/bulgari-hotel-roma-rome-italie/",
+        "error": "429 Client Error: Too Many Requests for url: https://fr.hotels.com/ho2974602208/bulgari-hotel-roma-rome-italie/"
       },
       {
-        "page": "https://www.bulgarihotels.com/en-US/rome/rooms-and-suites",
-        "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/en-US/rome/rooms-and-suites"
+        "page": "https://www.expedia.com/Rome-Hotels-Rocco-Forte-Hotel-De-Russie.h523751.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Rome-Hotels-Rocco-Forte-Hotel-De-Russie.h523751.Hotel-Information"
       },
       {
-        "url": "https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/Accommodation/Bulgari-Hotel-Roma-7.jpg/jcr%3Acontent",
-        "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/Accommodation/Bulgari-Hotel-Roma-7.jpg/jcr%3Acontent"
+        "page": "https://www.booking.com/hotel/it/de-russie.html",
+        "error": "exact property identity not confirmed on page"
       },
       {
-        "url": "https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/Bulgari-Spa/Bulgari-Hotel-Roma-1.jpg/jcr%3Acontent",
-        "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/Bulgari-Spa/Bulgari-Hotel-Roma-1.jpg/jcr%3Acontent"
+        "page": "https://www.expedia.com/Rome-Hotels-Hassler-Roma.h24004.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Rome-Hotels-Hassler-Roma.h24004.Hotel-Information"
       },
       {
-        "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/gallery/",
-        "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/gallery/"
-      },
-      {
-        "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/",
-        "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/"
-      },
-      {
-        "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/accommodation/",
-        "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/accommodation/"
-      },
-      {
-        "page": "https://www.dorchestercollection.com/rome/hotel-eden/about",
-        "error": "403 Client Error: Forbidden for url: https://www.dorchestercollection.com/rome/hotel-eden/about"
-      },
-      {
-        "page": "https://media.dorchestercollection.com/hotel-eden-1/?lang=eng",
-        "error": "403 Client Error: Forbidden for url: https://media.dorchestercollection.com/hotel-eden-1/?lang=eng"
-      },
-      {
-        "page": "https://media.dorchestercollection.com/hotel-eden/?lang=eng",
-        "error": "403 Client Error: Forbidden for url: https://media.dorchestercollection.com/hotel-eden/?lang=eng"
-      },
-      {
-        "page": "https://media.dorchestercollection.com/section/our-portfolio/hotel-eden-rome/?lang=eng",
-        "error": "403 Client Error: Forbidden for url: https://media.dorchestercollection.com/section/our-portfolio/hotel-eden-rome/?lang=eng"
-      },
-      {
-        "page": "https://www.dorchestercollection.com/rome/hotel-eden",
-        "error": "403 Client Error: Forbidden for url: https://www.dorchestercollection.com/rome/hotel-eden"
-      },
-      {
-        "page": "https://www.dorchestercollection.com/rome/hotel-eden/rooms-suites",
-        "error": "403 Client Error: Forbidden for url: https://www.dorchestercollection.com/rome/hotel-eden/rooms-suites"
+        "page": "https://www.expedia.com/Rome-Hotels-Hotel-Eden-Dorchester-Collection.h16311.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Rome-Hotels-Hotel-Eden-Dorchester-Collection.h16311.Hotel-Information"
       }
     ],
     "publicUseApproved": false,
@@ -2390,16 +2255,20 @@
     ],
     "errors": [
       {
-        "page": "https://www.marriott.com/en-us/hotels/bcnrz-hotel-arts-barcelona/photos/",
-        "error": "404 Client Error: Not Found for url: https://www.marriott.com/en-us/hotels/bcnrz-hotel-arts-barcelona/photos/"
+        "page": "https://www.expedia.com/es/Barcelona-Hoteles-Mandarin-Oriental.h3013270.Informacion-Hotel",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/es/Barcelona-Hoteles-Mandarin-Oriental.h3013270.Informacion-Hotel"
       },
       {
-        "page": "https://www.marriott.com/es/hotels/bcnrz-hotel-arts-barcelona/photos/",
-        "error": "500 Server Error: Internal Server Error for url: https://www.marriott.com/es/hotels/bcnrz-hotel-arts-barcelona/photos/"
+        "page": "https://www.expedia.com/Barcelona-Hotels-Hotel-Arts-Barcelona.h3780.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Barcelona-Hotels-Hotel-Arts-Barcelona.h3780.Hotel-Information"
       },
       {
-        "page": "https://majestichotelgroup.com/en/barcelona/hotel-majestic/gallery",
-        "error": "500 Server Error: Internal Server Error for url: https://majestichotelgroup.com/en/barcelona/hotel-majestic/gallery"
+        "page": "https://www.booking.com/hotel/es/arts-barcelona.html",
+        "error": "exact property identity not confirmed on page"
+      },
+      {
+        "page": "https://www.expedia.com/Barcelona-Hotels-Majestic-Hotel-Spa-Barcelona.h5002.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Barcelona-Hotels-Majestic-Hotel-Spa-Barcelona.h5002.Hotel-Information"
       }
     ],
     "publicUseApproved": false,
@@ -2904,56 +2773,16 @@
     ],
     "errors": [
       {
-        "page": "https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun",
-        "error": "403 Client Error: HTTP Forbidden for url: https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun"
+        "page": "https://www.expedia.com/Cancun-Hotels-Nizuc-Resort-And-Spa.h5531551.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Nizuc-Resort-And-Spa.h5531551.Hotel-Information"
       },
       {
-        "page": "https://www.palaceproagents.com/es/destinos-resorts/le-blanc-spa-resort-cancun",
-        "error": "403 Client Error: HTTP Forbidden for url: https://www.palaceproagents.com/es/destinos-resorts/le-blanc-spa-resort-cancun"
+        "page": "https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information"
       },
       {
-        "page": "https://cancun.leblancsparesorts.com/es/galeria",
-        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/es/galeria"
-      },
-      {
-        "page": "https://cancun.leblancsparesorts.com/gallery",
-        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/gallery"
-      },
-      {
-        "page": "https://www.leblancsparesorts.com/gallery",
-        "error": "403 Client Error: HTTP Forbidden for url: https://www.leblancsparesorts.com/gallery"
-      },
-      {
-        "page": "https://cancun.leblancsparesorts.com/",
-        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/"
-      },
-      {
-        "url": "https://www.palaceproagents.com/lbc_Room_Royale_Deluxe_Partial_Ocean_View_bg_3600x1800_7207f3f7a0.jpg",
-        "error": "400 Client Error: Bad Request for url: https://www.palaceproagents.com/lbc_Room_Royale_Deluxe_Partial_Ocean_View_bg_3600x1800_7207f3f7a0.jpg"
-      },
-      {
-        "page": "https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/photos-reviews",
-        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/photos-reviews"
-      },
-      {
-        "page": "https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/rooms",
-        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/rooms"
-      },
-      {
-        "page": "https://newsroom.hyatt.com/media-gallery?cat=2774",
-        "error": "HTTPSConnectionPool(host='newsroom.hyatt.com', port=443): Read timed out. (read timeout=16)"
-      },
-      {
-        "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/gallery",
-        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/gallery"
-      },
-      {
-        "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun",
-        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun"
-      },
-      {
-        "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms",
-        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms"
+        "page": "https://www.expedia.com/Cancun-Hotels-Hyatt-Ziva-Cancun-All-Inclusive.h11669114.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Hyatt-Ziva-Cancun-All-Inclusive.h11669114.Hotel-Information"
       }
     ],
     "publicUseApproved": false,
