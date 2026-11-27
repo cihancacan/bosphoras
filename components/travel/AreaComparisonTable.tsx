@@ -1,6 +1,7 @@
 import type { TravelLocale } from '@/lib/travel/i18n';
 
 const copy={
+ tr:{title:'Hangi semtte kalınır?',area:'Semt / bölge',tip:'Seçim yaparken bilmeniz gerekenler'},
  fr:{title:'Quel quartier ou secteur choisir ?',area:'Quartier / secteur',tip:'À savoir avant de choisir'},
  en:{title:'Which neighborhood or area should you choose?',area:'Neighborhood / area',tip:'What to know before choosing'},
  ru:{title:'Какой район выбрать?',area:'Район / местность',tip:'Что учесть при выборе'},

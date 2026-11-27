@@ -351,7 +351,7 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
 export function Header({ locale, slug, limitedLocales = false }: { locale: TravelLocale; slug: string; limitedLocales?: boolean }) {
   const allowed=travelLocaleCodes.filter(code=>
     !limitedLocales || code==='fr' || code==='en' ||
-    (slug==='credits'&&isEditorialLocale(code)) ||
+    (slug==='credits'&&(code==='ru'||code==='ar')) ||
     Boolean(getLocalizedGuide(slug.split('/').pop(),code))
   );
   return <BosphorasTravelGuideHeader locale={locale} slug={slug} allowedLanguages={[...allowed]}/>;

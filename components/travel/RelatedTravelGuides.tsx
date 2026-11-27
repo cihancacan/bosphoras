@@ -5,6 +5,7 @@ import { nativeTravelName,nativeTravelCountry } from '@/data/travel/localizedNam
 import { travelHref,type TravelLocale } from '@/lib/travel/i18n';
 
 const copy={
+ tr:{title:'Keşfedilecek diğer destinasyonlar',guide:'Gezi rehberi',hotels:'Otel seçkisi'},
  fr:{title:'Autres destinations à découvrir',guide:'Guide de voyage',hotels:'Sélection d’hôtels'},
  en:{title:'Explore related destinations',guide:'Travel guide',hotels:'Hotel guide'},
  ru:{title:'Другие направления для путешествия',guide:'Путеводитель',hotels:'Подборка отелей'},

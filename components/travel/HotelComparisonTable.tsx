@@ -1,12 +1,13 @@
 import type { TravelLocale } from '@/lib/travel/i18n';
 
 const labels={
+ tr:{title:'Konaklama seçeneklerini karşılaştırın',hotel:'Otel veya konaklama',area:'Semt veya bölge',best:'Neden tercih edilmeli?'},
  fr:{title:'Comparer les hébergements en un coup d’œil',hotel:'Hôtel ou hébergement',area:'Quartier ou secteur',best:'Pourquoi le choisir'},
  en:{title:'Compare places to stay at a glance',hotel:'Hotel or accommodation',area:'Neighborhood or area',best:'Why choose it'},
  ru:{title:'Сравнение вариантов размещения',hotel:'Отель или резиденция',area:'Район',best:'Почему стоит выбрать'},
  ar:{title:'قارن خيارات الإقامة بنظرة واحدة',hotel:'الفندق أو مكان الإقامة',area:'المنطقة',best:'ما يميّزه'},
 } as const;
-type Props={locale:Extract<TravelLocale,'fr'|'en'|'ru'|'ar'>;rows:{name:string;area:string;best?:string}[]};
+type Props={locale:Extract<TravelLocale,'fr'|'en'|'ru'|'ar'|'tr'>;rows:{name:string;area:string;best?:string}[]};
 export function HotelComparisonTable({locale,rows}:Props){
  if(!rows.length)return null;
  const t=labels[locale],showBest=rows.every(row=>Boolean(row.best?.trim()));

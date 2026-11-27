@@ -7,7 +7,7 @@ const {getLocalizedGuide,reviewedLocalizedGuides}=require('../data/travel/locali
 const root='https://www.bosphoras.com';
 assert.equal(Object.keys(nativeTravelNames).length,88);
 assert.equal(travelDestinations.length,88);
-assert.equal(reviewedLocalizedGuides.size,176);
+assert.equal(reviewedLocalizedGuides.size,177);
 const urls=indexedTravelUrls(root), known=new Set(urls);
 assert.equal(urls.length,known.size);
 const titles=new Set();
@@ -21,7 +21,7 @@ for(const d of travelDestinations){
   assert.ok(typeof m.title==='string'&&m.title.length>0&&typeof m.description==='string'&&m.description.length>0&&m.description.length<=160,id+' complete metadata');
   assert.ok(m.openGraph&&m.twitter,id+' social metadata');
   assert.equal(m.alternates.canonical,root+(locale==='fr'?'':'/'+locale)+'/travel/'+variant+'/'+d.slug,id);
-  assert.deepEqual(Object.keys(m.alternates.languages).sort(),['ar','en','fr','ru'],id);
+  assert.deepEqual(Object.keys(m.alternates.languages).sort(),d.slug==='istanbul'?['ar','en','fr','ru','tr']:['ar','en','fr','ru'],id);
   for(const [lang,url] of Object.entries(m.alternates.languages))assert.equal(url,root+(lang==='fr'?'':'/'+lang)+'/travel/'+variant+'/'+d.slug,id);
   if(locale==='ar'||locale==='ru'){
    const script=locale==='ar'?/[\u0600-\u06ff]/:/[\u0400-\u052f]/;
@@ -35,6 +35,8 @@ for(const d of travelDestinations){
 }
 for(const locale of ['fr','en','ar','ru'])for(const parts of [[],['destinations'],['hotels']])assert.equal(travelPageMetadata(locale,parts).robots.index,true);
 assert.equal(titles.size,352);
-assert.equal(urls.filter(u=>/\/travel\/(destinations|hotels)\/[^/]+$/.test(u)).length,704);
+assert.equal(urls.filter(u=>/\/travel\/(destinations|hotels)\/[^/]+$/.test(u)).length,706);
 assert.equal(travelPageMetadata('ru',['destinations','nonexistent']).robots.index,false);
-console.log('704 public FR/EN/RU/AR guide and hotel routes: robots, sitemap, reciprocal hreflang, localized metadata and image URLs verified.',urls.length,'travel URLs');
+for(const variant of ['destinations','hotels']){const m=travelPageMetadata('tr',[variant,'istanbul']);assert.equal(m.robots.index,true);assert.ok(known.has(m.alternates.canonical));assert.deepEqual(Object.keys(m.alternates.languages).sort(),['ar','en','fr','ru','tr']);assert.equal(m.alternates.languages.tr,m.alternates.canonical);assert.equal(travelPageMetadata('tr',[variant,'bodrum']).robots.index,false);}
+const pilot=getLocalizedGuide('istanbul','tr');assert.equal(pilot.areas.length,5);assert.equal(pilot.hotels.length,9);assert.equal(pilot.experiences.length,6);assert.equal(pilot.faq.length,8);
+console.log('706 public guide and hotel routes, including the reviewed Istanbul Turkish pilot: robots, sitemap, reciprocal hreflang, localized metadata and image URLs verified.',urls.length,'travel URLs');

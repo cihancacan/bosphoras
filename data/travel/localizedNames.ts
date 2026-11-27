@@ -1,5 +1,5 @@
 import labels from './localized/destination-names.json';
-import type {EditorialLocale} from './localizedGuides';
+type EditorialLocale='ru'|'ar';
 export const nativeTravelNames=labels as Record<string,{en:string;ru:string;ar:string;country:Record<'en'|'ru'|'ar',string>}>;
 export function nativeTravelName(slug:string,locale:string,fallback:string){return(locale==='ru'||locale==='ar')?nativeTravelNames[slug]?.[locale]||fallback:fallback;}
 export function nativeTravelCountry(slug:string,locale:string,fallback:string){return(locale==='ru'||locale==='ar')?nativeTravelNames[slug]?.country[locale]||fallback:fallback;}
