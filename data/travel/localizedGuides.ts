@@ -1,3 +1,11 @@
+import hongKongPreviewTR from './localized/hong-kong-tr.json';
+import hongKongPreviewDE from './localized/hong-kong-de.json';
+import hongKongPreviewES from './localized/hong-kong-es.json';
+import hongKongPreviewIT from './localized/hong-kong-it.json';
+import hongKongPreviewPT from './localized/hong-kong-pt.json';
+import hongKongPreviewZH from './localized/hong-kong-zh.json';
+import hongKongPreviewRU from './localized/hong-kong-ru.json';
+import hongKongPreviewAR from './localized/hong-kong-ar.json';
 import orlandoPreviewTR from './localized/orlando-tr.json';
 import orlandoPreviewDE from './localized/orlando-de.json';
 import orlandoPreviewES from './localized/orlando-es.json';
@@ -682,6 +690,7 @@ const localized:Record<string,Partial<Record<LegacyEditorialLocale,LocalizedGuid
 export function getLocalizedGuide(slug:string|undefined,locale:string):LocalizedGuide|undefined{
  if(!slug||!isEditorialLocale(locale))return undefined;
  if(slug==='cancun')return {tr:cancunPreviewTR,de:cancunPreviewDE,es:cancunPreviewES,it:cancunPreviewIT,pt:cancunPreviewPT,zh:cancunPreviewZH,ru:cancunPreviewRU,ar:cancunPreviewAR}[locale];
+ if(slug==='hong-kong')return {tr:hongKongPreviewTR,de:hongKongPreviewDE,es:hongKongPreviewES,it:hongKongPreviewIT,pt:hongKongPreviewPT,zh:hongKongPreviewZH,ru:hongKongPreviewRU,ar:hongKongPreviewAR}[locale];
  if(slug==='orlando')return {tr:orlandoPreviewTR,de:orlandoPreviewDE,es:orlandoPreviewES,it:orlandoPreviewIT,pt:orlandoPreviewPT,zh:orlandoPreviewZH,ru:orlandoPreviewRU,ar:orlandoPreviewAR}[locale];
  if(slug==='barcelona')return {tr:barcelonaPreviewTR,de:barcelonaPreviewDE,es:barcelonaPreviewES,it:barcelonaPreviewIT,pt:barcelonaPreviewPT,zh:barcelonaPreviewZH,ru:barcelonaPreviewRU,ar:barcelonaPreviewAR}[locale];
  if(slug==='rome')return {tr:romePreviewTR,de:romePreviewDE,es:romePreviewES,it:romePreviewIT,pt:romePreviewPT,zh:romePreviewZH,ru:romePreviewRU,ar:romePreviewAR}[locale];
