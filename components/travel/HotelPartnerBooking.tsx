@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getNuiteeWhiteLabelSearchHref } from '@/lib/travel/nuiteeWhiteLabel';
-import { getNuiteeHotelLinks, isNuiteeBookingLive, nuiteeLaunch } from '@/lib/travel/nuiteeLaunch';
+import { getNuiteeHotelLinks, isNuiteeBookingLive } from '@/lib/travel/nuiteeLaunch';
 
 type HotelBookingProps = {
   hotelKey: string;
@@ -61,17 +61,6 @@ export function HotelPartnerBooking({ hotelKey, locale }: HotelBookingProps) {
                 : 'Search for accommodation in our Nuitée-operated booking space. Nuitée handles payment, confirmation and support for your stay.'}
           </p>
           <HotelNuiteeLink hotelKey={hotelKey} locale={locale} />
-          <p className="mt-3 text-xs leading-6 text-[#53616b]">
-            {fr ? 'Réservation et assistance : ' : 'Booking and support: '}
-            {nuiteeLaunch.sellerLegalName}.{' '}
-            <a href={nuiteeLaunch.origin} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
-              {fr ? 'Conditions dans le moteur du partenaire' : 'Terms in the partner booking engine'} ↗
-            </a>
-            {' · '}
-            <a href={`${nuiteeLaunch.origin}/help-center`} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
-              {fr ? 'SAV du partenaire' : 'Partner support'} ↗
-            </a>
-          </p>
         </>
       ) : (
         <p className="mt-3 text-sm leading-7 text-[#53616b]">
