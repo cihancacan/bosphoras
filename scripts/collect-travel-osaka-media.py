@@ -95,6 +95,30 @@ def collect_pages(pages):
 DIRECT = {
   "osaka/conrad": [
     [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Conrad_Osaka_Japan01-r.jpg",
+      "Conrad Osaka exterior Festival Tower West",
+      "https://commons.wikimedia.org/wiki/File:Conrad_Osaka_Japan01-r.jpg",
+      "Oilstreet / CC BY 2.5 / resized WebP"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Nakanoshima_Festival_Tower_and_West_in_201705_001.jpg",
+      "Exterior of Festival Tower West and East, Conrad Osaka occupies the West tower",
+      "https://commons.wikimedia.org/wiki/File:Nakanoshima_Festival_Tower_and_West_in_201705_001.jpg",
+      "Mc681 / CC BY-SA 4.0 / resized WebP"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/w3840h2879x0y1-8a993140.jpg?h=800&impolicy=fcrop&w=1200",
+      "Conrad Osaka King Executive Room",
+      "https://www.hotels.com/ho664390/conrad-osaka-osaka-japan/",
+      "Hotels.com / Conrad Osaka"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/cb3c860c.jpg?h=800&impolicy=fcrop&w=1200",
+      "Conrad Osaka King Executive Corner Suite bedroom",
+      "https://www.hotels.com/ho664390/conrad-osaka-osaka-japan/",
+      "Hotels.com / Conrad Osaka"
+    ],
+    [
       "https://www.nikken.co.jp/en/projects/p4iusj0000000ncv-img/pj0043_02.jpg",
       "Nakanoshima Festival Tower West exterior, building housing Conrad Osaka",
       "https://www.nikken.co.jp/en/projects/mixed_use/nakanoshima_festival_tower_festival_tower_west.html",
@@ -131,6 +155,20 @@ DIRECT = {
       "Four Seasons Hotel Osaka indoor pool with city view",
       "https://www.expedia.com/Osaka-Hotels-Four-Seasons-Hotel-Osaka.h104193036.Hotel-Information",
       "Expedia / Four Seasons Hotel Osaka"
+    ]
+  ],
+  "osaka/city": [
+    [
+      "https://res.cloudinary.com/jnto/image/upload/w_750%2Ch_503%2Cfl_lossy%2Cf_auto/v1516490130/osaka/Osaka792_4",
+      "Tempozan ferris wheel in Osaka Bay",
+      "https://www.japan.travel/en/destinations/kansai/osaka/osaka-bay-area/",
+      "JNTO"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Osaka_Kuromon_Ichiba_Market_2017-12_(2).jpg",
+      "Kuromon Market Osaka",
+      "https://commons.wikimedia.org/wiki/File:Osaka_Kuromon_Ichiba_Market_2017-12_(2).jpg",
+      "Mr.ちゅらさん / CC BY-SA 4.0 / resized WebP"
     ]
   ]
 }
