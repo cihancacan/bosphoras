@@ -1,0 +1,162 @@
+{
+  "name": "Los Hamptons",
+  "country": "Estados Unidos",
+  "eyebrow": "Long Island · Playas atlánticas y fincas históricas",
+  "heading": "Dónde alojarse en los Hamptons: cuatro direcciones de Bridgehampton a Montauk",
+  "intro": "En el extremo oriental de Long Island, los Hamptons reúnen varias localidades. Las fincas históricas de Bridgehampton, las galerías de East Hampton y las playas atlánticas abiertas de Montauk ofrecen ambientes y desplazamientos distintos.",
+  "editorial": "Los Hamptons ocupan la rama sur de Long Island, no un único destino compacto. En verano, el tráfico entre Bridgehampton, East Hampton, Amagansett y Montauk puede alargar mucho los trayectos. Comprueba carreteras, aparcamiento y permisos de playa. Topping Rose House ocupa una mansión de 1842 de estilo neogriego, con dieciséis habitaciones, seis suites de un dormitorio, restaurante Jean-Georges, piscina y bienestar. Está en el interior, no en la arena. The Maidstone está en el centro histórico de East Hampton; la proximidad a galerías no concede permiso para aparcar en Main Beach.\n\nEn Montauk, Marram ofrece 96 habitaciones entre dunas junto al Atlántico, con surf, bicicletas y paseos en Shadmoor State Park. Gurney’s Montauk Resort & Seawater Spa es un resort mayor con habitaciones, cabañas, residencias y playa para huéspedes de unos 610 metros. BathHouse es exclusivo para mayores de 18 años inclusive, con sesiones de 50 minutos reservadas; no es piscina infantil. Según el calendario publicado, Beach Club permanece cerrado hasta mayo de 2027. Comprueba horarios del faro de Montauk Point y caminos costeros. Sag Harbor muestra patrimonio marítimo, Southampton alberga Coopers Beach y Amagansett dunas protegidas. Respeta mareas, oleaje e indicaciones de socorristas, especialmente con niños. El proveedor autorizado confirma precios, disponibilidad y extras.",
+  "hotelIntro": "Cuatro formatos: finca histórica en Bridgehampton, hotel boutique en East Hampton y dos resorts atlánticos independientes en Montauk.",
+  "areas": [
+    [
+      "Bridgehampton y Sagaponack",
+      "Fincas históricas, campos y restaurantes refinados forman un ambiente tranquilo.",
+      "No confundas hoteles de pueblo con alojamientos junto al océano."
+    ],
+    [
+      "East Hampton y Main Beach",
+      "Calles históricas, galerías y amplias playas de arena muestran facetas distintas.",
+      "Comprueba acceso estacional y permisos de aparcamiento."
+    ],
+    [
+      "Amagansett y dunas protegidas",
+      "Pueblo tranquilo y vegetación costera frágil al oeste de Montauk.",
+      "No entres en zonas de restauración de dunas para sacar fotos."
+    ],
+    [
+      "Montauk y playas de surf",
+      "Costa atlántica abierta, cafés y resorts frente al océano.",
+      "Cuidado con oleaje y corrientes; sigue indicaciones de socorristas."
+    ],
+    [
+      "Montauk Point y Sag Harbor",
+      "El faro mira al Atlántico; Sag Harbor está mucho más al oeste en puerto protegido.",
+      "Son lugares separados, no un único paseo a pie."
+    ]
+  ],
+  "experiences": [
+    [
+      "Desayuno en una finca histórica",
+      "Empieza entre jardines de Bridgehampton y visita tiendas y restaurantes seleccionados."
+    ],
+    [
+      "East Hampton y Main Beach",
+      "Combina arquitectura, galerías y océano, comprobando aparcamiento y estado del mar."
+    ],
+    [
+      "Dunas y surf en Montauk",
+      "Pasea cerca de Marram por caminos autorizados; reserva clases de surf con instructor."
+    ],
+    [
+      "Faro de Montauk Point",
+      "Visita el cabo por senderos permitidos y comprueba horario y acceso."
+    ],
+    [
+      "Patrimonio marítimo de Sag Harbor",
+      "Recorre calles históricas del puerto para descubrir otra cara de los Hamptons."
+    ]
+  ],
+  "checks": [
+    "Los Hamptons reúnen varias localidades; en verano los trayectos pueden alargarse.",
+    "Los hoteles de Bridgehampton y East Hampton no están directamente en la arena atlántica.",
+    "BathHouse de Gurney’s: desde 18 años, sesiones de 50 minutos con reserva.",
+    "Beach Club de Gurney’s está cerrado por temporada; reapertura anunciada en mayo de 2027.",
+    "Marram y Gurney’s son hoteles distintos de Montauk, con fotos y servicios propios.",
+    "Confirma permisos de playa, reglas infantiles, clases y traslados."
+  ],
+  "hotels": [
+    [
+      "Bridgehampton · Finca histórica",
+      "Topping Rose House combina mansión neogriega de 1842 y ala moderna entre céspedes cuidados. Dieciséis habitaciones y seis suites de un dormitorio difieren en superficie, vistas y distribución. Jean-Georges, piscina estacional y tratamientos completan el ambiente residencial. Está en el interior; confirma transporte a playas en tus fechas. Una suite de un dormitorio no garantiza cuna ni capacidad ilimitada. Restaurante y tratamientos se reservan aparte.",
+      "Confirma transporte a playa, cunas y restaurante.",
+      "Para arquitectura histórica y gastronomía en Bridgehampton.",
+      ""
+    ],
+    [
+      "East Hampton · Main Street y centro histórico",
+      "The Maidstone interpreta una casa histórica con visión contemporánea. Habitaciones individuales, espacios comunes acogedores y restaurante atraen a quien prefiere paseos por el pueblo, artesanía y diseño antes que un gran complejo de playa. Tiendas y galerías están cerca; para el Atlántico hace falta transporte y respetar normas municipales de aparcamiento. Confirma capacidad, habitaciones comunicadas, niños y restaurante.",
+      "No está en Main Beach; comprueba aparcamiento, transporte y habitación.",
+      "Para diseño, boutiques y vida del centro histórico.",
+      ""
+    ],
+    [
+      "Montauk · Dunas atlánticas",
+      "Marram es un resort oceánico íntimo de 96 habitaciones en edificios bajos entre dunas. Tejidos naturales, interiores minimalistas y proximidad a Shadmoor State Park favorecen surf, bicicleta y descanso en la costa. Café y zonas comunes difieren de un gran resort. Vista a dunas u océano, terraza, planta y salida a arena no son equivalentes. Surf y yoga dependen de temporada y reserva. Familias deben revisar escaleras, áreas costeras abiertas, olas y camas.",
+      "Confirma categoría, clases y servicios estacionales.",
+      "Para descanso informal entre dunas y surf.",
+      ""
+    ],
+    [
+      "Montauk · Old Montauk Highway",
+      "Gurney’s es un resort oceánico completo con habitaciones, cabañas, residencias, playa para huéspedes de unos 610 metros y piscina interior climatizada de agua salada. Spa marino con BathHouse exclusivo desde los 18 años. Sesiones de 50 minutos con reserva; tratamientos tienen condiciones y precios propios. Comprueba piscinas infantiles y servicios familiares aparte. Según calendario publicado, Beach Club cierra hasta mayo de 2027. Confirma capacidad, tasas de resort y servicios estacionales.",
+      "BathHouse desde 18 años, con reserva; Beach Club cerrado hasta mayo de 2027.",
+      "Para vacaciones completas junto al océano y spa.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Los Hamptons son una ciudad donde se puede caminar entre hoteles?",
+      "No, son varias localidades de la rama sur de Long Island. Tráfico estival y aparcamiento requieren planificación por zonas."
+    ],
+    [
+      "¿Qué hoteles están directamente junto al Atlántico?",
+      "Marram y Gurney’s en Montauk. Vistas y salida a arena dependen de categoría. Topping Rose House y The Maidstone están en el interior."
+    ],
+    [
+      "¿Beach Club de Gurney’s abre todo el año?",
+      "No, el calendario publicado indica cierre hasta mayo de 2027. Acceso a playa de huéspedes y servicios del club de verano son distintos."
+    ],
+    [
+      "¿Pueden los niños entrar en BathHouse?",
+      "No, desde 18 años con sesiones reservadas de 50 minutos. Confirma aparte servicios familiares y reglas de piscina cubierta."
+    ],
+    [
+      "¿Qué hotel elegir para surfear?",
+      "Marram, de 96 habitaciones, está entre dunas junto al océano. Bicicletas, clases y yoga dependen de condiciones y temporada; Gurney’s ofrece servicios más amplios."
+    ],
+    [
+      "¿Se puede aparcar libremente en Main Beach?",
+      "No siempre. Normas municipales pueden exigir permiso, sobre todo en verano. Reservar hotel no es permiso de aparcamiento."
+    ],
+    [
+      "¿Cómo reservar hoteles y servicios?",
+      "Compara en Bosphoras; proveedor autorizado confirma precios, disponibilidad, restaurantes y traslados por separado."
+    ]
+  ],
+  "photoCaptions": [
+    "Faro Montauk Point en extremo oriental de Long Island",
+    "Main Beach en East Hampton",
+    "Pueblo marítimo histórico Sag Harbor",
+    "Costa atlántica de Coopers Beach",
+    "Dunas protegidas de Amagansett",
+    "Amplia playa atlántica de Montauk",
+    "Luz matinal en la costa de Montauk",
+    "Sendero Hither Hills hacia el océano",
+    "Puerto y patrimonio marítimo de Sag Harbor"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Finca histórica Topping Rose House",
+      "Interior Topping Rose House",
+      "Ambiente gastronómico Jean-Georges"
+    ],
+    [
+      "Hotel boutique histórico The Maidstone",
+      "Espacios de diseño The Maidstone",
+      "Vista de The Maidstone"
+    ],
+    [
+      "Habitaciones Marram alrededor del patio entre dunas",
+      "Categoría con vistas al océano en Marram",
+      "Panorámica marina Marram"
+    ],
+    [
+      "Playa de huéspedes Gurney’s desde el aire",
+      "Piscina cubierta de agua salada Gurney’s",
+      "Cabañas Gurney’s junto al océano"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en los Hamptons: hoteles de lujo y playas de Long Island",
+  "hotelSeoTitle": "Mejores hoteles de los Hamptons: Topping Rose House, Maidstone, Marram y Gurney’s",
+  "seoDescription": "Compara cuatro hoteles en Bridgehampton, East Hampton y Montauk. Descubre playas atlánticas, spa y consejos de transporte."
+}
