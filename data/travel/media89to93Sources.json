@@ -4,6 +4,7 @@
     "city": "Londres",
     "publisher": "Visit London / London & Partners",
     "cityPages": [
+      "https://www.bondstreet.co.uk/articles/explore-these-green-spaces-near-bond-street",
       "https://www.bondstreet.co.uk/your-visit/albemarle-street",
       "https://www.bondstreet.co.uk/articles/bond-streets-captivating-origin-story",
       "https://www.bondstreet.co.uk/explore",
@@ -104,11 +105,13 @@
         "shangri-la",
         "Shangri-La The Shard, London",
         [
+          "https://www.the-shard.com/shangri-la-the-shard-london/hotel-amenities",
+          "https://www.the-shard.com/shangri-la-the-shard-london",
+          "https://www.the-shard.com/about/level-guide",
           "https://www.shangrilaexperiences.com/london",
           "https://www.the-shard.com/news-events/events/2026/summer-above-the-clouds-at-shangri-la",
           "https://www.the-shard.com/about/level-guide/",
           "https://www.the-shard.com/contact-us/shangri-la-hotel",
-          "https://www.the-shard.com/shangri-la-the-shard-london/hotel-amenities",
           "https://www.the-shard.com/news-events/news-events/2014/infinity-pool-opens-as-vertical-city-vision-becomes-a-reality",
           "https://www.shangri-la.com/london/shangrila/photos-videos/",
           "https://www.the-shard.com/shangri-la-the-shard-london/",
@@ -124,6 +127,10 @@
     "city": "Las Vegas",
     "publisher": "Visit Las Vegas / LVCVA",
     "cityPages": [
+      "https://www.visitlasvegas.com/experience/post/intro-to-the-18b-arts-district/",
+      "https://www.visitlasvegas.com/experience/post/vegas-weekend-getaway/",
+      "https://www.visitlasvegas.com/experience/post/running-in-las-vegas-strip-routes-trails-races/",
+      "https://www.visitlasvegas.com/experience/post/climbing-red-rock-canyon/",
       "https://www.visitlasvegas.com/experience/post/a-brief-history-of-the-welcome-to-fabulous-las-vegas-sign/",
       "https://www.visitlasvegas.com/experience/post/how-to-vegas-the-three-day-weekend-itinerary/",
       "https://www.visitlasvegas.com/experience/post/outdoor-fun-in-las-vegas/",
@@ -160,6 +167,8 @@
         "wynn",
         "Wynn Las Vegas",
         [
+          "https://www.wynnlasvegas.com/stories/most-instagrammable-spots-at-wynn-las-vegas",
+          "https://www.wynnlasvegas.com/stories/why-wynn-las-vegas-sets-luxury-hospitality-standard",
           "https://www.wynnlasvegas.com/experiences/pools",
           "https://www.wynnlasvegas.com/rooms-and-suites",
           "https://www.wynnlasvegas.com/"
