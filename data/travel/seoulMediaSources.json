@@ -4,16 +4,12 @@
     "city": "Seoul",
     "publisher": "Korea Tourism Organization / Seoul Tourism Organization",
     "cityPages": [
-      "https://english.visitseoul.net/attractions",
-      "https://english.visitseoul.net/attractions/Gyeongbokgung-Palace_/54",
-      "https://english.visitseoul.net/attractions/Bukchon-Hanok-Village_/267",
-      "https://english.visitseoul.net/attractions/N-Seoul-Tower_/57",
-      "https://english.visitseoul.net/attractions/Myeongdong_/50",
-      "https://english.visitseoul.net/attractions/Dongdaemun-Design-Plaza-DDP_/99",
-      "https://english.visitseoul.net/attractions/Seokchon-Lake_/286",
-      "https://english.visitseoul.net/attractions/Bongeunsa-Temple_/264",
-      "https://english.visitseoul.net/attractions/Cheonggyecheon-Stream_/55",
-      "https://english.visitseoul.net/attractions/Hongdae_/83"
+      "https://english.visitseoul.net/AboutSeoul",
+      "https://english.visitseoul.net/mvp/IfyouvisitSeoulforthefirsttime_/43817",
+      "https://english.visitseoul.net/area",
+      "https://english.visitseoul.net/entertainment",
+      "https://english.visitseoul.net/hallyu/PersonableSeoul-ENG/42915",
+      "https://english.visitseoul.net/attractions--/Nighttime-Adventures-in-Seoul/ENP000032"
     ],
     "subjects": [
       "gyeongbokgung|gyeongbok palace",
@@ -32,22 +28,26 @@
         "Four Seasons Hotel Seoul",
         [
           "https://www.fourseasons.com/seoul/photos-and-videos/",
-          "https://press.fourseasons.com/seoul/hotel-images/"
+          "https://press.fourseasons.com/seoul/hotel-images/",
+          "https://www.fourseasons.com/en/seoul/",
+          "https://www.fourseasons.com/seoul/accommodations/"
         ]
       ],
       [
         "signiel",
         "SIGNIEL Seoul",
         [
-          "https://www.lottehotel.com/seoul-signiel/en.html",
-          "https://www.lottehotel.com/seoul-signiel/en/rooms.html"
+          "https://app.lottehotel.com/seoul-signiel/en/about/gallery",
+          "https://app.lottehotel.com/seoul-signiel/en/about/information",
+          "https://app.lottehotel.com/seoul-signiel/en/rooms/premier-room",
+          "https://app.lottehotel.com/seoul-signiel/en/rooms/signiel-premier-room"
         ]
       ],
       [
         "josun-palace",
         "Josun Palace, a Luxury Collection Hotel, Seoul Gangnam",
         [
-          "https://www.marriott.com/en-us/hotels/selgl-josun-palace-a-luxury-collection-hotel-seoul-gangnam/photos/"
+          "https://www.marriott.com/en-us/hotels/sellc-josun-palace-a-luxury-collection-hotel-seoul-gangnam/photos/"
         ]
       ],
       [
