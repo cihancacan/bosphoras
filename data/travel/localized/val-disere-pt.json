@@ -1,0 +1,156 @@
+{
+  "name": "Val d’Isère",
+  "country": "França",
+  "eyebrow": "Tarentaise · Encostas e vilas históricas",
+  "heading": "Val d’Isère: dias na alta montanha, noites na vila acolhedora",
+  "intro": "Ruas históricas com casas de pedra e madeira encontram as pistas impressionantes de Bellevarde e Solaise. Centro, La Daille, Le Fornet e vale do Manchet têm perfis distintos. Na escolha do hotel, localização importa tanto quanto estrelas e tamanho do spa.",
+  "editorial": "La Daille facilita acesso rápido ao funicular Funival; do centro chega-se a pé a restaurantes depois do esqui. Le Laisinant e Le Fornet oferecem tranquilidade e meios de elevação próprios, Manchet paisagens abertas. Airelles fica junto às pistas, Le K2 Chogori ocupa dois chalés modernos perto do centro histórico, La Mourra oferece sete suítes intimistas e chalés privativos, Le Blizzard mantém hospitalidade familiar. Nem todos têm ski-in/ski-out: confira trajeto real.",
+  "hotelIntro": "Quatro endereços: Airelles junto às pistas, Le K2 Chogori com dois chalés de design, La Mourra com suítes e chalés privativos e Le Blizzard, hotel familiar histórico.",
+  "areas": [
+    [
+      "Centro histórico e área principal dos meios de elevação",
+      "Ruas históricas, igreja e meios de elevação Solaise e Bellevarde próximos. Restaurantes acessíveis a pé à noite.",
+      "Localização central não garante acesso direto às pistas; confira caminho da porta ao meio de elevação."
+    ],
+    [
+      "La Daille",
+      "Na entrada da estação, funicular Funival facilita partida. Arquitetura e ambiente noturno diferem do centro histórico.",
+      "Planeje retorno à noite e confira horários."
+    ],
+    [
+      "Le Laisinant",
+      "Vila tranquila no caminho de Le Fornet com acesso próprio à montanha.",
+      "Confira teleférico de cadeiras e traslados para suas datas."
+    ],
+    [
+      "Le Fornet",
+      "Casas tradicionais entre montanhas no fim do vale, longe da agitação.",
+      "A estrada pelo Col de l’Iseran fecha no inverno; não planeje seguir de carro além da vila."
+    ],
+    [
+      "Le Joseray e vale do Manchet",
+      "Espaços abertos para caminhadas e esqui de fundo, não só alpino.",
+      "Acesso a rotas e traslados conforme clima e neve."
+    ]
+  ],
+  "experiences": [
+    [
+      "Primeira saída às pistas",
+      "Organize equipamento e aulas no setor certo; Bellevarde e Solaise são partidas distintas."
+    ],
+    [
+      "Jantar na vila histórica",
+      "Reserve tempo para caminhar pelas ruas de pedra antes do jantar."
+    ],
+    [
+      "Quatro experiências de bem-estar",
+      "Compare piscinas, tratamentos e privacidade em grande hotel, residência intimista ou chalé tradicional."
+    ],
+    [
+      "Caminhada no Manchet",
+      "Escolha trilha sinalizada aberta ou pista de fundo conforme neve."
+    ]
+  ],
+  "checks": [
+    "Diferencie La Daille, centro, Le Fornet e Manchet antes de escolher.",
+    "Confirme rotas para Bellevarde, Solaise ou outros setores.",
+    "Confira abertura dos hotéis e serviços no início e fim da temporada.",
+    "Confirme plantas de quartos familiares, suítes e chalés privativos.",
+    "Planeje restaurantes, aulas, traslados e transporte de Bourg-Saint-Maurice.",
+    "Parceiro confirma tarifas e disponibilidade."
+  ],
+  "hotels": [
+    [
+      "Área principal das pistas · Acesso direto",
+      "Airelles oferece clima de palácio de inverno junto às pistas, suítes, restaurantes, lounges e serviço de montanha. Guia original indica abertura em 4 dezembro 2026. Confira localização e vista da suíte.",
+      "Confirme abertura, acesso conforme neve, planta e condições para crianças.",
+      "Para férias de esqui completas junto às pistas.",
+      ""
+    ],
+    [
+      "Avenue du Prariond · Dois chalés",
+      "Le K2 Chogori ocupa dois chalés conectados de madeira, ardósia e pedra de inspiração himalaia. Descrição indica 19 quartos e suítes, duas coberturas, Goji Spa e restaurante Bottleneck. Conforto não garante saída de esqui pela porta.",
+      "Confira categoria, vista e transporte; proximidade do centro não garante ski-in/ski-out.",
+      "Para arquitetura alpina contemporânea e spa.",
+      ""
+    ],
+    [
+      "Avenue du Prariond · Suítes e chalés",
+      "La Mourra oferece sete suítes hoteleiras, chalés privativos separados, piscina de 17 metros e restaurante de inspiração japonesa. Para casais e famílias que preferem ambiente de casa privativa perto do centro.",
+      "Diferencie suítes e chalés separados; confirme serviços e transporte às pistas.",
+      "Para privacidade a dois ou em família.",
+      ""
+    ],
+    [
+      "Centro da vila · Hotel histórico",
+      "Le Blizzard tem história desde 1963. Lounges acolhedores, hospitalidade tradicional, spa e proximidade da vida noturna o distinguem do design Le K2 Chogori e da intimista La Mourra.",
+      "Confira categoria, serviços sazonais e trajeto aos meios de elevação.",
+      "Para atmosfera alpina tradicional.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Onde ficar na primeira visita?",
+      "Centro histórico para restaurantes e meios de elevação principais, La Daille para Funival e Le Fornet para sossego. Considere nível e transporte."
+    ],
+    [
+      "Quais hotéis mais perto das pistas?",
+      "Airelles anuncia acesso direto; Le K2 Chogori, La Mourra e Le Blizzard ficam em posições diferentes. Confira trajetos e traslados."
+    ],
+    [
+      "Airelles abre em novembro 2026?",
+      "Guia original indica 4 dezembro 2026; calendário pode mudar, confirme antes de reservar."
+    ],
+    [
+      "Qual diferença La Mourra e Le Blizzard?",
+      "Hotéis ligados, com perfis distintos: La Mourra sete suítes e chalés separados, Le Blizzard clima familiar tradicional."
+    ],
+    [
+      "Dá para chegar a Le Fornet sem carro?",
+      "Ônibus locais atendem vilas conforme temporada; confira viagens noturnas."
+    ],
+    [
+      "O que fazer sem esqui alpino?",
+      "Passeios pela vila, spa, trilhas e esqui de fundo em Manchet quando condições permitem."
+    ],
+    [
+      "Como reservar?",
+      "Parceiro autorizado confirma preço, disponibilidade e condições."
+    ]
+  ],
+  "photoCaptions": [
+    "Igreja e ruas históricas Val d’Isère",
+    "Solaise vista de Tignes",
+    "Pista Face de Bellevarde",
+    "Funicular Funival La Daille",
+    "Chalés nevados Le Laisinant",
+    "Casas tradicionais Le Fornet",
+    "Esqui de fundo no vale Manchet",
+    "Chalet Skadi Avenue du Prariond",
+    "Rio Isère em Le Fornet no verão"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Fachada de pedra e madeira Airelles junto às pistas",
+      "Foto Airelles Val d’Isère"
+    ],
+    [
+      "Fachada Le K2 Chogori",
+      "Quarto Le K2 Chogori"
+    ],
+    [
+      "La Mourra em Val d’Isère",
+      "La Mourra entre montanhas nevadas",
+      "Chalé nevado La Mourra"
+    ],
+    [
+      "Restaurante Le Blizzard",
+      "Interior restaurante Le Blizzard",
+      "Foto Le Blizzard"
+    ]
+  ],
+  "seoTitle": "Val d’Isère: hotéis de luxo, chalés e férias de esqui",
+  "hotelSeoTitle": "Hotéis Val d’Isère: Airelles, Le K2 Chogori, La Mourra e Le Blizzard",
+  "seoDescription": "Compare quatro hotéis de luxo em Val d’Isère: acesso às pistas, chalés privativos, spa, La Daille e centro histórico."
+}

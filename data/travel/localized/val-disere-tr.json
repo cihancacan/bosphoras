@@ -1,0 +1,156 @@
+{
+  "name": "Val d’Isère",
+  "country": "Fransa",
+  "eyebrow": "Tarentaise · Dağ yamaçları ve tarihî köyler",
+  "heading": "Val d’Isère: yüksek dağlarda gündüz, sıcak köy ortamında akşam",
+  "intro": "Taş ve ahşap evlerle çevrili tarihî sokaklar Bellevarde ve Solaise'in etkileyici pistleriyle buluşur. Merkez, La Daille, Le Fornet ve Manchet Vadisi farklı tatil deneyimleri sunar. Otel seçiminde yıldız sayısı ve spa büyüklüğü kadar konum belirleyicidir.",
+  "editorial": "La Daille, Funival fünikülerine hızlı erişim sağlar; merkezden kayak sonrası restoranlara yürünebilir. Le Laisinant ve Le Fornet daha sakin ve kendi liftleri olan yerlerdir; Manchet Vadisi açık manzaralarıyla öne çıkar. Airelles pist yanındadır, Le K2 Chogori eski merkeze yakın iki çağdaş şaleden oluşur. La Mourra yedi samimi süit ve özel şaleler, Le Blizzard geleneksel aile konukseverliği sunar. Tüm otelleri ski-in/ski-out olarak değerlendirmeyin; gerçek rotayı kontrol edin.",
+  "hotelIntro": "Dört farklı adres: pist yanında Airelles, iki tasarım şalesiyle Le K2 Chogori, özel süit ve şaleleriyle La Mourra, tarihî aile oteli Le Blizzard.",
+  "areas": [
+    [
+      "Eski merkez ve ana lift alanı",
+      "Tarihî sokaklar, kilise ve Solaise ile Bellevarde ana liftleri yakın. Akşam restoranlara yürümek kolaydır.",
+      "Merkezde olmak doğrudan pist erişimi garantisi değildir; otel kapısından lifte rotayı doğrulayın."
+    ],
+    [
+      "La Daille",
+      "Resort girişindeki Funival ile pistlere rahat ulaşılır. Mimari ve akşam atmosferi eski merkezden farklıdır.",
+      "Akşam merkezden dönüşü planlayın ve ulaşım tarifesini kontrol edin."
+    ],
+    [
+      "Le Laisinant",
+      "Le Fornet yolunda sakin, kendi lift erişimi olan köy.",
+      "Seyahat tarihlerinde telesiyej ve servis saatlerini kontrol edin."
+    ],
+    [
+      "Le Fornet",
+      "Vadi sonunda dağların arasındaki geleneksel evler hareketli merkezden uzakta huzur sağlar.",
+      "Iseran Geçidi yolu kışın kapalıdır; köyün ötesine araçla geçmeyi planlamayın."
+    ],
+    [
+      "Le Joseray ve Manchet Vadisi",
+      "Geniş vadi, alp kayağı dışında yürüyüş ve kros kayağı için uygundur.",
+      "Patika ve servislere erişim hava ve kar durumuna bağlıdır."
+    ]
+  ],
+  "experiences": [
+    [
+      "Sabah pistlere çıkış",
+      "Ekipman ve dersleri doğru sektörde önceden ayarlayın; Bellevarde ve Solaise farklı başlangıç noktalarıdır."
+    ],
+    [
+      "Eski köyde akşam yemeği",
+      "Son liftten acele etmek yerine yemek öncesi taş sokaklarda yürüyüşe zaman ayırın."
+    ],
+    [
+      "Dört wellness deneyimi",
+      "Büyük otel, samimi rezidans ve geleneksel şalede havuz, bakım ve mahremiyeti karşılaştırın."
+    ],
+    [
+      "Manchet Vadisi yürüyüşü",
+      "Kar durumuna göre açık işaretli yürüyüş veya kros kayağı rotasını seçin."
+    ]
+  ],
+  "checks": [
+    "Otel seçmeden La Daille, merkez, Le Fornet ve Manchet bölgelerini ayırın.",
+    "Bellevarde, Solaise veya diğer sektör liftlerine rotayı doğrulayın.",
+    "Otel açılışlarını ve sezon başı ile sonu hizmetlerini kontrol edin.",
+    "Aile odası, süit ve özel şale planını teyit edin.",
+    "Restoranları, eğitmenli dersleri, servisleri ve Bourg-Saint-Maurice istasyon transferini önceden planlayın.",
+    "Güncel fiyat ve müsaitliği rezervasyon partneri doğrular."
+  ],
+  "hotels": [
+    [
+      "Ana pist alanı · Doğrudan yamaç erişimi",
+      "Airelles pistlerin yanında kış sarayı atmosferi, süitler, restoranlar, salonlar ve dağ tatiline yönelik hizmet sunar. Kaynak rehber 4 Aralık 2026 açılışını belirtir. Süitin konumu ve manzarasını doğrulayın.",
+      "Açılış, kar koşullarında pist erişimi, süit planı ve çocuk kurallarını kontrol edin.",
+      "Pist yanında kapsamlı kayak tatili için.",
+      ""
+    ],
+    [
+      "Avenue du Prariond · İki şale",
+      "Le K2 Chogori Himalaya tarzı ahşap, arduvaz ve taşla iki bağlantılı şalede yer alır. Kaynakta 19 oda ve süit, iki penthouse, Goji Spa ve Bottleneck restoranı belirtilir. Konfor her kapıdan doğrudan kayak erişimi anlamına gelmez.",
+      "Kategori, manzara ve pist ulaşımını doğrulayın; merkez yakınlığı ski-in/ski-out garantisi değildir.",
+      "Çağdaş dağ mimarisi ve spa için.",
+      ""
+    ],
+    [
+      "Avenue du Prariond · Süit ve şaleler",
+      "La Mourra yedi otel süiti, ayrı özel şaleler, 17 metrelik havuz ve Japon esintili restoranla samimi bir deneyim sunar. Merkeze yakın özel ev atmosferini tercih eden çift ve ailelere uygundur.",
+      "Otel süitleri ile ayrı şaleleri ayırın; hizmet ve pist ulaşımını teyit edin.",
+      "Çift veya aileyle özel tatil için.",
+      ""
+    ],
+    [
+      "Köy merkezi · Tarihî otel",
+      "Le Blizzard'ın geçmişi 1963'e uzanır. Sıcak salonlar, geleneksel konukseverlik, spa ve akşam yaşamına yakınlık, oteli tasarım odaklı Le K2 Chogori ve daha samimi La Mourra'dan ayırır.",
+      "Oda kategorisi, sezonluk hizmet ve lift rotasını kontrol edin.",
+      "Geleneksel Alp atmosferi için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "İlk kez Val d’Isère'de nerede kalınmalı?",
+      "Eski merkez restoran ve ana liftler için, La Daille Funival için, Le Fornet huzur için uygundur. Kayak seviyenizi ve ulaşımı dikkate alın."
+    ],
+    [
+      "Pistlere en yakın oteller hangileri?",
+      "Airelles doğrudan pist erişimi belirtir. Le K2 Chogori, La Mourra ve Le Blizzard farklı konumlardadır; rota ve transferi kontrol edin."
+    ],
+    [
+      "Airelles Kasım 2026'da açık mı?",
+      "Kaynakta 4 Aralık 2026 açılışı belirtilir; takvim değişebilir, rezervasyondan önce doğrulayın."
+    ],
+    [
+      "La Mourra ile Le Blizzard farkı nedir?",
+      "İlişkili iki farklı otel: La Mourra yedi süit ve ayrı şaleler, Le Blizzard geleneksel aile atmosferi sunar."
+    ],
+    [
+      "Le Fornet'e araçsız gidilir mi?",
+      "Yerel otobüsler köylere gider, saatler sezona bağlıdır. Akşam seferlerini kontrol edin."
+    ],
+    [
+      "Kayak dışında ne yapılır?",
+      "Köy yürüyüşleri, spa, uygun koşullarda Manchet Vadisi yürüyüş ve kros kayağı."
+    ],
+    [
+      "Nasıl rezervasyon yapılır?",
+      "Yetkili partner fiyat, oda müsaitliği ve koşulları doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Val d’Isère kilisesi ve tarihî sokakları",
+    "Tignes yönünden Solaise",
+    "Face de Bellevarde pisti",
+    "La Daille Funival füniküleri",
+    "Le Laisinant karlı şaleleri",
+    "Le Fornet geleneksel evleri",
+    "Manchet Vadisi kros kayağı",
+    "Avenue du Prariond Chalet Skadi",
+    "Yazın Le Fornet Isère Nehri"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Pist yanında Airelles taş ve ahşap cephesi",
+      "Airelles Val d’Isère fotoğrafı"
+    ],
+    [
+      "Le K2 Chogori cephesi",
+      "Le K2 Chogori odası"
+    ],
+    [
+      "Val d’Isère'de La Mourra",
+      "Karlı dağlar arasında La Mourra",
+      "La Mourra karlı şalesi"
+    ],
+    [
+      "Le Blizzard restoranı",
+      "Le Blizzard restoran içi",
+      "Le Blizzard fotoğrafı"
+    ]
+  ],
+  "seoTitle": "Val d’Isère: Lüks Oteller, Şaleler ve Kayak Tatili",
+  "hotelSeoTitle": "Val d’Isère Otelleri: Airelles, Le K2 Chogori, La Mourra ve Le Blizzard",
+  "seoDescription": "Val d’Isère'de dört lüks oteli karşılaştırın: pist erişimi, özel şaleler, spa, La Daille ve eski köy merkezi."
+}
