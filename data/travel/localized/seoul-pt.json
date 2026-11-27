@@ -1,0 +1,136 @@
+{
+  "name": "Seul",
+  "country": "Coreia do Sul",
+  "eyebrow": "Coreia do Sul · Palácios, bairros criativos e hotéis urbanos",
+  "heading": "Seul: escolha o bairro para palácios, gastronomia e panoramas.",
+  "intro": "Seul reúne os palácios de Jongno, as compras de Myeongdong, as ruas criativas de Hongdae e as torres de Gangnam e Jamsil. Escolha o hotel segundo as visitas e as linhas de metro.",
+  "editorial": "Jongno e Gwanghwamun são convenientes para palácios, museus e ruas históricas. Myeongdong e Chungmuro oferecem lojas, restaurantes e acesso a Namsan. Dongdaemun combina design e mercados; Hongdae e Yeonnam oferecem cafés e música. A sul do rio Han, Gangnam e COEX destacam-se pelos negócios e compras, e Jamsil pelo lazer familiar e panoramas.\n\nQuatro a cinco noites são uma boa base para visitar ambas as margens. Agrupe visitas próximas e evite atravessamentos desnecessários nas horas de ponta. Verifique saídas do metro, ligações e percurso até ao hotel. Respeite moradores e regras de visita nos bairros residenciais tradicionais.\n\nDesde Incheon compare AREX até Seoul Station, autocarros e transfer privado. Gimpo pode ser conveniente para voos regionais. Confira requisitos de entrada conforme o passaporte. Compare dimensões, camas, ocupação, vista e total com impostos e cancelamento. Verifique o acesso de crianças a piscinas e lounges.",
+  "hotelIntro": "Four Seasons para os palácios, SIGNIEL pelas vistas de Jamsil, Josun Palace para Gangnam e The Shilla pelo luxo clássico de Jangchung.",
+  "areas": [
+    [
+      "Jongno e Gwanghwamun",
+      "Palácio Gyeongbokgung, Bukchon, museus e ruas históricas.",
+      "Respeite os horários dos palácios e zonas residenciais."
+    ],
+    [
+      "Myeongdong e Chungmuro",
+      "Lojas, restaurantes e acesso a Namsan.",
+      "Confira ruas pedonais e acesso com bagagem."
+    ],
+    [
+      "Dongdaemun e Jangchung",
+      "Design Plaza, mercados, Cheonggyecheon e colinas.",
+      "Compare ligações e declives."
+    ],
+    [
+      "Hongdae e Yeonnam",
+      "Cafés, boutiques, música e ruas criativas.",
+      "Considere ruído noturno e saídas do metro."
+    ],
+    [
+      "Gangnam e COEX",
+      "Zona empresarial, comércio, Bongeunsa e COEX.",
+      "Planeie deslocações para os palácios a norte do rio."
+    ],
+    [
+      "Jamsil e Songpa",
+      "Lotte World Tower, lago Seokchon e lazer.",
+      "Confira bilhetes, percursos e regras familiares."
+    ]
+  ],
+  "experiences": [
+    [
+      "Descobrir os palácios",
+      "Combine Gyeongbokgung com as ruas históricas de Jongno."
+    ],
+    [
+      "Explorar mercados e gastronomia",
+      "Combine Myeongdong, Gwangjang Market e Cheonggyecheon segundo o percurso."
+    ],
+    [
+      "Admirar panoramas",
+      "Escolha Namsan ou Lotte World Tower segundo a meteorologia e localização."
+    ],
+    [
+      "Descobrir design e cultura contemporânea",
+      "Escolha Dongdaemun Design Plaza, Hongdae ou Gangnam conforme os seus interesses."
+    ]
+  ],
+  "checks": [
+    "Agrupe visitas por margem do rio Han.",
+    "Confirme vista, camas e ocupação.",
+    "Verifique requisitos de entrada para o passaporte.",
+    "Compare total com impostos, pequeno-almoço e cancelamento.",
+    "Confira acesso infantil a piscinas e lounges."
+  ],
+  "hotels": [
+    [
+      "Gwanghwamun · Jongno",
+      "Hotel contemporâneo com quartos, suites, piscina interior, spa e restaurantes.",
+      "Confirme categoria, eventual vista para palácios e regras familiares.",
+      "Para palácios e centro histórico.",
+      "Hotel contemporâneo com quartos, suites, piscina interior, spa e restaurantes. Confirme categoria, eventual vista para palácios e regras familiares."
+    ],
+    [
+      "Jamsil · Lotte World Tower",
+      "Hotel nos andares superiores da torre, com quartos panorâmicos, restaurantes e piscina interior.",
+      "Verifique orientação e acesso ao lounge.",
+      "Para vistas e lazer de Jamsil.",
+      "Hotel nos andares superiores da torre, com quartos panorâmicos, restaurantes e piscina interior. Verifique orientação e acesso ao lounge."
+    ],
+    [
+      "Gangnam · Teheran-ro",
+      "Hotel contemporâneo em altura com quartos, suites, restaurantes, piscina interior aquecida e ginásio.",
+      "Compare categorias, serviços incluídos e trajetos ao centro histórico.",
+      "Para luxo contemporâneo e negócios.",
+      "Hotel contemporâneo em altura com quartos, suites, restaurantes, piscina interior aquecida e ginásio. Compare categorias, serviços incluídos e trajetos ao centro histórico."
+    ],
+    [
+      "Jangchung · Jung-gu",
+      "Hotel clássico com alojamento elegante, gastronomia e bem-estar.",
+      "Confira regras sazonais das piscinas e acesso aos transportes.",
+      "Para luxo clássico e descanso.",
+      "Hotel clássico com alojamento elegante, gastronomia e bem-estar. Confira regras sazonais das piscinas e acesso aos transportes."
+    ]
+  ],
+  "faq": [
+    [
+      "Onde ficar na primeira visita?",
+      "Jongno ou Myeongdong são práticos para palácios e centro."
+    ],
+    [
+      "Gangnam ou Myeongdong?",
+      "Gangnam para o sul e negócios; Myeongdong para os monumentos históricos centrais."
+    ],
+    [
+      "Quantas noites planear?",
+      "Quatro a cinco para os bairros principais, mais para excursões."
+    ],
+    [
+      "Qual o bairro para famílias?",
+      "Jamsil para lazer e lago, Jongno para cultura; compare camas e trajetos."
+    ],
+    [
+      "Como chegar desde Incheon?",
+      "Compare AREX, autocarros e transfers conforme o hotel."
+    ],
+    [
+      "É necessário alugar carro?",
+      "Não para a maioria das visitas; metro, caminhadas e táxis ocasionais são práticos."
+    ],
+    [
+      "Como comparar hotéis?",
+      "Compare datas, hóspedes, categorias, vistas, impostos, serviços e cancelamento equivalentes."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Onde ficar em Seul: Jongno, Myeongdong e Gangnam",
+  "hotelSeoTitle": "Hotéis de luxo em Seul: Four Seasons, SIGNIEL, Josun e Shilla",
+  "seoDescription": "Compare bairros e hotéis de Seul: Jongno, Myeongdong, Gangnam, Jamsil, transportes e conselhos."
+}
