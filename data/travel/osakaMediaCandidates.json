@@ -252,6 +252,37 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
+        "key": "conrad-2",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Nakanoshima_Festival_Tower_and_West_in_201705_001.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Nakanoshima_Festival_Tower_and_West_in_201705_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nakanoshima_Festival_Tower_and_West_in_201705_001.jpg",
+        "originalAlt": "Exterior of Festival Tower West and East, Conrad Osaka occupies the West tower",
+        "originalCaption": "Mc681 / CC BY-SA 4.0 / resized WebP",
+        "credit": "Mc681 / CC BY-SA 4.0 / resized WebP",
+        "publisher": "Conrad Osaka",
+        "hotel": "Conrad Osaka",
+        "localPath": "/images/travel/osaka-premium/conrad/conrad-2.webp",
+        "sourceSHA256": "3ef229f7a36c2d81785d37899cf7164f0fd2fa59c54e19802bdea399d435f461",
+        "webpSHA256": "53ccd90d2343918f93d8c4a2c201ad74e062d369c2dcc97dfa2b4e4b49642180",
+        "sourcePixels": [
+          3968,
+          2976
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 144644,
+        "pixelFingerprint": "f233f2b273773333",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "four-seasons-1",
         "sourcePage": "https://www.travelandleisure.com/four-seasons-hotel-osaka-japan-review-8704951",
         "sourceResolvedUrl": "https://www.travelandleisure.com/thmb/1PIMBSVnHZjs4_KQCO9BrKpsCJM%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29%3Aformat%28webp%29/TAL-header-exterior-four-seasons-osaka-hotel-FSOSAKA0924-d3c82a5643e747518a5a83533d9fdcee.jpg",
@@ -540,7 +571,7 @@
       {
         "group": "conrad",
         "expected": 3,
-        "found": 1
+        "found": 2
       }
     ],
     "errors": [
@@ -553,16 +584,16 @@
         "error": "403 Client Error: Forbidden for url: https://www.hilton.com/en/hotels/osacici-conrad-osaka/gallery/"
       },
       {
+        "url": "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/cb3c860c.jpg?h=800&impolicy=fcrop&w=1200",
+        "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/cb3c860c.jpg?h=800&impolicy=fcrop&w=1200"
+      },
+      {
         "url": "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/69a89a73.jpg?h=800&impolicy=fcrop&w=1200",
         "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/69a89a73.jpg?h=800&impolicy=fcrop&w=1200"
       },
       {
         "page": "https://www.expedia.com/Osaka-Hotels-Conrad-Osaka.h17310194.Hotel-Information",
         "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Osaka-Hotels-Conrad-Osaka.h17310194.Hotel-Information"
-      },
-      {
-        "page": "https://www.fourseasons.com/osaka/photos-and-videos/",
-        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/osaka/photos-and-videos/"
       }
     ],
     "publicUseApproved": false,
@@ -601,7 +632,7 @@
       }
     ],
     "cityCount": 7,
-    "hotelCount": 10,
-    "totalBytes": 2363842
+    "hotelCount": 11,
+    "totalBytes": 2508486
   }
 }
