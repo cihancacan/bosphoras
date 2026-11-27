@@ -1,0 +1,167 @@
+{
+  "name": "Miami",
+  "country": "Vereinigte Staaten",
+  "eyebrow": "Miami · Atlantikküste, Kunst und Design",
+  "heading": "Wo in Miami übernachten? Die besten Viertel, Strände und Luxushotels",
+  "intro": "Morgens am Strand, nachmittags in Galerien und abends am Atlantik essen: Vergleichen Sie fünf Viertel und vier ausgewählte Hotels für Ihren Miami-Aufenthalt.",
+  "editorial": "Nicht jedes Viertel von Miami liegt am Atlantik. South Beach verbindet Art-déco-Architektur mit lebhaften Restaurants. Mid-Beach bietet lange Strände und Designhotels, Surfside eine ruhigere Küste. Brickell liegt auf dem Festland an der Biscayne Bay: Hochhäuser und Stadtleben statt direktem Zugang zum Atlantikstrand. Wynwood und das Design District sind ideale Ziele für Kunst und Architektur.\n\nThe Setai verbindet asiatisch inspiriertes Design und Poolgärten mit der zentralen Lage in South Beach. Das Faena in Mid-Beach setzt auf Kunst, opulente Innenräume und Kultur. The Miami Beach EDITION kombiniert Strandurlaub und lebhafte Gemeinschaftsbereiche; die Zimmerlage spielt eine Rolle. Das Four Seasons Hotel at The Surf Club in Surfside bewahrt die Atmosphäre eines historischen Clubs aus den 1930er-Jahren. Zimmer, Bungalows und Residenzsuiten unterscheiden sich.\n\nFamilien sollten Belegung, Zustellbetten, Verbindungstüren und Poolregeln prüfen. Die atlantische Hurrikansaison dauert von Juni bis November; beachten Sie Wetterwarnungen und Stornobedingungen. Vergleichen Sie Steuern, Resortgebühren, Parkkosten und weitere Leistungen. Verkehr zwischen den Inseln und dem Festland beeinflusst die Transferzeit. Aktuelle Preise und Verfügbarkeit bestätigt der Buchungspartner.",
+  "hotelIntro": "The Setai, Faena, The Miami Beach EDITION und Four Seasons Hotel at The Surf Club: vier Strandhotels im Vergleich nach Lage, Design und Zimmerkategorie.",
+  "areas": [
+    [
+      "South Beach und Collins Avenue",
+      "Art-déco-Straßen, Strandpromenaden und lebhafte Restaurants; ideal für Strand und Erkundungen zu Fuß.",
+      "Prüfen Sie Meer-, Stadt- oder Innenhofblick. Die lebhafte Lage bedeutet nicht, dass jedes Zimmer laut ist."
+    ],
+    [
+      "Mid-Beach und Faena District",
+      "Lange Strände, Designhotels und Kulturveranstaltungen; entspannte Tage und lebendige Abende.",
+      "Prüfen Sie Veranstaltungskalender, Restaurantzeiten und mögliche Geräusche."
+    ],
+    [
+      "Surfside und Bal Harbour",
+      "Ruhigere Strände und elegante Wohnviertel nördlich von Miami Beach.",
+      "Planen Sie den Weg zu Restaurants und Nachtleben in South Beach."
+    ],
+    [
+      "Brickell und Biscayne Bay",
+      "Hochhäuser, Terrassen, Restaurants und Uferpromenaden auf dem Festland; auch für Geschäftsreisen geeignet.",
+      "Buchtblick bedeutet keinen direkten Zugang zum Atlantikstrand."
+    ],
+    [
+      "Wynwood und Design District",
+      "Streetart, Galerien, Mode, Architektur und Gastronomie für einen abwechslungsreichen Tag.",
+      "Beachten Sie Öffnungszeiten und die Wege zwischen den Vierteln."
+    ]
+  ],
+  "experiences": [
+    [
+      "South Beach am frühen Morgen",
+      "Spazieren Sie vor der Tageshitze am Strand und entdecken Sie Art-déco-Fassaden im Morgenlicht."
+    ],
+    [
+      "Ein Abend in Mid-Beach",
+      "Wählen Sie Restaurants und Kulturveranstaltungen und prüfen Sie separate Reservierungen."
+    ],
+    [
+      "Ein Tag im Design District",
+      "Entdecken Sie Architektur und Galerien ohne Zeitdruck."
+    ],
+    [
+      "Ausblicke auf die Biscayne Bay",
+      "Spazieren Sie am Wasser; wählen Sie für Bootsausflüge geeignetes Wetter und einen qualifizierten Anbieter."
+    ],
+    [
+      "Ein ruhiger Tag in Surfside",
+      "Genießen Sie Strand, Spaziergänge und ein langes Mittagessen abseits des Trubels."
+    ]
+  ],
+  "checks": [
+    "Wählen Sie South Beach, Mid-Beach, Surfside oder Brickell nach Ihrem Reisestil.",
+    "Prüfen Sie Zimmerkategorie, Lage, Aussicht und garantierte Ausstattung.",
+    "Vergleichen Sie Steuern, Resortgebühren, Parkkosten und Stornobedingungen.",
+    "Familien sollten Belegung, Kinderbetten, Poolregeln und Verbindungstüren prüfen.",
+    "Planen Sie Transfers ab MIA oder FLL unter Berücksichtigung des Verkehrs.",
+    "Beachten Sie Wetter und Hurrikanwarnungen vor Wasseraktivitäten.",
+    "Prüfen Sie Spa, Veranstaltungen, Transfers und Mahlzeiten separat."
+  ],
+  "hotels": [
+    [
+      "South Beach · Collins Avenue",
+      "Asiatisch inspiriertes Design, Poolgärten und elegante Räume schaffen Ruhe mitten in South Beach. Suiten und Aussichten unterscheiden sich.",
+      "Prüfen Sie Gebäude, Aussicht, Belegung und Spakosten.",
+      "Für ruhiges Design und Strandurlaub.",
+      "Poolgärten und asiatische Ästhetik bieten einen Kontrast zur lebhaften Umgebung. Spa-Fotos sind kein Nachweis eingeschlossener Behandlungen."
+    ],
+    [
+      "Mid-Beach · Collins Avenue",
+      "Faena verbindet theatralische Innenräume, Kunstwerke, Restaurants und Kulturveranstaltungen.",
+      "Prüfen Sie Zimmerkategorie, Veranstaltungen, Geräusche und separate Restaurant- oder Showreservierungen.",
+      "Für Kunst, Design und lebhafte Abende.",
+      "Die künstlerische Gestaltung prägt den Aufenthalt; Veranstaltungen und gastronomische Angebote können gesonderte Reservierungen erfordern."
+    ],
+    [
+      "Mid-Beach · Collins Avenue",
+      "Ein modernes Hotel am Atlantik mit Rückzugsorten und lebhaften Gemeinschaftsbereichen. Bungalows, Suiten und Zimmer haben unterschiedliche Grundrisse.",
+      "Prüfen Sie Etage, Kategorie, Zugang zu Unterhaltungsbereichen und Familienregeln.",
+      "Für Strandurlaub und gesellschaftliches Leben.",
+      "Ein Privatpool gehört nicht zu jeder Kategorie. Prüfen Sie Ausstattung und Lage des konkret gebuchten Bungalows oder Zimmers."
+    ],
+    [
+      "Surfside · 9011 Collins Avenue",
+      "Der historische Surf Club bietet eleganten Strandurlaub in ruhigerer Umgebung. Zimmer, Bungalows und Residenzsuiten unterscheiden sich.",
+      "Prüfen Sie Unterkunftstyp, Meerblick, Kinderbelegung und Ausstattung.",
+      "Für Ruhe am Meer und historische Clubatmosphäre.",
+      "Die Architektur des historischen Clubs gehört zum Charakter des Hotels. Wählen Sie Zimmer, Bungalow oder Residenzsuite nach Belegung und Aussicht."
+    ]
+  ],
+  "faq": [
+    [
+      "Wo sollte man bei der ersten Miami-Reise übernachten?",
+      "South Beach für Strand und Art déco, Mid-Beach für Resorts, Surfside für Ruhe. Brickell liegt auf dem Festland."
+    ],
+    [
+      "Was unterscheidet South Beach, Mid-Beach und Surfside?",
+      "South Beach ist lebhafter, Mid-Beach für Designhotels bekannt und Surfside ruhiger. Fahrzeiten hängen vom Verkehr ab."
+    ],
+    [
+      "Sind The Setai und Faena ähnlich?",
+      "The Setai steht für ruhige asiatische Ästhetik, Faena für auffälliges Design und Kultur. Leistungen variieren nach Kategorie und Datum."
+    ],
+    [
+      "Liegt das Four Seasons at The Surf Club in South Beach?",
+      "Nein, es liegt nördlich davon in Surfside, 9011 Collins Avenue."
+    ],
+    [
+      "Hat jedes Zimmer im EDITION einen Privatpool?",
+      "Nein. Nur bestimmte Bungalow- oder Suitenkategorien bieten einen Privatpool; prüfen Sie die Ausstattung."
+    ],
+    [
+      "Braucht man einen Mietwagen?",
+      "Teile von South Beach und Mid-Beach sind gut zu Fuß erreichbar. Vergleichen Sie für andere Viertel Verkehrsmittel und Parkkosten."
+    ],
+    [
+      "Was ist während der Hurrikansaison wichtig?",
+      "Die atlantische Hurrikansaison dauert von Juni bis November. Beachten Sie amtliche Prognosen, Warnungen und Stornobedingungen."
+    ],
+    [
+      "Wie kann ich diese Hotels buchen?",
+      "Vergleichen Sie Angebote über Bosphoras. Aktuelle Verfügbarkeit, Zahlung, Änderungen, Stornierung und Erstattung bestätigt der Buchungspartner."
+    ]
+  ],
+  "photoCaptions": [
+    "Luftaufnahme von Miami Beach und der Atlantikküste",
+    "Art-déco-Straßen in South Beach",
+    "Atlantikküste von Miami Beach",
+    "Ruhiger Strand in Surfside",
+    "Brickell-Türme an der Biscayne Bay",
+    "Streetart in Wynwood",
+    "Miami von der Biscayne Bay aus",
+    "Architektur im Design District",
+    "South Pointe Park und Küste von Miami Beach"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Pools des The Setai Miami Beach",
+      "Suite mit Meerblick",
+      "Art-déco-Lobby"
+    ],
+    [
+      "Hotelaufnahme des Faena Miami Beach",
+      "Galerieansicht des Faena Miami Beach",
+      "Ansicht des Faena Miami Beach"
+    ],
+    [
+      "Premier Bungalow mit Privatpool und Meerblick",
+      "Interieur eines Bungalows am Atlantik",
+      "Pool des Miami Beach EDITION"
+    ],
+    [
+      "Pool und historische Architektur des Surf Club",
+      "Poolbereich des Surf Club",
+      "Zimmer im Four Seasons Hotel at The Surf Club"
+    ]
+  ],
+  "seoTitle": "Miami: Wo übernachten? Beste Viertel und Luxushotels",
+  "hotelSeoTitle": "Die besten Luxushotels in Miami Beach: Setai, Faena und mehr",
+  "seoDescription": "Vergleichen Sie South Beach, Mid-Beach, Surfside und Brickell. Entdecken Sie vier Luxushotels in Miami, Zimmerkategorien und Buchungstipps."
+}
