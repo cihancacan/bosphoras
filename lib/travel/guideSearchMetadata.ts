@@ -92,3 +92,58 @@ const priorityDestinationDescriptions:Record<string,Record<'fr'|'en',string>>={
 export function destinationSearchDescription(locale:TravelLocale,slug:string,fallback:string){
  return locale==='fr'||locale==='en' ? priorityDestinationDescriptions[slug]?.[locale]||fallback : fallback;
 }
+
+// Commercial hotel-guide snippets, grounded in the actual curated selection.
+const priorityHotelDescriptions:Record<string,Record<'fr'|'en',string>>={
+  "istanbul": {
+    "en": "Compare The Peninsula, Çırağan Palace, Four Seasons and six more luxury Istanbul hotels. Check room views, neighborhoods and booking conditions.",
+    "fr": "Comparez The Peninsula, Çırağan Palace, Four Seasons et six autres hôtels de luxe à Istanbul : vues, quartiers et conditions de réservation."
+  },
+  "paris": {
+    "en": "Compare Cheval Blanc, George V, Le Bristol and Mandarin Oriental Lutetia. Explore locations and room choices, then check hotel prices for your dates.",
+    "fr": "Comparez Cheval Blanc, George V, Le Bristol et Mandarin Oriental Lutetia : emplacement, chambres et prix des hôtels à vos dates."
+  },
+  "dubai": {
+    "en": "Compare The Lana, One&Only One Za'abeel, Atlantis The Royal and Jumeirah Al Naseem. Choose between city and beach hotels in Dubai.",
+    "fr": "Comparez The Lana, One&Only One Za'abeel, Atlantis The Royal et Jumeirah Al Naseem : hôtels urbains et séjours balnéaires à Dubaï."
+  },
+  "new-york": {
+    "en": "Compare Aman New York, The Fifth Avenue Hotel, The Greenwich and The Lowell. Explore neighborhoods, room choices and booking tips.",
+    "fr": "Comparez Aman New York, The Fifth Avenue Hotel, The Greenwich et The Lowell : quartiers, chambres et conseils avant de réserver."
+  },
+  "miami": {
+    "en": "Compare The Setai, Faena, Miami Beach EDITION and Four Seasons Surf Club. Find the right Miami Beach luxury hotel for your dates.",
+    "fr": "Comparez The Setai, Faena, Miami Beach EDITION et Four Seasons Surf Club pour choisir votre hôtel de luxe à Miami Beach."
+  },
+  "los-angeles": {
+    "en": "Compare Hotel Bel-Air, The Beverly Hills Hotel, Sunset Tower and Shutters on the Beach. Find a luxury hotel from Beverly Hills to Santa Monica.",
+    "fr": "Comparez Hotel Bel-Air, The Beverly Hills Hotel, Sunset Tower et Shutters on the Beach, de Beverly Hills à Santa Monica."
+  },
+  "bali": {
+    "en": "Compare Four Seasons Sayan, Bvlgari Resort, Raffles Bali and The Legian Seminyak. Find a luxury resort for your ideal Bali stay.",
+    "fr": "Comparez Four Seasons Sayan, Bvlgari Resort, Raffles Bali et The Legian Seminyak : quatre expériences de séjour de luxe à Bali."
+  },
+  "maldives": {
+    "en": "Compare Soneva Jani, Cheval Blanc Randheli, One&Only Reethi Rah and Four Seasons Landaa Giraavaru: villas, atolls and transfers.",
+    "fr": "Comparez Soneva Jani, Cheval Blanc Randheli, One&Only Reethi Rah et Four Seasons Landaa Giraavaru : villas, atolls et transferts."
+  },
+  "tokyo": {
+    "en": "Compare Aman Tokyo, Bvlgari, Park Hyatt and 1 Hotel Tokyo. Explore hotel locations, room views and airport logistics before booking.",
+    "fr": "Comparez Aman Tokyo, Bvlgari, Park Hyatt et 1 Hotel Tokyo : quartiers, vues des chambres et accès depuis les aéroports."
+  },
+  "phuket": {
+    "en": "Compare Amanpuri, Trisara, Rosewood Phuket and Keemala. Explore beaches, villa settings and practical booking tips for your luxury stay.",
+    "fr": "Comparez Amanpuri, Trisara, Rosewood Phuket et Keemala : plages, villas et conseils pour choisir votre séjour de luxe à Phuket."
+  },
+  "bodrum": {
+    "en": "Compare Mandarin Oriental, The Bodrum EDITION, Maxx Royal and Six Senses Kaplankaya. Choose the right resort and bay for your stay.",
+    "fr": "Comparez Mandarin Oriental, The Bodrum EDITION, Maxx Royal et Six Senses Kaplankaya : choisissez votre resort et votre baie."
+  },
+  "antalya": {
+    "en": "Compare Regnum Carya, Cullinan Belek, Rixos Premium Belek and Maxx Royal Kemer. Choose a luxury resort for beach, family or golf trips.",
+    "fr": "Comparez Regnum Carya, Cullinan Belek, Rixos Premium Belek et Maxx Royal Kemer : resorts de luxe pour plage, famille ou golf."
+  }
+};
+export function hotelSearchDescription(locale:TravelLocale,slug:string,fallback:string){
+ return locale==='fr'||locale==='en'?priorityHotelDescriptions[slug]?.[locale]||fallback:fallback;
+}
