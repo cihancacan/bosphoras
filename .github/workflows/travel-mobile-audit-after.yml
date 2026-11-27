@@ -1,0 +1,36 @@
+name: Measure live mobile travel performance after optimization
+on:
+  push:
+    branches: [feature/travel-mobile-audit-after]
+    paths: ['.github/workflows/travel-mobile-audit-after.yml']
+permissions:
+  contents: read
+jobs:
+  mobile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {name: paris-guide, path: /en/travel/destinations/paris}
+          - {name: dubai-guide, path: /ar/travel/destinations/dubai}
+          - {name: istanbul-hotels, path: /travel/hotels/istanbul}
+    steps:
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Confirm release and audit mobile
+        run: |
+          set -euo pipefail
+          curl -fsS https://www.bosphoras.com/en/travel/destinations/paris -o /tmp/paris.html
+          grep -q 'paris-seine-hero-mobile.webp' /tmp/paris.html
+          mkdir -p reports
+          npx --yes lighthouse@12 "https://www.bosphoras.com${{ matrix.path }}" --output=json --output-path="reports/${{ matrix.name }}.json" --chrome-flags="--headless --no-sandbox" --only-categories=performance,seo,accessibility --quiet
+          node -e 'const r=require("./reports/${{ matrix.name }}.json"); if(r.runtimeError)throw Error(r.runtimeError.message); console.log(JSON.stringify({url:r.finalDisplayedUrl,performance:r.categories.performance.score,seo:r.categories.seo.score,accessibility:r.categories.accessibility.score,LCP:r.audits["largest-contentful-paint"].displayValue,CLS:r.audits["cumulative-layout-shift"].displayValue,TBT:r.audits["total-blocking-time"].displayValue,opportunities:Object.values(r.audits).filter(a=>a.details?.type==="opportunity"&&a.details?.overallSavingsMs>150).map(a=>({id:a.id,displayValue:a.displayValue,savingsMs:a.details.overallSavingsMs}))},null,2))'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lighthouse-after-${{ matrix.name }}
+          path: reports/
+          if-no-files-found: warn
+          retention-days: 7
