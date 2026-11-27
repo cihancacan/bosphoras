@@ -3011,6 +3011,37 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-11",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Marina_del_Reial_Club_Mar%C3%ADtim_de_Barcelona,_Port_Vell.jpg",
+        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Marina_del_Reial_Club_Mar%C3%ADtim_de_Barcelona%2C_Port_Vell.jpg/960px-Marina_del_Reial_Club_Mar%C3%ADtim_de_Barcelona%2C_Port_Vell.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20261010172239",
+        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Marina_del_Reial_Club_Mar%C3%ADtim_de_Barcelona%2C_Port_Vell.jpg/960px-Marina_del_Reial_Club_Mar%C3%ADtim_de_Barcelona%2C_Port_Vell.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20261010172239",
+        "originalAlt": "File:Marina del Reial Club Marítim de Barcelona, Port Vell.jpg",
+        "originalCaption": "",
+        "credit": "Turisme de Barcelona",
+        "publisher": "Turisme de Barcelona",
+        "hotel": null,
+        "localPath": "/images/travel/barcelona-premium/destination/scene-11.webp",
+        "sourceSHA256": "5c8b497f50913c7809de328f077e4f96a280ba6b6a423cdd5e6948c8254fcd73",
+        "webpSHA256": "bd12e5ae7161912b160872f65826f986477cec63b6577e0dcb4ae290fcae43d0",
+        "sourcePixels": [
+          960,
+          640
+        ],
+        "webpPixels": [
+          960,
+          640
+        ],
+        "webpBytes": 149240,
+        "pixelFingerprint": "0b070e6cbcb80f0f",
+        "candidateSubject": "port vell|port olimpic",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -3358,45 +3389,12 @@
     ],
     "gaps": [
       {
-        "group": "city",
-        "expected": 9,
-        "found": 8
-      },
-      {
         "group": "majestic",
         "expected": 3,
         "found": 2
       }
     ],
     "errors": [
-      {
-        "url": "https://commons.wikimedia.org/wiki/Category:Marina_Port_Vell",
-        "error": "cannot identify image file <_io.BytesIO object at 0x732868352ed0>"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Category:Port_Vell",
-        "error": "cannot identify image file <_io.BytesIO object at 0x732868ae6e80>"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona,_Spain.jpg",
-        "error": "cannot identify image file <_io.BytesIO object at 0x73286163d990>"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:WhatLinksHere/File:Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona,_Spain.jpg",
-        "error": "404 Client Error: Not Found for url: https://commons.wikimedia.org/wiki/Special:WhatLinksHere/File:Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona,_Spain.jpg"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:RecentChangesLinked/File:Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona,_Spain.jpg",
-        "error": "404 Client Error: Not Found for url: https://commons.wikimedia.org/wiki/Special:RecentChangesLinked/File:Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona,_Spain.jpg"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona%2C_Spain.jpg",
-        "error": "400 Client Error: Use thumbnail sizes listed on https://w.wiki/GHai for url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Aerial_view_of_Barceloneta_Beach_and_Port_Vell"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Category:Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia",
-        "error": "cannot identify image file <_io.BytesIO object at 0x73286163d3f0>"
-      },
       {
         "page": "https://myconciergehotel.com/en/hotel/majestic-hotel-and-spa-barcelona",
         "error": "503 Server Error: Service Unavailable for url: https://myconciergehotel.com/en/hotel/majestic-hotel-and-spa-barcelona"
@@ -3569,9 +3567,9 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 8,
+    "cityCount": 9,
     "hotelCount": 11,
-    "totalBytes": 2617948
+    "totalBytes": 2767188
   },
   "cancun": {
     "destinationScenes": [
