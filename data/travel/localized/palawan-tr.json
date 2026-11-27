@@ -1,0 +1,168 @@
+{
+  "name": "Palawan",
+  "country": "Filipinler",
+  "eyebrow": "Palawan · Lagünler, adalar ve mercan resifleri",
+  "heading": "Palawan'da nerede kalınır? Önce adayı, sonra oteli seçin",
+  "intro": "El Nido'nun turkuaz lagünleri, Coron'un batıkları ve resifleri, San Vicente'nin uzun plajları: lüks tatil coğrafyayı anlamakla başlar.",
+  "editorial": "Palawan tek bir plaj veya havalimanı değildir. Bacuit Körfezi ve El Nido, kuzeyde Coron ve Busuanga, daha sakin San Vicente ve Puerto Princesa farklı kıyıları kapsar. Big Lagoon fotoğrafı Coron'daki odanın manzarasını veya olanaklarını göstermez. Önce bölgeyi, sonra adayı ve villayı seçin.\n\nEl Nido'nun kireçtaşı kayaları ve korunan lagünlerine tekneyle ulaşılır. Bazı alanlarda izin, rezervasyon ve yetkili operatör gerekir; kötü hava seferleri iptal edebilir. Bütün lagünleri bir güne sıkıştırmayın. Lagen Island, 2026'daki kapsamlı yenilemeden sonra eski 51 yerine 42 konaklama birimiyle açıldı. Su üstü villaları ve orman odaları farklı deneyimlerdir; su üstünde olmak özel havuz veya güvenli yüzme garantisi değildir. El Nido Resorts'a ait Pangulasian Island uzun plajı ve Bacuit manzaralarıyla öne çıkar. Beach, Canopy ve Pool Villas farklı plan ve olanaklara sahiptir; tekne transferi deniz koşullarına bağlıdır.\n\nCauayan Boutique Private Island sekiz kategoride 30 villalı butik resorttur. Lagoon ve Water Villas, Cauayan Pool Villas'tan farklıdır. Havuzu kategoriye göre doğrulayın. Resmî tanıtımda belirli şartlarla ortak araç ve tekne transferi yer alır; özel tekne ek ücretli olabilir. Kötü hava alternatiflerini, yemek ve etkinlik kurallarını önceden öğrenin.\n\nEski adı Club Paradise Palawan olan Discovery Coron, Bacuit'te değil Busuanga bölgesindeki Dimakya Adası'ndadır. Kuzey takımadaları batıklar, kireçtaşı gölleri ve deniz yaşamıyla bilinir. Batık dalışlarında deneyim, sertifika ve uzman rehber gerekebilir. Kısa tatilde Coron veya El Nido'yu seçin; ikisini birleştirmek ayrı rota ister. Batı kıyısında San Vicente Long Beach ve Port Barton adacıkları daha sakin, farklı kara ulaşımı gerektiren seçeneklerdir. Puerto Princesa ve Sabang, izinli ve zamanlı ziyaret gerektiren Yeraltı Nehri için ayrı başlangıç noktasıdır.\n\nOtel adresine göre Lio (ENI), Francisco B. Reyes (USU) veya Puerto Princesa (PPS) havalimanını seçin. Uçuş, iskele, bagaj ve tekneyi doğrulayın. Kurak mevsimde bile sakin deniz ve berrak su garanti değildir. Aileler can yelekleri, sağlık hizmetleri, yaş kuralları ve hava alternatiflerini kontrol etmelidir. Pamalican'daki Amanpulo ayrı rehberde yer alır. Bosphoras bağımsız editoryal seçki sunar; doğrulanmış fiyat, yeniden satış hakkı, ödeme veya otel hizmeti taahhüdü vermez.",
+  "hotelIntro": "Dört ayrı adres: yenilenen Lagen, plajıyla Pangulasian, butik Cauayan ve kuzeyde Discovery Coron.",
+  "areas": [
+    [
+      "Bacuit · El Nido'nun kireçtaşı adaları",
+      "Zümrüt lagünler ve kayalıklar Lagen, Pangulasian ve Cauayan'ı çevreler; tekne rotaları farklıdır.",
+      "İzin, operatör ve hava koşullarını kontrol edin."
+    ],
+    [
+      "El Nido ana karası · Lio ve Caalan",
+      "Havalimanı, şehir ve restoranlar; ada resortundan farklıdır.",
+      "İskele ve sonraki transferi doğrulayın."
+    ],
+    [
+      "Coron ve Busuanga · Dimakya Adası",
+      "El Nido'dan uzak kuzey takımadaları, batıklar, göller ve Discovery Coron.",
+      "Dalış için deneyim, rehber ve uygun koşullar gerekir."
+    ],
+    [
+      "San Vicente ve Port Barton",
+      "Long Beach ve sakin adacıklar ayrı ulaşım ve konaklama gerektirir.",
+      "Her El Nido otelinden kolay günübirlik gezi değildir."
+    ],
+    [
+      "Puerto Princesa ve Sabang",
+      "Milli park ve Yeraltı Nehri için güneyde üs.",
+      "İzinleri, parkın durumunu ve ziyaret saatini kontrol edin."
+    ]
+  ],
+  "experiences": [
+    [
+      "Big Lagoon tekne gezisi",
+      "Yerel kurallar ve hava koşullarına göre planlayın; giriş garanti değildir."
+    ],
+    [
+      "Bacuit Körfezi'nde villa seçimi",
+      "Water, Beach ve Pool Villas planlarını karşılaştırın."
+    ],
+    [
+      "Coron batık dalışları",
+      "Yetkili uzman seçin; derinlik, sertifika ve koşulları kontrol edin."
+    ],
+    [
+      "Port Barton sakin plajları",
+      "Sorumlu yerel operatörlerle acele etmeden keşfedin."
+    ],
+    [
+      "Yeraltı Nehri",
+      "Puerto Princesa ve Sabang için ayrı plan ve gerekli izinleri düzenleyin."
+    ]
+  ],
+  "checks": [
+    "Kısa tatilde El Nido veya Coron'u seçin.",
+    "Otel konumuna göre ENI, USU veya PPS seçin.",
+    "Uçuş, iskele, bagaj, tekne ve hava alternatiflerini doğrulayın.",
+    "Water Villa her zaman havuzlu değildir; kategoriyi kontrol edin.",
+    "Korunan lagünlerin izin ve kurallarına uyun.",
+    "Coron dalışında sertifika ve uzman rehberi teyit edin.",
+    "Pamalican Amanpulo ayrı rehberdedir.",
+    "Rehber fiyat, rezervasyon veya sağlayıcı hizmetini doğrulamaz."
+  ],
+  "hotels": [
+    [
+      "El Nido · Lagen · Bacuit",
+      "2026'da yenilenen 42 birimli resort orman, kayalık ve koy arasındadır. Su üstü villaları ve orman odaları farklıdır.",
+      "Kategori, balkon, aktivite ve tekneyi karşılaştırın; su üstü villa havuz garantisi değildir.",
+      "Orman ve koy arasında yenilenmiş resort için.",
+      ""
+    ],
+    [
+      "El Nido · Pangulasian · Bacuit",
+      "Uzun plaj, orman ve Bacuit kireçtaşı adaları manzaralı özel ada; şehirden uzak sakin tatil.",
+      "Beach ve Pool Villas farklıdır; kategori ve tekne transferini kontrol edin.",
+      "Plaj ve özel ada villaları için.",
+      ""
+    ],
+    [
+      "Cauayan Adası · El Nido",
+      "Sekiz kategoride 30 villa; Lagoon, Water ve Cauayan Pool Villas farklıdır.",
+      "Her kategoride havuz yoktur; ortak transfer ve hizmetleri doğrulayın.",
+      "Küçük özel adada mahremiyet için.",
+      ""
+    ],
+    [
+      "Dimakya · Busuanga · Coron",
+      "Eski Club Paradise Palawan, Dimakya'da plaj, dalış ve kuzey Palawan'a odaklanır, El Nido lagünlerine değil.",
+      "USU transferi, deniz ve dalış yeterliliklerini teyit edin.",
+      "Kuzey takımadaları ve deniz aktiviteleri için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Palawan, El Nido ve Coron aynı yer mi?",
+      "Hayır, Palawan büyük ada eyaletidir; El Nido ve Bacuit, Coron ve Busuanga'dan havalimanı, transfer ve etkinliklerle ayrılır."
+    ],
+    [
+      "Hangi lüks oteller seçildi?",
+      "Lagen Island Resort, Pangulasian Island Resort, Cauayan Boutique Private Island ve Discovery Coron; müsaitlik doğrulanmış değildir."
+    ],
+    [
+      "Amanpulo neden yok?",
+      "Pamalican'dadır ve Bosphoras'ın 88 destinasyonu içinde ayrı rehberi vardır."
+    ],
+    [
+      "Hangi havalimanı seçilmeli?",
+      "Lio ENI El Nido, Francisco B. Reyes USU Coron ve Busuanga, PPS güney içindir; uçuş ve transferi doğrulayın."
+    ],
+    [
+      "Yeni Lagen su üstü villalarının hepsi havuzlu mu?",
+      "Hayır, 2026 yenilemesi sonrası 42 farklı birim vardır; kesin villayı kontrol edin."
+    ],
+    [
+      "Cauayan Lagoon Villa havuzlu mu?",
+      "Her zaman değil; sekiz kategori arasında Lagoon, Water ve Pool Villas bulunur."
+    ],
+    [
+      "Hazırlıksız lagün gezisi ve batık dalışı yapılır mı?",
+      "Lagünler izin ve yetkili operatör, batıklar uygun deneyim ve rehber gerektirebilir."
+    ],
+    [
+      "Bosphoras ödeme ve rezervasyon yönetiyor mu?",
+      "Bağımsız rehberdir; müsaitlik, fiyat, yeniden satış, ödeme ve otel hizmeti doğrulanmış değildir."
+    ]
+  ],
+  "photoCaptions": [
+    "El Nido Bacuit Big Lagoon",
+    "Bacuit Körfezi kireçtaşı adaları",
+    "Bacuit'te geleneksel tekne",
+    "Kuzey Palawan Coron Twin Lagoon",
+    "Gün batımında Port Barton kıyısı",
+    "Akşam ışığında San Vicente plajı",
+    "Yeraltı Nehri yakınındaki Sabang plajı",
+    "El Nido Körfezi kıyısı",
+    "Coron Barracuda Lake lagün girişi"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Yenilenen Lagen Island havadan",
+      "Lagen Island Clubhouse",
+      "Yenilenen Lagen Island spa"
+    ],
+    [
+      "Pangulasian Pool Villa dışı",
+      "Pangulasian Pool Villa manzarası",
+      "Pangulasian gün batımı"
+    ],
+    [
+      "Cauayan Boutique Private Island resmî fotoğrafı",
+      "Cauayan mimarisi ve çevresi",
+      "Cauayan ada manzarası ve konaklama"
+    ],
+    [
+      "Dimakya'da Discovery Coron",
+      "Discovery Coron havuzu ve olanakları",
+      "Discovery Coron deniz manzaralı konaklama"
+    ]
+  ],
+  "seoTitle": "Palawan'da Nerede Kalınır? El Nido ve Coron Lüks Otelleri",
+  "hotelSeoTitle": "Palawan Otelleri: Lagen, Pangulasian, Cauayan ve Discovery Coron",
+  "seoDescription": "Palawan'da dört ada resortunu karşılaştırın: El Nido, Coron, özel villalar, lagünler, havalimanları ve tekne transferleri."
+}

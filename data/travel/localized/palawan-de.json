@@ -1,0 +1,168 @@
+{
+  "name": "Palawan",
+  "country": "Philippinen",
+  "eyebrow": "Palawan · Lagunen, Inseln und Korallenriffe",
+  "heading": "Wo auf Palawan übernachten? Erst die Insel, dann das Resort",
+  "intro": "Türkisfarbene Lagunen von El Nido, Wracks und Riffe von Coron, lange Strände von San Vicente: Luxusurlaub beginnt mit der Geografie.",
+  "editorial": "Palawan ist weder ein einzelner Strand noch ein einziger Flughafen. Die Provinz umfasst Bacuit-Bucht und El Nido, Coron und Busuanga im Norden sowie das ruhigere San Vicente und Puerto Princesa. Ein Foto der Big Lagoon belegt weder Aussicht noch Ausstattung eines Zimmers in Coron. Erst Region, dann Insel und Villa wählen.\n\nEl Nido ist für Kalksteinfelsen und geschützte Lagunen bekannt, die per Boot erreichbar sind. Manche Orte erfordern Genehmigung, Reservierung und zugelassene Anbieter; schlechtes Wetter kann Ausfahrten verhindern. Nicht alle Lagunen an einem Tag einplanen. Lagen Island eröffnete nach umfassender Renovierung 2026 mit 42 statt zuvor 51 Einheiten. Überwasservillen und Waldzimmer bieten unterschiedliche Erlebnisse; über Wasser bedeutet weder Privatpool noch sicheren direkten Badezugang. Pangulasian Island, ebenfalls El Nido Resorts, bietet langen Strand und Bacuit-Panoramen. Beach, Canopy und Pool Villas unterscheiden sich; Bootstransfers hängen vom Seegang ab.\n\nCauayan Boutique Private Island bietet 30 Villen in acht Kategorien. Lagoon und Water Villas unterscheiden sich von Cauayan Pool Villas. Pool anhand der Kategorie bestätigen. Laut offizieller Beschreibung ist ein gemeinsamer Auto- und Bootstransfer unter bestimmten Bedingungen enthalten; Privatboote können extra kosten. Wetteralternativen, Verpflegung und Aktivitäten vorab klären.\n\nDiscovery Coron, früher Club Paradise Palawan, liegt auf Dimakya bei Busuanga, nicht in Bacuit. Der Norden ist für Wracks, Kalksteinseen und Meeresleben bekannt. Wracktauchen kann Erfahrung, Zertifizierung und qualifizierte Führung erfordern. Für kurze Reisen El Nido oder Coron wählen; Kombination erfordert eigene Route. Long Beach in San Vicente und Port Barton im Westen bieten ruhigeren Rhythmus und andere Landlogistik. Puerto Princesa und Sabang sind eigene Ausgangspunkte zum Underground River mit Genehmigungen und gebuchten Zeitfenstern.\n\nFlughafen Lio (ENI), Francisco B. Reyes (USU) oder Puerto Princesa (PPS) nach Hoteladresse wählen. Flug, Pier, Gepäck und Boot bestätigen. Auch Trockenzeit garantiert weder ruhiges Meer noch klares Wasser. Familien sollten Rettungsmittel, medizinische Versorgung, Altersregeln und Wetteralternativen prüfen. Amanpulo auf Pamalican hat einen eigenen Guide. Bosphoras bietet eine unabhängige redaktionelle Auswahl ohne bestätigte Preise, Weiterverkaufsrechte, Zahlungsabwicklung oder Hotelservice.",
+  "hotelIntro": "Vier eigenständige Hotels: renoviertes Lagen, Strandresort Pangulasian, intimes Cauayan und Discovery Coron im Norden.",
+  "areas": [
+    [
+      "Bacuit · Kalksteininseln von El Nido",
+      "Smaragdlagunen und Felsen umgeben Lagen, Pangulasian und Cauayan; eigene Bootsrouten.",
+      "Genehmigungen, Anbieter und Wetter prüfen."
+    ],
+    [
+      "El Nido Festland · Lio und Caalan",
+      "Flughafen, Stadt und Restaurants; anderes Konzept als Inselresort.",
+      "Pier und Anschlussfahrt klären."
+    ],
+    [
+      "Coron und Busuanga · Dimakya",
+      "Nördlicher Archipel mit Wracks, Seen und Discovery Coron, fern von El Nido.",
+      "Tauchen erfordert Erfahrung, Führung und geeignete Bedingungen."
+    ],
+    [
+      "San Vicente und Port Barton",
+      "Long Beach und ruhige Inseln mit eigener Logistik und Unterkunft.",
+      "Kein einfacher Tagesausflug von jedem El-Nido-Hotel."
+    ],
+    [
+      "Puerto Princesa und Sabang",
+      "Südlicher Ausgangspunkt für Nationalpark und Underground River.",
+      "Genehmigungen, Parkbetrieb und Besuchszeit prüfen."
+    ]
+  ],
+  "experiences": [
+    [
+      "Big Lagoon per Boot",
+      "Nach lokalen Regeln und Wetter planen; Zugang nicht garantiert."
+    ],
+    [
+      "Villa in der Bacuit-Bucht",
+      "Grundrisse von Water, Beach und Pool Villas vergleichen."
+    ],
+    [
+      "Wracktauchen in Coron",
+      "Zugelassene Spezialisten wählen; Tiefe, Zertifikate und Bedingungen prüfen."
+    ],
+    [
+      "Ruhige Strände Port Bartons",
+      "Mit verantwortungsvollen Anbietern entspannt reisen."
+    ],
+    [
+      "Underground River",
+      "Puerto Princesa und Sabang separat mit Genehmigungen planen."
+    ]
+  ],
+  "checks": [
+    "Bei kurzer Reise El Nido oder Coron wählen.",
+    "ENI, USU oder PPS nach Hotellage wählen.",
+    "Flug, Pier, Gepäck, Boot und Wetteralternativen bestätigen.",
+    "Water Villa hat nicht zwingend Pool; Kategorie prüfen.",
+    "Genehmigungen und Lagunenschutzregeln beachten.",
+    "Für Coron Tauchzertifikate und professionelle Führung prüfen.",
+    "Amanpulo auf Pamalican hat eigenen Guide.",
+    "Guide bestätigt keine Preise, Buchung oder Anbieterleistungen."
+  ],
+  "hotels": [
+    [
+      "El Nido · Lagen · Bacuit",
+      "2026 renoviertes Resort mit 42 Einheiten zwischen Wald, Felsen und Bucht. Überwasservillen und Waldzimmer unterscheiden sich.",
+      "Kategorien, Balkone, Aktivitäten und Bootstransfer vergleichen; Überwasservilla garantiert keinen Pool.",
+      "Für renoviertes Resort zwischen Wald und Bucht.",
+      ""
+    ],
+    [
+      "El Nido · Pangulasian · Bacuit",
+      "Privatinsel mit langem Strand, Wald und Blick auf Bacuit-Kalksteininseln; Ruhe abseits der Stadt.",
+      "Beach und Pool Villas unterscheiden sich; Kategorie und Boot prüfen.",
+      "Für Strand und private Inselvillen.",
+      ""
+    ],
+    [
+      "Cauayan · El Nido",
+      "Kleine Insel mit 30 Villen in acht Kategorien, darunter Lagoon, Water und Cauayan Pool Villas.",
+      "Nicht alle mit Pool; gemeinsamen Transfer und Leistungen bestätigen.",
+      "Für intime Privatinsel.",
+      ""
+    ],
+    [
+      "Dimakya · Busuanga · Coron",
+      "Discovery Coron, früher Club Paradise Palawan, auf Dimakya mit Strand, Tauchen und Nord-Palawan statt El-Nido-Lagunen.",
+      "Transfer ab USU, Seegang und Tauchqualifikation bestätigen.",
+      "Für nördlichen Archipel und Meeresaktivitäten.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Sind Palawan, El Nido und Coron dasselbe?",
+      "Nein, Palawan ist eine große Inselprovinz; Flughäfen, Transfers und Aktivitäten unterscheiden El Nido/Bacuit von Coron/Busuanga."
+    ],
+    [
+      "Welche Luxushotels sind ausgewählt?",
+      "Lagen Island Resort, Pangulasian Island Resort, Cauayan Boutique Private Island und Discovery Coron; keine bestätigte Verfügbarkeit."
+    ],
+    [
+      "Warum fehlt Amanpulo?",
+      "Es liegt auf Pamalican, mit eigenem Guide unter den 88 Bosphoras-Zielen."
+    ],
+    [
+      "Welcher Flughafen?",
+      "Lio ENI für El Nido, Francisco B. Reyes USU für Coron/Busuanga, PPS für Süden; Flüge und Transfers prüfen."
+    ],
+    [
+      "Haben alle neuen Lagen-Überwasservillen Pools?",
+      "Nein, nach Renovierung 2026 gibt es 42 Einheiten verschiedener Kategorien; konkrete Villa prüfen."
+    ],
+    [
+      "Hat Cauayan Lagoon Villa einen Pool?",
+      "Nicht zwingend; acht Kategorien umfassen Lagoon, Water und ausgewiesene Pool Villas."
+    ],
+    [
+      "Lagunen und Wracktauchen ohne Vorbereitung?",
+      "Lagunen können Genehmigungen und zugelassene Anbieter erfordern; Wracktauchen Erfahrung und Führung."
+    ],
+    [
+      "Verarbeitet Bosphoras Zahlungen und Buchungen?",
+      "Unabhängiger Guide ohne bestätigte Verfügbarkeit, Preise, Weiterverkaufsrechte, Zahlungen oder Hotelservice."
+    ]
+  ],
+  "photoCaptions": [
+    "Big Lagoon im Bacuit-Archipel El Nido",
+    "Kalksteininseln der Bacuit-Bucht",
+    "Traditionelles Boot in Bacuit",
+    "Twin Lagoon Coron im Norden Palawans",
+    "Port-Barton-Küste bei Sonnenuntergang",
+    "San-Vicente-Strand im Abendlicht",
+    "Sabang-Strand beim Underground River",
+    "Ufer der Bucht El Nido",
+    "Lagunen-Eingang Barracuda Lake Coron"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Renoviertes Lagen Island aus der Luft",
+      "Clubhouse Lagen Island",
+      "Spa des renovierten Lagen Island"
+    ],
+    [
+      "Pool Villa Pangulasian außen",
+      "Blick aus Pool Villa Pangulasian",
+      "Sonnenuntergang auf Pangulasian"
+    ],
+    [
+      "Offizielles Foto Cauayan Boutique Private Island",
+      "Architektur und Umgebung Cauayan",
+      "Insellandschaft und Unterkunft Cauayan"
+    ],
+    [
+      "Discovery Coron auf Dimakya",
+      "Pool und Ausstattung Discovery Coron",
+      "Unterkunft mit Meerblick Discovery Coron"
+    ]
+  ],
+  "seoTitle": "Palawan: Luxushotels auf El Nido und Coron, Philippinen",
+  "hotelSeoTitle": "Hotels auf Palawan: Lagen, Pangulasian, Cauayan und Discovery Coron",
+  "seoDescription": "Vergleichen Sie vier Inselresorts auf Palawan: El Nido, Coron, private Villen, Lagunen, Flughäfen und Bootstransfers."
+}
