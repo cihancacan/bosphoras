@@ -1,0 +1,168 @@
+{
+  "name": "Sentosa",
+  "country": "Singapur",
+  "eyebrow": "Singapur · Ada villaları, plajlar ve marina",
+  "heading": "Sentosa'da nerede kalınır? Dört farklı ada tatili",
+  "intro": "Capella'nın orman bahçeleri, Raffles'ın özel villaları, The Barracks'ın tarihî atmosferi ve W'nun hareketli marinası dört farklı ada deneyimi sunar.",
+  "editorial": "Sentosa, Singapur iş merkezinin devamı değildir. HarbourFront'tan geçilen adada düzenlenmiş plajlar, kıyı ormanları, tarihî savunma yapıları, aile eğlenceleri ve ayrı bir yat marinası bulunur. Sürekli Marina Bay'e gidip gelmekten çok doğa ve su kenarında dinlenmeye uygundur. Önce otel konumunu, sonra oda kategorisini seçin.\n\nCapella Singapore, 30 akrelik tropik arazide restore edilmiş iki 19. yüzyıl Tanah Merah bungalovu ile Foster + Partners'ın çağdaş mimarisini birleştirir. 113 oda, süit, villa ve malikâne vardır. Premier Garden ve Seaview odaları özel havuzlu villalarla aynı değildir; deniz manzarası doğrudan kumlu plaja çıkış garantilemez. Plan, eğim, patika ve mahremiyeti doğrulayın.\n\nRaffles Sentosa Singapore, ormanlık yamaçta her biri özel havuzlu ve teraslı 62 villa sunar. Merkezdeki tarihî Raffles Singapore'dan ayrıdır. Alan, iç basamaklar, yön ve hizmetler değişir. Çocuklarla havuz derinliği, bariyer, kapasite ve bağlantılı villa seçeneklerini kontrol edin. The Barracks Hotel Sentosa 1904'ten kalma restore askerî binalarda 40 oda ve süitten oluşan butik oteldir. Yalnızca bazı zemin kat kategorileri doğrudan havuz erişimi ve yarı özel jakuzi sunar. Yatak, kapasite ve erişimi doğrulayın.\n\nW Singapore – Sentosa Cove, yat marinasında yenilenen 240 oda ve süit, WET Deck havuzu, restoranlar ve wellness sunar. Marina manzarası kumlu plaja çıkış değildir; Siloso, Palawan ve Tanjong için çoğunlukla ulaşım gerekir. Gürültü, manzara ve gerçek mesafeleri karşılaştırın.\n\nSiloso daha hareketli, Palawan aile yürüyüşleri ve küçük adaya köprü, Tanjong büyük etkinlikler dışında daha sakindir. Hava, su kalitesi ve yüzme tavsiyelerini kontrol edin. Fort Siloso kıyı savunma tarihini anlatır; Imbiah teleferik için uygundur. Resorts World Sentosa ve eğlencelerinin ayrı biletleri ve saatleri vardır; konaklamaya dahil olduğunu varsaymayın.\n\nTropik yağmur her mevsim mümkündür; kapalı alan alternatifi planlayın. Çocuklarla basamak, bariyer ve havuz gözetimi önemlidir. Changi transferi trafik ve otel girişine bağlıdır. Sentosa Express, otobüs, yürüyüş yolları ve teleferik farklı noktaları bağlar; bagaj veya bebek arabasıyla önceden ayarlanmış araç rahat olabilir. Üç–dört gece plaj, tarih ve dinlenme için uygundur. Marina Bay ve Orchard ayrı şehir rehberindedir. Bosphoras'ta karşılaştırın; fiyat, kategori, manzara, vergi, aile kuralları, hizmet, iptal ve destek yetkili sağlayıcıya bağlıdır.",
+  "hotelIntro": "Bahçeli malikâne için Capella, havuzlu villa için Raffles, tarihî atmosfer için The Barracks, marina için W.",
+  "areas": [
+    [
+      "Palawan ve Tanjong plajları",
+      "Kumlu koylar, Palawan köprüsü ve etkinlikler dışında daha sakin alanlar.",
+      "Yüzme önerileri ve etkinlikler değişir; özel plaj varsaymayın."
+    ],
+    [
+      "Siloso ve Fort Siloso",
+      "Plaj eğlenceleri, kıyı savunma tarihi ve yürüyüşler.",
+      "Ziyaret saatleri ve biletler ayrıdır."
+    ],
+    [
+      "Capella orman malikânesi",
+      "Tarihî bungalovlar, yamaç bahçeleri ve kıyıya yakın özel villalar.",
+      "Mesafe, eğim ve erişilebilirliği kontrol edin."
+    ],
+    [
+      "Gunner Lane ve Imbiah",
+      "The Barracks'ın tarihî bölgesi, merkezî ada eğlencelerine erişim.",
+      "Her kategoride doğrudan havuz erişimi yoktur."
+    ],
+    [
+      "Sentosa Cove marinası",
+      "Yatlar, kıyı restoranları, W Singapore ve canlı akşamlar.",
+      "Başlıca plajlara genellikle ulaşım gerekir."
+    ]
+  ],
+  "experiences": [
+    [
+      "Palawan ve yaya köprüsü",
+      "Yerel yüzme önerilerine uyarak plaj boyunca yürüyün."
+    ],
+    [
+      "Fort Siloso",
+      "Yürüyüş sırasında kıyı savunma tarihini keşfedin."
+    ],
+    [
+      "Capella bahçelerinde bir gün",
+      "Tropik araziye ve seçilen kategorinin hizmetlerine zaman ayırın."
+    ],
+    [
+      "Raffles özel villası",
+      "Güvenlik ve dahil hizmetleri doğrulayarak özel havuzda dinlenin."
+    ],
+    [
+      "Sentosa Cove kıyısı",
+      "Yatlar yanında yemek yiyip marinada yürüyün; otelde kumlu plaj beklemeyin."
+    ]
+  ],
+  "checks": [
+    "Orman, Imbiah, plaj veya marina konumunu kontrol edin.",
+    "Raffles Sentosa'yı merkezdeki Raffles Singapore ile karıştırmayın.",
+    "Seçilen kategoride özel veya ortak havuzu doğrulayın.",
+    "Havuz güvenliği, basamaklar, yataklar ve çocuk kurallarını kontrol edin.",
+    "Siloso, Palawan, Tanjong ve Sentosa Cove'u ayırın.",
+    "Changi transferi ve ada içi ulaşımı planlayın.",
+    "Yüzme tavsiyeleri, saatler ve biletleri kontrol edin.",
+    "Fiyat, vergiler, iptal ve desteği sağlayıcıyla doğrulayın."
+  ],
+  "hotels": [
+    [
+      "Tropik bahçeler · Palawan bölgesi",
+      "Capella, tarihî evler çevresinde 30 akrede 113 oda, süit, villa ve malikâne sunar.",
+      "Bahçe odası havuzlu villa değildir; kategori, manzara ve kot farklarını doğrulayın.",
+      "Tropik bahçeler ve mimari arasında sakinlik için.",
+      ""
+    ],
+    [
+      "Ormanlık yamaç · Güney kıyısı",
+      "Raffles Sentosa 62 özel havuzlu ve teraslı villa sunar.",
+      "Plan, çocuk güvenliği ve bağlantılı villaları karşılaştırın; şehirdeki Raffles ile karıştırmayın.",
+      "Özel villa tatili için.",
+      ""
+    ],
+    [
+      "Gunner Lane · Imbiah",
+      "The Barracks, 1904 askerî binalarını restore eden 40 oda ve süitli butik oteldir.",
+      "Doğrudan havuz ve yarı özel jakuzi sadece bazı zemin kat kategorilerindedir.",
+      "Tarihî butik otel atmosferi için.",
+      ""
+    ],
+    [
+      "Sentosa Cove · Marina",
+      "W Singapore, yenilenen 240 oda, WET Deck havuzu ve hareketli restoranlar sunar.",
+      "Marina manzarası Siloso, Palawan veya Tanjong'a plaj erişimi değildir; transfer planlayın.",
+      "Yat atmosferi ve sosyal tatil için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Sentosa'da hangi lüks otel seçilmeli?",
+      "Bahçe için Capella, özel villa için Raffles, tarih için The Barracks, marina için W."
+    ],
+    [
+      "Raffles Sentosa'nın 62 villasının hepsinde havuz var mı?",
+      "Evet, işletmeci her villada özel havuz ve teras belirtir; plan ve çocuk güvenliğini doğrulayın."
+    ],
+    [
+      "Capella'nın her odası havuzlu villa mı?",
+      "Hayır, 113 birim farklı donanımlı oda, süit, villa ve malikânelerden oluşur."
+    ],
+    [
+      "The Barracks'ta havuza doğrudan erişim var mı?",
+      "Evet, bazı zemin kat kategorilerinde doğrudan havuz ve yarı özel jakuzi erişimi bulunur."
+    ],
+    [
+      "W, Siloso'da mı?",
+      "Hayır, üç ana plajdan ayrı Sentosa Cove marinasındadır."
+    ],
+    [
+      "Hangi plaj seçilmeli?",
+      "Siloso daha canlı, Palawan aile yürüyüşlerine uygun, Tanjong genellikle sakin. Yerel koşulları kontrol edin."
+    ],
+    [
+      "Sentosa'dan Marina Bay'e gidilebilir mi?",
+      "Evet, ancak şehir merkezindedir; süre otel ve ulaşıma bağlıdır."
+    ],
+    [
+      "Bosphoras fiyat ve desteği garanti eder mi?",
+      "Güncel fiyat, vergi, dahil hizmet, iptal ve destek yetkili sağlayıcı tarafından doğrulanır."
+    ]
+  ],
+  "photoCaptions": [
+    "Sentosa Palawan plajı",
+    "Siloso kıyısı",
+    "Tanjong tropik plajı",
+    "Sentosa Cove yatları ve marina",
+    "Fort Siloso kıyı savunma tarihi",
+    "Palawan yakınında tropik adacık",
+    "Siloso plajı ve palmiyeler",
+    "Fort Siloso yakınında kıyı panoraması",
+    "Palawan ve küçük ada"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Capella Singapore mimarisi ve bahçeleri",
+      "Capella bahçeleri ve havuzu",
+      "Capella tek yatak odalı villa"
+    ],
+    [
+      "Raffles Sentosa villa salonu gün ışığında",
+      "Raffles Sentosa çağdaş villa iç mekânı",
+      "Raffles Sentosa özel villa"
+    ],
+    [
+      "The Barracks tarihî otel havuzu",
+      "The Barracks resepsiyonu",
+      "The Barracks balkonlu Premier Room"
+    ],
+    [
+      "W Singapore marina havuzu",
+      "W Singapore yenilenen lobi",
+      "W Singapore yenilenen Premier Deluxe oda"
+    ]
+  ],
+  "seoTitle": "Sentosa'da Nerede Kalınır? Singapur Lüks Plaj Otelleri ve Villalar",
+  "hotelSeoTitle": "Sentosa Otelleri: Capella, Raffles, The Barracks ve W",
+  "seoDescription": "Sentosa'nın dört lüks otelini, özel havuzları, Palawan ve Siloso plajlarını, marinayı ve Changi transferlerini karşılaştırın."
+}
