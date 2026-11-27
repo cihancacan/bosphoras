@@ -1,0 +1,443 @@
+{
+  "kuala-lumpur": {
+    "destinationScenes": [
+      {
+        "key": "scene-1",
+        "sourcePage": "https://www.malaysia.travel/explore/top-places-to-visit-in-kuala-lumpur",
+        "sourceResolvedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(4).jpg",
+        "sourceRequestedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(4).jpg",
+        "originalAlt": "KLCC Park & Skybridge",
+        "originalCaption": "",
+        "credit": "Tourism Malaysia",
+        "publisher": "Tourism Malaysia",
+        "hotel": null,
+        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-1.webp",
+        "sourceSHA256": "07275d5741ecb35a03837aab46d9e5b754e0154da0af75aecc346c011e71a900",
+        "webpSHA256": "014227f0b8f15091d1b052b58e3bbf45d4a8a7b4851213990ee312bbd0e626aa",
+        "sourcePixels": [
+          5698,
+          3799
+        ],
+        "webpPixels": [
+          1600,
+          1067
+        ],
+        "webpBytes": 412560,
+        "pixelFingerprint": "c0e0b07070f1e060",
+        "candidateSubject": "petronas|twin towers|klcc park",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-2",
+        "sourcePage": "https://www.malaysia.travel/explore/top-places-to-visit-in-kuala-lumpur",
+        "sourceResolvedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(75).jpg",
+        "sourceRequestedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(75).jpg",
+        "originalAlt": "Bukit Bintang",
+        "originalCaption": "",
+        "credit": "Tourism Malaysia",
+        "publisher": "Tourism Malaysia",
+        "hotel": null,
+        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-2.webp",
+        "sourceSHA256": "c15334d31fd53239231831e65fad6ba53ab24bc97fa9e1070741bfdfe0937d10",
+        "webpSHA256": "cdc96c2b67a3581e1c06738582d2cee548ece42f4ae7863ae3417f6cde1aa563",
+        "sourcePixels": [
+          1300,
+          880
+        ],
+        "webpPixels": [
+          1256,
+          850
+        ],
+        "webpBytes": 234058,
+        "pixelFingerprint": "ee66823a3ea890f0",
+        "candidateSubject": "bukit bintang|jalan alor",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-3",
+        "sourcePage": "https://www.malaysia.travel/explore/top-places-to-visit-in-kuala-lumpur",
+        "sourceResolvedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(54).jpg",
+        "sourceRequestedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(54).jpg",
+        "originalAlt": "Petaling Street",
+        "originalCaption": "",
+        "credit": "Tourism Malaysia",
+        "publisher": "Tourism Malaysia",
+        "hotel": null,
+        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-3.webp",
+        "sourceSHA256": "9ed7f9b24a017179df7b74846521f31aec2840b959a655851afbc6f9e63827a1",
+        "webpSHA256": "b8173b808e3b2df8e9ea15a22fc1c5d4225d28257808d4af0c603ca98e67b187",
+        "sourcePixels": [
+          4570,
+          3047
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 196766,
+        "pixelFingerprint": "508c0b328ecf4f6e",
+        "candidateSubject": "petaling street|chinatown|kwai chai hong",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-4",
+        "sourcePage": "https://www.klccconventioncentre.com/visitors/about-malaysia/kuala-lumpur",
+        "sourceResolvedUrl": "https://www.klccconventioncentre.com/clients/asset_1DC34A5E-8086-475D-9583-2A8A0CD6CFA6/contentms/img/2024/visitor/malaysia/img-merdeka-square.jpg",
+        "sourceRequestedUrl": "https://www.klccconventioncentre.com/clients/asset_1DC34A5E-8086-475D-9583-2A8A0CD6CFA6/contentms/img/2024/visitor/malaysia/img-merdeka-square.jpg",
+        "originalAlt": "Sultan Abdul Samad Building",
+        "originalCaption": "",
+        "credit": "Tourism Malaysia",
+        "publisher": "Tourism Malaysia",
+        "hotel": null,
+        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-4.webp",
+        "sourceSHA256": "8cb9d2b74d218d63fc23e4c1d7a81b16e171ed33acd47d1584b76f4cc9d418ea",
+        "webpSHA256": "6586d9eab271d1adc7ac0a1d592f398a2ce7b6ee3101130a3699c29c80173b03",
+        "sourcePixels": [
+          900,
+          506
+        ],
+        "webpPixels": [
+          900,
+          506
+        ],
+        "webpBytes": 93834,
+        "pixelFingerprint": "26969991d5d3724f",
+        "candidateSubject": "merdeka square|sultan abdul samad",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-5",
+        "sourcePage": "https://www.malaysia.travel/explore/top-places-to-visit-in-kuala-lumpur",
+        "sourceResolvedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(9).jpg",
+        "sourceRequestedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(9).jpg",
+        "originalAlt": "Kampung Baru",
+        "originalCaption": "",
+        "credit": "Tourism Malaysia",
+        "publisher": "Tourism Malaysia",
+        "hotel": null,
+        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-5.webp",
+        "sourceSHA256": "95d15467ad0758a04ee2c98bb8e6275fbd6429af05a5c82d5d5b8bce65c66939",
+        "webpSHA256": "fa719f03176fca7a615ba23272941828be3f7453a2bd03906983ff52ac7c4955",
+        "sourcePixels": [
+          7008,
+          4672
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 203954,
+        "pixelFingerprint": "7cccc8e879793503",
+        "candidateSubject": "kampung baru|saloma bridge",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-6",
+        "sourcePage": "https://www.malaysia.travel/explore/top-places-to-visit-in-kuala-lumpur",
+        "sourceResolvedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(13).jpg",
+        "sourceRequestedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(13).jpg",
+        "originalAlt": "Batu Caves",
+        "originalCaption": "",
+        "credit": "Tourism Malaysia",
+        "publisher": "Tourism Malaysia",
+        "hotel": null,
+        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-6.webp",
+        "sourceSHA256": "797ee160dc6a5c0159d29270ba2d9892f3189991adf6cc1d8fdb04033ffc5b9f",
+        "webpSHA256": "0bee5910926b4c6eb26520c5efa89e020736b9f490e69a02fdc261a4dbfd5705",
+        "sourcePixels": [
+          7008,
+          4672
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 114782,
+        "pixelFingerprint": "75f0e9b332dcd8c8",
+        "candidateSubject": "batu caves",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-7",
+        "sourcePage": "https://www.malaysia.travel/explore/top-places-to-visit-in-kuala-lumpur",
+        "sourceResolvedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(18).jpg",
+        "sourceRequestedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(18).jpg",
+        "originalAlt": "KL Tower",
+        "originalCaption": "",
+        "credit": "Tourism Malaysia",
+        "publisher": "Tourism Malaysia",
+        "hotel": null,
+        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-7.webp",
+        "sourceSHA256": "0d9be623d2278bd5d0954ed24ca62cb0c33b1b85b28fb1372587c5dc79b1d034",
+        "webpSHA256": "e36eeced8fe75d0f7b25081773d7a41f75838b9d31f31ff15279662f44d2193a",
+        "sourcePixels": [
+          4607,
+          3455
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 290680,
+        "pixelFingerprint": "c14ceeb799c89031",
+        "candidateSubject": "kl tower|menara kuala lumpur",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-8",
+        "sourcePage": "https://www.malaysia.travel/explore/top-places-to-visit-in-kuala-lumpur",
+        "sourceResolvedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(31).jpg",
+        "sourceRequestedUrl": "https://www.malaysia.travel/mt-flmngr/files/top-places-to-visit-in-kl/Top_Places_to_Visit_While_in_Kuala_Lumpur_(31).jpg",
+        "originalAlt": "Perdana Botanical Garden (Taman Botani)",
+        "originalCaption": "",
+        "credit": "Tourism Malaysia",
+        "publisher": "Tourism Malaysia",
+        "hotel": null,
+        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-8.webp",
+        "sourceSHA256": "7151ae71360c671de283cd427940c14ac1a58637cb87db101a3c7b13b11e17ed",
+        "webpSHA256": "afd7196ea95829a0f483594b75ff89db6a2d5c9d3544e87ecc83923a6a0cb0c1",
+        "sourcePixels": [
+          2048,
+          1152
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 242504,
+        "pixelFingerprint": "79baa69138ba9b4f",
+        "candidateSubject": "botanical garden|lake gardens|perdana",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
+    "hotels": [
+      {
+        "key": "eq-1",
+        "sourcePage": "https://www.eqkualalumpur.equatorial.com/en/",
+        "sourceResolvedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/06/2020-01-13_eq-sky51-entrance2.webp",
+        "sourceRequestedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/06/2020-01-13_eq-sky51-entrance2.webp",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "EQ Kuala Lumpur",
+        "publisher": "EQ Kuala Lumpur",
+        "hotel": "EQ Kuala Lumpur",
+        "localPath": "/images/travel/kuala-lumpur-premium/eq/eq-1.webp",
+        "sourceSHA256": "1e262569fab732d55fa6f3e06b9cc6a2f49071dd25e7216ec94292d80bf82d5b",
+        "webpSHA256": "84442d4e0f4e616ff9c23ade0a4a065b9bf3a0bbae6cdff8bee35ecc4f7494d7",
+        "sourcePixels": [
+          1500,
+          938
+        ],
+        "webpPixels": [
+          1280,
+          800
+        ],
+        "webpBytes": 258862,
+        "pixelFingerprint": "b2b036bac6d69783",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "eq-2",
+        "sourcePage": "https://www.eqkualalumpur.equatorial.com/en/",
+        "sourceResolvedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/04/deluxe-queen-scaled-1-1024x700.webp",
+        "sourceRequestedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/04/deluxe-queen-scaled-1-1024x700.webp",
+        "originalAlt": "Deluxe Queen Double",
+        "originalCaption": "",
+        "credit": "EQ Kuala Lumpur",
+        "publisher": "EQ Kuala Lumpur",
+        "hotel": "EQ Kuala Lumpur",
+        "localPath": "/images/travel/kuala-lumpur-premium/eq/eq-2.webp",
+        "sourceSHA256": "23fa68c0a4b9a1ba4d971f7465ccf54742261f55736c8eb86bbf4e1fd7eefba6",
+        "webpSHA256": "f27e9b453dc0fe3cc7e53291f9b66256f26612b403d79882ffefca0813f84b2f",
+        "sourcePixels": [
+          1024,
+          700
+        ],
+        "webpPixels": [
+          1024,
+          700
+        ],
+        "webpBytes": 62994,
+        "pixelFingerprint": "e9e3a60908606080",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "eq-3",
+        "sourcePage": "https://www.eqkualalumpur.equatorial.com/en/",
+        "sourceResolvedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/04/2-Bottega-Lounge.webp",
+        "sourceRequestedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/04/2-Bottega-Lounge.webp",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "EQ Kuala Lumpur",
+        "publisher": "EQ Kuala Lumpur",
+        "hotel": "EQ Kuala Lumpur",
+        "localPath": "/images/travel/kuala-lumpur-premium/eq/eq-3.webp",
+        "sourceSHA256": "98794d219c9963159f50b4d182e8f1e78a81319dd927adaa14722fc70152e403",
+        "webpSHA256": "5463891bdb7b6781db5e353b63a0761b945744479909015a820658b0ccea5ab3",
+        "sourcePixels": [
+          2560,
+          1440
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 166038,
+        "pixelFingerprint": "cadccac6cacaf2c8",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
+    "gaps": [
+      {
+        "group": "city",
+        "expected": 9,
+        "found": 8
+      },
+      {
+        "group": "mandarin-oriental",
+        "expected": 3,
+        "found": 0
+      },
+      {
+        "group": "four-seasons",
+        "expected": 3,
+        "found": 0
+      },
+      {
+        "group": "ruma",
+        "expected": 3,
+        "found": 0
+      }
+    ],
+    "errors": [
+      {
+        "page": "https://www.fourseasons.com/kualalumpur/photos-and-videos/",
+        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/kualalumpur/photos-and-videos/"
+      },
+      {
+        "url": "https://press.fourseasons.com/kualalumpur/hotel-news/2026/introducing-the-longevity-lounge",
+        "error": "cannot identify image file <_io.BytesIO object at 0x7b0782122070>"
+      },
+      {
+        "page": "https://urbanresortconcepts.com/en/images/ruma-gallery/",
+        "error": "404 Client Error: Not Found for url: https://urbanresortconcepts.com/en/images/ruma-gallery/"
+      },
+      {
+        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/the-ruma-birdcage.jpg",
+        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/the-ruma-birdcage.jpg/"
+      },
+      {
+        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-room-twin.jpg",
+        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-room-twin.jpg/"
+      },
+      {
+        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-room-king.jpg",
+        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-room-king.jpg/"
+      },
+      {
+        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-suite-1.jpg",
+        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-suite-1.jpg/"
+      },
+      {
+        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-suite-3.jpg",
+        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-suite-3.jpg/"
+      },
+      {
+        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-deluxe-suite-lounge.jpg",
+        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-deluxe-suite-lounge.jpg/"
+      },
+      {
+        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-suite--4.jpg",
+        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-suite--4.jpg/"
+      },
+      {
+        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-grand-suite.jpg",
+        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-grand-suite.jpg/"
+      },
+      {
+        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-grand-suite-living-room.jpg",
+        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-grand-suite-living-room.jpg/"
+      },
+      {
+        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-ruma-suite.jpg",
+        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-ruma-suite.jpg/"
+      },
+      {
+        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/the-ruma-hotel-overview.jpg",
+        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/the-ruma-hotel-overview.jpg/"
+      },
+      {
+        "url": "https://theruma.com/en/file/webpage/shared/banner/the-ruma-birdcage.webp",
+        "error": "404 Client Error: Not Found for url: https://theruma.com/en/file/webpage/shared/banner/the-ruma-birdcage.webp"
+      },
+      {
+        "page": "https://www.eqkualalumpur.equatorial.com/rooms-suites/",
+        "error": "404 Client Error: Not Found for url: https://www.eqkualalumpur.equatorial.com/en/rooms-suites/"
+      }
+    ],
+    "publicUseApproved": false,
+    "ownerPermissionDeclared": true,
+    "excludedCandidates": [],
+    "cityCount": 8,
+    "hotelCount": 3,
+    "totalBytes": 2277032
+  }
+}
