@@ -92,7 +92,48 @@ def collect_pages(pages):
   except Exception as e:
    errors.append({'page':page,'error':str(e)[:300]});print('PAGE_GAP',page,str(e)[:200],flush=True)
  return result,errors
-DIRECT = {}
+DIRECT = {
+  "osaka/conrad": [
+    [
+      "https://www.nikken.co.jp/en/projects/p4iusj0000000ncv-img/pj0043_02.jpg",
+      "Nakanoshima Festival Tower West exterior, building housing Conrad Osaka",
+      "https://www.nikken.co.jp/en/projects/mixed_use/nakanoshima_festival_tower_festival_tower_west.html",
+      "Higashide Photo Studio / Nikken Sekkei"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/69a89a73.jpg?h=800&impolicy=fcrop&w=1200",
+      "Conrad Osaka King Premium View guest room",
+      "https://www.expedia.com/Osaka-Hotels-Conrad-Osaka.h17310194.Hotel-Information",
+      "Expedia / Conrad Osaka"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/db3f1c58.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Conrad Osaka lobby lounge",
+      "https://www.expedia.com/Osaka-Hotels-Conrad-Osaka.h17310194.Hotel-Information",
+      "Expedia / Conrad Osaka"
+    ]
+  ],
+  "osaka/four-seasons": [
+    [
+      "https://www.travelandleisure.com/thmb/1PIMBSVnHZjs4_KQCO9BrKpsCJM%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29%3Aformat%28webp%29/TAL-header-exterior-four-seasons-osaka-hotel-FSOSAKA0924-d3c82a5643e747518a5a83533d9fdcee.jpg",
+      "Four Seasons Hotel Osaka exterior during cherry blossom season",
+      "https://www.travelandleisure.com/four-seasons-hotel-osaka-japan-review-8704951",
+      "Courtesy Four Seasons Hotel Osaka / Travel + Leisure"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/105000000/104200000/104193100/104193036/7c93bdd1.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Hotel Osaka guest room with city view",
+      "https://www.expedia.com/Osaka-Hotels-Four-Seasons-Hotel-Osaka.h104193036.Hotel-Information",
+      "Expedia / Four Seasons Hotel Osaka"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/105000000/104200000/104193100/104193036/4cdc8c39.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Hotel Osaka indoor pool with city view",
+      "https://www.expedia.com/Osaka-Hotels-Four-Seasons-Hotel-Osaka.h104193036.Hotel-Information",
+      "Expedia / Four Seasons Hotel Osaka"
+    ]
+  ]
+}
 def direct_candidates(slug,key):
  return [{'url':u,'sourcePage':page,'originalAlt':alt,'originalCaption':credit,'targeted':True} for u,alt,page,credit in DIRECT.get(slug+'/'+key,[])]
 
