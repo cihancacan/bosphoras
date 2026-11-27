@@ -123,12 +123,38 @@
       "Auf Bosphoras Gesamtpreise für identische Reisedaten, Gästezahl, Zimmerkategorie und Stornobedingungen vergleichen."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Westminster Abbey und historische Gebäude",
+    "Tower Bridge bei Sonnenschein",
+    "Panorama von London und der Themse",
+    "Buckingham Palace und Gärten",
+    "Wimbledon-Übertragung in Covent Garden",
+    "Luftaufnahme des Hyde Park im Herbst",
+    "Eingang zum Borough Market",
+    "St Paul’s Cathedral von der Millennium Bridge",
+    "Mount Street, historische Straße in Mayfair"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Fassade des Claridge’s",
+      "Schlafzimmer der Terrace Suite",
+      "Dachterrasse von The Mews"
+    ],
+    [
+      "Eingang und Fassade des Savoy",
+      "Deluxe King Zimmer",
+      "Innenpool des Savoy"
+    ],
+    [
+      "Fassade des Peninsula",
+      "Grand Premier Park Zimmer",
+      "Innenpool des Peninsula"
+    ],
+    [
+      "The Shard mit dem Shangri-La, von der Themse aus gesehen",
+      "Wohnzimmer einer Suite mit Londonblick",
+      "Spa-Behandlungsraum des Shangri-La mit Londonblick"
+    ]
   ],
   "seoTitle": "London: die besten Viertel und Luxushotels für Ihren Aufenthalt",
   "hotelSeoTitle": "Luxushotels London: Claridge’s, Savoy, Peninsula und Shangri-La",

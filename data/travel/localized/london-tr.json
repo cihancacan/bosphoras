@@ -123,12 +123,38 @@
       "Bosphoras'ta aynı tarihler, kişi sayısı, oda kategorisi ve iptal koşullarına göre toplam fiyatları karşılaştırın."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Westminster Abbey ve tarihi yapılar",
+    "Güneşli havada Tower Bridge",
+    "Londra ve Thames panoraması",
+    "Buckingham Sarayı ve bahçeleri",
+    "Covent Garden'da Wimbledon yayını",
+    "Sonbaharda Hyde Park'ın havadan görünümü",
+    "Borough Market girişi",
+    "Millennium Bridge'den St Paul Katedrali",
+    "Mayfair'in tarihi Mount Street caddesi"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Claridge’s dış cephesi",
+      "Terrace Suite yatak odası",
+      "The Mews çatı terası"
+    ],
+    [
+      "The Savoy girişi ve dış cephesi",
+      "Deluxe King oda",
+      "The Savoy kapalı havuzu"
+    ],
+    [
+      "The Peninsula dış cephesi",
+      "Grand Premier Park oda",
+      "The Peninsula kapalı havuzu"
+    ],
+    [
+      "Shangri-La'nın bulunduğu The Shard, Thames kıyısından",
+      "Londra manzaralı süit salonu",
+      "Shangri-La Londra manzaralı spa bakım odası"
+    ]
   ],
   "seoTitle": "Londra'da Nerede Kalınır? En İyi Semtler ve Lüks Oteller",
   "hotelSeoTitle": "Londra Lüks Otelleri: Claridge’s, Savoy, Peninsula ve Shangri-La",

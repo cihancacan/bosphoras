@@ -123,12 +123,38 @@
       "Su Bosphoras confronta prezzi totali per date, ospiti, categorie e condizioni di cancellazione identici."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Abbazia di Westminster ed edifici storici",
+    "Tower Bridge al sole",
+    "Panorama di Londra e del Tamigi",
+    "Buckingham Palace e giardini",
+    "Proiezione di Wimbledon a Covent Garden",
+    "Veduta aerea di Hyde Park in autunno",
+    "Ingresso di Borough Market",
+    "Cattedrale di St Paul dal Millennium Bridge",
+    "Mount Street, storica via di Mayfair"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Facciata di Claridge’s",
+      "Camera da letto della Terrace Suite",
+      "Terrazza panoramica di The Mews"
+    ],
+    [
+      "Ingresso e facciata del Savoy",
+      "Camera Deluxe King",
+      "Piscina coperta del Savoy"
+    ],
+    [
+      "Facciata del Peninsula",
+      "Camera Grand Premier Park",
+      "Piscina coperta del Peninsula"
+    ],
+    [
+      "The Shard, sede dello Shangri-La, visto dal Tamigi",
+      "Soggiorno della suite con vista su Londra",
+      "Sala trattamenti della spa Shangri-La con vista su Londra"
+    ]
   ],
   "seoTitle": "Dove dormire a Londra: quartieri e hotel di lusso",
   "hotelSeoTitle": "Hotel di lusso a Londra: Claridge’s, Savoy, Peninsula e Shangri-La",

@@ -97,6 +97,7 @@ export const travelDestinations: TravelDestination[] = [
   { slug: "luang-prabang", name: "Luang Prabang", country: "Laos", region: "southeast-asia", categories: ["hotels","villas"] as TravelCategory[], angle: "Mekong heritage, small luxury lodges and temple culture." },
   { slug: "langkawi", name: "Langkawi", country: "Malaysia", region: "southeast-asia", categories: ["hotels","villas","yachts"] as TravelCategory[], angle: "Rainforest-framed beaches and private island-adjacent resorts." },
   { slug: "desaru-coast", name: "Desaru Coast", country: "Malaysia", region: "southeast-asia", categories: ["hotels","villas"] as TravelCategory[], angle: "Johor coast resorts and family beachfront escapes." },
+  { slug: "london", name: "London", country: "United Kingdom", region: "europe", categories: ["hotels"] as TravelCategory[], angle: "Historic neighbourhoods, landmark hotels, theatre and Thames views." },
 ];
 export const destinationBySlug = new Map(travelDestinations.map((item) => [item.slug, item]));
 export const travelRegions: Record<string, string> = {
