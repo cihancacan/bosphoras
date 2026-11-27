@@ -1,3 +1,11 @@
+import lasVegasPreviewTR from './localized/las-vegas-tr.json';
+import lasVegasPreviewDE from './localized/las-vegas-de.json';
+import lasVegasPreviewES from './localized/las-vegas-es.json';
+import lasVegasPreviewIT from './localized/las-vegas-it.json';
+import lasVegasPreviewPT from './localized/las-vegas-pt.json';
+import lasVegasPreviewZH from './localized/las-vegas-zh.json';
+import lasVegasPreviewRU from './localized/las-vegas-ru.json';
+import lasVegasPreviewAR from './localized/las-vegas-ar.json';
 import londonPreviewTR from './localized/london-tr.json';
 import londonPreviewDE from './localized/london-de.json';
 import londonPreviewES from './localized/london-es.json';
@@ -642,6 +650,7 @@ const localized:Record<string,Partial<Record<LegacyEditorialLocale,LocalizedGuid
 export function getLocalizedGuide(slug:string|undefined,locale:string):LocalizedGuide|undefined{
  if(!slug||!isEditorialLocale(locale))return undefined;
  if(slug==='london')return {tr:londonPreviewTR,de:londonPreviewDE,es:londonPreviewES,it:londonPreviewIT,pt:londonPreviewPT,zh:londonPreviewZH,ru:londonPreviewRU,ar:londonPreviewAR}[locale];
+ if(slug==='las-vegas')return {tr:lasVegasPreviewTR,de:lasVegasPreviewDE,es:lasVegasPreviewES,it:lasVegasPreviewIT,pt:lasVegasPreviewPT,zh:lasVegasPreviewZH,ru:lasVegasPreviewRU,ar:lasVegasPreviewAR}[locale];
  if(locale==='tr')return reviewedTurkish[slug];
  if(locale!=='ru'&&locale!=='ar')return reviewedInternational[locale]?.[slug];
  const data=localized[slug]?.[locale]||drafts[locale][slug];if(!data)return undefined;

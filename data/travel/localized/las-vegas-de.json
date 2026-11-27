@@ -118,12 +118,38 @@
       "Gesamtpreise für identische Daten, Bedingungen und tatsächliche Belegung vergleichen."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Luftaufnahme des Strip",
+    "Beleuchtete Sphere",
+    "Schild des Fremont-East-Viertels",
+    "Welcome to Fabulous Las Vegas-Schild",
+    "Blumendekoration im Bellagio Conservatory",
+    "Vintage-Laden im Arts District",
+    "Landschaft des Red Rock Canyon",
+    "Gondeln unter einer Brücke im Venetian",
+    "Downtown-Skyline bei Sonnenuntergang"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Fassade und Fontänen des Bellagio",
+      "Bellagio-Zimmer mit zwei Queensize-Betten",
+      "Botanischer Garten des Bellagio"
+    ],
+    [
+      "Wynn und Encore inmitten von Gärten",
+      "Wohnbereich einer Wynn-Suite",
+      "Pool-Cabanas und Gärten im Wynn"
+    ],
+    [
+      "Beleuchtete Fassade des Venetian",
+      "Suite mit Wohnbereich im Venetian",
+      "Pool Garden des Venetian"
+    ],
+    [
+      "Turm des Fontainebleau Las Vegas",
+      "Wohnzimmer der Regal Suite",
+      "Hydrotherapiebereich im Fontainebleau-Spa"
+    ]
   ],
   "seoTitle": "Las Vegas: die besten Hotels und Viertel am Strip",
   "hotelSeoTitle": "Las Vegas Hotels: Bellagio, Wynn, Venetian und Fontainebleau",

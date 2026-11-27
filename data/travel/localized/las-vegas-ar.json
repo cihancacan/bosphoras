@@ -118,12 +118,38 @@
       "قارن على Bosphoras السعر النهائي للتواريخ والشروط وعدد الضيوف الفعلي نفسه."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "صورة جوية لشارع الستريب",
+    "مبنى Sphere مضاءً",
+    "لافتة حي فريمونت إيست",
+    "لافتة Welcome to Fabulous Las Vegas",
+    "تنسيق الزهور في حديقة Bellagio النباتية",
+    "متجر للأغراض القديمة في حي الفنون",
+    "منظر وادي ريد روك",
+    "قوارب الجندول أسفل جسر في The Venetian",
+    "أفق وسط المدينة عند غروب الشمس"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "واجهة Bellagio ونوافيره",
+      "غرفة Bellagio بسريرين من حجم كوين",
+      "حديقة Bellagio النباتية"
+    ],
+    [
+      "برجا Wynn وEncore وسط الحدائق",
+      "صالة جناح في Wynn",
+      "أكواخ المسبح وحدائق Wynn"
+    ],
+    [
+      "واجهة The Venetian المضاءة",
+      "جناح The Venetian مع صالة",
+      "مسبح Pool Garden في The Venetian"
+    ],
+    [
+      "برج Fontainebleau Las Vegas",
+      "صالة جناح Regal Suite",
+      "منطقة العلاج بالمياه في سبا Fontainebleau"
+    ]
   ],
   "seoTitle": "أين تقيم في لاس فيغاس؟ الستريب وأفضل المناطق والفنادق",
   "hotelSeoTitle": "فنادق لاس فيغاس: Bellagio وWynn وVenetian وFontainebleau",

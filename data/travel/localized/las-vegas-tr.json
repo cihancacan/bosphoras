@@ -118,12 +118,38 @@
       "Bosphoras'ta aynı tarihler, koşullar ve gerçek kişi sayısı için toplam fiyatı karşılaştırın."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Strip'in havadan görünümü",
+    "Işıklandırılmış Sphere",
+    "Fremont East bölgesi tabelası",
+    "Welcome to Fabulous Las Vegas tabelası",
+    "Bellagio Botanik Bahçesi'nin çiçek düzenlemesi",
+    "Arts District'te vintage mağaza",
+    "Red Rock Canyon manzarası",
+    "The Venetian'da köprünün altındaki gondollar",
+    "Gün batımında Downtown manzarası"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Bellagio dış cephesi ve fıskiyeleri",
+      "Bellagio iki queen yataklı oda",
+      "Bellagio Konservatuvarı ve Botanik Bahçesi"
+    ],
+    [
+      "Bahçeler arasında Wynn ve Encore kuleleri",
+      "Wynn süit salonu",
+      "Wynn havuz kabinleri ve bahçeleri"
+    ],
+    [
+      "The Venetian ışıklandırılmış dış cephesi",
+      "The Venetian salonlu süit",
+      "The Venetian Pool Garden havuzu"
+    ],
+    [
+      "Fontainebleau Las Vegas kulesi",
+      "Regal Suite salonu",
+      "Fontainebleau spa su terapisi alanı"
+    ]
   ],
   "seoTitle": "Las Vegas'ta Nerede Kalınır? Strip ve En İyi Oteller",
   "hotelSeoTitle": "Las Vegas Otelleri: Bellagio, Wynn, Venetian ve Fontainebleau",

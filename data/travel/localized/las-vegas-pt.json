@@ -118,12 +118,38 @@
       "Compare na Bosphoras o total para datas, condições e ocupação real iguais."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Vista aérea da Strip",
+    "Sphere iluminada",
+    "Letreiro de Fremont East",
+    "Placa Welcome to Fabulous Las Vegas",
+    "Decoração floral do jardim botânico do Bellagio",
+    "Loja vintage no Arts District",
+    "Paisagem de Red Rock Canyon",
+    "Gôndolas sob uma ponte do Venetian",
+    "Panorama de Downtown ao pôr do sol"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Fachada e fontes do Bellagio",
+      "Quarto do Bellagio com duas camas queen",
+      "Jardim botânico do Bellagio"
+    ],
+    [
+      "Torres Wynn e Encore entre jardins",
+      "Sala de uma suite do Wynn",
+      "Cabanas da piscina e jardins do Wynn"
+    ],
+    [
+      "Fachada iluminada do Venetian",
+      "Suite do Venetian com sala",
+      "Piscina do Pool Garden do Venetian"
+    ],
+    [
+      "Torre do Fontainebleau Las Vegas",
+      "Sala da Regal Suite",
+      "Área de hidroterapia do spa Fontainebleau"
+    ]
   ],
   "seoTitle": "Onde ficar em Las Vegas: Strip, bairros e melhores hotéis",
   "hotelSeoTitle": "Hotéis em Las Vegas: Bellagio, Wynn, Venetian e Fontainebleau",
