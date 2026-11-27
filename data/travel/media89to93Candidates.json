@@ -3834,8 +3834,92 @@
         "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Nizuc-Resort-And-Spa.h5531551.Hotel-Information"
       },
       {
+        "page": "https://www.travelweekly.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun-p3711940",
+        "error": "403 Client Error: Forbidden for url: https://www.travelweekly.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun-p3711940"
+      },
+      {
+        "page": "https://www.businesstravelnews.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun/Images-p3236606",
+        "error": "403 Client Error: Forbidden for url: https://www.businesstravelnews.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun/Images-p3236606"
+      },
+      {
+        "page": "https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information?equalTargetTab=tab-0",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information?equalTargetTab=tab-0"
+      },
+      {
+        "page": "https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun",
+        "error": "403 Client Error: HTTP Forbidden for url: https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun"
+      },
+      {
+        "page": "https://www.palaceproagents.com/es/destinos-resorts/le-blanc-spa-resort-cancun",
+        "error": "403 Client Error: HTTP Forbidden for url: https://www.palaceproagents.com/es/destinos-resorts/le-blanc-spa-resort-cancun"
+      },
+      {
+        "page": "https://cancun.leblancsparesorts.com/es/galeria",
+        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/es/galeria"
+      },
+      {
+        "page": "https://cancun.leblancsparesorts.com/gallery",
+        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/gallery"
+      },
+      {
+        "page": "https://www.leblancsparesorts.com/gallery",
+        "error": "403 Client Error: HTTP Forbidden for url: https://www.leblancsparesorts.com/gallery"
+      },
+      {
+        "page": "https://cancun.leblancsparesorts.com/",
+        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/"
+      },
+      {
+        "url": "https://www.palaceproagents.com/lbc_Room_Royale_Deluxe_Partial_Ocean_View_bg_3600x1800_7207f3f7a0.jpg",
+        "error": "400 Client Error: Bad Request for url: https://www.palaceproagents.com/lbc_Room_Royale_Deluxe_Partial_Ocean_View_bg_3600x1800_7207f3f7a0.jpg"
+      },
+      {
         "page": "https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information",
         "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information"
+      },
+      {
+        "page": "https://www.expedia.com/Cancun-Hotels-Hyatt-Ziva-Cancun-All-Inclusive.h11669114.Hotel-Information?langid=1033",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Hyatt-Ziva-Cancun-All-Inclusive.h11669114.Hotel-Information?langid=1033"
+      },
+      {
+        "page": "https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/photos-reviews",
+        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/photos-reviews"
+      },
+      {
+        "page": "https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/rooms",
+        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/rooms"
+      },
+      {
+        "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/gallery",
+        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/gallery"
+      },
+      {
+        "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun",
+        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun"
+      },
+      {
+        "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms",
+        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms"
+      },
+      {
+        "url": "https://www.trip.com/hotels/phuket-hotel-detail-83988303/panwaburi-beachfront-resort/photo.html",
+        "error": "cannot identify image file <_io.BytesIO object at 0x78c6a0f4f600>"
+      },
+      {
+        "url": "https://www.trip.com/hotels/los-angeles-hotel-detail-1978985/sheraton-gateway-los-angeles/photo.html",
+        "error": "cannot identify image file <_io.BytesIO object at 0x78c6a0f4f600>"
+      },
+      {
+        "url": "https://www.trip.com/hotels/tokyo-hotel-detail-994914/shinjuku-washington-hotel/photo.html",
+        "error": "cannot identify image file <_io.BytesIO object at 0x78c6a8bb4400>"
+      },
+      {
+        "url": "https://www.trip.com/hotels/tokyo-hotel-detail-993892/shinjuku-granbell-hotel/photo.html",
+        "error": "cannot identify image file <_io.BytesIO object at 0x78c6a8bb4400>"
+      },
+      {
+        "url": "https://www.trip.com/hotels/ho-chi-minh-city-hotel-detail-2073112/park-hyatt-saigon/photo.html",
+        "error": "cannot identify image file <_io.BytesIO object at 0x78c6a8bb4400>"
       },
       {
         "page": "https://www.expedia.com/Cancun-Hotels-Hyatt-Ziva-Cancun-All-Inclusive.h11669114.Hotel-Information",
