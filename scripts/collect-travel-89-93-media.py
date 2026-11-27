@@ -159,6 +159,8 @@ DIRECT = {
 DIRECT['london/city'].insert(0,['https://www.londonandpartners.com/-/media/images/london/visit/things-to-do/london-areas/river-thames/panorama-london-skyline-b-1920x582.jpg?hash=5A94C794E75E3F410D7360AC4BB956CF&mw=1920&rev=90d7c2e3ee1e4018859464d28c8a8e20','London skyline and Thames panorama','https://www.visitlondon.com/things-to-do','London & Partners'])
 DIRECT['cancun/le-blanc']=[['https://www.palaceproagents.com/lbc_Room_Royale_Deluxe_Partial_Ocean_View_bg_3600x1800_7207f3f7a0.jpg','Le Blanc Cancun Royale Deluxe partial ocean view room','https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun','Palace PRO Agents']]
 DIRECT['london/savoy']=[['https://www.ahstatic.com/photos/a597_br_00_p_2048x1536.jpg','The Savoy London exterior entrance and canopy','https://all.accor.com/hotel/A597/index.en.shtml','Accor / The Savoy']]
+DIRECT['london/shangri-la']=[['https://www.the-shard.com/media/gm2ljfv2/shangri-la-the-shard-london-sky-sauna.jpg?quality=95&rmode=crop&rxy=0%2C0&width=457','Shangri-La London Sky Sauna','https://www.the-shard.com/news-events/events/2026/summer-above-the-clouds-at-shangri-la','The Shard / Shangri-La']]
+
 def direct_candidates(slug,key):
  return [{'url':u,'sourcePage':page,'originalAlt':alt,'originalCaption':credit,'targeted':True} for u,alt,page,credit in DIRECT.get(slug+'/'+key,[])]
 
@@ -229,6 +231,8 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
    if OTHER.search(label) or not re.search(pattern,label,re.I):continue
    if not property_name and re.search(r'left:|right:|centre:|girls sitting|three women|two women|spider.?man|hiking the|selfie|group of friends|tourist[s]? (?:in|at|admiring|taking)|people (?:walking|buying|standing)|friends buying|person (?:in|standing|riding)|portrait',r['originalAlt'],re.I):continue
    if property_name and re.search(r'il.palazzetto|salon.?entrance|registration desk|/salon/|(?:beauty|hair).?salon',label,re.I):continue
+   if property_name=='Shangri-La The Shard, London' and re.search(r'office[s]?|model|champagne|love.skypool',label,re.I):continue
+   if property_name=='The Savoy' and pattern==FACILITY.pattern and re.search(r'garden.view.room|king.room|deluxe.king|/rooms/',label,re.I):continue
    if property_name=='Wynn Las Vegas' and re.search(r'\bencore\b',label,re.I):continue
    if property_name=='Hyatt Ziva Cancun' and 'newsroom.hyatt.com' in r['sourcePage'] and not re.search(r'cancun|cancún',label,re.I):continue
    if property_name=='Hotel de Russie' and 'press.roccofortehotels.com' in r['sourcePage'] and not re.search(r'de.russie|nijinsky|stravinskij',label,re.I):continue
@@ -292,7 +296,7 @@ def hotel_job(c,h):
  old=PREVIOUS.get(c['slug'],{})
  allprevious=[r for r in old.get('hotels',[]) if r['hotel']==name]
  # These were specifically identified by source filenames/alt as unsuitable or ambiguous.
- bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4'}
+ bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4','savoy-2','shangri-la-2','shangri-la-3'}
  rejected=[r for r in allprevious if r['key'] in bad]
  existing=[r for r in allprevious if r['key'] not in bad]
  if len(existing)>=3:return c['slug'],key,existing,[]
