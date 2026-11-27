@@ -2949,6 +2949,37 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-9",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona,_Spain.jpg",
+        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona%2C_Spain.jpg/1920px-Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona%2C_Spain.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20240218095714",
+        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona%2C_Spain.jpg/1920px-Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona%2C_Spain.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20240218095714",
+        "originalAlt": "File:Aerial view of Barceloneta Beach and Port Vell in Barcelona, Spain.jpg",
+        "originalCaption": "",
+        "credit": "Turisme de Barcelona",
+        "publisher": "Turisme de Barcelona",
+        "hotel": null,
+        "localPath": "/images/travel/barcelona-premium/destination/scene-9.webp",
+        "sourceSHA256": "94b84095c8f46834d38fd5ab913dc3e3769e0462fdfb21072da65c0f99a8f091",
+        "webpSHA256": "3d1b855e37f4663c76708df8000b09b4f1b17b766869654e57bae2da193ee444",
+        "sourcePixels": [
+          1920,
+          804
+        ],
+        "webpPixels": [
+          1280,
+          536
+        ],
+        "webpBytes": 141100,
+        "pixelFingerprint": "985890d080220000",
+        "candidateSubject": "barceloneta|beach|platja",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -3298,7 +3329,7 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 6
+        "found": 7
       },
       {
         "group": "majestic",
@@ -3308,16 +3339,48 @@
     ],
     "errors": [
       {
-        "page": "https://www.businesstravelnews.com/Hotels/Barcelona/Mandarin-Oriental-Barcelona/Images-p3074705",
-        "error": "403 Client Error: Forbidden for url: https://www.businesstravelnews.com/Hotels/Barcelona/Mandarin-Oriental-Barcelona/Images-p3074705"
+        "url": "https://commons.wikimedia.org/wiki/Category:Port_Vell",
+        "error": "cannot identify image file <_io.BytesIO object at 0x744fde30e480>"
       },
       {
-        "page": "https://www.marriott.com/en-us/hotels/bcnrz-hotel-arts-barcelona/photos/",
-        "error": "404 Client Error: Not Found for url: https://www.marriott.com/en-us/hotels/bcnrz-hotel-arts-barcelona/photos/"
+        "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona,_Spain.jpg",
+        "error": "cannot identify image file <_io.BytesIO object at 0x744fde30f470>"
       },
       {
-        "page": "https://www.marriott.com/es/hotels/bcnrz-hotel-arts-barcelona/photos/",
-        "error": "500 Server Error: Internal Server Error for url: https://www.marriott.com/es/hotels/bcnrz-hotel-arts-barcelona/photos/"
+        "url": "https://commons.wikimedia.org/wiki/Special:WhatLinksHere/File:Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona,_Spain.jpg",
+        "error": "404 Client Error: Not Found for url: https://commons.wikimedia.org/wiki/Special:WhatLinksHere/File:Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona,_Spain.jpg"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:RecentChangesLinked/File:Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona,_Spain.jpg",
+        "error": "404 Client Error: Not Found for url: https://commons.wikimedia.org/wiki/Special:RecentChangesLinked/File:Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona,_Spain.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona%2C_Spain.jpg",
+        "error": "400 Client Error: Use thumbnail sizes listed on https://w.wiki/GHai for url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Aerial_view_of_Barceloneta_Beach_and_Port_Vell"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia",
+        "error": "cannot identify image file <_io.BytesIO object at 0x744fdec43a60>"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia_01.jpg",
+        "error": "cannot identify image file <_io.BytesIO object at 0x744fe433f100>"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:WhatLinksHere/File:Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia_01.jpg",
+        "error": "404 Client Error: Not Found for url: https://commons.wikimedia.org/wiki/Special:WhatLinksHere/File:Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia_01.jpg"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:RecentChangesLinked/File:Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia_01.jpg",
+        "error": "404 Client Error: Not Found for url: https://commons.wikimedia.org/wiki/Special:RecentChangesLinked/File:Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia_01.jpg"
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia_01.jpg",
+        "error": "400 Client Error: Use thumbnail sizes listed on https://w.wiki/GHai for url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia_01.jpg"
+      },
+      {
+        "page": "https://myconciergehotel.com/en/hotel/majestic-hotel-and-spa-barcelona",
+        "error": "503 Server Error: Service Unavailable for url: https://myconciergehotel.com/en/hotel/majestic-hotel-and-spa-barcelona"
       },
       {
         "page": "https://majestichotelgroup.com/en/barcelona/hotel-majestic/gallery",
@@ -3487,9 +3550,9 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 6,
+    "cityCount": 7,
     "hotelCount": 11,
-    "totalBytes": 2364486
+    "totalBytes": 2505586
   },
   "cancun": {
     "destinationScenes": [
