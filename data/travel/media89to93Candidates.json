@@ -3781,37 +3781,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "scene-9",
-        "sourcePage": "https://commons.wikimedia.org/wiki/File:Parque_de_las_Palapas_2.jpg",
-        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Parque_de_las_Palapas_2.jpg/960px-Parque_de_las_Palapas_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20171102134529",
-        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Parque_de_las_Palapas_2.jpg/960px-Parque_de_las_Palapas_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20171102134529",
-        "originalAlt": "File:Parque de las Palapas 2.jpg",
-        "originalCaption": "",
-        "credit": "Mexican Caribbean / Quintana Roo tourism",
-        "publisher": "Mexican Caribbean / Quintana Roo tourism",
-        "hotel": null,
-        "localPath": "/images/travel/cancun-premium/destination/scene-9.webp",
-        "sourceSHA256": "c7b6a3334efded5581220c1625d93c342568038932937b50531e9b2ec988bb8f",
-        "webpSHA256": "b674382dea5154e2942824288062a97a8d9dbcf3f01cd60e0c0c4864ed280566",
-        "sourcePixels": [
-          960,
-          642
-        ],
-        "webpPixels": [
-          960,
-          642
-        ],
-        "webpBytes": 41750,
-        "pixelFingerprint": "d0f0e8c8e969e0d6",
-        "candidateSubject": "downtown|centro|parque de las palapas|central.square",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "scene-10",
         "sourcePage": "https://commons.wikimedia.org/wiki/File:Playa_Delfines.jpg",
         "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Playa_Delfines.jpg/960px-Playa_Delfines.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20250218232629",
@@ -3843,28 +3812,28 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "scene-11",
-        "sourcePage": "https://commons.wikimedia.org/wiki/File:Punta_Canc%C3%BAn,_Quintana_Roo_(30530674653).jpg",
-        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Punta_Canc%C3%BAn%2C_Quintana_Roo_%2830530674653%29.jpg/960px-Punta_Canc%C3%BAn%2C_Quintana_Roo_%2830530674653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20220214012755",
-        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Punta_Canc%C3%BAn%2C_Quintana_Roo_%2830530674653%29.jpg/960px-Punta_Canc%C3%BAn%2C_Quintana_Roo_%2830530674653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20220214012755",
-        "originalAlt": "File:Punta Cancún, Quintana Roo (30530674653).jpg",
-        "originalCaption": "",
-        "credit": "Mexican Caribbean / Quintana Roo tourism",
+        "key": "scene-13",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Punta_Cancun_-_panoramio.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Punta_Cancun_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Punta_Cancun_-_panoramio.jpg",
+        "originalAlt": "Punta Cancun lighthouse coastal view",
+        "originalCaption": "Wikimedia Commons — individual author and licence to verify",
+        "credit": "Wikimedia Commons — individual author and licence to verify",
         "publisher": "Mexican Caribbean / Quintana Roo tourism",
         "hotel": null,
-        "localPath": "/images/travel/cancun-premium/destination/scene-11.webp",
-        "sourceSHA256": "a86ca0126aeff2dac4806239f92c892a1fb9303029ad726349b5056a20fffe02",
-        "webpSHA256": "b3e137b93e7a9d05bb51e3d117e59d7722dc460435f314516275c9e45df1693d",
+        "localPath": "/images/travel/cancun-premium/destination/scene-13.webp",
+        "sourceSHA256": "f6cbac57974c77e1d98c61fd85e7761f715bbc5c171e7541433ba773977021da",
+        "webpSHA256": "14588a7b9adb2fd4ab6b401022f14b7404cd7604185e32b71e31e756d55d5765",
         "sourcePixels": [
-          960,
-          720
+          3884,
+          2589
         ],
         "webpPixels": [
-          960,
-          720
+          1275,
+          850
         ],
-        "webpBytes": 32422,
-        "pixelFingerprint": "032201162069c0c0",
+        "webpBytes": 124512,
+        "pixelFingerprint": "b4160cc0f2f6f6e0",
         "candidateSubject": "punta canc|another lighthouse|faro de punta",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
@@ -3874,28 +3843,28 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "scene-12",
-        "sourcePage": "https://commons.wikimedia.org/wiki/File:Evento_Parque_Palapas_Cancun.JPG",
-        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Evento_Parque_Palapas_Cancun.JPG/960px-Evento_Parque_Palapas_Cancun.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150415052146",
-        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Evento_Parque_Palapas_Cancun.JPG/960px-Evento_Parque_Palapas_Cancun.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150415052146",
-        "originalAlt": "File:Evento Parque Palapas Cancun.JPG",
-        "originalCaption": "",
-        "credit": "Mexican Caribbean / Quintana Roo tourism",
+        "key": "scene-14",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Parquekabah01.JPG",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Parquekabah01.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Parquekabah01.JPG",
+        "originalAlt": "Cancun downtown Parque Urbano Kabah entrance",
+        "originalCaption": "Mauro I. / Wikimedia Commons — CC BY-SA 3.0; licence attribution to verify",
+        "credit": "Mauro I. / Wikimedia Commons — CC BY-SA 3.0; licence attribution to verify",
         "publisher": "Mexican Caribbean / Quintana Roo tourism",
         "hotel": null,
-        "localPath": "/images/travel/cancun-premium/destination/scene-12.webp",
-        "sourceSHA256": "8967ba9086d28b2d0ee50e830dc4263a568281a2a6b8e16ba2e29ce54425d1c4",
-        "webpSHA256": "bfbced68d3258150b9e468026ec16e5c92a8fd2f9c6153e206d41c6e10825300",
+        "localPath": "/images/travel/cancun-premium/destination/scene-14.webp",
+        "sourceSHA256": "07a10f2809c620272ae507dd5022ba1eb3a8468b98950067c0e0a1927e4946ee",
+        "webpSHA256": "88a8e1954e50e55e4d0deeef51d91b34dac2f78d8acfc4ba0443ead251abc010",
         "sourcePixels": [
-          960,
-          720
+          2525,
+          1664
         ],
         "webpPixels": [
-          960,
-          720
+          1280,
+          844
         ],
-        "webpBytes": 119948,
-        "pixelFingerprint": "db92e0e2c0c81090",
+        "webpBytes": 249038,
+        "pixelFingerprint": "f064a4f4e4743333",
         "candidateSubject": "downtown|centro|parque de las palapas|parque palapas|central.square",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
@@ -4031,28 +4000,28 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "le-blanc-6",
-        "sourcePage": "https://sportvac.com/en/hotels/le-blanc-spa-resort-adult-only/",
-        "sourceResolvedUrl": "https://sportvac.com/wp-content/uploads/2026/11/005cParadisusPalmaReal-General-Facade-Aerial-scaled.jpg",
-        "sourceRequestedUrl": "https://sportvac.com/wp-content/uploads/2026/11/005cParadisusPalmaReal-General-Facade-Aerial-scaled.jpg",
-        "originalAlt": "",
-        "originalCaption": "",
-        "credit": "Le Blanc Spa Resort Cancun",
+        "key": "le-blanc-7",
+        "sourcePage": "https://www.fivestaralliance.com/gallery/le-blanc-spa-resort-gallery-images",
+        "sourceResolvedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2010/15022/15022_0_leblancsparesort_fsa-g.jpg?itok=YRakEHBx",
+        "sourceRequestedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2010/15022/15022_0_leblancsparesort_fsa-g.jpg?itok=YRakEHBx",
+        "originalAlt": "Le Blanc Spa Resort Cancun exterior",
+        "originalCaption": "Five Star Alliance / Le Blanc Spa Resort",
+        "credit": "Five Star Alliance / Le Blanc Spa Resort",
         "publisher": "Le Blanc Spa Resort Cancun",
         "hotel": "Le Blanc Spa Resort Cancun",
-        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-6.webp",
-        "sourceSHA256": "aed73c870ba7f415efa2a93a6782d4c1d1fbf922314eaecdda459a868cb66473",
-        "webpSHA256": "1e707af66c62e3c9ee0f1e23bf1dc48da45725cbc8cc4039af7ebdb6dd3856e4",
+        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-7.webp",
+        "sourceSHA256": "d61e0b5edd3db05c0617cc3d1dc3a76b4808ac5253d60ab7433d208165f4840c",
+        "webpSHA256": "2170a704e2c5b70facd0240ace152247ae9f7f2ac34f03d3890f9f9115edbfca",
         "sourcePixels": [
-          2560,
-          1440
+          815,
+          459
         ],
         "webpPixels": [
-          1280,
-          720
+          815,
+          459
         ],
-        "webpBytes": 257584,
-        "pixelFingerprint": "b3313b236f68a73f",
+        "webpBytes": 54910,
+        "pixelFingerprint": "92ac8c909387878f",
         "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
@@ -4267,6 +4236,42 @@
       {
         "page": "https://www.expedia.com/Cancun-Hotels-Nizuc-Resort-And-Spa.h5531551.Hotel-Information",
         "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Nizuc-Resort-And-Spa.h5531551.Hotel-Information"
+      },
+      {
+        "page": "https://www.travelweekly.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun-p3711940",
+        "error": "403 Client Error: Forbidden for url: https://www.travelweekly.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun-p3711940"
+      },
+      {
+        "page": "https://www.businesstravelnews.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun/Images-p3236606",
+        "error": "403 Client Error: Forbidden for url: https://www.businesstravelnews.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun/Images-p3236606"
+      },
+      {
+        "page": "https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information?equalTargetTab=tab-0",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information?equalTargetTab=tab-0"
+      },
+      {
+        "page": "https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun",
+        "error": "403 Client Error: HTTP Forbidden for url: https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun"
+      },
+      {
+        "page": "https://www.palaceproagents.com/es/destinos-resorts/le-blanc-spa-resort-cancun",
+        "error": "403 Client Error: HTTP Forbidden for url: https://www.palaceproagents.com/es/destinos-resorts/le-blanc-spa-resort-cancun"
+      },
+      {
+        "page": "https://cancun.leblancsparesorts.com/es/galeria",
+        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/es/galeria"
+      },
+      {
+        "page": "https://cancun.leblancsparesorts.com/gallery",
+        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/gallery"
+      },
+      {
+        "page": "https://www.leblancsparesorts.com/gallery",
+        "error": "403 Client Error: HTTP Forbidden for url: https://www.leblancsparesorts.com/gallery"
+      },
+      {
+        "page": "https://cancun.leblancsparesorts.com/",
+        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/"
       }
     ],
     "publicUseApproved": false,
@@ -4612,10 +4617,134 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-9",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Parque_de_las_Palapas_2.jpg",
+        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Parque_de_las_Palapas_2.jpg/960px-Parque_de_las_Palapas_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20171102134529",
+        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Parque_de_las_Palapas_2.jpg/960px-Parque_de_las_Palapas_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20171102134529",
+        "originalAlt": "File:Parque de las Palapas 2.jpg",
+        "originalCaption": "",
+        "credit": "Mexican Caribbean / Quintana Roo tourism",
+        "publisher": "Mexican Caribbean / Quintana Roo tourism",
+        "hotel": null,
+        "localPath": "/images/travel/cancun-premium/destination/scene-9.webp",
+        "sourceSHA256": "c7b6a3334efded5581220c1625d93c342568038932937b50531e9b2ec988bb8f",
+        "webpSHA256": "b674382dea5154e2942824288062a97a8d9dbcf3f01cd60e0c0c4864ed280566",
+        "sourcePixels": [
+          960,
+          642
+        ],
+        "webpPixels": [
+          960,
+          642
+        ],
+        "webpBytes": 41750,
+        "pixelFingerprint": "d0f0e8c8e969e0d6",
+        "candidateSubject": "downtown|centro|parque de las palapas|central.square",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-11",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Punta_Canc%C3%BAn,_Quintana_Roo_(30530674653).jpg",
+        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Punta_Canc%C3%BAn%2C_Quintana_Roo_%2830530674653%29.jpg/960px-Punta_Canc%C3%BAn%2C_Quintana_Roo_%2830530674653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20220214012755",
+        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Punta_Canc%C3%BAn%2C_Quintana_Roo_%2830530674653%29.jpg/960px-Punta_Canc%C3%BAn%2C_Quintana_Roo_%2830530674653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20220214012755",
+        "originalAlt": "File:Punta Cancún, Quintana Roo (30530674653).jpg",
+        "originalCaption": "",
+        "credit": "Mexican Caribbean / Quintana Roo tourism",
+        "publisher": "Mexican Caribbean / Quintana Roo tourism",
+        "hotel": null,
+        "localPath": "/images/travel/cancun-premium/destination/scene-11.webp",
+        "sourceSHA256": "a86ca0126aeff2dac4806239f92c892a1fb9303029ad726349b5056a20fffe02",
+        "webpSHA256": "b3e137b93e7a9d05bb51e3d117e59d7722dc460435f314516275c9e45df1693d",
+        "sourcePixels": [
+          960,
+          720
+        ],
+        "webpPixels": [
+          960,
+          720
+        ],
+        "webpBytes": 32422,
+        "pixelFingerprint": "032201162069c0c0",
+        "candidateSubject": "punta canc|another lighthouse|faro de punta",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-12",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Evento_Parque_Palapas_Cancun.JPG",
+        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Evento_Parque_Palapas_Cancun.JPG/960px-Evento_Parque_Palapas_Cancun.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150415052146",
+        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Evento_Parque_Palapas_Cancun.JPG/960px-Evento_Parque_Palapas_Cancun.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150415052146",
+        "originalAlt": "File:Evento Parque Palapas Cancun.JPG",
+        "originalCaption": "",
+        "credit": "Mexican Caribbean / Quintana Roo tourism",
+        "publisher": "Mexican Caribbean / Quintana Roo tourism",
+        "hotel": null,
+        "localPath": "/images/travel/cancun-premium/destination/scene-12.webp",
+        "sourceSHA256": "8967ba9086d28b2d0ee50e830dc4263a568281a2a6b8e16ba2e29ce54425d1c4",
+        "webpSHA256": "bfbced68d3258150b9e468026ec16e5c92a8fd2f9c6153e206d41c6e10825300",
+        "sourcePixels": [
+          960,
+          720
+        ],
+        "webpPixels": [
+          960,
+          720
+        ],
+        "webpBytes": 119948,
+        "pixelFingerprint": "db92e0e2c0c81090",
+        "candidateSubject": "downtown|centro|parque de las palapas|parque palapas|central.square",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "le-blanc-6",
+        "sourcePage": "https://sportvac.com/en/hotels/le-blanc-spa-resort-adult-only/",
+        "sourceResolvedUrl": "https://sportvac.com/wp-content/uploads/2026/11/005cParadisusPalmaReal-General-Facade-Aerial-scaled.jpg",
+        "sourceRequestedUrl": "https://sportvac.com/wp-content/uploads/2026/11/005cParadisusPalmaReal-General-Facade-Aerial-scaled.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Le Blanc Spa Resort Cancun",
+        "publisher": "Le Blanc Spa Resort Cancun",
+        "hotel": "Le Blanc Spa Resort Cancun",
+        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-6.webp",
+        "sourceSHA256": "aed73c870ba7f415efa2a93a6782d4c1d1fbf922314eaecdda459a868cb66473",
+        "webpSHA256": "1e707af66c62e3c9ee0f1e23bf1dc48da45725cbc8cc4039af7ebdb6dd3856e4",
+        "sourcePixels": [
+          2560,
+          1440
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 257584,
+        "pixelFingerprint": "b3313b236f68a73f",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 10,
+    "cityCount": 9,
     "hotelCount": 11,
-    "totalBytes": 2218720
+    "totalBytes": 2195476
   }
 }
