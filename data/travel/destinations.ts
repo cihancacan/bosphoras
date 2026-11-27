@@ -101,6 +101,7 @@ export const travelDestinations: TravelDestination[] = [
   { slug: "las-vegas", name: "Las Vegas", country: "United States", region: "north-america", categories: ["hotels"] as TravelCategory[], angle: "Landmark Strip resorts, entertainment, suites and desert excursions." },
   { slug: "rome", name: "Rome", country: "Italy", region: "europe", categories: ["hotels"] as TravelCategory[], angle: "Ancient landmarks, historic piazzas and grand hotels." },
   { slug: "cancun", name: "Cancun", country: "Mexico", region: "mexico", categories: ["hotels"] as TravelCategory[], angle: "Caribbean beaches, family resorts and adults-only escapes." },
+  { slug: "osaka", name: "Osaka", country: "Japan", region: "east-asia", categories: ["hotels"] as TravelCategory[], angle: "Kansai gastronomy, historic landmarks, riverfronts and panoramic hotels." },
   { slug: "kuala-lumpur", name: "Kuala Lumpur", country: "Malaysia", region: "southeast-asia", categories: ["hotels"] as TravelCategory[], angle: "Petronas Towers, vibrant markets, tropical gardens and city hotels." },
   { slug: "hong-kong", name: "Hong Kong", country: "Hong Kong", region: "east-asia", categories: ["hotels"] as TravelCategory[], angle: "Victoria Harbour, historic streets, cultural districts and landmark hotels." },
   { slug: "orlando", name: "Orlando", country: "United States", region: "north-america", categories: ["hotels"] as TravelCategory[], angle: "Theme parks, family resorts, lakes and neighbourhoods." },
