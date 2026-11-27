@@ -1,0 +1,123 @@
+{
+  "name": "Phuket",
+  "country": "Tailandia",
+  "eyebrow": "Mar de Andamán · Calas tranquilas y bosques tropicales",
+  "heading": "Dónde alojarse en Phuket: mejores playas y hoteles de lujo",
+  "intro": "Playas entre colinas verdes, arquitectura tailandesa de teca y villas privadas frente al mar de Andamán: Phuket ofrece mucho más que sus zonas turísticas más animadas.",
+  "editorial": "Al elegir alojamiento, distingue entre playas, calas y colinas boscosas. Amanpuri se encuentra en Pansea Beach y destaca por su arquitectura tailandesa tradicional y tranquilidad. La vecina Surin es otra playa. Trisara ocupa un promontorio tranquilo al norte de Bang Tao y apuesta por villas con piscina privada.\n\nRosewood Phuket, en Emerald Bay al suroeste de Patong, ofrece jardines tropicales y una cala más resguardada. Keemala, en las colinas de Kamala, destaca por sus singulares villas entre árboles, no por estar directamente en la playa.\n\nAntes de reservar, confirma ubicación real, acceso a la playa, vistas, piscina y terraza de la villa o pabellón. Planifica traslados entre aeropuerto, costa noroeste y Phuket Old Town. Durante el monzón, revisa oleaje, corrientes y condiciones para navegar. El proveedor confirma precios, disponibilidad y condiciones actuales.",
+  "hotelIntro": "Amanpuri, Trisara, Rosewood Phuket y Keemala: compara playas tranquilas, villas con piscina privada, calas tropicales y alojamientos en el bosque.",
+  "areas": [
+    [
+      "Pansea y Surin",
+      "Pansea, en la costa noroeste, ofrece un ambiente tranquilo. Amanpuri está en Pansea Beach; la vecina Surin es una playa distinta y más abierta a visitantes.",
+      "No confundas ambas playas: las instalaciones exclusivas de un resort no implican acceso libre a toda la propiedad."
+    ],
+    [
+      "Layan y Bang Tao",
+      "Playas largas, promontorios arbolados y villas tranquilas. Trisara se encuentra al norte de Bang Tao, en un tramo más reservado.",
+      "Trisara está en un promontorio separado, no en el centro de Bang Tao Beach; planifica traslados."
+    ],
+    [
+      "Emerald Bay y costa de Patong",
+      "Al suroeste de Patong hay calas más tranquilas. Rosewood Phuket ocupa una de ellas, con acceso a otras zonas de la costa oeste.",
+      "Las fotos de Patong no muestran necesariamente la playa de Rosewood; distingue las calas."
+    ],
+    [
+      "Kamala y colinas boscosas",
+      "Kamala combina una bahía con playa y colinas verdes. Las villas singulares de Keemala se sitúan entre ellas.",
+      "Keemala está en las colinas, no directamente en Kamala Beach."
+    ]
+  ],
+  "experiences": [
+    [
+      "Una mañana en la costa noroeste",
+      "Pasea junto al mar antes del calor y disfruta después de una terraza a la sombra."
+    ],
+    [
+      "Arquitectura de Phuket Old Town",
+      "Descubre fachadas sinoportuguesas y pequeñas tiendas del casco histórico."
+    ],
+    [
+      "Atardecer en el cabo Promthep",
+      "Admira la costa sur desde los miradores, teniendo en cuenta el tiempo y la afluencia."
+    ],
+    [
+      "Paseo en barco por el mar de Andamán",
+      "Elige ruta según el tiempo, las condiciones del mar y las normas de las áreas protegidas."
+    ]
+  ],
+  "checks": [
+    "Elige entre Pansea Beach, el promontorio de Trisara, la cala de Rosewood y las colinas de Kamala.",
+    "Confirma vistas, piscina, terraza y acceso al litoral de tu villa.",
+    "Planifica traslados entre aeropuerto, resorts del noroeste y Old Town considerando el tráfico.",
+    "Ten en cuenta monzón, oleaje y corrientes para bañarte o navegar.",
+    "Compara servicios de temporada, impuestos, cancelación y prestaciones incluidas."
+  ],
+  "hotels": [
+    [
+      "Pansea Beach · Costa noroeste",
+      "Resort con pabellones tradicionales de teca, jardines tropicales y ubicación tranquila en Pansea Beach.",
+      "Pavilion, Pool Pavilion y villas independientes difieren en distribución, piscina y vistas.",
+      "Para una estancia tranquila junto al mar con arquitectura tailandesa.",
+      "Las construcciones de teca, terrazas sombreadas, jardines y piscina principal de Amanpuri crean un ambiente relajado en Pansea. Pabellones y villas son categorías diferentes; piscina privada, tamaño, vistas y servicios dependen de la reserva. La foto de Villa 7 corresponde solo a esa villa."
+    ],
+    [
+      "Costa de Layan · Promontorio noroeste",
+      "Resort íntimo de villas con piscina privada y vistas al mar de Andamán.",
+      "Distingue Ocean View y Oceanfront; varían vistas, distribución y acceso al litoral.",
+      "Para descansar con privacidad en una villa con piscina.",
+      "Trisara ocupa un promontorio arbolado entre vegetación tropical. Terrazas y piscinas privadas miran al mar. La ubicación real, intimidad y acceso al litoral dependen de la categoría. Confirma distribución y servicios incluidos."
+    ],
+    [
+      "Emerald Bay · Sur de Patong",
+      "Resort contemporáneo con pabellones y villas entre jardines tropicales cerca de una cala resguardada.",
+      "Pavilion y Beachfront Villa difieren en tamaño de piscina, terraza y vistas.",
+      "Para jardines, spa y vacaciones tranquilas junto al mar.",
+      "Rosewood Phuket está en una cala más tranquila al suroeste de Patong. Materiales naturales y espacios abiertos refuerzan su conexión con la playa. Una villa frente al mar no equivale a un pabellón con vistas parciales. Las familias deben revisar piscina, terraza, dormitorios y vistas reales."
+    ],
+    [
+      "Colinas de Kamala · Bosque tropical",
+      "Villas singulares con piscina privada entre árboles, lejos de la playa inmediata.",
+      "Bird's Nest, Tree Pool House y otras categorías tienen vistas diferentes al bosque o al resort.",
+      "Para arquitectura singular, naturaleza y bienestar.",
+      "Las estructuras trenzadas y casas de árbol de Keemala muestran otra faceta de Phuket. La vegetación y piscinas privadas permiten alejarse del bullicio costero. Bird's Nest, Tree Pool House y Clay Pool Cottage varían en tamaño, escaleras, vistas y distribución. Elige la villa adecuada."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Kata Noi Beach en Phuket",
+    "Surin Beach en la costa noroeste",
+    "Panorámica de la bahía de Kamala",
+    "Atardecer en Nai Harn Beach",
+    "Calles históricas de Phuket Old Town",
+    "Cabo Promthep sobre el mar de Andamán",
+    "Playa tropical de Kata",
+    "Bang Tao Beach",
+    "Patong Beach y costa oeste de Phuket"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Terraza del restaurante de Amanpuri con vistas al mar de Andamán",
+      "Piscina principal entre palmeras y pabellones tailandeses",
+      "Villa 7 al atardecer"
+    ],
+    [
+      "Piscina privada de Trisara Ocean View Pool Villa",
+      "Terraza de villa con vistas al mar",
+      "Terraza y piscina de Ocean View Pool Villa"
+    ],
+    [
+      "Piscina de Rosewood Phuket en Emerald Bay",
+      "Partial Ocean View Pool Pavilion",
+      "Beachfront Pool Villa junto al litoral"
+    ],
+    [
+      "Bird's Nest Pool Villa trenzada entre árboles",
+      "Piscina privada de Bird's Nest Pool Villa",
+      "Interior de Bird's Nest Pool Villa"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Phuket: mejores playas y hoteles de lujo",
+  "hotelSeoTitle": "Los mejores hoteles de lujo y villas privadas de Phuket",
+  "seoDescription": "Compara Surin, Layan, Bang Tao y Kamala. Encuentra tu hotel en Phuket con Amanpuri, Trisara, Rosewood y Keemala."
+}
