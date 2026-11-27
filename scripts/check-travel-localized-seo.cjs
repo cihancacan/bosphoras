@@ -7,7 +7,7 @@ const {getLocalizedGuide,reviewedLocalizedGuides}=require('../data/travel/locali
 const root='https://www.bosphoras.com';
 assert.equal(Object.keys(nativeTravelNames).length,88);
 assert.equal(travelDestinations.length,88);
-assert.equal(reviewedLocalizedGuides.size,191);
+assert.equal(reviewedLocalizedGuides.size,193);
 const urls=indexedTravelUrls(root), known=new Set(urls);
 assert.equal(urls.length,known.size);
 const titles=new Set();
@@ -35,8 +35,8 @@ for(const d of travelDestinations){
 }
 for(const locale of ['fr','en','ar','ru'])for(const parts of [[],['destinations'],['hotels']])assert.equal(travelPageMetadata(locale,parts).robots.index,true);
 assert.equal(titles.size,352);
-assert.equal(urls.filter(u=>/\/travel\/(destinations|hotels)\/[^/]+$/.test(u)).length,734);
+assert.equal(urls.filter(u=>/\/travel\/(destinations|hotels)\/[^/]+$/.test(u)).length,738);
 assert.equal(travelPageMetadata('ru',['destinations','nonexistent']).robots.index,false);
 for(const locale of ['tr','de','es','it','pt','zh'])for(const d of travelDestinations)for(const variant of ['destinations','hotels']){const m=travelPageMetadata(locale,[variant,d.slug]),ready=reviewedLocalizedGuides.has(d.slug+'/'+locale);assert.equal(m.robots.index,ready,d.slug+'/'+locale+'/'+variant);if(ready){assert.ok(known.has(m.alternates.canonical));assert.deepEqual(Object.keys(m.alternates.languages).sort(),editorialTravelLocales.filter(l=>isTravelGuideIndexable(d.slug,variant,l)).sort());assert.equal(m.alternates.languages[locale],m.alternates.canonical);assert.ok(m.title&&m.description&&m.description.length<=160&&m.openGraph&&m.twitter);}}
 const pilot=getLocalizedGuide('istanbul','tr');assert.equal(pilot.areas.length,5);assert.equal(pilot.hotels.length,9);assert.equal(pilot.experiences.length,6);assert.equal(pilot.faq.length,8);
-console.log('734 public guide and hotel routes, including fifteen reviewed Turkish destinations: robots, sitemap, reciprocal hreflang, localized metadata and image URLs verified.',urls.length,'travel URLs');
+console.log('738 public guide and hotel routes, including German and Spanish Istanbul editions: robots, sitemap, reciprocal hreflang, localized metadata and image URLs verified.',urls.length,'travel URLs');
