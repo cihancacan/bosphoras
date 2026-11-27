@@ -95,6 +95,12 @@ def collect_pages(pages):
 DIRECT = {
   "orlando/city": [
     [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Cinderella%27s_Castle_%2832462536921%29.jpg",
+      "Cinderella Castle Magic Kingdom daytime",
+      "https://commons.wikimedia.org/wiki/File:Cinderella%27s_Castle_(32462536921).jpg",
+      "Chad Sparkes / Wikimedia Commons — verify licence"
+    ],
+    [
       "https://commons.wikimedia.org/wiki/Special:FilePath/Magic_Kingdom_Cinderella_Castle.jpg",
       "Magic Kingdom Cinderella Castle",
       "https://commons.wikimedia.org/wiki/File:Magic_Kingdom_Cinderella_Castle.jpg",
@@ -157,6 +163,22 @@ DIRECT = {
       "Waldorf Astoria Orlando exterior and pool at dusk",
       "https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/offers/",
       "Hilton / Waldorf Astoria Orlando official photography"
+    ]
+  ],
+  "orlando/ritz-carlton": [
+    [
+      "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-king-guest-2504-hor-clsc.jpg?downsize=1336px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "King guest room with balcony at Ritz-Carlton Orlando Grande Lakes",
+      "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/photos/",
+      "Marriott / The Ritz-Carlton Orlando, Grande Lakes"
+    ]
+  ],
+  "orlando/portofino": [
+    [
+      "https://assets.simpleviewinc.com/simpleview/image/upload/crm/visitflorida/71084_5roqimb2mbq8486wl2y6yn4zyvuuac0i_fd9b6253-dca2-956e-ade8c85c0837c784.jpg",
+      "Outdoor pool at Loews Portofino Bay Hotel",
+      "https://www.visitflorida.com/listing/loews-portofino-bay-hotel-at-universal-orlando/24895/",
+      "Visit Florida / Loews Portofino Bay Hotel"
     ]
   ]
 }
@@ -228,6 +250,9 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
   for r in candidates:
    label=unquote(r['url']+' '+r['originalAlt']+' '+r['originalCaption']).replace('_',' ')
    if OTHER.search(label) or not re.search(pattern,label,re.I):continue
+   if not property_name and re.search(r'mother and son|father and|family in front|child in front',label,re.I):continue
+   if property_name and pattern==ROOM.pattern and re.search(r'\b(?:bathroom|tub|shower|vanity)\b',label,re.I):continue
+   if property_name and pattern==FACILITY.pattern and re.search(r'kids enjoy|children enjoy|family enjoying',label,re.I):continue
    # Las Vegas: avoid alternate crops of rejected lifestyle and Fremont street assets.
    if not property_name and re.search(r'Venetian_Gondola_Ride_IMG_2777',r['url'],re.I):continue
    if not property_name and pattern.startswith('downtown') and re.search(r'Fremont|RR_Downtown_0271',label,re.I):continue
@@ -291,7 +316,7 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
 def city_job(c):
  base=ROOT/(c['slug']+'-premium')
  old=PREVIOUS.get(c['slug'],{})
- existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='orlando' and r['key']=='scene-5') and not (c['slug']=='las-vegas' and r['key'] in ('scene-1','scene-5','scene-9','scene-12')) and not (c['slug']=='cancun' and r['key'] in ('scene-4','scene-8','scene-9','scene-11','scene-12')) and not (c['slug']=='rome' and r['key'] in ('scene-3','scene-7')) and not (c['slug']=='london' and r['key'] in ('scene-1','scene-2','scene-3')) and not (c['slug']=='las-vegas' and r['key']=='scene-6') and not (c['slug']=='barcelona' and r['key'] in ('scene-3','scene-5'))]
+ existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='orlando' and r['key'] in ('scene-5','scene-6')) and not (c['slug']=='las-vegas' and r['key'] in ('scene-1','scene-5','scene-9','scene-12')) and not (c['slug']=='cancun' and r['key'] in ('scene-4','scene-8','scene-9','scene-11','scene-12')) and not (c['slug']=='rome' and r['key'] in ('scene-3','scene-7')) and not (c['slug']=='london' and r['key'] in ('scene-1','scene-2','scene-3')) and not (c['slug']=='las-vegas' and r['key']=='scene-6') and not (c['slug']=='barcelona' and r['key'] in ('scene-3','scene-5'))]
  if os.environ.get('TRAVEL_OTA_ONLY')=='1':return c['slug'],'city',old.get('destinationScenes',[]),[]
  if len(existing)>=9:return c['slug'],'city',existing,[]
  cand,errors=collect_pages(c['cityPages'])
@@ -338,7 +363,7 @@ def hotel_job(c,h):
  old=PREVIOUS.get(c['slug'],{})
  allprevious=[r for r in old.get('hotels',[]) if r['hotel']==name]
  # These were specifically identified by source filenames/alt as unsuitable or ambiguous.
- bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4','savoy-2','shangri-la-2','shangri-la-3','venetian-3','le-blanc-1','le-blanc-3','coral-beach-3','nizuc-4','hyatt-ziva-2','coral-beach-4','coral-beach-5','le-blanc-5','le-blanc-6','le-blanc-7','le-blanc-8'}
+ bad={'ritz-carlton-2','portofino-2','claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4','savoy-2','shangri-la-2','shangri-la-3','venetian-3','le-blanc-1','le-blanc-3','coral-beach-3','nizuc-4','hyatt-ziva-2','coral-beach-4','coral-beach-5','le-blanc-5','le-blanc-6','le-blanc-7','le-blanc-8'}
  rejected=[r for r in allprevious if r['key'] in bad]
  existing=[r for r in allprevious if r['key'] not in bad]
  if len(existing)>=3:return c['slug'],key,existing,[]
