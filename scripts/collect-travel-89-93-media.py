@@ -19,7 +19,7 @@ BAD=re.compile(r'logo|favicon|sprite|placeholder|avatar|cookie|badge|award|track
 ROOM=re.compile(r'bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer',re.I)
 EXTERIOR=re.compile(r'exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view',re.I)
 FACILITY=re.compile(r'pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin',re.I)
-OTHER=re.compile(r'chef|cocktail|menu|dish|food|wine|drink|wedding|meeting|conference|portrait|staff|person|model|gift|brochure|floor.?plan|render|illustration|virtual.?tour|360.?tour|video',re.I)
+OTHER=re.compile(r'chef|cocktail|menu|dish|food|wine|drink|burger|snack|toiletries|amenities bottles|bvlgari amenities|wedding|meeting|conference|portrait|staff|person|model|gift|brochure|floor.?plan|render|illustration|virtual.?tour|360.?tour|video',re.I)
 CDN=('cloudinary.com','imgix.net','cloudfront.net','akamaihd.net','contentful.com','ctfassets.net','s3.amazonaws.com','scene7.com','adobeaemcloud.com','simpleviewinc.com','simpleviewcms.com','simpleviewcdn.com','sanity.io','squarespace-cdn.com','wixstatic.com','webflow.com','cdn-website.com','imgix.com','fastly.net','azureedge.net','sitecorecontenthub.cloud','digitaloceanspaces.com')
 def get(url, limit=24_000_000):
  if urlparse(url).scheme!='https': raise ValueError('not HTTPS')
@@ -310,7 +310,7 @@ def hotel_job(c,h):
  old=PREVIOUS.get(c['slug'],{})
  allprevious=[r for r in old.get('hotels',[]) if r['hotel']==name]
  # These were specifically identified by source filenames/alt as unsuitable or ambiguous.
- bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4','savoy-2','shangri-la-2','shangri-la-3','venetian-3'}
+ bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4','savoy-2','shangri-la-2','shangri-la-3','venetian-3','le-blanc-1','le-blanc-3','coral-beach-3','nizuc-4'}
  rejected=[r for r in allprevious if r['key'] in bad]
  existing=[r for r in allprevious if r['key'] not in bad]
  if len(existing)>=3:return c['slug'],key,existing,[]
