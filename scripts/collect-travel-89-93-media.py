@@ -319,15 +319,18 @@ def contact_sheet(slug,rows):
  sheet.save(path,'WEBP',quality=82)
 PREVIOUS=json.loads(REPORT.read_text()) if REPORT.exists() else {}
 def main():
- audit={c['slug']:{'destinationScenes':[],'hotels':[],'gaps':[],'errors':[],'publicUseApproved':False,'ownerPermissionDeclared':True} for c in CONFIG}
+ selected=os.environ.get('TRAVEL_DESTINATION','').strip()
+ configs=[c for c in CONFIG if not selected or c['slug']==selected]
+ if not configs:raise ValueError('Unknown travel destination: '+selected)
+ audit={c['slug']:{'destinationScenes':[],'hotels':[],'gaps':[],'errors':[],'publicUseApproved':False,'ownerPermissionDeclared':True} for c in configs}
  with ThreadPoolExecutor(max_workers=6) as ex:
-  jobs=[ex.submit(city_job,c) for c in CONFIG]+[ex.submit(hotel_job,c,h) for c in CONFIG for h in c['hotels']]
+  jobs=[ex.submit(city_job,c) for c in configs]+[ex.submit(hotel_job,c,h) for c in configs for h in c['hotels']]
   for task in jobs:
    slug,key,rows,errors=task.result()
    a=audit[slug];a['destinationScenes' if key=='city' else 'hotels'].extend(rows);a['errors'].extend(errors)
    wanted=9 if key=='city' else 3
    if len(rows)<wanted:a['gaps'].append({'group':key,'expected':wanted,'found':len(rows)})
- for c in CONFIG:
+ for c in configs:
   a=audit[c['slug']]
   old=PREVIOUS.get(c['slug'],{})
   keys={r['localPath'] for r in a['destinationScenes']+a['hotels']}
@@ -347,5 +350,5 @@ def main():
   a['cityCount']=len(a['destinationScenes']);a['hotelCount']=len(a['hotels']);a['totalBytes']=sum(x['webpBytes'] for x in a['destinationScenes']+a['hotels'])
   contact_sheet(c['slug'],a['destinationScenes']+a['hotels'])
   print('MEDIA_SUMMARY',c['slug'],a['cityCount'],a['hotelCount'],a['totalBytes'],json.dumps(a['gaps']),flush=True)
- REPORT.write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n')
+ REPORT.write_text(json.dumps({**PREVIOUS,**audit},ensure_ascii=False,indent=2)+'\n')
 if __name__=='__main__':main()
