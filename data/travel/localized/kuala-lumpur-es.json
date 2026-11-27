@@ -1,0 +1,136 @@
+{
+  "name": "Kuala Lumpur",
+  "country": "Malasia",
+  "eyebrow": "Malasia · Torres Petronas, barrios y hoteles urbanos",
+  "heading": "Kuala Lumpur: elige barrio entre torres, mercados y jardines.",
+  "intro": "Kuala Lumpur combina las torres de KLCC, las compras de Bukit Bintang y las calles históricas de Chinatown. Elige hotel según las visitas, el transporte y los servicios deseados.",
+  "editorial": "KLCC resulta práctico para las Torres Petronas, el parque y los negocios. Bukit Bintang y el Triángulo de Oro ofrecen restaurantes, centros comerciales y vida nocturna. Chinatown y Merdeka Square invitan a paseos históricos; Kampung Baru muestra la vida local. Brickfields y KL Sentral facilitan los enlaces ferroviarios y los jardines de Perdana ofrecen una pausa verde.\n\nTres o cuatro noches permiten recorrer los principales barrios y Batu Caves, fuera del centro. Alterna visitas exteriores y pausas climatizadas. Usa MRT, LRT o monorraíl según el recorrido y deja margen para el tráfico. Las lluvias tropicales pueden alterar el plan.\n\nDesde KUL, compara KLIA Ekspres, autobús y traslado privado. Comprueba requisitos de entrada y trámites digitales según el pasaporte. Compara categoría, vistas, camas y total con impuestos. Una vista urbana no garantiza vistas directas a las Torres Petronas.",
+  "hotelIntro": "Cuatro experiencias: Mandarin Oriental junto al parque KLCC, Four Seasons junto a las torres, The RuMa por su diseño malasio y EQ por sus panorámicas.",
+  "areas": [
+    [
+      "KLCC",
+      "Torres Petronas, parque KLCC, Suria KLCC y centro de convenciones.",
+      "Confirma la orientación de la habitación para ver las torres."
+    ],
+    [
+      "Bukit Bintang y Triángulo de Oro",
+      "Pavilion, Jalan Alor, tiendas, restaurantes y hoteles en altura.",
+      "Revisa ruido y trayectos a pie al transporte."
+    ],
+    [
+      "Chinatown y Merdeka Square",
+      "Petaling Street, Central Market y edificios históricos.",
+      "Compara accesos, tamaño de habitación y horarios."
+    ],
+    [
+      "Kampung Baru",
+      "Cocina local, calles residenciales y puente Saloma.",
+      "Respeta las zonas residenciales y revisa pasos peatonales."
+    ],
+    [
+      "Brickfields y KL Sentral",
+      "Little India y trenes al aeropuerto.",
+      "Comprueba el último trayecto hasta el hotel."
+    ],
+    [
+      "Jardines de Perdana",
+      "Jardines botánicos, museos y espacios verdes.",
+      "Planifica trayectos y pausas bajo techo."
+    ]
+  ],
+  "experiences": [
+    [
+      "Descubrir las Torres Petronas",
+      "Combina las torres con el parque KLCC; comprueba entradas."
+    ],
+    [
+      "Explorar mercados históricos",
+      "Combina Petaling Street, Central Market y Merdeka Square."
+    ],
+    [
+      "Visitar Batu Caves",
+      "Organiza una excursión aparte y respeta las normas de vestimenta de los templos."
+    ],
+    [
+      "Disfrutar de la gastronomía",
+      "Alterna restaurantes de Kampung Baru y Bukit Bintang."
+    ]
+  ],
+  "checks": [
+    "Confirma las vistas y categoría de la habitación.",
+    "Revisa conexiones MRT, LRT o monorraíl.",
+    "Comprueba requisitos de entrada según el pasaporte.",
+    "Compara el total con impuestos, tasas, desayuno y cancelación.",
+    "Prevé lluvia y pausas climatizadas."
+  ],
+  "hotels": [
+    [
+      "KLCC · City Centre",
+      "Hotel clásico junto al parque KLCC con habitaciones, suites, restaurantes, spa y piscina.",
+      "Confirma vistas al parque o a las torres y camas.",
+      "Para lujo clásico junto al parque.",
+      "Hotel clásico junto al parque KLCC con habitaciones, suites, restaurantes, spa y piscina. Confirma vistas al parque o a las torres y camas."
+    ],
+    [
+      "KLCC · Jalan Ampang",
+      "Hotel contemporáneo junto a las Torres Petronas con habitaciones, suites, piscina exterior y restaurantes.",
+      "Compara vistas, categorías y condiciones de acceso a instalaciones.",
+      "Para una estancia contemporánea junto a las torres.",
+      "Hotel contemporáneo junto a las Torres Petronas con habitaciones, suites, piscina exterior y restaurantes. Compara vistas, categorías y condiciones de acceso a instalaciones."
+    ],
+    [
+      "Jalan Kia Peng · Triángulo de Oro",
+      "Diseño residencial inspirado en el patrimonio malasio, piscina exterior y salones.",
+      "Comprueba categoría, vistas y ocupación máxima.",
+      "Para diseño local y descanso.",
+      "Diseño residencial inspirado en el patrimonio malasio, piscina exterior y salones. Comprueba categoría, vistas y ocupación máxima."
+    ],
+    [
+      "Jalan Sultan Ismail · Triángulo de Oro",
+      "Hotel en Equatorial Plaza con habitaciones en altura, piscina, spa y restaurantes panorámicos.",
+      "Confirma orientación y condiciones de restaurantes en altura.",
+      "Para panorámicas y viajes de negocios.",
+      "Hotel en Equatorial Plaza con habitaciones en altura, piscina, spa y restaurantes panorámicos. Confirma orientación y condiciones de restaurantes en altura."
+    ]
+  ],
+  "faq": [
+    [
+      "¿Dónde alojarse en la primera visita?",
+      "KLCC o Bukit Bintang son prácticos según visitas y transporte."
+    ],
+    [
+      "¿Qué barrio conviene para ver las Torres Petronas?",
+      "KLCC está cerca; confirma una habitación con vistas directas."
+    ],
+    [
+      "¿Cuántas noches hacen falta?",
+      "Tres o cuatro para los barrios principales y Batu Caves."
+    ],
+    [
+      "¿Cómo llegar al centro desde KUL?",
+      "Compara KLIA Ekspres hasta KL Sentral, autobús y traslado privado."
+    ],
+    [
+      "¿Hace falta alquilar coche?",
+      "No para la mayoría de visitas; transporte público y traslados puntuales son prácticos."
+    ],
+    [
+      "¿Qué hotel conviene a las familias?",
+      "Compara los cuatro según capacidad, camas y servicios familiares."
+    ],
+    [
+      "¿Cómo comparar tarifas?",
+      "Compara fechas, viajeros, categorías, impuestos y cancelación equivalentes."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Dónde alojarse en Kuala Lumpur: KLCC y Bukit Bintang",
+  "hotelSeoTitle": "Hoteles de lujo en Kuala Lumpur: KLCC y Triángulo de Oro",
+  "seoDescription": "Compara barrios y hoteles de Kuala Lumpur: KLCC, Bukit Bintang, Chinatown, transporte y consejos."
+}

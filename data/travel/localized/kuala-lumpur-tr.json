@@ -1,0 +1,136 @@
+{
+  "name": "Kuala Lumpur",
+  "country": "Malezya",
+  "eyebrow": "Malezya · Petronas Kuleleri, semtler ve şehir otelleri",
+  "heading": "Kuala Lumpur'da konaklama: kuleler, pazarlar ve bahçeler arasında bölgenizi seçin.",
+  "intro": "Kuala Lumpur, KLCC kulelerini, Bukit Bintang alışveriş caddelerini ve Chinatown'un tarihi sokaklarını bir araya getirir. Otelinizi ziyaretler, ulaşım ve olanaklara göre seçin.",
+  "editorial": "KLCC, Petronas Kuleleri, park ve iş görüşmeleri için uygundur. Bukit Bintang ve Golden Triangle restoranlar, alışveriş merkezleri ve hareketli gece hayatı sunar. Chinatown ve Merdeka Square tarihi yürüyüşler, Kampung Baru yerel yaşam için idealdir. Brickfields ve KL Sentral tren bağlantılarını kolaylaştırır; Perdana bahçeleri yeşil bir mola sunar.\n\nÜç veya dört gece ana bölgeleri ve merkez dışındaki Batu Caves'i görmek için uygundur. Açık hava ziyaretleri ile klimalı molaları dengeleyin. MRT, LRT ve monoray kullanın; karayolu yolculuklarında zaman payı bırakın. Tropikal yağmurlar planları değiştirebilir.\n\nKUL havalimanından KLIA Ekspres, otobüs ve özel transferi karşılaştırın. Pasaportunuza göre giriş şartlarını ve dijital formaliteleri kontrol edin. Oda kategorisi, manzara, yatak ve vergiler dahil toplamı karşılaştırın. Şehir manzarası Petronas Kuleleri manzarasını garanti etmez.",
+  "hotelIntro": "Dört deneyim: KLCC Park yanında Mandarin Oriental, kulelerin yanında Four Seasons, Malezya tasarımıyla The RuMa ve yüksek kat manzaralarıyla EQ.",
+  "areas": [
+    [
+      "KLCC",
+      "Petronas Kuleleri, KLCC Park, Suria KLCC ve kongre merkezi.",
+      "Kule manzarası için oda yönünü doğrulayın."
+    ],
+    [
+      "Bukit Bintang ve Golden Triangle",
+      "Pavilion, Jalan Alor, mağazalar, restoranlar ve yüksek katlı oteller.",
+      "Gürültüyü ve ulaşım noktalarına yürüyüşü kontrol edin."
+    ],
+    [
+      "Chinatown ve Merdeka Square",
+      "Petaling Street, Central Market ve tarihi binalar.",
+      "Erişim, oda büyüklüğü ve açılış saatlerini karşılaştırın."
+    ],
+    [
+      "Kampung Baru",
+      "Yerel yemekler, konut sokakları ve Saloma Köprüsü.",
+      "Konut alanlarına saygı gösterin; yaya yollarını kontrol edin."
+    ],
+    [
+      "Brickfields ve KL Sentral",
+      "Little India ve havalimanı tren bağlantıları.",
+      "Otele son ulaşım etabını kontrol edin."
+    ],
+    [
+      "Perdana bahçeleri",
+      "Botanik bahçeleri, müzeler ve yeşil alanlar.",
+      "Ziyaretler arası ulaşım ve kapalı alan molaları planlayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Petronas Kuleleri'ni keşfetmek",
+      "Kule ziyaretini KLCC Park yürüyüşüyle birleştirin; biletleri kontrol edin."
+    ],
+    [
+      "Tarihi pazarları keşfetmek",
+      "Petaling Street, Central Market ve Merdeka Square'i birleştirin."
+    ],
+    [
+      "Batu Caves'i ziyaret etmek",
+      "Ayrı bir gezi planlayın ve ibadet alanı kıyafet kurallarına uyun."
+    ],
+    [
+      "Yerel mutfağın tadını çıkarmak",
+      "Kampung Baru ve Bukit Bintang restoranlarını deneyin."
+    ]
+  ],
+  "checks": [
+    "Odanın manzarasını ve kategorisini doğrulayın.",
+    "Otelden MRT, LRT veya monoray bağlantısını kontrol edin.",
+    "Pasaportunuza göre giriş şartlarını kontrol edin.",
+    "Vergi, ücret, kahvaltı ve iptal koşulları dahil toplamı karşılaştırın.",
+    "Yağmuru ve klimalı molaları planlayın."
+  ],
+  "hotels": [
+    [
+      "KLCC · City Centre",
+      "KLCC Park yanında klasik otel; odalar, süitler, restoranlar, spa ve havuz.",
+      "Park veya kule manzarasını ve yatakları doğrulayın.",
+      "Klasik lüks ve park erişimi için.",
+      "KLCC Park yanında klasik otel; odalar, süitler, restoranlar, spa ve havuz. Park veya kule manzarasını ve yatakları doğrulayın."
+    ],
+    [
+      "KLCC · Jalan Ampang",
+      "Petronas Kuleleri yanında çağdaş otel; odalar, süitler, açık havuz ve restoranlar.",
+      "Manzara, oda kategorisi ve tesis kullanım şartlarını karşılaştırın.",
+      "Kulelerin yanında çağdaş konaklama için.",
+      "Petronas Kuleleri yanında çağdaş otel; odalar, süitler, açık havuz ve restoranlar. Manzara, oda kategorisi ve tesis kullanım şartlarını karşılaştırın."
+    ],
+    [
+      "Jalan Kia Peng · Golden Triangle",
+      "Malezya mirasından esinlenen konut tarzı tasarım, açık havuz ve salonlar.",
+      "Kategori, manzara ve azami kişi sayısını kontrol edin.",
+      "Yerel tasarım ve dinlenme için.",
+      "Malezya mirasından esinlenen konut tarzı tasarım, açık havuz ve salonlar. Kategori, manzara ve azami kişi sayısını kontrol edin."
+    ],
+    [
+      "Jalan Sultan Ismail · Golden Triangle",
+      "Equatorial Plaza'da yüksek kat odaları, havuz, spa ve panoramik restoranlar.",
+      "Oda yönü ve teras restoranı koşullarını doğrulayın.",
+      "Şehir manzaraları ve iş seyahati için.",
+      "Equatorial Plaza'da yüksek kat odaları, havuz, spa ve panoramik restoranlar. Oda yönü ve teras restoranı koşullarını doğrulayın."
+    ]
+  ],
+  "faq": [
+    [
+      "İlk ziyarette nerede kalınır?",
+      "KLCC veya Bukit Bintang, gezi ve ulaşım tercihlerine göre uygundur."
+    ],
+    [
+      "Petronas Kuleleri için hangi bölge?",
+      "KLCC yakındır; doğrudan manzaralı oda kategorisini doğrulayın."
+    ],
+    [
+      "Kaç gece kalınmalı?",
+      "Üç dört gece ana bölgeler ve Batu Caves için iyi bir başlangıçtır."
+    ],
+    [
+      "KUL'dan merkeze nasıl gidilir?",
+      "KL Sentral'e KLIA Ekspres, otobüs veya özel transferi karşılaştırın."
+    ],
+    [
+      "Araç kiralamak gerekir mi?",
+      "Çoğu şehir ziyareti için hayır; toplu taşıma ve gerektiğinde araç transferi yeterlidir."
+    ],
+    [
+      "Aileler için hangi otel?",
+      "Oda kapasitesi, yataklar ve aile olanaklarına göre dört oteli karşılaştırın."
+    ],
+    [
+      "Fiyatlar nasıl karşılaştırılır?",
+      "Aynı tarihler, kişi sayısı, kategoriler, vergiler ve iptal şartlarını karşılaştırın."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Kuala Lumpur'da nerede kalınır? KLCC ve Bukit Bintang",
+  "hotelSeoTitle": "Kuala Lumpur lüks otelleri: KLCC ve Golden Triangle",
+  "seoDescription": "Kuala Lumpur otelleri ve bölgeleri: KLCC, Bukit Bintang, Chinatown, ulaşım ve gezi önerileri."
+}
