@@ -3696,6 +3696,37 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-6",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Laguna_Nichupt%C3%A9.jpg",
+        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Laguna_Nichupt%C3%A9.jpg/960px-Laguna_Nichupt%C3%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20211016231406",
+        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Laguna_Nichupt%C3%A9.jpg/960px-Laguna_Nichupt%C3%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20211016231406",
+        "originalAlt": "File:Laguna Nichupté.jpg",
+        "originalCaption": "",
+        "credit": "Mexican Caribbean / Quintana Roo tourism",
+        "publisher": "Mexican Caribbean / Quintana Roo tourism",
+        "hotel": null,
+        "localPath": "/images/travel/cancun-premium/destination/scene-6.webp",
+        "sourceSHA256": "e033d4996b222722c23d23fe4f10286dc1b2fb8496e5dffc3911213cf885b81b",
+        "webpSHA256": "e413f6a5a200f02158339ceb09d386cf46725fb4861c2d6245e577d0ac09d7b9",
+        "sourcePixels": [
+          960,
+          720
+        ],
+        "webpPixels": [
+          960,
+          720
+        ],
+        "webpBytes": 167036,
+        "pixelFingerprint": "d29a8d7988808000",
+        "candidateSubject": "lagoon|nichupt",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -3855,37 +3886,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "hyatt-ziva-2",
-        "sourcePage": "https://www.fivestaralliance.com/gallery/hyatt-ziva-cancun-gallery-images",
-        "sourceResolvedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2010/13789/13789_1_hyattzivacancun_fsa-g.jpg?itok=cUK2puKg",
-        "sourceRequestedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2010/13789/13789_1_hyattzivacancun_fsa-g.jpg?itok=cUK2puKg",
-        "originalAlt": "Pool and Lounge at Hyatt Ziva Cancun, Mexico",
-        "originalCaption": "",
-        "credit": "Hyatt Ziva Cancun",
-        "publisher": "Hyatt Ziva Cancun",
-        "hotel": "Hyatt Ziva Cancun",
-        "localPath": "/images/travel/cancun-premium/hyatt-ziva/hyatt-ziva-2.webp",
-        "sourceSHA256": "ae6a808352adb81017b6e241b4d0d1e20d691f2ee89c8157fdc3a9bbdce51578",
-        "webpSHA256": "6a794f0d3e58c98d50f740615937b6ad8e1a772960f12d8950b7841ca07abecd",
-        "sourcePixels": [
-          1000,
-          563
-        ],
-        "webpPixels": [
-          1000,
-          563
-        ],
-        "webpBytes": 99396,
-        "pixelFingerprint": "0fe26854c5c3cecd",
-        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "coral-beach-1",
         "sourcePage": "https://www.coralbeachcancunresort.com/",
         "sourceResolvedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/09/fagcb_pool_ocean_exterior.jpg",
@@ -3948,18 +3948,18 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "coral-beach-4",
+        "key": "coral-beach-5",
         "sourcePage": "https://www.coralbeachcancunresort.com/",
-        "sourceResolvedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/Gem-Spa-Pool-of-Sensations-2.jpg.webp",
-        "sourceRequestedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/Gem-Spa-Pool-of-Sensations-2.jpg.webp",
+        "sourceResolvedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/Gem-Spa-Pool-of-Sensations-2.jpg",
+        "sourceRequestedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/Gem-Spa-Pool-of-Sensations-2.jpg",
         "originalAlt": "",
         "originalCaption": "",
         "credit": "Grand Fiesta Americana Coral Beach Cancún",
         "publisher": "Grand Fiesta Americana Coral Beach Cancún",
         "hotel": "Grand Fiesta Americana Coral Beach Cancún",
-        "localPath": "/images/travel/cancun-premium/coral-beach/coral-beach-4.webp",
-        "sourceSHA256": "4bb5e50bd5deb0cd5a6e7bfdfb64469263bf75362fd3ccd1a1b4285f9b07d04b",
-        "webpSHA256": "f9fa915bb67b068f024a92d64ec2f2b4cbcd48dd06e9b66ffbc7a16449e0d48f",
+        "localPath": "/images/travel/cancun-premium/coral-beach/coral-beach-5.webp",
+        "sourceSHA256": "3ce0e501555b7dc554b757d2e0c28b1fe99be0e7b651594700516b838ccbdd86",
+        "webpSHA256": "1e35a1dd958bcb285c783d9c0712b40443dd5a9d01e41419ca72d9949df77a60",
         "sourcePixels": [
           1920,
           1440
@@ -3968,7 +3968,7 @@
           1133,
           850
         ],
-        "webpBytes": 90034,
+        "webpBytes": 91464,
         "pixelFingerprint": "6cbdb3daf2eab86c",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
@@ -3983,7 +3983,7 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 4
+        "found": 5
       },
       {
         "group": "nizuc",
@@ -3998,7 +3998,7 @@
       {
         "group": "hyatt-ziva",
         "expected": 3,
-        "found": 2
+        "found": 1
       }
     ],
     "errors": [
@@ -4047,6 +4047,10 @@
         "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information"
       },
       {
+        "page": "https://www.businesstravelnews.com/Hotels/Cancun/Hyatt-Ziva-Cancun/Images-p56569871",
+        "error": "403 Client Error: Forbidden for url: https://www.businesstravelnews.com/Hotels/Cancun/Hyatt-Ziva-Cancun/Images-p56569871"
+      },
+      {
         "page": "https://www.travelweekly.com/Hotels/Cancun/Hyatt-Ziva-Cancun-p56570042",
         "error": "403 Client Error: Forbidden for url: https://www.travelweekly.com/Hotels/Cancun/Hyatt-Ziva-Cancun-p56570042"
       },
@@ -4075,24 +4079,44 @@
         "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms"
       },
       {
+        "url": "https://us.trip.com/hotels/san-francisco-hotel-detail-2192948/san-francisco-marriott-marquis/photo.html",
+        "error": "cannot identify image file <_io.BytesIO object at 0x77e1d421c4f0>"
+      },
+      {
+        "url": "https://us.trip.com/hotels/dar-es-salaam-hotel-detail-12123871/chelsea-hotel/photo.html",
+        "error": "cannot identify image file <_io.BytesIO object at 0x77e1d421c4f0>"
+      },
+      {
+        "url": "https://us.trip.com/hotels/portland-hotel-detail-2193060/hilton-portland-downtown/photo.html",
+        "error": "cannot identify image file <_io.BytesIO object at 0x77e1d436b8d0>"
+      },
+      {
+        "url": "https://us.trip.com/hotels/tokyo-hotel-detail-34011678/the-blossom-hibiya/photo.html",
+        "error": "cannot identify image file <_io.BytesIO object at 0x77e1dc60d300>"
+      },
+      {
+        "url": "https://us.trip.com/hotels/solvang-hotel-detail-9036037/new-haven-inn/photo.html",
+        "error": "cannot identify image file <_io.BytesIO object at 0x77e1d433b5b0>"
+      },
+      {
         "url": "https://www.trip.com/hotels/phuket-hotel-detail-83988303/panwaburi-beachfront-resort/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7cd7b40e7650>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x77e1d436a520>"
       },
       {
         "url": "https://www.trip.com/hotels/los-angeles-hotel-detail-1978985/sheraton-gateway-los-angeles/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7cd79eee7bf0>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x77e1d436a520>"
       },
       {
         "url": "https://www.trip.com/hotels/tokyo-hotel-detail-994914/shinjuku-washington-hotel/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7cd79eee7bf0>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x77e1d4bc3920>"
       },
       {
         "url": "https://www.trip.com/hotels/tokyo-hotel-detail-993892/shinjuku-granbell-hotel/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7cd7b44c8270>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x77e1c391a480>"
       },
       {
         "url": "https://www.trip.com/hotels/ho-chi-minh-city-hotel-detail-2073112/park-hyatt-saigon/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7cd7b44c8270>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x77e1c39a2f20>"
       },
       {
         "page": "https://www.expedia.com/Cancun-Hotels-Hyatt-Ziva-Cancun-All-Inclusive.h11669114.Hotel-Information",
@@ -4287,10 +4311,72 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "hyatt-ziva-2",
+        "sourcePage": "https://www.fivestaralliance.com/gallery/hyatt-ziva-cancun-gallery-images",
+        "sourceResolvedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2010/13789/13789_1_hyattzivacancun_fsa-g.jpg?itok=cUK2puKg",
+        "sourceRequestedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2010/13789/13789_1_hyattzivacancun_fsa-g.jpg?itok=cUK2puKg",
+        "originalAlt": "Pool and Lounge at Hyatt Ziva Cancun, Mexico",
+        "originalCaption": "",
+        "credit": "Hyatt Ziva Cancun",
+        "publisher": "Hyatt Ziva Cancun",
+        "hotel": "Hyatt Ziva Cancun",
+        "localPath": "/images/travel/cancun-premium/hyatt-ziva/hyatt-ziva-2.webp",
+        "sourceSHA256": "ae6a808352adb81017b6e241b4d0d1e20d691f2ee89c8157fdc3a9bbdce51578",
+        "webpSHA256": "6a794f0d3e58c98d50f740615937b6ad8e1a772960f12d8950b7841ca07abecd",
+        "sourcePixels": [
+          1000,
+          563
+        ],
+        "webpPixels": [
+          1000,
+          563
+        ],
+        "webpBytes": 99396,
+        "pixelFingerprint": "0fe26854c5c3cecd",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "coral-beach-4",
+        "sourcePage": "https://www.coralbeachcancunresort.com/",
+        "sourceResolvedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/Gem-Spa-Pool-of-Sensations-2.jpg.webp",
+        "sourceRequestedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/Gem-Spa-Pool-of-Sensations-2.jpg.webp",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Grand Fiesta Americana Coral Beach Cancún",
+        "publisher": "Grand Fiesta Americana Coral Beach Cancún",
+        "hotel": "Grand Fiesta Americana Coral Beach Cancún",
+        "localPath": "/images/travel/cancun-premium/coral-beach/coral-beach-4.webp",
+        "sourceSHA256": "4bb5e50bd5deb0cd5a6e7bfdfb64469263bf75362fd3ccd1a1b4285f9b07d04b",
+        "webpSHA256": "f9fa915bb67b068f024a92d64ec2f2b4cbcd48dd06e9b66ffbc7a16449e0d48f",
+        "sourcePixels": [
+          1920,
+          1440
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 90034,
+        "pixelFingerprint": "6cbdb3daf2eab86c",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 4,
-    "hotelCount": 9,
-    "totalBytes": 1366212
+    "cityCount": 5,
+    "hotelCount": 8,
+    "totalBytes": 1435282
   }
 }
