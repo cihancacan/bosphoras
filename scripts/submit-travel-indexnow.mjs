@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+const {host,key}=JSON.parse(fs.readFileSync(new URL('../data/indexnow.json',import.meta.url),'utf8'));
+const origin='https://'+host;
+if(origin!=='https://www.bosphoras.com')throw new Error('Unexpected host');
+const keyLocation=origin+'/'+key+'.txt';
+const proof=await fetch(keyLocation,{signal:AbortSignal.timeout(20000)});
+if(!proof.ok||(await proof.text()).trim()!==key)throw new Error('Ownership proof unavailable');
+const check=await fetch(origin+'/en/travel/hotels/paris',{signal:AbortSignal.timeout(30000)});
+if(!check.ok||!(await check.text()).includes('Compare Cheval Blanc, George V, Le Bristol'))throw new Error('Expected hotel SEO release not live');
+const sitemap=await fetch(origin+'/sitemap.xml',{signal:AbortSignal.timeout(30000)});
+if(!sitemap.ok)throw new Error('Sitemap unavailable');
+const xml=await sitemap.text();
+const urls=[...new Set([...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1].replace(/&amp;/g,'&')))].filter(url=>{
+ const u=new URL(url);
+ return u.origin===origin&&/^\/(?:en\/|ru\/|ar\/)?travel\/(?:destinations|hotels)(?:\/[^/]+)?$/.test(u.pathname);
+});
+if(urls.length<704||urls.length>720)throw new Error('Unexpected guide URL coverage: '+urls.length);
+const response=await fetch('https://api.indexnow.org/indexnow',{method:'POST',headers:{'Content-Type':'application/json; charset=utf-8'},body:JSON.stringify({host,key,keyLocation,urlList:urls}),signal:AbortSignal.timeout(30000)});
+console.log('IndexNow HTTP '+response.status+'; '+urls.length+' recently updated guide and directory URLs. Acceptance does not establish indexing.');
+if(![200,202].includes(response.status))throw new Error('IndexNow submission not accepted');
