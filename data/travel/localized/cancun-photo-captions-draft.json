@@ -5,7 +5,8 @@
       "scene-1",
       "scene-2",
       "scene-3",
-      "scene-5"
+      "scene-5",
+      "scene-6"
     ],
     [
       "nizuc-1",
@@ -35,7 +36,8 @@
       "le-blanc-4": "Hall du Le Blanc Spa Resort",
       "hyatt-ziva-1": "Vue aérienne du Hyatt Ziva à Punta Cancún",
       "coral-beach-1": "Piscines et plage du Coral Beach",
-      "coral-beach-2": "Suite avec vue sur la mer au Coral Beach"
+      "coral-beach-2": "Suite avec vue sur la mer au Coral Beach",
+      "scene-6": "Lagune Nichupté"
     },
     "en": {
       "scene-1": "Delfines Beach",
@@ -48,7 +50,8 @@
       "le-blanc-4": "Le Blanc Spa Resort lobby",
       "hyatt-ziva-1": "Aerial view of Hyatt Ziva at Punta Cancún",
       "coral-beach-1": "Coral Beach pools and beach",
-      "coral-beach-2": "Coral Beach ocean-view suite"
+      "coral-beach-2": "Coral Beach ocean-view suite",
+      "scene-6": "Nichupté Lagoon"
     },
     "tr": {
       "scene-1": "Delfines Plajı",
@@ -61,7 +64,8 @@
       "le-blanc-4": "Le Blanc Spa Resort lobisi",
       "hyatt-ziva-1": "Punta Cancún'daki Hyatt Ziva'nın havadan görünümü",
       "coral-beach-1": "Coral Beach havuzları ve plajı",
-      "coral-beach-2": "Coral Beach deniz manzaralı süiti"
+      "coral-beach-2": "Coral Beach deniz manzaralı süiti",
+      "scene-6": "Nichupté Lagünü"
     },
     "de": {
       "scene-1": "Strand Delfines",
@@ -74,7 +78,8 @@
       "le-blanc-4": "Lobby des Le Blanc Spa Resort",
       "hyatt-ziva-1": "Luftaufnahme des Hyatt Ziva an Punta Cancún",
       "coral-beach-1": "Pools und Strand des Coral Beach",
-      "coral-beach-2": "Suite mit Meerblick im Coral Beach"
+      "coral-beach-2": "Suite mit Meerblick im Coral Beach",
+      "scene-6": "Lagune Nichupté"
     },
     "es": {
       "scene-1": "Playa Delfines",
@@ -87,7 +92,8 @@
       "le-blanc-4": "Vestíbulo de Le Blanc Spa Resort",
       "hyatt-ziva-1": "Vista aérea de Hyatt Ziva en Punta Cancún",
       "coral-beach-1": "Piscinas y playa de Coral Beach",
-      "coral-beach-2": "Suite con vista al mar en Coral Beach"
+      "coral-beach-2": "Suite con vista al mar en Coral Beach",
+      "scene-6": "Laguna Nichupté"
     },
     "it": {
       "scene-1": "Spiaggia Delfines",
@@ -100,7 +106,8 @@
       "le-blanc-4": "Hall del Le Blanc Spa Resort",
       "hyatt-ziva-1": "Veduta aerea di Hyatt Ziva a Punta Cancún",
       "coral-beach-1": "Piscine e spiaggia del Coral Beach",
-      "coral-beach-2": "Suite con vista mare del Coral Beach"
+      "coral-beach-2": "Suite con vista mare del Coral Beach",
+      "scene-6": "Laguna Nichupté"
     },
     "pt": {
       "scene-1": "Praia Delfines",
@@ -113,7 +120,8 @@
       "le-blanc-4": "Átrio do Le Blanc Spa Resort",
       "hyatt-ziva-1": "Vista aérea do Hyatt Ziva em Punta Cancún",
       "coral-beach-1": "Piscinas e praia do Coral Beach",
-      "coral-beach-2": "Suite com vista para o mar no Coral Beach"
+      "coral-beach-2": "Suite com vista para o mar no Coral Beach",
+      "scene-6": "Lagoa Nichupté"
     },
     "zh": {
       "scene-1": "海豚海滩",
@@ -126,7 +134,8 @@
       "le-blanc-4": "Le Blanc 水疗度假村大堂",
       "hyatt-ziva-1": "坎昆角 Hyatt Ziva 酒店航拍",
       "coral-beach-1": "Coral Beach 酒店泳池与海滩",
-      "coral-beach-2": "Coral Beach 酒店海景套房"
+      "coral-beach-2": "Coral Beach 酒店海景套房",
+      "scene-6": "尼丘普特潟湖"
     },
     "ru": {
       "scene-1": "Пляж Дельфинес",
@@ -139,7 +148,8 @@
       "le-blanc-4": "Вестибюль Le Blanc Spa Resort",
       "hyatt-ziva-1": "Hyatt Ziva на Пунта-Канкун с высоты",
       "coral-beach-1": "Бассейны и пляж Coral Beach",
-      "coral-beach-2": "Люкс Coral Beach с видом на море"
+      "coral-beach-2": "Люкс Coral Beach с видом на море",
+      "scene-6": "Лагуна Ничупте"
     },
     "ar": {
       "scene-1": "شاطئ دلفينيس",
@@ -152,15 +162,19 @@
       "le-blanc-4": "ردهة Le Blanc Spa Resort",
       "hyatt-ziva-1": "صورة جوية لفندق Hyatt Ziva في بونتا كانكون",
       "coral-beach-1": "مسابح وشاطئ Coral Beach",
-      "coral-beach-2": "جناح في Coral Beach بإطلالة على البحر"
+      "coral-beach-2": "جناح في Coral Beach بإطلالة على البحر",
+      "scene-6": "بحيرة نيشوبتي"
     }
   },
   "visualReview": {
     "rejected": [
       "hyatt-ziva-2",
-      "coral-beach-4"
+      "coral-beach-4",
+      "scene-8",
+      "le-blanc-5",
+      "coral-beach-5"
     ],
-    "reason": "Visible third-party watermark; lifestyle portrait rather than facility."
+    "reason": "Rejected watermarked pool, repeated lifestyle portrait, non-landmark ice cream image, and unverified property aerial."
   },
   "publicationRights": {
     "ownerConfirmed": true,

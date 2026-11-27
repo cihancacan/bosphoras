@@ -9,7 +9,8 @@
       "scene-7",
       "scene-8",
       "scene-9",
-      "scene-10"
+      "scene-10",
+      "scene-11"
     ],
     [
       "mandarin-1",
@@ -51,7 +52,8 @@
       "majestic-4": "Salle du petit-déjeuner du Majestic",
       "cotton-house-1": "Salon de la suite Damasco",
       "cotton-house-2": "Bibliothèque du Cotton House",
-      "cotton-house-3": "Façade du Cotton House"
+      "cotton-house-3": "Façade du Cotton House",
+      "scene-11": "Marina de Port Vell"
     },
     "en": {
       "scene-1": "Sagrada Família",
@@ -72,7 +74,8 @@
       "majestic-4": "Majestic breakfast room",
       "cotton-house-1": "Damasco Suite living room",
       "cotton-house-2": "Cotton House library",
-      "cotton-house-3": "Cotton House exterior"
+      "cotton-house-3": "Cotton House exterior",
+      "scene-11": "Port Vell marina"
     },
     "tr": {
       "scene-1": "Sagrada Família",
@@ -93,7 +96,8 @@
       "majestic-4": "Majestic kahvaltı salonu",
       "cotton-house-1": "Damasco Suite salonu",
       "cotton-house-2": "Cotton House kütüphanesi",
-      "cotton-house-3": "Cotton House dış cephesi"
+      "cotton-house-3": "Cotton House dış cephesi",
+      "scene-11": "Port Vell marinası"
     },
     "de": {
       "scene-1": "Sagrada Família",
@@ -114,7 +118,8 @@
       "majestic-4": "Frühstücksraum des Majestic",
       "cotton-house-1": "Wohnzimmer der Damasco Suite",
       "cotton-house-2": "Bibliothek des Cotton House",
-      "cotton-house-3": "Fassade des Cotton House"
+      "cotton-house-3": "Fassade des Cotton House",
+      "scene-11": "Jachthafen Port Vell"
     },
     "es": {
       "scene-1": "La Sagrada Família",
@@ -135,7 +140,8 @@
       "majestic-4": "Sala de desayunos del Majestic",
       "cotton-house-1": "Salón de la suite Damasco",
       "cotton-house-2": "Biblioteca del Cotton House",
-      "cotton-house-3": "Fachada del Cotton House"
+      "cotton-house-3": "Fachada del Cotton House",
+      "scene-11": "Marina de Port Vell"
     },
     "it": {
       "scene-1": "La Sagrada Família",
@@ -156,7 +162,8 @@
       "majestic-4": "Sala colazioni del Majestic",
       "cotton-house-1": "Salotto della suite Damasco",
       "cotton-house-2": "Biblioteca del Cotton House",
-      "cotton-house-3": "Facciata del Cotton House"
+      "cotton-house-3": "Facciata del Cotton House",
+      "scene-11": "Marina di Port Vell"
     },
     "pt": {
       "scene-1": "A Sagrada Família",
@@ -177,7 +184,8 @@
       "majestic-4": "Sala de pequeno-almoço do Majestic",
       "cotton-house-1": "Sala da suite Damasco",
       "cotton-house-2": "Biblioteca do Cotton House",
-      "cotton-house-3": "Fachada do Cotton House"
+      "cotton-house-3": "Fachada do Cotton House",
+      "scene-11": "Marina de Port Vell"
     },
     "zh": {
       "scene-1": "圣家堂",
@@ -198,7 +206,8 @@
       "majestic-4": "Majestic 早餐厅",
       "cotton-house-1": "Damasco 套房客厅",
       "cotton-house-2": "Cotton House 图书室",
-      "cotton-house-3": "Cotton House 酒店外观"
+      "cotton-house-3": "Cotton House 酒店外观",
+      "scene-11": "旧港游艇码头"
     },
     "ru": {
       "scene-1": "Саграда-Фамилия",
@@ -219,7 +228,8 @@
       "majestic-4": "Зал для завтраков Majestic",
       "cotton-house-1": "Гостиная люкса Damasco",
       "cotton-house-2": "Библиотека Cotton House",
-      "cotton-house-3": "Фасад Cotton House"
+      "cotton-house-3": "Фасад Cotton House",
+      "scene-11": "Яхтенная гавань Порт-Вель"
     },
     "ar": {
       "scene-1": "ساغرادا فاميليا",
@@ -240,7 +250,8 @@
       "majestic-4": "قاعة الإفطار في Majestic",
       "cotton-house-1": "صالة جناح Damasco",
       "cotton-house-2": "مكتبة Cotton House",
-      "cotton-house-3": "واجهة Cotton House"
+      "cotton-house-3": "واجهة Cotton House",
+      "scene-11": "مرسى بورت فيل"
     }
   },
   "publicationRights": {
