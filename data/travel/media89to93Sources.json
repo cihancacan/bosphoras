@@ -129,6 +129,11 @@
     "city": "Las Vegas",
     "publisher": "Visit Las Vegas / LVCVA",
     "cityPages": [
+      "https://www.venetianlasvegas.com/resort/attractions.html",
+      "https://www.venetianlasvegas.com/about/story-of-the-venetian.html",
+      "https://www.visitlasvegas.com/downtown-las-vegas/",
+      "https://www.visitlasvegas.com/experience/post/unique-and-exciting-things-to-do-on-fremont-street-and-in-downtown-las-vegas/",
+      "https://www.visitlasvegas.com/experience/post/no-plans-no-problem-48-hours-in-las-vegas-guide/",
       "https://www.visitlasvegas.com/experience/post/free-things-to-do-in-las-vegas/",
       "https://www.visitlasvegas.com/experience/post/a-monthly-guide-of-things-to-do-in-las-vegas/",
       "https://www.visitlasvegas.com/experience/post/excursions-from-vegas/",
@@ -157,7 +162,7 @@
       "arts district",
       "red rock",
       "las vegas sign",
-      "downtown"
+      "downtown|container park|gateway arches|neon boneyard"
     ],
     "hotels": [
       [
