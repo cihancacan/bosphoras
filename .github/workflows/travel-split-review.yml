@@ -1,0 +1,40 @@
+name: Prepare individual travel translation files for editorial review
+on:
+  push:
+    branches: [feature/travel-six-language-drafts]
+    paths: ['.github/workflows/travel-split-review.yml','editorial-drafts/travel/zh-melides-manual.json']
+permissions:
+  contents: write
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: feature/travel-six-language-drafts}
+      - name: Split draft archives without publication
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('editorial-drafts/travel')
+          for loc in ('de','tr','es','it','pt','zh'):
+              path=root/(loc+'-drafts.json')
+              data=json.loads(path.read_text())
+              if loc=='zh':
+                  data['melides']=json.loads((root/'zh-melides-manual.json').read_text())
+              assert len(data)==88, (loc,len(data))
+              for slug,guide in data.items():
+                  target=root/'by-destination'/slug/(loc+'.json')
+                  target.parent.mkdir(parents=True,exist_ok=True)
+                  target.write_text(json.dumps(guide,ensure_ascii=False,indent=2)+'\n')
+          print('528 draft files ready for individual editorial review; none approved for publication.')
+          PY
+      - name: Save on draft branch only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add editorial-drafts/travel/by-destination
+          if ! git diff --cached --quiet; then
+            git commit -m 'Split 528 unpublished travel translations for individual review'
+            git push origin HEAD:refs/heads/feature/travel-six-language-drafts
+          fi
