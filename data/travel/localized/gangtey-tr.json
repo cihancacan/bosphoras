@@ -1,0 +1,183 @@
+{
+  "name": "Gangtey",
+  "country": "Butan",
+  "eyebrow": "Butan · Phobjikha yüksek dağ vadisi",
+  "heading": "Gangtey'de nerede kalınır? Phobjikha Vadisi'nin huzuru",
+  "intro": "Buzul vadisi, kışlayan kara boyunlu turnalar ve Nuitée kataloğunda eşleşen dört farklı otel.",
+  "editorial": "Yaklaşık 3000 metre rakımdaki Gangtey, Paro ve Punakha'dan farklıdır. Phobjikha buzul vadisini çam ormanları çevreler; çayırlar mevsime göre renk değiştirir. Korunan sulak alanlar kara boyunlu turnaların kışlama alanıdır. Kuşları beslenme ve geceleme alanlarına yaklaşmadan uzaktan izleyin; karşılaşma garanti değildir.\n\nGangtey Gompa manastırı vadiye hâkimdir. Giriş, fotoğraf ve ibadet saatlerini kontrol edin. Gangtey doğa patikası köyler, çayırlar ve ormanlardan geçer; temponuzu hava, rakım ve kondisyonunuza göre ayarlayın. Turna bilgi merkezi koruma çalışmalarını tanıtır.\n\nTaj Gangtey Resort & Spa restoran, kapalı havuz ve J Wellness Circle sunan beş yıldızlı uluslararası resorttur. Gangtey Tent Resort ısıtmalı çadırlar, Kichu Resort geleneksel ahşap iç mekânlar, Gangtey Pinewood daha ekonomik butik konaklama sunar. Oda, ısıtma ve manzarayı doğrulayın; dört otel aynı standartta değildir. Gangtey Lodge, Amankora ve Six Senses ayrıca incelendi ancak ilk araştırmada Nuitée'de kesin rezervasyon sayfaları doğrulanamadığı için bağlantı eklenmedi.\n\nİki gece manastır ve patikaya, üçüncü gece doğaya ve hava koşullarına esneklik sağlar. Punakha veya Paro'dan dağ yolunu, sürücüyü ve süreyi ayarlayın. Vatandaşlığa göre vizeyi ve otel fiyatından ayrı SDF ücretini doğrulayın. Bosphoras otelleri seçer; Nuitée müsait odaları gösterir, ödeme ve desteği yönetir.",
+  "hotelIntro": "Beş yıldızlı Taj ve üç daha sade seçenek: Gangtey Tent, Kichu ve Pinewood.",
+  "areas": [
+    [
+      "Gangtey Gompa ve köy",
+      "Manastır, çiftlik evleri ve yamaç vadinin kültür merkezidir.",
+      "İbadet ve fotoğraf kurallarına saygı gösterin."
+    ],
+    [
+      "Phobjikha çayırları",
+      "Açık çayırlar ve sulak alanlar vadinin karakteridir.",
+      "Erişim hava ve koruma kurallarına bağlıdır."
+    ],
+    [
+      "Kara boyunlu turna merkezi",
+      "Kış göçünü öğrenin, doğayı rahatsız etmeden izleyin.",
+      "Kuşlar mevsimseldir; görülmeleri garanti değildir."
+    ],
+    [
+      "Gangtey doğa patikası",
+      "Orman, köy ve tarlalar arasında yürüyüş.",
+      "Rakım, hava ve ayakkabıyı dikkate alın."
+    ],
+    [
+      "Phobjikha ormanlık yamaçları",
+      "Çam ormanları vadiyi ve bazı otelleri çevreler.",
+      "Manzara oda ve yönüne bağlıdır."
+    ],
+    [
+      "Pele La ve Punakha yolu",
+      "Dağ yolları Butan'ın vadilerini bağlar.",
+      "Sürücüyle koşulları ve süreyi doğrulayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Gangtey Gompa manastırı",
+      "Dini yaşam kurallarına uyarak mimariyi keşfedin."
+    ],
+    [
+      "Phobjikha doğa patikası",
+      "Çayır ve orman arasında kendi temponuzda yürüyün."
+    ],
+    [
+      "Kara boyunlu turnalar",
+      "Koruma merkezini ziyaret edin, kuşlardan uzak durun."
+    ],
+    [
+      "Vadide sabah ışığı",
+      "Yumuşak ışık ve dağ köylerinin keyfini çıkarın."
+    ],
+    [
+      "Sıcaklık ve wellness",
+      "Sıcak taş banyoları, ısıtma ve dahil bakımları karşılaştırın."
+    ],
+    [
+      "Varış ve transfer",
+      "Punakha veya Paro yolunu, vize ve ulusal ücretleri ayrı planlayın."
+    ]
+  ],
+  "checks": [
+    "Beş yıldızlı Taj ile sade otelleri ayırın.",
+    "Nuitée'de tam otel adı ve odayı doğrulayın.",
+    "3000 m civarında sıcak giysi alın ve ısıtmayı kontrol edin.",
+    "Göç mevsimi dışında turna görmeyi beklemeyin.",
+    "Sürücü, vize ve SDF'yi ayrı ayarlayın.",
+    "Ödeme ve desteği Nuitée yönetir."
+  ],
+  "hotels": [
+    [
+      "Phobjikha",
+      "Vadiye bakan odalar, J Wellness Circle, restoranlar ve kapalı havuzlu beş yıldızlı resort.",
+      "Kesin oda manzarası ve dahil bakımları kontrol edin.",
+      "Kapsamlı resort ve wellness için.",
+      ""
+    ],
+    [
+      "Phobjikha çayırları",
+      "Isıtmalı çadırlar ve çayır manzaralı doğal glamping.",
+      "Sağlayıcı sınıflandırması yerelden farklı olabilir; fiyat ve olanakları kontrol edin.",
+      "Doğaya yakınlık için.",
+      ""
+    ],
+    [
+      "Yusar",
+      "Ahşap iç mekânlı, sakin geleneksel otel.",
+      "Isıtma ve donanımı doğrulayın; beş yıldızlı resort değildir.",
+      "Geleneksel dağ tatili için.",
+      ""
+    ],
+    [
+      "Gangtey bölgesi",
+      "Yürüyüşler ve sakin akşamlar için küçük orta sınıf otel.",
+      "Manzara, plan, ısıtma ve yemekleri kontrol edin.",
+      "Vadide ekonomik konaklama için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Gangtey nerede?",
+      "Butan'ın orta-batı dağlarında Wangdue Phodrang bölgesinde Phobjikha Vadisi üzerinde."
+    ],
+    [
+      "Vadi neyle ünlü?",
+      "Buzul vadisi geniş çayırlar ve kara boyunlu turnaların korunan kışlama alanıyla bilinir."
+    ],
+    [
+      "Turnalar ne zaman görülür?",
+      "Genellikle ekim sonundan şubata; göç zamanı ve karşılaşma garanti değildir."
+    ],
+    [
+      "Hangi lüks otel seçilmeli?",
+      "Taj Gangtey doğrulanmış beş yıldızlı seçenek; diğer oteller farklı standarttadır."
+    ],
+    [
+      "Gangtey Lodge ve Six Senses bağlantısı neden yok?",
+      "İlk araştırmada Nuitée'deki kesin sayfaları doğrulanamadı."
+    ],
+    [
+      "Gangtey Tent saray mı?",
+      "Hayır, ısıtmalı çadırlarla doğa tatilidir; sınıflandırmalar farklı olabilir."
+    ],
+    [
+      "Kaç gece kalınmalı?",
+      "Manastır ve patikalar için iki, esneklik için ek gece."
+    ],
+    [
+      "Gangtey yüksek rakımlı mı?",
+      "Evet, yaklaşık 3000 m. Isıtmayı kontrol edin, sıcak giyinin; gerekirse rakımı doktorla görüşün."
+    ],
+    [
+      "Vize gerekli mi?",
+      "Vatandaşlığa bağlı; Bhutan Travel'da vize ve SDF'yi kontrol edin."
+    ],
+    [
+      "Ödeme ve desteği kim yönetir?",
+      "Nuitée Travel Limited odaları gösterir, ödeme, değişiklik, iptal ve destek taleplerini işler."
+    ]
+  ],
+  "photoCaptions": [
+    "Phobjikha buzul vadisi panoraması",
+    "Phobjikha dağ manzarası",
+    "Gangtey yakınında yüksek dağ çayırları",
+    "Phobjikha tepeleri ve çiftlikleri",
+    "Butan dağ manzaraları",
+    "Kara boyunlu turnaların korunan yaşam alanı",
+    "Gangtey Gompa geleneksel manastırı",
+    "Phobjikha orman ve doğa patikaları",
+    "Phobjikha kırsal manzarası"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Taj Gangtey Resort & Spa fotoğrafı",
+      "Taj Gangtey Resort & Spa başka görünümü",
+      "Taj Gangtey Resort & Spa otel manzarası"
+    ],
+    [
+      "Gangtey Tent Resort fotoğrafı",
+      "Gangtey Tent Resort başka görünümü",
+      "Gangtey Tent Resort görünümü"
+    ],
+    [
+      "Kichu Resort Phobjikha fotoğrafı",
+      "Kichu Resort Phobjikha başka görünümü",
+      "Kichu Resort Phobjikha görünümü"
+    ],
+    [
+      "Gangtey Pinewood Resort fotoğrafı",
+      "Gangtey Pinewood Resort başka görünümü",
+      "Gangtey Pinewood Resort görünümü"
+    ]
+  ],
+  "seoTitle": "Gangtey'de Nerede Kalınır? Phobjikha Vadisi Otelleri ve Turnalar",
+  "hotelSeoTitle": "Gangtey Otelleri: Taj, Gangtey Tent, Kichu ve Pinewood",
+  "seoDescription": "Gangtey'de dört oteli karşılaştırın: Phobjikha Vadisi, manastır, kara boyunlu turnalar, doğa patikaları, ısıtma ve transferler."
+}
