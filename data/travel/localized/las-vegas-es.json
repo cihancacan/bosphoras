@@ -1,0 +1,131 @@
+{
+  "name": "Las Vegas",
+  "country": "Estados Unidos",
+  "eyebrow": "Nevada · Resorts, espectáculos y desierto",
+  "heading": "Las Vegas: grandes resorts más allá de las luces del Strip.",
+  "intro": "Las Vegas es un destino hotelero por derecho propio. Las fuentes del Bellagio, las suites del Venetian, los jardines del Wynn y la arquitectura contemporánea del Fontainebleau ofrecen experiencias muy distintas. La ubicación importa tanto como el precio anunciado.",
+  "editorial": "El Strip central permite combinar los grandes resorts y espectáculos, pero los complejos son enormes: un trayecto aparentemente corto puede incluir largos pasillos, pasarelas y escaleras mecánicas. El norte del Strip queda más lejos de algunas atracciones centrales. Downtown, Fremont Street y el Arts District muestran otra faceta de la ciudad, centrada en la historia, el arte y la restauración independiente.\n\nPara dos o tres noches, concentra las visitas en dos zonas. Si viajas con niños, compara piscinas, restricciones de edad y actividades ajenas al juego. El verano puede ser extremadamente caluroso; prioriza las actividades climatizadas y reserva los paseos para las horas más frescas. Las excursiones a Red Rock Canyon o Hoover Dam requieren transporte y preparación adecuados a las condiciones meteorológicas.\n\nUna tarifa baja puede encarecerse al añadir impuestos, tasas obligatorias del resort, aparcamiento y extras. Compara el importe total de la estancia, distingue los cargos obligatorios de los servicios opcionales y comprueba si el depósito es una preautorización reembolsable en la tarjeta. Los congresos y grandes eventos pueden modificar notablemente los precios. Desde el aeropuerto internacional Harry Reid, compara taxi, lanzadera, transporte público y traslado privado según tu hotel.",
+  "hotelIntro": "Cuatro perfiles: Bellagio en el Strip central, Wynn para una experiencia de lujo, The Venetian por sus suites y Fontainebleau por su diseño contemporáneo.",
+  "areas": [
+    [
+      "Strip central",
+      "Fuentes del Bellagio, grandes resorts, restaurantes y espectáculos.",
+      "Ten en cuenta las distancias reales a pie dentro de los complejos."
+    ],
+    [
+      "Strip norte",
+      "Wynn y Fontainebleau, tiendas y resorts contemporáneos.",
+      "Planifica el transporte hacia las atracciones más alejadas."
+    ],
+    [
+      "Strip sur",
+      "Grandes complejos hoteleros y acceso a la zona del aeropuerto.",
+      "Comprueba la dirección y la distancia a pie hasta el centro."
+    ],
+    [
+      "Downtown y Fremont Street",
+      "Ambiente histórico, espectáculos callejeros y restaurantes.",
+      "El ruido nocturno varía mucho según la calle."
+    ],
+    [
+      "Arts District",
+      "Galerías, cafeterías y comercios independientes.",
+      "Organiza el regreso después de las salidas nocturnas."
+    ]
+  ],
+  "experiences": [
+    [
+      "Fuentes y jardines",
+      "Combina las fuentes del Bellagio con los espacios públicos del resort."
+    ],
+    [
+      "Una noche de espectáculo",
+      "Elige primero el recinto para reducir los desplazamientos nocturnos."
+    ],
+    [
+      "Arts District y Downtown",
+      "Explora galerías y restaurantes independientes."
+    ],
+    [
+      "Escapada al desierto",
+      "Planifica el agua, los horarios y el transporte en función del calor."
+    ]
+  ],
+  "checks": [
+    "Compara el precio final con impuestos y cargos obligatorios.",
+    "Comprueba las políticas de depósito y aparcamiento.",
+    "Elige habitación según vistas, planta y tranquilidad.",
+    "Confirma las restricciones de edad en las piscinas y la ocupación familiar.",
+    "Compara las fechas de congresos y eventos con fechas alternativas."
+  ],
+  "hotels": [
+    [
+      "Strip central",
+      "El emblemático resort reúne espectáculos, jardines y fuentes. Fountain View es una categoría específica; no todas las habitaciones dan al lago.",
+      "Confirma la categoría y el precio total con los cargos obligatorios.",
+      "Para disfrutar de una ubicación central y las fuentes.",
+      "Bellagio es un icono del Strip que combina espectáculos, jardines y fuentes. Fountain View es una categoría específica y no todas las habitaciones dan al lago. Confirma la categoría y el importe total con los cargos obligatorios."
+    ],
+    [
+      "Strip norte",
+      "Wynn apuesta por la elegancia contemporánea, la gastronomía y los jardines. Las habitaciones Wynn y las suites Encore son ofertas diferentes.",
+      "Comprueba el edificio, el tipo de habitación y las normas de las piscinas.",
+      "Para una experiencia de resort de lujo.",
+      "Wynn combina elegancia contemporánea, gastronomía y espacios ajardinados. Las habitaciones Wynn y las suites Encore son opciones diferentes dentro del complejo. Comprueba el edificio exacto, la habitación y las normas de las piscinas."
+    ],
+    [
+      "Strip central-norte",
+      "Suites amplias y decoración inspirada en Venecia. Las torres Venetian y Palazzo tienen distribuciones diferentes.",
+      "Compara la torre, las camas, las vistas y la ocupación permitida.",
+      "Para suites amplias y arquitectura temática.",
+      "Las suites espaciosas y la decoración veneciana definen la estancia. Las distintas distribuciones de las torres Venetian y Palazzo pueden influir en las distancias internas. Compara torre, camas, vistas y capacidad."
+    ],
+    [
+      "Strip norte",
+      "Un hotel de gran altura con arquitectura contemporánea, habitaciones y suites de distintos tamaños y orientaciones.",
+      "Confirma las vistas al Strip o a las montañas y los trayectos al centro.",
+      "Para diseño contemporáneo y vacaciones centradas en el resort.",
+      "Fontainebleau ofrece arquitectura contemporánea y habitaciones y suites de diferentes tamaños y vistas. Es adecuado para quienes buscan un alojamiento centrado en el resort. Comprueba las vistas y los desplazamientos hacia el centro."
+    ]
+  ],
+  "faq": [
+    [
+      "¿Dónde alojarse en Las Vegas por primera vez?",
+      "El Strip central es práctico para las fuentes y los grandes espectáculos; el norte es adecuado para una estancia centrada en Wynn o Fontainebleau."
+    ],
+    [
+      "¿Qué hotel tiene vistas a las fuentes?",
+      "Algunas habitaciones del Bellagio se venden como Fountain View; comprueba la categoría exacta."
+    ],
+    [
+      "¿Qué es un resort fee?",
+      "Un suplemento obligatorio de alojamiento cuando se aplica. Compara el total con impuestos y cargos incluidos."
+    ],
+    [
+      "¿Es Las Vegas adecuada para familias?",
+      "Sí, por sus actividades ajenas al juego; comprueba las piscinas, camas, restricciones de edad y acceso infantil."
+    ],
+    [
+      "¿Cuántas noches reservar?",
+      "Dos o tres noches para descubrir el Strip; más si añades Downtown y excursiones."
+    ],
+    [
+      "¿Hace falta alquilar un coche?",
+      "No es necesario para una estancia centrada en el Strip; puede ser útil para algunas excursiones."
+    ],
+    [
+      "¿Cómo encontrar la mejor tarifa?",
+      "Compara el precio final para las mismas fechas, condiciones y ocupación real."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Dónde alojarse en Las Vegas: Strip, zonas y mejores hoteles",
+  "hotelSeoTitle": "Hoteles de Las Vegas: Bellagio, Wynn, Venetian y Fontainebleau",
+  "seoDescription": "Compara hoteles de Las Vegas, zonas del Strip, suites y precios totales con impuestos y tasas obligatorias del resort."
+}
