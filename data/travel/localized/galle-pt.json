@@ -1,0 +1,207 @@
+{
+  "name": "Galle",
+  "country": "Sri Lanka",
+  "eyebrow": "Sri Lanka · Forte histórico e oceano Índico",
+  "heading": "Onde ficar em Galle: história e descanso junto ao oceano",
+  "intro": "Amangalla, Galle Fort Hotel, The Fort Printers e Jetwing Lighthouse: quatro endereços dentro do forte e no litoral próximo.",
+  "editorial": "Em Galle, escolha primeiro a localização: dentro do forte UNESCO ou em hotel amplo à beira-mar fora das muralhas. Casas mercantis, vielas, venezianas e pátios tranquilos revelam um bairro vivo. No litoral há mais espaço e outro ritmo, mas é preciso transporte ao forte. Fortificações portuguesas do século XVI mudaram sob influência holandesa e britânica. Aqui pessoas moram e trabalham. Explore Church Street, Pedlar Street, igreja reformada holandesa, antigos armazéns e farol a pé, respeitando moradores e lugares religiosos. Mesmo no centro compacto há carros, ruído e degraus.\n\nAmangalla é hotel histórico Aman dentro das muralhas com tetos altos, jardins, piscina e spa. Confira vista, área, privacidade e capacidade do quarto. Galle Fort Hotel, Church Street 28, ocupa mansão holandesa independente com onze suítes individuais ao redor de pátio com frangipanis. Não confunda com Amangalla nem presuma piscina privativa. The Fort Printers, Pedlar Street 39, é antiga gráfica e escola convertida em boutique com piscina sombreada. Suítes em Church Street e villa em Pedlar Street ficam em edifícios separados; confirme endereço, acesso à piscina principal e condições familiares. Jetwing Lighthouse fica ao norte do forte na costa rochosa de Dadella. Modernismo tropical de Geoffrey Bawa, jardins, restaurantes e piscinas criam outro ambiente. Transporte ao forte necessário; rochas e ondas não garantem banho seguro.\n\nDuas ou três noites permitem explorar muralhas e farol ao amanhecer ou entardecer, oficinas, cafés e igreja, descansar no calor e visitar Unawatuna ou Koggala. Talpe, Koggala e Unawatuna ficam fora do forte. Confira correntes, profundidade, recifes e avisos de salva-vidas. Dezembro–março costuma favorecer sudoeste, mas monções, calor e ondas mudam planos. Organize traslado de Colombo ou aeroporto com entrada exata, acesso, bagagem e cadeirinhas. Em casas históricas importam degraus, berços e capacidade. Respeite cultura e natureza. Bosphoras oferece seleção editorial independente; fornecedor de reserva confirma preço, impostos, disponibilidade, categoria, traslado, serviços, cancelamento e suporte.",
+  "hotelIntro": "Quatro hotéis: prestigiado Amangalla, mansão Galle Fort Hotel, antiga gráfica The Fort Printers e Jetwing Lighthouse à beira-mar.",
+  "areas": [
+    [
+      "Forte de Galle · Church Street",
+      "Mansões históricas e pátios tranquilos perto das muralhas.",
+      "Confira entrada, acesso e limitações dos prédios históricos."
+    ],
+    [
+      "Forte de Galle · Pedlar Street",
+      "Ruas com lojas e hotéis pequenos, práticas após pôr do sol.",
+      "Algumas suítes e villas ficam em prédios separados."
+    ],
+    [
+      "Muralhas e farol",
+      "Passeios pelos bastiões até farol branco e cabo rochoso.",
+      "Considere sol, vento e degraus irregulares."
+    ],
+    [
+      "Dadella · Costa norte",
+      "Costa rochosa e resorts maiores fora do forte.",
+      "Não presuma banho seguro entre rochas."
+    ],
+    [
+      "Baía Unawatuna",
+      "Passeios de praia e costa animada fora do forte.",
+      "Confira ondas, correntes e segurança."
+    ],
+    [
+      "Talpe e Koggala",
+      "Villas e resorts a sudeste, separados do centro histórico.",
+      "Confirme tempo real de trajeto."
+    ]
+  ],
+  "experiences": [
+    [
+      "Muralhas na luz suave",
+      "Caminhe pelos bastiões e farol de manhã ou antes do pôr do sol."
+    ],
+    [
+      "Noite em casa histórica",
+      "Compare edifícios e categorias específicas, não fotos gerais."
+    ],
+    [
+      "Arquitetura Geoffrey Bawa",
+      "Descubra jardins, escadas e vistas oceânicas Jetwing Lighthouse."
+    ],
+    [
+      "Forte vivo",
+      "Visite oficinas e restaurantes respeitando moradores."
+    ],
+    [
+      "Dia fora das muralhas",
+      "Escolha Unawatuna ou Koggala conforme mar."
+    ],
+    [
+      "Traslado sem surpresas",
+      "Combine desembarque, bagagem e cadeirinhas com transportador."
+    ]
+  ],
+  "checks": [
+    "Confira se hotel fica no forte ou litoral.",
+    "Confirme quarto, degraus, entrada e prédios separados.",
+    "Organize traslado realista de Colombo e cadeirinhas.",
+    "Não deduza segurança de banho por fotos.",
+    "Confira clima, acesso e horários.",
+    "Fornecedor confirma impostos, serviços, cancelamento e suporte."
+  ],
+  "hotels": [
+    [
+      "Church Street · Dentro do forte",
+      "Residência histórica Aman com tetos altos, jardins, piscina e spa.",
+      "Confira quarto, vista, acessibilidade e capacidade familiar.",
+      "Para hotel histórico icônico dentro das muralhas UNESCO.",
+      ""
+    ],
+    [
+      "Church Street 28 · Dentro do forte",
+      "Onze suítes individuais em casa mercantil holandesa ao redor de pátio com frangipanis.",
+      "Confira planta, degraus, vista e acesso ao pátio.",
+      "Para descanso boutique em mansão holandesa.",
+      ""
+    ],
+    [
+      "Pedlar Street 39 e prédios separados",
+      "Hotel de design intimista em antiga gráfica com suítes e villa separadas.",
+      "Confirme casa principal, prédio Church Street ou villa Pedlar Street.",
+      "Para arquitetura histórica e caminhadas por vielas.",
+      ""
+    ],
+    [
+      "Dadella · Litoral fora do forte",
+      "Resort oceânico de Geoffrey Bawa na costa rochosa ao norte.",
+      "Transporte ao forte necessário; costa não garante banho seguro.",
+      "Para arquitetura Bawa e paisagem oceânica.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Forte de Galle é Patrimônio Mundial UNESCO?",
+      "Sim, cidade histórica e fortificações; status não de hotéis individuais."
+    ],
+    [
+      "Amangalla fica dentro do forte?",
+      "Sim, perto de Church Street; confira quarto e vista."
+    ],
+    [
+      "Galle Fort Hotel e Amangalla são o mesmo hotel?",
+      "Não, Galle Fort Hotel é mansão separada em Church Street 28."
+    ],
+    [
+      "Quantas suítes tem Galle Fort Hotel?",
+      "Segundo hotel, onze suítes individuais com plantas distintas."
+    ],
+    [
+      "The Fort Printers fica em Pedlar Street?",
+      "Sim, casa principal número 39; também prédios separados e villa."
+    ],
+    [
+      "Todos os quartos Fort Printers têm acesso direto à piscina?",
+      "Não, ficam em prédios distintos; confirme endereço e acesso."
+    ],
+    [
+      "Jetwing Lighthouse fica dentro do forte?",
+      "Não, costa Dadella ao norte; precisa de transporte."
+    ],
+    [
+      "Quem projetou Jetwing Lighthouse?",
+      "Arquiteto cingalês Geoffrey Bawa, conhecido pelo modernismo tropical."
+    ],
+    [
+      "Pode nadar em frente ao Jetwing Lighthouse?",
+      "Costa rochosa exposta a ondas; siga recomendações locais e escolha zonas seguras."
+    ],
+    [
+      "Quantas noites?",
+      "Duas a três para forte, descanso e praias vizinhas."
+    ],
+    [
+      "Unawatuna fica dentro do forte?",
+      "Não, região costeira separada a sudeste."
+    ],
+    [
+      "Quando viajar?",
+      "Dezembro–março costuma favorecer; chuvas tropicais e ondas possíveis."
+    ],
+    [
+      "Forte totalmente de pedestres?",
+      "Não, moradores e veículos usam algumas ruas; acesso conforme hotel."
+    ],
+    [
+      "Como organizar traslado de Colombo?",
+      "Confirme transportador, entrada, horário, bagagem e cadeirinhas; duração variável."
+    ],
+    [
+      "Forte adequado a famílias?",
+      "Confira idade, capacidade, berços, degraus, piscina e prédio."
+    ],
+    [
+      "Bosphoras gerencia reserva e suporte?",
+      "Seleção editorial; fornecedor confirma preço, impostos, traslados, cancelamento e suporte."
+    ]
+  ],
+  "photoCaptions": [
+    "Forte de Galle e farol do alto",
+    "Muralhas históricas de Galle",
+    "Farol branco e muralhas",
+    "Igreja histórica Groote Kerk",
+    "Forte Galle sobre oceano Índico",
+    "Praia Unawatuna perto de Galle",
+    "Costa Koggala",
+    "Farol do forte Galle",
+    "Prédios históricos dentro do forte"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Entrada histórica Amangalla",
+      "Fachada antiga Amangalla",
+      "Interior histórico Amangalla"
+    ],
+    [
+      "Entrada Galle Fort Hotel",
+      "Galeria Galle Fort Hotel",
+      "Ambiente histórico Galle Fort Hotel"
+    ],
+    [
+      "Pedlar Street perto de The Fort Printers",
+      "Fachadas Pedlar Street perto de The Fort Printers",
+      "Ruas históricas perto de The Fort Printers"
+    ],
+    [
+      "Jetwing Lighthouse na costa Dadella",
+      "Vista do complexo Jetwing Lighthouse",
+      "Piscinas e prédios Jetwing Lighthouse do alto"
+    ]
+  ],
+  "seoTitle": "Onde ficar em Galle: hotéis históricos e resorts de praia",
+  "hotelSeoTitle": "Hotéis de Galle: Amangalla, Galle Fort Hotel, Fort Printers e Jetwing",
+  "seoDescription": "Compare hotéis dentro do forte de Galle e na costa Dadella: casas históricas, piscinas, praias e traslados de Colombo."
+}
