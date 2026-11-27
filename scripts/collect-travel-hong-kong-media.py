@@ -109,6 +109,12 @@ DIRECT = {
   ],
   "hong-kong/rosewood": [
     [
+      "https://picasso.rosewoodhotelgroup.com/transform/52e3be4c-ee2f-4177-b3e7-8d1f567868d4/RWHKG_3-0_Brand-com_Assets_Facilities_Wellness_Asaya_Pool_5",
+      "Rosewood Hong Kong Asaya infinity pool facing Victoria Harbour",
+      "https://www.rosewoodhotels.com/en/hong-kong/wellness/pool",
+      "Rosewood Hong Kong official property photography"
+    ],
+    [
       "https://ian.marieclaire.com.tw/assets/mc/202309/65122A25C7A5D1695689253.jpeg?format=jpg&t=sc&w=1200%2C675",
       "Rosewood Hong Kong exterior tower at dusk on Victoria Dockside",
       "https://www.marieclaire.com.tw/lifestyle/travel/75116",
@@ -135,28 +141,22 @@ DIRECT = {
   ],
   "hong-kong/four-seasons": [
     [
-      "https://pub-7a32c51aec044bc88f150505acf01675.r2.dev/hotel-images/four-seasons-hotel-hong-kong.jpg",
-      "Four Seasons Hotel Hong Kong exterior towers at dusk",
-      "https://www.michelinkeyhotels.com/hotels/four-seasons-hotel-hong-kong",
-      "Michelin Key Hotels directory / hotel image, credit to confirm"
+      "https://images.trvl-media.com/lodging/2000000/1420000/1418800/1418778/3d0d0b07.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Hotel Hong Kong exterior and waterfront towers",
+      "https://www.expedia.com/Hong-Kong-Hotels-Four-Seasons-Hotel-Hong-Kong.h1418778.Hotel-Information",
+      "Expedia / Four Seasons Hotel Hong Kong"
     ],
     [
-      "https://www.fourseasons.com/alt/img-opt/~75.701.0%2C0000-156%2C7500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/HKG/HKG_7143_original.jpg",
-      "Four Seasons Hotel Hong Kong harbour-view bedroom",
-      "https://www.fourseasons.com/hongkong/",
-      "Four Seasons Hotel Hong Kong"
+      "https://images.trvl-media.com/lodging/2000000/1420000/1418800/1418778/9ad71391.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Hotel Hong Kong Deluxe King Harbour View guest room",
+      "https://www.expedia.com/Hong-Kong-Hotels-Four-Seasons-Hotel-Hong-Kong.h1418778.Hotel-Information",
+      "Expedia / Four Seasons Hotel Hong Kong"
     ],
     [
-      "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2499-2997%2C2576-1685%2C9574/publish/content/dam/fourseasons/images/web/HKG/HKG_2462_original.jpg",
-      "Four Seasons Hong Kong Deluxe Harbour-View Room",
-      "https://www.fourseasons.com/hongkong/accommodations/guest_rooms/deluxe-harbour-view-room/",
-      "Four Seasons Hotel Hong Kong"
-    ],
-    [
-      "https://www.fourseasons.com/alt/img-opt/~75.701.0%2C0000-313%2C0734-2998%2C9807-1686%2C9266/publish/content/dam/fourseasons/images/web/HKG/HKG_1632_original.jpg",
-      "Four Seasons Hotel Hong Kong infinity pool overlooking Victoria Harbour",
-      "https://www.fourseasons.com/hongkong/dining/",
-      "Four Seasons Hotel Hong Kong"
+      "https://images.trvl-media.com/lodging/2000000/1420000/1418800/1418778/2d1af58f.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Hotel Hong Kong bar lounge overlooking city",
+      "https://www.expedia.com/Hong-Kong-Hotels-Four-Seasons-Hotel-Hong-Kong.h1418778.Hotel-Information",
+      "Expedia / Four Seasons Hotel Hong Kong"
     ]
   ],
   "hong-kong/peninsula": [
@@ -174,6 +174,18 @@ DIRECT = {
     ]
   ],
   "hong-kong/mandarin-oriental": [
+    [
+      "https://images.trvl-media.com/lodging/1000000/10000/6100/6095/638e28f8.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Mandarin Oriental Hong Kong King Harbour View guest room",
+      "https://www.hotels.com/ho213848/mandarin-oriental-hong-kong-hong-kong-hong-kong-sar/",
+      "Hotels.com / Mandarin Oriental Hong Kong"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/1000000/10000/6100/6095/982aec24.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Mandarin Oriental Hong Kong bar lounge",
+      "https://www.hotels.com/ho213848/mandarin-oriental-hong-kong-hong-kong-hong-kong-sar/",
+      "Hotels.com / Mandarin Oriental Hong Kong"
+    ],
     [
       "https://www.oberoihotels.com/-/media/oberoi-hotel/omo/featured-hotels/desktop820x646/mandarin_oriental_hongkong.jpg",
       "Mandarin Oriental Hong Kong exterior in Central at dusk",
