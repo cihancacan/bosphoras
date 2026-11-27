@@ -217,6 +217,68 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-9",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:022306-CelebrationFL11.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/022306-CelebrationFL11.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/022306-CelebrationFL11.jpg",
+        "originalAlt": "Downtown Market Street in Celebration Florida",
+        "originalCaption": "Bobak Ha'Eri / CC BY-SA 2.5 / https://creativecommons.org/licenses/by-sa/2.5/ / resized WebP",
+        "credit": "Bobak Ha'Eri / CC BY-SA 2.5 / https://creativecommons.org/licenses/by-sa/2.5/ / resized WebP",
+        "publisher": "Visit Orlando",
+        "hotel": null,
+        "localPath": "/images/travel/orlando-premium/destination/scene-9.webp",
+        "sourceSHA256": "242c62430a9af2eb4ab1b4469779cc86c1972c2f6b0a24e652ec621ccc6c3974",
+        "webpSHA256": "fd07cb58190d61831a5b1e3c9d28adc605629ef81f8aa44f2fd12e73417cf6b7",
+        "sourcePixels": [
+          1280,
+          960
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 207996,
+        "pixelFingerprint": "2e49eee8f0b470f0",
+        "candidateSubject": "celebration|kissimmee|old town",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-10",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Islands_of_adventure.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/1/15/Islands_of_adventure.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Islands_of_adventure.jpg",
+        "originalAlt": "Islands of Adventure Port of Entry",
+        "originalCaption": "Rllaque / public domain / resized WebP",
+        "credit": "Rllaque / public domain / resized WebP",
+        "publisher": "Visit Orlando",
+        "hotel": null,
+        "localPath": "/images/travel/orlando-premium/destination/scene-10.webp",
+        "sourceSHA256": "9220027c37d9769338ba6ee4c242e6f767db4ce533674f2e6b8d7e88163f7338",
+        "webpSHA256": "2780df145bd951c975c2ade2ab8b68fec51e83fa849893fd9cf6e2e30ac5c126",
+        "sourcePixels": [
+          3456,
+          2304
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 98700,
+        "pixelFingerprint": "e4d1d1e5c5d51dc8",
+        "candidateSubject": "islands of adventure|universal globe",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -564,11 +626,6 @@
     ],
     "gaps": [
       {
-        "group": "city",
-        "expected": 9,
-        "found": 7
-      },
-      {
         "group": "waldorf",
         "expected": 3,
         "found": 2
@@ -576,32 +633,16 @@
     ],
     "errors": [
       {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/022306-CelebrationFL11.jpg",
-        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/b/b2/022306-CelebrationFL11.jpg?utm_source=commons.wikimedia.org&utm_campaign="
+        "page": "https://www.experiencekissimmee.com/things-to-do/celebration",
+        "error": "403 Client Error: Forbidden for url: https://www.experiencekissimmee.com/things-to-do/celebration"
       },
       {
-        "url": "https://media.universalparksusa.com/photos/epic-nighttime-celebration-the-wizarding-world-of-harry-potter-ministry-of-magic/",
-        "error": "cannot identify image file <_io.BytesIO object at 0x71f003ac6930>"
+        "page": "https://www.waldorfastoriaorlando.com/gallery/",
+        "error": "404 Client Error: Not Found for url: https://www.waldorfastoriaorlando.com/gallery/waldorf-astoria-orlando/"
       },
       {
-        "url": "https://media.universalparksusa.com/photos/epic-nighttime-celebration-super-nintendo-world-2/",
-        "error": "cannot identify image file <_io.BytesIO object at 0x71eff2e1c4a0>"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Islands_of_adventure.jpg",
-        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/1/15/Islands_of_adventure.jpg?utm_source=commons.wikimedia.org&utm_campaign=in"
-      },
-      {
-        "page": "https://www.travelandleisure.com/four-seasons-resort-orlando-at-disney-world-review-8702769",
-        "error": "403 Client Error: Forbidden for url: https://www.travelandleisure.com/four-seasons-resort-orlando-at-disney-world-review-8702769"
-      },
-      {
-        "page": "https://www.fourseasons.com/orlando/photos-and-videos/",
-        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/orlando/photos-and-videos/"
-      },
-      {
-        "page": "https://www.fourseasons.com/orlando/",
-        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/orlando/"
+        "page": "https://www.waldorfastoriaorlando.com/photo-gallery/",
+        "error": "404 Client Error: Not Found for url: https://www.waldorfastoriaorlando.com/photo-gallery/"
       },
       {
         "page": "https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/gallery/",
@@ -651,8 +692,8 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 7,
+    "cityCount": 9,
     "hotelCount": 11,
-    "totalBytes": 2193392
+    "totalBytes": 2500088
   }
 }
