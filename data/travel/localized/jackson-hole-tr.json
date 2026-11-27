@@ -1,0 +1,156 @@
+{
+  "name": "Jackson Hole",
+  "country": "ABD",
+  "eyebrow": "Wyoming · Teton Dağları ve Amerikan Batısı",
+  "heading": "Jackson Hole'da nerede kalınır? Dağ manzaraları ve özgün oteller",
+  "intro": "Teton'un görkemli zirveleri en lüks dağ otellerine bile özgün bir atmosfer katar. Teton Village teleferiklerini mi, yoksa galerileri ve restoranlarıyla tarihî Jackson meydanını mı tercih edersiniz? Aynı vadide iki farklı tatil ritmi.",
+  "editorial": "Four Seasons ve Caldera House, günü kayak çevresinde planlamaya uygun Teton Village'dadır. Four Seasons kapsamlı hizmetli resort, Caldera House ise donanımlı mutfaklı sekiz geniş süitten oluşan özel rezidans formatıdır. Merkezdeki Hotel Jackson kayak merkezine düzenlenen transfer ve modern spa sunar; The Wort Wyoming misafirperverliğini korur. Jackson Hole Mountain Resort, Jackson kasabası ve millî parklar farklı bölgelerdir. Erişim hava, yol durumu ve sezon kurallarına bağlıdır.",
+  "hotelIntro": "Dört ayrı adres: Four Seasons Resort Jackson Hole, Caldera House, Hotel Jackson ve The Wort Hotel. Konumu, konaklama biçimini ve hizmetleri karşılaştırın.",
+  "areas": [
+    [
+      "Teton Village",
+      "Kayak ve dağ teleferiği için uygun konaklama üssü.",
+      "Jackson meydanına ulaşım gerekir."
+    ],
+    [
+      "Jackson Town Square",
+      "Tarihî sokaklar, bağımsız restoranlar ve galeriler akşam yürüyüşleri sunar.",
+      "Merkezden doğrudan pist erişimi yoktur."
+    ],
+    [
+      "Snake Nehri",
+      "Geniş nehir vadisi rehberli gezilere uygundur.",
+      "Aktiviteler hava, su seviyesi ve izinlere bağlıdır."
+    ],
+    [
+      "Grand Teton",
+      "Görkemli zirveler ve sezonluk yürüyüş rotaları.",
+      "Millî park kurallarına, kış kısıtlamalarına ve hayvanlarla mesafeye uyun."
+    ],
+    [
+      "Wilson ve Moose",
+      "Daha sakin konaklama bölgeleri ve dağlara ayrı rotalar.",
+      "Yolları ve transfer sürelerini kontrol edin."
+    ]
+  ],
+  "experiences": [
+    [
+      "Teleferikle sabah",
+      "Ekipmanı hazırlayın ve teleferik açılışını kontrol edin."
+    ],
+    [
+      "Town Square'de akşam",
+      "Dağlardan sonra tarihî Jackson galerileri ve restoranlarını gezin."
+    ],
+    [
+      "Yaban hayatı gözlemi",
+      "Sorumlu bir rehber seçin ve hayvanlarla güvenli mesafeyi koruyun."
+    ],
+    [
+      "Amerikan Batısı'nda yaz",
+      "Nehir manzaraları ve dağ patikaları vadinin başka bir yüzünü gösterir."
+    ]
+  ],
+  "checks": [
+    "Otelin kesin adresini ve ulaşımını doğrulayın.",
+    "Seyahat tarihlerindeki sezon takvimini kontrol edin.",
+    "Oda, süit, ev ve aile rezidanslarını karşılaştırın.",
+    "Her otelin doğrudan kayak erişimi olduğunu varsaymayın.",
+    "Seçilen aktivitelerin müsaitliğini doğrulayın.",
+    "Güncel fiyat ve müsaitliği yetkili sağlayıcı teyit eder."
+  ],
+  "hotels": [
+    [
+      "Teton Village",
+      "Four Seasons Resort Jackson Hole kayak için elverişli konumu kapsamlı resort hizmetleri, odalar, rezidanslar ve restoranlarla birleştirir. Bağımsız galeri ve restoranların bulunduğu Jackson merkezinin aksine burada tatilin ritmini dağlar belirler.",
+      "Sezonu, kategoriyi, dahil hizmetleri ve Teton Village ulaşımını doğrulayın.",
+      "Kapsamlı hizmetli kayak tatili için.",
+      ""
+    ],
+    [
+      "Teton Village",
+      "Caldera House teleferik yanında yalnızca sekiz adet iki veya dört yatak odalı, tam donanımlı mutfak ve geniş salonlu süit sunar. Ev mahremiyetini dağlara yakınlıkla birleştirmek isteyen aileler ve gruplara uygundur.",
+      "Planı, kapasiteyi, hizmetleri ve sezonu doğrulayın.",
+      "Özel rezidans tercih eden aile ve gruplar için.",
+      ""
+    ],
+    [
+      "Jackson merkezi",
+      "Hotel Jackson Town Square, restoran ve sanat galerileri yakınındadır. Düzenlenen kayak transferi ve modern wellness hizmetleri pist günlerini şehir akşamlarıyla birleştirir. Otel doğrudan teleferik yanında değildir.",
+      "Transfer tarifesini, bakımları ve oda kategorisini doğrulayın.",
+      "Şehir atmosferi ve dağ gezileri için.",
+      ""
+    ],
+    [
+      "Jackson merkezi",
+      "The Wort Hotel, Wyoming mirasını tanıtan tarihî Jackson simgesidir. Modern kayak resortu altyapısından çok Amerikan Batısı atmosferi öne çıkar. Odaların planı ve hareketli alanlara yakınlığı değişir.",
+      "Kategori, gürültü, sezon ve dağa ulaşımı doğrulayın.",
+      "Tarih ve merkez restoranları için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Jackson Hole'da ilk ziyaret için nerede kalınır?",
+      "Teton Village dağlara, Town Square restoran ve şehir yaşamına uygundur. Mahremiyeti ve aile ihtiyaçlarını düşünün."
+    ],
+    [
+      "Dört otel aynı deneyimi mi sunar?",
+      "Hayır. Four Seasons ile Hotel Jackson örneğin farklı konaklama ve pist erişimi sunar."
+    ],
+    [
+      "Aileler için hangi seçenek uygun?",
+      "Bağlantılı odaları, rezidansları ve evleri karşılaştırın; yaş, yatak, kapasite ve ulaşımı doğrulayın."
+    ],
+    [
+      "Otelden doğrudan kayakla çıkılır mı?",
+      "Sadece belirli otellerde, uygun kar ve açık teleferik koşullarında. Dağa yakınlık garanti değildir."
+    ],
+    [
+      "Kayaksız ne yapılır?",
+      "Restoran, spa, doğal manzara ve rehberli geziler sezon ve koşullara bağlıdır."
+    ],
+    [
+      "Ulaşımı önceden düzenlemek gerekir mi?",
+      "Evet, özellikle uzak oteller, kış yolları, havalimanı ve akşam gezileri için."
+    ],
+    [
+      "Oteller nasıl rezerve edilir?",
+      "Bosphoras'ta karşılaştırın; fiyat ve güncel müsaitliği yetkili sağlayıcı doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Teton sıradağları",
+    "Jackson tarihî meydanı",
+    "Snake Nehri",
+    "Grand Teton",
+    "Millî park manzarası",
+    "Jackson Hole yaban hayatı",
+    "Karlı dağ evleri"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Kışın Teton Village Four Seasons",
+      "Four Seasons süit salonu",
+      "Four Seasons dağ tarafı odası"
+    ],
+    [
+      "Caldera House",
+      "Caldera House görünümü",
+      "İki yatak odalı Aira Suite"
+    ],
+    [
+      "Hotel Jackson çatı restoranı Juliette",
+      "Şömine ve balkonlu süit",
+      "Hotel Jackson spa"
+    ],
+    [
+      "The Wort şömineli tarihî salon",
+      "Deluxe Double Queen oda",
+      "Amerikan Batısı tarzında yatak odası"
+    ]
+  ],
+  "seoTitle": "Jackson Hole'da Nerede Kalınır? Wyoming Lüks Otelleri ve Kayak",
+  "hotelSeoTitle": "Jackson Hole'un En İyi Otelleri: Four Seasons, Caldera House, Jackson ve Wort",
+  "seoDescription": "Teton Village ve Jackson merkezindeki dört oteli karşılaştırın. Kayak, Grand Teton, aile rezidansları ve ulaşım seçeneklerini keşfedin."
+}
