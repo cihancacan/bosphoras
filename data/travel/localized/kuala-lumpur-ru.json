@@ -123,12 +123,38 @@
       "Сравнивайте одинаковые даты, гостей, категории, налоги и условия отмены."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Башни Петронас из парка KLCC",
+    "Торговый район Bukit Bintang",
+    "Вход на Petaling Street",
+    "Здание султана Абдул-Самада на площади Мердека",
+    "Мост Салома в Kampung Baru",
+    "Подсвеченная статуя Муругана у пещер Бату",
+    "Башня KL Tower в Куала-Лумпуре",
+    "Ботанический сад Пердана",
+    "Маленькая Индия в Brickfields"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Фасад Mandarin Oriental Kuala Lumpur",
+      "Номер King в Mandarin Oriental",
+      "Открытый бассейн Mandarin Oriental"
+    ],
+    [
+      "Башня Four Seasons рядом с башнями Петронас",
+      "Номер King в Four Seasons",
+      "The Lounge в Four Seasons"
+    ],
+    [
+      "Вход в The RuMa",
+      "Номер Deluxe King в The RuMa",
+      "Лобби The RuMa"
+    ],
+    [
+      "Фасад EQ Kuala Lumpur на закате",
+      "Номер Deluxe Queen Double в EQ",
+      "Лаунж Bottega в EQ"
+    ]
   ],
   "seoTitle": "Где остановиться в Куала-Лумпуре: KLCC и Bukit Bintang",
   "hotelSeoTitle": "Роскошные отели Куала-Лумпура: KLCC и Золотой треугольник",

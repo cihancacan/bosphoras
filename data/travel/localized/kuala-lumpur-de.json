@@ -123,12 +123,38 @@
       "Gleiche Termine, Gästezahl, Kategorien, Steuern und Stornierung vergleichen."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Petronas Towers vom KLCC Park",
+    "Einkaufsviertel Bukit Bintang",
+    "Eingang zur Petaling Street",
+    "Sultan Abdul Samad Building am Merdeka Square",
+    "Saloma-Brücke in Kampung Baru",
+    "Beleuchtete Murugan-Statue an den Batu Caves",
+    "KL Tower in Kuala Lumpur",
+    "Botanischer Garten Perdana",
+    "Little India in Brickfields"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Fassade des Mandarin Oriental Kuala Lumpur",
+      "King-Zimmer im Mandarin Oriental",
+      "Außenpool des Mandarin Oriental"
+    ],
+    [
+      "Four Seasons neben den Petronas Towers",
+      "King-Zimmer im Four Seasons",
+      "The Lounge im Four Seasons"
+    ],
+    [
+      "Eingang des The RuMa",
+      "Deluxe King Zimmer im The RuMa",
+      "Lobby des The RuMa"
+    ],
+    [
+      "EQ Kuala Lumpur bei Sonnenuntergang",
+      "Deluxe Queen Double Zimmer im EQ",
+      "Bottega Lounge im EQ"
+    ]
   ],
   "seoTitle": "Kuala Lumpur: beste Viertel für KLCC und Bukit Bintang",
   "hotelSeoTitle": "Luxushotels Kuala Lumpur: KLCC und Golden Triangle",

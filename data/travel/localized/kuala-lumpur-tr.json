@@ -123,12 +123,38 @@
       "Aynı tarihler, kişi sayısı, kategoriler, vergiler ve iptal şartlarını karşılaştırın."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "KLCC Park'tan Petronas Kuleleri",
+    "Bukit Bintang alışveriş bölgesi",
+    "Petaling Street girişi",
+    "Merdeka Meydanı'nda Sultan Abdul Samad binası",
+    "Kampung Baru'da Saloma Köprüsü",
+    "Batu Caves'te ışıklandırılmış Murugan heykeli",
+    "Kuala Lumpur'da KL Kulesi",
+    "Perdana Botanik Bahçesi",
+    "Brickfields'ta Little India"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Mandarin Oriental Kuala Lumpur dış cephesi",
+      "Mandarin Oriental King odası",
+      "Mandarin Oriental açık havuzu"
+    ],
+    [
+      "Petronas Kuleleri yanında Four Seasons kulesi",
+      "Four Seasons King odası",
+      "Four Seasons The Lounge"
+    ],
+    [
+      "The RuMa girişi",
+      "The RuMa Deluxe King odası",
+      "The RuMa lobisi"
+    ],
+    [
+      "Gün batımında EQ Kuala Lumpur dış cephesi",
+      "EQ Deluxe Queen Double odası",
+      "EQ Bottega salonu"
+    ]
   ],
   "seoTitle": "Kuala Lumpur'da nerede kalınır? KLCC ve Bukit Bintang",
   "hotelSeoTitle": "Kuala Lumpur lüks otelleri: KLCC ve Golden Triangle",
