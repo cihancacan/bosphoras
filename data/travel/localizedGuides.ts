@@ -105,8 +105,9 @@ import tokyoTr from './localized/tokyo-tr.json';
 import saintTropezTr from './localized/saint-tropez-tr.json';
 import monacoTr from './localized/monaco-tr.json';
 import capDAntibesTr from './localized/cap-dantibes-tr.json';
+const reviewedInternational:Partial<Record<'de'|'es'|'it'|'pt'|'zh',Record<string,LocalizedGuide>>>={};
 const reviewedTurkish:Record<string,LocalizedGuide>={istanbul:istanbulTr,bodrum:bodrumTr,antalya:antalyaTr,paris:parisTr,dubai:dubaiTr,bali:baliTr,phuket:phuketTr,'new-york':newYorkTr,miami:miamiTr,'los-angeles':losAngelesTr,maldives:maldivesTr,tokyo:tokyoTr,'saint-tropez':saintTropezTr,monaco:monacoTr,'cap-dantibes':capDAntibesTr};
-export type EditorialLocale='ru'|'ar'|'tr';
+export type EditorialLocale='ru'|'ar'|'tr'|'de'|'es'|'it'|'pt'|'zh';
 type LegacyEditorialLocale='ru'|'ar';
 export type LocalizedGuide={
  name:string;country:string;eyebrow:string;heading:string;intro:string;editorial:string;hotelIntro:string;
@@ -114,19 +115,20 @@ export type LocalizedGuide={
  photoCaptions:string[];hotelCaptionGroups:string[][];
  seoTitle:string;hotelSeoTitle:string;seoDescription:string;
 };
-export function isEditorialLocale(locale:string):locale is EditorialLocale{return locale==='ru'||locale==='ar'||locale==='tr';}
+export function isEditorialLocale(locale:string):locale is EditorialLocale{return ['ru','ar','tr','de','es','it','pt','zh'].includes(locale);}
 const drafts:Record<LegacyEditorialLocale,Record<string,LocalizedGuide>>={ru:ruDrafts,ar:arDrafts};
 const localized:Record<string,Partial<Record<LegacyEditorialLocale,LocalizedGuide>>>={'desaru-coast':desaru,istanbul,paris,bodrum,antalya,dubai,'saint-tropez':saintTropez,bali,phuket,'new-york':newYork,miami,'los-angeles':losAngeles,'courchevel-1850':courchevel,megeve,'val-disere':valDisere,verbier,gstaad,zermatt,'saint-barthelemy':saintBarthelemy,'porto-cervo':portoCervo,mustique,monaco,'saint-jean-cap-ferrat':capFerrat,'cap-dantibes':capDAntibes,'lake-como':lakeComo,capri,positano,ravello,mykonos,antiparos,ibiza,formentera,deia,'port-andratx':portAndratx,comporta,melides,tivat,'st-moritz':stMoritz,aspen,'jackson-hole':jacksonHole,'big-sky':bigSky,'the-hamptons':theHamptons,'palm-beach':palmBeach,nantucket,'harbour-island':harbourIsland,'turks-and-caicos':turksAndCaicos,'canouan':canouan,'necker-island':neckerIsland,'north-island-seychelles':northIslandSeychelles,'pamalican-island':pamalicanIsland,'laucala-island':laucalaIsland,'jumby-bay':jumbyBay,'okavango-delta':okavangoDelta,'punta-mita':puntaMita,'costa-careyes':costaCareyes,'mayakoba':mayakoba,'san-miguel-de-allende':sanMiguelDeAllende,'koh-samui':kohSamui,'krabi':krabi,'koh-yao-noi':kohYaoNoi,'bangkok':bangkok,'chiang-mai':chiangMai,'sumba':sumba,'palawan':palawan,'tokyo':tokyo,'kyoto':kyoto,'hakone':hakone,'vinh-hy-bay':vinhHyBay,'da-nang':daNang,'jaipur':jaipur,'galle':galle,'tangalle':tangalle,'paro':paro,'punakha':punakha,'gangtey':gangtey,'siem-reap':siemReap,'koh-rong':kohRong,'luang-prabang':luangPrabang,'langkawi':langkawi,'rajasthan':rajasthan,'udaipur':udaipur,'sentosa':sentosa,'singapore':singapore,'phu-quoc':phuQuoc,'hoi-an':hoiAn,'maldives':maldives,'los-cabos':losCabos,'niseko':niseko};
 export function getLocalizedGuide(slug:string|undefined,locale:string):LocalizedGuide|undefined{
  if(!slug||!isEditorialLocale(locale))return undefined;
  if(locale==='tr')return reviewedTurkish[slug];
+ if(locale!=='ru'&&locale!=='ar')return reviewedInternational[locale]?.[slug];
  const data=localized[slug]?.[locale]||drafts[locale][slug];if(!data)return undefined;
  const native=nativeTravelNames[slug];if(!native)return data;
  return {...data,name:native[locale],country:native.country[locale],seoTitle:localized[slug]?.[locale]?data.seoTitle:localizedDestinationTitle(slug,locale,data.name),hotelSeoTitle:localized[slug]?.[locale]?data.hotelSeoTitle:localizedHotelTitle(slug,locale,data.name),seoDescription:seoSnippet(data.seoDescription)};
 }
 // Explicit release inventory: manually rewritten editions only, never machine-draft fallback.
 const releasedLocalizedSlugs=["antalya","antiparos","aspen","bali","bangkok","big-sky","bodrum","canouan","cap-dantibes","capri","chiang-mai","comporta","costa-careyes","courchevel-1850","da-nang","deia","desaru-coast","dubai","formentera","galle","gangtey","gstaad","hakone","harbour-island","hoi-an","ibiza","istanbul","jackson-hole","jaipur","jumby-bay","koh-rong","koh-samui","koh-yao-noi","krabi","kyoto","lake-como","langkawi","laucala-island","los-angeles","los-cabos","luang-prabang","maldives","mayakoba","megeve","melides","miami","monaco","mustique","mykonos","nantucket","necker-island","new-york","niseko","north-island-seychelles","okavango-delta","palawan","palm-beach","pamalican-island","paris","paro","phu-quoc","phuket","port-andratx","porto-cervo","positano","punakha","punta-mita","rajasthan","ravello","saint-barthelemy","saint-jean-cap-ferrat","saint-tropez","san-miguel-de-allende","sentosa","siem-reap","singapore","st-moritz","sumba","tangalle","the-hamptons","tivat","tokyo","turks-and-caicos","udaipur","val-disere","verbier","vinh-hy-bay","zermatt"] as const;
-export const reviewedLocalizedGuides:ReadonlySet<string>=new Set<string>([...releasedLocalizedSlugs.flatMap(slug=>['ru','ar'].filter(locale=>Boolean(localized[slug]?.[locale as LegacyEditorialLocale])).map(locale=>slug+'/'+locale)),...Object.keys(reviewedTurkish).map(slug=>slug+'/tr')]);
+export const reviewedLocalizedGuides:ReadonlySet<string>=new Set<string>([...releasedLocalizedSlugs.flatMap(slug=>['ru','ar'].filter(locale=>Boolean(localized[slug]?.[locale as LegacyEditorialLocale])).map(locale=>slug+'/'+locale)),...Object.keys(reviewedTurkish).map(slug=>slug+'/tr'),...Object.entries(reviewedInternational).flatMap(([locale,guides])=>Object.keys(guides).map(slug=>slug+'/'+locale))]);
 export function isLocalizedGuideReviewed(slug:string,locale:string){return reviewedLocalizedGuides.has(slug+'/'+locale)&&!!getLocalizedGuide(slug,locale);}
 export function validateLocalizedGuide(source:FeaturedCityGuideData,data:LocalizedGuide){
  return data.areas.length===source.areas.length&&data.experiences.length===source.experiences.length&&data.hotels.length===source.hotels.length&&data.checks.length===source.checksEn.length&&[data.name,data.country,data.eyebrow,data.heading,data.intro,data.editorial,data.hotelIntro,data.seoTitle,data.hotelSeoTitle,data.seoDescription].every(Boolean);

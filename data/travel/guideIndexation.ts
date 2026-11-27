@@ -2,7 +2,7 @@ import {approvedCategorySlugs,approvedDestinationSlugs,destinationBySlug} from '
 import {isEditorialLocale,isLocalizedGuideReviewed} from './localizedGuides';
 import {travelHref} from '@/lib/travel/i18n';
 import {istanbulHotels} from './istanbulFlagship';
-export const editorialTravelLocales=['fr','en','ru','ar','tr'] as const;
+export const editorialTravelLocales=['fr','en','ru','ar','tr','de','es','it','pt','zh'] as const;
 const collectionLocales=['fr','en','ru','ar'] as const;
 export type EditorialTravelLocale=typeof editorialTravelLocales[number];
 export function isTravelGuideIndexable(slug:string,variant:'destinations'|'hotels',locale:string){

@@ -1,6 +1,11 @@
 import type { TravelLocale } from '@/lib/travel/i18n';
 
 const copy={
+ de:{"title":"Welches Viertel passt zu Ihrer Reise?","area":"Viertel / Lage","tip":"Worauf es bei der Wahl ankommt"},
+ es:{"title":"¿En qué zona conviene alojarse?","area":"Barrio o zona","tip":"Qué saber antes de elegir"},
+ it:{"title":"Quale quartiere scegliere?","area":"Quartiere o zona","tip":"Cosa sapere prima di scegliere"},
+ pt:{"title":"Em qual bairro vale a pena ficar?","area":"Bairro ou região","tip":"O que saber antes de escolher"},
+ zh:{"title":"选择哪个住宿区域？","area":"街区或区域","tip":"选择前需要了解的事项"},
  tr:{title:'Hangi semtte kalınır?',area:'Semt / bölge',tip:'Seçim yaparken bilmeniz gerekenler'},
  fr:{title:'Quel quartier ou secteur choisir ?',area:'Quartier / secteur',tip:'À savoir avant de choisir'},
  en:{title:'Which neighborhood or area should you choose?',area:'Neighborhood / area',tip:'What to know before choosing'},

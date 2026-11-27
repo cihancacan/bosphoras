@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict');
 const {travelDestinations}=require('../data/travel/destinations');
 const {nativeTravelNames}=require('../data/travel/localizedNames');
-const {indexedTravelUrls,isTravelGuideIndexable}=require('../data/travel/guideIndexation');
+const {indexedTravelUrls,isTravelGuideIndexable,editorialTravelLocales}=require('../data/travel/guideIndexation');
 const {travelPageMetadata}=require('../components/travel/TravelPages');
 const {getLocalizedGuide,reviewedLocalizedGuides}=require('../data/travel/localizedGuides');
 const root='https://www.bosphoras.com';
@@ -21,7 +21,7 @@ for(const d of travelDestinations){
   assert.ok(typeof m.title==='string'&&m.title.length>0&&typeof m.description==='string'&&m.description.length>0&&m.description.length<=160,id+' complete metadata');
   assert.ok(m.openGraph&&m.twitter,id+' social metadata');
   assert.equal(m.alternates.canonical,root+(locale==='fr'?'':'/'+locale)+'/travel/'+variant+'/'+d.slug,id);
-  assert.deepEqual(Object.keys(m.alternates.languages).sort(),['istanbul','bodrum','antalya','paris','dubai','bali','phuket','new-york','miami','los-angeles','maldives','tokyo','saint-tropez','monaco','cap-dantibes'].includes(d.slug)?['ar','en','fr','ru','tr']:['ar','en','fr','ru'],id);
+  assert.deepEqual(Object.keys(m.alternates.languages).sort(),editorialTravelLocales.filter(l=>isTravelGuideIndexable(d.slug,variant,l)).sort(),id);
   for(const [lang,url] of Object.entries(m.alternates.languages))assert.equal(url,root+(lang==='fr'?'':'/'+lang)+'/travel/'+variant+'/'+d.slug,id);
   if(locale==='ar'||locale==='ru'){
    const script=locale==='ar'?/[\u0600-\u06ff]/:/[\u0400-\u052f]/;
@@ -37,6 +37,6 @@ for(const locale of ['fr','en','ar','ru'])for(const parts of [[],['destinations'
 assert.equal(titles.size,352);
 assert.equal(urls.filter(u=>/\/travel\/(destinations|hotels)\/[^/]+$/.test(u)).length,734);
 assert.equal(travelPageMetadata('ru',['destinations','nonexistent']).robots.index,false);
-for(const slug of ['istanbul','bodrum','antalya','paris','dubai','bali','phuket','new-york','miami','los-angeles','maldives','tokyo','saint-tropez','monaco','cap-dantibes'])for(const variant of ['destinations','hotels']){const m=travelPageMetadata('tr',[variant,slug]);assert.equal(m.robots.index,true);assert.ok(known.has(m.alternates.canonical));assert.deepEqual(Object.keys(m.alternates.languages).sort(),['ar','en','fr','ru','tr']);assert.equal(m.alternates.languages.tr,m.alternates.canonical);assert.equal(travelPageMetadata('tr',[variant,'kyoto']).robots.index,false);}
+for(const locale of ['tr','de','es','it','pt','zh'])for(const d of travelDestinations)for(const variant of ['destinations','hotels']){const m=travelPageMetadata(locale,[variant,d.slug]),ready=reviewedLocalizedGuides.has(d.slug+'/'+locale);assert.equal(m.robots.index,ready,d.slug+'/'+locale+'/'+variant);if(ready){assert.ok(known.has(m.alternates.canonical));assert.deepEqual(Object.keys(m.alternates.languages).sort(),editorialTravelLocales.filter(l=>isTravelGuideIndexable(d.slug,variant,l)).sort());assert.equal(m.alternates.languages[locale],m.alternates.canonical);assert.ok(m.title&&m.description&&m.description.length<=160&&m.openGraph&&m.twitter);}}
 const pilot=getLocalizedGuide('istanbul','tr');assert.equal(pilot.areas.length,5);assert.equal(pilot.hotels.length,9);assert.equal(pilot.experiences.length,6);assert.equal(pilot.faq.length,8);
 console.log('734 public guide and hotel routes, including fifteen reviewed Turkish destinations: robots, sitemap, reciprocal hreflang, localized metadata and image URLs verified.',urls.length,'travel URLs');

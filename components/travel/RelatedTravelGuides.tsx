@@ -1,10 +1,16 @@
 import Link from 'next/link';
 import { destinationBySlug,travelDestinations } from '@/data/travel/destinations';
 import { isTravelGuideIndexable } from '@/data/travel/guideIndexation';
+import { getLocalizedGuide } from '@/data/travel/localizedGuides';
 import { nativeTravelName,nativeTravelCountry } from '@/data/travel/localizedNames';
 import { travelHref,type TravelLocale } from '@/lib/travel/i18n';
 
 const copy={
+ de:{"title":"Weitere Reiseziele entdecken","guide":"Reiseführer","hotels":"Hotelauswahl"},
+ es:{"title":"Descubre otros destinos","guide":"Guía de viaje","hotels":"Selección de hoteles"},
+ it:{"title":"Scopri altre destinazioni","guide":"Guida di viaggio","hotels":"Selezione di hotel"},
+ pt:{"title":"Explore outros destinos","guide":"Guia de viagem","hotels":"Seleção de hotéis"},
+ zh:{"title":"探索其他目的地","guide":"旅行指南","hotels":"精选酒店"},
  tr:{title:'Keşfedilecek diğer destinasyonlar',guide:'Gezi rehberi',hotels:'Otel seçkisi'},
  fr:{title:'Autres destinations à découvrir',guide:'Guide de voyage',hotels:'Sélection d’hôtels'},
  en:{title:'Explore related destinations',guide:'Travel guide',hotels:'Hotel guide'},
@@ -22,9 +28,10 @@ export function RelatedTravelGuides({locale,slug}:{locale:Extract<TravelLocale,k
  return <section className="mx-auto max-w-7xl px-5 py-10 sm:py-14" lang={locale} dir={locale==='ar'?'rtl':'ltr'}>
   <h2 className="font-sans text-3xl font-normal text-[#202629]">{t.title}</h2>
   <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{related.map(d=>{
-   const name=nativeTravelName(d.slug,locale,d.name);
+   const local=getLocalizedGuide(d.slug,locale);
+   const name=local?.name||nativeTravelName(d.slug,locale,d.name);
    return <article key={d.slug} className="rounded-xl border border-[#e1e5e5] bg-white p-5">
-    <p className="text-xs text-[#53616b]">{nativeTravelCountry(d.slug,locale,d.country)}</p>
+    <p className="text-xs text-[#53616b]">{local?.country||nativeTravelCountry(d.slug,locale,d.country)}</p>
     <h3 className="mt-2 text-xl text-[#193344]">{name}</h3>
     <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
      <Link href={travelHref(locale,'destinations/'+d.slug)} className="underline underline-offset-4" aria-label={t.guide+' · '+name}>{t.guide}</Link>
