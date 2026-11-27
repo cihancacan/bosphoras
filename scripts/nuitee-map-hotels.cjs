@@ -18,8 +18,9 @@ const {featuredCityGuides}=require('../data/travel/featuredCityGuides');
 const manual=require('../data/travel/nuiteeMappings.json');
 const generated=require('../data/travel/nuiteeResolvedMappings.json');
 const output=path.join(__dirname,'../data/travel/nuiteeResolvedMappings.json');
-const reportFile=path.join(__dirname,'../docs/travel-nuitee-coverage.json');
-const csvFile=path.join(__dirname,'../docs/travel-nuitee-unmapped-hotels.csv');
+const scoped=process.argv.some(x=>x.startsWith('--destinations='));
+const reportFile=path.join(__dirname,scoped?'../docs/travel-nuitee-89-93-coverage.json':'../docs/travel-nuitee-coverage.json');
+const csvFile=path.join(__dirname,scoped?'../docs/travel-nuitee-89-93-unmapped.csv':'../docs/travel-nuitee-unmapped-hotels.csv');
 const csvCell=value=>'"'+String(value??'').replace(/"/g,'""')+'"';
 function writeMissingCsv(items) {
   const heading=['destination','hotel_name','city','country','editorial_key','reason'];
@@ -51,8 +52,13 @@ function countryCode(value) {
   if(/^[A-Z]{2}$/.test(v))return v;
   return countryCodeByName.get(normalize(v))||null;
 }
-const hotels=Object.values(featuredCityGuides).flatMap(city=>
-  city.hotels.map(hotel=>({destination:city.slug,city:city.name,country:city.country,
+const scopeFlag=[...flags].find(x=>x.startsWith('--destinations='));
+const selectedSlugs=scopeFlag?new Set(scopeFlag.slice('--destinations='.length).split(',')):null;
+const newDrafts=selectedSlugs?[require('../data/travel/londonDraftGuide').londonDraftGuide,require('../data/travel/lasVegasDraftGuide').lasVegasDraftGuide,require('../data/travel/romeDraftGuide').romeDraftGuide,require('../data/travel/barcelonaDraftGuide').barcelonaDraftGuide,require('../data/travel/cancunDraftGuide').cancunDraftGuide]:[];
+const supplierLocations={london:['London','GB'],'las-vegas':['Las Vegas','US'],rome:['Rome','IT'],barcelona:['Barcelona','ES'],cancun:['Cancun','MX']};
+const guidePool={...featuredCityGuides,...Object.fromEntries(newDrafts.map(d=>[d.slug,d]))};
+const hotels=Object.values(guidePool).filter(city=>!selectedSlugs||selectedSlugs.has(city.slug)).flatMap(city=>
+  city.hotels.map(hotel=>({destination:city.slug,city: selectedSlugs&&supplierLocations[city.slug]?supplierLocations[city.slug][0]:city.name,country:selectedSlugs&&supplierLocations[city.slug]?supplierLocations[city.slug][1]:city.country,
     name:hotel.name,editorialKey:city.slug+':'+hotel.officialUrl})));
 // Runtime mappings use tuples, keyed on exact editorial name (not official URL).
 const generatedRows=generated.hotels.map(([destination,name,hotelId])=>({destination,name,hotelId,editorialKeys:[destination+':'+name]}));
@@ -60,7 +66,7 @@ const existing=[...manual.hotels,...generatedRows];
 const assigned=new Set(existing.flatMap(hotel=>[...(hotel.editorialKeys||[]),hotel.destination+':'+hotel.name]));
 const pending=hotels.filter(hotel=>!assigned.has(hotel.editorialKey)&&!assigned.has(hotel.destination+':'+hotel.name));
 const report={
-  generatedAt:new Date().toISOString(),destinations:Object.keys(featuredCityGuides).length,
+  generatedAt:new Date().toISOString(),destinations:new Set(hotels.map(h=>h.destination)).size,
   editorialHotels:hotels.length,verifiedSupplierHotels:existing.length,
   editorialEntriesWithDirectLink:hotels.length-pending.length,
   editorialEntriesMissingDirectLink:pending.length,
@@ -197,9 +203,13 @@ function verifyIdentity(hotel,supplier) {
   writeMissingCsv(report.unresolved);
   fs.writeFileSync(reportFile,JSON.stringify(report,null,2)+'\n');
   if(apply&&newMappings.length){
-    const merged=[...generated.hotels,...newMappings.map(m=>[m.destination,m.name,m.hotelId])].sort((a,b)=>
-      (a[0]+':'+a[1]).localeCompare(b[0]+':'+b[1]));
-    fs.writeFileSync(output,JSON.stringify({hotels:merged},null,2)+'\n');
+    if(selectedSlugs){
+      // Scoped imports retain the actual API evidence instead of claiming a manual WhiteLabel page review.
+      fs.writeFileSync(path.join(__dirname,'../data/travel/nuiteeMappings.json'),JSON.stringify({...manual,hotels:[...manual.hotels,...newMappings]},null,2)+'\n');
+    }else{
+      const merged=[...generated.hotels,...newMappings.map(m=>[m.destination,m.name,m.hotelId])].sort((a,b)=>(a[0]+':'+a[1]).localeCompare(b[0]+':'+b[1]));
+      fs.writeFileSync(output,JSON.stringify({hotels:merged},null,2)+'\n');
+    }
   }
   console.log('Nuitée '+(apply?'mapping import':'candidate audit')+': '+
     newMappings.length+' exact supplier matches; '+report.unresolvedCount+
