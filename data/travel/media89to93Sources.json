@@ -4,6 +4,9 @@
     "city": "Londres",
     "publisher": "Visit London / London & Partners",
     "cityPages": [
+      "https://www.visitbritain.com/en/itineraries/london-film-and-tv-itinerary",
+      "https://www.visitbritain.com/en/itineraries/5-days-and-around-london",
+      "https://www.visitbritain.com/en/things-to-do/free-things-do-london",
       "https://www.visitbritain.com/en/destinations/england/london",
       "https://www.londonandpartners.com/newsroom/essential-info",
       "https://www.londonandpartners.com/what-we-do/travel-trade",
@@ -38,6 +41,9 @@
         "savoy",
         "The Savoy",
         [
+          "https://www.thesavoylondon.com/image-library",
+          "https://press.thesavoylondon.com/new-rooms-and-suites-the-savoy/?lang=en",
+          "https://press.thesavoylondon.com/section/filters/rooms-suites/?lang=en",
           "https://www.thesavoylondon.com/rooms",
           "https://www.thesavoylondon.com/rooms-and-suites/savoy-suite",
           "https://www.thesavoylondon.com/",
@@ -103,6 +109,7 @@
         "wynn",
         "Wynn Las Vegas",
         [
+          "https://www.wynnlasvegas.com/experiences/pools",
           "https://www.wynnlasvegas.com/rooms-and-suites",
           "https://www.wynnlasvegas.com/"
         ]
@@ -130,6 +137,10 @@
     "city": "Rome",
     "publisher": "Turismo Roma / Roma Capitale",
     "cityPages": [
+      "https://www.turismoroma.it/en/page/rione-ii-trevi",
+      "https://turismoroma.it/en/node/1286",
+      "https://turismoroma.it/en/places/navona-square",
+      "https://www.turismoroma.it/en/places/villa-borghese",
       "https://www.turismoroma.it/en/tipo-luogo/monuments",
       "https://www.italia.it/en/lazio/rome/things-to-do/rome-the-eternal-city",
       "https://www.italia.it/en/lazio/rome/guide-history-facts",
@@ -156,6 +167,8 @@
         "bvlgari",
         "Bvlgari Hotel Roma",
         [
+          "https://www.bulgarihotels.com/en-US/rome/image-gallery",
+          "https://www.bulgarihotels.com/it_IT/rome/image-gallery",
           "https://www.bulgarihotels.com/en_US/rome/image-gallery",
           "https://www.bulgarihotels.com/en_US/rome/accommodation/Rooms",
           "https://www.bulgarihotels.com/en_US/rome.html",
@@ -184,6 +197,8 @@
         "eden",
         "Hotel Eden",
         [
+          "https://media.dorchestercollection.com/hotel-eden-1/?lang=eng",
+          "https://media.dorchestercollection.com/hotel-eden/?lang=eng",
           "https://media.dorchestercollection.com/section/our-portfolio/hotel-eden-rome/?lang=eng",
           "https://www.dorchestercollection.com/rome/hotel-eden",
           "https://www.dorchestercollection.com/rome/hotel-eden/rooms-suites"
@@ -196,6 +211,10 @@
     "city": "Barcelone",
     "publisher": "Turisme de Barcelona",
     "cityPages": [
+      "https://www.spain.info/en/destination/barcelona/",
+      "https://www.spain.info/en/route/barcelona-two-days/",
+      "https://www.spain.info/en/top/barcelona-art-nouveau-gaudi/",
+      "https://www.spain.info/en/top/best-views-barcelona/",
       "https://bid.barcelonaturisme.com/wv3/en/page/610/basilica-of-la-sagrada-familia.html",
       "https://bid.barcelonaturisme.com/wv3/en/page/4505/barcelona-s-architectural-heritage.html",
       "https://bid.barcelonaturisme.com/wv3/en/enjoy/45/barcelona-a-bird-s-eye-view.html",
@@ -234,6 +253,7 @@
         "arts",
         "Hotel Arts Barcelona",
         [
+          "https://www.marriott.com/es/hotels/bcnrz-hotel-arts-barcelona/photos/",
           "https://www.ritzcarlton.com/en/hotels/bcnrz-hotel-arts-barcelona/overview/",
           "https://www.hotelartsbarcelona.com/"
         ]
@@ -249,6 +269,7 @@
         "cotton-house",
         "Cotton House Hotel, Autograph Collection",
         [
+          "https://www.marriott.com/en-us/hotels/bcnak-cotton-house-hotel-autograph-collection/photos/",
           "https://hotelcottonhouse.com/en/hotel/",
           "https://hotelcottonhouse.com/en/"
         ]

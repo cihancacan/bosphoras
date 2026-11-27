@@ -40,6 +40,9 @@ def hostmatch(host,root):
 def domain(url):
  host=urlparse(url).hostname or ''
  return host.removeprefix('www.')
+def publisher_cdn(host,pagehost):
+ return ((hostmatch(pagehost,'visitbritain.com') and host=='dam-cdn.vb0.orangelogic.com') or
+         (hostmatch(pagehost,'thesavoylondon.com') and hostmatch(host,'website-files.com')))
 def collect_pages(pages):
  result=[];errors=[];seen=set()
  for page in pages:
@@ -74,8 +77,8 @@ def collect_pages(pages):
      path='https://assets.simpleviewcms.com/simpleview/image/upload/'+path
     u=urljoin(final,path);u=u.replace(' ','%20')
     h=domain(u); pagehost=domain(final)
-    if not (hostmatch(h,pagehost) or hostmatch(pagehost,h) or any(hostmatch(h,c) for c in CDN) or h.split('.')[-2:]==pagehost.split('.')[-2:]):continue
-    if BAD.search(u+' '+alt) or not re.search(r'jpe?g|webp|png|avif|image|media|photo|asset|/img/',u,re.I):continue
+    if not (hostmatch(h,pagehost) or hostmatch(pagehost,h) or any(hostmatch(h,c) for c in CDN) or publisher_cdn(h,pagehost) or h.split('.')[-2:]==pagehost.split('.')[-2:]):continue
+    if BAD.search(u+' '+alt) or not (publisher_cdn(h,pagehost) or re.search(r'jpe?g|webp|png|avif|image|media|photo|asset|/img/',u,re.I)):continue
     identity=re.sub(r'[-_]\d{2,4}x\d{2,4}(?=\.)','',u.split('?')[0],flags=re.I)
     if identity in seen:continue
     seen.add(identity)
@@ -96,8 +99,11 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
   for r in candidates:
    label=unquote(r['url']+' '+r['originalAlt']+' '+r['originalCaption'])
    if OTHER.search(label) or not re.search(pattern,label,re.I):continue
+   if not property_name and re.search(r'selfie|group of friends|tourist[s]? (?:in|at|admiring|taking)|people (?:walking|buying|standing)|friends buying|person (?:in|standing|riding)|portrait',r['originalAlt'],re.I):continue
+   if property_name and re.search(r'il.palazzetto|salon.?entrance|registration desk|/salon/|(?:beauty|hair).?salon',label,re.I):continue
+   if property_name=='Wynn Las Vegas' and re.search(r'\bencore\b',label,re.I):continue
    if property_name and re.search(r'sant.?pau|/dining/|/restaurants?/|city.?attraction|city.?guide|/explore/|destination.?guide',label,re.I):continue
-   if property_name and pattern==EXTERIOR.pattern and ROOM.search(label):continue
+   if property_name and pattern==EXTERIOR.pattern and (ROOM.search(label) or re.search(r'\b(?:lobby|salon|spa|interior|restaurant|bar|terrace|reception|registration|desk)\b',label,re.I)):continue
    if property_name and pattern==FACILITY.pattern and ROOM.search(label):continue
    # Group-wide galleries require property identity in the actual asset label.
    if property_name and (('press.mandarinoriental.com' in r['sourcePage'] and 'barcelona' not in label.lower()) or ('leblancsparesorts.com/gallery' in r['sourcePage'] and 'cancun' not in label.lower() and 'cancún' not in label.lower())):continue
@@ -132,7 +138,7 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
     key=f'{prefix}-{next_index}'; dest=folder/f'{key}.webp'
     dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(b)
     seen_bytes.add(sourcehash);fingerprints.append(dh)
-    row={'key':key,'sourcePage':r['sourcePage'],'sourceResolvedUrl':resolved,'sourceRequestedUrl':r['url'],'originalAlt':r['originalAlt'],'originalCaption':r['originalCaption'],'credit':publisher,'publisher':publisher,'hotel':property_name,'localPath':'/'+str(dest).removeprefix('public/'),'sourceSHA256':sourcehash,'webpSHA256':hashlib.sha256(b).hexdigest(),'sourcePixels':[w,h],'webpPixels':list(im.size),'webpBytes':len(b),'pixelFingerprint':f'{dh:016x}','candidateSubject':pattern,'rightsEvidenceType':'owner declaration of permission, source publisher retained; individual licence not independently inspected','ownerPermissionDeclared':True,'commercialRightsCleared':False,'visuallyVerified':False,'previewVisualApproved':False,'status':'candidate_pending_visual_review_and_credit'}
+    row={'key':key,'sourcePage':r['sourcePage'],'sourceResolvedUrl':resolved,'sourceRequestedUrl':r['url'],'originalAlt':r['originalAlt'],'originalCaption':r['originalCaption'],'credit':publisher,'publisher':publisher,'hotel':property_name,'localPath':'/'+str(dest).removeprefix('public/'),'sourceSHA256':sourcehash,'webpSHA256':hashlib.sha256(b).hexdigest(),'sourcePixels':[w,h],'webpPixels':list(im.size),'webpBytes':len(b),'pixelFingerprint':f'{dh:016x}','candidateSubject':pattern,'rightsEvidenceType':'owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed','ownerPermissionDeclared':True,'commercialRightsCleared':False,'visuallyVerified':False,'previewVisualApproved':False,'status':'candidate_pending_visual_review_and_credit'}
     results.append(row)
     next_index+=1
     print('WEBP',property_name or publisher,key,w,h,len(b),flush=True)
@@ -144,17 +150,17 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
 def city_job(c):
  base=ROOT/(c['slug']+'-premium')
  old=PREVIOUS.get(c['slug'],{})
- existing=old.get('destinationScenes',[])
+ existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='las-vegas' and r['key']=='scene-5') and not (c['slug']=='cancun' and r['key']=='scene-4') and not (c['slug']=='rome' and r['key']=='scene-3')]
  if len(existing)>=9:return c['slug'],'city',existing,[]
  cand,errors=collect_pages(c['cityPages'])
- result,failed=pick(cand,c['subjects'],base/'destination','scene',c['publisher'],existing=existing)
+ result,failed=pick(cand,c['subjects'],base/'destination','scene',c['publisher'],existing=existing,avoid=[r for r in old.get('destinationScenes',[]) if r not in existing])
  return c['slug'],'city',result,errors+failed
 def hotel_job(c,h):
  key,name,pages=h
  old=PREVIOUS.get(c['slug'],{})
  allprevious=[r for r in old.get('hotels',[]) if r['hotel']==name]
  # These were specifically identified by source filenames/alt as unsuitable or ambiguous.
- bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2'}
+ bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3'}
  rejected=[r for r in allprevious if r['key'] in bad]
  existing=[r for r in allprevious if r['key'] not in bad]
  if len(existing)>=3:return c['slug'],key,existing,[]
