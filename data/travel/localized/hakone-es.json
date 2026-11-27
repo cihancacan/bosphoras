@@ -1,0 +1,168 @@
+{
+  "name": "Hakone",
+  "country": "Japón",
+  "eyebrow": "Hakone · Ryokan de montaña y aguas termales",
+  "heading": "Dónde alojarse en Hakone: el arte del descanso en un ryokan",
+  "intro": "Baño termal privado, cena kaiseki de temporada y valles boscosos. En Hakone importa elegir zona y categoría, no solo una foto del Fuji.",
+  "editorial": "En Hakone el lujo se define por el ritmo del descanso. Gora, Kowakidani, Miyanoshita y Sengokuhara ofrecen paisajes y conexiones distintos. Un baño con vistas al bosque no garantiza panorámica del Fuji.\n\nGora Kadan ocupa el terreno de una antigua villa imperial de verano. Arquitectura, kaiseki estacional y aguas termales crean ambiente clásico de ryokan. Habitaciones estándar, baños exteriores, Kadan Suites, Annex y Bettei Suites difieren. No todas tienen onsen privado. Según el hotel, niños que aún no controlan esfínteres no pueden usar baños comunes ni piscina, incluso con pañal de baño; horarios de piscina limitados para pequeños.\n\nHakone Suishoen, en Kowakidani, tiene 23 habitaciones individualizadas, cada una con baño termal natural privado al aire libre. La villa histórica Mitsui de época Taisho, bien cultural registrado, alberga el restaurante Momiji, no todos los dormitorios. Solicita traslado gratuito desde estación Kowakidani o parada indicada al reservar. Hakone Ginyu se sitúa sobre garganta del Hayakawa en Miyanoshita; terrazas y baños exteriores miran al valle y montañas de Hakone, no necesariamente Fuji. Confirma categoría, privacidad y trayecto. Kinnotake Sengokuhara ofrece nueve tipos de habitación con onsen privado exterior y kaiseki en la habitación. Edad mínima 12 años; no apto para familias con pequeños.\n\nGora y Sounzan favorecen tren de montaña, funicular y jardines; Kowakidani y museo al aire libre, arte; Miyanoshita, valles y arquitectura; Sengokuhara, praderas y bambú. Owakudani, Togendai y lago Ashi forman otro recorrido. Teleférico depende de viento, mantenimiento y seguridad volcánica. Desde Tokio, Romancecar de Shinjuku a Hakone-Yumoto o Shinkansen vía Odawara, después transporte local. Compara Hakone Freepass con recorrido real; confirma traslado y equipaje.\n\nReglas de onsen públicos y privados varían por edad, tatuajes, desnudez, salud y horario. Kaiseki se sirve a horas fijadas; acuerda alergias, dieta vegetariana y menús infantiles. Fuji solo visible con tiempo favorable. Compara en Bosphoras; precio, disponibilidad y condiciones de reserva se confirman con proveedor autorizado.",
+  "hotelIntro": "Cuatro ryokan: Gora Kadan, Hakone Suishoen, Hakone Ginyu y Kinnotake Sengokuhara. Compara baños termales, ubicación y edades.",
+  "areas": [
+    [
+      "Gora y Sounzan",
+      "Jardines, arte contemporáneo, tren de montaña y funicular.",
+      "Considera pendientes y transbordos."
+    ],
+    [
+      "Kowakidani y museo al aire libre",
+      "Zona boscosa con arte, museos y ryokan.",
+      "Comprueba horarios de museos y traslado hotelero."
+    ],
+    [
+      "Miyanoshita y valle Hayakawa",
+      "Paisaje montañoso, ferrocarril histórico y terrazas sobre valle.",
+      "Vista del valle no equivale al Fuji."
+    ],
+    [
+      "Praderas y bosques Sengokuhara",
+      "Bambú, praderas y ryokan tranquilos lejos de grandes resorts lacustres.",
+      "Algunos ryokan limitan edades."
+    ],
+    [
+      "Owakudani, Togendai y lago Ashi",
+      "Teleférico, fumarolas, lago y posible vista del Fuji.",
+      "Teleférico según viento, mantenimiento y actividad volcánica."
+    ]
+  ],
+  "experiences": [
+    [
+      "Lago Ashi y torii",
+      "Visita lago y santuario sin esperar vista garantizada del Fuji."
+    ],
+    [
+      "Teleférico y Owakudani",
+      "Observa vapores volcánicos solo en condiciones seguras y con transporte operativo."
+    ],
+    [
+      "Onsen y etiqueta",
+      "Elige baño privado o común según reglas y edad."
+    ],
+    [
+      "Esculturas y jardines Gora",
+      "Explora museo al aire libre y jardines sin prisas."
+    ],
+    [
+      "Kaiseki de temporada",
+      "Confirma hora, dieta y menú infantil antes."
+    ]
+  ],
+  "checks": [
+    "Confirma categoría, baño exterior, orientación y superficie.",
+    "Kinnotake desde 12 años; Gora Kadan limita acceso infantil a baños comunes y piscina.",
+    "Compara Gora, Kowakidani, Miyanoshita y Sengokuhara.",
+    "Coordina traslado desde Odawara, Hakone-Yumoto o estación local y equipaje.",
+    "No se garantiza vista al Fuji desde habitación, lago o teleférico.",
+    "Comprueba teleférico y seguridad volcánica el mismo día.",
+    "Confirma hora de kaiseki, menú infantil, alergias y dieta vegetariana.",
+    "Proveedor autorizado confirma precios y disponibilidad."
+  ],
+  "hotels": [
+    [
+      "Gora · Antigua finca imperial",
+      "Gora Kadan es un ryokan en antigua finca imperial con kaiseki, suites diversas y aguas termales.",
+      "Baño exterior privado según categoría; niños sin control de esfínteres no acceden a baños comunes ni piscina.",
+      "Para kaiseki tradicional y hospitalidad japonesa.",
+      ""
+    ],
+    [
+      "Kowakidani · Restaurante histórico Momiji",
+      "Hakone Suishoen ofrece 23 habitaciones individuales con baño termal exterior privado. Villa histórica Mitsui utilizada como restaurante.",
+      "Solicita traslado al reservar; villa histórica no equivale a cada habitación.",
+      "Para onsen privado y arquitectura histórica.",
+      ""
+    ],
+    [
+      "Miyanoshita · Valle Hayakawa",
+      "Hakone Ginyu ocupa ladera con baños exteriores y vistas al valle y montañas.",
+      "Vista del valle no garantiza Fuji; comprueba baño, capacidad y traslado.",
+      "Para retiro romántico de montaña.",
+      ""
+    ],
+    [
+      "Sengokuhara · Bosque de bambú",
+      "Kinnotake Sengokuhara ofrece nueve categorías con baño termal exterior privado y kaiseki en habitación.",
+      "Solo desde 12 años; no apto para familias con niños pequeños.",
+      "Para retiro en pareja.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Qué ryokan compara la guía?",
+      "Gora Kadan, Hakone Suishoen, Hakone Ginyu y Kinnotake Sengokuhara. Difieren baños, alojamiento y edades."
+    ],
+    [
+      "¿Se puede ir a Kinnotake con niños pequeños?",
+      "No, edad mínima 12 años."
+    ],
+    [
+      "¿Cada habitación Gora Kadan tiene onsen privado?",
+      "No, estándar y categorías con baño exterior son distintas."
+    ],
+    [
+      "¿Qué diferencia Suishoen y Ginyu?",
+      "Suishoen ofrece 23 habitaciones con baño exterior privado y restaurante histórico; Ginyu terrazas sobre valle Hayakawa."
+    ],
+    [
+      "¿Cómo llegar desde Tokio?",
+      "Romancecar desde Shinjuku a Hakone-Yumoto o Shinkansen vía Odawara, luego tren local, bus o traslado."
+    ],
+    [
+      "¿Vista del Fuji garantizada?",
+      "No, depende de nubes, niebla y orientación."
+    ],
+    [
+      "¿Funciona siempre el teleférico Owakudani?",
+      "No, viento, mantenimiento, averías o actividad volcánica pueden detenerlo; comprueba ese día."
+    ],
+    [
+      "¿Cómo reservar ryokan en Bosphoras?",
+      "Compara; precio, disponibilidad, pago, cancelación y devolución según proveedor autorizado."
+    ]
+  ],
+  "photoCaptions": [
+    "Lago Ashi, santuario Hakone y Fuji con cielo despejado",
+    "Vapores de azufre Owakudani",
+    "Jardín del parque Gora",
+    "Estación de montaña Miyanoshita",
+    "Esculturas museo al aire libre Hakone",
+    "Teleférico sobre laderas",
+    "Arroyo en Hakone-Yumoto",
+    "Vista primaveral Fuji desde lago Ashi",
+    "Otra vista jardín parque Gora"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Terreno histórico y jardín Gora Kadan",
+      "Arquitectura ryokan Gora Kadan",
+      "Interiores y paisaje Gora Kadan"
+    ],
+    [
+      "Habitación Hakone Suishoen",
+      "Habitación y baño Hakone Suishoen",
+      "Categoría de habitación Hakone Suishoen"
+    ],
+    [
+      "Valle junto a Hakone Ginyu",
+      "Suite y terraza Hakone Ginyu",
+      "Jardines y valle Hakone Ginyu"
+    ],
+    [
+      "Ryokan forestal Kinnotake Sengokuhara",
+      "Habitación privada Kinnotake",
+      "Instalaciones Kinnotake"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Hakone: ryokan de lujo y onsen privados",
+  "hotelSeoTitle": "Ryokan de Hakone: Gora Kadan, Suishoen, Ginyu y Kinnotake",
+  "seoDescription": "Compara cuatro ryokan de Hakone: onsen privados, kaiseki, reglas infantiles, lago Ashi y traslados desde Tokio."
+}
