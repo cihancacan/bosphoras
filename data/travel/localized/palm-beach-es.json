@@ -1,0 +1,162 @@
+{
+  "name": "Palm Beach",
+  "country": "Estados Unidos",
+  "eyebrow": "Florida · Hoteles históricos y jardines tropicales junto al Atlántico",
+  "heading": "Dónde alojarse en Palm Beach: cuatro hoteles con personalidad",
+  "intro": "Separada de West Palm Beach por la laguna Lake Worth, la isla reúne playas atlánticas, mansiones históricas, tiendas de Worth Avenue y jardines tropicales. The Breakers, The Brazilian Court, The Colony y Palm House ofrecen cuatro experiencias distintas.",
+  "editorial": "Palm Beach ocupa una isla barrera entre el Atlántico y la laguna Lake Worth. West Palm Beach está en tierra firme, al otro lado de los puentes: una distinción importante al elegir hotel. Worth Avenue y los patios de Via Mizner muestran arquitectura y comercios; Lake Trail recorre la laguna y el museo Flagler ocupa la mansión Whitehall.\n\nThe Breakers destaca por arquitectura renacentista italiana, jardines, playa para huéspedes y cuatro piscinas. Active Pool, de entrada gradual, es familiar; Adult Pool admite desde 21 años. Los bungalós se reservan aparte. Brazilian Court ofrece mayor intimidad con 80 habitaciones y suites, patios tropicales y Café Boulud. Confirma las condiciones del paseo de dos horas en el yate BC ONE anunciado por el hotel: fecha, disponibilidad y tiempo influyen.\n\nThe Colony combina fachada rosa, interiores expresivos, Swifty’s y piscina entre vegetación cerca de Worth Avenue. Palm House, en Royal Palm Way, ofrece diseño contemporáneo, cristal de Murano, colores vivos y piscina exterior climatizada. Reabrió en noviembre de 2024 con 79 habitaciones y suites. Brazilian Court, Colony y Palm House no están directamente sobre la playa oceánica.\n\nComprueba horarios del museo Flagler y Bethesda-by-the-Sea, aparcamiento y accesos públicos a playas. Atiende a olas, corrientes y socorristas. Durante la temporada de huracanes, normalmente junio a noviembre, sigue avisos oficiales y posibles cambios de excursiones marítimas. Habitación, mesa, traslado o plaza en yate se confirman al reservar.",
+  "hotelIntro": "Cuatro direcciones en la isla: gran resort atlántico, dos hoteles con carácter cerca de Worth Avenue y el moderno Palm House en Royal Palm Way.",
+  "areas": [
+    [
+      "The Breakers y North Ocean Boulevard",
+      "Arquitectura monumental, jardines tropicales y playa para huéspedes al este de la isla.",
+      "Piscinas y bungalós tienen reglas de edad y reserva propias."
+    ],
+    [
+      "Worth Avenue y Via Mizner",
+      "Tiendas, arcadas mediterráneas y patios floridos cerca de Brazilian Court y Colony.",
+      "Comprueba horarios y aparcamientos permitidos."
+    ],
+    [
+      "Royal Palm Way y centro de la isla",
+      "Palm House está bien situado para restaurantes, tiendas y paseos a playas públicas.",
+      "Cercanía al océano no significa playa propia."
+    ],
+    [
+      "Museo Flagler, Lake Trail y norte",
+      "Casas históricas, jardines junto a laguna, Whitehall y caminos para caminar o pedalear.",
+      "Respeta horarios y límites de propiedades privadas."
+    ],
+    [
+      "South Ocean Boulevard y playas atlánticas",
+      "Sur de la isla con playas oceánicas, arquitectura residencial y áreas de descanso.",
+      "Comprueba baño, accesos públicos y aparcamiento."
+    ]
+  ],
+  "experiences": [
+    [
+      "Arquitectura y jardines de The Breakers",
+      "Admira fachada renacentista y jardines en zonas abiertas a visitantes."
+    ],
+    [
+      "Tiendas y patios de Worth Avenue",
+      "Pasea por arcadas, comercios y patios con fuentes de Via Mizner."
+    ],
+    [
+      "Whitehall y museo Flagler",
+      "Conoce historia de Palm Beach y arquitectura de la Edad Dorada; comprueba entradas y horarios."
+    ],
+    [
+      "Mañana en Lake Trail",
+      "Camina o pedalea por la laguna Lake Worth respetando propiedades privadas."
+    ],
+    [
+      "Descanso en playa vigilada",
+      "Elige acceso permitido y presta atención a banderas, olas y avisos de corrientes."
+    ]
+  ],
+  "checks": [
+    "Palm Beach insular y West Palm Beach continental son lugares distintos.",
+    "Adult Pool de The Breakers es desde 21 años; bungalós se reservan aparte.",
+    "Brazilian Court, Colony y Palm House no están directamente sobre la arena.",
+    "Confirma condiciones, horario y plazas de BC ONE con Brazilian Court.",
+    "Comprueba accesos públicos, aparcamiento, tiempo y mareas.",
+    "Habitación, yate, bungaló, restaurante, tratamiento y traslado requieren confirmación."
+  ],
+  "hotels": [
+    [
+      "North Ocean Boulevard · Hotel histórico frente al océano",
+      "The Breakers Palm Beach destaca por arquitectura renacentista italiana, salones, jardines y extensa playa para huéspedes. Cuatro piscinas con condiciones distintas: Active Pool de entrada gradual para familias y Adult Pool desde 21 años. Bungalós, ciertas actividades deportivas y tratamientos de spa se reservan aparte. Habitaciones y suites difieren en superficie, vistas y privilegios; confirma camas y capacidad infantil. The Circle, HMF y Beach Club tienen horarios propios.",
+      "Adult Pool desde 21 años; bungalós y tratamientos con reserva independiente.",
+      "Para océano, arquitectura histórica y amplia infraestructura de resort.",
+      ""
+    ],
+    [
+      "Australian Avenue · Cerca de Worth Avenue",
+      "The Brazilian Court Hotel es un hotel histórico de estilo colonial español con 80 habitaciones y suites, dos patios tropicales, fuentes y piscina tranquila. Café Boulud de Daniel Boulud completa la experiencia gastronómica. Superficie, salón y terraza varían; las familias deben confirmar camas y capacidad. El paseo de dos horas en BC ONE depende de condiciones, horario, clima y disponibilidad. Worth Avenue queda a pocas manzanas; para ir a la playa hay que salir del hotel.",
+      "Confirma BC ONE por separado; no es hotel de playa.",
+      "Para patios tropicales, tranquilidad y Café Boulud.",
+      ""
+    ],
+    [
+      "Hammond Avenue · Cerca de Worth Avenue",
+      "The Colony Hotel Palm Beach reúne fachada rosa, interiores coloridos, jardines tropicales y pequeña piscina entre plantas. Swifty’s aporta ambiente animado; tiendas de Worth Avenue y playa pública están cerca. Confirma tumbonas y transporte local para tus fechas. Habitaciones, suites y residencias separadas difieren en planta, camas, terrazas y conexiones; familias deben elegir categoría de capacidad confirmada.",
+      "Playa pública separada; confirma tumbonas y transporte.",
+      "Para Worth Avenue, diseño expresivo y gastronomía animada.",
+      ""
+    ],
+    [
+      "Royal Palm Way · Centro de la isla",
+      "Palm House reabrió en noviembre de 2024 tras transformar Heart of Palm Hotel. Sus 79 habitaciones y suites combinan rosa, verde, cristal de Murano e imágenes de Slim Aarons. El patio tiene piscina exterior de temperatura regulada. La dirección 160 Royal Palm Way facilita explorar la isla, pero se llega al océano por calles públicas. The Dining Room y espacios de eventos tienen horarios propios. Confirma planta, vistas, camas extra y reglas de piscina. Valet nocturno de pago.",
+      "79 habitaciones y suites; aparcacoches nocturno de pago.",
+      "Para diseño contemporáneo y paseos por el centro de la isla.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Palm Beach y West Palm Beach son lo mismo?",
+      "No, Palm Beach es isla atlántica y West Palm Beach está en tierra firme tras la laguna. Los cuatro hoteles están en la isla, con distintas ubicaciones respecto a la playa."
+    ],
+    [
+      "¿Qué hoteles están directamente junto al océano?",
+      "The Breakers tiene playa para huéspedes. Brazilian Court, Colony y Palm House están en calles de la isla; hay que salir para acceder a la playa."
+    ],
+    [
+      "¿Las cuatro piscinas de The Breakers admiten niños?",
+      "No. Active Pool de entrada gradual es familiar; Adult Pool desde 21 años. Bungalós con reserva aparte y posible suplemento."
+    ],
+    [
+      "¿Está garantizado el paseo BC ONE en Brazilian Court?",
+      "Confirma fecha, plazas, número de participantes y tiempo para la salida de dos horas."
+    ],
+    [
+      "¿Cuándo abrió Palm House?",
+      "Reabrió en noviembre de 2024 tras transformar Heart of Palm Hotel. En 160 Royal Palm Way ofrece 79 habitaciones y suites, piscina y restaurante; aparcacoches nocturno de pago."
+    ],
+    [
+      "¿Qué considerar en vacaciones de playa?",
+      "Consulta olas, corrientes y avisos meteorológicos cada día. Temporada de huracanes atlánticos generalmente junio–noviembre; alertas actuales del National Hurricane Center."
+    ],
+    [
+      "¿La guía garantiza habitaciones o yate?",
+      "No. Compara en Bosphoras; proveedor autorizado confirma precios, habitaciones, yate, restaurante y traslado por separado."
+    ]
+  ],
+  "photoCaptions": [
+    "Torre del reloj de Worth Avenue junto al océano",
+    "Worth Avenue, calle comercial de Palm Beach",
+    "Arquitectura histórica The Breakers",
+    "Whitehall, mansión histórica de Henry Flagler",
+    "Arquitectura y jardines Bethesda-by-the-Sea",
+    "Entrada marítima Palm Beach y costa atlántica norte",
+    "Arcadas mediterráneas Via Mizner",
+    "Laguna Lake Worth y entrada marítima norte",
+    "Arquitectura histórica y automóviles en Worth Avenue"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Arquitectura renacentista y jardines The Breakers",
+      "Restaurante junto a piscina The Breakers",
+      "Suite Flagler Club The Breakers"
+    ],
+    [
+      "Fuente y patio Brazilian Court",
+      "Interior de habitación Brazilian Court",
+      "Salón separado de suite Brazilian Court"
+    ],
+    [
+      "Interiores expresivos The Colony",
+      "Habitación con decoración Palm Beach The Colony",
+      "Swifty’s junto a piscina The Colony"
+    ],
+    [
+      "Ambiente de diseño Palm House",
+      "Arquitectura e interior coloridos Palm House",
+      "Espacios de huéspedes Palm House"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Palm Beach: hoteles de lujo, playas y Worth Avenue",
+  "hotelSeoTitle": "Hoteles de Palm Beach: The Breakers, Brazilian Court, Colony y Palm House",
+  "seoDescription": "Compara cuatro hoteles de lujo en Palm Beach, playas atlánticas y Worth Avenue. Descubre opciones familiares, piscinas y ubicación."
+}
