@@ -156,6 +156,59 @@ DIRECT['london/city'].insert(0,['https://www.londonandpartners.com/-/media/image
 DIRECT['cancun/le-blanc']=[['https://www.palaceproagents.com/lbc_Room_Royale_Deluxe_Partial_Ocean_View_bg_3600x1800_7207f3f7a0.jpg','Le Blanc Cancun Royale Deluxe partial ocean view room','https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun','Palace PRO Agents']]
 def direct_candidates(slug,key):
  return [{'url':u,'sourcePage':page,'originalAlt':alt,'originalCaption':credit,'targeted':True} for u,alt,page,credit in DIRECT.get(slug+'/'+key,[])]
+
+# Fallback is limited to the exact property gallery, never reviews, maps or nearby hotels.
+# No access-control bypass: HTTP errors are recorded as gaps.
+import os, unicodedata
+OTA_SOURCES=json.loads(Path('data/travel/media89to93OtaFallback.json').read_text())
+def norm(s):
+ s=unicodedata.normalize('NFKD',str(s)).encode('ascii','ignore').decode().lower()
+ s=s.replace('bulgari','bvlgari').replace('&',' and ')
+ return ' '.join(re.findall(r'[a-z0-9]+',s))
+def same_property(s,name):
+ return norm(name) in norm(s)
+def ota_candidates(key):
+ if key not in OTA_SOURCES:return [],[]
+ name,pages=OTA_SOURCES[key]
+ result=[];errors=[];seen=set()
+ for page in pages:
+  try:
+   final,raw=get(page,18_000_000)
+   soup=BeautifulSoup(raw,'html.parser')
+   headings=' '.join(t.get_text(' ',strip=True) for t in soup.find_all(['h1','title']))
+   if not same_property(headings,name):raise ValueError('exact property identity not confirmed on page')
+   publisher=domain(final)
+   for tag in soup.find_all('img'):
+    alt=str(tag.get('alt') or tag.get('title') or '')
+    if not alt or BAD.search(alt):continue
+    if re.search(r'guest photo|travell?er photo|review|nearby|neighbourhood|neighborhood|local area|attractions?|map|cityscape|landmark|airport|restaurant nearby',alt,re.I) and not re.search(r'room|suite|terrace|balcony|pool|lobby',alt,re.I):continue
+    parents=list(tag.parents)[:7]
+    gallery=any(re.search(r'property.?gallery|hotel.?gallery|photo.?gallery|property.?image|gallery.?image|photo.?grid',str(t.get('data-stid',''))+' '+str(t.get('data-testid',''))+' '+str(t.get('class',''))+' '+str(t.get('aria-label','')),re.I) for t in parents)
+    if not (same_property(alt,name) or gallery):continue
+    if any(re.search(r'review|recommend|similar.hotel|nearby|neighbou?rhood',str(t.get('data-stid',''))+' '+str(t.get('data-testid','')),re.I) for t in parents):continue
+    pairs=[]
+    for attr in ('src','data-src','data-lazy-src','srcset','data-srcset'):
+     value=tag.get(attr)
+     if not isinstance(value,str):continue
+     if 'srcset' in attr:
+      options=[a.strip().split()[0] for a in value.split(',') if a.strip()]
+      value=options[-1] if options else ''
+     u=urljoin(final,html.unescape(value))
+     h=domain(u)
+     if not any(hostmatch(h,d) for d in ('trvl-media.com','bstatic.com','expediapartnercentral.com')):continue
+     if BAD.search(u):continue
+     if u in seen:continue
+     seen.add(u)
+     # Prefer larger published srcsets, but never invent an image URL.
+     pairs.append(u)
+    for u in reversed(pairs):
+     result.append({'url':u,'sourcePage':final,'originalAlt':alt[:350],'originalCaption':'Hotel gallery via '+publisher,'otaPublisher':publisher,'otaPropertyVerified':True})
+   print('OTA_GALLERY',key,publisher,len(result),flush=True)
+  except Exception as e:
+   errors.append({'page':page,'error':str(e)[:300]})
+   print('OTA_GAP',key,str(e)[:200],flush=True)
+ return result,errors
+
 def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing=(),avoid=()):
  results=list(existing)
  used={r['sourceRequestedUrl'] for r in list(existing)+list(avoid)}
@@ -164,6 +217,7 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
  next_index=max([int(p.stem.rsplit('-',1)[-1]) for p in folder.glob(prefix+'-*.webp') if p.stem.rsplit('-',1)[-1].isdigit()]+[0])+1
  patterns=[p for p in patterns if p not in {r.get('candidateSubject') for r in existing}]
  for pattern in patterns:
+  if property_name and len(results)>=3:break
   ranked=[]
   for r in candidates:
    label=unquote(r['url']+' '+r['originalAlt']+' '+r['originalCaption']).replace('_',' ')
@@ -209,7 +263,7 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
     key=f'{prefix}-{next_index}'; dest=folder/f'{key}.webp'
     dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(b)
     seen_bytes.add(sourcehash);fingerprints.append(dh)
-    row={'key':key,'sourcePage':r['sourcePage'],'sourceResolvedUrl':resolved,'sourceRequestedUrl':r['url'],'originalAlt':r['originalAlt'],'originalCaption':r['originalCaption'],'credit':r['originalCaption'] if r.get('targeted') else publisher,'publisher':publisher,'hotel':property_name,'localPath':'/'+str(dest).removeprefix('public/'),'sourceSHA256':sourcehash,'webpSHA256':hashlib.sha256(b).hexdigest(),'sourcePixels':[w,h],'webpPixels':list(im.size),'webpBytes':len(b),'pixelFingerprint':f'{dh:016x}','candidateSubject':pattern,'rightsEvidenceType':'owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed','ownerPermissionDeclared':True,'commercialRightsCleared':False,'visuallyVerified':False,'previewVisualApproved':False,'status':'candidate_pending_visual_review_and_credit'}
+    row={'key':key,'sourcePage':r['sourcePage'],'sourceResolvedUrl':resolved,'sourceRequestedUrl':r['url'],'originalAlt':r['originalAlt'],'originalCaption':r['originalCaption'],'credit':r['originalCaption'] if r.get('targeted') or r.get('otaPublisher') else publisher,'publisher':r.get('otaPublisher',publisher),'hotel':property_name,'localPath':'/'+str(dest).removeprefix('public/'),'sourceSHA256':sourcehash,'webpSHA256':hashlib.sha256(b).hexdigest(),'sourcePixels':[w,h],'webpPixels':list(im.size),'webpBytes':len(b),'pixelFingerprint':f'{dh:016x}','candidateSubject':pattern,'rightsEvidenceType':('Third-party gallery; original hotel photographer and republication permission must be confirmed' if r.get('otaPublisher') else 'owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed'),'ownerPermissionDeclared':True,'commercialRightsCleared':False,'visuallyVerified':False,'previewVisualApproved':False,'status':'candidate_pending_visual_review_and_credit'}
     results.append(row)
     next_index+=1
     print('WEBP',property_name or publisher,key,w,h,len(b),flush=True)
@@ -222,6 +276,7 @@ def city_job(c):
  base=ROOT/(c['slug']+'-premium')
  old=PREVIOUS.get(c['slug'],{})
  existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='las-vegas' and r['key']=='scene-5') and not (c['slug']=='cancun' and r['key']=='scene-4') and not (c['slug']=='rome' and r['key'] in ('scene-3','scene-7')) and not (c['slug']=='london' and r['key'] in ('scene-1','scene-2','scene-3')) and not (c['slug']=='las-vegas' and r['key']=='scene-6') and not (c['slug']=='barcelona' and r['key'] in ('scene-3','scene-5'))]
+ if os.environ.get('TRAVEL_OTA_ONLY')=='1':return c['slug'],'city',old.get('destinationScenes',[]),[]
  if len(existing)>=9:return c['slug'],'city',existing,[]
  cand,errors=collect_pages(c['cityPages'])
  cand=direct_candidates(c['slug'],'city')+cand
@@ -236,11 +291,20 @@ def hotel_job(c,h):
  rejected=[r for r in allprevious if r['key'] in bad]
  existing=[r for r in allprevious if r['key'] not in bad]
  if len(existing)>=3:return c['slug'],key,existing,[]
- cand,errors=collect_pages(pages)
- cand=direct_candidates(c['slug'],key)+cand
+ avoid=rejected+[r for r in old.get('excludedCandidates',[]) if r.get('hotel')==name]
  patterns=[EXTERIOR.pattern,ROOM.pattern,FACILITY.pattern]
- result,failed=pick(cand,patterns,ROOT/(c['slug']+'-premium')/key,key,name,name,existing=existing,avoid=rejected+[r for r in old.get('excludedCandidates',[]) if r.get('hotel')==name])
- return c['slug'],key,result,errors+failed
+ folder=ROOT/(c['slug']+'-premium')/key
+ result=list(existing);errors=[]
+ # Official galleries have been processed on previous runs. Do not repeat them for this fallback pass.
+ if os.environ.get('TRAVEL_OTA_ONLY')!='1':
+  cand,errors=collect_pages(pages)
+  cand=direct_candidates(c['slug'],key)+cand
+  result,failed=pick(cand,patterns,folder,key,name,name,existing=result,avoid=avoid)
+  errors.extend(failed)
+ if len(result)<3:
+  cand,failed=ota_candidates(key);errors.extend(failed)
+  result,failed=pick(cand,patterns,folder,key,name,name,existing=result,avoid=avoid);errors.extend(failed)
+ return c['slug'],key,result,errors
 def contact_sheet(slug,rows):
  if not rows:return
  cell=(300,218);cols=4;lines=(len(rows)+cols-1)//cols
