@@ -248,6 +248,37 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-12",
+        "sourcePage": "https://www.bygrosvenor.com/our-locations/mayfair/retail/mount-street-neighbourhood",
+        "sourceResolvedUrl": "https://www.bygrosvenor.com/sites/default/files/styles/l08_064000_1024x576/public/2025-06/Mayfair%20Hero%20Image.jpg.webp?h=34099278&itok=fEOz_zy7",
+        "sourceRequestedUrl": "https://www.bygrosvenor.com/sites/default/files/styles/l08_064000_1024x576/public/2025-06/Mayfair%20Hero%20Image.jpg.webp?h=34099278&itok=fEOz_zy7",
+        "originalAlt": "Mount Street Mayfair",
+        "originalCaption": "By Grosvenor",
+        "credit": "By Grosvenor",
+        "publisher": "Visit London / London & Partners",
+        "hotel": null,
+        "localPath": "/images/travel/london-premium/destination/scene-12.webp",
+        "sourceSHA256": "f8cc2750b37c23da95aaa13c11ff88e3b216abd2c0f9dd5e76b002ea8413a72d",
+        "webpSHA256": "18819c83f98480206cb91f6f711df0236878133d4407935120def05cc9097d2a",
+        "sourcePixels": [
+          1024,
+          576
+        ],
+        "webpPixels": [
+          1024,
+          576
+        ],
+        "webpBytes": 131702,
+        "pixelFingerprint": "082c324a5a52fcb8",
+        "candidateSubject": "mayfair|bond street|mount street|grosvenor square",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -624,13 +655,7 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "gaps": [
-      {
-        "group": "city",
-        "expected": 9,
-        "found": 8
-      }
-    ],
+    "gaps": [],
     "errors": [
       {
         "page": "https://www.visitlondon.com/things-to-do",
@@ -715,22 +740,6 @@
       {
         "page": "https://www.visitlondon.com/things-to-do/london-areas/kensington-and-south-kensington/things-to-do-south-kensington",
         "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/london-areas/kensington-and-south-kensington/things-to-do-south-kensington"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Mount_Street_and_Carlos_Place%2C_Mayfair.jpg",
-        "error": "429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/commons/e/e0/Mount_Street_and_Carlos_Place%2C_Mayfair.jpg"
-      },
-      {
-        "page": "https://www.shangri-la.com/london/shangrila/photos-videos/",
-        "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/london/shangrila/photos-videos/"
-      },
-      {
-        "page": "https://www.shangri-la.com/en/london/shangrila/",
-        "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/en/london/shangrila/"
-      },
-      {
-        "page": "https://www.shangri-la.com/en/london/shangrila/rooms-suites/",
-        "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/en/london/shangrila/rooms-suites/"
       }
     ],
     "publicUseApproved": false,
@@ -954,9 +963,9 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 8,
+    "cityCount": 9,
     "hotelCount": 12,
-    "totalBytes": 2617514
+    "totalBytes": 2749216
   },
   "las-vegas": {
     "destinationScenes": [
