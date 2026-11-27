@@ -1,0 +1,163 @@
+{
+  "name": "Pamalican Adası",
+  "country": "Filipinler",
+  "eyebrow": "Pamalican · Amanpulo özel adası",
+  "heading": "Pamalican'da nerede kalınır? Amanpulo'nun casita ve özel villaları",
+  "intro": "Tek ada, tek Aman resortu; beyaz kumda veya tropik ağaçlar arasında casitalar ve aile villaları. Tatili belirleyen konaklama seçiminizdir.",
+  "editorial": "Pamalican, Palawan'ın kuzeyindeki Cuyo takımadalarındadır. Adanın tamamında tek resort Amanpulo bulunur; farklı kapasitede casitalar ve 17 özel villa sunar. Burada dört ayrı otel değil, dört gerçek konaklama seçeneği karşılaştırılır.\n\nYaklaşık 68 m² Beach Pool Casita küçük özel havuz, ahşap teras ve plaja patika sunar. Standart Beach Casita özel havuz garantilemez. Aynı büyüklükteki Treetop Pool Casita ağaç tepelerine bakar; standart Treetop Casita'dan farklı olarak özel havuzu vardır. Aman'ın 2026 belgelerine göre Grand Beach Pool Casita yaklaşık 257 m², geniş açık alanlı ayrı kategoridir.\n\nBüyük ailelere dört yatak odalı villalar uygundur: Lagoon Villas doğuda, gün batımı manzaralı Palawan Villas batıdadır. Koleksiyonda bir, iki ve üç yatak odalı villalar da vardır. Özel havuz, ayrı yemek ve dinlenme pavyonları, aşçı ve uşak hizmetleri kategoriye ve sözleşmeye bağlıdır. Belirtilen arsa alanı iç mekân alanı değildir.\n\nManila'dan adanın özel pistine genellikle yaklaşık 90 dakikalık uçuş düzenlenir. Fiyat, bagaj, saat, hava sınırlamaları ve uluslararası aktarmaları doğrulayın. Bazı paketler kahvaltı, öğleden sonra çayı, alkolsüz içecekler, wellness egzersizi, programlı şnorkel ve motorsuz su sporları içerir; ücretsiz uçuş, sınırsız spa veya tüm deniz gezileri anlamına gelmez.\n\nClubhouse, plaj kulübü, su sporları merkezi ve Aman Spa ile kumsal, deniz yaşamı ve gölgede dinlenmeyi birleştirin. Mercanlara dokunmayın; rüzgâr ve akıntılar yüzme koşullarını belirler. Fotoğraflar gerçek tesise ve kategoriye ait olmalıdır; genel villa fotoğrafı belirli havuz veya manzarayı garanti etmez. Editoryal rehberdir; fiyat, müsaitlik, sağlayıcı sözleşmesi ve ticari fotoğraf yayın hakları ayrı doğrulanmalıdır.",
+  "hotelIntro": "Amanpulo'da dört seçenek: 68 m² havuzlu iki casita, 257 m² Grand Beach Pool Casita ve dört yatak odalı özel villalar.",
+  "areas": [
+    [
+      "Doğu plajı ve Beach Casitas",
+      "Beyaz kum, palmiyeler, casitalara özel patikalar; yalnızca ilgili kategoriler özel havuzludur.",
+      "Doğrudan deniz erişimi akıntıları ortadan kaldırmaz."
+    ],
+    [
+      "Tropik ağaç tepeleri ve Treetop Casitas",
+      "Orman terasları, kuş sesleri ve yeşil manzaralar; deniz manzarası garanti değildir.",
+      "Elektrikli araç güzergâhını ve basamakları kontrol edin."
+    ],
+    [
+      "Batı kıyısı ve Palawan Villas",
+      "Gün batımı ve aileler için geniş rezidanslar.",
+      "Doğudaki Lagoon Villas ile karıştırmayın."
+    ],
+    [
+      "Clubhouse ve plaj kulübü",
+      "Restoran, öğleden sonra çayı, plaj ve tesis kurallarına bağlı deniz aktiviteleri.",
+      "Bazı hizmetler ayrı rezervasyon gerektirir."
+    ],
+    [
+      "Resifler, spa ve doğa",
+      "Turkuaz lagün, rehberli şnorkel, wellness ve ada patikaları.",
+      "Doğa koruma kurallarına ve havaya dikkat edin."
+    ]
+  ],
+  "experiences": [
+    [
+      "Pamalican'a varış",
+      "Manila'dan Aman uçuşunun saat ve bagajını önceden doğrulayın."
+    ],
+    [
+      "Sabah plaj yürüyüşü",
+      "Sıcaklık yükselmeden beyaz kumda yürüyün; misafir ve hayvanları rahatsız etmeyin."
+    ],
+    [
+      "Resifte şnorkel",
+      "Uygun hava ve güvenli koşullarda resort ekibiyle çıkın."
+    ],
+    [
+      "Aman Spa'da dinlenme",
+      "Egzersiz ve bakımları birleştirin; pakete dahil hizmetleri doğrulayın."
+    ],
+    [
+      "Batı kıyısında gün batımı",
+      "Diğer misafirlerin özel alanına girmeden Palawan Villas yönündeki manzarayı izleyin."
+    ]
+  ],
+  "checks": [
+    "Pamalican'da dört ayrı otel değil, tek Amanpulo vardır.",
+    "Beach ve Treetop casitaların havuzlu ve havuzsuz kategorilerini ayırın.",
+    "Grand Beach Pool Casita (257 m²) ayrı kategoridir.",
+    "Lagoon Villas doğuya, Palawan Villas batıya bakar; genel fotoğraf belirli villayı garanti etmez.",
+    "Manila uçuşu yaklaşık 90 dakika; fiyat ve saati doğrulayın.",
+    "Şnorkel, yemek ve wellness tarifeye ve havaya bağlıdır.",
+    "Bosphoras'ın doğrulanmış API fiyatı veya sağlayıcı sözleşmesi yoktur."
+  ],
+  "hotels": [
+    [
+      "Kıyı · Beach Pool Casita",
+      "68 m² Filipin tarzı casita, ahşap teras, küçük özel havuz ve beyaz plaja patika. Bitki örtüsü mahremiyet sağlar. Çok odalı villa yerine denize yakın çiftler için uygundur. Konumu, banyo planını, transferi ve dahil etkinlikleri kontrol edin; küçük çocuklarda havuz güvenliği ve akıntılar önemlidir.",
+      "Standart Beach Casita'da bu havuz garanti değildir.",
+      "Plaj yakınlığı ve özel havuz isteyen çiftler için.",
+      ""
+    ],
+    [
+      "Tropik orman · Treetop Pool Casita",
+      "68 m² casita olgun ağaçlar arasındadır. Teras ve özel havuz ağaç tepelerine bakar; ormanın ışığı ve sesleri kıyıdan farklıdır. Standart Treetop Casita her zaman havuzlu değildir. Basamakları, yüksek platformları, çocuk güvenliğini ve plaj ile restoranlara elektrikli araç ulaşımını doğrulayın.",
+      "Standart Treetop Casita ayrı kategoridir; plaj kapıda değildir.",
+      "Sessizlik ve tropik yeşillik için.",
+      ""
+    ],
+    [
+      "Sakin kıyı · Grand Beach Pool Casita",
+      "Aman'ın 2026 belgelerinde yaklaşık 257 m². Ahşap pavyon, geniş teras ve özel havuz rezidans hissi verir ancak çok yatak odalı villa değildir. Kapasite, konum, hizmetler ve transferi doğrulayın; fotoğrafları standart Beach Pool Casita'ya ait değildir. Uçuş ve özel su aktiviteleri her zaman dahil değildir.",
+      "Standart 68 m² casitadan farklı, 257 m².",
+      "Deniz kenarında geniş ve mahrem tatil için.",
+      ""
+    ],
+    [
+      "Doğu ve batı kıyısı · Dört yatak odalı villalar",
+      "Lagoon Villas doğuya, Palawan Villas batıya bakar. Özel havuz, ayrı yemek ve dinlenme pavyonları, villa aşçısı ve uşak hizmetleri sunar. Toplam 17 villa, bir ila dört yatak odalıdır. Kesin rezidans, oda planı, havuz, çocuk güvenliği ve hizmetleri kontrol edin. Genel fotoğraflar manzarayı garanti etmez; charter ve etkinlikler ayrı anlaşılır.",
+      "Kıyıyı, evi ve fotoğraf eşleşmesini doğrulayın.",
+      "Ayrı yatak odaları isteyen büyük aile veya gruplar için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Amanpulo Pamalican'ın tek resortu mu?",
+      "Evet, Beach Pool, Treetop Pool, Grand Beach Pool Casita ve villalar Cuyo'daki tek Aman resortuna aittir."
+    ],
+    [
+      "Beach Pool Casita ve Beach Casita farkı nedir?",
+      "Her ikisi yaklaşık 68 m²; küçük özel havuz Beach Pool Casita kategorisine aittir. Konumu ve kategoriyi doğrulayın."
+    ],
+    [
+      "Treetop Pool Casita'dan denize doğrudan çıkış var mı?",
+      "Genellikle hayır, ağaçlar arasında teras ve havuz vardır. Plaja elektrikli araçla gidilir. Standart Treetop farklıdır."
+    ],
+    [
+      "Grand Beach Pool Casita kaç m²?",
+      "Aman 2026 belgelerine göre yaklaşık 257 m², çoğu casitada 68 m²; kesin plan rezervasyona bağlıdır."
+    ],
+    [
+      "Manila'dan nasıl gidilir?",
+      "Aman'ın düzenlediği yaklaşık 90 dakikalık uçuşla. Uluslararası bilet öncesi fiyat, bagaj, saat ve hava alternatiflerini doğrulayın."
+    ],
+    [
+      "Aşçı ve uşak var mı?",
+      "Aman bu hizmetleri bir ila dört yatak odalı özel villalar için belirtir, standart casitalar için değil; sözleşmeyi kontrol edin."
+    ],
+    [
+      "Uçuş, spa ve geziler dahil mi?",
+      "Kahvaltı, çay ve bazı aktiviteler dahil olabilir; uçuş, özel bakım ve tüm geziler ücretsiz olmayabilir. Bosphoras'ın doğrulanmış API verisi yoktur."
+    ]
+  ],
+  "photoCaptions": [
+    "Ada yeşillikleri arasından Pamalican turkuaz suları",
+    "Adanın beyaz plajı havadan",
+    "Gün batımı öncesi Pamalican palmiyeleri",
+    "Tropik yeşillikte Aman Spa",
+    "Lagün yanında Amanpulo ormanı",
+    "Lagünde Kawayan yüzen barı",
+    "Amanpulo sularında kayalık adacık",
+    "Komşu ada dağlarına bakan Amanpulo pavyonu",
+    "Gün doğumunda Amanpulo plajında sörfçü"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Beach Pool Casita alacakaranlık havuzu",
+      "Beach Pool Casita yatak odası",
+      "Beach Pool Casita pavyonu"
+    ],
+    [
+      "Ağaç tepeleri üzerinde Treetop Pool havuzu",
+      "Treetop Pool yatak odası",
+      "Treetop Pool banyosu"
+    ],
+    [
+      "Palmiyeler arasında Grand Beach Pool özel havuzu",
+      "Grand Beach Pool yatak odası",
+      "Deniz yanında Grand Beach Pool pavyonu"
+    ],
+    [
+      "Amanpulo villalarında örnek havuzlu teras",
+      "Örnek şezlonglu villa terası",
+      "Dört yatak odalı villa iç mekânı örneği"
+    ]
+  ],
+  "seoTitle": "Pamalican Adası: Filipinler'de Özel Amanpulo Resortu",
+  "hotelSeoTitle": "Amanpulo: Pamalican'da Havuzlu Casitalar ve Özel Villalar",
+  "seoDescription": "Amanpulo casitaları ve dört yatak odalı villaları karşılaştırın: Pamalican plajları, özel havuzlar, resifler ve Manila uçuşu."
+}

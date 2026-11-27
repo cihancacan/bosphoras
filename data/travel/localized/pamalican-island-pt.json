@@ -1,0 +1,163 @@
+{
+  "name": "Ilha Pamalican",
+  "country": "Filipinas",
+  "eyebrow": "Pamalican · Ilha privada Amanpulo",
+  "heading": "Pamalican: casitas reservadas e villas privativas Amanpulo",
+  "intro": "Uma ilha, um resort Aman, casitas na areia branca ou entre árvores tropicais e villas familiares. A acomodação define a estadia.",
+  "editorial": "Pamalican fica no arquipélago Cuyo ao norte de Palawan. O único resort Amanpulo ocupa toda a ilha, com casitas e 17 villas privativas de capacidades variadas. Comparamos quatro acomodações reais, não quatro hotéis independentes.\n\nBeach Pool Casita de cerca de 68 m² oferece pequena piscina privativa, terraço de madeira e caminho até praia. Beach Casita normal não garante piscina própria. Treetop Pool Casita de mesma área tem vista das copas e piscina privativa, diferentemente da Treetop padrão. Segundo documentos Aman de 2026, Grand Beach Pool Casita tem cerca de 257 m² e muito mais espaço externo.\n\nPara famílias grandes, villas de quatro dormitórios: Lagoon Villas na costa leste e Palawan Villas a oeste com pôr do sol. Também há villas de um, dois e três dormitórios. Piscinas privativas, pavilhões separados para refeições e descanso, cozinheiro e mordomo dependem da categoria e contrato. Área de terreno não equivale à área interna.\n\nDe Manila costuma ser organizado voo de cerca de 90 minutos até pista privativa. Confirme preço, bagagem, horários, restrições climáticas e conexões internacionais. Algumas ofertas incluem café da manhã, chá da tarde, bebidas sem álcool, exercícios de bem-estar, snorkel programado e esportes aquáticos não motorizados. Não significa voo grátis, spa ilimitado ou todos os passeios marinhos.\n\nClubhouse, clube de praia, centro de esportes aquáticos e Aman Spa permitem alternar areia, vida marinha e descanso à sombra. Não toque corais; vento e correntes determinam condições de banho. Fotos devem corresponder a resort e categoria; imagem geral de villa não garante vista ou piscina. Guia editorial: tarifas, disponibilidade, contrato de fornecedor e direitos comerciais de imagens exigem confirmação separada.",
+  "hotelIntro": "Quatro opções Amanpulo: duas casitas com piscina de 68 m², Grand Beach Pool Casita de 257 m² e villas privativas de quatro dormitórios.",
+  "areas": [
+    [
+      "Praia leste e Beach Casitas",
+      "Areia branca, palmeiras e caminhos reservados; piscina só em categorias correspondentes.",
+      "Acesso direto ao mar não elimina correntes."
+    ],
+    [
+      "Copas tropicais e Treetop Casitas",
+      "Terraços na floresta, canto de aves e verde, não vista oceânica garantida.",
+      "Confira percurso de carrinho elétrico e degraus."
+    ],
+    [
+      "Costa oeste e Palawan Villas",
+      "Pôr do sol e residências amplas para famílias e grupos.",
+      "Não confunda com Lagoon Villas a leste."
+    ],
+    [
+      "Clubhouse e clube de praia",
+      "Restaurantes, chá, praia e atividades conforme regras do resort.",
+      "Alguns serviços reservados à parte."
+    ],
+    [
+      "Recifes, spa e natureza",
+      "Lagoa turquesa, snorkel guiado, bem-estar e trilhas.",
+      "Respeite proteção ambiental e clima."
+    ]
+  ],
+  "experiences": [
+    [
+      "Chegada a Pamalican",
+      "Use voo organizado Aman de Manila, confirmando horários e bagagem."
+    ],
+    [
+      "Caminhada matinal na praia",
+      "Caminhe na areia antes do calor, sem perturbar hóspedes ou animais."
+    ],
+    [
+      "Snorkel no recife",
+      "Saia com equipe resort em clima e condições seguras."
+    ],
+    [
+      "Descanso no Aman Spa",
+      "Combine exercícios e tratamentos, confirmando inclusões."
+    ],
+    [
+      "Pôr do sol na costa oeste",
+      "Aprecie vista perto de Palawan Villas sem entrar em áreas privadas alheias."
+    ]
+  ],
+  "checks": [
+    "Pamalican tem apenas Amanpulo, não quatro hotéis.",
+    "Diferencie Beach e Treetop com e sem piscina.",
+    "Grand Beach Pool Casita (257 m²) é categoria própria.",
+    "Lagoon Villas a leste, Palawan Villas a oeste; fotos gerais não garantem villa.",
+    "Voo de Manila cerca de 90 minutos; confirme preço e horário.",
+    "Snorkel, refeições e bem-estar dependem de tarifa e clima.",
+    "Não há tarifas API ou contrato de fornecedor Bosphoras confirmados."
+  ],
+  "hotels": [
+    [
+      "Costa · Beach Pool Casita",
+      "Casita 68 m² em estilo filipino, terraço de madeira, pequena piscina privativa e caminho à praia branca. Vegetação dá privacidade. Para casal perto do mar sem villa de vários quartos. Confira localização, banheiro, traslado e atividades inclusas; com pequenos observe segurança da piscina e correntes.",
+      "Piscina não garantida na Beach Casita normal.",
+      "Para casal que busca praia e piscina privativa.",
+      ""
+    ],
+    [
+      "Floresta tropical · Treetop Pool Casita",
+      "Casita 68 m² entre árvores maduras. Terraço e piscina privativa voltados às copas; luz e sons da floresta diferem da costa. Treetop padrão não necessariamente tem piscina. Confira degraus, plataformas altas, segurança infantil e carrinho elétrico para praia e restaurantes.",
+      "Treetop Casita normal é outra categoria; praia não está à porta.",
+      "Para sossego e verde tropical.",
+      ""
+    ],
+    [
+      "Costa reservada · Grand Beach Pool Casita",
+      "Segundo documentos Aman 2026 cerca de 257 m². Pavilhão de madeira, terraço amplo e piscina privativa dão sensação de residência, não villa de vários dormitórios. Confirme capacidade, localização, serviços e traslado. Fotos não correspondem à Beach Pool normal; voo e atividades especiais nem sempre inclusos.",
+      "257 m² em vez dos 68 m² padrão.",
+      "Para espaço e privacidade junto ao mar.",
+      ""
+    ],
+    [
+      "Costas leste e oeste · Villas de quatro dormitórios",
+      "Lagoon Villas voltadas a leste, Palawan Villas a oeste. Piscinas privativas, pavilhões separados, cozinheiro e mordomo para villas. Coleção de 17 villas de um a quatro dormitórios. Confira residência, quartos, piscina, segurança infantil e serviços. Fotos gerais não confirmam vista; fretamentos e eventos separados.",
+      "Confirme costa, casa específica e fotos correspondentes.",
+      "Para família grande ou grupo com dormitórios separados.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Amanpulo é único resort de Pamalican?",
+      "Sim. Beach Pool, Treetop Pool, Grand Beach Pool Casita e villas integram um Aman no arquipélago Cuyo."
+    ],
+    [
+      "Diferença Beach Pool Casita e Beach Casita?",
+      "Ambas cerca de 68 m², mas pequena piscina privativa na Beach Pool. Confirme localização e categoria."
+    ],
+    [
+      "Treetop Pool Casita tem acesso direto ao mar?",
+      "Normalmente não; entre árvores com terraço e piscina. Carrinho elétrico à praia. Treetop padrão é distinta."
+    ],
+    [
+      "Qual área da Grand Beach Pool Casita?",
+      "Cerca de 257 m² segundo documentos Aman 2026, contra 68 m² da maioria; planta exata conforme reserva."
+    ],
+    [
+      "Como chegar de Manila?",
+      "Voo organizado Aman de cerca de 90 minutos. Confirme preço, bagagem, horário e alternativas antes dos bilhetes internacionais."
+    ],
+    [
+      "Há cozinheiro e mordomo?",
+      "Aman descreve serviços para villas de um a quatro dormitórios, não casitas normais; confira contrato e refeições."
+    ],
+    [
+      "Voo, spa e passeios inclusos?",
+      "Café da manhã, chá e algumas atividades podem estar inclusos. Voo, tratamentos especiais e todos passeios não necessariamente grátis. Sem dados API Bosphoras confirmados."
+    ]
+  ],
+  "photoCaptions": [
+    "Água turquesa Pamalican entre vegetação",
+    "Praia branca da ilha do alto",
+    "Palmeiras Pamalican antes do pôr do sol",
+    "Aman Spa no verde tropical",
+    "Floresta Amanpulo junto à lagoa",
+    "Bar flutuante Kawayan na lagoa",
+    "Ilhota rochosa nas águas Amanpulo",
+    "Pavilhão Amanpulo com vista de ilhas vizinhas",
+    "Praia Amanpulo ao amanhecer com surfista"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Piscina Beach Pool Casita ao anoitecer",
+      "Quarto Beach Pool Casita",
+      "Pavilhão Beach Pool Casita"
+    ],
+    [
+      "Piscina Treetop Pool acima das copas",
+      "Quarto Treetop Pool",
+      "Banheiro Treetop Pool"
+    ],
+    [
+      "Piscina privativa Grand Beach Pool entre palmeiras",
+      "Quarto Grand Beach Pool",
+      "Pavilhão Grand Beach Pool à beira-mar"
+    ],
+    [
+      "Exemplo terraço com piscina villas Amanpulo",
+      "Exemplo terraço com espreguiçadeira villas Amanpulo",
+      "Exemplo interior villa quatro dormitórios"
+    ]
+  ],
+  "seoTitle": "Pamalican, Filipinas: ilha privada Amanpulo",
+  "hotelSeoTitle": "Amanpulo: casitas com piscina e villas privativas em Pamalican",
+  "seoDescription": "Compare casitas Amanpulo e villas de quatro dormitórios: praias, piscinas privativas, recifes e voo de Manila."
+}
