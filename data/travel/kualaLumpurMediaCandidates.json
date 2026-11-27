@@ -438,6 +438,37 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
+        "key": "four-seasons-3",
+        "sourcePage": "https://design.jomlooka.com/2024/02/13/four-seasons-hotel-kuala-lumpur-is-the-dynamic-destination-hotel/",
+        "sourceResolvedUrl": "https://design.jomlooka.com/wp-content/uploads/2024/02/1707798465_710_Four-Seasons-Hotel-Kuala-Lumpur-is-the-Dynamic-Destination-Hotel.jpg",
+        "sourceRequestedUrl": "https://design.jomlooka.com/wp-content/uploads/2024/02/1707798465_710_Four-Seasons-Hotel-Kuala-Lumpur-is-the-Dynamic-Destination-Hotel.jpg",
+        "originalAlt": "The Lounge at Four Seasons",
+        "originalCaption": "The Lounge at Four Seasons",
+        "credit": "Four Seasons Hotel Kuala Lumpur",
+        "publisher": "Four Seasons Hotel Kuala Lumpur",
+        "hotel": "Four Seasons Hotel Kuala Lumpur",
+        "localPath": "/images/travel/kuala-lumpur-premium/four-seasons/four-seasons-3.webp",
+        "sourceSHA256": "9498b08ac88752ebeba972107e0ba772bce43d4f05ccebd43a60e42ff5de8653",
+        "webpSHA256": "1738df07f51149666fd7f0cdd910f8d577e2326e0872f2db05159f6410c2534b",
+        "sourcePixels": [
+          1024,
+          683
+        ],
+        "webpPixels": [
+          1024,
+          683
+        ],
+        "webpBytes": 136780,
+        "pixelFingerprint": "d0889994adbd2c6c",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "ruma-1",
         "sourcePage": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/",
         "sourceResolvedUrl": "https://theruma.com/file/webpage/shared/banner/Port-Cochere%20The%20RuMa.webp",
@@ -593,28 +624,28 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "eq-4",
-        "sourcePage": "https://www.eqkualalumpur.equatorial.com/en/",
-        "sourceResolvedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/06/2020-01-13_eq-sky51-entrance2.webp",
-        "sourceRequestedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/06/2020-01-13_eq-sky51-entrance2.webp",
-        "originalAlt": "",
-        "originalCaption": "",
-        "credit": "EQ Kuala Lumpur",
+        "key": "eq-5",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:EQ_FACADE_SUNSET.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/EQ_FACADE_SUNSET.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/EQ_FACADE_SUNSET.jpg",
+        "originalAlt": "EQ Kuala Lumpur exterior facade at sunset",
+        "originalCaption": "Sundae1970 / CC BY-SA 4.0 / resized WebP",
+        "credit": "Sundae1970 / CC BY-SA 4.0 / resized WebP",
         "publisher": "EQ Kuala Lumpur",
         "hotel": "EQ Kuala Lumpur",
-        "localPath": "/images/travel/kuala-lumpur-premium/eq/eq-4.webp",
-        "sourceSHA256": "1e262569fab732d55fa6f3e06b9cc6a2f49071dd25e7216ec94292d80bf82d5b",
-        "webpSHA256": "84442d4e0f4e616ff9c23ade0a4a065b9bf3a0bbae6cdff8bee35ecc4f7494d7",
+        "localPath": "/images/travel/kuala-lumpur-premium/eq/eq-5.webp",
+        "sourceSHA256": "5d72c9985ec3110c0fb9af657835b6316f0fa99bb3d522336d3ff2942b956ac6",
+        "webpSHA256": "d85169506c75cc4951bc73ec5bb5c2f2dcb15fe7d2881f8b900b1ac9965878d4",
         "sourcePixels": [
-          1500,
-          938
+          4866,
+          2737
         ],
         "webpPixels": [
           1280,
-          800
+          720
         ],
-        "webpBytes": 258862,
-        "pixelFingerprint": "b2b036bac6d69783",
+        "webpBytes": 111668,
+        "pixelFingerprint": "a1434fc7e333a3c7",
         "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
@@ -624,21 +655,11 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "gaps": [
-      {
-        "group": "four-seasons",
-        "expected": 3,
-        "found": 2
-      }
-    ],
+    "gaps": [],
     "errors": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Little_India%2C_Brickfields%2C_Kuala_Lumpur.jpg",
-        "error": "429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/commons/1/10/Little_India%2C_Brickfields%2C_Kuala_Lumpur.jpg"
-      },
-      {
-        "url": "https://re-lief.net/southeast-asia/wp-content/uploads/sites/7/mandarin-oriental-kualalumpur_2.jpg",
-        "error": "404 Client Error: Not Found for url: https://re-lief.net/southeast-asia/wp-content/uploads/sites/7/mandarin-oriental-kualalumpur_2.jpg"
+        "page": "https://www.tatlerasia.com/lifestyle/travel/hotel-review-tatler-checks-into-four-seasons-hotel-kuala-lumpur",
+        "error": "403 Client Error: Forbidden for url: https://www.tatlerasia.com/lifestyle/travel/hotel-review-tatler-checks-into-four-seasons-hotel-kuala-lumpur"
       },
       {
         "page": "https://www.fourseasons.com/kualalumpur/photos-and-videos/",
@@ -646,15 +667,11 @@
       },
       {
         "url": "https://press.fourseasons.com/kualalumpur/hotel-news/2026/introducing-the-longevity-lounge",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7efb6915d350>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x72e9b48f65c0>"
       },
       {
         "page": "https://www.eqkualalumpur.equatorial.com/rooms-suites/",
         "error": "404 Client Error: Not Found for url: https://www.eqkualalumpur.equatorial.com/en/rooms-suites/"
-      },
-      {
-        "url": "https://www.eqkualalumpur.com/wp-content/uploads/sites/10/2019/04/2019-04-01_Architecture-Malaysia-EQ-Shot2.jpg",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7efb649b8a90>"
       }
     ],
     "publicUseApproved": false,
@@ -690,10 +707,41 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "eq-4",
+        "sourcePage": "https://www.eqkualalumpur.equatorial.com/en/",
+        "sourceResolvedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/06/2020-01-13_eq-sky51-entrance2.webp",
+        "sourceRequestedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/06/2020-01-13_eq-sky51-entrance2.webp",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "EQ Kuala Lumpur",
+        "publisher": "EQ Kuala Lumpur",
+        "hotel": "EQ Kuala Lumpur",
+        "localPath": "/images/travel/kuala-lumpur-premium/eq/eq-4.webp",
+        "sourceSHA256": "1e262569fab732d55fa6f3e06b9cc6a2f49071dd25e7216ec94292d80bf82d5b",
+        "webpSHA256": "84442d4e0f4e616ff9c23ade0a4a065b9bf3a0bbae6cdff8bee35ecc4f7494d7",
+        "sourcePixels": [
+          1500,
+          938
+        ],
+        "webpPixels": [
+          1280,
+          800
+        ],
+        "webpBytes": 258862,
+        "pixelFingerprint": "b2b036bac6d69783",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "cityCount": 9,
-    "hotelCount": 11,
-    "totalBytes": 3407664
+    "hotelCount": 12,
+    "totalBytes": 3397250
   }
 }
