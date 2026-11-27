@@ -43,6 +43,10 @@ def domain(url):
 def publisher_cdn(host,pagehost):
  return ((hostmatch(pagehost,'visitbritain.com') and host=='dam-cdn.vb0.orangelogic.com') or
          (hostmatch(pagehost,'thesavoylondon.com') and hostmatch(host,'website-files.com')))
+def srcset_urls(value):
+ # A published CDN URL may contain commas inside transformation parameters.
+ # Split only after a width/density descriptor, not inside the URL.
+ return [part.strip().split()[0] for part in re.split(r'\s+\d+(?:\.\d+)?[wx]\s*,\s*',value) if part.strip()]
 def collect_pages(pages):
  result=[];errors=[];seen=set()
  for page in pages:
@@ -63,7 +67,7 @@ def collect_pages(pages):
      value=tag.get(attr)
      if not isinstance(value,str):continue
      if 'srcset' in attr:
-      variants=[v.strip().split()[0] for v in value.split(',') if v.strip()]
+      variants=srcset_urls(value)
       value=variants[-1] if variants else ''
      pairs.append((value,alt,credit))
    rawtext=html.unescape(raw.decode('utf-8','replace')).replace('\\/','/').replace('\\u0026','&')
@@ -191,7 +195,7 @@ def ota_candidates(key):
      value=tag.get(attr)
      if not isinstance(value,str):continue
      if 'srcset' in attr:
-      options=[a.strip().split()[0] for a in value.split(',') if a.strip()]
+      options=srcset_urls(value)
       value=options[-1] if options else ''
      u=urljoin(final,html.unescape(value))
      h=domain(u)
