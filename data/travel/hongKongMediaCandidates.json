@@ -1,0 +1,299 @@
+{
+  "hong-kong": {
+    "destinationScenes": [
+      {
+        "key": "scene-1",
+        "sourcePage": "https://www.discoverhongkong.cn/place-to-go/travel.guide-tsim-sha-tsui-promenade.html",
+        "sourceResolvedUrl": "https://www.discoverhongkong.cn/content/dam/dhk/data/poi/media/t/tsim-sha-tsui-promenade/tsim-sha-tsui-promenade-1200x630.jpg",
+        "sourceRequestedUrl": "https://www.discoverhongkong.cn/content/dam/dhk/data/poi/media/t/tsim-sha-tsui-promenade/tsim-sha-tsui-promenade-1200x630.jpg",
+        "originalAlt": "Victoria Harbour skyline from Tsim Sha Tsui promenade",
+        "originalCaption": "Hong Kong Tourism Board",
+        "credit": "Hong Kong Tourism Board",
+        "publisher": "Hong Kong Tourism Board",
+        "hotel": null,
+        "localPath": "/images/travel/hong-kong-premium/destination/scene-1.webp",
+        "sourceSHA256": "2a614916c4af8e690294842a64882ee8b6e5d414024be01bcb38f0b7688e1757",
+        "webpSHA256": "a041a264ca1dfe736f66874e9b7b06800c9edd035192f7f166db7ab1aff84191",
+        "sourcePixels": [
+          1200,
+          630
+        ],
+        "webpPixels": [
+          1200,
+          630
+        ],
+        "webpBytes": 58240,
+        "pixelFingerprint": "60c0021410022040",
+        "candidateSubject": "victoria harbour|tsim sha tsui promenade",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-2",
+        "sourcePage": "https://www.discoverhongkong.com/eng/attractions/your-guide-to-experiencing-hong-kong.html",
+        "sourceResolvedUrl": "https://www.discoverhongkong.com/content/dam/dhk-cloud/main/attractions/your-guide-to-experiencing-hong-kong/the-peak-a-960x720.jpg",
+        "sourceRequestedUrl": "https://www.discoverhongkong.com/content/dam/dhk-cloud/main/attractions/your-guide-to-experiencing-hong-kong/the-peak-a-960x720.jpg",
+        "originalAlt": "The Peak.",
+        "originalCaption": "",
+        "credit": "Hong Kong Tourism Board",
+        "publisher": "Hong Kong Tourism Board",
+        "hotel": null,
+        "localPath": "/images/travel/hong-kong-premium/destination/scene-2.webp",
+        "sourceSHA256": "897d48177ec5ccc7c91c01fce75afea41bb05aac3bca0408e686a45d3ad0ec4f",
+        "webpSHA256": "654cbacc6f2bc89844eab563c0973776aaee0e5d91da21167afc93c3169457bc",
+        "sourcePixels": [
+          960,
+          720
+        ],
+        "webpPixels": [
+          960,
+          720
+        ],
+        "webpBytes": 192530,
+        "pixelFingerprint": "5330d26ab28d42c2",
+        "candidateSubject": "the peak|victoria peak|peak tower",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-3",
+        "sourcePage": "https://www.discoverhongkong.com/eng/attractions/your-guide-to-experiencing-hong-kong.html",
+        "sourceResolvedUrl": "https://www.discoverhongkong.com/content/dam/dhk-cloud/main/attractions/your-guide-to-experiencing-hong-kong/victoria-harbour-b-960x720.jpg",
+        "sourceRequestedUrl": "https://www.discoverhongkong.com/content/dam/dhk-cloud/main/attractions/your-guide-to-experiencing-hong-kong/victoria-harbour-b-960x720.jpg",
+        "originalAlt": "The Star Ferry.",
+        "originalCaption": "",
+        "credit": "Hong Kong Tourism Board",
+        "publisher": "Hong Kong Tourism Board",
+        "hotel": null,
+        "localPath": "/images/travel/hong-kong-premium/destination/scene-3.webp",
+        "sourceSHA256": "a1d96c872e291b3d6bc5243f4bea697dd8092b87b2e137a763808b077fd80540",
+        "webpSHA256": "267119af58ff3edb859b27ff23a3c9f446f5fe8293c2c7afb5eb9837f5343479",
+        "sourcePixels": [
+          960,
+          720
+        ],
+        "webpPixels": [
+          960,
+          720
+        ],
+        "webpBytes": 133120,
+        "pixelFingerprint": "212107ad2a22ad1e",
+        "candidateSubject": "star ferry",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-4",
+        "sourcePage": "https://www.discoverhongkong.com/eng/attractions/your-guide-to-experiencing-hong-kong.html",
+        "sourceResolvedUrl": "https://www.discoverhongkong.com/content/dam/dhk-cloud/main/attractions/your-guide-to-experiencing-hong-kong/old-town-central-a-960x720.jpg",
+        "sourceRequestedUrl": "https://www.discoverhongkong.com/content/dam/dhk-cloud/main/attractions/your-guide-to-experiencing-hong-kong/old-town-central-a-960x720.jpg",
+        "originalAlt": "Tai Kwun.",
+        "originalCaption": "",
+        "credit": "Hong Kong Tourism Board",
+        "publisher": "Hong Kong Tourism Board",
+        "hotel": null,
+        "localPath": "/images/travel/hong-kong-premium/destination/scene-4.webp",
+        "sourceSHA256": "fb31c1602c07ed2aa2805d2818658fa8dbb45d5c51ba364717d13d69621069f6",
+        "webpSHA256": "da17eb67d2de9e0635d347a8996ef29bd174019737ce02eae356650f8269d655",
+        "sourcePixels": [
+          960,
+          720
+        ],
+        "webpPixels": [
+          960,
+          720
+        ],
+        "webpBytes": 203984,
+        "pixelFingerprint": "88505ad218ada0e0",
+        "candidateSubject": "tai kwun|old town central|central market",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-5",
+        "sourcePage": "https://www.discoverhongkong.com/eng/attractions/your-guide-to-experiencing-hong-kong.html",
+        "sourceResolvedUrl": "https://www.discoverhongkong.com/content/dam/dhk-cloud/main/attractions/your-guide-to-experiencing-hong-kong/west-kowloon-cultural-district-a-960x720.jpg",
+        "sourceRequestedUrl": "https://www.discoverhongkong.com/content/dam/dhk-cloud/main/attractions/your-guide-to-experiencing-hong-kong/west-kowloon-cultural-district-a-960x720.jpg",
+        "originalAlt": "West Kowloon Cultural District.",
+        "originalCaption": "",
+        "credit": "Hong Kong Tourism Board",
+        "publisher": "Hong Kong Tourism Board",
+        "hotel": null,
+        "localPath": "/images/travel/hong-kong-premium/destination/scene-5.webp",
+        "sourceSHA256": "d2a15216b00e81b0ccf3fad82d5d01b7234de138681b60b1b8514e3389c64cc5",
+        "webpSHA256": "a929e80fe8b8cce060c67c4247bb5eb4153b6160378e27dec55810b24f6a5531",
+        "sourcePixels": [
+          960,
+          720
+        ],
+        "webpPixels": [
+          960,
+          720
+        ],
+        "webpBytes": 128240,
+        "pixelFingerprint": "126d7d327e66e2f0",
+        "candidateSubject": "west kowloon|m\\+ museum|palace museum",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-6",
+        "sourcePage": "https://www.discoverhongkong.com/eng/attractions/your-guide-to-experiencing-hong-kong.html",
+        "sourceResolvedUrl": "https://www.discoverhongkong.com/content/dam/dhk-cloud/main/attractions/your-guide-to-experiencing-hong-kong/yau-tsim-mong-a-960x720.jpg",
+        "sourceRequestedUrl": "https://www.discoverhongkong.com/content/dam/dhk-cloud/main/attractions/your-guide-to-experiencing-hong-kong/yau-tsim-mong-a-960x720.jpg",
+        "originalAlt": "Temple Street Night Market.",
+        "originalCaption": "",
+        "credit": "Hong Kong Tourism Board",
+        "publisher": "Hong Kong Tourism Board",
+        "hotel": null,
+        "localPath": "/images/travel/hong-kong-premium/destination/scene-6.webp",
+        "sourceSHA256": "21b551918c77051d164a18315601b221917bc2f6b4e7f48ce479e5dd1929d534",
+        "webpSHA256": "f7897b2ca062e0e042bdc2444471295904dd08f000aecd5c60a4c7de9a3ddcbe",
+        "sourcePixels": [
+          960,
+          720
+        ],
+        "webpPixels": [
+          960,
+          720
+        ],
+        "webpBytes": 158390,
+        "pixelFingerprint": "f3b43514c8f0f0f8",
+        "candidateSubject": "mong kok|temple street|yau ma tei",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-7",
+        "sourcePage": "https://www.discoverhongkong.com/eng/attractions/your-guide-to-experiencing-hong-kong.html",
+        "sourceResolvedUrl": "https://www.discoverhongkong.com/content/dam/dhk-cloud/main/attractions/your-guide-to-experiencing-hong-kong/big-buddha-a-960x720.jpg",
+        "sourceRequestedUrl": "https://www.discoverhongkong.com/content/dam/dhk-cloud/main/attractions/your-guide-to-experiencing-hong-kong/big-buddha-a-960x720.jpg",
+        "originalAlt": "The Big Buddha",
+        "originalCaption": "",
+        "credit": "Hong Kong Tourism Board",
+        "publisher": "Hong Kong Tourism Board",
+        "hotel": null,
+        "localPath": "/images/travel/hong-kong-premium/destination/scene-7.webp",
+        "sourceSHA256": "b9547c5b0077be7452ea46d98ef034eb16f514dbbce96120ef5adf0ae6f92251",
+        "webpSHA256": "7858e5f454f9ba97e5f3a92d95f7c980622671f6839293665ca1b0f3ef33df95",
+        "sourcePixels": [
+          960,
+          720
+        ],
+        "webpPixels": [
+          960,
+          720
+        ],
+        "webpBytes": 148418,
+        "pixelFingerprint": "6c6973f1616b6a72",
+        "candidateSubject": "big buddha|ngong ping|lantau",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
+    "hotels": [
+      {
+        "key": "peninsula-1",
+        "sourcePage": "https://www.peninsula.com/en/hong-kong/photos-and-videos",
+        "sourceResolvedUrl": "https://www.peninsula.com/-/media/01-hong-kong-property/exterior-2_5000x2811.jpg",
+        "sourceRequestedUrl": "https://www.peninsula.com/-/media/01-hong-kong-property/exterior-2_5000x2811.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "The Peninsula Hong Kong",
+        "publisher": "The Peninsula Hong Kong",
+        "hotel": "The Peninsula Hong Kong",
+        "localPath": "/images/travel/hong-kong-premium/peninsula/peninsula-1.webp",
+        "sourceSHA256": "2af3c244725d8959db5fbde5999a1eae08e7ff35ae2831e2941f12fc951acf77",
+        "webpSHA256": "5d22db6a072dfad4f55fce6a969b5ea17f21a7d954fbf1d843d55bf38ab25d64",
+        "sourcePixels": [
+          5000,
+          2811
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 164036,
+        "pixelFingerprint": "71d071c492494dcc",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
+    "gaps": [
+      {
+        "group": "city",
+        "expected": 9,
+        "found": 7
+      },
+      {
+        "group": "rosewood",
+        "expected": 3,
+        "found": 0
+      },
+      {
+        "group": "four-seasons",
+        "expected": 3,
+        "found": 0
+      },
+      {
+        "group": "peninsula",
+        "expected": 3,
+        "found": 1
+      },
+      {
+        "group": "mandarin-oriental",
+        "expected": 3,
+        "found": 0
+      }
+    ],
+    "errors": [
+      {
+        "page": "https://m.rosewoodhotels.com/en/hong-kong/gallery",
+        "error": "503 Server Error: Service Unavailable for url: https://m.rosewoodhotels.com/en/hong-kong/gallery"
+      },
+      {
+        "page": "https://www.fourseasons.com/hongkong/photos-and-videos/",
+        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/hongkong/photos-and-videos/"
+      }
+    ],
+    "publicUseApproved": false,
+    "ownerPermissionDeclared": true,
+    "excludedCandidates": [],
+    "cityCount": 7,
+    "hotelCount": 1,
+    "totalBytes": 1186958
+  }
+}
