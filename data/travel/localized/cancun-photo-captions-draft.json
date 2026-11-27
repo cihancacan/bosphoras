@@ -8,7 +8,9 @@
       "scene-5",
       "scene-6",
       "scene-7",
-      "scene-10"
+      "scene-10",
+      "scene-13",
+      "scene-14"
     ],
     [
       "nizuc-1",
@@ -47,7 +49,9 @@
       "scene-10": "Playa Delfines et les hôtels du littoral",
       "hyatt-ziva-3": "Chambre de la suite Oceanfront Lighthouse",
       "hyatt-ziva-4": "Piscine Punta Vista de la tour Turquoize, réservée aux adultes",
-      "coral-beach-6": "Coral Beach au crépuscule"
+      "coral-beach-6": "Coral Beach au crépuscule",
+      "scene-13": "Phare de Punta Cancún",
+      "scene-14": "Entrée du parc urbain Kabah"
     },
     "en": {
       "scene-1": "Delfines Beach",
@@ -66,7 +70,9 @@
       "scene-10": "Playa Delfines and beachfront hotels",
       "hyatt-ziva-3": "Oceanfront Lighthouse Suite bedroom",
       "hyatt-ziva-4": "Adults-only Turquoize Tower Punta Vista pool",
-      "coral-beach-6": "Coral Beach at dusk"
+      "coral-beach-6": "Coral Beach at dusk",
+      "scene-13": "Punta Cancún lighthouse",
+      "scene-14": "Entrance to Kabah Urban Park"
     },
     "tr": {
       "scene-1": "Delfines Plajı",
@@ -85,7 +91,9 @@
       "scene-10": "Playa Delfines ve sahil otelleri",
       "hyatt-ziva-3": "Oceanfront Lighthouse süit yatak odası",
       "hyatt-ziva-4": "Yetişkinlere özel Turquoize Tower Punta Vista havuzu",
-      "coral-beach-6": "Alacakaranlıkta Coral Beach"
+      "coral-beach-6": "Alacakaranlıkta Coral Beach",
+      "scene-13": "Punta Cancún deniz feneri",
+      "scene-14": "Kabah şehir parkı girişi"
     },
     "de": {
       "scene-1": "Strand Delfines",
@@ -104,7 +112,9 @@
       "scene-10": "Playa Delfines und Strandhotels",
       "hyatt-ziva-3": "Schlafzimmer der Oceanfront Lighthouse Suite",
       "hyatt-ziva-4": "Punta Vista Pool im Turquoize Tower nur für Erwachsene",
-      "coral-beach-6": "Coral Beach in der Abenddämmerung"
+      "coral-beach-6": "Coral Beach in der Abenddämmerung",
+      "scene-13": "Leuchtturm von Punta Cancún",
+      "scene-14": "Eingang zum Stadtpark Kabah"
     },
     "es": {
       "scene-1": "Playa Delfines",
@@ -123,7 +133,9 @@
       "scene-10": "Playa Delfines y hoteles del litoral",
       "hyatt-ziva-3": "Dormitorio de la suite Oceanfront Lighthouse",
       "hyatt-ziva-4": "Piscina Punta Vista de la torre Turquoize, solo para adultos",
-      "coral-beach-6": "Coral Beach al atardecer"
+      "coral-beach-6": "Coral Beach al atardecer",
+      "scene-13": "Faro de Punta Cancún",
+      "scene-14": "Entrada al Parque Urbano Kabah"
     },
     "it": {
       "scene-1": "Spiaggia Delfines",
@@ -142,7 +154,9 @@
       "scene-10": "Playa Delfines e hotel sul litorale",
       "hyatt-ziva-3": "Camera della suite Oceanfront Lighthouse",
       "hyatt-ziva-4": "Piscina Punta Vista della torre Turquoize, riservata agli adulti",
-      "coral-beach-6": "Coral Beach al crepuscolo"
+      "coral-beach-6": "Coral Beach al crepuscolo",
+      "scene-13": "Faro di Punta Cancún",
+      "scene-14": "Ingresso del Parco urbano Kabah"
     },
     "pt": {
       "scene-1": "Praia Delfines",
@@ -161,7 +175,9 @@
       "scene-10": "Playa Delfines e hotéis do litoral",
       "hyatt-ziva-3": "Quarto da suite Oceanfront Lighthouse",
       "hyatt-ziva-4": "Piscina Punta Vista da torre Turquoize, exclusiva para adultos",
-      "coral-beach-6": "Coral Beach ao anoitecer"
+      "coral-beach-6": "Coral Beach ao anoitecer",
+      "scene-13": "Farol de Punta Cancún",
+      "scene-14": "Entrada do Parque Urbano Kabah"
     },
     "zh": {
       "scene-1": "海豚海滩",
@@ -180,7 +196,9 @@
       "scene-10": "海豚海滩与海滨酒店",
       "hyatt-ziva-3": "Oceanfront Lighthouse 套房卧室",
       "hyatt-ziva-4": "Turquoize 塔楼成人专属 Punta Vista 泳池",
-      "coral-beach-6": "暮色中的 Coral Beach"
+      "coral-beach-6": "暮色中的 Coral Beach",
+      "scene-13": "坎昆角灯塔",
+      "scene-14": "卡巴城市公园入口"
     },
     "ru": {
       "scene-1": "Пляж Дельфинес",
@@ -199,7 +217,9 @@
       "scene-10": "Пляж Дельфинес и отели побережья",
       "hyatt-ziva-3": "Спальня люкса Oceanfront Lighthouse",
       "hyatt-ziva-4": "Бассейн Punta Vista в башне Turquoize только для взрослых",
-      "coral-beach-6": "Coral Beach в сумерках"
+      "coral-beach-6": "Coral Beach в сумерках",
+      "scene-13": "Маяк Пунта-Канкун",
+      "scene-14": "Вход в городской парк Кабах"
     },
     "ar": {
       "scene-1": "شاطئ دلفينيس",
@@ -218,7 +238,9 @@
       "scene-10": "شاطئ دلفينيس والفنادق الساحلية",
       "hyatt-ziva-3": "غرفة نوم جناح Oceanfront Lighthouse",
       "hyatt-ziva-4": "مسبح Punta Vista في برج Turquoize المخصص للبالغين",
-      "coral-beach-6": "Coral Beach عند الغسق"
+      "coral-beach-6": "Coral Beach عند الغسق",
+      "scene-13": "منارة بونتا كانكون",
+      "scene-14": "مدخل متنزه كاباه الحضري"
     }
   },
   "visualReview": {
@@ -231,7 +253,8 @@
       "scene-9",
       "scene-11",
       "scene-12",
-      "le-blanc-6"
+      "le-blanc-6",
+      "le-blanc-7"
     ],
     "reason": "Rejected watermarked pool, repeated lifestyle portrait, non-landmark ice cream image, and unverified property aerial."
   },
