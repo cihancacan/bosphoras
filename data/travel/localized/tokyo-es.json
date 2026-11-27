@@ -1,0 +1,168 @@
+{
+  "name": "Tokio",
+  "country": "Japón",
+  "eyebrow": "Tokio · Jardines japoneses, arquitectura y panorámicas urbanas",
+  "heading": "Dónde alojarse en Tokio: mejores barrios y hoteles de lujo",
+  "intro": "La calma sobre los jardines del Palacio Imperial, hoteles junto a la estación de Tokio o las vistas nocturnas de Shinjuku: elegir bien el barrio define tu estancia.",
+  "editorial": "Tokio es mucho más que calles iluminadas por neones. Elige alojamiento según conexiones ferroviarias, jardines, compras, restaurantes y los barrios animados del oeste. Aman Tokyo, en las plantas altas de Otemachi Tower, combina piedra, madera y papel washi en un diseño japonés sereno. Su piscina cubierta de 30 metros y las panorámicas urbanas destacan. Las vistas al Palacio Imperial dependen de la orientación; la cercanía a la estación facilita viajes en Shinkansen.\n\nAl este de la estación, Bvlgari Hotel Tokyo ocupa las plantas 40 a 45 de Tokyo Midtown Yaesu con 98 habitaciones y suites. Combina diseño italiano, artesanía japonesa, restaurantes y spa. La piscina de 25 metros del spa es compartida. Comprueba horarios, entrada del edificio y salida de la estación.\n\nPark Hyatt Tokyo, en Shinjuku Park Tower, reabrió el 9 de diciembre de 2025 tras 19 meses de renovación. Los interiores renovados, las vistas nocturnas y la vida cultural de Shinjuku definen el hotel. No está directamente sobre los andenes; con niños puede convenir un taxi. La vista del Fuji depende del tiempo y la orientación. 1 Hotel Tokyo, en Akasaka Trust Tower, abrió el 5 de marzo de 2026. Materiales reutilizados, plantas y arquitectura moderna ofrecen otro estilo. Hay opciones con dos camas queen y habitaciones comunicadas; Tower View y Garden View son categorías distintas.\n\nDistribuye las visitas en varios días: jardines del Palacio Imperial, diseño en Ginza, artesanía de Nihonbashi, sendero arbolado de Meiji Jingu y calles históricas de Asakusa y Yanaka. Respeta los lugares religiosos y la vida vecinal. La floración del cerezo y los colores otoñales varían cada año. Haneda (HND) suele estar más cerca del centro que Narita (NRT); elige según vuelo, hotel y equipaje. Narita Express y Keisei Skyliner sirven estaciones distintas; Suica y PASMO son útiles en transporte urbano. Con niños y equipaje, considera un traslado privado. El proveedor autorizado confirma precios, disponibilidad y condiciones.",
+  "hotelIntro": "Aman Tokyo, Bvlgari Hotel Tokyo, el renovado Park Hyatt Tokyo y 1 Hotel Tokyo: compara cuatro hoteles por barrio, vistas, diseño y conexiones.",
+  "areas": [
+    [
+      "Otemachi, Marunouchi y Palacio Imperial",
+      "Torres de oficinas, trenes de larga distancia y paseos tranquilos junto a los jardines.",
+      "Comprueba las normas de visita del recinto imperial."
+    ],
+    [
+      "Yaesu, Nihonbashi y Ginza",
+      "Conexiones, artesanía, tiendas y restaurantes; Bvlgari se eleva sobre Yaesu.",
+      "Reserva restaurantes populares y comprueba la salida de la estación."
+    ],
+    [
+      "Nishi-Shinjuku y Shinjuku",
+      "Vistas desde las alturas, restaurantes y parques; Park Hyatt no está encima de los andenes.",
+      "Los traslados y la visibilidad del Fuji pueden variar."
+    ],
+    [
+      "Akasaka, Toranomon y Roppongi",
+      "Barrios céntricos con colinas, negocios, diseño y galerías.",
+      "Localiza la salida de metro adecuada para el equipaje."
+    ],
+    [
+      "Asakusa, Ueno y Yanaka",
+      "Calles históricas, templos y museos para una jornada cultural.",
+      "Respeta las ceremonias y la vida de los vecinos."
+    ]
+  ],
+  "experiences": [
+    [
+      "Paseo por el Palacio Imperial",
+      "Explora jardines y fosos siguiendo las normas oficiales de visita."
+    ],
+    [
+      "Diseño en Ginza y Nihonbashi",
+      "Combina artesanía, galerías y gastronomía; reserva cuando sea necesario."
+    ],
+    [
+      "Visita a Meiji Jingu",
+      "Recorre el camino arbolado sin interrumpir los actos religiosos."
+    ],
+    [
+      "Shinjuku desde las alturas",
+      "Disfruta de la panorámica con buena luz; las vistas al Fuji no están garantizadas."
+    ],
+    [
+      "Asakusa y Yanaka",
+      "Descubre templos, callejones y talleres respetando la vida local."
+    ]
+  ],
+  "checks": [
+    "Elige Otemachi, Yaesu, Shinjuku o Akasaka según tu itinerario.",
+    "Compara HND y NRT sin asumir un tiempo fijo de traslado.",
+    "Confirma categoría y orientación; no todas las habitaciones tienen vistas al palacio o al Fuji.",
+    "Verifica capacidad familiar, habitaciones comunicadas, spa y piscina.",
+    "Reserva restaurantes especiales y actividades con antelación.",
+    "Respeta las normas de templos, jardines y fotografía.",
+    "Valora tren, Suica/PASMO o vehículo según niños y equipaje.",
+    "Confirma disponibilidad, pago y condiciones con el proveedor autorizado."
+  ],
+  "hotels": [
+    [
+      "Otemachi · Otemachi Tower",
+      "Aman en altura con diseño japonés de piedra, madera y papel washi, habitaciones amplias, spa y piscina cubierta de 30 metros.",
+      "Confirma vistas al Palacio Imperial y acceso a la piscina compartida.",
+      "Para tranquilidad y conexiones ferroviarias.",
+      ""
+    ],
+    [
+      "Yaesu · Tokyo Midtown Yaesu",
+      "Bvlgari ofrece 98 habitaciones y suites en las plantas 40 a 45 cerca de la estación, con restaurantes y spa.",
+      "La piscina de 25 metros es compartida; comprueba reservas de spa y restaurantes.",
+      "Para elegancia urbana y gastronomía.",
+      ""
+    ],
+    [
+      "Nishi-Shinjuku · Shinjuku Park Tower",
+      "Park Hyatt reabrió en diciembre de 2025 tras su renovación, con interiores renovados y amplias vistas urbanas.",
+      "Las vistas al Fuji dependen del tiempo y orientación; comprueba traslado y categoría.",
+      "Para panorámicas nocturnas y descubrir Shinjuku.",
+      ""
+    ],
+    [
+      "Akasaka · Akasaka Trust Tower",
+      "Inaugurado en marzo de 2026, 1 Hotel Tokyo combina materiales reutilizados, plantas, piscina cubierta y distintas configuraciones.",
+      "Confirma camas, política infantil, Tower/Garden View y normas de piscina.",
+      "Para diseño contemporáneo con materiales naturales.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿En qué barrio alojarse en Tokio?",
+      "Otemachi para tranquilidad y trenes, Yaesu para estación y Ginza, Nishi-Shinjuku para panorámicas y Akasaka para vida urbana moderna."
+    ],
+    [
+      "¿Qué cuatro hoteles se comparan?",
+      "Aman Tokyo, Bvlgari Hotel Tokyo, Park Hyatt Tokyo y 1 Hotel Tokyo. Es una selección editorial; el proveedor confirma disponibilidad."
+    ],
+    [
+      "¿Park Hyatt Tokyo volvió a abrir?",
+      "Sí, el 9 de diciembre de 2025 tras 19 meses de obras. Comprueba categorías y servicios actuales."
+    ],
+    [
+      "¿1 Hotel Tokyo abrió en 2026?",
+      "Su apertura se anunció el 5 de marzo de 2026. Vistas, capacidad y habitaciones comunicadas dependen de la categoría."
+    ],
+    [
+      "¿Qué diferencia a Aman de Bvlgari?",
+      "Aman en Otemachi destaca por diseño japonés y piscina de 30 metros; Bvlgari en Yaesu por diseño italo-japonés y spa."
+    ],
+    [
+      "¿Haneda o Narita?",
+      "Haneda suele estar más cerca del centro. Elige según hotel, equipaje y horario; Narita Express y Skyliner sirven estaciones distintas."
+    ],
+    [
+      "¿Son hoteles adecuados para familias?",
+      "Algunas categorías ofrecen dos camas queen o habitaciones comunicadas. Confirma edades, capacidad, normas de piscina y suplementos."
+    ],
+    [
+      "¿Cómo reservar estos hoteles?",
+      "Compara alojamientos en Bosphoras. El proveedor autorizado confirma precios, disponibilidad, pago y condiciones."
+    ]
+  ],
+  "photoCaptions": [
+    "Recinto imperial y torres de Otemachi",
+    "Estación histórica de Tokio y Marunouchi",
+    "Calles comerciales de Ginza al anochecer",
+    "Rascacielos de Shinjuku",
+    "Tokyo Tower sobre Minato",
+    "Panorámica de Akasaka",
+    "Puerta Hozomon del templo Sensoji en Asakusa",
+    "Entrada y torii de Meiji Jingu",
+    "Puente histórico Tokiwa sobre Nihonbashi"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Vestíbulo de Aman Tokyo en Otemachi",
+      "Piscina cubierta de Aman Tokyo con vistas urbanas",
+      "Interior de suite Aman Tokyo"
+    ],
+    [
+      "Fotografía oficial de inauguración de Bvlgari Hotel Tokyo",
+      "Fotografía de prensa de Bvlgari Hotel Tokyo",
+      "Imagen oficial de Bvlgari Hotel Tokyo"
+    ],
+    [
+      "Ambassador Suite renovada de Park Hyatt",
+      "Restaurante Girandole tras la renovación",
+      "New York Bar de Park Hyatt Tokyo"
+    ],
+    [
+      "Interior de 1 Hotel Tokyo en Akasaka",
+      "Arquitectura y materiales de 1 Hotel Tokyo",
+      "Diseño interior de 1 Hotel Tokyo"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Tokio: mejores barrios y hoteles de lujo",
+  "hotelSeoTitle": "Mejores hoteles de lujo en Tokio: Aman, Bvlgari y Park Hyatt",
+  "seoDescription": "Compara Otemachi, Yaesu, Shinjuku y Akasaka. Descubre cuatro hoteles de lujo en Tokio, piscinas, vistas y conexiones de transporte."
+}
