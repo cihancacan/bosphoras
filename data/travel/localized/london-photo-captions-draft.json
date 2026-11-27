@@ -1,5 +1,5 @@
 {
-  "status": "draft_pending_visual_review_and_final_gallery_order",
+  "status": "contact_sheet_reviewed_pending_page_preview",
   "imageKeys": [
     [
       "scene-4",
@@ -9,7 +9,8 @@
       "scene-8",
       "scene-9",
       "scene-10",
-      "scene-11"
+      "scene-11",
+      "scene-12"
     ],
     [
       "claridges-2",
@@ -53,7 +54,8 @@
       "scene-11": "Cathédrale Saint-Paul depuis le Millennium Bridge",
       "savoy-4": "Piscine intérieure du Savoy",
       "shangri-la-4": "Salle de soins du spa Shangri-La avec vue sur Londres",
-      "shangri-la-5": "The Shard, bâtiment du Shangri-La, vu depuis la Tamise"
+      "shangri-la-5": "The Shard, bâtiment du Shangri-La, vu depuis la Tamise",
+      "scene-12": "Mount Street, rue historique de Mayfair"
     },
     "en": {
       "scene-4": "Westminster Abbey and historic buildings",
@@ -75,7 +77,8 @@
       "scene-11": "St Paul’s Cathedral from Millennium Bridge",
       "savoy-4": "The Savoy indoor pool",
       "shangri-la-4": "Shangri-La spa treatment room overlooking London",
-      "shangri-la-5": "The Shard, home to Shangri-La, seen from the Thames"
+      "shangri-la-5": "The Shard, home to Shangri-La, seen from the Thames",
+      "scene-12": "Mount Street, a historic Mayfair street"
     },
     "tr": {
       "scene-4": "Westminster Abbey ve tarihi yapılar",
@@ -97,7 +100,8 @@
       "scene-11": "Millennium Bridge'den St Paul Katedrali",
       "savoy-4": "The Savoy kapalı havuzu",
       "shangri-la-4": "Shangri-La Londra manzaralı spa bakım odası",
-      "shangri-la-5": "Shangri-La'nın bulunduğu The Shard, Thames kıyısından"
+      "shangri-la-5": "Shangri-La'nın bulunduğu The Shard, Thames kıyısından",
+      "scene-12": "Mayfair'in tarihi Mount Street caddesi"
     },
     "de": {
       "scene-4": "Westminster Abbey und historische Gebäude",
@@ -119,7 +123,8 @@
       "scene-11": "St Paul’s Cathedral von der Millennium Bridge",
       "savoy-4": "Innenpool des Savoy",
       "shangri-la-4": "Spa-Behandlungsraum des Shangri-La mit Londonblick",
-      "shangri-la-5": "The Shard mit dem Shangri-La, von der Themse aus gesehen"
+      "shangri-la-5": "The Shard mit dem Shangri-La, von der Themse aus gesehen",
+      "scene-12": "Mount Street, historische Straße in Mayfair"
     },
     "es": {
       "scene-4": "Abadía de Westminster y edificios históricos",
@@ -141,7 +146,8 @@
       "scene-11": "Catedral de San Pablo desde el Millennium Bridge",
       "savoy-4": "Piscina cubierta de The Savoy",
       "shangri-la-4": "Sala de tratamientos del spa Shangri-La con vistas a Londres",
-      "shangri-la-5": "The Shard, edificio del Shangri-La, visto desde el Támesis"
+      "shangri-la-5": "The Shard, edificio del Shangri-La, visto desde el Támesis",
+      "scene-12": "Mount Street, calle histórica de Mayfair"
     },
     "it": {
       "scene-4": "Abbazia di Westminster ed edifici storici",
@@ -163,7 +169,8 @@
       "scene-11": "Cattedrale di St Paul dal Millennium Bridge",
       "savoy-4": "Piscina coperta del Savoy",
       "shangri-la-4": "Sala trattamenti della spa Shangri-La con vista su Londra",
-      "shangri-la-5": "The Shard, sede dello Shangri-La, visto dal Tamigi"
+      "shangri-la-5": "The Shard, sede dello Shangri-La, visto dal Tamigi",
+      "scene-12": "Mount Street, storica via di Mayfair"
     },
     "pt": {
       "scene-4": "Abadia de Westminster e edifícios históricos",
@@ -185,7 +192,8 @@
       "scene-11": "Catedral de São Paulo vista da Millennium Bridge",
       "savoy-4": "Piscina interior do Savoy",
       "shangri-la-4": "Sala de tratamentos do spa Shangri-La com vista para Londres",
-      "shangri-la-5": "The Shard, edifício do Shangri-La, visto do Tamisa"
+      "shangri-la-5": "The Shard, edifício do Shangri-La, visto do Tamisa",
+      "scene-12": "Mount Street, rua histórica de Mayfair"
     },
     "zh": {
       "scene-4": "威斯敏斯特教堂及历史建筑",
@@ -207,7 +215,8 @@
       "scene-11": "从千禧桥眺望圣保罗大教堂",
       "savoy-4": "萨沃伊酒店室内泳池",
       "shangri-la-4": "香格里拉酒店俯瞰伦敦的水疗护理室",
-      "shangri-la-5": "从泰晤士河畔眺望香格里拉酒店所在的碎片大厦"
+      "shangri-la-5": "从泰晤士河畔眺望香格里拉酒店所在的碎片大厦",
+      "scene-12": "梅费尔历史街道芒特街"
     },
     "ru": {
       "scene-4": "Вестминстерское аббатство и исторические здания",
@@ -229,7 +238,8 @@
       "scene-11": "Собор Святого Павла с моста Миллениум",
       "savoy-4": "Крытый бассейн The Savoy",
       "shangri-la-4": "Кабинет спа-процедур Shangri-La с видом на Лондон",
-      "shangri-la-5": "Небоскрёб The Shard, где расположен Shangri-La, со стороны Темзы"
+      "shangri-la-5": "Небоскрёб The Shard, где расположен Shangri-La, со стороны Темзы",
+      "scene-12": "Маунт-стрит, историческая улица Мейфэра"
     },
     "ar": {
       "scene-4": "دير وستمنستر والمباني التاريخية",
@@ -251,7 +261,8 @@
       "scene-11": "كاتدرائية القديس بولس من جسر الألفية",
       "savoy-4": "المسبح الداخلي في The Savoy",
       "shangri-la-4": "غرفة علاجات السبا في Shangri-La بإطلالة على لندن",
-      "shangri-la-5": "برج ذا شارد الذي يضم Shangri-La من جهة نهر التايمز"
+      "shangri-la-5": "برج ذا شارد الذي يضم Shangri-La من جهة نهر التايمز",
+      "scene-12": "شارع ماونت التاريخي في مايفير"
     }
   },
   "visualReview": {
@@ -260,6 +271,36 @@
       "shangri-la-2",
       "shangri-la-3"
     ],
-    "reason": "Savoy second bedroom is not a shared facility; Shangri-La lifestyle portrait is not a pool; Shard office entrance is not the hotel entrance."
+    "reason": "Savoy second bedroom is not a shared facility; Shangri-La lifestyle portrait is not a pool; Shard office entrance is not the hotel entrance.",
+    "acceptedKeys": [
+      "scene-4",
+      "scene-5",
+      "scene-6",
+      "scene-7",
+      "scene-8",
+      "scene-9",
+      "scene-10",
+      "scene-11",
+      "scene-12",
+      "claridges-2",
+      "claridges-3",
+      "claridges-4",
+      "savoy-1",
+      "savoy-3",
+      "savoy-4",
+      "peninsula-1",
+      "peninsula-2",
+      "peninsula-3",
+      "shangri-la-1",
+      "shangri-la-4",
+      "shangri-la-5"
+    ],
+    "reviewed": "2026-11-27",
+    "method": "Repository WebP contact sheet; all accepted subjects checked visually; final page crop still pending."
+  },
+  "publicationRights": {
+    "ownerConfirmed": true,
+    "date": "2026-11-27",
+    "note": "User confirms all publication rights; retain original publisher, named credits and Creative Commons terms where applicable."
   }
 }
