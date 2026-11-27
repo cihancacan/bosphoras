@@ -1,0 +1,162 @@
+{
+  "name": "Antíparos",
+  "country": "Grecia",
+  "eyebrow": "Cícladas · Isla tranquila",
+  "heading": "Dónde alojarse en Antíparos: cuatro formas de descansar",
+  "intro": "A Antíparos se llega por Paros. Calles blancas, playas diversas y ritmo pausado distinguen la isla de sus vecinas. Chora, Livadi, Apantima y Soros ofrecen experiencias distintas; la ubicación importa tanto como la categoría.",
+  "editorial": "La conexión principal es el ferry para coches desde Pounta, en Paros. El municipio indica unos siete minutos de travesía; comprueba horarios y mar. Los barcos estacionales de pasajeros desde Parikia son un servicio distinto.\n\nThe Rooster, cerca de Livadi, reúne casas independientes con piscinas privadas, huertos y bienestar en la costa oeste más salvaje. The Beach House está en la bahía protegida de Apantima; temporada publicada del 15 de mayo al 20 de septiembre. Soros Beach ofrece suites y playa organizada más al sur, en la costa oriental. Kastro Boutique Resort, cerca de Chora, es un hotel íntimo con jardín y piscina, cómodo para paseos nocturnos por el pueblo. La cueva de Antíparos tiene numerosos escalones; las excursiones a Despotiko dependen de clima y normas de protección. El proveedor autorizado confirma precios y disponibilidad.",
+  "hotelIntro": "Cuatro formatos: casas privadas en Livadi, hotel de playa en Apantima, suites en Soros y pequeño resort cerca de Chora.",
+  "areas": [
+    [
+      "Chora y puerto",
+      "Calles blancas conectan el embarcadero con Kastro y cafés. Un hotel del pueblo no está necesariamente en la arena.",
+      "Confirma embarcadero de llegada y punto de acceso al hotel."
+    ],
+    [
+      "Livadi y dunas",
+      "En la costa oeste The Rooster se integra entre casas bajas, dunas y campos.",
+      "Comprueba viento, seguridad de piscina y camino a playa."
+    ],
+    [
+      "Apantima",
+      "Bahía relativamente protegida donde The Beach House está junto al agua. Las categorías con vistas a jardín y mar difieren.",
+      "Confirma reserva de tumbonas por separado."
+    ],
+    [
+      "Soros",
+      "Más al sur de la costa oriental hay playa organizada, restaurantes y suites Soros Beach.",
+      "Consulta horarios del club de playa y transporte."
+    ],
+    [
+      "Agios Georgios y Despotiko",
+      "Bahía suroeste frente a la isla arqueológica Despotiko; excursiones sujetas a condiciones y protección patrimonial.",
+      "Desembarco y acceso arqueológico no están garantizados."
+    ]
+  ],
+  "experiences": [
+    [
+      "Chora y Kastro veneciano",
+      "Pasea por el pueblo y antiguo Kastro tras la playa; en temporada alta los cafés se llenan incluso por la noche."
+    ],
+    [
+      "Cueva de Antíparos",
+      "Numerosos escalones conducen a formaciones impresionantes; comprueba horarios, calzado y preparación física."
+    ],
+    [
+      "Bahía de Agios Georgios",
+      "Contempla islas vecinas y valora una excursión a Despotiko con operador autorizado y condiciones favorables."
+    ],
+    [
+      "Tres playas diferentes",
+      "Compara dunas abiertas, bahía protegida y playa con servicios; requieren transporte entre ellas."
+    ],
+    [
+      "Atardecer en Sifneikos",
+      "Disfruta de la panorámica occidental cerca de Chora, teniendo en cuenta viento y niños."
+    ]
+  ],
+  "checks": [
+    "Comprueba horarios del ferry para coches Pounta–Antíparos.",
+    "The Beach House publica temporada del 15 de mayo al 20 de septiembre; puede cambiar.",
+    "Los niños requieren supervisión adulta continua en las piscinas privadas de The Rooster.",
+    "Chora, Livadi, Apantima y Soros son zonas distintas.",
+    "Cueva y Despotiko dependen de escalones, tiempo y reglas locales.",
+    "Confirma barcos, restaurantes y tumbonas aparte."
+  ],
+  "hotels": [
+    [
+      "Livadi · Dunas y costa oeste",
+      "The Rooster reúne casas independientes de piedra y estuco con piscinas privadas, no habitaciones idénticas de hotel. La ubicación de cada casa modifica vistas, privacidad y acceso al mar. Huerto, cocina The Farm y bienestar integral definen la estancia. Las familias deben confirmar distribución y seguridad de piscinas. Tratamientos, comidas especiales y actividades no se incluyen automáticamente.",
+      "Confirma casa concreta, seguridad de piscina, protección del viento y acceso a playa.",
+      "Para privacidad, naturaleza y bienestar en una casa independiente.",
+      ""
+    ],
+    [
+      "Playa de Apantima · Bahía protegida",
+      "The Beach House está directamente en Apantima, no en Chora ni Soros. Las categorías con vistas a jardín o mar difieren. Restaurantes, café de playa y tumbonas completan la estancia. La web de reservas indica temporada del 15 de mayo al 20 de septiembre; confirma cada año. Tumbonas y mesas pueden requerir reserva aparte.",
+      "Confirma temporada, vistas, tumbonas y traslado desde el puerto.",
+      "Para días tranquilos en una bahía protegida.",
+      ""
+    ],
+    [
+      "Soros · Costa oriental",
+      "Soros Beach combina suites y playa organizada con restaurante y servicios. Ideal para nadar y comer junto al mar en vez de pasar las noches en Chora. La descripción oficial incluye Junior Suites. Alojamiento, tumbonas, mesas y excursiones marítimas son servicios independientes. Apantima, Livadi y puerto requieren transporte.",
+      "Confirma categoría, playa, restaurante, temporada y transporte.",
+      "Para vida de playa y cocina mediterránea.",
+      ""
+    ],
+    [
+      "Chora · Pueblo y puerto",
+      "Kastro Boutique Resort ofrece alrededor de veinte habitaciones, apartamentos y suites cicládicas entre jardines, piscina y bar. Es cómodo para pasear por el pueblo y explorar playas del sur. Vistas a jardín, piscina o mar dependen de categoría. Es un hotel pequeño, no un gran palacio de playa.",
+      "Confirma tipo de habitación, vistas, servicios familiares, temporada de piscina y traslado.",
+      "Para una estancia íntima cerca del pueblo.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Cómo llegar desde Paros a Antíparos?",
+      "El ferry de Pounta transporta pasajeros y coches. El municipio indica unos siete minutos; comprueba tarifas y horarios, sobre todo por la noche."
+    ],
+    [
+      "¿The Rooster tiene habitaciones convencionales?",
+      "Es una colección de casas independientes con piscinas privadas. Confirma ubicación y distribución, especialmente con niños."
+    ],
+    [
+      "¿The Beach House abre todo el año?",
+      "Temporada publicada del 15 de mayo al 20 de septiembre. Puede variar; confirma con el hotel."
+    ],
+    [
+      "¿Soros y Apantima son el mismo lugar?",
+      "No. Soros Beach está más adelante en la costa oriental y The Beach House en la bahía de Apantima. Planifica transporte."
+    ],
+    [
+      "¿Se puede visitar la cueva con cochecito?",
+      "No es adecuada por los numerosos escalones. Comprueba horarios y accesibilidad individual."
+    ],
+    [
+      "¿Se puede ir en barco a Despotiko?",
+      "Hay excursiones desde Agios Georgios con condiciones favorables. Desembarco y visita dependen de operador, clima y protección patrimonial."
+    ],
+    [
+      "¿Cómo reservar hotel o excursión en barco?",
+      "Compara alojamiento en Bosphoras; el proveedor autorizado confirma precios, disponibilidad y condiciones de alojamiento, playa, yates y traslados."
+    ]
+  ],
+  "photoCaptions": [
+    "Puerto de Chora en Antíparos desde el aire",
+    "Calles blancas y escalones de Kastro",
+    "Atardecer sobre el Egeo hacia Sifnos",
+    "Playa natural de arena de Livadi",
+    "Bahía de Apantima y casas blancas",
+    "Playa de Soros y costa natural",
+    "Cueva iluminada con escaleras",
+    "Bahía turquesa de Despotiko y barcos",
+    "Embarcadero de Antíparos"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Piscina privada en patio de The Rooster",
+      "Calas de The Rooster desde el aire",
+      "Casas de piedra al anochecer"
+    ],
+    [
+      "Playa de Apantima y tumbonas de The Beach House",
+      "Habitación en tonos azul y blanco",
+      "Salón exterior a la sombra"
+    ],
+    [
+      "Tumbona a la sombra en Soros",
+      "Mar turquesa y olas en Soros",
+      "Terraza de comedor de Soros Beach"
+    ],
+    [
+      "Piscina exterior de Kastro Boutique Resort",
+      "Piscina de Kastro al atardecer",
+      "Terraza sombreada de Kastro"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Antíparos: villas, hoteles boutique y playas",
+  "hotelSeoTitle": "Mejores hoteles de Antíparos: The Rooster, Beach House, Soros y Kastro",
+  "seoDescription": "Compara Chora, Livadi, Apantima y Soros. Descubre cuatro hoteles en Antíparos, playas y conexiones en ferry desde Paros."
+}
