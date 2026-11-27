@@ -123,12 +123,38 @@
       "Compara importes totales para las mismas fechas, huéspedes, habitaciones, tasas y cancelación."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Letrero de Orlando en el centro",
+    "Torre de agua de Disney Springs",
+    "Park Avenue en Winter Park",
+    "Ministerio de Magia en Epic Universe al anochecer",
+    "Castillo de Cenicienta en Magic Kingdom",
+    "Universal CityWalk: Toothsome Chocolate Emporium",
+    "Noria de Orlando iluminada",
+    "Fuente y edificios de Market Street en Celebration",
+    "Port of Entry en Islands of Adventure"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Four Seasons Orlando junto al agua al atardecer",
+      "Habitación King del Four Seasons Orlando",
+      "Piscina exterior y cascada del Four Seasons"
+    ],
+    [
+      "Entrada del Waldorf Astoria Orlando al atardecer",
+      "Salón de la Waldorf Suite",
+      "Vestíbulo del Waldorf Astoria Orlando"
+    ],
+    [
+      "Ritz-Carlton Orlando junto al lago",
+      "Habitación King con balcón del Ritz-Carlton",
+      "Club Lounge del Ritz-Carlton"
+    ],
+    [
+      "Fachadas y puerto del Loews Portofino Bay",
+      "Salón de la Portofino Suite",
+      "Piscina exterior del Loews Portofino Bay"
+    ]
   ],
   "seoTitle": "Dónde alojarse en Orlando: Disney, Universal y mejores zonas",
   "hotelSeoTitle": "Hoteles en Orlando: Disney, Universal y resorts de lujo",

@@ -123,12 +123,38 @@
       "Gesamtpreise für gleiche Termine, Gäste, Zimmer, Gebühren und Stornobedingungen vergleichen."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Orlando-Schriftzug in der Innenstadt",
+    "Wasserturm von Disney Springs",
+    "Park Avenue in Winter Park",
+    "Zaubereiministerium in Epic Universe am Abend",
+    "Cinderella Castle im Magic Kingdom",
+    "Universal CityWalk: Toothsome Chocolate Emporium",
+    "Beleuchtetes Riesenrad Orlando Eye",
+    "Brunnen und Gebäude an der Market Street in Celebration",
+    "Port of Entry in Islands of Adventure"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Four Seasons Orlando am Wasser in der Abenddämmerung",
+      "King-Zimmer im Four Seasons Orlando",
+      "Außenpool und Wasserfall des Four Seasons"
+    ],
+    [
+      "Eingang des Waldorf Astoria Orlando in der Abenddämmerung",
+      "Wohnzimmer der Waldorf Suite",
+      "Lobby des Waldorf Astoria Orlando"
+    ],
+    [
+      "Ritz-Carlton Orlando am See",
+      "King-Zimmer mit Balkon im Ritz-Carlton",
+      "Club Lounge des Ritz-Carlton"
+    ],
+    [
+      "Hafen und Fassaden des Loews Portofino Bay",
+      "Wohnzimmer der Portofino Suite",
+      "Außenpool des Loews Portofino Bay"
+    ]
   ],
   "seoTitle": "Orlando: die besten Viertel für Disney und Universal",
   "hotelSeoTitle": "Orlando Hotels: Disney, Universal und Luxusresorts",

@@ -123,12 +123,38 @@
       "Сравнивайте итоговые суммы при одинаковых датах, составе гостей, номерах, сборах и отмене."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Надпись Orlando в центре города",
+    "Водонапорная башня Disney Springs",
+    "Парк-авеню в Уинтер-Парке",
+    "Министерство магии в Epic Universe вечером",
+    "Замок Золушки в Magic Kingdom",
+    "Universal CityWalk: Toothsome Chocolate Emporium",
+    "Колесо обозрения Orlando Eye с подсветкой",
+    "Фонтан и здания Маркет-стрит в Селебрейшене",
+    "Port of Entry в Islands of Adventure"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Four Seasons Orlando у воды в сумерках",
+      "Номер King в Four Seasons Orlando",
+      "Открытый бассейн и водопад Four Seasons"
+    ],
+    [
+      "Вход в Waldorf Astoria Orlando в сумерках",
+      "Гостиная Waldorf Suite",
+      "Лобби Waldorf Astoria Orlando"
+    ],
+    [
+      "Ritz-Carlton Orlando у озера",
+      "Номер King с балконом в Ritz-Carlton",
+      "Клубная гостиная Ritz-Carlton"
+    ],
+    [
+      "Гавань и фасады Loews Portofino Bay",
+      "Гостиная Portofino Suite",
+      "Открытый бассейн Loews Portofino Bay"
+    ]
   ],
   "seoTitle": "Где остановиться в Орландо: Disney, Universal и лучшие районы",
   "hotelSeoTitle": "Отели Орландо: Disney, Universal и роскошные курорты",

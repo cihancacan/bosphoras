@@ -123,12 +123,38 @@
       "Aynı tarih, kişi sayısı, oda, ücret ve iptal şartlarıyla toplam fiyatları karşılaştırın."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Orlando şehir merkezindeki Orlando yazısı",
+    "Disney Springs su kulesi",
+    "Winter Park'ta Park Avenue",
+    "Epic Universe'de akşam Büyü Bakanlığı",
+    "Magic Kingdom'da Cinderella Şatosu",
+    "Universal CityWalk: Toothsome Chocolate Emporium",
+    "Işıklandırılmış Orlando Eye dönme dolabı",
+    "Celebration'da Market Street binaları ve çeşme",
+    "Islands of Adventure'da Port of Entry"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Akşam su kıyısından Four Seasons Orlando",
+      "Four Seasons Orlando King oda",
+      "Four Seasons açık havuzu ve şelalesi"
+    ],
+    [
+      "Akşam Waldorf Astoria Orlando girişi",
+      "Waldorf Suite salonu",
+      "Waldorf Astoria Orlando lobisi"
+    ],
+    [
+      "Göl kenarında Ritz-Carlton Orlando",
+      "Ritz-Carlton balkonlu King oda",
+      "Ritz-Carlton Club Lounge"
+    ],
+    [
+      "Loews Portofino Bay limanı ve cepheleri",
+      "Portofino Suite salonu",
+      "Loews Portofino Bay açık havuzu"
+    ]
   ],
   "seoTitle": "Orlando'da nerede kalınır? Disney, Universal ve en iyi bölgeler",
   "hotelSeoTitle": "Orlando otelleri: Disney, Universal ve lüks tatil köyleri",
