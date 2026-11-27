@@ -1,0 +1,167 @@
+{
+  "name": "Miami",
+  "country": "Amerika Birleşik Devletleri",
+  "eyebrow": "Miami · Atlantik kıyıları, sanat ve tasarım",
+  "heading": "Miami'de nerede kalınır? En iyi plajlar, semtler ve oteller",
+  "intro": "Sabah kumsalda yürüyüş, öğleden sonra galeriler ve akşam okyanus kıyısında yemek: Miami'de tatilinizi doğru bölgeyi seçerek planlayın. Beş bölgeyi ve dört seçkin oteli karşılaştırın.",
+  "editorial": "Miami'nin her bölgesi doğrudan okyanus kıyısında değildir. South Beach, art deco mimarisi ve hareketli restoranlarıyla; Mid-Beach, uzun plajları ve tasarım otelleriyle öne çıkar. Daha sakin bir sahil deneyimi için Surfside'ı değerlendirin. Ana karadaki Brickell, Biscayne Bay manzaraları ve gökdelenleriyle şehir hayatına yakındır ancak Atlantik plajında değildir. Wynwood ve Design District ise sanat ve tasarım gezileri için idealdir.\n\nThe Setai'nin Asya esintili tasarımı ve havuz bahçeleri, South Beach'in hareketliliği içinde sakin bir atmosfer oluşturur. Mid-Beach'teki Faena, sanat odaklı iç mekânları ve kültürel etkinlikleriyle farklılaşır. The Miami Beach EDITION'da sahil tatili ile hareketli sosyal alanlar birleşir; oda konumu önemlidir. Surfside'daki Four Seasons Hotel at The Surf Club, 1930'ların tarihî kulüp atmosferini korur. Oda, bungalov ve rezidans süitlerinin özellikleri farklıdır.\n\nÇocuklu aileler kapasiteyi, ek yatakları, bağlantılı odaları ve havuz kurallarını kontrol etmelidir. Özellikle haziran-kasım arasındaki Atlantik kasırga sezonunda hava tahminlerini ve iptal koşullarını inceleyin. Vergiler, resort ücretleri, otopark ve diğer ek masrafları karşılaştırın. Adalar ile ana kara arasındaki trafik transfer sürelerini etkiler. Güncel fiyat ve müsaitliği rezervasyon sağlayıcısında doğrulayın.",
+  "hotelIntro": "The Setai, Faena, The Miami Beach EDITION ve Four Seasons Hotel at The Surf Club: dört farklı sahil otelini tasarım, konum ve oda özelliklerine göre karşılaştırın.",
+  "areas": [
+    [
+      "South Beach ve Collins Avenue",
+      "Art deco sokakları, sahil yürüyüşleri ve hareketli restoranlar. Deniz tatiliyle yürüyerek keşfi birleştirmek için uygun.",
+      "Okyanus, şehir veya avlu manzarasını kontrol edin; hareketli bölge her odanın gürültülü olduğu anlamına gelmez."
+    ],
+    [
+      "Mid-Beach ve Faena District",
+      "Uzun plajlar, tasarım otelleri ve kültürel etkinlikler; sakin gündüzler ve canlı akşamlar.",
+      "Etkinlik takvimini, restoran saatlerini ve olası gürültüyü kontrol edin."
+    ],
+    [
+      "Surfside ve Bal Harbour",
+      "Miami Beach'in kuzeyinde daha sakin sahiller ve şık konut bölgeleri.",
+      "South Beach restoranlarına ve gece hayatına ulaşımı planlayın."
+    ],
+    [
+      "Brickell ve Biscayne Bay",
+      "Ana karada gökdelenler, teraslar, restoranlar ve kıyı yürüyüşleri; iş seyahatine uygun.",
+      "Körfez manzarası okyanus plajına doğrudan erişim değildir."
+    ],
+    [
+      "Wynwood ve Design District",
+      "Sokak sanatı, galeriler, moda, mimari ve gastronomi; gündüz gezileri için uygun.",
+      "Galeri saatlerini ve bölgeler arası ulaşımı kontrol edin."
+    ]
+  ],
+  "experiences": [
+    [
+      "South Beach'te erken sabah",
+      "Hava ısınmadan sahilde yürüyün ve art deco cephelerini sabah ışığında keşfedin."
+    ],
+    [
+      "Mid-Beach'te akşam",
+      "Restoran ve kültürel etkinlik seçin; saatlerini ve ayrı rezervasyon koşullarını doğrulayın."
+    ],
+    [
+      "Design District'te bir gün",
+      "Mimariyi ve galerileri acele etmeden keşfedin."
+    ],
+    [
+      "Biscayne Bay manzaraları",
+      "Kıyıda yürüyün; tekne gezisi için uygun hava ve yetkin bir işletme seçin."
+    ],
+    [
+      "Surfside'da sakin bir gün",
+      "South Beach'in kalabalığından uzakta plaja, yürüyüşe ve uzun bir öğle yemeğine zaman ayırın."
+    ]
+  ],
+  "checks": [
+    "South Beach, Mid-Beach, Surfside ve Brickell arasından tatil tarzınıza uygun bölgeyi seçin.",
+    "Oda kategorisini, konumunu, manzarasını ve garanti edilen olanakları kontrol edin.",
+    "Vergi, resort ücreti, otopark, ek masraflar ve iptal şartlarını karşılaştırın.",
+    "Aileler kapasiteyi, çocuk yataklarını, havuz ve bağlantılı odaları kontrol etmelidir.",
+    "MIA veya FLL havalimanından transferi, ada ve ana kara arasındaki trafiğe göre planlayın.",
+    "Deniz aktiviteleri öncesinde hava durumunu ve kasırga uyarılarını takip edin.",
+    "Spa, etkinlik, transfer ve yemek hizmetlerini ayrıca doğrulayın."
+  ],
+  "hotels": [
+    [
+      "South Beach · Collins Avenue",
+      "Asya esintili tasarım, havuz bahçeleri ve zarif iç mekânlar hareketli South Beach içinde sakin bir deneyim sunar. Süit kategorileri ve manzaraları farklıdır; spa fotoğrafları hizmetin dahil olduğunu göstermez.",
+      "Binayı, manzarayı, kapasiteyi ve spa ücretlerini kontrol edin.",
+      "Sakin tasarım atmosferi ve sahil tatili için.",
+      ""
+    ],
+    [
+      "Mid-Beach · Collins Avenue",
+      "Faena, teatral iç mekânları, sanat eserleri, restoranları ve kültürel etkinlikleriyle farklı bir sahil deneyimi sunar.",
+      "Oda kategorisini, etkinlik takvimini, gürültüyü ve ayrı restoran veya gösteri rezervasyonlarını kontrol edin.",
+      "Sanat, tasarım ve canlı akşamlar için.",
+      ""
+    ],
+    [
+      "Mid-Beach · Collins Avenue",
+      "Modern okyanus kıyısı oteli, dinlenme alanları ve hareketli sosyal mekânları birleştirir. Bungalov, süit ve odaların planları farklıdır.",
+      "Katı, kategoriyi, eğlence alanlarına erişimi ve aile kurallarını doğrulayın.",
+      "Sahil tatilini sosyal hayatla birleştirmek için.",
+      ""
+    ],
+    [
+      "Surfside · 9011 Collins Avenue",
+      "Tarihî Surf Club, daha sakin bir bölgede zarif okyanus kıyısı konaklaması sunar. Oda, bungalov ve rezidans süitlerinin donanımları değişir.",
+      "Konaklama türünü, deniz manzarasını, çocuk kapasitesini ve olanakları doğrulayın.",
+      "Sakin sahil ve tarihî kulüp atmosferi için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Miami'ye ilk kez gelenler nerede kalmalı?",
+      "South Beach deniz, art deco ve yürüyüş; Mid-Beach resort tatili; Surfside sakinlik sunar. Brickell ana karadadır."
+    ],
+    [
+      "South Beach, Mid-Beach ve Surfside arasındaki fark nedir?",
+      "South Beach daha hareketli, Mid-Beach tasarım otelleriyle tanınır, Surfside daha sakin bir konut bölgesidir. Ulaşım süreleri trafiğe bağlıdır."
+    ],
+    [
+      "The Setai ve Faena benzer mi?",
+      "The Setai sakin Asya estetiğiyle, Faena ise etkileyici tasarımı ve kültürel programlarıyla öne çıkar. Hizmetler kategori ve tarihe göre değişir."
+    ],
+    [
+      "Four Seasons Hotel at The Surf Club South Beach'te mi?",
+      "Hayır. South Beach'in kuzeyinde Surfside'da, 9011 Collins Avenue adresindedir."
+    ],
+    [
+      "EDITION'ın her odasında özel havuz var mı?",
+      "Hayır. Yalnızca belirli bungalov veya süit kategorilerinde bulunur; gerçek donanımı kontrol edin."
+    ],
+    [
+      "Araç kiralamak gerekir mi?",
+      "South Beach ve Mid-Beach'in bazı kesimlerini yürüyerek keşfedebilirsiniz. Diğer bölgeler için ulaşım seçeneklerini ve otopark maliyetlerini karşılaştırın."
+    ],
+    [
+      "Kasırga sezonunda nelere dikkat edilmeli?",
+      "Atlantik kasırga sezonu haziran-kasım arasındadır. Resmî tahminleri, uyarıları ve iptal koşullarını inceleyin."
+    ],
+    [
+      "Otelleri nasıl rezerve edebilirim?",
+      "Bosphoras üzerinden fiyatları karşılaştırın. Güncel müsaitlik, ödeme, değişiklik, iptal ve iade koşullarını rezervasyon sağlayıcısında doğrulayın."
+    ]
+  ],
+  "photoCaptions": [
+    "Miami Beach ve Atlantik kıyısının havadan görünümü",
+    "South Beach art deco sokakları",
+    "Miami Beach Atlantik kıyısı",
+    "Surfside'ın sakin sahili",
+    "Biscayne Bay kıyısında Brickell kuleleri",
+    "Wynwood sokak sanatı",
+    "Biscayne Bay'den Miami",
+    "Design District mimarisi",
+    "South Pointe Park ve Miami Beach kıyısı"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "The Setai Miami Beach havuzları",
+      "Okyanus manzaralı süit iç mekânı",
+      "Art deco lobi"
+    ],
+    [
+      "Faena Hotel Miami Beach otel fotoğrafı",
+      "Faena Hotel Miami Beach galeri görüntüsü",
+      "Faena Hotel Miami Beach görünümü"
+    ],
+    [
+      "Özel havuzlu ve okyanus manzaralı Premier Bungalow balkonu",
+      "Okyanus kıyısındaki bungalov iç mekânı",
+      "The Miami Beach EDITION havuzu"
+    ],
+    [
+      "The Surf Club havuzu ve tarihî mimarisi",
+      "The Surf Club havuz dinlenme alanı",
+      "Four Seasons Hotel at The Surf Club odası"
+    ]
+  ],
+  "seoTitle": "Miami'de Nerede Kalınır? En İyi Semtler ve Lüks Oteller",
+  "hotelSeoTitle": "Miami Beach'in En İyi Lüks Otelleri: Setai, Faena ve Daha Fazlası",
+  "seoDescription": "South Beach, Mid-Beach, Surfside ve Brickell'i karşılaştırın. Miami'nin dört seçkin otelini, oda seçeneklerini ve rezervasyon ipuçlarını keşfedin."
+}

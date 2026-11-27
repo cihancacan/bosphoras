@@ -1,0 +1,167 @@
+{
+  "name": "Los Angeles",
+  "country": "Amerika Birleşik Devletleri",
+  "eyebrow": "Los Angeles · Bahçeler, Hollywood ve Pasifik kıyısı",
+  "heading": "Los Angeles'ta nerede kalınır? Beverly Hills, Hollywood ve Santa Monica",
+  "intro": "Bel-Air'in bahçeleri, Beverly Hills'in ünlü otelleri, Sunset Boulevard'da akşamlar veya Santa Monica'da okyanus manzaralı kahvaltı: beş bölgeyi ve dört seçkin oteli karşılaştırın.",
+  "editorial": "Los Angeles, yürüyerek gezilebilen tek bir merkezden ziyade farklı bölgelerden oluşur. Bel-Air'de sakin bir otel, Beverly Hills'te alışveriş, Sunset Strip'te akşam yemeği ve Santa Monica'da plaj gezisi arasında önemli ulaşım süreleri olabilir.\n\nHotel Bel-Air, sakin bir konut bölgesindeki bahçeleriyle öne çıkar. Plaj oteli değildir; Rodeo Drive'a yürüyerek ulaşabileceğinizi varsaymayın. Sunset Boulevard'daki The Beverly Hills Hotel, Pink Palace adıyla bilinen tarihî yapısı, yeşil bahçeleri ve bungalovlarıyla Hollywood mirasını yansıtır. Ana bina odaları, bungalovlar ve özel teras veya havuzlu kategoriler farklıdır. West Hollywood'daki Sunset Tower Hotel, art deco mimarisi, restoranları ve belirli süitlerden panoramik manzaralarıyla tanınır. Santa Monica sahilindeki Shutters on the Beach, zarif bir Kaliforniya evi atmosferi sunar; Ocean Front ve Ocean View kategorileri aynı değildir.\n\nBel-Air ve Beverly Hills sakin konaklama, West Hollywood restoranlar ve akşam hayatı, Santa Monica okyanus, Griffith Park ise şehir manzaraları için elverişlidir. Getty Center'ın çalışma saatlerini kontrol edin, Malibu'yu ayrı bir gezi olarak planlayın. LAX veya Burbank havalimanından transfer süreleri trafiğe bağlıdır. Aileler kapasite, ek yatak, bağlantılı oda ve havuz kurallarını doğrulamalıdır. Vergileri, otoparkı ve iptal şartlarını karşılaştırın. Güncel fiyatlar ve müsaitlik rezervasyon sağlayıcısında kontrol edilmelidir.",
+  "hotelIntro": "Hotel Bel-Air, The Beverly Hills Hotel, Sunset Tower Hotel ve Shutters on the Beach: bahçelerden Hollywood'un tarihî otellerine, art deco mimarisinden Pasifik kıyısına dört farklı konaklamayı karşılaştırın.",
+  "areas": [
+    [
+      "Bel-Air ve Brentwood",
+      "Yeşil konut tepeleri, bahçeler ve Getty Center yönünde ulaşım; gece hayatından uzakta sakin konaklama.",
+      "Bu bölgelerde sıklıkla araç gerekir; manzara ve açık alanlar oda kategorisine bağlıdır."
+    ],
+    [
+      "Beverly Hills ve Rodeo Drive",
+      "Tarihî oteller, butikler, restoranlar ve palmiyeli geniş caddeler. Şehrin batısındaki görüşmeler için elverişli.",
+      "Bungalov, özel havuz ve teras yalnızca belirli kategorilerde bulunur."
+    ],
+    [
+      "West Hollywood ve Sunset Strip",
+      "Art deco mimarisi, ünlü restoranlar ve Sunset Boulevard'ın canlı akşam hayatı.",
+      "Sessizlik önemliyse katı, oda yönünü ve yakındaki etkinlikleri kontrol edin."
+    ],
+    [
+      "Santa Monica ve Pasifik kıyısı",
+      "Geniş kumsallar, bisiklet yolları ve deniz kenarında kahvaltılar.",
+      "Okyanus manzarasıyla doğrudan okyanusa bakan oda farklı kategorilerdir."
+    ],
+    [
+      "Hollywood Hills ve Griffith Park",
+      "Yürüyüş parkurları, Griffith Gözlemevi, sinema tarihi ve şehir panoramaları.",
+      "Gözlemevinin çalışma saatlerini, otoparkı, hava durumunu ve ziyaretçi yoğunluğunu dikkate alın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Tepeler arasında Getty Center",
+      "Mimari kompleksi, sergileri ve bahçeleri keşfedin; açılış saatlerini ve giriş koşullarını kontrol edin."
+    ],
+    [
+      "Griffith'te akşam ışığı",
+      "Hava ve erişim uygunsa gün batımını ve karanlıkta Downtown'un ışıklarını izleyin."
+    ],
+    [
+      "Sunset Boulevard'da akşam",
+      "Restoran ve bölgeyi önceden seçin; yemek ve ulaşımın konaklamaya dahil olduğunu varsaymayın."
+    ],
+    [
+      "Santa Monica'da okyanus sabahı",
+      "Sahilde yürüyün, plajda dinlenin ve kalabalık başlamadan bir kafeye uğrayın."
+    ],
+    [
+      "Malibu'ya manzaralı gezi",
+      "Plajlar ve seyir noktaları için ayrı zaman ayırın; yol durumu ve kıyı erişimini kontrol edin."
+    ]
+  ],
+  "checks": [
+    "Önce Bel-Air, Beverly Hills, West Hollywood, Santa Monica veya Griffith çevresinden bir bölge seçin.",
+    "Oda türünü, manzarayı, terası, bungalov kategorisini ve kapasiteyi doğrulayın.",
+    "Vergileri, otopark ücretlerini, ek masrafları ve iptal koşullarını karşılaştırın.",
+    "LAX transferi ve otel, plaj, tepe arasındaki yolculuklar için yeterli zaman ayırın.",
+    "Aileler bağlantılı odaları, yatakları, havuz kurallarını ve kapasiteyi kontrol etmelidir.",
+    "Hava durumunu, hava kalitesini ve parkur veya kıyı erişim kısıtlamalarını takip edin.",
+    "Transfer, restoran ve turistik giriş biletleri rezervasyona otomatik olarak dahil değildir."
+  ],
+  "hotels": [
+    [
+      "Bel-Air · Stone Canyon Road",
+      "Hotel Bel-Air, sakin bir kanyon yolundaki bahçeler arasında yer alır. Hareketli caddelerden uzak özel rezidans atmosferi sunar. Teras, iç avlu ve özel açık alanlar kategoriye göre değişir.",
+      "Oda kategorisini, planını, manzarasını ve dahil hizmetleri doğrulayın.",
+      "Mahremiyet, bahçe ve sakinlik için.",
+      ""
+    ],
+    [
+      "Beverly Hills · 9641 Sunset Boulevard",
+      "Pink Palace, Hollywood mirasını, bahçeleri, ünlü havuzu ve Polo Lounge'u bir araya getirir. Ana bina odaları, tarihî bungalovlar ve özel avlulu seçenekler farklıdır. Okyanusa yakınlık değil, Beverly Hills atmosferi için seçilir.",
+      "Bina veya bungalovu, kapasiteyi, havuz kurallarını ve gerçek kategoriyi doğrulayın.",
+      "Hollywood tarihi, restoranlar ve havuz tatili için.",
+      ""
+    ],
+    [
+      "West Hollywood · Sunset Boulevard",
+      "Sunset Tower Hotel, art deco mimarisi, zarif iç mekânları ve sosyal atmosferiyle tanınır. Üst katlardaki panoramik süitler belirli kategorilerdir. Restoran ve etkinlik rezervasyonları ayrıdır.",
+      "Katı, manzarayı ve konaklama tarihlerindeki etkinlik takvimini kontrol edin.",
+      "West Hollywood mimarisi ve akşam hayatı için.",
+      ""
+    ],
+    [
+      "Santa Monica · 1 Pico Boulevard",
+      "Shutters on the Beach, okyanus kenarında zarif bir Kaliforniya evi hissi verir. Ocean Front Suite doğrudan Pasifik'e bakarken Ocean View, Partial Ocean View ve diğer kategorilerde manzara, balkon ve plan farklıdır.",
+      "Ocean Front ve Ocean View ayrımını, balkonu, kapasiteyi ve ek ücretleri doğrulayın.",
+      "Hollywood gece hayatından çok okyanusu tercih edenler için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Los Angeles'a ilk kez gelenler nerede kalmalı?",
+      "Beverly Hills ünlü oteller ve alışveriş, Bel-Air sakin bahçeler, West Hollywood restoranlar ve gece hayatı, Santa Monica okyanus için uygundur. Hollywood ve Griffith ayrı geziler için değerlendirilebilir."
+    ],
+    [
+      "Hotel Bel-Air plaja yakın mı?",
+      "Hayır. 701 Stone Canyon Road adresinde Bel-Air'in sakin bir kanyonundadır. Santa Monica veya Malibu'ya ulaşım için araç gerekir."
+    ],
+    [
+      "Hotel Bel-Air ile The Beverly Hills Hotel arasındaki fark nedir?",
+      "İkisi de Dorchester Collection bünyesindedir. Hotel Bel-Air bahçeler arasında sakinlik, The Beverly Hills Hotel ise Sunset Boulevard'ın tarihî atmosferi, bungalovlar ve Polo Lounge ile öne çıkar."
+    ],
+    [
+      "The Beverly Hills Hotel'in tüm odaları bungalov mu?",
+      "Hayır. Ana bina oda ve süitleri ile ayrı bungalov kategorileri bulunur. Teras ve özel havuz kategoriye bağlıdır."
+    ],
+    [
+      "Sunset Tower Hotel sakin bir tatil için uygun mu?",
+      "Hareketli Sunset Boulevard'dadır. Katı, oda yönünü ve etkinlik takvimini doğrulayın; sessizlik veya panorama garanti değildir."
+    ],
+    [
+      "Shutters on the Beach'in tüm odaları okyanusa bakıyor mu?",
+      "Hayır. Ocean Front, Ocean View, Partial Ocean View ve diğer kategoriler farklıdır. Doğrudan manzara ve balkon bütün odalarda garanti edilmez."
+    ],
+    [
+      "LAX'ten veya Beverly Hills'ten Santa Monica'ya yolculuk ne kadar sürer?",
+      "Sabit bir süre yoktur. Trafik, etkinlikler, saat ve otel adresi süreyi etkiler. Yolculuk için yeterli zaman ayırın."
+    ],
+    [
+      "Bu otelleri nasıl rezerve edebilirim?",
+      "Bosphoras üzerinden fiyatları karşılaştırın. Yetkili rezervasyon sağlayıcısı müsaitlik, fiyat, ödeme, değişiklik, iptal ve iadeleri doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Los Angeles üzerinde Griffith Gözlemevi",
+    "Getty Center ve Los Angeles tepeleri",
+    "Beverly Hills'in palmiyeli sokakları",
+    "West Hollywood Sunset Boulevard",
+    "Santa Monica'da Pasifik kıyısı",
+    "Griffith Park ve Hollywood Hills",
+    "Los Angeles Downtown gece ışıkları",
+    "Venice kanalları",
+    "Malibu plajı ve iskelesi"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Hotel Bel-Air Presidential Suite özel havuzu",
+      "Grace Kelly Suite terası",
+      "Stone Canyon Suite havuzu"
+    ],
+    [
+      "The Beverly Hills Hotel ünlü havuzu",
+      "Bungalow 5 avlusu ve havuzu",
+      "Kırmızı halılı giriş"
+    ],
+    [
+      "Sunset Tower Hotel fotoğrafı",
+      "Sunset Tower Hotel görünümü",
+      "Sunset Tower Hotel görüntüsü"
+    ],
+    [
+      "Shutters on the Beach fotoğrafı",
+      "Pacific View Suite yatak odası",
+      "Shutters on the Beach görünümü"
+    ]
+  ],
+  "seoTitle": "Los Angeles'ta Nerede Kalınır? En İyi Semtler ve Oteller",
+  "hotelSeoTitle": "Los Angeles'ın En İyi Lüks Otelleri: Bel-Air ve Beverly Hills",
+  "seoDescription": "Bel-Air, Beverly Hills, West Hollywood ve Santa Monica'yı karşılaştırın. Los Angeles'ın dört seçkin otelini ve seyahat ipuçlarını keşfedin."
+}
