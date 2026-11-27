@@ -23,9 +23,9 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=11,<12' 'beautifulsoup4>=4.12,<5' 'PyMuPDF>=1.24,<2'
       - run: python -m py_compile scripts/collect-travel-89-93-media.py
-      - name: Fill remaining hotel gallery gaps via exact-property OTA fallbacks
+      - name: Fill remaining London city and hotel gallery gaps
         env:
-          TRAVEL_OTA_ONLY: '1'
+          TRAVEL_DESTINATION: 'london'
         run: python -u scripts/collect-travel-89-93-media.py
       - name: Save candidate images and provenance on draft branch only
         if: success()
@@ -33,9 +33,7 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          for city in london las-vegas rome barcelona cancun; do
-            if [ -d "public/images/travel/$city-premium" ]; then git add "public/images/travel/$city-premium"; fi
-          done
+          git add public/images/travel/london-premium
           git add data/travel/media89to93Candidates.json data/travel/media89to93BrochureCandidates.json
           if ! git diff --cached --quiet; then
             git commit -m 'assets(travel): source audited 89-93 WebP candidates pending visual QA [skip ci]'
