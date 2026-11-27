@@ -1,0 +1,163 @@
+{
+  "name": "Canouan",
+  "country": "San Vicente y las Granadinas",
+  "eyebrow": "Canouan · Playas de las Granadinas y villas privadas",
+  "heading": "Dónde alojarse en Canouan: dos hoteles y dos villas privadas",
+  "intro": "Godahl Beach, Grand Bay y Shell Beach muestran distintas caras de Canouan. Mandarin Oriental y Soho Beach House ofrecen servicio hotelero; Big Blue Ocean y Silver Turtle son casas independientes de Canouan Estate.",
+  "editorial": "Canouan forma parte de San Vicente y las Granadinas y tiene aeropuerto CIW. Los viajeros internacionales suelen llegar vía Barbados y conectar con vuelo regional o chárter. Coordina equipaje y conexiones; recogida en aeropuerto local no incluye vuelo entre islas.\n\nMandarin Oriental, en Godahl Beach, ofrece suites con vistas al océano, Patio Villas y Lagoon Villas. Piscinas y espacios varían por categoría. Soho Beach House, en Grand Bay al oeste, reúne 40 habitaciones en tres edificios costeros, restaurantes, spa y ambiente de club. Comprueba temporada y acceso para huéspedes.\n\nCerca de Shell Beach están las casas privadas de Canouan Estate. Big Blue Ocean tiene cinco dormitorios, piscina infinita, hidromasaje y sendero propio a la playa. Nueve dormitorios solo al reservar también Little Blue Ocean, la casa vecina. Silver Turtle es casa independiente de seis dormitorios, piscina, hidromasaje y sala multimedia. Sus distintos niveles requieren atención con niños o movilidad reducida.\n\nInvisible Key describe acceso a determinadas instalaciones, no restaurantes, tratamientos ni yates gratuitos. Personal, carrito de golf y traslado CIW se confirman al reservar. Para visitar Tobago Cays elige patrón autorizado, considera tiempo y reglas de protección marina.",
+  "hotelIntro": "Dos hoteles independientes y dos casas de Canouan Estate de alquiler separado: servicio de resort o residencia privada.",
+  "areas": [
+    [
+      "Godahl Beach",
+      "Arena clara, colinas verdes y Mandarin Oriental con restaurantes bajo reserva.",
+      "Piscinas privadas de villas no son estándar de todas las suites."
+    ],
+    [
+      "Grand Bay y pueblo",
+      "Costa oeste junto a Soho Beach House y pueblo isleño más animado.",
+      "Acceso a Soho depende de normas del club."
+    ],
+    [
+      "Shell Beach y villas",
+      "Playa protegida cerca de casas privadas; Big Blue Ocean tiene sendero propio y Silver Turtle queda a pie.",
+      "Comprueba pendientes y escaleras de cada villa."
+    ],
+    [
+      "Mount Royal y cresta",
+      "Alturas verdes con panorámicas de las Granadinas.",
+      "Elige ruta según tiempo y condición física."
+    ],
+    [
+      "Sandy Lane Yacht Club y rutas marítimas",
+      "Marina de salida para posibles excursiones a Tobago Cays.",
+      "Salidas según tiempo y operadores autorizados."
+    ]
+  ],
+  "experiences": [
+    [
+      "Amanecer en Godahl Beach",
+      "Disfruta luz matinal de la costa este respetando acceso del resort."
+    ],
+    [
+      "Almuerzo en Grand Bay",
+      "Conoce costa oeste y reserva restaurante antes."
+    ],
+    [
+      "Día de villa cerca de Shell Beach",
+      "Descansa en piscina privada y utiliza acceso a playa confirmado."
+    ],
+    [
+      "Panorámica desde Mount Royal",
+      "Planifica paseo con acompañamiento adecuado y según tiempo."
+    ],
+    [
+      "Navegación a Tobago Cays",
+      "Elige patrón autorizado y respeta reglas de áreas marinas protegidas."
+    ]
+  ],
+  "checks": [
+    "Selección de dos hoteles y dos villas Canouan Estate.",
+    "Vuelo regional a CIW se confirma aparte.",
+    "Godahl Beach, Grand Bay y Shell Beach son costas distintas.",
+    "Comprueba escaleras, piscinas, camas y capacidad infantil.",
+    "Confirma temporada de Soho Beach House.",
+    "Invisible Key concede acceso según condiciones, no todos los servicios gratis.",
+    "Precios, alojamiento y yate requieren confirmación del proveedor."
+  ],
+  "hotels": [
+    [
+      "Godahl Beach · Costa este",
+      "Mandarin Oriental, Canouan combina suites amplias con vistas al océano y Patio Villas y Lagoon Villas independientes. Restaurantes, bienestar y servicio atento permiten vacaciones completas de resort. Piscina privada solo en ciertas villas; vistas, terrazas y dormitorios difieren. Antes de viajar en familia confirma camas, playa, piscina y traslado CIW.",
+      "Villas con piscina distintas de suites normales.",
+      "Para servicio hotelero completo en Godahl Beach.",
+      ""
+    ],
+    [
+      "Grand Bay · Costa oeste",
+      "Soho Beach House Canouan cuenta con 40 habitaciones en tres edificios costeros, restaurantes, spa y fitness. Su ambiente de club contrasta con Mandarin Oriental más formal. Son habitaciones, no villas privadas con piscina. Confirma acceso para socios y otros huéspedes, niños, restaurantes y temporada. Ayuda a la llegada no significa vuelo desde Barbados incluido.",
+      "Comprueba temporada, acceso al club y reglas infantiles.",
+      "Para vida social y ambiente de club en Grand Bay.",
+      ""
+    ],
+    [
+      "Canouan Estate · Cerca de Shell Beach",
+      "Big Blue Ocean es una casa privada de cinco dormitorios, varios niveles, piscina infinita, hidromasaje y sendero propio a Shell Beach. La descripción indica anfitrión, limpieza, carrito de golf y traslado local de aeropuerto; confirma horarios y alcance. Al alquilar también Little Blue Ocean se obtienen nueve dormitorios en dos casas. La casa vecina solo se incluye si figura expresamente en reserva.",
+      "Cinco dormitorios; para nueve hay que añadir Little Blue Ocean.",
+      "Para casa privada con acceso propio a Shell Beach.",
+      ""
+    ],
+    [
+      "Canouan Estate · A pie de Shell Beach",
+      "Silver Turtle es villa independiente de seis dormitorios en varios niveles, piscina infinita, hidromasaje, sala multimedia y vistas al Caribe. Shell Beach queda a pie. Hay escaleras, no presupongas accesibilidad sin barreras. Para 12–14 personas confirma camas reales, incluido posible sofá cama en despacho. Confirma personal, limpieza, carrito y traslado CIW.",
+      "Seis dormitorios en varios niveles; confirma plazas reales.",
+      "Para casa amplia con piscina y panorama marítimo.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Qué hoteles y villas incluye la selección?",
+      "Mandarin Oriental y Soho Beach House son hoteles. Big Blue Ocean y Silver Turtle son casas de Canouan Estate de alquiler independiente."
+    ],
+    [
+      "¿Cómo llegar desde Europa?",
+      "A menudo vía Barbados y vuelo regional o chárter independiente a CIW. Confirma entrada, equipaje y conexiones; traslado local de villa no incluye vuelo."
+    ],
+    [
+      "¿Soho y Mandarin Oriental están en la misma playa?",
+      "No, Mandarin Oriental en Godahl Beach al este, Soho en Grand Bay al oeste, Shell Beach en otra zona de villas."
+    ],
+    [
+      "¿Big Blue Ocean tiene nueve dormitorios?",
+      "La casa tiene cinco. Para nueve reserva también Little Blue Ocean; ambas casas deben constar en la confirmación."
+    ],
+    [
+      "¿Silver Turtle conviene a niños y mayores?",
+      "Villa de seis dormitorios en varios niveles con piscina exterior. Valora escaleras, barandillas, camas y movilidad de cada huésped."
+    ],
+    [
+      "¿Todos los servicios Invisible Key son gratuitos?",
+      "No, acceso a instalaciones participantes según condiciones, no comidas, spa o yates ilimitados gratis. Confirma inclusiones y reservas con anfitrión."
+    ],
+    [
+      "¿Alojamiento o yate ya disponibles?",
+      "No. Compara en Bosphoras; propuestas de alojamiento, vuelo o yate requieren confirmación del proveedor autorizado."
+    ]
+  ],
+  "photoCaptions": [
+    "Canouan Estate y cresta sobre bahías",
+    "Godahl Beach y mar de las Granadinas",
+    "Arrecife de Canouan desde el aire",
+    "Paseo en grupo por Canouan",
+    "Pueblo isleño y cultura local",
+    "Marina Sandy Lane Yacht Club al anochecer",
+    "Capilla histórica Canouan",
+    "Sendero natural cerca de Mount Royal",
+    "Luz de tarde y descanso en Canouan"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Mandarin Oriental y Godahl Beach desde el aire",
+      "Huésped Mandarin Oriental junto al Atlántico",
+      "Cócteles en Tides Bar Mandarin Oriental"
+    ],
+    [
+      "Muelle Soho Beach House sobre Grand Bay",
+      "Interior de habitación Soho Beach House",
+      "Cena junto a playa Soho Beach House al atardecer"
+    ],
+    [
+      "Piscina privada y terraza panorámica Big Blue Ocean",
+      "Arquitectura Big Blue Ocean sobre Shell Beach",
+      "Terraza de piscina Big Blue Ocean al anochecer"
+    ],
+    [
+      "Tumbonas y terraza marina Silver Turtle",
+      "Piscina infinita Silver Turtle con vistas al mar",
+      "Piscina Silver Turtle con luz de tarde"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Canouan: hoteles de lujo y villas de las Granadinas",
+  "hotelSeoTitle": "Hoteles y villas de Canouan: Mandarin Oriental, Soho y Canouan Estate",
+  "seoDescription": "Compara dos hoteles y dos villas privadas en Canouan, Godahl Beach, Grand Bay y Shell Beach. Descubre distribuciones y vuelos a las Granadinas."
+}

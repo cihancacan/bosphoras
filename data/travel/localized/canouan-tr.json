@@ -1,0 +1,163 @@
+{
+  "name": "Canouan",
+  "country": "Saint Vincent ve Grenadinler",
+  "eyebrow": "Canouan · Grenadinler'in plajları ve özel villalar",
+  "heading": "Canouan'da nerede kalınır? İki otel ve iki özel villa",
+  "intro": "Godahl Beach, Grand Bay ve Shell Beach, Canouan'ın farklı yüzlerini gösterir. Mandarin Oriental ve Soho Beach House otel hizmetleri, Big Blue Ocean ve Silver Turtle ise Canouan Estate bünyesinde bağımsız konutlar sunar.",
+  "editorial": "Canouan, Saint Vincent ve Grenadinler'in bir parçasıdır ve CIW havalimanına sahiptir. Uluslararası yolcular sıklıkla Barbados üzerinden bölgesel uçuş veya charter ile gelir. Bagaj ve aktarmaları önceden planlayın; yerel havalimanı karşılaması adalar arası uçuşu kapsamaz.\n\nMandarin Oriental, Godahl Beach'te okyanus manzaralı süitler, Patio Villas ve Lagoon Villas sunar. Havuzlar ve yaşam alanları kategoriye göre değişir. Batıdaki Grand Bay'de Soho Beach House üç kıyı binasında 40 oda, restoranlar, spa ve kulüp atmosferi sunar. Sezon ve misafir erişim kurallarını doğrulayın.\n\nShell Beach çevresinde Canouan Estate özel evleri bulunur. Big Blue Ocean beş yatak odası, sonsuzluk havuzu, jakuzi ve plaja özel patika sunar. Dokuz yatak odası ancak komşu Little Blue Ocean ile birlikte kiralanırsa sağlanır. Silver Turtle altı yatak odalı ayrı ev olup havuz, jakuzi ve medya odasına sahiptir. Çok katlı plan çocuklar ve hareket kısıtlı misafirler için dikkat gerektirir.\n\nInvisible Key programı belirli tesislere erişim sağlar; ücretsiz restoran, bakım veya yat anlamına gelmez. Villa personeli, golf arabası ve CIW transferi rezervasyonda doğrulanır. Tobago Cays gezisi için lisanslı kaptan seçin, hava ve koruma alanı kurallarına uyun.",
+  "hotelIntro": "İki bağımsız otel ve ayrı kiralanan iki Canouan Estate evi: kapsamlı resort hizmeti ile özel konut arasında seçim.",
+  "areas": [
+    [
+      "Godahl Beach",
+      "Açık renkli kum, yeşil tepeler ve restoranları rezervasyonlu Mandarin Oriental.",
+      "Özel villa havuzu her süitin donanımı değildir."
+    ],
+    [
+      "Grand Bay ve köy",
+      "Batıda Soho Beach House ve daha canlı ada köyü.",
+      "Soho erişimi kulüp kurallarına bağlıdır."
+    ],
+    [
+      "Shell Beach ve villalar",
+      "Bağımsız evlerin yakınında korunaklı plaj; Big Blue Ocean özel patikaya, Silver Turtle yürüyüş erişimine sahiptir.",
+      "Villanın eğimlerini ve merdivenlerini kontrol edin."
+    ],
+    [
+      "Mount Royal ve sırt",
+      "Grenadinler panoramalı yeşil tepeler.",
+      "Hava ve fiziksel kapasiteye göre rota seçin."
+    ],
+    [
+      "Sandy Lane Yacht Club ve deniz rotaları",
+      "Marina Tobago Cays dahil olası gezilerin çıkış noktasıdır.",
+      "Geziler hava ve lisanslı operatörlere bağlıdır."
+    ]
+  ],
+  "experiences": [
+    [
+      "Godahl Beach'te gün doğumu",
+      "Resort erişim kurallarına uyarak doğu kıyısında sabah ışığını karşılayın."
+    ],
+    [
+      "Grand Bay'de öğle yemeği",
+      "Batı kıyısını keşfedin ve restoranı önceden ayırtın."
+    ],
+    [
+      "Shell Beach yakınında villa günü",
+      "Özel havuzunuzda dinlenin ve doğrulanmış plaj erişimini kullanın."
+    ],
+    [
+      "Mount Royal panoraması",
+      "Hava koşullarına uygun rehberlik ve yürüyüş planlayın."
+    ],
+    [
+      "Tobago Cays'e deniz gezisi",
+      "Lisanslı kaptan seçin ve korunan deniz alanı kurallarına uyun."
+    ]
+  ],
+  "checks": [
+    "Seçkide iki otel ve iki Canouan Estate villası vardır.",
+    "CIW bölgesel uçuşu ayrı doğrulanır.",
+    "Godahl Beach, Grand Bay ve Shell Beach farklı kıyılardır.",
+    "Merdiven, havuz, yatak ve çocuk kapasitesini kontrol edin.",
+    "Soho Beach House sezonunu doğrulayın.",
+    "Invisible Key belirli erişim sunar; tüm hizmetler ücretsiz değildir.",
+    "Fiyat, konaklama ve yat müsaitliğini sağlayıcı doğrular."
+  ],
+  "hotels": [
+    [
+      "Godahl Beach · Doğu kıyısı",
+      "Mandarin Oriental, Canouan geniş okyanus manzaralı süitleri ayrı Patio Villas ve Lagoon Villas ile birleştirir. Restoranlar, wellness ve özenli hizmet kapsamlı resort tatiline uygundur. Özel havuz belirli villalarda vardır; manzara, teras ve yatak odaları farklıdır. Aile seyahati öncesinde yatak, plaj, havuz ve CIW transferini doğrulayın.",
+      "Havuzlu villalar standart süitlerden farklıdır.",
+      "Godahl Beach'te kapsamlı otel hizmeti için.",
+      ""
+    ],
+    [
+      "Grand Bay · Batı kıyısı",
+      "Soho Beach House Canouan kıyıdaki üç binada 40 oda, restoranlar, spa ve fitness sunar. Kulüp atmosferi daha resmî Mandarin Oriental'dan ayrılır. Bunlar özel havuzlu villa değil otel odalarıdır. Üye ve diğer misafir erişimini, çocuk koşullarını, restoranları ve sezonu doğrulayın. Varış desteği Barbados uçuşunun dahil olduğu anlamına gelmez.",
+      "Sezon, kulüp erişimi ve çocuk kurallarını kontrol edin.",
+      "Grand Bay'de sosyal ve kulüp atmosferi için.",
+      ""
+    ],
+    [
+      "Canouan Estate · Shell Beach yakınında",
+      "Big Blue Ocean beş yatak odalı, çok katlı, sonsuzluk havuzlu, jakuzili ve Shell Beach'e özel patikalı bağımsız evdir. Konaklama açıklamasında karşılama personeli, temizlik, golf arabası ve yerel havalimanı transferi belirtilir; çalışma saatleri ve hizmet kapsamını doğrulayın. Komşu Little Blue Ocean ile ortak kiralamada iki evde dokuz yatak odası elde edilir. Komşu ev yalnızca rezervasyonda açıkça belirtilirse dahildir.",
+      "Beş yatak odası; dokuz için Little Blue Ocean ayrıca eklenmelidir.",
+      "Shell Beach'e özel erişimli bağımsız ev için.",
+      ""
+    ],
+    [
+      "Canouan Estate · Shell Beach'e yürüyüş mesafesi",
+      "Silver Turtle, birden fazla seviyede altı yatak odalı, sonsuzluk havuzu, jakuzi, medya odası ve Karayip manzaralı ayrı villadır. Shell Beach'e yürünebilir. Merdivenler nedeniyle engelsiz erişim varsayılmamalıdır. 12–14 kişilik grup için çalışma odasındaki olası kanepe dahil gerçek yatak düzenini doğrulayın. Personel, temizlik, golf arabası ve CIW transferini kontrol edin.",
+      "Altı yatak odası farklı seviyelerdedir; gerçek yatak kapasitesini doğrulayın.",
+      "Havuzlu, panoramik geniş ev için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Hangi otel ve villalar seçkide?",
+      "Mandarin Oriental ve Soho Beach House iki otel; Big Blue Ocean ve Silver Turtle ayrı kiralanan Canouan Estate evleridir."
+    ],
+    [
+      "Avrupa'dan nasıl gidilir?",
+      "Genellikle Barbados üzerinden CIW'ye ayrı bölgesel uçuş veya charter. Giriş, bagaj ve aktarmaları doğrulayın; yerel villa transferi uçuşu kapsamaz."
+    ],
+    [
+      "Soho ve Mandarin Oriental aynı plajda mı?",
+      "Hayır, Mandarin Oriental doğuda Godahl Beach, Soho batıda Grand Bay, Shell Beach ise ayrı villa bölgesidir."
+    ],
+    [
+      "Big Blue Ocean dokuz yatak odalı mı?",
+      "Tek başına beş odalıdır. Dokuz için komşu Little Blue Ocean da rezerve edilmelidir; iki ev de onayda belirtilmelidir."
+    ],
+    [
+      "Silver Turtle çocuklara ve yaşlılara uygun mu?",
+      "Çok katlı, açık havuzlu altı yatak odalı villadır. Merdivenleri, korkulukları, yatakları ve misafirlerin hareket kabiliyetini değerlendirin."
+    ],
+    [
+      "Invisible Key tüm hizmetleri ücretsiz mi sunar?",
+      "Hayır, katılımcı tesislere belirli erişim sağlar; sınırsız ücretsiz yemek, spa veya yat değildir. Dahil hizmet ve randevuyu ev sahibiyle doğrulayın."
+    ],
+    [
+      "Konaklama veya yat müsaitliği garanti mi?",
+      "Hayır. Bosphoras'ta karşılaştırın; konaklama, uçuş ve yat tekliflerini yetkili sağlayıcı doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Canouan Estate ve koylar üzerindeki dağ sırtı",
+    "Godahl Beach ve Grenadinler denizi",
+    "Canouan resifi havadan",
+    "Canouan grup gezisi",
+    "Ada köyü ve yerel kültür",
+    "Alacakaranlıkta Sandy Lane Yacht Club",
+    "Canouan tarihî şapeli",
+    "Mount Royal yakınında doğa patikası",
+    "Canouan akşam ışığı ve dinlenme"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Mandarin Oriental ve Godahl Beach havadan",
+      "Mandarin Oriental misafiri Atlantik kıyısında",
+      "Mandarin Oriental Tides Bar kokteylleri"
+    ],
+    [
+      "Grand Bay üzerinde Soho Beach House iskelesi",
+      "Soho Beach House oda içi",
+      "Gün batımında Soho Beach House plaj yemeği"
+    ],
+    [
+      "Big Blue Ocean özel havuzu ve panoramik terası",
+      "Shell Beach üzerinde Big Blue Ocean mimarisi",
+      "Alacakaranlıkta Big Blue Ocean havuz terası"
+    ],
+    [
+      "Silver Turtle şezlongları ve deniz terası",
+      "Silver Turtle deniz manzaralı sonsuzluk havuzu",
+      "Akşam ışığında Silver Turtle havuzu"
+    ]
+  ],
+  "seoTitle": "Canouan'da Nerede Kalınır? Grenadinler Lüks Otelleri ve Villaları",
+  "hotelSeoTitle": "Canouan Otelleri ve Villaları: Mandarin Oriental, Soho ve Canouan Estate",
+  "seoDescription": "Canouan'da iki otel ve iki özel villayı karşılaştırın. Godahl Beach, Grand Bay, Shell Beach, konut planları ve Grenadinler uçuşları."
+}
