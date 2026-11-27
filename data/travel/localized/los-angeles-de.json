@@ -1,0 +1,167 @@
+{
+  "name": "Los Angeles",
+  "country": "Vereinigte Staaten",
+  "eyebrow": "Los Angeles · Gärten, Hollywood und Pazifikküste",
+  "heading": "Wo in Los Angeles übernachten? Beverly Hills, Hollywood und Santa Monica",
+  "intro": "Gärten in Bel-Air, legendäre Hotels in Beverly Hills, Abende am Sunset Boulevard oder Frühstück am Pazifik: Vergleichen Sie fünf Viertel und vier ausgewählte Hotels.",
+  "editorial": "Los Angeles besteht aus mehreren Zentren, nicht aus einer einzigen fußläufigen Innenstadt. Zwischen Bel-Air, Rodeo Drive, Sunset Strip und Santa Monica können erhebliche Fahrzeiten liegen.\n\nDas Hotel Bel-Air liegt in einem ruhigen Wohngebiet mit Gärten. Es ist kein Strandhotel; Rodeo Drive liegt nicht bequem zu Fuß erreichbar. The Beverly Hills Hotel am Sunset Boulevard, bekannt als Pink Palace, verbindet Hollywood-Geschichte mit Gärten und Bungalows. Zimmer im Hauptgebäude und Bungalows mit privaten Terrassen oder Pools sind unterschiedliche Kategorien. Das Sunset Tower Hotel in West Hollywood ist für Art-déco-Architektur, Restaurants und den Panoramablick bestimmter Suiten bekannt. Shutters on the Beach in Santa Monica erinnert an ein elegantes kalifornisches Strandhaus. Ocean Front und Ocean View sind nicht dasselbe.\n\nBel-Air und Beverly Hills bieten ruhige Rückzugsorte, West Hollywood Restaurants und Abendleben, Santa Monica den Pazifik und Griffith Park Stadtpanoramen. Prüfen Sie die Öffnungszeiten des Getty Center und planen Sie Malibu als eigenen Ausflug. Transfers von LAX oder Burbank hängen vom Verkehr ab. Familien sollten Belegung, Zusatzbetten, Verbindungstüren und Poolregeln prüfen. Vergleichen Sie Steuern, Parkgebühren und Stornobedingungen. Aktuelle Preise und Verfügbarkeit bestätigt der Buchungspartner.",
+  "hotelIntro": "Hotel Bel-Air, The Beverly Hills Hotel, Sunset Tower Hotel und Shutters on the Beach: vier Adressen zwischen Gärten, Hollywood-Geschichte, Art déco und Pazifikküste.",
+  "areas": [
+    [
+      "Bel-Air und Brentwood",
+      "Grüne Wohnhügel, Gärten und Zugang zum Getty Center; ruhige Lage abseits des Nachtlebens.",
+      "Ein Fahrzeug ist häufig sinnvoll; Aussicht und Außenbereiche hängen von der Zimmerkategorie ab."
+    ],
+    [
+      "Beverly Hills und Rodeo Drive",
+      "Historische Hotels, Boutiquen, Restaurants und palmengesäumte Straßen; günstig für Termine im Westen der Stadt.",
+      "Bungalows, Privatpools und Terrassen sind nur in bestimmten Kategorien verfügbar."
+    ],
+    [
+      "West Hollywood und Sunset Strip",
+      "Art-déco-Architektur, bekannte Restaurants und lebhafte Abende am Sunset Boulevard.",
+      "Für Ruhe sollten Sie Etage, Zimmerausrichtung und Veranstaltungen prüfen."
+    ],
+    [
+      "Santa Monica und Pazifikküste",
+      "Breite Sandstrände, Radwege und Frühstück am Meer.",
+      "Meerblick und direkte Meerlage sind unterschiedliche Zimmerkategorien."
+    ],
+    [
+      "Hollywood Hills und Griffith Park",
+      "Wanderwege, Griffith Observatory, Filmgeschichte und Stadtpanoramen.",
+      "Berücksichtigen Sie Öffnungszeiten, Parkplätze, Wetter und Besucherandrang."
+    ]
+  ],
+  "experiences": [
+    [
+      "Getty Center in den Hügeln",
+      "Entdecken Sie Architektur, Ausstellungen und Gärten; prüfen Sie Öffnungszeiten und Eintrittsbedingungen."
+    ],
+    [
+      "Abendlicht am Griffith Observatory",
+      "Bei geeignetem Wetter und Zugang genießen Sie Sonnenuntergang und die Lichter von Downtown."
+    ],
+    [
+      "Ein Abend am Sunset Boulevard",
+      "Wählen Sie Restaurant und Viertel vorab; Essen und Transfers sind nicht automatisch inklusive."
+    ],
+    [
+      "Ein Morgen am Pazifik in Santa Monica",
+      "Spazieren Sie am Ufer, entspannen Sie am Strand und besuchen Sie früh ein Café."
+    ],
+    [
+      "Ausflug nach Malibu",
+      "Planen Sie Zeit für Strände und Aussichtspunkte ein; prüfen Sie Straßen und Küstenzugang."
+    ]
+  ],
+  "checks": [
+    "Wählen Sie Bel-Air, Beverly Hills, West Hollywood, Santa Monica oder die Umgebung von Griffith Park.",
+    "Prüfen Sie Zimmerart, Aussicht, Terrasse, Bungalowkategorie und Belegung.",
+    "Vergleichen Sie Steuern, Parkkosten, Zusatzgebühren und Stornobedingungen.",
+    "Planen Sie ausreichend Zeit für LAX-Transfers und Fahrten zwischen Hotel, Strand und Hügeln ein.",
+    "Familien sollten Verbindungstüren, Betten, Poolregeln und Belegung prüfen.",
+    "Beachten Sie Wetter, Luftqualität und Einschränkungen an Wanderwegen oder der Küste.",
+    "Transfers, Restaurants und Eintrittskarten sind nicht automatisch in der Buchung enthalten."
+  ],
+  "hotels": [
+    [
+      "Bel-Air · Stone Canyon Road",
+      "Hotel Bel-Air liegt in Gärten an einer ruhigen Canyonstraße und bietet eine private Wohnatmosphäre. Terrassen und Innenhöfe variieren.",
+      "Prüfen Sie Zimmerkategorie, Grundriss, Aussicht und eingeschlossene Leistungen.",
+      "Für Privatsphäre, Gärten und Ruhe.",
+      "Die Lage abseits der Hauptstraßen eignet sich für einen Rückzug; private Außenflächen und Pools hängen von der konkreten Kategorie ab."
+    ],
+    [
+      "Beverly Hills · 9641 Sunset Boulevard",
+      "Das Pink Palace verbindet Hollywood-Geschichte, Gärten, den bekannten Pool und die Polo Lounge. Zimmer und Bungalows unterscheiden sich.",
+      "Prüfen Sie Gebäude oder Bungalow, Belegung, Poolregeln und Kategorie.",
+      "Für Hollywood-Geschichte, Restaurants und Poolurlaub.",
+      "Wählen Sie das Hotel für Beverly Hills statt Strandnähe. Private Innenhöfe und Pools sind nicht in jeder Kategorie enthalten."
+    ],
+    [
+      "West Hollywood · Sunset Boulevard",
+      "Das Sunset Tower Hotel steht für Art déco, elegante Innenräume und eine lebhafte Atmosphäre. Panoramablicke sind kategorieabhängig.",
+      "Prüfen Sie Etage, Aussicht und Veranstaltungskalender.",
+      "Für Architektur und Abendleben in West Hollywood.",
+      "Restaurant- und Veranstaltungsreservierungen können separat erforderlich sein. Ruhe und Stadtblick sind nicht garantiert."
+    ],
+    [
+      "Santa Monica · 1 Pico Boulevard",
+      "Shutters on the Beach vermittelt das Gefühl eines kalifornischen Strandhauses. Ocean Front, Ocean View und Partial Ocean View unterscheiden sich.",
+      "Prüfen Sie direkte Meerlage, Balkon, Belegung und Zusatzkosten.",
+      "Für Reisende, die den Pazifik dem Hollywood-Nachtleben vorziehen.",
+      "Die Ocean Front Suite blickt direkt auf den Pazifik; Aussicht, Balkon und Grundriss anderer Kategorien können abweichen."
+    ]
+  ],
+  "faq": [
+    [
+      "Wo sollte man bei der ersten Reise nach Los Angeles übernachten?",
+      "Beverly Hills für Hotels und Shopping, Bel-Air für Gärten, West Hollywood für Restaurants und Nachtleben, Santa Monica für den Pazifik. Hollywood und Griffith eignen sich für Ausflüge."
+    ],
+    [
+      "Liegt Hotel Bel-Air am Strand?",
+      "Nein. Es liegt an der 701 Stone Canyon Road in einem ruhigen Canyon. Für Santa Monica oder Malibu ist ein Fahrzeug sinnvoll."
+    ],
+    [
+      "Was unterscheidet Hotel Bel-Air und The Beverly Hills Hotel?",
+      "Beide gehören zur Dorchester Collection. Bel-Air bietet Gartenruhe, Beverly Hills historische Atmosphäre, Bungalows und Polo Lounge."
+    ],
+    [
+      "Sind alle Zimmer des Beverly Hills Hotel Bungalows?",
+      "Nein. Es gibt Zimmer und Suiten im Hauptgebäude sowie separate Bungalowkategorien. Terrassen und Privatpools hängen von der Kategorie ab."
+    ],
+    [
+      "Ist Sunset Tower Hotel für einen ruhigen Urlaub geeignet?",
+      "Es liegt am lebhaften Sunset Boulevard. Prüfen Sie Etage, Ausrichtung und Veranstaltungen; Ruhe und Panorama sind nicht garantiert."
+    ],
+    [
+      "Haben alle Zimmer im Shutters on the Beach Meerblick?",
+      "Nein. Ocean Front, Ocean View, Partial Ocean View und weitere Kategorien unterscheiden sich. Direkter Meerblick und Balkon sind nicht immer garantiert."
+    ],
+    [
+      "Wie lange dauert die Fahrt von LAX oder Beverly Hills nach Santa Monica?",
+      "Es gibt keine feste Fahrzeit. Verkehr, Veranstaltungen, Tageszeit und Hoteladresse beeinflussen die Dauer."
+    ],
+    [
+      "Wie kann ich diese Hotels buchen?",
+      "Vergleichen Sie Preise über Bosphoras. Verfügbarkeit, Zahlung, Änderungen, Stornierung und Erstattung bestätigt der Buchungspartner."
+    ]
+  ],
+  "photoCaptions": [
+    "Griffith Observatory über Los Angeles",
+    "Getty Center und die Hügel von Los Angeles",
+    "Palmengesäumte Straßen in Beverly Hills",
+    "Sunset Boulevard in West Hollywood",
+    "Pazifikküste in Santa Monica",
+    "Griffith Park und Hollywood Hills",
+    "Nächtliche Lichter von Downtown Los Angeles",
+    "Kanäle von Venice",
+    "Strand und Pier in Malibu"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Privatpool der Presidential Suite im Hotel Bel-Air",
+      "Terrasse der Grace Kelly Suite",
+      "Pool der Stone Canyon Suite"
+    ],
+    [
+      "Bekannter Pool des Beverly Hills Hotel",
+      "Innenhof und Pool von Bungalow 5",
+      "Eingang mit rotem Teppich"
+    ],
+    [
+      "Foto des Sunset Tower Hotel",
+      "Ansicht des Sunset Tower Hotel",
+      "Aufnahme des Sunset Tower Hotel"
+    ],
+    [
+      "Foto von Shutters on the Beach",
+      "Schlafzimmer der Pacific View Suite",
+      "Ansicht von Shutters on the Beach"
+    ]
+  ],
+  "seoTitle": "Los Angeles: Wo übernachten? Beste Viertel und Luxushotels",
+  "hotelSeoTitle": "Die besten Luxushotels in Los Angeles: Bel-Air und Beverly Hills",
+  "seoDescription": "Vergleichen Sie Bel-Air, Beverly Hills, West Hollywood und Santa Monica. Entdecken Sie vier Luxushotels in Los Angeles und praktische Reisetipps."
+}
