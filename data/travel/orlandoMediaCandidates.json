@@ -126,29 +126,91 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "scene-5",
-        "sourcePage": "https://media.universalparksusa.com/photos/?park=orlando",
-        "sourceResolvedUrl": "https://media.universalparksusa.com/wp-content/uploads/2025/05/Epic-Nighttime-Celebration_The-WWoHP.jpeg",
-        "sourceRequestedUrl": "https://media.universalparksusa.com/wp-content/uploads/2025/05/Epic-Nighttime-Celebration_The-WWoHP.jpeg",
-        "originalAlt": "",
-        "originalCaption": "Epic Nighttime Celebration - The Wizarding World of Harry Potter – Ministry of Magic",
+        "key": "scene-6",
+        "sourcePage": "https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/magic-kingdom/",
+        "sourceResolvedUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,g_xy_center,h_650,q_65,w_980,x_1450,y_4755/v1/clients/orlandofl/MIB_P_MagicKingdom_Castle_Williams_2750_082b0602-d928-44c8-b297-8f20a78c5d31.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,g_xy_center,h_650,q_65,w_980,x_1450,y_4755/v1/clients/orlandofl/MIB_P_MagicKingdom_Castle_Williams_2750_082b0602-d928-44c8-b297-8f20a78c5d31.jpg",
+        "originalAlt": "Mother and son in front of Cinderella castle at Disney's Magic Kingdom",
+        "originalCaption": "",
         "credit": "Visit Orlando",
         "publisher": "Visit Orlando",
         "hotel": null,
-        "localPath": "/images/travel/orlando-premium/destination/scene-5.webp",
-        "sourceSHA256": "c11336b8449aca205b143240efeddcb75960d1c357bf0d6fae21261f09683372",
-        "webpSHA256": "dcdc0a8691ea382078235f0c8501f89a3dd0f570ae24f03201cf32d4709d421b",
+        "localPath": "/images/travel/orlando-premium/destination/scene-6.webp",
+        "sourceSHA256": "ee095ca8231fc1ab61fa4cca65f592e2cd013e75882fe6be932a6f31fa7360ad",
+        "webpSHA256": "5feb485ff28836609ef3f67b689893fbd20121572ac87f11273966eec6f9367b",
         "sourcePixels": [
-          1117,
-          789
+          980,
+          650
         ],
         "webpPixels": [
-          1117,
-          789
+          980,
+          650
         ],
-        "webpBytes": 95574,
-        "pixelFingerprint": "71f3f1c004a4f4bc",
-        "candidateSubject": "celebration|kissimmee|old town",
+        "webpBytes": 72404,
+        "pixelFingerprint": "9f0d059699191b1a",
+        "candidateSubject": "cinderella castle|magic kingdom",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-7",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Universal_City_Walk_Orlando.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Universal_City_Walk_Orlando.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Universal_City_Walk_Orlando.jpg",
+        "originalAlt": "Universal CityWalk Orlando",
+        "originalCaption": "Wikimedia Commons / CC BY-SA 2.0 / author to verify",
+        "credit": "Wikimedia Commons / CC BY-SA 2.0 / author to verify",
+        "publisher": "Visit Orlando",
+        "hotel": null,
+        "localPath": "/images/travel/orlando-premium/destination/scene-7.webp",
+        "sourceSHA256": "79f56bec641d0dfe8bafda3c48430185304c9058a80c8086f621fa1839edd59e",
+        "webpSHA256": "4c806f4c1496fdda70fba20607dc106e0fd759b51a53b6471fc3ab600787546f",
+        "sourcePixels": [
+          2048,
+          1504
+        ],
+        "webpPixels": [
+          1157,
+          850
+        ],
+        "webpBytes": 175552,
+        "pixelFingerprint": "647fed2c544e6628",
+        "candidateSubject": "universal citywalk|universal studios florida",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-8",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Orlando_%22Eye%22_Ferris_Wheel_03.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Orlando_%22Eye%22_Ferris_Wheel_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Orlando_%22Eye%22_Ferris_Wheel_03.jpg",
+        "originalAlt": "Orlando Eye on International Drive",
+        "originalCaption": "ADellaGuardia / CC0 1.0 / resized WebP",
+        "credit": "ADellaGuardia / CC0 1.0 / resized WebP",
+        "publisher": "Visit Orlando",
+        "hotel": null,
+        "localPath": "/images/travel/orlando-premium/destination/scene-8.webp",
+        "sourceSHA256": "63ec2a2684707d0bc19401b645f08caa38aa130fd9d42d35f1d3bf47d6ee1e09",
+        "webpSHA256": "d314e89e6406296f2963cae1148dce7dd4710c3dd020807452f2773d9a0dc6c7",
+        "sourcePixels": [
+          5312,
+          2988
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 190128,
+        "pixelFingerprint": "6327331315556931",
+        "candidateSubject": "icon park|orlando eye|international drive",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -158,6 +220,99 @@
       }
     ],
     "hotels": [
+      {
+        "key": "four-seasons-1",
+        "sourcePage": "https://www.hotels.com/ho449206/four-seasons-resort-orlando-at-walt-disney-world-resort-lake-buena-vista-united-states-of-america/",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/8000000/7380000/7374500/7374428/3e74ad68.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/8000000/7380000/7374500/7374428/3e74ad68.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Four Seasons Orlando exterior entrance and courtyard at dusk",
+        "originalCaption": "Hotels.com / Four Seasons Resort Orlando",
+        "credit": "Hotels.com / Four Seasons Resort Orlando",
+        "publisher": "Four Seasons Resort Orlando at Walt Disney World Resort",
+        "hotel": "Four Seasons Resort Orlando at Walt Disney World Resort",
+        "localPath": "/images/travel/orlando-premium/four-seasons/four-seasons-1.webp",
+        "sourceSHA256": "17651797c619e9eb6cc70ccd32e49028cfd76d737d7977b3a6f2ecedfc41d9fe",
+        "webpSHA256": "029b5a1a679a4beb182e42c35315ac3bd10e68b9e3829ef77e6136a21100e8b7",
+        "sourcePixels": [
+          1280,
+          844
+        ],
+        "webpPixels": [
+          1280,
+          844
+        ],
+        "webpBytes": 133204,
+        "pixelFingerprint": "7571717171c868c0",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "four-seasons-2",
+        "sourcePage": "https://www.hotels.com/ho449206/four-seasons-resort-orlando-at-walt-disney-world-resort-lake-buena-vista-united-states-of-america/",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/8000000/7380000/7374500/7374428/935fe96e.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/8000000/7380000/7374500/7374428/935fe96e.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Four Seasons Orlando Resort King guest room",
+        "originalCaption": "Hotels.com / Four Seasons Resort Orlando",
+        "credit": "Hotels.com / Four Seasons Resort Orlando",
+        "publisher": "Four Seasons Resort Orlando at Walt Disney World Resort",
+        "hotel": "Four Seasons Resort Orlando at Walt Disney World Resort",
+        "localPath": "/images/travel/orlando-premium/four-seasons/four-seasons-2.webp",
+        "sourceSHA256": "41c3823c992595490c629bf761780cc6340bec5426423902a37ff93764d2c371",
+        "webpSHA256": "25d74987dae2a1d715b3ac4ca63b04ae147b8b63620e3d265cf19fe9e8f0d8bf",
+        "sourcePixels": [
+          1280,
+          1024
+        ],
+        "webpPixels": [
+          1062,
+          850
+        ],
+        "webpBytes": 200922,
+        "pixelFingerprint": "476e4ccd64e0c0e0",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "four-seasons-3",
+        "sourcePage": "https://www.hotels.com/ho449206/four-seasons-resort-orlando-at-walt-disney-world-resort-lake-buena-vista-united-states-of-america/",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/8000000/7380000/7374500/7374428/82df4052.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/8000000/7380000/7374500/7374428/82df4052.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Four Seasons Orlando outdoor pool and waterfall",
+        "originalCaption": "Hotels.com / Four Seasons Resort Orlando",
+        "credit": "Hotels.com / Four Seasons Resort Orlando",
+        "publisher": "Four Seasons Resort Orlando at Walt Disney World Resort",
+        "hotel": "Four Seasons Resort Orlando at Walt Disney World Resort",
+        "localPath": "/images/travel/orlando-premium/four-seasons/four-seasons-3.webp",
+        "sourceSHA256": "f7167ef76ce754f785e5768f8122c0babb2a1f6a61e8c0fe1a269a88cb4d70f0",
+        "webpSHA256": "a4f33112d3edfefafc9c0ca86153d190117b22e1a56ec5df5c3ac292f47abf7e",
+        "sourcePixels": [
+          1280,
+          852
+        ],
+        "webpPixels": [
+          1277,
+          850
+        ],
+        "webpBytes": 235790,
+        "pixelFingerprint": "fc7a3cecb162e9d9",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
       {
         "key": "waldorf-1",
         "sourcePage": "https://www.waldorfastoriaorlando.com/accommodations/suites/",
@@ -411,12 +566,7 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 5
-      },
-      {
-        "group": "four-seasons",
-        "expected": 3,
-        "found": 0
+        "found": 7
       },
       {
         "group": "waldorf",
@@ -426,72 +576,20 @@
     ],
     "errors": [
       {
-        "page": "https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/magic-kingdom/",
-        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/magic-kingdom/"
-      },
-      {
-        "page": "https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/epic-universe/",
-        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/epic-universe/"
-      },
-      {
-        "page": "https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/universal-studios-florida/",
-        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/universal-studios-florida/"
-      },
-      {
-        "page": "https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/",
-        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/"
-      },
-      {
-        "page": "https://www.visitorlando.com/blog/post/reasons-to-visit-icon-park-orlando/",
-        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/blog/post/reasons-to-visit-icon-park-orlando/"
-      },
-      {
-        "page": "https://www.visitorlando.com/blog/post/insider-guide-epic-universe/",
-        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/blog/post/insider-guide-epic-universe/"
-      },
-      {
-        "page": "https://www.visitorlando.com/plan/get-to-know-orlando/interactive-map-city-guide/",
-        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/plan/get-to-know-orlando/interactive-map-city-guide/"
-      },
-      {
-        "page": "https://www.visitorlando.com/things-to-do/beyond-theme-parks/neighborhoods/",
-        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/beyond-theme-parks/neighborhoods/"
-      },
-      {
-        "page": "https://www.visitorlando.com/things-to-do/beyond-theme-parks/neighborhoods/winter-park/",
-        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/beyond-theme-parks/neighborhoods/winter-park/"
-      },
-      {
-        "page": "https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/disney-springs/",
-        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/disney-springs/"
-      },
-      {
-        "page": "https://www.visitorlando.com/things-to-do/beyond-theme-parks/attractions/",
-        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/beyond-theme-parks/attractions/"
-      },
-      {
-        "page": "https://www.visitorlando.com/things-to-do/beyond-theme-parks/shopping/",
-        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/beyond-theme-parks/shopping/"
-      },
-      {
-        "page": "https://www.visitorlando.com/things-to-do/free-things-to-do/",
-        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/free-things-to-do/"
-      },
-      {
-        "page": "https://www.visitorlando.com/",
-        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/"
-      },
-      {
-        "url": "https://media.universalparksusa.com/photos/universals-holiday-parade-featuring-macys-at-universal-studios-florida/",
-        "error": "cannot identify image file <_io.BytesIO object at 0x74598ef73f10>"
-      },
-      {
-        "url": "https://media.universalparksusa.com/epic-universe/",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7459a0a5f560>"
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/022306-CelebrationFL11.jpg",
+        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/b/b2/022306-CelebrationFL11.jpg?utm_source=commons.wikimedia.org&utm_campaign="
       },
       {
         "url": "https://media.universalparksusa.com/photos/epic-nighttime-celebration-the-wizarding-world-of-harry-potter-ministry-of-magic/",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7459a0e37150>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x71f003ac6930>"
+      },
+      {
+        "url": "https://media.universalparksusa.com/photos/epic-nighttime-celebration-super-nintendo-world-2/",
+        "error": "cannot identify image file <_io.BytesIO object at 0x71eff2e1c4a0>"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Islands_of_adventure.jpg",
+        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/1/15/Islands_of_adventure.jpg?utm_source=commons.wikimedia.org&utm_campaign=in"
       },
       {
         "page": "https://www.travelandleisure.com/four-seasons-resort-orlando-at-disney-world-review-8702769",
@@ -506,55 +604,55 @@
         "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/orlando/"
       },
       {
-        "url": "https://press.fourseasons.com/news-releases/2026/florida-residents-offer",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7459a0d98540>"
-      },
-      {
-        "url": "https://press.fourseasons.com/orlando/hotel-news/2026/festive-season-spa-experiences",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7459a0d98d60>"
-      },
-      {
-        "url": "https://press.fourseasons.com/orlando/hotel-news/2026/festive-season",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7459aa4337e0>"
-      },
-      {
-        "url": "https://press.fourseasons.com/orlando/hotel-news/2026/summer-programming",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7459a02eb3d0>"
-      },
-      {
-        "url": "https://press.fourseasons.com/orlando/hotel-news/2026/mothers-day",
-        "error": "cannot identify image file <_io.BytesIO object at 0x74598f3dd940>"
-      },
-      {
-        "url": "https://press.fourseasons.com/orlando/hotel-news/2026/spring-programming",
-        "error": "cannot identify image file <_io.BytesIO object at 0x74598f3dd990>"
-      },
-      {
-        "page": "https://www.expedia.com/Orlando-Hotels-Four-Seasons-Resort-Orlando-At-WALT-DISNEY-WORLD-Resort.h7374428.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Orlando-Hotels-Four-Seasons-Resort-Orlando-At-WALT-DISNEY-WORLD-Resort.h7374428.Hotel-Information"
-      },
-      {
         "page": "https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/gallery/",
         "error": "403 Client Error: Forbidden for url: https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/gallery/"
       },
       {
+        "url": "https://images.trvl-media.com/lodging/3000000/2440000/2432800/2432727/0589fd64.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/3000000/2440000/2432800/2432727/0589fd64.jpg?impolicy=resizecrop&ra=fit&rw=1280"
+      },
+      {
         "page": "https://www.expedia.com/Orlando-Hotels-Waldorf-Astoria-Orlando.h2432727.Hotel-Information",
         "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Orlando-Hotels-Waldorf-Astoria-Orlando.h2432727.Hotel-Information"
-      },
-      {
-        "url": "https://www.loewshotels.com/portofino-bay-hotel/rooms-showcase",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7459a0e20630>"
-      },
-      {
-        "url": "https://www.loewshotels.com/portofino-bay-hotel/compare-rooms",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7459a0c0a480>"
       }
     ],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
-    "excludedCandidates": [],
-    "cityCount": 5,
-    "hotelCount": 8,
-    "totalBytes": 1280966
+    "excludedCandidates": [
+      {
+        "key": "scene-5",
+        "sourcePage": "https://media.universalparksusa.com/photos/?park=orlando",
+        "sourceResolvedUrl": "https://media.universalparksusa.com/wp-content/uploads/2025/05/Epic-Nighttime-Celebration_The-WWoHP.jpeg",
+        "sourceRequestedUrl": "https://media.universalparksusa.com/wp-content/uploads/2025/05/Epic-Nighttime-Celebration_The-WWoHP.jpeg",
+        "originalAlt": "",
+        "originalCaption": "Epic Nighttime Celebration - The Wizarding World of Harry Potter – Ministry of Magic",
+        "credit": "Visit Orlando",
+        "publisher": "Visit Orlando",
+        "hotel": null,
+        "localPath": "/images/travel/orlando-premium/destination/scene-5.webp",
+        "sourceSHA256": "c11336b8449aca205b143240efeddcb75960d1c357bf0d6fae21261f09683372",
+        "webpSHA256": "dcdc0a8691ea382078235f0c8501f89a3dd0f570ae24f03201cf32d4709d421b",
+        "sourcePixels": [
+          1117,
+          789
+        ],
+        "webpPixels": [
+          1117,
+          789
+        ],
+        "webpBytes": 95574,
+        "pixelFingerprint": "71f3f1c004a4f4bc",
+        "candidateSubject": "celebration|kissimmee|old town",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
+    "cityCount": 7,
+    "hotelCount": 11,
+    "totalBytes": 2193392
   }
 }
