@@ -1,0 +1,107 @@
+{
+  "name": "Antalya",
+  "country": "Turquía",
+  "eyebrow": "Costa mediterránea · Playas, golf e historia",
+  "heading": "Dónde alojarse en Antalya: Belek, Kemer y centro urbano",
+  "intro": "Antalya ofrece resorts junto al mar, grandes hoteles familiares, campos de golf y calles históricas. Belek, Kemer y el centro ofrecen experiencias de alojamiento distintas.",
+  "editorial": "Elige tu hotel en Antalya según el tipo de vacaciones. Belek y Kadriye destacan por sus grandes resorts, playas, campos de golf y servicios internos. Al comparar Regnum Carya, Cullinan Belek y Rixos Premium Belek, valora además de las habitaciones el régimen de comidas, los servicios infantiles, el acceso a piscinas y el golf.\n\nEn la costa montañosa de Kemer destacan los pinares, las calas y las vistas mediterráneas. Maxx Royal Kemer se encuentra en un entorno distinto de los resorts de Belek. Al elegir suite o villa, confirma vistas reales, acceso a la playa, espacios exteriores y condiciones de piscina privada.\n\nKaleiçi y Konyaaltı atraen a quienes quieren descubrir calles históricas, restaurantes y playas urbanas. Es una experiencia diferente de pasar la mayor parte del día dentro de un resort de Belek.\n\nEn el régimen todo incluido, comprueba qué restaurantes y servicios incluye, si requieren reserva y los horarios estacionales. El traslado desde el aeropuerto de Antalya depende de la zona y del tráfico. El proveedor confirma precios y disponibilidad actuales.",
+  "hotelIntro": "Compara Regnum Carya, Cullinan Belek, Rixos Premium Belek y Maxx Royal Kemer por vacaciones familiares, golf, playa, ubicación y categoría de habitación.",
+  "areas": [
+    [
+      "Belek y Kadriye",
+      "Playas de arena, campos de golf, grandes resorts y actividades dentro del complejo.",
+      "Ideal para vacaciones de resort, no para recorrer calles urbanas a pie."
+    ],
+    [
+      "Kemer y costa montañosa",
+      "La naturaleza forma parte de la estancia en las calas al pie de montañas verdes.",
+      "Comprueba el tipo de playa y la distancia a lugares de interés fuera del resort."
+    ],
+    [
+      "Kaleiçi y Konyaaltı",
+      "Calles históricas, restaurantes, puerto antiguo y playas urbanas para descubrir Antalya.",
+      "El ambiente difiere de los grandes resorts de Belek."
+    ]
+  ],
+  "experiences": [
+    [
+      "Vacaciones familiares cómodas",
+      "Compara distribución de suites, restaurantes, servicios infantiles y piscinas climatizadas en tu temporada."
+    ],
+    [
+      "Golf junto al Mediterráneo",
+      "Disfruta de los campos de Belek; consulta horarios de salida y calendario de mantenimiento."
+    ],
+    [
+      "Paseo por el casco antiguo",
+      "Descubre Kaleiçi y su puerto histórico antes de relajarte en el hotel."
+    ]
+  ],
+  "checks": [
+    "Comprueba la ubicación exacta: Belek, Kemer y el centro de Antalya son zonas distintas.",
+    "Consulta el todo incluido, las reservas de restaurantes y los extras de pago.",
+    "Confirma la apertura estacional de piscinas climatizadas y zonas infantiles.",
+    "Comprueba traslado al aeropuerto, acceso al golf y calendario de mantenimiento."
+  ],
+  "hotels": [
+    [
+      "Kadriye · Belek",
+      "Resort de alta gama con suites, villas y distintas opciones de golf.",
+      "Consulta acceso al golf, programas infantiles y servicios de temporada.",
+      "Para vacaciones familiares, de golf y piscina.",
+      "Regnum Carya destaca por sus instalaciones y conexiones con el golf de Belek. Alterna playa, piscinas y zonas de descanso. La piscina vinculada a una suite no es estándar en todas las categorías. Revisa el régimen de comidas, las condiciones de golf y la ubicación respecto a zonas animadas."
+    ],
+    [
+      "Kadriye · Belek",
+      "Resort de playa moderno centrado en instalaciones y servicios internos.",
+      "Confirma categoría de habitación y servicios incluidos en el precio.",
+      "Para unas vacaciones mediterráneas de piscinas y restaurantes cerca del golf.",
+      "La arquitectura moderna y los espacios exteriores amplios favorecen estancias largas. Habitaciones junto a laguna, swim-up y vistas al mar son distintas. Compara privacidad de terraza, orientación y acceso real a piscina. El nombre de la categoría no garantiza piscina privada. Comprueba apertura de restaurantes, actividades y servicios familiares."
+    ],
+    [
+      "Belek",
+      "Gran resort de playa con entretenimiento familiar y variedad de actividades.",
+      "Consulta habitaciones comunicadas y qué actividades están incluidas.",
+      "Para vacaciones de playa animadas con familia o amigos.",
+      "Rixos Premium Belek atrae a quienes prefieren variedad de restaurantes, entretenimiento de playa y servicios frente a un pequeño hotel boutique. Comprueba las condiciones de acceso a instalaciones recreativas asociadas, distancias internas y orientación de la habitación. La distribución de camas puede importar más que los metros cuadrados."
+    ],
+    [
+      "Kemer · Costa occidental",
+      "Alternativa a los resorts de Belek entre montañas, bosques y calas mediterráneas.",
+      "Confirma traslado desde el aeropuerto y categoría de alojamiento.",
+      "Para vacaciones entre montaña y mar con amplias opciones de villas.",
+      "Las colinas, rocas y costa de Kemer definen Maxx Royal Kemer. Algunas categorías permiten combinar terraza privada y mar; vistas, distribución y acceso a playa varían. En una villa, verifica dormitorios, privacidad, servicios y traslado. Una foto de Beach Villa no representa una suite estándar."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Ilustración original generada por IA de la costa de Antalya al atardecer",
+    "Playa de Konyaaltı en Antalya",
+    "Puerto histórico de Kaleiçi"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Regnum Carya en Belek",
+      "Piscina de la Pearl Pool Suite",
+      "Jade Suite"
+    ],
+    [
+      "Cullinan Belek y sus piscinas",
+      "Piscinas y terrazas exteriores",
+      "Suite dúplex con acceso a piscina"
+    ],
+    [
+      "Rixos Premium Belek junto al Mediterráneo",
+      "Playa y piscinas",
+      "Habitación Deluxe"
+    ],
+    [
+      "Maxx Royal Kemer entre pinares y mar",
+      "Piscinas y villas",
+      "Interior y terraza de una villa"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Antalya: Belek, Kemer y mejores hoteles",
+  "hotelSeoTitle": "Mejores hoteles de lujo en Antalya: Belek y Kemer",
+  "seoDescription": "Compara Belek, Kemer, Kaleiçi y Konyaaltı. Descubre cuatro resorts de lujo en Antalya, ideales para familias y golf."
+}
