@@ -1,0 +1,157 @@
+{
+  "name": "Niseko",
+  "country": "Japón",
+  "eyebrow": "Hokkaido · Montañas, nieve y aguas termales",
+  "heading": "Dónde alojarse en Niseko: hospitalidad japonesa de montaña todo el año",
+  "intro": "En Hokkaido, Niseko atrae por su nieve profunda, noches tranquilas en aguas termales, vistas al monte Yotei y cocina japonesa. Cuatro zonas de esquí se distinguen por ambiente, restaurantes y acceso a remontes.",
+  "editorial": "Los cuatro sectores de Niseko United —Grand Hirafu, Hanazono, Niseko Village y Annupuri— comparten montaña, pero ofrecen experiencias distintas. Hirafu favorece restaurantes y vida de pueblo; Hanazono, estancia en resort; Niseko Village, tranquilidad; Annupuri, noches pausadas. Un onsen puede ser comunitario, privado con reserva o baño dentro de la suite. No presupongas acceso directo a pistas en todo alojamiento.\n\nPark Hyatt Niseko Hanazono reúne habitaciones, suites, residencias y áticos modernos. Onsen privado y vistas a Yotei en categorías determinadas. Higashiyama Niseko Village, a Ritz-Carlton Reserve, ofrece unas 50 habitaciones y suites de diseño japonés sobrio con vistas a Yotei o Annupuri. Setsu Niseko, en Hirafu, combina suites amplias, restaurantes y bienestar con baños comunitarios y privados reservables. AYA Niseko al pie de Grand Hirafu ofrece estudios, apartamentos y residencias; algunas grandes residencias tienen onsen privado y acceso especial de esquí.\n\nAntes de viajar desde el aeropuerto New Chitose, confirma base exacta, carreteras invernales, lanzaderas y horarios de remontes. Considera normas de baño, dormitorios y configuración real de camas. La temporada verde merece atención: bosques, senderos y vistas a Yotei muestran otra faceta de Hokkaido. Compara en Bosphoras; precios y disponibilidad se confirman con proveedor autorizado.",
+  "hotelIntro": "Cuatro direcciones de montaña: Park Hyatt en Hanazono, Higashiyama en Niseko Village, Setsu y AYA en Hirafu.",
+  "areas": [
+    [
+      "Grand Hirafu · Restaurantes y pueblo",
+      "Base más animada, con gran selección de restaurantes y ocio nocturno.",
+      "Calles empinadas; dirección en Hirafu no garantiza cercanía a remontes."
+    ],
+    [
+      "Hanazono · Montaña y resort",
+      "Paisajes montañosos, amplias pistas nevadas e infraestructura de resort.",
+      "Para cenar fuera puede hacer falta transporte a Hirafu."
+    ],
+    [
+      "Niseko Village · Tranquilidad",
+      "Zona más calmada con hoteles junto a laderas y menos restaurantes independientes.",
+      "Comprueba acceso a pistas, remontes y lanzaderas."
+    ],
+    [
+      "Annupuri · Ladera tranquila",
+      "Ambiente relajado y ritmo pausado.",
+      "Organiza cena y transporte nocturno antes."
+    ],
+    [
+      "Kutchan · Transporte y llegada",
+      "Ciudad y estación ferroviaria son nodos de transporte, no están en pistas.",
+      "Planifica último tramo del traslado al hotel."
+    ]
+  ],
+  "experiences": [
+    [
+      "Primeras bajadas de la mañana",
+      "Elige sector de Niseko United según nieve y remontes operativos."
+    ],
+    [
+      "Tradición onsen",
+      "Distingue baño comunitario, privado reservado y onsen de suite; respeta etiqueta."
+    ],
+    [
+      "Sabores de Hokkaido",
+      "Descubre productos locales y cocina japonesa; reserva restaurantes populares antes."
+    ],
+    [
+      "Temporada verde de Niseko",
+      "Bosques, senderos y vistas a Yotei hacen atractiva la región todo el año."
+    ]
+  ],
+  "checks": [
+    "Define base exacta: Hirafu, Hanazono, Niseko Village o Annupuri.",
+    "Comprueba acceso a pistas para edificio y categoría.",
+    "Distingue onsen común, baño privado reservado y baño propio.",
+    "Organiza traslado desde New Chitose según carreteras invernales.",
+    "Compara habitaciones, residencias con cocina y áticos.",
+    "Proveedor autorizado confirma precios y disponibilidad."
+  ],
+  "hotels": [
+    [
+      "Hanazono · Resort y residencias",
+      "Park Hyatt Niseko Hanazono ofrece habitaciones, suites, residencias y áticos modernos junto a actividades de montaña. Algunas suites tienen onsen privado y vistas a Yotei.",
+      "Confirma suite con onsen, acceso a pistas, restaurantes y vistas.",
+      "Para resort moderno de montaña y bienestar.",
+      ""
+    ],
+    [
+      "Niseko Village · Resort íntimo",
+      "Higashiyama Niseko Village ofrece unas 50 habitaciones y suites con materiales japoneses, vistas a Yotei o Annupuri, restaurantes y onsen.",
+      "Confirma orientación, acceso a pistas, traslado y baño.",
+      "Para descanso tranquilo de estilo japonés.",
+      ""
+    ],
+    [
+      "Grand Hirafu · Suites y bienestar",
+      "Setsu Niseko ofrece suites amplias, restaurantes y bienestar con onsen común y baños privados bajo reserva.",
+      "Comprueba traslado a remontes, condiciones del baño privado y dormitorios.",
+      "Para suites amplias y bienestar.",
+      ""
+    ],
+    [
+      "Grand Hirafu · Apartamentos junto a pistas",
+      "AYA Niseko ofrece estudios, apartamentos, residencias y áticos al pie de pistas; algunas residencias grandes tienen onsen y entrada especial de esquí.",
+      "Distingue estudios y residencias; confirma onsen, camas y nieve.",
+      "Para estancia independiente cerca de las pistas.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Cuáles son los cuatro sectores de Niseko United?",
+      "Grand Hirafu, Hanazono, Niseko Village y Annupuri; restaurantes y transporte difieren."
+    ],
+    [
+      "¿Dónde ir a restaurantes a pie?",
+      "Grand Hirafu suele ofrecer más restaurantes independientes; otros sectores pueden requerir lanzadera o taxi."
+    ],
+    [
+      "¿Todas las habitaciones tienen onsen privado?",
+      "No, hay baños comunes, sesiones privadas reservadas y onsen propios en ciertas suites."
+    ],
+    [
+      "¿Qué diferencia Setsu y AYA?",
+      "Setsu ofrece suites amplias y bienestar; AYA apartamentos junto a pistas y residencias con acceso especial de esquí."
+    ],
+    [
+      "¿Se puede salir esquiando desde Park Hyatt?",
+      "Está en Hanazono; confirma acceso a remontes y condiciones de categoría y fechas."
+    ],
+    [
+      "¿Cómo llegar desde el aeropuerto?",
+      "Organiza traslado desde New Chitose al sector concreto considerando clima y carreteras."
+    ],
+    [
+      "¿La guía muestra habitaciones disponibles?",
+      "Compara en Bosphoras; proveedor autorizado confirma precios y disponibilidad."
+    ]
+  ],
+  "photoCaptions": [
+    "Monte Yotei y Niseko Annupuri en invierno",
+    "Base de esquí Niseko Grand Hirafu",
+    "Remonte Niseko Hanazono",
+    "Zona montañosa Niseko Village",
+    "Pistas Niseko Annupuri",
+    "Estación ferroviaria Kutchan",
+    "Esquí de invierno en Niseko",
+    "Bosque cerca de Niseko Annupuri"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Foto Park Hyatt Niseko Hanazono",
+      "Vista Park Hyatt Niseko Hanazono",
+      "Otra vista Park Hyatt Niseko Hanazono"
+    ],
+    [
+      "Foto Higashiyama Niseko Village",
+      "Habitación Yotei Reserve con dos camas",
+      "Baño japonés con bañera profunda"
+    ],
+    [
+      "Salón suite Setsu con vistas invernales a Yotei",
+      "Dormitorio Setsu Niseko",
+      "Fachada Setsu Niseko"
+    ],
+    [
+      "Foto AYA Niseko",
+      "Otra vista AYA Niseko",
+      "Residencia AYA Niseko"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Niseko: hoteles de lujo, esquí y onsen en Japón",
+  "hotelSeoTitle": "Hoteles de Niseko: Park Hyatt, Ritz-Carlton Reserve, Setsu y AYA",
+  "seoDescription": "Compara cuatro hoteles de lujo en Niseko, Hokkaido: Hirafu, Hanazono, pistas de esquí, onsen privados y traslados."
+}

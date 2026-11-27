@@ -9,7 +9,7 @@ const root='https://www.bosphoras.com';
 const expectedAlternates=(slug,variant)=>Object.fromEntries(editorialTravelLocales.filter(locale=>isTravelGuideIndexable(slug,variant,locale)).map(locale=>[travelText(locale).hreflang,root+travelHref(locale,variant+'/'+slug)]));
 assert.equal(Object.keys(nativeTravelNames).length,88);
 assert.equal(travelDestinations.length,88);
-assert.equal(reviewedLocalizedGuides.size,434);
+assert.equal(reviewedLocalizedGuides.size,440);
 const urls=indexedTravelUrls(root), known=new Set(urls);
 assert.equal(urls.length,known.size);
 const titles=new Set();
@@ -36,8 +36,8 @@ for(const d of travelDestinations){
 }
 for(const locale of ['fr','en','ar','ru'])for(const parts of [[],['destinations'],['hotels']])assert.equal(travelPageMetadata(locale,parts).robots.index,true);
 assert.equal(titles.size,352);
-assert.equal(urls.filter(u=>/\/travel\/(destinations|hotels)\/[^/]+$/.test(u)).length,1220);
+assert.equal(urls.filter(u=>/\/travel\/(destinations|hotels)\/[^/]+$/.test(u)).length,1232);
 assert.equal(travelPageMetadata('ru',['destinations','nonexistent']).robots.index,false);
 for(const locale of ['tr','de','es','it','pt','zh'])for(const d of travelDestinations)for(const variant of ['destinations','hotels']){const m=travelPageMetadata(locale,[variant,d.slug]),ready=reviewedLocalizedGuides.has(d.slug+'/'+locale);assert.equal(m.robots.index,ready,d.slug+'/'+locale+'/'+variant);if(ready){assert.ok(known.has(m.alternates.canonical));assert.deepEqual(m.alternates.languages,expectedAlternates(d.slug,variant));assert.equal(m.alternates.languages[travelText(locale).hreflang],m.alternates.canonical);assert.ok(m.title&&m.description&&m.description.length<=160&&m.openGraph&&m.twitter);}}
 const pilot=getLocalizedGuide('istanbul','tr');assert.equal(pilot.areas.length,5);assert.equal(pilot.hotels.length,9);assert.equal(pilot.experiences.length,6);assert.equal(pilot.faq.length,8);
-console.log('1220 public guide and hotel routes, including Istanbul, Paris, Dubai, New York, Maldives, Bali, Phuket, Tokyo, Miami, Los Angeles, Bodrum, Antalya, Saint-Tropez, Monaco and Cap d’Antibes and Saint-Jean-Cap-Ferrat and Lake Como, Capri, Positano, Ravello, Mykonos, Antiparos, Ibiza, Formentera, Deià, Port d’Andratx, Comporta, Melides, Tivat, St. Moritz, Aspen, Jackson Hole, Big Sky, the Hamptons, Palm Beach, Nantucket, Harbour Island, Turks and Caicos, Canouan, Los Cabos, Costa Careyes, Mayakoba and San Miguel de Allende in ten languages: robots, sitemap, reciprocal hreflang, localized metadata and image URLs verified.',urls.length,'travel URLs');
+console.log('1232 public guide and hotel routes, including Istanbul, Paris, Dubai, New York, Maldives, Bali, Phuket, Tokyo, Miami, Los Angeles, Bodrum, Antalya, Saint-Tropez, Monaco and Cap d’Antibes and Saint-Jean-Cap-Ferrat and Lake Como, Capri, Positano, Ravello, Mykonos, Antiparos, Ibiza, Formentera, Deià, Port d’Andratx, Comporta, Melides, Tivat, St. Moritz, Aspen, Jackson Hole, Big Sky, the Hamptons, Palm Beach, Nantucket, Harbour Island, Turks and Caicos, Canouan, Los Cabos, Costa Careyes, Mayakoba, San Miguel de Allende and Niseko in ten languages: robots, sitemap, reciprocal hreflang, localized metadata and image URLs verified.',urls.length,'travel URLs');

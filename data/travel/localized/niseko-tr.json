@@ -1,0 +1,157 @@
+{
+  "name": "Niseko",
+  "country": "Japonya",
+  "eyebrow": "Hokkaido · Dağlar, kar ve kaplıcalar",
+  "heading": "Niseko'da nerede kalınır? Japon dağ misafirperverliği dört mevsim",
+  "intro": "Hokkaido'daki Niseko yalnızca derin karıyla değil, kaplıcalarda sakin akşamları, Yotei Dağı manzaraları ve Japon mutfağıyla da ilgi çeker. Dört kayak bölgesi atmosfer, restoran ve teleferik erişiminde farklılaşır.",
+  "editorial": "Niseko United'ın dört bölgesi Grand Hirafu, Hanazono, Niseko Village ve Annupuri aynı dağı paylaşır, ancak farklı tatil deneyimleri sunar. Hirafu restoran ve dağ köyü yaşamı, Hanazono resort içinde tatil, Niseko Village daha sakin konaklama, Annupuri huzurlu akşamlar için uygundur. Onsen ortak kaplıca, rezervasyonla özel kullanım veya doğrudan süitte yer alan banyo olabilir. Bölgedeki her otelin pistlere doğrudan erişimi olduğunu varsaymayın.\n\nPark Hyatt Niseko Hanazono çağdaş oda, süit, rezidans ve penthouse seçenekleri sunar. Özel onsen ve Yotei manzarası belirli kategorilerdedir. Higashiyama Niseko Village, a Ritz-Carlton Reserve, sade Japon tasarımı ve Yotei veya Annupuri manzaralarıyla yaklaşık 50 oda ve süit sunar. Hirafu'daki Setsu Niseko geniş süit, restoran ve wellness olanaklarıyla ortak ve ayrı rezervasyonlu kaplıcaları birleştirir. Grand Hirafu yamaçlarının eteğindeki AYA Niseko stüdyo, daire ve rezidanslar sunar; bazı büyük rezidanslarda özel onsen ve özel kayak erişimi vardır.\n\nNew Chitose Havalimanı'ndan yolculuk öncesinde kesin bölgeyi, kış yollarını, servisleri ve teleferik saatlerini doğrulayın. Kaplıca kurallarını, yatak odası sayısını ve gerçek yatak düzenini dikkate alın. Yeşil sezon da orman patikaları ve Yotei manzaralarıyla Hokkaido'nun başka bir yüzünü gösterir. Bosphoras'ta konaklamaları karşılaştırın; fiyat ve müsaitlik yetkili sağlayıcı tarafından doğrulanır.",
+  "hotelIntro": "Dört dağ oteli: Hanazono'da Park Hyatt, Niseko Village'da Higashiyama, Hirafu'da Setsu ve AYA.",
+  "areas": [
+    [
+      "Grand Hirafu · Restoranlar ve köy",
+      "En hareketli bölge, geniş restoran ve akşam etkinliği seçenekleri sunar.",
+      "Sokaklar dik olabilir; Hirafu adresi teleferiğe kısa yürüyüş garantisi değildir."
+    ],
+    [
+      "Hanazono · Dağlar ve resort",
+      "Dağ manzaraları, geniş karlı yamaçlar ve gelişmiş resort olanakları.",
+      "Otel dışında akşam yemeği için Hirafu'ya ulaşım gerekebilir."
+    ],
+    [
+      "Niseko Village · Mahremiyet",
+      "Yamaçlara yakın oteller ve daha az bağımsız restoranla sakin bölge.",
+      "Pist erişimini, teleferik saatlerini ve servisleri doğrulayın."
+    ],
+    [
+      "Annupuri · Sakin dağ yamacı",
+      "Huzurlu atmosfer ve yavaş tatil ritmi.",
+      "Akşam yemeği ve ulaşımı önceden planlayın."
+    ],
+    [
+      "Kutchan · Ulaşım ve varış",
+      "Şehir ve tren istasyonu ulaşım merkezidir, kayak yamacında değildir.",
+      "Otele transferin son bölümünü planlayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Sabah ilk kayak inişleri",
+      "Kar durumuna ve teleferiklerin çalışmasına göre Niseko United bölgesini seçin."
+    ],
+    [
+      "Onsen geleneği",
+      "Ortak kaplıca, rezervasyonlu özel seans ve süit içi onseni ayırın; görgü kurallarına uyun."
+    ],
+    [
+      "Hokkaido lezzetleri",
+      "Yerel ürünleri ve Japon mutfağını keşfedin; popüler restoranları önceden ayırtın."
+    ],
+    [
+      "Niseko yeşil sezonu",
+      "Ormanlar, patikalar ve Yotei manzaraları bölgeyi yıl boyunca ilgi çekici kılar."
+    ]
+  ],
+  "checks": [
+    "Kesin bölgeyi seçin: Hirafu, Hanazono, Niseko Village veya Annupuri.",
+    "Belirli bina ve kategori için pist erişimini doğrulayın.",
+    "Ortak onsen, rezervasyonlu özel banyo ve oda içi onseni ayırın.",
+    "New Chitose transferini kış yollarına göre planlayın.",
+    "Otel odası, mutfaklı rezidans ve penthouse seçeneklerini karşılaştırın.",
+    "Güncel fiyat ve müsaitliği yetkili sağlayıcı doğrular."
+  ],
+  "hotels": [
+    [
+      "Hanazono · Resort ve rezidanslar",
+      "Park Hyatt Niseko Hanazono, dağ aktiviteleri yakınında çağdaş oda, süit, rezidans ve penthouse sunar. Bazı süitlerde özel onsen ve Yotei manzarası vardır.",
+      "Onsenli süiti, pist erişimini, restoranları ve manzarayı doğrulayın.",
+      "Çağdaş dağ resortu ve wellness için.",
+      ""
+    ],
+    [
+      "Niseko Village · Samimi resort",
+      "Higashiyama Niseko Village yaklaşık 50 oda ve süit, Japon malzemeleri, Yotei veya Annupuri manzaraları, restoranlar ve onsen sunar.",
+      "Manzara yönü, pist erişimi, transfer ve kaplıcayı doğrulayın.",
+      "Sakin Japon tarzı tatil için.",
+      ""
+    ],
+    [
+      "Grand Hirafu · Süitler ve wellness",
+      "Setsu Niseko geniş süitler, restoranlar ve ortak onsen ile rezervasyonlu ayrı kaplıcaları olan wellness sunar.",
+      "Teleferik transferini, özel seans koşullarını ve yatak odası sayısını doğrulayın.",
+      "Geniş süit ve sağlıklı yaşam için.",
+      ""
+    ],
+    [
+      "Grand Hirafu · Yamaç yanında daireler",
+      "AYA Niseko yamaç eteğinde çağdaş stüdyo, daire, rezidans ve penthouse sunar; bazı büyük rezidanslarda onsen ve özel kayak girişi vardır.",
+      "Stüdyo ve rezidansı ayırın; onsen, yataklar ve kar durumunu kontrol edin.",
+      "Piste yakın bağımsız konaklama için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Niseko United'ın dört bölgesi hangileri?",
+      "Grand Hirafu, Hanazono, Niseko Village ve Annupuri; restoran ve ulaşım koşulları farklıdır."
+    ],
+    [
+      "Restoranlara yürümek için nerede kalınır?",
+      "Grand Hirafu'da genellikle daha fazla bağımsız restoran vardır; diğer bölgelerde servis veya taksi gerekebilir."
+    ],
+    [
+      "Her odada özel onsen var mı?",
+      "Hayır; ortak kaplıca, rezervasyonlu özel seans ve belirli süitlerde kişisel onsen vardır."
+    ],
+    [
+      "Setsu ve AYA arasındaki fark nedir?",
+      "Setsu geniş süit ve wellness; AYA yamaç yanında daireler ve özel kayak erişimli bazı rezidanslar sunar."
+    ],
+    [
+      "Park Hyatt'tan doğrudan kayak yapılabilir mi?",
+      "Hanazono'dadır; kategorinize ve tarihlerinize göre teleferik erişimini ve koşulları doğrulayın."
+    ],
+    [
+      "Havalimanından nasıl gidilir?",
+      "New Chitose'dan kesin bölgeye hava ve yol durumunu dikkate alarak transfer ayarlayın."
+    ],
+    [
+      "Rehber oda müsaitliğini gösteriyor mu?",
+      "Bosphoras'ta otelleri karşılaştırın; güncel fiyat ve müsaitliği yetkili sağlayıcı doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Kışın Yotei Dağı ve Niseko Annupuri",
+    "Niseko Grand Hirafu kayak üssü",
+    "Niseko Hanazono teleferiği",
+    "Niseko Village dağ bölgesi",
+    "Niseko Annupuri yamaçları",
+    "Kutchan tren istasyonu",
+    "Niseko'da kış kayağı",
+    "Niseko Annupuri ormanı"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Park Hyatt Niseko Hanazono fotoğrafı",
+      "Park Hyatt Niseko Hanazono görünümü",
+      "Park Hyatt Niseko Hanazono başka görünümü"
+    ],
+    [
+      "Higashiyama Niseko Village fotoğrafı",
+      "İki yataklı Yotei Reserve oda",
+      "Japon tarzı derin küvetli banyo"
+    ],
+    [
+      "Kışın Yotei manzaralı Setsu süit salonu",
+      "Setsu Niseko yatak odası",
+      "Setsu Niseko cephesi"
+    ],
+    [
+      "AYA Niseko fotoğrafı",
+      "AYA Niseko başka görünümü",
+      "AYA Niseko rezidansı"
+    ]
+  ],
+  "seoTitle": "Niseko'da Nerede Kalınır? Japonya Lüks Kayak Otelleri ve Onsen",
+  "hotelSeoTitle": "Niseko Otelleri: Park Hyatt, Ritz-Carlton Reserve, Setsu ve AYA",
+  "seoDescription": "Hokkaido Niseko'da dört lüks oteli, Hirafu, Hanazono, kayak pistleri, özel onsen ve havalimanı transferlerini karşılaştırın."
+}
