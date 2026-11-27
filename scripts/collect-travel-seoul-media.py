@@ -95,6 +95,24 @@ def collect_pages(pages):
 DIRECT = {
   "seoul/city": [
     [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Myeongdong_at_night.jpg",
+      "Myeongdong shopping street at night",
+      "https://commons.wikimedia.org/wiki/File:Myeongdong_at_night.jpg",
+      "Christian Bolz / CC BY-SA 4.0 / resized WebP"
+    ],
+    [
+      "https://korean.visitseoul.net/comm/getImage?fileNo=4&fileTy=MEDIA&parentSn=67715&srvcId=MEDIA&thumbTy=L",
+      "Cheonggyecheon stream in downtown Seoul",
+      "https://korean.visitseoul.net/nature/%EC%B2%AD%EA%B3%84%EC%B2%9C/KOP000034",
+      "Seoul Tourism Organization / publication permission declared by Bosphoras; independent rights verification pending"
+    ],
+    [
+      "https://assets.theedgemarkets.com/pics/2023/Apple-Vacations-BC27102023_img5_tem.jpg",
+      "Hongdae Fashion Street shopping district",
+      "https://theedgemalaysia.com/content/advertise/magnificence-korean-getaway",
+      "The Edge Malaysia / Apple Vacations; original author and publication permission pending"
+    ],
+    [
       "https://commons.wikimedia.org/wiki/Special:FilePath/Front_view_of_the_Imperial_Throne_Hall_Geunjeongjeon_at_Gyeongbokgung_Palace_with_blue_sky_in_Seoul.jpg",
       "Gyeongbokgung Palace throne hall",
       "https://commons.wikimedia.org/wiki/File:Front_view_of_the_Imperial_Throne_Hall_Geunjeongjeon_at_Gyeongbokgung_Palace_with_blue_sky_in_Seoul.jpg",
@@ -105,12 +123,6 @@ DIRECT = {
       "Bukchon Hanok Village street",
       "https://commons.wikimedia.org/wiki/File:Bukchon-ro_11-gil_street_with_hanok_houses_and_blue_sky_in_Bukchon_Hanok_Village_Seoul.jpg",
       "Basile Morin / CC BY-SA 4.0 / resized WebP"
-    ],
-    [
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Streets_in_Myeong-dong_Seoul.jpg",
-      "Myeongdong shopping street",
-      "https://commons.wikimedia.org/wiki/File:Streets_in_Myeong-dong_Seoul.jpg",
-      "Dquai / CC BY-SA 4.0 / resized WebP"
     ],
     [
       "https://commons.wikimedia.org/wiki/Special:FilePath/N_Seoul_Tower_view_1.jpg",
@@ -366,7 +378,7 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
 def city_job(c):
  base=ROOT/(c['slug']+'-premium')
  old=PREVIOUS.get(c['slug'],{})
- existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='osaka' and r['key']=='scene-4') and not (c['slug']=='kuala-lumpur' and r['key'] in ('scene-6','scene-7')) and not (c['slug']=='orlando' and r['key'] in ('scene-5','scene-6')) and not (c['slug']=='las-vegas' and r['key'] in ('scene-1','scene-5','scene-9','scene-12')) and not (c['slug']=='cancun' and r['key'] in ('scene-4','scene-8','scene-9','scene-11','scene-12')) and not (c['slug']=='rome' and r['key'] in ('scene-3','scene-7')) and not (c['slug']=='london' and r['key'] in ('scene-1','scene-2','scene-3')) and not (c['slug']=='las-vegas' and r['key']=='scene-6') and not (c['slug']=='barcelona' and r['key'] in ('scene-3','scene-5'))]
+ existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='seoul' and r['key']=='scene-3') and not (c['slug']=='osaka' and r['key']=='scene-4') and not (c['slug']=='kuala-lumpur' and r['key'] in ('scene-6','scene-7')) and not (c['slug']=='orlando' and r['key'] in ('scene-5','scene-6')) and not (c['slug']=='las-vegas' and r['key'] in ('scene-1','scene-5','scene-9','scene-12')) and not (c['slug']=='cancun' and r['key'] in ('scene-4','scene-8','scene-9','scene-11','scene-12')) and not (c['slug']=='rome' and r['key'] in ('scene-3','scene-7')) and not (c['slug']=='london' and r['key'] in ('scene-1','scene-2','scene-3')) and not (c['slug']=='las-vegas' and r['key']=='scene-6') and not (c['slug']=='barcelona' and r['key'] in ('scene-3','scene-5'))]
  if os.environ.get('TRAVEL_OTA_ONLY')=='1':return c['slug'],'city',old.get('destinationScenes',[]),[]
  if len(existing)>=9:return c['slug'],'city',existing,[]
  cand,errors=collect_pages(c['cityPages'])
