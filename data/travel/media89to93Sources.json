@@ -4,6 +4,9 @@
     "city": "Londres",
     "publisher": "Visit London / London & Partners",
     "cityPages": [
+      "https://www.bondstreet.co.uk/your-visit/albemarle-street",
+      "https://www.bondstreet.co.uk/articles/bond-streets-captivating-origin-story",
+      "https://www.bondstreet.co.uk/explore",
       "https://www.stpauls.co.uk/explore",
       "https://newwestend.com/our-district/",
       "https://www.coventgarden.london/experience/visit/the-market-building-and-piazza",
@@ -70,6 +73,8 @@
         "savoy",
         "The Savoy",
         [
+          "https://www.thesavoylondon.com/savoy-experience",
+          "https://www.thesavoylondon.com/savoy-edit",
           "https://press.thesavoylondon.com/the-savoy-exterior/?lang=en",
           "https://all.accor.com/hotel/A597/index.en.shtml",
           "https://press.thesavoylondon.com/beauty-amp-fitness-gym/?lang=en",
@@ -99,7 +104,9 @@
         "shangri-la",
         "Shangri-La The Shard, London",
         [
-          "https://www.the-shard.com/about/",
+          "https://www.shangrilaexperiences.com/london",
+          "https://www.the-shard.com/news-events/events/2026/summer-above-the-clouds-at-shangri-la",
+          "https://www.the-shard.com/about/level-guide/",
           "https://www.the-shard.com/contact-us/shangri-la-hotel",
           "https://www.the-shard.com/shangri-la-the-shard-london/hotel-amenities",
           "https://www.the-shard.com/news-events/news-events/2014/infinity-pool-opens-as-vertical-city-vision-becomes-a-reality",
