@@ -64,7 +64,7 @@ import { IstanbulFlagship } from '@/components/travel/IstanbulFlagship';
 import { FeaturedCityGuide,getApprovedDestinationPhotos } from '@/components/travel/FeaturedCityGuide';
 import {isTravelGuideIndexable,indexedTravelAlternates,isTravelCollectionIndexable,isIstanbulHotelIndexable} from '@/data/travel/guideIndexation';
 import {nativeTravelName,nativeTravelCountry,seoSnippet} from '@/data/travel/localizedNames';
-import {directorySearchMetadata,destinationSearchTitle,hotelSearchTitle} from '@/lib/travel/guideSearchMetadata';
+import {directorySearchMetadata,destinationSearchTitle,destinationSearchDescription,hotelSearchTitle} from '@/lib/travel/guideSearchMetadata';
 import { LocalizedFeaturedCityGuide, LocalizedGuideSchema } from '@/components/travel/LocalizedFeaturedCityGuide';
 import { getLocalizedGuide,isEditorialLocale } from '@/data/travel/localizedGuides';
 import { EditorialProse } from '@/components/travel/EditorialProse';
@@ -331,13 +331,13 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     : localizedIntro
     ? (pageTitle + '. ' + localizedIntro)
     : (route.destination ? pageTitle + '. ' + t.value + ' ' + t.approach : t.slogan + ' ' + t.value);
-  const description = route.kind==='directory' ? directorySearchMetadata(locale).description : seoSnippet(rawDescription);
+  const description = route.kind==='directory' ? directorySearchMetadata(locale).description : route.kind==='destination'&&route.destination ? destinationSearchDescription(locale,route.destination.slug,seoSnippet(rawDescription)) : seoSnippet(rawDescription);
   const approvedPhotos=featureGuide?getApprovedDestinationPhotos(featureGuide):[];
   const sharePhoto=featureGuide?(approvedPhotos.find(photo=>photo.src===featureGuide.photos[featureGuide.hero]?.src)||approvedPhotos[0]):undefined;
   const shareImages=sharePhoto?[{url:new URL(sharePhoto.src,ORIGIN).href,alt:featureGuide?.name||pageTitle}]:undefined;
   const ready = isApproved(route, locale);
   const languageAlternates = ready
-    ? Object.fromEntries(travelLocaleCodes.filter((code) => isApproved(route, code)).map((code) => [travelText(code).hreflang, ORIGIN + travelHref(code, route.slug)]))
+    ? Object.fromEntries(travelLocaleCodes.filter((code) => isApproved(route, code) && !(collectionBookingEnabled && route.slug==='' && code==='fr')).map((code) => [travelText(code).hreflang, ORIGIN + travelHref(code, route.slug)]))
     : {};
   return {
     title: pageTitle + ' | BOSPHORAS',
