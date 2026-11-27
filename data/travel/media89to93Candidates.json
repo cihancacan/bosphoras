@@ -1125,37 +1125,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "scene-9",
-        "sourcePage": "https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/",
-        "sourceResolvedUrl": "https://res.cloudinary.com/simpleview/image/upload/v1673659670/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_hirez_bcb8247a-e3d6-4787-99f5-334b6f0916c9.jpg",
-        "sourceRequestedUrl": "https://res.cloudinary.com/simpleview/image/upload/v1673659670/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_hirez_bcb8247a-e3d6-4787-99f5-334b6f0916c9.jpg",
-        "originalAlt": "",
-        "originalCaption": "",
-        "credit": "Visit Las Vegas / LVCVA",
-        "publisher": "Visit Las Vegas / LVCVA",
-        "hotel": null,
-        "localPath": "/images/travel/las-vegas-premium/destination/scene-9.webp",
-        "sourceSHA256": "e284fccf85739a6f6f567fe105d42dd8b946b126c81e8ad1a28fce9c1214a916",
-        "webpSHA256": "a157fa021ec3fc30b9d659a71a2a4774dfa345d48724fc33821211e4a532ae35",
-        "sourcePixels": [
-          1200,
-          800
-        ],
-        "webpPixels": [
-          1200,
-          800
-        ],
-        "webpBytes": 144498,
-        "pixelFingerprint": "3cbcccdcd83c2636",
-        "candidateSubject": "venetian|gondola",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "scene-10",
         "sourcePage": "https://www.visitlasvegas.com/experience/post/intro-to-the-18b-arts-district/",
         "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_900,q_65,w_1200/v1/clients/lasvegas/Vintage_Stores_Arts_District_66_9778576e-07b2-47d6-94ec-cf5c7819fc30.jpg",
@@ -1218,29 +1187,60 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "scene-12",
-        "sourcePage": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/",
-        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_541,q_80,w_1100/v1/clients/lasvegas/RR_Downtown_0271_Lights_On_1200x800_182abd6e-225b-41b6-9531-586ed2f50888.jpg",
-        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_541,q_80,w_1100/v1/clients/lasvegas/RR_Downtown_0271_Lights_On_1200x800_182abd6e-225b-41b6-9531-586ed2f50888.jpg",
-        "originalAlt": "The beautiful and retro signage for the Fremont Street experience in downtown Las Vegas.",
+        "key": "scene-13",
+        "sourcePage": "https://www.venetianlasvegas.com/resort/attractions.html",
+        "sourceResolvedUrl": "https://www.venetianlasvegas.com/adobe/dynamicmedia/deliver/dm-aid--23b97137-b615-4bd5-9037-7096135cc98a/gondola-1200x800.jpg?preferwebp=true&quality=64",
+        "sourceRequestedUrl": "https://www.venetianlasvegas.com/adobe/dynamicmedia/deliver/dm-aid--23b97137-b615-4bd5-9037-7096135cc98a/gondola-1200x800.jpg?preferwebp=true&quality=64",
+        "originalAlt": "A gondolier navigates a black gondola under a brick bridge in a canal with two gondolas visible.",
         "originalCaption": "",
         "credit": "Visit Las Vegas / LVCVA",
         "publisher": "Visit Las Vegas / LVCVA",
         "hotel": null,
-        "localPath": "/images/travel/las-vegas-premium/destination/scene-12.webp",
-        "sourceSHA256": "a867fed7aad7681a12518268d639a4512e503a44d8d66e209c026207c1868da2",
-        "webpSHA256": "f7bab2cee974c231db64086555efc60d54e15016d86feed68d5f769f0abad5b9",
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-13.webp",
+        "sourceSHA256": "cfcb6aa973faa9ec338c9b438e990360e8f5f50f5537ff8bb78105fea665de25",
+        "webpSHA256": "95a8b0f8cb60e3500796a757ef5561feee1282f8b78adb7615887ef592afd304",
         "sourcePixels": [
-          1100,
-          541
+          1200,
+          800
         ],
         "webpPixels": [
-          1100,
-          541
+          1200,
+          800
         ],
-        "webpBytes": 122190,
-        "pixelFingerprint": "b8322a6c4c0656ec",
-        "candidateSubject": "downtown",
+        "webpBytes": 166920,
+        "pixelFingerprint": "b0381c3c23334b9c",
+        "candidateSubject": "venetian|gondola",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-14",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/national-plan-for-vacation-day/",
+        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_675,q_65,w_1200/v1/clients/lasvegas/RR_LVCVA_Downtown_Aerial_Circa_Plaza_Main_St_31_6fd62f4a-1ba7-438e-96d0-9c94ca2e95c2.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_675,q_65,w_1200/v1/clients/lasvegas/RR_LVCVA_Downtown_Aerial_Circa_Plaza_Main_St_31_6fd62f4a-1ba7-438e-96d0-9c94ca2e95c2.jpg",
+        "originalAlt": "Beautiful lights of Las Vegas seen from a distance focusing in on Circa and stadium swim.",
+        "originalCaption": "Circa Resort & Casino in Downtown Las Vegas",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-14.webp",
+        "sourceSHA256": "83eef1ba922b25b6974a663208867d55783a3614da7cc826f58cdca121683c2c",
+        "webpSHA256": "0ffc4f99370777b2175f5439e5e37649c74a5ece1296a5b4d0176446ca349690",
+        "sourcePixels": [
+          1200,
+          675
+        ],
+        "webpPixels": [
+          1200,
+          675
+        ],
+        "webpBytes": 164728,
+        "pixelFingerprint": "76e2d4dccccf8ef0",
+        "candidateSubject": "downtown|container park|gateway arches|neon boneyard",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -1624,16 +1624,7 @@
       }
     ],
     "gaps": [],
-    "errors": [
-      {
-        "url": "http://res.cloudinary.com/simpleview/image/upload/v1582569548/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_1280x720_2e878ce0-857b-4342-ac04-1597f31d8983.jpg",
-        "error": "not HTTPS"
-      },
-      {
-        "url": "http://res.cloudinary.com/simpleview/image/upload/v1673659670/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_hirez_bcb8247a-e3d6-4787-99f5-334b6f0916c9.jpg",
-        "error": "not HTTPS"
-      }
-    ],
+    "errors": [],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
     "excludedCandidates": [
@@ -1915,11 +1906,73 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-9",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/",
+        "sourceResolvedUrl": "https://res.cloudinary.com/simpleview/image/upload/v1673659670/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_hirez_bcb8247a-e3d6-4787-99f5-334b6f0916c9.jpg",
+        "sourceRequestedUrl": "https://res.cloudinary.com/simpleview/image/upload/v1673659670/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_hirez_bcb8247a-e3d6-4787-99f5-334b6f0916c9.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-9.webp",
+        "sourceSHA256": "e284fccf85739a6f6f567fe105d42dd8b946b126c81e8ad1a28fce9c1214a916",
+        "webpSHA256": "a157fa021ec3fc30b9d659a71a2a4774dfa345d48724fc33821211e4a532ae35",
+        "sourcePixels": [
+          1200,
+          800
+        ],
+        "webpPixels": [
+          1200,
+          800
+        ],
+        "webpBytes": 144498,
+        "pixelFingerprint": "3cbcccdcd83c2636",
+        "candidateSubject": "venetian|gondola",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-12",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/",
+        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_541,q_80,w_1100/v1/clients/lasvegas/RR_Downtown_0271_Lights_On_1200x800_182abd6e-225b-41b6-9531-586ed2f50888.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,f_jpg,h_541,q_80,w_1100/v1/clients/lasvegas/RR_Downtown_0271_Lights_On_1200x800_182abd6e-225b-41b6-9531-586ed2f50888.jpg",
+        "originalAlt": "The beautiful and retro signage for the Fremont Street experience in downtown Las Vegas.",
+        "originalCaption": "",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-12.webp",
+        "sourceSHA256": "a867fed7aad7681a12518268d639a4512e503a44d8d66e209c026207c1868da2",
+        "webpSHA256": "f7bab2cee974c231db64086555efc60d54e15016d86feed68d5f769f0abad5b9",
+        "sourcePixels": [
+          1100,
+          541
+        ],
+        "webpPixels": [
+          1100,
+          541
+        ],
+        "webpBytes": 122190,
+        "pixelFingerprint": "b8322a6c4c0656ec",
+        "candidateSubject": "downtown",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "cityCount": 9,
     "hotelCount": 12,
-    "totalBytes": 2778966
+    "totalBytes": 2843926
   },
   "rome": {
     "destinationScenes": [
