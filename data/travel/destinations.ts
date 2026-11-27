@@ -101,6 +101,7 @@ export const travelDestinations: TravelDestination[] = [
   { slug: "las-vegas", name: "Las Vegas", country: "United States", region: "north-america", categories: ["hotels"] as TravelCategory[], angle: "Landmark Strip resorts, entertainment, suites and desert excursions." },
   { slug: "rome", name: "Rome", country: "Italy", region: "europe", categories: ["hotels"] as TravelCategory[], angle: "Ancient landmarks, historic piazzas and grand hotels." },
   { slug: "cancun", name: "Cancun", country: "Mexico", region: "mexico", categories: ["hotels"] as TravelCategory[], angle: "Caribbean beaches, family resorts and adults-only escapes." },
+  { slug: "orlando", name: "Orlando", country: "United States", region: "north-america", categories: ["hotels"] as TravelCategory[], angle: "Theme parks, family resorts, lakes and neighbourhoods." },
   { slug: "barcelona", name: "Barcelona", country: "Spain", region: "europe", categories: ["hotels"] as TravelCategory[], angle: "Modernista architecture, urban beaches and landmark hotels." },
 ];
 export const destinationBySlug = new Map(travelDestinations.map((item) => [item.slug, item]));
