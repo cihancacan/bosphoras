@@ -3760,28 +3760,28 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "scene-8",
-        "sourcePage": "https://commons.wikimedia.org/wiki/File:Parque_de_las_Palapas_1.jpg",
-        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Parque_de_las_Palapas_1.jpg/960px-Parque_de_las_Palapas_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20171102134521",
-        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Parque_de_las_Palapas_1.jpg/960px-Parque_de_las_Palapas_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20171102134521",
-        "originalAlt": "File:Parque de las Palapas 1.jpg",
+        "key": "scene-9",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Parque_de_las_Palapas_2.jpg",
+        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Parque_de_las_Palapas_2.jpg/960px-Parque_de_las_Palapas_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20171102134529",
+        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Parque_de_las_Palapas_2.jpg/960px-Parque_de_las_Palapas_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20171102134529",
+        "originalAlt": "File:Parque de las Palapas 2.jpg",
         "originalCaption": "",
         "credit": "Mexican Caribbean / Quintana Roo tourism",
         "publisher": "Mexican Caribbean / Quintana Roo tourism",
         "hotel": null,
-        "localPath": "/images/travel/cancun-premium/destination/scene-8.webp",
-        "sourceSHA256": "a0ebe936450be1203f085b035bc7021be524afcd56ac47f98c0e6fb18341d644",
-        "webpSHA256": "cb95db13be8cae90ef3c6861a07aac819b34e5b3445dbb8745088b21a0829b65",
+        "localPath": "/images/travel/cancun-premium/destination/scene-9.webp",
+        "sourceSHA256": "c7b6a3334efded5581220c1625d93c342568038932937b50531e9b2ec988bb8f",
+        "webpSHA256": "b674382dea5154e2942824288062a97a8d9dbcf3f01cd60e0c0c4864ed280566",
         "sourcePixels": [
           960,
-          640
+          642
         ],
         "webpPixels": [
           960,
-          640
+          642
         ],
-        "webpBytes": 26042,
-        "pixelFingerprint": "c4e4a929498a184c",
+        "webpBytes": 41750,
+        "pixelFingerprint": "d0f0e8c8e969e0d6",
         "candidateSubject": "downtown|centro|parque de las palapas|central.square",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
@@ -3917,28 +3917,28 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "le-blanc-5",
+        "key": "le-blanc-6",
         "sourcePage": "https://sportvac.com/en/hotels/le-blanc-spa-resort-adult-only/",
-        "sourceResolvedUrl": "https://sportvac.com/wp-content/uploads/2026/11/004ParadisusGrandCana-General-Aerial-scaled.jpg",
-        "sourceRequestedUrl": "https://sportvac.com/wp-content/uploads/2026/11/004ParadisusGrandCana-General-Aerial-scaled.jpg",
+        "sourceResolvedUrl": "https://sportvac.com/wp-content/uploads/2026/11/005cParadisusPalmaReal-General-Facade-Aerial-scaled.jpg",
+        "sourceRequestedUrl": "https://sportvac.com/wp-content/uploads/2026/11/005cParadisusPalmaReal-General-Facade-Aerial-scaled.jpg",
         "originalAlt": "",
         "originalCaption": "",
         "credit": "Le Blanc Spa Resort Cancun",
         "publisher": "Le Blanc Spa Resort Cancun",
         "hotel": "Le Blanc Spa Resort Cancun",
-        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-5.webp",
-        "sourceSHA256": "d7daafab7871e6ffd5b02dcddde392d488ed22982fa25600717b6600c3213f61",
-        "webpSHA256": "4fc61212d5f96800b04b1fdcca9dd41879a1afbb3abe0238d6ca1179a30115ef",
+        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-6.webp",
+        "sourceSHA256": "aed73c870ba7f415efa2a93a6782d4c1d1fbf922314eaecdda459a868cb66473",
+        "webpSHA256": "1e707af66c62e3c9ee0f1e23bf1dc48da45725cbc8cc4039af7ebdb6dd3856e4",
         "sourcePixels": [
           2560,
-          1645
+          1440
         ],
         "webpPixels": [
           1280,
-          823
+          720
         ],
-        "webpBytes": 247082,
-        "pixelFingerprint": "210c98332f8f2000",
+        "webpBytes": 257584,
+        "pixelFingerprint": "b3313b236f68a73f",
         "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
@@ -3971,6 +3971,68 @@
         "webpBytes": 104470,
         "pixelFingerprint": "87edb9d1c031218d",
         "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "hyatt-ziva-3",
+        "sourcePage": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun",
+        "sourceResolvedUrl": "https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2024/03/08/1024/CANIF-P0582-Oceanfront-Lighthouse-Suite.jpg/CANIF-P0582-Oceanfront-Lighthouse-Suite.16x9.jpg?imwidth=2560",
+        "sourceRequestedUrl": "https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2024/03/08/1024/CANIF-P0582-Oceanfront-Lighthouse-Suite.jpg/CANIF-P0582-Oceanfront-Lighthouse-Suite.16x9.jpg?imwidth=2560",
+        "originalAlt": "Hyatt Ziva Cancun Oceanfront Lighthouse Suite",
+        "originalCaption": "Hyatt Hotels",
+        "credit": "Hyatt Hotels",
+        "publisher": "Hyatt Ziva Cancun",
+        "hotel": "Hyatt Ziva Cancun",
+        "localPath": "/images/travel/cancun-premium/hyatt-ziva/hyatt-ziva-3.webp",
+        "sourceSHA256": "a998c29149ca9836cd74e1a5d111c2692f6996d699603d5027e168d69df28326",
+        "webpSHA256": "98d0dfb601e4099fb3505988edec4c477731698db2a4d15f42dca656394b7108",
+        "sourcePixels": [
+          2560,
+          1440
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 30204,
+        "pixelFingerprint": "f5f3d38bc4883265",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "hyatt-ziva-4",
+        "sourcePage": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun",
+        "sourceResolvedUrl": "https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2022/12/14/1155/CANIF-P0549-Turquoize-Tower-Punta-Vista-Pool.jpg/CANIF-P0549-Turquoize-Tower-Punta-Vista-Pool.16x9.jpg?imwidth=2560",
+        "sourceRequestedUrl": "https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2022/12/14/1155/CANIF-P0549-Turquoize-Tower-Punta-Vista-Pool.jpg/CANIF-P0549-Turquoize-Tower-Punta-Vista-Pool.16x9.jpg?imwidth=2560",
+        "originalAlt": "Hyatt Ziva Cancun adults-only Turquoize Tower Punta Vista Pool",
+        "originalCaption": "Hyatt Hotels",
+        "credit": "Hyatt Hotels",
+        "publisher": "Hyatt Ziva Cancun",
+        "hotel": "Hyatt Ziva Cancun",
+        "localPath": "/images/travel/cancun-premium/hyatt-ziva/hyatt-ziva-4.webp",
+        "sourceSHA256": "272385dde81787ae98d003130962f2c8ba5871abeefd8a2754b138531b265897",
+        "webpSHA256": "227ab95bae0565dceb543888158f09de084246591b03fcf0024aa2c5eac55c7c",
+        "sourcePixels": [
+          2560,
+          1440
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 72062,
+        "pixelFingerprint": "6382e6e460e0f9e7",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -4041,28 +4103,28 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "coral-beach-5",
+        "key": "coral-beach-6",
         "sourcePage": "https://www.coralbeachcancunresort.com/",
-        "sourceResolvedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/Gem-Spa-Pool-of-Sensations-2.jpg",
-        "sourceRequestedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/Gem-Spa-Pool-of-Sensations-2.jpg",
+        "sourceResolvedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/FACB-Angular-pool-view.jpg",
+        "sourceRequestedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/FACB-Angular-pool-view.jpg",
         "originalAlt": "",
         "originalCaption": "",
         "credit": "Grand Fiesta Americana Coral Beach Cancún",
         "publisher": "Grand Fiesta Americana Coral Beach Cancún",
         "hotel": "Grand Fiesta Americana Coral Beach Cancún",
-        "localPath": "/images/travel/cancun-premium/coral-beach/coral-beach-5.webp",
-        "sourceSHA256": "3ce0e501555b7dc554b757d2e0c28b1fe99be0e7b651594700516b838ccbdd86",
-        "webpSHA256": "1e35a1dd958bcb285c783d9c0712b40443dd5a9d01e41419ca72d9949df77a60",
+        "localPath": "/images/travel/cancun-premium/coral-beach/coral-beach-6.webp",
+        "sourceSHA256": "d6c2b00552115fe000480fbfd0878abe29d2fe6c24119f01b5715af7b306f439",
+        "webpSHA256": "edbfd1a73a94bc432aeb44f6a61ee76cdd1209911b2fe0fdc0fd5d96f486ef89",
         "sourcePixels": [
           1920,
-          1440
+          1280
         ],
         "webpPixels": [
-          1133,
+          1275,
           850
         ],
-        "webpBytes": 91464,
-        "pixelFingerprint": "6cbdb3daf2eab86c",
+        "webpBytes": 118402,
+        "pixelFingerprint": "68a1ba2ce9a9e3a2",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
@@ -4082,11 +4144,6 @@
         "group": "nizuc",
         "expected": 3,
         "found": 2
-      },
-      {
-        "group": "hyatt-ziva",
-        "expected": 3,
-        "found": 1
       }
     ],
     "errors": [
@@ -4169,50 +4226,6 @@
       {
         "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms",
         "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms"
-      },
-      {
-        "url": "https://us.trip.com/hotels/san-francisco-hotel-detail-2192948/san-francisco-marriott-marquis/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72ac6eaca4d0>"
-      },
-      {
-        "url": "https://us.trip.com/hotels/dar-es-salaam-hotel-detail-12123871/chelsea-hotel/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72ac6ed53920>"
-      },
-      {
-        "url": "https://us.trip.com/hotels/portland-hotel-detail-2193060/hilton-portland-downtown/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72ac6ed53920>"
-      },
-      {
-        "url": "https://us.trip.com/hotels/tokyo-hotel-detail-34011678/the-blossom-hibiya/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72ac6ec42d90>"
-      },
-      {
-        "url": "https://us.trip.com/hotels/solvang-hotel-detail-9036037/new-haven-inn/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72ac6ec42d90>"
-      },
-      {
-        "url": "https://www.trip.com/hotels/phuket-hotel-detail-83988303/panwaburi-beachfront-resort/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72ac6ec427f0>"
-      },
-      {
-        "url": "https://www.trip.com/hotels/los-angeles-hotel-detail-1978985/sheraton-gateway-los-angeles/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72ac6ec427f0>"
-      },
-      {
-        "url": "https://www.trip.com/hotels/tokyo-hotel-detail-994914/shinjuku-washington-hotel/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72ac6eee24d0>"
-      },
-      {
-        "url": "https://www.trip.com/hotels/tokyo-hotel-detail-993892/shinjuku-granbell-hotel/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72ac6ee285e0>"
-      },
-      {
-        "url": "https://www.trip.com/hotels/ho-chi-minh-city-hotel-detail-2073112/park-hyatt-saigon/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72ac6ee285e0>"
-      },
-      {
-        "page": "https://www.expedia.com/Cancun-Hotels-Hyatt-Ziva-Cancun-All-Inclusive.h11669114.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Hyatt-Ziva-Cancun-All-Inclusive.h11669114.Hotel-Information"
       }
     ],
     "publicUseApproved": false,
@@ -4465,10 +4478,103 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-8",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Parque_de_las_Palapas_1.jpg",
+        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Parque_de_las_Palapas_1.jpg/960px-Parque_de_las_Palapas_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20171102134521",
+        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Parque_de_las_Palapas_1.jpg/960px-Parque_de_las_Palapas_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20171102134521",
+        "originalAlt": "File:Parque de las Palapas 1.jpg",
+        "originalCaption": "",
+        "credit": "Mexican Caribbean / Quintana Roo tourism",
+        "publisher": "Mexican Caribbean / Quintana Roo tourism",
+        "hotel": null,
+        "localPath": "/images/travel/cancun-premium/destination/scene-8.webp",
+        "sourceSHA256": "a0ebe936450be1203f085b035bc7021be524afcd56ac47f98c0e6fb18341d644",
+        "webpSHA256": "cb95db13be8cae90ef3c6861a07aac819b34e5b3445dbb8745088b21a0829b65",
+        "sourcePixels": [
+          960,
+          640
+        ],
+        "webpPixels": [
+          960,
+          640
+        ],
+        "webpBytes": 26042,
+        "pixelFingerprint": "c4e4a929498a184c",
+        "candidateSubject": "downtown|centro|parque de las palapas|central.square",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "le-blanc-5",
+        "sourcePage": "https://sportvac.com/en/hotels/le-blanc-spa-resort-adult-only/",
+        "sourceResolvedUrl": "https://sportvac.com/wp-content/uploads/2026/11/004ParadisusGrandCana-General-Aerial-scaled.jpg",
+        "sourceRequestedUrl": "https://sportvac.com/wp-content/uploads/2026/11/004ParadisusGrandCana-General-Aerial-scaled.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Le Blanc Spa Resort Cancun",
+        "publisher": "Le Blanc Spa Resort Cancun",
+        "hotel": "Le Blanc Spa Resort Cancun",
+        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-5.webp",
+        "sourceSHA256": "d7daafab7871e6ffd5b02dcddde392d488ed22982fa25600717b6600c3213f61",
+        "webpSHA256": "4fc61212d5f96800b04b1fdcca9dd41879a1afbb3abe0238d6ca1179a30115ef",
+        "sourcePixels": [
+          2560,
+          1645
+        ],
+        "webpPixels": [
+          1280,
+          823
+        ],
+        "webpBytes": 247082,
+        "pixelFingerprint": "210c98332f8f2000",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "coral-beach-5",
+        "sourcePage": "https://www.coralbeachcancunresort.com/",
+        "sourceResolvedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/Gem-Spa-Pool-of-Sensations-2.jpg",
+        "sourceRequestedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/Gem-Spa-Pool-of-Sensations-2.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Grand Fiesta Americana Coral Beach Cancún",
+        "publisher": "Grand Fiesta Americana Coral Beach Cancún",
+        "hotel": "Grand Fiesta Americana Coral Beach Cancún",
+        "localPath": "/images/travel/cancun-premium/coral-beach/coral-beach-5.webp",
+        "sourceSHA256": "3ce0e501555b7dc554b757d2e0c28b1fe99be0e7b651594700516b838ccbdd86",
+        "webpSHA256": "1e35a1dd958bcb285c783d9c0712b40443dd5a9d01e41419ca72d9949df77a60",
+        "sourcePixels": [
+          1920,
+          1440
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 91464,
+        "pixelFingerprint": "6cbdb3daf2eab86c",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "cityCount": 7,
-    "hotelCount": 9,
-    "totalBytes": 1766664
+    "hotelCount": 11,
+    "totalBytes": 1922078
   }
 }
