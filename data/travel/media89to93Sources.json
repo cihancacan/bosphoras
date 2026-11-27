@@ -4,6 +4,14 @@
     "city": "Londres",
     "publisher": "Visit London / London & Partners",
     "cityPages": [
+      "https://www.coventgarden.london/experience/visit/the-market-building-and-piazza",
+      "https://www.royalparks.org.uk/visit/parks/hyde-park",
+      "https://www.stpauls.co.uk/press-and-media",
+      "https://www.stpauls.co.uk/",
+      "https://boroughmarket.org.uk/visit-us/",
+      "https://www.bondstreet.co.uk/your-visit/discover-the-area",
+      "https://www.visitbritain.com/en/things-to-do/londons-markets",
+      "https://www.visitbritain.com/en/things-to-do/britains-luxury-shopping-spots",
       "https://www.visitlondon.com/things-to-do",
       "https://www.visitlondon.com/things-to-do/sightseeing/best-views-in-london",
       "https://www.visitbritain.com/en/things-to-do/visit-bridget-jones-filming-locations",
@@ -60,6 +68,8 @@
         "savoy",
         "The Savoy",
         [
+          "https://press.thesavoylondon.com/the-savoy-exterior/?lang=en",
+          "https://all.accor.com/hotel/A597/index.en.shtml",
           "https://press.thesavoylondon.com/beauty-amp-fitness-gym/?lang=en",
           "https://press.thesavoylondon.com/section/images/",
           "https://www.thesavoylondon.com/wellness",
@@ -87,6 +97,8 @@
         "shangri-la",
         "Shangri-La The Shard, London",
         [
+          "https://www.the-shard.com/about/",
+          "https://www.the-shard.com/contact-us/shangri-la-hotel",
           "https://www.the-shard.com/shangri-la-the-shard-london/hotel-amenities",
           "https://www.the-shard.com/news-events/news-events/2014/infinity-pool-opens-as-vertical-city-vision-becomes-a-reality",
           "https://www.shangri-la.com/london/shangrila/photos-videos/",
