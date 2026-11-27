@@ -103,7 +103,7 @@ export function HotelGuideExplorer({ locale, destinations, bookingDestinations, 
         </form>
         {bookingError && <p role="alert" className={s.searchError}>{bookingError}</p>}
         {worldwideUrl && <p className={s.worldwideSearch}><a href={worldwideUrl} rel="sponsored noopener noreferrer" target="_blank">{fr?'Toutes les destinations dans le moteur Nuitée':'All destinations in the Nuitée engine'} ↗</a><span>{fr?'Bosphoras peut percevoir une commission.':'Bosphoras may earn a commission.'}</span></p>}
-        <div className={s.searchBottom}><div>{fr ? 'Envies du moment :' : 'Find your inspiration:'}{['Istanbul','Paris','Bali','Maldives'].map(name=><button type="button" key={name} onClick={()=>{setQuery(name);setMood('all');setLimit(6);destinationInput.current?.focus();}}>{name}</button>)}</div><div className={s.searchActions}><button type="button" onClick={exploreGuides}>{fr?'Explorer nos guides':'Explore our guides'}<ArrowRight size={13}/></button><p>{bookingReady ? (fr?'Réservation et assistance : Nuitée':'Booking and support: Nuitée') : (fr?'Réservations en cours d’ouverture':'Booking opening soon')}</p></div></div>
+        <div className={s.searchBottom}><div>{fr ? 'Envies du moment :' : 'Find your inspiration:'}{['Istanbul','Paris','Bali','Maldives'].map(name=><button type="button" key={name} onClick={()=>{setQuery(name);setMood('all');setLimit(6);destinationInput.current?.focus();}}>{name}</button>)}</div><div className={s.searchActions}><button type="button" onClick={exploreGuides}>{fr?'Explorer nos guides':'Explore our guides'}<ArrowRight size={13}/></button>{!bookingReady && <p>{fr?'Réservations en cours d’ouverture':'Booking opening soon'}</p>}</div></div>
       </div>
     </div>
 
