@@ -1,0 +1,156 @@
+{
+  "name": "Verbier",
+  "country": "Svizzera",
+  "eyebrow": "Vallese · Médran, panorami e vita di montagna",
+  "heading": "Verbier: giornate sportive in montagna e serate vivaci",
+  "intro": "A Verbier lo sci impegnativo incontra ristoranti, bar e accoglienti chalet tradizionali. Hotel presso impianti Médran, terrazza verso Savoleyres o indirizzo in centro offrono esperienze diverse, soprattutto per famiglie e viaggiatori senza auto.",
+  "editorial": "Médran è comodo per le piste delle 4 Vallées, il centro per ristoranti e passeggiate serali, i quartieri sui pendii per panorami e privacy. W Verbier è vicino alle piste, con architettura moderna, spa e spazi comuni vivaci. Chalet d’Adrien offre quiete e vista verso Savoleyres. La Cordée des Alpes riunisce camere, appartamenti e benessere; Experimental Chalet spicca per design e vita del centro. Accessi alle piste differenti.",
+  "hotelIntro": "Quattro hotel dal carattere distinto: W Verbier a Médran, Chalet d’Adrien con panorami, La Cordée des Alpes con suite e spa, Experimental Chalet in centro.",
+  "areas": [
+    [
+      "Médran e Place Blanche",
+      "Principale nodo degli impianti, per iniziare la giornata direttamente vicino alla montagna.",
+      "Ski-in/ski-out disponibile solo in alcuni hotel."
+    ],
+    [
+      "Place Centrale e vie del borgo",
+      "Ristoranti, negozi e vita serale anche per chi non scia.",
+      "Considera posizione della camera e rumore serale."
+    ],
+    [
+      "Savoleyres e Les Esserts",
+      "Panorami tranquilli e quartieri residenziali per riposo in terrazza.",
+      "Per Médran o il centro possono servire navetta, taxi o passeggiata in pendenza."
+    ],
+    [
+      "Les Creux e colline residenziali",
+      "Chalet tradizionali, panorami ampi e privacy; strade ripide in inverno.",
+      "Verifica percorsi a piedi con bambini, passeggino o attrezzatura."
+    ],
+    [
+      "Le Châble e Val de Bagnes",
+      "Nodo di trasporto sotto la località con alloggi e collegamenti montani diversi.",
+      "Indirizzo a valle non equivale a hotel sulle piste di Verbier."
+    ]
+  ],
+  "experiences": [
+    [
+      "Prima risalita da Médran",
+      "Scegli impianto e percorso secondo condizioni montane."
+    ],
+    [
+      "Relax in terrazza alpina",
+      "Goditi panorama verificando ultima discesa al borgo."
+    ],
+    [
+      "Serata a Verbier",
+      "Scegli cocktail bar, ristorante o tranquillo salotto d'hotel."
+    ],
+    [
+      "Verbier senza sci",
+      "Sentieri segnati, spa e gite in valle mostrano un altro lato."
+    ]
+  ],
+  "checks": [
+    "Distingui Médran, centro, Savoleyres e valle.",
+    "Non estendere accesso diretto dichiarato da W Verbier agli altri hotel.",
+    "Confronta appartamenti, residenze e camere.",
+    "Verifica impianti 4 Vallées, neve e date di stagione.",
+    "Considera navette, strade ripide e rumore serale.",
+    "Prezzi e disponibilità presso partner di prenotazione."
+  ],
+  "hotels": [
+    [
+      "Médran · Place Blanche",
+      "Resort moderno presso impianti Médran combina sci e vita sociale. Descrizione indica camere con camino, suite, residenze con due o tre camere e wellness di circa 1300 m². Accesso diretto dipende da neve e piste aperte.",
+      "Distingui camere e residenze; verifica balcone, rumore e piste.",
+      "Per sci sportivo e atmosfera moderna.",
+      ""
+    ],
+    [
+      "Les Creux · Vista Savoleyres",
+      "Hotel intimo in stile Relais & Châteaux con interni in legno, terrazze e vista verso Savoleyres. Alcune camere collegabili per famiglie. Piscina, spa e ristoranti invitano al relax.",
+      "Conferma vista, camere comunicanti e transfer a Médran.",
+      "Per serate tranquille e panorami montani.",
+      ""
+    ],
+    [
+      "Rue du Centre sportif · Chalet moderno",
+      "La Cordée des Alpes offre camere, suite, appartamenti e benessere in ambiente alpino moderno e accogliente. Per relax lontano dall'impianto più affollato.",
+      "Verifica pianta appartamento, spa e percorso Médran.",
+      "Per montagna con comfort da chalet.",
+      ""
+    ],
+    [
+      "Centro Verbier · Design e cocktail",
+      "Experimental Chalet porta design urbano nelle Alpi: 39 camere e suite di Fabrizio Casiraghi, ristorante e cultura cocktail Experimental. Per chi ama vita serale.",
+      "Verifica orari di bar e ristorante, rumore notturno e percorso impianti.",
+      "Per design, gastronomia e vita del centro.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Quale zona è più comoda per le piste?",
+      "Médran è nodo principale. W Verbier è vicino; altri hotel possono richiedere passeggiata, bus o taxi."
+    ],
+    [
+      "W Verbier ha vero ski-in/ski-out?",
+      "Hotel dichiara accesso diretto presso gondola Médran; dipende da neve e piste aperte."
+    ],
+    [
+      "Ci sono residenze familiari con più camere?",
+      "W offre due e tre camere; altri hotel appartamenti o camere comunicanti. Verifica piante e servizi."
+    ],
+    [
+      "Quali hotel sono più tranquilli?",
+      "Chalet d’Adrien punta a quiete e vista; W e Experimental Chalet sono più vivaci. Conta posizione della camera."
+    ],
+    [
+      "La Cordée des Alpes è ski-in/ski-out?",
+      "Rue du Centre sportif non garantisce accesso diretto; verifica percorso, pendenze e trasporti."
+    ],
+    [
+      "Serve guida per il fuoripista?",
+      "Freeride comporta valanghe e altri rischi. Rivolgiti a professionista locale qualificato e verifica condizioni di sicurezza."
+    ],
+    [
+      "Come prenotare?",
+      "Partner autorizzato conferma disponibilità, prezzo e condizioni."
+    ]
+  ],
+  "photoCaptions": [
+    "Panorama Mont Fort Verbier",
+    "Le Châble e Val de Bagnes dall'alto",
+    "Place Blanche presso Médran",
+    "Place Centrale in serata invernale",
+    "Pista Savoleyres",
+    "Area principianti Les Esserts",
+    "Chalet d’Adrien a Verbier",
+    "Après-ski a Verbier"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Camera W Verbier",
+      "Foto W Verbier",
+      "Piscina W Verbier"
+    ],
+    [
+      "Chalet d’Adrien",
+      "Vista hotel Chalet d’Adrien",
+      "Terrazza Chalet d’Adrien"
+    ],
+    [
+      "Facciata La Cordée des Alpes",
+      "Suite La Cordée des Alpes",
+      "Appartamento La Cordée des Alpes"
+    ],
+    [
+      "Camera Experimental Chalet",
+      "Balcone vista cime innevate"
+    ]
+  ],
+  "seoTitle": "Verbier: hotel di lusso, chalet e sci nelle 4 Vallées",
+  "hotelSeoTitle": "Hotel a Verbier: W, Chalet d’Adrien, La Cordée des Alpes e Experimental",
+  "seoDescription": "Confronta quattro hotel di lusso a Verbier: Médran, chalet, spa, residenze familiari e piste delle 4 Vallées."
+}

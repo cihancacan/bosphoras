@@ -1,0 +1,156 @@
+{
+  "name": "韦尔比耶",
+  "country": "瑞士",
+  "eyebrow": "瓦莱州 · Médran、山景及度假村生活",
+  "heading": "韦尔比耶：运动山地白昼与热闹夜晚",
+  "intro": "韦尔比耶融合高水平滑雪、餐厅、酒吧及温馨传统木屋。Médran 缆车旁酒店、Savoleyres 景观露台及村中心住宿提供不同体验，尤其对家庭和无车游客而言。",
+  "editorial": "Médran 便于通往四山谷雪道，中心适合餐厅及夜间散步，山坡住宅区适合全景与私密。W Verbier 邻近雪道，融合现代建筑、水疗及热闹共享空间。Chalet d’Adrien 在 Savoleyres 区提供宁静和景观。La Cordée des Alpes 结合客房、公寓及康养服务；Experimental Chalet 以设计及中心生活吸引宾客。各住宿雪道通行条件不同。",
+  "hotelIntro": "四家不同风格酒店：Médran 的 W Verbier、山景 Chalet d’Adrien、舒适套房及水疗 La Cordée des Alpes，以及中心 Experimental Chalet。",
+  "areas": [
+    [
+      "Médran 与 Place Blanche",
+      "主要缆车枢纽，适合希望清晨直接在山边出发的人。",
+      "仅部分酒店可滑雪进出。"
+    ],
+    [
+      "Place Centrale 与村庄街道",
+      "餐厅、商店及夜生活，也适合非滑雪游客。",
+      "考虑房间位置及晚间噪声。"
+    ],
+    [
+      "Savoleyres 与 Les Esserts",
+      "宁静山景及住宅区，适合露台悠闲休息。",
+      "前往 Médran 或中心可能需接驳、出租车或坡道步行。"
+    ],
+    [
+      "Les Creux 与住宅山丘",
+      "传统木屋、广阔山景与私密性，冬季道路可能陡峭。",
+      "确认带儿童、婴儿车或滑雪装备的步行便利。"
+    ],
+    [
+      "Le Châble 与 Val de Bagnes",
+      "度假村下方交通枢纽，住宿及登山连接不同。",
+      "山谷地址不等同于韦尔比耶雪道旁酒店。"
+    ]
+  ],
+  "experiences": [
+    [
+      "Médran 首班登山缆车",
+      "按山地条件选择合适缆车与路线。"
+    ],
+    [
+      "山地露台休息",
+      "提前确认返回村庄末班时间，欣赏风景。"
+    ],
+    [
+      "韦尔比耶夜晚",
+      "按喜好选择鸡尾酒吧、餐厅或安静酒店休息厅。"
+    ],
+    [
+      "不滑雪的韦尔比耶",
+      "标记步道、水疗及山谷游览呈现度假村另一面。"
+    ]
+  ],
+  "checks": [
+    "区分 Médran、村中心、Savoleyres 及山谷。",
+    "勿将 W Verbier 宣称的直接雪道通行套用于其他酒店。",
+    "比较公寓、住宅及酒店客房。",
+    "确认四山谷缆车、积雪及季节日期。",
+    "考虑接驳、陡峭街道及晚间噪声。",
+    "向预订合作方确认实时价格及房量。"
+  ],
+  "hotels": [
+    [
+      "Médran · Place Blanche",
+      "Médran 缆车旁现代度假村融合滑雪与活跃社交。原说明列壁炉客房、套房、二或三卧室住宅及约1300平方米康养区。直接雪道通行依积雪与雪道开放。",
+      "区分客房与住宅，确认阳台、晚间噪声及雪道通行。",
+      "适合运动型滑雪与现代氛围。",
+      ""
+    ],
+    [
+      "Les Creux · Savoleyres 景观",
+      "Relais & Châteaux 风格私密酒店，配木质内饰、露台及 Savoleyres 方向景观。部分客房可连通供家庭使用。泳池、水疗及餐厅适合悠闲休息。",
+      "确认景观、连通房及 Médran 雪道接送。",
+      "适合宁静夜晚与山景。",
+      ""
+    ],
+    [
+      "Rue du Centre sportif · 现代木屋",
+      "La Cordée des Alpes 提供客房、套房、公寓及康养空间，营造温馨现代山地氛围。适合远离最热闹缆车枢纽的静休。",
+      "确认公寓布局、水疗准入及 Médran 路线。",
+      "适合木屋舒适感与山地度假。",
+      ""
+    ],
+    [
+      "韦尔比耶中心 · 设计及鸡尾酒",
+      "Experimental Chalet 将城市设计美学带入阿尔卑斯：Fabrizio Casiraghi 设计39间客房及套房、餐厅及 Experimental 鸡尾酒文化。适合夜生活爱好者。",
+      "确认酒吧与餐厅时间、可能的夜间噪声及缆车路线。",
+      "适合设计、美食及村中心生活。",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "哪个区域最方便到雪道？",
+      "Médran 为主要缆车枢纽，W Verbier 位于旁边，其他酒店可能需步行、公交或出租车。"
+    ],
+    [
+      "W Verbier 真正可滑雪进出吗？",
+      "酒店称 Médran 缆车旁有直接通行，实际取决于雪道开放及积雪。"
+    ],
+    [
+      "有多卧室家庭住宅吗？",
+      "W 提供二及三卧室住宅，其他酒店可能有公寓或连通房。确认布局与服务。"
+    ],
+    [
+      "哪些酒店更宁静？",
+      "Chalet d’Adrien 主打宁静山景，W 与 Experimental Chalet 氛围较热闹，具体房间位置亦重要。"
+    ],
+    [
+      "La Cordée des Alpes 可滑雪进出吗？",
+      "Rue du Centre sportif 地址不保证直接雪道通行，确认路线、陡坡及交通。"
+    ],
+    [
+      "非雪道滑雪需要向导吗？",
+      "野雪涉及雪崩及其他山地风险，建议咨询合格当地专业人员并确认当前安全条件。"
+    ],
+    [
+      "如何预订酒店？",
+      "授权预订合作方确认实时房量、价格及条件。"
+    ]
+  ],
+  "photoCaptions": [
+    "韦尔比耶 Mont Fort 全景",
+    "Le Châble 与 Val de Bagnes 航拍",
+    "Médran 缆车旁 Place Blanche",
+    "冬夜 Place Centrale",
+    "Savoleyres 雪道",
+    "Les Esserts 初学滑雪区",
+    "韦尔比耶 Chalet d’Adrien",
+    "韦尔比耶滑雪后休闲"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "W Verbier 卧室",
+      "W Verbier 照片",
+      "W Verbier 泳池"
+    ],
+    [
+      "Chalet d’Adrien",
+      "Chalet d’Adrien 酒店景观",
+      "Chalet d’Adrien 露台"
+    ],
+    [
+      "La Cordée des Alpes 外立面",
+      "La Cordée des Alpes 套房",
+      "La Cordée des Alpes 公寓"
+    ],
+    [
+      "Experimental Chalet 客房",
+      "雪峰景阳台"
+    ]
+  ],
+  "seoTitle": "韦尔比耶住哪里？瑞士豪华酒店、木屋及四山谷滑雪",
+  "hotelSeoTitle": "韦尔比耶酒店：W、Chalet d’Adrien、La Cordée des Alpes 与 Experimental",
+  "seoDescription": "比较韦尔比耶四家豪华酒店，了解 Médran 缆车、木屋、水疗、家庭住宅及四山谷雪道。"
+}

@@ -1,0 +1,156 @@
+{
+  "name": "Verbier",
+  "country": "İsviçre",
+  "eyebrow": "Valais · Médran, dağ manzaraları ve resort yaşamı",
+  "heading": "Verbier: dağlarda sportif günler, hareketli akşamlar",
+  "intro": "Verbier'de ciddi kayak deneyimi restoranlar, barlar ve sıcak geleneksel şalelerle birleşir. Médran liftleri yanındaki otel, Savoleyres manzaralı teras veya köy merkezindeki adres farklı tatiller sunar; özellikle aileler ve araçsız seyahat edenler için konum önemlidir.",
+  "editorial": "Médran, 4 Vallées pistlerine ulaşım için; merkez restoranlar ve akşam yürüyüşleri için; yamaçlardaki yerleşim bölgeleri ise manzara ve mahremiyet için uygundur. W Verbier pistlere yakın, çağdaş mimari, spa ve canlı ortak alanları birleştirir. Chalet d’Adrien Savoleyres bölgesinde huzur ve manzara sunar. La Cordée des Alpes oda, apartman ve wellness hizmetlerini birleştirir; Experimental Chalet tasarım ve merkez yaşamıyla öne çıkar. Pist erişimi her adreste farklıdır.",
+  "hotelIntro": "Dört farklı karakter: Médran'da W Verbier, dağ manzaralı Chalet d’Adrien, konforlu süit ve spa ile La Cordée des Alpes, merkezde Experimental Chalet.",
+  "areas": [
+    [
+      "Médran ve Place Blanche",
+      "Ana lift merkezi, güne doğrudan dağ yakınında başlamak isteyenler için uygun.",
+      "Kayakla doğrudan piste erişim yalnızca bazı otellerde mümkündür."
+    ],
+    [
+      "Place Centrale ve köy sokakları",
+      "Kayak yapmayanlara da hitap eden restoranlar, mağazalar ve akşam hayatı.",
+      "Oda konumunu ve akşam gürültüsünü dikkate alın."
+    ],
+    [
+      "Savoleyres ve Les Esserts",
+      "Sakin manzaralar ve terasta huzurlu dinlenme için yerleşim bölgeleri.",
+      "Médran veya merkeze servis, taksi ya da yokuşlu yürüyüş gerekebilir."
+    ],
+    [
+      "Les Creux ve yerleşim tepeleri",
+      "Geleneksel şaleler, geniş manzaralar ve mahremiyet; kışın yollar dik olabilir.",
+      "Çocuk, bebek arabası ve kayak ekipmanıyla yaya erişimini kontrol edin."
+    ],
+    [
+      "Le Châble ve Val de Bagnes",
+      "Resortun aşağısında farklı konaklama ve dağ ulaşımı koşulları olan ulaşım merkezi.",
+      "Vadideki adres Verbier pistleri yanındaki otelle aynı değildir."
+    ]
+  ],
+  "experiences": [
+    [
+      "Médran'dan ilk çıkış",
+      "Dağ koşullarına göre uygun lifti ve rotayı seçin."
+    ],
+    [
+      "Dağ terasında dinlenme",
+      "Köye son iniş saatini kontrol edip manzaranın tadını çıkarın."
+    ],
+    [
+      "Verbier'de akşam",
+      "Kokteyl barı, restoran veya sakin otel salonu arasından seçin."
+    ],
+    [
+      "Kayaksız Verbier",
+      "İşaretli yürüyüş rotaları, spa ve vadi gezileri farklı bir deneyim sunar."
+    ]
+  ],
+  "checks": [
+    "Médran, merkez, Savoleyres ve vadiyi ayırın.",
+    "W Verbier'in doğrudan pist erişimini diğer otellere genellemeyin.",
+    "Apartman, rezidans ve otel odalarını karşılaştırın.",
+    "4 Vallées liftlerini, kar durumunu ve sezon tarihlerini kontrol edin.",
+    "Servis araçlarını, dik sokakları ve akşam gürültüsünü dikkate alın.",
+    "Güncel fiyat ve müsaitliği rezervasyon partnerinden doğrulayın."
+  ],
+  "hotels": [
+    [
+      "Médran · Place Blanche",
+      "Médran liftleri yanındaki çağdaş resort, kayak ve canlı sosyal yaşamı birleştirir. Kaynak açıklamada şömineli odalar, süitler, iki veya üç yatak odalı rezidanslar ve yaklaşık 1300 m² wellness alanı belirtilir. Doğrudan pist erişimi kar ve pist işletimine bağlıdır.",
+      "Oda ve rezidansları ayırın; balkon, akşam gürültüsü ve pist erişimini doğrulayın.",
+      "Sportif kayak tatili ve modern atmosfer için.",
+      ""
+    ],
+    [
+      "Les Creux · Savoleyres manzarası",
+      "Relais & Châteaux tarzı samimi otel, ahşap iç mekânlar, teraslar ve Savoleyres yönünde manzaralar sunar. Bazı odalar aileler için birleştirilebilir. Havuz, spa ve restoranlar sakin tatili tamamlar.",
+      "Manzara, bağlantılı odalar ve Médran pistlerine transferi doğrulayın.",
+      "Sakin akşamlar ve dağ manzaraları için.",
+      ""
+    ],
+    [
+      "Rue du Centre sportif · Modern şale",
+      "La Cordée des Alpes sıcak çağdaş dağ ortamında odalar, süitler, apartmanlar ve wellness alanları sunar. En hareketli lift merkezinden uzakta dinlenmek isteyenlere uygundur.",
+      "Apartman planını, spa erişimini ve Médran rotasını kontrol edin.",
+      "Şale konforunda dağ tatili için.",
+      ""
+    ],
+    [
+      "Verbier merkezi · Tasarım ve kokteyller",
+      "Experimental Chalet şehirli tasarımı Alplere taşır: Fabrizio Casiraghi imzalı 39 oda ve süit, restoran ve Experimental kokteyl kültürü. Akşam hayatını sevenlere uygun.",
+      "Bar ve restoran saatlerini, gece gürültüsünü ve lift rotasını doğrulayın.",
+      "Tasarım, gastronomi ve merkez yaşamı için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Pistlere en kolay hangi bölgeden ulaşılır?",
+      "Médran ana lift merkezidir. W Verbier yakındır; diğer otellerden yürüyüş, otobüs veya taksi gerekebilir."
+    ],
+    [
+      "W Verbier gerçekten ski-in/ski-out mu?",
+      "Otel Médran gondolu yanında doğrudan erişim belirtir; gerçek koşullar kar ve pistlerin açık olmasına bağlıdır."
+    ],
+    [
+      "Çok yatak odalı aile rezidansı var mı?",
+      "W iki ve üç yatak odalı rezidanslar sunar; diğer otellerde apartman veya bağlantılı odalar olabilir. Plan ve hizmetleri doğrulayın."
+    ],
+    [
+      "Hangi oteller daha sakin?",
+      "Chalet d’Adrien manzaralı huzura, W ve Experimental Chalet daha canlı atmosfere odaklanır. Oda konumu da önemlidir."
+    ],
+    [
+      "La Cordée des Alpes ski-in/ski-out mu?",
+      "Rue du Centre sportif adresi doğrudan pist erişimi garantisi değildir. Rotayı, dik sokakları ve ulaşımı kontrol edin."
+    ],
+    [
+      "Pist dışı kayak için rehber gerekli mi?",
+      "Freeride çığ ve başka dağ riskleri içerir. Nitelikli yerel rehbere danışın ve güncel güvenlik koşullarını kontrol edin."
+    ],
+    [
+      "Oteller nasıl rezerve edilir?",
+      "Yetkili rezervasyon partneri güncel müsaitlik, fiyat ve koşulları doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Verbier Mont Fort panoraması",
+    "Le Châble ve Val de Bagnes havadan",
+    "Médran liftleri yanında Place Blanche",
+    "Kış akşamında Place Centrale",
+    "Savoleyres pisti",
+    "Les Esserts başlangıç kayak alanı",
+    "Verbier Chalet d’Adrien",
+    "Verbier après-ski"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "W Verbier yatak odası",
+      "W Verbier fotoğrafı",
+      "W Verbier havuzu"
+    ],
+    [
+      "Chalet d’Adrien",
+      "Chalet d’Adrien otel görünümü",
+      "Chalet d’Adrien terası"
+    ],
+    [
+      "La Cordée des Alpes cephesi",
+      "La Cordée des Alpes süiti",
+      "La Cordée des Alpes apartmanı"
+    ],
+    [
+      "Experimental Chalet odası",
+      "Karlı zirve manzaralı balkon"
+    ]
+  ],
+  "seoTitle": "Verbier: Lüks Oteller, Şaleler ve 4 Vallées Kayak Tatili",
+  "hotelSeoTitle": "Verbier Otelleri: W, Chalet d’Adrien, La Cordée des Alpes ve Experimental",
+  "seoDescription": "Verbier'de dört lüks oteli karşılaştırın: Médran liftleri, şaleler, spa, aile rezidansları ve 4 Vallées pistleri."
+}
