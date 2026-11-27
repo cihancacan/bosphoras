@@ -1,0 +1,18 @@
+{
+  "bvlgari": {
+    "hotel": "Bvlgari Hotel Roma",
+    "candidateCount": 0,
+    "images": [],
+    "errors": [
+      "404 Client Error: Not Found for url: https://www.bulgarihotels.com/dam/jcr%3A17946893-0585-4638-9381-733ec44cc0a9/brochure_bvlgari-hotel-roma.pdf"
+    ]
+  },
+  "mandarin": {
+    "hotel": "Mandarin Oriental, Barcelona",
+    "candidateCount": 0,
+    "images": [],
+    "errors": [
+      "410 Client Error: Gone for url: https://photos.mandarinoriental.com/is/content/MandarinOriental/barcelona-fact-sheet"
+    ]
+  }
+}

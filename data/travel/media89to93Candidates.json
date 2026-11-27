@@ -2,29 +2,91 @@
   "london": {
     "destinationScenes": [
       {
-        "key": "scene-3",
-        "sourcePage": "https://www.towerbridge.org.uk/filming-and-photography",
-        "sourceResolvedUrl": "https://www.towerbridge.org.uk/uploads/Filming/_article_image_2x/3621/Spiderman-TowerBridge.webp?v=1784645302",
-        "sourceRequestedUrl": "https://www.towerbridge.org.uk/uploads/Filming/_article_image_2x/3621/Spiderman-TowerBridge.webp?v=1784645302",
-        "originalAlt": "Spiderman dressed in his suit is hanging from Tower Bridge",
-        "originalCaption": "Spider Man: Far from Home, 2019\n\t\t\t\t\t\t\t© Entertainment Pictures / Alamy",
+        "key": "scene-4",
+        "sourcePage": "https://www.visitbritain.com/en/things-to-do/visit-mary-poppins-returns-filming-locations",
+        "sourceResolvedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/51gq17634wt6qj565lp2l1bv2jcw08t2/t/re_w_1014,re_h_654,re_rm_Stretch/c_w_1014,c_h_570,c_whu_Pixel,c_x_0.0000,c_y_0.0642/VB8OK0.jpg",
+        "sourceRequestedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/51gq17634wt6qj565lp2l1bv2jcw08t2/t/re_w_1014,re_h_654,re_rm_Stretch/c_w_1014,c_h_570,c_whu_Pixel,c_x_0.0000,c_y_0.0642/VB8OK0.jpg",
+        "originalAlt": "An upwards shot of Westminster Abbey and neighbouring historic buildings",
+        "originalCaption": "",
         "credit": "Visit London / London & Partners",
         "publisher": "Visit London / London & Partners",
         "hotel": null,
-        "localPath": "/images/travel/london-premium/destination/scene-3.webp",
-        "sourceSHA256": "34201a6d652fd494ae28d0df7835eba2e09836aa3acf489e618984f014b9f70e",
-        "webpSHA256": "c4313c997f2f0d51e45a8e1a04e6374d6d44c2580a22a74660a9b80667ae1e19",
+        "localPath": "/images/travel/london-premium/destination/scene-4.webp",
+        "sourceSHA256": "95c4ec64d631a72514c4cc9fbbf9b141fe6f7263e3e4ae296a54485dcfebbb17",
+        "webpSHA256": "e05f5c3cbd97cd70b19f1c1b7067073167dd2c3042ff844435673dc98b032213",
         "sourcePixels": [
-          1474,
-          617
+          1014,
+          570
         ],
         "webpPixels": [
-          1474,
-          617
+          1014,
+          570
         ],
-        "webpBytes": 52358,
-        "pixelFingerprint": "6d0d0b095d193c18",
+        "webpBytes": 107876,
+        "pixelFingerprint": "73b361756554548d",
+        "candidateSubject": "westminster|parliament|big ben",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-5",
+        "sourcePage": "https://www.visitbritain.com/en/things-to-do/visit-bridget-jones-filming-locations",
+        "sourceResolvedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/18eyg8f71767v2cfeq2141y702o63u18/t/re_w_1920,re_h_1336,re_rm_Stretch/c_w_1920,c_h_640,c_whu_Pixel,c_x_0.0000,c_y_0.2605/VB8NIF.jpg",
+        "sourceRequestedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/18eyg8f71767v2cfeq2141y702o63u18/t/re_w_1920,re_h_1336,re_rm_Stretch/c_w_1920,c_h_640,c_whu_Pixel,c_x_0.0000,c_y_0.2605/VB8NIF.jpg",
+        "originalAlt": "London Tower Bridge on a sunny day",
+        "originalCaption": "",
+        "credit": "Visit London / London & Partners",
+        "publisher": "Visit London / London & Partners",
+        "hotel": null,
+        "localPath": "/images/travel/london-premium/destination/scene-5.webp",
+        "sourceSHA256": "5938780bd636c0343538769714b3d48bd0d9b0f0cbfb1e4d1dcb58abcb14b391",
+        "webpSHA256": "7c8772acbee051eae386e411d258bd1d067b0a8eb728f4945a86b1b0ebeda2a8",
+        "sourcePixels": [
+          1920,
+          640
+        ],
+        "webpPixels": [
+          1280,
+          427
+        ],
+        "webpBytes": 121012,
+        "pixelFingerprint": "eca8a88989eb49d9",
         "candidateSubject": "tower bridge",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-6",
+        "sourcePage": "https://www.visitlondon.com/things-to-do",
+        "sourceResolvedUrl": "https://www.londonandpartners.com/-/media/images/london/visit/things-to-do/london-areas/river-thames/panorama-london-skyline-b-1920x582.jpg?hash=5A94C794E75E3F410D7360AC4BB956CF&mw=1920&rev=90d7c2e3ee1e4018859464d28c8a8e20",
+        "sourceRequestedUrl": "https://www.londonandpartners.com/-/media/images/london/visit/things-to-do/london-areas/river-thames/panorama-london-skyline-b-1920x582.jpg?hash=5A94C794E75E3F410D7360AC4BB956CF&mw=1920&rev=90d7c2e3ee1e4018859464d28c8a8e20",
+        "originalAlt": "London skyline and Thames panorama",
+        "originalCaption": "London & Partners",
+        "credit": "London & Partners",
+        "publisher": "Visit London / London & Partners",
+        "hotel": null,
+        "localPath": "/images/travel/london-premium/destination/scene-6.webp",
+        "sourceSHA256": "842a65243ff5d125114350d0b6b388dab7192e8c0db2d9747addee423364dd09",
+        "webpSHA256": "bdca965e824e3aa2864c7cf75548171e5f2fb8ed01cd63492fd249208d7af27c",
+        "sourcePixels": [
+          1920,
+          582
+        ],
+        "webpPixels": [
+          1280,
+          388
+        ],
+        "webpBytes": 125804,
+        "pixelFingerprint": "a386441425238787",
+        "candidateSubject": "thames|london skyline",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -318,7 +380,7 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 1
+        "found": 3
       },
       {
         "group": "savoy",
@@ -337,6 +399,14 @@
       }
     ],
     "errors": [
+      {
+        "page": "https://www.visitlondon.com/things-to-do",
+        "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do"
+      },
+      {
+        "page": "https://www.visitlondon.com/things-to-do/sightseeing/best-views-in-london",
+        "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/sightseeing/best-views-in-london"
+      },
       {
         "page": "https://www.londonandpartners.com/newsroom/essential-info",
         "error": "403 Client Error: Forbidden for url: https://www.londonandpartners.com/newsroom/essential-info"
@@ -362,16 +432,32 @@
         "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/london-areas/london-bridge/top-things-to-do-in-london-bridge"
       },
       {
-        "url": "https://www.visitbritain.com/en/c_y_0.0006/VB8IBL.png",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/c_y_0.0006/VB8IBL.png"
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0639/VB8OK0.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0639/VB8OK0.jpg"
       },
       {
-        "url": "https://www.visitbritain.com/en/c_y_0.0000/VB8IBL.png",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/c_y_0.0000/VB8IBL.png"
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0640/VB8OK0.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0640/VB8OK0.jpg"
       },
       {
-        "url": "https://www.visitbritain.com/en/c_y_0.0010/VB8IBL.png",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/c_y_0.0010/VB8IBL.png"
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.2605/VB8NIF.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.2605/VB8NIF.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.2106/VB8NIF.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.2106/VB8NIF.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.2603/VB8NIF.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.2603/VB8NIF.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NIF.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NIF.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8MLD.jpeg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8MLD.jpeg"
       },
       {
         "url": "https://www.visitbritain.com/en/itineraries/c_y_0.0000/VB8MLD.jpeg",
@@ -384,6 +470,26 @@
       {
         "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NJH.jpg",
         "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8NJH.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0787/VB8NMX.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0787/VB8NMX.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0784/VB8NMX.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0784/VB8NMX.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0790/VB8NMX.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0790/VB8NMX.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0776/VB8NMX.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0776/VB8NMX.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0786/VB8NMX.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0786/VB8NMX.jpg"
       },
       {
         "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.1246/VB8N9D.jpg",
@@ -404,46 +510,6 @@
       {
         "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8LX3.jpg",
         "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8LX3.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.org/destinations/c_y_0.0000/VB8LWI.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.org/destinations/c_y_0.0000/VB8LWI.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.org/destinations/c_y_0.0000/VB8LVY.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.org/destinations/c_y_0.0000/VB8LVY.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.org/destinations/c_y_0.0000/VB8L1D.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.org/destinations/c_y_0.0000/VB8L1D.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.org/destinations/c_y_0.0000/VB8LTA.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.org/destinations/c_y_0.0000/VB8LTA.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/itineraries/c_y_0.0000/VB8L1D.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/itineraries/c_y_0.0000/VB8L1D.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/itineraries/c_y_0.0000/VB8QAE.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/itineraries/c_y_0.0000/VB8QAE.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8LWI.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8LWI.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8LVY.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8LVY.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8L1D.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8L1D.jpg"
-      },
-      {
-        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8LTA.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8LTA.jpg"
       },
       {
         "page": "https://www.thesavoylondon.com/rooms-and-suites/",
@@ -557,11 +623,42 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-3",
+        "sourcePage": "https://www.towerbridge.org.uk/filming-and-photography",
+        "sourceResolvedUrl": "https://www.towerbridge.org.uk/uploads/Filming/_article_image_2x/3621/Spiderman-TowerBridge.webp?v=1784645302",
+        "sourceRequestedUrl": "https://www.towerbridge.org.uk/uploads/Filming/_article_image_2x/3621/Spiderman-TowerBridge.webp?v=1784645302",
+        "originalAlt": "Spiderman dressed in his suit is hanging from Tower Bridge",
+        "originalCaption": "Spider Man: Far from Home, 2019\n\t\t\t\t\t\t\t© Entertainment Pictures / Alamy",
+        "credit": "Visit London / London & Partners",
+        "publisher": "Visit London / London & Partners",
+        "hotel": null,
+        "localPath": "/images/travel/london-premium/destination/scene-3.webp",
+        "sourceSHA256": "34201a6d652fd494ae28d0df7835eba2e09836aa3acf489e618984f014b9f70e",
+        "webpSHA256": "c4313c997f2f0d51e45a8e1a04e6374d6d44c2580a22a74660a9b80667ae1e19",
+        "sourcePixels": [
+          1474,
+          617
+        ],
+        "webpPixels": [
+          1474,
+          617
+        ],
+        "webpBytes": 52358,
+        "pixelFingerprint": "6d0d0b095d193c18",
+        "candidateSubject": "tower bridge",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 1,
+    "cityCount": 3,
     "hotelCount": 9,
-    "totalBytes": 929090
+    "totalBytes": 1231424
   },
   "las-vegas": {
     "destinationScenes": [
@@ -683,37 +780,6 @@
         "pixelFingerprint": "bcb0322c4e16ec2e",
         "candidateSubject": "fremont",
         "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
-        "key": "scene-6",
-        "sourcePage": "https://www.visitlasvegas.com/experience/post/outdoor-fun-in-las-vegas/",
-        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1100/v1/clients/lasvegas/113755_RedRockCanyon_Afterglow_Girls_HIking_Close_246A7084_4x5_Sm_6693ea3c-b373-4230-98e8-c8b36fa62424.jpg",
-        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1100/v1/clients/lasvegas/113755_RedRockCanyon_Afterglow_Girls_HIking_Close_246A7084_4x5_Sm_6693ea3c-b373-4230-98e8-c8b36fa62424.jpg",
-        "originalAlt": "Two women enjoying hiking the beautiful Red Rock Canyon close to Las Vegas.",
-        "originalCaption": "",
-        "credit": "Visit Las Vegas / LVCVA",
-        "publisher": "Visit Las Vegas / LVCVA",
-        "hotel": null,
-        "localPath": "/images/travel/las-vegas-premium/destination/scene-6.webp",
-        "sourceSHA256": "6a0ac18f3c6b012cc23f7945198b8cc5d53f7301d8f4eaaff010d0f953bb8e3e",
-        "webpSHA256": "c025fabfd0fd0f4c7ccfe21d36a70bdeff9db8fa565b553b9f970173e3102f92",
-        "sourcePixels": [
-          1100,
-          733
-        ],
-        "webpPixels": [
-          1100,
-          733
-        ],
-        "webpBytes": 211448,
-        "pixelFingerprint": "e3733989d2e44a33",
-        "candidateSubject": "red rock",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
         "visuallyVerified": false,
@@ -878,18 +944,18 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "wynn-4",
+        "key": "wynn-5",
         "sourcePage": "https://www.wynnlasvegas.com/experiences/pools",
-        "sourceResolvedUrl": "https://assets.ctfassets.net/nmhu6zvnbnyf/4uN2tJX3oIgRHzLy7Wnsoa/818a59bc3922294bb41c7029e241564b/WLV-Pools-Encore_Resort_Pool-828x466.avif",
-        "sourceRequestedUrl": "https://assets.ctfassets.net/nmhu6zvnbnyf/4uN2tJX3oIgRHzLy7Wnsoa/818a59bc3922294bb41c7029e241564b/WLV-Pools-Encore_Resort_Pool-828x466.avif",
-        "originalAlt": "WLV-Pools-Encore_Resort_Pool-828x466",
+        "sourceResolvedUrl": "https://assets.ctfassets.net/nmhu6zvnbnyf/2OpF8PUnK8kWChPjR6sDmq/e7a921458880cbc196abe4720505f95b/WLV-Pools-Cabanas-828x466.avif",
+        "sourceRequestedUrl": "https://assets.ctfassets.net/nmhu6zvnbnyf/2OpF8PUnK8kWChPjR6sDmq/e7a921458880cbc196abe4720505f95b/WLV-Pools-Cabanas-828x466.avif",
+        "originalAlt": "WLV-Pools-Cabanas-828x466",
         "originalCaption": "",
         "credit": "Wynn Las Vegas",
         "publisher": "Wynn Las Vegas",
         "hotel": "Wynn Las Vegas",
-        "localPath": "/images/travel/las-vegas-premium/wynn/wynn-4.webp",
-        "sourceSHA256": "15c700bd72548831a045700b1e7503b3884bd7a1c1df01e2f41eedc1c9c7b371",
-        "webpSHA256": "f906650c63f3007ae43c06e74f15610bf442e0d5c80e935e70d06655b9571b05",
+        "localPath": "/images/travel/las-vegas-premium/wynn/wynn-5.webp",
+        "sourceSHA256": "8474791ec79767ef4458c8de69e4a5ca0fec4ddfa73ec575ce6d338717191773",
+        "webpSHA256": "385f13db99ef8bc21d11b56295fefa3cc8fdbdb705384e590d6a6aa1d73e0107",
         "sourcePixels": [
           828,
           466
@@ -898,8 +964,8 @@
           828,
           466
         ],
-        "webpBytes": 102076,
-        "pixelFingerprint": "da928ae8d4f07822",
+        "webpBytes": 115852,
+        "pixelFingerprint": "1cac6c2c2c34b492",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
@@ -1062,21 +1128,47 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "fontainebleau-4",
+        "sourcePage": "https://www.fontainebleaulasvegas.com/information/",
+        "sourceResolvedUrl": "https://www.fontainebleaulasvegas.com/uploads/2024/05/Exterior_c34-1.png",
+        "sourceRequestedUrl": "https://www.fontainebleaulasvegas.com/uploads/2024/05/Exterior_c34-1.png",
+        "originalAlt": "Hotel exterior",
+        "originalCaption": "",
+        "credit": "Fontainebleau Las Vegas",
+        "publisher": "Fontainebleau Las Vegas",
+        "hotel": "Fontainebleau Las Vegas",
+        "localPath": "/images/travel/las-vegas-premium/fontainebleau/fontainebleau-4.webp",
+        "sourceSHA256": "438a04bde09e4456893f7b12166d248bd5c152fbd0432249cf5cd63ae90e19e4",
+        "webpSHA256": "f036d34ae57ebb2ad6abf1d4e2eb3226b74b5031a2cdce7fd006aeb057221d14",
+        "sourcePixels": [
+          1200,
+          1080
+        ],
+        "webpPixels": [
+          944,
+          850
+        ],
+        "webpBytes": 56310,
+        "pixelFingerprint": "abe8ef999d9ef3ff",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "gaps": [
       {
         "group": "city",
         "expected": 9,
-        "found": 6
+        "found": 5
       },
       {
         "group": "wynn",
-        "expected": 3,
-        "found": 2
-      },
-      {
-        "group": "fontainebleau",
         "expected": 3,
         "found": 2
       }
@@ -1239,11 +1331,73 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-6",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/outdoor-fun-in-las-vegas/",
+        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1100/v1/clients/lasvegas/113755_RedRockCanyon_Afterglow_Girls_HIking_Close_246A7084_4x5_Sm_6693ea3c-b373-4230-98e8-c8b36fa62424.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1100/v1/clients/lasvegas/113755_RedRockCanyon_Afterglow_Girls_HIking_Close_246A7084_4x5_Sm_6693ea3c-b373-4230-98e8-c8b36fa62424.jpg",
+        "originalAlt": "Two women enjoying hiking the beautiful Red Rock Canyon close to Las Vegas.",
+        "originalCaption": "",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-6.webp",
+        "sourceSHA256": "6a0ac18f3c6b012cc23f7945198b8cc5d53f7301d8f4eaaff010d0f953bb8e3e",
+        "webpSHA256": "c025fabfd0fd0f4c7ccfe21d36a70bdeff9db8fa565b553b9f970173e3102f92",
+        "sourcePixels": [
+          1100,
+          733
+        ],
+        "webpPixels": [
+          1100,
+          733
+        ],
+        "webpBytes": 211448,
+        "pixelFingerprint": "e3733989d2e44a33",
+        "candidateSubject": "red rock",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "wynn-4",
+        "sourcePage": "https://www.wynnlasvegas.com/experiences/pools",
+        "sourceResolvedUrl": "https://assets.ctfassets.net/nmhu6zvnbnyf/4uN2tJX3oIgRHzLy7Wnsoa/818a59bc3922294bb41c7029e241564b/WLV-Pools-Encore_Resort_Pool-828x466.avif",
+        "sourceRequestedUrl": "https://assets.ctfassets.net/nmhu6zvnbnyf/4uN2tJX3oIgRHzLy7Wnsoa/818a59bc3922294bb41c7029e241564b/WLV-Pools-Encore_Resort_Pool-828x466.avif",
+        "originalAlt": "WLV-Pools-Encore_Resort_Pool-828x466",
+        "originalCaption": "",
+        "credit": "Wynn Las Vegas",
+        "publisher": "Wynn Las Vegas",
+        "hotel": "Wynn Las Vegas",
+        "localPath": "/images/travel/las-vegas-premium/wynn/wynn-4.webp",
+        "sourceSHA256": "15c700bd72548831a045700b1e7503b3884bd7a1c1df01e2f41eedc1c9c7b371",
+        "webpSHA256": "f906650c63f3007ae43c06e74f15610bf442e0d5c80e935e70d06655b9571b05",
+        "sourcePixels": [
+          828,
+          466
+        ],
+        "webpPixels": [
+          828,
+          466
+        ],
+        "webpBytes": 102076,
+        "pixelFingerprint": "da928ae8d4f07822",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 6,
-    "hotelCount": 10,
-    "totalBytes": 2078250
+    "cityCount": 5,
+    "hotelCount": 11,
+    "totalBytes": 1936888
   },
   "rome": {
     "destinationScenes": [
@@ -2236,8 +2390,16 @@
     ],
     "errors": [
       {
+        "page": "https://www.marriott.com/en-us/hotels/bcnrz-hotel-arts-barcelona/photos/",
+        "error": "404 Client Error: Not Found for url: https://www.marriott.com/en-us/hotels/bcnrz-hotel-arts-barcelona/photos/"
+      },
+      {
         "page": "https://www.marriott.com/es/hotels/bcnrz-hotel-arts-barcelona/photos/",
         "error": "500 Server Error: Internal Server Error for url: https://www.marriott.com/es/hotels/bcnrz-hotel-arts-barcelona/photos/"
+      },
+      {
+        "page": "https://majestichotelgroup.com/en/barcelona/hotel-majestic/gallery",
+        "error": "500 Server Error: Internal Server Error for url: https://majestichotelgroup.com/en/barcelona/hotel-majestic/gallery"
       }
     ],
     "publicUseApproved": false,
@@ -2742,6 +2904,14 @@
     ],
     "errors": [
       {
+        "page": "https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun",
+        "error": "403 Client Error: HTTP Forbidden for url: https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun"
+      },
+      {
+        "page": "https://www.palaceproagents.com/es/destinos-resorts/le-blanc-spa-resort-cancun",
+        "error": "403 Client Error: HTTP Forbidden for url: https://www.palaceproagents.com/es/destinos-resorts/le-blanc-spa-resort-cancun"
+      },
+      {
         "page": "https://cancun.leblancsparesorts.com/es/galeria",
         "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/es/galeria"
       },
@@ -2758,6 +2928,22 @@
         "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/"
       },
       {
+        "url": "https://www.palaceproagents.com/lbc_Room_Royale_Deluxe_Partial_Ocean_View_bg_3600x1800_7207f3f7a0.jpg",
+        "error": "400 Client Error: Bad Request for url: https://www.palaceproagents.com/lbc_Room_Royale_Deluxe_Partial_Ocean_View_bg_3600x1800_7207f3f7a0.jpg"
+      },
+      {
+        "page": "https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/photos-reviews",
+        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/photos-reviews"
+      },
+      {
+        "page": "https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/rooms",
+        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/rooms"
+      },
+      {
+        "page": "https://newsroom.hyatt.com/media-gallery?cat=2774",
+        "error": "HTTPSConnectionPool(host='newsroom.hyatt.com', port=443): Read timed out. (read timeout=16)"
+      },
+      {
         "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/gallery",
         "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/gallery"
       },
@@ -2768,10 +2954,6 @@
       {
         "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms",
         "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms"
-      },
-      {
-        "url": "https://newsroom.hyatt.com/download/Hyatt%2BZiva%2BCancun%2B-%2BAerial.jpg",
-        "error": "404 Client Error: Not Found for url: https://newsroom.hyatt.com/download/Hyatt%2BZiva%2BCancun%2B-%2BAerial.jpg"
       }
     ],
     "publicUseApproved": false,
