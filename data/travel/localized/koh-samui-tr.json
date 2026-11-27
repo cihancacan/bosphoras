@@ -1,0 +1,148 @@
+{
+  "name": "Koh Samui",
+  "country": "Tayland",
+  "eyebrow": "Tayland · Sakin ada tatili",
+  "heading": "Koh Samui'de nerede kalınır? Yavaşlamak isteyeceğiniz ada",
+  "intro": "Hindistan cevizi palmiyeleri arasında villalar, deniz kenarında uzun öğle yemekleri ve Tayland Körfezi üzerinde altın ufuk. Samui'de kıyı ve otel seçimi yoğun gezi programından önemlidir.",
+  "editorial": "Önce kıyıyı seçin. Taling Ngam gün batımları, kuzeydoğu mahremiyet ve kolay ulaşım, Lamai korunaklı koylar, Bophut restoranlar için öne çıkar. Villada havuz olması doğrudan plaj erişimi veya aynı deniz manzarası anlamına gelmez. Aralık–nisan genellikle plaj tatiline daha elverişlidir; sonbaharın sonu daha yağışlı olabilir.",
+  "hotelIntro": "Dört lüks resort: klasik tropik misafirperverlik, wellness, özel koy ve gün batımı manzaralı villalar. Güncel fiyat ve müsaitlik sağlayıcıdan doğrulanır.",
+  "areas": [
+    [
+      "Taling Ngam · Gün batımı kıyısı",
+      "Güneybatıda Beş Ada siluetleri görülür, gün batımı günün ritmini belirler. Her akşam başka yere gitmeden burada vakit geçirmek keyiflidir.",
+      "Hareketli plaj ve restoranlara daha uzun yolculuğu hesaba katın."
+    ],
+    [
+      "Plai Laem · Sakin kuzeydoğu",
+      "Burunlar, küçük koylar ve yeşillikler havalimanına yakın sakinlik sağlar.",
+      "Eğim, deniz koşulları ve yüzülebilir plaj erişimini doğrulayın."
+    ],
+    [
+      "Lamai · Korunaklı koylar",
+      "Güneydoğu kıyısında plajlar, yeşil tepeler ve spa resortları; kasabaya ara sıra geziler.",
+      "Lamai yakınında adres merkeze yürüme mesafesi garantilemez."
+    ],
+    [
+      "Bophut · Ada gastronomisi",
+      "Fisherman's Village su kenarı restoranları ve küçük mağazalarıyla sakin villalardan daha canlıdır.",
+      "Gece gürültüsü ve plaj sakinliği sokak ve mevsime bağlıdır."
+    ],
+    [
+      "Maenam · Hindistan cevizi kıyısı",
+      "Uzun kuzey plajı, palmiye koruları ve Phangan manzaraları sakin tatil için uygundur.",
+      "Derinlik ve yüzme koşulları mevsimle değişir."
+    ]
+  ],
+  "experiences": [
+    [
+      "Denizde bir gün",
+      "Uygun havada körfez adalarına tekne kiralayın; rota ve dahil yakıtı önceden doğrulayın."
+    ],
+    [
+      "Kendinize zaman ayırın",
+      "Tay masajı, bahçede bakım ve sakin akşam yemeği ada ritmine uyar."
+    ],
+    [
+      "Batı kıyısında gün batımı",
+      "Beş Ada siluetleri için gün batımından önce gelin; kıyı panoraması her villadan garanti değildir."
+    ]
+  ],
+  "checks": [
+    "Kesin villayı, havuzu, gerçek deniz manzarasını ve yatak odası planını doğrulayın.",
+    "Transfer, yüzme ve akşam yürüyüşlerine göre kıyı seçin.",
+    "Özellikle 2026 sonlarında Six Senses'te tarihlerinizde çalışan tesisleri doğrulayın.",
+    "Ödeme öncesi iptal, vergi, transfer ve ek ücretleri kontrol edin."
+  ],
+  "hotels": [
+    [
+      "Ang Thong · Kuzeybatı",
+      "Four Seasons sakin plaj üzerindeki yamaçta palmiyeler arasındadır. Özel havuzlar, Tay misafirperverliği ve körfez panoraması resort olanaklarıyla birleşir. Tek yatak odalı villalar ve büyük aile rezidansları plan ve mahremiyet bakımından farklıdır; fotoğraflar aynı manzarayı garantilemez.",
+      "Kategori, yamaç erişimi, tesis içi ulaşım ve çocuk olanaklarını kontrol edin.",
+      "Aileler ve klasik resort hizmeti için.",
+      ""
+    ],
+    [
+      "Plai Laem · Kuzeydoğu",
+      "Six Senses Samui sakin burunda tropik bahçeler arasında modern balıkçı köyünü andırır. Doğal malzeme, spa ve yavaş sabahlar dinlenmeye uygundur. Manzara ve özel havuz kategoriye göre değişir.",
+      "Kategori ve tesis durumunu doğrulayın: ana havuz ve Dining on the Hill 7 Ekim–30 Kasım 2026 arasında geçici olarak kapalıdır.",
+      "Sakinlik, doğa ve wellness için.",
+      ""
+    ],
+    [
+      "Lamai · Özel koy",
+      "Banyan Tree Samui Lamai yakınındaki korunaklı koyda gizlenir. Havuzlu villalar, teraslar ve tropik bitkiler plaj ve spayı tamamlar. Merkeze akşam yürüyüşü için değil, bağımsız resort tatili için uygundur.",
+      "Manzara, alan ve plan kategoriye bağlıdır; plaj için tesis içi ulaşım gerekebilir.",
+      "Özel villa ve mahremiyet için.",
+      ""
+    ],
+    [
+      "Taling Ngam · Güneybatı",
+      "Conrad Koh Samui Beş Ada ve akşam denizi manzaralı yamaçtadır. Özel havuzlu villalar canlı kuzey plajlarından uzakta panorama ve mahremiyete odaklanır.",
+      "Dik arazi, restoranlara mesafe ve gerçek villa manzarasını değerlendirin.",
+      "Panoramik gün batımı ve romantik tatil için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Samui'nin hangi bölgesinde kalınmalı?",
+      "Sakin gün batımı için Taling Ngam, kolay ulaşımlı mahremiyet için Plai Laem, koylar için Lamai, restoran ve yürüyüş için Bophut."
+    ],
+    [
+      "Hangi lüks oteller seçilmeli?",
+      "Aile ve klasik resort için Four Seasons, spa için Six Senses, özel koy için Banyan Tree, gün batımı için Conrad. Kesin villaları karşılaştırın."
+    ],
+    [
+      "Samui mi Phuket mi?",
+      "Samui daha sakin villa tatiline, Phuket daha fazla bölge ve gece eğlencesine uygundur. İkisinde de seçkin resortlar bulunur."
+    ],
+    [
+      "Ne zaman gidilmeli?",
+      "Aralık–nisan genellikle plaj için elverişlidir; ekim ve kasım daha yağışlı olabilir. Deniz gezisinden önce hava durumuna bakın."
+    ],
+    [
+      "Kaç gece kalınmalı?",
+      "Dört–altı gece sakin keşif, altı–sekiz gece spa, özel tekne ve havuz için zaman sağlar."
+    ],
+    [
+      "Samui ailelere uygun mu?",
+      "Evet, özellikle aile hizmetli geniş villalar. Yatak odası, havuz güvenliği, eğim ve çocuk olanaklarını kontrol edin."
+    ]
+  ],
+  "photoCaptions": [
+    "Maenam plajı ve Hindistan cevizi palmiyeleri",
+    "Gün batımında Taling Ngam kıyısı",
+    "Kuzeydoğu Samui Wat Plai Laem tapınağı",
+    "Lamai plajı ve tropik manzara",
+    "Bophut Fisherman's Village kıyısı",
+    "Ang Thong Deniz Parkı adaları ve turkuaz su",
+    "Samui Büyük Buda Tapınağı",
+    "Chaweng plajı",
+    "Lamai yakınında Silver Beach"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Four Seasons özel havuzlu ve körfez manzaralı villa",
+      "Four Seasons plaj ve yamaç villaları havadan",
+      "Four Seasons deniz kenarı akşam yemeği"
+    ],
+    [
+      "Six Senses Samui havuzlu villa",
+      "Six Senses Samui spa",
+      "Six Senses kıyı manzarası"
+    ],
+    [
+      "Banyan Tree özel havuzlu villa",
+      "Banyan Tree Samui özel koyu",
+      "Banyan Tree wellness tesisi"
+    ],
+    [
+      "Gün batımında Conrad havuzu",
+      "Conrad Beş Ada manzaralı sonsuzluk havuzu",
+      "Conrad yamaç villaları havadan"
+    ]
+  ],
+  "seoTitle": "Koh Samui'de Nerede Kalınır? Lüks Oteller ve En İyi Bölgeler",
+  "hotelSeoTitle": "Koh Samui Otelleri: Four Seasons, Six Senses, Banyan Tree ve Conrad",
+  "seoDescription": "Koh Samui'de kıyıları, özel havuzlu villaları ve dört lüks resortu karşılaştırın: plajlar, gün batımı, spa ve aile tatili."
+}
