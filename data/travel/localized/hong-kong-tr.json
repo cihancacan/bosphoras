@@ -1,0 +1,136 @@
+{
+  "name": "Hong Kong",
+  "country": "Hong Kong",
+  "eyebrow": "Hong Kong · Victoria Limanı, semtler ve tarihi oteller",
+  "heading": "Hong Kong'da konaklama: ada, Kowloon ve tepeler arasında doğru bölgeyi seçin.",
+  "intro": "Victoria Limanı, Hong Kong Adası'nın gökdelenleri ve tarihi sokakları ile Kowloon'un sahil yürüyüş yollarını birleştirir. Otelinizi öncelikli ziyaretler, ulaşım ve istediğiniz manzaraya göre seçin.",
+  "editorial": "İlk ziyaret için Central ve Sheung Wan, galerilere, restoranlara, Tai Kwun'a ve feribotlara kolay erişim sağlar. Tsim Sha Tsui sahil ve ada manzaraları, West Kowloon müzeler, Wan Chai ve Causeway Bay alışveriş ve yerel yaşam için uygundur. Mong Kok ve Yau Ma Tei hareketli pazarları ve metro bağlantılarıyla öne çıkar. Lantau, havaalanı, Disneyland veya Ngong Ping odaklı konaklamalar için uygundur.\n\nÜç veya dört gece iki yakayı ve Peak'i keşfetmek için iyi bir başlangıçtır. Daha uzun seyahatlerde Lantau'ya bir gün ayırın. Star Ferry, MTR ve tramvaylar birbirini tamamlar. Sıcaklık, şiddetli yağmur ve tropikal fırtına uyarılarına göre programı düzenleyin; saatleri ve uyarıları kontrol edin.\n\nHKG havalimanından Airport Express, otobüs veya özel transferi karşılaştırın. Pasaportunuza göre giriş şartlarını, oda kapasitesini, ek yatakları ve vergiler dahil toplam fiyatı doğrulayın. Liman manzarası farklı yönleri ifade edebilir; oda kategorisini, mümkünse katı ve iptal şartlarını teyit edin.",
+  "hotelIntro": "Kowloon sahili için Rosewood, Central ve gastronomi için Four Seasons, tarihi zarafet için Peninsula, iş merkezinde klasik lüks için Mandarin Oriental.",
+  "areas": [
+    [
+      "Central ve Sheung Wan",
+      "Tai Kwun, galeriler, restoranlar, feribotlar ve tarihi sokaklar.",
+      "Bazı sokaklar yokuşludur; yürüyüş güzergâhını kontrol edin."
+    ],
+    [
+      "Tsim Sha Tsui",
+      "Liman kıyısı, Avenue of Stars, müzeler ve ada manzaralı oteller.",
+      "Oda manzarasını, feribot ve metro bağlantılarını doğrulayın."
+    ],
+    [
+      "West Kowloon",
+      "M+, Hong Kong Palace Museum, kültür alanları ve sahil yürüyüşleri.",
+      "Müze saatlerini ve otele ulaşımı kontrol edin."
+    ],
+    [
+      "Wan Chai ve Causeway Bay",
+      "Tramvaylar, alışveriş sokakları, Victoria Park ve restoranlar.",
+      "Sokak hareketliliğini ve gürültüyü hesaba katın."
+    ],
+    [
+      "Mong Kok ve Yau Ma Tei",
+      "Pazarlar, küçük lokantalar, alışveriş sokakları ve MTR.",
+      "Oda büyüklüğünü ve yolculuk sürelerini kontrol edin."
+    ],
+    [
+      "Lantau ve Tung Chung",
+      "Ngong Ping, Big Buddha, Disneyland ve havalimanı bağlantısı.",
+      "Central veya Kowloon'a günlük geziler için daha uzaktır."
+    ]
+  ],
+  "experiences": [
+    [
+      "Victoria Limanı'nı geçmek",
+      "Star Ferry'yi Tsim Sha Tsui sahili ve Central iskeleleriyle birleştirin."
+    ],
+    [
+      "Peak'e çıkmak",
+      "Açık bir gün seçin, ulaşımı ve kuyrukları kontrol edin."
+    ],
+    [
+      "Tarih ve sanatı keşfetmek",
+      "Tai Kwun ve West Kowloon müzeleri için ayrı yarım günler ayırın."
+    ],
+    [
+      "Lantau'yu keşfetmek",
+      "Ngong Ping ve Po Lin Manastırı ya da Disney günü planlayın."
+    ]
+  ],
+  "checks": [
+    "Liman manzarası için oda yönlerini ve kategorilerini karşılaştırın.",
+    "Öncelikli ziyaretlere göre yaka seçin.",
+    "Pasaportunuza göre giriş koşullarını kontrol edin.",
+    "Vergi, kahvaltı, ek yatak ve iptal şartlarıyla toplam fiyatı karşılaştırın.",
+    "Hava durumu uyarılarını ve ulaşım saatlerini kontrol edin."
+  ],
+  "hotels": [
+    [
+      "Tsim Sha Tsui · Victoria Dockside",
+      "Liman kıyısında çağdaş, konut tarzı lüks; odalar, süitler, havuz ve restoranlar.",
+      "Liman manzaralı kategorileri ve aile düzenlerini karşılaştırın.",
+      "Kowloon sahilinde çağdaş lüks için.",
+      "Liman kıyısında çağdaş, konut tarzı lüks; odalar, süitler, havuz ve restoranlar. Liman manzaralı kategorileri ve aile düzenlerini karşılaştırın."
+    ],
+    [
+      "Central · International Finance Centre",
+      "IFC bölgesinde farklı manzaralı odalar, açık havuz, spa ve gastronomi.",
+      "Manzarayı, yatakları ve restoran rezervasyonlarını doğrulayın.",
+      "Central'da iş, gezi ve gastronomi için.",
+      "IFC bölgesinde farklı manzaralı odalar, açık havuz, spa ve gastronomi. Manzarayı, yatakları ve restoran rezervasyonlarını doğrulayın."
+    ],
+    [
+      "Tsim Sha Tsui · Salisbury Road",
+      "Tarihi bina ve daha yeni kulede odalar; salonlar ve kapalı havuz.",
+      "Tarihi kanat ve kule odalarını, manzarayı karşılaştırın.",
+      "Tarihi otel deneyimi için.",
+      "Tarihi bina ve daha yeni kulede odalar; salonlar ve kapalı havuz. Tarihi kanat ve kule odalarını, manzarayı karşılaştırın."
+    ],
+    [
+      "Central · Connaught Road",
+      "Central'da zarif odalar, süitler, restoranlar ve spa.",
+      "Mandarin Oriental The Landmark ile karıştırmayın; kategoriyi doğrulayın.",
+      "Klasik lüks ve iş seyahati için.",
+      "Central'da zarif odalar, süitler, restoranlar ve spa. Mandarin Oriental The Landmark ile karıştırmayın; kategoriyi doğrulayın."
+    ]
+  ],
+  "faq": [
+    [
+      "İlk Hong Kong ziyaretinde nerede kalınır?",
+      "Central, Sheung Wan ve Tsim Sha Tsui, tercih edilen yakaya göre iyi seçeneklerdir."
+    ],
+    [
+      "Şehir manzarası için hangi yaka?",
+      "Tsim Sha Tsui adaya bakar; Central otelleri Kowloon'a bakabilir. Kategoriyi doğrulayın."
+    ],
+    [
+      "Kaç gece planlanmalı?",
+      "Üç dört gece iki yaka ve Peak için yeterli bir başlangıçtır; Lantau için uzatın."
+    ],
+    [
+      "Çocuklarla hangi bölge?",
+      "Çeşitli geziler için Tsim Sha Tsui veya Central, Disney odaklı gezi için Lantau."
+    ],
+    [
+      "HKG'den merkeze nasıl gidilir?",
+      "Otel ve bagaja göre Airport Express, otobüs veya özel transfer."
+    ],
+    [
+      "Araç kiralamak gerekir mi?",
+      "Şehir gezileri için genellikle hayır; MTR, feribot ve tramvaylar pratiktir."
+    ],
+    [
+      "Otellerin fiyatları nasıl karşılaştırılır?",
+      "Aynı tarih, kişi sayısı, manzara, oda kategorisi, vergi ve iptal koşullarını karşılaştırın."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Hong Kong'da nerede kalınır? Central, Kowloon ve en iyi bölgeler",
+  "hotelSeoTitle": "Hong Kong lüks otelleri: Rosewood, Four Seasons ve tarihi oteller",
+  "seoDescription": "Hong Kong otellerini ve bölgelerini karşılaştırın: Central, Tsim Sha Tsui, Victoria Limanı, ulaşım ve seyahat önerileri."
+}

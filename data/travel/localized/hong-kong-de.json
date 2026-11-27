@@ -1,0 +1,136 @@
+{
+  "name": "Hongkong",
+  "country": "Hongkong",
+  "eyebrow": "Hongkong · Victoria Harbour, Stadtviertel und Grandhotels",
+  "heading": "Hongkong: das passende Viertel zwischen Insel, Kowloon und Hügeln wählen.",
+  "intro": "Victoria Harbour verbindet die Hochhäuser und historischen Straßen von Hong Kong Island mit den Uferpromenaden Kowloons. Wählen Sie Ihr Hotel nach Ihren wichtigsten Zielen, Verkehrsverbindungen und dem gewünschten Ausblick.",
+  "editorial": "Central und Sheung Wan bieten beim ersten Besuch gute Wege zu Galerien, Restaurants, Tai Kwun und Fähren. Tsim Sha Tsui liegt am Wasser mit Blick auf die Insel; West Kowloon eignet sich für Museen. Wan Chai und Causeway Bay verbinden Shopping und lokales Leben, Mong Kok und Yau Ma Tei Märkte und Metroanschlüsse. Lantau eignet sich für Aufenthalte am Flughafen, Disneyland oder Ngong Ping.\n\nDrei bis vier Nächte bieten Raum für beide Ufer und den Peak. Bei einem längeren Aufenthalt einen Tag für Lantau einplanen. Star Ferry, MTR und Straßenbahnen ergänzen einander. Hitze, Starkregen und Tropensturmwarnungen können das Programm ändern; Fahrpläne und Warnungen prüfen.\n\nAb HKG Airport Express, Bus und Privattransfer samt letzter Etappe vergleichen. Passbezogene Einreisebestimmungen, Zimmerbelegung, Zusatzbetten und Gesamtpreise inklusive Steuern prüfen. Hafenblick kann verschiedene Ausrichtungen meinen; Zimmerkategorie, gegebenenfalls Etage und Stornobedingungen bestätigen.",
+  "hotelIntro": "Rosewood für Kowloons Ufer, Four Seasons für Central und Gastronomie, Peninsula für historische Eleganz und Mandarin Oriental für klassischen Luxus im Geschäftsviertel.",
+  "areas": [
+    [
+      "Central und Sheung Wan",
+      "Tai Kwun, Galerien, Restaurants, Fähren und historische Straßen.",
+      "Manche Straßen sind steil; Fußwege prüfen."
+    ],
+    [
+      "Tsim Sha Tsui",
+      "Hafenpromenade, Avenue of Stars, Museen und Hotels mit Inselblick.",
+      "Zimmerausblick und Fähr- oder MTR-Verbindungen bestätigen."
+    ],
+    [
+      "West Kowloon",
+      "M+, Hong Kong Palace Museum, Kulturstätten und Uferwege.",
+      "Museumszeiten und den letzten Weg zum Hotel prüfen."
+    ],
+    [
+      "Wan Chai und Causeway Bay",
+      "Straßenbahnen, Einkaufsstraßen, Victoria Park und Restaurants.",
+      "Straßenlärm und lebhafte Umgebung berücksichtigen."
+    ],
+    [
+      "Mong Kok und Yau Ma Tei",
+      "Märkte, kleine Restaurants, Einkaufsstraßen und MTR.",
+      "Zimmergröße und Fahrtzeiten prüfen."
+    ],
+    [
+      "Lantau und Tung Chung",
+      "Ngong Ping, Big Buddha, Disneyland und Flughafenanbindung.",
+      "Für tägliche Ausflüge nach Central oder Kowloon weniger günstig."
+    ]
+  ],
+  "experiences": [
+    [
+      "Victoria Harbour überqueren",
+      "Star Ferry mit der Promenade in Tsim Sha Tsui und Centrals Ufer verbinden."
+    ],
+    [
+      "Zum Peak fahren",
+      "Einen klaren Tag wählen und Transport sowie Wartezeiten prüfen."
+    ],
+    [
+      "Kultur und Kunst entdecken",
+      "Tai Kwun und die Museen von West Kowloon an getrennten Halbtagen besuchen."
+    ],
+    [
+      "Lantau erkunden",
+      "Ngong Ping und das Po-Lin-Kloster oder einen Disney-Tag einplanen."
+    ]
+  ],
+  "checks": [
+    "Zimmerausrichtung und Kategorie für Hafenblick vergleichen.",
+    "Ufer nach Besichtigungszielen und Anschlüssen wählen.",
+    "Einreisebestimmungen zum Reisepass prüfen.",
+    "Gesamtpreis inklusive Steuern, Frühstück, Zusatzbetten und Stornierung vergleichen.",
+    "Wetterwarnungen und Fahrpläne prüfen."
+  ],
+  "hotels": [
+    [
+      "Tsim Sha Tsui · Victoria Dockside",
+      "Modernes Luxusambiente am Hafen mit Zimmern, Suiten, Pool und Restaurants.",
+      "Kategorien mit Hafenblick und Familienzimmer vergleichen.",
+      "Für zeitgemäßen Luxus am Kowloon-Ufer.",
+      "Modernes Luxusambiente am Hafen mit Zimmern, Suiten, Pool und Restaurants. Kategorien mit Hafenblick und Familienzimmer vergleichen."
+    ],
+    [
+      "Central · International Finance Centre",
+      "Zimmer mit verschiedenen Ausblicken, Außenpool, Spa und Gastronomie nahe IFC.",
+      "Ausblick, Betten und Restaurantreservierungen bestätigen.",
+      "Für Geschäftsreisen, Besichtigungen und Gastronomie.",
+      "Zimmer mit verschiedenen Ausblicken, Außenpool, Spa und Gastronomie nahe IFC. Ausblick, Betten und Restaurantreservierungen bestätigen."
+    ],
+    [
+      "Tsim Sha Tsui · Salisbury Road",
+      "Historisches Grandhotel mit ursprünglichem Gebäude, neuerem Turm und Innenpool.",
+      "Zimmer im Altbau und Turm sowie den Ausblick vergleichen.",
+      "Für historische Eleganz.",
+      "Historisches Grandhotel mit ursprünglichem Gebäude, neuerem Turm und Innenpool. Zimmer im Altbau und Turm sowie den Ausblick vergleichen."
+    ],
+    [
+      "Central · Connaught Road",
+      "Klassisches Hotel mit eleganten Zimmern, Suiten, Restaurants und Spa.",
+      "Nicht mit Mandarin Oriental The Landmark verwechseln; Kategorie prüfen.",
+      "Für klassischen Luxus im Geschäftsviertel.",
+      "Klassisches Hotel mit eleganten Zimmern, Suiten, Restaurants und Spa. Nicht mit Mandarin Oriental The Landmark verwechseln; Kategorie prüfen."
+    ]
+  ],
+  "faq": [
+    [
+      "Wo übernachtet man beim ersten Hongkongbesuch?",
+      "Central, Sheung Wan und Tsim Sha Tsui sind je nach bevorzugtem Ufer praktisch."
+    ],
+    [
+      "Welches Ufer bietet Skylineblick?",
+      "Tsim Sha Tsui blickt auf die Insel; Hotels in Central können auf Kowloon blicken. Kategorie bestätigen."
+    ],
+    [
+      "Wie viele Nächte sollte man einplanen?",
+      "Drei bis vier Nächte für beide Ufer und den Peak; für Lantau verlängern."
+    ],
+    [
+      "Welches Viertel passt für Familien?",
+      "Tsim Sha Tsui oder Central für vielseitige Besuche, Lantau für einen Disney-Aufenthalt."
+    ],
+    [
+      "Wie kommt man vom Flughafen HKG ins Zentrum?",
+      "Airport Express, Bus oder Privattransfer je nach Hotel und Gepäck."
+    ],
+    [
+      "Braucht man einen Mietwagen?",
+      "Für Stadtbesuche meist nicht; MTR, Fähren, Straßenbahnen und Fußwege sind praktisch."
+    ],
+    [
+      "Wie vergleicht man Hotels?",
+      "Gleiche Termine, Gästezahl, Ausblick, Zimmerkategorie, Steuern und Stornobedingungen vergleichen."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Hongkong: die besten Viertel für Central und Kowloon",
+  "hotelSeoTitle": "Luxushotels Hongkong: Rosewood, Four Seasons und Grandhotels",
+  "seoDescription": "Hongkongs Viertel und Hotels vergleichen: Central, Tsim Sha Tsui, Victoria Harbour, Verkehr und Reisetipps."
+}
