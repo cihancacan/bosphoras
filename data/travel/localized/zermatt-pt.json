@@ -1,0 +1,156 @@
+{
+  "name": "Zermatt",
+  "country": "Suíça",
+  "eyebrow": "Valais · Matterhorn no horizonte",
+  "heading": "Zermatt: um pico, várias maneiras de viver os Alpes",
+  "intro": "O Matterhorn é símbolo de Zermatt, mas a perspectiva depende da localização. Hotel acima dos telhados, palácio histórico central, resort de montanha contemporâneo e residência reservada a 2222 metros oferecem viagens distintas. Zermatt não tem trânsito privado comum: chegue de trem e adapte roteiro ao clima.",
+  "editorial": "Quem chega de carro normalmente o deixa em Täsch e segue de trem. Centro histórico e Bahnhofstrasse são práticos para passeios e restaurantes. Sunnegga, Gornergrat e Matterhorn Glacier Paradise são acessos distintos. Para Riffelalp pegue trem de cremalheira Gornergrat e organize traslado final da estação. Retorno tarde da vila depende de horários. Vista de montanha não significa Matterhorn, e nuvens podem esconder pico mesmo na orientação correta. Parceiro confirma condições e disponibilidade.",
+  "hotelIntro": "Quatro faces de Zermatt: THE OMNIA acima dos telhados, Mont Cervin Palace no centro, CERVO moderno e Riffelalp em altitude.",
+  "areas": [
+    [
+      "Bahnhofstrasse · Centro",
+      "Rua comercial, restaurantes e passeios noturnos perto do hotel.",
+      "Carros particulares comuns não entram; planeje trem de Täsch e traslado local."
+    ],
+    [
+      "Acima da vila · Panoramas",
+      "Hotéis elevados oferecem sossego longe de ruas movimentadas e vistas amplas.",
+      "Confira orientação, elevadores e traslado."
+    ],
+    [
+      "Sunnegga · Acesso à montanha",
+      "Hotéis perto da floresta e funicular para esqui e natureza.",
+      "Confira caminho e pistas abertas."
+    ],
+    [
+      "Gornergrat · Ferrovia própria",
+      "Trem de cremalheira para panoramas alpinos, importante para Riffelalp.",
+      "Confira últimos trens, clima, conexões e bagagem."
+    ],
+    [
+      "Riffelalp · Refúgio em altitude",
+      "A 2222 m o hotel é destino em si, ritmo de natureza e montanha.",
+      "Considere horários Gornergrat, caminhos nevados e retorno tardio."
+    ]
+  ],
+  "experiences": [
+    [
+      "Matterhorn do quarto",
+      "Confirme vista, varanda e andar da categoria, não apenas fotos gerais."
+    ],
+    [
+      "Dia no trem Gornergrat",
+      "Escolha dia claro se possível, confira horários e reserve tempo para mirantes."
+    ],
+    [
+      "Spa após passeio pela vila",
+      "Combine arquitetura tradicional, bem-estar e jantar; esqui não é obrigatório."
+    ],
+    [
+      "Matterhorn no verão",
+      "Escolha trilhas alpinas abertas conforme clima e preparo físico."
+    ]
+  ],
+  "checks": [
+    "Deixe carro em Täsch e siga de trem.",
+    "Sunnegga, Gornergrat e Glacier Paradise são acessos distintos.",
+    "Organize bagagem e conexões para Riffelalp, sobretudo se jantar na vila.",
+    "Reserve vista Matterhorn apenas com orientação confirmada.",
+    "Compare Nomad quatro estrelas, Alpinist e Huntsman cinco estrelas CERVO e suítes familiares.",
+    "Parceiro de reservas confirma preços e disponibilidade."
+  ],
+  "hotels": [
+    [
+      "Acima do centro · 30 quartos e suítes",
+      "THE OMNIA foi construído na rocha acima da vila, com entrada discreta e elevador dentro da rocha. 18 quartos e 12 suítes, bem-estar com vista Matterhorn e interiores modernos tranquilos. Categorias vista vila e Matterhorn são diferentes.",
+      "Confirme vista, elevador, regras infantis e traslado da estação.",
+      "Para arquitetura, privacidade e descanso acima dos telhados.",
+      ""
+    ],
+    [
+      "Centro · História desde 1857",
+      "Mont Cervin Palace é símbolo da hospitalidade desde 1857. Perto de Bahnhofstrasse, combina tradição de grande hotel e suítes familiares. Confira edifício, orientação e trajeto ao teleférico escolhido.",
+      "Confirme categoria Matterhorn, quartos comunicantes e acesso real aos meios de elevação.",
+      "Para serviço clássico e centro histórico.",
+      ""
+    ],
+    [
+      "Acima da vila · Chalés e spa",
+      "CERVO reúne edifícios alpinos modernos e Ātman Mountain Spa. Nomad quatro estrelas, Alpinist e Huntsman cinco e apartamentos Overlook são categorias distintas. Privacidade e comodidades variam.",
+      "Compare Nomad, Alpinist e Huntsman por serviço, área, vista e pistas.",
+      "Para ambiente alpino moderno e bem-estar.",
+      ""
+    ],
+    [
+      "Acima de Zermatt · 2222 m",
+      "Riffelalp é resort de altitude, não hotel junto à Bahnhofstrasse. Spa, panoramas alpinos e esqui são destaques. De Zermatt use Gornergrat até estação Riffelalp, depois traslado final. Calendário original inverno 2026/27 indica 11 dezembro–5 abril; reconfirme.",
+      "Confira horários, retorno tardio, caminhos nevados, crianças e vista Matterhorn.",
+      "Para verdadeiro refúgio nos Alpes.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Pode entrar de carro particular?",
+      "Trânsito comum restrito; geralmente deixe carro em Täsch e siga de trem."
+    ],
+    [
+      "Riffelalp fica no centro?",
+      "Não, a 2222 m. Trem Gornergrat até Riffelalp e traslado sazonal."
+    ],
+    [
+      "Todos quartos THE OMNIA têm vista Matterhorn?",
+      "Não, categorias vila e Matterhorn distintas; confirme."
+    ],
+    [
+      "Diferenças edifícios CERVO?",
+      "Nomad quatro estrelas, Alpinist e Huntsman cinco, Overlook apartamentos. Plantas e serviços variam."
+    ],
+    [
+      "Como chegar a Gornergrat?",
+      "Trem de cremalheira de Zermatt; confira horários e conexões, especialmente volta a Riffelalp."
+    ],
+    [
+      "Qual hotel é central para passeios?",
+      "Mont Cervin Palace perto de Bahnhofstrasse e restaurantes, THE OMNIA acima da vila."
+    ],
+    [
+      "Como reservar?",
+      "Parceiro autorizado confirma preços atuais, quartos e condições."
+    ]
+  ],
+  "photoCaptions": [
+    "Matterhorn refletido no Riffelsee no verão",
+    "Chalés históricos de madeira e Matterhorn",
+    "Lago Grindjisee em Sunnegga no outono",
+    "Geleiras e picos nevados do Gornergrat",
+    "Panorama invernal Matterhorn Glacier Paradise",
+    "Chalé tradicional Findeln diante do Matterhorn",
+    "Matterhorn ao amanhecer refletido no Stellisee"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Arquitetura moderna THE OMNIA e Matterhorn no verão",
+      "Sala Roof Suite com lareira",
+      "Piscina coberta THE OMNIA"
+    ],
+    [
+      "Mont Cervin Palace no centro Zermatt",
+      "Quarto elegante com sala separada",
+      "Piscina coberta Spa Nescens"
+    ],
+    [
+      "Chalés CERVO entre árvores nevadas",
+      "Quarto Nomad com beliches",
+      "Interior moderno CERVO"
+    ],
+    [
+      "Piscina externa Riffelalp vista Matterhorn",
+      "Suíte com madeira de pinho e detalhes vermelhos",
+      "Sala luminosa com lareira"
+    ]
+  ],
+  "seoTitle": "Zermatt: hotéis de luxo, chalés e vista do Matterhorn",
+  "hotelSeoTitle": "Hotéis em Zermatt: THE OMNIA, Mont Cervin Palace, CERVO e Riffelalp",
+  "seoDescription": "Compare quatro hotéis de luxo em Zermatt: vista Matterhorn, chalés, spa, esqui e trem Gornergrat."
+}

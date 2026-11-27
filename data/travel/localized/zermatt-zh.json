@@ -1,0 +1,156 @@
+{
+  "name": "采尔马特",
+  "country": "瑞士",
+  "eyebrow": "瓦莱州 · 马特洪峰天际线",
+  "heading": "采尔马特：一座山峰，多种度假方式",
+  "intro": "马特洪峰是采尔马特的标志，但景观取决于住宿位置。村庄屋顶之上的酒店、中心历史宫殿、现代山地度假村及海拔2222米的私密住宅带来不同旅程。采尔马特无普通汽车交通，乘火车抵达并按天气安排路线。",
+  "editorial": "自驾者通常在 Täsch 停车后乘火车。历史中心及 Bahnhofstrasse 方便步行及用餐。Sunnegga、Gornergrat 和 Matterhorn Glacier Paradise 为不同登山交通线路。前往 Riffelalp 需搭乘 Gornergrat 齿轨列车并安排车站至酒店最后一段接送。从村庄晚归受时刻表限制。山景不等于马特洪峰景，即使朝向正确也可能被云遮挡。预订条件及房量由合作方确认。",
+  "hotelIntro": "采尔马特四种风貌：屋顶之上 THE OMNIA、历史中心 Mont Cervin Palace、现代山地 CERVO 与高海拔 Riffelalp。",
+  "areas": [
+    [
+      "Bahnhofstrasse · 村庄中心",
+      "主要购物街、餐厅及酒店附近晚间步行路线。",
+      "普通私家车不可进入，规划 Täsch 火车及当地接送。"
+    ],
+    [
+      "村庄上方 · 开阔全景",
+      "高处酒店远离热闹街道，享受宁静及景观。",
+      "确认房间朝向、电梯及接送。"
+    ],
+    [
+      "Sunnegga · 山地路线",
+      "森林附近酒店及缆索铁路便于滑雪与自然活动。",
+      "确认通往缆索铁路路线及雪道开放。"
+    ],
+    [
+      "Gornergrat · 独立铁路",
+      "齿轨火车通向阿尔卑斯全景，对 Riffelalp 宾客尤其重要。",
+      "提前确认末班车、天气、换乘及行李。"
+    ],
+    [
+      "Riffelalp · 高海拔静休",
+      "海拔2222米，酒店本身即目的地，自然和天气决定节奏。",
+      "考虑 Gornergrat 时刻表、冬季积雪步道及晚归限制。"
+    ]
+  ],
+  "experiences": [
+    [
+      "客房欣赏马特洪峰",
+      "确认具体房型景观、阳台及楼层，不只参考酒店全景照片。"
+    ],
+    [
+      "Gornergrat 铁路一日",
+      "尽量选晴天，查时刻表并为观景台留时间。"
+    ],
+    [
+      "村庄漫步后水疗",
+      "结合传统建筑、水疗和晚餐，无需一定滑雪。"
+    ],
+    [
+      "夏季马特洪峰",
+      "按天气和体能选择开放的阿尔卑斯步道。"
+    ]
+  ],
+  "checks": [
+    "自驾在 Täsch 停车，乘火车前往采尔马特。",
+    "Sunnegga、Gornergrat 和 Glacier Paradise 为不同交通线路。",
+    "提前安排 Riffelalp 行李与接送，尤其计划在村内晚餐时。",
+    "仅在确认房型朝向时选择马特洪峰景。",
+    "比较 CERVO 四星 Nomad、五星 Alpinist 及 Huntsman，以及家庭套房布局。",
+    "价格和房量由预订合作方确认。"
+  ],
+  "hotels": [
+    [
+      "中心上方 · 30间客房及套房",
+      "THE OMNIA 建于村庄上方岩石，隐蔽入口及岩内电梯抵达。18间客房及12间套房、马特洪峰景康养区和宁静现代内饰。村景及马特洪峰景为不同类别。",
+      "确认具体房景、电梯、儿童规定及车站接送。",
+      "适合建筑、私密性及村庄屋顶之上静休。",
+      ""
+    ],
+    [
+      "村庄中心 · 始于1857年",
+      "Mont Cervin Palace 自1857年起为采尔马特待客象征。靠近 Bahnhofstrasse，融合传统豪华酒店与家庭套房。确认楼栋、朝向及前往所选缆车路线。",
+      "确认马特洪峰景类别、连通房及实际缆车通行。",
+      "适合经典酒店服务及历史中心。",
+      ""
+    ],
+    [
+      "村庄上方 · 山地木屋及水疗",
+      "CERVO 融合现代山地建筑与 Ātman Mountain Spa。四星 Nomad、五星 Alpinist 和 Huntsman 及 Overlook 公寓为不同类别，私密性及设施依房型。",
+      "比较 Nomad、Alpinist 和 Huntsman 的服务、面积、景观及雪道通行。",
+      "适合现代山地氛围及康养。",
+      ""
+    ],
+    [
+      "采尔马特上方 · 海拔2222米",
+      "Riffelalp 是高山度假村，而非 Bahnhofstrasse 附近酒店。水疗、开阔高山景观及滑雪为特色。从采尔马特乘 Gornergrat 齿轨列车到 Riffelalp 站再安排最后接送。原2026/27冬季日历列12月11日至4月5日，须重新确认。",
+      "确认列车、晚归、雪地步道、儿童规定及马特洪峰景。",
+      "适合真正高山静休。",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "可以私家车进入采尔马特吗？",
+      "普通汽车交通受限，通常在 Täsch 停车再乘火车。"
+    ],
+    [
+      "Riffelalp 位于中心吗？",
+      "不，海拔2222米。乘 Gornergrat 至 Riffelalp 站再季节接送。"
+    ],
+    [
+      "THE OMNIA 所有客房都能看马特洪峰吗？",
+      "不能，村景与马特洪峰景类别不同，确认具体房型。"
+    ],
+    [
+      "CERVO 楼栋有何区别？",
+      "Nomad 四星，Alpinist 和 Huntsman 五星，Overlook 为公寓，布局服务不同。"
+    ],
+    [
+      "如何前往 Gornergrat？",
+      "采尔马特齿轨火车，确认时刻及换乘，尤其返回 Riffelalp。"
+    ],
+    [
+      "哪家酒店方便中心散步？",
+      "Mont Cervin Palace 靠近 Bahnhofstrasse 及餐厅，THE OMNIA 位于村庄上方。"
+    ],
+    [
+      "如何预订？",
+      "授权预订合作方确认实时价格、房量及条件。"
+    ]
+  ],
+  "photoCaptions": [
+    "夏季 Riffelsee 湖马特洪峰倒影",
+    "采尔马特历史木屋及马特洪峰",
+    "秋季 Sunnegga 附近 Grindjisee 湖",
+    "Gornergrat 冰川及雪峰全景",
+    "Matterhorn Glacier Paradise 冬季全景",
+    "Findeln 传统木屋及马特洪峰",
+    "日出 Stellisee 湖马特洪峰倒影"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "THE OMNIA 现代建筑及夏季马特洪峰",
+      "Roof Suite 壁炉客厅",
+      "THE OMNIA 室内泳池"
+    ],
+    [
+      "采尔马特中心 Mont Cervin Palace",
+      "独立客厅优雅客房",
+      "Spa Nescens 室内泳池"
+    ],
+    [
+      "雪树林中 CERVO 木屋",
+      "Nomad 双层床客房",
+      "CERVO 现代客房内饰"
+    ],
+    [
+      "Riffelalp 马特洪峰景室外泳池",
+      "松木与红色装饰套房",
+      "明亮壁炉客厅"
+    ]
+  ],
+  "seoTitle": "采尔马特住哪里？瑞士豪华酒店、木屋与马特洪峰景观",
+  "hotelSeoTitle": "采尔马特酒店：THE OMNIA、Mont Cervin Palace、CERVO 与 Riffelalp",
+  "seoDescription": "比较采尔马特四家豪华酒店，了解马特洪峰景观、木屋、水疗、滑雪及 Gornergrat 火车。"
+}

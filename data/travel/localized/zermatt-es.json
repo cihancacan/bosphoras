@@ -1,0 +1,156 @@
+{
+  "name": "Zermatt",
+  "country": "Suiza",
+  "eyebrow": "Valais · Cervino en el horizonte",
+  "heading": "Zermatt: una cima, distintas formas de viajar",
+  "intro": "El Cervino simboliza Zermatt, pero su perspectiva depende de dónde te alojes. Un hotel sobre los tejados, un palacio histórico céntrico, un resort alpino moderno y una residencia apartada a 2222 metros ofrecen viajes distintos. Zermatt está libre de tráfico privado habitual: llega en tren y adapta la ruta al clima.",
+  "editorial": "Quienes llegan en coche suelen dejarlo en Täsch y continuar en tren. Casco histórico y Bahnhofstrasse facilitan paseos y restaurantes. Sunnegga, Gornergrat y Matterhorn Glacier Paradise son accesos de montaña distintos. Para Riffelalp toma el tren cremallera Gornergrat y organiza último traslado desde estación. Regreso nocturno del pueblo según horarios. Vista de montaña no significa vista Cervino, y nubes pueden ocultarlo incluso con orientación correcta. Socio de reservas confirma condiciones y disponibilidad.",
+  "hotelIntro": "Cuatro caras de Zermatt: THE OMNIA sobre tejados, Mont Cervin Palace en centro histórico, CERVO moderno y Riffelalp en altura.",
+  "areas": [
+    [
+      "Bahnhofstrasse · Centro",
+      "Calle comercial, restaurantes y paseos nocturnos cerca del hotel.",
+      "Coches privados normales no entran; organiza tren Täsch y traslado local."
+    ],
+    [
+      "Sobre el pueblo · Panorámicas",
+      "Hoteles elevados ofrecen calma lejos de calles concurridas y vistas amplias.",
+      "Comprueba orientación, ascensor y traslado."
+    ],
+    [
+      "Sunnegga · Rutas de montaña",
+      "Hoteles junto al bosque y funicular para esquí y naturaleza.",
+      "Comprueba camino a funicular y pistas abiertas."
+    ],
+    [
+      "Gornergrat · Ferrocarril propio",
+      "Tren cremallera hacia panoramas alpinos, importante para Riffelalp.",
+      "Revisa últimos trenes, clima, conexiones y equipaje."
+    ],
+    [
+      "Riffelalp · Intimidad en altura",
+      "A 2222 m el hotel es destino en sí, con ritmo de naturaleza y montaña.",
+      "Considera horarios Gornergrat, senderos nevados y regreso tardío."
+    ]
+  ],
+  "experiences": [
+    [
+      "Cervino desde la habitación",
+      "Confirma vistas, balcón y planta de categoría concreta, no solo fotos generales."
+    ],
+    [
+      "Día en tren Gornergrat",
+      "Elige día despejado si puedes, revisa horarios y reserva tiempo para miradores."
+    ],
+    [
+      "Spa tras paseo por pueblo",
+      "Combina arquitectura tradicional, bienestar y cena; esquiar no es obligatorio."
+    ],
+    [
+      "Cervino en verano",
+      "Elige senderos alpinos abiertos según clima y forma física."
+    ]
+  ],
+  "checks": [
+    "Deja coche en Täsch y continúa en tren.",
+    "Distingue Sunnegga, Gornergrat y Glacier Paradise como accesos diferentes.",
+    "Organiza equipaje y conexiones a Riffelalp, sobre todo si cenas en pueblo.",
+    "Reserva vista Cervino solo con orientación de categoría confirmada.",
+    "Compara Nomad cuatro estrellas, Alpinist y Huntsman cinco estrellas de CERVO y suites familiares.",
+    "Socio de reservas confirma precios y disponibilidad."
+  ],
+  "hotels": [
+    [
+      "Sobre centro · 30 habitaciones y suites",
+      "THE OMNIA está construido en roca sobre pueblo; acceso discreto y ascensor dentro de roca. 18 habitaciones, 12 suites, bienestar con vistas Cervino e interiores modernos tranquilos. Categorías de vista pueblo y Cervino distintas.",
+      "Confirma vistas, ascensor, reglas infantiles y traslado desde estación.",
+      "Para arquitectura, intimidad y descanso sobre tejados.",
+      ""
+    ],
+    [
+      "Centro · Historia desde 1857",
+      "Mont Cervin Palace simboliza hospitalidad local desde 1857. Cerca de Bahnhofstrasse combina tradición de gran hotel y suites familiares. Comprueba edificio, orientación y ruta al remonte elegido.",
+      "Confirma categoría Cervino, habitaciones comunicadas y acceso real a remontes.",
+      "Para servicio clásico y centro histórico.",
+      ""
+    ],
+    [
+      "Sobre pueblo · Chalets y spa",
+      "CERVO reúne edificios alpinos modernos y Ātman Mountain Spa. Nomad cuatro estrellas, Alpinist y Huntsman cinco y apartamentos Overlook son categorías distintas. Intimidad y comodidades dependen de categoría.",
+      "Compara Nomad, Alpinist y Huntsman por servicio, tamaño, vistas y pistas.",
+      "Para ambiente alpino contemporáneo y bienestar.",
+      ""
+    ],
+    [
+      "Sobre Zermatt · 2222 m",
+      "Riffelalp es resort de alta montaña, no hotel junto a Bahnhofstrasse. Spa, panoramas y esquí lo distinguen. Desde Zermatt toma tren cremallera Gornergrat a estación Riffelalp y organiza último traslado. Calendario original invierno 2026/27 indica 11 diciembre–5 abril; reconfirma fechas.",
+      "Comprueba trenes, regreso tardío, senderos nevados, niños y vista Cervino.",
+      "Para auténtica intimidad en alta montaña.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Se puede entrar en Zermatt en coche privado?",
+      "Tráfico normal restringido; suele dejarse coche en Täsch y tomar tren."
+    ],
+    [
+      "¿Riffelalp está en centro?",
+      "No, a 2222 m. Tren Gornergrat a estación Riffelalp y traslado estacional."
+    ],
+    [
+      "¿Todas habitaciones THE OMNIA miran al Cervino?",
+      "No, hay vistas pueblo y Cervino; confirma categoría."
+    ],
+    [
+      "¿En qué difieren edificios CERVO?",
+      "Nomad cuatro estrellas, Alpinist y Huntsman cinco, Overlook apartamentos. Distribución y servicios distintos."
+    ],
+    [
+      "¿Cómo llegar a Gornergrat?",
+      "Tren cremallera desde Zermatt; revisa horarios y conexiones, especialmente regreso a Riffelalp."
+    ],
+    [
+      "¿Qué hotel es céntrico para paseos?",
+      "Mont Cervin Palace cerca de Bahnhofstrasse y restaurantes, THE OMNIA sobre pueblo."
+    ],
+    [
+      "¿Cómo reservar?",
+      "Socio autorizado confirma precios, disponibilidad y condiciones."
+    ]
+  ],
+  "photoCaptions": [
+    "Reflejo Cervino en Riffelsee en verano",
+    "Chalets históricos de madera y Cervino",
+    "Lago Grindjisee cerca de Sunnegga en otoño",
+    "Glaciares y cumbres nevadas desde Gornergrat",
+    "Panorama invernal Matterhorn Glacier Paradise",
+    "Chalet tradicional Findeln ante Cervino",
+    "Cervino al amanecer reflejado en Stellisee"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Arquitectura moderna THE OMNIA y Cervino en verano",
+      "Salón Roof Suite con chimenea",
+      "Piscina cubierta THE OMNIA"
+    ],
+    [
+      "Mont Cervin Palace en centro Zermatt",
+      "Habitación elegante con salón separado",
+      "Piscina cubierta Spa Nescens"
+    ],
+    [
+      "Chalets CERVO entre árboles nevados",
+      "Habitación Nomad con literas",
+      "Interior moderno CERVO"
+    ],
+    [
+      "Piscina exterior Riffelalp con Cervino",
+      "Suite de madera de pino y detalles rojos",
+      "Salón luminoso con chimenea"
+    ]
+  ],
+  "seoTitle": "Zermatt: hoteles de lujo, chalets y vistas al Cervino",
+  "hotelSeoTitle": "Hoteles de Zermatt: THE OMNIA, Mont Cervin Palace, CERVO y Riffelalp",
+  "seoDescription": "Compara cuatro hoteles de lujo en Zermatt: vistas al Cervino, chalets, spa, esquí y tren Gornergrat."
+}

@@ -1,0 +1,156 @@
+{
+  "name": "Zermatt",
+  "country": "Schweiz",
+  "eyebrow": "Wallis · Matterhorn am Horizont",
+  "heading": "Zermatt: ein Gipfel, viele Möglichkeiten",
+  "intro": "Das Matterhorn ist Zermatts Wahrzeichen, doch sein Anblick hängt vom Standort ab. Ein Hotel über den Dächern, ein historisches Grandhotel im Zentrum, ein modernes Bergresort und eine abgeschiedene Residenz auf 2222 Metern bieten sehr unterschiedliche Reisen. Zermatt ist autofrei: mit dem Zug anreisen und die Route dem Wetter anpassen.",
+  "editorial": "Autoreisende lassen den Wagen meist in Täsch und fahren mit der Bahn weiter. Historischer Ortskern und Bahnhofstrasse sind ideal für Spaziergänge und Restaurants. Sunnegga, Gornergrat und Matterhorn Glacier Paradise sind getrennte Bergbahnachsen. Für Riffelalp mit der Gornergrat-Zahnradbahn zur Station fahren und letzten Transfer organisieren. Späte Rückkehr aus dem Dorf ist fahrplanabhängig. Bergblick ist nicht zwingend Matterhornblick, und Wolken können den Gipfel selbst bei richtiger Ausrichtung verdecken. Buchungsbedingungen und Verfügbarkeit bestätigt der Partner.",
+  "hotelIntro": "Vier Gesichter Zermatts: THE OMNIA über den Dächern, Mont Cervin Palace im Ortskern, CERVO im modernen Bergstil und Riffelalp für Abgeschiedenheit in der Höhe.",
+  "areas": [
+    [
+      "Bahnhofstrasse · Ortskern",
+      "Einkaufsstrasse, Restaurants und bequeme Abendspaziergänge nahe dem Hotel.",
+      "Private Autos fahren normalerweise nicht nach Zermatt; Bahn ab Täsch und lokalen Transfer planen."
+    ],
+    [
+      "Über dem Dorf · Weite Panoramen",
+      "Hotels in erhöhter Lage bieten Ruhe abseits der Strassen und Aussicht.",
+      "Zimmerausrichtung, Liftzugang und lokalen Transfer prüfen."
+    ],
+    [
+      "Sunnegga · Zugang zu Bergrouten",
+      "Waldnahe Hotels und Zugang zur Standseilbahn für Ski und Natur.",
+      "Weg zur Bahn und geöffnete Pisten für Reisedaten prüfen."
+    ],
+    [
+      "Gornergrat · Eigene Bahn",
+      "Zahnradbahn zu eindrucksvollen Alpenpanoramen, besonders wichtig für Riffelalp-Gäste.",
+      "Letzte Züge, Wetter, Anschlüsse und Gepäcktransport prüfen."
+    ],
+    [
+      "Riffelalp · Hochalpine Ruhe",
+      "Auf 2222 Metern wird das Hotel selbst zum Reiseziel; Natur und Bergbedingungen bestimmen den Rhythmus.",
+      "Gornergrat-Fahrplan, winterliche Fusswege und späte Rückkehr beachten."
+    ]
+  ],
+  "experiences": [
+    [
+      "Matterhorn vom Zimmer",
+      "Bestätigten Blick, Balkon und Stockwerk der Kategorie statt allgemeiner Fotos wählen."
+    ],
+    [
+      "Ein Tag auf dem Gornergrat",
+      "Möglichst klaren Tag wählen, Fahrplan prüfen und Zeit für Aussichtsplattformen einplanen."
+    ],
+    [
+      "Spa nach dem Dorfspaziergang",
+      "Traditionelle Architektur, Wellness und Dinner verbinden; Skifahren ist kein Muss."
+    ],
+    [
+      "Matterhorn im Sommer",
+      "Geöffnete Alpenwege nach Wetter und Kondition auswählen."
+    ]
+  ],
+  "checks": [
+    "Auto in Täsch lassen und per Bahn nach Zermatt.",
+    "Sunnegga, Gornergrat und Glacier Paradise sind getrennte Bahnachsen.",
+    "Für Riffelalp Gepäck und Anschlüsse früh organisieren, besonders bei Dinner im Dorf.",
+    "Matterhornblick nur bei bestätigter Zimmerausrichtung buchen.",
+    "Vier-Sterne-Nomad und Fünf-Sterne-Alpinist sowie Huntsman bei CERVO und Familiengrundrisse vergleichen.",
+    "Preise und Verfügbarkeit bestätigt Buchungspartner."
+  ],
+  "hotels": [
+    [
+      "Über dem Zentrum · 30 Zimmer und Suiten",
+      "THE OMNIA ist in den Fels über dem Dorf gebaut. Unauffälliger Eingang und Lift im Fels führen hinauf. 18 Zimmer und 12 Suiten, Wellnessbereiche mit Matterhornblick und ruhige moderne Interieurs. Dorf- und Matterhornblick sind unterschiedliche Kategorien.",
+      "Konkreten Zimmerblick, Liftzugang, Kinderregeln und Transfer vom Bahnhof klären.",
+      "Für Architektur, Privatsphäre und Ruhe über Zermatts Dächern.",
+      ""
+    ],
+    [
+      "Ortskern · Geschichte seit 1857",
+      "Mont Cervin Palace ist seit 1857 ein Symbol der Zermatter Gastfreundschaft. Nahe Bahnhofstrasse verbindet es Grandhoteltradition und Familiensuiten. Gebäude, Ausrichtung und Weg zur gewählten Bahn prüfen.",
+      "Matterhornkategorie, Verbindungszimmer und tatsächlichen Bahnzugang bestätigen.",
+      "Für klassischen Hotelservice und historischen Ortskern.",
+      ""
+    ],
+    [
+      "Über dem Dorf · Bergchalets und Spa",
+      "CERVO verbindet moderne Berggebäude und Ātman Mountain Spa. Vier-Sterne-Nomad, Fünf-Sterne-Alpinist und Huntsman sowie Overlook-Apartments unterscheiden sich. Privatsphäre, Ausstattung und Belegung nach Kategorie.",
+      "Nomad, Alpinist und Huntsman nach Service, Grösse, Blick und Pistenzugang vergleichen.",
+      "Für modernes Bergambiente und Wellness.",
+      ""
+    ],
+    [
+      "Oberhalb Zermatts · 2222 m",
+      "Riffelalp ist ein Hochgebirgsresort, kein Hotel an der Bahnhofstrasse. Spa, offene Alpenlandschaft und Skiangebote prägen es. Ab Zermatt mit Gornergrat-Zahnradbahn zur Station Riffelalp, dann letzten Transfer organisieren. Der ursprüngliche Winterkalender 2026/27 nennt 11. Dezember bis 5. April; Daten erneut prüfen.",
+      "Fahrplan, späte Rückkehr, verschneite Wege, Kinderregeln und Matterhornblick klären.",
+      "Für echte Abgeschiedenheit in den Hochalpen.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Darf man mit dem Privatauto nach Zermatt fahren?",
+      "Normaler Autoverkehr ist eingeschränkt; meist Auto in Täsch abstellen und Zug nehmen."
+    ],
+    [
+      "Liegt Riffelalp im Zentrum?",
+      "Nein, auf 2222 m. Gornergratbahn zur Station Riffelalp, danach saisonaler Transfer."
+    ],
+    [
+      "Haben alle THE-OMNIA-Zimmer Matterhornblick?",
+      "Nein, Dorf- und Matterhornkategorien unterscheiden sich; genaue Kategorie bestätigen."
+    ],
+    [
+      "Wie unterscheiden sich die CERVO-Gebäude?",
+      "Nomad vier Sterne, Alpinist und Huntsman fünf Sterne, Overlook Apartments. Grundrisse und Leistungen variieren."
+    ],
+    [
+      "Wie erreicht man den Gornergrat?",
+      "Zahnradbahn ab Zermatt; Fahrplan und Anschlüsse besonders für Riffelalp-Rückfahrt prüfen."
+    ],
+    [
+      "Welches Hotel ist zentral zum Spazieren?",
+      "Mont Cervin Palace liegt nahe Bahnhofstrasse und Restaurants, THE OMNIA oberhalb des Dorfes."
+    ],
+    [
+      "Wie bucht man diese Hotels?",
+      "Autorisierter Buchungspartner bestätigt aktuelle Preise, Verfügbarkeit und Bedingungen."
+    ]
+  ],
+  "photoCaptions": [
+    "Matterhornspiegelung im Riffelsee im Sommer",
+    "Historische Holzchalets Zermatt und Matterhorn",
+    "Grindjisee bei Sunnegga im Herbst",
+    "Gletscher und Schneegipfel vom Gornergrat",
+    "Winterpanorama Matterhorn Glacier Paradise",
+    "Traditionelles Chalet Findeln vor Matterhorn",
+    "Matterhorn im Stellisee bei Sonnenaufgang"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Moderne Architektur THE OMNIA mit Matterhorn im Sommer",
+      "Roof Suite Wohnraum mit Kamin",
+      "Hallenbad THE OMNIA"
+    ],
+    [
+      "Mont Cervin Palace im Ortskern",
+      "Elegantes Zimmer mit separatem Wohnraum",
+      "Hallenbad Spa Nescens"
+    ],
+    [
+      "CERVO-Chalets zwischen verschneiten Bäumen",
+      "Nomad-Zimmer mit Etagenbetten",
+      "Modernes CERVO-Interieur"
+    ],
+    [
+      "Riffelalp-Aussenpool mit Matterhornblick",
+      "Suite mit Arvenholz und roten Akzenten",
+      "Heller Wohnraum mit Kamin"
+    ]
+  ],
+  "seoTitle": "Zermatt: Luxushotels, Chalets und Matterhornblick",
+  "hotelSeoTitle": "Hotels in Zermatt: THE OMNIA, Mont Cervin Palace, CERVO und Riffelalp",
+  "seoDescription": "Vier Luxushotels in Zermatt vergleichen: Matterhornblick, Chalets, Spa, Ski und Anreise mit der Gornergratbahn."
+}

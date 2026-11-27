@@ -1,0 +1,156 @@
+{
+  "name": "Zermatt",
+  "country": "İsviçre",
+  "eyebrow": "Valais · Ufukta Matterhorn",
+  "heading": "Zermatt: bir zirve, farklı tatil deneyimleri",
+  "intro": "Matterhorn Zermatt'ın simgesi, ancak dağın görünümü seçtiğiniz konuma bağlıdır. Köy çatıları üzerindeki otel, merkezde tarihî saray, çağdaş dağ resortu ve 2222 metrede saklı rezidans farklı deneyimler sunar. Araç trafiğine kapalı köye trenle gelin ve rotanızı havaya göre seçin.",
+  "editorial": "Arabayla gelenler genellikle araçlarını Täsch'te bırakıp trenle devam eder. Tarihî merkez ve Bahnhofstrasse yürüyüş ve restoranlar için uygundur. Sunnegga, Gornergrat ve Matterhorn Glacier Paradise ayrı dağ ulaşım yönleridir. Riffelalp için Gornergrat dişli trenine binip istasyondan son transferi düzenleyin. Köyden geç dönüş tarifeyle sınırlıdır. Dağ manzarası Matterhorn garantisi değildir; doğru cephede bile bulut zirveyi gizleyebilir. Rezervasyon koşulları ve müsaitliği partner doğrular.",
+  "hotelIntro": "Zermatt'ın dört yüzü: çatıların üzerinde THE OMNIA, merkezde Mont Cervin Palace, çağdaş dağ tarzında CERVO ve yükseklerde Riffelalp.",
+  "areas": [
+    [
+      "Bahnhofstrasse · Köy merkezi",
+      "Alışveriş caddesi, restoranlar ve otelden kolay akşam yürüyüşü.",
+      "Özel araçlar normalde giremez; Täsch treni ve yerel transferi planlayın."
+    ],
+    [
+      "Köyün üstü · Açık panoramalar",
+      "Yüksekte oteller kalabalıktan uzak dinlenme ve geniş manzaralar sağlar.",
+      "Oda yönü, asansör erişimi ve yerel transferi kontrol edin."
+    ],
+    [
+      "Sunnegga · Dağ rotalarına erişim",
+      "Orman yakınında oteller ve füniküler erişimi kayak ve doğaya odaklanır.",
+      "Fünikülere yolu ve pistlerin açık oluşunu kontrol edin."
+    ],
+    [
+      "Gornergrat · Ayrı demiryolu",
+      "Dişli tren Alp panoramalarına çıkar; Riffelalp misafirleri için önemlidir.",
+      "Son trenleri, hava, aktarma ve bagajı kontrol edin."
+    ],
+    [
+      "Riffelalp · Yüksek dağ inzivası",
+      "2222 metrede otelin kendisi bir destinasyondur; doğa ve hava ritmi belirler.",
+      "Gornergrat tarifesi, karlı yaya yolları ve geç dönüş sınırlarını dikkate alın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Odadan Matterhorn",
+      "Genel fotoğraf yerine kategori manzarası, balkon ve katı doğrulayın."
+    ],
+    [
+      "Gornergrat treninde bir gün",
+      "Mümkünse açık hava seçin, tarifeyi kontrol edip seyir noktalarına zaman ayırın."
+    ],
+    [
+      "Köy yürüyüşü sonrası spa",
+      "Geleneksel mimari, spa ve akşam yemeğini birleştirin; kayak şart değil."
+    ],
+    [
+      "Yazın Matterhorn",
+      "Açık Alp patikalarını hava ve kondisyonunuza göre seçin."
+    ]
+  ],
+  "checks": [
+    "Aracı Täsch'te bırakıp Zermatt'a trenle gidin.",
+    "Sunnegga, Gornergrat ve Glacier Paradise ayrı ulaşım yönleridir.",
+    "Riffelalp için bagaj ve transferi, özellikle köyde akşam yemeği planında önceden düzenleyin.",
+    "Matterhorn manzarasını yalnızca teyitli oda yönüne göre seçin.",
+    "CERVO'nun dört yıldızlı Nomad ve beş yıldızlı Alpinist, Huntsman kategorileri ile aile planlarını karşılaştırın.",
+    "Fiyat ve müsaitliği rezervasyon partneri doğrular."
+  ],
+  "hotels": [
+    [
+      "Merkez üstü · 30 oda ve süit",
+      "THE OMNIA köyün üstündeki kayaya inşa edilmiştir; gizli giriş ve kayanın içindeki asansörle ulaşılır. 18 oda ve 12 süit, Matterhorn manzaralı wellness alanları ve sakin modern iç mekânlar vardır. Köy ve Matterhorn manzarası ayrı kategorilerdir.",
+      "Oda manzarası, asansör, çocuk koşulları ve istasyon transferini doğrulayın.",
+      "Mimari, mahremiyet ve köy üstünde dinlenme için.",
+      ""
+    ],
+    [
+      "Köy merkezi · 1857'den beri tarih",
+      "Mont Cervin Palace 1857'den beri Zermatt konukseverliğinin simgesidir. Bahnhofstrasse yakınında büyük otel geleneği ve aile süitlerini birleştirir. Bina, oda yönü ve seçilen lifte rotayı kontrol edin.",
+      "Matterhorn kategorisini, bağlantılı odaları ve gerçek lift erişimini doğrulayın.",
+      "Klasik otel hizmeti ve tarihî merkez için.",
+      ""
+    ],
+    [
+      "Köy üstü · Dağ şaleleri ve spa",
+      "CERVO çağdaş dağ binaları ve Ātman Mountain Spa'yı birleştirir. Dört yıldızlı Nomad, beş yıldızlı Alpinist ve Huntsman ile Overlook apartmanları ayrı kategorilerdir. Mahremiyet ve olanaklar kategoriye bağlıdır.",
+      "Nomad, Alpinist ve Huntsman hizmet, büyüklük, manzara ve pist erişimini karşılaştırın.",
+      "Çağdaş dağ atmosferi ve wellness için.",
+      ""
+    ],
+    [
+      "Zermatt üstü · 2222 m",
+      "Riffelalp Bahnhofstrasse oteli değil, yüksek dağ resortudur. Spa, açık Alp manzaraları ve kayak olanaklarıyla ayrılır. Zermatt'tan Gornergrat dişli treniyle Riffelalp istasyonuna gidip son transferi ayarlayın. Kaynak 2026/27 kış takvimi 11 Aralık–5 Nisan belirtir; tarihleri yeniden teyit edin.",
+      "Tren tarifesi, geç dönüş, karlı patikalar, çocuk kuralları ve Matterhorn manzarasını kontrol edin.",
+      "Yüksek Alplerde gerçek inziva için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Zermatt'a özel araçla girilir mi?",
+      "Normal araç trafiği kısıtlıdır; araç genellikle Täsch'te bırakılır ve trenle devam edilir."
+    ],
+    [
+      "Riffelalp merkezde mi?",
+      "Hayır, 2222 metrededir. Gornergrat treniyle Riffelalp istasyonuna, ardından sezonluk transferle gidilir."
+    ],
+    [
+      "THE OMNIA'nın tüm odaları Matterhorn'a mı bakar?",
+      "Hayır, köy ve Matterhorn kategorileri farklıdır; kesin kategoriyi teyit edin."
+    ],
+    [
+      "CERVO binaları nasıl farklı?",
+      "Nomad dört yıldızlı, Alpinist ve Huntsman beş yıldızlı, Overlook apartmanlarıdır. Plan ve hizmetler farklıdır."
+    ],
+    [
+      "Gornergrat'a nasıl gidilir?",
+      "Zermatt'tan dişli trenle; özellikle Riffelalp dönüşü için tarife ve aktarmayı kontrol edin."
+    ],
+    [
+      "Merkez yürüyüşleri için hangi otel?",
+      "Mont Cervin Palace Bahnhofstrasse ve restoranlara yakın, THE OMNIA köyün üstündedir."
+    ],
+    [
+      "Nasıl rezervasyon yapılır?",
+      "Yetkili rezervasyon partneri güncel fiyat, oda ve koşulları doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Yazın Riffelsee'de Matterhorn yansıması",
+    "Zermatt tarihî ahşap şaleleri ve Matterhorn",
+    "Sonbaharda Sunnegga bölgesinde Grindjisee",
+    "Gornergrat'tan buzullar ve karlı zirveler",
+    "Matterhorn Glacier Paradise kış panoraması",
+    "Findeln geleneksel şalesi ve Matterhorn",
+    "Gün doğumunda Stellisee'de Matterhorn yansıması"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "THE OMNIA çağdaş mimarisi ve yazın Matterhorn",
+      "Şömineli Roof Suite salonu",
+      "THE OMNIA kapalı havuzu"
+    ],
+    [
+      "Zermatt merkezinde Mont Cervin Palace",
+      "Ayrı salonlu zarif oda",
+      "Spa Nescens kapalı havuzu"
+    ],
+    [
+      "Karlı ağaçlar arasında CERVO şaleleri",
+      "Ranzalı Nomad odası",
+      "CERVO çağdaş oda içi"
+    ],
+    [
+      "Matterhorn manzaralı Riffelalp açık havuzu",
+      "Çam ahşaplı kırmızı detaylı süit",
+      "Şömineli aydınlık salon"
+    ]
+  ],
+  "seoTitle": "Zermatt: Lüks Oteller, Şaleler ve Matterhorn Manzarası",
+  "hotelSeoTitle": "Zermatt Otelleri: THE OMNIA, Mont Cervin Palace, CERVO ve Riffelalp",
+  "seoDescription": "Zermatt'ta dört lüks oteli karşılaştırın: Matterhorn manzarası, şaleler, spa, kayak ve Gornergrat tren erişimi."
+}
