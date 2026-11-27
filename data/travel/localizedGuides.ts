@@ -100,7 +100,9 @@ import phuketTr from './localized/phuket-tr.json';
 import newYorkTr from './localized/new-york-tr.json';
 import miamiTr from './localized/miami-tr.json';
 import losAngelesTr from './localized/los-angeles-tr.json';
-const reviewedTurkish:Record<string,LocalizedGuide>={istanbul:istanbulTr,bodrum:bodrumTr,antalya:antalyaTr,paris:parisTr,dubai:dubaiTr,bali:baliTr,phuket:phuketTr,'new-york':newYorkTr,miami:miamiTr,'los-angeles':losAngelesTr};
+import maldivesTr from './localized/maldives-tr.json';
+import tokyoTr from './localized/tokyo-tr.json';
+const reviewedTurkish:Record<string,LocalizedGuide>={istanbul:istanbulTr,bodrum:bodrumTr,antalya:antalyaTr,paris:parisTr,dubai:dubaiTr,bali:baliTr,phuket:phuketTr,'new-york':newYorkTr,miami:miamiTr,'los-angeles':losAngelesTr,maldives:maldivesTr,tokyo:tokyoTr};
 export type EditorialLocale='ru'|'ar'|'tr';
 type LegacyEditorialLocale='ru'|'ar';
 export type LocalizedGuide={
