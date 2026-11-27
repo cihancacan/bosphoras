@@ -1,0 +1,162 @@
+{
+  "name": "Ibiza",
+  "country": "Espanha",
+  "eyebrow": "Praias mediterrâneas e hotéis com personalidade",
+  "heading": "Onde ficar em Ibiza: quatro mundos além da vida noturna",
+  "intro": "Ruas históricas de Eivissa, areia de Talamanca, falésias do oeste e a baía isolada de Xarraca oferecem experiências distintas. Escolha localização, temporada, acesso ao mar e transporte, não apenas uma foto de piscina.",
+  "editorial": "No norte, Six Senses Ibiza ocupa a tranquila Cala Xarraca perto de Sant Joan. Bem-estar, arte, música e residências privadas definem o resort; nem todo quarto tem piscina privativa. Nobu Hotel Ibiza Bay fica na praia de areia de Talamanca, perto da Marina Botafoch. Calendário publicado termina a temporada 2026 em 26 de outubro; confirme novas datas. Na costa oeste, 7Pines Resort olha para Es Vedrà; segundo o resort, Cala Codolar fica a cerca de cinco minutos a pé, não diretamente na areia. The Standard fica no centro de Eivissa e oferece piscina na cobertura, não praia privada.\n\nRuas de pedestres, pedras e degraus de Dalt Vila exigem planejamento com crianças. Vento e mar afetam barcos para Formentera. Confira temporada de restaurantes e beach clubs, categorias e serviços. Preços e disponibilidade são confirmados pelo fornecedor autorizado.",
+  "hotelIntro": "Quatro endereços: Cala Xarraca, Talamanca, falésias ocidentais e centro de Eivissa.",
+  "areas": [
+    [
+      "Eivissa, Dalt Vila e marina",
+      "Fortaleza histórica domina o porto perto de The Standard; praças animadas e ruas estreitas definem a cidade.",
+      "Confirme desembarque, degraus e bagagem."
+    ],
+    [
+      "Talamanca e Marina Botafoch",
+      "Nobu fica na praia de areia de Talamanca, perto da cidade.",
+      "Confirme mesas e espreguiçadeiras separadamente."
+    ],
+    [
+      "Cala Xarraca e Sant Joan",
+      "Baías do norte entre pinheiros cercam Six Senses. É necessário transporte a Eivissa.",
+      "Confira acesso rochoso à água e segurança das piscinas privadas."
+    ],
+    [
+      "Cala Codolar, Cala Conta e falésias ocidentais",
+      "7Pines olha para Es Vedrà; é preciso caminhar até Cala Codolar.",
+      "Vista da área comum não garante a mesma vista do quarto."
+    ],
+    [
+      "Ses Salines e sul da ilha",
+      "Salinas, dunas e praias protegidas; nenhum dos quatro hotéis está diretamente aqui.",
+      "Confira regras de acesso ao parque e temporada de beach clubs."
+    ]
+  ],
+  "experiences": [
+    [
+      "Dalt Vila antes da multidão",
+      "Caminhe pelas muralhas e ruas antigas de manhã, considerando ladeiras e degraus."
+    ],
+    [
+      "Um dia em Formentera",
+      "Compare barcos do porto de Eivissa, confirme retorno e acompanhe o mar."
+    ],
+    [
+      "Pôr do sol na costa oeste",
+      "Escolha mirante seguro e de acesso legal para Es Vedrà ou Cala Conta."
+    ],
+    [
+      "Vilas do norte e mercados de artesanato",
+      "Visite Sant Joan, ateliês e restaurantes locais; confira dias dos mercados."
+    ],
+    [
+      "Parque natural de Ses Salines",
+      "Explore salinas, dunas e praias por trilhas permitidas, respeitando a conservação."
+    ]
+  ],
+  "checks": [
+    "Nobu anunciou fim da temporada em 26 de outubro de 2026; confira novo calendário.",
+    "Em Six Senses diferencie quartos, suítes com piscina e residências privadas.",
+    "De 7Pines a Cala Codolar é preciso caminhar.",
+    "The Standard é hotel urbano, não resort de praia.",
+    "Barcos e iates dependem do clima e operador.",
+    "Pedras e degraus de Dalt Vila exigem planejamento com crianças."
+  ],
+  "hotels": [
+    [
+      "Cala Xarraca · Costa norte",
+      "Six Senses fica entre pinheiros e rochas acima de baía isolada. Bem-estar, artesanato, gastronomia e música são centrais. Quartos, Pool Suites, residências e grandes villas diferem em metragem, privacidade e piscinas. Entrada rochosa na água não equivale a longa praia de areia. É necessário transporte à cidade.",
+      "Confirme categoria, acesso ao mar, segurança da piscina e programas nas datas.",
+      "Para descanso isolado e bem-estar.",
+      ""
+    ],
+    [
+      "Talamanca · Camí de ses Feixes 52",
+      "Nobu Hotel Ibiza Bay fica na orla de areia perto da Marina Botafoch. Atmosfera de praia, restaurantes e proximidade de Eivissa. Quarto não garante espreguiçadeira, mesa Nobu nem vista para o mar. Temporada publicada 2026 termina em 26 de outubro. Confirme novas datas, serviços familiares e traslados.",
+      "Confira vista, temporada, regras de piscinas, espreguiçadeiras e restaurante.",
+      "Para férias na praia perto da cidade.",
+      ""
+    ],
+    [
+      "Puig Delfín · Falésias ocidentais",
+      "7Pines ocupa propriedade acima da costa rochosa, voltada para Es Vedrà. Suítes, villas, piscinas e terraços se distribuem pelo terreno. Cala Codolar fica a cerca de cinco minutos a pé; Cala Conta é outra baía. Considere calor e caminhos irregulares com crianças. Terraço comum não garante mesma vista da suíte.",
+      "Confirme vista de Es Vedrà, localização da suíte, caminho à praia e transporte urbano.",
+      "Para pôr do sol e descanso tranquilo em resort.",
+      ""
+    ],
+    [
+      "Centro de Eivissa · Carrer de Bartomeu Vicent Ramon 9",
+      "The Standard fica entre lojas e restaurantes perto da marina e de Dalt Vila. Quartos modernos, suítes e Casa Privada são opções distintas. Piscina na cobertura não substitui praia. Confira eventos sazonais, acesso à cobertura, ruído e bagagem na área de pedestres.",
+      "Confirme Casa Privada se necessário, acesso à cobertura e desembarque.",
+      "Para vida urbana, restaurantes e design.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Onde ficar para aproveitar a noite de Eivissa?",
+      "The Standard fica no centro, Nobu em Talamanca; Six Senses e 7Pines exigem trajetos maiores."
+    ],
+    [
+      "Nobu abre no inverno?",
+      "Temporada publicada termina em 26 de outubro de 2026. Confira novas datas e disponibilidade real."
+    ],
+    [
+      "Six Senses tem praia contínua de areia?",
+      "Não, é baía rochosa com acessos à água. Piscina privativa depende da categoria."
+    ],
+    [
+      "É possível caminhar de 7Pines a Cala Codolar?",
+      "Hotel informa cerca de cinco minutos a pé. Não é acesso direto do quarto à areia; confira caminho e vista."
+    ],
+    [
+      "Piscina de The Standard fica à beira-mar?",
+      "Não, está na cobertura do hotel urbano."
+    ],
+    [
+      "Há barcos para Formentera todos os dias?",
+      "Horários dependem da temporada, operador e mar. Confirme ida e volta."
+    ],
+    [
+      "Como reservar hotéis?",
+      "Compare hospedagens na Bosphoras; fornecedor autorizado confirma preços, quartos, iates e extras separadamente."
+    ]
+  ],
+  "photoCaptions": [
+    "Fortaleza Dalt Vila e catedral vistas do alto",
+    "Iates no porto abaixo de Dalt Vila",
+    "Orla de areia de Talamanca",
+    "Água turquesa e rochas de Cala Xarraca",
+    "Silhueta de Es Vedrà ao entardecer",
+    "Rochas estratificadas perto de Cala Codolar",
+    "Águas rasas transparentes de Cala Conta",
+    "Salinas de Ses Salines",
+    "Igreja branca de Sant Joan"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Piscina principal Six Senses acima de Cala Xarraca",
+      "Suíte e terraço ao pôr do sol",
+      "Piscina principal e espreguiçadeiras vistas do alto"
+    ],
+    [
+      "Terraço privativo com espreguiçadeira sobre Talamanca",
+      "Suíte azul e branca com acesso ao mar",
+      "Piscina e espreguiçadeiras Nobu"
+    ],
+    [
+      "Villas 7Pines acima das falésias ocidentais",
+      "Quarto Laguna Suite Sea View",
+      "Serviço em terraço com vista de Es Vedrà"
+    ],
+    [
+      "Cobertura The Standard com vista de Dalt Vila",
+      "Banheiro de suíte com banheira independente",
+      "Restaurante Jara iluminado e plantas verdes"
+    ]
+  ],
+  "seoTitle": "Onde ficar em Ibiza: hotéis de luxo, praias e baías",
+  "hotelSeoTitle": "Melhores hotéis de Ibiza: Six Senses, Nobu, 7Pines e The Standard",
+  "seoDescription": "Compare Eivissa, Talamanca, Cala Xarraca e costa oeste. Conheça quatro hotéis de luxo em Ibiza, praias e dicas de transporte."
+}

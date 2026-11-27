@@ -1,0 +1,162 @@
+{
+  "name": "İbiza",
+  "country": "İspanya",
+  "eyebrow": "Akdeniz plajları ve özgün oteller",
+  "heading": "İbiza'da nerede kalınır? Gece hayatının ötesinde dört deneyim",
+  "intro": "Eivissa'nın tarihî sokakları, Talamanca'nın kum plajı, batının kayalıkları ve sakin Xarraca koyu birbirinden farklı tatiller sunar. Yalnızca havuz fotoğrafına değil, konuma, sezona, deniz erişimine ve ulaşıma göre seçim yapın.",
+  "editorial": "Kuzeyde Six Senses Ibiza, Sant Joan yakınındaki sakin Cala Xarraca koyundadır. Sağlıklı yaşam, sanat, müzik ve özel rezidanslar tesisi tanımlar; her odanın özel havuzu yoktur. Nobu Hotel Ibiza Bay, Botafoch marinası yakınında Talamanca kum plajındadır. Yayımlanan 2026 sezonu 26 Ekim'de sona erer; yeni tarihleri doğrulayın. Batıda 7Pines Resort, Es Vedrà yönüne bakar; tesisin açıklamasına göre Cala Codolar yaklaşık beş dakika yürüyüş mesafesindedir, doğrudan kum plaja çıkış değildir. The Standard, Eivissa merkezindedir; özel plaj değil, çatı havuzu sunar.\n\nDalt Vila'nın yaya sokakları, taş döşemesi ve basamakları çocuklu gezilerde dikkat gerektirir. Formentera feribotları rüzgâr ve deniz koşullarına bağlıdır. Restoran, plaj kulübü, oda kategorisi ve hizmetlerin sezonunu doğrulayın. Fiyat ve müsaitliği yetkili sağlayıcı doğrular.",
+  "hotelIntro": "Dört farklı adres: Cala Xarraca, Talamanca, batı kayalıkları ve Eivissa merkezi.",
+  "areas": [
+    [
+      "Eivissa, Dalt Vila ve marina",
+      "Tarihî kale, The Standard yakınında limana hâkimdir; canlı meydanlar ve dar sokaklar şehrin karakterini oluşturur.",
+      "İniş noktasını, merdivenleri ve bagaj taşımayı doğrulayın."
+    ],
+    [
+      "Talamanca ve Botafoch marinası",
+      "Nobu, şehre yakın Talamanca kum plajındadır.",
+      "Masa ve şezlong koşullarını ayrı doğrulayın."
+    ],
+    [
+      "Cala Xarraca ve Sant Joan",
+      "Kuzeydeki çamlarla çevrili koylar Six Senses'i kuşatır. Eivissa'ya ulaşım gerekir.",
+      "Kayalık deniz erişimini ve özel havuz güvenliğini kontrol edin."
+    ],
+    [
+      "Cala Codolar, Cala Conta ve batı kayalıkları",
+      "7Pines, Es Vedrà yönüne bakar; Cala Codolar'a yürümek gerekir.",
+      "Ortak teras panoraması odanın balkonunda aynı manzarayı garanti etmez."
+    ],
+    [
+      "Ses Salines ve adanın güneyi",
+      "Tuz gölleri, kumullar ve korunan plajlar; seçilen dört otel doğrudan burada değildir.",
+      "Doğa parkı giriş kurallarını ve plaj kulübü sezonunu doğrulayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Kalabalıktan önce Dalt Vila",
+      "Sabah kale surlarını ve eski sokakları keşfedin; yokuş ve basamakları dikkate alın."
+    ],
+    [
+      "Formentera'da bir gün",
+      "Eivissa limanından feribotları karşılaştırın, dönüşü doğrulayın ve denizi takip edin."
+    ],
+    [
+      "Batı kıyısında gün batımı",
+      "Es Vedrà veya Cala Conta yönünde yasal erişimli güvenli seyir noktası seçin."
+    ],
+    [
+      "Kuzey köyleri ve el sanatları pazarları",
+      "Sant Joan, atölyeler ve yerel restoranları ziyaret edin; pazar günlerini kontrol edin."
+    ],
+    [
+      "Ses Salines Doğa Parkı",
+      "Tuz alanlarını, kumulları ve plajları izinli patikalarda, koruma kurallarına uyarak keşfedin."
+    ]
+  ],
+  "checks": [
+    "Nobu'nun 2026 sezonu 26 Ekim'de bitmiştir; yeni takvimi doğrulayın.",
+    "Six Senses'te standart odaları, havuzlu süitleri ve özel rezidansları ayırt edin.",
+    "7Pines'ten Cala Codolar'a yürümek gerekir.",
+    "The Standard şehir otelidir, plaj resortu değildir.",
+    "Feribotlar ve yatlar hava ile operatör koşullarına bağlıdır.",
+    "Dalt Vila'nın taş döşemesi ve merdivenleri çocuklarla planlama gerektirir."
+  ],
+  "hotels": [
+    [
+      "Cala Xarraca · Kuzey kıyısı",
+      "Six Senses, çamlar ve kayalıklar arasında sakin koya hâkimdir. Sağlıklı yaşam, el sanatları, gastronomi ve müzik öne çıkar. Standart oda, Pool Suite, rezidans ve büyük villalar alan, mahremiyet ve havuz açısından farklıdır. Kayalık deniz girişi uzun kum plajıyla aynı değildir. Şehre ulaşım gerekir.",
+      "Kategoriyi, deniz erişimini, havuz güvenliğini ve seyahat tarihlerindeki programları doğrulayın.",
+      "Sakin tatil ve sağlıklı yaşam programları için.",
+      ""
+    ],
+    [
+      "Talamanca · Camí de ses Feixes 52",
+      "Nobu Hotel Ibiza Bay, Botafoch marinası yakınında kum kıyıdadır. Plaj atmosferini restoranlar ve Eivissa'ya yakınlıkla birleştirir. Oda, şezlong, Nobu masası veya deniz manzarası garantisi vermez. Yayımlanan 2026 sezonu 26 Ekim'de sona erer; yeni tarihleri, aile hizmetlerini ve transferleri doğrulayın.",
+      "Manzarayı, sezonu, havuz kurallarını, şezlongları ve restoranı doğrulayın.",
+      "Şehre yakın plaj tatili için.",
+      ""
+    ],
+    [
+      "Puig Delfín · Batı kayalıkları",
+      "7Pines, kayalık kıyının üzerinde Es Vedrà yönüne bakar. Süit, villa, havuz ve teraslar araziye dağılmıştır. Cala Codolar yaklaşık beş dakika yürüme mesafesindedir; Cala Conta ayrı koydur. Çocuklarla sıcağı ve engebeli yolları dikkate alın. Ortak teras manzarası süit manzarasını garanti etmez.",
+      "Es Vedrà manzarasını, süit konumunu, plaj yolunu ve şehir ulaşımını doğrulayın.",
+      "Gün batımı ve sakin resort tatili için.",
+      ""
+    ],
+    [
+      "Eivissa merkezi · Carrer de Bartomeu Vicent Ramon 9",
+      "The Standard, marina ve Dalt Vila yakınında mağaza ve restoranlar arasındadır. Modern oda, süit ve Casa Privada ayrı konaklama seçenekleridir. Çatı havuzu plajın yerini tutmaz. Sezonluk etkinlikleri, çatı erişimini, gürültüyü ve yaya bölgesinde bagaj taşımayı doğrulayın.",
+      "Gerekirse Casa Privada kategorisini, çatı erişimini ve iniş noktasını doğrulayın.",
+      "Şehir yaşamı, restoran ve tasarım için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Eivissa gece hayatı için nerede kalınır?",
+      "The Standard merkezde, Nobu Talamanca'dadır. Six Senses ve 7Pines için daha uzun araç yolculuğu gerekir."
+    ],
+    [
+      "Nobu kışın açık mı?",
+      "Yayımlanan sezon 26 Ekim 2026'da biter; yeni tarihleri ve gerçek oda müsaitliğini kontrol edin."
+    ],
+    [
+      "Six Senses'in kesintisiz kum plajı var mı?",
+      "Hayır, ayrı deniz girişleri olan kayalık koydur. Özel havuz kategoriye bağlıdır."
+    ],
+    [
+      "7Pines'ten Cala Codolar'a yürünür mü?",
+      "Otel yaklaşık beş dakika yürüyüş belirtir. Odadan doğrudan kuma çıkılmaz; yolu ve manzarayı doğrulayın."
+    ],
+    [
+      "The Standard havuzu deniz kenarında mı?",
+      "Hayır, şehir otelinin çatısındadır."
+    ],
+    [
+      "Formentera feribotları her gün çalışır mı?",
+      "Tarife sezon, operatör ve denize bağlıdır; gidiş ve dönüşü doğrulayın."
+    ],
+    [
+      "Oteller nasıl rezerve edilir?",
+      "Bosphoras'ta seçenekleri karşılaştırın; yetkili sağlayıcı fiyat, oda, yat ve ek hizmetleri ayrı doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Dalt Vila kalesi ve katedral havadan",
+    "Dalt Vila altında Eivissa limanındaki yatlar",
+    "Talamanca kum kıyısı",
+    "Cala Xarraca turkuaz suyu ve kayalıklar",
+    "Akşam ışığında Es Vedrà silueti",
+    "Cala Codolar yakınında katmanlı kayalar",
+    "Cala Conta berrak sığ suları",
+    "Ses Salines tuz havuzları",
+    "Sant Joan beyaz kilisesi"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Cala Xarraca üzerinde Six Senses ana havuzu",
+      "Gün batımında süit ve teras",
+      "Ana havuz ve şezlonglar havadan"
+    ],
+    [
+      "Talamanca üzerinde şezlonglu özel teras",
+      "Deniz erişimli mavi beyaz süit",
+      "Nobu havuzu ve plaj şezlongları"
+    ],
+    [
+      "Batı kayalıkları üzerinde 7Pines villaları",
+      "Laguna Suite Sea View yatak odası",
+      "Es Vedrà manzaralı teras servisi"
+    ],
+    [
+      "Dalt Vila manzaralı The Standard çatısı",
+      "Bağımsız küvetli süit banyosu",
+      "Aydınlık Jara restoranı ve yeşil bitkiler"
+    ]
+  ],
+  "seoTitle": "İbiza'da Nerede Kalınır? Lüks Oteller, Plajlar ve Koylar",
+  "hotelSeoTitle": "İbiza'nın En İyi Otelleri: Six Senses, Nobu, 7Pines ve The Standard",
+  "seoDescription": "Eivissa, Talamanca, Cala Xarraca ve batı kıyısını karşılaştırın. İbiza'nın dört lüks otelini, plajlarını ve ulaşım ipuçlarını keşfedin."
+}

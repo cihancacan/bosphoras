@@ -1,0 +1,162 @@
+{
+  "name": "Ibiza",
+  "country": "Spagna",
+  "eyebrow": "Spiagge mediterranee e hotel di carattere",
+  "heading": "Dove alloggiare a Ibiza: quattro mondi oltre la vita notturna",
+  "intro": "Vie storiche di Eivissa, spiaggia sabbiosa di Talamanca, scogliere occidentali e la baia appartata di Xarraca offrono esperienze diverse. Scegli posizione, stagione, accesso al mare e trasporti, non soltanto una foto della piscina.",
+  "editorial": "A nord Six Senses Ibiza occupa l'appartata Cala Xarraca vicino a Sant Joan. Benessere, arte, musica e residenze private caratterizzano il resort; non tutte le camere hanno piscina privata. Nobu Hotel Ibiza Bay si trova sulla spiaggia sabbiosa di Talamanca vicino a Marina Botafoch. Il calendario pubblicato termina la stagione 2026 il 26 ottobre; verifica le nuove date. A ovest 7Pines Resort guarda Es Vedrà; secondo il resort Cala Codolar dista circa cinque minuti a piedi, non è accesso diretto alla sabbia. The Standard è nel centro di Eivissa e propone piscina sul tetto, non spiaggia privata.\n\nVicoli pedonali, pavé e gradini di Dalt Vila richiedono attenzione con i bambini. Vento e mare influenzano i traghetti per Formentera. Verifica stagioni di ristoranti e beach club, categorie e servizi. Prezzi e disponibilità sono confermati dal fornitore autorizzato.",
+  "hotelIntro": "Quattro indirizzi distinti: Cala Xarraca, Talamanca, scogliere occidentali e centro di Eivissa.",
+  "areas": [
+    [
+      "Eivissa, Dalt Vila e marina",
+      "La fortezza storica domina il porto vicino a The Standard; piazze vivaci e vie strette caratterizzano la città.",
+      "Verifica punto di discesa, gradini e bagagli."
+    ],
+    [
+      "Talamanca e Marina Botafoch",
+      "Nobu è sulla spiaggia sabbiosa di Talamanca, vicino alla città.",
+      "Tavoli e lettini vanno confermati separatamente."
+    ],
+    [
+      "Cala Xarraca e Sant Joan",
+      "Baie settentrionali tra pini circondano Six Senses. Per Eivissa serve trasporto.",
+      "Verifica accesso roccioso all'acqua e sicurezza delle piscine private."
+    ],
+    [
+      "Cala Codolar, Cala Conta e scogliere occidentali",
+      "7Pines guarda Es Vedrà; Cala Codolar si raggiunge a piedi.",
+      "Il panorama della terrazza comune non garantisce la stessa vista dalla camera."
+    ],
+    [
+      "Ses Salines e sud dell'isola",
+      "Saline, dune e spiagge protette; nessuno dei quattro hotel selezionati è direttamente qui.",
+      "Verifica regole del parco naturale e stagione dei beach club."
+    ]
+  ],
+  "experiences": [
+    [
+      "Dalt Vila prima della folla",
+      "Passeggia al mattino tra mura e vie antiche, considerando pendenze e gradini."
+    ],
+    [
+      "Una giornata a Formentera",
+      "Confronta traghetti dal porto di Eivissa, conferma ritorno e controlla il mare."
+    ],
+    [
+      "Tramonto sulla costa occidentale",
+      "Scegli un punto panoramico sicuro e legalmente accessibile verso Es Vedrà o Cala Conta."
+    ],
+    [
+      "Borghi del nord e mercati artigianali",
+      "Visita Sant Joan, laboratori e ristoranti locali; verifica giorni dei mercati."
+    ],
+    [
+      "Parco naturale di Ses Salines",
+      "Esplora saline, dune e spiagge lungo percorsi consentiti, rispettando le regole ambientali."
+    ]
+  ],
+  "checks": [
+    "Nobu ha annunciato fine stagione il 26 ottobre 2026; verifica il nuovo calendario.",
+    "A Six Senses distingui camere, suite con piscina e residenze private.",
+    "Da 7Pines a Cala Codolar occorre camminare.",
+    "The Standard è un hotel urbano, non resort balneare.",
+    "Traghetti e yacht dipendono da meteo e operatore.",
+    "Pavé e gradini di Dalt Vila richiedono pianificazione con bambini."
+  ],
+  "hotels": [
+    [
+      "Cala Xarraca · Costa settentrionale",
+      "Six Senses sorge tra pini e rocce sopra una baia appartata. Benessere, artigianato, gastronomia e musica sono centrali. Camere, Pool Suites, residenze e grandi ville differiscono per metratura, privacy e piscine. L'accesso roccioso all'acqua non equivale a una lunga spiaggia sabbiosa. Per la città serve trasporto.",
+      "Verifica categoria, mare, sicurezza piscina e programmi nelle tue date.",
+      "Per quiete e programmi benessere.",
+      ""
+    ],
+    [
+      "Talamanca · Camí de ses Feixes 52",
+      "Nobu Hotel Ibiza Bay sorge sulla riva sabbiosa vicino a Marina Botafoch. Atmosfera balneare, ristoranti e vicinanza a Eivissa. Una camera non garantisce lettino, tavolo Nobu o vista mare. Stagione pubblicata 2026 fino al 26 ottobre. Conferma nuove date, servizi familiari e trasferimenti.",
+      "Verifica vista, stagione, regole piscine, lettini e ristorante.",
+      "Per vacanze al mare vicino alla città.",
+      ""
+    ],
+    [
+      "Puig Delfín · Scogliere occidentali",
+      "7Pines occupa una tenuta sopra la costa rocciosa verso Es Vedrà. Suite, ville, piscine e terrazze sono distribuite nella proprietà. Cala Codolar dista circa cinque minuti a piedi; Cala Conta è un'altra baia. Considera caldo e percorsi irregolari con bambini. La terrazza comune non garantisce identica vista dalla suite.",
+      "Conferma vista Es Vedrà, posizione suite, percorso alla spiaggia e trasporto in città.",
+      "Per tramonti e relax in resort.",
+      ""
+    ],
+    [
+      "Centro di Eivissa · Carrer de Bartomeu Vicent Ramon 9",
+      "The Standard è tra negozi e ristoranti vicino a marina e Dalt Vila. Camere moderne, suite e Casa Privada sono soluzioni distinte. La piscina sul tetto non sostituisce il mare. Verifica eventi stagionali, accesso al tetto, rumore e bagagli nell'area pedonale.",
+      "Conferma Casa Privada se necessaria, accesso al tetto e punto di discesa.",
+      "Per vita urbana, ristoranti e design.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Dove soggiornare per la vita notturna di Eivissa?",
+      "The Standard è in centro, Nobu a Talamanca; Six Senses e 7Pines richiedono tragitti più lunghi."
+    ],
+    [
+      "Nobu è aperto in inverno?",
+      "La stagione pubblicata termina il 26 ottobre 2026. Verifica nuove date e disponibilità effettiva."
+    ],
+    [
+      "Six Senses ha una lunga spiaggia sabbiosa?",
+      "No, è una baia rocciosa con accessi all'acqua. La piscina privata dipende dalla categoria."
+    ],
+    [
+      "Si può andare da 7Pines a Cala Codolar a piedi?",
+      "L'hotel indica circa cinque minuti a piedi. Non è accesso diretto dalla camera alla sabbia; verifica percorso e vista."
+    ],
+    [
+      "La piscina di The Standard è sul mare?",
+      "No, è sul tetto di un hotel urbano."
+    ],
+    [
+      "I traghetti per Formentera partono ogni giorno?",
+      "Orari dipendono da stagione, operatore e mare. Conferma andata e ritorno."
+    ],
+    [
+      "Come prenotare gli hotel?",
+      "Confronta alloggi su Bosphoras; il fornitore autorizzato conferma prezzi, camere, yacht e servizi extra separatamente."
+    ]
+  ],
+  "photoCaptions": [
+    "Fortezza Dalt Vila e cattedrale dall'alto",
+    "Yacht nel porto sotto Dalt Vila",
+    "Riva sabbiosa di Talamanca",
+    "Acqua turchese e rocce di Cala Xarraca",
+    "Sagoma di Es Vedrà al tramonto",
+    "Rocce stratificate presso Cala Codolar",
+    "Acque basse e limpide di Cala Conta",
+    "Saline di Ses Salines",
+    "Chiesa bianca di Sant Joan"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Piscina principale Six Senses sopra Cala Xarraca",
+      "Suite e terrazza al tramonto",
+      "Piscina principale e lettini dall'alto"
+    ],
+    [
+      "Terrazza privata con lettino sopra Talamanca",
+      "Suite bianca e blu con accesso al mare",
+      "Piscina e lettini Nobu"
+    ],
+    [
+      "Ville 7Pines sopra le scogliere occidentali",
+      "Camera Laguna Suite Sea View",
+      "Servizio sulla terrazza vista Es Vedrà"
+    ],
+    [
+      "Tetto The Standard con vista Dalt Vila",
+      "Bagno della suite con vasca indipendente",
+      "Ristorante Jara luminoso e piante verdi"
+    ]
+  ],
+  "seoTitle": "Dove dormire a Ibiza: hotel di lusso, spiagge e baie",
+  "hotelSeoTitle": "Migliori hotel di Ibiza: Six Senses, Nobu, 7Pines e The Standard",
+  "seoDescription": "Confronta Eivissa, Talamanca, Cala Xarraca e costa occidentale. Scopri quattro hotel di lusso a Ibiza, spiagge e trasporti."
+}
