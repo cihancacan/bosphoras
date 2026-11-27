@@ -1,0 +1,165 @@
+{
+  "name": "New York",
+  "country": "Amerika Birleşik Devletleri",
+  "eyebrow": "New York · Manhattan'ın semtleri, tasarım ve şehir hayatı",
+  "heading": "New York'ta nerede kalınır? Manhattan'ın en iyi semtleri ve otelleri",
+  "intro": "Central Park yakınında güne başlamak, NoMad'de yemek yemek, Tribeca'nın galerilerini keşfetmek veya Upper East Side'da dinlenmek: New York'un farklı semtlerini ve dört seçkin otelini karşılaştırın.",
+  "editorial": "New York'ta lüks konaklama yalnızca gökdelen manzarasından ibaret değildir. Aman New York, Fifth Avenue ile 57th Street'in kesişimindeki tarihî Crown Building'de, Midtown'un hareketliliği içinde geniş süitler ve spa hizmetleri sunar. Oda kategorisi ve manzarayı doğrulayın.\n\nNoMad'deki The Fifth Avenue Hotel, tarihî bir konakla modern bir kuleyi birleştirir. Madison Square Park ve Flatiron çevresi, Midtown'daki Fifth Avenue mağazalarından farklı bir şehir deneyimi sunar. Tribeca'daki The Greenwich Hotel daha sakin bir atmosfer, iç avlu, restoranlar ve Shibui Spa'nın ısıtmalı kapalı havuzuyla öne çıkar. Çocukların havuz kullanım saatlerini ve spa rezervasyon şartlarını kontrol edin.\n\nUpper East Side'daki The Lowell, Madison Avenue ve Central Park yakınında zarif bir şehir evi hissi verir. Teras ve odun şöminesi yalnızca belirli kategorilerde bulunur. Çocuklu aileler bağlantılı oda, ek yatak, asansör erişimi ve havuz koşullarını doğrulamalıdır.\n\nJFK, LaGuardia ve Newark farklı havalimanlarıdır; ulaşımı otelin konumuna ve trafiğe göre planlayın. Manhattan'ın birçok bölgesinde yürüyüş ve metro daha pratik olabilir. East River'ın karşı kıyısındaki DUMBO ve Brooklyn Bridge Park, Manhattan manzaraları sunar; ancak bu manzara otel odanızdan garanti edilmez. Güncel fiyat, müsaitlik ve rezervasyon koşullarını sağlayıcıda kontrol edin.",
+  "hotelIntro": "Aman New York, The Fifth Avenue Hotel, The Greenwich Hotel ve The Lowell: dört farklı oteli semt, oda kategorisi ve hizmetlere göre karşılaştırın.",
+  "areas": [
+    [
+      "Midtown ve Fifth Avenue",
+      "Ünlü oteller, müzeler ve Central Park; kültür ve iş seyahatleri için elverişli bir bölge.",
+      "Fifth Avenue adresi belirli bir manzara garantisi vermez; katı ve oda yönünü doğrulayın."
+    ],
+    [
+      "NoMad ve Flatiron",
+      "Tarihî mimari, çağdaş restoranlar ve Madison Square Park çevresinde yürüyüşler.",
+      "Özellikle alt katlarda sokak gürültüsünü ve oda planını kontrol edin."
+    ],
+    [
+      "Tribeca ve SoHo",
+      "Galerilere ve restoranlara dönüştürülen tarihî binalar, daha sakin sokaklar; Midtown'daki bazı noktalara ulaşım gerekir.",
+      "Downtown'daki otel Central Park'a yürüyüş mesafesinde olmayabilir."
+    ],
+    [
+      "Upper East Side ve Central Park",
+      "Konut sokakları, Madison Avenue ve müzeler; sakin yürüyüşler için elverişli.",
+      "Teras, şömine ve park manzarası kategoriye göre değişir."
+    ],
+    [
+      "DUMBO ve Brooklyn Bridge Park",
+      "Brooklyn kıyısından Manhattan manzaraları, yürüyüşler ve feribot gezileri.",
+      "Bu ayrı bir gezi noktasıdır; seçkideki dört otel Manhattan'dadır."
+    ]
+  ],
+  "experiences": [
+    [
+      "Central Park'ta sabah",
+      "Park yollarında yürüyün, ardından açılış saatlerini kontrol ederek Fifth Avenue müze ve galerilerini ziyaret edin."
+    ],
+    [
+      "NoMad'de tasarım ve gastronomi",
+      "Madison Square Park ve tarihî cepheleri keşfedin, akşam yemeği için önceden masa ayırtın."
+    ],
+    [
+      "Sakin Tribeca",
+      "Galeriler, sakin sokaklar ve uygunluk varsa spa deneyimi için zaman ayırın."
+    ],
+    [
+      "Brooklyn'e geçiş",
+      "Feribot veya metroyla DUMBO'ya gidin; hava uygunsa Brooklyn Bridge Park'ta yürüyün."
+    ],
+    [
+      "Aileyle Upper East Side",
+      "Park ve müzelerde çocukların dinlenme molalarını da içeren sakin bir rota seçin."
+    ]
+  ],
+  "checks": [
+    "Oda kategorisini ve manzarayı doğrulayın.",
+    "Vergileri, ek ücretleri ve iptal koşullarını kontrol edin.",
+    "JFK, LGA veya EWR transferini otelin konumuna göre planlayın.",
+    "Çocuklar için kapasiteyi, ek yatağı, havuzu ve bağlantılı odaları doğrulayın.",
+    "Transfer ve spa hizmetlerinin rezervasyona dahil olduğunu varsaymayın."
+  ],
+  "hotels": [
+    [
+      "Midtown · Crown Building, Fifth Avenue",
+      "Aman, 57th Street yakınındaki tarihî binada yer alır. Geniş süitler ve spa, Central Park gezileri ve iş görüşmeleri arasında dinlenmek isteyenler için elverişlidir. Satışa sunulan özel rezidanslar otel süitlerinden farklıdır.",
+      "Süit ile özel rezidansı karıştırmayın; manzarayı, spa koşullarını ve çocuk politikalarını doğrulayın.",
+      "Manhattan merkezinde sakin konaklama için.",
+      ""
+    ],
+    [
+      "NoMad · West 28th Street",
+      "Restore edilmiş Gilded Age konağı modern bir kuleyle birleşir. Tasarım ve kişisel hizmet, Midtown'un büyük otellerinden farklı bir deneyim sunar.",
+      "Binayı, katı, oda büyüklüğünü ve sokak gürültüsünü kontrol edin.",
+      "NoMad'in tasarım ve restoran hayatı için.",
+      ""
+    ],
+    [
+      "Tribeca · Greenwich Street",
+      "Sakin iç avlusu, restoranları ve Shibui Spa'sıyla butik atmosferli otel. Isıtmalı kapalı havuz, sağlıklı yaşam odaklı konaklama için öne çıkar.",
+      "Çocukların havuz saatlerini ve spa hizmetleri için ayrı rezervasyon gerekip gerekmediğini kontrol edin.",
+      "Downtown'un sakin sokaklarında konaklamak için.",
+      ""
+    ],
+    [
+      "Upper East Side · East 63rd Street",
+      "Madison Avenue ve Central Park yakınında bağımsız otel; zarif bir New York dairesi atmosferi sunar. Bazı süitlerde teras veya odun şöminesi bulunur.",
+      "Seçtiğiniz odada teras veya şömine bulunduğunu yazılı olarak doğrulayın.",
+      "Upper East Side'ın konut atmosferini sevenler için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "New York'a ilk kez gelenler Midtown'da mı Downtown'da mı kalmalı?",
+      "Midtown Fifth Avenue, müzeler ve Central Park'a erişim için uygundur. Tribeca ve Downtown galerileri ve restoranlarıyla öne çıkar. Gezi programınıza göre seçin."
+    ],
+    [
+      "Aman New York'un tüm süitleri Central Park manzaralı mı?",
+      "Hayır. Parka yakınlık manzara garantisi vermez. Kategoriyi, katı ve oda yönünü doğrulayın."
+    ],
+    [
+      "The Fifth Avenue Hotel ve Aman aynı semtte mi?",
+      "Hayır. The Fifth Avenue Hotel NoMad'de West 28th Street yakınındadır. Aman, Fifth Avenue ve 57th Street kesişimindedir."
+    ],
+    [
+      "The Greenwich Hotel havuzunu çocuklar kullanabilir mi?",
+      "Mevcut rehberde Shibui Spa'nın dört yaş ve üzeri çocuklar için yetişkin eşliğinde 07.00–10.00 aile saatleri belirtilir. Dört yaş altındaki çocuklar bu saatlerde kabul edilmez. Seyahat tarihlerinizde geçerli kuralları otelle doğrulayın."
+    ],
+    [
+      "The Lowell'ın bütün odalarında teras ve şömine var mı?",
+      "Hayır. Bunlar belirli kategorilerde bulunur; yazılı doğrulama isteyin."
+    ],
+    [
+      "JFK, LGA veya EWR: hangi havalimanını seçmeliyim?",
+      "Üçü de New York bölgesine hizmet verir. Uçuşları, otel adresini, ulaşımı ve trafiği karşılaştırın."
+    ],
+    [
+      "Seçkideki otellerden Brooklyn Bridge Park'a yürünebilir mi?",
+      "Dört otel Manhattan'dadır. DUMBO ve park East River'ın karşı kıyısında, Brooklyn'dedir. Metro veya feribotu değerlendirin."
+    ],
+    [
+      "Oteli nasıl rezerve edebilirim?",
+      "Güncel fiyat, müsaitlik, ödeme, değişiklik ve iptal işlemleri yetkili rezervasyon sağlayıcısında doğrulanır."
+    ]
+  ],
+  "photoCaptions": [
+    "Akşam ışığında Midtown",
+    "Central Park gölü ve Upper West Side",
+    "Flatiron binası ve Fifth Avenue saati",
+    "Brooklyn Bridge Park'tan Lower Manhattan",
+    "Tribeca sokakları",
+    "Sonbaharda Central Park gölü",
+    "Top of the Rock'tan Manhattan",
+    "Pier 57'den Lower Manhattan",
+    "Upper East Side'da konut sokağı"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Aman New York 56th Street Premier Suite",
+      "Aman süitinde şömineli yatak odası",
+      "Premier Suite iç mekânı"
+    ],
+    [
+      "The Fifth Avenue Hotel görünümü",
+      "The Fifth Avenue Hotel iç mekânı",
+      "The Fifth Avenue Hotel fotoğrafı"
+    ],
+    [
+      "The Greenwich Hotel fotoğrafı",
+      "The Greenwich Hotel görünümü",
+      "The Greenwich Hotel görüntüsü"
+    ],
+    [
+      "The Lowell Garden Suite oturma alanı",
+      "Hollywood Suite şömineli oturma alanı",
+      "Manhattan manzaralı özel teras"
+    ]
+  ],
+  "seoTitle": "New York'ta Nerede Kalınır? En İyi Semtler ve Oteller",
+  "hotelSeoTitle": "New York'un En İyi Lüks Otelleri: Aman, Greenwich ve Daha Fazlası",
+  "seoDescription": "Midtown, NoMad, Tribeca ve Upper East Side'ı karşılaştırın. New York'un dört seçkin otelini, oda seçeneklerini ve rezervasyon ipuçlarını keşfedin."
+}
