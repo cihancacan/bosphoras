@@ -92,7 +92,68 @@ def collect_pages(pages):
   except Exception as e:
    errors.append({'page':page,'error':str(e)[:300]});print('PAGE_GAP',page,str(e)[:200],flush=True)
  return result,errors
-DIRECT = {}
+DIRECT = {
+  "orlando/city": [
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Magic_Kingdom_Cinderella_Castle.jpg",
+      "Magic Kingdom Cinderella Castle",
+      "https://commons.wikimedia.org/wiki/File:Magic_Kingdom_Cinderella_Castle.jpg",
+      "Gsink / CC0 1.0 / resized WebP"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Universal_City_Walk_Orlando.jpg",
+      "Universal CityWalk Orlando",
+      "https://commons.wikimedia.org/wiki/File:Universal_City_Walk_Orlando.jpg",
+      "Wikimedia Commons / CC BY-SA 2.0 / author to verify"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Orlando_%22Eye%22_Ferris_Wheel_03.jpg",
+      "Orlando Eye on International Drive",
+      "https://commons.wikimedia.org/wiki/File:Orlando_%22Eye%22_Ferris_Wheel_03.jpg",
+      "ADellaGuardia / CC0 1.0 / resized WebP"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/022306-CelebrationFL11.jpg",
+      "Downtown Market Street in Celebration Florida",
+      "https://commons.wikimedia.org/wiki/File:022306-CelebrationFL11.jpg",
+      "Bobak Ha'Eri / CC BY-SA 2.5 / https://creativecommons.org/licenses/by-sa/2.5/ / resized WebP"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Islands_of_adventure.jpg",
+      "Islands of Adventure Port of Entry",
+      "https://commons.wikimedia.org/wiki/File:Islands_of_adventure.jpg",
+      "Rllaque / public domain / resized WebP"
+    ]
+  ],
+  "orlando/four-seasons": [
+    [
+      "https://images.trvl-media.com/lodging/8000000/7380000/7374500/7374428/3e74ad68.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Orlando exterior entrance and courtyard at dusk",
+      "https://www.hotels.com/ho449206/four-seasons-resort-orlando-at-walt-disney-world-resort-lake-buena-vista-united-states-of-america/",
+      "Hotels.com / Four Seasons Resort Orlando"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/8000000/7380000/7374500/7374428/935fe96e.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Orlando Resort King guest room",
+      "https://www.hotels.com/ho449206/four-seasons-resort-orlando-at-walt-disney-world-resort-lake-buena-vista-united-states-of-america/",
+      "Hotels.com / Four Seasons Resort Orlando"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/8000000/7380000/7374500/7374428/82df4052.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Orlando outdoor pool and waterfall",
+      "https://www.hotels.com/ho449206/four-seasons-resort-orlando-at-walt-disney-world-resort-lake-buena-vista-united-states-of-america/",
+      "Hotels.com / Four Seasons Resort Orlando"
+    ]
+  ],
+  "orlando/waldorf": [
+    [
+      "https://images.trvl-media.com/lodging/3000000/2440000/2432800/2432727/0589fd64.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Waldorf Astoria Orlando exterior overlooking swimming pool",
+      "https://uk.hotels.com/ho307784/waldorf-astoria-orlando-orlando-united-states-of-america/",
+      "Hotels.com / Waldorf Astoria Orlando"
+    ]
+  ]
+}
 def direct_candidates(slug,key):
  return [{'url':u,'sourcePage':page,'originalAlt':alt,'originalCaption':credit,'targeted':True} for u,alt,page,credit in DIRECT.get(slug+'/'+key,[])]
 
@@ -224,7 +285,7 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
 def city_job(c):
  base=ROOT/(c['slug']+'-premium')
  old=PREVIOUS.get(c['slug'],{})
- existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='las-vegas' and r['key'] in ('scene-1','scene-5','scene-9','scene-12')) and not (c['slug']=='cancun' and r['key'] in ('scene-4','scene-8','scene-9','scene-11','scene-12')) and not (c['slug']=='rome' and r['key'] in ('scene-3','scene-7')) and not (c['slug']=='london' and r['key'] in ('scene-1','scene-2','scene-3')) and not (c['slug']=='las-vegas' and r['key']=='scene-6') and not (c['slug']=='barcelona' and r['key'] in ('scene-3','scene-5'))]
+ existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='orlando' and r['key']=='scene-5') and not (c['slug']=='las-vegas' and r['key'] in ('scene-1','scene-5','scene-9','scene-12')) and not (c['slug']=='cancun' and r['key'] in ('scene-4','scene-8','scene-9','scene-11','scene-12')) and not (c['slug']=='rome' and r['key'] in ('scene-3','scene-7')) and not (c['slug']=='london' and r['key'] in ('scene-1','scene-2','scene-3')) and not (c['slug']=='las-vegas' and r['key']=='scene-6') and not (c['slug']=='barcelona' and r['key'] in ('scene-3','scene-5'))]
  if os.environ.get('TRAVEL_OTA_ONLY')=='1':return c['slug'],'city',old.get('destinationScenes',[]),[]
  if len(existing)>=9:return c['slug'],'city',existing,[]
  cand,errors=collect_pages(c['cityPages'])
