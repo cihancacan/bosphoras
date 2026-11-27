@@ -3938,6 +3938,37 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
+        "key": "nizuc-5",
+        "sourcePage": "https://www.hotels.com/ho424346/nizuc-resort-and-spa-cancun-mexico/",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/6000000/5540000/5531600/5531551/212020d9.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/6000000/5540000/5531600/5531551/212020d9.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "NIZUC Resort exterior reflecting pool",
+        "originalCaption": "Hotels.com / NIZUC Resort and Spa",
+        "credit": "Hotels.com / NIZUC Resort and Spa",
+        "publisher": "NIZUC Resort & Spa",
+        "hotel": "NIZUC Resort & Spa",
+        "localPath": "/images/travel/cancun-premium/nizuc/nizuc-5.webp",
+        "sourceSHA256": "2ce08e738493eb5fa25ac9035496d0326c30e2e1214d4e0fc2cb5fdeb5038d82",
+        "webpSHA256": "e01fad8c34bcdf688ce0de3eef48ba81c145ccef34a77197c541b6207a740ed9",
+        "sourcePixels": [
+          1280,
+          853
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 234902,
+        "pixelFingerprint": "f4f0925454935514",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "le-blanc-2",
         "sourcePage": "https://registration.forbestravelguide.com/hotels/cancun-mexico/le-blanc-spa-resort-cancun",
         "sourceResolvedUrl": "https://secure.s.forbestravelguide.com/img/properties/le-blanc-spa-resort/extra-large/le-blanc-spa-resort-Royale-Deluxe-Partial-Ocean-View.jpg",
@@ -4217,13 +4248,7 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "gaps": [
-      {
-        "group": "nizuc",
-        "expected": 3,
-        "found": 2
-      }
-    ],
+    "gaps": [],
     "errors": [
       {
         "page": "https://www.businesstravelnews.com/Hotels/Cancun/Nizuc-Resort-Spa/Images-p54477288",
@@ -4232,46 +4257,6 @@
       {
         "page": "https://www.travelweekly.com/Hotels/Cancun/Nizuc-Resort-Spa-p6721792",
         "error": "403 Client Error: Forbidden for url: https://www.travelweekly.com/Hotels/Cancun/Nizuc-Resort-Spa-p6721792"
-      },
-      {
-        "page": "https://www.expedia.com/Cancun-Hotels-Nizuc-Resort-And-Spa.h5531551.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Nizuc-Resort-And-Spa.h5531551.Hotel-Information"
-      },
-      {
-        "page": "https://www.travelweekly.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun-p3711940",
-        "error": "403 Client Error: Forbidden for url: https://www.travelweekly.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun-p3711940"
-      },
-      {
-        "page": "https://www.businesstravelnews.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun/Images-p3236606",
-        "error": "403 Client Error: Forbidden for url: https://www.businesstravelnews.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun/Images-p3236606"
-      },
-      {
-        "page": "https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information?equalTargetTab=tab-0",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information?equalTargetTab=tab-0"
-      },
-      {
-        "page": "https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun",
-        "error": "403 Client Error: HTTP Forbidden for url: https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun"
-      },
-      {
-        "page": "https://www.palaceproagents.com/es/destinos-resorts/le-blanc-spa-resort-cancun",
-        "error": "403 Client Error: HTTP Forbidden for url: https://www.palaceproagents.com/es/destinos-resorts/le-blanc-spa-resort-cancun"
-      },
-      {
-        "page": "https://cancun.leblancsparesorts.com/es/galeria",
-        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/es/galeria"
-      },
-      {
-        "page": "https://cancun.leblancsparesorts.com/gallery",
-        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/gallery"
-      },
-      {
-        "page": "https://www.leblancsparesorts.com/gallery",
-        "error": "403 Client Error: HTTP Forbidden for url: https://www.leblancsparesorts.com/gallery"
-      },
-      {
-        "page": "https://cancun.leblancsparesorts.com/",
-        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/"
       }
     ],
     "publicUseApproved": false,
@@ -4775,7 +4760,7 @@
       }
     ],
     "cityCount": 9,
-    "hotelCount": 11,
-    "totalBytes": 2287316
+    "hotelCount": 12,
+    "totalBytes": 2522218
   }
 }
