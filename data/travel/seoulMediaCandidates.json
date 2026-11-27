@@ -64,37 +64,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "scene-3",
-        "sourcePage": "https://commons.wikimedia.org/wiki/File:Streets_in_Myeong-dong_Seoul.jpg",
-        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Streets_in_Myeong-dong_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
-        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Streets_in_Myeong-dong_Seoul.jpg",
-        "originalAlt": "Myeongdong shopping street",
-        "originalCaption": "Dquai / licence to verify against file page",
-        "credit": "Dquai / licence to verify against file page",
-        "publisher": "Korea Tourism Organization / Seoul Tourism Organization",
-        "hotel": null,
-        "localPath": "/images/travel/seoul-premium/destination/scene-3.webp",
-        "sourceSHA256": "026817f3ef93b6c081b053f2aa5d66a51216b15865bdb714f5c968b24c2e495f",
-        "webpSHA256": "7c378276136960eb6ecba3acb14fc6a68c6bf8d49486ce22cf23e33a3c2fb0a6",
-        "sourcePixels": [
-          3264,
-          1836
-        ],
-        "webpPixels": [
-          1280,
-          720
-        ],
-        "webpBytes": 126110,
-        "pixelFingerprint": "cae4f0104ce76b78",
-        "candidateSubject": "myeongdong|myeong-dong",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "scene-4",
         "sourcePage": "https://commons.wikimedia.org/wiki/File:N_Seoul_Tower_view_1.jpg",
         "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/N_Seoul_Tower_view_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
@@ -211,6 +180,99 @@
         "webpBytes": 149772,
         "pixelFingerprint": "73d19233f1a3c4f0",
         "candidateSubject": "bongeunsa",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-8",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Myeongdong_at_night.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Myeongdong_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Myeongdong_at_night.jpg",
+        "originalAlt": "Myeongdong shopping street at night",
+        "originalCaption": "Christian Bolz / CC BY-SA 4.0 / resized WebP",
+        "credit": "Christian Bolz / CC BY-SA 4.0 / resized WebP",
+        "publisher": "Korea Tourism Organization / Seoul Tourism Organization",
+        "hotel": null,
+        "localPath": "/images/travel/seoul-premium/destination/scene-8.webp",
+        "sourceSHA256": "d05601d39b1cb6c1269fb6b55d3740cb66483d04a39265d0d3db0c9c176e2d2a",
+        "webpSHA256": "54071f6446c6efeffba368a1ccc186fda36c6109236d38efbbb85dbcf02ec92a",
+        "sourcePixels": [
+          3264,
+          1840
+        ],
+        "webpPixels": [
+          1280,
+          722
+        ],
+        "webpBytes": 177688,
+        "pixelFingerprint": "484f477366c6b737",
+        "candidateSubject": "myeongdong|myeong-dong",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-9",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cheonggyecheon.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cheonggyecheon.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cheonggyecheon.jpg",
+        "originalAlt": "Cheonggyecheon stream Seoul",
+        "originalCaption": "螺钉 / CC BY-SA 3.0 / resized WebP",
+        "credit": "螺钉 / CC BY-SA 3.0 / resized WebP",
+        "publisher": "Korea Tourism Organization / Seoul Tourism Organization",
+        "hotel": null,
+        "localPath": "/images/travel/seoul-premium/destination/scene-9.webp",
+        "sourceSHA256": "ad9b4d92fe355675fb9d2413a206ea71b365b3776facfd731ae5d171c135825e",
+        "webpSHA256": "8c2fa09a15d79525eb117bd2f370db2a6ff351a2ea6ed5b01ff86b79d728e897",
+        "sourcePixels": [
+          2032,
+          1524
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 171512,
+        "pixelFingerprint": "f5e7f3b1f1f0f0f2",
+        "candidateSubject": "cheonggyecheon",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-10",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hongdae_Main_Road%2C_Seoul.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Hongdae_Main_Road%2C_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hongdae_Main_Road%2C_Seoul.jpg",
+        "originalAlt": "Hongdae main pedestrian street Seoul",
+        "originalCaption": "Ken Eckert / CC BY-SA 4.0 / resized WebP",
+        "credit": "Ken Eckert / CC BY-SA 4.0 / resized WebP",
+        "publisher": "Korea Tourism Organization / Seoul Tourism Organization",
+        "hotel": null,
+        "localPath": "/images/travel/seoul-premium/destination/scene-10.webp",
+        "sourceSHA256": "c2fb15d3d0335d3eedfe693fbd24fe1208383c20f7f09c004b9186fc91ab765e",
+        "webpSHA256": "787e0b5d6489dc0b840ea6ac3c8954df2c2b4ec1d085a0c77ba796f5507a2390",
+        "sourcePixels": [
+          1500,
+          845
+        ],
+        "webpPixels": [
+          1280,
+          721
+        ],
+        "webpBytes": 239046,
+        "pixelFingerprint": "f170b6da6ab1b1b1",
+        "candidateSubject": "hongdae|hongik",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -593,23 +655,8 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "gaps": [
-      {
-        "group": "city",
-        "expected": 9,
-        "found": 7
-      }
-    ],
-    "errors": [
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cheonggyecheon.jpg",
-        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/c/c5/Cheonggyecheon.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&ut"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hongdae_Main_Road%2C_Seoul.jpg",
-        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/f/fd/Hongdae_Main_Road%2C_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campa"
-      }
-    ],
+    "gaps": [],
+    "errors": [],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
     "excludedCandidates": [
@@ -643,10 +690,41 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-3",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Streets_in_Myeong-dong_Seoul.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Streets_in_Myeong-dong_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Streets_in_Myeong-dong_Seoul.jpg",
+        "originalAlt": "Myeongdong shopping street",
+        "originalCaption": "Dquai / licence to verify against file page",
+        "credit": "Dquai / licence to verify against file page",
+        "publisher": "Korea Tourism Organization / Seoul Tourism Organization",
+        "hotel": null,
+        "localPath": "/images/travel/seoul-premium/destination/scene-3.webp",
+        "sourceSHA256": "026817f3ef93b6c081b053f2aa5d66a51216b15865bdb714f5c968b24c2e495f",
+        "webpSHA256": "7c378276136960eb6ecba3acb14fc6a68c6bf8d49486ce22cf23e33a3c2fb0a6",
+        "sourcePixels": [
+          3264,
+          1836
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 126110,
+        "pixelFingerprint": "cae4f0104ce76b78",
+        "candidateSubject": "myeongdong|myeong-dong",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 7,
+    "cityCount": 9,
     "hotelCount": 12,
-    "totalBytes": 2703114
+    "totalBytes": 3165250
   }
 }
