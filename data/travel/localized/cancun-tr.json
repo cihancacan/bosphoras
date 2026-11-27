@@ -1,0 +1,131 @@
+{
+  "name": "Cancún",
+  "country": "Meksika",
+  "eyebrow": "Quintana Roo · Meksika Karayipleri",
+  "heading": "Cancún: plajınızı ve resort konaklama paketinizi seçin.",
+  "intro": "Nichupté Lagünü ile Karayip Denizi arasında Cancún, sahil resortları, her şey dahil tatiller ve daha sakin konaklamalar sunar. Plajın yönü, yüzme koşulları ve dahil hizmetler oda kategorisi kadar önemlidir.",
+  "editorial": "Zona Hotelera, deniz ile lagün arasındaki uzun şeritte büyük resortları toplar. Punta Cancún kuzeydeki restoran ve etkinliklere erişimi kolaylaştırır; Punta Nizuc daha sakin ve uzaktadır. Şehir merkezi yerel yaşam ve farklı bütçeler sunar ancak plaja doğrudan erişim sağlamaz. Playa Mujeres kuzeydedir, Isla Mujeres ise feribot gerektirir; ikisi de otel bölgesinden farklıdır.\n\nBir hafta, birkaç plaj günü ve Isla Mujeres, cenote veya arkeolojik alanlara bir-iki gezi için uygundur. Sargassum yosunu, dalgalar ve akıntılar plaja ve mevsime göre değişir. Yerel bayraklara uyun, tehlikeli koşullarda denize girmeyin. Atlantik kasırga sezonu genellikle haziran-kasım arasındadır; esnek koşulları tercih edin.\n\nHer şey dahil paketler farklıdır: restoran ek ücretleri, spa, aktiviteler, içecekler, transferler ve çocuk kulüplerini kontrol edin. Le Blanc yalnızca yetişkinlere açıktır. NIZUC'un bazı kategorileri de yetişkinlere özeldir; Hyatt Ziva ve Grand Fiesta Americana aileleri kabul eder. Çocukların gerçek yaşlarıyla toplam fiyatı, vergileri, CUN transferini ve oda manzarasını karşılaştırın.",
+  "hotelIntro": "Dört tarz: sakinlik için NIZUC, yetişkinler için Le Blanc, ailelere her şey dahil Hyatt Ziva ve Grand Fiesta Americana.",
+  "areas": [
+    [
+      "Zona Hotelera · merkez",
+      "Deniz ve lagün arasında farklı yönlere bakan büyük resortlar.",
+      "Yüzme koşullara ve bayraklara bağlıdır."
+    ],
+    [
+      "Punta Cancún",
+      "Kuzey ucu, resortlar, restoranlar ve aktiviteler.",
+      "Plaj yönünü ve odanın gürültü durumunu kontrol edin."
+    ],
+    [
+      "Punta Nizuc",
+      "Dinlenmeye uygun daha sakin güney bölgesi.",
+      "Uzak aktivitelere ulaşımı planlayın."
+    ],
+    [
+      "Cancún merkezi",
+      "Yerel restoranlar, mağazalar ve farklı fiyatlar.",
+      "Plaja ulaşım için zaman ayırın."
+    ],
+    [
+      "Playa Mujeres ve Isla Mujeres",
+      "Şehrin kuzeyinde ve açıklarında iki seçenek.",
+      "Isla Mujeres feribot gerektirir; Playa Mujeres otel bölgesi değildir."
+    ]
+  ],
+  "experiences": [
+    [
+      "Plaj günü",
+      "Günün koşullarına ve bayraklara göre plaj seçin."
+    ],
+    [
+      "Isla Mujeres",
+      "Hava durumuna göre gidiş ve dönüşü planlayın."
+    ],
+    [
+      "Cenoteler ve Maya mirası",
+      "Uygun ulaşım ve erişim koşullarıyla gezi planlayın."
+    ],
+    [
+      "Resortta dinlenme",
+      "Bakımları, dahil aktiviteleri ve ek ücretleri karşılaştırın."
+    ]
+  ],
+  "checks": [
+    "Her şey dahil, sadece oda ve kahvaltılı paketleri karşılaştırın.",
+    "Yaş sınırlarını ve çocuk yataklarını doğrulayın.",
+    "Toplam fiyatı ve vergileri kontrol edin.",
+    "CUN transferini ve gezileri planlayın.",
+    "Deniz uyarılarına uyun, kasırga sezonunda esnek koşulları değerlendirin."
+  ],
+  "hotels": [
+    [
+      "Punta Nizuc · güney",
+      "Süit ve özel villalara sahip sahil resortu. Bazı Ocean Suite kategorileri yetişkinlere özeldir; tüm resort için geçerli değildir.",
+      "Yaş kurallarını, havuz türünü ve yemek paketini doğrulayın.",
+      "Sakinlik ve mahremiyet için.",
+      "Süit ve özel villalara sahip sahil resortu. Bazı Ocean Suite kategorileri yetişkinlere özeldir; tüm resort için geçerli değildir.\n\nYaş kurallarını, havuz türünü ve yemek paketini doğrulayın."
+    ],
+    [
+      "Zona Hotelera · plaj",
+      "Yetişkinlere özel, kişisel hizmet ve spa odaklı her şey dahil resort. Çiftler için uygundur.",
+      "Bakım, ek ücret ve transfer kapsamını kontrol edin.",
+      "Çiftler ve spa tatili için.",
+      "Yetişkinlere özel, kişisel hizmet ve spa odaklı her şey dahil resort. Çiftler için uygundur.\n\nBakım, ek ücret ve transfer kapsamını kontrol edin."
+    ],
+    [
+      "Punta Cancún · kuzey",
+      "Ailelere uygun büyük her şey dahil resort. Oda ve aktiviteler yaşa ve grup yapısına göre değişir.",
+      "Çocuk yaşları, yataklar ve yetişkinlere özel alanları doğrulayın.",
+      "Aile tatili için.",
+      "Ailelere uygun büyük her şey dahil resort. Oda ve aktiviteler yaşa ve grup yapısına göre değişir.\n\nÇocuk yaşları, yataklar ve yetişkinlere özel alanları doğrulayın."
+    ],
+    [
+      "Punta Cancún · plaj",
+      "Aile alanları ve spa içeren her şey dahil süit resortu. Çok yatak odalı kategoriler kapasiteye göre geniş ailelere uygun olabilir.",
+      "Süit türünü, kapasiteyi ve dahil hizmetleri karşılaştırın.",
+      "Süit isteyen aileler için.",
+      "Aile alanları ve spa içeren her şey dahil süit resortu. Çok yatak odalı kategoriler kapasiteye göre geniş ailelere uygun olabilir.\n\nSüit türünü, kapasiteyi ve dahil hizmetleri karşılaştırın."
+    ]
+  ],
+  "faq": [
+    [
+      "Cancún'da plaj için nerede kalmalı?",
+      "Zona Hotelera, Punta Cancún ve Punta Nizuc farklı sahil deneyimleri sunar."
+    ],
+    [
+      "Hangi oteller çocuk kabul eder?",
+      "Hyatt Ziva ve Grand Fiesta Americana ailelere uygundur; NIZUC kategorilerinin kuralları farklıdır."
+    ],
+    [
+      "Le Blanc çocuk kabul ediyor mu?",
+      "Hayır, yalnızca yetişkinlere açıktır."
+    ],
+    [
+      "Tüm oteller her şey dahil mi?",
+      "Hayır, paketi karşılaştırın; NIZUC otomatik olarak her şey dahil sayılmaz."
+    ],
+    [
+      "Ne zaman yüzülebilir?",
+      "Hava, akıntı ve plaja göre değişir; bayraklara uyun."
+    ],
+    [
+      "Kaç gece kalmalı?",
+      "Plaj ve geziler için beş-yedi gece iyi bir başlangıçtır."
+    ],
+    [
+      "Aile fiyatları nasıl karşılaştırılır?",
+      "Gerçek çocuk yaşları, aynı yemek paketi, kişi sayısı ve vergiler dahil toplamı kullanın."
+    ]
+  ],
+  "seoTitle": "Cancún'da Nerede Kalınır? Plajlar ve Her Şey Dahil Oteller",
+  "hotelSeoTitle": "Cancún Otelleri: NIZUC, Le Blanc, Hyatt Ziva ve Coral Beach",
+  "seoDescription": "Cancún resortlarını, plajları, her şey dahil paketleri, yetişkinlere özel otelleri ve aile seçeneklerini karşılaştırın.",
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ]
+}
