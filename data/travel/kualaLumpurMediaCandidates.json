@@ -248,6 +248,37 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-9",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Little_India,_Brickfields,_Kuala_Lumpur.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Little_India%2C_Brickfields%2C_Kuala_Lumpur.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Little_India%2C_Brickfields%2C_Kuala_Lumpur.jpg",
+        "originalAlt": "Little India Brickfields Kuala Lumpur Jalan Tun Sambanthan",
+        "originalCaption": "Yun Huang Yong / CC BY 2.0 / resized WebP",
+        "credit": "Yun Huang Yong / CC BY 2.0 / resized WebP",
+        "publisher": "Tourism Malaysia",
+        "hotel": null,
+        "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-9.webp",
+        "sourceSHA256": "7c2eb57589cc683eda347a2fa0352edb6d69ee730f24cc3fe3776f60a5d68205",
+        "webpSHA256": "436d94f65045d24a256811ea2bacf06e8e1f8b93a61f65e930832961421adea7",
+        "sourcePixels": [
+          3648,
+          2736
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 155290,
+        "pixelFingerprint": "c0d3e2c4c7c1c888",
+        "candidateSubject": "brickfields|little india|kl sentral",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -306,6 +337,37 @@
         "webpBytes": 166666,
         "pixelFingerprint": "f8e086993cadcdde",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "mandarin-oriental-3",
+        "sourcePage": "https://www.kualalumpurhospitality.com/blog/top-5-kl-hotels-directly-connected-to-malls-for-your-ultimate-shopping-getaway",
+        "sourceResolvedUrl": "https://storage.unitedwebnetwork.com/files/801/0b2db6c460968c79e866a84849f65b5a.png",
+        "sourceRequestedUrl": "https://storage.unitedwebnetwork.com/files/801/0b2db6c460968c79e866a84849f65b5a.png",
+        "originalAlt": "Mandarin Oriental Kuala Lumpur exterior entrance at night",
+        "originalCaption": "Kuala Lumpur Hospitality",
+        "credit": "Kuala Lumpur Hospitality",
+        "publisher": "Mandarin Oriental, Kuala Lumpur",
+        "hotel": "Mandarin Oriental, Kuala Lumpur",
+        "localPath": "/images/travel/kuala-lumpur-premium/mandarin-oriental/mandarin-oriental-3.webp",
+        "sourceSHA256": "faafe93255bda6fc1306ce2814e08719c3f8ee3010bc4b5163c544b07338decc",
+        "webpSHA256": "97af93887a96d58dcd6595b7741b3778e4b1328cf82a40a9691b41f7ab0a7489",
+        "sourcePixels": [
+          1356,
+          1080
+        ],
+        "webpPixels": [
+          1067,
+          850
+        ],
+        "webpBytes": 144732,
+        "pixelFingerprint": "d292b4e8c963e796",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -469,37 +531,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "eq-1",
-        "sourcePage": "https://www.eqkualalumpur.equatorial.com/en/",
-        "sourceResolvedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/06/2020-01-13_eq-sky51-entrance2.webp",
-        "sourceRequestedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/06/2020-01-13_eq-sky51-entrance2.webp",
-        "originalAlt": "",
-        "originalCaption": "",
-        "credit": "EQ Kuala Lumpur",
-        "publisher": "EQ Kuala Lumpur",
-        "hotel": "EQ Kuala Lumpur",
-        "localPath": "/images/travel/kuala-lumpur-premium/eq/eq-1.webp",
-        "sourceSHA256": "1e262569fab732d55fa6f3e06b9cc6a2f49071dd25e7216ec94292d80bf82d5b",
-        "webpSHA256": "84442d4e0f4e616ff9c23ade0a4a065b9bf3a0bbae6cdff8bee35ecc4f7494d7",
-        "sourcePixels": [
-          1500,
-          938
-        ],
-        "webpPixels": [
-          1280,
-          800
-        ],
-        "webpBytes": 258862,
-        "pixelFingerprint": "b2b036bac6d69783",
-        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "eq-2",
         "sourcePage": "https://www.eqkualalumpur.equatorial.com/en/",
         "sourceResolvedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/04/deluxe-queen-scaled-1-1024x700.webp",
@@ -560,19 +591,40 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "eq-4",
+        "sourcePage": "https://www.eqkualalumpur.equatorial.com/en/",
+        "sourceResolvedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/06/2020-01-13_eq-sky51-entrance2.webp",
+        "sourceRequestedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/06/2020-01-13_eq-sky51-entrance2.webp",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "EQ Kuala Lumpur",
+        "publisher": "EQ Kuala Lumpur",
+        "hotel": "EQ Kuala Lumpur",
+        "localPath": "/images/travel/kuala-lumpur-premium/eq/eq-4.webp",
+        "sourceSHA256": "1e262569fab732d55fa6f3e06b9cc6a2f49071dd25e7216ec94292d80bf82d5b",
+        "webpSHA256": "84442d4e0f4e616ff9c23ade0a4a065b9bf3a0bbae6cdff8bee35ecc4f7494d7",
+        "sourcePixels": [
+          1500,
+          938
+        ],
+        "webpPixels": [
+          1280,
+          800
+        ],
+        "webpBytes": 258862,
+        "pixelFingerprint": "b2b036bac6d69783",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "gaps": [
-      {
-        "group": "city",
-        "expected": 9,
-        "found": 8
-      },
-      {
-        "group": "mandarin-oriental",
-        "expected": 3,
-        "found": 2
-      },
       {
         "group": "four-seasons",
         "expected": 3,
@@ -585,23 +637,63 @@
         "error": "429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/commons/1/10/Little_India%2C_Brickfields%2C_Kuala_Lumpur.jpg"
       },
       {
+        "url": "https://re-lief.net/southeast-asia/wp-content/uploads/sites/7/mandarin-oriental-kualalumpur_2.jpg",
+        "error": "404 Client Error: Not Found for url: https://re-lief.net/southeast-asia/wp-content/uploads/sites/7/mandarin-oriental-kualalumpur_2.jpg"
+      },
+      {
         "page": "https://www.fourseasons.com/kualalumpur/photos-and-videos/",
         "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/kualalumpur/photos-and-videos/"
       },
       {
         "url": "https://press.fourseasons.com/kualalumpur/hotel-news/2026/introducing-the-longevity-lounge",
-        "error": "cannot identify image file <_io.BytesIO object at 0x78808c754b80>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x7efb6915d350>"
       },
       {
-        "page": "https://urbanresortconcepts.com/en/images/ruma-gallery/",
-        "error": "404 Client Error: Not Found for url: https://urbanresortconcepts.com/en/images/ruma-gallery/"
+        "page": "https://www.eqkualalumpur.equatorial.com/rooms-suites/",
+        "error": "404 Client Error: Not Found for url: https://www.eqkualalumpur.equatorial.com/en/rooms-suites/"
+      },
+      {
+        "url": "https://www.eqkualalumpur.com/wp-content/uploads/sites/10/2019/04/2019-04-01_Architecture-Malaysia-EQ-Shot2.jpg",
+        "error": "cannot identify image file <_io.BytesIO object at 0x7efb649b8a90>"
       }
     ],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
-    "excludedCandidates": [],
-    "cityCount": 8,
-    "hotelCount": 10,
-    "totalBytes": 3107642
+    "excludedCandidates": [
+      {
+        "key": "eq-1",
+        "sourcePage": "https://www.eqkualalumpur.equatorial.com/en/",
+        "sourceResolvedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/06/2020-01-13_eq-sky51-entrance2.webp",
+        "sourceRequestedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/06/2020-01-13_eq-sky51-entrance2.webp",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "EQ Kuala Lumpur",
+        "publisher": "EQ Kuala Lumpur",
+        "hotel": "EQ Kuala Lumpur",
+        "localPath": "/images/travel/kuala-lumpur-premium/eq/eq-1.webp",
+        "sourceSHA256": "1e262569fab732d55fa6f3e06b9cc6a2f49071dd25e7216ec94292d80bf82d5b",
+        "webpSHA256": "84442d4e0f4e616ff9c23ade0a4a065b9bf3a0bbae6cdff8bee35ecc4f7494d7",
+        "sourcePixels": [
+          1500,
+          938
+        ],
+        "webpPixels": [
+          1280,
+          800
+        ],
+        "webpBytes": 258862,
+        "pixelFingerprint": "b2b036bac6d69783",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
+    "cityCount": 9,
+    "hotelCount": 11,
+    "totalBytes": 3407664
   }
 }
