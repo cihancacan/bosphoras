@@ -1,0 +1,163 @@
+{
+  "name": "North Island",
+  "country": "Seychelles",
+  "eyebrow": "North Island · Villas privadas y conservación",
+  "heading": "North Island: una isla, once villas",
+  "intro": "Diez villas en East Beach, una Villa North y posibilidad de alquilar todo el resort. North Island combina intimidad y restauración de naturaleza.",
+  "editorial": "North Island es un único resort cerca de Mahé con once villas: diez Beachfront Villas de 450 m² y una Villa North de 750 m². Cuatro opciones describen estancia en pareja, configuración familiar de la misma Beachfront Villa, Villa North y alquiler completo Exclusively Yours. Hay dos categorías físicas, no cuatro hoteles.\n\nBeachfront Villas se sitúan entre vegetación de East Beach. Cada una tiene pequeña piscina privada, duchas exteriores, bañera hundida, jardín y salida a arena. Despacho separado puede adaptarse a niños según distribución acordada; no equivale a segundo dormitorio principal. Hasta cuatro huéspedes requiere confirmar camas.\n\nVilla North junto a ladera granítica Grand Paloss destaca por plataformas elevadas, pabellón abierto privado, fogón y terrazas marinas. Mayor superficie no significa ausencia de escaleras. Alquiler integral incluye once villas existentes y espacios comunes acordados; no hay duodécima villa. Comidas, eventos, personal y tratamientos por contrato.\n\nPiscina infinita común, restaurantes, bienestar y actividades naturales completan estancia. Amanecer East Beach y luz vespertina West Beach. Baño y excursiones marítimas según viento y agua.\n\nDesde Mahé suele organizarse helicóptero de unos veinte minutos, con restricciones de clima, horarios y equipaje. No considerarlo incluido sin indicación expresa. Restauración vegetal, tortugas gigantes, aves y nidos de tortugas marinas requieren respeto y acompañamiento del equipo insular.",
+  "hotelIntro": "Dos categorías reales, configuración familiar Beachfront Villa y alquiler integral: cuatro formas de organizar estancia.",
+  "areas": [
+    [
+      "East Beach y diez villas",
+      "Costa oriental, jardines y caminos a playa de diez Beachfront Villas.",
+      "Corrientes y baño cambian."
+    ],
+    [
+      "Grand Paloss y Villa North",
+      "Ladera granítica rodea única Villa North de 750 m² y terrazas elevadas.",
+      "Evalúa pendientes, escalones y plataformas altas."
+    ],
+    [
+      "West Beach al atardecer",
+      "Costa oeste para paseos y cenas exteriores acordadas.",
+      "Mar según viento y estación."
+    ],
+    [
+      "Piazza y zonas comunes",
+      "Restaurantes comunes complementan villas privadas.",
+      "Menús e inclusiones según reserva."
+    ],
+    [
+      "Senderos, tortugas y conservación",
+      "Rutas graníticas, tortugas gigantes y restauración de especies.",
+      "Respeta límites y equipo."
+    ]
+  ],
+  "experiences": [
+    [
+      "Amanecer en East Beach",
+      "Acércate a arena oriental sin perturbar nidos."
+    ],
+    [
+      "Paisajes graníticos Grand Paloss",
+      "Sigue rutas señalizadas respetando privacidad Villa North y otros huéspedes."
+    ],
+    [
+      "Atardecer West Beach",
+      "Acuerda cena, clima, horario y coste con equipo."
+    ],
+    [
+      "Naturaleza acompañada",
+      "Conoce tortugas gigantes y restauración sin tocar ni alimentar animales."
+    ],
+    [
+      "Spa, mar y cocina criolla",
+      "Combina bienestar y gastronomía local comprobando paquete."
+    ]
+  ],
+  "checks": [
+    "Once villas: diez Beachfront de 450 m² y una Villa North de 750 m².",
+    "Opción familiar es configuración de Beachfront existente.",
+    "Exclusively Yours es alquiler total, no villa adicional.",
+    "Helicóptero Mahé: confirma precio, equipaje, clima y horario.",
+    "Comprueba seguridad infantil en piscinas, escaleras y baños abiertos.",
+    "Acceso natural según conservación.",
+    "Proveedor confirma precios y disponibilidad."
+  ],
+  "hotels": [
+    [
+      "East Beach · Beachfront Villa",
+      "Diez villas independientes separadas por vegetación. Cada una de 450 m² tiene pequeña piscina privada, duchas exteriores, bañera hundida, jardín y salida a playa. Dormitorio y salón miran al entorno tropical. Despacho adaptable hasta cuatro huéspedes por acuerdo, no dos dormitorios equivalentes. Confirma ubicación, disponibilidad, comidas y traslados.",
+      "Despacho no equivale a segundo dormitorio principal completo.",
+      "Para pareja con jardín y piscina junto a playa.",
+      ""
+    ],
+    [
+      "East Beach · Configuración familiar",
+      "Misma Beachfront Villa de 450 m², no hotel ni categoría nueva. Despacho puede adaptarse a niños para hasta cuatro huéspedes por acuerdo. Piscina pequeña y acceso a East Beach cómodos, pero evalúa bordes abiertos, duchas y senderos. Solicita camas exactas, separación de espacios, cuidado y accesibilidad.",
+      "Misma categoría; confirma camas infantiles y seguridad.",
+      "Para familia con distribución de camas confirmada.",
+      ""
+    ],
+    [
+      "Grand Paloss · Única Villa North",
+      "Única residencia de 750 m² junto a ladera granítica. Se distingue de diez Beachfront por terrazas elevadas, pequeña piscina privada, pabellón abierto, fogón y vistas marinas. Despacho adaptable a familia hasta cuatro huéspedes por acuerdo. Plataformas multinivel, escalones y camino al mar importantes para carritos, niños y movilidad reducida.",
+      "Solo una Villa North; características no se trasladan a otras.",
+      "Para residencia amplia entre granito.",
+      ""
+    ],
+    [
+      "Isla completa · Exclusively Yours",
+      "Alquiler integral de diez Beachfront Villas y única Villa North con instalaciones comunes acordadas. Para familia grande o grupo cerrado, no hotel ni duodécima villa. Cada casa conserva distribución y piscina. Comidas, eventos, personal, tratamientos y excursiones por contrato. Vuelo Mahé, número de huéspedes, condiciones infantiles y cancelación por separado.",
+      "Once villas existentes juntas; servicios según contrato.",
+      "Para uso exclusivo de isla por grupo.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Cuántas villas hay?",
+      "Once: diez Beachfront de 450 m² y una Villa North de 750 m². Configuración familiar no añade villa; Exclusively Yours reúne resort."
+    ],
+    [
+      "¿Qué diferencia Villa North?",
+      "Beachfront tiene acceso East Beach, piscinas y despachos adaptables. Única Villa North 750 m² cerca de Grand Paloss con terrazas elevadas, pabellón y fogón."
+    ],
+    [
+      "¿Se puede alojar con niños en Beachfront Villa?",
+      "Hasta cuatro huéspedes adaptando despacho; confirma camas, edades, bordes de piscina, baños abiertos y acceso playa."
+    ],
+    [
+      "¿Cómo llegar desde Mahé?",
+      "Helicóptero organizado unos veinte minutos; precio, equipaje, horario y alternativas por separado. Incluido solo si se indica expresamente."
+    ],
+    [
+      "¿Se pueden alquilar todas villas?",
+      "Sí, Exclusively Yours cubre once villas e instalaciones acordadas; huéspedes, eventos, comidas, servicios y cancelación por contrato."
+    ],
+    [
+      "¿Se puede acercar libremente a animales y nidos?",
+      "Tortugas gigantes y marinas, aves y zonas protegidas según equipo de conservación; baño y actividades marinas según clima."
+    ],
+    [
+      "¿Hay privilegios Marriott Luxury Collection?",
+      "No presupongas tarifas o ventajas de fidelidad; confirma condiciones con operador en north-island.com y reserva."
+    ]
+  ],
+  "photoCaptions": [
+    "East Beach y villas privadas",
+    "Paseo por West Beach",
+    "Familia observa tortuga gigante de Aldabra",
+    "Protección de tortugas marinas en playa",
+    "Ambiente costero West Beach Bar",
+    "Columpio junto al mar West Beach",
+    "Bosque tropical y restauración de hábitat",
+    "Palmeras, playa y descanso West Beach",
+    "Anteojitos de Seychelles en North Island"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Dormitorio principal Beachfront Villa",
+      "Pabellón abierto y pequeña piscina privada Beachfront Villa",
+      "Villa entre vegetación East Beach"
+    ],
+    [
+      "Despacho de la misma Beachfront Villa preparado para niño",
+      "Salón familiar Beachfront Villa",
+      "Terraza privada de jardín Beachfront Villa"
+    ],
+    [
+      "Única Villa North junto a granito",
+      "Dormitorio Villa North, Villa 11",
+      "Terraza privada y fogón Villa North"
+    ],
+    [
+      "North Island desde aire para alquiler total",
+      "Arrecife e isla desde aire",
+      "Honeymoon Beach en contexto insular"
+    ]
+  ],
+  "seoTitle": "North Island, Seychelles: once villas privadas de lujo",
+  "hotelSeoTitle": "North Island: Beachfront Villa, Villa North y alquiler de isla",
+  "seoDescription": "Diez Beachfront Villas, una Villa North y alquiler integral: compara distribución familiar, playas y traslado desde Mahé."
+}
