@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/fix-transfer-booking-wording.mjs && node scripts/add-transfer-vehicle-premium-proof.mjs && node scripts/fix-transfer-seo-routes.mjs && node scripts/generate-bosphoras-programmatic-seo-pages.mjs && npm run guides:check && npm run seo:check && npm run travel:seo:check && { if [ \"$VERCEL_ENV\" = \"preview\" ] && [ \"$VERCEL_GIT_COMMIT_REF\" = \"feature/travel-destinations-89-93-drafts\" ]; then if [ -n \"$NUITEE_API_KEY\" ]; then node -r ./scripts/register-ts.cjs scripts/nuitee-map-hotels.cjs --destinations=london,las-vegas,rome,barcelona,cancun --lookup && node -e 'const r=require(\"./docs/travel-nuitee-89-93-coverage.json\"); console.log(\"NUITEE_VERIFIED \"+JSON.stringify(r.newVerified)); console.log(\"NUITEE_UNRESOLVED \"+JSON.stringify(r.unresolved.map(x=>({destination:x.destination,name:x.name,reason:x.reason}))))'; else echo 'Nuitée lookup: configured key unavailable to this preview'; fi; fi; }",
+    "prebuild": "node scripts/fix-transfer-booking-wording.mjs && node scripts/add-transfer-vehicle-premium-proof.mjs && node scripts/fix-transfer-seo-routes.mjs && node scripts/generate-bosphoras-programmatic-seo-pages.mjs && npm run guides:check && npm run seo:check && npm run travel:seo:check",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
