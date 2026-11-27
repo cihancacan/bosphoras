@@ -1,0 +1,46 @@
+{
+  "de": {
+    "drafts": 88,
+    "missing": [],
+    "structuralIssues": {},
+    "structurallyReady": 88,
+    "editoriallyApproved": 0
+  },
+  "tr": {
+    "drafts": 88,
+    "missing": [],
+    "structuralIssues": {},
+    "structurallyReady": 88,
+    "editoriallyApproved": 0
+  },
+  "es": {
+    "drafts": 88,
+    "missing": [],
+    "structuralIssues": {},
+    "structurallyReady": 88,
+    "editoriallyApproved": 0
+  },
+  "it": {
+    "drafts": 88,
+    "missing": [],
+    "structuralIssues": {},
+    "structurallyReady": 88,
+    "editoriallyApproved": 0
+  },
+  "pt": {
+    "drafts": 88,
+    "missing": [],
+    "structuralIssues": {},
+    "structurallyReady": 88,
+    "editoriallyApproved": 0
+  },
+  "zh": {
+    "drafts": 87,
+    "missing": [
+      "melides"
+    ],
+    "structuralIssues": {},
+    "structurallyReady": 87,
+    "editoriallyApproved": 0
+  }
+}
