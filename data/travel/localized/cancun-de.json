@@ -121,11 +121,37 @@
   "seoTitle": "Cancún: beste Strände und All-inclusive-Resorts",
   "hotelSeoTitle": "Cancún Hotels: NIZUC, Le Blanc, Hyatt Ziva und Coral Beach",
   "seoDescription": "Vergleichen Sie Cancún-Resorts, Strände, All-inclusive-Pakete, Erwachsenenhotels und Familienangebote.",
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Strand Delfines",
+    "Strand Nizuc",
+    "Strand Las Perlas",
+    "Luftaufnahme der Küste von Cancún",
+    "Lagune Nichupté",
+    "Strand Playa Tortugas",
+    "Playa Delfines und Strandhotels",
+    "Leuchtturm von Punta Cancún",
+    "Eingang zum Stadtpark Kabah"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Offener Empfangspavillon des NIZUC mit Blick auf Wasserbecken",
+      "Schlafzimmer im NIZUC",
+      "Terrasse und Privatpool im NIZUC"
+    ],
+    [
+      "Le Blanc Spa Resort und Pools am Meer in der Abenddämmerung",
+      "Royale Deluxe Zimmer mit seitlichem Meerblick",
+      "Lobby des Le Blanc Spa Resort"
+    ],
+    [
+      "Luftaufnahme des Hyatt Ziva an Punta Cancún",
+      "Schlafzimmer der Oceanfront Lighthouse Suite",
+      "Punta Vista Pool im Turquoize Tower nur für Erwachsene"
+    ],
+    [
+      "Pools und Strand des Coral Beach",
+      "Suite mit Meerblick im Coral Beach",
+      "Coral Beach in der Abenddämmerung"
+    ]
   ]
 }

@@ -121,11 +121,37 @@
   "seoTitle": "坎昆住宿指南：海滩、全包式度假村与家庭酒店",
   "hotelSeoTitle": "坎昆酒店：NIZUC、Le Blanc、Hyatt Ziva 与 Coral Beach",
   "seoDescription": "比较坎昆海滨度假村、海滩、全包套餐、成人专属酒店及家庭住宿选择。",
-  "photoCaptions": [],
+  "photoCaptions": [
+    "海豚海滩",
+    "尼苏克海滩",
+    "拉斯佩拉斯海滩",
+    "坎昆海岸航拍",
+    "尼丘普特潟湖",
+    "托尔图加斯海滩",
+    "海豚海滩与海滨酒店",
+    "坎昆角灯塔",
+    "卡巴城市公园入口"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "NIZUC 酒店面向水景的开放式入口大厅",
+      "NIZUC 酒店卧室",
+      "NIZUC 酒店露台与私人泳池"
+    ],
+    [
+      "暮色中的 Le Blanc 水疗度假村与海滨泳池",
+      "Royale Deluxe 部分海景客房",
+      "Le Blanc 水疗度假村大堂"
+    ],
+    [
+      "坎昆角 Hyatt Ziva 酒店航拍",
+      "Oceanfront Lighthouse 套房卧室",
+      "Turquoize 塔楼成人专属 Punta Vista 泳池"
+    ],
+    [
+      "Coral Beach 酒店泳池与海滩",
+      "Coral Beach 酒店海景套房",
+      "暮色中的 Coral Beach"
+    ]
   ]
 }

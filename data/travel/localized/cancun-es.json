@@ -121,11 +121,37 @@
   "seoTitle": "Dónde alojarse en Cancún: playas y resorts todo incluido",
   "hotelSeoTitle": "Hoteles en Cancún: NIZUC, Le Blanc, Hyatt Ziva y Coral Beach",
   "seoDescription": "Compara resorts de Cancún, playas, paquetes todo incluido, hoteles solo para adultos y opciones familiares.",
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Playa Delfines",
+    "Playa Nizuc",
+    "Playa Las Perlas",
+    "Vista aérea de la costa de Cancún",
+    "Laguna Nichupté",
+    "Playa Tortugas",
+    "Playa Delfines y hoteles del litoral",
+    "Faro de Punta Cancún",
+    "Entrada al Parque Urbano Kabah"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Pabellón de entrada del NIZUC abierto a los estanques",
+      "Dormitorio del NIZUC",
+      "Terraza y piscina privada del NIZUC"
+    ],
+    [
+      "Le Blanc Spa Resort y sus piscinas frente al mar al atardecer",
+      "Habitación Royale Deluxe con vista parcial al mar",
+      "Vestíbulo de Le Blanc Spa Resort"
+    ],
+    [
+      "Vista aérea de Hyatt Ziva en Punta Cancún",
+      "Dormitorio de la suite Oceanfront Lighthouse",
+      "Piscina Punta Vista de la torre Turquoize, solo para adultos"
+    ],
+    [
+      "Piscinas y playa de Coral Beach",
+      "Suite con vista al mar en Coral Beach",
+      "Coral Beach al atardecer"
+    ]
   ]
 }

@@ -121,11 +121,37 @@
   "seoTitle": "Cancún'da Nerede Kalınır? Plajlar ve Her Şey Dahil Oteller",
   "hotelSeoTitle": "Cancún Otelleri: NIZUC, Le Blanc, Hyatt Ziva ve Coral Beach",
   "seoDescription": "Cancún resortlarını, plajları, her şey dahil paketleri, yetişkinlere özel otelleri ve aile seçeneklerini karşılaştırın.",
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Delfines Plajı",
+    "Nizuc Plajı",
+    "Las Perlas Plajı",
+    "Cancún kıyısının havadan görünümü",
+    "Nichupté Lagünü",
+    "Tortugas Plajı",
+    "Playa Delfines ve sahil otelleri",
+    "Punta Cancún deniz feneri",
+    "Kabah şehir parkı girişi"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "NIZUC yansıma havuzlarına açılan giriş pavyonu",
+      "NIZUC yatak odası",
+      "NIZUC terası ve özel havuzu"
+    ],
+    [
+      "Alacakaranlıkta Le Blanc Spa Resort ve sahil havuzları",
+      "Kısmi deniz manzaralı Royale Deluxe oda",
+      "Le Blanc Spa Resort lobisi"
+    ],
+    [
+      "Punta Cancún'daki Hyatt Ziva'nın havadan görünümü",
+      "Oceanfront Lighthouse süit yatak odası",
+      "Yetişkinlere özel Turquoize Tower Punta Vista havuzu"
+    ],
+    [
+      "Coral Beach havuzları ve plajı",
+      "Coral Beach deniz manzaralı süiti",
+      "Alacakaranlıkta Coral Beach"
+    ]
   ]
 }

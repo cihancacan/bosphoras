@@ -1,5 +1,5 @@
 {
-  "status": "draft_pending_final_gallery",
+  "status": "contact_sheet_reviewed_pending_page_preview",
   "imageKeys": [
     [
       "scene-1",
@@ -18,6 +18,7 @@
       "nizuc-3"
     ],
     [
+      "le-blanc-9",
       "le-blanc-2",
       "le-blanc-4"
     ],
@@ -53,7 +54,8 @@
       "coral-beach-6": "Coral Beach au crépuscule",
       "scene-13": "Phare de Punta Cancún",
       "scene-14": "Entrée du parc urbain Kabah",
-      "nizuc-5": "Pavillon d'accueil ouvert sur les bassins du NIZUC"
+      "nizuc-5": "Pavillon d'accueil ouvert sur les bassins du NIZUC",
+      "le-blanc-9": "Le Blanc Spa Resort et ses piscines en bord de mer au crépuscule"
     },
     "en": {
       "scene-1": "Delfines Beach",
@@ -75,7 +77,8 @@
       "coral-beach-6": "Coral Beach at dusk",
       "scene-13": "Punta Cancún lighthouse",
       "scene-14": "Entrance to Kabah Urban Park",
-      "nizuc-5": "NIZUC open-air arrival pavilion overlooking reflecting pools"
+      "nizuc-5": "NIZUC open-air arrival pavilion overlooking reflecting pools",
+      "le-blanc-9": "Le Blanc Spa Resort and beachfront pools at dusk"
     },
     "tr": {
       "scene-1": "Delfines Plajı",
@@ -97,7 +100,8 @@
       "coral-beach-6": "Alacakaranlıkta Coral Beach",
       "scene-13": "Punta Cancún deniz feneri",
       "scene-14": "Kabah şehir parkı girişi",
-      "nizuc-5": "NIZUC yansıma havuzlarına açılan giriş pavyonu"
+      "nizuc-5": "NIZUC yansıma havuzlarına açılan giriş pavyonu",
+      "le-blanc-9": "Alacakaranlıkta Le Blanc Spa Resort ve sahil havuzları"
     },
     "de": {
       "scene-1": "Strand Delfines",
@@ -119,7 +123,8 @@
       "coral-beach-6": "Coral Beach in der Abenddämmerung",
       "scene-13": "Leuchtturm von Punta Cancún",
       "scene-14": "Eingang zum Stadtpark Kabah",
-      "nizuc-5": "Offener Empfangspavillon des NIZUC mit Blick auf Wasserbecken"
+      "nizuc-5": "Offener Empfangspavillon des NIZUC mit Blick auf Wasserbecken",
+      "le-blanc-9": "Le Blanc Spa Resort und Pools am Meer in der Abenddämmerung"
     },
     "es": {
       "scene-1": "Playa Delfines",
@@ -141,7 +146,8 @@
       "coral-beach-6": "Coral Beach al atardecer",
       "scene-13": "Faro de Punta Cancún",
       "scene-14": "Entrada al Parque Urbano Kabah",
-      "nizuc-5": "Pabellón de entrada del NIZUC abierto a los estanques"
+      "nizuc-5": "Pabellón de entrada del NIZUC abierto a los estanques",
+      "le-blanc-9": "Le Blanc Spa Resort y sus piscinas frente al mar al atardecer"
     },
     "it": {
       "scene-1": "Spiaggia Delfines",
@@ -163,7 +169,8 @@
       "coral-beach-6": "Coral Beach al crepuscolo",
       "scene-13": "Faro di Punta Cancún",
       "scene-14": "Ingresso del Parco urbano Kabah",
-      "nizuc-5": "Padiglione d'ingresso del NIZUC affacciato sugli specchi d'acqua"
+      "nizuc-5": "Padiglione d'ingresso del NIZUC affacciato sugli specchi d'acqua",
+      "le-blanc-9": "Le Blanc Spa Resort e piscine sul mare al crepuscolo"
     },
     "pt": {
       "scene-1": "Praia Delfines",
@@ -185,7 +192,8 @@
       "coral-beach-6": "Coral Beach ao anoitecer",
       "scene-13": "Farol de Punta Cancún",
       "scene-14": "Entrada do Parque Urbano Kabah",
-      "nizuc-5": "Pavilhão de entrada do NIZUC com vista para os espelhos de água"
+      "nizuc-5": "Pavilhão de entrada do NIZUC com vista para os espelhos de água",
+      "le-blanc-9": "Le Blanc Spa Resort e piscinas à beira-mar ao anoitecer"
     },
     "zh": {
       "scene-1": "海豚海滩",
@@ -207,7 +215,8 @@
       "coral-beach-6": "暮色中的 Coral Beach",
       "scene-13": "坎昆角灯塔",
       "scene-14": "卡巴城市公园入口",
-      "nizuc-5": "NIZUC 酒店面向水景的开放式入口大厅"
+      "nizuc-5": "NIZUC 酒店面向水景的开放式入口大厅",
+      "le-blanc-9": "暮色中的 Le Blanc 水疗度假村与海滨泳池"
     },
     "ru": {
       "scene-1": "Пляж Дельфинес",
@@ -229,7 +238,8 @@
       "coral-beach-6": "Coral Beach в сумерках",
       "scene-13": "Маяк Пунта-Канкун",
       "scene-14": "Вход в городской парк Кабах",
-      "nizuc-5": "Открытый входной павильон NIZUC с видом на водоёмы"
+      "nizuc-5": "Открытый входной павильон NIZUC с видом на водоёмы",
+      "le-blanc-9": "Le Blanc Spa Resort и бассейны у моря в сумерках"
     },
     "ar": {
       "scene-1": "شاطئ دلفينيس",
@@ -251,7 +261,8 @@
       "coral-beach-6": "Coral Beach عند الغسق",
       "scene-13": "منارة بونتا كانكون",
       "scene-14": "مدخل متنزه كاباه الحضري",
-      "nizuc-5": "جناح استقبال NIZUC المفتوح على الأحواض المائية"
+      "nizuc-5": "جناح استقبال NIZUC المفتوح على الأحواض المائية",
+      "le-blanc-9": "منتجع Le Blanc Spa ومسابحه المطلة على البحر عند الغسق"
     }
   },
   "visualReview": {
