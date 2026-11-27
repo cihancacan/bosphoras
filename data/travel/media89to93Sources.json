@@ -129,6 +129,9 @@
     "city": "Las Vegas",
     "publisher": "Visit Las Vegas / LVCVA",
     "cityPages": [
+      "https://www.visitlasvegas.com/experience/post/free-things-to-do-in-las-vegas/",
+      "https://www.visitlasvegas.com/experience/post/a-monthly-guide-of-things-to-do-in-las-vegas/",
+      "https://www.visitlasvegas.com/experience/post/excursions-from-vegas/",
       "https://www.blm.gov/visit/red-rock-canyon-national-conservation-area",
       "https://www.visitlasvegas.com/experience/post/beginners-guide-to-the-las-vegas-downtown-arts-scene/",
       "https://www.visitlasvegas.com/experience/post/national-plan-for-vacation-day/",
@@ -184,6 +187,8 @@
         "venetian",
         "The Venetian Resort Las Vegas",
         [
+          "https://www.venetianlasvegas.com/media/press-kit/photos.html",
+          "https://www.venetianlasvegas.com/media.html",
           "https://www.venetianlasvegas.com/resort/pools/pool-garden.html",
           "https://www.venetianlasvegas.com/resort/pools/venetian-pools.html",
           "https://www.venetianlasvegas.com/resort/pools.html",
