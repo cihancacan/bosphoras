@@ -11,7 +11,7 @@ import { getApprovedDestinationPhotos,getApprovedHotelPhotos,getApprovedDestinat
 import { bookingTarget } from './HotelPartnerBooking';
 import { hotelPartnerKey } from '@/lib/travel/hotelPartners';
 import { isNuiteeBookingLive } from '@/lib/travel/nuiteeLaunch';
-import { travelHref } from '@/lib/travel/i18n';
+import { travelHref, travelText } from '@/lib/travel/i18n';
 import { EditorialProse } from './EditorialProse';
 import { seoSnippet } from '@/data/travel/localizedNames';
 
@@ -41,7 +41,7 @@ export function LocalizedFeaturedCityGuide({city,data,locale,variant}:{city:Feat
  const heroGradient=locale==='ar'?'bg-gradient-to-l':'bg-gradient-to-r';
  const hotelHref=travelHref(locale,'hotels/'+city.slug),guideHref=travelHref(locale,'destinations/'+city.slug);
  const title=hotelPage?data.hotelSeoTitle:data.heading;
- return <main className="min-h-screen bg-white text-[#202629]" lang={locale} dir={locale==='ar'?'rtl':'ltr'}>
+ return <main className="min-h-screen bg-white text-[#202629]" lang={travelText(locale).hreflang} dir={locale==='ar'?'rtl':'ltr'}>
    <section className="relative isolate overflow-hidden bg-[#f5f5f3] text-[#202629]">
     {hero&&<div className="relative h-[38vh] min-h-[260px] overflow-hidden sm:hidden"><TravelHeroImage src={hero.src} alt={caption(hero.src)} sizes="100vw" className="object-cover"/></div>}
     {hero&&<div className="absolute inset-0 hidden sm:block" aria-hidden="true"><TravelHeroImage src={hero.src} alt="" sizes="100vw" className="object-cover"/><div className={'absolute inset-0 '+heroGradient+' from-[#f5f5f3]/95 via-[#f5f5f3]/65 to-transparent'}/></div>}
@@ -71,11 +71,11 @@ export function LocalizedGuideSchema({city,data,locale,path}:{city:FeaturedCityG
  const description=seoSnippet(hotelPage?data.hotelIntro:data.seoDescription);
  const photos=getApprovedDestinationPhotos(city);
  const hero=photos.find(photo=>photo.src===city.photos[city.hero]?.src)||photos[0];
- const article={'@type':'Article','@id':url+'#article',headline:hotelPage?data.hotelSeoTitle:data.heading,description,inLanguage:locale,mainEntityOfPage:url,
+ const article={'@type':'Article','@id':url+'#article',headline:hotelPage?data.hotelSeoTitle:data.heading,description,inLanguage:travelText(locale).hreflang,mainEntityOfPage:url,
    ...(hero?{image:new URL(hero.src,'https://www.bosphoras.com').href}:{}),
    author:{'@type':'Organization',name:'BOSPHORAS',url:'https://www.bosphoras.com'},publisher:{'@type':'Organization',name:'BOSPHORAS',url:'https://www.bosphoras.com'}};
  const items={'@type':'ItemList','@id':url+'#selected-hotels',name:labels[locale].selection,numberOfItems:city.hotels.length,
    itemListElement:city.hotels.map((hotel,index)=>({'@type':'ListItem',position:index+1,name:hotel.name}))};
- const graph=[article,items,{'@type':'WebPage','@id':url,name:title,inLanguage:locale,description,url,about:{'@type':'TouristDestination',name:data.name,containedInPlace:{'@type':'Country',name:data.country}}}, {'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:labels[locale].all,item:'https://www.bosphoras.com'+travelHref(locale,'destinations')},{'@type':'ListItem',position:2,name:hotelPage?data.hotelSeoTitle:data.name,item:url}]},...(data.faq.length?[{'@type':'FAQPage',inLanguage:locale,mainEntity:data.faq.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))}]:[])];
+ const graph=[article,items,{'@type':'WebPage','@id':url,name:title,inLanguage:travelText(locale).hreflang,description,url,about:{'@type':'TouristDestination',name:data.name,containedInPlace:{'@type':'Country',name:data.country}}}, {'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:labels[locale].all,item:'https://www.bosphoras.com'+travelHref(locale,'destinations')},{'@type':'ListItem',position:2,name:hotelPage?data.hotelSeoTitle:data.name,item:url}]},...(data.faq.length?[{'@type':'FAQPage',inLanguage:travelText(locale).hreflang,mainEntity:data.faq.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))}]:[])];
  return <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({'@context':'https://schema.org','@graph':graph}).replace(/</g,'\\u003c')}}/>;
 }

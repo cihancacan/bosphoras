@@ -1,6 +1,6 @@
 import {approvedCategorySlugs,approvedDestinationSlugs,destinationBySlug} from './destinations';
 import {isEditorialLocale,isLocalizedGuideReviewed} from './localizedGuides';
-import {travelHref} from '@/lib/travel/i18n';
+import {travelHref,travelText} from '@/lib/travel/i18n';
 import {istanbulHotels} from './istanbulFlagship';
 export const editorialTravelLocales=['fr','en','ru','ar','tr','de','es','it','pt','zh'] as const;
 const collectionLocales=['fr','en','ru','ar'] as const;
@@ -11,7 +11,7 @@ export function isTravelGuideIndexable(slug:string,variant:'destinations'|'hotel
  return variant==='hotels'?approvedCategorySlugs.has('hotels/'+slug+'/'+locale):approvedDestinationSlugs.has(slug+'/'+locale);
 }
 export function indexedTravelAlternates(origin:string,slug:string,variant:'destinations'|'hotels'){
- return Object.fromEntries(editorialTravelLocales.filter(l=>isTravelGuideIndexable(slug,variant,l)).map(l=>[l,origin+travelHref(l,variant+'/'+slug)]));
+ return Object.fromEntries(editorialTravelLocales.filter(l=>isTravelGuideIndexable(slug,variant,l)).map(l=>[travelText(l).hreflang,origin+travelHref(l,variant+'/'+slug)]));
 }
 export function isTravelCollectionIndexable(path:string,locale:string){
  return (collectionLocales as readonly string[]).includes(locale)&&['','destinations','hotels'].includes(path);
