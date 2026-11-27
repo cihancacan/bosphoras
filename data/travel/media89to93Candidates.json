@@ -217,6 +217,37 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-11",
+        "sourcePage": "https://www.stpauls.co.uk/explore",
+        "sourceResolvedUrl": "https://www.stpauls.co.uk/sites/default/files/styles/homepage_hero_image/public/2022-02/St%20Pauls%20seen%20over%20the%20millenium%20bridge%20%28DSC_6096-Edit%29.jpg?h=33247646&itok=3QwZeoWc",
+        "sourceRequestedUrl": "https://www.stpauls.co.uk/sites/default/files/styles/homepage_hero_image/public/2022-02/St%20Pauls%20seen%20over%20the%20millenium%20bridge%20%28DSC_6096-Edit%29.jpg?h=33247646&itok=3QwZeoWc",
+        "originalAlt": "St Pauls seen over the millennium bridge",
+        "originalCaption": "",
+        "credit": "Visit London / London & Partners",
+        "publisher": "Visit London / London & Partners",
+        "hotel": null,
+        "localPath": "/images/travel/london-premium/destination/scene-11.webp",
+        "sourceSHA256": "36e92c63525ee3e51313b5139bb654725964b3ab48e88d112b6cbf5dc4392205",
+        "webpSHA256": "d39912ef98ad2b68a12542faa88ec48aad06e706d624e171d190a6dd48b23b05",
+        "sourcePixels": [
+          1920,
+          1080
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 86590,
+        "pixelFingerprint": "e3f83cd8c8683976",
+        "candidateSubject": "st paul",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -597,18 +628,10 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 7
+        "found": 8
       }
     ],
     "errors": [
-      {
-        "page": "https://www.stpauls.co.uk/press-and-media",
-        "error": "403 Client Error: Forbidden for url: https://www.stpauls.co.uk/press-and-media"
-      },
-      {
-        "page": "https://www.stpauls.co.uk/",
-        "error": "403 Client Error: Forbidden for url: https://www.stpauls.co.uk/"
-      },
       {
         "page": "https://www.visitlondon.com/things-to-do",
         "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do"
@@ -692,22 +715,6 @@
       {
         "page": "https://www.visitlondon.com/things-to-do/london-areas/kensington-and-south-kensington/things-to-do-south-kensington",
         "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/london-areas/kensington-and-south-kensington/things-to-do-south-kensington"
-      },
-      {
-        "page": "https://www.thesavoylondon.com/rooms-and-suites/",
-        "error": "404 Client Error: Not Found for url: https://www.thesavoylondon.com/rooms-and-suites"
-      },
-      {
-        "page": "https://www.shangri-la.com/london/shangrila/photos-videos/",
-        "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/london/shangrila/photos-videos/"
-      },
-      {
-        "page": "https://www.shangri-la.com/en/london/shangrila/",
-        "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/en/london/shangrila/"
-      },
-      {
-        "page": "https://www.shangri-la.com/en/london/shangrila/rooms-suites/",
-        "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/en/london/shangrila/rooms-suites/"
       }
     ],
     "publicUseApproved": false,
@@ -838,9 +845,9 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 7,
+    "cityCount": 8,
     "hotelCount": 12,
-    "totalBytes": 2514264
+    "totalBytes": 2600854
   },
   "las-vegas": {
     "destinationScenes": [
