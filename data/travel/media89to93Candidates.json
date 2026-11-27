@@ -3,37 +3,6 @@
     "destinationScenes": [],
     "hotels": [
       {
-        "key": "claridges-1",
-        "sourcePage": "https://www.maybourne.com/en/hotels/claridges/suites-rooms",
-        "sourceResolvedUrl": "https://library.maybourne.com/transform/89d7160d-8bdc-46da-b312-dacb70cdaddd/CLA-THE-GRAND-TERRACE-01?format=avif&quality=90&io=transform%3Afill%2Cwidth%3A800%2Cheight%3A700&resolution=high",
-        "sourceRequestedUrl": "https://library.maybourne.com/transform/89d7160d-8bdc-46da-b312-dacb70cdaddd/CLA-THE-GRAND-TERRACE-01?format=avif&quality=90&io=transform%3Afill%2Cwidth%3A800%2Cheight%3A700&resolution=high",
-        "originalAlt": "Private rooftop terrace with cushioned sun loungers and an outdoor dining table surrounded by greenery, set against red brick façades and white French doors in soft afternoon light.",
-        "originalCaption": "",
-        "credit": "Claridge’s",
-        "publisher": "Claridge’s",
-        "hotel": "Claridge’s",
-        "localPath": "/images/travel/london-premium/claridges/claridges-1.webp",
-        "sourceSHA256": "fee47ad595bfa5139927f536f6fca6400ddd605c9292c552c4caff33503e0c03",
-        "webpSHA256": "c20a7f9c46d4f98de0642ec194abe3d3b22a76c20bbd6b09f253c233f7ed97a6",
-        "sourcePixels": [
-          800,
-          700
-        ],
-        "webpPixels": [
-          800,
-          700
-        ],
-        "webpBytes": 94136,
-        "pixelFingerprint": "19fcf6b8b1393084",
-        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
-        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "claridges-2",
         "sourcePage": "https://www.maybourne.com/en/hotels/claridges/suites-rooms",
         "sourceResolvedUrl": "https://library.maybourne.com/transform/e22136c8-c3ac-4879-b60b-e2d659456880/CLA-CLARIDGES-TERRACE-SUITE-418-02-jpg?format=avif&quality=90&io=transform%3Afill%2Cwidth%3A800%2Cheight%3A700&resolution=high",
@@ -88,6 +57,37 @@
         "webpBytes": 94828,
         "pixelFingerprint": "427266ad19011311",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "claridges-4",
+        "sourcePage": "https://www.maybourne.com/en/hotels/claridges/about",
+        "sourceResolvedUrl": "https://library.maybourne.com/transform/445fa452-4fc4-4cf6-8fa5-fcd7dbca4914/CLA-EXTERIOR-01-jpeg",
+        "sourceRequestedUrl": "https://library.maybourne.com/transform/445fa452-4fc4-4cf6-8fa5-fcd7dbca4914/CLA-EXTERIOR-01-jpeg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Claridge’s",
+        "publisher": "Claridge’s",
+        "hotel": "Claridge’s",
+        "localPath": "/images/travel/london-premium/claridges/claridges-4.webp",
+        "sourceSHA256": "3a86d7053647ed463866841b5ebc3c042e7d23880a3b98c7222c18ec08f8d928",
+        "webpSHA256": "1b19a024f4cc470dc54eeaae76867414f468cba45ae8101afb8106773c0b6155",
+        "sourcePixels": [
+          2000,
+          1394
+        ],
+        "webpPixels": [
+          1220,
+          850
+        ],
+        "webpBytes": 169324,
+        "pixelFingerprint": "f0f0f4f5b6e4f4f4",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
         "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -156,6 +156,68 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "shangri-la-1",
+        "sourcePage": "https://www.the-shard.com/shangri-la-the-shard-london/rooms-suites",
+        "sourceResolvedUrl": "https://www.the-shard.com/media/wcxnmxps/shangri-la-suite-living-room-with-view-shangri-la-hotel-at-the-shard-london.jpg?height=731&heightratio=0.6756007393715342&quality=95&rmode=crop&rxy=0.5%2C0.5&width=1082",
+        "sourceRequestedUrl": "https://www.the-shard.com/media/wcxnmxps/shangri-la-suite-living-room-with-view-shangri-la-hotel-at-the-shard-london.jpg?height=731&heightratio=0.6756007393715342&quality=95&rmode=crop&rxy=0.5%2C0.5&width=1082",
+        "originalAlt": "Shangri La Suite Living Room With City View - Shangri La Hotel",
+        "originalCaption": "",
+        "credit": "Shangri-La The Shard, London",
+        "publisher": "Shangri-La The Shard, London",
+        "hotel": "Shangri-La The Shard, London",
+        "localPath": "/images/travel/london-premium/shangri-la/shangri-la-1.webp",
+        "sourceSHA256": "8f443418ca322f08559117e8bb8b13f0446597992152e252c1742bcc25e5acf1",
+        "webpSHA256": "c120533e36f7d4c20b377fce88ca3b49196eca71f234dec2c306a299a4058a7f",
+        "sourcePixels": [
+          1082,
+          731
+        ],
+        "webpPixels": [
+          1082,
+          731
+        ],
+        "webpBytes": 80594,
+        "pixelFingerprint": "a662361832363694",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "shangri-la-2",
+        "sourcePage": "https://www.the-shard.com/shangri-la-the-shard-london/",
+        "sourceResolvedUrl": "https://www.the-shard.com/media/pbddoc5a/shangri-la-the-shard-london-love-skypool-landscape.jpg?height=731&heightratio=0.6756007393715342&quality=95&rmode=crop&rxy=0%2C0&width=1082",
+        "sourceRequestedUrl": "https://www.the-shard.com/media/pbddoc5a/shangri-la-the-shard-london-love-skypool-landscape.jpg?height=731&heightratio=0.6756007393715342&quality=95&rmode=crop&rxy=0%2C0&width=1082",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Shangri-La The Shard, London",
+        "publisher": "Shangri-La The Shard, London",
+        "hotel": "Shangri-La The Shard, London",
+        "localPath": "/images/travel/london-premium/shangri-la/shangri-la-2.webp",
+        "sourceSHA256": "5956045eebd78e1bb674357906bd467704e671a78d568d8d3891064cfe82975a",
+        "webpSHA256": "8be4a08f52bf11c0714676d48b239b1971dd95e3a8608e39372e9265c2c2a322",
+        "sourcePixels": [
+          1082,
+          731
+        ],
+        "webpPixels": [
+          1082,
+          731
+        ],
+        "webpBytes": 42298,
+        "pixelFingerprint": "852783812123a324",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "gaps": [
@@ -177,10 +239,18 @@
       {
         "group": "shangri-la",
         "expected": 3,
-        "found": 0
+        "found": 2
       }
     ],
     "errors": [
+      {
+        "page": "https://www.londonandpartners.com/newsroom/essential-info",
+        "error": "403 Client Error: Forbidden for url: https://www.londonandpartners.com/newsroom/essential-info"
+      },
+      {
+        "page": "https://www.londonandpartners.com/what-we-do/travel-trade",
+        "error": "403 Client Error: Forbidden for url: https://www.londonandpartners.com/what-we-do/travel-trade"
+      },
       {
         "page": "https://www.visitlondon.com/things-to-do/sightseeing/top-10-photo-opportunities-in-london",
         "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/sightseeing/top-10-photo-opportunities-in-london"
@@ -198,8 +268,68 @@
         "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/london-areas/london-bridge/top-things-to-do-in-london-bridge"
       },
       {
+        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.2750/VB8KHM.jpeg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.2750/VB8KHM.jpeg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.1000/VB8KHM.jpeg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.1000/VB8KHM.jpeg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.1246/VB8N9D.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.1246/VB8N9D.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.1250/VB8N9D.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.1250/VB8N9D.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.1244/VB8N9D.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.1244/VB8N9D.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.1245/VB8N9D.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.1245/VB8N9D.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.1066/VB8NY9.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.1066/VB8NY9.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.1067/VB8NY9.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.1067/VB8NY9.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.1065/VB8NY9.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.1065/VB8NY9.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8LWI.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8LWI.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8LVY.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8LVY.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8L1D.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8L1D.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8LTA.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/destinations/england/c_y_0.0000/VB8LTA.jpg"
+      },
+      {
+        "url": "https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8L1D.jpg",
+        "error": "404 Client Error: Not Found for url: https://www.visitbritain.com/en/things-to-do/c_y_0.0000/VB8L1D.jpg"
+      },
+      {
         "page": "https://www.thesavoylondon.com/rooms-and-suites/",
         "error": "404 Client Error: Not Found for url: https://www.thesavoylondon.com/rooms-and-suites"
+      },
+      {
+        "page": "https://www.shangri-la.com/london/shangrila/photos-videos/",
+        "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/london/shangrila/photos-videos/"
       },
       {
         "page": "https://www.shangri-la.com/en/london/shangrila/",
@@ -212,9 +342,42 @@
     ],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
+    "excludedCandidates": [
+      {
+        "key": "claridges-1",
+        "sourcePage": "https://www.maybourne.com/en/hotels/claridges/suites-rooms",
+        "sourceResolvedUrl": "https://library.maybourne.com/transform/89d7160d-8bdc-46da-b312-dacb70cdaddd/CLA-THE-GRAND-TERRACE-01?format=avif&quality=90&io=transform%3Afill%2Cwidth%3A800%2Cheight%3A700&resolution=high",
+        "sourceRequestedUrl": "https://library.maybourne.com/transform/89d7160d-8bdc-46da-b312-dacb70cdaddd/CLA-THE-GRAND-TERRACE-01?format=avif&quality=90&io=transform%3Afill%2Cwidth%3A800%2Cheight%3A700&resolution=high",
+        "originalAlt": "Private rooftop terrace with cushioned sun loungers and an outdoor dining table surrounded by greenery, set against red brick façades and white French doors in soft afternoon light.",
+        "originalCaption": "",
+        "credit": "Claridge’s",
+        "publisher": "Claridge’s",
+        "hotel": "Claridge’s",
+        "localPath": "/images/travel/london-premium/claridges/claridges-1.webp",
+        "sourceSHA256": "fee47ad595bfa5139927f536f6fca6400ddd605c9292c552c4caff33503e0c03",
+        "webpSHA256": "c20a7f9c46d4f98de0642ec194abe3d3b22a76c20bbd6b09f253c233f7ed97a6",
+        "sourcePixels": [
+          800,
+          700
+        ],
+        "webpPixels": [
+          800,
+          700
+        ],
+        "webpBytes": 94136,
+        "pixelFingerprint": "19fcf6b8b1393084",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
     "cityCount": 0,
-    "hotelCount": 5,
-    "totalBytes": 506402
+    "hotelCount": 7,
+    "totalBytes": 704482
   },
   "las-vegas": {
     "destinationScenes": [
@@ -248,33 +411,219 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-2",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/",
+        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1024/v1/clients/lasvegas/RR_LVCVA_2024_Strip_Aerial_NYNY_2605_compressed_c823f1a8-5aa1-4dec-a558-2f737c89f45b.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1024/v1/clients/lasvegas/RR_LVCVA_2024_Strip_Aerial_NYNY_2605_compressed_c823f1a8-5aa1-4dec-a558-2f737c89f45b.jpg",
+        "originalAlt": "Aerial view of the Las Vegas Strip.",
+        "originalCaption": "",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-2.webp",
+        "sourceSHA256": "d9ad131d90e40fde17facfee62a25c6841d53cb8474c4b13f28367c5463c8703",
+        "webpSHA256": "f1e9efad20a525df7b144de9f8ea873e98c462c3a70f55a7448aba713182b05d",
+        "sourcePixels": [
+          1024,
+          683
+        ],
+        "webpPixels": [
+          1024,
+          683
+        ],
+        "webpBytes": 135406,
+        "pixelFingerprint": "4b859a7ae8e17c0e",
+        "candidateSubject": "strip|skyline",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-3",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/",
+        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/y_404/v1/clients/lasvegas/MicrosoftTeams_image_10__5a9c677a-6388-42c1-b33b-6a485e4150a9.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/y_404/v1/clients/lasvegas/MicrosoftTeams_image_10__5a9c677a-6388-42c1-b33b-6a485e4150a9.jpg",
+        "originalAlt": "See the amazing new Sphere in Las Vegas light up the strip!",
+        "originalCaption": "",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-3.webp",
+        "sourceSHA256": "d252284da389640a5adaaa5ff3ad75434ab454fbf3ba83eab529b316705f8d24",
+        "webpSHA256": "d450e8df5b3d6ee88e758819c548c933c160460f069e1594a6355ce47a3968a0",
+        "sourcePixels": [
+          1200,
+          800
+        ],
+        "webpPixels": [
+          1200,
+          800
+        ],
+        "webpBytes": 220202,
+        "pixelFingerprint": "90b472d2f6e470b1",
+        "candidateSubject": "sphere",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-4",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/",
+        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1100/v1/clients/lasvegas/RR_Downtown_0271_Lights_On_1200x800_182abd6e-225b-41b6-9531-586ed2f50888.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1100/v1/clients/lasvegas/RR_Downtown_0271_Lights_On_1200x800_182abd6e-225b-41b6-9531-586ed2f50888.jpg",
+        "originalAlt": "The beautiful and retro signage for the Fremont Street experience in downtown Las Vegas.",
+        "originalCaption": "",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-4.webp",
+        "sourceSHA256": "064e6c2891f5d5977a9695a3e77416951d799bf5bebc4d30e1136217cc3334b7",
+        "webpSHA256": "69f57f111712b3c15e24e56413ee80bc518e3e918cf8ce3f16523e82738429a2",
+        "sourcePixels": [
+          1100,
+          733
+        ],
+        "webpPixels": [
+          1100,
+          733
+        ],
+        "webpBytes": 148058,
+        "pixelFingerprint": "bcb0322c4e16ec2e",
+        "candidateSubject": "fremont",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-5",
+        "sourcePage": "https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/",
+        "sourceResolvedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1100/v1/clients/lasvegas/Downtown_0651_Final_91b87107-73fc-45b7-b17d-26b9e923c85d.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/w_1100/v1/clients/lasvegas/Downtown_0651_Final_91b87107-73fc-45b7-b17d-26b9e923c85d.jpg",
+        "originalAlt": "A group of friends taking a selfie together in Downtown Las Vegas. Shot by Scott Chebegia.",
+        "originalCaption": "",
+        "credit": "Visit Las Vegas / LVCVA",
+        "publisher": "Visit Las Vegas / LVCVA",
+        "hotel": null,
+        "localPath": "/images/travel/las-vegas-premium/destination/scene-5.webp",
+        "sourceSHA256": "978916487da5b79556f93cad06522d95fcdf38e5832b871608bce20820b88be5",
+        "webpSHA256": "159ac459ba11569250a68c0559a71faf9201ceca97fd797f67c18cc22a07a48f",
+        "sourcePixels": [
+          1100,
+          733
+        ],
+        "webpPixels": [
+          1100,
+          733
+        ],
+        "webpBytes": 103024,
+        "pixelFingerprint": "929a8899ab8c2533",
+        "candidateSubject": "downtown",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
       {
-        "key": "wynn-1",
-        "sourcePage": "https://www.wynnlasvegas.com/rooms-and-suites",
-        "sourceResolvedUrl": "https://res.cloudinary.com/stg-wynn-las-vegas/image/upload/f_auto/q_auto/v1698265320/Wynn%20Las%20Vegas/Dining/Fine%20Dining/CasaPlaya/Casa_Playa-entrance-828x466.jpg",
-        "sourceRequestedUrl": "https://res.cloudinary.com/stg-wynn-las-vegas/image/upload/f_auto/q_auto/v1698265320/Wynn%20Las%20Vegas/Dining/Fine%20Dining/CasaPlaya/Casa_Playa-entrance-828x466.jpg",
-        "originalAlt": "",
+        "key": "bellagio-1",
+        "sourcePage": "https://www.marriott.com/en-us/hotels/lasbl-bellagio-a-luxury-collection-resort-and-casino-las-vegas/photos/",
+        "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/lc-lasbl-salon-entrance-16729:Classic-Hor?wid=1336&fit=constrain",
+        "sourceRequestedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/lc-lasbl-salon-entrance-16729:Classic-Hor?wid=1336&fit=constrain",
+        "originalAlt": "Registration desk at salon entrance.",
         "originalCaption": "",
-        "credit": "Wynn Las Vegas",
-        "publisher": "Wynn Las Vegas",
-        "hotel": "Wynn Las Vegas",
-        "localPath": "/images/travel/las-vegas-premium/wynn/wynn-1.webp",
-        "sourceSHA256": "1fca69777a6222108ef69740bbdafb6734c70171209c48fadbd010c954bcf812",
-        "webpSHA256": "f32e72c87d27623ac55a45d1f7c9df41014448663fc003be8d083dc84f83b656",
+        "credit": "Bellagio",
+        "publisher": "Bellagio",
+        "hotel": "Bellagio",
+        "localPath": "/images/travel/las-vegas-premium/bellagio/bellagio-1.webp",
+        "sourceSHA256": "c09d17e935147af6c1c61c5a1edd95302e6145db9354cfb37f66ef9059c185b1",
+        "webpSHA256": "a5246cbe7df7e19db95cc9ea512ac8830581015d0649ce01eee0c92dcfef6772",
         "sourcePixels": [
-          826,
-          466
+          1336,
+          891
         ],
         "webpPixels": [
-          826,
-          466
+          1275,
+          850
         ],
-        "webpBytes": 114614,
-        "pixelFingerprint": "333317515294d4b0",
+        "webpBytes": 77876,
+        "pixelFingerprint": "f091d5e9e9cde8d4",
         "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "bellagio-2",
+        "sourcePage": "https://www.marriott.com/en-us/hotels/lasbl-bellagio-a-luxury-collection-resort-and-casino-las-vegas/photos/",
+        "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/lc-lasbl-premier-queen-50135:Classic-Hor?wid=1336&fit=constrain",
+        "sourceRequestedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/lc-lasbl-premier-queen-50135:Classic-Hor?wid=1336&fit=constrain",
+        "originalAlt": "Bedroom, two queen beds, mountain view",
+        "originalCaption": "",
+        "credit": "Bellagio",
+        "publisher": "Bellagio",
+        "hotel": "Bellagio",
+        "localPath": "/images/travel/las-vegas-premium/bellagio/bellagio-2.webp",
+        "sourceSHA256": "63b654ee86d65ff5202666217b7da52dc75de7314e85d3ad2880027975fd99f8",
+        "webpSHA256": "25f9ba3b25f3a8277f557cb2379e70dd474d8cb8c1b55c35cd4f8318dbc3b944",
+        "sourcePixels": [
+          1336,
+          891
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 71796,
+        "pixelFingerprint": "08f0e48b98f882c0",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "bellagio-3",
+        "sourcePage": "https://www.marriott.com/en-us/hotels/lasbl-bellagio-a-luxury-collection-resort-and-casino-las-vegas/photos/",
+        "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/lc-lasbl-conservatory-spring-45130:Classic-Hor?wid=1336&fit=constrain",
+        "sourceRequestedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/lc-lasbl-conservatory-spring-45130:Classic-Hor?wid=1336&fit=constrain",
+        "originalAlt": "Conservatory, colorful flowers, fountains, trees",
+        "originalCaption": "",
+        "credit": "Bellagio",
+        "publisher": "Bellagio",
+        "hotel": "Bellagio",
+        "localPath": "/images/travel/las-vegas-premium/bellagio/bellagio-3.webp",
+        "sourceSHA256": "a28005664ff4f8a1f12b14a21e4b862fd07dee2487de68c0270763de2ebf63e7",
+        "webpSHA256": "286edb1a6e0604dfac999afbd97f06a7d5cc01d4b4d05ad9e6baba1ac553139a",
+        "sourcePixels": [
+          1336,
+          891
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 254250,
+        "pixelFingerprint": "96cc92bed64263f5",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -407,37 +756,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "fontainebleau-1",
-        "sourcePage": "https://www.fontainebleaulasvegas.com/rooms-and-suites/all-accommodations/",
-        "sourceResolvedUrl": "https://www.fontainebleaulasvegas.com/uploads/2024/04/Panorama-Suite_D_1.png",
-        "sourceRequestedUrl": "https://www.fontainebleaulasvegas.com/uploads/2024/04/Panorama-Suite_D_1.png",
-        "originalAlt": " Panorama Suite",
-        "originalCaption": "",
-        "credit": "Fontainebleau Las Vegas",
-        "publisher": "Fontainebleau Las Vegas",
-        "hotel": "Fontainebleau Las Vegas",
-        "localPath": "/images/travel/las-vegas-premium/fontainebleau/fontainebleau-1.webp",
-        "sourceSHA256": "e392a7aa78a904fbb4b026bdb4dd049a975d1acd7dd1143ebd8ac80ff283cc21",
-        "webpSHA256": "6e982e5ca65cf828c956e803ce2381cb420f4fda4116bb2d8e763d924e1e6573",
-        "sourcePixels": [
-          930,
-          600
-        ],
-        "webpPixels": [
-          930,
-          600
-        ],
-        "webpBytes": 53722,
-        "pixelFingerprint": "ce1e8adadad4d0b0",
-        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
-        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "fontainebleau-2",
         "sourcePage": "https://www.fontainebleaulasvegas.com/rooms-and-suites/all-accommodations/",
         "sourceResolvedUrl": "https://www.fontainebleaulasvegas.com/uploads/2024/04/Junior-suite_D_1_updated.png",
@@ -504,272 +822,20 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 1
-      },
-      {
-        "group": "bellagio",
-        "expected": 3,
-        "found": 0
+        "found": 5
       },
       {
         "group": "wynn",
+        "expected": 3,
+        "found": 1
+      },
+      {
+        "group": "fontainebleau",
         "expected": 3,
         "found": 2
       }
     ],
     "errors": [
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_640/v1/clients/lasvegas/RR_LVCVA_2024_Strip_Aerial_NYNY_2605_compressed_c823f1a8-5aa1-4dec-a558-2f737c89f45b.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_640/v1/clients/lasvegas/rr_lvcva_2024_strip_aerial_"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_1024/v1/clients/lasvegas/RR_LVCVA_2024_Strip_Aerial_NYNY_2605_compressed_c823f1a8-5aa1-4dec-a558-2f737c89f45b.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_1024/v1/clients/lasvegas/rr_lvcva_2024_strip_aerial"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_480/v1/clients/lasvegas/RR_LVCVA_Downtown_Circa_Plaza_The_D_D005C0033_b36652fe_63f7_4c11_compressed_3c4ea613-3418-4008-a700-c1304f2127ed.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_480/v1/clients/lasvegas/rr_lvcva_downtown_circa_plaza_the_d_d005c0033_b"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_360/v1/clients/lasvegas/RR_LVCVA_Downtown_Circa_Plaza_The_D_D005C0033_b36652fe_63f7_4c11_compressed_3c4ea613-3418-4008-a700-c1304f2127ed.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_360/v1/clients/lasvegas/rr_lvcva_downtown_circa_plaza_the_d_d005c0033_b"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_342/v1/clients/lasvegas/RR_LVCVA_Downtown_Circa_Plaza_The_D_D005C0033_b36652fe_63f7_4c11_compressed_3c4ea613-3418-4008-a700-c1304f2127ed.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_342/v1/clients/lasvegas/rr_lvcva_downtown_circa_plaza_the_d_d005c0033_b"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_320/v1/clients/lasvegas/RR_LVCVA_Downtown_Circa_Plaza_The_D_D005C0033_b36652fe_63f7_4c11_compressed_3c4ea613-3418-4008-a700-c1304f2127ed.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_320/v1/clients/lasvegas/rr_lvcva_downtown_circa_plaza_the_d_d005c0033_b"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/y_404/v1/clients/lasvegas/MicrosoftTeams_image_10__5a9c677a-6388-42c1-b33b-6a485e4150a9.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/y_404/v1/clients/lasvegas/microsoftteams_image_10__5a9c677a-6388-42c1-b33"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_480/v1/clients/lasvegas/Inside_Helicopter_d34dfd4c-2d22-471f-a79a-ff6dd92b25ab.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_480/v1/clients/lasvegas/inside_helicopter_d34dfd4c-2d22-471f-a79a-ff6dd"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_360/v1/clients/lasvegas/Inside_Helicopter_d34dfd4c-2d22-471f-a79a-ff6dd92b25ab.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_360/v1/clients/lasvegas/inside_helicopter_d34dfd4c-2d22-471f-a79a-ff6dd"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_342/v1/clients/lasvegas/Inside_Helicopter_d34dfd4c-2d22-471f-a79a-ff6dd92b25ab.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_342/v1/clients/lasvegas/inside_helicopter_d34dfd4c-2d22-471f-a79a-ff6dd"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_320/v1/clients/lasvegas/Inside_Helicopter_d34dfd4c-2d22-471f-a79a-ff6dd92b25ab.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_320/v1/clients/lasvegas/inside_helicopter_d34dfd4c-2d22-471f-a79a-ff6dd"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/y_680/v1/clients/lasvegas/RR_Strip_Shot_2021_Strip_South_05_2023_Ballys_Edit_b9fe4ebe_5222_4df8_a112_6301291fa709_copy_1_83b14b29-883d-4c01-9dec-b3d3677db3fa.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/y_680/v1/clients/lasvegas/rr_strip_shot_2021_strip_south_05_2023_ballys_e"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_640/v1/clients/lasvegas/RR_LVCVA_2024_Strip_Aerial_NYNY_2605_compressed_c823f1a8-5aa1-4dec-a558-2f737c89f45b.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_640/v1/clients/lasvegas/rr_lvcva_2024_strip_aerial_nyny_2605_compressed"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_1024/v1/clients/lasvegas/RR_LVCVA_2024_Strip_Aerial_NYNY_2605_compressed_c823f1a8-5aa1-4dec-a558-2f737c89f45b.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_1024/v1/clients/lasvegas/rr_lvcva_2024_strip_aerial_nyny_2605_compresse"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_480/v1/clients/lasvegas/RR_LVCVA_Downtown_Circa_Plaza_The_D_D005C0033_b36652fe_63f7_4c11_compressed_3c4ea613-3418-4008-a700-c1304f2127ed.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_480/v1/clients/lasvegas/rr_lvcva_downtown_circa_plaza_the_d_d005c00"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_360/v1/clients/lasvegas/RR_LVCVA_Downtown_Circa_Plaza_The_D_D005C0033_b36652fe_63f7_4c11_compressed_3c4ea613-3418-4008-a700-c1304f2127ed.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_360/v1/clients/lasvegas/rr_lvcva_downtown_circa_plaza_the_d_d005c00"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_480/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_480/v1/clients/lasvegas/bel161998545_568ecd89-60fd-"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_360/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_360/v1/clients/lasvegas/bel161998545_568ecd89-60fd-"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_342/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_342/v1/clients/lasvegas/bel161998545_568ecd89-60fd-"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_320/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_320/v1/clients/lasvegas/bel161998545_568ecd89-60fd-"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_480/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_480/v1/clients/lasvegas/bel161998545_568ecd89-60fd-4800-ac9c-57b726f12a"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_360/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_360/v1/clients/lasvegas/bel161998545_568ecd89-60fd-4800-ac9c-57b726f12a"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_342/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_342/v1/clients/lasvegas/bel161998545_568ecd89-60fd-4800-ac9c-57b726f12a"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_320/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_320/v1/clients/lasvegas/bel161998545_568ecd89-60fd-4800-ac9c-57b726f12a"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_480/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_480/v1/clients/lasvegas/bel161998545_568ecd89-60fd-4800-ac9c-57b726"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_360/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_360/v1/clients/lasvegas/bel161998545_568ecd89-60fd-4800-ac9c-57b726"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_342/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_342/v1/clients/lasvegas/bel161998545_568ecd89-60fd-4800-ac9c-57b726"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_320/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_320/v1/clients/lasvegas/bel161998545_568ecd89-60fd-4800-ac9c-57b726"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_480/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_480/v1/clients/lasvegas/bel161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_360/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_360/v1/clients/lasvegas/bel161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_342/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_342/v1/clients/lasvegas/bel161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_320/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_320/v1/clients/lasvegas/bel161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/w_480/v1/clients/lasvegas/BEL161998545_568ecd89-60fd-4800-ac9c-57b726f12a3a.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/w_480/v1/clients/lasvegas/bel161998545_568"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/y_404/v1/clients/lasvegas/MicrosoftTeams_image_10__5a9c677a-6388-42c1-b33b-6a485e4150a9.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/y_404/v1/clients/lasvegas/microsoftteams_image_10__5a"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/y_404/v1/clients/lasvegas/MicrosoftTeams_image_10__5a9c677a-6388-42c1-b33b-6a485e4150a9.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/y_404/v1/clients/lasvegas/microsoftteams_image_10__5a9c677a-6388-42c1"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/y_404/v1/clients/lasvegas/MicrosoftTeams_image_10__5a9c677a-6388-42c1-b33b-6a485e4150a9.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/things-to-do-downtown/y_404/v1/clients/lasvegas/microsoftteams_image_10__5a9c677a-6388-42c1-b33b-"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/y_404/v1/clients/lasvegas/MicrosoftTeams_image_10__5a9c677a-6388-42c1-b33b-6a485e4150a9.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/y_404/v1/clients/lasvegas/microsoftteams_i"
-      },
-      {
-        "url": "http://res.cloudinary.com/simpleview/image/upload/v1582569548/clients/lasvegas/PM_2017_Venetian_Gondola_Ride_IMG_2777_1280x720_2e878ce0-857b-4342-ac04-1597f31d8983.jpg",
-        "error": "not HTTPS"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_480/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_480/v1/clients/lasvegas/feed_the_block_fremont_st_d"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_360/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_360/v1/clients/lasvegas/feed_the_block_fremont_st_d"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_342/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_342/v1/clients/lasvegas/feed_the_block_fremont_st_d"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_320/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_320/v1/clients/lasvegas/feed_the_block_fremont_st_d"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_480/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_480/v1/clients/lasvegas/feed_the_block_fremont_st_during_dj_gryffin_set"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_360/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_360/v1/clients/lasvegas/feed_the_block_fremont_st_during_dj_gryffin_set"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_342/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_342/v1/clients/lasvegas/feed_the_block_fremont_st_during_dj_gryffin_set"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_320/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/w_320/v1/clients/lasvegas/feed_the_block_fremont_st_during_dj_gryffin_set"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_480/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_480/v1/clients/lasvegas/feed_the_block_fremont_st_during_dj_gryffin"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_360/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_360/v1/clients/lasvegas/feed_the_block_fremont_st_during_dj_gryffin"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_342/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_342/v1/clients/lasvegas/feed_the_block_fremont_st_during_dj_gryffin"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_320/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/w_320/v1/clients/lasvegas/feed_the_block_fremont_st_during_dj_gryffin"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_480/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_480/v1/clients/lasvegas/feed_the_block_fremont_st_during_dj_gryffin_set_c"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_360/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_360/v1/clients/lasvegas/feed_the_block_fremont_st_during_dj_gryffin_set_c"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_342/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_342/v1/clients/lasvegas/feed_the_block_fremont_st_during_dj_gryffin_set_c"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_320/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_320/v1/clients/lasvegas/feed_the_block_fremont_st_during_dj_gryffin_set_c"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/w_480/v1/clients/lasvegas/FEED_THE_BLOCK_Fremont_St_during_DJ_Gryffin_set_courtesy_of_Wynn_Nightlife_1200_x_800_41be0ddd-2c66-4c0d-90ed-3669acb5faef.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/w_480/v1/clients/lasvegas/feed_the_block_f"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_1100/v1/clients/lasvegas/RR_Downtown_0271_Lights_On_1200x800_182abd6e-225b-41b6-9531-586ed2f50888.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_1100/v1/clients/lasvegas/rr_downtown_0271_lights_on_1200x800_182abd6e-225"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_1024/v1/clients/lasvegas/RR_Downtown_0271_Lights_On_1200x800_182abd6e-225b-41b6-9531-586ed2f50888.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/things-to-do-downtown/w_1024/v1/clients/lasvegas/rr_downtown_0271_lights_on_1200x800_182abd6e-225"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/w_1100/v1/clients/lasvegas/Downtown_0651_Final_91b87107-73fc-45b7-b17d-26b9e923c85d.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/w_1100/v1/clients/lasvegas/downtown_0651_f"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/w_1024/v1/clients/lasvegas/Downtown_0651_Final_91b87107-73fc-45b7-b17d-26b9e923c85d.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/w_1024/v1/clients/lasvegas/downtown_0651_f"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_480/v1/clients/lasvegas/RR_LVCVA_Downtown_Circa_Plaza_The_D_D005C0033_b36652fe_63f7_4c11_compressed_3c4ea613-3418-4008-a700-c1304f2127ed.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_480/v1/clients/lasvegas/rr_lvcva_downtown_circa_pla"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_360/v1/clients/lasvegas/RR_LVCVA_Downtown_Circa_Plaza_The_D_D005C0033_b36652fe_63f7_4c11_compressed_3c4ea613-3418-4008-a700-c1304f2127ed.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_360/v1/clients/lasvegas/rr_lvcva_downtown_circa_pla"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_342/v1/clients/lasvegas/RR_LVCVA_Downtown_Circa_Plaza_The_D_D005C0033_b36652fe_63f7_4c11_compressed_3c4ea613-3418-4008-a700-c1304f2127ed.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_342/v1/clients/lasvegas/rr_lvcva_downtown_circa_pla"
-      },
-      {
-        "url": "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_320/v1/clients/lasvegas/RR_LVCVA_Downtown_Circa_Plaza_The_D_D005C0033_b36652fe_63f7_4c11_compressed_3c4ea613-3418-4008-a700-c1304f2127ed.jpg",
-        "error": "404 Client Error: Not Found for url: https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/w_320/v1/clients/lasvegas/rr_lvcva_downtown_circa_pla"
-      },
       {
         "page": "https://bellagio.mgmresorts.com/en/hotel.html",
         "error": "HTTPSConnectionPool(host='bellagio.mgmresorts.com', port=443): Read timed out. (read timeout=16)"
@@ -777,29 +843,77 @@
       {
         "page": "https://bellagio.mgmresorts.com/en.html",
         "error": "HTTPSConnectionPool(host='bellagio.mgmresorts.com', port=443): Read timed out. (read timeout=16)"
-      },
-      {
-        "url": "http://res.cloudinary.com/stg-wynn-las-vegas/image/upload/f_auto/q_auto/v1698265320/Wynn%20Las%20Vegas/Dining/Fine%20Dining/CasaPlaya/Casa_Playa-entrance-828x466.jpg",
-        "error": "not HTTPS"
-      },
-      {
-        "url": "https://www.wynnlasvegas.com/q_auto/v1674843324/Wynn%20Las%20Vegas/Room%20and%20Suites/Hero%20images/wynn-las-vegas-rooms-and-suites-828x466",
-        "error": "404 Client Error: Not Found for url: https://www.wynnlasvegas.com/q_auto/v1674843324/Wynn%20Las%20Vegas/Room%20and%20Suites/Hero%20images/wynn-las-vegas-rooms-and-suites-828x466"
-      },
-      {
-        "url": "https://www.wynnlasvegas.com/q_auto/v1674843315/Wynn%20Las%20Vegas/Room%20and%20Suites/Hero%20images/wynn-las-vegas-rooms-and-suites-1920x602?width=3840&quality=100",
-        "error": "404 Client Error: Not Found for url: https://www.wynnlasvegas.com/q_auto/v1674843315/Wynn%20Las%20Vegas/Room%20and%20Suites/Hero%20images/wynn-las-vegas-rooms-and-suites-1920x602?w"
-      },
-      {
-        "url": "http://res.cloudinary.com/stg-wynn-las-vegas/image/upload/f_auto/q_auto/v1651563195/Wynn%20Las%20Vegas/Room%20and%20Suites/Wynn%20Tower%20Suites/Parlor%20Suite/1_Wynn%20Tower%20Suites%20Parlor-Living%20Room%20City%20View%20V1-Miller-RGB-828x466.jpg",
-        "error": "not HTTPS"
       }
     ],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
-    "cityCount": 1,
-    "hotelCount": 8,
-    "totalBytes": 911978
+    "excludedCandidates": [
+      {
+        "key": "wynn-1",
+        "sourcePage": "https://www.wynnlasvegas.com/rooms-and-suites",
+        "sourceResolvedUrl": "https://res.cloudinary.com/stg-wynn-las-vegas/image/upload/f_auto/q_auto/v1698265320/Wynn%20Las%20Vegas/Dining/Fine%20Dining/CasaPlaya/Casa_Playa-entrance-828x466.jpg",
+        "sourceRequestedUrl": "https://res.cloudinary.com/stg-wynn-las-vegas/image/upload/f_auto/q_auto/v1698265320/Wynn%20Las%20Vegas/Dining/Fine%20Dining/CasaPlaya/Casa_Playa-entrance-828x466.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Wynn Las Vegas",
+        "publisher": "Wynn Las Vegas",
+        "hotel": "Wynn Las Vegas",
+        "localPath": "/images/travel/las-vegas-premium/wynn/wynn-1.webp",
+        "sourceSHA256": "1fca69777a6222108ef69740bbdafb6734c70171209c48fadbd010c954bcf812",
+        "webpSHA256": "f32e72c87d27623ac55a45d1f7c9df41014448663fc003be8d083dc84f83b656",
+        "sourcePixels": [
+          826,
+          466
+        ],
+        "webpPixels": [
+          826,
+          466
+        ],
+        "webpBytes": 114614,
+        "pixelFingerprint": "333317515294d4b0",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "fontainebleau-1",
+        "sourcePage": "https://www.fontainebleaulasvegas.com/rooms-and-suites/all-accommodations/",
+        "sourceResolvedUrl": "https://www.fontainebleaulasvegas.com/uploads/2024/04/Panorama-Suite_D_1.png",
+        "sourceRequestedUrl": "https://www.fontainebleaulasvegas.com/uploads/2024/04/Panorama-Suite_D_1.png",
+        "originalAlt": " Panorama Suite",
+        "originalCaption": "",
+        "credit": "Fontainebleau Las Vegas",
+        "publisher": "Fontainebleau Las Vegas",
+        "hotel": "Fontainebleau Las Vegas",
+        "localPath": "/images/travel/las-vegas-premium/fontainebleau/fontainebleau-1.webp",
+        "sourceSHA256": "e392a7aa78a904fbb4b026bdb4dd049a975d1acd7dd1143ebd8ac80ff283cc21",
+        "webpSHA256": "6e982e5ca65cf828c956e803ce2381cb420f4fda4116bb2d8e763d924e1e6573",
+        "sourcePixels": [
+          930,
+          600
+        ],
+        "webpPixels": [
+          930,
+          600
+        ],
+        "webpBytes": 53722,
+        "pixelFingerprint": "ce1e8adadad4d0b0",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
+    "cityCount": 5,
+    "hotelCount": 9,
+    "totalBytes": 1754254
   },
   "rome": {
     "destinationScenes": [
@@ -833,14 +947,139 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-2",
+        "sourcePage": "https://www.italia.it/en/lazio/rome/things-to-do/rome-the-eternal-city",
+        "sourceResolvedUrl": "https://tourismmedia.italia.it/is/image/mitur/20210311144411-roma-pantheon-shutterstock-515362384-1?wid=800&hei=500&fit=constrain,1&fmt=webp",
+        "sourceRequestedUrl": "https://tourismmedia.italia.it/is/image/mitur/20210311144411-roma-pantheon-shutterstock-515362384-1?wid=800&hei=500&fit=constrain,1&fmt=webp",
+        "originalAlt": "Pantheon - Rome, Lazio",
+        "originalCaption": "",
+        "credit": "Turismo Roma / Roma Capitale",
+        "publisher": "Turismo Roma / Roma Capitale",
+        "hotel": null,
+        "localPath": "/images/travel/rome-premium/destination/scene-2.webp",
+        "sourceSHA256": "e26c29df9ea150d0e6bb6d5a113facffe3b5bcb83db0f11a4d98fc79fa9b1990",
+        "webpSHA256": "f886fdf869568bdf1ffc78a6a5d01f971fdfed4e4bea742e1a46c56fb6524985",
+        "sourcePixels": [
+          800,
+          460
+        ],
+        "webpPixels": [
+          800,
+          460
+        ],
+        "webpBytes": 78740,
+        "pixelFingerprint": "ccc49e1f9cdc7c3e",
+        "candidateSubject": "pantheon",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-3",
+        "sourcePage": "https://www.italia.it/en/lazio/rome/guide-history-facts",
+        "sourceResolvedUrl": "https://tourismmedia.italia.it/is/image/mitur/1600X1000_storia_e_curiosita_su_roma_1?wid=800&hei=500&fit=constrain,1&fmt=webp",
+        "sourceRequestedUrl": "https://tourismmedia.italia.it/is/image/mitur/1600X1000_storia_e_curiosita_su_roma_1?wid=800&hei=500&fit=constrain,1&fmt=webp",
+        "originalAlt": "history and fun facts about rome",
+        "originalCaption": "",
+        "credit": "Turismo Roma / Roma Capitale",
+        "publisher": "Turismo Roma / Roma Capitale",
+        "hotel": null,
+        "localPath": "/images/travel/rome-premium/destination/scene-3.webp",
+        "sourceSHA256": "2d50ab22b29a0d3b4e07b86d615f3633803292cb61215382c5a734d1d7ae869d",
+        "webpSHA256": "a19e9044220eb5df05730aacdeaff152b8d6ee5af36d4b62e2655feb69725f43",
+        "sourcePixels": [
+          800,
+          500
+        ],
+        "webpPixels": [
+          800,
+          500
+        ],
+        "webpBytes": 98722,
+        "pixelFingerprint": "46045c7867478d32",
+        "candidateSubject": "roma|rome|panorama",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "hotels": [],
+    "hotels": [
+      {
+        "key": "hassler-1",
+        "sourcePage": "https://www.hotelhasslerroma.com/stay/",
+        "sourceResolvedUrl": "https://www.hotelhasslerroma.com/wp-content/uploads/2026/07/2026_HasslerRoma_Suites_ClassicSuite_320_WhatTheFox-0047.webp",
+        "sourceRequestedUrl": "https://www.hotelhasslerroma.com/wp-content/uploads/2026/07/2026_HasslerRoma_Suites_ClassicSuite_320_WhatTheFox-0047.webp",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Hassler Roma",
+        "publisher": "Hassler Roma",
+        "hotel": "Hassler Roma",
+        "localPath": "/images/travel/rome-premium/hassler/hassler-1.webp",
+        "sourceSHA256": "a553305d3f17ad715eaa1549a21505f181560a953ff1eed205925c1bcbd9cea8",
+        "webpSHA256": "137b463700f1928d9e24fac3e880638e183ebc7269749ca2dd1cd1cee8479dfd",
+        "sourcePixels": [
+          2880,
+          1920
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 44862,
+        "pixelFingerprint": "f89a9ada5c4c4c2c",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "hassler-2",
+        "sourcePage": "https://www.hotelhasslerroma.com/stay/",
+        "sourceResolvedUrl": "https://www.hotelhasslerroma.com/wp-content/uploads/2025/09/01_Il-Palazzetto-Spanish-Steps-credit-Genivs-Loci.jpg",
+        "sourceRequestedUrl": "https://www.hotelhasslerroma.com/wp-content/uploads/2025/09/01_Il-Palazzetto-Spanish-Steps-credit-Genivs-Loci.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Hassler Roma",
+        "publisher": "Hassler Roma",
+        "hotel": "Hassler Roma",
+        "localPath": "/images/travel/rome-premium/hassler/hassler-2.webp",
+        "sourceSHA256": "c0f0305ab0266c85de279a2c501766ab4915a6c4fff48a73cf65e87a0f032aaf",
+        "webpSHA256": "a75e17005770e8d18ba2c04006f6e6b2e3243236c4278ca43fc027bd6a81b429",
+        "sourcePixels": [
+          2500,
+          1664
+        ],
+        "webpPixels": [
+          1277,
+          850
+        ],
+        "webpBytes": 202266,
+        "pixelFingerprint": "7bf2f0d17060e0c8",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
     "gaps": [
       {
         "group": "city",
         "expected": 9,
-        "found": 1
+        "found": 3
       },
       {
         "group": "bvlgari",
@@ -855,7 +1094,7 @@
       {
         "group": "hassler",
         "expected": 3,
-        "found": 0
+        "found": 2
       },
       {
         "group": "eden",
@@ -865,8 +1104,16 @@
     ],
     "errors": [
       {
+        "page": "https://www.bulgarihotels.com/en_US/rome.html",
+        "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/en_US/rome.html"
+      },
+      {
         "page": "https://www.bulgarihotels.com/en-US/rome/rooms-and-suites",
         "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/en-US/rome/rooms-and-suites"
+      },
+      {
+        "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/gallery/",
+        "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/gallery/"
       },
       {
         "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/",
@@ -877,12 +1124,8 @@
         "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/accommodation/"
       },
       {
-        "page": "https://www.hotelhasslerroma.com/stay/",
-        "error": "415 Client Error: Unsupported Media Type for url: https://www.hotelhasslerroma.com/stay/"
-      },
-      {
-        "page": "https://www.hotelhasslerroma.com/",
-        "error": "415 Client Error: Unsupported Media Type for url: https://www.hotelhasslerroma.com/"
+        "page": "https://media.dorchestercollection.com/section/our-portfolio/hotel-eden-rome/?lang=eng",
+        "error": "403 Client Error: Forbidden for url: https://media.dorchestercollection.com/section/our-portfolio/hotel-eden-rome/?lang=eng"
       },
       {
         "page": "https://www.dorchestercollection.com/rome/hotel-eden",
@@ -895,44 +1138,14 @@
     ],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
-    "cityCount": 1,
-    "hotelCount": 0,
-    "totalBytes": 63516
+    "excludedCandidates": [],
+    "cityCount": 3,
+    "hotelCount": 2,
+    "totalBytes": 488106
   },
   "barcelona": {
     "destinationScenes": [],
     "hotels": [
-      {
-        "key": "arts-1",
-        "sourcePage": "https://www.ritzcarlton.com/en/hotels/bcnrz-hotel-arts-barcelona/overview/",
-        "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/rz-bcnrz-the-heart-of-sant-pau-95388:Wide-Hor?wid=1864&fit=constrain",
-        "sourceRequestedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/rz-bcnrz-the-heart-of-sant-pau-95388:Wide-Hor?wid=1864&fit=constrain",
-        "originalAlt": "Sant Pau brick façades, tiled roofs and gardens",
-        "originalCaption": "",
-        "credit": "Hotel Arts Barcelona",
-        "publisher": "Hotel Arts Barcelona",
-        "hotel": "Hotel Arts Barcelona",
-        "localPath": "/images/travel/barcelona-premium/arts/arts-1.webp",
-        "sourceSHA256": "38d6de7e857ff60f825f12e58946aa9dee4fcc960c4df9bcbf4725fc9ef39422",
-        "webpSHA256": "1a091ccbf9f9ffc94bba092b68167c2c54ad8b1a786245e29d4bfaaf50bfc7ea",
-        "sourcePixels": [
-          1864,
-          1048
-        ],
-        "webpPixels": [
-          1280,
-          720
-        ],
-        "webpBytes": 177278,
-        "pixelFingerprint": "33f36b67ed490800",
-        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
-        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
       {
         "key": "arts-2",
         "sourcePage": "https://www.ritzcarlton.com/en/hotels/bcnrz-hotel-arts-barcelona/overview/",
@@ -1027,18 +1240,18 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "majestic-2",
+        "key": "majestic-3",
         "sourcePage": "https://majestichotelgroup.com/en/barcelona/hotel-majestic",
-        "sourceResolvedUrl": "https://majestichotelgroup.com/storage/imagenes/web/majestic/habitaciones/apartamentoDuplexPaseoDeGracia/apartamentoDuplexPaseoDeGraciaGaleria/4xl/03-hotel-majestic-habitacion-apartamento-paseo-de-gracia-terrace.webp",
-        "sourceRequestedUrl": "https://majestichotelgroup.com/storage/imagenes/web/majestic/habitaciones/apartamentoDuplexPaseoDeGracia/apartamentoDuplexPaseoDeGraciaGaleria/4xl/03-hotel-majestic-habitacion-apartamento-paseo-de-gracia-terrace.webp",
-        "originalAlt": "03-hotel-majestic-habitacion-apartamento-paseo-de-gracia-terrace.jpg",
+        "sourceResolvedUrl": "https://majestichotelgroup.com/storage/imagenes/web/majestic/gastronomia/restaurante/restauranteGaleria/4xl/00-hotel-majestic-gastronomia-restaurante-espacio-luz.webp",
+        "sourceRequestedUrl": "https://majestichotelgroup.com/storage/imagenes/web/majestic/gastronomia/restaurante/restauranteGaleria/4xl/00-hotel-majestic-gastronomia-restaurante-espacio-luz.webp",
+        "originalAlt": "00-hotel-majestic-gastronomia-restaurante-espacio-luz.jpg",
         "originalCaption": "",
         "credit": "Majestic Hotel & Spa Barcelona",
         "publisher": "Majestic Hotel & Spa Barcelona",
         "hotel": "Majestic Hotel & Spa Barcelona",
-        "localPath": "/images/travel/barcelona-premium/majestic/majestic-2.webp",
-        "sourceSHA256": "2fc0e18c5e43b59de73d1c5f8ac99aecaa291130e1d7ab41d230d949a3298235",
-        "webpSHA256": "1c0cf5aed56a30ad0c088de9c38ab1929112d6e8baac833b5489ef25ad5f6670",
+        "localPath": "/images/travel/barcelona-premium/majestic/majestic-3.webp",
+        "sourceSHA256": "0291fb04d29f085928f741f76501ae58e5b1f589f99ed6f29b3fcd9d4ea1ca6a",
+        "webpSHA256": "7a268ecf237138ed96ad10f9f5554e06c5933aef8b2a84958862a185b03b9069",
         "sourcePixels": [
           1574,
           1120
@@ -1047,8 +1260,8 @@
           1195,
           850
         ],
-        "webpBytes": 96566,
-        "pixelFingerprint": "47cdf9bfbbb6bc8f",
+        "webpBytes": 105934,
+        "pixelFingerprint": "99b147cadeda7366",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
         "ownerPermissionDeclared": true,
@@ -1132,6 +1345,11 @@
         "found": 0
       },
       {
+        "group": "arts",
+        "expected": 3,
+        "found": 2
+      },
+      {
         "group": "majestic",
         "expected": 3,
         "found": 2
@@ -1142,12 +1360,89 @@
         "found": 2
       }
     ],
-    "errors": [],
+    "errors": [
+      {
+        "url": "https://www.barcelonaturisme.com/files/5445-18893-Imagen/Sagrada_Familia_Unesco_Transparent_c1.jpg",
+        "error": "500 Server Error: Internal Server Error for url: https://www.barcelonaturisme.com/files/5445-18893-Imagen/Sagrada_Familia_Unesco_Transparent_c1.jpg"
+      },
+      {
+        "url": "http://www.barcelonaturisme.com/imgfiles/web/enjoy_barcelona/La_Pedrera_Barcelona_l1.jpg",
+        "error": "not HTTPS"
+      },
+      {
+        "url": "http://www.barcelonaturisme.com/imgfiles/web/enjoy_barcelona/Mirador_Park_Guell_Barcelona_l1a.jpg",
+        "error": "not HTTPS"
+      }
+    ],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
+    "excludedCandidates": [
+      {
+        "key": "arts-1",
+        "sourcePage": "https://www.ritzcarlton.com/en/hotels/bcnrz-hotel-arts-barcelona/overview/",
+        "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/rz-bcnrz-the-heart-of-sant-pau-95388:Wide-Hor?wid=1864&fit=constrain",
+        "sourceRequestedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/rz-bcnrz-the-heart-of-sant-pau-95388:Wide-Hor?wid=1864&fit=constrain",
+        "originalAlt": "Sant Pau brick façades, tiled roofs and gardens",
+        "originalCaption": "",
+        "credit": "Hotel Arts Barcelona",
+        "publisher": "Hotel Arts Barcelona",
+        "hotel": "Hotel Arts Barcelona",
+        "localPath": "/images/travel/barcelona-premium/arts/arts-1.webp",
+        "sourceSHA256": "38d6de7e857ff60f825f12e58946aa9dee4fcc960c4df9bcbf4725fc9ef39422",
+        "webpSHA256": "1a091ccbf9f9ffc94bba092b68167c2c54ad8b1a786245e29d4bfaaf50bfc7ea",
+        "sourcePixels": [
+          1864,
+          1048
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 177278,
+        "pixelFingerprint": "33f36b67ed490800",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "majestic-2",
+        "sourcePage": "https://majestichotelgroup.com/en/barcelona/hotel-majestic",
+        "sourceResolvedUrl": "https://majestichotelgroup.com/storage/imagenes/web/majestic/habitaciones/apartamentoDuplexPaseoDeGracia/apartamentoDuplexPaseoDeGraciaGaleria/4xl/03-hotel-majestic-habitacion-apartamento-paseo-de-gracia-terrace.webp",
+        "sourceRequestedUrl": "https://majestichotelgroup.com/storage/imagenes/web/majestic/habitaciones/apartamentoDuplexPaseoDeGracia/apartamentoDuplexPaseoDeGraciaGaleria/4xl/03-hotel-majestic-habitacion-apartamento-paseo-de-gracia-terrace.webp",
+        "originalAlt": "03-hotel-majestic-habitacion-apartamento-paseo-de-gracia-terrace.jpg",
+        "originalCaption": "",
+        "credit": "Majestic Hotel & Spa Barcelona",
+        "publisher": "Majestic Hotel & Spa Barcelona",
+        "hotel": "Majestic Hotel & Spa Barcelona",
+        "localPath": "/images/travel/barcelona-premium/majestic/majestic-2.webp",
+        "sourceSHA256": "2fc0e18c5e43b59de73d1c5f8ac99aecaa291130e1d7ab41d230d949a3298235",
+        "webpSHA256": "1c0cf5aed56a30ad0c088de9c38ab1929112d6e8baac833b5489ef25ad5f6670",
+        "sourcePixels": [
+          1574,
+          1120
+        ],
+        "webpPixels": [
+          1195,
+          850
+        ],
+        "webpBytes": 96566,
+        "pixelFingerprint": "47cdf9bfbbb6bc8f",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
     "cityCount": 0,
-    "hotelCount": 7,
-    "totalBytes": 748276
+    "hotelCount": 6,
+    "totalBytes": 580366
   },
   "cancun": {
     "destinationScenes": [
@@ -1309,28 +1604,28 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "nizuc-2",
+        "key": "nizuc-3",
         "sourcePage": "https://www.nizuc.com/accommodations/",
-        "sourceResolvedUrl": "https://www.nizuc.com/wp-content/uploads/2015/07/NIZUC-Resort-Spa_-Ocean-View-Double-1-1920x919.jpg",
-        "sourceRequestedUrl": "https://www.nizuc.com/wp-content/uploads/2015/07/NIZUC-Resort-Spa_-Ocean-View-Double-1-1920x919.jpg",
+        "sourceResolvedUrl": "https://www.nizuc.com/wp-content/uploads/2015/07/Garden_Pool_Villa_2-1920x1264.jpg",
+        "sourceRequestedUrl": "https://www.nizuc.com/wp-content/uploads/2015/07/Garden_Pool_Villa_2-1920x1264.jpg",
         "originalAlt": "",
         "originalCaption": "",
         "credit": "NIZUC Resort & Spa",
         "publisher": "NIZUC Resort & Spa",
         "hotel": "NIZUC Resort & Spa",
-        "localPath": "/images/travel/cancun-premium/nizuc/nizuc-2.webp",
-        "sourceSHA256": "53743b343d8aa42a20434f3c30f5b9c02bce8b4c44dce24d12eb9fdba52956b0",
-        "webpSHA256": "1b79793f2b0f74c8ac7c988b888a73db57016483eed920aca3ecd0519c259e65",
+        "localPath": "/images/travel/cancun-premium/nizuc/nizuc-3.webp",
+        "sourceSHA256": "13e9365f8dd447f5a0c5c0c6f393d2c3b9b4f771c1f069689d6504b1f2ff09fb",
+        "webpSHA256": "0306cc6fd1b34dfc1ecf0811c25dd5769a60419786b8f62272c38c0390f55669",
         "sourcePixels": [
           1920,
-          919
+          1264
         ],
         "webpPixels": [
           1280,
-          613
+          843
         ],
-        "webpBytes": 51216,
-        "pixelFingerprint": "c76f3939323a6a72",
+        "webpBytes": 163280,
+        "pixelFingerprint": "30290ca92d30f0c8",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
         "ownerPermissionDeclared": true,
@@ -1457,8 +1752,20 @@
     ],
     "errors": [
       {
+        "page": "https://cancun.leblancsparesorts.com/gallery",
+        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/gallery"
+      },
+      {
+        "page": "https://www.leblancsparesorts.com/gallery",
+        "error": "403 Client Error: HTTP Forbidden for url: https://www.leblancsparesorts.com/gallery"
+      },
+      {
         "page": "https://cancun.leblancsparesorts.com/",
         "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/"
+      },
+      {
+        "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/gallery",
+        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/gallery"
       },
       {
         "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun",
@@ -1471,8 +1778,41 @@
     ],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
+    "excludedCandidates": [
+      {
+        "key": "nizuc-2",
+        "sourcePage": "https://www.nizuc.com/accommodations/",
+        "sourceResolvedUrl": "https://www.nizuc.com/wp-content/uploads/2015/07/NIZUC-Resort-Spa_-Ocean-View-Double-1-1920x919.jpg",
+        "sourceRequestedUrl": "https://www.nizuc.com/wp-content/uploads/2015/07/NIZUC-Resort-Spa_-Ocean-View-Double-1-1920x919.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "NIZUC Resort & Spa",
+        "publisher": "NIZUC Resort & Spa",
+        "hotel": "NIZUC Resort & Spa",
+        "localPath": "/images/travel/cancun-premium/nizuc/nizuc-2.webp",
+        "sourceSHA256": "53743b343d8aa42a20434f3c30f5b9c02bce8b4c44dce24d12eb9fdba52956b0",
+        "webpSHA256": "1b79793f2b0f74c8ac7c988b888a73db57016483eed920aca3ecd0519c259e65",
+        "sourcePixels": [
+          1920,
+          919
+        ],
+        "webpPixels": [
+          1280,
+          613
+        ],
+        "webpBytes": 51216,
+        "pixelFingerprint": "c76f3939323a6a72",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
     "cityCount": 4,
     "hotelCount": 5,
-    "totalBytes": 793632
+    "totalBytes": 905696
   }
 }
