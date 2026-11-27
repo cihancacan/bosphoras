@@ -1,0 +1,148 @@
+{
+  "name": "São Bartolomeu",
+  "country": "São Bartolomeu",
+  "eyebrow": "Caribe francês",
+  "heading": "Saint-Barth: a ilha da elegância sem pressa",
+  "intro": "A pequena ilha surpreende pela variedade: telhados vermelhos de Gustavia, praia animada de Saint-Jean, ampla baía de Flamands e lagoa tranquila Grand Cul-de-Sac. O hotel define o ritmo da viagem.",
+  "editorial": "Quatro endereços representam lados distintos: elegância discreta de Flamands, vida social de Saint-Jean, villas reservadas de Toiny e férias familiares na lagoa. Estradas íngremes e sinuosas costumam alongar trajetos. Dezembro a abril normalmente mais seco e movimentado, mas o mar muda diariamente.",
+  "hotelIntro": "Cheval Blanc para Flamands, Eden Rock para Saint-Jean, Le Toiny para privacidade e Rosewood Le Guanahani para lagoa e família.",
+  "areas": [
+    [
+      "Flamands · Praia ampla",
+      "Baía clara com areia e jardins até o mar para descanso descalço.",
+      "Ondas podem dificultar banho; confira acesso e vista."
+    ],
+    [
+      "Saint-Jean · Baía animada",
+      "Clubes de praia, enseadas e promontório Eden Rock criam vida social com restaurantes próximos.",
+      "Proximidade da pista e praias populares pode aumentar ruído."
+    ],
+    [
+      "Gustavia · Porto e restaurantes",
+      "Telhados vermelhos, iates e ruas acolhedoras para passeios noturnos, compras e jantar.",
+      "Trânsito e estacionamento lotados na alta temporada; reserve mesas."
+    ],
+    [
+      "Grand Cul-de-Sac · Lagoa",
+      "Lagoa nordeste para descanso e atividades aquáticas com instrutor em condições adequadas.",
+      "Até baías protegidas podem ter correntes; siga recomendações locais."
+    ],
+    [
+      "Toiny · Costa atlântica selvagem",
+      "Colinas rochosas, ondas e villas reservadas com vista oceânica.",
+      "Ondas fortes podem tornar banho familiar inseguro sem avaliar condições."
+    ]
+  ],
+  "experiences": [
+    [
+      "Manhã em Colombier",
+      "Chegue à enseada por trilha autorizada ou barco se clima permitir; leve água e preserve natureza."
+    ],
+    [
+      "Noite em Gustavia",
+      "Depois de galerias e boutiques, jante no porto e aprecie ritmo insular."
+    ],
+    [
+      "Barco privativo pelas enseadas",
+      "Combine roteiro conforme clima e regras de áreas protegidas."
+    ]
+  ],
+  "checks": [
+    "Compare categoria exata de quarto, suíte ou villa e vista confirmada.",
+    "Planeje conexões em ilhas vizinhas; voos e balsas dependem do clima.",
+    "Confira banho diariamente; ondas atlânticas podem ser perigosas.",
+    "Reserve tempo extra para estradas e confira impostos, serviços e cancelamento."
+  ],
+  "hotels": [
+    [
+      "Flamands · Noroeste",
+      "Cheval Blanc St-Barth fica na ampla praia de Flamands e lembra elegante casa caribenha. Quartos no jardim, suítes de praia e espaçosa Villa de France oferecem diferentes formatos. Spa Guerlain e restaurante La Case completam estética francesa.",
+      "Compare vista jardim, oceano e acesso direto à praia; confirme planta familiar.",
+      "Para hospitalidade francesa, Flamands e serviço personalizado.",
+      ""
+    ],
+    [
+      "Saint-Jean · Norte",
+      "Eden Rock ocupa promontório entre dois arcos da baía. Hotel de praia lendário e animado, quartos e suítes com decoração individual, panoramas marítimos e Sand Bar. Para privacidade total considere costa leste.",
+      "Confirme localização em encosta, promontório ou praia, escadas e restaurantes próximos.",
+      "Para Saint-Jean, gastronomia e vida social.",
+      ""
+    ],
+    [
+      "Toiny · Costa leste",
+      "Le Toiny está afastado das praias movimentadas. Amplas villas-suítes com piscinas privativas miram costa atlântica selvagem; Beach Club convida a almoço tranquilo junto às ondas. Beleza não garante banho seguro.",
+      "Confira tempo até Gustavia, mar, categoria da villa e serviços sazonais.",
+      "Para villas com piscina e panoramas atlânticos.",
+      ""
+    ],
+    [
+      "Grand Cul-de-Sac · Nordeste",
+      "Rosewood Le Guanahani está em península privada entre Marigot e Grand Cul-de-Sac. Cottages coloridos nos jardins junto à lagoa. Atividades aquáticas em condições adequadas, Sense Spa e atenção familiar o diferenciam de hotéis em rochas.",
+      "Confira vista lagoa ou oceano, piscina, serviços familiares e atividades aquáticas.",
+      "Para férias familiares entre jardins, praias e lagoa.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Quais hotéis de luxo escolher em Saint-Barth?",
+      "Cheval Blanc para Flamands, Eden Rock para Saint-Jean, Le Toiny para villas com piscina, Rosewood Le Guanahani para lagoa e famílias."
+    ],
+    [
+      "Onde ficar?",
+      "Flamands para praia, Saint-Jean para vida social, Grand Cul-de-Sac para lagoa, Toiny para privacidade e Gustavia para restaurantes e compras."
+    ],
+    [
+      "Como chegar?",
+      "Normalmente via Saint-Martin em avião pequeno ou balsa; considere bagagem, clima e conexão."
+    ],
+    [
+      "Quando viajar?",
+      "Dezembro a abril costuma ser mais seco e movimentado; verão e início de outono podem ter chuvas intensas, tempestades tropicais e furacões."
+    ],
+    [
+      "É seguro nadar em todas as praias?",
+      "Não, ondas e correntes variam; Toiny pode ser perigosa. Siga recomendações locais."
+    ],
+    [
+      "Precisa de carro?",
+      "Carro pequeno alugado ou motorista facilita trajetos; estradas estreitas e íngremes, estacionamento lotado na temporada."
+    ]
+  ],
+  "photoCaptions": [
+    "Porto Gustavia do alto",
+    "Baía turquesa Colombier",
+    "Praia Flamands",
+    "Baía Saint-Jean e promontório Eden Rock",
+    "Ruas de pedra e telhados vermelhos Gustavia",
+    "Ilhota La Tortue perto de Grand Cul-de-Sac",
+    "Costa rochosa Toiny",
+    "Praia Grande Saline",
+    "Iates marina Gustavia"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Cheval Blanc e praia Flamands",
+      "Suíte Cheval Blanc St-Barth",
+      "Restaurante Cheval Blanc"
+    ],
+    [
+      "Eden Rock no promontório Saint-Jean",
+      "Colibri Rock Room",
+      "Terraço Sand Bar sobre baía"
+    ],
+    [
+      "Villa-suíte com piscina Le Toiny",
+      "Vista oceânica Le Toiny",
+      "Beach Club Le Toiny"
+    ],
+    [
+      "Lagoa Rosewood Le Guanahani",
+      "Suíte com piscina",
+      "Sala de tratamentos Sense Spa"
+    ]
+  ],
+  "seoTitle": "Saint-Barthélemy: hotéis de luxo, praias e guia da ilha",
+  "hotelSeoTitle": "Hotéis de Saint-Barth: Cheval Blanc, Eden Rock, Le Toiny e Rosewood",
+  "seoDescription": "Compare quatro hotéis de luxo em Saint-Barth: Flamands, Saint-Jean, Toiny, lagoa, villas e traslados."
+}
