@@ -1,0 +1,110 @@
+{
+  "name": "Paris",
+  "country": "Fransa",
+  "eyebrow": "Işıklar şehri · Sanat, gastronomi ve seçkin oteller",
+  "heading": "Paris'te nerede kalınır? En iyi semtler ve lüks oteller",
+  "intro": "Seine Nehri kıyısında sabah yürüyüşleri, tarihî saray otelleri ve Saint-Germain'in kafeleri: Paris'teki deneyiminiz büyük ölçüde konaklama adresinize bağlıdır. Üç bölgeyi ve dört seçkin oteli karşılaştırın.",
+  "editorial": "Paris'te konaklama seçerken öncelikle hangi semtte zaman geçirmek istediğinize karar verin. Louvre ve Seine çevresi müzelere, tarihî köprülere ve yürüyüş güzergâhlarına yakınlığıyla öne çıkar. Cheval Blanc Paris, La Samaritaine binasında nehir kıyısında modern bir konaklama deneyimi sunar.\n\nSağ yakadaki Altın Üçgen ve Faubourg Saint-Honoré, moda, gastronomi ve klasik saray otelleriyle tanınır. Four Seasons Hotel George V ve Le Bristol Paris farklı atmosferlere sahiptir: biri görkemli iç mekânları ve restoranlarıyla, diğeri iç bahçesi ve daha sakin bir şehir rezidansı hissiyle öne çıkar. Sol yakada Mandarin Oriental Lutetia, Saint-Germain-des-Prés'nin kitapçıları, galerileri ve kafelerine yakındır.\n\nSeine veya Eyfel Kulesi manzarası tüm odalarda bulunmaz. Oda kategorisini, katı, pencere yönünü, balkonu, spa erişimini ve bağlantılı oda seçeneklerini kontrol edin. Restoran rezervasyonlarını ve ulaşımı önceden planlayın; güncel fiyatları, vergileri ve iptal koşullarını rezervasyon sağlayıcısında karşılaştırın.",
+  "hotelIntro": "Cheval Blanc Paris, Four Seasons Hotel George V, Le Bristol Paris ve Mandarin Oriental Lutetia: Seine kıyısından Saint-Germain'e dört seçkin adresi konum, oda ve hizmetlere göre karşılaştırın.",
+  "areas": [
+    [
+      "Louvre, Seine ve Samaritaine",
+      "Louvre, Pont-Neuf, nehir kıyıları ve Sol Yaka yürüyüşle keşfedilebilir. Tarihî merkezde şehir gezisi konaklamanın bir parçasıdır.",
+      "Seine manzarası kat, pencere yönü ve oda kategorisine bağlıdır."
+    ],
+    [
+      "Altın Üçgen ve Faubourg Saint-Honoré",
+      "Ünlü oteller, moda butikleri ve gastronomi. Avenue George V ile Faubourg Saint-Honoré farklı konumlara ve atmosferlere sahiptir.",
+      "Avluya bakan oda ile hareketli caddeye bakan odanın gürültü seviyesi farklı olabilir."
+    ],
+    [
+      "Saint-Germain-des-Prés ve Sol Yaka",
+      "Kitapçılar, sanat galerileri, kafeler ve şık konut sokakları; sakin yürüyüşler için elverişli.",
+      "Eyfel Kulesi manzaralı süitler her kategoride bulunmaz."
+    ]
+  ],
+  "experiences": [
+    [
+      "Paris'i Seine üzerinden keşfedin",
+      "Uygun saatte özel tekne gezisiyle Louvre'u, nehir kıyılarını ve tarihî köprüleri farklı bir açıdan görün."
+    ],
+    [
+      "Unutulmaz bir akşam yemeği",
+      "Restoranı yalnızca ününe göre değil, atmosferine ve hizmetine göre seçin; rezervasyon ve kıyafet kurallarını önceden öğrenin."
+    ],
+    [
+      "Sol Yaka'yı kendi temponuzda keşfedin",
+      "Saint-Germain'de kahve molası, kitapçı veya galeri ziyareti ve ardından Lüksemburg Bahçesi'ne yürüyüş."
+    ]
+  ],
+  "checks": [
+    "Önce bölgeyi seçin: Sol Yaka, Louvre ve Altın Üçgen farklı deneyimler sunar.",
+    "Oda kategorisini, katı, manzarayı, balkonu, spa erişimini ve bağlantılı oda imkânını doğrulayın.",
+    "Restoranları, transferi ve varış saatini önceden planlayın.",
+    "İptal koşullarını, vergileri, kahvaltıyı ve fiyata dahil hizmetleri karşılaştırın."
+  ],
+  "hotels": [
+    [
+      "Seine · Samaritaine · 1. bölge",
+      "Seine kıyısında modern ve butik atmosferli otel; sanat odaklı iç mekânları, spa alanı ve belirli süitlerden Paris manzaralarıyla öne çıkar.",
+      "Manzara, kat, oda düzeni ve süit kategorisini kontrol edin; fotoğraflar belirli odaları gösterir.",
+      "Seine kıyısında, tarihî merkezde sakin bir konaklama için.",
+      "La Samaritaine'in tarihî binasındaki Cheval Blanc Paris, Paris saray oteli geleneğini modern biçimde yorumlar. Louvre ve Pont-Neuf'e yürüyüşler, mimari, yumuşak ışık ve seçkin malzemeler konaklama deneyimini tamamlar. Şehir gezisinin ardından havuz ve Dior Spa'da dinlenebilirsiniz. Balkon, manzara ve plan kategoriye göre değişir."
+    ],
+    [
+      "Avenue George V · 8. bölge",
+      "Çiçek düzenlemeleri, gastronomisi, mermer avlusu ve şık süitleriyle Altın Üçgen'de klasik Paris lüksü.",
+      "Cadde, iç avlu veya şehir çatılarına bakan odaları ayırt edin; her odadan Eyfel Kulesi görünmez.",
+      "Görkemli saray oteli atmosferi ve gastronomi için.",
+      "George V, geniş mermer lobisi, çiçek düzenlemeleri, avluları ve özenli hizmetiyle öne çıkar. Ortak alanlar ve restoranlar konaklama deneyiminin önemli bir parçasıdır. Oda özelliklerini inceleyin ve restoranları önceden rezerve edin."
+    ],
+    [
+      "Faubourg Saint-Honoré · 8. bölge",
+      "Klasik zarafeti sakin bir iç bahçe ve üst düzey gastronomiyle birleştiren ünlü Paris oteli.",
+      "Yenilenmiş oda kategorilerini, sokak veya bahçe manzarasını ve hizmetlere erişimi karşılaştırın.",
+      "Şehir içinde nadir bulunan iç bahçesiyle zarif bir rezidans atmosferi için.",
+      "Le Bristol gösterişli fotoğraflardan çok konfor, sakinlik, özenli hizmet ve bahçesiyle öne çıkar. Butiklere, galerilere ve restoranlara yakındır. Odanın büyüklüğüne ve yönüne dikkat edin. Eden süitindeki özel spa alanı standart odalara ait değildir."
+    ],
+    [
+      "Boulevard Raspail · Saint-Germain · 6. bölge",
+      "Sol Yaka'nın simge art deco oteli; kültürel mirası, çağdaş tasarımı, spa ve bazı süitlerde Paris çatı manzaralarını bir araya getirir.",
+      "Süit kategorisini, balkonu ve varsa Eyfel Kulesi manzarasını doğrulayın.",
+      "Saint-Germain kafeleri, edebiyat ve art deco mimarisi için.",
+      "Lutetia, sağ yakanın büyük saray otellerinden farklı bir Paris deneyimi sunar. Tarihî cephesi ve Saint-Germain'in kültürel atmosferiyle öne çıkar. Sabah kitapçı ve galerileri gezip öğleden sonra spada dinlenebilirsiniz. Eyfel Kulesi panoraması belirli süitlere aittir."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Seine kıyısında Louvre ve Pont des Arts",
+    "Seine üzerinden Eyfel Kulesi panoraması",
+    "Eyfel Kulesi ve Alexandre III Köprüsü",
+    "Nehirden Louvre ve Pont des Arts",
+    "Zafer Takı'ndan Champs-Élysées'nin akşam görünümü",
+    "Saint-Germain-des-Prés Kilisesi ve çevredeki kafeler"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Seine kıyısında La Samaritaine ve Cheval Blanc Paris",
+      "Dior Spa havuzu ve dinlenme alanı",
+      "Paris çatılarına bakan süit oturma odası"
+    ],
+    [
+      "Four Seasons Hotel George V girişi",
+      "Mermer lobi ve çiçek düzenlemeleri",
+      "Spa kapalı havuzu"
+    ],
+    [
+      "Le Bristol terası ve iç bahçesi",
+      "Deluxe süitin aydınlık yatak odası",
+      "Eden süitinin özel spa alanı"
+    ],
+    [
+      "Mandarin Oriental Lutetia'nın akşam cephesi",
+      "Lutetia spa kapalı havuzu",
+      "Balkonlu Eyfel Kulesi manzaralı süit"
+    ]
+  ],
+  "seoTitle": "Paris'te Nerede Kalınır? En İyi Semtler ve Oteller",
+  "hotelSeoTitle": "Paris'in En İyi Lüks Otelleri: Cheval Blanc, George V ve Daha Fazlası",
+  "seoDescription": "Louvre, Altın Üçgen ve Saint-Germain-des-Prés'yi karşılaştırın. Paris'in dört seçkin otelini, oda manzaralarını ve rezervasyon ipuçlarını keşfedin."
+}

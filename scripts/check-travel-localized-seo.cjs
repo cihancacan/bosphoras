@@ -7,7 +7,7 @@ const {getLocalizedGuide,reviewedLocalizedGuides}=require('../data/travel/locali
 const root='https://www.bosphoras.com';
 assert.equal(Object.keys(nativeTravelNames).length,88);
 assert.equal(travelDestinations.length,88);
-assert.equal(reviewedLocalizedGuides.size,179);
+assert.equal(reviewedLocalizedGuides.size,181);
 const urls=indexedTravelUrls(root), known=new Set(urls);
 assert.equal(urls.length,known.size);
 const titles=new Set();
@@ -21,7 +21,7 @@ for(const d of travelDestinations){
   assert.ok(typeof m.title==='string'&&m.title.length>0&&typeof m.description==='string'&&m.description.length>0&&m.description.length<=160,id+' complete metadata');
   assert.ok(m.openGraph&&m.twitter,id+' social metadata');
   assert.equal(m.alternates.canonical,root+(locale==='fr'?'':'/'+locale)+'/travel/'+variant+'/'+d.slug,id);
-  assert.deepEqual(Object.keys(m.alternates.languages).sort(),['istanbul','bodrum','antalya'].includes(d.slug)?['ar','en','fr','ru','tr']:['ar','en','fr','ru'],id);
+  assert.deepEqual(Object.keys(m.alternates.languages).sort(),['istanbul','bodrum','antalya','paris','dubai'].includes(d.slug)?['ar','en','fr','ru','tr']:['ar','en','fr','ru'],id);
   for(const [lang,url] of Object.entries(m.alternates.languages))assert.equal(url,root+(lang==='fr'?'':'/'+lang)+'/travel/'+variant+'/'+d.slug,id);
   if(locale==='ar'||locale==='ru'){
    const script=locale==='ar'?/[\u0600-\u06ff]/:/[\u0400-\u052f]/;
@@ -35,8 +35,8 @@ for(const d of travelDestinations){
 }
 for(const locale of ['fr','en','ar','ru'])for(const parts of [[],['destinations'],['hotels']])assert.equal(travelPageMetadata(locale,parts).robots.index,true);
 assert.equal(titles.size,352);
-assert.equal(urls.filter(u=>/\/travel\/(destinations|hotels)\/[^/]+$/.test(u)).length,710);
+assert.equal(urls.filter(u=>/\/travel\/(destinations|hotels)\/[^/]+$/.test(u)).length,714);
 assert.equal(travelPageMetadata('ru',['destinations','nonexistent']).robots.index,false);
-for(const slug of ['istanbul','bodrum','antalya'])for(const variant of ['destinations','hotels']){const m=travelPageMetadata('tr',[variant,slug]);assert.equal(m.robots.index,true);assert.ok(known.has(m.alternates.canonical));assert.deepEqual(Object.keys(m.alternates.languages).sort(),['ar','en','fr','ru','tr']);assert.equal(m.alternates.languages.tr,m.alternates.canonical);assert.equal(travelPageMetadata('tr',[variant,'paris']).robots.index,false);}
+for(const slug of ['istanbul','bodrum','antalya','paris','dubai'])for(const variant of ['destinations','hotels']){const m=travelPageMetadata('tr',[variant,slug]);assert.equal(m.robots.index,true);assert.ok(known.has(m.alternates.canonical));assert.deepEqual(Object.keys(m.alternates.languages).sort(),['ar','en','fr','ru','tr']);assert.equal(m.alternates.languages.tr,m.alternates.canonical);assert.equal(travelPageMetadata('tr',[variant,'new-york']).robots.index,false);}
 const pilot=getLocalizedGuide('istanbul','tr');assert.equal(pilot.areas.length,5);assert.equal(pilot.hotels.length,9);assert.equal(pilot.experiences.length,6);assert.equal(pilot.faq.length,8);
-console.log('710 public guide and hotel routes, including reviewed Turkish coastal guides: robots, sitemap, reciprocal hreflang, localized metadata and image URLs verified.',urls.length,'travel URLs');
+console.log('714 public guide and hotel routes, including five reviewed Turkish destinations: robots, sitemap, reciprocal hreflang, localized metadata and image URLs verified.',urls.length,'travel URLs');

@@ -93,7 +93,9 @@ import {nativeTravelNames,localizedHotelTitle,localizedDestinationTitle,seoSnipp
 import istanbulTr from './localized/istanbul-tr.json';
 import bodrumTr from './localized/bodrum-tr.json';
 import antalyaTr from './localized/antalya-tr.json';
-const reviewedTurkish:Record<string,LocalizedGuide>={istanbul:istanbulTr,bodrum:bodrumTr,antalya:antalyaTr};
+import parisTr from './localized/paris-tr.json';
+import dubaiTr from './localized/dubai-tr.json';
+const reviewedTurkish:Record<string,LocalizedGuide>={istanbul:istanbulTr,bodrum:bodrumTr,antalya:antalyaTr,paris:parisTr,dubai:dubaiTr};
 export type EditorialLocale='ru'|'ar'|'tr';
 type LegacyEditorialLocale='ru'|'ar';
 export type LocalizedGuide={
