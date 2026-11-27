@@ -1,0 +1,55 @@
+[
+  {
+    "slug": "osaka",
+    "city": "Osaka",
+    "publisher": "Japan National Tourism Organization / Osaka Convention & Tourism Bureau",
+    "cityPages": [
+      "https://osaka-info.jp/en/osaka/basic/popular-spot/",
+      "https://www.japan.travel/en/destinations/kansai/osaka/",
+      "https://www.japan.travel/en/au/guide/ultimate-must-see-guide-to-osaka/",
+      "https://osaka-info.jp/en/special/universal/course03/"
+    ],
+    "subjects": [
+      "osaka castle|osaka-jo",
+      "dotonbori|dōtonbori",
+      "umeda sky building|floating garden",
+      "shinsekai|tsutenkaku",
+      "shitennoji|shitenno-ji",
+      "osaka bay|tempozan|kaiyukan",
+      "nakanoshima",
+      "kuromon market|kuromon ichiba",
+      "abeno harukas|tennoji"
+    ],
+    "hotels": [
+      [
+        "conrad",
+        "Conrad Osaka",
+        [
+          "https://www.hilton.com/en/hotels/osacici-conrad-osaka/gallery/"
+        ]
+      ],
+      [
+        "four-seasons",
+        "Four Seasons Hotel Osaka",
+        [
+          "https://www.fourseasons.com/osaka/photos-and-videos/",
+          "https://press.fourseasons.com/osaka/hotel-images/"
+        ]
+      ],
+      [
+        "ritz-carlton",
+        "The Ritz-Carlton, Osaka",
+        [
+          "https://www.ritzcarlton.com/en/hotels/osarz-the-ritz-carlton-osaka/photos/"
+        ]
+      ],
+      [
+        "w-osaka",
+        "W Osaka",
+        [
+          "https://www.marriott.com/en-us/hotels/osaow-w-osaka/photos/"
+        ]
+      ]
+    ]
+  }
+]
