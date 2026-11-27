@@ -1,0 +1,119 @@
+{
+  "name": "Bali",
+  "country": "Indonésia",
+  "eyebrow": "Bali · Florestas tropicais, arrozais e Oceano Índico",
+  "heading": "Onde ficar em Bali: Ubud, Uluwatu, Jimbaran e Seminyak",
+  "intro": "Vales verdes de Ubud, falésias de Uluwatu sobre o Índico, pôr do sol em Jimbaran e praias animadas de Seminyak: escolher a região certa define sua viagem.",
+  "editorial": "As regiões de Bali oferecem quatro experiências de hospedagem distintas. Ubud e Sayan se destacam pelo vale do rio Ayung, arrozais em terraços e artesanato tradicional. Four Seasons Resort Bali at Sayan proporciona uma estadia de natureza e cultura, não de praia.\n\nNa península de Bukit, as falésias de Uluwatu e as vistas do Índico impressionam. As categorias de vila do Bvlgari Resort Bali variam em vista e privacidade. Raffles Bali oferece vilas com jardim e piscina nas colinas acima da baía de Jimbaran. Uma vila com vista para o mar não equivale a uma vila diretamente na praia.\n\nThe Legian, em Seminyak, combina hospedagem à beira-mar com restaurantes, boutiques e vida urbana. Compare as suítes do hotel principal com as vilas Club em uma localização separada. Os deslocamentos entre regiões podem levar tempo; confira o endereço e condições de traslado.\n\nAo escolher vila ou suíte, confirme vista, piscina privativa, acesso à praia e serviços personalizados. Considere temporada de chuvas, correntezas, segurança para banho e cancelamento. Consulte preços atualizados e disponibilidade com o parceiro de reservas.",
+  "hotelIntro": "Four Seasons Sayan, Bvlgari Resort Bali, Raffles Bali e The Legian Seminyak: compare resorts na natureza, vilas sobre falésias, vilas privativas e hotéis na praia.",
+  "areas": [
+    [
+      "Ubud e vale de Sayan",
+      "Arrozais, floresta tropical, rio Ayung, artesanato e templos. Ideal para explorar a cultura da ilha com calma, longe do mar.",
+      "Ubud fica no interior; planeje deslocamentos entre hotel, arrozais e atrações culturais."
+    ],
+    [
+      "Uluwatu e península de Bukit",
+      "Falésias calcárias, vistas do Índico e vilas com piscina. Algumas enseadas são acessíveis a pé ou de carro.",
+      "Um hotel sobre falésias não garante acesso direto, fácil ou sempre aberto à praia."
+    ],
+    [
+      "Jimbaran e baía sul",
+      "Praias amplas, pôr do sol, jantares à beira-mar e vilas tranquilas.",
+      "Uma vila com vista da baía pode ficar em uma colina; confirme o traslado à praia e a vista real."
+    ],
+    [
+      "Seminyak e costa oeste",
+      "Boutiques, restaurantes, clubes de praia e hotéis à beira do oceano.",
+      "As praias podem estar cheias e as correntezas fortes; confira ruído e condições de banho."
+    ]
+  ],
+  "experiences": [
+    [
+      "Nascer do sol nos arrozais",
+      "Visite Tegallalang cedo, antes do maior movimento, e dedique o restante do dia ao vale de Ubud."
+    ],
+    [
+      "O oceano a partir das falésias de Uluwatu",
+      "Explore costa e templos respeitando as tradições locais e admire o pôr do sol sobre o oceano."
+    ],
+    [
+      "Jantar com os pés na areia",
+      "Chegue a Jimbaran ao pôr do sol, reserve uma mesa à beira-mar e aproveite uma noite tranquila."
+    ],
+    [
+      "Uma noite em Seminyak",
+      "Explore boutiques e restaurantes e depois relaxe no terraço ao som do oceano."
+    ]
+  ],
+  "checks": [
+    "Escolha primeiro Ubud, Uluwatu, Jimbaran ou Seminyak; deslocamentos entre regiões podem demorar.",
+    "Confirme categoria de vila ou suíte, vista garantida, piscina privativa e condições dos serviços pessoais.",
+    "Especialmente em hotéis sobre falésias, confira acesso à praia, condições do mar e transporte.",
+    "Considere temporada de chuvas, segurança para banho, cancelamento e serviços inclusos."
+  ],
+  "hotels": [
+    [
+      "Sayan · Ubud · Vale do Ayung",
+      "Resort de arquitetura marcante na floresta tropical acima do Ayung, conhecido pela ponte e pelo lago de lótus na cobertura.",
+      "Confira categoria de vila ou suíte, piscina privativa e acesso ao rio.",
+      "Para natureza, arquitetura e bem-estar em ambiente tranquilo.",
+      "A chegada ao Four Seasons Sayan se destaca pela ponte acima das copas das árvores que leva ao lago circular de lótus. Abaixo estão o vale do Ayung, jardins e vilas. A prioridade é a natureza e cultura de Ubud, não a praia. Vista e piscina variam conforme a categoria."
+    ],
+    [
+      "Pecatu · Falésias de Uluwatu",
+      "Design ítalo-balinês nas falésias de Bukit, vilas privativas, jardins tropicais e amplas vistas do Índico.",
+      "Confirme categoria e vista; acesso à praia a partir de falésias não equivale a hospedagem diretamente na areia.",
+      "Para arquitetura ítalo-balinesa, piscina privativa e vistas do oceano.",
+      "Pedra, madeira escura e vegetação tropical caracterizam Bvlgari Resort Bali. As vilas Ocean View e Ocean Cliff diferem em configuração, vista e privacidade. Compare características reais da vila escolhida, não apenas fotos."
+    ],
+    [
+      "Jimbaran · Colinas acima da baía",
+      "Resort tranquilo nas colinas acima da baía de Jimbaran, com vilas que possuem piscina privativa e jardim.",
+      "Compare vista do oceano, tamanho da vila e condições de acesso à praia.",
+      "Para privacidade, vila com piscina e jardim e atendimento personalizado.",
+      "Raffles Bali lembra uma coleção de residências privativas entre áreas verdes. É ideal para noites tranquilas no jardim e na piscina. Cada vila tem piscina, mas localização, configuração e vista variam. Uma vila na colina não fica sobre a areia; confira o acesso."
+    ],
+    [
+      "Seminyak · Costa oceânica",
+      "Hotel elegante com piscinas de borda infinita frente ao mar, vistas da praia e proximidade dos restaurantes de Seminyak.",
+      "Confirme vista do terraço e privacidade; suítes do hotel principal e vilas Club separadas são opções diferentes.",
+      "Para gastronomia à beira-mar e o ambiente animado de Seminyak.",
+      "No The Legian Seminyak, relaxe em piscinas com vista do oceano e aproveite restaurantes e boutiques próximos. O hotel fica em uma região costeira movimentada, não em um resort isolado na floresta. Compare hotel principal e vilas Club e confira correntezas e condições de banho."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Falésias calcárias de Uluwatu sobre o Índico",
+    "Arrozais em terraços de Tegallalang perto de Ubud",
+    "Praia e restaurantes de Jimbaran ao pôr do sol",
+    "Praia de Seminyak ao pôr do sol",
+    "Enseada de areia de Padang Padang",
+    "Arrozais verdes de Tegallalang"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Lago de lótus sobre o vale de Sayan",
+      "Vila à margem do rio entre bambus",
+      "Vila de spa do Four Seasons Sayan"
+    ],
+    [
+      "Piscina do Bvlgari Resort Bali de frente para o oceano",
+      "Sala da Two Bedroom Ocean Cliff Villa",
+      "Quarto da One Bedroom Ocean Cliff Villa"
+    ],
+    [
+      "Raffles Bali nas colinas acima de Jimbaran",
+      "Piscina privativa da Panoramic One Bedroom Pool Villa",
+      "Interior da Panoramic One Bedroom Pool Villa"
+    ],
+    [
+      "Piscina do The Legian Seminyak com vista do oceano",
+      "Piscina e praia entre palmeiras",
+      "Varanda com vista da piscina e do mar"
+    ]
+  ],
+  "seoTitle": "Onde ficar em Bali: melhores regiões e hotéis de luxo",
+  "hotelSeoTitle": "Melhores hotéis de luxo e vilas em Bali",
+  "seoDescription": "Compare Ubud, Uluwatu, Jimbaran e Seminyak. Descubra quatro hotéis de luxo em Bali, vilas e acesso à praia."
+}
