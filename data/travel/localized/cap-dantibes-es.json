@@ -1,0 +1,162 @@
+{
+  "name": "Cap d’Antibes",
+  "country": "Francia",
+  "eyebrow": "Riviera francesa · Hoteles históricos y calas tranquilas",
+  "heading": "Dónde alojarse en Cap d’Antibes: mejores calas y hoteles de lujo",
+  "intro": "Cap d’Antibes ofrece mucho más que la famosa piscina del Eden-Roc. Garoupe, la costa rocosa de Tirepoil y Juan-les-Pins reúnen hoteles históricos, alojamientos de playa contemporáneos y tranquilas residencias con jardín.",
+  "editorial": "Hôtel du Cap-Eden-Roc, en la punta de la península, conserva su ambiente de hotel histórico de verano entre pinares y una piscina excavada en la roca. En la costa occidental, Cap d’Antibes Beach Hotel combina arquitectura contemporánea, restaurantes y playa privada. Villa Miraé, cerca de Garoupe y antes Impérial Garoupe, evoca una residencia privada con jardines. Belles Rives, en Juan-les-Pins, destaca por su art déco y el legado literario de los Fitzgerald.\n\nUna terraza al jardín no equivale a una suite con vistas al mar. Las fotografías no demuestran que playa o tumbonas estén incluidas. Comprueba temporada, restaurantes, ubicación y traslado. Según el Ayuntamiento de Antibes, unos 50 metros del sendero costero bajo Villa Eilenroc están cerrados por obras de seguridad hasta el 31 de mayo de 2027 inclusive. No planifiques el recorrido completo. El proveedor correspondiente confirma paseos en barco, traslados, precios y disponibilidad.",
+  "hotelIntro": "Compara Hôtel du Cap-Eden-Roc, Cap d’Antibes Beach Hotel, Villa Miraé y Belles Rives por historia, diseño, playa y ubicación.",
+  "areas": [
+    [
+      "Pointe Bacon · Alrededores de Hôtel du Cap-Eden-Roc",
+      "Jardines mediterráneos y panorámicas de mar abierto en la finca histórica al suroeste de la península.",
+      "La piscina y las villas privadas de Eden-Roc no son instalaciones públicas."
+    ],
+    [
+      "Garoupe · Playa y colina de la capilla",
+      "Combina playa y paseos por la capilla Notre-Dame-de-la-Garoupe y el faro.",
+      "Consulta zonas públicas, tumbonas, aparcamiento y condiciones de baño."
+    ],
+    [
+      "Sendero de Tirepoil · Villa Eilenroc",
+      "Calas rocosas y miradores de la costa sureste; sendero irregular con escalones, no paseo llano.",
+      "El tramo bajo Villa Eilenroc está cerrado hasta el 31 de mayo de 2027."
+    ],
+    [
+      "Port Gallice y Port du Crouton",
+      "Pequeñas marinas y Beach Hotel crean un ambiente social y contemporáneo en la costa oeste.",
+      "Playa, embarcadero y restaurantes no se incluyen automáticamente en el precio."
+    ],
+    [
+      "Juan-les-Pins · Belles Rives",
+      "Arquitectura art déco y ambiente costero animado; Belles Rives está junto al mar, menos aislado que Eden-Roc.",
+      "Considera afluencia estival, acceso a Garoupe y acceso real a playa."
+    ]
+  ],
+  "experiences": [
+    [
+      "El ambiente histórico de Eden-Roc",
+      "Descubre la arquitectura del hotel de temporada; consulta condiciones de visita y uso de piscina."
+    ],
+    [
+      "Un día de playa en Garoupe",
+      "Elige playa pública o privada, almuerza junto al mar y camina hacia la capilla si el tiempo acompaña."
+    ],
+    [
+      "Paseo costero de Tirepoil",
+      "Lleva agua y calzado adecuado; respeta el cierre bajo Villa Eilenroc."
+    ],
+    [
+      "Noche art déco en Belles Rives",
+      "Descubre salones y terrazas de la época de los Fitzgerald; reserva La Passagère por separado."
+    ],
+    [
+      "Paseo marítimo con operador cualificado",
+      "Compara ofertas en la costa oeste; confirma barco, tiempo, precio y normas."
+    ]
+  ],
+  "checks": [
+    "Comprueba la ubicación: Belles Rives está en Juan-les-Pins, Garoupe y Eden-Roc en distintas zonas de la península.",
+    "Confirma temporadas 2026–2027 y servicios de restauración, piscina y playa.",
+    "Distingue vistas al jardín de terraza al mar y villa privada de habitación estándar.",
+    "Ten en cuenta el cierre de Tirepoil bajo Villa Eilenroc hasta el 31 de mayo de 2027 y los avisos municipales.",
+    "Elige entre finca histórica tranquila, hotel de playa animado o ambiente de Juan-les-Pins.",
+    "Confirma precio, disponibilidad y servicios marítimos con el proveedor autorizado."
+  ],
+  "hotels": [
+    [
+      "Pointe Bacon · Finca histórica y pabellón Eden-Roc",
+      "Hôtel du Cap-Eden-Roc es un hotel histórico de verano entre pinos junto al Mediterráneo. Piscina excavada en roca, pabellón y edificio principal ofrecen distintas vistas y ambientes. No todas las habitaciones miran al mar; las villas privadas son categorías independientes. Comprueba temporada, edificio, suites y servicios.",
+      "Confirma edificio, categoría, temporada, vistas y condiciones de piscina y villas.",
+      "Para historia, jardines y elegancia clásica de la Riviera.",
+      ""
+    ],
+    [
+      "Port Gallice y Port du Crouton · Playa privada",
+      "Cap d’Antibes Beach Hotel, con 35 habitaciones y suites entre dos marinas, destaca por arquitectura geométrica, jardín exótico y ubicación de playa. BABA y Les Pêcheurs ofrecen ambiente animado. Algunas suites dan a jardines privados o terrazas elevadas.",
+      "Distingue terraza al jardín y suite con vistas al mar; comprueba BABA, tumbonas y temporada.",
+      "Para diseño contemporáneo y vacaciones de playa.",
+      ""
+    ],
+    [
+      "Garoupe · Antiguo Impérial Garoupe",
+      "Villa Miraé es un hotel cinco estrellas de Inwood Hotels y miembro de Relais & Châteaux. Cerca de Garoupe, jardines mediterráneos, interiores singulares y terrazas evocan una residencia privada. Las suites pueden mirar al jardín o piscina; proximidad a playa no garantiza tumbonas.",
+      "Consulta categorías actuales de Villa Miraé, terraza y playa, no fotos antiguas del Impérial Garoupe.",
+      "Para estancia boutique tranquila entre jardines.",
+      ""
+    ],
+    [
+      "Juan-les-Pins · Costa oeste",
+      "Hôtel Belles Rives conserva el ambiente art déco asociado a Francis Scott y Zelda Fitzgerald. Terrazas al mar, playa y La Passagère son una alternativa literaria y gastronómica al Eden-Roc. Está en Boulevard Édouard Baudoin, no junto a Garoupe.",
+      "Confirma acceso a Garoupe, vistas, balcón, playa privada y temporada de restaurantes.",
+      "Para historia art déco, restaurantes frente al mar y vida de Juan-les-Pins.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Qué hotel representa mejor la historia de Cap d’Antibes?",
+      "Hôtel du Cap-Eden-Roc, con jardines históricos, pabellón y piscina emblemática. Confirma categoría, edificio, temporada y acceso."
+    ],
+    [
+      "¿Beach Hotel y Eden-Roc son similares?",
+      "No. Beach Hotel es un hotel de playa moderno de 35 habitaciones y suites entre marinas; Eden-Roc es una finca histórica."
+    ],
+    [
+      "¿Villa Miraé es el antiguo Impérial Garoupe?",
+      "Sí. Con su nuevo nombre pertenece a Relais & Châteaux. Comprueba categorías actuales, terrazas, temporada y playa."
+    ],
+    [
+      "¿Se puede recorrer todo el sendero de Tirepoil?",
+      "No. El tramo bajo Villa Eilenroc permanece cerrado hasta el 31 de mayo de 2027 inclusive según el Ayuntamiento. Consulta los avisos vigentes."
+    ],
+    [
+      "¿Dónde está Belles Rives?",
+      "En 33 Boulevard Édouard Baudoin, Juan-les-Pins, al oeste de la península, no junto a Garoupe."
+    ],
+    [
+      "¿La playa privada y tumbonas están incluidas?",
+      "No siempre. Dependen de temporada, categoría y normas del club de playa. Las fotos no garantizan tumbonas gratuitas."
+    ],
+    [
+      "¿Cómo reservar hoteles y villas?",
+      "Compara alojamientos en Bosphoras; el proveedor confirma precios, disponibilidad y condiciones de reserva."
+    ]
+  ],
+  "photoCaptions": [
+    "Vista aérea del cabo arbolado y calas de Cap d’Antibes",
+    "Costa rocosa con pinos",
+    "Playa de Garoupe y mar azul",
+    "Sendero costero y rocas de Cap d’Antibes",
+    "Yates en Port Gallice",
+    "Veleros en Port du Crouton",
+    "Faro de Garoupe y ramas en flor",
+    "Villa Eilenroc histórica",
+    "Yates frente a Juan-les-Pins"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Fachada blanca histórica de Eden-Roc",
+      "Habitación luminosa con terraza al Mediterráneo",
+      "Piscina de Eden-Roc sobre las rocas"
+    ],
+    [
+      "Playa privada del Beach Hotel y sombrillas coral",
+      "Habitación renovada por Bernard Dubois",
+      "Vista aérea de la playa BABA"
+    ],
+    [
+      "Patio renovado de Villa Miraé",
+      "Dormitorio con salida a terraza",
+      "Piscina exterior y jardín"
+    ],
+    [
+      "Restaurante art déco luminoso de Belles Rives",
+      "Suite art déco con vistas al mar",
+      "Fachada histórica y embarcadero privado"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Cap d’Antibes: mejores hoteles de lujo",
+  "hotelSeoTitle": "Mejores hoteles de lujo en Cap d’Antibes: Eden-Roc y Belles Rives",
+  "seoDescription": "Compara Garoupe, Juan-les-Pins y la costa de Cap d’Antibes. Descubre cuatro hoteles de lujo de la Riviera, playas y habitaciones."
+}
