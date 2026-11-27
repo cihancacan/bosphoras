@@ -161,6 +161,7 @@ DIRECT['cancun/le-blanc']=[['https://www.palaceproagents.com/lbc_Room_Royale_Del
 DIRECT['london/savoy']=[['https://www.ahstatic.com/photos/a597_br_00_p_2048x1536.jpg','The Savoy London exterior entrance and canopy','https://all.accor.com/hotel/A597/index.en.shtml','Accor / The Savoy']]
 DIRECT['london/shangri-la']=[['https://www.the-shard.com/media/gm2ljfv2/shangri-la-the-shard-london-sky-sauna.jpg?quality=95&rmode=crop&rxy=0%2C0&width=457','Shangri-La London Sky Sauna','https://www.the-shard.com/news-events/events/2026/summer-above-the-clouds-at-shangri-la','The Shard / Shangri-La']]
 
+DIRECT['las-vegas/wynn']=DIRECT.get('las-vegas/wynn',[])+[['https://preview.thenewsmarket.com/Previews/WYNN/StillAssets/1920x1080/495812_v2.jpg','Wynn Las Vegas exterior and gardens with Encore tower in background','https://www.newsroom.wynnresorts.com/en/wynnresorts/wynn-las-vegas-resort-fact-sheet/s/d68e3fea-7a3a-44d1-8a15-c445ecfedc30','Wynn Resorts newsroom / Exterior – Daytime']]
 def direct_candidates(slug,key):
  return [{'url':u,'sourcePage':page,'originalAlt':alt,'originalCaption':credit,'targeted':True} for u,alt,page,credit in DIRECT.get(slug+'/'+key,[])]
 
@@ -233,7 +234,7 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
    if property_name and re.search(r'il.palazzetto|salon.?entrance|registration desk|/salon/|(?:beauty|hair).?salon',label,re.I):continue
    if property_name=='Shangri-La The Shard, London' and re.search(r'office[s]?|model|champagne|love.skypool',label,re.I):continue
    if property_name=='The Savoy' and pattern==FACILITY.pattern and re.search(r'garden.view.room|king.room|deluxe.king|/rooms/',label,re.I):continue
-   if property_name=='Wynn Las Vegas' and re.search(r'\bencore\b',label,re.I):continue
+   if property_name=='Wynn Las Vegas' and re.search(r'\bencore\b',label,re.I) and not (r.get('targeted') and '495812_v2.jpg' in r['url'] and pattern==EXTERIOR.pattern):continue
    if property_name=='Hyatt Ziva Cancun' and 'newsroom.hyatt.com' in r['sourcePage'] and not re.search(r'cancun|cancún',label,re.I):continue
    if property_name=='Hotel de Russie' and 'press.roccofortehotels.com' in r['sourcePage'] and not re.search(r'de.russie|nijinsky|stravinskij',label,re.I):continue
    if property_name and re.search(r'sant.?pau|/dining/|/restaurants?/|city.?attraction|city.?guide|/explore/|destination.?guide',label,re.I):continue
@@ -284,7 +285,7 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
 def city_job(c):
  base=ROOT/(c['slug']+'-premium')
  old=PREVIOUS.get(c['slug'],{})
- existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='las-vegas' and r['key']=='scene-5') and not (c['slug']=='cancun' and r['key']=='scene-4') and not (c['slug']=='rome' and r['key'] in ('scene-3','scene-7')) and not (c['slug']=='london' and r['key'] in ('scene-1','scene-2','scene-3')) and not (c['slug']=='las-vegas' and r['key']=='scene-6') and not (c['slug']=='barcelona' and r['key'] in ('scene-3','scene-5'))]
+ existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='las-vegas' and r['key'] in ('scene-1','scene-5')) and not (c['slug']=='cancun' and r['key']=='scene-4') and not (c['slug']=='rome' and r['key'] in ('scene-3','scene-7')) and not (c['slug']=='london' and r['key'] in ('scene-1','scene-2','scene-3')) and not (c['slug']=='las-vegas' and r['key']=='scene-6') and not (c['slug']=='barcelona' and r['key'] in ('scene-3','scene-5'))]
  if os.environ.get('TRAVEL_OTA_ONLY')=='1':return c['slug'],'city',old.get('destinationScenes',[]),[]
  if len(existing)>=9:return c['slug'],'city',existing,[]
  cand,errors=collect_pages(c['cityPages'])
@@ -296,7 +297,7 @@ def hotel_job(c,h):
  old=PREVIOUS.get(c['slug'],{})
  allprevious=[r for r in old.get('hotels',[]) if r['hotel']==name]
  # These were specifically identified by source filenames/alt as unsuitable or ambiguous.
- bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4','savoy-2','shangri-la-2','shangri-la-3'}
+ bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4','savoy-2','shangri-la-2','shangri-la-3','venetian-3'}
  rejected=[r for r in allprevious if r['key'] in bad]
  existing=[r for r in allprevious if r['key'] not in bad]
  if len(existing)>=3:return c['slug'],key,existing,[]
