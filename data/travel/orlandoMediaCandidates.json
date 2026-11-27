@@ -93,9 +93,133 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-4",
+        "sourcePage": "https://media.universalparksusa.com/photos/?park=orlando",
+        "sourceResolvedUrl": "https://media.universalparksusa.com/wp-content/uploads/2026/08/6_-Universal-Nights-at-Universal-Epic-Universe_-The-Wizarding-World-of-Harry-Potter-Ministry-of-Magic.jpg",
+        "sourceRequestedUrl": "https://media.universalparksusa.com/wp-content/uploads/2026/08/6_-Universal-Nights-at-Universal-Epic-Universe_-The-Wizarding-World-of-Harry-Potter-Ministry-of-Magic.jpg",
+        "originalAlt": "Universal Nights at Universal Epic Universe_ The Wizarding World of Harry Potter - Ministry of Magic",
+        "originalCaption": "Universal Nights at Universal Epic Universe The Wizarding World of Harry Potter - Ministry of Magic",
+        "credit": "Visit Orlando",
+        "publisher": "Visit Orlando",
+        "hotel": null,
+        "localPath": "/images/travel/orlando-premium/destination/scene-4.webp",
+        "sourceSHA256": "723891c14a77921a9188ee76dffafd3260192aa2321513ba27c365ebf99439a6",
+        "webpSHA256": "cd83f22730ca308255b049b25c45ab9025f9c127ce17acb1fe38ddd3545d5deb",
+        "sourcePixels": [
+          1920,
+          1080
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 189934,
+        "pixelFingerprint": "b6f672f0f0b0f0f0",
+        "candidateSubject": "epic universe|celestial park",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-5",
+        "sourcePage": "https://media.universalparksusa.com/photos/?park=orlando",
+        "sourceResolvedUrl": "https://media.universalparksusa.com/wp-content/uploads/2025/05/Epic-Nighttime-Celebration_The-WWoHP.jpeg",
+        "sourceRequestedUrl": "https://media.universalparksusa.com/wp-content/uploads/2025/05/Epic-Nighttime-Celebration_The-WWoHP.jpeg",
+        "originalAlt": "",
+        "originalCaption": "Epic Nighttime Celebration - The Wizarding World of Harry Potter – Ministry of Magic",
+        "credit": "Visit Orlando",
+        "publisher": "Visit Orlando",
+        "hotel": null,
+        "localPath": "/images/travel/orlando-premium/destination/scene-5.webp",
+        "sourceSHA256": "c11336b8449aca205b143240efeddcb75960d1c357bf0d6fae21261f09683372",
+        "webpSHA256": "dcdc0a8691ea382078235f0c8501f89a3dd0f570ae24f03201cf32d4709d421b",
+        "sourcePixels": [
+          1117,
+          789
+        ],
+        "webpPixels": [
+          1117,
+          789
+        ],
+        "webpBytes": 95574,
+        "pixelFingerprint": "71f3f1c004a4f4bc",
+        "candidateSubject": "celebration|kissimmee|old town",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
+      {
+        "key": "waldorf-1",
+        "sourcePage": "https://www.waldorfastoriaorlando.com/accommodations/suites/",
+        "sourceResolvedUrl": "https://www.waldorfastoriaorlando.com/wp-content/uploads/2023/12/Waldorf-Astoria-Orlando-Waldorf-Suite-Living-Room-800x450.jpg",
+        "sourceRequestedUrl": "https://www.waldorfastoriaorlando.com/wp-content/uploads/2023/12/Waldorf-Astoria-Orlando-Waldorf-Suite-Living-Room-800x450.jpg",
+        "originalAlt": "Waldorf Suite",
+        "originalCaption": "",
+        "credit": "Waldorf Astoria Orlando",
+        "publisher": "Waldorf Astoria Orlando",
+        "hotel": "Waldorf Astoria Orlando",
+        "localPath": "/images/travel/orlando-premium/waldorf/waldorf-1.webp",
+        "sourceSHA256": "a4a9098277222edde6885487f98d70ed2595862c83b0b22b1ef5caeb12839d29",
+        "webpSHA256": "0d7abceea016c9b032ef8f5dc5efa667ded573111a74d589f66eee453ca9658e",
+        "sourcePixels": [
+          800,
+          450
+        ],
+        "webpPixels": [
+          800,
+          450
+        ],
+        "webpBytes": 33564,
+        "pixelFingerprint": "c8c4501ac48c4470",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "waldorf-2",
+        "sourcePage": "https://www.waldorfastoriaorlando.com/reimagined/",
+        "sourceResolvedUrl": "https://www.waldorfastoriaorlando.com/wp-content/uploads/2023/11/Waldorf-Astoria-Orlando-Lobby-dw2023-800x450.jpg",
+        "sourceRequestedUrl": "https://www.waldorfastoriaorlando.com/wp-content/uploads/2023/11/Waldorf-Astoria-Orlando-Lobby-dw2023-800x450.jpg",
+        "originalAlt": "New Resort Lobby",
+        "originalCaption": "",
+        "credit": "Waldorf Astoria Orlando",
+        "publisher": "Waldorf Astoria Orlando",
+        "hotel": "Waldorf Astoria Orlando",
+        "localPath": "/images/travel/orlando-premium/waldorf/waldorf-2.webp",
+        "sourceSHA256": "749598f844b029510992f22f665ad62c66a51fa1fbe91e47b7794ba46a25fef7",
+        "webpSHA256": "df8052af3e16bcbb9caec34484a2fab75c03776da0dbf376b5d3a59172ae7b07",
+        "sourcePixels": [
+          800,
+          450
+        ],
+        "webpPixels": [
+          800,
+          450
+        ],
+        "webpBytes": 29296,
+        "pixelFingerprint": "82c0cac0f2e2f0f0",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
       {
         "key": "ritz-carlton-1",
         "sourcePage": "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/photos/",
@@ -151,6 +275,37 @@
         "webpBytes": 55934,
         "pixelFingerprint": "e1f3d2d391999997",
         "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "ritz-carlton-3",
+        "sourcePage": "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/rooms/",
+        "sourceResolvedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-level-lounge-2493-hor-wide.jpg?wid=932&fit=constrain",
+        "sourceRequestedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-level-lounge-2493-hor-wide.jpg?wid=932&fit=constrain",
+        "originalAlt": "Club Level Lounge",
+        "originalCaption": "",
+        "credit": "The Ritz-Carlton Orlando, Grande Lakes",
+        "publisher": "The Ritz-Carlton Orlando, Grande Lakes",
+        "hotel": "The Ritz-Carlton Orlando, Grande Lakes",
+        "localPath": "/images/travel/orlando-premium/ritz-carlton/ritz-carlton-3.webp",
+        "sourceSHA256": "1d6ac55621d1cf3c8580f3516ffb53c94edde981311045f9dd3136b172faa34a",
+        "webpSHA256": "047936d72473d1eb60a455da0a14cbd07ac74a3364373be99850c2270046d4b3",
+        "sourcePixels": [
+          4000,
+          2250
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 96874,
+        "pixelFingerprint": "c838f2e2f0b171c0",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -219,13 +374,44 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "portofino-3",
+        "sourcePage": "https://www.loewshotels.com/portofino-bay-hotel/rooms-showcase/portofino-parlor-suite-with-connecting-king-bay-view-room",
+        "sourceResolvedUrl": "https://cdn.loewshotels.com/loewshotels.com-2466770763/cms/cache/v2/606c5e14d758b.jpg/1200x460/fit/80/10b2074bcac86af96c15138d70dda57b.jpg",
+        "sourceRequestedUrl": "https://cdn.loewshotels.com/loewshotels.com-2466770763/cms/cache/v2/606c5e14d758b.jpg/1200x460/fit/80/10b2074bcac86af96c15138d70dda57b.jpg",
+        "originalAlt": "Bay View Portofino Suite - 1 King Bed",
+        "originalCaption": "",
+        "credit": "Loews Portofino Bay Hotel",
+        "publisher": "Loews Portofino Bay Hotel",
+        "hotel": "Loews Portofino Bay Hotel",
+        "localPath": "/images/travel/orlando-premium/portofino/portofino-3.webp",
+        "sourceSHA256": "4e7f4de3e40e1f3455c5deb73811555d038b2992a0030b8aaf40b397f598188a",
+        "webpSHA256": "80eab811e1cc6656f4ff261331eaddd6f64b3f6813405318abf541358ad6edc2",
+        "sourcePixels": [
+          1200,
+          460
+        ],
+        "webpPixels": [
+          1200,
+          460
+        ],
+        "webpBytes": 74072,
+        "pixelFingerprint": "66e7879e8e8dc949",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "gaps": [
       {
         "group": "city",
         "expected": 9,
-        "found": 3
+        "found": 5
       },
       {
         "group": "four-seasons",
@@ -235,20 +421,82 @@
       {
         "group": "waldorf",
         "expected": 3,
-        "found": 0
-      },
-      {
-        "group": "ritz-carlton",
-        "expected": 3,
-        "found": 2
-      },
-      {
-        "group": "portofino",
-        "expected": 3,
         "found": 2
       }
     ],
     "errors": [
+      {
+        "page": "https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/magic-kingdom/",
+        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/magic-kingdom/"
+      },
+      {
+        "page": "https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/epic-universe/",
+        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/epic-universe/"
+      },
+      {
+        "page": "https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/universal-studios-florida/",
+        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/universal-studios-florida/"
+      },
+      {
+        "page": "https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/",
+        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/"
+      },
+      {
+        "page": "https://www.visitorlando.com/blog/post/reasons-to-visit-icon-park-orlando/",
+        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/blog/post/reasons-to-visit-icon-park-orlando/"
+      },
+      {
+        "page": "https://www.visitorlando.com/blog/post/insider-guide-epic-universe/",
+        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/blog/post/insider-guide-epic-universe/"
+      },
+      {
+        "page": "https://www.visitorlando.com/plan/get-to-know-orlando/interactive-map-city-guide/",
+        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/plan/get-to-know-orlando/interactive-map-city-guide/"
+      },
+      {
+        "page": "https://www.visitorlando.com/things-to-do/beyond-theme-parks/neighborhoods/",
+        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/beyond-theme-parks/neighborhoods/"
+      },
+      {
+        "page": "https://www.visitorlando.com/things-to-do/beyond-theme-parks/neighborhoods/winter-park/",
+        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/beyond-theme-parks/neighborhoods/winter-park/"
+      },
+      {
+        "page": "https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/disney-springs/",
+        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/disney-springs/"
+      },
+      {
+        "page": "https://www.visitorlando.com/things-to-do/beyond-theme-parks/attractions/",
+        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/beyond-theme-parks/attractions/"
+      },
+      {
+        "page": "https://www.visitorlando.com/things-to-do/beyond-theme-parks/shopping/",
+        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/beyond-theme-parks/shopping/"
+      },
+      {
+        "page": "https://www.visitorlando.com/things-to-do/free-things-to-do/",
+        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/things-to-do/free-things-to-do/"
+      },
+      {
+        "page": "https://www.visitorlando.com/",
+        "error": "403 Client Error: Forbidden for url: https://www.visitorlando.com/"
+      },
+      {
+        "url": "https://media.universalparksusa.com/photos/universals-holiday-parade-featuring-macys-at-universal-studios-florida/",
+        "error": "cannot identify image file <_io.BytesIO object at 0x74598ef73f10>"
+      },
+      {
+        "url": "https://media.universalparksusa.com/epic-universe/",
+        "error": "cannot identify image file <_io.BytesIO object at 0x7459a0a5f560>"
+      },
+      {
+        "url": "https://media.universalparksusa.com/photos/epic-nighttime-celebration-the-wizarding-world-of-harry-potter-ministry-of-magic/",
+        "error": "cannot identify image file <_io.BytesIO object at 0x7459a0e37150>"
+      },
+      {
+        "page": "https://www.travelandleisure.com/four-seasons-resort-orlando-at-disney-world-review-8702769",
+        "error": "403 Client Error: Forbidden for url: https://www.travelandleisure.com/four-seasons-resort-orlando-at-disney-world-review-8702769"
+      },
       {
         "page": "https://www.fourseasons.com/orlando/photos-and-videos/",
         "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/orlando/photos-and-videos/"
@@ -256,6 +504,30 @@
       {
         "page": "https://www.fourseasons.com/orlando/",
         "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/orlando/"
+      },
+      {
+        "url": "https://press.fourseasons.com/news-releases/2026/florida-residents-offer",
+        "error": "cannot identify image file <_io.BytesIO object at 0x7459a0d98540>"
+      },
+      {
+        "url": "https://press.fourseasons.com/orlando/hotel-news/2026/festive-season-spa-experiences",
+        "error": "cannot identify image file <_io.BytesIO object at 0x7459a0d98d60>"
+      },
+      {
+        "url": "https://press.fourseasons.com/orlando/hotel-news/2026/festive-season",
+        "error": "cannot identify image file <_io.BytesIO object at 0x7459aa4337e0>"
+      },
+      {
+        "url": "https://press.fourseasons.com/orlando/hotel-news/2026/summer-programming",
+        "error": "cannot identify image file <_io.BytesIO object at 0x7459a02eb3d0>"
+      },
+      {
+        "url": "https://press.fourseasons.com/orlando/hotel-news/2026/mothers-day",
+        "error": "cannot identify image file <_io.BytesIO object at 0x74598f3dd940>"
+      },
+      {
+        "url": "https://press.fourseasons.com/orlando/hotel-news/2026/spring-programming",
+        "error": "cannot identify image file <_io.BytesIO object at 0x74598f3dd990>"
       },
       {
         "page": "https://www.expedia.com/Orlando-Hotels-Four-Seasons-Resort-Orlando-At-WALT-DISNEY-WORLD-Resort.h7374428.Hotel-Information",
@@ -270,27 +542,19 @@
         "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Orlando-Hotels-Waldorf-Astoria-Orlando.h2432727.Hotel-Information"
       },
       {
-        "page": "https://www.expedia.com/Orlando-Hotels-The-Ritz-Carlton-Orlando.h914146.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Orlando-Hotels-The-Ritz-Carlton-Orlando.h914146.Hotel-Information"
-      },
-      {
         "url": "https://www.loewshotels.com/portofino-bay-hotel/rooms-showcase",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72d1c020a340>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x7459a0e20630>"
       },
       {
-        "url": "https://www.loewshotels.com/special-offers/a-suite-deal",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72d1b8bd8040>"
-      },
-      {
-        "page": "https://www.expedia.com/Orlando-Hotels-Universals-Loews-Portofino-Bay-Hotel.h201033.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Orlando-Hotels-Universals-Loews-Portofino-Bay-Hotel.h201033.Hotel-Information"
+        "url": "https://www.loewshotels.com/portofino-bay-hotel/compare-rooms",
+        "error": "cannot identify image file <_io.BytesIO object at 0x7459a0c0a480>"
       }
     ],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
     "excludedCandidates": [],
-    "cityCount": 3,
-    "hotelCount": 4,
-    "totalBytes": 761652
+    "cityCount": 5,
+    "hotelCount": 8,
+    "totalBytes": 1280966
   }
 }
