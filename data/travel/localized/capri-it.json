@@ -1,0 +1,161 @@
+{
+  "name": "Capri",
+  "country": "Italia",
+  "eyebrow": "Faraglioni e dolce vita",
+  "heading": "Dove alloggiare a Capri: Piazzetta, Faraglioni e Anacapri",
+  "intro": "Capri non è soltanto il profilo dei Faraglioni nel mare azzurro. Piazzetta e Via Camerelle animano le serate, Marina Grande accoglie i traghetti, Tragara domina la costa e Anacapri conserva un ritmo più tranquillo. Quattro hotel aiutano a scegliere la zona.",
+  "editorial": "Prima di scegliere l'hotel, considera dove trascorrerai le serate e come raggiungerai il mare. Hotel La Palma è vicino alla Piazzetta, mentre il suo beach club si trova a Marina Piccola. J.K. Place domina Marina Grande e il golfo di Napoli. Punta Tragara è lungo la passeggiata verso i Faraglioni; la terrazza panoramica non equivale all'accesso alla spiaggia. Jumeirah Capri Palace si trova ad Anacapri, vicino a Villa San Michele e Monte Solaro.\n\nTraghetti e aliscafi da Napoli e Sorrento seguono orari e condizioni del mare. La Grotta Azzurra è accessibile con piccole barche a remi autorizzate e può chiudere con il mare mosso. Considera vie pedonali, pendenze, scale, bagagli e bambini. Molti ristoranti e stabilimenti balneari sono stagionali. Prezzi e disponibilità sono confermati dal fornitore autorizzato.",
+  "hotelIntro": "Quattro indirizzi distinti: Capri centro, Marina Grande, Tragara e Anacapri.",
+  "areas": [
+    [
+      "Marina Grande · Porto settentrionale",
+      "Porto principale con traghetti, spiagge e funicolare per il centro. J.K. Place domina la baia, non è in Piazzetta.",
+      "Conferma la corsa di ritorno e l'assistenza bagagli."
+    ],
+    [
+      "Piazzetta e Via Camerelle",
+      "Caffè, boutique e passeggiate serali nelle vie pedonali. Qui si trova Hotel La Palma.",
+      "Non tutte le vie centrali consentono di arrivare in auto all'hotel."
+    ],
+    [
+      "Via Tragara e Faraglioni",
+      "La passeggiata tra i giardini conduce al belvedere. Punta Tragara è in alto sul mare.",
+      "Il panorama della terrazza comune non garantisce la stessa vista da ogni camera."
+    ],
+    [
+      "Marina Piccola · Baia meridionale",
+      "Piccole spiagge, calette e stabilimenti stagionali. Qui si trova il beach club di Hotel La Palma.",
+      "Lettini e ristoranti hanno condizioni di accesso separate."
+    ],
+    [
+      "Anacapri e Monte Solaro",
+      "Borgo in quota dal ritmo tranquillo con Villa San Michele, Monte Solaro e Jumeirah Capri Palace.",
+      "Verifica trasporti, meteo e idoneità della seggiovia monoposto per i bambini."
+    ]
+  ],
+  "experiences": [
+    [
+      "Faraglioni dal mare",
+      "Le gite da Marina Grande mostrano rocce e grotte con condizioni favorevoli. Conferma operatore e partenza."
+    ],
+    [
+      "Grotta Azzurra con mare calmo",
+      "L'ingresso su piccole barche autorizzate dipende da vento e onde. Una sosta della barca turistica non garantisce l'ingresso."
+    ],
+    [
+      "Giardini di Augusto e Tragara",
+      "I belvedere si affacciano su Marina Piccola e Faraglioni. Verifica orari e restrizioni, soprattutto per Via Krupp."
+    ],
+    [
+      "Pomeriggio ad Anacapri",
+      "Visita Villa San Michele e Monte Solaro. La seggiovia monoposto non è adatta a tutti i bambini: prevedi alternative."
+    ],
+    [
+      "Capri dopo la partenza degli escursionisti",
+      "Torna in Piazzetta e nei vicoli del centro; verifica stagione dei ristoranti e trasporto di ritorno."
+    ]
+  ],
+  "checks": [
+    "Controlla condizioni del mare e orari aggiornati dei collegamenti.",
+    "Distingui Capri centro, Marina Grande e Anacapri.",
+    "Conferma la vista della camera specifica, non solo il panorama della terrazza comune.",
+    "Prenota separatamente stabilimenti, ristoranti e servizi extra.",
+    "Considera scale, vie pedonali, bagagli ed esigenze dei bambini."
+  ],
+  "hotels": [
+    [
+      "Capri centro · Vicino alla Piazzetta",
+      "Hotel La Palma è adatto a shopping e passeggiate serali, non a una vacanza isolata sul mare. Lo storico hotel ripensato da Francis Sultana offre camere raffinate, suite, piscina e ristoranti. Mare by Casa Tua è il beach club separato a Marina Piccola: verifica stagione, trasferimenti, lettini e accesso. Viste e planimetrie cambiano secondo la categoria.",
+      "Conferma categoria, stagione, assistenza bagagli e accesso separato al beach club.",
+      "Per vivere il centro di Capri.",
+      ""
+    ],
+    [
+      "Marina Grande · Costa settentrionale",
+      "J.K. Place domina il porto settentrionale e si affaccia sul golfo di Napoli. Salotti raccolti, terrazze e camere ricordano una residenza privata lontana dalle vie commerciali. L'hotel offre una navetta, con orari e condizioni da confermare. Vista e privacy variano.",
+      "Verifica navetta, trasferimento dal porto, bagagli e vista.",
+      "Per un soggiorno raccolto sul golfo di Napoli.",
+      ""
+    ],
+    [
+      "Via Tragara 57 · Panorama sui Faraglioni",
+      "Punta Tragara si trova lungo la passeggiata panoramica tra giardini e rocce. La sua storia architettonica è legata a Le Corbusier. Piscine e terrazze dominano il mare; la discesa alle calette è un percorso separato. Organizza il trasporto bagagli nei tratti pedonali. Non tutte le suite hanno la stessa vista sui Faraglioni.",
+      "Conferma bagagli, gradini, accesso al mare, piano e vista della suite.",
+      "Per panorami, architettura e tranquillità.",
+      ""
+    ],
+    [
+      "Anacapri · Via Capodimonte 14",
+      "Jumeirah Capri Palace è nella parte alta dell'isola, non in Piazzetta. Arte contemporanea, gastronomia e trattamenti benessere caratterizzano l'hotel. Porto, boutique e spiagge richiedono trasporto. I locali sul mare, tra cui Il Riccio, sono fuori dall'edificio principale e hanno regole proprie.",
+      "Verifica trasferimenti, stagione, condizioni dei locali sul mare e categoria esatta.",
+      "Per la quiete di Anacapri, arte e spa.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Dove soggiornare per passeggiare nel centro di Capri?",
+      "Hotel La Palma è vicino alla Piazzetta. Punta Tragara è sulla passeggiata, J.K. Place sopra Marina Grande e Capri Palace ad Anacapri. Verifica percorsi e bagagli."
+    ],
+    [
+      "Tutte le camere di Punta Tragara vedono i Faraglioni?",
+      "Non è garantito. La terrazza comune non conferma la vista di ogni camera; verifica piano e categoria."
+    ],
+    [
+      "Hotel La Palma è direttamente sulla spiaggia?",
+      "No, è in centro. Il beach club Mare by Casa Tua è a Marina Piccola con condizioni di accesso separate."
+    ],
+    [
+      "Come arrivare da Marina Grande ad Anacapri?",
+      "Autobus e taxi collegano le zone, talvolta passando per Capri centro. Considera stagione, code e bagagli."
+    ],
+    [
+      "Si può entrare nella Grotta Azzurra con qualsiasi meteo?",
+      "No. Vento e onde possono chiudere l'ingresso. Barche autorizzate e biglietto sono separati."
+    ],
+    [
+      "Che differenza c'è tra Capri e Anacapri?",
+      "Capri centro è più vivace; Anacapri è in quota e più tranquilla, vicino a Villa San Michele e Monte Solaro."
+    ],
+    [
+      "Come prenotare un hotel o una barca privata?",
+      "Confronta le offerte su Bosphoras; prezzi, disponibilità e condizioni sono confermati dal fornitore autorizzato."
+    ]
+  ],
+  "photoCaptions": [
+    "Faraglioni nel mare azzurro",
+    "Marina Grande dall'alto",
+    "Piazzetta e facciate soleggiate",
+    "Faraglioni dal belvedere di Tragara",
+    "Calette turchesi di Marina Piccola",
+    "Chiesa e piazza di Anacapri",
+    "Panorama dal Monte Solaro",
+    "Giardini di Augusto da Punta Cannone",
+    "Faro rosso e bianco di Punta Carena"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Facciata bianca di Hotel La Palma",
+      "Suite luminosa nei toni salvia",
+      "Piscina e arcate di La Palma"
+    ],
+    [
+      "Salotto bianco e blu di J.K. Place",
+      "Salotto vista golfo di Napoli",
+      "Ingresso bianco sopra Marina Grande"
+    ],
+    [
+      "Terrazza di Punta Tragara e Faraglioni",
+      "Suite con arco e vista sugli scogli",
+      "Piscina sopra la costa"
+    ],
+    [
+      "Piscina di Capri Palace con ombrelloni gialli",
+      "Ristorante sul mare vista golfo",
+      "Salotto bianco con archi"
+    ]
+  ],
+  "seoTitle": "Dove dormire a Capri: migliori zone e hotel di lusso",
+  "hotelSeoTitle": "Migliori hotel di Capri: La Palma, J.K. Place e Capri Palace",
+  "seoDescription": "Confronta Capri centro, Marina Grande, Faraglioni e Anacapri. Scopri quattro hotel di lusso, spiagge e collegamenti in traghetto."
+}
