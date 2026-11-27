@@ -1,5 +1,7 @@
+import { destinationBySlug } from '@/data/travel/destinations';
 import { DestinationFlightLink } from './DestinationFlightLink';
 import { HotelComparisonTable } from './HotelComparisonTable';
+import { AreaComparisonTable } from './AreaComparisonTable';
 import {jaipurDraftFaq} from '@/data/travel/jaipurDraftFaq';
 import {galleDraftFaq} from '@/data/travel/galleDraftFaq';
 import {tangalleDraftFaq} from '@/data/travel/tangalleDraftFaq';
@@ -414,10 +416,11 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
   const hubHref=travelHref(locale,'destinations/'+city.slug);
   const hotelsHref=travelHref(locale,'hotels/'+city.slug);
   const allOtherDestinations = Object.values(featuredCityGuides).filter(other => other.slug !== city.slug);
+  const currentRegion=destinationBySlug.get(city.slug)?.region;
   const sameCountry = allOtherDestinations.filter(other => other.country === city.country).slice(0, 6);
   const selectedDestinations = [
     ...sameCountry,
-    ...allOtherDestinations.filter(other => other.country !== city.country).slice(0, 6 - sameCountry.length),
+    ...allOtherDestinations.filter(other => other.country !== city.country && destinationBySlug.get(other.slug)?.region===currentRegion).slice(0,6-sameCountry.length),
   ];
   const featuredSlugs = new Set(selectedDestinations.map(other => other.slug));
   const additionalDestinations = allOtherDestinations.filter(other => !featuredSlugs.has(other.slug));
@@ -535,6 +538,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         ?city.slug==='porto-cervo'?'Une côte mythique, cinq façons de séjourner.':city.slug==='saint-barthelemy'?'Une île, cinq atmosphères à découvrir.':city.slug==='los-cabos'?'Entre désert et océan, cinq paysages à choisir.':city.slug==='maldives'?'Un archipel, plusieurs façons de vivre le luxe.':'Une ville, plusieurs façons de séjourner.'
         :city.slug==='porto-cervo'?'One legendary coast, five ways to stay.':city.slug==='saint-barthelemy'?'One island, five distinct atmospheres.':city.slug==='los-cabos'?'Five distinctive landscapes between desert and sea.':city.slug==='maldives'?'An archipelago, many ways to experience luxury.':'One destination, very different places to stay.'}</h2>
       <div className="mt-5"><DestinationFlightLink locale={locale} slug={city.slug} name={city.name} mode="find"/></div>
+      <AreaComparisonTable locale={locale} rows={city.areas.map(area=>({name:fr?area.name:area.enName,tip:fr?area.frWatch:area.enWatch}))}/>
       <div className="mt-8 grid gap-4 md:grid-cols-3">
         {city.areas.map((area,i)=><article key={area.name} className="flex flex-col border border-[#e1e5e5] bg-white p-7">
           
@@ -1211,11 +1215,14 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       </div>
       <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {selectedDestinations.map(other =>
-          <Link key={other.slug} href={travelHref(locale,'destinations/'+other.slug)}
-            className="border border-[#e1e5e5] bg-[#f5f5f3] p-6 transition-colors hover:border-[#193344]">
+          <article key={other.slug} className="border border-[#e1e5e5] bg-[#f5f5f3] p-6">
             <span className="block text-xs text-[#53616b]">{other.country}</span>
-            <span className="mt-2 block font-sans text-xl font-normal text-[#202629]">{other.name}</span>
-          </Link>)}
+            <h3 className="mt-2 font-sans text-xl font-normal text-[#202629]">{other.name}</h3>
+            <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm text-[#193344]">
+              <Link href={travelHref(locale,'destinations/'+other.slug)} aria-label={(fr?'Guide de voyage':'Travel guide')+' · '+other.name} className="underline underline-offset-4">{fr?'Guide de voyage':'Travel guide'}</Link>
+              <Link href={travelHref(locale,'hotels/'+other.slug)} aria-label={(fr?'Sélection d’hôtels':'Hotel guide')+' · '+other.name} className="underline underline-offset-4">{fr?'Sélection d’hôtels':'Hotel guide'}</Link>
+            </div>
+          </article>)}
       </div>
       {additionalDestinations.length > 0 && (
         <details className="mt-8 border-t border-[#e1e5e5]">
@@ -1243,9 +1250,9 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           </li>)}
         </ul>
       </details>}
-      <Link href={travelHref(locale,'hotels/istanbul')}
+      <Link href={hotelPage?hubHref:hotelsHref}
         className="mt-7 inline-block text-sm text-[#193344] underline underline-offset-4">
-        {fr?'Découvrir les hôtels du Bosphore':'Explore Bosphorus hotels'}
+        {hotelPage?(fr?'Découvrir le guide de la destination':'Explore the destination guide'):(fr?'Découvrir la sélection d’hôtels':'Explore the hotel guide')} · {city.name}
       </Link>
     </section>
   </main>;

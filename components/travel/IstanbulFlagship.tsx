@@ -1,6 +1,8 @@
 import { collectionBookingEnabled } from '@/lib/travel/collectionPresentation';
 import { DestinationFlightLink } from './DestinationFlightLink';
 import { HotelComparisonTable } from './HotelComparisonTable';
+import { AreaComparisonTable } from './AreaComparisonTable';
+import { RelatedTravelGuides } from './RelatedTravelGuides';
 import Link from 'next/link';
 import Image from 'next/image';
 import { EditorialProse } from '@/components/travel/EditorialProse';
@@ -63,6 +65,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
 
           {collectionBookingEnabled&&<div className="mt-4"><DestinationFlightLink locale={locale} slug="istanbul" name="Istanbul" mode="find"/></div>}
         </div>
+        <div className="mb-8"><AreaComparisonTable locale={locale} rows={istanbulDistricts.map(d=>({name:d.name,tip:fr?d.frTip:d.enTip}))}/></div>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
           {istanbulDistricts.map((d)=><article key={d.id} className="bg-[#ffffff] p-7 border border-[#e1e5e5] flex flex-col gap-5">
             <figure>
@@ -214,5 +217,6 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
       <time dateTime={istanbulEditorialSourceDate}>{fr ? '12 octobre 2026' : '12 October 2026'}</time>.
       {' '}{fr ? 'Aucune visite personnelle ni exclusivité hôtelière n’est revendiquée. Disponibilités et conditions sont à confirmer dans le moteur de réservation Nuitée.' : 'No personal inspection or hotel exclusivity is claimed. Availability and conditions must be confirmed in the Nuitée booking engine.'}
     </p>
-  </main>;
+  <RelatedTravelGuides locale={locale} slug="istanbul"/>
+    </main>;
 }
