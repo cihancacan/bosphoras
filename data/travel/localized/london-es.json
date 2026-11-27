@@ -1,0 +1,136 @@
+{
+  "name": "Londres",
+  "country": "Reino Unido",
+  "eyebrow": "Reino Unido · El Támesis y hoteles emblemáticos",
+  "heading": "Londres: elige tu barrio y descubre la ciudad a tu ritmo.",
+  "intro": "Desde las plazas de Mayfair hasta los teatros del West End, los museos de Kensington y las vistas al Támesis, Londres ofrece estancias muy diferentes. Elige tu hotel según tu itinerario, transporte y ambiente preferido.",
+  "editorial": "Para una primera visita, Covent Garden y Westminster reducen los desplazamientos a los principales monumentos y teatros. Mayfair y St James’s son ideales para las compras, la gastronomía y la hotelería clásica. South Kensington resulta práctico para las familias por sus museos y zonas verdes. London Bridge ofrece otra perspectiva de la ciudad, con Borough Market y paseos junto al Támesis.\n\nTres o cuatro noches permiten explorar Westminster, el West End, los museos de Kensington y la ribera sin prisas. Para una estancia más larga, añade Greenwich o Hampstead. Londres es extensa: un hotel céntrico no está cerca de todos los lugares de interés y las conexiones de transporte son tan importantes como la distancia en el mapa.\n\nDesde Heathrow, compara Elizabeth line, Piccadilly line, Heathrow Express y traslados privados según la terminal y el hotel. Utiliza el mismo método de pago sin contacto en todos los trayectos de TfL para que se apliquen correctamente los límites tarifarios correspondientes. Los requisitos de entrada al Reino Unido dependen del pasaporte y de la situación del viajero; consulta las normas oficiales antes de viajar.\n\nCompara precios para las mismas fechas, número de huéspedes, categoría de habitación y condiciones de cancelación. El desayuno, las camas adicionales y los servicios de spa no siempre están incluidos.",
+  "hotelIntro": "Cuatro perspectivas de Londres: la elegancia histórica de Claridge’s, The Savoy entre los teatros y el Támesis, The Peninsula junto a Hyde Park Corner y Shangri-La por encima de la ciudad.",
+  "areas": [
+    [
+      "Mayfair y St James’s",
+      "Hoteles históricos, galerías, Bond Street y Green Park.",
+      "Las habitaciones que dan a la calle pueden ser menos tranquilas."
+    ],
+    [
+      "Covent Garden y Strand",
+      "Teatros, mercados, restaurantes y acceso al río.",
+      "Ten en cuenta el ruido nocturno y los recorridos a pie."
+    ],
+    [
+      "Westminster y Victoria",
+      "Parlamento, abadía, Buckingham Palace y conexiones ferroviarias.",
+      "Reserva las visitas más populares con antelación."
+    ],
+    [
+      "South Kensington y Knightsbridge",
+      "Museos, Hyde Park, boutiques y calles residenciales.",
+      "Comprueba la distancia real a pie hasta el metro si viajas con niños."
+    ],
+    [
+      "South Bank y London Bridge",
+      "Paseos junto al Támesis, Tate Modern y Borough Market.",
+      "Elige la ribera y los puentes más convenientes para tus visitas."
+    ],
+    [
+      "Soho y Marylebone",
+      "Soho destaca por su vida nocturna; Marylebone, por sus calles comerciales de ambiente local.",
+      "Elige la calle según la tranquilidad que busques."
+    ]
+  ],
+  "experiences": [
+    [
+      "Westminster a pie",
+      "Recorre St James’s Park, la abadía y el río a tu ritmo."
+    ],
+    [
+      "Una noche de teatro",
+      "Combina cena y espectáculo en el mismo barrio del West End."
+    ],
+    [
+      "Museos y parques en familia",
+      "Combina el Natural History Museum o el V&A con un paseo por Kensington Gardens."
+    ],
+    [
+      "El Támesis desde otra perspectiva",
+      "Explora paseos ribereños, puentes y mercados alrededor de London Bridge."
+    ]
+  ],
+  "checks": [
+    "Compara categoría, camas y precio total.",
+    "Elige el barrio según tus visitas prioritarias.",
+    "Organiza la llegada desde el aeropuerto y terminal correctos.",
+    "Consulta los requisitos de entrada según tu pasaporte.",
+    "Reserva las atracciones con horario y los espectáculos deseados."
+  ],
+  "hotels": [
+    [
+      "Mayfair · Brook Street",
+      "Hotel histórico con habitaciones art déco, suites de distintos estilos, restaurantes y spa.",
+      "Compara categorías, vistas y camas adicionales.",
+      "Para disfrutar de la elegancia clásica londinense.",
+      "Claridge’s combina hospitalidad histórica de Mayfair, habitaciones art déco, suites variadas, gastronomía y spa. Es ideal para quienes buscan boutiques cercanas y elegancia clásica más que vistas al Támesis. Compara categorías, vistas y camas adicionales."
+    ],
+    [
+      "Strand · Covent Garden",
+      "Interiores históricos, American Bar y té de la tarde entre Strand y el Támesis.",
+      "Confirma las vistas al río de la habitación concreta.",
+      "Para noches de teatro y celebraciones.",
+      "The Savoy se encuentra entre Strand y el Támesis. Sus interiores históricos, el American Bar y el té de la tarde lo convierten en una dirección adecuada para noches de teatro y celebraciones. Confirma las vistas al río de la habitación concreta."
+    ],
+    [
+      "Hyde Park Corner · Belgravia",
+      "Habitaciones diseñadas por Peter Marino con estética residencial contemporánea, cerca de Hyde Park, Belgravia y Knightsbridge.",
+      "Compara vistas a Wellington Arch, Hyde Park Corner o Belgravia y configuraciones familiares.",
+      "Para el lujo contemporáneo junto a Hyde Park.",
+      "Las habitaciones diseñadas por Peter Marino ofrecen una atmósfera residencial contemporánea. Hyde Park, Belgravia y Knightsbridge quedan a mano. Compara la orientación, las vistas y las configuraciones familiares."
+    ],
+    [
+      "London Bridge · The Shard",
+      "Habitaciones en altura con grandes ventanales, cerca de Borough Market y la ribera sur.",
+      "Compara orientación, categoría y habitaciones comunicadas; no presupongas vistas a un monumento específico.",
+      "Para disfrutar de panorámicas urbanas.",
+      "Las habitaciones en altura con ventanales del suelo al techo ofrecen una experiencia distinta de los hoteles históricos. Borough Market y los paseos de la ribera sur están cerca. Comprueba orientación, categoría y opciones de habitaciones comunicadas."
+    ]
+  ],
+  "faq": [
+    [
+      "¿Dónde alojarse en Londres por primera vez?",
+      "Covent Garden, Westminster y South Bank son prácticos para muchas visitas. Mayfair es una buena opción para una estancia de lujo."
+    ],
+    [
+      "¿Qué barrio conviene a las familias?",
+      "South Kensington por sus museos y jardines, South Bank por las atracciones junto al río."
+    ],
+    [
+      "¿Cuántas noches reservar?",
+      "Tres o cuatro noches son una buena base; cinco o más permiten explorar otros barrios."
+    ],
+    [
+      "¿Cómo llegar desde Heathrow?",
+      "Elizabeth line, Piccadilly line, Heathrow Express o traslado por carretera, según el destino."
+    ],
+    [
+      "¿Qué hoteles tienen vistas al Támesis?",
+      "The Savoy y Shangri-La ofrecen algunas categorías con vistas al río; confirma la habitación concreta."
+    ],
+    [
+      "¿Es necesario un coche en Londres?",
+      "Para visitar el centro, el transporte público y caminar suelen ser más prácticos."
+    ],
+    [
+      "¿Cómo comparar hoteles?",
+      "Compara en Bosphoras el precio total para las mismas fechas, huéspedes, categorías y condiciones de cancelación."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Dónde alojarse en Londres: mejores barrios y hoteles de lujo",
+  "hotelSeoTitle": "Hoteles de lujo en Londres: Claridge’s, Savoy, Peninsula y Shangri-La",
+  "seoDescription": "Compara barrios y hoteles de lujo de Londres: Mayfair, Covent Garden, Kensington, vistas al Támesis y transporte desde Heathrow."
+}
