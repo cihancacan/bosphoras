@@ -152,6 +152,8 @@ DIRECT = {
     ]
   ]
 }
+DIRECT['london/city'].insert(0,['https://www.londonandpartners.com/-/media/images/london/visit/things-to-do/london-areas/river-thames/panorama-london-skyline-b-1920x582.jpg?hash=5A94C794E75E3F410D7360AC4BB956CF&mw=1920&rev=90d7c2e3ee1e4018859464d28c8a8e20','London skyline and Thames panorama','https://www.visitlondon.com/things-to-do','London & Partners'])
+DIRECT['cancun/le-blanc']=[['https://www.palaceproagents.com/lbc_Room_Royale_Deluxe_Partial_Ocean_View_bg_3600x1800_7207f3f7a0.jpg','Le Blanc Cancun Royale Deluxe partial ocean view room','https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun','Palace PRO Agents']]
 def direct_candidates(slug,key):
  return [{'url':u,'sourcePage':page,'originalAlt':alt,'originalCaption':credit,'targeted':True} for u,alt,page,credit in DIRECT.get(slug+'/'+key,[])]
 def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing=(),avoid=()):
@@ -164,9 +166,9 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
  for pattern in patterns:
   ranked=[]
   for r in candidates:
-   label=unquote(r['url']+' '+r['originalAlt']+' '+r['originalCaption'])
+   label=unquote(r['url']+' '+r['originalAlt']+' '+r['originalCaption']).replace('_',' ')
    if OTHER.search(label) or not re.search(pattern,label,re.I):continue
-   if not property_name and re.search(r'left:|right:|centre:|girls sitting|three women|selfie|group of friends|tourist[s]? (?:in|at|admiring|taking)|people (?:walking|buying|standing)|friends buying|person (?:in|standing|riding)|portrait',r['originalAlt'],re.I):continue
+   if not property_name and re.search(r'left:|right:|centre:|girls sitting|three women|two women|spider.?man|hiking the|selfie|group of friends|tourist[s]? (?:in|at|admiring|taking)|people (?:walking|buying|standing)|friends buying|person (?:in|standing|riding)|portrait',r['originalAlt'],re.I):continue
    if property_name and re.search(r'il.palazzetto|salon.?entrance|registration desk|/salon/|(?:beauty|hair).?salon',label,re.I):continue
    if property_name=='Wynn Las Vegas' and re.search(r'\bencore\b',label,re.I):continue
    if property_name=='Hyatt Ziva Cancun' and 'newsroom.hyatt.com' in r['sourcePage'] and not re.search(r'cancun|cancún',label,re.I):continue
@@ -188,7 +190,7 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
     with Image.open(io.BytesIO(raw)) as original:
      im=ImageOps.exif_transpose(original).convert('RGB')
     w,h=im.size
-    if w<800 or h<450 or not 1.05<=w/h<=3.2:continue
+    if w<800 or h<450 or not 1.05<=w/h<=3.4:continue
     sample=im.resize((9,8),Image.Resampling.LANCZOS).convert('L')
     pix=list(sample.getdata()); dh=sum((1<<i)*int(pix[(i//8)*9+i%8]>pix[(i//8)*9+i%8+1]) for i in range(64))
     if any((dh^old).bit_count()<11 for old in fingerprints):continue
@@ -219,25 +221,25 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
 def city_job(c):
  base=ROOT/(c['slug']+'-premium')
  old=PREVIOUS.get(c['slug'],{})
- existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='las-vegas' and r['key']=='scene-5') and not (c['slug']=='cancun' and r['key']=='scene-4') and not (c['slug']=='rome' and r['key'] in ('scene-3','scene-7')) and not (c['slug']=='london' and r['key'] in ('scene-1','scene-2')) and not (c['slug']=='barcelona' and r['key'] in ('scene-3','scene-5'))]
+ existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='las-vegas' and r['key']=='scene-5') and not (c['slug']=='cancun' and r['key']=='scene-4') and not (c['slug']=='rome' and r['key'] in ('scene-3','scene-7')) and not (c['slug']=='london' and r['key'] in ('scene-1','scene-2','scene-3')) and not (c['slug']=='las-vegas' and r['key']=='scene-6') and not (c['slug']=='barcelona' and r['key'] in ('scene-3','scene-5'))]
  if len(existing)>=9:return c['slug'],'city',existing,[]
  cand,errors=collect_pages(c['cityPages'])
  cand=direct_candidates(c['slug'],'city')+cand
- result,failed=pick(cand,c['subjects'],base/'destination','scene',c['publisher'],existing=existing,avoid=[r for r in old.get('destinationScenes',[]) if r not in existing])
+ result,failed=pick(cand,c['subjects'],base/'destination','scene',c['publisher'],existing=existing,avoid=[r for r in old.get('destinationScenes',[]) if r not in existing]+[r for r in old.get('excludedCandidates',[]) if r.get('hotel') is None])
  return c['slug'],'city',result,errors+failed
 def hotel_job(c,h):
  key,name,pages=h
  old=PREVIOUS.get(c['slug'],{})
  allprevious=[r for r in old.get('hotels',[]) if r['hotel']==name]
  # These were specifically identified by source filenames/alt as unsuitable or ambiguous.
- bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3'}
+ bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4'}
  rejected=[r for r in allprevious if r['key'] in bad]
  existing=[r for r in allprevious if r['key'] not in bad]
  if len(existing)>=3:return c['slug'],key,existing,[]
  cand,errors=collect_pages(pages)
  cand=direct_candidates(c['slug'],key)+cand
  patterns=[EXTERIOR.pattern,ROOM.pattern,FACILITY.pattern]
- result,failed=pick(cand,patterns,ROOT/(c['slug']+'-premium')/key,key,name,name,existing=existing,avoid=rejected)
+ result,failed=pick(cand,patterns,ROOT/(c['slug']+'-premium')/key,key,name,name,existing=existing,avoid=rejected+[r for r in old.get('excludedCandidates',[]) if r.get('hotel')==name])
  return c['slug'],key,result,errors+failed
 def contact_sheet(slug,rows):
  if not rows:return

@@ -4,10 +4,12 @@
     "city": "Londres",
     "publisher": "Visit London / London & Partners",
     "cityPages": [
-      "https://www.towerbridge.org.uk/filming-and-photography",
+      "https://www.visitlondon.com/things-to-do",
+      "https://www.visitlondon.com/things-to-do/sightseeing/best-views-in-london",
+      "https://www.visitbritain.com/en/things-to-do/visit-bridget-jones-filming-locations",
+      "https://www.visitbritain.com/en/things-to-do/visit-mary-poppins-returns-filming-locations",
       "https://www.towerbridge.org.uk/",
       "https://www.visitbritain.org/destinations/london",
-      "https://www.visitbritain.com/en/discover-real-stars-show",
       "https://www.visitbritain.com/en/itineraries/london-film-and-tv-itinerary",
       "https://www.visitbritain.com/en/itineraries/5-days-and-around-london",
       "https://www.visitbritain.com/en/things-to-do/free-things-do-london",
@@ -45,6 +47,7 @@
         "savoy",
         "The Savoy",
         [
+          "https://www.thesavoylondon.com/wellness",
           "https://www.thesavoylondon.com/image-library",
           "https://press.thesavoylondon.com/new-rooms-and-suites-the-savoy/?lang=en",
           "https://press.thesavoylondon.com/section/filters/rooms-suites/?lang=en",
@@ -58,6 +61,7 @@
         "peninsula",
         "The Peninsula London",
         [
+          "https://www.peninsula.com/en/london/wellness/luxury-hotel-spa",
           "https://www.peninsula.com/en/london/5-star-luxury-hotel-belgravia",
           "https://www.peninsula.com/en/london/luxury-hotel-room-suite-types"
         ]
@@ -133,6 +137,7 @@
         "fontainebleau",
         "Fontainebleau Las Vegas",
         [
+          "https://www.fontainebleaulasvegas.com/about/",
           "https://www.fontainebleaulasvegas.com/rooms-and-suites/all-accommodations/",
           "https://www.fontainebleaulasvegas.com/"
         ]
@@ -270,6 +275,7 @@
         "arts",
         "Hotel Arts Barcelona",
         [
+          "https://www.marriott.com/en-us/hotels/bcnrz-hotel-arts-barcelona/photos/",
           "https://www.marriott.com/es/hotels/bcnrz-hotel-arts-barcelona/photos/",
           "https://www.ritzcarlton.com/en/hotels/bcnrz-hotel-arts-barcelona/overview/",
           "https://www.hotelartsbarcelona.com/"
@@ -279,6 +285,7 @@
         "majestic",
         "Majestic Hotel & Spa Barcelona",
         [
+          "https://majestichotelgroup.com/en/barcelona/hotel-majestic/gallery",
           "https://majestichotelgroup.com/en/barcelona/hotel-majestic"
         ]
       ],
@@ -325,6 +332,8 @@
         "le-blanc",
         "Le Blanc Spa Resort Cancun",
         [
+          "https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun",
+          "https://www.palaceproagents.com/es/destinos-resorts/le-blanc-spa-resort-cancun",
           "https://cancun.leblancsparesorts.com/es/galeria",
           "https://cancun.leblancsparesorts.com/gallery",
           "https://www.leblancsparesorts.com/gallery",
@@ -335,6 +344,8 @@
         "hyatt-ziva",
         "Hyatt Ziva Cancun",
         [
+          "https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/photos-reviews",
+          "https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/rooms",
           "https://newsroom.hyatt.com/media-gallery?cat=2774",
           "https://www.resortsbyhyatt.com/ziva/ziva-cancun/gallery",
           "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/gallery",

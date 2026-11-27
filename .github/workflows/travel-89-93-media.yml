@@ -20,10 +20,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=11,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=11,<12' 'beautifulsoup4>=4.12,<5' 'PyMuPDF>=1.24,<2'
       - run: python -m py_compile scripts/collect-travel-89-93-media.py
       - name: Download official publisher candidates and optimise locally
-        run: python -u scripts/collect-travel-89-93-media.py
+        run: |
+          python -u scripts/collect-travel-89-93-media.py
+          python -u scripts/extract-travel-89-93-brochures.py
       - name: Save candidate images and provenance on draft branch only
         if: success()
         run: |
@@ -33,7 +35,7 @@ jobs:
           for city in london las-vegas rome barcelona cancun; do
             if [ -d "public/images/travel/$city-premium" ]; then git add "public/images/travel/$city-premium"; fi
           done
-          git add data/travel/media89to93Candidates.json
+          git add data/travel/media89to93Candidates.json data/travel/media89to93BrochureCandidates.json
           if ! git diff --cached --quiet; then
             git commit -m 'assets(travel): source audited 89-93 WebP candidates pending visual QA [skip ci]'
             git push origin HEAD:feature/travel-destinations-89-93-drafts
@@ -44,5 +46,6 @@ jobs:
           name: travel-89-93-photo-review
           path: |
             data/travel/media89to93Candidates.json
+            data/travel/media89to93BrochureCandidates.json
             public/images/travel/*-premium/source-review-contact-sheet.webp
           if-no-files-found: ignore
