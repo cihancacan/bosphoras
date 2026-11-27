@@ -1,0 +1,163 @@
+{
+  "name": "Jumby Bay",
+  "country": "Antigua ve Barbuda",
+  "eyebrow": "Jumby Bay · Karayipler'de özel ada",
+  "heading": "Jumby Bay'de nerede kalınır? Cottage, villa ve özel rezidanslar",
+  "intro": "Antigua'dan kısa bir tekne yolculuğuyla yaklaşık 121 hektarlık adaya ulaşın: romantik cottage'lar, aile villaları ve özel aşçılı rezidanslar.",
+  "editorial": "Antigua'dan yaklaşık iki mil açıkta bulunan Jumby Bay, yaklaşık 300 acre büyüklüğünde, Oetker yönetimindeki tek resorta sahip özel adadır. Cottage'lar, aile villaları ve personelli özel rezidanslar farklı konaklama biçimleridir. Dört somut kategoriyi karşılaştırıyoruz: Garden Cottage (111 m², iki misafir), Pool Cottage (283 m², iki yatak odası), Jabberwocky (295 m², üç yatak odası, altı kişiye kadar) ve Calabash (640 m², beş yatak odası, on kişi).\n\nGarden Cottage bahçedeki açık hava banyosuyla öne çıkar, özel havuz garanti değildir. Pool Cottage iki ayrı yatak odası ve özel havuz sunar. Bitişik Garden Cottage ile bağlantı kurup üç yatak odası elde etmek için onay gerekir. Jabberwocky'nin villa programında kişisel uşak ve resort restoranlarında yemek bulunur; özel aşçı talep üzerine ayrıca ayarlanır. Calabash plaj erişimi, ısıtmalı sonsuzluk havuzu, gün batımı terasları ve aşçı, uşak, temizlik ekibi sunar. Rezidans içi yemekler sözleşmeye bağlıdır. Resort restoranları için güncel tanımda %25 indirim belirtilir; cottage tarifesindeki sınırsız yemekle aynı değildir.\n\nAraç trafiği olmayan adada bisiklet ve elektrikli araçlarla ana plajdan Estate House restoranlarına, Pond Bay çimlerine ve Buckley Bay manzaralarına ulaşılır. Plaj erişimi ve manzara konaklamaya bağlıdır; doğa koruma ve deniz aktivitelerinde kurallara uyun. Genellikle V. C. Bird Havalimanı'ndan Antigua'daki özel iskeleye gidilir, normal hava koşullarında tekne geçişi on dakikadan az sürer.\n\nTarife, minimum konaklama, spa, çocuk bakımı, yüzme ve deniz etkinlikleri koşullarını doğrulayın. Resort veya partner etiketli fotoğraflar gerçek yerleri gösterir, oda tahsisini veya bağımsız fotoğrafçı lisanslarını doğrulamaz. Bosphoras'ın sözleşmeli fiyatları, doğrudan API'si veya doğrulanmış rezervasyonu olduğu iddia edilmez.",
+  "hotelIntro": "Tek adada dört seçenek: Garden Cottage, Pool Cottage, üç yatak odalı Jabberwocky ve beş yatak odalı Calabash.",
+  "areas": [
+    [
+      "Ana plaj ve cottage'lar",
+      "Deniz kenarı restoranları ve cottage'larla adanın yaşam merkezi.",
+      "Hava ve akıntılar değişir."
+    ],
+    [
+      "Pond Bay ve özel rezidanslar",
+      "Çimler, geniş verandalar ve bağımsız evlerle sakin atmosfer.",
+      "Özel mülk sınırlarına saygı gösterin."
+    ],
+    [
+      "Buckley Bay manzaraları",
+      "Yüksekten koylar, komşu adacıklar ve Antigua kıyısı görünür.",
+      "Manzara konaklamaya bağlıdır."
+    ],
+    [
+      "Estate House ve gastronomi",
+      "Ada restoranları ve barlarında farklı yemek seçenekleri.",
+      "Özel rezidans koşulları farklıdır."
+    ],
+    [
+      "Patikalar ve doğa koruma",
+      "Bisiklet, elektrikli araç ve kaplumbağa koruma programlarıyla adayı keşfedin.",
+      "Hayvanları ve yuvaları rahatsız etmeyin."
+    ]
+  ],
+  "experiences": [
+    [
+      "Özel tekneyle varış",
+      "Antigua V. C. Bird Havalimanı'ndan iskeleye, ardından adaya geçin."
+    ],
+    [
+      "Jumby Bay plajında sabah",
+      "Kumda yürüyün ve resort koşullarına göre sahil restoranı seçin."
+    ],
+    [
+      "Araçsız adada bisiklet",
+      "Rezidans mahremiyetine saygıyla patikaları izleyin."
+    ],
+    [
+      "Ada doğasını koruma",
+      "Uzman personelle kaplumbağa ve mercan korumasını öğrenin."
+    ],
+    [
+      "Özel aşçıyla akşam yemeği",
+      "Uygun rezidansta yazılı sözleşmeye göre yemek ayarlayın."
+    ]
+  ],
+  "checks": [
+    "Tek resortta cottage, villa ve özel rezidanslar vardır.",
+    "Garden Cottage 111 m²: havuz garanti değildir.",
+    "Pool Cottage 283 m²: iki yatak odası ve havuz; üçüncü oda bağlantı onayına bağlıdır.",
+    "Jabberwocky: üç yatak odası, uşak, talep üzerine aşçı.",
+    "Calabash: beş yatak odası ve aşçı; restoran koşulları ayrıdır.",
+    "Antigua'dan kısa tekne transferi havaya bağlıdır.",
+    "Bosphoras sözleşmeli fiyatları ve doğrudan müsaitliği doğrulamamıştır."
+  ],
+  "hotels": [
+    [
+      "Bahçe ve okyanus · Garden Cottage",
+      "111 m², iki misafirlik, bir yatak odası ve yeşillikler içinde açık hava banyosu. Plaj yakınlığı ile mahremiyeti birleştirir. Özel havuz garanti değildir; komşu Pool Cottage ayrı kategoridir. Yemek ve ortak olanaklar tarifeye bağlıdır. Çok yatak odası isteyen gruba başka seçenek gerekir. Antigua Havalimanı'ndan özel iskele ve tekneyle ulaşılır, adaya doğrudan ticari uçuşla değil.",
+      "İki kişilik tek yatak odası, özel havuzlu cottage değildir.",
+      "İki kişilik sakin tatil için.",
+      ""
+    ],
+    [
+      "Deniz manzarası · Pool Cottage",
+      "İki yatak odası, yaklaşık 283 m², özel havuz, iç ve dış dinlenme alanları. İşletmeci onayıyla komşu Garden Cottage bağlanarak üç yatak odası olabilir. Ayrı personel ekibi gerekmeyen aile için uygundur. Havuz, açık banyo ve plaj güvenliğini kontrol edin. Ocean Cottage with Plunge Pool ile karıştırmayın. Yemekler cottage tarifesine bağlıdır, özel rezidans sözleşmesine değil.",
+      "Üçüncü yatak odası yalnızca bağlantı onayıyla.",
+      "İki ayrı yatak odası isteyen aileler için.",
+      ""
+    ],
+    [
+      "Üç yatak odası · Jabberwocky",
+      "295 m² villa altı kişiliktir. Karayip mimarisi, geniş salonlar, teras ve bahçe aile veya gruplara uygundur. Villa programı uşak ve ada restoranlarında yemek içerir; ayrı aşçı otomatik değil, talep üzerinedir. Yatak odası planını, havuzu ve yemek koşullarını doğrulayın. Tanımlanmış fotoğraflar gerçek villayı gösterir, tarih müsaitliğini değil.",
+      "Uşak dahil; aşçı talep üzerine ve ek ücretli olabilir.",
+      "Altı kişiye kadar gruplar için.",
+      ""
+    ],
+    [
+      "Ana plaj · Calabash",
+      "Beş yatak odası, on misafir, yaklaşık 640 m², büyük ısıtmalı sonsuzluk havuzu, gün batımı terası, tropik bahçe ve beyaz kuma açılan kapalı yemek alanı. Aşçı, uşak ve temizlik ekibi vardır. Evde yemek sözleşmeye bağlıdır; resort restoranlarında %25 indirim belirtilir, sınırsız yemek dahil değildir. Fotoğraflar gerçek terasları gösterir; tarih, etkinlik, transfer ve yemek sözleşmesini işletmeci doğrular.",
+      "Rezidansta aşçı; resort restoranlarında %25 indirim belirtilir.",
+      "Kendi personelini isteyen büyük aile için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Jumby Bay'de bir mi birkaç mı resort var?",
+      "Yaklaşık 300 acre özel adada tek Oetker resortu; cottage, villa ve rezidanslar kategorileridir."
+    ],
+    [
+      "Garden Cottage ile Pool Cottage farkı nedir?",
+      "Garden Cottage 111 m², iki kişilik, havuz garanti değil. Pool Cottage 283 m², iki yatak odası ve havuz; üçüncü oda onaya bağlıdır."
+    ],
+    [
+      "Jabberwocky'de özel aşçı dahil mi?",
+      "Program uşak ve restoran yemekleri içerir; aşçı talep üzerine, koşulları yazılı teyit edilir."
+    ],
+    [
+      "Calabash restoranlarda sınırsız yemek içerir mi?",
+      "Hayır, evde aşçı yemek hazırlar; resort restoranları için %25 indirim belirtilir."
+    ],
+    [
+      "Adaya nasıl gidilir?",
+      "Antigua V. C. Bird Havalimanı'ndan özel iskeleye, sonra normal koşullarda on dakikadan kısa tekne yolculuğu; hava değiştirebilir."
+    ],
+    [
+      "Ada çocuklara uygun mu?",
+      "Çok yatak odalı villalar ve aile etkinlikleri vardır. Havuz, plaj, elektrikli araç, yaş sınırı ve çocuk programını doğrulayın."
+    ],
+    [
+      "Bosphoras üzerinden rezervasyon yapılabilir mi?",
+      "Rehber müsaitliği veya sözleşmeli fiyatı doğrulamaz; koşulları işletmeci veya yetkili sağlayıcı teyit etmelidir."
+    ]
+  ],
+  "photoCaptions": [
+    "Jumby Bay resortu ve kıyısı havadan",
+    "Palmiyeli ve şezlonglu özel ada plajı",
+    "Havuz terası arkasında Karayip Denizi",
+    "Alacakaranlıkta pavyonlar ve havuz",
+    "Özel villa ve ada havadan",
+    "Plaj restoranı",
+    "Karayip Denizi manzaralı dinlenme alanı",
+    "Tropik avlu ve bahçe patikası",
+    "Resort terasından Jumby Bay kıyısı"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Garden Cottage açık hava banyosu",
+      "Garden Cottage büyük yataklı oda",
+      "Garden Cottage oda ve terası"
+    ],
+    [
+      "Pool Cottage deniz manzaralı havuz ve teras",
+      "Pool Cottage ana yatak odası",
+      "Pool Cottage salon ve yemek odası"
+    ],
+    [
+      "Jabberwocky villa salonu",
+      "Jabberwocky terası",
+      "Jabberwocky yatak odası ve terası"
+    ],
+    [
+      "Calabash sonsuzluk havuzu",
+      "Calabash özel deniz kenarı yemek terası",
+      "Calabash rezidans yatak odası"
+    ]
+  ],
+  "seoTitle": "Jumby Bay, Antigua: Özel Ada ve Lüks Villalar",
+  "hotelSeoTitle": "Jumby Bay Island: Garden ve Pool Cottage, Jabberwocky ve Calabash",
+  "seoDescription": "Jumby Bay'de Garden Cottage, Pool Cottage, Jabberwocky ve Calabash'ı karşılaştırın: plajlar, yemek koşulları ve Antigua transferi."
+}
