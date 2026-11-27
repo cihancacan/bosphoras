@@ -1,0 +1,61 @@
+[
+  {
+    "slug": "kuala-lumpur",
+    "city": "Kuala Lumpur",
+    "publisher": "Tourism Malaysia",
+    "cityPages": [
+      "https://www.malaysia.travel/explore/top-places-to-visit-in-kuala-lumpur",
+      "https://ebrochures.malaysia.travel/en/malaysia-travel-guide/kuala-lumpur/",
+      "https://ebrochures.malaysia.travel/en/kuala-lumpur/04-12-doing-the-sights/",
+      "https://www.klccconventioncentre.com/visitors/about-malaysia/kuala-lumpur",
+      "https://mitec.com.my/visit/experience-kuala-lumpur"
+    ],
+    "subjects": [
+      "petronas|twin towers|klcc park",
+      "bukit bintang|jalan alor",
+      "petaling street|chinatown|kwai chai hong",
+      "merdeka square|sultan abdul samad",
+      "kampung baru|saloma bridge",
+      "brickfields|little india|kl sentral",
+      "batu caves",
+      "kl tower|menara kuala lumpur",
+      "botanical garden|lake gardens|perdana"
+    ],
+    "hotels": [
+      [
+        "mandarin-oriental",
+        "Mandarin Oriental, Kuala Lumpur",
+        [
+          "https://www.mandarinoriental.com/en/kuala-lumpur/petronas-towers/gallery",
+          "https://www.mandarinoriental.com/en/kuala-lumpur/petronas-towers/stay"
+        ]
+      ],
+      [
+        "four-seasons",
+        "Four Seasons Hotel Kuala Lumpur",
+        [
+          "https://www.fourseasons.com/kualalumpur/photos-and-videos/",
+          "https://press.fourseasons.com/kualalumpur/hotel-images/"
+        ]
+      ],
+      [
+        "ruma",
+        "The RuMa Hotel and Residences",
+        [
+          "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/",
+          "https://urbanresortconcepts.com/en/images/ruma-gallery/",
+          "https://theruma.com/en/"
+        ]
+      ],
+      [
+        "eq",
+        "EQ Kuala Lumpur",
+        [
+          "https://www.eqkualalumpur.equatorial.com/",
+          "https://www.eqkualalumpur.equatorial.com/gallery/",
+          "https://www.eqkualalumpur.equatorial.com/rooms-suites/"
+        ]
+      ]
+    ]
+  }
+]
