@@ -1,0 +1,136 @@
+{
+  "name": "Osaka",
+  "country": "Japão",
+  "eyebrow": "Japão · Kansai, gastronomia e hotéis urbanos",
+  "heading": "Osaka: escolha o bairro para gastronomia, património e vistas panorâmicas.",
+  "intro": "Osaka reúne as ruas animadas de Namba, as ligações ferroviárias de Umeda e as margens de Nakanoshima. Escolha o hotel conforme as visitas, excursões no Kansai e ritmo da estadia.",
+  "editorial": "Umeda e Kita são convenientes para comboios regionais e compras. Dojima e Nakanoshima oferecem tranquilidade junto a museus e rios. Namba, Dotonbori e Shinsaibashi destacam-se pela gastronomia e comércio. A zona do castelo de Osaka favorece passeios e património; Tennoji, Abeno e Shinsekai combinam templos e panoramas. Osaka Bay é prática para famílias interessadas em Universal Studios Japan e no aquário, mas fica menos central.\n\nTrês a quatro noites permitem explorar a cidade e fazer uma excursão. Para Quioto, Nara ou Kobe, escolha a estação segundo as linhas necessárias. O metro e os comboios urbanos são práticos; considere as caminhadas nas grandes estações e as últimas ligações.\n\nA partir de KIX, compare comboios Nankai para Namba, JR e autocarros. Verifique requisitos de entrada conforme o passaporte. Compare dimensão do quarto, camas, ocupação, vistas e total com impostos e cancelamento. Vista para a cidade não garante vista para o rio ou castelo.",
+  "hotelIntro": "Conrad para panoramas de Nakanoshima, Four Seasons para design japonês contemporâneo, Ritz-Carlton para luxo clássico em Umeda e W Osaka para design na Midosuji.",
+  "areas": [
+    [
+      "Umeda e Kita",
+      "Osaka Station, grandes armazéns, Umeda Sky Building e comboios regionais.",
+      "Identifique estação e linha de cada excursão."
+    ],
+    [
+      "Dojima e Nakanoshima",
+      "Margens dos rios, museus, arquitetura e hotéis panorâmicos.",
+      "Verifique acesso às estações e orientação dos quartos."
+    ],
+    [
+      "Namba, Dotonbori e Shinsaibashi",
+      "Restaurantes, letreiros luminosos, canal e lojas.",
+      "Considere ruído noturno e percursos com bagagem."
+    ],
+    [
+      "Zona do castelo de Osaka",
+      "Parque do castelo, património e passeios.",
+      "Verifique distâncias entre parque e estações."
+    ],
+    [
+      "Tennoji, Abeno e Shinsekai",
+      "Shitennoji, Tsutenkaku, Abeno Harukas e ruas históricas.",
+      "Compare ligações aos outros bairros."
+    ],
+    [
+      "Osaka Bay e Universal City",
+      "Universal Studios Japan, aquário Kaiyukan e Tempozan.",
+      "Verifique bilhetes e tempo até ao centro."
+    ]
+  ],
+  "experiences": [
+    [
+      "Descobrir o castelo e o parque",
+      "Combine a visita cultural com um passeio no parque."
+    ],
+    [
+      "Explorar a gastronomia de Minami",
+      "Combine Kuromon Market, Dotonbori e Shinsaibashi."
+    ],
+    [
+      "Admirar a cidade do alto",
+      "Escolha Umeda Sky Building ou Abeno Harukas conforme rota e meteorologia."
+    ],
+    [
+      "Passar um dia na baía",
+      "Escolha Universal Studios Japan ou Kaiyukan e Tempozan."
+    ]
+  ],
+  "checks": [
+    "Escolha a estação conforme as excursões.",
+    "Confirme camas, dimensão e vista do quarto.",
+    "Verifique requisitos de entrada para o passaporte.",
+    "Compare total com impostos, pequeno-almoço e cancelamento.",
+    "Confira bilhetes e horários."
+  ],
+  "hotels": [
+    [
+      "Nakanoshima · Festival Tower West",
+      "Hotel em altura com grandes janelas, quartos, suites, restaurantes, spa e piscina interior.",
+      "Confirme orientação e categoria.",
+      "Para estadias panorâmicas.",
+      "Hotel em altura com grandes janelas, quartos, suites, restaurantes, spa e piscina interior. Confirme orientação e categoria."
+    ],
+    [
+      "Dojima · Kita",
+      "Hotel contemporâneo com quartos e suites de inspiração japonesa, opções ryokan, spa, piscina e restaurantes.",
+      "Confira camas e condições das categorias.",
+      "Para design japonês contemporâneo.",
+      "Hotel contemporâneo com quartos e suites de inspiração japonesa, opções ryokan, spa, piscina e restaurantes. Confira camas e condições das categorias."
+    ],
+    [
+      "Umeda · Kita",
+      "Hotel clássico com quartos, suites, lounges, restaurantes e spa.",
+      "Compare categorias, acesso aos lounges e percurso desde Osaka Station.",
+      "Para luxo clássico e ligações ferroviárias.",
+      "Hotel clássico com quartos, suites, lounges, restaurantes e spa. Compare categorias, acesso aos lounges e percurso desde Osaka Station."
+    ],
+    [
+      "Shinsaibashi · Midosuji",
+      "Hotel de design contemporâneo perto de lojas e vida noturna.",
+      "Verifique ambiente, camas e acesso às instalações.",
+      "Para design e vida urbana.",
+      "Hotel de design contemporâneo perto de lojas e vida noturna. Verifique ambiente, camas e acesso às instalações."
+    ]
+  ],
+  "faq": [
+    [
+      "Onde ficar na primeira visita?",
+      "Umeda ou Namba conforme excursões e saídas."
+    ],
+    [
+      "Qual o bairro para Quioto e Nara?",
+      "Umeda oferece várias ligações regionais, Namba algumas linhas para Nara; confirme as rotas."
+    ],
+    [
+      "Quantas noites planear?",
+      "Três a quatro para a cidade, mais para excursões."
+    ],
+    [
+      "Qual a zona para famílias?",
+      "Osaka Bay para atrações, Umeda ou Namba para visitas variadas."
+    ],
+    [
+      "Como chegar desde KIX?",
+      "Compare Nankai, JR e autocarros conforme a estação mais próxima."
+    ],
+    [
+      "É necessário alugar carro?",
+      "Não para a maioria das visitas; metro, comboios e caminhadas são práticos."
+    ],
+    [
+      "Como comparar hotéis?",
+      "Compare datas, hóspedes, categorias, camas, impostos e cancelamento equivalentes."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Onde ficar em Osaka: Umeda, Namba e melhores bairros",
+  "hotelSeoTitle": "Hotéis de luxo em Osaka: Conrad, Four Seasons, Ritz-Carlton e W",
+  "seoDescription": "Compare bairros e hotéis de Osaka: Umeda, Namba, Nakanoshima, transportes e conselhos para o Japão."
+}
