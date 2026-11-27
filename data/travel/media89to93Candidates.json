@@ -3764,68 +3764,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "nizuc-4",
-        "sourcePage": "https://www.fivestaralliance.com/gallery/nizuc-resort-and-spa-cancun-gallery-images",
-        "sourceResolvedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2013/22835/22835_0_nizucresortandspacancun_fsa-g.jpg?itok=nF4jjgLr",
-        "sourceRequestedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2013/22835/22835_0_nizucresortandspacancun_fsa-g.jpg?itok=nF4jjgLr",
-        "originalAlt": "Exterior of NIZUC Resort",
-        "originalCaption": "",
-        "credit": "NIZUC Resort & Spa",
-        "publisher": "NIZUC Resort & Spa",
-        "hotel": "NIZUC Resort & Spa",
-        "localPath": "/images/travel/cancun-premium/nizuc/nizuc-4.webp",
-        "sourceSHA256": "b6472e92afb32c34bdb0e3dcfaa1f5dad2d5c3341b126e3db04bd072bb12aa29",
-        "webpSHA256": "1a5aa7ed94f6472bc2d0046c4a4918b274f0ec3e3e98760c681816aa2c169eed",
-        "sourcePixels": [
-          815,
-          543
-        ],
-        "webpPixels": [
-          815,
-          543
-        ],
-        "webpBytes": 53224,
-        "pixelFingerprint": "9cb3a6b0bcf8e858",
-        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
-        "key": "le-blanc-1",
-        "sourcePage": "https://registration.forbestravelguide.com/hotels/cancun-mexico/le-blanc-spa-resort-cancun",
-        "sourceResolvedUrl": "https://stories.forbestravelguide.com/wp-content/uploads/2026/07/CancunsTopHotels-Aerial-CreditNizucResortandSpa.jpg",
-        "sourceRequestedUrl": "https://stories.forbestravelguide.com/wp-content/uploads/2026/07/CancunsTopHotels-Aerial-CreditNizucResortandSpa.jpg",
-        "originalAlt": "The 9 Best Cancun Hotels",
-        "originalCaption": "",
-        "credit": "Le Blanc Spa Resort Cancun",
-        "publisher": "Le Blanc Spa Resort Cancun",
-        "hotel": "Le Blanc Spa Resort Cancun",
-        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-1.webp",
-        "sourceSHA256": "fc049d73183375852471f83c774a0d95687de63ac038eb09f34fd10daa1da61d",
-        "webpSHA256": "db8c0fbea24012dda4b1c0003143a88f68b04d28493c0f705a5e05855af6b49f",
-        "sourcePixels": [
-          970,
-          650
-        ],
-        "webpPixels": [
-          970,
-          650
-        ],
-        "webpBytes": 147920,
-        "pixelFingerprint": "64e4c458f97ebe24",
-        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "le-blanc-2",
         "sourcePage": "https://registration.forbestravelguide.com/hotels/cancun-mexico/le-blanc-spa-resort-cancun",
         "sourceResolvedUrl": "https://secure.s.forbestravelguide.com/img/properties/le-blanc-spa-resort/extra-large/le-blanc-spa-resort-Royale-Deluxe-Partial-Ocean-View.jpg",
@@ -3857,18 +3795,18 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "le-blanc-3",
-        "sourcePage": "https://registration.forbestravelguide.com/hotels/cancun-mexico/le-blanc-spa-resort-cancun",
-        "sourceResolvedUrl": "https://secure.s.forbestravelguide.com/img/properties/le-blanc-spa-resort/extra-large/le-blanc-spa-resort-Bvlgari-Amenities.jpg",
-        "sourceRequestedUrl": "https://secure.s.forbestravelguide.com/img/properties/le-blanc-spa-resort/extra-large/le-blanc-spa-resort-Bvlgari-Amenities.jpg",
-        "originalAlt": "le blanc spa resort Bvlgari Amenities",
+        "key": "le-blanc-4",
+        "sourcePage": "https://www.forbestravelguide.com/hotels/cancun-mexico/le-blanc-spa-resort-cancun",
+        "sourceResolvedUrl": "https://secure.s.forbestravelguide.com/img/properties/le-blanc-spa-resort/extra-large/le-blanc-spa-resort-Lobby.jpg",
+        "sourceRequestedUrl": "https://secure.s.forbestravelguide.com/img/properties/le-blanc-spa-resort/extra-large/le-blanc-spa-resort-Lobby.jpg",
+        "originalAlt": "le blanc spa resort Lobby",
         "originalCaption": "",
         "credit": "Le Blanc Spa Resort Cancun",
         "publisher": "Le Blanc Spa Resort Cancun",
         "hotel": "Le Blanc Spa Resort Cancun",
-        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-3.webp",
-        "sourceSHA256": "fb96a96a212f8fae2685bdd2bda1c316ed22a33e585807bef8ffedbb3b114469",
-        "webpSHA256": "f3f326fee9c3a84bf3c0c884fca60d704804bb79345c031951e10c52b98f8faf",
+        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-4.webp",
+        "sourceSHA256": "de5b0254a8728ebea53939e547d0a47b84f4f8468585b90cacf404045ebdd823",
+        "webpSHA256": "c7e6cdbfa483699ed811d0f32f12fccba8cab415dc030b36d4fdd8310c61aba9",
         "sourcePixels": [
           1900,
           1063
@@ -3877,8 +3815,8 @@
           1280,
           716
         ],
-        "webpBytes": 98588,
-        "pixelFingerprint": "6c1c4a3a9c0c6040",
+        "webpBytes": 93966,
+        "pixelFingerprint": "f09091f8f2f06280",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
@@ -3911,6 +3849,37 @@
         "webpBytes": 104470,
         "pixelFingerprint": "87edb9d1c031218d",
         "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "hyatt-ziva-2",
+        "sourcePage": "https://www.fivestaralliance.com/gallery/hyatt-ziva-cancun-gallery-images",
+        "sourceResolvedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2010/13789/13789_1_hyattzivacancun_fsa-g.jpg?itok=cUK2puKg",
+        "sourceRequestedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2010/13789/13789_1_hyattzivacancun_fsa-g.jpg?itok=cUK2puKg",
+        "originalAlt": "Pool and Lounge at Hyatt Ziva Cancun, Mexico",
+        "originalCaption": "",
+        "credit": "Hyatt Ziva Cancun",
+        "publisher": "Hyatt Ziva Cancun",
+        "hotel": "Hyatt Ziva Cancun",
+        "localPath": "/images/travel/cancun-premium/hyatt-ziva/hyatt-ziva-2.webp",
+        "sourceSHA256": "ae6a808352adb81017b6e241b4d0d1e20d691f2ee89c8157fdc3a9bbdce51578",
+        "webpSHA256": "6a794f0d3e58c98d50f740615937b6ad8e1a772960f12d8950b7841ca07abecd",
+        "sourcePixels": [
+          1000,
+          563
+        ],
+        "webpPixels": [
+          1000,
+          563
+        ],
+        "webpBytes": 99396,
+        "pixelFingerprint": "0fe26854c5c3cecd",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -3981,30 +3950,30 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "coral-beach-3",
+        "key": "coral-beach-4",
         "sourcePage": "https://www.coralbeachcancunresort.com/",
-        "sourceResolvedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/FACB-Pool-and-beach-Snack-1250x800.jpg.webp",
-        "sourceRequestedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/FACB-Pool-and-beach-Snack-1250x800.jpg.webp",
-        "originalAlt": "FACB Pool and beach Snack",
+        "sourceResolvedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/Gem-Spa-Pool-of-Sensations-2.jpg.webp",
+        "sourceRequestedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/Gem-Spa-Pool-of-Sensations-2.jpg.webp",
+        "originalAlt": "",
         "originalCaption": "",
         "credit": "Grand Fiesta Americana Coral Beach Cancún",
         "publisher": "Grand Fiesta Americana Coral Beach Cancún",
         "hotel": "Grand Fiesta Americana Coral Beach Cancún",
-        "localPath": "/images/travel/cancun-premium/coral-beach/coral-beach-3.webp",
-        "sourceSHA256": "508cbae71ee41eaae39d4a816e01b36be0b0f773f3b43146100c0aabb6733a3f",
-        "webpSHA256": "ffc77a6e1e634a14ec6bb26c85a2aeaabae8ae3f6b9ab7f066e7f85b420a45a1",
+        "localPath": "/images/travel/cancun-premium/coral-beach/coral-beach-4.webp",
+        "sourceSHA256": "4bb5e50bd5deb0cd5a6e7bfdfb64469263bf75362fd3ccd1a1b4285f9b07d04b",
+        "webpSHA256": "f9fa915bb67b068f024a92d64ec2f2b4cbcd48dd06e9b66ffbc7a16449e0d48f",
         "sourcePixels": [
-          1250,
-          800
+          1920,
+          1440
         ],
         "webpPixels": [
-          1250,
-          800
+          1133,
+          850
         ],
-        "webpBytes": 59660,
-        "pixelFingerprint": "1c2a1a9fdec4cc4d",
+        "webpBytes": 90034,
+        "pixelFingerprint": "6cbdb3daf2eab86c",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
-        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
         "visuallyVerified": false,
@@ -4019,12 +3988,26 @@
         "found": 4
       },
       {
+        "group": "nizuc",
+        "expected": 3,
+        "found": 2
+      },
+      {
+        "group": "le-blanc",
+        "expected": 3,
+        "found": 2
+      },
+      {
         "group": "hyatt-ziva",
         "expected": 3,
-        "found": 1
+        "found": 2
       }
     ],
     "errors": [
+      {
+        "page": "https://www.expedia.com/Cancun-Hotels-Nizuc-Resort-And-Spa.h5531551.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Nizuc-Resort-And-Spa.h5531551.Hotel-Information"
+      },
       {
         "page": "https://www.travelweekly.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun-p3711940",
         "error": "403 Client Error: Forbidden for url: https://www.travelweekly.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun-p3711940"
@@ -4062,8 +4045,8 @@
         "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/"
       },
       {
-        "url": "https://www.palaceproagents.com/lbc_Room_Royale_Deluxe_Partial_Ocean_View_bg_3600x1800_7207f3f7a0.jpg",
-        "error": "400 Client Error: Bad Request for url: https://www.palaceproagents.com/lbc_Room_Royale_Deluxe_Partial_Ocean_View_bg_3600x1800_7207f3f7a0.jpg"
+        "page": "https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information"
       },
       {
         "page": "https://www.travelweekly.com/Hotels/Cancun/Hyatt-Ziva-Cancun-p56570042",
@@ -4095,23 +4078,23 @@
       },
       {
         "url": "https://www.trip.com/hotels/phuket-hotel-detail-83988303/panwaburi-beachfront-resort/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x743a44f6fe20>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x7cd7b40e7650>"
       },
       {
         "url": "https://www.trip.com/hotels/los-angeles-hotel-detail-1978985/sheraton-gateway-los-angeles/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x743a4079a0c0>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x7cd79eee7bf0>"
       },
       {
         "url": "https://www.trip.com/hotels/tokyo-hotel-detail-994914/shinjuku-washington-hotel/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x743a40775b20>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x7cd79eee7bf0>"
       },
       {
         "url": "https://www.trip.com/hotels/tokyo-hotel-detail-993892/shinjuku-granbell-hotel/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x743a31b87380>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x7cd7b44c8270>"
       },
       {
         "url": "https://www.trip.com/hotels/ho-chi-minh-city-hotel-detail-2073112/park-hyatt-saigon/photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x743a46b9ba10>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x7cd7b44c8270>"
       },
       {
         "page": "https://www.expedia.com/Cancun-Hotels-Hyatt-Ziva-Cancun-All-Inclusive.h11669114.Hotel-Information",
@@ -4182,10 +4165,134 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "nizuc-4",
+        "sourcePage": "https://www.fivestaralliance.com/gallery/nizuc-resort-and-spa-cancun-gallery-images",
+        "sourceResolvedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2013/22835/22835_0_nizucresortandspacancun_fsa-g.jpg?itok=nF4jjgLr",
+        "sourceRequestedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2013/22835/22835_0_nizucresortandspacancun_fsa-g.jpg?itok=nF4jjgLr",
+        "originalAlt": "Exterior of NIZUC Resort",
+        "originalCaption": "",
+        "credit": "NIZUC Resort & Spa",
+        "publisher": "NIZUC Resort & Spa",
+        "hotel": "NIZUC Resort & Spa",
+        "localPath": "/images/travel/cancun-premium/nizuc/nizuc-4.webp",
+        "sourceSHA256": "b6472e92afb32c34bdb0e3dcfaa1f5dad2d5c3341b126e3db04bd072bb12aa29",
+        "webpSHA256": "1a5aa7ed94f6472bc2d0046c4a4918b274f0ec3e3e98760c681816aa2c169eed",
+        "sourcePixels": [
+          815,
+          543
+        ],
+        "webpPixels": [
+          815,
+          543
+        ],
+        "webpBytes": 53224,
+        "pixelFingerprint": "9cb3a6b0bcf8e858",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "le-blanc-1",
+        "sourcePage": "https://registration.forbestravelguide.com/hotels/cancun-mexico/le-blanc-spa-resort-cancun",
+        "sourceResolvedUrl": "https://stories.forbestravelguide.com/wp-content/uploads/2026/07/CancunsTopHotels-Aerial-CreditNizucResortandSpa.jpg",
+        "sourceRequestedUrl": "https://stories.forbestravelguide.com/wp-content/uploads/2026/07/CancunsTopHotels-Aerial-CreditNizucResortandSpa.jpg",
+        "originalAlt": "The 9 Best Cancun Hotels",
+        "originalCaption": "",
+        "credit": "Le Blanc Spa Resort Cancun",
+        "publisher": "Le Blanc Spa Resort Cancun",
+        "hotel": "Le Blanc Spa Resort Cancun",
+        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-1.webp",
+        "sourceSHA256": "fc049d73183375852471f83c774a0d95687de63ac038eb09f34fd10daa1da61d",
+        "webpSHA256": "db8c0fbea24012dda4b1c0003143a88f68b04d28493c0f705a5e05855af6b49f",
+        "sourcePixels": [
+          970,
+          650
+        ],
+        "webpPixels": [
+          970,
+          650
+        ],
+        "webpBytes": 147920,
+        "pixelFingerprint": "64e4c458f97ebe24",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "le-blanc-3",
+        "sourcePage": "https://registration.forbestravelguide.com/hotels/cancun-mexico/le-blanc-spa-resort-cancun",
+        "sourceResolvedUrl": "https://secure.s.forbestravelguide.com/img/properties/le-blanc-spa-resort/extra-large/le-blanc-spa-resort-Bvlgari-Amenities.jpg",
+        "sourceRequestedUrl": "https://secure.s.forbestravelguide.com/img/properties/le-blanc-spa-resort/extra-large/le-blanc-spa-resort-Bvlgari-Amenities.jpg",
+        "originalAlt": "le blanc spa resort Bvlgari Amenities",
+        "originalCaption": "",
+        "credit": "Le Blanc Spa Resort Cancun",
+        "publisher": "Le Blanc Spa Resort Cancun",
+        "hotel": "Le Blanc Spa Resort Cancun",
+        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-3.webp",
+        "sourceSHA256": "fb96a96a212f8fae2685bdd2bda1c316ed22a33e585807bef8ffedbb3b114469",
+        "webpSHA256": "f3f326fee9c3a84bf3c0c884fca60d704804bb79345c031951e10c52b98f8faf",
+        "sourcePixels": [
+          1900,
+          1063
+        ],
+        "webpPixels": [
+          1280,
+          716
+        ],
+        "webpBytes": 98588,
+        "pixelFingerprint": "6c1c4a3a9c0c6040",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "coral-beach-3",
+        "sourcePage": "https://www.coralbeachcancunresort.com/",
+        "sourceResolvedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/FACB-Pool-and-beach-Snack-1250x800.jpg.webp",
+        "sourceRequestedUrl": "https://www.coralbeachcancunresort.com/wp-content/uploads/2015/07/FACB-Pool-and-beach-Snack-1250x800.jpg.webp",
+        "originalAlt": "FACB Pool and beach Snack",
+        "originalCaption": "",
+        "credit": "Grand Fiesta Americana Coral Beach Cancún",
+        "publisher": "Grand Fiesta Americana Coral Beach Cancún",
+        "hotel": "Grand Fiesta Americana Coral Beach Cancún",
+        "localPath": "/images/travel/cancun-premium/coral-beach/coral-beach-3.webp",
+        "sourceSHA256": "508cbae71ee41eaae39d4a816e01b36be0b0f773f3b43146100c0aabb6733a3f",
+        "webpSHA256": "ffc77a6e1e634a14ec6bb26c85a2aeaabae8ae3f6b9ab7f066e7f85b420a45a1",
+        "sourcePixels": [
+          1250,
+          800
+        ],
+        "webpPixels": [
+          1250,
+          800
+        ],
+        "webpBytes": 59660,
+        "pixelFingerprint": "1c2a1a9fdec4cc4d",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "cityCount": 4,
-    "hotelCount": 10,
-    "totalBytes": 1442208
+    "hotelCount": 9,
+    "totalBytes": 1366212
   }
 }
