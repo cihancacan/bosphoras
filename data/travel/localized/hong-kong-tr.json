@@ -123,12 +123,38 @@
       "Aynı tarih, kişi sayısı, manzara, oda kategorisi, vergi ve iptal koşullarını karşılaştırın."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Tsim Sha Tsui sahilinden Victoria Limanı",
+    "Peak'ten Hong Kong manzarası",
+    "Victoria Limanı'nda Star Ferry",
+    "Tai Kwun mimari mirası",
+    "West Kowloon Kültür Bölgesi",
+    "Temple Street gece pazarı",
+    "Lantau'daki Büyük Buda",
+    "Wan Chai'de Central Plaza",
+    "Causeway Bay alışveriş caddesi"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Rosewood Hong Kong sahil kulesi",
+      "Rosewood Grand Harbour View King odası",
+      "Rosewood Asaya sonsuzluk havuzu"
+    ],
+    [
+      "Four Seasons Hong Kong dış cephesi",
+      "Four Seasons Deluxe King liman manzaralı oda",
+      "Four Seasons Hong Kong barı ve salonu"
+    ],
+    [
+      "Peninsula Hong Kong tarihi cephesi",
+      "Peninsula Deluxe Harbour View Suite yatak odası",
+      "Peninsula kapalı havuzu"
+    ],
+    [
+      "Mandarin Oriental Hong Kong dış cephesi",
+      "Mandarin Oriental liman manzaralı King oda",
+      "Mandarin Oriental Hong Kong barı"
+    ]
   ],
   "seoTitle": "Hong Kong'da nerede kalınır? Central, Kowloon ve en iyi bölgeler",
   "hotelSeoTitle": "Hong Kong lüks otelleri: Rosewood, Four Seasons ve tarihi oteller",

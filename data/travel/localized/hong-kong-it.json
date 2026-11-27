@@ -123,12 +123,38 @@
       "Confronta date, ospiti, vista, categoria, tasse e cancellazione equivalenti."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Victoria Harbour dal lungomare di Tsim Sha Tsui",
+    "Vista di Hong Kong dal Peak",
+    "Star Ferry a Victoria Harbour",
+    "Patrimonio architettonico di Tai Kwun",
+    "Distretto culturale di West Kowloon",
+    "Mercato notturno di Temple Street",
+    "Grande Buddha di Lantau",
+    "Central Plaza a Wan Chai",
+    "Via commerciale di Causeway Bay"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Torre del Rosewood Hong Kong sul lungomare",
+      "Camera Grand Harbour View King del Rosewood",
+      "Piscina a sfioro Asaya del Rosewood"
+    ],
+    [
+      "Esterno del Four Seasons Hong Kong",
+      "Camera Deluxe King con vista porto del Four Seasons",
+      "Bar e lounge del Four Seasons Hong Kong"
+    ],
+    [
+      "Facciata storica del Peninsula Hong Kong",
+      "Camera da letto della Deluxe Harbour View Suite del Peninsula",
+      "Piscina interna del Peninsula"
+    ],
+    [
+      "Esterno del Mandarin Oriental Hong Kong",
+      "Camera King con vista porto del Mandarin Oriental",
+      "Bar del Mandarin Oriental Hong Kong"
+    ]
   ],
   "seoTitle": "Dove dormire a Hong Kong: Central, Kowloon e quartieri migliori",
   "hotelSeoTitle": "Hotel di lusso a Hong Kong: Rosewood, Four Seasons e grand hotel",

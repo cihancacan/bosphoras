@@ -123,12 +123,38 @@
       "Gleiche Termine, Gästezahl, Ausblick, Zimmerkategorie, Steuern und Stornobedingungen vergleichen."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Victoria Harbour von der Promenade in Tsim Sha Tsui",
+    "Blick auf Hongkong vom Peak",
+    "Star Ferry im Victoria Harbour",
+    "Architektonisches Erbe von Tai Kwun",
+    "West Kowloon Cultural District",
+    "Temple Street Nachtmarkt",
+    "Großer Buddha auf Lantau",
+    "Central Plaza in Wan Chai",
+    "Einkaufsstraße in Causeway Bay"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Rosewood Hong Kong am Hafen",
+      "Rosewood Grand Harbour View King Zimmer",
+      "Asaya Infinitypool im Rosewood"
+    ],
+    [
+      "Außenansicht des Four Seasons Hong Kong",
+      "Deluxe King Zimmer mit Hafenblick im Four Seasons",
+      "Bar und Lounge des Four Seasons Hong Kong"
+    ],
+    [
+      "Historische Fassade des Peninsula Hong Kong",
+      "Schlafzimmer der Deluxe Harbour View Suite im Peninsula",
+      "Innenpool des Peninsula"
+    ],
+    [
+      "Außenansicht des Mandarin Oriental Hong Kong",
+      "King Zimmer mit Hafenblick im Mandarin Oriental",
+      "Bar des Mandarin Oriental Hong Kong"
+    ]
   ],
   "seoTitle": "Hongkong: die besten Viertel für Central und Kowloon",
   "hotelSeoTitle": "Luxushotels Hongkong: Rosewood, Four Seasons und Grandhotels",

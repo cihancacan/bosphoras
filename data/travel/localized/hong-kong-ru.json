@@ -123,12 +123,38 @@
       "Сравнивайте одинаковые даты, гостей, вид, категорию, налоги и условия отмены."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Бухта Виктория с набережной Tsim Sha Tsui",
+    "Вид на Гонконг с пика Виктория",
+    "Паром Star Ferry в бухте Виктория",
+    "Архитектурное наследие Tai Kwun",
+    "Культурный район West Kowloon",
+    "Ночной рынок Temple Street",
+    "Большой Будда на Лантау",
+    "Central Plaza в Wan Chai",
+    "Торговая улица Causeway Bay"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Башня Rosewood Hong Kong у гавани",
+      "Номер Grand Harbour View King в Rosewood",
+      "Панорамный бассейн Asaya в Rosewood"
+    ],
+    [
+      "Внешний вид Four Seasons Hong Kong",
+      "Номер Deluxe King с видом на гавань в Four Seasons",
+      "Бар и лаунж Four Seasons Hong Kong"
+    ],
+    [
+      "Исторический фасад Peninsula Hong Kong",
+      "Спальня Deluxe Harbour View Suite в Peninsula",
+      "Крытый бассейн Peninsula"
+    ],
+    [
+      "Внешний вид Mandarin Oriental Hong Kong",
+      "Номер King с видом на гавань в Mandarin Oriental",
+      "Бар Mandarin Oriental Hong Kong"
+    ]
   ],
   "seoTitle": "Где остановиться в Гонконге: Central, Коулун и лучшие районы",
   "hotelSeoTitle": "Роскошные отели Гонконга: Rosewood, Four Seasons и легендарные отели",
