@@ -121,11 +121,37 @@
   "seoTitle": "Barcelona: beste Viertel, Strände und Luxushotels",
   "hotelSeoTitle": "Luxushotels Barcelona: Mandarin, Arts, Majestic und Cotton House",
   "seoDescription": "Vergleichen Sie Barcelonas Hotels, Eixample, Gotisches Viertel und Strände mit Tipps zu Anreise und Gesamtpreisen.",
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Sagrada Família",
+    "Fassade der Casa Batlló",
+    "Burg Montjuïc und Stadtblick",
+    "Blick vom Park Güell",
+    "Plaça Reial mit Palmen",
+    "Kathedrale von Barcelona in der Abenddämmerung",
+    "Luftaufnahme von Barceloneta",
+    "Plaça de la Vila de Gràcia",
+    "Jachthafen Port Vell"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Eingang des Mandarin Oriental",
+      "Deluxe Garden Zimmer",
+      "Penthouse-Terrasse"
+    ],
+    [
+      "Suite mit Blick auf die Sagrada Família",
+      "Lounge mit Mittelmeerblick",
+      "Blick auf Barcelonas Küste von oben"
+    ],
+    [
+      "Fassade des Majestic Hotel & Spa",
+      "Majestic Suite mit einem Schlafzimmer",
+      "Frühstücksraum des Majestic"
+    ],
+    [
+      "Wohnzimmer der Damasco Suite",
+      "Bibliothek des Cotton House",
+      "Fassade des Cotton House"
+    ]
   ]
 }

@@ -121,11 +121,37 @@
   "seoTitle": "Barselona'da Nerede Kalınır? Semtler, Plajlar ve Lüks Oteller",
   "hotelSeoTitle": "Barselona Lüks Otelleri: Mandarin, Arts, Majestic ve Cotton House",
   "seoDescription": "Barselona otellerini, Eixample, Gotik Mahalle ve plajları; ulaşım, konaklama koşulları ve toplam fiyatlarla karşılaştırın.",
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Sagrada Família",
+    "Casa Batlló dış cephesi",
+    "Montjuïc Kalesi ve şehir manzarası",
+    "Park Güell'den manzara",
+    "Plaça Reial ve palmiyeler",
+    "Alacakaranlıkta Barselona Katedrali",
+    "Barceloneta'nın havadan görünümü",
+    "Plaça de la Vila de Gràcia",
+    "Port Vell marinası"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Mandarin Oriental girişi",
+      "Deluxe Garden oda",
+      "Penthouse terası"
+    ],
+    [
+      "Sagrada Família manzaralı süit",
+      "Akdeniz manzaralı salon",
+      "Barselona kıyısının yüksekten görünümü"
+    ],
+    [
+      "Majestic Hotel & Spa dış cephesi",
+      "Majestic tek yatak odalı süit",
+      "Majestic kahvaltı salonu"
+    ],
+    [
+      "Damasco Suite salonu",
+      "Cotton House kütüphanesi",
+      "Cotton House dış cephesi"
+    ]
   ]
 }

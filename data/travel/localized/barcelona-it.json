@@ -121,11 +121,37 @@
   "seoTitle": "Dove dormire a Barcellona: quartieri, spiagge e hotel di lusso",
   "hotelSeoTitle": "Hotel di lusso a Barcellona: Mandarin, Arts, Majestic e Cotton House",
   "seoDescription": "Confronta hotel di Barcellona, Eixample, quartiere gotico e spiagge con consigli su trasporti, soggiorno e prezzi totali.",
-  "photoCaptions": [],
+  "photoCaptions": [
+    "La Sagrada Família",
+    "Facciata di Casa Batlló",
+    "Castello di Montjuïc e panorama urbano",
+    "Vista dal Park Güell",
+    "Plaça Reial e palme",
+    "Cattedrale di Barcellona al crepuscolo",
+    "Veduta aerea di Barceloneta",
+    "Plaça de la Vila de Gràcia",
+    "Marina di Port Vell"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Ingresso del Mandarin Oriental",
+      "Camera Deluxe Garden",
+      "Terrazza del penthouse"
+    ],
+    [
+      "Suite con vista sulla Sagrada Família",
+      "Salotto con vista sul Mediterraneo",
+      "Veduta dall'alto del litorale di Barcellona"
+    ],
+    [
+      "Facciata del Majestic Hotel & Spa",
+      "Suite con una camera del Majestic",
+      "Sala colazioni del Majestic"
+    ],
+    [
+      "Salotto della suite Damasco",
+      "Biblioteca del Cotton House",
+      "Facciata del Cotton House"
+    ]
   ]
 }

@@ -121,11 +121,37 @@
   "seoTitle": "Dónde alojarse en Barcelona: barrios, playas y hoteles de lujo",
   "hotelSeoTitle": "Hoteles de lujo en Barcelona: Mandarin, Arts, Majestic y Cotton House",
   "seoDescription": "Compara hoteles en Barcelona, Eixample, barrio Gótico y playas, con consejos de transporte, estancia y precios totales.",
-  "photoCaptions": [],
+  "photoCaptions": [
+    "La Sagrada Família",
+    "Fachada de la Casa Batlló",
+    "Castillo de Montjuïc y vistas de la ciudad",
+    "Vista desde el Park Güell",
+    "Plaça Reial y palmeras",
+    "Catedral de Barcelona al atardecer",
+    "Vista aérea de la Barceloneta",
+    "Plaça de la Vila de Gràcia",
+    "Marina de Port Vell"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Entrada del Mandarin Oriental",
+      "Habitación Deluxe Garden",
+      "Terraza del ático"
+    ],
+    [
+      "Suite con vistas a la Sagrada Família",
+      "Salón con vistas al Mediterráneo",
+      "Vista elevada del litoral de Barcelona"
+    ],
+    [
+      "Fachada del Majestic Hotel & Spa",
+      "Suite de un dormitorio del Majestic",
+      "Sala de desayunos del Majestic"
+    ],
+    [
+      "Salón de la suite Damasco",
+      "Biblioteca del Cotton House",
+      "Fachada del Cotton House"
+    ]
   ]
 }
