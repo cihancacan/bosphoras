@@ -1,0 +1,162 @@
+{
+  "name": "Mônaco",
+  "country": "Mônaco",
+  "eyebrow": "Principado de Mônaco · Monte Carlo e costa mediterrânea",
+  "heading": "Onde ficar em Mônaco: Monte Carlo e os melhores hotéis de luxo",
+  "intro": "Suítes diante da Praça do Cassino, arquitetura Belle Époque e jardins mediterrâneos: Mônaco reúne diferentes experiências em um território compacto. Região e categoria do quarto fazem diferença.",
+  "editorial": "A Praça do Cassino e o Carré d’Or representam o lado sofisticado de Monte Carlo, com boutiques e restaurantes exclusivos. A praça Beaumarchais, próxima ao Hôtel Hermitage, oferece atmosfera mais tranquila. Port Hercule e La Condamine são ótimos para caminhar entre iates e conhecer o mercado local; considere os desníveis. Larvotto oferece praia, jardins e piscinas, enquanto Monaco-Ville reúne o Palácio do Príncipe e ruas históricas.\n\nHôtel de Paris representa a hotelaria palaciana clássica, Hermitage a elegância Belle Époque e Métropole o design e a gastronomia. Monte-Carlo Bay oferece um resort à beira-mar na região de Larvotto. Confirme se o terraço ou a vista das fotos pertence à categoria escolhida. Piscinas externas e lagoa podem funcionar sazonalmente.\n\nMuitos visitantes internacionais chegam por Nice. O traslado rodoviário depende do trânsito e o helicóptero do clima e da disponibilidade. Em grandes eventos, confira restrições de circulação e condições da hospedagem. Preços, disponibilidade, impostos e cancelamento são confirmados pelo parceiro de reservas.",
+  "hotelIntro": "Compare Hôtel de Paris, Hôtel Hermitage, Hôtel Métropole e Monte-Carlo Bay por localização, atmosfera histórica, spa, piscinas e vistas dos quartos.",
+  "areas": [
+    [
+      "Carré d’Or · Praça do Cassino",
+      "Cassino, Hôtel de Paris, boutiques do One Monte-Carlo e restaurantes exclusivos formam o centro sofisticado.",
+      "Confira acesso de carro durante eventos e vista do quarto."
+    ],
+    [
+      "Beaumarchais · Elegância Belle Époque",
+      "Os arredores do Hermitage oferecem tranquilidade no centro histórico perto do Cassino.",
+      "Compare vistas para mar, jardim ou pátio; acesso ao spa não significa tratamentos gratuitos."
+    ],
+    [
+      "Port Hercule · La Condamine",
+      "Ideal para caminhadas matinais na marina e visitas ao mercado local.",
+      "Considere desníveis e restrições de acesso ao porto durante eventos."
+    ],
+    [
+      "Larvotto · Jardins mediterrâneos",
+      "Praia de Larvotto e Monte-Carlo Bay oferecem terraços, jardins e piscinas na costa leste.",
+      "Confira funcionamento sazonal da lagoa com fundo de areia e áreas externas."
+    ],
+    [
+      "Monaco-Ville · Le Rocher e Fontvieille",
+      "Ruas do palácio, jardins Saint-Martin e vistas de Fontvieille revelam a história do principado.",
+      "Confira horários do palácio, escadas, ladeiras e regras de acesso."
+    ]
+  ],
+  "experiences": [
+    [
+      "Uma manhã cedo em Port Hercule",
+      "Comece pelo mercado de La Condamine e caminhe pelos cais tranquilos. Planeje passeios de barco com clima favorável e operador qualificado."
+    ],
+    [
+      "Praça do Cassino e jantar",
+      "Conheça a arquitetura e visite um bar clássico ou restaurante; confirme reserva e traje exigido."
+    ],
+    [
+      "Descanso à beira-mar",
+      "Compare temporada e acesso à lagoa do Monte-Carlo Bay, piscina Odyssey e Thermes Marins."
+    ],
+    [
+      "Passeio pelo Rocher",
+      "Explore Monaco-Ville, jardins Saint-Martin e vistas de Fontvieille; considere horários e escadas."
+    ],
+    [
+      "Chegada confortável de Nice",
+      "Escolha o traslado conforme bagagem e passageiros; helicóptero e barco exigem consulta separada de disponibilidade."
+    ]
+  ],
+  "checks": [
+    "Escolha entre o centro do Cassino e os resorts de praia de Larvotto.",
+    "Confirme a categoria com a vista desejada sem depender de fotos genéricas.",
+    "Confira funcionamento sazonal da lagoa, Odyssey e áreas externas.",
+    "Verifique restrições e preços em grandes eventos; o quarto não garante vista para o circuito do Grande Prêmio.",
+    "Planeje traslados considerando ladeiras e bagagem.",
+    "Reserve restaurantes e tratamentos de spa separadamente e confira as condições da hospedagem."
+  ],
+  "hotels": [
+    [
+      "Praça do Cassino · Hotel-palácio histórico",
+      "Fundado em 1864, Hôtel de Paris oferece salões históricos, Le Louis XV – Alain Ducasse e Bar Américain. Quarto voltado ao pátio não equivale a suíte com terraço e vista para o mar ou praça. Thermes Marins, Sky Club e áreas sazonais dependem da tarifa.",
+      "Em grandes eventos, confirme categoria, orientação, varanda, ruído e condições do spa.",
+      "Para Monte Carlo clássica, gastronomia e ocasiões especiais.",
+      ""
+    ],
+    [
+      "Praça Beaumarchais · Belle Époque",
+      "Hôtel Hermitage reúne arquitetura Belle Époque, cobertura de vidro do jardim de inverno associada aos ateliês Eiffel e tranquilidade perto do Carré d’Or. Thermes Marins pode complementar a estadia; vistas para porto, mar, jardim e pátio são diferentes.",
+      "Diferencie acesso ao spa de tratamentos pagos; confirme categoria e vista.",
+      "Para elegância histórica e tranquilidade no centro.",
+      ""
+    ],
+    [
+      "Carré d’Or · Avenue de la Madone",
+      "Métropole, perto do Cassino, oferece atmosfera boutique e interiores de Jacques Garcia. Algumas categorias foram renovadas em 2026. Destacam-se piscina Odyssey de Karl Lagerfeld, Spa Métropole by Guerlain e Les Ambassadeurs by Christophe Cussac.",
+      "Confira categoria renovada, planta familiar, acesso ao Odyssey, spa e terraço.",
+      "Para design, spa e gastronomia.",
+      ""
+    ],
+    [
+      "Larvotto · Avenue Princesse Grace",
+      "Monte-Carlo Bay oferece jardins, varandas e descanso à beira-mar longe da Praça do Cassino. A lagoa com fundo de areia pode ser sazonal; Blue Bay Marcel Ravin complementa a gastronomia. É um resort costeiro, não um palácio urbano.",
+      "Confirme temporada da lagoa, orientação da varanda, categoria, restaurantes e transporte.",
+      "Para descanso à beira-mar e famílias.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Quais hotéis ficam perto da Praça do Cassino?",
+      "Hôtel de Paris, Hermitage e Métropole ficam nos arredores do Carré d’Or e oferecem ambientes diferentes. Confira percursos a pé se houver mobilidade reduzida."
+    ],
+    [
+      "A lagoa do Monte-Carlo Bay funciona o ano todo?",
+      "Não é garantido. Funcionamento e acesso são sazonais; confira as piscinas, especialmente em viagens com crianças."
+    ],
+    [
+      "A vista para o mar ou porto é garantida?",
+      "Não. Depende da categoria, andar e orientação; uma foto geral do terraço não comprova a vista do quarto."
+    ],
+    [
+      "É possível conhecer Mônaco a pé?",
+      "O principado é compacto, mas tem desníveis importantes. Elevadores públicos, ônibus e táxis ajudam."
+    ],
+    [
+      "O que considerar durante o Grande Prêmio?",
+      "Confira restrições, transporte, trajetos a pé e condições do hotel. Hospedagem não inclui automaticamente arquibancada, paddock ou vista da pista."
+    ],
+    [
+      "Como chegar do aeroporto de Nice?",
+      "Compare traslado privativo, táxi e trem conforme a bagagem. Helicóptero depende de clima, operador e disponibilidade."
+    ],
+    [
+      "Como reservar os hotéis?",
+      "Compare hospedagens na Bosphoras; preços e disponibilidade atualizados são confirmados pelo parceiro."
+    ]
+  ],
+  "photoCaptions": [
+    "Cassino de Monte Carlo, palmeiras e fonte",
+    "Port Hercule durante o salão náutico de 2017",
+    "Palácio do Príncipe no Rocher",
+    "Praia de Larvotto e mar turquesa",
+    "Porto de Fontvieille abaixo das falésias de Monaco-Ville",
+    "Jardins do Cassino e litoral",
+    "Jardim japonês com ponte vermelha",
+    "Museu Oceanográfico sobre o mar",
+    "Panorama de Mareterra"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Fachada do Hôtel de Paris na Praça do Cassino",
+      "Terraço da Diamond Suite Garnier com vista para o Cassino",
+      "Interior em madeira do Bar Américain"
+    ],
+    [
+      "Fachada do Hôtel Hermitage entre jardins",
+      "Sala da Diamond Suite com vista para o mar",
+      "Jardim de inverno com cúpula de vidro"
+    ],
+    [
+      "Pátio e fachada do Hôtel Métropole",
+      "Sala de suíte com vista para Monte Carlo",
+      "Piscina Odyssey e terraço"
+    ],
+    [
+      "Lagoa com fundo de areia do Monte-Carlo Bay",
+      "Jardins e panorama marítimo",
+      "Piscinas à beira-mar"
+    ]
+  ],
+  "seoTitle": "Onde ficar em Mônaco: Monte Carlo e hotéis de luxo",
+  "hotelSeoTitle": "Melhores hotéis de luxo em Mônaco: Hôtel de Paris e Hermitage",
+  "seoDescription": "Compare Monte Carlo, Larvotto e Port Hercule. Conheça quatro hotéis de luxo em Mônaco, vistas dos quartos e dicas de reserva."
+}
