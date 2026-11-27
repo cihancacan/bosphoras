@@ -248,6 +248,37 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-10",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Kuromon_Market_-_panoramio.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Kuromon_Market_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kuromon_Market_-_panoramio.jpg",
+        "originalAlt": "Kuromon Market Osaka shopping arcade",
+        "originalCaption": "DVMG / CC BY 3.0 / resized WebP",
+        "credit": "DVMG / CC BY 3.0 / resized WebP",
+        "publisher": "Japan National Tourism Organization / Osaka Convention & Tourism Bureau",
+        "hotel": null,
+        "localPath": "/images/travel/osaka-premium/destination/scene-10.webp",
+        "sourceSHA256": "2e5d2c4c4e3f307efa2ac43fc188fe791852ced00b616de931dea14388c34078",
+        "webpSHA256": "0bd888c664056f28951c74f1856814a2f0dca04a5dea0a52adafeadeec13f65f",
+        "sourcePixels": [
+          1600,
+          1200
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 133002,
+        "pixelFingerprint": "71f1b031e1656162",
+        "candidateSubject": "kuromon market|kuromon ichiba",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -624,13 +655,7 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "gaps": [
-      {
-        "group": "city",
-        "expected": 9,
-        "found": 8
-      }
-    ],
+    "gaps": [],
     "errors": [
       {
         "page": "https://web-japan.org/trends/11_food/jfd202312_tourist-attractions-in-osaka.html",
@@ -703,8 +728,8 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 8,
+    "cityCount": 9,
     "hotelCount": 12,
-    "totalBytes": 2638144
+    "totalBytes": 2771146
   }
 }
