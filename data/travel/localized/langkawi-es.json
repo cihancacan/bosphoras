@@ -1,0 +1,178 @@
+{
+  "name": "Langkawi",
+  "country": "Malasia",
+  "eyebrow": "Malasia · Selva tropical y mar de Andamán",
+  "heading": "Dónde alojarse en Langkawi: donde la selva se encuentra con el mar",
+  "intro": "Desde calas protegidas hasta playas claras, en Langkawi el paisaje marca el ritmo de las vacaciones.",
+  "editorial": "Langkawi es más que un destino de playa. El archipiélago del noroeste de Malasia reúne cabos boscosos, aguas poco profundas e islas calizas. Su Geoparque Mundial UNESCO refleja una rica historia natural. Antes de elegir hotel, compara las bahías, no solo fotos promocionales.\n\nTanjung Rhu, al norte, destaca por su larga playa y siluetas de islas. La marea baja deja bancos de arena que no son pasos permanentes. Un paseo en barco por los manglares de Kilim descubre acantilados calizos y bosques inundados. Elige operadores responsables que no alimenten fauna silvestre.\n\nLa bahía Datai, al noroeste, ofrece intimidad en la selva. Las habitaciones Canopy Collection son distintas de Rainforest Villas y Beach Villas con piscina privada. Considera pendientes y distancias internas, especialmente con niños. Four Seasons en Tanjung Rhu combina motivos malayos y moriscos; pabellones de jardín y villas de playa con piscina difieren en distribución y capacidad. Ritz-Carlton en Teluk Nibung está entre selva y mar de Andamán: Ocean Front, Beach y Rainforest Villas difieren en acceso al agua y orientación. St. Regis cerca de Kuah ofrece habitaciones, suites y villas junto al agua; confirma vistas, acceso a laguna y servicio de mayordomo.\n\nPantai Kok y puerto Telaga son prácticos para montes Machinchang. Dedica medio día a SkyCab y SkyBridge según nubosidad y funcionamiento. Cenang y Tengah al suroeste ofrecen restaurantes y tiendas, mientras Kuah combina servicios urbanos con costa. Islas del sur, incluida Dayang Bunting con lago de agua dulce, merecen excursión en barco aparte. Deja al menos un día sin desplazamientos.\n\nCuatro o cinco noches permiten dos excursiones naturales, paseos y descanso sin cambiar de hotel. Aeropuerto LGK y terminales de ferry son llegadas distintas; confirma encuentro. Diciembre a marzo suele ser más seco, pero puede llover siempre. Comprueba mar, mareas, cascadas y horarios. Compara categorías reales, camas, límites de edad y acceso seguro a piscina. El proveedor autorizado confirma precio, disponibilidad, inclusiones y cancelación al reservar.",
+  "hotelIntro": "Cuatro resorts de lujo: The Datai en selva, Four Seasons en playa, Ritz-Carlton en cala y St. Regis cerca de Kuah.",
+  "areas": [
+    [
+      "Tanjung Rhu",
+      "Costa norte de arena blanca e islas calizas; mareas modifican la playa.",
+      "Comprueba restricciones de baño y no cruces bancos de arena con marea ascendente."
+    ],
+    [
+      "Bahía Datai",
+      "Al noroeste, la selva llega al mar; distancias según ubicación de villa.",
+      "Organiza vehículo para salidas y confirma acceso a playa."
+    ],
+    [
+      "Pantai Kok y puerto Telaga",
+      "Calas protegidas cerca de Machinchang, prácticas para teleférico y cascadas.",
+      "Comprueba clima, horarios y funcionamiento del teleférico."
+    ],
+    [
+      "Kilim y manglares",
+      "Acantilados calizos rodean canales y ecosistemas de manglar.",
+      "Elige operador responsable y no alimentes animales."
+    ],
+    [
+      "Cenang y Tengah",
+      "Playas del suroeste cerca de restaurantes y tiendas; Cenang más animada que bahías del norte.",
+      "Considera ruido y transporte si buscas tranquilidad."
+    ],
+    [
+      "Kuah e islas del sur",
+      "Kuah es ciudad principal; Dayang Bunting, isla boscosa con lago.",
+      "Horarios de barco y acceso natural dependen de condiciones."
+    ]
+  ],
+  "experiences": [
+    [
+      "SkyCab y alturas de Machinchang",
+      "Sube a miradores con cielo despejado; SkyBridge depende de condiciones."
+    ],
+    [
+      "Manglares de Kilim",
+      "Explora canales con guía sin alimentar animales."
+    ],
+    [
+      "Día en Tanjung Rhu",
+      "Disfruta playa y mareas permaneciendo en zonas de baño permitidas."
+    ],
+    [
+      "Cascadas Telaga Tujuh",
+      "Usa calzado adecuado; rocas mojadas y lluvias fuertes requieren precaución."
+    ],
+    [
+      "Dayang Bunting y mar de Andamán",
+      "Organiza barco según mar, acceso al lago y reglas del geoparque."
+    ]
+  ],
+  "checks": [
+    "Confirma aeropuerto LGK o terminal de ferry.",
+    "Compara acceso a playa y vistas reales de habitación.",
+    "Comprueba camas y capacidad según edad infantil.",
+    "Consulta clima y mareas antes de excursiones marítimas.",
+    "Confirma inclusiones y cancelación."
+  ],
+  "hotels": [
+    [
+      "Bahía Datai · Selva tropical",
+      "Canopy Collection de The Datai está cerca de piscina principal; Rainforest Villas se reparten por selva, Beach Villas dan a playa y tienen piscina privada.",
+      "Considera senderos y desniveles con niños o movilidad reducida.",
+      "Para retiro en selva y villas de playa.",
+      ""
+    ],
+    [
+      "Tanjung Rhu · Norte",
+      "Four Seasons ofrece pabellones y villas de estilo malayo y morisco; villas de playa con piscina distintas de pabellones de jardín.",
+      "Capacidad familiar y edades según categoría; comprueba seguridad de piscina.",
+      "Para playa del norte y vacaciones familiares.",
+      ""
+    ],
+    [
+      "Teluk Nibung · Oeste",
+      "Ritz-Carlton ocupa cala protegida entre selva y mar de Andamán. Ocean Front, Beach y Rainforest Villas se relacionan de forma distinta con naturaleza.",
+      "Distingue vista al mar, salida directa a playa y piscina privada.",
+      "Para combinar selva y mar.",
+      ""
+    ],
+    [
+      "Jalan Pantai Beringin · Kuah",
+      "St. Regis ofrece habitaciones, suites y villas junto al agua con vistas de atardecer.",
+      "Confirma vistas, acceso a laguna, mayordomo y tarifa.",
+      "Para lujo costero cerca de Kuah.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Dónde está Langkawi?",
+      "Frente a costa noroeste de Malasia, en mar de Andamán cerca de Tailandia."
+    ],
+    [
+      "¿Qué zona elegir para playa?",
+      "Tanjung Rhu por vistas a islas, Datai por selva, Cenang o Tengah por restaurantes."
+    ],
+    [
+      "¿Cuántas noches planificar?",
+      "Cuatro a cinco para excursiones naturales y descanso en hotel."
+    ],
+    [
+      "¿Cuándo conviene viajar?",
+      "Diciembre a marzo suele ser más seco, pero puede llover."
+    ],
+    [
+      "¿Qué es el geoparque Langkawi?",
+      "Geoparque Mundial UNESCO con espacios naturales Machinchang, Kilim y Dayang Bunting."
+    ],
+    [
+      "¿SkyBridge abre a diario?",
+      "Depende de clima y mantenimiento; consulta información oficial."
+    ],
+    [
+      "¿Se pueden visitar pueblos y manglares?",
+      "Hay excursiones guiadas; confirma recorrido, transporte y reglas ambientales."
+    ],
+    [
+      "¿Todas las villas tienen piscina?",
+      "No, instalaciones privadas dependen de categoría."
+    ],
+    [
+      "¿Cómo llegar al hotel?",
+      "Indica punto exacto de llegada; aeropuerto y terminales de ferry son distintos."
+    ],
+    [
+      "¿Las fotos garantizan habitación elegida?",
+      "No, ilustran hotel; confirma categoría, instalaciones y tarifa."
+    ]
+  ],
+  "photoCaptions": [
+    "Panorámica desde SkyBridge",
+    "Costa de bahía Datai",
+    "Playa Tanjung Rhu",
+    "Playa Cenang",
+    "Manglares Kilim",
+    "Faro Pantai Kok",
+    "Cascadas Telaga Tujuh",
+    "Isla Dayang Bunting",
+    "Teleférico Langkawi"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Piscina The Datai y selva tropical",
+      "Interior dormitorio The Datai",
+      "Villa y piscina The Datai entre vegetación"
+    ],
+    [
+      "Four Seasons y playa desde el aire",
+      "Dormitorio luminoso Four Seasons con salida exterior",
+      "Terraza marina y piscina Four Seasons"
+    ],
+    [
+      "Pabellones de spa sobre el agua Ritz-Carlton",
+      "Dormitorio con vistas al mar Ritz-Carlton",
+      "Piscina Ritz-Carlton entre jardines"
+    ],
+    [
+      "Playa y palmeras St. Regis",
+      "Dormitorio luminoso y salón St. Regis",
+      "Terraza con vistas a bahía St. Regis"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Langkawi: hoteles de lujo, playas y selva",
+  "hotelSeoTitle": "Hoteles de Langkawi: The Datai, Four Seasons, Ritz-Carlton y St. Regis",
+  "seoDescription": "Compara cuatro resorts de lujo en Langkawi: Tanjung Rhu, bahía Datai, villas privadas, manglares de Kilim, teleférico y traslados."
+}
