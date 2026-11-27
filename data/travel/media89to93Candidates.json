@@ -2161,9 +2161,164 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-9",
+        "sourcePage": "https://turismoroma.it/en/places/spanish-steps",
+        "sourceResolvedUrl": "https://turismoroma.it/sites/default/files/Scalinata%20di%20Trinit%C3%A0%20dei%20Monti_1920x1080.jpg",
+        "sourceRequestedUrl": "https://turismoroma.it/sites/default/files/Scalinata%20di%20Trinit%C3%A0%20dei%20Monti_1920x1080.jpg",
+        "originalAlt": "Scalinata di Trinità dei Monti",
+        "originalCaption": "",
+        "credit": "Turismo Roma / Roma Capitale",
+        "publisher": "Turismo Roma / Roma Capitale",
+        "hotel": null,
+        "localPath": "/images/travel/rome-premium/destination/scene-9.webp",
+        "sourceSHA256": "32a0c26c73c4d9c0a2d66703650ddfcb0fe96663e2f1e7f41f5aff9842918ce2",
+        "webpSHA256": "338364c6ad64dd1c14fb3e1e6ea0f1d4b0e60867c386b65bd3803b801b8d9dbb",
+        "sourcePixels": [
+          1920,
+          1080
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 148050,
+        "pixelFingerprint": "f8fa9e23325269c0",
+        "candidateSubject": "spagna|spanish steps|scalinata di trinit",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-10",
+        "sourcePage": "https://www.turismoroma.it/en/node/1509",
+        "sourceResolvedUrl": "https://www.turismoroma.it/sites/default/files/santa%20maria%20in%20trastevere%20monkey.JPG",
+        "sourceRequestedUrl": "https://www.turismoroma.it/sites/default/files/santa%20maria%20in%20trastevere%20monkey.JPG",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Turismo Roma / Roma Capitale",
+        "publisher": "Turismo Roma / Roma Capitale",
+        "hotel": null,
+        "localPath": "/images/travel/rome-premium/destination/scene-10.webp",
+        "sourceSHA256": "462edb19f33f58887ef902a8abc4ccbbc4c2c9f78d5fb05f653be0305efabe22",
+        "webpSHA256": "695e7534591798e331ad6203b845ac836735cd05973696a5f586a8e64d58abd1",
+        "sourcePixels": [
+          1920,
+          1080
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 103420,
+        "pixelFingerprint": "746464d4f460e3f0",
+        "candidateSubject": "trastevere",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-11",
+        "sourcePage": "https://www.turismoroma.it/en/places/saint-peter%E2%80%99s-square",
+        "sourceResolvedUrl": "https://www.turismoroma.it/sites/default/files/Piazza%20San%20Pietro.jpg",
+        "sourceRequestedUrl": "https://www.turismoroma.it/sites/default/files/Piazza%20San%20Pietro.jpg",
+        "originalAlt": "Piazza San Pietro",
+        "originalCaption": "",
+        "credit": "Turismo Roma / Roma Capitale",
+        "publisher": "Turismo Roma / Roma Capitale",
+        "hotel": null,
+        "localPath": "/images/travel/rome-premium/destination/scene-11.webp",
+        "sourceSHA256": "bdba000b62735f9120dd76d3fd7b2fc132ca33df2038511589544879b7f7151e",
+        "webpSHA256": "b2cae610933201df7889447609fe4067150ca3caef4a17792151d25476aa1f4b",
+        "sourcePixels": [
+          1920,
+          1080
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 231250,
+        "pixelFingerprint": "f6cc7390dcf0934d",
+        "candidateSubject": "san pietro|st peter|saint peter",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
+      {
+        "key": "bvlgari-1",
+        "sourcePage": "https://www.lvmh.com/it/novita-lvmh/bulgari-apre-un-hotel-a-roma-unode-al-patrimonio-della-maison",
+        "sourceResolvedUrl": "https://images.prismic.io/lvmh-com/92c0765b-6eac-415d-9ce3-f999afbca49c_cove-news-vestibule_augustus-statue-1-2000x1100.jpeg?auto=compress%2Cformat",
+        "sourceRequestedUrl": "https://images.prismic.io/lvmh-com/92c0765b-6eac-415d-9ce3-f999afbca49c_cove-news-vestibule_augustus-statue-1-2000x1100.jpeg?auto=compress%2Cformat",
+        "originalAlt": "Bvlgari Hotel Roma exterior entrance and Augustus statue",
+        "originalCaption": "LVMH",
+        "credit": "LVMH",
+        "publisher": "Bvlgari Hotel Roma",
+        "hotel": "Bvlgari Hotel Roma",
+        "localPath": "/images/travel/rome-premium/bvlgari/bvlgari-1.webp",
+        "sourceSHA256": "2309022bfd82eb146e1fd3d585d67440915c9eefe121a11fec9d79c8de0d306d",
+        "webpSHA256": "5bfe8e03cc871413aa553b785d9cc4063b1db6c6beed72b00e94ee50e3bf1854",
+        "sourcePixels": [
+          2000,
+          1100
+        ],
+        "webpPixels": [
+          1280,
+          704
+        ],
+        "webpBytes": 129966,
+        "pixelFingerprint": "f0f0cce8e8f0e8f0",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "bvlgari-2",
+        "sourcePage": "https://www.bulgari.com/es-mx/stories/bvlgari-hotel-roma",
+        "sourceResolvedUrl": "https://media.bulgari.com/image/upload/c_fill%2Ch_614%2Cw_1090/q_auto/f_auto/v1/stories/Bvlgari_Hotel_Roma/SPA_POOL_khhzvb.jpg",
+        "sourceRequestedUrl": "https://media.bulgari.com/image/upload/c_fill%2Ch_614%2Cw_1090/q_auto/f_auto/v1/stories/Bvlgari_Hotel_Roma/SPA_POOL_khhzvb.jpg",
+        "originalAlt": "Bvlgari Hotel Roma indoor spa pool",
+        "originalCaption": "Bvlgari",
+        "credit": "Bvlgari",
+        "publisher": "Bvlgari Hotel Roma",
+        "hotel": "Bvlgari Hotel Roma",
+        "localPath": "/images/travel/rome-premium/bvlgari/bvlgari-2.webp",
+        "sourceSHA256": "f7aa7ab6d75ee68a48e094addd9b36db1f542f1081a5f086867941d14902ca65",
+        "webpSHA256": "9ff84a6234a04571d9a391395a5fa400a3344c414909149e10e0a7dfabe8c96c",
+        "sourcePixels": [
+          1090,
+          614
+        ],
+        "webpPixels": [
+          1090,
+          614
+        ],
+        "webpBytes": 114856,
+        "pixelFingerprint": "aa92d4c6aaaa9670",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
       {
         "key": "de-russie-1",
         "sourcePage": "https://press.roccofortehotels.com/summer-suite-shopping-in-rome/?lang=en",
@@ -2219,6 +2374,37 @@
         "webpBytes": 53042,
         "pixelFingerprint": "01455143331373f1",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "de-russie-3",
+        "sourcePage": "https://teresaperezcollection.com/hotel/hotel-de-russie",
+        "sourceResolvedUrl": "https://teresaperezcollection.com/images/0bijhalf/production/0ee4a0e4dac68d8edbff00549e07f35aa5d58ba1-3000x2040.webp?fit=clip&fm=jpg&q=80&w=2048",
+        "sourceRequestedUrl": "https://teresaperezcollection.com/images/0bijhalf/production/0ee4a0e4dac68d8edbff00549e07f35aa5d58ba1-3000x2040.webp?fit=clip&fm=jpg&q=80&w=2048",
+        "originalAlt": "Hotel de Russie exterior entrance at Via del Babuino",
+        "originalCaption": "Teresa Perez Collection — hotel gallery",
+        "credit": "Teresa Perez Collection — hotel gallery",
+        "publisher": "Hotel de Russie",
+        "hotel": "Hotel de Russie",
+        "localPath": "/images/travel/rome-premium/de-russie/de-russie-3.webp",
+        "sourceSHA256": "b7871e337930ac348f98a87c8f5195ce34dd9cba01cfc4356d1a99919bdd6b2a",
+        "webpSHA256": "cac4d48529180cafbf96b60f89b723fbf558fb0ec9efec8f531b9cbfebac44fc",
+        "sourcePixels": [
+          2048,
+          1393
+        ],
+        "webpPixels": [
+          1250,
+          850
+        ],
+        "webpBytes": 154452,
+        "pixelFingerprint": "94494d4d4d0d9669",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -2349,21 +2535,42 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "eden-3",
+        "sourcePage": "https://www.dorchestercollection.com/worldwide-sales",
+        "sourceResolvedUrl": "https://www.dorchestercollection.com/media/zdmdyjxt/hotel-eden-rome-exterior-facade-dorchester-collection.jpg?format=webp&height=660&rmode=crop&width=880",
+        "sourceRequestedUrl": "https://www.dorchestercollection.com/media/zdmdyjxt/hotel-eden-rome-exterior-facade-dorchester-collection.jpg?format=webp&height=660&rmode=crop&width=880",
+        "originalAlt": "Hotel Eden Rome exterior facade",
+        "originalCaption": "Dorchester Collection",
+        "credit": "Dorchester Collection",
+        "publisher": "Hotel Eden",
+        "hotel": "Hotel Eden",
+        "localPath": "/images/travel/rome-premium/eden/eden-3.webp",
+        "sourceSHA256": "5fe586c141bb6180a7ac570f6c08f26ed34350734a79798581ef020a0ced5011",
+        "webpSHA256": "f96b596068c52a37cf745190ce461a6073a5ae64ec9bbfc676856ef4e68d977b",
+        "sourcePixels": [
+          880,
+          660
+        ],
+        "webpPixels": [
+          880,
+          660
+        ],
+        "webpBytes": 74642,
+        "pixelFingerprint": "f0d2d2b3311163f6",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "gaps": [
       {
-        "group": "city",
-        "expected": 9,
-        "found": 6
-      },
-      {
         "group": "bvlgari",
-        "expected": 3,
-        "found": 0
-      },
-      {
-        "group": "de-russie",
         "expected": 3,
         "found": 2
       },
@@ -2371,33 +2578,92 @@
         "group": "hassler",
         "expected": 3,
         "found": 2
-      },
-      {
-        "group": "eden",
-        "expected": 3,
-        "found": 2
       }
     ],
     "errors": [
+      {
+        "page": "https://www.bulgari.com/fr-fr/stories/bvlgari-hotel-roma",
+        "error": "403 Client Error: Forbidden for url: https://www.bulgari.com/fr-fr/stories/bvlgari-hotel-roma"
+      },
+      {
+        "page": "https://www.marriott.com/en-gb/destinations/italy/rome.mi",
+        "error": "403 Client Error: Forbidden for url: https://www.marriott.com/en-gb/destinations/italy/rome.mi"
+      },
+      {
+        "page": "https://www.bulgarihotels.com/en_US/rome.html",
+        "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/en_US/rome.html"
+      },
+      {
+        "page": "https://www.bulgarihotels.com/en-US/rome/rooms-and-suites",
+        "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/en-US/rome/rooms-and-suites"
+      },
+      {
+        "url": "https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/Accommodation/Bulgari-Hotel-Roma-7.jpg/jcr%3Acontent",
+        "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/Accommodation/Bulgari-Hotel-Roma-7.jpg/jcr%3Acontent"
+      },
       {
         "page": "https://fr.hotels.com/ho2974602208/bulgari-hotel-roma-rome-italie/",
         "error": "429 Client Error: Too Many Requests for url: https://fr.hotels.com/ho2974602208/bulgari-hotel-roma-rome-italie/"
       },
       {
-        "page": "https://www.expedia.com/Rome-Hotels-Rocco-Forte-Hotel-De-Russie.h523751.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Rome-Hotels-Rocco-Forte-Hotel-De-Russie.h523751.Hotel-Information"
+        "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/story/",
+        "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/story/"
       },
       {
-        "page": "https://www.booking.com/hotel/it/de-russie.html",
-        "error": "exact property identity not confirmed on page"
+        "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/hotel-information/",
+        "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/hotel-information/"
+      },
+      {
+        "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/gallery/",
+        "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/gallery/"
+      },
+      {
+        "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/",
+        "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/"
+      },
+      {
+        "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/accommodation/",
+        "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/accommodation/"
+      },
+      {
+        "page": "https://www.lhw.com/hotel/Hassler-Roma-Rome-Italy",
+        "error": "403 Client Error: Forbidden for url: https://www.lhw.com/hotel/Hassler-Roma-Rome-Italy"
+      },
+      {
+        "url": "https://static-new.lhw.com/HotelImages/Final/LW2103/lw2103_43808968_720x450.jpg",
+        "error": "403 Client Error: Forbidden for url: https://static-new.lhw.com/HotelImages/Final/LW2103/lw2103_43808968_720x450.jpg"
       },
       {
         "page": "https://www.expedia.com/Rome-Hotels-Hassler-Roma.h24004.Hotel-Information",
         "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Rome-Hotels-Hassler-Roma.h24004.Hotel-Information"
       },
       {
-        "page": "https://www.expedia.com/Rome-Hotels-Hotel-Eden-Dorchester-Collection.h16311.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Rome-Hotels-Hotel-Eden-Dorchester-Collection.h16311.Hotel-Information"
+        "page": "https://www.dorchestercollection.com/worldwide-sales",
+        "error": "403 Client Error: Forbidden for url: https://www.dorchestercollection.com/worldwide-sales"
+      },
+      {
+        "page": "https://www.dorchestercollection.com/rome/hotel-eden/about",
+        "error": "403 Client Error: Forbidden for url: https://www.dorchestercollection.com/rome/hotel-eden/about"
+      },
+      {
+        "page": "https://media.dorchestercollection.com/hotel-eden-1/?lang=eng",
+        "error": "403 Client Error: Forbidden for url: https://media.dorchestercollection.com/hotel-eden-1/?lang=eng"
+      },
+      {
+        "page": "https://media.dorchestercollection.com/hotel-eden/?lang=eng",
+        "error": "403 Client Error: Forbidden for url: https://media.dorchestercollection.com/hotel-eden/?lang=eng"
+      },
+      {
+        "page": "https://media.dorchestercollection.com/section/our-portfolio/hotel-eden-rome/?lang=eng",
+        "error": "403 Client Error: Forbidden for url: https://media.dorchestercollection.com/section/our-portfolio/hotel-eden-rome/?lang=eng"
+      },
+      {
+        "page": "https://www.dorchestercollection.com/rome/hotel-eden",
+        "error": "403 Client Error: Forbidden for url: https://www.dorchestercollection.com/rome/hotel-eden"
+      },
+      {
+        "page": "https://www.dorchestercollection.com/rome/hotel-eden/rooms-suites",
+        "error": "403 Client Error: Forbidden for url: https://www.dorchestercollection.com/rome/hotel-eden/rooms-suites"
       }
     ],
     "publicUseApproved": false,
@@ -2497,9 +2763,9 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 6,
-    "hotelCount": 6,
-    "totalBytes": 1481748
+    "cityCount": 9,
+    "hotelCount": 10,
+    "totalBytes": 2438384
   },
   "barcelona": {
     "destinationScenes": [
