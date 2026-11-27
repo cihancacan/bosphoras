@@ -126,37 +126,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "scene-6",
-        "sourcePage": "https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/magic-kingdom/",
-        "sourceResolvedUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,g_xy_center,h_650,q_65,w_980,x_1450,y_4755/v1/clients/orlandofl/MIB_P_MagicKingdom_Castle_Williams_2750_082b0602-d928-44c8-b297-8f20a78c5d31.jpg",
-        "sourceRequestedUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,g_xy_center,h_650,q_65,w_980,x_1450,y_4755/v1/clients/orlandofl/MIB_P_MagicKingdom_Castle_Williams_2750_082b0602-d928-44c8-b297-8f20a78c5d31.jpg",
-        "originalAlt": "Mother and son in front of Cinderella castle at Disney's Magic Kingdom",
-        "originalCaption": "",
-        "credit": "Visit Orlando",
-        "publisher": "Visit Orlando",
-        "hotel": null,
-        "localPath": "/images/travel/orlando-premium/destination/scene-6.webp",
-        "sourceSHA256": "ee095ca8231fc1ab61fa4cca65f592e2cd013e75882fe6be932a6f31fa7360ad",
-        "webpSHA256": "5feb485ff28836609ef3f67b689893fbd20121572ac87f11273966eec6f9367b",
-        "sourcePixels": [
-          980,
-          650
-        ],
-        "webpPixels": [
-          980,
-          650
-        ],
-        "webpBytes": 72404,
-        "pixelFingerprint": "9f0d059699191b1a",
-        "candidateSubject": "cinderella castle|magic kingdom",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "scene-7",
         "sourcePage": "https://commons.wikimedia.org/wiki/File:Universal_City_Walk_Orlando.jpg",
         "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Universal_City_Walk_Orlando.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
@@ -273,6 +242,37 @@
         "webpBytes": 98700,
         "pixelFingerprint": "e4d1d1e5c5d51dc8",
         "candidateSubject": "islands of adventure|universal globe",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-11",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cinderella%27s_Castle_(32462536921).jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Cinderella%27s_Castle_%2832462536921%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cinderella%27s_Castle_%2832462536921%29.jpg",
+        "originalAlt": "Cinderella Castle Magic Kingdom daytime",
+        "originalCaption": "Chad Sparkes / Wikimedia Commons — verify licence",
+        "credit": "Chad Sparkes / Wikimedia Commons — verify licence",
+        "publisher": "Visit Orlando",
+        "hotel": null,
+        "localPath": "/images/travel/orlando-premium/destination/scene-11.webp",
+        "sourceSHA256": "f49650ed8b57338cee774bfa4d5cf6c05326cfa3e41c76a2e59388cedc4fe60e",
+        "webpSHA256": "77b7e430c68e76b628dbbb838f2470bd73ed78733d9e21e61cd94275f6ca14e8",
+        "sourcePixels": [
+          4112,
+          3148
+        ],
+        "webpPixels": [
+          1110,
+          850
+        ],
+        "webpBytes": 227778,
+        "pixelFingerprint": "4b493174c4eceaf2",
+        "candidateSubject": "cinderella castle|magic kingdom",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -500,37 +500,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "ritz-carlton-2",
-        "sourcePage": "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/photos/",
-        "sourceResolvedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-guestroom-tub-2488-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
-        "sourceRequestedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-guestroom-tub-2488-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
-        "originalAlt": "Guest Room with ADA Tub",
-        "originalCaption": "",
-        "credit": "The Ritz-Carlton Orlando, Grande Lakes",
-        "publisher": "The Ritz-Carlton Orlando, Grande Lakes",
-        "hotel": "The Ritz-Carlton Orlando, Grande Lakes",
-        "localPath": "/images/travel/orlando-premium/ritz-carlton/ritz-carlton-2.webp",
-        "sourceSHA256": "3e2ad0c0ad687889f36c0eb3ceaebd435ec3767c859700cdff50598d6fc546c4",
-        "webpSHA256": "e76bde79af6ecf9610da50d94d0bbc7a6cd083abdf9eb7a90a692c659410f767",
-        "sourcePixels": [
-          1336,
-          890
-        ],
-        "webpPixels": [
-          1276,
-          850
-        ],
-        "webpBytes": 55934,
-        "pixelFingerprint": "e1f3d2d391999997",
-        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "ritz-carlton-3",
         "sourcePage": "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/rooms/",
         "sourceResolvedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-level-lounge-2493-hor-wide.jpg?wid=932&fit=constrain",
@@ -554,6 +523,37 @@
         "webpBytes": 96874,
         "pixelFingerprint": "c838f2e2f0b171c0",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "ritz-carlton-4",
+        "sourcePage": "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/photos/",
+        "sourceResolvedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-king-guest-2504-hor-clsc.jpg?downsize=1336px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+        "sourceRequestedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-king-guest-2504-hor-clsc.jpg?downsize=1336px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+        "originalAlt": "King guest room with balcony at Ritz-Carlton Orlando Grande Lakes",
+        "originalCaption": "Marriott / The Ritz-Carlton Orlando, Grande Lakes",
+        "credit": "Marriott / The Ritz-Carlton Orlando, Grande Lakes",
+        "publisher": "The Ritz-Carlton Orlando, Grande Lakes",
+        "hotel": "The Ritz-Carlton Orlando, Grande Lakes",
+        "localPath": "/images/travel/orlando-premium/ritz-carlton/ritz-carlton-4.webp",
+        "sourceSHA256": "fad37e03e1a67bca0cdb05c94a72ee581aa386eb31cd14b7fd1be50f41eba678",
+        "webpSHA256": "291d247ed8216e23be169c97453eac0b2b74db1f7e2c127dbd07cec6f515827f",
+        "sourcePixels": [
+          1336,
+          890
+        ],
+        "webpPixels": [
+          1276,
+          850
+        ],
+        "webpBytes": 77470,
+        "pixelFingerprint": "e3666d19a9a17378",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -593,37 +593,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "portofino-2",
-        "sourcePage": "https://www.loewshotels.com/portofino-bay-hotel",
-        "sourceResolvedUrl": "https://cdn.loewshotels.com/loewshotels.com-2466770763/cms/cache/v2/55d4e0bc66799.jpg/1920x1080/fit;c:0,304,2560,1402/80/915ee84270edc57b163bfacbf27513a6.webp",
-        "sourceRequestedUrl": "https://cdn.loewshotels.com/loewshotels.com-2466770763/cms/cache/v2/55d4e0bc66799.jpg/1920x1080/fit;c:0,304,2560,1402/80/915ee84270edc57b163bfacbf27513a6.webp",
-        "originalAlt": "Kids enjoy the pool at Loews Portofino Bay Hotel",
-        "originalCaption": "",
-        "credit": "Loews Portofino Bay Hotel",
-        "publisher": "Loews Portofino Bay Hotel",
-        "hotel": "Loews Portofino Bay Hotel",
-        "localPath": "/images/travel/orlando-premium/portofino/portofino-2.webp",
-        "sourceSHA256": "2fac02fb3273d349f46b1b51dc34a57ac10f06eeabec50709e62e0b727e72846",
-        "webpSHA256": "4e29da24bd9302b47b83833e78efcd7437189cf3528715fa81f22285266a6159",
-        "sourcePixels": [
-          1920,
-          1080
-        ],
-        "webpPixels": [
-          1280,
-          720
-        ],
-        "webpBytes": 116082,
-        "pixelFingerprint": "20081c3e2e2db8b8",
-        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "portofino-3",
         "sourcePage": "https://www.loewshotels.com/portofino-bay-hotel/rooms-showcase/portofino-parlor-suite-with-connecting-king-bay-view-room",
         "sourceResolvedUrl": "https://cdn.loewshotels.com/loewshotels.com-2466770763/cms/cache/v2/606c5e14d758b.jpg/1200x460/fit/80/10b2074bcac86af96c15138d70dda57b.jpg",
@@ -653,21 +622,44 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "portofino-4",
+        "sourcePage": "https://www.visitflorida.com/listing/loews-portofino-bay-hotel-at-universal-orlando/24895/",
+        "sourceResolvedUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/crm/visitflorida/71084_5roqimb2mbq8486wl2y6yn4zyvuuac0i_fd9b6253-dca2-956e-ade8c85c0837c784.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/crm/visitflorida/71084_5roqimb2mbq8486wl2y6yn4zyvuuac0i_fd9b6253-dca2-956e-ade8c85c0837c784.jpg",
+        "originalAlt": "Outdoor pool at Loews Portofino Bay Hotel",
+        "originalCaption": "Visit Florida / Loews Portofino Bay Hotel",
+        "credit": "Visit Florida / Loews Portofino Bay Hotel",
+        "publisher": "Loews Portofino Bay Hotel",
+        "hotel": "Loews Portofino Bay Hotel",
+        "localPath": "/images/travel/orlando-premium/portofino/portofino-4.webp",
+        "sourceSHA256": "5744691ee5312e7aa4904a2a8eb95190bfe8b4fb2d3a1759154151e48a167316",
+        "webpSHA256": "ecd214354b89773d11bd1f8eecb6b4b5cec6389772ef791a15eef782c0135501",
+        "sourcePixels": [
+          3000,
+          2002
+        ],
+        "webpPixels": [
+          1274,
+          850
+        ],
+        "webpBytes": 226414,
+        "pixelFingerprint": "f8a0e491d8f8d8f0",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "gaps": [],
     "errors": [
       {
-        "page": "https://www.waldorfastoriaorlando.com/gallery/",
-        "error": "404 Client Error: Not Found for url: https://www.waldorfastoriaorlando.com/gallery/waldorf-astoria-orlando/"
-      },
-      {
-        "page": "https://www.waldorfastoriaorlando.com/photo-gallery/",
-        "error": "404 Client Error: Not Found for url: https://www.waldorfastoriaorlando.com/photo-gallery/"
-      },
-      {
-        "page": "https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/gallery/",
-        "error": "403 Client Error: Forbidden for url: https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/gallery/"
+        "page": "https://www.experiencekissimmee.com/things-to-do/celebration",
+        "error": "403 Client Error: Forbidden for url: https://www.experiencekissimmee.com/things-to-do/celebration"
       }
     ],
     "publicUseApproved": false,
@@ -703,10 +695,103 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-6",
+        "sourcePage": "https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/magic-kingdom/",
+        "sourceResolvedUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,g_xy_center,h_650,q_65,w_980,x_1450,y_4755/v1/clients/orlandofl/MIB_P_MagicKingdom_Castle_Williams_2750_082b0602-d928-44c8-b297-8f20a78c5d31.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,g_xy_center,h_650,q_65,w_980,x_1450,y_4755/v1/clients/orlandofl/MIB_P_MagicKingdom_Castle_Williams_2750_082b0602-d928-44c8-b297-8f20a78c5d31.jpg",
+        "originalAlt": "Mother and son in front of Cinderella castle at Disney's Magic Kingdom",
+        "originalCaption": "",
+        "credit": "Visit Orlando",
+        "publisher": "Visit Orlando",
+        "hotel": null,
+        "localPath": "/images/travel/orlando-premium/destination/scene-6.webp",
+        "sourceSHA256": "ee095ca8231fc1ab61fa4cca65f592e2cd013e75882fe6be932a6f31fa7360ad",
+        "webpSHA256": "5feb485ff28836609ef3f67b689893fbd20121572ac87f11273966eec6f9367b",
+        "sourcePixels": [
+          980,
+          650
+        ],
+        "webpPixels": [
+          980,
+          650
+        ],
+        "webpBytes": 72404,
+        "pixelFingerprint": "9f0d059699191b1a",
+        "candidateSubject": "cinderella castle|magic kingdom",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "ritz-carlton-2",
+        "sourcePage": "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/photos/",
+        "sourceResolvedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-guestroom-tub-2488-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+        "sourceRequestedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-guestroom-tub-2488-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+        "originalAlt": "Guest Room with ADA Tub",
+        "originalCaption": "",
+        "credit": "The Ritz-Carlton Orlando, Grande Lakes",
+        "publisher": "The Ritz-Carlton Orlando, Grande Lakes",
+        "hotel": "The Ritz-Carlton Orlando, Grande Lakes",
+        "localPath": "/images/travel/orlando-premium/ritz-carlton/ritz-carlton-2.webp",
+        "sourceSHA256": "3e2ad0c0ad687889f36c0eb3ceaebd435ec3767c859700cdff50598d6fc546c4",
+        "webpSHA256": "e76bde79af6ecf9610da50d94d0bbc7a6cd083abdf9eb7a90a692c659410f767",
+        "sourcePixels": [
+          1336,
+          890
+        ],
+        "webpPixels": [
+          1276,
+          850
+        ],
+        "webpBytes": 55934,
+        "pixelFingerprint": "e1f3d2d391999997",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "portofino-2",
+        "sourcePage": "https://www.loewshotels.com/portofino-bay-hotel",
+        "sourceResolvedUrl": "https://cdn.loewshotels.com/loewshotels.com-2466770763/cms/cache/v2/55d4e0bc66799.jpg/1920x1080/fit;c:0,304,2560,1402/80/915ee84270edc57b163bfacbf27513a6.webp",
+        "sourceRequestedUrl": "https://cdn.loewshotels.com/loewshotels.com-2466770763/cms/cache/v2/55d4e0bc66799.jpg/1920x1080/fit;c:0,304,2560,1402/80/915ee84270edc57b163bfacbf27513a6.webp",
+        "originalAlt": "Kids enjoy the pool at Loews Portofino Bay Hotel",
+        "originalCaption": "",
+        "credit": "Loews Portofino Bay Hotel",
+        "publisher": "Loews Portofino Bay Hotel",
+        "hotel": "Loews Portofino Bay Hotel",
+        "localPath": "/images/travel/orlando-premium/portofino/portofino-2.webp",
+        "sourceSHA256": "2fac02fb3273d349f46b1b51dc34a57ac10f06eeabec50709e62e0b727e72846",
+        "webpSHA256": "4e29da24bd9302b47b83833e78efcd7437189cf3528715fa81f22285266a6159",
+        "sourcePixels": [
+          1920,
+          1080
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 116082,
+        "pixelFingerprint": "20081c3e2e2db8b8",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "cityCount": 9,
     "hotelCount": 12,
-    "totalBytes": 2651834
+    "totalBytes": 2939076
   }
 }
