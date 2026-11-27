@@ -1,7 +1,561 @@
 {
   "seoul": {
-    "destinationScenes": [],
+    "destinationScenes": [
+      {
+        "key": "scene-1",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Front_view_of_the_Imperial_Throne_Hall_Geunjeongjeon_at_Gyeongbokgung_Palace_with_blue_sky_in_Seoul.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Front_view_of_the_Imperial_Throne_Hall_Geunjeongjeon_at_Gyeongbokgung_Palace_with_blue_sky_in_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Front_view_of_the_Imperial_Throne_Hall_Geunjeongjeon_at_Gyeongbokgung_Palace_with_blue_sky_in_Seoul.jpg",
+        "originalAlt": "Gyeongbokgung Palace throne hall",
+        "originalCaption": "Basile Morin / licence to verify against file page",
+        "credit": "Basile Morin / licence to verify against file page",
+        "publisher": "Korea Tourism Organization / Seoul Tourism Organization",
+        "hotel": null,
+        "localPath": "/images/travel/seoul-premium/destination/scene-1.webp",
+        "sourceSHA256": "ce07184dd35074a3f9a543bf26a515cbf49a605aa4fb866ef03f45b720dbcdd6",
+        "webpSHA256": "84bbfc7deabc89048831c87c1d56a543e5f3be24f999258b415d0d5473383ea0",
+        "sourcePixels": [
+          6402,
+          3601
+        ],
+        "webpPixels": [
+          1600,
+          900
+        ],
+        "webpBytes": 189720,
+        "pixelFingerprint": "cfecf3d68e0d0303",
+        "candidateSubject": "gyeongbokgung|gyeongbok palace",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-2",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bukchon-ro_11-gil_street_with_hanok_houses_and_blue_sky_in_Bukchon_Hanok_Village_Seoul.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Bukchon-ro_11-gil_street_with_hanok_houses_and_blue_sky_in_Bukchon_Hanok_Village_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bukchon-ro_11-gil_street_with_hanok_houses_and_blue_sky_in_Bukchon_Hanok_Village_Seoul.jpg",
+        "originalAlt": "Bukchon Hanok Village street",
+        "originalCaption": "Basile Morin / licence to verify against file page",
+        "credit": "Basile Morin / licence to verify against file page",
+        "publisher": "Korea Tourism Organization / Seoul Tourism Organization",
+        "hotel": null,
+        "localPath": "/images/travel/seoul-premium/destination/scene-2.webp",
+        "sourceSHA256": "f45c16db610118830d95d501030d4e6ab399fce45646c4e773da72ebd577755a",
+        "webpSHA256": "e5ce9b4ac08574fdef2ccda812850bd9494204d24e456b8f0d48b9ed2d8765d4",
+        "sourcePixels": [
+          6288,
+          4297
+        ],
+        "webpPixels": [
+          1244,
+          850
+        ],
+        "webpBytes": 227762,
+        "pixelFingerprint": "3c190b4d1f3361e8",
+        "candidateSubject": "bukchon|hanok village",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-3",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Streets_in_Myeong-dong_Seoul.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Streets_in_Myeong-dong_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Streets_in_Myeong-dong_Seoul.jpg",
+        "originalAlt": "Myeongdong shopping street",
+        "originalCaption": "Dquai / licence to verify against file page",
+        "credit": "Dquai / licence to verify against file page",
+        "publisher": "Korea Tourism Organization / Seoul Tourism Organization",
+        "hotel": null,
+        "localPath": "/images/travel/seoul-premium/destination/scene-3.webp",
+        "sourceSHA256": "026817f3ef93b6c081b053f2aa5d66a51216b15865bdb714f5c968b24c2e495f",
+        "webpSHA256": "7c378276136960eb6ecba3acb14fc6a68c6bf8d49486ce22cf23e33a3c2fb0a6",
+        "sourcePixels": [
+          3264,
+          1836
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 126110,
+        "pixelFingerprint": "cae4f0104ce76b78",
+        "candidateSubject": "myeongdong|myeong-dong",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-4",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:N_Seoul_Tower_view_1.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/N_Seoul_Tower_view_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/N_Seoul_Tower_view_1.jpg",
+        "originalAlt": "N Seoul Tower view of Seoul city panorama",
+        "originalCaption": "Wikimedia Commons author pending confirmation / licence to verify against file page",
+        "credit": "Wikimedia Commons author pending confirmation / licence to verify against file page",
+        "publisher": "Korea Tourism Organization / Seoul Tourism Organization",
+        "hotel": null,
+        "localPath": "/images/travel/seoul-premium/destination/scene-4.webp",
+        "sourceSHA256": "1055d4fffdaacc530438cbaadd294cbd26ffe3c02da214b600ca9bf889b74d09",
+        "webpSHA256": "f0a4fe42c1c974b4a6543cf721e0e710ea769e1aff456b549b28bc0fe98f0ce1",
+        "sourcePixels": [
+          5010,
+          2965
+        ],
+        "webpPixels": [
+          1280,
+          758
+        ],
+        "webpBytes": 157604,
+        "pixelFingerprint": "098bd35132c42465",
+        "candidateSubject": "n seoul tower|namsan tower",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
     "hotels": [
+      {
+        "key": "four-seasons-1",
+        "sourcePage": "https://www.expedia.com/Seoul-Hotels-Four-Seasons-Hotel-Seoul.h11918302.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/12000000/11920000/11918400/11918302/92dd12f7.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/12000000/11920000/11918400/11918302/92dd12f7.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Four Seasons Hotel Seoul exterior",
+        "originalCaption": "Expedia / Four Seasons Hotel Seoul",
+        "credit": "Expedia / Four Seasons Hotel Seoul",
+        "publisher": "Four Seasons Hotel Seoul",
+        "hotel": "Four Seasons Hotel Seoul",
+        "localPath": "/images/travel/seoul-premium/four-seasons/four-seasons-1.webp",
+        "sourceSHA256": "6e4f70d60d1acdcffbe7e860d010111aaee880ea0aeaec35519c4e3adc9e1496",
+        "webpSHA256": "8f7d8de7cf14aa83e9c1193304e7f59dbabb59c222c0df064a71bff9f45b997e",
+        "sourcePixels": [
+          1280,
+          881
+        ],
+        "webpPixels": [
+          1235,
+          850
+        ],
+        "webpBytes": 160496,
+        "pixelFingerprint": "67ce9f77661e0666",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "four-seasons-2",
+        "sourcePage": "https://www.expedia.com/Seoul-Hotels-Four-Seasons-Hotel-Seoul.h11918302.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/12000000/11920000/11918400/11918302/5e9cee27.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/12000000/11920000/11918400/11918302/5e9cee27.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Four Seasons Hotel Seoul Deluxe King guest room",
+        "originalCaption": "Expedia / Four Seasons Hotel Seoul",
+        "credit": "Expedia / Four Seasons Hotel Seoul",
+        "publisher": "Four Seasons Hotel Seoul",
+        "hotel": "Four Seasons Hotel Seoul",
+        "localPath": "/images/travel/seoul-premium/four-seasons/four-seasons-2.webp",
+        "sourceSHA256": "485f2cf9d2cf1ccc27437c719ddc0f7166b2a0a41dd2073fc45c25e8e1355d57",
+        "webpSHA256": "a5f678c9b0eef546214645eadc9934c16fbd9f0c1c3b13015bf54b01671be626",
+        "sourcePixels": [
+          1280,
+          753
+        ],
+        "webpPixels": [
+          1280,
+          753
+        ],
+        "webpBytes": 83904,
+        "pixelFingerprint": "88f8fc72f2d2d2d0",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "four-seasons-3",
+        "sourcePage": "https://www.expedia.com/Seoul-Hotels-Four-Seasons-Hotel-Seoul.h11918302.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/12000000/11920000/11918400/11918302/278f6e55.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/12000000/11920000/11918400/11918302/278f6e55.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Four Seasons Hotel Seoul lobby",
+        "originalCaption": "Expedia / Four Seasons Hotel Seoul",
+        "credit": "Expedia / Four Seasons Hotel Seoul",
+        "publisher": "Four Seasons Hotel Seoul",
+        "hotel": "Four Seasons Hotel Seoul",
+        "localPath": "/images/travel/seoul-premium/four-seasons/four-seasons-3.webp",
+        "sourceSHA256": "f371b91adc1b762ea0b20354b13d7b042b0a5a36f0bdd921c8410fd3ace3588b",
+        "webpSHA256": "d1096e70626b2403910653e21f0bd7bacfdb6306d88b32d7bd5a57272e3a51d1",
+        "sourcePixels": [
+          1280,
+          849
+        ],
+        "webpPixels": [
+          1280,
+          849
+        ],
+        "webpBytes": 89046,
+        "pixelFingerprint": "e8f0f4f0f0f0d4f0",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "signiel-1",
+        "sourcePage": "https://www.thehotelguru.com/en-us/hotel/signiel-seoul-seoul",
+        "sourceResolvedUrl": "https://www.thehotelguru.com/_images/23/18/2318e63b9719c453413500eac6a22ad1/s1654x900.jpg",
+        "sourceRequestedUrl": "https://www.thehotelguru.com/_images/23/18/2318e63b9719c453413500eac6a22ad1/s1654x900.jpg",
+        "originalAlt": "SIGNIEL Seoul exterior Lotte World Tower",
+        "originalCaption": "The Hotel Guru / SIGNIEL Seoul",
+        "credit": "The Hotel Guru / SIGNIEL Seoul",
+        "publisher": "SIGNIEL Seoul",
+        "hotel": "SIGNIEL Seoul",
+        "localPath": "/images/travel/seoul-premium/signiel/signiel-1.webp",
+        "sourceSHA256": "31f37972347ce016e5106d3c112ca847f3aa387638d879be295f843c8d3881a6",
+        "webpSHA256": "38a31344e835916c9e4c4e64c4e7d31b1ce12718171c3c507e650c288f3e4130",
+        "sourcePixels": [
+          1654,
+          900
+        ],
+        "webpPixels": [
+          1280,
+          696
+        ],
+        "webpBytes": 103946,
+        "pixelFingerprint": "314921094f8ea6b6",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "signiel-2",
+        "sourcePage": "https://www.expedia.com/Seoul-Hotels-Signiel-Seoul.h18060379.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/19000000/18070000/18060400/18060379/82b776c9.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/19000000/18070000/18060400/18060379/82b776c9.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "SIGNIEL Seoul Premier King guest room",
+        "originalCaption": "Expedia / SIGNIEL Seoul",
+        "credit": "Expedia / SIGNIEL Seoul",
+        "publisher": "SIGNIEL Seoul",
+        "hotel": "SIGNIEL Seoul",
+        "localPath": "/images/travel/seoul-premium/signiel/signiel-2.webp",
+        "sourceSHA256": "745a67f6740338938dd0b113e39f96555cd605466e74dc0444f2e7823a22ea49",
+        "webpSHA256": "7daac823e74f6e534a053a75530b6ff653ad5b08dc3591124b9dad181df0c924",
+        "sourcePixels": [
+          1280,
+          853
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 113866,
+        "pixelFingerprint": "d2c7e82e3c7efc3c",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "signiel-3",
+        "sourcePage": "https://www.expedia.com/Seoul-Hotels-Signiel-Seoul.h18060379.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/19000000/18070000/18060400/18060379/5ec61d45.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/19000000/18070000/18060400/18060379/5ec61d45.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "SIGNIEL Seoul indoor pool",
+        "originalCaption": "Expedia / SIGNIEL Seoul",
+        "credit": "Expedia / SIGNIEL Seoul",
+        "publisher": "SIGNIEL Seoul",
+        "hotel": "SIGNIEL Seoul",
+        "localPath": "/images/travel/seoul-premium/signiel/signiel-3.webp",
+        "sourceSHA256": "44782659c025a71ff48c24074e5b63d2bc30bbd2d14ac400015b8c3b2f68f4ff",
+        "webpSHA256": "bf34bb4c94c2776212d1fd3fe5d79030453eda48c0bd2f693101a1173f3d9a30",
+        "sourcePixels": [
+          1280,
+          720
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 137788,
+        "pixelFingerprint": "e7dc5a26f2daf9e5",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "josun-palace-2",
+        "sourcePage": "https://www.marriott.com/en-us/hotels/sellc-josun-palace-a-luxury-collection-hotel-seoul-gangnam/photos/",
+        "sourceResolvedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SELLC/sellc-palace-gate-4762-hor-clsc.jpg?downsize=1336px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+        "sourceRequestedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SELLC/sellc-palace-gate-4762-hor-clsc.jpg?downsize=1336px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+        "originalAlt": "Josun Palace exterior Palace Gate",
+        "originalCaption": "Marriott / Josun Palace",
+        "credit": "Marriott / Josun Palace",
+        "publisher": "Josun Palace, a Luxury Collection Hotel, Seoul Gangnam",
+        "hotel": "Josun Palace, a Luxury Collection Hotel, Seoul Gangnam",
+        "localPath": "/images/travel/seoul-premium/josun-palace/josun-palace-2.webp",
+        "sourceSHA256": "cf53b3bc03363016953b4e6dd69fab1ced7e61229818482160431f48bbcd9c41",
+        "webpSHA256": "d99d91b2e50ade98a818f7f927cc220b78862cbfd7d3883c64fb2a72e8268388",
+        "sourcePixels": [
+          1336,
+          890
+        ],
+        "webpPixels": [
+          1276,
+          850
+        ],
+        "webpBytes": 236860,
+        "pixelFingerprint": "c8d0d1d2d0dc93c9",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "josun-palace-3",
+        "sourcePage": "https://www.marriott.com/en-us/hotels/sellc-josun-palace-a-luxury-collection-hotel-seoul-gangnam/photos/",
+        "sourceResolvedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SELLC/sellc-state-guestroom-4770-hor-clsc.jpg?downsize=1336px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+        "sourceRequestedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SELLC/sellc-state-guestroom-4770-hor-clsc.jpg?downsize=1336px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+        "originalAlt": "Josun Palace State guest room",
+        "originalCaption": "Marriott / Josun Palace",
+        "credit": "Marriott / Josun Palace",
+        "publisher": "Josun Palace, a Luxury Collection Hotel, Seoul Gangnam",
+        "hotel": "Josun Palace, a Luxury Collection Hotel, Seoul Gangnam",
+        "localPath": "/images/travel/seoul-premium/josun-palace/josun-palace-3.webp",
+        "sourceSHA256": "2c050079d09980f278af9517d6c3e1b3e1f10b95c2ae827b502b2a7f49d4a25b",
+        "webpSHA256": "8f1f60ca8ff4ff3a14964af6074484320c7d6f3388f7f7f05a761e6ffd1a2805",
+        "sourcePixels": [
+          1336,
+          890
+        ],
+        "webpPixels": [
+          1276,
+          850
+        ],
+        "webpBytes": 84822,
+        "pixelFingerprint": "ceccd87c8cccf0e0",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "josun-palace-4",
+        "sourcePage": "https://www.marriott.com/en-us/hotels/sellc-josun-palace-a-luxury-collection-hotel-seoul-gangnam/photos/",
+        "sourceResolvedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SELLC/sellc-indoor-pool-4795-hor-clsc.jpg?downsize=1336px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+        "sourceRequestedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SELLC/sellc-indoor-pool-4795-hor-clsc.jpg?downsize=1336px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+        "originalAlt": "Josun Palace indoor pool",
+        "originalCaption": "Marriott / Josun Palace",
+        "credit": "Marriott / Josun Palace",
+        "publisher": "Josun Palace, a Luxury Collection Hotel, Seoul Gangnam",
+        "hotel": "Josun Palace, a Luxury Collection Hotel, Seoul Gangnam",
+        "localPath": "/images/travel/seoul-premium/josun-palace/josun-palace-4.webp",
+        "sourceSHA256": "337e9baade3875e2bd99b1357f888b84763ebcaabe8988dd5ff4d376bfd93661",
+        "webpSHA256": "0dfd66878abd0d8749f828658be63f719ccc8156ea717584c7c93e1637b4c74c",
+        "sourcePixels": [
+          1336,
+          890
+        ],
+        "webpPixels": [
+          1276,
+          850
+        ],
+        "webpBytes": 208216,
+        "pixelFingerprint": "698353b19391960f",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "shilla-1",
+        "sourcePage": "https://www.expedia.com/Seoul-Hotels-The-Shilla-Seoul.h15031.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/1000000/20000/15100/15031/90e9261b.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/1000000/20000/15100/15031/90e9261b.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "The Shilla Seoul exterior at night",
+        "originalCaption": "Expedia / The Shilla Seoul",
+        "credit": "Expedia / The Shilla Seoul",
+        "publisher": "The Shilla Seoul",
+        "hotel": "The Shilla Seoul",
+        "localPath": "/images/travel/seoul-premium/shilla/shilla-1.webp",
+        "sourceSHA256": "eedd8187f07973937af0ef8c87d5256cd518759081cd264fc69b016bf80673d6",
+        "webpSHA256": "6dc3f2d141aa170b8efdee5262562bb1b7250f1471b4bea99bbb807e8fdf8ecd",
+        "sourcePixels": [
+          1280,
+          853
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 123334,
+        "pixelFingerprint": "b2f230140eacecea",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "shilla-2",
+        "sourcePage": "https://www.expedia.com/Seoul-Hotels-The-Shilla-Seoul.h15031.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/1000000/20000/15100/15031/a9d55657.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/1000000/20000/15100/15031/a9d55657.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "The Shilla Seoul Executive Grand Deluxe guest room",
+        "originalCaption": "Expedia / The Shilla Seoul",
+        "credit": "Expedia / The Shilla Seoul",
+        "publisher": "The Shilla Seoul",
+        "hotel": "The Shilla Seoul",
+        "localPath": "/images/travel/seoul-premium/shilla/shilla-2.webp",
+        "sourceSHA256": "8918cf5b31ae8085710c58f1a1dfb949e777905307abef61a93c693a2b5de419",
+        "webpSHA256": "a889b9e1d69c90d403fe4a543396b621a680cdc0564f5759e63dad3c7b3fc78e",
+        "sourcePixels": [
+          1280,
+          853
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 108966,
+        "pixelFingerprint": "87c686e4c0d4d0b8",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "shilla-3",
+        "sourcePage": "https://www.expedia.com/Seoul-Hotels-The-Shilla-Seoul.h15031.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/1000000/20000/15100/15031/101fc459.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/1000000/20000/15100/15031/101fc459.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "The Shilla Seoul outdoor pool",
+        "originalCaption": "Expedia / The Shilla Seoul",
+        "credit": "Expedia / The Shilla Seoul",
+        "publisher": "The Shilla Seoul",
+        "hotel": "The Shilla Seoul",
+        "localPath": "/images/travel/seoul-premium/shilla/shilla-3.webp",
+        "sourceSHA256": "1490d51c49d1e601b3514d183d3d8d00ffae51847be66628f30843b7040b4c0b",
+        "webpSHA256": "dd719b8282f2ae0602c4a51d16fb74eae12d2a3cfba9fb65df1496eaf7f9099f",
+        "sourcePixels": [
+          1280,
+          863
+        ],
+        "webpPixels": [
+          1261,
+          850
+        ],
+        "webpBytes": 135258,
+        "pixelFingerprint": "a7e3cf5c66818080",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
+    "gaps": [
+      {
+        "group": "city",
+        "expected": 9,
+        "found": 4
+      }
+    ],
+    "errors": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dongdaemun_Design_Plaza_grass.jpg",
+        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/1/13/Dongdaemun_Design_Plaza_grass.jpg?utm_source=commons.wikimedia.org&utm_ca"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Seokchon_Lake_in_Seoul.jpg",
+        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/7/72/Seokchon_Lake_in_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign="
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bongeun_Temple%2C_Seoul.jpg",
+        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/d/d6/Bongeun_Temple%2C_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cheonggyecheon_tree-lined_stream_and_footbridge_at_sunrise_in_Seoul.jpg",
+        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/2/28/Cheonggyecheon_tree-lined_stream_and_footbridge_at_sunrise_in_Seoul.jpg?u"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hongdae_Main_Road%2C_Seoul.jpg",
+        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/f/fd/Hongdae_Main_Road%2C_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campa"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hongdae_Streets.jpg",
+        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/c/cf/Hongdae_Streets.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&u"
+      },
+      {
+        "page": "https://www.fourseasons.com/seoul/photos-and-videos/",
+        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/seoul/photos-and-videos/"
+      },
+      {
+        "page": "https://www.fourseasons.com/en/seoul/",
+        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/en/seoul/"
+      },
+      {
+        "page": "https://www.fourseasons.com/seoul/accommodations/",
+        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/seoul/accommodations/"
+      },
+      {
+        "page": "https://www.shilla.net/seoul/index.do?lang=en",
+        "error": "HTTPSConnectionPool(host='www.shilla.net', port=443): Max retries exceeded with url: /seoul/index.do?lang=en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
+      },
+      {
+        "page": "https://www.shilla.net/seoul/accommodation/viewAccommo.do?lang=en",
+        "error": "HTTPSConnectionPool(host='www.shilla.net', port=443): Max retries exceeded with url: /seoul/accommodation/viewAccommo.do?lang=en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
+      }
+    ],
+    "publicUseApproved": false,
+    "ownerPermissionDeclared": true,
+    "excludedCandidates": [
       {
         "key": "josun-palace-1",
         "sourcePage": "https://www.marriott.com/en-us/hotels/sellc-josun-palace-a-luxury-collection-hotel-seoul-gangnam/photos/",
@@ -34,68 +588,8 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "gaps": [
-      {
-        "group": "city",
-        "expected": 9,
-        "found": 0
-      },
-      {
-        "group": "four-seasons",
-        "expected": 3,
-        "found": 0
-      },
-      {
-        "group": "signiel",
-        "expected": 3,
-        "found": 0
-      },
-      {
-        "group": "josun-palace",
-        "expected": 3,
-        "found": 1
-      },
-      {
-        "group": "shilla",
-        "expected": 3,
-        "found": 0
-      }
-    ],
-    "errors": [
-      {
-        "page": "https://www.fourseasons.com/seoul/photos-and-videos/",
-        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/seoul/photos-and-videos/"
-      },
-      {
-        "page": "https://www.fourseasons.com/en/seoul/",
-        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/en/seoul/"
-      },
-      {
-        "page": "https://www.fourseasons.com/seoul/accommodations/",
-        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/seoul/accommodations/"
-      },
-      {
-        "url": "https://press.fourseasons.com/seoul/hotel-news/2026/in-suite-wellness",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7ed8406b64d0>"
-      },
-      {
-        "url": "https://press.fourseasons.com/seoul/hotel-news/2026/urban-picnic2",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7ed84050dfd0>"
-      },
-      {
-        "page": "https://www.shilla.net/seoul/index.do?lang=en",
-        "error": "HTTPSConnectionPool(host='www.shilla.net', port=443): Max retries exceeded with url: /seoul/index.do?lang=en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
-      },
-      {
-        "page": "https://www.shilla.net/seoul/accommodation/viewAccommo.do?lang=en",
-        "error": "HTTPSConnectionPool(host='www.shilla.net', port=443): Max retries exceeded with url: /seoul/accommodation/viewAccommo.do?lang=en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
-      }
-    ],
-    "publicUseApproved": false,
-    "ownerPermissionDeclared": true,
-    "excludedCandidates": [],
-    "cityCount": 0,
-    "hotelCount": 1,
-    "totalBytes": 124068
+    "cityCount": 4,
+    "hotelCount": 12,
+    "totalBytes": 2287698
   }
 }
