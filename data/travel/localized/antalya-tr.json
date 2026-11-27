@@ -1,0 +1,107 @@
+{
+  "name": "Antalya",
+  "country": "Türkiye",
+  "eyebrow": "Akdeniz kıyıları · Plajlar, golf ve tarih",
+  "heading": "Antalya'da nerede kalınır? Belek, Kemer ve şehir merkezi",
+  "intro": "Antalya; deniz kıyısındaki resortları, geniş aile otelleri, golf sahaları ve tarihî sokaklarıyla farklı tatil seçenekleri sunar. Belek, Kemer ve şehir merkezindeki konaklama deneyimleri birbirinden ayrılır.",
+  "editorial": "Antalya'da otel seçimini tatil tarzınıza göre yapın. Belek ve Kadriye'de geniş resortlar, plajlar, golf sahaları ve tesis içi hizmetler öne çıkar. Regnum Carya, Cullinan Belek ve Rixos Premium Belek'i değerlendirirken oda kategorilerinin yanı sıra yemek planını, çocuklara yönelik hizmetleri, havuz erişimini ve golf olanaklarını karşılaştırın.\n\nKemer'in dağlık kıyılarında çam ormanları, koylar ve Akdeniz manzaraları öne çıkar. Maxx Royal Kemer, Belek'teki resortlardan farklı bir coğrafyada yer alır. Villa veya süit seçerken gerçek manzarayı, plaja erişimi, açık alanı ve özel havuz koşullarını doğrulayın.\n\nKaleiçi ve Konyaaltı ise şehri tanımak, tarihî sokaklarda yürümek, restoranları keşfetmek ve şehir plajlarında zaman geçirmek isteyenlere hitap eder. Bu bölgeler, günün büyük bölümünü resort içinde geçireceğiniz Belek tatilinden farklıdır.\n\nHer şey dahil konseptinde hangi restoran ve hizmetlerin ücrete dahil olduğunu, ayrı rezervasyon gerekip gerekmediğini ve sezonluk çalışma saatlerini kontrol edin. Antalya Havalimanı'ndan transfer süreleri konaklama bölgesine ve trafiğe göre değişir. Güncel fiyat ve müsaitlik için rezervasyon sağlayıcısına başvurun.",
+  "hotelIntro": "Regnum Carya, Cullinan Belek, Rixos Premium Belek ve Maxx Royal Kemer: dört resortu aile tatili, golf, plaj, konum ve oda kategorilerine göre değerlendirin.",
+  "areas": [
+    [
+      "Belek ve Kadriye",
+      "Kumlu plajlar, golf sahaları, geniş resort altyapısı ve tesis içi aktiviteler.",
+      "Öncelikle resort tatili için; şehir sokaklarını yürüyerek keşfetmek için değil."
+    ],
+    [
+      "Kemer ve dağlık kıyılar",
+      "Yeşil dağların eteklerindeki koylarda doğa tatilin önemli bir parçasıdır.",
+      "Plaj türünü ve tesis dışındaki gezilecek yerlere uzaklığı kontrol edin."
+    ],
+    [
+      "Kaleiçi ve Konyaaltı",
+      "Tarihî sokaklar, restoranlar, eski liman ve şehir plajları Antalya'yı keşfetmek isteyenlere hitap eder.",
+      "Bölgenin atmosferi Belek'teki büyük resortlardan farklıdır."
+    ]
+  ],
+  "experiences": [
+    [
+      "Konforlu aile tatili",
+      "Süit planlarını, restoranları, çocuklara yönelik hizmetleri ve seyahat sezonunda ısıtmalı havuz bulunup bulunmadığını karşılaştırın."
+    ],
+    [
+      "Akdeniz kıyısında golf",
+      "Belek'teki golf sahalarında zaman geçirin; başlangıç saatlerini ve bakım takvimini önceden kontrol edin."
+    ],
+    [
+      "Tarihî şehirde yürüyüş",
+      "Kaleiçi'ni ve tarihî limanı keşfettikten sonra otelinizde dinlenin."
+    ]
+  ],
+  "checks": [
+    "Gerçek konumu kontrol edin: Belek, Kemer ve Antalya şehir merkezi farklı bölgelerdir.",
+    "Her şey dahil koşullarını, restoran rezervasyonlarını ve ekstra ücretli hizmetleri öğrenin.",
+    "Isıtmalı havuzların ve çocuk alanlarının sezonluk çalışma durumunu doğrulayın.",
+    "Havalimanı transferini, golf sahasına erişimi ve bakım takvimini kontrol edin."
+  ],
+  "hotels": [
+    [
+      "Kadriye · Belek",
+      "Süitler, villalar ve çeşitli golf olanakları sunan üst segment resort.",
+      "Golf erişimini, çocuk programlarını ve sezonluk hizmetleri öğrenin.",
+      "Aile, golf ve havuz odaklı resort tatili için.",
+      "Regnum Carya'nın güçlü yönü tesis içi olanakların çeşitliliği ve Belek'teki golf bağlantısıdır. Plaj, havuz ve dinlenme alanları arasında gününüzü geçirebilirsiniz. Süite bağlı havuz her odada standart değildir. Yemek planını, golf koşullarını ve odanın hareketli alanlara göre konumunu rezervasyondan önce inceleyin."
+    ],
+    [
+      "Kadriye · Belek",
+      "Tesis içi hizmetlere ve altyapıya odaklanan modern sahil resortu.",
+      "Oda kategorisini ve rezervasyon fiyatına dahil hizmetleri doğrulayın.",
+      "Golf sahalarına yakın, havuz ve restoran odaklı Akdeniz tatili için.",
+      "Modern mimari ve geniş açık alanlar tesiste uzun süreli tatil için elverişlidir. Lagün kenarındaki odalar, swim-up kategorileri ve deniz manzaralı odalar farklıdır. Teras mahremiyetini, oda yönünü ve havuza gerçek erişimi karşılaştırın. Kategori adı özel havuz garantisi vermez. Restoranların, aktivitelerin ve aile hizmetlerinin seyahat tarihlerinizde açık olup olmadığını kontrol edin."
+    ],
+    [
+      "Belek",
+      "Ailelere yönelik eğlenceler ve geniş aktivite seçeneği sunan büyük sahil resortu.",
+      "Bağlantılı oda imkânını ve bazı aktivitelerin ücrete dahil olup olmadığını öğrenin.",
+      "Aile veya arkadaşlarla hareketli bir sahil tatili için.",
+      "Rixos Premium Belek, küçük butik otellerden ziyade restoran, plaj eğlencesi ve hizmet çeşitliliğini sevenlere hitap eder. İş ortağı eğlence tesislerine erişim şartlarını, tesis içi mesafeleri ve oda yönünü kontrol edin. Aileler için yatak düzeni yalnızca metrekareden daha önemli olabilir."
+    ],
+    [
+      "Kemer · Batı kıyıları",
+      "Dağlar, ormanlar ve Akdeniz koyları arasında Belek resortlarına alternatif bir konaklama.",
+      "Havalimanı transferini ve konaklama kategorisini doğrulayın.",
+      "Dağlar, deniz ve geniş villa seçenekleriyle tatil için.",
+      "Kemer'in tepeleri, kayalıkları ve sahili Maxx Royal Kemer'in karakterini belirler. Bazı kategoriler özel teras ile deniz arasında zaman geçirmeyi mümkün kılar; ancak manzaralar, oda planları ve plaja erişim farklıdır. Villa seçiminde yatak odası sayısını, mahremiyeti, hizmetleri ve transferi kontrol edin. Beach Villa fotoğrafı standart süiti temsil etmez."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Antalya kıyılarının gün batımında yapay zekâ ile oluşturulmuş özgün illüstrasyonu",
+    "Antalya Konyaaltı Plajı",
+    "Kaleiçi tarihî limanı"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Belek'te Regnum Carya",
+      "Pearl Pool Suite havuzu",
+      "Jade Suite"
+    ],
+    [
+      "Cullinan Belek resortu ve havuzları",
+      "Havuzlar ve açık teraslar",
+      "Havuza erişimli dubleks süit"
+    ],
+    [
+      "Akdeniz kıyısında Rixos Premium Belek",
+      "Plaj ve havuzlar",
+      "Deluxe oda"
+    ],
+    [
+      "Çam ormanı ve deniz arasında Maxx Royal Kemer",
+      "Havuzlar ve villalar",
+      "Villa iç mekânı ve terası"
+    ]
+  ],
+  "seoTitle": "Antalya'da Nerede Kalınır? Belek, Kemer ve En İyi Oteller",
+  "hotelSeoTitle": "Antalya'nın En İyi Lüks Otelleri: Belek ve Kemer",
+  "seoDescription": "Belek, Kemer, Kaleiçi ve Konyaaltı'nı karşılaştırın. Antalya'nın dört seçkin resortunu, aile tatili ve golf seçeneklerini keşfedin."
+}
