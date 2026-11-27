@@ -1,0 +1,131 @@
+{
+  "name": "Las Vegas",
+  "country": "Amerika Birleşik Devletleri",
+  "eyebrow": "Nevada · Resortlar, gösteriler ve çöl",
+  "heading": "Las Vegas: Strip'in ışıklarının ötesinde unutulmaz resortlar.",
+  "intro": "Las Vegas başlı başına bir otel destinasyonudur. Bellagio'nun fıskiyeleri, Venetian'ın süitleri, Wynn'in bahçeleri ve Fontainebleau'nun çağdaş mimarisi farklı konaklama deneyimleri sunar. Konum, görünen fiyat kadar önemlidir.",
+  "editorial": "Strip'in merkezi, ünlü otelleri ve gösterileri bir arada keşfetmek için elverişlidir. Ancak kompleksler çok büyüktür; kısa görünen mesafeler uzun koridorlar, yaya köprüleri ve yürüyen merdivenler içerebilir. Strip'in kuzeyi bazı merkezi turistik noktalardan daha uzaktadır. Downtown, Fremont Street ve Arts District, tarih, sanat ve bağımsız restoranlarıyla şehrin farklı bir yüzünü gösterir.\n\nİki veya üç gecelik seyahatte iki bölgeye odaklanın. Çocuklarla havuzları, yaş sınırlarını ve kumar dışındaki etkinlikleri karşılaştırın. Yaz ayları çok sıcak olabilir; klimalı etkinlikleri tercih edin ve yürüyüşleri daha serin saatlere bırakın. Red Rock Canyon veya Hoover Dam gezileri uygun ulaşım ve hava koşullarına göre hazırlık gerektirir.\n\nDüşük görünen oda fiyatı vergiler, zorunlu resort ücretleri, otopark ve ek hizmetlerle artabilir. Konaklamanın toplam fiyatını karşılaştırın, zorunlu ücretleri isteğe bağlı hizmetlerden ayırın ve güvence bedelinin iade edilebilir kart provizyonu olup olmadığını kontrol edin. Kongre ve büyük etkinlik tarihlerinde fiyatlar ciddi ölçüde değişebilir. Harry Reid Uluslararası Havalimanı'ndan otelinize göre taksi, servis, toplu taşıma ve özel transfer seçeneklerini karşılaştırın.",
+  "hotelIntro": "Dört farklı deneyim: Strip'in merkezinde Bellagio, lüks resort deneyimi için Wynn, geniş süitleriyle The Venetian ve çağdaş tasarımıyla Fontainebleau.",
+  "areas": [
+    [
+      "Strip merkezi",
+      "Bellagio fıskiyeleri, ünlü resortlar, restoranlar ve gösteriler.",
+      "Komplekslerin içindeki gerçek yürüme mesafelerini hesaba katın."
+    ],
+    [
+      "Strip kuzeyi",
+      "Wynn ve Fontainebleau, alışveriş ve çağdaş resortlar.",
+      "Uzak turistik noktalara ulaşımı planlayın."
+    ],
+    [
+      "Strip güneyi",
+      "Büyük otel kompleksleri ve havalimanı bölgesine erişim.",
+      "Adresi ve merkeze yürüme mesafesini kontrol edin."
+    ],
+    [
+      "Downtown ve Fremont Street",
+      "Tarihi atmosfer, sokak gösterileri ve restoranlar.",
+      "Akşam gürültüsü sokaktan sokağa değişebilir."
+    ],
+    [
+      "Arts District",
+      "Galeriler, kafeler ve bağımsız mağazalar.",
+      "Akşam gezilerinden dönüşünüzü planlayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Fıskiyeler ve bahçeler",
+      "Bellagio fıskiyelerini resortun halka açık alanlarıyla birlikte keşfedin."
+    ],
+    [
+      "Gösteri gecesi",
+      "Gece ulaşımını azaltmak için otelden önce gösteri salonunu seçin."
+    ],
+    [
+      "Arts District ve Downtown",
+      "Galerileri ve bağımsız restoranları keşfedin."
+    ],
+    [
+      "Çöl kaçamağı",
+      "Sıcağa uygun bir gezi için su, saat ve ulaşımı planlayın."
+    ]
+  ],
+  "checks": [
+    "Vergiler ve zorunlu ücretler dahil toplam fiyatı karşılaştırın.",
+    "Depozito ve otopark koşullarını kontrol edin.",
+    "Odayı manzara, kat ve sakinliğe göre seçin.",
+    "Havuzların yaş kurallarını ve aile konaklama kapasitesini doğrulayın.",
+    "Kongre ve etkinlik tarihlerini alternatif tarihlerle karşılaştırın."
+  ],
+  "hotels": [
+    [
+      "Strip merkezi",
+      "Strip'in simgesi olan resort, gösterileri, bahçeleri ve fıskiyeleri bir araya getirir. Fountain View odalar ayrı bir kategoridir; tüm odalar göle bakmaz.",
+      "Oda kategorisini ve zorunlu ücretler dahil toplam fiyatı doğrulayın.",
+      "Strip'in merkezi ve fıskiye manzarası için.",
+      "Bellagio, Strip'in simgelerinden biridir; gösteriler, bahçeler ve fıskiyeler bir aradadır. Fountain View ayrı bir oda kategorisidir. Tüm odalar göle bakmadığından kategoriyi ve zorunlu ücretler dahil toplam fiyatı doğrulayın."
+    ],
+    [
+      "Strip kuzeyi",
+      "Wynn çağdaş zarafeti, restoranları ve peyzajlı alanlarıyla öne çıkar. Wynn odaları ve Encore süitleri farklı konaklama seçenekleridir.",
+      "Bina, oda tipi ve havuz kurallarını kontrol edin.",
+      "Lüks resort deneyimi için.",
+      "Wynn çağdaş zarafet, gastronomi ve peyzajlı alanlar sunar. Wynn odaları ile Encore süitleri farklı seçeneklerdir; bina, oda tipi ve havuz kurallarını kontrol edin."
+    ],
+    [
+      "Strip merkez-kuzey",
+      "Geniş süitler ve Venedik'ten ilham alan dekor. Venetian ve Palazzo kulelerinin farklı yerleşimleri vardır.",
+      "Kuleyi, yatak düzenini, manzarayı ve izin verilen kişi sayısını karşılaştırın.",
+      "Geniş süitler ve tematik mimari için.",
+      "Geniş süitler ve Venedik esintili dekor, konaklamaya güçlü bir kimlik kazandırır. Venetian ve Palazzo kulelerinin farklı düzenleri, kompleks içindeki yürüme mesafelerini etkileyebilir. Kule, yatak düzeni, manzara ve kapasiteyi karşılaştırın."
+    ],
+    [
+      "Strip kuzeyi",
+      "Farklı büyüklük ve manzaralara sahip oda ve süitleriyle çağdaş bir yüksek katlı otel.",
+      "Strip veya dağ manzarasını ve merkeze ulaşımı doğrulayın.",
+      "Modern mimari ve resort odaklı tatil için.",
+      "Fontainebleau, farklı büyüklük ve manzaralara sahip odaları ve süitleriyle çağdaş bir oteldir. Yeni mimariyi ve resort merkezli tatili tercih edenlere uygundur. Strip veya dağ manzarasını ve merkeze ulaşımı doğrulayın."
+    ]
+  ],
+  "faq": [
+    [
+      "Las Vegas'a ilk kez gelenler nerede kalmalı?",
+      "Fıskiyeler ve büyük gösteriler için Strip merkezi; Wynn veya Fontainebleau odaklı tatil için kuzeyi uygundur."
+    ],
+    [
+      "Hangi otel fıskiye manzaralıdır?",
+      "Bellagio'nun bazı odaları Fountain View kategorisindedir; seçilen kategoriyi kontrol edin."
+    ],
+    [
+      "Resort fee nedir?",
+      "Uygulandığında zorunlu olan konaklama ek ücretidir; vergi ve ücretler dahil toplam tutarı karşılaştırın."
+    ],
+    [
+      "Las Vegas ailelere uygun mu?",
+      "Kumar dışındaki etkinlikler için evet; havuzları, yatak düzenini, yaş kurallarını ve çocuk erişimini kontrol edin."
+    ],
+    [
+      "Kaç gece kalmalı?",
+      "Strip'i keşfetmek için iki-üç gece; Downtown ve çevre gezileriyle daha uzun süre."
+    ],
+    [
+      "Araç kiralamak gerekli mi?",
+      "Strip odaklı konaklamada gerekli değildir; bazı çevre gezilerinde yararlı olabilir."
+    ],
+    [
+      "En iyi fiyat nasıl bulunur?",
+      "Bosphoras'ta aynı tarihler, koşullar ve gerçek kişi sayısı için toplam fiyatı karşılaştırın."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Las Vegas'ta Nerede Kalınır? Strip ve En İyi Oteller",
+  "hotelSeoTitle": "Las Vegas Otelleri: Bellagio, Wynn, Venetian ve Fontainebleau",
+  "seoDescription": "Las Vegas otellerini, Strip bölgelerini, süitleri ve vergiler ile zorunlu resort ücretleri dahil toplam fiyatları karşılaştırın."
+}
