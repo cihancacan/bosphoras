@@ -607,6 +607,10 @@
     ],
     "errors": [
       {
+        "page": "https://www.stpauls.co.uk/",
+        "error": "HTTPSConnectionPool(host='www.stpauls.co.uk', port=443): Read timed out. (read timeout=16)"
+      },
+      {
         "page": "https://www.visitlondon.com/things-to-do",
         "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do"
       },
@@ -689,10 +693,6 @@
       {
         "page": "https://www.visitlondon.com/things-to-do/london-areas/kensington-and-south-kensington/things-to-do-south-kensington",
         "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/london-areas/kensington-and-south-kensington/things-to-do-south-kensington"
-      },
-      {
-        "page": "https://www.thesavoylondon.com/rooms-and-suites/",
-        "error": "404 Client Error: Not Found for url: https://www.thesavoylondon.com/rooms-and-suites"
       },
       {
         "page": "https://www.shangri-la.com/london/shangrila/photos-videos/",
