@@ -1,0 +1,37 @@
+name: Generate responsive travel hero photos
+on:
+  push:
+    branches: [feature/travel-mobile-image-performance]
+    paths: ['.github/workflows/travel-mobile-hero-images.yml']
+permissions:
+  contents: write
+jobs:
+  assets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: feature/travel-mobile-image-performance}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install --quiet pillow
+      - name: Generate smaller copies without changing originals
+        run: |
+          python3 - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          for name in ('paris-premium/destination/paris-seine-hero','dubai-premium/destination/west-beach-hero'):
+              src=Path('public/images/travel')/(name+'.webp')
+              dst=src.with_name(src.stem+'-mobile.webp')
+              with Image.open(src) as image:
+                  image.thumbnail((900,900),Image.Resampling.LANCZOS)
+                  image.save(dst,'WEBP',quality=80,method=6)
+              assert dst.stat().st_size < src.stat().st_size
+              print(src.name,src.stat().st_size,'->',dst.stat().st_size)
+          PY
+      - name: Commit assets to test branch only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/images/travel/paris-premium/destination/paris-seine-hero-mobile.webp public/images/travel/dubai-premium/destination/west-beach-hero-mobile.webp
+          git diff --cached --quiet || (git commit -m 'Add responsive hero images for Paris and Dubai' && git push origin HEAD:refs/heads/feature/travel-mobile-image-performance)

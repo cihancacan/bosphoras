@@ -1,3 +1,4 @@
+import { TravelHeroImage } from './TravelHeroImage';
 import { destinationBySlug } from '@/data/travel/destinations';
 import { DestinationFlightLink } from './DestinationFlightLink';
 import { HotelComparisonTable } from './HotelComparisonTable';
@@ -446,16 +447,16 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           </div>
         </div>
         <div className="relative order-1 aspect-[16/10] overflow-hidden lg:order-2 lg:aspect-auto lg:min-h-[600px]">
-          {hero && <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="(min-width:1024px) 60vw, 100vw" className="object-cover object-[58%_center]"/>}
+          {hero && <TravelHeroImage src={hero.src} alt={fr?hero.fr:hero.en} sizes="(min-width:1024px) 60vw, 100vw" className="object-cover object-[58%_center]"/>}
         </div>
       </div>
     </section> : (
     <section className="relative isolate overflow-hidden bg-[#f5f5f3] text-[#202629]">
       {hero && <div className="relative h-[38vh] min-h-[260px] overflow-hidden sm:hidden">
-        <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="100vw" className="object-cover" />
+        <TravelHeroImage src={hero.src} alt={fr?hero.fr:hero.en} sizes="100vw" className="object-cover"/>
       </div>}
       <div className="absolute inset-0 hidden sm:block" aria-hidden="true">
-        {hero && (destinationAssets ? destinationAssets.has(hero.src) : true) && <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="100vw" className="object-cover" />}
+        {hero && (destinationAssets ? destinationAssets.has(hero.src) : true) && <TravelHeroImage src={hero.src} alt={fr?hero.fr:hero.en} sizes="100vw" className="object-cover"/>}
         <div className="absolute inset-0 bg-gradient-to-r from-[#f5f5f3]/90 via-[#f5f5f3]/45 to-transparent" />
       </div>
       <div className="relative mx-auto max-w-7xl px-5 pb-10 pt-8 sm:pb-24 sm:pt-20">
@@ -526,7 +527,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
     <DestinationFlightLink locale={locale} slug={city.slug} name={city.name} afterHero mode={hotelPage?'prices':'both'}/>
     {earlyPreviewPhotos.length > 0 && <section aria-label={fr?'Images de la destination':'Destination photographs'} className="mx-auto max-w-7xl px-5 pt-8 sm:pt-12">
       <div className={earlyPreviewPhotos.length > 1 ? 'grid gap-3 sm:grid-cols-2 lg:grid-cols-3' : 'grid gap-3'}>
-        {earlyPreviewPhotos.map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}
+        {earlyPreviewPhotos.map(photo=><CityPhoto key={photo.src} photo={photo} locale={locale}/>)}
       </div>
     </section>}
     {hotelPage&&<HotelSelection guide={city} locale={locale}/>}
@@ -585,7 +586,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Galle · patrimoine et océan':'Galle · heritage and ocean'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Neuf perspectives authentiques sur Galle et sa côte.':'Nine real perspectives on Galle Fort and the coast.'}</h2>
         <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
-          {approvedPhotos.slice(0,9).map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}
+          {approvedPhotos.slice(0,9).map(photo=><CityPhoto key={photo.src} photo={photo} locale={locale}/>)}
         </div>
         
       </div>
@@ -595,7 +596,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Tangalle · plages et lagunes':'Tangalle · beaches and lagoons'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Neuf regards authentiques sur la côte de Tangalle.':'Nine authentic perspectives on the Tangalle coast.'}</h2>
         <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
-          {approvedPhotos.slice(0,9).map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}
+          {approvedPhotos.slice(0,9).map(photo=><CityPhoto key={photo.src} photo={photo} locale={locale}/>)}
         </div>
       </div>
     </section>}
@@ -604,7 +605,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Paro · vallée et monastères':'Paro · valleys and monasteries'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Neuf perspectives authentiques sur la vallée de Paro.':'Nine authentic perspectives on Bhutan’s Paro Valley.'}</h2>
         <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
-          {approvedPhotos.slice(0,9).map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}
+          {approvedPhotos.slice(0,9).map(photo=><CityPhoto key={photo.src} photo={photo} locale={locale}/>)}
         </div>
       </div>
     </section>}
@@ -613,7 +614,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Gangtey · vallée et monastère':'Gangtey · valley and monastery'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Neuf paysages authentiques de Phobjikha et de Gangtey.':'Nine authentic views of Phobjikha and Gangtey.'}</h2>
         <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
-          {approvedPhotos.slice(0,9).map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}
+          {approvedPhotos.slice(0,9).map(photo=><CityPhoto key={photo.src} photo={photo} locale={locale}/>)}
         </div>
       </div>
     </section>}
@@ -621,35 +622,35 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Siem Reap · patrimoine khmer':'Siem Reap · Khmer heritage'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Neuf regards authentiques sur Angkor et Siem Reap.':'Nine authentic perspectives on Angkor and Siem Reap.'}</h2>
-        <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">{approvedPhotos.slice(0,9).map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}</div>
+        <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">{approvedPhotos.slice(0,9).map(photo=><CityPhoto key={photo.src} photo={photo} locale={locale}/>)}</div>
       </div>
     </section>}
     {city.slug==='koh-rong' && approvedPhotos.length>0 && <section id="panoramas-koh-rong" className="scroll-mt-24 bg-[#e6eeeb] py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Koh Rong · plages et villages':'Koh Rong · beaches and island life'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Neuf regards authentiques sur la côte de Koh Rong.':'Nine authentic views of Koh Rong’s island coastline.'}</h2>
-        <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">{approvedPhotos.slice(0,9).map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}</div>
+        <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">{approvedPhotos.slice(0,9).map(photo=><CityPhoto key={photo.src} photo={photo} locale={locale}/>)}</div>
       </div>
     </section>}
     {city.slug==='luang-prabang' && approvedPhotos.length>0 && <section id="panoramas-luang-prabang" className="scroll-mt-24 bg-[#e6eeeb] py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Luang Prabang · temples et Mékong':'Luang Prabang · temples and Mekong'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Neuf regards sur Luang Prabang, du Mékong aux temples.':'Nine views of Luang Prabang, from the Mekong to the temples.'}</h2>
-        <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">{approvedPhotos.slice(0,9).map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}</div>
+        <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">{approvedPhotos.slice(0,9).map(photo=><CityPhoto key={photo.src} photo={photo} locale={locale}/>)}</div>
       </div>
     </section>}
     {city.slug==='langkawi' && approvedPhotos.length>0 && <section id="panoramas-langkawi" className="scroll-mt-24 bg-[#e6eeeb] py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Langkawi · baies et forêts tropicales':'Langkawi · bays and rainforest'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Neuf regards sur Langkawi, des baies aux sommets.':'Nine views of Langkawi, from sheltered bays to mountain peaks.'}</h2>
-        <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">{approvedPhotos.slice(0,9).map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}</div>
+        <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">{approvedPhotos.slice(0,9).map(photo=><CityPhoto key={photo.src} photo={photo} locale={locale}/>)}</div>
       </div>
     </section>}
     {city.slug==='desaru-coast' && approvedPhotos.length>0 && <section id="panoramas-desaru-coast" className="scroll-mt-24 bg-[#e6eeeb] py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Desaru Coast · littoral de Johor':'Desaru Coast · Johor shoreline'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Le littoral de Johor, entre plages et nature.':"Johor’s coastline, between beaches and nature."}</h2>
-        <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">{approvedPhotos.slice(0,9).map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}</div>
+        <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">{approvedPhotos.slice(0,9).map(photo=><CityPhoto key={photo.src} photo={photo} locale={locale}/>)}</div>
       </div>
     </section>}
     {city.slug==='rajasthan' && <section id="panoramas-rajasthan" className="scroll-mt-24 bg-[#f5f5f3] py-16 sm:py-24">

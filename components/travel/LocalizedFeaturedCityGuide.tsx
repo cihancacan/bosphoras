@@ -1,3 +1,4 @@
+import { TravelHeroImage } from './TravelHeroImage';
 import { DestinationFlightLink } from './DestinationFlightLink';
 import { HotelComparisonTable } from './HotelComparisonTable';
 import { AreaComparisonTable } from './AreaComparisonTable';
@@ -37,8 +38,8 @@ export function LocalizedFeaturedCityGuide({city,data,locale,variant}:{city:Feat
  const title=hotelPage?data.hotelSeoTitle:data.heading;
  return <main className="min-h-screen bg-white text-[#202629]" lang={locale} dir={locale==='ar'?'rtl':'ltr'}>
    <section className="relative isolate overflow-hidden bg-[#f5f5f3] text-[#202629]">
-    {hero&&<div className="relative h-[38vh] min-h-[260px] overflow-hidden sm:hidden"><Image src={hero.src} alt={caption(hero.src)} fill priority sizes="100vw" className="object-cover"/></div>}
-    {hero&&<div className="absolute inset-0 hidden sm:block" aria-hidden="true"><Image src={hero.src} alt="" fill priority sizes="100vw" className="object-cover"/><div className={'absolute inset-0 '+heroGradient+' from-[#f5f5f3]/95 via-[#f5f5f3]/65 to-transparent'}/></div>}
+    {hero&&<div className="relative h-[38vh] min-h-[260px] overflow-hidden sm:hidden"><TravelHeroImage src={hero.src} alt={caption(hero.src)} sizes="100vw" className="object-cover"/></div>}
+    {hero&&<div className="absolute inset-0 hidden sm:block" aria-hidden="true"><TravelHeroImage src={hero.src} alt="" sizes="100vw" className="object-cover"/><div className={'absolute inset-0 '+heroGradient+' from-[#f5f5f3]/95 via-[#f5f5f3]/65 to-transparent'}/></div>}
     <div className="relative mx-auto max-w-7xl px-5 pb-10 pt-8 sm:pb-24 sm:pt-20"><div className="max-w-3xl">
      <p className="text-xs font-medium leading-6 text-[#193344]"><bdi>Bosphoras · Luxury Stays</bdi> / {data.eyebrow}</p>
      <h1 className="mt-4 max-w-4xl font-sans font-normal text-4xl leading-[1.2] text-[#202629] sm:mt-7 sm:text-5xl lg:text-6xl">{title}</h1>
