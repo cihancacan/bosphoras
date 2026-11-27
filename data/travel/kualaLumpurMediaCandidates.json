@@ -252,6 +252,223 @@
     ],
     "hotels": [
       {
+        "key": "mandarin-oriental-1",
+        "sourcePage": "https://www.expedia.com/Kuala-Lumpur-Hotels-Mandarin-Oriental-Kuala-Lumpur.h200564.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/1000000/210000/200600/200564/032e9b29.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/1000000/210000/200600/200564/032e9b29.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Mandarin Oriental Kuala Lumpur Deluxe City View King room",
+        "originalCaption": "Expedia / Mandarin Oriental Kuala Lumpur",
+        "credit": "Expedia / Mandarin Oriental Kuala Lumpur",
+        "publisher": "Mandarin Oriental, Kuala Lumpur",
+        "hotel": "Mandarin Oriental, Kuala Lumpur",
+        "localPath": "/images/travel/kuala-lumpur-premium/mandarin-oriental/mandarin-oriental-1.webp",
+        "sourceSHA256": "08ec50ee9ae0f410bdfc560ab797b93182e5977f7cb792c7c6f47cd3f3498dd0",
+        "webpSHA256": "c3c74249ea2379e8eb1b523aa7f03c621dd58ab322635736e48b8dec0bd40c36",
+        "sourcePixels": [
+          1280,
+          853
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 114068,
+        "pixelFingerprint": "248a3070dadaf0f0",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "mandarin-oriental-2",
+        "sourcePage": "https://www.expedia.com/Kuala-Lumpur-Hotels-Mandarin-Oriental-Kuala-Lumpur.h200564.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/1000000/210000/200600/200564/2ff9e531.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/1000000/210000/200600/200564/2ff9e531.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Mandarin Oriental Kuala Lumpur outdoor pool overlooking park",
+        "originalCaption": "Expedia / Mandarin Oriental Kuala Lumpur",
+        "credit": "Expedia / Mandarin Oriental Kuala Lumpur",
+        "publisher": "Mandarin Oriental, Kuala Lumpur",
+        "hotel": "Mandarin Oriental, Kuala Lumpur",
+        "localPath": "/images/travel/kuala-lumpur-premium/mandarin-oriental/mandarin-oriental-2.webp",
+        "sourceSHA256": "60a825d8993eaef6b0fe5e48096253c0a87067ae8a998cd665e92b7112669f6d",
+        "webpSHA256": "01db605abcedd25712c60490fb8cdc63c49786797a03384518fc1d14985d76f3",
+        "sourcePixels": [
+          1280,
+          853
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 166666,
+        "pixelFingerprint": "f8e086993cadcdde",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "four-seasons-1",
+        "sourcePage": "https://millionlighting.com/four-seasons-hotel-kuala-lumpur-external",
+        "sourceResolvedUrl": "https://millionlighting.com/assets/general/project-four-seasons-kl-01.jpg",
+        "sourceRequestedUrl": "https://millionlighting.com/assets/general/project-four-seasons-kl-01.jpg",
+        "originalAlt": "Four Seasons Hotel Kuala Lumpur exterior tower beside Petronas Towers",
+        "originalCaption": "Million Lighting / project photography",
+        "credit": "Million Lighting / project photography",
+        "publisher": "Four Seasons Hotel Kuala Lumpur",
+        "hotel": "Four Seasons Hotel Kuala Lumpur",
+        "localPath": "/images/travel/kuala-lumpur-premium/four-seasons/four-seasons-1.webp",
+        "sourceSHA256": "dd1fecffbda7a801365337b88f93715ce35d5a10874774dfd96d334f9fe7ac8a",
+        "webpSHA256": "043c592aaad3092a0ea14fb7025835a59796f18bc2c3ba6fa51f81ef315d0569",
+        "sourcePixels": [
+          1680,
+          944
+        ],
+        "webpPixels": [
+          1280,
+          719
+        ],
+        "webpBytes": 97754,
+        "pixelFingerprint": "90d1dadad2d1f9e9",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "four-seasons-2",
+        "sourcePage": "https://www.expedia.com/Kuala-Lumpur-Hotels-Four-Seasons-Hotel-Kuala-Lumpur.h21122615.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/22000000/21130000/21122700/21122615/cf81feb6.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/22000000/21130000/21122700/21122615/cf81feb6.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Four Seasons Hotel Kuala Lumpur King Park View guest room",
+        "originalCaption": "Expedia / Four Seasons Hotel Kuala Lumpur",
+        "credit": "Expedia / Four Seasons Hotel Kuala Lumpur",
+        "publisher": "Four Seasons Hotel Kuala Lumpur",
+        "hotel": "Four Seasons Hotel Kuala Lumpur",
+        "localPath": "/images/travel/kuala-lumpur-premium/four-seasons/four-seasons-2.webp",
+        "sourceSHA256": "aeaeade77c18308a31b8e59e4e973b0e8920993f581c2e911bfc46c5942dba63",
+        "webpSHA256": "4ca997bfe8cf5c8f550185bda7c9aa09793e64a5028847a17f93c8c8d467ae93",
+        "sourcePixels": [
+          1280,
+          834
+        ],
+        "webpPixels": [
+          1280,
+          834
+        ],
+        "webpBytes": 137434,
+        "pixelFingerprint": "e1e8b8f49c958438",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "ruma-1",
+        "sourcePage": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/",
+        "sourceResolvedUrl": "https://theruma.com/file/webpage/shared/banner/Port-Cochere%20The%20RuMa.webp",
+        "sourceRequestedUrl": "https://theruma.com/file/webpage/shared/banner/Port-Cochere%20The%20RuMa.webp",
+        "originalAlt": "The RuMa Hotel and Residences porte-cochere entrance",
+        "originalCaption": "The RuMa official photography",
+        "credit": "The RuMa official photography",
+        "publisher": "The RuMa Hotel and Residences",
+        "hotel": "The RuMa Hotel and Residences",
+        "localPath": "/images/travel/kuala-lumpur-premium/ruma/ruma-1.webp",
+        "sourceSHA256": "b74b2021877386e264923171873c2da234cbb8d8b9f9bc5d1d521ca104ec8252",
+        "webpSHA256": "812f747cbb9a89ad5d57323a2cdc75017adc95ad79a5ea9d2063953728776448",
+        "sourcePixels": [
+          2500,
+          1689
+        ],
+        "webpPixels": [
+          1258,
+          850
+        ],
+        "webpBytes": 145298,
+        "pixelFingerprint": "7ebc642424020c38",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "ruma-2",
+        "sourcePage": "https://www.expedia.com/Kuala-Lumpur-Hotels-The-RuMa-Hotel-And-Residences.h31929867.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/32000000/31930000/31929900/31929867/2920ca51.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/32000000/31930000/31929900/31929867/2920ca51.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "The RuMa Hotel and Residences Deluxe King guest room",
+        "originalCaption": "Expedia / The RuMa Hotel and Residences",
+        "credit": "Expedia / The RuMa Hotel and Residences",
+        "publisher": "The RuMa Hotel and Residences",
+        "hotel": "The RuMa Hotel and Residences",
+        "localPath": "/images/travel/kuala-lumpur-premium/ruma/ruma-2.webp",
+        "sourceSHA256": "997b12bed9ba1ec3c9f341ae31d792803989b381d8f955202c251df8305ec42a",
+        "webpSHA256": "7fb3815a7623148d0b3ca5fe5eb5d16efa4d534873c89b978e30d81c751bd0bf",
+        "sourcePixels": [
+          1280,
+          853
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 94764,
+        "pixelFingerprint": "b83931940e86b369",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "ruma-3",
+        "sourcePage": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/",
+        "sourceResolvedUrl": "https://theruma.com/file/webpage/shared/banner/the-ruma-hotel-overview.jpg",
+        "sourceRequestedUrl": "https://theruma.com/file/webpage/shared/banner/the-ruma-hotel-overview.jpg",
+        "originalAlt": "Lobby",
+        "originalCaption": "",
+        "credit": "The RuMa Hotel and Residences",
+        "publisher": "The RuMa Hotel and Residences",
+        "hotel": "The RuMa Hotel and Residences",
+        "localPath": "/images/travel/kuala-lumpur-premium/ruma/ruma-3.webp",
+        "sourceSHA256": "21a3825f23a6055cab0aeedaac683bd2ad21fe2598d4f266abf7b26e65f571ec",
+        "webpSHA256": "cdae4551131600523fb922311732c784af1186de9fbb791137c8c27e50558615",
+        "sourcePixels": [
+          1920,
+          1080
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 74626,
+        "pixelFingerprint": "3333333333373333",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "eq-1",
         "sourcePage": "https://www.eqkualalumpur.equatorial.com/en/",
         "sourceResolvedUrl": "https://www.eqkualalumpur.equatorial.com/wp-content/uploads/sites/2/2026/06/2020-01-13_eq-sky51-entrance2.webp",
@@ -354,90 +571,37 @@
       {
         "group": "mandarin-oriental",
         "expected": 3,
-        "found": 0
+        "found": 2
       },
       {
         "group": "four-seasons",
         "expected": 3,
-        "found": 0
-      },
-      {
-        "group": "ruma",
-        "expected": 3,
-        "found": 0
+        "found": 2
       }
     ],
     "errors": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Little_India%2C_Brickfields%2C_Kuala_Lumpur.jpg",
+        "error": "429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/commons/1/10/Little_India%2C_Brickfields%2C_Kuala_Lumpur.jpg"
+      },
       {
         "page": "https://www.fourseasons.com/kualalumpur/photos-and-videos/",
         "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/kualalumpur/photos-and-videos/"
       },
       {
         "url": "https://press.fourseasons.com/kualalumpur/hotel-news/2026/introducing-the-longevity-lounge",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7b0782122070>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x78808c754b80>"
       },
       {
         "page": "https://urbanresortconcepts.com/en/images/ruma-gallery/",
         "error": "404 Client Error: Not Found for url: https://urbanresortconcepts.com/en/images/ruma-gallery/"
-      },
-      {
-        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/the-ruma-birdcage.jpg",
-        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/the-ruma-birdcage.jpg/"
-      },
-      {
-        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-room-twin.jpg",
-        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-room-twin.jpg/"
-      },
-      {
-        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-room-king.jpg",
-        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-room-king.jpg/"
-      },
-      {
-        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-suite-1.jpg",
-        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-suite-1.jpg/"
-      },
-      {
-        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-suite-3.jpg",
-        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-suite-3.jpg/"
-      },
-      {
-        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-deluxe-suite-lounge.jpg",
-        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-deluxe-suite-lounge.jpg/"
-      },
-      {
-        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-suite--4.jpg",
-        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/the-ruma-deluxe-suite--4.jpg/"
-      },
-      {
-        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-grand-suite.jpg",
-        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-grand-suite.jpg/"
-      },
-      {
-        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-grand-suite-living-room.jpg",
-        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-grand-suite-living-room.jpg/"
-      },
-      {
-        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-ruma-suite.jpg",
-        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/room/20230210-ruma-suite.jpg/"
-      },
-      {
-        "url": "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/the-ruma-hotel-overview.jpg",
-        "error": "404 Client Error: Not Found for url: https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/file/webpage/shared/banner/the-ruma-hotel-overview.jpg/"
-      },
-      {
-        "url": "https://theruma.com/en/file/webpage/shared/banner/the-ruma-birdcage.webp",
-        "error": "404 Client Error: Not Found for url: https://theruma.com/en/file/webpage/shared/banner/the-ruma-birdcage.webp"
-      },
-      {
-        "page": "https://www.eqkualalumpur.equatorial.com/rooms-suites/",
-        "error": "404 Client Error: Not Found for url: https://www.eqkualalumpur.equatorial.com/en/rooms-suites/"
       }
     ],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
     "excludedCandidates": [],
     "cityCount": 8,
-    "hotelCount": 3,
-    "totalBytes": 2277032
+    "hotelCount": 10,
+    "totalBytes": 3107642
   }
 }
