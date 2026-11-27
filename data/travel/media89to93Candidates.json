@@ -2320,6 +2320,37 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
+        "key": "bvlgari-3",
+        "sourcePage": "https://teresaperezcollection.com/hotel/bulgari-roma",
+        "sourceResolvedUrl": "https://teresaperezcollection.com/images/0bijhalf/production/48aa2d408841a94e5917fc63b973ccac97e8e3e7-2500x1675.webp?fit=clip&fm=jpg&q=80&w=2048",
+        "sourceRequestedUrl": "https://teresaperezcollection.com/images/0bijhalf/production/48aa2d408841a94e5917fc63b973ccac97e8e3e7-2500x1675.webp?fit=clip&fm=jpg&q=80&w=2048",
+        "originalAlt": "Bvlgari Hotel Roma bedroom",
+        "originalCaption": "Teresa Perez Collection / Bvlgari Hotel Roma",
+        "credit": "Teresa Perez Collection / Bvlgari Hotel Roma",
+        "publisher": "Bvlgari Hotel Roma",
+        "hotel": "Bvlgari Hotel Roma",
+        "localPath": "/images/travel/rome-premium/bvlgari/bvlgari-3.webp",
+        "sourceSHA256": "97c7cd2e97fa5c8567b8b679d93fe28e51ce06f0df9fed8cb8543c9fbf2f12ac",
+        "webpSHA256": "4237d1eb3da7088baff96557d80ebf948e4792126517fcd473b7719e53366046",
+        "sourcePixels": [
+          2048,
+          1372
+        ],
+        "webpPixels": [
+          1269,
+          850
+        ],
+        "webpBytes": 94844,
+        "pixelFingerprint": "ccc6c8f4b4ac8cb4",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "de-russie-1",
         "sourcePage": "https://press.roccofortehotels.com/summer-suite-shopping-in-rome/?lang=en",
         "sourceResolvedUrl": "https://press.roccofortehotels.com/wp-content/uploads/2025/06/d148cd2716c63972fdd29d6eace61c4f-1500x1000.jpg",
@@ -2475,6 +2506,37 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
+        "key": "hassler-4",
+        "sourcePage": "https://matadornetwork.com/read/hassler-hotel-rome/",
+        "sourceResolvedUrl": "https://cdn1.matadornetwork.com/blogs/1/2023/12/Hassler-hotel-exterior.jpeg",
+        "sourceRequestedUrl": "https://cdn1.matadornetwork.com/blogs/1/2023/12/Hassler-hotel-exterior.jpeg",
+        "originalAlt": "Hassler Roma hotel exterior entrance facade",
+        "originalCaption": "Matador Network / Hassler Roma",
+        "credit": "Matador Network / Hassler Roma",
+        "publisher": "Hassler Roma",
+        "hotel": "Hassler Roma",
+        "localPath": "/images/travel/rome-premium/hassler/hassler-4.webp",
+        "sourceSHA256": "0b3e217d12da672be0ebe72b772da3ab0bc9d5d25be2e09b96a23b2783c0806d",
+        "webpSHA256": "26497c0e7cef6332bec5a1f920993fe79a87e9b152619f8fbbce488c9d74ed58",
+        "sourcePixels": [
+          1600,
+          1200
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 134798,
+        "pixelFingerprint": "844d4d9a94860303",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "eden-1",
         "sourcePage": "https://www.dorchestercollection.com/rome/hotel-eden",
         "sourceResolvedUrl": "https://www.dorchestercollection.com/media/x04deanq/hotel-eden-roma-bellavista-penthouse-suite-living-room-view.jpg?format=webp&height=540&rmode=crop&rxy=0.48621553884711777%2C0.5767808303807276&width=1600",
@@ -2568,18 +2630,7 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "gaps": [
-      {
-        "group": "bvlgari",
-        "expected": 3,
-        "found": 2
-      },
-      {
-        "group": "hassler",
-        "expected": 3,
-        "found": 2
-      }
-    ],
+    "gaps": [],
     "errors": [
       {
         "page": "https://www.bulgari.com/fr-fr/stories/bvlgari-hotel-roma",
@@ -2598,72 +2649,16 @@
         "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/en-US/rome/rooms-and-suites"
       },
       {
+        "url": "https://www.bulgarihotels.com/.imaging/bhr-960-jpg/dam/ROMA/Accomodation/Suite/Superior-Suite/SUPERIOR-SUITE.jpg/jcr%3Acontent",
+        "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/.imaging/bhr-960-jpg/dam/ROMA/Accomodation/Suite/Superior-Suite/SUPERIOR-SUITE.jpg/jcr%3Acontent"
+      },
+      {
         "url": "https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/Accommodation/Bulgari-Hotel-Roma-7.jpg/jcr%3Acontent",
         "error": "404 Client Error: Not Found for url: https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/Accommodation/Bulgari-Hotel-Roma-7.jpg/jcr%3Acontent"
       },
       {
-        "page": "https://fr.hotels.com/ho2974602208/bulgari-hotel-roma-rome-italie/",
-        "error": "429 Client Error: Too Many Requests for url: https://fr.hotels.com/ho2974602208/bulgari-hotel-roma-rome-italie/"
-      },
-      {
-        "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/story/",
-        "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/story/"
-      },
-      {
-        "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/hotel-information/",
-        "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/hotel-information/"
-      },
-      {
-        "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/gallery/",
-        "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/gallery/"
-      },
-      {
-        "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/",
-        "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/"
-      },
-      {
-        "page": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/accommodation/",
-        "error": "403 Client Error: Forbidden for url: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/accommodation/"
-      },
-      {
         "page": "https://www.lhw.com/hotel/Hassler-Roma-Rome-Italy",
         "error": "403 Client Error: Forbidden for url: https://www.lhw.com/hotel/Hassler-Roma-Rome-Italy"
-      },
-      {
-        "url": "https://static-new.lhw.com/HotelImages/Final/LW2103/lw2103_43808968_720x450.jpg",
-        "error": "403 Client Error: Forbidden for url: https://static-new.lhw.com/HotelImages/Final/LW2103/lw2103_43808968_720x450.jpg"
-      },
-      {
-        "page": "https://www.expedia.com/Rome-Hotels-Hassler-Roma.h24004.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Rome-Hotels-Hassler-Roma.h24004.Hotel-Information"
-      },
-      {
-        "page": "https://www.dorchestercollection.com/worldwide-sales",
-        "error": "403 Client Error: Forbidden for url: https://www.dorchestercollection.com/worldwide-sales"
-      },
-      {
-        "page": "https://www.dorchestercollection.com/rome/hotel-eden/about",
-        "error": "403 Client Error: Forbidden for url: https://www.dorchestercollection.com/rome/hotel-eden/about"
-      },
-      {
-        "page": "https://media.dorchestercollection.com/hotel-eden-1/?lang=eng",
-        "error": "403 Client Error: Forbidden for url: https://media.dorchestercollection.com/hotel-eden-1/?lang=eng"
-      },
-      {
-        "page": "https://media.dorchestercollection.com/hotel-eden/?lang=eng",
-        "error": "403 Client Error: Forbidden for url: https://media.dorchestercollection.com/hotel-eden/?lang=eng"
-      },
-      {
-        "page": "https://media.dorchestercollection.com/section/our-portfolio/hotel-eden-rome/?lang=eng",
-        "error": "403 Client Error: Forbidden for url: https://media.dorchestercollection.com/section/our-portfolio/hotel-eden-rome/?lang=eng"
-      },
-      {
-        "page": "https://www.dorchestercollection.com/rome/hotel-eden",
-        "error": "403 Client Error: Forbidden for url: https://www.dorchestercollection.com/rome/hotel-eden"
-      },
-      {
-        "page": "https://www.dorchestercollection.com/rome/hotel-eden/rooms-suites",
-        "error": "403 Client Error: Forbidden for url: https://www.dorchestercollection.com/rome/hotel-eden/rooms-suites"
       }
     ],
     "publicUseApproved": false,
@@ -2764,8 +2759,8 @@
       }
     ],
     "cityCount": 9,
-    "hotelCount": 10,
-    "totalBytes": 2438384
+    "hotelCount": 12,
+    "totalBytes": 2668026
   },
   "barcelona": {
     "destinationScenes": [
