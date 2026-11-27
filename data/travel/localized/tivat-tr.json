@@ -1,0 +1,162 @@
+{
+  "name": "Tivat",
+  "country": "Karadağ",
+  "eyebrow": "Karadağ Rivierası · Kotor Körfezi",
+  "heading": "Tivat'ta nerede kalınır? Yat limanı ve Luštica kıyısı arasında dört otel",
+  "intro": "Tivat, yat marinasını, tarihî taş köyleri ve sakin Adriyatik koylarını bir araya getirir. İskelelerde yürüyüş, sağlıklı yaşam programı, körfezde butik otel veya Luštica yarımadasında resort seçebilirsiniz.",
+  "editorial": "Tivat, Kotor, Herceg Novi veya Budva'dan ayrı bir şehirdir. Eski Regent Porto Montenegro, 2026'da Kerzner bünyesine katıldıktan sonra The Quince adını almıştır. Eski IHG sayfalarında önceki ad görülebilir, ancak aynı oteldir. Regent'in eski koşulları yerine yeni işletmenin hizmetlerini doğrulayın. Boka Place bölgesindeki SIRO hareket, uyku ve toparlanmaya odaklanır; odalar ve daireler mutfak ve kapasite açısından farklıdır. La Roche körfez kıyısında dokuz odalı butik oteldir. The Chedi, Radovići'de Trašte Körfezi'ndeki ayrı Luštica Bay marinasındadır. Yayımlanan kurallara göre 12 yaş ve altındaki çocuklar kapalı havuza 09.00–17.00 arasında girebilir; 21.00'e kadar kalan süre yalnız yetişkinlere ayrılır.\n\nPine sahili, Donja Lastva, taş köy Gornja Lastva ve Solila koruma alanı körfezin geleneksel yüzünü gösterir. Kumlu Plavi Horizonti plajı yarımadadadır. Yaz trafiğini, sezonu ve ulaşımı dikkate alın. Güncel fiyat, yat ve hizmetleri sağlayıcılar ayrı ayrı doğrular.",
+  "hotelIntro": "Porto Montenegro'da The Quince, Boka Place'te SIRO, Luštica'da The Chedi ve şehir sahilinde La Roche.",
+  "areas": [
+    [
+      "Porto Montenegro marinası",
+      "Su boyunca yatlar, tasarım binalar, butikler ve restoranlar.",
+      "Yat fotoğrafı kiralama müsaitliğini göstermez."
+    ],
+    [
+      "Boka Place ve Tivat merkezi",
+      "Fitness ve toparlanma bölgesi şehir kafeleri ve mağazalarına komşudur.",
+      "Özel kum plajı değildir."
+    ],
+    [
+      "Donja Lastva ve Gornja Lastva",
+      "Taş evler ve tepedeki köy körfezin tarihini tanıtır.",
+      "Yokuş için uygun ulaşım ve ayakkabı gerekir."
+    ],
+    [
+      "Radovići ve Luštica Bay",
+      "Trašte Körfezi'nde ayrı marina, koylar ve sakin resort ortamı.",
+      "Tivat merkezinden araç transferi gerekir; plaj hizmetleri sezonluktur."
+    ],
+    [
+      "Solila ve yarımada plajları",
+      "Kuş koruma alanı ve şehirden uzakta Plavi Horizonti kum koyu.",
+      "Koruma alanı kurallarına ve yüzme güvenliğine uyun."
+    ]
+  ],
+  "experiences": [
+    [
+      "Marinada sabah",
+      "Restoranlar hareketlenmeden iskeleler boyunca yürüyün."
+    ],
+    [
+      "Boka Place'te antrenman ve toparlanma",
+      "Fitness Lab ve Recovery Lab erişimini, antrenör koşullarını önceden doğrulayın."
+    ],
+    [
+      "Körfezde akşam yemeği",
+      "Sahil restoranını seçip saat ve masayı doğrulayın."
+    ],
+    [
+      "Gornja Lastva yürüyüşü",
+      "İzinli seyir noktalarından tarihî mimariyi ve körfezi izleyin."
+    ],
+    [
+      "Solila veya Luštica plajı",
+      "Kuşları gözlemleyin ve ardından güvenli yüzme noktası seçin."
+    ]
+  ],
+  "checks": [
+    "Tivat Kotor'dan farklıdır; UNESCO statüsü körfezin tamamına aynı biçimde uygulanmaz.",
+    "The Quince eski Regent'tir, ayrı ikinci otel değildir.",
+    "The Chedi Radovići'de, Porto Montenegro'dan ayrıdır.",
+    "La Roche ve The Chedi kategorilerini, manzaralarını ve kapasitesini doğrulayın.",
+    "Yat fotoğrafları kiralamayı veya bağlama yerini garanti etmez; hizmetler sezonluktur.",
+    "Transfer, bakım, antrenman, yemek ve fiyatları doğrulayın."
+  ],
+  "hotels": [
+    [
+      "Porto Montenegro · Eski Regent",
+      "The Quince ana yat marinası yanındaki tarihî otel binasındadır. 2026'da Kerzner bünyesine katıldıktan sonra yeni ad kullanılmaya başlanmıştır. Oda, süit ve rezidanslar iskele, bahçe veya körfez manzaralarıyla ayrılır. Butik ve restoranlar yürüme mesafesindedir. Havuz, spa, gastronomi, aile düzeni ve hizmetleri yeni işletmeyle doğrulayın.",
+      "Eski Regent koşullarını otomatik uygulamayın; yat konaklamaya dahil değildir.",
+      "Marina yaşamı ve klasik misafirperverlik için.",
+      ""
+    ],
+    [
+      "Boka Place · Aktif yaşam",
+      "SIRO optimize edilmiş uyku, Fitness Lab, Recovery Lab ve SIRO Table beslenme yaklaşımı sunar. Oda ve daireler mutfak, balkon ve yatak düzeni açısından farklıdır. Antrenör, toparlanma bakımları ve geziler ayrı rezervasyon gerektirebilir. Aileler kapasiteyi ve antrenman alanlarına erişim kurallarını doğrulamalıdır.",
+      "Hizmetleri, antrenman programını ve kategoriyi doğrulayın; Luštica plaj resortu değildir.",
+      "Spor, uyku ve toparlanma için.",
+      ""
+    ],
+    [
+      "Radovići · Luštica Bay marinası",
+      "The Chedi, Tivat merkezinde değil ayrı marinadaki resorttur. 111 oda ve süitte köy, dağ, deniz, marina ve havuz manzaraları ile penthouse seçenekleri bulunur. Mutfak ve kapasite kategoriye bağlıdır. Yayımlanan koşullara göre 12 yaş ve altı çocuklar kapalı havuza 09.00–17.00 arasında, yetişkinler 21.00'e kadar girebilir. Plaj sezonu, spa, The Spot restoranı ve ulaşımı doğrulayın. Her süit iki yatak odalı değildir.",
+      "Çocuk saatleri, plan ve Tivat yolunu doğrulayın.",
+      "Ayrı marina çevresinde resort tatili için.",
+      ""
+    ],
+    [
+      "Tivat · Şehir sahili",
+      "La Roche, Porto Montenegro'ya yürüme mesafesinde dokuz odalı butik oteldir. Prestige Mountain View, deniz manzaralı Prestige ve Deluxe odalar ile iki yatak odalı süitler alan ve yön bakımından farklıdır. Çatı havuzu, wellness ve plaj hizmetleri sezonluk olabilir. Ses yalıtımı, kapasite ve çocuk kurallarını doğrulayın.",
+      "Manzara, kesin kategori ve çatı havuzu sezonunu kontrol edin.",
+      "Samimi konaklama ve restoranlara yürüyüş için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "The Quince ve Regent farklı oteller mi?",
+      "Hayır, 2026'da The Quince adını alan aynı tarihî oteldir. Yeni işletmenin hizmetlerini doğrulayın."
+    ],
+    [
+      "Dört otelin hepsi Porto Montenegro'da mı?",
+      "Hayır. SIRO Boka Place'te, La Roche Tivat sahilinde, The Chedi Radovići'deki ayrı Luštica Bay marinasındadır."
+    ],
+    [
+      "Aile için hangi otel uygun?",
+      "The Chedi geniş süitler, La Roche iki yatak odalı süitler, The Quince rezidanslar sunar. Yatak, kapasite ve havuz kurallarını doğrulayın."
+    ],
+    [
+      "The Chedi kapalı havuzuna çocuklar ne zaman girebilir?",
+      "Yayımlanan koşullara göre 12 yaş ve altı 09.00–17.00; sonra 21.00'e kadar sadece yetişkinler. Saatleri yeniden doğrulayın."
+    ],
+    [
+      "SIRO klasik spa oteli mi?",
+      "Hareket, uyku ve toparlanmaya odaklanır; ders, antrenör ve bakım ücretli olabilir."
+    ],
+    [
+      "Porto Montenegro'dan Luštica plajlarına yürünür mü?",
+      "Ayrı bölgedir, genellikle araçla ulaşılır. Porto Montenegro kum plajı değil yat marinasıdır."
+    ],
+    [
+      "Otel veya yat nasıl rezerve edilir?",
+      "Bosphoras'ta konaklamayı karşılaştırın; fiyat, müsaitlik ve koşulları yetkili sağlayıcı doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Porto Montenegro yatları ve iskeleleri",
+    "Tivat sahili ve yatlar",
+    "Gün batımında Tivat ve Kotor Körfezi",
+    "Gornja Lastva taş köyü",
+    "Gornja Lastva'dan körfez gün batımı",
+    "Solila koruma alanı",
+    "Solila sulak alanları ve kuş gözlemi",
+    "Porto Montenegro marinasının başka görünümü",
+    "Tivat sahili ve marinası"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Marka değişiminden önce tarihî The Quince",
+      "Marinadaki eski Regent",
+      "Eski Regent panoraması"
+    ],
+    [
+      "Boka Place SIRO mimarisi",
+      "SIRO oteli ve çevresi",
+      "SIRO fitness programı"
+    ],
+    [
+      "Ayrı Luštica Bay marinası",
+      "The Chedi resortu ve havuzu",
+      "The Chedi kıyı konumu"
+    ],
+    [
+      "Körfezde La Roche",
+      "La Roche butik otel atmosferi",
+      "La Roche olanakları"
+    ]
+  ],
+  "seoTitle": "Tivat'ta Nerede Kalınır? Porto Montenegro ve Luštica Bay Otelleri",
+  "hotelSeoTitle": "Tivat'ın En İyi Otelleri: The Quince, SIRO, The Chedi ve La Roche",
+  "seoDescription": "Tivat'ın dört seçkin otelini, Porto Montenegro'yu ve Luštica Bay'i karşılaştırın. Marina, plaj, aile ve ulaşım ipuçlarını keşfedin."
+}

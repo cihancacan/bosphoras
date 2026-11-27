@@ -1,0 +1,162 @@
+{
+  "name": "Tivat",
+  "country": "Montenegro",
+  "eyebrow": "Riviera montenegrina · Bahía de Kotor",
+  "heading": "Dónde alojarse en Tivat: cuatro hoteles entre marina y costa de Luštica",
+  "intro": "Tivat reúne una marina de yates, pueblos históricos de piedra y calas tranquilas del Adriático. Elige paseos junto a muelles, programas de bienestar, un hotel íntimo en la bahía o un resort en la península de Luštica.",
+  "editorial": "Tivat es una ciudad independiente, no Kotor, Herceg Novi ni Budva. El antiguo Regent Porto Montenegro pasó a llamarse The Quince en 2026 tras incorporarse a Kerzner. Las páginas antiguas de IHG pueden conservar el nombre anterior, pero es el mismo hotel. Comprueba servicios del operador actual, no las antiguas condiciones de Regent. SIRO, en Boka Place, se centra en movimiento, sueño y recuperación; habitaciones y apartamentos difieren en cocinas y capacidad. La Roche es un hotel íntimo de nueve habitaciones junto a la bahía. The Chedi está en Radovići, en la marina independiente Luštica Bay de la bahía de Trašte. Según las normas publicadas, los niños de hasta 12 años inclusive pueden usar la piscina cubierta de 09:00 a 17:00; después, hasta las 21:00, solo adultos.\n\nEl paseo Pine, Donja Lastva, el pueblo de piedra Gornja Lastva y la reserva Solila muestran el lado tradicional de la bahía. La playa de arena Plavi Horizonti está en la península. Considera tráfico estival, temporada y transporte. Precios, yates y servicios son confirmados por los proveedores por separado.",
+  "hotelIntro": "The Quince en Porto Montenegro, SIRO en Boka Place, The Chedi en Luštica y La Roche en el paseo urbano.",
+  "areas": [
+    [
+      "Marina Porto Montenegro",
+      "Yates, edificios de diseño, boutiques y restaurantes junto al agua.",
+      "Una foto de yate no confirma su disponibilidad de alquiler."
+    ],
+    [
+      "Boka Place y centro de Tivat",
+      "Barrio de fitness y recuperación junto a cafés y tiendas urbanas.",
+      "No es una playa privada de arena."
+    ],
+    [
+      "Donja Lastva y Gornja Lastva",
+      "Casas de piedra y pueblo en la colina muestran la historia de la bahía.",
+      "Para subir, elige transporte y calzado adecuados."
+    ],
+    [
+      "Radovići y Luštica Bay",
+      "Marina independiente en la bahía de Trašte, calas y tranquilidad de resort.",
+      "Desde el centro de Tivat se requiere traslado por carretera; servicios de playa estacionales."
+    ],
+    [
+      "Solila y playas de la península",
+      "Reserva de aves y cala arenosa Plavi Horizonti lejos de la ciudad.",
+      "Respeta normas de conservación y seguridad de baño."
+    ]
+  ],
+  "experiences": [
+    [
+      "Mañana en la marina",
+      "Pasea por los muelles antes de que se animen los restaurantes."
+    ],
+    [
+      "Entrenamiento y recuperación en Boka Place",
+      "Confirma acceso a Fitness Lab y Recovery Lab y condiciones de entrenador."
+    ],
+    [
+      "Cena junto a la bahía",
+      "Elige restaurante en el paseo y confirma horario y mesa."
+    ],
+    [
+      "Paseo por Gornja Lastva",
+      "Admira arquitectura histórica y vistas desde miradores permitidos."
+    ],
+    [
+      "Solila o playa de Luštica",
+      "Observa aves y luego elige un lugar seguro para bañarte."
+    ]
+  ],
+  "checks": [
+    "Tivat no es Kotor; el estatus UNESCO no se aplica por igual a toda la bahía.",
+    "The Quince es el antiguo Regent, no otro hotel.",
+    "The Chedi está en Radovići, separado de Porto Montenegro.",
+    "Confirma categorías, vistas y capacidad de La Roche y The Chedi.",
+    "Las fotos de yates no garantizan alquiler ni amarre; servicios estacionales.",
+    "Traslados, tratamientos, entrenamiento, comidas y precios requieren confirmación."
+  ],
+  "hotels": [
+    [
+      "Porto Montenegro · Antiguo Regent",
+      "The Quince ocupa el edificio histórico del hotel junto a la marina principal. El nuevo nombre se usa desde su incorporación a Kerzner en 2026. Habitaciones, suites y residencias difieren en vistas a muelles, jardines o bahía. Boutiques y restaurantes están a pie. Confirma piscinas, spa, gastronomía, distribución familiar y servicios con el nuevo operador.",
+      "No traslades automáticamente las condiciones de Regent; el yate no está incluido.",
+      "Para vida de marina y hospitalidad clásica.",
+      ""
+    ],
+    [
+      "Boka Place · Estilo de vida activo",
+      "SIRO ofrece sueño optimizado, Fitness Lab, Recovery Lab y alimentación SIRO Table. Habitaciones y apartamentos difieren en cocinas, balcones y camas. Entrenadores, recuperación y excursiones pueden requerir reservas independientes. Familias deben confirmar capacidad y acceso a zonas de entrenamiento.",
+      "Confirma servicios, programas y categoría; no es un resort de playa de Luštica.",
+      "Para deporte, sueño y recuperación.",
+      ""
+    ],
+    [
+      "Radovići · Marina Luštica Bay",
+      "The Chedi es un resort en una marina independiente, no en el centro de Tivat. Entre 111 habitaciones y suites hay vistas a pueblo, montaña, mar, marina y piscina, además de ático. Cocinas y capacidad dependen de categoría. Según normas publicadas, niños de hasta 12 años inclusive usan piscina cubierta de 09:00 a 17:00; adultos hasta las 21:00. Comprueba temporada de playa, spa, restaurante The Spot y transporte. No todas las suites tienen dos dormitorios.",
+      "Confirma horarios infantiles, distribución y trayecto a Tivat.",
+      "Para vacaciones de resort junto a una marina independiente.",
+      ""
+    ],
+    [
+      "Tivat · Paseo urbano",
+      "La Roche es un hotel boutique de nueve habitaciones a pie de Porto Montenegro. Prestige Mountain View, Prestige y Deluxe con vistas al mar y suites de dos dormitorios difieren en superficie y orientación. Piscina de azotea, bienestar y servicios de playa pueden ser estacionales. Confirma aislamiento acústico, capacidad y normas infantiles.",
+      "Comprueba vistas, categoría exacta y temporada de piscina en azotea.",
+      "Para estancia íntima y paseos a restaurantes.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿The Quince y Regent son hoteles distintos?",
+      "No, es el mismo hotel histórico, renombrado The Quince en 2026. Comprueba servicios del nuevo operador."
+    ],
+    [
+      "¿Los cuatro hoteles están en Porto Montenegro?",
+      "No. SIRO está en Boka Place, La Roche en el paseo de Tivat y The Chedi en Radovići, en la marina independiente Luštica Bay."
+    ],
+    [
+      "¿Qué hotel elegir para una familia?",
+      "The Chedi ofrece suites amplias, La Roche suites de dos dormitorios y The Quince residencias. Confirma camas, capacidad y normas de piscina."
+    ],
+    [
+      "¿Cuándo pueden usar los niños la piscina cubierta de The Chedi?",
+      "Según normas publicadas, hasta 12 años inclusive de 09:00 a 17:00; después hasta 21:00 solo adultos. Reconfirma horarios."
+    ],
+    [
+      "¿SIRO es un hotel spa tradicional?",
+      "Se especializa en movimiento, sueño y recuperación; clases, entrenadores y tratamientos pueden cobrarse aparte."
+    ],
+    [
+      "¿Se llega andando desde Porto Montenegro a las playas de Luštica?",
+      "Es una zona distinta, normalmente accesible por carretera. Porto Montenegro es marina, no playa de arena."
+    ],
+    [
+      "¿Cómo reservar hotel o yate?",
+      "Compara alojamientos en Bosphoras; el proveedor autorizado confirma precios, disponibilidad y condiciones."
+    ]
+  ],
+  "photoCaptions": [
+    "Yates y muelles de Porto Montenegro",
+    "Paseo de Tivat y yates",
+    "Tivat y bahía de Kotor al atardecer",
+    "Pueblo de piedra Gornja Lastva",
+    "Atardecer sobre la bahía desde Gornja Lastva",
+    "Reserva Solila",
+    "Humedales Solila y observación de aves",
+    "Otra vista de Porto Montenegro",
+    "Paseo y marina de Tivat"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Hotel histórico The Quince antes del cambio de marca",
+      "Antiguo Regent junto a marina",
+      "Panorámica del antiguo Regent"
+    ],
+    [
+      "Arquitectura SIRO en Boka Place",
+      "Hotel SIRO y entorno",
+      "Programa fitness SIRO"
+    ],
+    [
+      "Marina independiente Luštica Bay",
+      "Resort The Chedi y piscina",
+      "Ubicación costera The Chedi"
+    ],
+    [
+      "La Roche junto a la bahía",
+      "Ambiente boutique La Roche",
+      "Instalaciones La Roche"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Tivat: hoteles en Porto Montenegro y Luštica Bay",
+  "hotelSeoTitle": "Mejores hoteles de Tivat: The Quince, SIRO, The Chedi y La Roche",
+  "seoDescription": "Compara cuatro hoteles en Tivat, Porto Montenegro y Luštica Bay. Descubre marinas, playas, opciones familiares y transporte."
+}
