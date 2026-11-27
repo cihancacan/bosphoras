@@ -124,6 +124,99 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-5",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Dongdaemun_Gate_or_Heunginjimun_gate.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Dongdaemun_Gate_or_Heunginjimun_gate.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dongdaemun_Gate_or_Heunginjimun_gate.jpg",
+        "originalAlt": "Dongdaemun Gate Heunginjimun historic gate at night",
+        "originalCaption": "TealAlligator / CC BY-SA 4.0 / resized WebP",
+        "credit": "TealAlligator / CC BY-SA 4.0 / resized WebP",
+        "publisher": "Korea Tourism Organization / Seoul Tourism Organization",
+        "hotel": null,
+        "localPath": "/images/travel/seoul-premium/destination/scene-5.webp",
+        "sourceSHA256": "0215476d15801188783e3904d14592c639bd786d4b308e8bf287f33ccdd008dc",
+        "webpSHA256": "57795666373a586a546f2b968cf41d494fad61574b1647475a58db973e0f073d",
+        "sourcePixels": [
+          3976,
+          2650
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 107094,
+        "pixelFingerprint": "d4cae9f160600020",
+        "candidateSubject": "dongdaemun gate|heunginjimun",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-6",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Seokchon_Lake.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Seokchon_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Seokchon_Lake.jpg",
+        "originalAlt": "Seokchon Lake Jamsil",
+        "originalCaption": "Christophe95 / CC BY-SA 4.0 / resized WebP",
+        "credit": "Christophe95 / CC BY-SA 4.0 / resized WebP",
+        "publisher": "Korea Tourism Organization / Seoul Tourism Organization",
+        "hotel": null,
+        "localPath": "/images/travel/seoul-premium/destination/scene-6.webp",
+        "sourceSHA256": "208b4e0bdb4354a860a2d8c718a324867098ee0d10da64e07362e11926d9a006",
+        "webpSHA256": "2125e71949f78cd0293d9aebff409a1122d0a07502d4a2ce4a2a01d9dc7c34a0",
+        "sourcePixels": [
+          4032,
+          3024
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 158550,
+        "pixelFingerprint": "37f7df1fbfb7b6f0",
+        "candidateSubject": "seokchon|lotte world tower",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-7",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bongeun_Temple%2C_Seoul.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Bongeun_Temple%2C_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bongeun_Temple%2C_Seoul.jpg",
+        "originalAlt": "Bongeunsa Temple Seoul",
+        "originalCaption": "Rtflakfizer / CC BY-SA 4.0 / resized WebP",
+        "credit": "Rtflakfizer / CC BY-SA 4.0 / resized WebP",
+        "publisher": "Korea Tourism Organization / Seoul Tourism Organization",
+        "hotel": null,
+        "localPath": "/images/travel/seoul-premium/destination/scene-7.webp",
+        "sourceSHA256": "6e2bde06ff195dc32fd10d023590b5d0e041466cb06bbb7deabed7acf1643e84",
+        "webpSHA256": "fad66d65fbb4a61d4a5360d84177ec9d1fc2717dfcdccedda20c7b0811595896",
+        "sourcePixels": [
+          6016,
+          4000
+        ],
+        "webpPixels": [
+          1278,
+          850
+        ],
+        "webpBytes": 149772,
+        "pixelFingerprint": "73d19233f1a3c4f0",
+        "candidateSubject": "bongeunsa",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -504,53 +597,17 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 4
+        "found": 7
       }
     ],
     "errors": [
       {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dongdaemun_Design_Plaza_grass.jpg",
-        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/1/13/Dongdaemun_Design_Plaza_grass.jpg?utm_source=commons.wikimedia.org&utm_ca"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Seokchon_Lake_in_Seoul.jpg",
-        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/7/72/Seokchon_Lake_in_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign="
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bongeun_Temple%2C_Seoul.jpg",
-        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/d/d6/Bongeun_Temple%2C_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cheonggyecheon_tree-lined_stream_and_footbridge_at_sunrise_in_Seoul.jpg",
-        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/2/28/Cheonggyecheon_tree-lined_stream_and_footbridge_at_sunrise_in_Seoul.jpg?u"
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cheonggyecheon.jpg",
+        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/c/c5/Cheonggyecheon.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&ut"
       },
       {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hongdae_Main_Road%2C_Seoul.jpg",
         "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/f/fd/Hongdae_Main_Road%2C_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campa"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hongdae_Streets.jpg",
-        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/c/cf/Hongdae_Streets.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&u"
-      },
-      {
-        "page": "https://www.fourseasons.com/seoul/photos-and-videos/",
-        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/seoul/photos-and-videos/"
-      },
-      {
-        "page": "https://www.fourseasons.com/en/seoul/",
-        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/en/seoul/"
-      },
-      {
-        "page": "https://www.fourseasons.com/seoul/accommodations/",
-        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/seoul/accommodations/"
-      },
-      {
-        "page": "https://www.shilla.net/seoul/index.do?lang=en",
-        "error": "HTTPSConnectionPool(host='www.shilla.net', port=443): Max retries exceeded with url: /seoul/index.do?lang=en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
-      },
-      {
-        "page": "https://www.shilla.net/seoul/accommodation/viewAccommo.do?lang=en",
-        "error": "HTTPSConnectionPool(host='www.shilla.net', port=443): Max retries exceeded with url: /seoul/accommodation/viewAccommo.do?lang=en (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)')))"
       }
     ],
     "publicUseApproved": false,
@@ -588,8 +645,8 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 4,
+    "cityCount": 7,
     "hotelCount": 12,
-    "totalBytes": 2287698
+    "totalBytes": 2703114
   }
 }
