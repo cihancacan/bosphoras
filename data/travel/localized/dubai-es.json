@@ -1,0 +1,110 @@
+{
+  "name": "Dubái",
+  "country": "Emiratos Árabes Unidos",
+  "eyebrow": "Dubái · Arquitectura, vida urbana y playa",
+  "heading": "Dónde alojarse en Dubái: mejores zonas y hoteles de lujo",
+  "intro": "Vacaciones de playa en Palm Jumeirah, vida urbana en Business Bay, grandes iconos en Downtown y paseos por Dubai Marina: elegir bien la zona define tu estancia.",
+  "editorial": "Al elegir hotel en Dubái, valora tanto la arquitectura como el acceso real a la playa, las vistas de la habitación, el tráfico y la cercanía a restaurantes. Palm Jumeirah es ideal para quienes priorizan el mar y los servicios de resort; reserva tiempo para desplazarte fuera de la isla.\n\nBusiness Bay y Downtown destacan por sus panorámicas urbanas, arquitectura contemporánea y gastronomía. The Lana se sitúa junto a Marasi Bay y One&Only One Za'abeel cuenta con dos torres unidas por The Link. Ambos ofrecen una experiencia urbana y no son resorts directamente en la playa.\n\nAtlantis The Royal, en Palm Jumeirah, destaca por sus amplias instalaciones, piscinas y restaurantes. Jumeirah Al Naseem ofrece jardines, playa y un ambiente costero más tranquilo. Dubai Marina, JBR y Jumeirah son zonas distintas: comprueba la dirección real y los tiempos de traslado.\n\nAntes de reservar, confirma orientación, acceso a playa y piscinas, límites de edad, impuestos, régimen de comidas y cancelación. Los precios y disponibilidad actuales se confirman con el proveedor.",
+  "hotelIntro": "The Lana, One&Only One Za'abeel, Atlantis The Royal y Jumeirah Al Naseem: compara cuatro hoteles de lujo de Dubái por ubicación urbana o costera, habitaciones y servicios.",
+  "areas": [
+    [
+      "Palm Jumeirah",
+      "Resorts de playa, restaurantes y vacaciones junto al mar. Salir de la isla puede requerir más tiempo.",
+      "Confirma acceso a playa privada; las vistas a los iconos de la ciudad no están garantizadas en todas las habitaciones."
+    ],
+    [
+      "Business Bay y Downtown",
+      "Hoteles modernos, rascacielos, compras y gastronomía urbana.",
+      "Skyline view no garantiza una vista directa al Burj Khalifa."
+    ],
+    [
+      "Dubai Marina y Jumeirah",
+      "Paseos junto al agua, playas urbanas, restaurantes y ambiente vacacional animado.",
+      "Marina, JBR y Jumeirah son zonas diferentes."
+    ]
+  ],
+  "experiences": [
+    [
+      "Una terraza sobre la ciudad",
+      "Elige una suite con la orientación adecuada, disfruta del atardecer y reserva un restaurante con vistas."
+    ],
+    [
+      "Descanso junto al mar",
+      "Deja tiempo libre para playa, piscina y spa en lugar de llenar toda la agenda."
+    ],
+    [
+      "Dubái en familia",
+      "Revisa la distribución de suites, las restricciones de edad en zonas de ocio y los tiempos de traslado."
+    ]
+  ],
+  "checks": [
+    "Distingue Palm Jumeirah, Downtown, Business Bay, Dubai Marina y Jumeirah Beach.",
+    "Comprueba el acceso a playa, piscinas e instalaciones de la categoría elegida.",
+    "Revisa impuestos, suplementos, comidas, traslado y cancelación antes de pagar.",
+    "Confirma las vistas reales y ten en cuenta el tráfico en horas punta."
+  ],
+  "hotels": [
+    [
+      "Marasi Bay · Business Bay",
+      "Elegante hotel urbano que combina diseño contemporáneo, gastronomía y vistas a Downtown desde determinadas habitaciones.",
+      "Confirma orientación, balcón y condiciones del desayuno.",
+      "Para arquitectura, gastronomía urbana y piscina panorámica.",
+      "The Lana mira hacia Marasi Bay; las vistas a Downtown dependen de la ubicación de la habitación. Combina el descanso en una suite amplia con la piscina High Society en la azotea y los restaurantes. Las vistas a la marina no equivalen a vistas directas al Burj Khalifa. Comprueba categoría y condiciones de restauración: la piscina de la azotea no es una piscina privada de la habitación."
+    ],
+    [
+      "Za'abeel · Centro urbano",
+      "Hotel de arquitectura espectacular para quienes desean explorar la ciudad en lugar de centrarse en la playa.",
+      "Comprueba acceso y categoría de habitación; no está directamente en la playa.",
+      "Para arquitectura moderna, piscinas en altura y gastronomía urbana.",
+      "Las dos torres de One&Only One Za'abeel y su conexión The Link crean una arquitectura vertical singular. Los espacios exteriores en altura y los restaurantes son parte esencial de la experiencia. Confirma edades de acceso a piscinas, reservas de restaurantes y orientación."
+    ],
+    [
+      "Palm Jumeirah",
+      "Gran resort de playa en Palm Jumeirah con arquitectura llamativa, piscinas y restaurantes.",
+      "Compara vistas, ventajas de las suites y servicios realmente incluidos.",
+      "Para mar, gastronomía y amplias instalaciones de resort.",
+      "Atlantis The Royal combina arquitectura, terrazas sobre el mar, piscinas y restaurantes en un ambiente animado. Las fotos de Sky Pool Villa corresponden a esa categoría, no a una habitación estándar. Comprueba vistas al mar o a la palmera, horarios de piscinas, restricciones de edad y desplazamientos a Downtown."
+    ],
+    [
+      "Umm Suqeim · Jumeirah",
+      "Hotel contemporáneo en la costa de Jumeirah, con playa, jardines y un ambiente más tranquilo.",
+      "Compara categorías con vistas al jardín, al golfo o al Burj Al Arab.",
+      "Para parejas y familias que buscan jardines, playa y tranquilidad.",
+      "Jumeirah Al Naseem representa una faceta más tranquila del lujo de Dubái: jardines, arena clara y brisa marina. El Burj Al Arab se ve desde algunas áreas y habitaciones, no desde todas. Confirma acceso a los servicios de Madinat Jumeirah y la distribución de camas para tu familia."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Palm West Beach y skyline de Dubái al atardecer",
+    "Vista aérea de Palm Jumeirah",
+    "Burj Khalifa y lago de las fuentes de Downtown de día",
+    "Yates y rascacielos en Dubai Marina",
+    "Dubai Marina de día",
+    "Panorámica de Dubai Marina"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Arquitectura de The Lana junto a Marasi Bay",
+      "Piscina panorámica High Society",
+      "Salón de Marina Royal Suite"
+    ],
+    [
+      "Torres One Za'abeel y The Link",
+      "Piscina elevada de The Link",
+      "Suite moderna de One&Only One Za'abeel"
+    ],
+    [
+      "Arquitectura de Atlantis The Royal en Palm Jumeirah",
+      "Piscina Cloud 22",
+      "Salón de Sky Pool Villa con vistas al mar"
+    ],
+    [
+      "Jardines, piscinas y playa de Jumeirah Al Naseem",
+      "Piscina con vistas al Burj Al Arab",
+      "Dormitorio de Gulf Ocean Suite"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Dubái: mejores zonas y hoteles",
+  "hotelSeoTitle": "Los mejores hoteles de lujo de Dubái: playa y ciudad",
+  "seoDescription": "Compara Palm Jumeirah, Downtown, Business Bay y Dubai Marina. Descubre cuatro hoteles de lujo en Dubái y consejos para reservar."
+}
