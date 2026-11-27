@@ -25,7 +25,7 @@ def get(url, limit=24_000_000):
  if urlparse(url).scheme!='https': raise ValueError('not HTTPS')
  if not hasattr(THREAD,'session'):
   THREAD.session=requests.Session()
-  THREAD.session.headers.update({'User-Agent':'BosphorasTravelMediaReview/1.0 (official publisher photo sourcing)','Accept':'image/webp,image/jpeg,image/png,text/html,*/*'})
+  THREAD.session.headers.update({'User-Agent':'BosphorasTravelMediaReview/1.0 (official publisher photo sourcing)','Accept':'text/html,application/xhtml+xml,image/avif,image/webp,image/jpeg,image/png,*/*'})
  with THREAD.session.get(url,timeout=(8,16),stream=True) as r:
   r.raise_for_status()
   if urlparse(r.url).scheme!='https':raise ValueError('insecure redirect')
@@ -52,9 +52,11 @@ def collect_pages(pages):
     parent=tag.find_parent('figure')
     cap=parent.find('figcaption') if parent else None
     credit=cap.get_text(' ',strip=True)[:350] if cap else ''
+    if not alt and tag.parent:
+     alt=tag.parent.get('aria-label') or tag.parent.get('title') or ''
     if tag.name=='source' and tag.parent:
      img=tag.parent.find('img');alt=alt or (img.get('alt','') if img else '')
-    for attr in ('src','data-src','data-lazy-src','data-original','srcset','data-srcset','content'):
+    for attr in ('src','data-src','data-lazy-src','data-original','data-image','data-url','data-full','data-large','data-lazy','srcset','data-srcset','content'):
      value=tag.get(attr)
      if not isinstance(value,str):continue
      if 'srcset' in attr:
@@ -66,7 +68,11 @@ def collect_pages(pages):
     pairs.append((url,'',''))
    for path,alt,credit in pairs:
     if not path or path.startswith(('data:','javascript:','#')):continue
-    u=urljoin(final,html.unescape(path));u=u.replace(' ','%20')
+    path=html.unescape(path)
+    # Simpleview publishes transformation-relative paths that belong to its image CDN.
+    if re.match(r'^(?:[a-z]_[^/]+/)+v1/clients/',path) and hostmatch(domain(final),'visitlasvegas.com'):
+     path='https://assets.simpleviewcms.com/simpleview/image/upload/'+path
+    u=urljoin(final,path);u=u.replace(' ','%20')
     h=domain(u); pagehost=domain(final)
     if not (hostmatch(h,pagehost) or hostmatch(pagehost,h) or any(hostmatch(h,c) for c in CDN) or h.split('.')[-2:]==pagehost.split('.')[-2:]):continue
     if BAD.search(u+' '+alt) or not re.search(r'jpe?g|webp|png|avif|image|media|photo|asset|/img/',u,re.I):continue
@@ -78,13 +84,23 @@ def collect_pages(pages):
   except Exception as e:
    errors.append({'page':page,'error':str(e)[:300]});print('PAGE_GAP',page,str(e)[:200],flush=True)
  return result,errors
-def pick(candidates,patterns,folder,prefix,publisher,property_name=None):
- results=[];used=set();fingerprints=[];errors=[];seen_bytes=set()
+def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing=(),avoid=()):
+ results=list(existing)
+ used={r['sourceRequestedUrl'] for r in list(existing)+list(avoid)}
+ fingerprints=[int(r['pixelFingerprint'],16) for r in existing]
+ errors=[];seen_bytes={r['sourceSHA256'] for r in existing}
+ next_index=max([int(p.stem.rsplit('-',1)[-1]) for p in folder.glob(prefix+'-*.webp') if p.stem.rsplit('-',1)[-1].isdigit()]+[0])+1
+ patterns=[p for p in patterns if p not in {r.get('candidateSubject') for r in existing}]
  for pattern in patterns:
   ranked=[]
   for r in candidates:
    label=unquote(r['url']+' '+r['originalAlt']+' '+r['originalCaption'])
    if OTHER.search(label) or not re.search(pattern,label,re.I):continue
+   if property_name and re.search(r'sant.?pau|/dining/|/restaurants?/|city.?attraction|city.?guide|/explore/|destination.?guide',label,re.I):continue
+   if property_name and pattern==EXTERIOR.pattern and ROOM.search(label):continue
+   if property_name and pattern==FACILITY.pattern and ROOM.search(label):continue
+   # Group-wide galleries require property identity in the actual asset label.
+   if property_name and (('press.mandarinoriental.com' in r['sourcePage'] and 'barcelona' not in label.lower()) or ('leblancsparesorts.com/gallery' in r['sourcePage'] and 'cancun' not in label.lower() and 'cancún' not in label.lower())):continue
    score=8*bool(re.search(pattern,r['originalAlt'],re.I))+4*bool(re.search(pattern,unquote(r['url']),re.I))+2*bool(r['originalCaption'])
    if re.search(r'night|dusk|sunset|evening|nuit|notte',label,re.I):score-=3
    ranked.append((score,r))
@@ -113,11 +129,12 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None):
      if len(buf.getvalue())<=260000:break
     b=buf.getvalue()
     if len(b)<12000:continue
-    key=f'{prefix}-{len(results)+1}'; dest=folder/f'{key}.webp'
+    key=f'{prefix}-{next_index}'; dest=folder/f'{key}.webp'
     dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(b)
     seen_bytes.add(sourcehash);fingerprints.append(dh)
-    row={'key':key,'sourcePage':r['sourcePage'],'sourceResolvedUrl':resolved,'sourceRequestedUrl':r['url'],'originalAlt':r['originalAlt'],'originalCaption':r['originalCaption'],'credit':r['originalCaption'] or publisher,'publisher':publisher,'hotel':property_name,'localPath':'/'+str(dest).removeprefix('public/'),'sourceSHA256':sourcehash,'webpSHA256':hashlib.sha256(b).hexdigest(),'sourcePixels':[w,h],'webpPixels':list(im.size),'webpBytes':len(b),'pixelFingerprint':f'{dh:016x}','candidateSubject':pattern,'rightsEvidenceType':'owner declaration of permission, source publisher retained; individual licence not independently inspected','ownerPermissionDeclared':True,'commercialRightsCleared':False,'visuallyVerified':False,'previewVisualApproved':False,'status':'candidate_pending_visual_review_and_credit'}
+    row={'key':key,'sourcePage':r['sourcePage'],'sourceResolvedUrl':resolved,'sourceRequestedUrl':r['url'],'originalAlt':r['originalAlt'],'originalCaption':r['originalCaption'],'credit':publisher,'publisher':publisher,'hotel':property_name,'localPath':'/'+str(dest).removeprefix('public/'),'sourceSHA256':sourcehash,'webpSHA256':hashlib.sha256(b).hexdigest(),'sourcePixels':[w,h],'webpPixels':list(im.size),'webpBytes':len(b),'pixelFingerprint':f'{dh:016x}','candidateSubject':pattern,'rightsEvidenceType':'owner declaration of permission, source publisher retained; individual licence not independently inspected','ownerPermissionDeclared':True,'commercialRightsCleared':False,'visuallyVerified':False,'previewVisualApproved':False,'status':'candidate_pending_visual_review_and_credit'}
     results.append(row)
+    next_index+=1
     print('WEBP',property_name or publisher,key,w,h,len(b),flush=True)
     break
    except Exception as e:
@@ -126,14 +143,24 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None):
  return results,errors
 def city_job(c):
  base=ROOT/(c['slug']+'-premium')
+ old=PREVIOUS.get(c['slug'],{})
+ existing=old.get('destinationScenes',[])
+ if len(existing)>=9:return c['slug'],'city',existing,[]
  cand,errors=collect_pages(c['cityPages'])
- result,failed=pick(cand,c['subjects'],base/'destination','scene',c['publisher'])
+ result,failed=pick(cand,c['subjects'],base/'destination','scene',c['publisher'],existing=existing)
  return c['slug'],'city',result,errors+failed
 def hotel_job(c,h):
  key,name,pages=h
+ old=PREVIOUS.get(c['slug'],{})
+ allprevious=[r for r in old.get('hotels',[]) if r['hotel']==name]
+ # These were specifically identified by source filenames/alt as unsuitable or ambiguous.
+ bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2'}
+ rejected=[r for r in allprevious if r['key'] in bad]
+ existing=[r for r in allprevious if r['key'] not in bad]
+ if len(existing)>=3:return c['slug'],key,existing,[]
  cand,errors=collect_pages(pages)
  patterns=[EXTERIOR.pattern,ROOM.pattern,FACILITY.pattern]
- result,failed=pick(cand,patterns,ROOT/(c['slug']+'-premium')/key,key,name,name)
+ result,failed=pick(cand,patterns,ROOT/(c['slug']+'-premium')/key,key,name,name,existing=existing,avoid=rejected)
  return c['slug'],key,result,errors+failed
 def contact_sheet(slug,rows):
  if not rows:return
@@ -147,6 +174,7 @@ def contact_sheet(slug,rows):
   draw.text((x+4,y+198),(r['hotel'] or slug)[:38],fill='black')
  path=ROOT/(slug+'-premium')/'source-review-contact-sheet.webp'
  sheet.save(path,'WEBP',quality=82)
+PREVIOUS=json.loads(REPORT.read_text()) if REPORT.exists() else {}
 def main():
  audit={c['slug']:{'destinationScenes':[],'hotels':[],'gaps':[],'errors':[],'publicUseApproved':False,'ownerPermissionDeclared':True} for c in CONFIG}
  with ThreadPoolExecutor(max_workers=6) as ex:
@@ -157,7 +185,11 @@ def main():
    wanted=9 if key=='city' else 3
    if len(rows)<wanted:a['gaps'].append({'group':key,'expected':wanted,'found':len(rows)})
  for c in CONFIG:
-  a=audit[c['slug']];a['cityCount']=len(a['destinationScenes']);a['hotelCount']=len(a['hotels'])
+  a=audit[c['slug']]
+  old=PREVIOUS.get(c['slug'],{})
+  keys={r['localPath'] for r in a['destinationScenes']+a['hotels']}
+  a['excludedCandidates']=old.get('excludedCandidates',[])+[r for r in old.get('destinationScenes',[])+old.get('hotels',[]) if r['localPath'] not in keys]
+  a['cityCount']=len(a['destinationScenes']);a['hotelCount']=len(a['hotels'])
   allrows=a['destinationScenes']+a['hotels'];a['totalBytes']=sum(x['webpBytes'] for x in allrows)
   # Reject byte-identical or visually near-identical images across property groups.
   seen=[];rejected=[]
@@ -168,7 +200,7 @@ def main():
   for r in rejected:
    a['gaps'].append({'duplicateRejected':r['key']})
    (a['destinationScenes'] if r['hotel'] is None else a['hotels']).remove(r)
-   Path('public'+r['localPath']).unlink(missing_ok=True)
+   a['excludedCandidates'].append(r) # retain source file on the draft branch
   a['cityCount']=len(a['destinationScenes']);a['hotelCount']=len(a['hotels']);a['totalBytes']=sum(x['webpBytes'] for x in a['destinationScenes']+a['hotels'])
   contact_sheet(c['slug'],a['destinationScenes']+a['hotels'])
   print('MEDIA_SUMMARY',c['slug'],a['cityCount'],a['hotelCount'],a['totalBytes'],json.dumps(a['gaps']),flush=True)

@@ -4,6 +4,10 @@
     "city": "Londres",
     "publisher": "Visit London / London & Partners",
     "cityPages": [
+      "https://www.visitbritain.com/en/destinations/england/london",
+      "https://www.londonandpartners.com/newsroom/essential-info",
+      "https://www.londonandpartners.com/what-we-do/travel-trade",
+      "https://www.visitbritain.com/en/things-to-do/top-royal-attractions",
       "https://www.visitlondon.com/things-to-do/sightseeing/top-10-photo-opportunities-in-london",
       "https://www.visitlondon.com/things-to-do/sightseeing/famous-landmarks-london",
       "https://www.visitlondon.com/things-to-do/london-areas/westminster",
@@ -34,6 +38,8 @@
         "savoy",
         "The Savoy",
         [
+          "https://www.thesavoylondon.com/rooms",
+          "https://www.thesavoylondon.com/rooms-and-suites/savoy-suite",
           "https://www.thesavoylondon.com/",
           "https://www.thesavoylondon.com/rooms-and-suites/"
         ]
@@ -50,6 +56,9 @@
         "shangri-la",
         "Shangri-La The Shard, London",
         [
+          "https://www.shangri-la.com/london/shangrila/photos-videos/",
+          "https://www.the-shard.com/shangri-la-the-shard-london/",
+          "https://www.the-shard.com/shangri-la-the-shard-london/rooms-suites",
           "https://www.shangri-la.com/en/london/shangrila/",
           "https://www.shangri-la.com/en/london/shangrila/rooms-suites/"
         ]
@@ -83,6 +92,9 @@
         "bellagio",
         "Bellagio",
         [
+          "https://www.marriott.com/en-us/hotels/lasbl-bellagio-a-luxury-collection-resort-and-casino-las-vegas/photos/",
+          "https://newsroom.mgmresorts.com/bellagio/latest-news/bellagio",
+          "https://newsroom.mgmresorts.com/bellagio/latest-news/media-gallery",
           "https://bellagio.mgmresorts.com/en/hotel.html",
           "https://bellagio.mgmresorts.com/en.html"
         ]
@@ -118,6 +130,9 @@
     "city": "Rome",
     "publisher": "Turismo Roma / Roma Capitale",
     "cityPages": [
+      "https://www.turismoroma.it/en/tipo-luogo/monuments",
+      "https://www.italia.it/en/lazio/rome/things-to-do/rome-the-eternal-city",
+      "https://www.italia.it/en/lazio/rome/guide-history-facts",
       "https://www.turismoroma.it/en/itineraries/rome-four-days-four-faces-eternal-city",
       "https://www.turismoroma.it/en/itineraries/rome-72-hours",
       "https://www.turismoroma.it/en/places/piazza-di-spagna",
@@ -141,6 +156,9 @@
         "bvlgari",
         "Bvlgari Hotel Roma",
         [
+          "https://www.bulgarihotels.com/en_US/rome/image-gallery",
+          "https://www.bulgarihotels.com/en_US/rome/accommodation/Rooms",
+          "https://www.bulgarihotels.com/en_US/rome.html",
           "https://www.bulgarihotels.com/en-US/rome/the-hotel",
           "https://www.bulgarihotels.com/en-US/rome/rooms-and-suites"
         ]
@@ -149,6 +167,7 @@
         "de-russie",
         "Hotel de Russie",
         [
+          "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/gallery/",
           "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/",
           "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/accommodation/"
         ]
@@ -165,6 +184,7 @@
         "eden",
         "Hotel Eden",
         [
+          "https://media.dorchestercollection.com/section/our-portfolio/hotel-eden-rome/?lang=eng",
           "https://www.dorchestercollection.com/rome/hotel-eden",
           "https://www.dorchestercollection.com/rome/hotel-eden/rooms-suites"
         ]
@@ -176,6 +196,10 @@
     "city": "Barcelone",
     "publisher": "Turisme de Barcelona",
     "cityPages": [
+      "https://bid.barcelonaturisme.com/wv3/en/page/610/basilica-of-la-sagrada-familia.html",
+      "https://bid.barcelonaturisme.com/wv3/en/page/4505/barcelona-s-architectural-heritage.html",
+      "https://bid.barcelonaturisme.com/wv3/en/enjoy/45/barcelona-a-bird-s-eye-view.html",
+      "https://bid.barcelonaturisme.com/wv3/en/prods/3/barcelona-top-attractions.html",
       "https://bid.barcelonaturisme.com/wv3/en/",
       "https://bid.barcelonaturisme.com/wv3/en/page/167/quadrat-d-or.html",
       "https://bid.barcelonaturisme.com/wv3/en/page/1071/gothic-quarter.html",
@@ -200,6 +224,8 @@
         "mandarin",
         "Mandarin Oriental, Barcelona",
         [
+          "https://press.mandarinoriental.com/barcelona-year-of-gaudi/",
+          "https://press.mandarinoriental.com/section/our-hotels/europe/barcelona/?lang=eng",
           "https://www.mandarinoriental.com/en/barcelona/passeig-de-gracia",
           "https://www.mandarinoriental.com/en/barcelona/passeig-de-gracia/stay"
         ]
@@ -261,6 +287,8 @@
         "le-blanc",
         "Le Blanc Spa Resort Cancun",
         [
+          "https://cancun.leblancsparesorts.com/gallery",
+          "https://www.leblancsparesorts.com/gallery",
           "https://cancun.leblancsparesorts.com/"
         ]
       ],
@@ -268,6 +296,8 @@
         "hyatt-ziva",
         "Hyatt Ziva Cancun",
         [
+          "https://www.resortsbyhyatt.com/ziva/ziva-cancun/gallery",
+          "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/gallery",
           "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun",
           "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms"
         ]
