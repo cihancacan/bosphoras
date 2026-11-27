@@ -1,0 +1,153 @@
+{
+  "name": "Courchevel 1850",
+  "country": "Fransa",
+  "eyebrow": "Les Trois Vallées · Alplerde kış",
+  "heading": "Courchevel 1850: dağ zirveleri ve şale zarafeti",
+  "intro": "Courchevel 1850'de kayak tatili özel ev sıcaklığıyla birleşir: pistlerden şömineye dönüş, karlı orman manzaraları ve uzun akşam yemekleri. Otel seçerken pist erişimini, odanın konumunu, aile hizmetlerini ve mahremiyeti değerlendirin.",
+  "editorial": "Courchevel 1850 farklı bölgelerden oluşur. Jardin Alpin pistlere yakın huzur sunarken Bellecôte ve Les Clarines başka manzara ve erişim seçenekleri sağlar; La Croisette resort yaşamının merkezidir. Kar koşullarına göre otelden kayakla çıkıp dönüşün mümkün olup olmadığını, sezonluk açılışları, çocuk programlarını ve süitin yönünü teyit edin. Fiyat ve müsaitliği rezervasyon partneri doğrular.",
+  "hotelIntro": "Dört ayrı karakter: masalsı Alp mimarisi ve aile tatiliyle Les Airelles, çağdaş sanat ve spa ile Cheval Blanc, Jardin Alpin huzuruyla L’Apogée, dağ köyü ve şale süitleriyle Le K2 Palace.",
+  "areas": [
+    [
+      "Jardin Alpin · Orman ve lüks oteller",
+      "İğne yapraklı ormanlar arasında sakin oteller; pist erişimi binaya bağlıdır.",
+      "Girişten piste giden yolu ve servis imkânını doğrulayın."
+    ],
+    [
+      "Bellecôte · Dağ manzaraları",
+      "Kayak yamaçlarına yakın tatil bölgesi; bazı odalardan dağ manzarası.",
+      "Her dağ manzaralı oda doğrudan piste açılmaz."
+    ],
+    [
+      "La Croisette ve Forum · Resort merkezi",
+      "Liftler, butikler ve restoranlar yakındır; kayak ve akşam yürüyüşleri birleşir.",
+      "Akşam hareketliliği ve trafik huzuru etkileyebilir."
+    ],
+    [
+      "Les Clarines · Özel şaleler",
+      "Le K2 Palace çevresinde aile ve gruplara uygun geniş şaleler bulunur.",
+      "Oda, şale süiti ve bağımsız şalelerin özel hizmetlerini karşılaştırın."
+    ],
+    [
+      "Les Chenus ve üst pistler",
+      "Dağ sırtları, erken inişler ve Trois Vallées erişimi.",
+      "Rota hava, lift işletimi ve kayak seviyesine bağlıdır."
+    ]
+  ],
+  "experiences": [
+    [
+      "Trois Vallées'de ilk inişler",
+      "Sabah çıkışını kar, liftlerin çalışması ve grubun seviyesine göre planlayın."
+    ],
+    [
+      "Şömine başında après-ski",
+      "Kayak sonrası salonda sıcak çikolata, spa veya önceden seçilmiş restoranda dinlenin."
+    ],
+    [
+      "Alplerde aile günü",
+      "Çocuk programlarını, eğitmenleri, bağlantılı odaları ve pist dışı etkinlikleri karşılaştırın."
+    ]
+  ],
+  "checks": [
+    "Seçilen kış sezonunda otelin gerçek çalışma tarihlerini doğrulayın.",
+    "Belirli binadan kar koşullarına göre pist erişimini kontrol edin.",
+    "Bağlantılı odaları, çocuk programlarını ve ön kayıt koşullarını teyit edin.",
+    "Havalimanı transferi, servisler, eğitmenler ve restoranları ayarlayın.",
+    "Fotoğraflardaki bağımsız şale, şale süiti ve normal odayı ayırın."
+  ],
+  "hotels": [
+    [
+      "Jardin Alpin · Avusturya-Macaristan tarzı mimari",
+      "Karlı kuleler, boyalı cepheler ve oyma ahşap Les Airelles'i masalsı Alp şatosuna dönüştürür. Aile hizmetleri, süitler ve özel şaleler farklı tatil seçenekleri sunar. Kaynak rehber 4 Aralık 2026 açılışını belirtir.",
+      "Açılış tarihini, konaklama kategorisini, çocuk programlarını ve dahil hizmetleri doğrulayın.",
+      "Masalsı Alp atmosferinde aile tatili için.",
+      ""
+    ],
+    [
+      "Jardin Alpin · Çağdaş rezidans",
+      "36 oda ve süitli samimi otelde canlı renkler ve çağdaş sanat karla kontrast oluşturur. Kişisel hizmet, Guerlain spa ve pist erişimi tatilin karakterini belirler; Le 1947 restoranı gastronomi tutkusunu yansıtır.",
+      "Restoran ve bakım rezervasyonlarını, süit kategorisini ve pist rotasını teyit edin.",
+      "Çağdaş tasarım, spa ve gastronomi sevenler için.",
+      ""
+    ],
+    [
+      "Jardin Alpin · Otel ve şaleler",
+      "Merkezin üstünde L’Apogée ahşap, şömineler, geniş salonlar ve sade iç mekânlarla büyük bir şale sıcaklığı sunar. Odalar, süitler ve özel şaleler kayak, spa ve aile tatilini birleştirir.",
+      "Oda konumu, çocuk programı ve transferleri karşılaştırın; şale adı hizmetleri tek başına belirlemez.",
+      "Dağ evi sıcaklığında sakin aile tatili için.",
+      ""
+    ],
+    [
+      "Les Clarines · Samimi dağ köyü",
+      "Le K2 Palace, Himalaya motifli taş ve ahşap şalelerden oluşan küçük bir köyü andırır. Odalar, süitler, şale süitleri ve ayrı şaleler alan ve mahremiyet bakımından farklıdır.",
+      "Hava koşullarına göre kayak erişimini, kategoriyi ve özel hizmetleri kontrol edin.",
+      "Geniş şalede mahrem tatil için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Courchevel 1850'nin ünlü lüks otelleri hangileri?",
+      "Seçkimizde Les Airelles, Cheval Blanc, L’Apogée ve Le K2 Palace farklı karakter ve hizmet sunar."
+    ],
+    [
+      "Tüm oteller ski-in/ski-out mu?",
+      "Hayır. Kayakla piste çıkış bina, otel ve kar koşullarına bağlıdır; gerçek rotayı doğrulayın."
+    ],
+    [
+      "En sakin bölge hangisi?",
+      "Jardin Alpin ve bazı yerleşim bölgeleri daha sakin, La Croisette ve merkez mağaza ve akşam yaşamına daha yakındır."
+    ],
+    [
+      "Les Airelles yıl boyunca açık mı?",
+      "Kaynakta kış açılışı 4 Aralık 2026 olarak belirtilir; güncel otel takvimini kontrol edin."
+    ],
+    [
+      "Aileler için hangi otel?",
+      "Çocuk programları, yaş sınırı, bağlantılı odalar ve dahil hizmetleri karşılaştırın; Les Airelles ve L’Apogée'yi değerlendirin."
+    ],
+    [
+      "Nasıl rezervasyon yapılır?",
+      "Yetkili partner güncel fiyat, oda müsaitliği ve koşulları doğrular."
+    ],
+    [
+      "Eğitmen ve restoranları ne zaman ayarlamalı?",
+      "Yoğun sezonda ders, ekipman, spa ve restoranları önceden ayarlayın; hava ve saatler değişebilir."
+    ]
+  ],
+  "photoCaptions": [
+    "Courchevel 1850 havadan",
+    "Courchevel 1850 merkezi",
+    "Sabah kayak pisti",
+    "Courchevel kış panoraması",
+    "Bellecôte bölgesi manzarası",
+    "Courchevel pist manzarası",
+    "L’Apogée terası",
+    "Courchevel 1850 kış görünümü",
+    "Courchevel'de kayak"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Les Airelles karlı cephesi",
+      "Les Airelles görünümü",
+      "Les Airelles fotoğrafı"
+    ],
+    [
+      "Cheval Blanc Courchevel binası",
+      "Cheval Blanc karlı cephesi",
+      "Cheval Blanc spa resepsiyonu"
+    ],
+    [
+      "L’Apogée Courchevel cephesi",
+      "Ahşap kirişli süit yatak odası",
+      "L’Apogée Club restoranı"
+    ],
+    [
+      "Kışın Le K2 Palace",
+      "Le K2 Palace spa",
+      "Le K2 Palace mimarisi"
+    ]
+  ],
+  "seoTitle": "Courchevel 1850: Lüks Oteller, Şaleler ve Trois Vallées Kayak Tatili",
+  "hotelSeoTitle": "Courchevel 1850 Otelleri: Les Airelles, Cheval Blanc, L’Apogée ve Le K2 Palace",
+  "seoDescription": "Courchevel 1850'de dört lüks oteli karşılaştırın: Jardin Alpin, kayak erişimi, özel şaleler, aile hizmetleri ve spa."
+}
