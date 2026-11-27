@@ -147,10 +147,16 @@ DIRECT = {
   ],
   "orlando/waldorf": [
     [
-      "https://images.trvl-media.com/lodging/3000000/2440000/2432800/2432727/0589fd64.jpg?impolicy=resizecrop&ra=fit&rw=1280",
-      "Waldorf Astoria Orlando exterior overlooking swimming pool",
-      "https://uk.hotels.com/ho307784/waldorf-astoria-orlando-orlando-united-states-of-america/",
-      "Hotels.com / Waldorf Astoria Orlando"
+      "https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill%2Cw_1080%2Ch_970%2Cq_80%2Cf_auto%2Cg_auto/Imagery/Property%20Photography/Waldorf%20Astoria/O/ORLBCWA/Waldorf_Astoria_Orlando___Exterior___Front_Drive___MBHR.jpg",
+      "Waldorf Astoria Orlando exterior front drive at dusk",
+      "https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/events/signature-offers/",
+      "Hilton / Waldorf Astoria Orlando official photography"
+    ],
+    [
+      "https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill%2Cw_1080%2Ch_970%2Cq_80%2Cf_auto%2Cg_auto/Imagery/Property%20Photography/Waldorf%20Astoria/O/ORLBCWA/Waldorf_Astoria_Orlando_Dusk_View.jpg",
+      "Waldorf Astoria Orlando exterior and pool at dusk",
+      "https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/offers/",
+      "Hilton / Waldorf Astoria Orlando official photography"
     ]
   ]
 }
