@@ -98,61 +98,55 @@ DIRECT = {
       "https://commons.wikimedia.org/wiki/Special:FilePath/Front_view_of_the_Imperial_Throne_Hall_Geunjeongjeon_at_Gyeongbokgung_Palace_with_blue_sky_in_Seoul.jpg",
       "Gyeongbokgung Palace throne hall",
       "https://commons.wikimedia.org/wiki/File:Front_view_of_the_Imperial_Throne_Hall_Geunjeongjeon_at_Gyeongbokgung_Palace_with_blue_sky_in_Seoul.jpg",
-      "Basile Morin / licence to verify against file page"
+      "Basile Morin / CC BY-SA 4.0 / resized WebP"
     ],
     [
       "https://commons.wikimedia.org/wiki/Special:FilePath/Bukchon-ro_11-gil_street_with_hanok_houses_and_blue_sky_in_Bukchon_Hanok_Village_Seoul.jpg",
       "Bukchon Hanok Village street",
       "https://commons.wikimedia.org/wiki/File:Bukchon-ro_11-gil_street_with_hanok_houses_and_blue_sky_in_Bukchon_Hanok_Village_Seoul.jpg",
-      "Basile Morin / licence to verify against file page"
+      "Basile Morin / CC BY-SA 4.0 / resized WebP"
     ],
     [
       "https://commons.wikimedia.org/wiki/Special:FilePath/Streets_in_Myeong-dong_Seoul.jpg",
       "Myeongdong shopping street",
       "https://commons.wikimedia.org/wiki/File:Streets_in_Myeong-dong_Seoul.jpg",
-      "Dquai / licence to verify against file page"
+      "Dquai / CC BY-SA 4.0 / resized WebP"
     ],
     [
       "https://commons.wikimedia.org/wiki/Special:FilePath/N_Seoul_Tower_view_1.jpg",
       "N Seoul Tower view of Seoul city panorama",
       "https://commons.wikimedia.org/wiki/File:N_Seoul_Tower_view_1.jpg",
-      "Wikimedia Commons author pending confirmation / licence to verify against file page"
+      "Kallerna / CC BY-SA 4.0 / resized WebP"
     ],
     [
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Dongdaemun_Design_Plaza_grass.jpg",
-      "Dongdaemun Design Plaza grass and neighbouring buildings",
-      "https://commons.wikimedia.org/wiki/File:Dongdaemun_Design_Plaza_grass.jpg",
-      "Wikimedia Commons author and architectural rights pending confirmation / licence to verify against file page"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Dongdaemun_Gate_or_Heunginjimun_gate.jpg",
+      "Dongdaemun Gate Heunginjimun historic gate at night",
+      "https://commons.wikimedia.org/wiki/File:Dongdaemun_Gate_or_Heunginjimun_gate.jpg",
+      "TealAlligator / CC BY-SA 4.0 / resized WebP"
     ],
     [
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Seokchon_Lake_in_Seoul.jpg",
-      "Seokchon Lake",
-      "https://commons.wikimedia.org/wiki/File:Seokchon_Lake_in_Seoul.jpg",
-      "Christian Bolz / licence to verify against file page"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Seokchon_Lake.jpg",
+      "Seokchon Lake Jamsil",
+      "https://commons.wikimedia.org/wiki/File:Seokchon_Lake.jpg",
+      "Christophe95 / CC BY-SA 4.0 / resized WebP"
     ],
     [
       "https://commons.wikimedia.org/wiki/Special:FilePath/Bongeun_Temple%2C_Seoul.jpg",
       "Bongeunsa Temple Seoul",
       "https://commons.wikimedia.org/wiki/File:Bongeun_Temple%2C_Seoul.jpg",
-      "Wikimedia Commons author pending confirmation / licence to verify against file page"
+      "Rtflakfizer / CC BY-SA 4.0 / resized WebP"
     ],
     [
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Cheonggyecheon_tree-lined_stream_and_footbridge_at_sunrise_in_Seoul.jpg",
-      "Cheonggyecheon stream at sunrise",
-      "https://commons.wikimedia.org/wiki/File:Cheonggyecheon_tree-lined_stream_and_footbridge_at_sunrise_in_Seoul.jpg",
-      "Basile Morin / licence to verify against file page"
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Cheonggyecheon.jpg",
+      "Cheonggyecheon stream Seoul",
+      "https://commons.wikimedia.org/wiki/File:Cheonggyecheon.jpg",
+      "螺钉 / CC BY-SA 3.0 / resized WebP"
     ],
     [
       "https://commons.wikimedia.org/wiki/Special:FilePath/Hongdae_Main_Road%2C_Seoul.jpg",
-      "Hongdae main road",
+      "Hongdae main pedestrian street Seoul",
       "https://commons.wikimedia.org/wiki/File:Hongdae_Main_Road%2C_Seoul.jpg",
-      "Keneckert / licence to verify against file page"
-    ],
-    [
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Hongdae_Streets.jpg",
-      "Hongdae streets",
-      "https://commons.wikimedia.org/wiki/File:Hongdae_Streets.jpg",
-      "U0894629 / licence to verify against file page"
+      "Ken Eckert / CC BY-SA 4.0 / resized WebP"
     ]
   ],
   "seoul/four-seasons": [
