@@ -1,0 +1,285 @@
+[
+  {
+    "slug": "london",
+    "city": "Londres",
+    "publisher": "Visit London / London & Partners",
+    "cityPages": [
+      "https://www.visitlondon.com/things-to-do/sightseeing/top-10-photo-opportunities-in-london",
+      "https://www.visitlondon.com/things-to-do/sightseeing/famous-landmarks-london",
+      "https://www.visitlondon.com/things-to-do/london-areas/westminster",
+      "https://www.visitlondon.com/things-to-do/london-areas/london-bridge/top-things-to-do-in-london-bridge"
+    ],
+    "subjects": [
+      "westminster|parliament|big ben",
+      "tower bridge",
+      "covent garden",
+      "hyde park|kensington gardens",
+      "buckingham palace",
+      "st paul",
+      "borough market",
+      "mayfair|bond street",
+      "thames|london skyline"
+    ],
+    "hotels": [
+      [
+        "claridges",
+        "Claridge’s",
+        [
+          "https://www.maybourne.com/en/hotels/claridges/about",
+          "https://www.maybourne.com/en/hotels/claridges/suites-rooms",
+          "https://www.maybourne.com/en/hotels/claridges"
+        ]
+      ],
+      [
+        "savoy",
+        "The Savoy",
+        [
+          "https://www.thesavoylondon.com/",
+          "https://www.thesavoylondon.com/rooms-and-suites/"
+        ]
+      ],
+      [
+        "peninsula",
+        "The Peninsula London",
+        [
+          "https://www.peninsula.com/en/london/5-star-luxury-hotel-belgravia",
+          "https://www.peninsula.com/en/london/luxury-hotel-room-suite-types"
+        ]
+      ],
+      [
+        "shangri-la",
+        "Shangri-La The Shard, London",
+        [
+          "https://www.shangri-la.com/en/london/shangrila/",
+          "https://www.shangri-la.com/en/london/shangrila/rooms-suites/"
+        ]
+      ]
+    ]
+  },
+  {
+    "slug": "las-vegas",
+    "city": "Las Vegas",
+    "publisher": "Visit Las Vegas / LVCVA",
+    "cityPages": [
+      "https://www.visitlasvegas.com/experience/post/how-to-vegas-have-a-picture-perfect-getaway/",
+      "https://www.visitlasvegas.com/experience/post/the-strip-the-vegas-way/",
+      "https://www.visitlasvegas.com/experience/post/walking-the-las-vegas-strip/",
+      "https://www.visitlasvegas.com/experience/post/things-to-do-downtown/",
+      "https://www.visitlasvegas.com/experience/post/social-media-worthy-places-and-activities-in-las-vegas/"
+    ],
+    "subjects": [
+      "strip|skyline",
+      "bellagio|fountains",
+      "sphere",
+      "venetian|gondola",
+      "fremont",
+      "arts district",
+      "red rock",
+      "las vegas sign",
+      "downtown"
+    ],
+    "hotels": [
+      [
+        "bellagio",
+        "Bellagio",
+        [
+          "https://bellagio.mgmresorts.com/en/hotel.html",
+          "https://bellagio.mgmresorts.com/en.html"
+        ]
+      ],
+      [
+        "wynn",
+        "Wynn Las Vegas",
+        [
+          "https://www.wynnlasvegas.com/rooms-and-suites",
+          "https://www.wynnlasvegas.com/"
+        ]
+      ],
+      [
+        "venetian",
+        "The Venetian Resort Las Vegas",
+        [
+          "https://www.venetianlasvegas.com/hotel/suites.html",
+          "https://www.venetianlasvegas.com/"
+        ]
+      ],
+      [
+        "fontainebleau",
+        "Fontainebleau Las Vegas",
+        [
+          "https://www.fontainebleaulasvegas.com/rooms-and-suites/all-accommodations/",
+          "https://www.fontainebleaulasvegas.com/"
+        ]
+      ]
+    ]
+  },
+  {
+    "slug": "rome",
+    "city": "Rome",
+    "publisher": "Turismo Roma / Roma Capitale",
+    "cityPages": [
+      "https://www.turismoroma.it/en/itineraries/rome-four-days-four-faces-eternal-city",
+      "https://www.turismoroma.it/en/itineraries/rome-72-hours",
+      "https://www.turismoroma.it/en/places/piazza-di-spagna",
+      "https://www.turismoroma.it/en/node/31551",
+      "https://www.turismoroma.it/en/node/31552",
+      "https://www.turismoroma.it/en/places/flavian-amphitheatre-colosseum"
+    ],
+    "subjects": [
+      "colosseum|colosseo",
+      "trevi",
+      "pantheon",
+      "navona",
+      "spagna|spanish steps",
+      "borghese",
+      "trastevere",
+      "san pietro|st peter",
+      "roma|rome|panorama"
+    ],
+    "hotels": [
+      [
+        "bvlgari",
+        "Bvlgari Hotel Roma",
+        [
+          "https://www.bulgarihotels.com/en-US/rome/the-hotel",
+          "https://www.bulgarihotels.com/en-US/rome/rooms-and-suites"
+        ]
+      ],
+      [
+        "de-russie",
+        "Hotel de Russie",
+        [
+          "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/",
+          "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/accommodation/"
+        ]
+      ],
+      [
+        "hassler",
+        "Hassler Roma",
+        [
+          "https://www.hotelhasslerroma.com/stay/",
+          "https://www.hotelhasslerroma.com/"
+        ]
+      ],
+      [
+        "eden",
+        "Hotel Eden",
+        [
+          "https://www.dorchestercollection.com/rome/hotel-eden",
+          "https://www.dorchestercollection.com/rome/hotel-eden/rooms-suites"
+        ]
+      ]
+    ]
+  },
+  {
+    "slug": "barcelona",
+    "city": "Barcelone",
+    "publisher": "Turisme de Barcelona",
+    "cityPages": [
+      "https://bid.barcelonaturisme.com/wv3/en/",
+      "https://bid.barcelonaturisme.com/wv3/en/page/167/quadrat-d-or.html",
+      "https://bid.barcelonaturisme.com/wv3/en/page/1071/gothic-quarter.html",
+      "https://bid.barcelonaturisme.com/wv3/en/page/3495/barceloneta-beach.html",
+      "https://bid.barcelonaturisme.com/wv3/en/page/2213/the-barceloneta.html",
+      "https://bid.barcelonaturisme.com/wv3/en/page/2199/maritime-barcelona-route.html",
+      "https://bid.barcelonaturisme.com/wv3/en/enjoy/173/barcelona-and-sustainability-a-true-commitment.html"
+    ],
+    "subjects": [
+      "sagrada",
+      "eixample|passeig|batllo|batlló|pedrera",
+      "gothic|gotic|gòtic|catedral",
+      "barceloneta|beach|platja",
+      "montju",
+      "port vell|port olimpic",
+      "gracia|gràcia",
+      "guell|güell",
+      "panoram|skyline"
+    ],
+    "hotels": [
+      [
+        "mandarin",
+        "Mandarin Oriental, Barcelona",
+        [
+          "https://www.mandarinoriental.com/en/barcelona/passeig-de-gracia",
+          "https://www.mandarinoriental.com/en/barcelona/passeig-de-gracia/stay"
+        ]
+      ],
+      [
+        "arts",
+        "Hotel Arts Barcelona",
+        [
+          "https://www.ritzcarlton.com/en/hotels/bcnrz-hotel-arts-barcelona/overview/",
+          "https://www.hotelartsbarcelona.com/"
+        ]
+      ],
+      [
+        "majestic",
+        "Majestic Hotel & Spa Barcelona",
+        [
+          "https://majestichotelgroup.com/en/barcelona/hotel-majestic"
+        ]
+      ],
+      [
+        "cotton-house",
+        "Cotton House Hotel, Autograph Collection",
+        [
+          "https://hotelcottonhouse.com/en/hotel/",
+          "https://hotelcottonhouse.com/en/"
+        ]
+      ]
+    ]
+  },
+  {
+    "slug": "cancun",
+    "city": "Cancún",
+    "publisher": "Mexican Caribbean / Quintana Roo tourism",
+    "cityPages": [
+      "https://mexicancaribbean.travel/destinations/cancun",
+      "https://mexicancaribbean.travel/news/the-best-beaches-in-cancun-for-an-exclusive-getaway"
+    ],
+    "subjects": [
+      "cancun|cancún|hotel zone|zona hotelera",
+      "delfines",
+      "nizuc",
+      "punta canc",
+      "lagoon|nichupt",
+      "caracol|tortugas",
+      "playa|beach",
+      "downtown|centro",
+      "caribbean|caribe"
+    ],
+    "hotels": [
+      [
+        "nizuc",
+        "NIZUC Resort & Spa",
+        [
+          "https://www.nizuc.com/accommodations/",
+          "https://www.nizuc.com/"
+        ]
+      ],
+      [
+        "le-blanc",
+        "Le Blanc Spa Resort Cancun",
+        [
+          "https://cancun.leblancsparesorts.com/"
+        ]
+      ],
+      [
+        "hyatt-ziva",
+        "Hyatt Ziva Cancun",
+        [
+          "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun",
+          "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms"
+        ]
+      ],
+      [
+        "coral-beach",
+        "Grand Fiesta Americana Coral Beach Cancún",
+        [
+          "https://www.fiestamericanatravelty.com/en/grand-fiesta-americana/hotels/grand-fiesta-americana-coral-beach-cancun-all-inclusive-spa-resort/hotel-faq",
+          "https://www.coralbeachcancunresort.com/"
+        ]
+      ]
+    ]
+  }
+]
