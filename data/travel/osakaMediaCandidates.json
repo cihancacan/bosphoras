@@ -217,6 +217,37 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-8",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Osaka_tempozan_giant_ferris_wheel.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Osaka_tempozan_giant_ferris_wheel.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Osaka_tempozan_giant_ferris_wheel.jpg",
+        "originalAlt": "Tempozan giant ferris wheel Osaka Bay",
+        "originalCaption": "Jan Eglinger / CC BY-SA 3.0 / resized WebP",
+        "credit": "Jan Eglinger / CC BY-SA 3.0 / resized WebP",
+        "publisher": "Japan National Tourism Organization / Osaka Convention & Tourism Bureau",
+        "hotel": null,
+        "localPath": "/images/travel/osaka-premium/destination/scene-8.webp",
+        "sourceSHA256": "64f8ff178fcf172f0474d1d189d14c755cea15c17990494e19e5f0aeac0d7388",
+        "webpSHA256": "273da76c41550d95c39b2a1636c0692e184967e94e445f56cf9c355011365f3f",
+        "sourcePixels": [
+          2592,
+          1944
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 138614,
+        "pixelFingerprint": "184260661f319100",
+        "candidateSubject": "osaka bay|tempozan|kaiyukan",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -275,6 +306,37 @@
         "webpBytes": 144644,
         "pixelFingerprint": "f233f2b273773333",
         "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "conrad-3",
+        "sourcePage": "https://www.hotels.com/ho664390/conrad-osaka-osaka-japan/",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/f0651a7a.jpg?h=800&impolicy=fcrop&w=1200",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/f0651a7a.jpg?h=800&impolicy=fcrop&w=1200",
+        "originalAlt": "Conrad Osaka King Executive guest room",
+        "originalCaption": "Hotels.com / Conrad Osaka",
+        "credit": "Hotels.com / Conrad Osaka",
+        "publisher": "Conrad Osaka",
+        "hotel": "Conrad Osaka",
+        "localPath": "/images/travel/osaka-premium/conrad/conrad-3.webp",
+        "sourceSHA256": "bf63cd0bc34221348802a525aa576d53f7f4e01682dba3917137519e7a72895d",
+        "webpSHA256": "37165cf2b45cf7530c209030e2762cb2f60e3a9591252f17a6f6d9b9fd5be742",
+        "sourcePixels": [
+          1200,
+          800
+        ],
+        "webpPixels": [
+          1200,
+          800
+        ],
+        "webpBytes": 62662,
+        "pixelFingerprint": "62e6ecef7262f0f0",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -566,12 +628,7 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 7
-      },
-      {
-        "group": "conrad",
-        "expected": 3,
-        "found": 2
+        "found": 8
       }
     ],
     "errors": [
@@ -584,16 +641,8 @@
         "error": "403 Client Error: Forbidden for url: https://www.hilton.com/en/hotels/osacici-conrad-osaka/gallery/"
       },
       {
-        "url": "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/cb3c860c.jpg?h=800&impolicy=fcrop&w=1200",
-        "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/cb3c860c.jpg?h=800&impolicy=fcrop&w=1200"
-      },
-      {
-        "url": "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/69a89a73.jpg?h=800&impolicy=fcrop&w=1200",
-        "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/69a89a73.jpg?h=800&impolicy=fcrop&w=1200"
-      },
-      {
-        "page": "https://www.expedia.com/Osaka-Hotels-Conrad-Osaka.h17310194.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Osaka-Hotels-Conrad-Osaka.h17310194.Hotel-Information"
+        "url": "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/e5ea272e.jpg?h=800&impolicy=fcrop&w=1200",
+        "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/e5ea272e.jpg?h=800&impolicy=fcrop&w=1200"
       }
     ],
     "publicUseApproved": false,
@@ -631,8 +680,8 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 7,
-    "hotelCount": 11,
-    "totalBytes": 2508486
+    "cityCount": 8,
+    "hotelCount": 12,
+    "totalBytes": 2709762
   }
 }
