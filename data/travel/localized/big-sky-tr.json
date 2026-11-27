@@ -1,0 +1,156 @@
+{
+  "name": "Big Sky",
+  "country": "ABD",
+  "eyebrow": "Montana · Dağlar ve yaban hayatı",
+  "heading": "Big Sky'da nerede kalınır? Montana dağlarında dört lüks konaklama biçimi",
+  "intro": "Big Sky farklı dağ bölgelerinden oluşur. Mountain Village teleferiklere elverişlidir, Spanish Peaks kapsamlı resort deneyimi, Moonlight Basin orman sakinliği, Lone Mountain Ranch ise ahşap evler, binicilik ve kros kayağı sunar.",
+  "editorial": "Spanish Peaks'teki Montage doğrudan pist erişimi, süitler, rezidanslar ve geniş spa sunar. 2025 sonunda misafir ağırlamaya başlayan One&Only Moonlight Basin, sakin orman alanında odalar, kır evleri ve özel konutları bir araya getirir. Lone Mountain Ranch teleferik oteli değil, tarihî çiftliktir; ahşap evler, binicilik ve kayak rotaları karakterini oluşturur. Mountain Village'daki Summit Hotel kayak için pratik bir üstür, ancak lüks formatı Montage veya One&Only ile aynı değildir. Montana'da mesafeler, kar ve hava koşulları otel seviyesi kadar önemlidir.",
+  "hotelIntro": "Dört ayrı seçenek: Montage Big Sky, One&Only Moonlight Basin, Lone Mountain Ranch ve Summit Hotel.",
+  "areas": [
+    [
+      "Mountain Village",
+      "Teleferiklere kolay erişimli kayak üssü.",
+      "Çiftlikte mahrem tatilden çok kayak için."
+    ],
+    [
+      "Spanish Peaks",
+      "Yamaçlarda Montage resortu ve özel rezidanslar.",
+      "Gerçek pist erişimi ve sezonu kontrol edin."
+    ],
+    [
+      "Moonlight Basin",
+      "Orman manzaraları, kır evleri ve seçkin resort hizmeti.",
+      "Restoranları ve ulaşımı önceden planlayın."
+    ],
+    [
+      "Lone Mountain Ranch",
+      "Ahşap evler ve Amerikan Batısı tarzında düzenlenen geziler.",
+      "Çiftlik Big Sky teleferiklerinin hemen yanında değildir."
+    ],
+    [
+      "Meadow Village",
+      "Günlük hizmetler ve vadi yaşamı.",
+      "Kayak alanına ulaşımı planlayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Lone Peak üzerinde ilk ışık",
+      "Otel konumuna göre dağa çıkışı planlayın."
+    ],
+    [
+      "Montana'da at sırtında",
+      "Sezona ve deneyime uygun profesyonel rehberli gezi seçin."
+    ],
+    [
+      "Çiftlikte bir gün",
+      "Kros kayağı rotalarını ve yerel mutfağı keşfedin."
+    ],
+    [
+      "Çamlar arasında spa",
+      "Mevcut resort hizmetlerini doğrulayıp sakinlik içinde dinlenin."
+    ]
+  ],
+  "checks": [
+    "Her otelin adresini ve ulaşımını kontrol edin.",
+    "Sezonluk açılış tarihlerini doğrulayın.",
+    "Oda, süit, kır evi ve aile rezidanslarını karşılaştırın.",
+    "Her otel doğrudan pist erişimli değildir.",
+    "Seyahat tarihlerinde aktiviteleri doğrulayın.",
+    "Fiyat ve müsaitliği yetkili sağlayıcı doğrular."
+  ],
+  "hotels": [
+    [
+      "Spanish Peaks",
+      "Montage Big Sky doğrudan pist erişimi sunduğunu belirten, otel odaları ve özel rezidansları bulunan kapsamlı dağ resortudur. Geniş spa ve çeşitli restoranlar kayak günleriyle dinlenmeyi birleştirerek tatilin tamamını tesiste geçirmeyi mümkün kılar.",
+      "Kategori, sezon, pist erişim koşulları ve dahil hizmetleri doğrulayın.",
+      "Kapsamlı kayak ve spa tatili için.",
+      ""
+    ],
+    [
+      "Moonlight Basin",
+      "2025 sonundan beri hizmet veren One&Only Moonlight Basin, Big Sky'ın daha sakin ormanlık bölgesindedir. Oda, süit, kır evi ve özel konutlar farklı mahremiyet ve alan sunar. Olanaklar ve dağ rotaları seçilen konut ve sezona bağlıdır.",
+      "Konaklama türünü, ulaşımı, hizmetleri ve sezonu doğrulayın.",
+      "Mahremiyet ve özel dağ rezidansları için.",
+      ""
+    ],
+    [
+      "Lone Mountain Ranch",
+      "Montana'nın tarihî çiftliği 26 ahşap ev, kros kayağı rotaları, rehberli at gezileri ve Horn & Cantle restoranı sunar. Amerikan Batısı geleneklerine dayalı yüksek seviyeli ayrı tatil biçimidir, doğrudan teleferik yanında otel değildir.",
+      "Evi, sezonluk programları, yemek ve pist transferini doğrulayın.",
+      "Geleneksel çiftlik ve doğa tatili için.",
+      ""
+    ],
+    [
+      "Mountain Village",
+      "Summit Hotel Mountain Village kayak üssündedir. Oda ve süitleri teleferik erişimini ve kolay kayak organizasyonunu önemseyenlere uygundur. Pratik bir seçenektir ancak Montage veya One&Only ultra lüks formatının karşılığı değildir.",
+      "Kategori, teleferik yolu, sezon ve hizmetleri doğrulayın.",
+      "Kayak pistlerine kolay erişim için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Big Sky'da ilk ziyaret için nerede kalınır?",
+      "Dağ erişimi, restoranlar, mahremiyet ve aile ihtiyaçlarına göre seçin. Mountain Village ve Spanish Peaks farklı bölgelerdir."
+    ],
+    [
+      "Seçilen oteller aynı deneyimi mi sunar?",
+      "Hayır, Montage ve Lone Mountain Ranch örneğin tamamen farklı konaklama ve dağ erişimi sunar."
+    ],
+    [
+      "Aile için ne seçilmeli?",
+      "Bağlantılı odaları, rezidansları ve kır evlerini karşılaştırın; yatak, yaş kuralları, hizmet ve yolculuk sürelerini doğrulayın."
+    ],
+    [
+      "Otelden doğrudan kayak yapılır mı?",
+      "Yalnızca belirli tesislerde, açık teleferik ve uygun kar koşullarında. Dağa yakınlık ski-in/ski-out garantisi değildir."
+    ],
+    [
+      "Kayaksız ne yapılır?",
+      "Restoran, spa, manzara, at gezileri ve diğer geziler sezon ve havaya bağlıdır."
+    ],
+    [
+      "Ulaşımı önceden düzenlemek gerekir mi?",
+      "Evet, özellikle uzak yerler, kış yolları, havalimanı ve akşam gezileri için."
+    ],
+    [
+      "Oteller nasıl rezerve edilir?",
+      "Bosphoras'ta karşılaştırın; fiyat, oda müsaitliği ve koşulları yetkili sağlayıcı doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Lone Peak zirvesi",
+    "Mountain Village",
+    "Spanish Peaks dağ manzarası",
+    "Moonlight Basin",
+    "Kros kayağı rotası",
+    "Montana'da binicilik",
+    "Big Sky ormanları",
+    "Montana'da kışlık dağ evi"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Montage Big Sky",
+      "Montage ve karlı Spanish Peaks",
+      "King Mountain View oda"
+    ],
+    [
+      "One&Only altı yatak odalı evin ana yatak odası",
+      "One&Only özel rezidans salonu"
+    ],
+    [
+      "Lone Mountain Ranch ahşap evleri",
+      "Çiftlik evleri",
+      "Lone Mountain Ranch görünümü"
+    ],
+    [
+      "Summit Hotel",
+      "Summit Hotel görünümü",
+      "Üç yatak odalı süit salonu"
+    ]
+  ],
+  "seoTitle": "Big Sky'da Nerede Kalınır? Montana Lüks Otelleri, Kayak ve Çiftlikler",
+  "hotelSeoTitle": "Big Sky'ın En İyi Otelleri: Montage, One&Only, Lone Mountain Ranch ve Summit",
+  "seoDescription": "Montana Big Sky'da dört oteli karşılaştırın. Mountain Village, Spanish Peaks, Moonlight Basin, kayak ve çiftlik tatilini keşfedin."
+}

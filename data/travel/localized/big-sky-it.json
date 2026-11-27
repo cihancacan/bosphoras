@@ -1,0 +1,156 @@
+{
+  "name": "Big Sky",
+  "country": "Stati Uniti",
+  "eyebrow": "Montana · Montagne e natura selvaggia",
+  "heading": "Dove alloggiare a Big Sky: quattro soggiorni di lusso tra i monti del Montana",
+  "intro": "Big Sky comprende zone montane distinte. Mountain Village è comoda per gli impianti, Spanish Peaks offre un resort completo, Moonlight Basin quiete nei boschi e Lone Mountain Ranch baite, equitazione e sci di fondo.",
+  "editorial": "Montage a Spanish Peaks offre accesso diretto alle piste, suite, residenze e ampia spa. One&Only Moonlight Basin accoglie ospiti dalla fine del 2025 e riunisce camere, cottage e case private in una zona boschiva appartata. Lone Mountain Ranch è un ranch storico, non hotel agli impianti; baite in tronchi, equitazione e percorsi sciistici ne definiscono lo stile. Summit Hotel a Mountain Village è base pratica per sciare, ma non equivalente al lusso di Montage o One&Only. Distanze, neve e meteo contano quanto la categoria dell'hotel.",
+  "hotelIntro": "Quattro alternative: Montage Big Sky, One&Only Moonlight Basin, Lone Mountain Ranch e Summit Hotel.",
+  "areas": [
+    [
+      "Mountain Village",
+      "Base sciistica con accesso comodo agli impianti.",
+      "Per sciare, non per isolamento in un ranch."
+    ],
+    [
+      "Spanish Peaks",
+      "Resort Montage e residenze private sui pendii.",
+      "Verifica accesso reale alle piste e stagione."
+    ],
+    [
+      "Moonlight Basin",
+      "Paesaggi boschivi, cottage e servizio raffinato da resort.",
+      "Organizza ristoranti e trasporti in anticipo."
+    ],
+    [
+      "Lone Mountain Ranch",
+      "Baite in tronchi ed escursioni organizzate nello stile del West americano.",
+      "Il ranch non è direttamente agli impianti di Big Sky."
+    ],
+    [
+      "Meadow Village",
+      "Servizi quotidiani e vita della valle.",
+      "Prevedi trasporto al comprensorio sciistico."
+    ]
+  ],
+  "experiences": [
+    [
+      "Prima luce su Lone Peak",
+      "Pianifica salita in montagna secondo posizione dell'hotel."
+    ],
+    [
+      "A cavallo in Montana",
+      "Scegli escursione professionale secondo stagione e capacità."
+    ],
+    [
+      "Giornata al ranch",
+      "Scopri piste di fondo e cucina locale."
+    ],
+    [
+      "Spa tra i pini",
+      "Rilassati lontano dal trambusto verificando servizi disponibili."
+    ]
+  ],
+  "checks": [
+    "Verifica indirizzi e trasporti di ogni hotel.",
+    "Conferma date stagionali.",
+    "Confronta camere, suite, cottage e residenze familiari.",
+    "Non tutti gli hotel accedono direttamente alle piste.",
+    "Verifica attività per le tue date.",
+    "Prezzi e disponibilità confermati dal fornitore autorizzato."
+  ],
+  "hotels": [
+    [
+      "Spanish Peaks",
+      "Montage Big Sky è un resort montano completo con accesso diretto alle piste dichiarato, camere e residenze private. Ampia spa e vari ristoranti permettono di trascorrere tutta la vacanza nel resort tra sci e relax.",
+      "Conferma categoria, stagione, accesso alle piste e servizi inclusi.",
+      "Per vacanze complete di sci e spa.",
+      ""
+    ],
+    [
+      "Moonlight Basin",
+      "One&Only Moonlight Basin, in attività dalla fine del 2025, sorge nella zona boschiva più appartata di Big Sky. Camere, suite, cottage e case private offrono diversi livelli di spazio e privacy. Dotazioni e percorsi verso la montagna dipendono da alloggio e stagione.",
+      "Conferma tipo di alloggio, trasporti, servizi e condizioni stagionali.",
+      "Per privacy e residenze private di montagna.",
+      ""
+    ],
+    [
+      "Lone Mountain Ranch",
+      "Storico ranch del Montana con 26 baite in tronchi, piste di fondo, passeggiate a cavallo guidate e ristorante Horn & Cantle. Esperienza di alto livello legata alle tradizioni del West americano, non hotel direttamente agli impianti.",
+      "Conferma baita, programmi stagionali, pasti e transfer alle piste.",
+      "Per tradizionale soggiorno al ranch e natura.",
+      ""
+    ],
+    [
+      "Mountain Village",
+      "Summit Hotel è alla base sciistica di Mountain Village. Camere e suite sono comode per chi privilegia impianti e semplice organizzazione dello sci. Buona soluzione pratica, non equivalente all'ultralusso di Montage o One&Only.",
+      "Verifica categoria, percorso agli impianti, stagione e servizi.",
+      "Per accesso comodo alle piste.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Dove dormire alla prima visita a Big Sky?",
+      "Scegli secondo accesso alle montagne, ristoranti, privacy e necessità familiari. Mountain Village e Spanish Peaks sono zone distinte."
+    ],
+    [
+      "Gli hotel offrono lo stesso formato?",
+      "No, Montage e Lone Mountain Ranch ad esempio propongono alloggi e accesso alle montagne completamente differenti."
+    ],
+    [
+      "Cosa scegliere per una famiglia?",
+      "Confronta camere comunicanti, residenze e cottage; conferma letti, regole di età, servizi e tempi di viaggio."
+    ],
+    [
+      "Si può sciare direttamente dall'hotel?",
+      "Solo in alcune strutture con impianti aperti e neve adeguata. Vicinanza non garantisce ski-in/ski-out."
+    ],
+    [
+      "Cosa fare senza sciare?",
+      "Ristoranti, spa, panorami, equitazione e altre escursioni dipendono da stagione e meteo."
+    ],
+    [
+      "Conviene organizzare prima il trasporto?",
+      "Sì, soprattutto per luoghi remoti, strade invernali, aeroporto e spostamenti serali."
+    ],
+    [
+      "Come prenotare gli hotel?",
+      "Confronta alloggi su Bosphoras; prezzi, disponibilità e condizioni confermati dal fornitore autorizzato."
+    ]
+  ],
+  "photoCaptions": [
+    "Cima Lone Peak",
+    "Mountain Village",
+    "Paesaggi montani Spanish Peaks",
+    "Moonlight Basin",
+    "Pista di sci di fondo",
+    "Equitazione in Montana",
+    "Boschi di Big Sky",
+    "Casa di montagna in Montana in inverno"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Montage Big Sky",
+      "Montage e Spanish Peaks innevati",
+      "Camera King Mountain View"
+    ],
+    [
+      "Camera padronale della casa One&Only con sei camere",
+      "Salotto di residenza privata One&Only"
+    ],
+    [
+      "Baite in tronchi Lone Mountain Ranch",
+      "Cottage del ranch",
+      "Vista Lone Mountain Ranch"
+    ],
+    [
+      "Summit Hotel",
+      "Vista Summit Hotel",
+      "Salotto suite con tre camere da letto"
+    ]
+  ],
+  "seoTitle": "Dove dormire a Big Sky: hotel di lusso, ranch e sci in Montana",
+  "hotelSeoTitle": "Migliori hotel di Big Sky: Montage, One&Only, Lone Mountain Ranch e Summit",
+  "seoDescription": "Confronta quattro hotel a Big Sky, Mountain Village, Spanish Peaks e Moonlight Basin. Scopri sci e soggiorni nei ranch del Montana."
+}
