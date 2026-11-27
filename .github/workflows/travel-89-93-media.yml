@@ -42,9 +42,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: travel-89-93-photo-review
+          name: travel-london-photo-review
           path: |
             data/travel/media89to93Candidates.json
             data/travel/media89to93BrochureCandidates.json
-            public/images/travel/*-premium/source-review-contact-sheet.webp
+            public/images/travel/london-premium/source-review-contact-sheet.webp
           if-no-files-found: ignore
