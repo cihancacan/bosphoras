@@ -1,0 +1,158 @@
+{
+  "name": "Aspen",
+  "country": "ABD",
+  "eyebrow": "Colorado · Dört dağ ve tarihî şehir",
+  "heading": "Aspen'de nerede kalınır? Dağların özgürlüğü ve tarihî şehir",
+  "intro": "Colorado'nun eski maden şehrinde kayak sabahları, sanat galerileri ve şömine başında akşamlar birbirini tamamlar. Aspen Mountain'a doğrudan erişim, Main Street'te tarihî bir adres veya Aspen Snowmass bölgesini keşfetmek için uygun bir otel seçin.",
+  "editorial": "Merkezin yanındaki Aspen Mountain, Aspen Snowmass'ın dört dağından yalnızca biridir; diğerleri Snowmass, Aspen Highlands ve Buttermilk'tir. Aspen'deki bir otel tüm pistlere doğrudan erişim sağlamaz. Merkez restoran, galeri ve şehir tarihi, Silver Queen Gondola çevresi erken kayak için uygundur. Snowmass Village ayrı tatil beldesidir. The Little Nell, Hotel Jerome, St. Regis ve W Aspen konum, stil ve hizmet açısından ayrılır. Kış ulaşımı, hava, oda kategorisi ve teleferik erişimini doğrulayın. Güncel fiyat ve müsaitliği yetkili sağlayıcı teyit eder.",
+  "hotelIntro": "Dört adres: Aspen Mountain pistlerinde The Little Nell, 1889'dan beri tarihî Hotel Jerome, klasik hizmet ve spa için St. Regis, çağdaş tasarım ve canlı atmosfer için W Aspen.",
+  "areas": [
+    [
+      "Silver Queen Gondola · Pistlere erken erişim",
+      "Aspen Mountain eteğinde kayakla başlayıp şehir restoran ve galerilerine dönebilirsiniz.",
+      "Gondola yakınlık ski-in/ski-out garantisi değildir; otelden rotayı doğrulayın."
+    ],
+    [
+      "Main Street · Tarihî Aspen",
+      "Gümüş madenciliği döneminden mimari, eski barlar, kültür ve restoranlar.",
+      "Merkez konumu dört dağa doğrudan erişim anlamına gelmez."
+    ],
+    [
+      "West End · Konut bölgesi",
+      "Sakin ağaçlı sokaklar ve geleneksel evler dinlenmek için uygundur.",
+      "Teleferik ve restoran yolunda kış koşullarını dikkate alın."
+    ],
+    [
+      "Aspen Highlands ve Buttermilk",
+      "Farklı beceri düzeyleri ve aktiviteler için iki ayrı kayak alanı.",
+      "Araç ulaşımını planlayın; merkezden kayakla doğrudan gidilemez."
+    ],
+    [
+      "Snowmass Village · Ayrı resort",
+      "Kendi pistleri ve konaklama altyapısıyla aileler için de farklı bir ortam.",
+      "Aspen/Snowmass ilanlarında kesin adres ve transferi doğrulayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "İlk teleferiğe rahat ulaşım",
+      "Ekipman ve kayak kartını önceki gün hazırlayın; beceri ve havaya göre pist seçin."
+    ],
+    [
+      "Sanat ve şehir yaşamı",
+      "Dağlardan sonra galerileri, kafeleri ve kültür mekânlarını keşfedin."
+    ],
+    [
+      "Dört farklı akşam",
+      "Jerome tarihî barları, The Little Nell mutfağı, St. Regis gelenekleri veya W Aspen çatı terası."
+    ],
+    [
+      "Kayaksız dağ tatili",
+      "Spa, uygun havada yürüyüş ve restoranlarla Aspen'i keşfedin."
+    ]
+  ],
+  "checks": [
+    "Aspen Mountain, Aspen Highlands, Buttermilk ve Snowmass'ı ayırt edin.",
+    "Odadan teleferiğe gerçek rotayı doğrulayın.",
+    "Dağlar ve ASE havalimanı arasındaki ulaşımı havaya göre kontrol edin.",
+    "Oda, süit, rezidans, hizmet ve tarife koşullarını karşılaştırın.",
+    "Ders, ekipman kiralama ve popüler restoranları önceden ayarlayın.",
+    "Fiyat ve müsaitliği yetkili sağlayıcı doğrular."
+  ],
+  "hotels": [
+    [
+      "Aspen Mountain · Silver Queen Gondola",
+      "The Little Nell dağın eteğinde gondol yanında doğrudan pist erişimi, oda, süit ve rezidanslar sunar. Element 47 restoranı ve kişisel hizmet kayak odaklı deneyimi tamamlar. Merkeze yakın kalıp güne pistte başlamak isteyenlere uygundur.",
+      "Manzara, ekipman hizmeti, restoran ve pist erişimini doğrulayın; doğrudan erişim dört dağa değil Aspen Mountain'a aittir.",
+      "Aspen Mountain kayak tatili ve kişisel hizmet için.",
+      ""
+    ],
+    [
+      "Main Street · Tarihî Aspen",
+      "Hotel Jerome, Auberge Collection, 1889'da gümüş madenciliği döneminde açılmıştır. Avrupa dağ evi taklidi değil, tarihî buluşma yeridir. J-Bar, özgün iç mekânlar ve Auberge hizmeti şehrin kültürünü kayak kadar önemseyenlere hitap eder.",
+      "Teleferik servisini ve oda kategorisini doğrulayın; Main Street'te doğrudan pist erişimi garanti değildir.",
+      "Aspen tarihi ve tarihî otel atmosferi için.",
+      ""
+    ],
+    [
+      "Aspen merkezi · Spa ve klasik hizmet",
+      "The St. Regis Aspen Resort klasik hizmet, açık ısıtmalı havuz, RAKxa wellness ve zarif salonları birleştirir. Merkez konumu şehir gezisi ve Aspen Mountain kayak tatiline uygundur. Hizmet ve bazı olanaklara erişim kategoriye bağlıdır.",
+      "Uşak hizmeti sunulan kategorileri ve gondol rotasını doğrulayın.",
+      "Kapsamlı otel hizmeti ve sağlıklı yaşam için.",
+      ""
+    ],
+    [
+      "Aspen Mountain eteği · Çağdaş tasarım",
+      "W Aspen özgün iç mekânlar, sosyal atmosfer ve dağ manzaralı yıl boyu çatı havuzu sunar. Kayakla canlı akşam yaşamını birleştirmek isteyenlere uygundur. Çatı hizmetleri hava koşullarına bağlıdır.",
+      "Oda veya rezidans kategorisini, olası gürültüyü ve pist erişimini doğrulayın.",
+      "Çağdaş tasarım ve sosyalleşmek için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Aspen ve Snowmass aynı yer mi?",
+      "Hayır. Aspen şehir, Snowmass Village ayrı resorttur. Aspen Snowmass dört dağı kapsar; aralarında ulaşım planlanmalıdır."
+    ],
+    [
+      "Hangi otel Aspen Mountain'a doğrudan erişimli?",
+      "The Little Nell, Silver Queen Gondola yanında ski-in/ski-out belirtir. Diğerlerinde yürüyüş veya servisi kontrol edin."
+    ],
+    [
+      "Aspen tarihi için nerede kalınır?",
+      "Hotel Jerome 1889'dan beri Main Street'tedir ve şehrin sosyal yaşamıyla bağlantılıdır."
+    ],
+    [
+      "Kayaksız Aspen'e gidilir mi?",
+      "Evet, galeri, restoran, wellness ve sezonluk yürüyüşler de ilgi çekicidir."
+    ],
+    [
+      "Daha canlı atmosfer nerede?",
+      "W Aspen çağdaş çatı terası, Jerome tarihî barlarıyla tanınır. Oda gürültüsü ve mahremiyeti doğrulayın."
+    ],
+    [
+      "Kiralık araç gerekir mi?",
+      "Merkezde şart değildir; diğer dağlar, uzak oteller ve havalimanı için kış ulaşımı planlanmalıdır."
+    ],
+    [
+      "Oteller nasıl rezerve edilir?",
+      "Bosphoras'ta editoryal seçkiyi karşılaştırın; güncel fiyat ve müsaitliği yetkili sağlayıcı doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Aspen Mountain ve Silver Queen Gondola",
+    "Aspen ana caddesi",
+    "Silver Queen Gondola alt istasyonu",
+    "Main Street tarihî mimarisi",
+    "West End konut bölgesi",
+    "Aspen Highlands kayak alanı",
+    "Kışın Buttermilk",
+    "Snowmass Village ve teleferikler",
+    "Maroon Lake üzerinde Maroon Bells yansıması"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Element 47 restoran yemekleri",
+      "The Little Nell şarap barı",
+      "Aspen Mountain manzaralı Ajax restoranı"
+    ],
+    [
+      "Hotel Jerome",
+      "Hotel Jerome iç mekânı",
+      "Hotel Jerome Deluxe King oda"
+    ],
+    [
+      "The St. Regis Aspen Resort",
+      "St. Regis otel alanları",
+      "St. Regis Aspen Resort atmosferi"
+    ],
+    [
+      "W Aspen",
+      "W Aspen otel odası",
+      "W Aspen görünümü"
+    ]
+  ],
+  "seoTitle": "Aspen'de Nerede Kalınır? Colorado Lüks Otelleri ve Kayak",
+  "hotelSeoTitle": "Aspen'in En İyi Otelleri: The Little Nell, Jerome, St. Regis ve W Aspen",
+  "seoDescription": "Aspen'de dört lüks oteli, Silver Queen Gondola, Main Street ve Snowmass ulaşımını karşılaştırın. Colorado kayak tatilini planlayın."
+}

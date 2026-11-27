@@ -1,0 +1,158 @@
+{
+  "name": "阿斯彭",
+  "country": "美国",
+  "eyebrow": "科罗拉多州 · 四座雪山与历史小城",
+  "heading": "阿斯彭住哪里？山间自由与历史小城风情",
+  "intro": "科罗拉多昔日矿业小城将滑雪清晨、艺术画廊与壁炉旁夜晚相结合。可选择直通 Aspen Mountain 雪道、Main Street 历史酒店或探索 Aspen Snowmass 的住宿基地。",
+  "editorial": "Aspen Mountain 紧邻市中心，但只是 Aspen Snowmass 四座雪山之一，其他为 Snowmass、Aspen Highlands 与 Buttermilk。阿斯彭酒店并不保证直通所有雪道。中心适合餐厅、画廊与城市历史，Silver Queen Gondola 周边方便早晨滑雪。Snowmass Village 是独立度假村镇。The Little Nell、Hotel Jerome、St. Regis 与 W Aspen 的位置、风格及服务不同。确认冬季交通、天气、房型与缆车实际通行。实时价格与房量由授权服务商确认。",
+  "hotelIntro": "四处住宿：Aspen Mountain 雪道旁 The Little Nell、始于1889年的 Hotel Jerome、经典服务及水疗 St. Regis、现代设计与热闹氛围 W Aspen。",
+  "areas": [
+    [
+      "Silver Queen Gondola · 早晨滑雪",
+      "Aspen Mountain 山脚可开始滑雪，之后返回城市餐厅及画廊。",
+      "靠近缆车不保证滑雪进出，确认酒店路线。"
+    ],
+    [
+      "Main Street · 历史阿斯彭",
+      "银矿热时期建筑、历史酒吧、文化与餐厅。",
+      "市中心并不意味着直通四座雪山。"
+    ],
+    [
+      "West End · 住宅区",
+      "宁静绿树街道与传统住宅适合悠闲度假。",
+      "前往缆车及餐厅考虑冬季路况。"
+    ],
+    [
+      "Aspen Highlands 与 Buttermilk",
+      "两个独立滑雪区适合不同技术水平及活动。",
+      "规划道路交通，不能从市中心直接滑雪抵达。"
+    ],
+    [
+      "Snowmass Village · 独立度假村镇",
+      "自有雪道及酒店设施形成不同氛围，也适合家庭。",
+      "Aspen/Snowmass 广告需确认具体地址及接送。"
+    ]
+  ],
+  "experiences": [
+    [
+      "悠闲搭乘首班缆车",
+      "前一天准备装备及滑雪票，根据技术与天气选择雪道。"
+    ],
+    [
+      "艺术与城市生活",
+      "滑雪后探索画廊、咖啡馆与文化空间。"
+    ],
+    [
+      "四种夜晚",
+      "Jerome 历史酒吧、The Little Nell 美食、St. Regis 传统或 W Aspen 屋顶露台。"
+    ],
+    [
+      "不滑雪的山区体验",
+      "水疗、适宜天气下漫步及餐厅同样值得体验。"
+    ]
+  ],
+  "checks": [
+    "区分 Aspen Mountain、Aspen Highlands、Buttermilk 与 Snowmass。",
+    "确认从客房到缆车的实际路线。",
+    "根据天气规划雪山间及 ASE 机场交通。",
+    "比较客房、套房、住宅、服务及房价条件。",
+    "提前安排课程、装备租赁和热门餐厅。",
+    "实时价格与房量由授权服务商确认。"
+  ],
+  "hotels": [
+    [
+      "Aspen Mountain · Silver Queen Gondola",
+      "The Little Nell 位于山脚缆车旁，提供直通雪道、客房、套房与住宅。Element 47 餐厅和个性服务完善滑雪体验。适合希望早晨滑雪同时靠近市中心的旅客。",
+      "确认景观、装备服务、餐厅及雪道通行；直通仅指 Aspen Mountain，而非四座雪山。",
+      "适合 Aspen Mountain 滑雪及个性服务。",
+      ""
+    ],
+    [
+      "Main Street · 历史阿斯彭",
+      "Hotel Jerome, Auberge Collection 于1889年银矿热时期开业。这里是历史聚会场所，并非仿欧洲木屋。J-Bar、独特内饰及 Auberge 待客体验适合同时重视文化和滑雪的客人。",
+      "确认缆车接驳及房型，Main Street 不保证直通雪道。",
+      "适合阿斯彭历史及古典酒店氛围。",
+      ""
+    ],
+    [
+      "阿斯彭中心 · 水疗与经典服务",
+      "The St. Regis Aspen Resort 结合传统待客体验、室外恒温泳池、RAKxa 康养及雅致沙龙。中心位置方便城市生活与 Aspen Mountain 滑雪。服务及设施通行依房型而异。",
+      "确认管家服务房型及缆车路线。",
+      "适合完整酒店服务与康养。",
+      ""
+    ],
+    [
+      "Aspen Mountain 山脚 · 现代设计",
+      "W Aspen 拥有鲜明内饰、社交氛围及全年开放山景屋顶泳池。适合结合滑雪和热闹夜生活。屋顶服务受天气影响。",
+      "确认客房或住宅类别、可能噪音及雪道通行。",
+      "适合现代设计及社交。",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "阿斯彭和 Snowmass 是同一地点吗？",
+      "不是，阿斯彭是城市，Snowmass Village 是独立度假村镇。Aspen Snowmass 涵盖四座雪山，需规划交通。"
+    ],
+    [
+      "哪家酒店直通 Aspen Mountain？",
+      "The Little Nell 介绍 Silver Queen Gondola 旁 ski-in/ski-out，其他酒店需确认步行或接驳。"
+    ],
+    [
+      "体验阿斯彭历史住哪里？",
+      "Hotel Jerome 自1889年位于 Main Street，与城市社交生活密切相关。"
+    ],
+    [
+      "不滑雪值得去阿斯彭吗？",
+      "值得，画廊、餐厅、康养及季节性散步本身值得体验。"
+    ],
+    [
+      "哪里氛围更热闹？",
+      "W Aspen 以现代屋顶露台、Jerome 以历史酒吧闻名。确认客房噪音与私密性。"
+    ],
+    [
+      "需要租车吗？",
+      "市中心不一定需要，但其他雪山、偏远酒店及机场需规划冬季交通。"
+    ],
+    [
+      "如何预订酒店？",
+      "通过 Bosphoras 比较编辑精选，实时价格与房量由授权服务商确认。"
+    ]
+  ],
+  "photoCaptions": [
+    "Aspen Mountain 与 Silver Queen Gondola",
+    "阿斯彭主要街道",
+    "Silver Queen Gondola 下站",
+    "Main Street 历史建筑",
+    "West End 住宅区",
+    "Aspen Highlands 滑雪区",
+    "冬季 Buttermilk",
+    "Snowmass Village 与缆车",
+    "Maroon Lake 中 Maroon Bells 倒影"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Element 47 餐厅菜品",
+      "The Little Nell 葡萄酒吧",
+      "Aspen Mountain 景 Ajax 餐厅"
+    ],
+    [
+      "Hotel Jerome",
+      "Hotel Jerome 内饰",
+      "Hotel Jerome Deluxe King 客房"
+    ],
+    [
+      "The St. Regis Aspen Resort",
+      "St. Regis 酒店空间",
+      "St. Regis Aspen Resort 氛围"
+    ],
+    [
+      "W Aspen",
+      "W Aspen 客房",
+      "W Aspen 景观"
+    ]
+  ],
+  "seoTitle": "阿斯彭住哪里？科罗拉多豪华酒店与滑雪",
+  "hotelSeoTitle": "阿斯彭酒店推荐：The Little Nell、Jerome、St. Regis 与 W Aspen",
+  "seoDescription": "比较阿斯彭四家豪华酒店、Silver Queen Gondola、Main Street 与 Snowmass，规划科罗拉多滑雪度假。"
+}

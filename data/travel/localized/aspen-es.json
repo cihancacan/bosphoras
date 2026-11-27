@@ -1,0 +1,158 @@
+{
+  "name": "Aspen",
+  "country": "Estados Unidos",
+  "eyebrow": "Colorado · Cuatro montañas y ciudad histórica",
+  "heading": "Dónde alojarse en Aspen: libertad de montaña y carácter histórico",
+  "intro": "La antigua ciudad minera de Colorado combina mañanas de esquí, galerías y veladas junto a la chimenea. Elige acceso directo a Aspen Mountain, una dirección histórica en Main Street o una base para recorrer Aspen Snowmass.",
+  "editorial": "Aspen Mountain está junto al centro, pero es solo una de las cuatro montañas de Aspen Snowmass, junto con Snowmass, Aspen Highlands y Buttermilk. Un hotel en Aspen no garantiza acceso directo a todas las pistas. El centro favorece restaurantes, galerías e historia; Silver Queen Gondola permite empezar temprano. Snowmass Village es una localidad turística distinta. The Little Nell, Hotel Jerome, St. Regis y W Aspen difieren en ubicación, estilo y servicios. Comprueba transporte invernal, tiempo, categoría y acceso real a remontes. El proveedor autorizado confirma precios y disponibilidad.",
+  "hotelIntro": "Cuatro direcciones: The Little Nell a pie de Aspen Mountain, Hotel Jerome con historia desde 1889, St. Regis con servicio clásico y spa, W Aspen con diseño moderno y ambiente animado.",
+  "areas": [
+    [
+      "Silver Queen Gondola · Acceso temprano a pistas",
+      "Al pie de Aspen Mountain comienza el esquí y luego puedes volver a restaurantes y galerías.",
+      "Proximidad a góndola no garantiza ski-in/ski-out; confirma recorrido."
+    ],
+    [
+      "Main Street · Aspen histórico",
+      "Arquitectura de la fiebre de la plata, bares históricos, cultura y restaurantes.",
+      "El centro no implica acceso directo a las cuatro montañas."
+    ],
+    [
+      "West End · Barrio residencial",
+      "Calles verdes y tranquilas y casas tradicionales para un descanso pausado.",
+      "Considera condiciones invernales hacia remontes y restaurantes."
+    ],
+    [
+      "Aspen Highlands y Buttermilk",
+      "Dos áreas distintas para diferentes niveles y actividades.",
+      "Planifica transporte por carretera; no se llega directamente esquiando desde el centro."
+    ],
+    [
+      "Snowmass Village · Localidad independiente",
+      "Pistas propias e infraestructura hotelera crean otro ambiente, también familiar.",
+      "Confirma dirección y traslado si la oferta dice Aspen/Snowmass."
+    ]
+  ],
+  "experiences": [
+    [
+      "Primer remonte sin prisas",
+      "Prepara equipo y forfait la víspera; elige pistas según nivel y tiempo."
+    ],
+    [
+      "Arte y vida urbana",
+      "Tras la montaña, visita galerías, cafés y espacios culturales."
+    ],
+    [
+      "Cuatro veladas distintas",
+      "Bares históricos de Jerome, cocina de The Little Nell, tradición St. Regis o azotea de W Aspen."
+    ],
+    [
+      "Montaña sin esquiar",
+      "Spa, paseos con buen tiempo y restaurantes permiten disfrutar Aspen sin esquís."
+    ]
+  ],
+  "checks": [
+    "Distingue Aspen Mountain, Aspen Highlands, Buttermilk y Snowmass.",
+    "Confirma recorrido real desde habitación al remonte.",
+    "Planifica transporte entre montañas y aeropuerto ASE según tiempo.",
+    "Compara habitaciones, suites, residencias, servicios y condiciones.",
+    "Organiza clases, alquiler de equipo y restaurantes populares con antelación.",
+    "Proveedor autorizado confirma precios y disponibilidad."
+  ],
+  "hotels": [
+    [
+      "Aspen Mountain · Silver Queen Gondola",
+      "The Little Nell está al pie de Aspen Mountain junto a la góndola, con acceso directo a pistas, habitaciones, suites y residencias. Element 47 y servicio personalizado completan la experiencia de esquí. Ideal para empezar en pistas y seguir cerca del centro.",
+      "Confirma vistas, servicio de equipo, restaurantes y acceso; directo a Aspen Mountain, no a las cuatro montañas.",
+      "Para esquiar en Aspen Mountain y servicio personalizado.",
+      ""
+    ],
+    [
+      "Main Street · Aspen histórico",
+      "Hotel Jerome, Auberge Collection, abrió en 1889 durante la fiebre de la plata. Es lugar histórico de encuentro, no imitación de chalet europeo. J-Bar, interiores singulares y hospitalidad Auberge atraen a quienes valoran la cultura tanto como el esquí.",
+      "Confirma traslado al remonte y categoría; Main Street no garantiza acceso directo a pistas.",
+      "Para historia de Aspen y ambiente de hotel histórico.",
+      ""
+    ],
+    [
+      "Centro de Aspen · Spa y servicio clásico",
+      "The St. Regis Aspen Resort combina tradición, piscina exterior climatizada, bienestar RAKxa y salones elegantes. La ubicación céntrica favorece ciudad y esquí en Aspen Mountain. Servicios y acceso a instalaciones dependen de categoría.",
+      "Confirma categorías con mayordomo y recorrido a góndola.",
+      "Para servicio hotelero completo y bienestar.",
+      ""
+    ],
+    [
+      "Pie de Aspen Mountain · Diseño moderno",
+      "W Aspen ofrece interiores llamativos, ambiente social y piscina en azotea todo el año con vistas de montaña. Para combinar esquí y vida nocturna. Servicios de azotea sujetos al tiempo.",
+      "Confirma habitación o residencia, posibles ruidos y acceso a pistas.",
+      "Para diseño contemporáneo y vida social.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Aspen y Snowmass son el mismo lugar?",
+      "No, Aspen es ciudad y Snowmass Village otra localidad. Aspen Snowmass agrupa cuatro montañas; planifica transporte."
+    ],
+    [
+      "¿Qué hotel tiene acceso directo a Aspen Mountain?",
+      "The Little Nell indica ski-in/ski-out junto a Silver Queen Gondola. En otros, comprueba recorrido o traslado."
+    ],
+    [
+      "¿Dónde alojarse por la historia de Aspen?",
+      "Hotel Jerome está en Main Street desde 1889 y ligado a la vida social."
+    ],
+    [
+      "¿Vale la pena Aspen sin esquiar?",
+      "Sí, galerías, restaurantes, bienestar y paseos estacionales son experiencias propias."
+    ],
+    [
+      "¿Dónde hay ambiente más animado?",
+      "W Aspen destaca por azotea moderna y Jerome por bares históricos. Confirma ruido y privacidad."
+    ],
+    [
+      "¿Hace falta alquilar coche?",
+      "No necesariamente en el centro, pero otras montañas, hoteles alejados y aeropuerto requieren transporte invernal."
+    ],
+    [
+      "¿Cómo reservar hoteles?",
+      "Compara selección editorial en Bosphoras; proveedor autorizado confirma precios y disponibilidad."
+    ]
+  ],
+  "photoCaptions": [
+    "Aspen Mountain y Silver Queen Gondola",
+    "Calle principal de Aspen",
+    "Estación inferior Silver Queen Gondola",
+    "Arquitectura histórica de Main Street",
+    "Barrio West End",
+    "Área de esquí Aspen Highlands",
+    "Buttermilk en invierno",
+    "Snowmass Village y remontes",
+    "Maroon Bells reflejados en Maroon Lake"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Platos de Element 47",
+      "Bar de vinos The Little Nell",
+      "Restaurante Ajax con vistas a Aspen Mountain"
+    ],
+    [
+      "Hotel Jerome",
+      "Interior Hotel Jerome",
+      "Habitación Deluxe King de Hotel Jerome"
+    ],
+    [
+      "The St. Regis Aspen Resort",
+      "Espacios de St. Regis",
+      "Ambiente de St. Regis Aspen Resort"
+    ],
+    [
+      "W Aspen",
+      "Habitación W Aspen",
+      "Vista de W Aspen"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Aspen: hoteles de lujo y esquí en Colorado",
+  "hotelSeoTitle": "Mejores hoteles de Aspen: The Little Nell, Jerome, St. Regis y W Aspen",
+  "seoDescription": "Compara cuatro hoteles de lujo en Aspen, Silver Queen Gondola, Main Street y Snowmass. Planifica tus vacaciones de esquí en Colorado."
+}
