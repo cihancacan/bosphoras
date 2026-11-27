@@ -1,0 +1,162 @@
+{
+  "name": "Turks ve Caicos",
+  "country": "Turks ve Caicos Adaları",
+  "eyebrow": "Turks ve Caicos · Koylar, resifler ve özel adalar",
+  "heading": "Turks ve Caicos'ta nerede kalınır? Size uygun kıyıyı seçin",
+  "intro": "Berrak sular adaları birleştirir, ancak her kıyının ritmi farklıdır. Grace Bay restoranlara, Long Bay kitesörfe, Northwest Point sakinliğe uygundur; Parrot Cay ayrı deniz geçişi gerektirir.",
+  "editorial": "Uluslararası uçuşların çoğu Providenciales PLS havalimanına gelir. Adadaki otellere karayoluyla, COMO Parrot Cay'e ek tekne yolculuğuyla ulaşılır. Kıyı seçimi atmosferi ve günlük ulaşımı belirler.\n\nKuzeydeki Grace Bay geniş plajı, restoranları ve resortlarıyla bilinir. Wymara Resort buradadır; Wymara Villas Sunset Cove güneyde Turtle Tail'de ayrı konumdadır. Villaların havuz ve hizmetleri Grace Bay stüdyo rezervasyonuna otomatik dahil değildir.\n\nGüneydoğuda Caicos Banks sığlığı ve alize rüzgârları Long Bay'i kitesörf merkezi yapar. The Shore Club oda ve süitlerin yanı sıra çok yatak odalı, özel havuzlu Estate Villas sunar. Çocuklarla uçurtma kalkış alanlarını, rüzgârı ve tekneleri dikkate alın.\n\nAmanyara korunan deniz alanlarına yakın, uzak Northwest Point'tedir. Pavyon ve villalar manzara, alan ve havuz açısından değişir. Duyurulan yenileme dönemi sonrasında tesislerin çalışmasını otelle doğrulayın. Özel ada Parrot Cay'deki COMO odaları, Beach Houses, villa ve rezidanslardan farklıdır. Deniz transferine zaman ayırın; yüzme koşullarını kontrol edin. Haziran–kasım kasırga sezonunda uçuş ve tekneler etkilenebilir. Giriş koşulları, sigorta ve lisanslı taşıyıcıları seyahate göre doğrulayın.",
+  "hotelIntro": "Dört farklı konum: Amanyara'nın sakinliği, COMO Parrot Cay özel adası, The Shore Club'ın rüzgârlı Long Bay kıyısı ve Wymara'nın Grace Bay yaşamı.",
+  "areas": [
+    [
+      "Grace Bay ve Bight Reef",
+      "Beyaz kumlu kuzey kıyısında resort ve restoranlar; Bight Reef deniz yaşamını keşfetmeye uygundur.",
+      "Mercanlara basmayın; hava ve hayvan gözlemleri öngörülemez."
+    ],
+    [
+      "Long Bay ve Caicos Banks",
+      "Güneydoğudaki sığlık ve alizeler kitesörfçüleri çeker.",
+      "Çocuklarla yüzmeden önce uçurtma alanları, tekneler ve cankurtaranları kontrol edin."
+    ],
+    [
+      "Northwest Point ve deniz parkı",
+      "Hareketli bölgelerden uzak kayalık koylar, kıyı bitkileri ve korunan deniz manzaraları.",
+      "Yolculuk süresini ve izinli plaj girişlerini doğrulayın."
+    ],
+    [
+      "Leeward ve tekne kalkışları",
+      "Doğu Providenciales marina ve kanalları gezi ve ada transferlerinin başlangıç noktalarıdır.",
+      "İskele, operatör, saat ve deniz havasını doğrulayın."
+    ],
+    [
+      "Parrot Cay ve özel adalar",
+      "Tekne geçişi daha sakin ada tatiline ulaştırır.",
+      "Özellikle çocuklarla uçuş, bagaj ve tekne saatlerini önceden planlayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Grace Bay'de erken sabah",
+      "Kalabalık saatlerden önce izinli halka açık girişlerden plaj boyunca yürüyün."
+    ],
+    [
+      "Eğitmenle kitesörf",
+      "Long Bay'de uygun ekipman ve hava koşullarına sahip yetkili okul seçin."
+    ],
+    [
+      "Doğaya saygılı deniz gezisi",
+      "Lisanslı operatörle, demirleme kurallarına ve hayvan mesafesine uyarak gezinin."
+    ],
+    [
+      "Parrot Cay'de sağlıklı yaşam",
+      "Ulaşımsız bir günü COMO bakımlarına ayırın; randevu ve dahil hizmetleri doğrulayın."
+    ],
+    [
+      "Grace Bay yakınında akşam yemeği",
+      "Gereksiz akşam yolculuklarını önlemek için otel yakınında restoran ayırtın."
+    ]
+  ],
+  "checks": [
+    "Parrot Cay tekne gerektirir; Providenciales otellerine karayoluyla ulaşılır.",
+    "Yenileme sonrası Amanyara oda, restoran ve spa hizmetlerini doğrulayın.",
+    "Wymara Resort ve Villas ayrı kıyılarda; Shore Club Estate Villas süitlerden farklıdır.",
+    "Manzara, havuz ve plaj erişimi kategoriye bağlıdır.",
+    "Rüzgâr, deniz ve çocuk yüzme koşullarını kontrol edin.",
+    "Giriş, sigorta ve transferi ayrı doğrulayın; fiyat ve müsaitliği sağlayıcı teyit eder."
+  ],
+  "hotels": [
+    [
+      "Northwest Point · Sakin batı kıyısı",
+      "Amanyara, korunan deniz manzaraları yakınında yerel bitkiler arasında ahşap pavyonlar sunar. Kategoriye göre gölet, bahçe veya kıyı manzarası vardır; her pavyonda özel havuz yoktur. Üç ila altı yatak odalı villalar ayrı yaşam alanı ve hizmetler sunar. Grace Bay'e araç gerekir. Rezervasyondan önce yenileme sonrası tesisleri, kategoriyi, plaj erişimini ve çocuk kurallarını doğrulayın.",
+      "Havuz ve manzara kategoriye bağlı; uzak konum.",
+      "Sakinlik, mahremiyet ve deniz doğası için.",
+      ""
+    ],
+    [
+      "Parrot Cay · Özel ada",
+      "COMO Parrot Cay uzun beyaz plajı, çağdaş konaklamayı ve COMO Shambhala programını birleştirir. Otel PLS'den yaklaşık 15 dakika kara, 35 dakika tekne transferi belirtir; saat ve denize bağlıdır. Garden View ve Ocean View Rooms, Beach Houses, villa ve çok yatak odalı rezidanslardan ayrılır. Havuz ve doğrudan kum erişimi her odada yoktur. Tekne, çocuk hizmetleri, yemek, bakım ve iptal şartlarını doğrulayın.",
+      "Tekne gerekir; havuz yalnızca belirli kategorilerde.",
+      "Özel ada sakinliği ve sağlıklı yaşam için.",
+      ""
+    ],
+    [
+      "Long Bay · Providenciales güneydoğusu",
+      "The Shore Club, Caicos Banks sığlığında rüzgârlı Long Bay'dedir. Oda ve süitleri havuz, restoran ve spa tamamlar; üç ila altı yatak odalı Estate Villas özel havuz ve farklı mahremiyet sunar. Villa terası ve hizmetleri Junior Suite'e dahil değildir. Aileler kitesörf alanlarını ve rüzgârı dikkate almalı; çocuk yatağı, havuz erişimi ve su sporları kurallarını doğrulamalıdır.",
+      "Estate Villas ve otel süitleri farklı kategorilerdir.",
+      "Geniş plaj ve kitesörf yakınında tatil için.",
+      ""
+    ],
+    [
+      "Grace Bay ve Turtle Tail · İki adres",
+      "Wymara Resort + Villas iki ayrı yerdedir. Grace Bay resortunda stüdyo, süit, penthouse, sonsuzluk havuzu, restoranlar ve wellness hizmetleri vardır. Villas Sunset Cove güney kıyısındaki Turtle Tail'dedir. Özel havuzlar ve villa hizmetleri resort stüdyolarına otomatik dahil değildir. Bahçe, havuz, okyanus veya doğrudan deniz manzarasını, binayı, yatakları ve iki adres arası ulaşımı doğrulayın.",
+      "Resort ve villalar ayrıdır; hizmetler değişir.",
+      "Grace Bay resort tatili veya Turtle Tail'de özel villa için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Hangi havalimanına uçulur?",
+      "Ana uluslararası havalimanı Providenciales PLS'dir. Yerel resortlara karayolu, COMO Parrot Cay'e ayrıca tekne gerekir."
+    ],
+    [
+      "Grace Bay ile Long Bay farkı nedir?",
+      "Grace Bay kuzeyde otel ve restoranlı kıyı; güneydoğudaki Long Bay Caicos Banks sığlığında alize rüzgârlarıyla kitesörf için popülerdir."
+    ],
+    [
+      "COMO Parrot Cay'e araçla gidilir mi?",
+      "Hayır, otel yaklaşık 15 dakika kara ve 35 dakika tekne belirtir. Saat, bagaj ve denizi ayrı doğrulayın."
+    ],
+    [
+      "Wymara Resort ve Villas aynı yerde mi?",
+      "Hayır, Resort Grace Bay'de, Villas Sunset Cove Turtle Tail'dedir. Plan, havuz ve hizmetler farklıdır."
+    ],
+    [
+      "Geniş aileler için hangi seçenekler uygun?",
+      "Shore Club Estate Villas, Amanyara villaları, COMO Beach Houses ve rezidansları, Wymara süit veya villaları. Yatak, kapasite, havuz güvenliği ve çocuk kurallarını doğrulayın."
+    ],
+    [
+      "Yenileme sonrası Amanyara nasıl kontrol edilir?",
+      "Otel 1 Kasım 2026'ya kadar geçici kapanış duyurmuştu. Bu, sonrasında tüm hizmetlerin açık olduğunu göstermez; oda, restoran ve spayı doğrudan teyit edin."
+    ],
+    [
+      "Rezervasyon ve transferler garanti mi?",
+      "Hayır. Bosphoras'ta karşılaştırın; yetkili sağlayıcı tarihe göre oda, tarife, deniz hizmeti ve transferi doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Grace Bay beyaz kum ve turkuaz deniz",
+    "Long Bay renkli plaj tabelaları",
+    "Chalk Sound lagünü, 2009 arşivi",
+    "Marina yakınında Turtle Cove kıyısı",
+    "Providenciales sakin plajı",
+    "Providenciales mavi deniz ufku",
+    "Amanyara yakınında Northwest Point akşam ışığı",
+    "Grace Bay plajının başka görünümü",
+    "Providenciales gün batımı"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Amanyara özel havuzlu villa, pavyon değil",
+      "Amanyara pavyon mimarisi ve iç mekânı",
+      "Amanyara yakınında uzak Northwest Point kıyısı"
+    ],
+    [
+      "COMO Parrot Cay binaları ve tropik doğası",
+      "COMO Parrot Cay plajı ve sığlık",
+      "COMO Parrot Cay teraslı kıyı rezidansı"
+    ],
+    [
+      "The Shore Club ve Long Bay havadan",
+      "The Shore Club kıyı mimarisi ve terası",
+      "The Shore Club havuzu ve kıyısı"
+    ],
+    [
+      "Wymara Resort Ocean View Studio yatak odası",
+      "Wymara Penthouse Suite salon ve yemek alanı",
+      "Penthouse Suite salonu, standart stüdyo değil"
+    ]
+  ],
+  "seoTitle": "Turks ve Caicos'ta Nerede Kalınır? Lüks Oteller ve Plajlar",
+  "hotelSeoTitle": "Turks ve Caicos Otelleri: Amanyara, COMO, Shore Club ve Wymara",
+  "seoDescription": "Grace Bay, Long Bay, Northwest Point ve Parrot Cay'de dört lüks oteli karşılaştırın. Villa, plaj ve ada transferi seçeneklerini keşfedin."
+}
