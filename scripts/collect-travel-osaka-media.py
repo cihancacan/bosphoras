@@ -95,6 +95,18 @@ def collect_pages(pages):
 DIRECT = {
   "osaka/conrad": [
     [
+      "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/e5ea272e.jpg?h=800&impolicy=fcrop&w=1200",
+      "Conrad Osaka corner junior suite bedroom",
+      "https://www.hotels.com/ho664390/conrad-osaka-osaka-japan/",
+      "Hotels.com / Conrad Osaka"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/f0651a7a.jpg?h=800&impolicy=fcrop&w=1200",
+      "Conrad Osaka King Executive guest room",
+      "https://www.hotels.com/ho664390/conrad-osaka-osaka-japan/",
+      "Hotels.com / Conrad Osaka"
+    ],
+    [
       "https://commons.wikimedia.org/wiki/Special:FilePath/Conrad_Osaka_Japan01-r.jpg",
       "Conrad Osaka exterior Festival Tower West",
       "https://commons.wikimedia.org/wiki/File:Conrad_Osaka_Japan01-r.jpg",
@@ -158,6 +170,18 @@ DIRECT = {
     ]
   ],
   "osaka/city": [
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Osaka_tempozan_giant_ferris_wheel.jpg",
+      "Tempozan giant ferris wheel Osaka Bay",
+      "https://commons.wikimedia.org/wiki/File:Osaka_tempozan_giant_ferris_wheel.jpg",
+      "Jan Eglinger / CC BY-SA 3.0 / resized WebP"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/KUROMON_MARKET_OSAKA_(54676620980).jpg",
+      "Kuromon Market Osaka",
+      "https://commons.wikimedia.org/wiki/File:KUROMON_MARKET_OSAKA_(54676620980).jpg",
+      "airlines470 / CC BY-SA 4.0 / resized WebP"
+    ],
     [
       "https://res.cloudinary.com/jnto/image/upload/w_750%2Ch_503%2Cfl_lossy%2Cf_auto/v1516490130/osaka/Osaka792_4",
       "Tempozan ferris wheel in Osaka Bay",
