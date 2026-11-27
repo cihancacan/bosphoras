@@ -1,0 +1,136 @@
+{
+  "name": "Londra",
+  "country": "Birleşik Krallık",
+  "eyebrow": "Birleşik Krallık · Thames Nehri ve seçkin oteller",
+  "heading": "Londra: doğru semti seçin, şehri kendi temponuzda keşfedin.",
+  "intro": "Mayfair'in meydanlarından West End tiyatrolarına, Kensington müzelerinden Thames manzaralarına uzanan Londra, farklı seyahat tarzlarına hitap eder. Otelinizi gezi planınıza, ulaşım seçeneklerine ve aradığınız atmosfere göre seçin.",
+  "editorial": "İlk ziyaretinizde Covent Garden ve Westminster, başlıca anıtlara ve tiyatrolara ulaşımı kolaylaştırır. Mayfair ve St James’s alışveriş, gastronomi ve klasik otel deneyimleri için idealdir. South Kensington, müzeleri ve yeşil alanlarıyla ailelere uygundur. London Bridge, Borough Market ve Thames kıyısında yürüyüşlerle şehre farklı bir bakış sunar.\n\nÜç veya dört gecelik bir konaklamada Westminster, West End, Kensington müzeleri ve nehir kıyısını acele etmeden keşfedebilirsiniz. Daha uzun bir seyahatte Greenwich veya Hampstead'i de planınıza ekleyin. Londra geniş bir şehirdir; merkezi bir otel her noktaya yakın değildir ve toplu taşıma bağlantıları en az haritadaki mesafe kadar önemlidir.\n\nHeathrow'dan otelinize ulaşmak için Elizabeth line, Piccadilly line, Heathrow Express ve özel transfer seçeneklerini terminalinize ve varış noktanıza göre karşılaştırın. TfL yolculuklarında geçerli ücret tavanlarından yararlanmak için aynı temassız ödeme yöntemini kullanın. Birleşik Krallık'a giriş koşulları pasaportunuza ve statünüze bağlıdır; seyahatten önce resmi kuralları kontrol edin.\n\nFiyatları aynı tarih, kişi sayısı, oda kategorisi ve iptal koşulları üzerinden karşılaştırın. Kahvaltı, ilave yatak ve spa hizmetleri her zaman fiyata dahil değildir.",
+  "hotelIntro": "Londra'nın dört farklı yüzü: Claridge’s'in tarihi zarafeti, tiyatrolarla Thames arasında The Savoy, Hyde Park Corner'daki The Peninsula ve şehrin üzerinde Shangri-La.",
+  "areas": [
+    [
+      "Mayfair ve St James’s",
+      "Tarihi oteller, sanat galerileri, Bond Street ve Green Park.",
+      "Caddeye bakan odalar daha gürültülü olabilir."
+    ],
+    [
+      "Covent Garden ve Strand",
+      "Tiyatrolar, pazarlar, restoranlar ve nehir kıyısına erişim.",
+      "Gece gürültüsünü ve yürüme güzergâhlarını değerlendirin."
+    ],
+    [
+      "Westminster ve Victoria",
+      "Parlamento, manastır, Buckingham Palace ve tren bağlantıları.",
+      "Popüler turistik yerler için önceden rezervasyon yapın."
+    ],
+    [
+      "South Kensington ve Knightsbridge",
+      "Müzeler, Hyde Park, mağazalar ve konut sokakları.",
+      "Çocuklarla metroya gerçek yürüme mesafesini kontrol edin."
+    ],
+    [
+      "South Bank ve London Bridge",
+      "Thames kıyısında yürüyüş, Tate Modern ve Borough Market.",
+      "Gezi planınıza uygun nehir kıyısını ve köprüyü seçin."
+    ],
+    [
+      "Soho ve Marylebone",
+      "Soho gece hayatıyla, Marylebone daha sakin alışveriş sokaklarıyla öne çıkar.",
+      "Aradığınız sakinliğe göre sokağı seçin."
+    ]
+  ],
+  "experiences": [
+    [
+      "Westminster'ı yürüyerek keşfedin",
+      "St James’s Park, Westminster Abbey ve nehir kıyısını kendi temponuzda gezin."
+    ],
+    [
+      "Tiyatro gecesi",
+      "West End'de aynı bölgede akşam yemeği ve gösteri planlayın."
+    ],
+    [
+      "Ailece müzeler ve parklar",
+      "Natural History Museum veya V&A ziyaretini Kensington Gardens yürüyüşüyle birleştirin."
+    ],
+    [
+      "Thames'e farklı bir bakış",
+      "London Bridge çevresinde nehir kıyısını, köprüleri ve pazarları keşfedin."
+    ]
+  ],
+  "checks": [
+    "Oda kategorisini, yatak düzenini ve toplam fiyatı karşılaştırın.",
+    "Öncelikli ziyaretlerinize uygun semti seçin.",
+    "Doğru havalimanından ve terminalden ulaşımı planlayın.",
+    "Pasaportunuza göre giriş koşullarını kontrol edin.",
+    "Saatli giriş gerektiren turistik yerleri ve gösterileri önceden ayırtın."
+  ],
+  "hotels": [
+    [
+      "Mayfair · Brook Street",
+      "Mayfair'in tarihi oteli Art Deco odaları, farklı tarzlarda süitleri, restoranları ve spa hizmetlerini bir araya getirir.",
+      "Oda kategorilerini, manzaraları ve ilave yatakları karşılaştırın.",
+      "Klasik Londra zarafeti ve alışveriş için.",
+      "Mayfair'in tarihi oteli Art Deco odaları, farklı tarzlarda süitleri, restoranları ve spa hizmetlerini bir araya getirir. Thames manzarasından ziyade klasik Londra konukseverliğini ve yakınındaki mağazaları arayanlara uygundur. Oda kategorilerini, manzaraları ve ilave yatakları karşılaştırın."
+    ],
+    [
+      "Strand · Covent Garden",
+      "Strand ile Thames arasındaki otel, tarihi iç mekânları, American Bar ve geleneksel ikindi çayıyla özel kutlamalara ve tiyatro gecelerine uygundur.",
+      "Nehir manzarasını seçtiğiniz oda için doğrulayın.",
+      "Tiyatro ve özel kutlamalar için.",
+      "Strand ile Thames arasında yer alan The Savoy, tarihi iç mekânları, American Bar ve ikindi çayıyla öne çıkar. Nehir manzarasını seçtiğiniz oda için doğrulayın."
+    ],
+    [
+      "Hyde Park Corner · Belgravia",
+      "Peter Marino tasarımı odalar çağdaş bir konut atmosferi sunar. Hyde Park, Belgravia ve Knightsbridge'e kolay erişim sağlar.",
+      "Wellington Arch, Hyde Park Corner ve Belgravia manzaraları ile aile düzenlerini karşılaştırın.",
+      "Çağdaş lüks ve Hyde Park için.",
+      "Peter Marino tasarımı odalar çağdaş bir konut atmosferi sunar. Hyde Park, Belgravia ve Knightsbridge'e erişim kolaydır. Manzara ve ailelere uygun oda düzenlerini karşılaştırın."
+    ],
+    [
+      "London Bridge · The Shard",
+      "Yüksek katlardaki geniş pencereli odalar klasik tarihi otellerden farklı bir deneyim sunar. Borough Market ve nehir kıyısı yakındır.",
+      "Belirli bir anıt manzarası varsaymadan oda yönünü, kategoriyi ve bağlantılı odaları karşılaştırın.",
+      "Şehir panoraması için.",
+      "Yüksek katlardaki geniş pencereli odalar klasik tarihi otellerden farklı bir deneyim sunar. Borough Market ve Thames'in güney kıyısı yakındır. Odanın yönünü, kategorisini ve bağlantılı oda seçeneklerini kontrol edin."
+    ]
+  ],
+  "faq": [
+    [
+      "İlk Londra ziyaretinde nerede konaklamalı?",
+      "Covent Garden, Westminster ve South Bank birçok gezi noktası için elverişlidir. Lüks bir konaklama için Mayfair'i değerlendirin."
+    ],
+    [
+      "Çocuklu aileler için hangi semt uygun?",
+      "Müzeler ve bahçeler için South Kensington, nehir kıyısındaki aktiviteler için South Bank."
+    ],
+    [
+      "Kaç gece ayırmalı?",
+      "Üç veya dört gece iyi bir başlangıçtır; beş gece ve üzeri daha fazla semt keşfetmenizi sağlar."
+    ],
+    [
+      "Heathrow'dan Londra'ya nasıl gidilir?",
+      "Varış noktanıza göre Elizabeth line, Piccadilly line, Heathrow Express veya karayolu transferi."
+    ],
+    [
+      "Hangi oteller Thames manzarası sunar?",
+      "The Savoy ve Shangri-La'nın bazı oda kategorileri nehir manzaralıdır; seçtiğiniz odayı doğrulayın."
+    ],
+    [
+      "Londra'da araba gerekli mi?",
+      "Merkezi geziler için toplu taşıma ve yürüyüş genellikle daha pratiktir."
+    ],
+    [
+      "Oteller nasıl karşılaştırılır?",
+      "Bosphoras'ta aynı tarihler, kişi sayısı, oda kategorisi ve iptal koşullarına göre toplam fiyatları karşılaştırın."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Londra'da Nerede Kalınır? En İyi Semtler ve Lüks Oteller",
+  "hotelSeoTitle": "Londra Lüks Otelleri: Claridge’s, Savoy, Peninsula ve Shangri-La",
+  "seoDescription": "Londra'nın Mayfair, Covent Garden ve Kensington semtlerini, Thames manzaralı lüks otellerini ve Heathrow ulaşım seçeneklerini karşılaştırın."
+}
