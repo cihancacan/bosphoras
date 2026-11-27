@@ -1,0 +1,164 @@
+{
+  "name": "Delta do Okavango",
+  "country": "Botsuana",
+  "eyebrow": "Okavango · Safáris entre canais e savana",
+  "heading": "Onde ficar no delta do Okavango: quatro lodges, quatro safáris",
+  "intro": "A escolha do lodge define paisagem, área de safári e observação de animais. Chief's Island, reserva Jao, concessão florestal Sandibe e Xaxaba oferecem experiências diferentes.",
+  "editorial": "O delta do Okavango, Patrimônio Mundial da UNESCO, é um sistema singular de áreas úmidas interiores sem saída para o mar. Água de Angola inunda pântanos e prados durante boa parte da estação seca de Botsuana. Chuvas locais de verão e cheia são fenômenos distintos. Profundidade de canais e passeios de mokoro dependem do local e da época.\n\nWilderness Mombo fica em Chief's Island, ecossistema Moremi, conhecido por safáris terrestres. Em agosto de 2026 o operador anunciou novas atividades noturnas e aquáticas; confirme horários e restrições. Jao Camp na reserva Jao destaca arquitetura moderna, cinco suítes espaçosas e duas villas privativas com pequenas piscinas. Serviços das villas não se aplicam automaticamente às suítes; barcos e mokoros saem com nível de água adequado.\n\nNa concessão arborizada Sandibe, junto a Moremi, &Beyond Sandibe oferece doze suítes elevadas com piscinas privativas e arquitetura inspirada no pangolim. Principal atividade é safári de carro, não há garantia de atividades aquáticas. Belmond Eagle Island Lodge na ilha Xaxaba fica entre canais e lagoas; operador indica doze quartos com pequenas piscinas e pelo menos duas atividades de observação por dia no pacote descrito.\n\nLodges remotos geralmente acessíveis de avião leve desde Maun, depois carro ou barco. Confirme horários, limites de peso e bagagem, helicóptero, idades e adicional de veículo privativo. Avistamentos não garantidos. Caminhadas e canoas exigem guias qualificados, segurança e limites de idade. Confira taxas de reserva, voos regionais, contribuições ambientais, guia e cancelamento. Guia não afirma contratos, disponibilidade ou tarifas atuais Bosphoras.",
+  "hotelIntro": "Quatro lodges reais: Wilderness Mombo, Jao Camp, &Beyond Sandibe e Belmond Eagle Island Lodge. Compare safáris terrestres e aquáticos.",
+  "areas": [
+    [
+      "Chief's Island e Moremi",
+      "Planícies inundáveis, ilhas arborizadas e predadores marcam safáris de carro.",
+      "Permissões do parque e concessões privadas diferem."
+    ],
+    [
+      "Reserva Jao",
+      "Ilhas e canais mudam conforme estação; safári depende do acampamento.",
+      "Não confunda acampamentos."
+    ],
+    [
+      "Florestas e canais Sandibe",
+      "Matas ribeirinhas e safáris em concessão privada.",
+      "Vistas e trajetos de traslado distintos."
+    ],
+    [
+      "Ilha Xaxaba",
+      "Canais, lagoas e aves cercam Eagle Island Lodge.",
+      "Mokoros e barcos não necessariamente o ano todo."
+    ],
+    [
+      "Maun e pistas do delta",
+      "Maun é saída comum para voos e traslados a lodges.",
+      "Confirme conexões e bagagem."
+    ]
+  ],
+  "experiences": [
+    [
+      "Safári ao amanhecer",
+      "Busque rastros com guia, sem promessa de avistamento."
+    ],
+    [
+      "Passeio de mokoro",
+      "Explore canais em canoa tradicional com nível adequado e autorização do guia."
+    ],
+    [
+      "Delta do alto",
+      "Voo panorâmico combinado revela canais; não necessariamente incluso."
+    ],
+    [
+      "Natureza e conservação",
+      "Converse com guias sobre cheias, predadores e convivência com comunidades locais."
+    ],
+    [
+      "Jantar no acampamento",
+      "Respeite regras de segurança perto da fauna."
+    ]
+  ],
+  "checks": [
+    "Cheia na seca difere das chuvas locais; atividades aquáticas sazonais.",
+    "Confirme conexão Maun, bagagem, pista e traslado.",
+    "Confirme novas atividades Mombo 2026 para suas datas.",
+    "Jao: cinco suítes e duas villas com serviços distintos.",
+    "Sandibe: doze suítes com piscina; confirme Chitabe e regras infantis.",
+    "Eagle Island: doze quartos, pelo menos duas atividades diárias anunciadas; confira pacote.",
+    "Confira recomendações médicas, seguro, idades e segurança aquática.",
+    "Guia não confirma tarifas, reserva ou contrato Bosphoras."
+  ],
+  "hotels": [
+    [
+      "Chief's Island · Reserva Moremi",
+      "Wilderness Mombo fica no ecossistema Moremi rico em fauna. Suítes elevadas com pequenas piscinas privativas olham planícies; safáris guiados são centrais. Novas atividades noturnas e aquáticas anunciadas em agosto de 2026 exigem confirmação de datas e regras. Voos regionais Maun são etapa separada; famílias devem conferir idades e veículo privativo.",
+      "Confirme separadamente saídas noturnas, barcos e veículo privativo.",
+      "Para safári terrestre e predadores.",
+      ""
+    ],
+    [
+      "Reserva Jao · Ilhas e planícies",
+      "Jao Camp tem arquitetura marcante entre ilhas e planícies inundáveis. Cinco suítes espaçosas e duas villas com pequenas piscinas privativas. Cozinheiro, mordomo e carro das villas não se aplicam automaticamente às suítes. Safáris terrestres e aquáticos, inclusive mokoro, conforme condições. Outros acampamentos são produtos separados; confirme categoria, traslados e famílias.",
+      "Não atribua serviços das villas às suítes; água sazonal.",
+      "Para arquitetura e paisagens aquáticas sazonais.",
+      ""
+    ],
+    [
+      "Concessão Sandibe · Limite Moremi",
+      "Arquitetura de madeira &Beyond Sandibe inspirada no pangolim entre árvores junto a canal. Operador descreve doze suítes climatizadas com pequenas piscinas privativas e configuração familiar. Principal atividade safári de carro na concessão privada. Normalmente voo até pista Chitabe e traslado terrestre; helicóptero à parte. Confira atividades infantis e piscinas.",
+      "Confirme rota Chitabe, traslados e idades.",
+      "Para ambiente florestal e safáris de carro.",
+      ""
+    ],
+    [
+      "Ilha Xaxaba · Lagoas e canais",
+      "Belmond Eagle Island Lodge entre vias aquáticas. Operador indica doze quartos de cerca de 82 m² com pequenas piscinas privativas, pista, heliponto e pelo menos duas atividades guiadas diárias no pacote anunciado. Mokoro e barco dependem da água e segurança. Pista própria não implica voo incluso.",
+      "Confira cheia, traslado, idade e pacote.",
+      "Para ecossistema aquático sazonal.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Quando visitar o delta?",
+      "Estação seca normalmente maio a outubro; cheia chega com atraso. Atividades aquáticas conforme concessão e datas."
+    ],
+    [
+      "Qual diferença Mombo e Jao?",
+      "Mombo em Chief's Island focado em safáris terrestres e predadores; Jao na reserva homônima tem cinco suítes, duas villas e atividades de terra e água conforme condições."
+    ],
+    [
+      "Sandibe é adequado à família?",
+      "&Beyond tem configuração familiar; confirme por escrito idades, cuidados, carro, limites e segurança das piscinas."
+    ],
+    [
+      "Mokoro disponível o ano todo em Eagle Island?",
+      "Não necessariamente; depende de água, clima, segurança e regras."
+    ],
+    [
+      "Como chegar de Maun?",
+      "Avião leve até pista, depois carro ou barco; horários, bagagem e traslados conforme acampamento."
+    ],
+    [
+      "Big Five garantidos?",
+      "Não, avistamentos dependem de estação, habitat, rota e movimento animal."
+    ],
+    [
+      "Bosphoras tem tarifas e disponibilidade atuais?",
+      "Guia editorial sem preços contratuais ou vagas confirmadas; parceiro autorizado confirma reserva."
+    ]
+  ],
+  "photoCaptions": [
+    "Canais do delta e mokoro do alto",
+    "Áreas úmidas extensas do alto",
+    "Passeio tradicional de mokoro",
+    "Áreas úmidas Xakanaxa",
+    "Anoitecer no delta Okavango",
+    "Leopardo no habitat natural",
+    "Amanhecer sobre o delta",
+    "Lagoas do delta do alto",
+    "Pôr do sol após passeio de barco"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Wilderness Mombo ao anoitecer",
+      "Arquitetura Mombo do alto",
+      "Piscina privativa e terraço Mombo"
+    ],
+    [
+      "Suíte arquitetônica Jao Camp",
+      "Quarto e terraço Jao",
+      "Sala Jao e lareira escultural"
+    ],
+    [
+      "Suíte Sandibe aberta à floresta",
+      "Arquitetura de madeira Sandibe inspirada no pangolim",
+      "Quarto moderno Sandibe"
+    ],
+    [
+      "Quarto Eagle Island com vista de planícies inundáveis",
+      "Terraço de refeições sombreado junto à água",
+      "Piscina reservada suíte Eagle Island"
+    ]
+  ],
+  "seoTitle": "Delta do Okavango, Botsuana: lodges de safári de luxo",
+  "hotelSeoTitle": "Lodges do Okavango: Mombo, Jao, Sandibe e Eagle Island",
+  "seoDescription": "Compare quatro lodges do delta do Okavango: época das cheias, mokoro, safáris de carro e voos de Maun."
+}
