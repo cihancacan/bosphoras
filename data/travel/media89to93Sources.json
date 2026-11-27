@@ -309,6 +309,9 @@
     "city": "Barcelone",
     "publisher": "Turisme de Barcelona",
     "cityPages": [
+      "https://www.meet.barcelona/en/visit-and-love-it/points-interest-city",
+      "https://www.meet.barcelona/en/visit-and-love-it/barcelona-and-identity/identity",
+      "https://parkguell.barcelona/en",
       "https://www.spain.info/en/beach/barceloneta/",
       "https://www.spain.info/en/destination/barcelona/",
       "https://www.spain.info/en/route/barcelona-two-days/",
@@ -342,6 +345,12 @@
         "mandarin",
         "Mandarin Oriental, Barcelona",
         [
+          "https://www.mandarinoriental.com/en/barcelona/passeig-de-gracia/about",
+          "https://www.businesstravelnews.com/Hotels/Barcelona/Mandarin-Oriental-Barcelona/Images-p3074705",
+          "https://registration.forbestravelguide.com/hotels/barcelona-spain/mandarin-oriental-barcelona",
+          "https://hotelvideos.com/mandarin-oriental/",
+          "https://hotelessencephotography.com/hotel/mandarin-oriental-barcelona/",
+          "https://theluxurytravelexpert.com/photos-mandarin-oriental-barcelona/",
           "https://www.mandarinoriental.com/en/barcelona/passeig-de-gracia/gallery",
           "https://www.mandarinoriental.com.cn/zh-cn/barcelona/passeig-de-gracia/gallery",
           "https://www.mandarinoriental.com/es-es/barcelona/passeig-de-gracia/gallery",
@@ -355,6 +364,8 @@
         "arts",
         "Hotel Arts Barcelona",
         [
+          "https://www.ritzcarlton.com/en/hotels/bcnrz-hotel-arts-barcelona/photos/",
+          "https://www.ritzcarlton.com/en/hotels/bcnrz-hotel-arts-barcelona/rooms/",
           "https://www.marriott.com/en-us/hotels/bcnrz-hotel-arts-barcelona/photos/",
           "https://www.marriott.com/es/hotels/bcnrz-hotel-arts-barcelona/photos/",
           "https://www.ritzcarlton.com/en/hotels/bcnrz-hotel-arts-barcelona/overview/",
@@ -365,6 +376,8 @@
         "majestic",
         "Majestic Hotel & Spa Barcelona",
         [
+          "https://majestichotelgroup.com/en/barcelona/hotel-majestic/gallery-photos-videos",
+          "https://majestichotelgroup.com/en/barcelona/hotel-majestic/introduction",
           "https://majestichotelgroup.com/en/barcelona/hotel-majestic/gallery",
           "https://majestichotelgroup.com/en/barcelona/hotel-majestic"
         ]
