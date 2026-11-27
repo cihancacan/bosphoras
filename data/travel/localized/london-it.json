@@ -1,0 +1,136 @@
+{
+  "name": "Londra",
+  "country": "Regno Unito",
+  "eyebrow": "Regno Unito · Il Tamigi e gli hotel iconici",
+  "heading": "Londra: scegli il quartiere giusto e scopri la città al tuo ritmo.",
+  "intro": "Dalle piazze di Mayfair ai teatri del West End, dai musei di Kensington ai panorami sul Tamigi, Londra offre soggiorni molto diversi. Scegli l'hotel in funzione dell'itinerario, dei trasporti e dell'atmosfera desiderata.",
+  "editorial": "Per una prima visita, Covent Garden e Westminster riducono gli spostamenti verso i monumenti principali e i teatri. Mayfair e St James’s sono ideali per shopping, gastronomia e ospitalità classica. South Kensington è comodo per le famiglie grazie ai musei e agli spazi verdi. London Bridge offre una prospettiva diversa, tra Borough Market e passeggiate sul Tamigi.\n\nTre o quattro notti permettono di esplorare Westminster, il West End, i musei di Kensington e il lungofiume senza fretta. Per un soggiorno più lungo aggiungi Greenwich o Hampstead. Londra è molto estesa: anche un hotel centrale non è vicino a tutte le attrazioni, e i collegamenti contano quanto la distanza sulla mappa.\n\nDa Heathrow confronta Elizabeth line, Piccadilly line, Heathrow Express e trasferimenti privati in base al terminal e all'hotel. Usa lo stesso metodo di pagamento contactless per tutti i viaggi TfL, affinché siano applicati correttamente i limiti tariffari previsti. I requisiti d'ingresso nel Regno Unito dipendono dal passaporto e dallo status del viaggiatore: consulta le regole ufficiali prima della partenza.\n\nConfronta prezzi per le stesse date, numero di ospiti, categoria di camera e condizioni di cancellazione. Colazione, letti supplementari e servizi spa non sono sempre inclusi.",
+  "hotelIntro": "Quattro volti di Londra: l'eleganza storica del Claridge’s, The Savoy tra teatri e Tamigi, The Peninsula a Hyde Park Corner e Shangri-La sopra la città.",
+  "areas": [
+    [
+      "Mayfair e St James’s",
+      "Hotel storici, gallerie, Bond Street e Green Park.",
+      "Le camere sulla strada possono essere meno tranquille."
+    ],
+    [
+      "Covent Garden e Strand",
+      "Teatri, mercati, ristoranti e accesso al lungofiume.",
+      "Valuta il rumore serale e i percorsi a piedi."
+    ],
+    [
+      "Westminster e Victoria",
+      "Parlamento, abbazia, Buckingham Palace e collegamenti ferroviari.",
+      "Prenota in anticipo le attrazioni più richieste."
+    ],
+    [
+      "South Kensington e Knightsbridge",
+      "Musei, Hyde Park, boutique e strade residenziali.",
+      "Con bambini, verifica la distanza effettiva a piedi dalla metropolitana."
+    ],
+    [
+      "South Bank e London Bridge",
+      "Passeggiate sul Tamigi, Tate Modern e Borough Market.",
+      "Scegli la riva e i ponti più comodi per le tue visite."
+    ],
+    [
+      "Soho e Marylebone",
+      "Soho per la vita notturna, Marylebone per le vie dello shopping dall'atmosfera di quartiere.",
+      "Scegli la strada in base alla tranquillità desiderata."
+    ]
+  ],
+  "experiences": [
+    [
+      "Westminster a piedi",
+      "Collega St James’s Park, l'abbazia e il lungofiume al tuo ritmo."
+    ],
+    [
+      "Una serata a teatro",
+      "Organizza cena e spettacolo nella stessa zona del West End."
+    ],
+    [
+      "Musei e parchi in famiglia",
+      "Abbina Natural History Museum o V&A a una passeggiata nei Kensington Gardens."
+    ],
+    [
+      "Il Tamigi da un'altra prospettiva",
+      "Esplora lungofiume, ponti e mercati nei dintorni di London Bridge."
+    ]
+  ],
+  "checks": [
+    "Confronta categoria, letti e prezzo totale.",
+    "Scegli il quartiere secondo le visite prioritarie.",
+    "Organizza l'arrivo dall'aeroporto e dal terminal corretti.",
+    "Verifica i requisiti d'ingresso per il tuo passaporto.",
+    "Prenota attrazioni a orario e spettacoli desiderati."
+  ],
+  "hotels": [
+    [
+      "Mayfair · Brook Street",
+      "Hotel storico con camere Art déco, suite di stili diversi, ristorazione e spa.",
+      "Confronta categorie, viste e letti supplementari.",
+      "Per l'eleganza londinese classica e lo shopping.",
+      "Claridge’s unisce l'ospitalità storica di Mayfair a camere Art déco, suite diverse, ristorazione e spa. È adatto a chi cerca eleganza classica e boutique vicine anziché panorami sul Tamigi. Confronta categorie, viste e letti supplementari."
+    ],
+    [
+      "Strand · Covent Garden",
+      "Interni storici, American Bar e afternoon tea tra Strand e Tamigi.",
+      "Conferma la vista sul fiume della camera specifica.",
+      "Per serate a teatro e occasioni speciali.",
+      "The Savoy si trova tra Strand e Tamigi. Gli interni storici, l'American Bar e l'afternoon tea ne fanno un indirizzo ideale per teatro e celebrazioni. Conferma la vista sul fiume per la camera scelta."
+    ],
+    [
+      "Hyde Park Corner · Belgravia",
+      "Camere progettate da Peter Marino, con atmosfera residenziale contemporanea, vicino a Hyde Park, Belgravia e Knightsbridge.",
+      "Confronta viste su Wellington Arch, Hyde Park Corner o Belgravia e configurazioni familiari.",
+      "Per il lusso contemporaneo vicino a Hyde Park.",
+      "Le camere progettate da Peter Marino offrono un'atmosfera residenziale contemporanea. Hyde Park, Belgravia e Knightsbridge sono facilmente raggiungibili. Confronta orientamento, vista e configurazioni familiari."
+    ],
+    [
+      "London Bridge · The Shard",
+      "Camere ai piani alti con vetrate panoramiche, vicino a Borough Market e alla riva sud.",
+      "Confronta orientamento, categoria e camere comunicanti senza presumere la vista su un monumento specifico.",
+      "Per i panorami sulla città.",
+      "Le camere ai piani alti con vetrate a tutta altezza offrono un'esperienza diversa dai grandi hotel storici. Borough Market e i percorsi lungo la riva sud sono vicini. Verifica orientamento, categoria e opzioni di camere comunicanti."
+    ]
+  ],
+  "faq": [
+    [
+      "Dove dormire a Londra per la prima visita?",
+      "Covent Garden, Westminster e South Bank sono comodi per molte visite. Mayfair è adatto a un soggiorno di lusso."
+    ],
+    [
+      "Quale quartiere scegliere con bambini?",
+      "South Kensington per musei e giardini, South Bank per le attrazioni sul fiume."
+    ],
+    [
+      "Quante notti prevedere?",
+      "Tre o quattro notti sono una buona base; cinque o più consentono di esplorare altri quartieri."
+    ],
+    [
+      "Come arrivare da Heathrow?",
+      "Elizabeth line, Piccadilly line, Heathrow Express o trasferimento stradale, secondo la destinazione."
+    ],
+    [
+      "Quali hotel hanno vista sul Tamigi?",
+      "The Savoy e Shangri-La offrono alcune categorie con vista sul fiume: conferma la camera specifica."
+    ],
+    [
+      "Serve un'auto a Londra?",
+      "Per visitare il centro sono generalmente più pratici i mezzi pubblici e gli spostamenti a piedi."
+    ],
+    [
+      "Come confrontare gli hotel?",
+      "Su Bosphoras confronta prezzi totali per date, ospiti, categorie e condizioni di cancellazione identici."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Dove dormire a Londra: quartieri e hotel di lusso",
+  "hotelSeoTitle": "Hotel di lusso a Londra: Claridge’s, Savoy, Peninsula e Shangri-La",
+  "seoDescription": "Confronta quartieri e hotel di lusso a Londra: Mayfair, Covent Garden, Kensington, vista sul Tamigi e collegamenti da Heathrow."
+}
