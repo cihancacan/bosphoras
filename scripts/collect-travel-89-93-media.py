@@ -318,12 +318,47 @@ def city_job(c):
  cand=direct_candidates(c['slug'],'city')+cand
  result,failed=pick(cand,c['subjects'],base/'destination','scene',c['publisher'],existing=existing,avoid=[r for r in old.get('destinationScenes',[]) if r not in existing]+[r for r in old.get('excludedCandidates',[]) if r.get('hotel') is None])
  return c['slug'],'city',result,errors+failed
+def le_blanc_sales_kit(folder,name,existing,avoid):
+ # Property-specific Palace Resorts sales kit; extract the embedded image, never a screenshot of a page.
+ import fitz
+ url='https://s3.eu-west-2.amazonaws.com/hosmarkhotels.com/website/documents/28/Le%20Blanc%20Cancun%20Sales%20Kits%20Refresh_Eng.pdf'
+ resolved,raw=get(url,45_000_000)
+ doc=fitz.open(stream=raw,filetype='pdf')
+ try:
+  if 'Le Blanc Spa Resort Cancun' not in ' '.join(doc[0].get_text().split()) and 'Le Blanc Spa Resort Cancun' not in ' '.join(doc[1].get_text().split()):raise ValueError('Wrong brochure identity')
+  seen=[int(p['pixelFingerprint'],16) for p in list(existing)+list(avoid) if p.get('pixelFingerprint')]
+  for pi in (1,2):
+   candidates=[]
+   for info in doc[pi].get_images(full=True):
+    obj=doc.extract_image(info[0]); imgraw=obj['image']
+    im=ImageOps.exif_transpose(Image.open(io.BytesIO(imgraw))).convert('RGB')
+    w,h=im.size
+    if w<800 or h<450 or not 1.05<=w/h<=3.4:continue
+    if sum(ImageStat.Stat(im.resize((100,100))).stddev)/3<14:continue
+    pix=list(im.resize((9,8)).convert('L').getdata())
+    dh=sum((1<<i)*int(pix[(i//8)*9+i%8]>pix[(i//8)*9+i%8+1]) for i in range(64))
+    if any((dh^old).bit_count()<11 for old in seen):continue
+    candidates.append((w*h,info[0],imgraw,im,dh,w,h))
+   for _,xref,imgraw,im,dh,w,h in sorted(candidates,key=lambda x:-x[0]):
+    im.thumbnail((1280,850),Image.Resampling.LANCZOS)
+    for quality in (82,78,74,70):
+     buf=io.BytesIO();im.save(buf,'WEBP',quality=quality,method=6);b=buf.getvalue()
+     if len(b)<=260000:break
+    if not 12000<=len(b)<=260000:continue
+    folder.mkdir(parents=True,exist_ok=True)
+    n=max([int(p.stem.rsplit('-',1)[-1]) for p in folder.glob('le-blanc-*.webp') if p.stem.rsplit('-',1)[-1].isdigit()]+[0])+1
+    key=f'le-blanc-{n}';dest=folder/(key+'.webp');dest.write_bytes(b)
+    caption='Le Blanc Spa Resort Cancun beachfront exterior from Palace Resorts sales kit'
+    return {'key':key,'sourcePage':url,'sourceResolvedUrl':resolved,'sourceRequestedUrl':url+f'#page={pi+1}&xref={xref}','originalAlt':caption,'originalCaption':caption,'credit':'Palace Resorts / Le Blanc Spa Resort Cancun — Sales Kit 2022','publisher':'Palace Resorts','hotel':name,'localPath':'/'+str(dest).removeprefix('public/'),'sourceSHA256':hashlib.sha256(imgraw).hexdigest(),'webpSHA256':hashlib.sha256(b).hexdigest(),'sourcePixels':[w,h],'webpPixels':list(im.size),'webpBytes':len(b),'pixelFingerprint':f'{dh:016x}','candidateSubject':EXTERIOR.pattern,'pdfPage':pi+1,'pdfImageXref':xref,'rightsEvidenceType':'Owner permission declared; property-specific original sales kit and embedded image retained','ownerPermissionDeclared':True,'commercialRightsCleared':False,'visuallyVerified':False,'previewVisualApproved':False,'status':'candidate_pending_visual_review_and_credit'}
+  raise ValueError('No eligible embedded exterior photograph on specified sales kit pages')
+ finally:doc.close()
+
 def hotel_job(c,h):
  key,name,pages=h
  old=PREVIOUS.get(c['slug'],{})
  allprevious=[r for r in old.get('hotels',[]) if r['hotel']==name]
  # These were specifically identified by source filenames/alt as unsuitable or ambiguous.
- bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4','savoy-2','shangri-la-2','shangri-la-3','venetian-3','le-blanc-1','le-blanc-3','coral-beach-3','nizuc-4','hyatt-ziva-2','coral-beach-4','coral-beach-5','le-blanc-5','le-blanc-6','le-blanc-7'}
+ bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4','savoy-2','shangri-la-2','shangri-la-3','venetian-3','le-blanc-1','le-blanc-3','coral-beach-3','nizuc-4','hyatt-ziva-2','coral-beach-4','coral-beach-5','le-blanc-5','le-blanc-6','le-blanc-7','le-blanc-8'}
  rejected=[r for r in allprevious if r['key'] in bad]
  existing=[r for r in allprevious if r['key'] not in bad]
  if len(existing)>=3:return c['slug'],key,existing,[]
@@ -331,6 +366,10 @@ def hotel_job(c,h):
  patterns=[EXTERIOR.pattern,ROOM.pattern,FACILITY.pattern]
  folder=ROOT/(c['slug']+'-premium')/key
  result=list(existing);errors=[]
+ if c['slug']=='cancun' and key=='le-blanc' and len(result)<3:
+  try:result.append(le_blanc_sales_kit(folder,name,result,avoid))
+  except Exception as e:errors.append({'page':'Le Blanc Cancun Palace Resorts sales kit','error':str(e)[:180]})
+  if len(result)>=3:return c['slug'],key,result,errors
  # Official galleries have been processed on previous runs. Do not repeat them for this fallback pass.
  if os.environ.get('TRAVEL_OTA_ONLY')!='1':
   cand,errors=collect_pages(pages)

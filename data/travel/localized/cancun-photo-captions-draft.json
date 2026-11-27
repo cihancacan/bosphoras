@@ -13,6 +13,7 @@
       "scene-14"
     ],
     [
+      "nizuc-5",
       "nizuc-1",
       "nizuc-3"
     ],
@@ -51,7 +52,8 @@
       "hyatt-ziva-4": "Piscine Punta Vista de la tour Turquoize, réservée aux adultes",
       "coral-beach-6": "Coral Beach au crépuscule",
       "scene-13": "Phare de Punta Cancún",
-      "scene-14": "Entrée du parc urbain Kabah"
+      "scene-14": "Entrée du parc urbain Kabah",
+      "nizuc-5": "Pavillon d'accueil ouvert sur les bassins du NIZUC"
     },
     "en": {
       "scene-1": "Delfines Beach",
@@ -72,7 +74,8 @@
       "hyatt-ziva-4": "Adults-only Turquoize Tower Punta Vista pool",
       "coral-beach-6": "Coral Beach at dusk",
       "scene-13": "Punta Cancún lighthouse",
-      "scene-14": "Entrance to Kabah Urban Park"
+      "scene-14": "Entrance to Kabah Urban Park",
+      "nizuc-5": "NIZUC open-air arrival pavilion overlooking reflecting pools"
     },
     "tr": {
       "scene-1": "Delfines Plajı",
@@ -93,7 +96,8 @@
       "hyatt-ziva-4": "Yetişkinlere özel Turquoize Tower Punta Vista havuzu",
       "coral-beach-6": "Alacakaranlıkta Coral Beach",
       "scene-13": "Punta Cancún deniz feneri",
-      "scene-14": "Kabah şehir parkı girişi"
+      "scene-14": "Kabah şehir parkı girişi",
+      "nizuc-5": "NIZUC yansıma havuzlarına açılan giriş pavyonu"
     },
     "de": {
       "scene-1": "Strand Delfines",
@@ -114,7 +118,8 @@
       "hyatt-ziva-4": "Punta Vista Pool im Turquoize Tower nur für Erwachsene",
       "coral-beach-6": "Coral Beach in der Abenddämmerung",
       "scene-13": "Leuchtturm von Punta Cancún",
-      "scene-14": "Eingang zum Stadtpark Kabah"
+      "scene-14": "Eingang zum Stadtpark Kabah",
+      "nizuc-5": "Offener Empfangspavillon des NIZUC mit Blick auf Wasserbecken"
     },
     "es": {
       "scene-1": "Playa Delfines",
@@ -135,7 +140,8 @@
       "hyatt-ziva-4": "Piscina Punta Vista de la torre Turquoize, solo para adultos",
       "coral-beach-6": "Coral Beach al atardecer",
       "scene-13": "Faro de Punta Cancún",
-      "scene-14": "Entrada al Parque Urbano Kabah"
+      "scene-14": "Entrada al Parque Urbano Kabah",
+      "nizuc-5": "Pabellón de entrada del NIZUC abierto a los estanques"
     },
     "it": {
       "scene-1": "Spiaggia Delfines",
@@ -156,7 +162,8 @@
       "hyatt-ziva-4": "Piscina Punta Vista della torre Turquoize, riservata agli adulti",
       "coral-beach-6": "Coral Beach al crepuscolo",
       "scene-13": "Faro di Punta Cancún",
-      "scene-14": "Ingresso del Parco urbano Kabah"
+      "scene-14": "Ingresso del Parco urbano Kabah",
+      "nizuc-5": "Padiglione d'ingresso del NIZUC affacciato sugli specchi d'acqua"
     },
     "pt": {
       "scene-1": "Praia Delfines",
@@ -177,7 +184,8 @@
       "hyatt-ziva-4": "Piscina Punta Vista da torre Turquoize, exclusiva para adultos",
       "coral-beach-6": "Coral Beach ao anoitecer",
       "scene-13": "Farol de Punta Cancún",
-      "scene-14": "Entrada do Parque Urbano Kabah"
+      "scene-14": "Entrada do Parque Urbano Kabah",
+      "nizuc-5": "Pavilhão de entrada do NIZUC com vista para os espelhos de água"
     },
     "zh": {
       "scene-1": "海豚海滩",
@@ -198,7 +206,8 @@
       "hyatt-ziva-4": "Turquoize 塔楼成人专属 Punta Vista 泳池",
       "coral-beach-6": "暮色中的 Coral Beach",
       "scene-13": "坎昆角灯塔",
-      "scene-14": "卡巴城市公园入口"
+      "scene-14": "卡巴城市公园入口",
+      "nizuc-5": "NIZUC 酒店面向水景的开放式入口大厅"
     },
     "ru": {
       "scene-1": "Пляж Дельфинес",
@@ -219,7 +228,8 @@
       "hyatt-ziva-4": "Бассейн Punta Vista в башне Turquoize только для взрослых",
       "coral-beach-6": "Coral Beach в сумерках",
       "scene-13": "Маяк Пунта-Канкун",
-      "scene-14": "Вход в городской парк Кабах"
+      "scene-14": "Вход в городской парк Кабах",
+      "nizuc-5": "Открытый входной павильон NIZUC с видом на водоёмы"
     },
     "ar": {
       "scene-1": "شاطئ دلفينيس",
@@ -240,7 +250,8 @@
       "hyatt-ziva-4": "مسبح Punta Vista في برج Turquoize المخصص للبالغين",
       "coral-beach-6": "Coral Beach عند الغسق",
       "scene-13": "منارة بونتا كانكون",
-      "scene-14": "مدخل متنزه كاباه الحضري"
+      "scene-14": "مدخل متنزه كاباه الحضري",
+      "nizuc-5": "جناح استقبال NIZUC المفتوح على الأحواض المائية"
     }
   },
   "visualReview": {
@@ -254,7 +265,8 @@
       "scene-11",
       "scene-12",
       "le-blanc-6",
-      "le-blanc-7"
+      "le-blanc-7",
+      "le-blanc-8"
     ],
     "reason": "Rejected watermarked pool, repeated lifestyle portrait, non-landmark ice cream image, and unverified property aerial."
   },
