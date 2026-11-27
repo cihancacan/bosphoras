@@ -1,3 +1,11 @@
+import kualaLumpurPreviewTR from './localized/kuala-lumpur-tr.json';
+import kualaLumpurPreviewDE from './localized/kuala-lumpur-de.json';
+import kualaLumpurPreviewES from './localized/kuala-lumpur-es.json';
+import kualaLumpurPreviewIT from './localized/kuala-lumpur-it.json';
+import kualaLumpurPreviewPT from './localized/kuala-lumpur-pt.json';
+import kualaLumpurPreviewZH from './localized/kuala-lumpur-zh.json';
+import kualaLumpurPreviewRU from './localized/kuala-lumpur-ru.json';
+import kualaLumpurPreviewAR from './localized/kuala-lumpur-ar.json';
 import hongKongPreviewTR from './localized/hong-kong-tr.json';
 import hongKongPreviewDE from './localized/hong-kong-de.json';
 import hongKongPreviewES from './localized/hong-kong-es.json';
@@ -690,6 +698,7 @@ const localized:Record<string,Partial<Record<LegacyEditorialLocale,LocalizedGuid
 export function getLocalizedGuide(slug:string|undefined,locale:string):LocalizedGuide|undefined{
  if(!slug||!isEditorialLocale(locale))return undefined;
  if(slug==='cancun')return {tr:cancunPreviewTR,de:cancunPreviewDE,es:cancunPreviewES,it:cancunPreviewIT,pt:cancunPreviewPT,zh:cancunPreviewZH,ru:cancunPreviewRU,ar:cancunPreviewAR}[locale];
+ if(slug==='kuala-lumpur')return {tr:kualaLumpurPreviewTR,de:kualaLumpurPreviewDE,es:kualaLumpurPreviewES,it:kualaLumpurPreviewIT,pt:kualaLumpurPreviewPT,zh:kualaLumpurPreviewZH,ru:kualaLumpurPreviewRU,ar:kualaLumpurPreviewAR}[locale];
  if(slug==='hong-kong')return {tr:hongKongPreviewTR,de:hongKongPreviewDE,es:hongKongPreviewES,it:hongKongPreviewIT,pt:hongKongPreviewPT,zh:hongKongPreviewZH,ru:hongKongPreviewRU,ar:hongKongPreviewAR}[locale];
  if(slug==='orlando')return {tr:orlandoPreviewTR,de:orlandoPreviewDE,es:orlandoPreviewES,it:orlandoPreviewIT,pt:orlandoPreviewPT,zh:orlandoPreviewZH,ru:orlandoPreviewRU,ar:orlandoPreviewAR}[locale];
  if(slug==='barcelona')return {tr:barcelonaPreviewTR,de:barcelonaPreviewDE,es:barcelonaPreviewES,it:barcelonaPreviewIT,pt:barcelonaPreviewPT,zh:barcelonaPreviewZH,ru:barcelonaPreviewRU,ar:barcelonaPreviewAR}[locale];
