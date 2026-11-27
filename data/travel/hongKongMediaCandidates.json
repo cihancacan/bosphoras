@@ -217,9 +217,133 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-8",
+        "sourcePage": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-central-plaza.html",
+        "sourceResolvedUrl": "https://www.discoverhongkong.com/content/dam/dhk/data/poi/media/c/central-plaza/central-plaza-01.jpg",
+        "sourceRequestedUrl": "https://www.discoverhongkong.com/content/dam/dhk/data/poi/media/c/central-plaza/central-plaza-01.jpg",
+        "originalAlt": "Central Plaza in Wan Chai with Victoria Harbour in the background.",
+        "originalCaption": "",
+        "credit": "Hong Kong Tourism Board",
+        "publisher": "Hong Kong Tourism Board",
+        "hotel": null,
+        "localPath": "/images/travel/hong-kong-premium/destination/scene-8.webp",
+        "sourceSHA256": "b09df750910d20239b581c7f00a2e04820e6d0f76e927160f3f80ac0d00e5170",
+        "webpSHA256": "a95c180c1a96800c7ef95757b8b48fa2d00bb8411bd948f73fed5538efbd0097",
+        "sourcePixels": [
+          960,
+          720
+        ],
+        "webpPixels": [
+          960,
+          720
+        ],
+        "webpBytes": 55950,
+        "pixelFingerprint": "a0b0b03022200401",
+        "candidateSubject": "wan chai|central plaza|golden bauhinia",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-9",
+        "sourcePage": "https://www.expedia.com/Causeway-Bay-Shopping-Plaza-Wan-Chai.d6191740.Vacation-Attraction",
+        "sourceResolvedUrl": "https://images.trvl-media.com/place/184245/c18d2f96-1ae3-44f7-8cf8-33fc5a9b4e79.jpg",
+        "sourceRequestedUrl": "https://images.trvl-media.com/place/184245/c18d2f96-1ae3-44f7-8cf8-33fc5a9b4e79.jpg",
+        "originalAlt": "Causeway Bay shopping street and double-decker trams",
+        "originalCaption": "Expedia / destination gallery",
+        "credit": "Expedia / destination gallery",
+        "publisher": "Hong Kong Tourism Board",
+        "hotel": null,
+        "localPath": "/images/travel/hong-kong-premium/destination/scene-9.webp",
+        "sourceSHA256": "dfa82e7ccba533e550ffd5552aa436cdd2ba33de084a123bb887a81523cc9259",
+        "webpSHA256": "a95d87b9ef52034aa8efd6b56273cc7234bfcc53299ed569ef1c97300a65e8e0",
+        "sourcePixels": [
+          2448,
+          1836
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 229666,
+        "pixelFingerprint": "e0e1e54569e1f1e2",
+        "candidateSubject": "causeway bay|victoria park",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
+      {
+        "key": "rosewood-1",
+        "sourcePage": "https://www.gqthailand.com/article/10-the-worlds-50-best-hotels-2025",
+        "sourceResolvedUrl": "https://files.gqthailand.com/uploads/20251101232459.jpg",
+        "sourceRequestedUrl": "https://files.gqthailand.com/uploads/20251101232459.jpg",
+        "originalAlt": "Rosewood Hong Kong exterior tower on the Kowloon waterfront",
+        "originalCaption": "GQ Thailand / hotel photography",
+        "credit": "GQ Thailand / hotel photography",
+        "publisher": "Rosewood Hong Kong",
+        "hotel": "Rosewood Hong Kong",
+        "localPath": "/images/travel/hong-kong-premium/rosewood/rosewood-1.webp",
+        "sourceSHA256": "bbcb69669e33635f697f6d221c4117a9715188dd52fab967d9d3f80951bf2ef4",
+        "webpSHA256": "6575218a52d374364fd057da0fe3718903852fc2986e143ba976afd77afdd311",
+        "sourcePixels": [
+          1200,
+          866
+        ],
+        "webpPixels": [
+          1178,
+          850
+        ],
+        "webpBytes": 76786,
+        "pixelFingerprint": "ec69ed8c0c0c0800",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "rosewood-2",
+        "sourcePage": "https://www.vogue.com.tw/article/rosewood-hongkong",
+        "sourceResolvedUrl": "https://media.vogue.com.tw/photos/651cdec91af9bb70c836b0ea/3%3A2/w_7392%2Ch_4928%2Cc_limit/RWHKG_Grand%20Harbour%20View%20King.jpg",
+        "sourceRequestedUrl": "https://media.vogue.com.tw/photos/651cdec91af9bb70c836b0ea/3%3A2/w_7392%2Ch_4928%2Cc_limit/RWHKG_Grand%20Harbour%20View%20King.jpg",
+        "originalAlt": "Rosewood Hong Kong Grand Harbour View King room",
+        "originalCaption": "Vogue Taiwan / Rosewood Hong Kong",
+        "credit": "Vogue Taiwan / Rosewood Hong Kong",
+        "publisher": "Rosewood Hong Kong",
+        "hotel": "Rosewood Hong Kong",
+        "localPath": "/images/travel/hong-kong-premium/rosewood/rosewood-2.webp",
+        "sourceSHA256": "04feb5c6d8f6d85418b7c55826ddd842c8ed9f6a359200228e42c8723a6e4768",
+        "webpSHA256": "6409d0c7f90480336eede6393ae331b4f9d896dfd79750969908a281d3f548a4",
+        "sourcePixels": [
+          7392,
+          4928
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 172562,
+        "pixelFingerprint": "9b787682c9fcfcf0",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
       {
         "key": "peninsula-1",
         "sourcePage": "https://www.peninsula.com/en/hong-kong/photos-and-videos",
@@ -250,18 +374,106 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "peninsula-2",
+        "sourcePage": "https://www.peninsula.com/en/hong-kong/luxury-hotel-room-suite-types/deluxe-harbour-view-suite",
+        "sourceResolvedUrl": "https://www.peninsula.com/-/media/images/hong-kong/rooms/deluxe-harbour-view-suite/deluxe-harbour-view-suite---living-room-2/deluxe-harbour-view-suite---bedroom-1.jpg?hash=753C7655948B3FA570D62CA4EB125BA2&mw=1520",
+        "sourceRequestedUrl": "https://www.peninsula.com/-/media/images/hong-kong/rooms/deluxe-harbour-view-suite/deluxe-harbour-view-suite---living-room-2/deluxe-harbour-view-suite---bedroom-1.jpg?hash=753C7655948B3FA570D62CA4EB125BA2&mw=1520",
+        "originalAlt": "The Peninsula Hong Kong Deluxe Harbour View Suite bedroom",
+        "originalCaption": "The Peninsula Hong Kong",
+        "credit": "The Peninsula Hong Kong",
+        "publisher": "The Peninsula Hong Kong",
+        "hotel": "The Peninsula Hong Kong",
+        "localPath": "/images/travel/hong-kong-premium/peninsula/peninsula-2.webp",
+        "sourceSHA256": "00584680ec24c8d6ab1d5b7871a8171c2c7a09b70706062a43f4a31206d069f1",
+        "webpSHA256": "c407cb01858dcacec80cf45cd9c57363b325a2355f52cce88dd867bed32ef0a8",
+        "sourcePixels": [
+          1520,
+          950
+        ],
+        "webpPixels": [
+          1280,
+          800
+        ],
+        "webpBytes": 71652,
+        "pixelFingerprint": "da6bfbe1e1e1e1dc",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "peninsula-3",
+        "sourcePage": "https://destinasian.com/hong-kong-hotels-the-peninsula-hong-kong",
+        "sourceResolvedUrl": "https://destinasian.com/_next/image?q=75&url=https%3A%2F%2Fstaging.destinasian.com%2Fwp-content%2Fuploads%2F2023%2F06%2FThe-Peninsula-Hong-Kong-7.jpg&w=3840",
+        "sourceRequestedUrl": "https://destinasian.com/_next/image?q=75&url=https%3A%2F%2Fstaging.destinasian.com%2Fwp-content%2Fuploads%2F2023%2F06%2FThe-Peninsula-Hong-Kong-7.jpg&w=3840",
+        "originalAlt": "The Peninsula Hong Kong indoor swimming pool",
+        "originalCaption": "DestinAsian / The Peninsula Hong Kong",
+        "credit": "DestinAsian / The Peninsula Hong Kong",
+        "publisher": "The Peninsula Hong Kong",
+        "hotel": "The Peninsula Hong Kong",
+        "localPath": "/images/travel/hong-kong-premium/peninsula/peninsula-3.webp",
+        "sourceSHA256": "af93d4d88786afc178635a91cd35055b5bfc576f2395dab0771983c2779cede0",
+        "webpSHA256": "f8ce3062b1b900c45fafe9e06a6b7b815ee3a4cc1017da1ad934d6b197f2947a",
+        "sourcePixels": [
+          1200,
+          800
+        ],
+        "webpPixels": [
+          1200,
+          800
+        ],
+        "webpBytes": 106450,
+        "pixelFingerprint": "82b2b2b2b2b2f0f0",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "mandarin-oriental-1",
+        "sourcePage": "https://www.oberoihotels.com/omoalliance/",
+        "sourceResolvedUrl": "https://www.oberoihotels.com/-/media/oberoi-hotel/omo/featured-hotels/desktop820x646/mandarin_oriental_hongkong.jpg",
+        "sourceRequestedUrl": "https://www.oberoihotels.com/-/media/oberoi-hotel/omo/featured-hotels/desktop820x646/mandarin_oriental_hongkong.jpg",
+        "originalAlt": "Mandarin Oriental Hong Kong exterior in Central at dusk",
+        "originalCaption": "Oberoi Hotels / Mandarin Oriental alliance",
+        "credit": "Oberoi Hotels / Mandarin Oriental alliance",
+        "publisher": "Mandarin Oriental, Hong Kong",
+        "hotel": "Mandarin Oriental, Hong Kong",
+        "localPath": "/images/travel/hong-kong-premium/mandarin-oriental/mandarin-oriental-1.webp",
+        "sourceSHA256": "a25870bf1569bc16f5b8920e5a5079efc8429ba0a346f5f71b2ca25583ed7c19",
+        "webpSHA256": "bd5e176a6682ed895f96efdeeae3b2897a87abf755ca148539e0329712e1b06a",
+        "sourcePixels": [
+          820,
+          646
+        ],
+        "webpPixels": [
+          820,
+          646
+        ],
+        "webpBytes": 128330,
+        "pixelFingerprint": "359bdadabababaf2",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "gaps": [
       {
-        "group": "city",
-        "expected": 9,
-        "found": 7
-      },
-      {
         "group": "rosewood",
         "expected": 3,
-        "found": 0
+        "found": 2
       },
       {
         "group": "four-seasons",
@@ -269,14 +481,9 @@
         "found": 0
       },
       {
-        "group": "peninsula",
-        "expected": 3,
-        "found": 1
-      },
-      {
         "group": "mandarin-oriental",
         "expected": 3,
-        "found": 0
+        "found": 1
       }
     ],
     "errors": [
@@ -285,15 +492,39 @@
         "error": "503 Server Error: Service Unavailable for url: https://m.rosewoodhotels.com/en/hong-kong/gallery"
       },
       {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Rosewood_Hong_Kong_Level_6_Swimming_Pool_2020.jpg",
+        "error": "429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/commons/c/c6/Rosewood_Hong_Kong_Level_6_Swimming_Pool_2020.jpg"
+      },
+      {
+        "page": "https://www.expedia.com/Kowloon-Hotels-Rosewood-Hong-Kong.h29356032.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Kowloon-Hotels-Rosewood-Hong-Kong.h29356032.Hotel-Information"
+      },
+      {
+        "page": "https://www.booking.com/hotel/hk/rosewood-hong-kong.en-gb.html",
+        "error": "exact property identity not confirmed on page"
+      },
+      {
         "page": "https://www.fourseasons.com/hongkong/photos-and-videos/",
         "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/hongkong/photos-and-videos/"
+      },
+      {
+        "url": "https://www.fourseasons.com/alt/img-opt/~75.701.0%2C0000-156%2C7500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/HKG/HKG_7143_original.jpg",
+        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~75.701.0%2C0000-156%2C7500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/HKG/HKG_"
+      },
+      {
+        "url": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2499-2997%2C2576-1685%2C9574/publish/content/dam/fourseasons/images/web/HKG/HKG_2462_original.jpg",
+        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2499-2997%2C2576-1685%2C9574/publish/content/dam/fourseasons/images/web/HKG/HKG"
+      },
+      {
+        "url": "https://www.fourseasons.com/alt/img-opt/~75.701.0%2C0000-313%2C0734-2998%2C9807-1686%2C9266/publish/content/dam/fourseasons/images/web/HKG/HKG_1632_original.jpg",
+        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~75.701.0%2C0000-313%2C0734-2998%2C9807-1686%2C9266/publish/content/dam/fourseasons/images/web/HKG/HKG_"
       }
     ],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
     "excludedCandidates": [],
-    "cityCount": 7,
-    "hotelCount": 1,
-    "totalBytes": 1186958
+    "cityCount": 9,
+    "hotelCount": 6,
+    "totalBytes": 2028354
   }
 }
