@@ -1,0 +1,184 @@
+{
+  "name": "Koh Rong",
+  "country": "Camboya",
+  "eyebrow": "Camboya · Islas del golfo de Tailandia",
+  "heading": "Dónde alojarse en Koh Rong: playas infinitas y descanso",
+  "intro": "Cuatro direcciones frente a la costa sur de Camboya: villas en Long Beach, isla privada Song Saa y resorts en Long Set y Pagoda Beach.",
+  "editorial": "Koh Rong está en el golfo de Tailandia, frente a Sihanoukville. Playas occidentales, calas orientales y pueblos quedan separados por selva, caminos costeros y a veces trayectos adicionales en barco o por tierra. Elige primero la costa: arena blanca y silencio o acceso cómodo a cafés y zonas de baño.\n\nThe Royal Sands Koh Rong, en Long Beach al oeste cerca de Sok San, ofrece cinco estrellas con villas privadas, piscina común y acceso a playa. Organiza traslados propios en barco; desembarque puede variar según temporada, viento y mar. Un ferry al muelle equivocado o poco margen antes del vuelo de vuelta puede alterar el viaje. Song Saa Private Island es otro formato cinco estrellas, en la isla vecina Koh Ouen, no en Koh Rong. Villas apartadas con piscina, incluidas categorías sobre el agua, ofrecen calma en naturaleza marina protegida. Confirma traslado especial desde Sihanoukville, comidas, bebidas y paquete; ferry normal a Koh Touch no sustituye barco del resort.\n\nLong Set Resort en Long Set (4K Beach) combina playa arenosa, piscina y ambiente más tranquilo que pueblo principal. Anaya Koh Rong, en Pagoda Beach al este, ofrece habitaciones modernas y piscina compartida con vistas al agua. Ambos son cuatro estrellas según catálogo Nuitée, no equivalentes a Royal Sands y Song Saa. Koh Touch concentra muelles, pequeños restaurantes y vida nocturna; Sok San sirve para calma y atardecer, Pagoda Beach para días de resort.\n\nAlterna caminatas, baño, kayak y esnórquel respetando mar y arrecifes. El plancton luminoso a veces aparece en noches oscuras lejos de luz artificial; no está garantizado y nadar de noche sin acompañamiento no es seguro. Senderos selváticos pueden estar calurosos y embarrados. Familias: deja tiempo para almuerzo, playa y piscina en vez de traslados constantes.\n\nAntes de pagar confirma salida Sihanoukville, operador, muelle, desembarque, equipaje, alternativas meteorológicas y regreso. Traslados no incluidos en todas las tarifas; verifica villa, piscina, comidas y cancelación. Bosphoras ofrece selección editorial; Nuitée muestra habitaciones, recibe pagos y gestiona cambios y asistencia.",
+  "hotelIntro": "Dos opciones cinco estrellas, Royal Sands y Song Saa, y dos resorts cuatro estrellas, Long Set y Anaya.",
+  "areas": [
+    [
+      "Long Beach y Sok San",
+      "Larga costa occidental, horizontes abiertos y villas Royal Sands.",
+      "Confirma playa, muelle estacional y barco del hotel."
+    ],
+    [
+      "Long Set (4K Beach)",
+      "Amplia playa arenosa cerca de Koh Touch, donde está Long Set Resort.",
+      "Comprueba conexión hotel-muelle."
+    ],
+    [
+      "Pagoda Beach",
+      "Costa este para días tranquilos de resort, incluido Anaya.",
+      "Muelle y traslado pueden diferir de Koh Touch."
+    ],
+    [
+      "Koh Touch y pueblo principal",
+      "Restaurantes, pequeños hoteles y zona animada de ferries.",
+      "Considera ruido nocturno y regreso de playas alejadas."
+    ],
+    [
+      "Koh Ouen y Song Saa",
+      "Isla privada del archipiélago con traslado especial.",
+      "Es otra isla; no reserves ferry al muelle incorrecto."
+    ],
+    [
+      "Calas alejadas y selva tropical",
+      "Senderos y calas tranquilas con acceso según clima.",
+      "Considera calor, corrientes y acceso de noche."
+    ]
+  ],
+  "experiences": [
+    [
+      "Paseo por Long Beach",
+      "Disfruta arena y atardecer con buen tiempo."
+    ],
+    [
+      "Día tranquilo en Long Set",
+      "Reserva tiempo para baño seguro, playa y almuerzo."
+    ],
+    [
+      "Kayak y naturaleza marina",
+      "Elige operador responsable según arrecifes y clima."
+    ],
+    [
+      "Isla privada Song Saa",
+      "Compara villas con piscina y confirma barco y paquete."
+    ],
+    [
+      "Koh Touch y vida local",
+      "Visita restaurantes pequeños respetando habitantes."
+    ],
+    [
+      "Mar al anochecer",
+      "Considera excursión especializada de bioluminiscencia sin garantía ni baño peligroso."
+    ]
+  ],
+  "checks": [
+    "Barcos desde Sihanoukville sirven distintos muelles según temporada.",
+    "Song Saa está en Koh Ouen; requiere traslado especial.",
+    "Confirma travesías incluidas y condiciones de regreso.",
+    "Royal Sands y Song Saa cinco estrellas, Long Set y Anaya cuatro según Nuitée.",
+    "Deja margen meteorológico entre barco y siguiente vuelo.",
+    "Respeta reglas de baño, esnórquel y protección de arrecifes.",
+    "Confirma habitación, comidas, cancelación y asistencia en Nuitée."
+  ],
+  "hotels": [
+    [
+      "Long Beach · Costa oeste",
+      "Resort cinco estrellas con villas privadas en larga playa blanca y piscina común.",
+      "Confirma categoría, piscina privada y traslado estacional.",
+      "Para villas amplias en costa oeste.",
+      ""
+    ],
+    [
+      "Koh Ouen · Isla vecina",
+      "Isla privada cinco estrellas con villas con piscina, incluidas categorías sobre agua.",
+      "No está en isla principal; confirma barco, paquete y cancelación.",
+      "Para retiro excepcional en isla privada.",
+      ""
+    ],
+    [
+      "Long Set · Sureste",
+      "Hotel costero cuatro estrellas con habitaciones, piscina y ambiente informal.",
+      "Comprueba muelle, comidas y vistas de habitación.",
+      "Para vacaciones de playa cómodas.",
+      ""
+    ],
+    [
+      "Pagoda Beach · Este",
+      "Resort moderno cuatro estrellas con habitaciones sencillas de diseño y piscina junto al mar.",
+      "Confirma traslado, playa y categorías jardín o mar.",
+      "Para descanso en costa este.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Dónde está Koh Rong?",
+      "En Camboya, golfo de Tailandia, cerca de Sihanoukville."
+    ],
+    [
+      "¿Cómo llegar desde Sihanoukville?",
+      "Lancha rápida o traslado del hotel; confirma muelle correcto."
+    ],
+    [
+      "¿Song Saa está en isla principal?",
+      "No, en Koh Ouen; necesita traslado especial."
+    ],
+    [
+      "¿Qué hotel de lujo elegir?",
+      "Royal Sands por villas en Long Beach, Song Saa por isla privada; ambos cinco estrellas."
+    ],
+    [
+      "¿Qué opciones cuatro estrellas hay?",
+      "Long Set Resort y Anaya Koh Rong."
+    ],
+    [
+      "¿Qué playa elegir?",
+      "Long Beach para atardeceres, Long Set para comodidad y Pagoda Beach para resort."
+    ],
+    [
+      "¿Barco incluido en precio?",
+      "No necesariamente; confirma tarifa, operador y temporada."
+    ],
+    [
+      "¿Cuándo suele estar más tranquilo el clima?",
+      "Noviembre a abril suele ser más seco; travesía depende del mar."
+    ],
+    [
+      "¿Se puede ver plancton luminoso?",
+      "A veces con suficiente oscuridad; no garantizado."
+    ],
+    [
+      "¿Quién gestiona pagos y cambios?",
+      "Nuitée muestra habitaciones en página del hotel, recibe pagos y ofrece asistencia."
+    ]
+  ],
+  "photoCaptions": [
+    "Costa tropical Koh Rong",
+    "Vida costera de la isla",
+    "Agua clara Koh Rong",
+    "Playas de arena blanca",
+    "Bungalós entre palmeras",
+    "Costa e islotes vecinos",
+    "Playa amplia al oeste de Koh Rong",
+    "Colores del atardecer sobre agua",
+    "Larga costa Sok San"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Fotografía The Royal Sands Koh Rong",
+      "Otra vista Royal Sands",
+      "Vista resort Royal Sands"
+    ],
+    [
+      "Fotografía Song Saa Private Island",
+      "Otra vista Song Saa",
+      "Vista resort insular Song Saa"
+    ],
+    [
+      "Fotografía Long Set Resort",
+      "Otra vista Long Set Resort",
+      "Vista resort Long Set"
+    ],
+    [
+      "Fotografía Anaya Koh Rong",
+      "Otra vista Anaya",
+      "Vista resort Anaya"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Koh Rong: mejores hoteles, villas y playas",
+  "hotelSeoTitle": "Hoteles de Koh Rong: Royal Sands, Song Saa, Long Set y Anaya",
+  "seoDescription": "Compara cuatro hoteles insulares de Koh Rong y Song Saa: playas blancas, villas privadas, piscinas y traslados desde Sihanoukville."
+}
