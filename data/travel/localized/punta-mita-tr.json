@@ -1,0 +1,164 @@
+{
+  "name": "Punta Mita",
+  "country": "Meksika",
+  "eyebrow": "Punta Mita · Nayarit Pasifik kıyısı",
+  "heading": "Punta Mita'da nerede kalınır? Özel yarımada resortları ve okyanus villaları",
+  "intro": "Kapalı Punta Mita yarımadası ve çevre kıyıları farklı deneyimler sunar: özel golf, aile casitaları, geniş plaj resortları ve tasarım otelleri. Konum önemlidir.",
+  "editorial": "Punta Mita, Pasifik yarımadasında özel giriş kurallarına sahip kapalı konut ve resort kompleksidir. Punta de Mita ayrıca dışarıdaki balıkçı köyünü ve halka açık plajları ifade eder. Four Seasons Resort Punta Mita ve The St. Regis Punta Mita Resort içeridedir. Conrad Punta de Mita kuzeyde Riviera Nayarit'in Litibú kıyısında, Susurros del Corazón ise yarımada dışında El Banco plajındadır. Son iki otelin misafirlerine Punta Mita Golf Club erişimi otomatik olarak vaat edilemez.\n\nFour Seasons bahçe ve deniz casitaları, küçük havuzlu süitler ve çok yatak odalı rezidanslar sunar. 60 m² Garden Casita ve iki yatak odalı 211 m² Ocean Plunge Pool Suite farklı kategorilerdir. Marriott'a göre St. Regis 120 oda ve süit, uşak hizmeti ve kulüp kurallarına göre Pacifico ve Bahia golf sahalarına erişim sunar. Modern aile resortu Conrad üç ortak havuz, plaj, spa ve bazı özel havuzlu süitlere sahiptir. Susurros tasarım odaları, süit ve bağımsız rezidansları birleştirir; Casa aile evi standart oda değildir.\n\nÇoğu misafir Puerto Vallarta (PVR) havalimanına gelir. Yaklaşık 45 dakikalık transfer trafik, adres ve giriş kontrolüne bağlıdır. El Anclote'de restoranlar, sörf ve tekneler; Litibú'da açık okyanus; Destiladeras'ta ayrı halk plajı; La Cruz de Huanacaxtle'de marina vardır. Marietas Adaları milli park korumasındadır; CONANP izinli operatör gerekir, gizli plaj kota ve havaya bağlıdır. Kambur balinalar kışın mevsimsel görülür, karşılaşma garanti değildir.\n\nAileler akıntı, cankurtaran, yaş sınırı, özel havuz güvenliği ve bağlantılı odaları kontrol etmelidir. Kış genellikle daha kuru, yaz sıcak ve nemlidir; iptal ve deniz gezisi koşullarını ayrı doğrulayın. Rehber Bosphoras'ın müsaitlik, sözleşmeli fiyat, ayrıcalık, golf saati veya API verisini doğrulamaz. Ticari görsel kullanım hakları ayrıca doğrulanmalıdır.",
+  "hotelIntro": "Dört otel: özel yarımadada Four Seasons ve St. Regis, Litibú'da Conrad, El Banco'da Susurros.",
+  "areas": [
+    [
+      "Kapalı Punta Mita yarımadası",
+      "Özel golf ve giriş koşullarına bağlı plajlar.",
+      "Ayrıcalıklar otel ve misafir statüsüne bağlıdır."
+    ],
+    [
+      "El Anclote ve Punta de Mita köyü",
+      "Deniz restoranları, sörf ve küçük tekne çıkışları.",
+      "Deniz ve sefer saatleri değişir."
+    ],
+    [
+      "Litibú ve kuzey kıyısı",
+      "Uzun plajlar ve Conrad gibi ayrı resortlar.",
+      "Litibú özel Punta Mita Golf Club değildir."
+    ],
+    [
+      "Destiladeras ve El Banco",
+      "Kapalı kompleksin doğusunda halk plajları ve tasarım resortları.",
+      "Dalga ve güvenli yüzme alanları farklıdır."
+    ],
+    [
+      "La Cruz Marina ve Marietas Adaları",
+      "Marina ve korunan adalara düzenlenen geziler.",
+      "CONANP yetkili operatör ve ziyaret kısıtları geçerlidir."
+    ]
+  ],
+  "experiences": [
+    [
+      "Pacifico ve Bahia golfü",
+      "Konaklama giriş hakkı veriyorsa Jack Nicklaus sahalarında saat ve ücret ayarlayın."
+    ],
+    [
+      "Marietas deniz gezisi",
+      "Yetkili rehberle deniz kuşları ve volkanik kayaları görün; gizli plaj erişimi sınırlıdır."
+    ],
+    [
+      "El Anclote'de sörf ve öğle yemeği",
+      "Seviyenize uygun ders ve resort dışında yerel restoran seçin."
+    ],
+    [
+      "Kışın kambur balina gözlemi",
+      "İzinli sezonda yetkin operatörle çıkın; gözlem garanti değildir."
+    ],
+    [
+      "Pasifik gün batımı",
+      "Dalgalara dikkat ederek otel plajı veya halka açık kıyıda izinli nokta seçin."
+    ]
+  ],
+  "checks": [
+    "Kapalı Punta Mita kompleksi ile Punta de Mita köyünü ayırın.",
+    "Four Seasons ve St. Regis içeride, Conrad ve Susurros dışarıdadır.",
+    "Jack Nicklaus golf erişimi statü, saat ve ücrete bağlıdır.",
+    "60 m² casita ve 211 m² iki yatak odalı havuzlu süit farklıdır.",
+    "Conrad ve Susurros'ta özel havuz belirli kategorilerdedir.",
+    "PVR transferi, trafik, araç ve yarımada girişini doğrulayın.",
+    "Marietas CONANP izni; balinalar mevsimseldir.",
+    "Çocuk yüzme güvenliği, hava, iptal, vergi ve müsaitliği kontrol edin."
+  ],
+  "hotels": [
+    [
+      "Özel yarımada · Casita, süit ve rezidans",
+      "Four Seasons birkaç havuz, tembel nehir ve çocuk olanaklarıyla aile resortudur. 60 m² Garden Casita, 211 m² iki yatak odalı Ocean Plunge Pool Suite veya çok odalı villa ile aynı değildir. Havuz, manzara, kapasite ve yatakları doğrulayın. Golf erişimi ve ücretleri kulüp kurallarına bağlıdır; rezidans fotoğrafı casita manzarasını garanti etmez.",
+      "Kategori, havuz, golf hakkı ve aile hizmetlerini kontrol edin.",
+      "Kapalı yarımadada aile tatili için.",
+      ""
+    ],
+    [
+      "Özel yarımada · Uşak, plaj ve golf",
+      "Marriott, tropik bahçelerde 120 oda ve süit belirtir. Uşak hizmeti, havuz, plaj kabinleri ve Jack Nicklaus Pacifico ve Bahia sahaları St. Regis karakterini oluşturur. Süit ve villa planları farklıdır; villa havuzu standart odada garanti değildir. Çocuk programları vardır, bazı alanlar yaş sınırlı olabilir. Transfer, golf erişimi ve hizmetleri yazılı teyit edin.",
+      "Golf giriş ve ücrete bağlıdır; bazı alanlarda yaş sınırı vardır.",
+      "Klasik resort ve uygun erişimde golf için.",
+      ""
+    ],
+    [
+      "Riviera Nayarit · Litibú kıyısı",
+      "Conrad üç ortak havuz, spa, restoranlar ve balkonlu odaları olan modern plaj resortudur. Partial Ocean View Suite gibi belirli süitlerde özel havuz olabilir; tüm odalarda yoktur. Kapalı yarımada dışında bağımsız aile tatili için uygundur. Manzara, ulaşım, çocuk güvenliği ve denizi kontrol edin.",
+      "Özel golf kompleksinde değildir; süit havuzu ve kulüp erişimi garanti değildir.",
+      "Bağımsız aile plaj tatili için.",
+      ""
+    ],
+    [
+      "El Banco · Tasarım resortu ve rezidans",
+      "Auberge Collection'ın Susurros del Corazón'u rahat tasarım, sörf ve açık hava yaşamına odaklanır. Odalar, süitler, Cliffside Residences ve Casas vardır. Üç sonsuzluk havuzu, wellness ve bazı Garden Suites'te küçük özel havuz bulunur. Yedi yatak odalı Casa Pacifico ayrı rezidanstır, oda değildir. Yarımada dışındadır; özel golf erişimi varsayılmamalıdır.",
+      "Oda, havuzlu süit ve Casa'yı ayırın; golf otomatik değildir.",
+      "Çağdaş tasarım ve okyanus tatili için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Punta Mita ile Punta de Mita aynı mı?",
+      "Tam değil. İlki kapalı kompleks, ikincisi köy ve komşu plajları da kapsar; dış otel misafirleri otomatik kulüp erişimi almaz."
+    ],
+    [
+      "Pacifico ve Bahia sahalarına kim girebilir?",
+      "Yetkili Four Seasons ve St. Regis misafirleri ve kulüp üyeleri; saat, rezervasyon ve ücretleri teyit edin."
+    ],
+    [
+      "Four Seasons çocuklara uygun mu?",
+      "Evet, aile olanakları var; kapasite ve özel havuz casita, süit veya rezidansa bağlıdır."
+    ],
+    [
+      "Conrad ve Susurros'un her odasında özel havuz var mı?",
+      "Hayır, ortak havuzlar ve belirli özel havuzlu kategoriler vardır."
+    ],
+    [
+      "Havalimanından nasıl gidilir?",
+      "Genellikle PVR; bazı oteller trafik ve adrese bağlı yaklaşık 45 dakika belirtir."
+    ],
+    [
+      "Marietas ve gizli plaj ziyaret edilebilir mi?",
+      "Adalar koruma altında; CONANP izinli operatör gerekir, gizli plaj kota, kısıt ve denize bağlıdır."
+    ],
+    [
+      "Bosphoras üzerinden şimdi rezervasyon yapılabilir mi?",
+      "Rehber fiyat, dağıtım sözleşmesi veya müsaitlik doğrulamaz; yetkili operatör teyit eder."
+    ]
+  ],
+  "photoCaptions": [
+    "Punta Mita kıyısı ve turkuaz deniz havadan",
+    "Punta de Mita koyu plajı ve resort bölgesi",
+    "Kıyıda mercan renkli gün batımı",
+    "Pacifico sahası doğal ada greeni Tail of the Whale",
+    "Korunan kayalık Marietas Adaları",
+    "Destiladeras ormanı ve Pasifik kıyısı",
+    "Marietas'ta mavi ayaklı sümsük kuşu",
+    "Gün batımında açık kum ve yeşil burun",
+    "Destiladeras doğal plajı ve palmiyeleri"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Four Seasons Oceanfront Casita ve Pasifik manzarası",
+      "Four Seasons havuzları ve plajı havadan",
+      "Four Seasons kıyı yarımadası"
+    ],
+    [
+      "St. Regis villa salonu ve havuzu",
+      "St. Regis yenilenmiş Pacific süiti",
+      "St. Regis villa bahçesi ve özel havuzu"
+    ],
+    [
+      "Conrad plajı ve havuzu havadan",
+      "Conrad büyük yataklı okyanus manzaralı oda",
+      "Conrad küçük özel havuzlu süit"
+    ],
+    [
+      "Susurros okyanus yamacı stüdyosu",
+      "Susurros plaj terası ve havuzu",
+      "Susurros küçük havuzlu Garden Suite"
+    ]
+  ],
+  "seoTitle": "Punta Mita, Meksika: Lüks Oteller, Plajlar ve Golf",
+  "hotelSeoTitle": "Punta Mita Otelleri: Four Seasons, St. Regis, Conrad ve Susurros",
+  "seoDescription": "Punta Mita ve Nayarit kıyısı otellerini karşılaştırın: özel yarımada, aile casitaları, golf, plajlar ve Puerto Vallarta transferi."
+}
