@@ -1,0 +1,63 @@
+[
+  {
+    "slug": "hong-kong",
+    "city": "Hong Kong",
+    "publisher": "Hong Kong Tourism Board",
+    "cityPages": [
+      "https://www.discoverhongkong.com/eng/neighbourhoods.html",
+      "https://www.discoverhongkong.com/eng/neighbourhoods/central-and-western-district.html",
+      "https://www.discoverhongkong.com/eng/neighbourhoods/wan-chai.html",
+      "https://www.discoverhongkong.com/eng/attractions/your-guide-to-experiencing-hong-kong.html",
+      "https://www.discoverhongkong.com/eng/explore/attractions/the-peak.html",
+      "https://www.discoverhongkong.com/eng/explore/attractions/star-ferry.html",
+      "https://www.discoverhongkong.com/eng/explore/attractions/west-kowloon-cultural-district.html",
+      "https://www.discoverhongkong.com/eng/explore/neighbourhoods/old-town-central.html",
+      "https://www.discoverhongkong.com/eng/explore/neighbourhoods/yau-tsim-mong.html"
+    ],
+    "subjects": [
+      "victoria harbour|tsim sha tsui promenade",
+      "the peak|victoria peak|peak tower",
+      "star ferry",
+      "tai kwun|old town central|central market",
+      "west kowloon|m\\+ museum|palace museum",
+      "wan chai|central plaza",
+      "mong kok|temple street|yau ma tei",
+      "causeway bay|victoria park",
+      "big buddha|ngong ping|lantau"
+    ],
+    "hotels": [
+      [
+        "rosewood",
+        "Rosewood Hong Kong",
+        [
+          "https://www.rosewoodhotels.com/en/hong-kong/overview/gallery",
+          "https://m.rosewoodhotels.com/en/hong-kong/gallery"
+        ]
+      ],
+      [
+        "four-seasons",
+        "Four Seasons Hotel Hong Kong",
+        [
+          "https://www.fourseasons.com/hongkong/photos-and-videos/",
+          "https://press.fourseasons.com/hongkong/hotel-images/"
+        ]
+      ],
+      [
+        "peninsula",
+        "The Peninsula Hong Kong",
+        [
+          "https://www.peninsula.com/en/hong-kong/photos-and-videos",
+          "https://www.peninsula.com/en/hong-kong/5-star-luxury-hotel-kowloon"
+        ]
+      ],
+      [
+        "mandarin-oriental",
+        "Mandarin Oriental, Hong Kong",
+        [
+          "https://www.mandarinoriental.com/en/hong-kong/victoria-harbour",
+          "https://www.mandarinoriental.com/en/hong-kong/victoria-harbour/stay"
+        ]
+      ]
+    ]
+  }
+]
