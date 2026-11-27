@@ -309,6 +309,9 @@
     "city": "Barcelone",
     "publisher": "Turisme de Barcelona",
     "cityPages": [
+      "https://commons.wikimedia.org/wiki/File:Barcelona_(5534801186).jpg",
+      "https://commons.wikimedia.org/wiki/File:Gracia_District,_Barcelona_(18080740361).jpg",
+      "https://commons.wikimedia.org/wiki/File:Plaça_de_la_Vila_de_Gràcia.jpg",
       "https://www.meet.barcelona/en/points-interest-city/gracia",
       "https://www.meet.barcelona/en/visit-and-love-it/charming-corners",
       "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona,_Spain.jpg",
@@ -486,6 +489,7 @@
         "coral-beach",
         "Grand Fiesta Americana Coral Beach Cancún",
         [
+          "https://www.fiestamericanatravelty.com/en/grand-fiesta-americana/hotels/grand-fiesta-americana-coral-beach-cancun-all-inclusive-spa-resort/gallery",
           "https://www.fiestamericanatravelty.com/en/grand-fiesta-americana/hotels/grand-fiesta-americana-coral-beach-cancun-all-inclusive-spa-resort/hotel-faq",
           "https://www.coralbeachcancunresort.com/"
         ]
