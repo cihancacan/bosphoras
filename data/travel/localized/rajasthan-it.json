@@ -1,0 +1,183 @@
+{
+  "name": "Rajasthan",
+  "country": "India",
+  "eyebrow": "India · Palazzi, deserto e riserve naturali",
+  "heading": "Rajasthan: dai palazzi di Jodhpur al deserto del Thar",
+  "intro": "Organizza un viaggio di contrasti: palazzi di Jodhpur, campo nel deserto e natura di Ranthambore.",
+  "editorial": "Il Rajasthan non è un insieme di palazzi uguali. Jaipur racconta Città Rosa e artigianato, Udaipur laghi, Jodhpur Mehrangarh, Jaisalmer il Thar, Ranthambore fauna. Dedica tempo a ogni tappa. A Jaipur Rambagh è più centrale, Oberoi Rajvilas a est sulla Goner Road, Kukas a nord verso Amber. A Udaipur palazzo sull'isola, riva ovest Pichola e tenuta lontana su altro lago richiedono transfer diversi. Bosphoras ha guide separate per entrambe le città.\n\nMehrangarh domina case blu e vicoli di Jodhpur. Taj Umaid Bhawan Palace è autentico palazzo art déco sulla collina tra giardini; RAAS Jodhpur è boutique separato in haveli storico del centro. Non confondere architettura e foto. Verifica accesso agli ambienti storici, categoria, vista e capienza familiare Umaid Bhawan.\n\nJaisalmer unisce forte dorato, haveli scolpiti e sabbie del Thar. SUJÁN The Serai occupa secondo operatore una tenuta a circa 40 km dalla città, con 21 alloggi tendati. Piscine private riscaldate solo in determinate suite. Transfer, escursioni, cena e incontri locali dipendono dalla tariffa.\n\nRanthambore presso Sawai Madhopur è noto per foreste secche, laghi e forte. Autorità forestale stabilisce permessi, zone, orari e chiusure stagionali; avvistamento tigre mai garantito. The Oberoi Vanyavilas offre 28 tende di lusso nei giardini, piscina e condizioni secondo categoria. Vicinanza al parco non garantisce permesso safari. Six Senses Fort Barwara a Chauth ka Barwara è forte storico restaurato con benessere fuori Jaipur e parco; verifica strade e tempi effettivi.\n\nKumbhalgarh, lago sacro Pushkar e pozzo a gradini Chand Baori sono escursioni separate. Per Jaipur, Udaipur, Jodhpur e Jaisalmer prevedi 9–12 notti, due nelle città principali e tempo extra Ranthambore; indicazione, non tour pronto. Ottobre–marzo spesso più piacevole, mattine fredde possibili; caldo estivo e monsoni influenzano strade. Stagione Ranthambore spesso ottobre–giugno, ma verifica zone e permessi. Con bambini organizza seggiolini, acqua e soste. Scegli laboratori con condizioni d'acquisto trasparenti. Bosphoras offre selezione editoriale indipendente; fornitore conferma categoria, tasse, transfer, permessi, prezzi, disponibilità, cancellazione e assistenza.",
+  "hotelIntro": "Quattro indirizzi per tappe diverse: Umaid Bhawan, SUJÁN The Serai, Oberoi Vanyavilas e Six Senses Fort Barwara.",
+  "areas": [
+    [
+      "Jaipur e Amber",
+      "Architettura della Città Rosa, bazar e forti settentrionali.",
+      "Centro, Kukas e Goner Road sono distinti."
+    ],
+    [
+      "Udaipur e lago Pichola",
+      "Palazzi lacustri e viste sull'acqua.",
+      "Isola, riva e resort remoto richiedono transfer diversi."
+    ],
+    [
+      "Jodhpur e Mehrangarh",
+      "Forte e città blu, vicoli e giardini palaziali.",
+      "Verifica accesso, gradini e vista."
+    ],
+    [
+      "Jaisalmer e Thar",
+      "Forte dorato, haveli storici e sabbia.",
+      "Campo non necessariamente presso il forte."
+    ],
+    [
+      "Ranthambore e Sawai Madhopur",
+      "Foresta secca, forte e safari autorizzati.",
+      "Secondo permessi, zone e chiusure."
+    ],
+    [
+      "Chauth ka Barwara",
+      "Forte restaurato per benessere fuori Jaipur e parco.",
+      "Non presumere safari incluso o accesso a piedi."
+    ]
+  ],
+  "experiences": [
+    [
+      "Scegliere un palazzo",
+      "Confronta scala Umaid Bhawan con boutique del centro antico."
+    ],
+    [
+      "Tempo per il Thar",
+      "Prevedi città, dune e serata al campo."
+    ],
+    [
+      "La fauna detta le regole",
+      "Permessi e guida responsabile; tigre non garantita."
+    ],
+    [
+      "Benessere senza fretta",
+      "Riposa nel forte restaurato Barwara."
+    ],
+    [
+      "Conoscere artigiani",
+      "Scegli laboratori interessanti senza acquisti obbligatori."
+    ],
+    [
+      "Viaggio ragionato",
+      "Pianifica secondo strade, aeroporti e gruppo."
+    ]
+  ],
+  "checks": [
+    "Scegli città secondo tempo disponibile.",
+    "Verifica posizione e categoria di ogni hotel.",
+    "Controlla permessi, zone e date safari separatamente.",
+    "Organizza transfer, seggiolini e soste.",
+    "Considera stagione, orari monumenti ed escursioni incluse.",
+    "Conferma tasse, cancellazione, venditore e assistenza."
+  ],
+  "hotels": [
+    [
+      "Collina sopra Jodhpur",
+      "Palazzo storico Taj art déco tra vasti giardini.",
+      "Verifica categoria, vista, accesso storico e capienza familiare.",
+      "Per autentico soggiorno in palazzo.",
+      ""
+    ],
+    [
+      "Tenuta Thar · Fuori Jaisalmer",
+      "Campo di lusso con categorie di tende diverse.",
+      "Piscine private riscaldate solo in alcune suite; verifica pasti, transfer ed escursioni.",
+      "Per riservatezza tra le sabbie.",
+      ""
+    ],
+    [
+      "Sawai Madhopur · Ranthambore",
+      "Tende di lusso nei giardini presso il parco; permessi safari separati.",
+      "Non presumere tigri, permessi o piscina privata.",
+      "Per scoprire la fauna.",
+      ""
+    ],
+    [
+      "Chauth ka Barwara",
+      "Forte restaurato con architettura storica e benessere.",
+      "Non in Jaipur né nel parco; verifica strada e suite.",
+      "Per relax storico e benessere.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Quante notti per il Rajasthan?",
+      "9–12 per Jaipur, Udaipur, Jodhpur e Jaisalmer; tempo extra per Ranthambore."
+    ],
+    [
+      "Rajasthan, Jaipur e Udaipur sono lo stesso luogo?",
+      "No, Rajasthan è uno stato; Jaipur e Udaipur città diverse."
+    ],
+    [
+      "Come differisce Umaid Bhawan dall'hotel del centro?",
+      "Grande palazzo storico sulla collina; RAAS boutique vista Mehrangarh."
+    ],
+    [
+      "The Serai è dentro il forte Jaisalmer?",
+      "No, circa 40 km dalla città secondo operatore."
+    ],
+    [
+      "Tutte le tende The Serai hanno piscina?",
+      "No, private riscaldate in alcune Luxury Tented Suites e Royal Tented Suite."
+    ],
+    [
+      "Hotel garantisce safari e tigri?",
+      "No, servono permessi ufficiali e avvistamento dipende dalla natura."
+    ],
+    [
+      "Six Senses Fort Barwara è a Jaipur?",
+      "No, a Chauth ka Barwara; verifica tempi per Jaipur e Ranthambore."
+    ],
+    [
+      "Quando visitare palazzi e deserto?",
+      "Ottobre–marzo spesso piacevole; verifica meteo e accesso."
+    ],
+    [
+      "Jodhpur–Jaisalmer in giornata?",
+      "Diverse ore di strada; meglio tappe separate."
+    ],
+    [
+      "Chi gestisce prenotazione e assistenza?",
+      "Selezione editoriale; venditore conferma prezzi, tasse, servizi, cancellazione e assistenza."
+    ]
+  ],
+  "photoCaptions": [
+    "Mehrangarh sopra Jodhpur blu all'alba",
+    "Forte dorato Jaisalmer",
+    "Dune Sam nel Thar",
+    "Lago Padam Talao a Ranthambore",
+    "Forte Kumbhalgarh sui monti Aravalli",
+    "Palazzo di Udaipur sul Pichola",
+    "Panorama lago Pushkar",
+    "Pozzo geometrico Chand Baori",
+    "Case blu Jodhpur da Mehrangarh"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Facciata Umaid Bhawan Palace",
+      "Palazzo Umaid Bhawan a Jodhpur",
+      "Piscina coperta Umaid Bhawan"
+    ],
+    [
+      "Tenda SUJÁN The Serai",
+      "Suite tendata The Serai con piscina",
+      "Campo The Serai al crepuscolo"
+    ],
+    [
+      "Suite Oberoi Vanyavilas con piscina privata",
+      "Camera tenda di lusso Oberoi",
+      "Esterno tenda reale Oberoi"
+    ],
+    [
+      "Six Senses Fort Barwara dall'alto",
+      "Terrazza e piscina Fort Barwara",
+      "Piscina storica Six Senses Fort Barwara"
+    ]
+  ],
+  "seoTitle": "Rajasthan, India: hotel di lusso, palazzi e deserto del Thar",
+  "hotelSeoTitle": "Hotel del Rajasthan: Umaid Bhawan, The Serai, Oberoi e Six Senses",
+  "seoDescription": "Scopri Rajasthan: palazzi di Jodhpur, deserto di Jaisalmer, safari Ranthambore, hotel di lusso e itinerari realistici."
+}

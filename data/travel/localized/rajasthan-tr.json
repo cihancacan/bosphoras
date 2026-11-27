@@ -1,0 +1,183 @@
+{
+  "name": "Racastan",
+  "country": "Hindistan",
+  "eyebrow": "Hindistan · Saraylar, çöl ve doğa rezervleri",
+  "heading": "Racastan: Jodhpur saraylarından Thar Çölü'ne",
+  "intro": "Jodhpur sarayları, çöl kampı ve Ranthambore'un doğal yaşamıyla farklı etaplardan oluşan bir seyahat planlayın.",
+  "editorial": "Racastan birbirinin aynı saraylardan ibaret değildir. Jaipur Pembe Şehir ve zanaatı, Udaipur gölleri, Jodhpur Mehrangarh'ı, Jaisalmer Thar Çölü'nü, Ranthambore yaban hayatını sunar. Her durağa zaman ayırın. Jaipur'da Rambagh merkeze yakın, Oberoi Rajvilas doğuda Goner Road üzerinde, Kukas resortları kuzeyde Amber yönündedir. Udaipur'da ada sarayı, Pichola'nın batı kıyısı ve başka göldeki uzak tesis farklı transferler gerektirir. Bosphoras'ın iki şehir için ayrı rehberleri vardır.\n\nJodhpur'da Mehrangarh Kalesi mavi evler ve dolambaçlı sokakların üzerinde yükselir. Taj Umaid Bhawan Palace bahçeler arasında tepede gerçek Art Deco sarayıdır; RAAS Jodhpur ise eski şehirde tarihî haveli içinde ayrı butik oteldir. Mimari ve fotoğrafları karıştırmayın. Umaid Bhawan'da tarihî alanlara erişim, kategori, manzara ve aile kapasitesini doğrulayın.\n\nJaisalmer altın renkli kale, oymalı haveli ve Thar kumlarını birleştirir. SUJÁN The Serai işletmeciye göre şehirden yaklaşık 40 km uzakta ayrı arazide kamp olup 21 çadır konaklama birimi sunar. Isıtmalı özel havuzlar yalnızca belirli süitlerdedir. Transfer, çöl gezisi, akşam yemeği ve yerel buluşmalar tarifeye bağlıdır.\n\nSawai Madhopur yakınında Ranthambore kuru orman, göller ve kalesiyle bilinir. İzinleri, bölgeleri, saatleri ve mevsimsel kapanışları orman idaresi belirler; kaplan görülmesi garanti değildir. The Oberoi Vanyavilas bahçeler arasında 28 lüks çadır oda sunar; havuz ve koşullar kategoriye göre değişir. Park yakınlığı safari izni sağlamaz. Chauth ka Barwara'daki Six Senses Fort Barwara, Jaipur ve milli park dışında restore edilmiş wellness odaklı kaledir; gerçek transfer sürelerini kontrol edin.\n\nKumbhalgarh, kutsal Pushkar gölü ve Chand Baori basamaklı kuyusu ayrı gezilerdir. Jaipur, Udaipur, Jodhpur ve Jaisalmer için 9–12 gece, başlıca şehirlerde ikişer gece ve Ranthambore için ek süre iyi bir başlangıçtır; hazır tur değildir. Ekim–mart çoğunlukla rahat, sabahlar soğuk olabilir; yaz sıcak, muson yolları etkiler. Ranthambore sezonu genellikle ekim–haziran olarak belirtilir ancak bölgeler ve izinler ayrıca teyit edilir. Çocuklarla koltuk, su ve molaları planlayın. Şeffaf alışveriş koşullu zanaat atölyeleri seçin. Bosphoras bağımsız editoryal seçki sunar; fiyat, vergi, kategori, transfer, izin, iptal ve desteği sağlayıcı doğrular.",
+  "hotelIntro": "Dört ayrı etap: Umaid Bhawan, SUJÁN The Serai, Oberoi Vanyavilas ve Six Senses Fort Barwara.",
+  "areas": [
+    [
+      "Jaipur ve Amber",
+      "Pembe Şehir mimarisi, çarşılar ve kuzey kaleleri.",
+      "Merkez, Kukas ve Goner Road farklıdır."
+    ],
+    [
+      "Udaipur ve Pichola Gölü",
+      "Göl sarayları ve su manzaraları.",
+      "Ada, kıyı ve uzak resort farklı transfer ister."
+    ],
+    [
+      "Jodhpur ve Mehrangarh",
+      "Kale, mavi eski şehir, dar sokaklar ve saray bahçeleri.",
+      "Araç erişimi, basamak ve manzarayı kontrol edin."
+    ],
+    [
+      "Jaisalmer ve Thar Çölü",
+      "Altın kale, tarihî haveli ve kum manzaraları.",
+      "Çöl kampı kale yakınında olmayabilir."
+    ],
+    [
+      "Ranthambore ve Sawai Madhopur",
+      "Kuru orman, kale ve resmî izinli safari.",
+      "İzin, bölge ve kapanışlara bağlıdır."
+    ],
+    [
+      "Chauth ka Barwara",
+      "Jaipur ve park dışında restore wellness kalesi.",
+      "Safari dahil veya parka yaya erişim varsaymayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Saray seçimi",
+      "Umaid Bhawan'ın ölçeğini eski Jodhpur butik oteliyle karşılaştırın."
+    ],
+    [
+      "Thar için zaman",
+      "Şehir, kumullar ve kampta akşam için zaman ayırın."
+    ],
+    [
+      "Yaban hayatının kuralları",
+      "İzin alın, sorumlu rehber seçin; kaplan garanti değildir."
+    ],
+    [
+      "Sakin wellness",
+      "Dinlenmek için restore Barwara kalesinde kalın."
+    ],
+    [
+      "Zanaatkârlarla tanışma",
+      "Zorunlu alışveriş olmayan atölyeler seçin."
+    ],
+    [
+      "Planlı yolculuk",
+      "Rotayı gerçek yollar, havalimanları ve grup ihtiyacına göre kurun."
+    ]
+  ],
+  "checks": [
+    "Şehirleri mevcut zamana göre seçin.",
+    "Otel konumu ve kategorisini doğrulayın.",
+    "Safari izinleri, bölgeler ve tarihleri ayrı kontrol edin.",
+    "Transfer, çocuk koltuğu ve molaları ayarlayın.",
+    "Mevsim, anıt saatleri ve dahil gezileri dikkate alın.",
+    "Vergi, iptal, satıcı ve desteği doğrulayın."
+  ],
+  "hotels": [
+    [
+      "Jodhpur üzerinde tepe",
+      "Geniş bahçelerde tarihî Art Deco Taj sarayı.",
+      "Kategori, manzara, tarihî alan erişimi ve aile kapasitesini doğrulayın.",
+      "Gerçek saray tatili için.",
+      ""
+    ],
+    [
+      "Thar arazisi · Jaisalmer dışında",
+      "Farklı çadır kategorili lüks çöl kampı.",
+      "Isıtmalı özel havuzlar belirli süitlerde; yemek, transfer, geziyi kontrol edin.",
+      "Thar kumları arasında mahremiyet için.",
+      ""
+    ],
+    [
+      "Sawai Madhopur · Ranthambore",
+      "Park yakınında bahçelerde lüks çadırlar; safari izinleri ayrı.",
+      "Kaplan, izin veya özel havuzu garanti varsaymayın.",
+      "Yaban hayatını keşfetmek için.",
+      ""
+    ],
+    [
+      "Chauth ka Barwara",
+      "Tarihî mimari ve wellness ile restore kale.",
+      "Jaipur veya park içinde değil; yol ve süiti kontrol edin.",
+      "Sakin tarihî wellness tatili için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Racastan için kaç gece gerekir?",
+      "Jaipur, Udaipur, Jodhpur ve Jaisalmer için 9–12; Ranthambore için ek süre."
+    ],
+    [
+      "Racastan, Jaipur ve Udaipur aynı yer mi?",
+      "Hayır, Racastan eyalet; Jaipur ve Udaipur farklı şehirler."
+    ],
+    [
+      "Umaid Bhawan eski şehir otelinden nasıl ayrılır?",
+      "Tepede büyük tarihî saray; RAAS Mehrangarh manzaralı butik otel."
+    ],
+    [
+      "The Serai Jaisalmer Kalesi içinde mi?",
+      "Hayır, işletmeciye göre şehirden yaklaşık 40 km uzakta."
+    ],
+    [
+      "The Serai her çadırda havuz sunar mı?",
+      "Hayır, belirli Luxury Tented Suites ve Royal Tented Suite ısıtmalı özel havuzlu."
+    ],
+    [
+      "Otel safari ve kaplanı garanti eder mi?",
+      "Hayır, resmî izin gerekir, kaplan doğaya bağlıdır."
+    ],
+    [
+      "Six Senses Fort Barwara Jaipur'da mı?",
+      "Hayır, Chauth ka Barwara'da; Jaipur ve Ranthambore yolunu kontrol edin."
+    ],
+    [
+      "Saraylar ve çöl için ne zaman gidilmeli?",
+      "Ekim–mart çoğunlukla rahat; hava ve erişimi kontrol edin."
+    ],
+    [
+      "Jodhpur'dan Jaisalmer günübirlik mi?",
+      "Birkaç saatlik yol; ayrı durak daha iyi."
+    ],
+    [
+      "Rezervasyon ve destek kimin sorumluluğunda?",
+      "Editoryal seçki; fiyat, vergi, hizmet, iptal ve desteği satıcı doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Gün doğumunda mavi Jodhpur üzerinde Mehrangarh",
+    "Jaisalmer altın kalesi",
+    "Thar Çölü Sam kumulları",
+    "Ranthambore Padam Talao Gölü",
+    "Aravalli dağlarında Kumbhalgarh Kalesi",
+    "Pichola kıyısında Udaipur Şehir Sarayı",
+    "Pushkar Gölü panoraması",
+    "Chand Baori geometrik kuyu",
+    "Mehrangarh'tan Jodhpur mavi evleri"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Umaid Bhawan Palace cephesi",
+      "Jodhpur Umaid Bhawan sarayı",
+      "Umaid Bhawan kapalı havuzu"
+    ],
+    [
+      "SUJÁN The Serai çadırı",
+      "The Serai havuzlu çadır süiti",
+      "Alacakaranlıkta The Serai kampı"
+    ],
+    [
+      "Oberoi Vanyavilas özel havuzlu süit",
+      "Oberoi lüks çadır yatak odası",
+      "Oberoi kraliyet çadırı dışı"
+    ],
+    [
+      "Six Senses Fort Barwara havadan",
+      "Fort Barwara teras ve havuz",
+      "Six Senses Fort Barwara tarihî havuzu"
+    ]
+  ],
+  "seoTitle": "Racastan Gezi Rehberi: Lüks Oteller, Saraylar ve Thar Çölü",
+  "hotelSeoTitle": "Racastan Otelleri: Umaid Bhawan, The Serai, Oberoi ve Six Senses",
+  "seoDescription": "Racastan rotası: Jodhpur sarayları, Jaisalmer çölü, Ranthambore safari, lüks oteller ve transferler."
+}
