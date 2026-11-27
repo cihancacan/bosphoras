@@ -3294,6 +3294,37 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
+        "key": "majestic-5",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:060_Hotel_Majestic,_pg._de_Gr%C3%A0cia_68-72_-_c._Val%C3%A8ncia_251-259_(Barcelona),_fa%C3%A7ana_sud.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/060_Hotel_Majestic%2C_pg._de_Gr%C3%A0cia_68-72_-_c._Val%C3%A8ncia_251-259_%28Barcelona%29%2C_fa%C3%A7ana_sud.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/060_Hotel_Majestic,_pg._de_Gr%C3%A0cia_68-72_-_c._Val%C3%A8ncia_251-259_(Barcelona),_fa%C3%A7ana_sud.jpg",
+        "originalAlt": "Majestic Hotel Barcelona south facade",
+        "originalCaption": "Wikimedia Commons — individual author and licence to verify",
+        "credit": "Wikimedia Commons — individual author and licence to verify",
+        "publisher": "Majestic Hotel & Spa Barcelona",
+        "hotel": "Majestic Hotel & Spa Barcelona",
+        "localPath": "/images/travel/barcelona-premium/majestic/majestic-5.webp",
+        "sourceSHA256": "0d9ff6e8da6fea4f29dc95c1d09fece9ddb86d7e19a662d3392799ff448e70bc",
+        "webpSHA256": "88b051130cc80f31f962f1bf54065b497ef23e9ff91c2c425e3e7677cdb326e0",
+        "sourcePixels": [
+          4160,
+          3120
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 237702,
+        "pixelFingerprint": "d85c5ceccc48693a",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "cotton-house-1",
         "sourcePage": "https://hotelcottonhouse.com/en/",
         "sourceResolvedUrl": "https://hotelcottonhouse.com/wp-content/uploads/2025/03/DamascoSuite_CottonHouse-salon_espejo-scaled.jpg",
@@ -3387,13 +3418,7 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "gaps": [
-      {
-        "group": "majestic",
-        "expected": 3,
-        "found": 2
-      }
-    ],
+    "gaps": [],
     "errors": [
       {
         "page": "https://myconciergehotel.com/en/hotel/majestic-hotel-and-spa-barcelona",
@@ -3402,10 +3427,6 @@
       {
         "page": "https://majestichotelgroup.com/en/barcelona/hotel-majestic/gallery",
         "error": "500 Server Error: Internal Server Error for url: https://majestichotelgroup.com/en/barcelona/hotel-majestic/gallery"
-      },
-      {
-        "page": "https://www.expedia.com/Barcelona-Hotels-Majestic-Hotel-Spa-Barcelona.h5002.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Barcelona-Hotels-Majestic-Hotel-Spa-Barcelona.h5002.Hotel-Information"
       }
     ],
     "publicUseApproved": false,
@@ -3568,8 +3589,8 @@
       }
     ],
     "cityCount": 9,
-    "hotelCount": 11,
-    "totalBytes": 2767188
+    "hotelCount": 12,
+    "totalBytes": 3004890
   },
   "cancun": {
     "destinationScenes": [
