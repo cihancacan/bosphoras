@@ -417,6 +417,11 @@
     "city": "Cancún",
     "publisher": "Mexican Caribbean / Quintana Roo tourism",
     "cityPages": [
+      "https://commons.wikimedia.org/wiki/File:Playa_Tortugas_cancun.jpg",
+      "https://commons.wikimedia.org/wiki/File:Parque_de_las_Palapas_1.jpg",
+      "https://commons.wikimedia.org/wiki/File:Parque_de_las_Palapas_2.jpg",
+      "https://commons.wikimedia.org/wiki/File:Cancun-Central-Square.jpg",
+      "https://commons.wikimedia.org/wiki/File:Canc%C3%BAn_M%C3%A9xico.jpg",
       "https://commons.wikimedia.org/wiki/File:Laguna_Nichupt%C3%A9.jpg",
       "https://commons.wikimedia.org/wiki/File:Canc%C3%BAn_-_Playa_Gaviota_Azul_-_Laguna_Canc%C3%BAn_y_Nichupt%C3%A9.jpg",
       "https://mail.turismocancun.mx/beaches/",
@@ -441,7 +446,7 @@
       "lagoon|nichupt",
       "caracol|tortugas",
       "playa|beach",
-      "downtown|centro",
+      "downtown|centro|parque de las palapas|central.square",
       "caribbean|caribe"
     ],
     "hotels": [
@@ -449,6 +454,8 @@
         "nizuc",
         "NIZUC Resort & Spa",
         [
+          "https://www.businesstravelnews.com/Hotels/Cancun/Nizuc-Resort-Spa/Images-p54477288",
+          "https://www.travelweekly.com/Hotels/Cancun/Nizuc-Resort-Spa-p6721792",
           "https://www.nizuc.com/gallery/",
           "https://www.fivestaralliance.com/gallery/nizuc-resort-and-spa-cancun-gallery-images",
           "https://www.nizuc.com/accommodations/",
@@ -459,6 +466,7 @@
         "le-blanc",
         "Le Blanc Spa Resort Cancun",
         [
+          "https://sportvac.com/en/hotels/le-blanc-spa-resort-adult-only/",
           "https://www.forbestravelguide.com/hotels/cancun-mexico/le-blanc-spa-resort-cancun",
           "https://teneohg.com/member-hotel/le-blanc-spa-resort/",
           "https://registration.forbestravelguide.com/hotels/cancun-mexico/le-blanc-spa-resort-cancun",
