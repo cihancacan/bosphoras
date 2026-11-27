@@ -1,0 +1,162 @@
+{
+  "name": "Positano",
+  "country": "İtalya",
+  "eyebrow": "Amalfi Coast  Tırrhonian Denizi'nin üzerindeki teraslar",
+  "heading": "Positano: Teras, basamaklar ve kıyı şeridini seçin.",
+  "intro": "Sudan Positano, kiremitli bir kilise kubbesinin etrafındaki pastel binaların tek bir duvar halısı gibi görünüyor. Yine de Laurito'daki bir uçurum kenarındaki mülk, Arienzo'daki bir villa ve Via Pasitea'daki bir otel olan Via Cristoforo Colombo'daki bir oda radikal bir şekilde farklı konaklamalar sunuyor. Gerçek farklılıklar arasında merdivenler, varış noktaları, plaj erişimi ve süit manzaraları kadar ulaşım yer alıyor. Bu kılavuz, sahilin tamamını tedavi etmekten ziyade dört tanımlanabilir otel ve gerçekçi mahalleyi karşılaştırmaktadır.",
+  "editorial": "Positano'da deniz manzarası otomatik olarak doğrudan deniz erişimi anlamına gelmez. Via Cristoforo Colombo'da bulunan Le Sirenuse, merkezi pastel townscape'e bakmaktadır, yemek ve köy gezintileri için iyi bir konumdadır, ancak hala Spiaggia Grande'ye giden basamakların üzerindedir. Hotel Poseidon, Via Pasitea 148'de, uzun köklü, aile tarafından işletilen bir atmosfer ve nispeten basit bir yol erişimi sunar: yüksek bir panoramik özel havuza sahip değildir. Spiaggia Grande canlı ana plaj ve gezi iskelesidir, oysa Fornillo'ya başka bir kıyı yolu ile yaklaşılır. Capri veya Amalfi'ye feribotlar deniz koşullarına bağlıdır ve yol trafiği yaz aylarında şiddetli olabilir. Aileler, daha az mobil konuk ve bagajla seyahat eden herkes özenle kontrol edilmiş bir iniş ve iskele planı gerektirir. Bosphoras, yetkili tedarikçi envanteri olmadan rezerve edilmiş veya satılabilir herhangi bir oda, tekne, yemek masası veya plaj tesisini temsil etmez.",
+  "hotelIntro": "Dört farklı seçenek: merkezi panorama, yol erişilebilir Pasitea, tenha Arienzo ve uçurum kenarı Laurito.",
+  "areas": [
+    [
+      "Cristoforo Colombo ve Positano'nun merkezi",
+      "Bu yükseltilmiş merkezi yol, Le Sirenuse'u ve Santa Maria Assunta'nın kiremitli kubbesine doğru klasik manzarasını içerir. Mağazalar ve restoranlar yakın hissediyor, ancak plaja inmek hala eğimler ve adımlar içeriyor.",
+      "Yaya erişimini, bagaj teslimini ve gerçek rezerve edilmiş katı onaylayın."
+    ],
+    [
+      "Spiaggia Grande  plaj ve iniş",
+      "Spiaggia Grande, tepe otellerinden görülen başlıca plajdır, yüzme alanları, restoranlar ve gezinti inişleri vardır. Özel lido erişimi ve tekne kalkışları, otomatik otel hakları değil, ayrı hizmetlerdir.",
+      "Deniz koşullarını, plaj rezervasyon kurallarını, son feribotları ve ziyaretçi sıkışıklığını kontrol edin."
+    ],
+    [
+      "Via Pasitea, Fornillo ve Chiesa Nuova",
+      "Hotel Poseidon, yamaçtan geçerken araçla erişilebilen Via Pasitea'da oturuyor. Fornillo, ana sahile bir kıyı patikası ile bağlı ayrı bir plajdır; Chiesa Nuova, merkezi turistik şeritlerden daha yüksekte yer almaktadır.",
+      "Fornillo'yu her yamaç otelinin girişine bitişik olarak tanımlamayın."
+    ],
+    [
+      "Arienzo  villalar ve kıyı adımları",
+      "Merkezin doğusunda, Arienzo tenha bahçeleri, villa mülklerini ve koylarını birleştirir. Villa TreVille burada kuruludur; ayrı bir mülk ayarıdır ve herhangi bir mekik veya su erişiminin açık bir doğrulamaya ihtiyacı vardır.",
+      "Suit binayı, adımları, mekik zaman çizelgesini ve gerçek plaj erişimini doğrulayın."
+    ],
+    [
+      "Laurito ve SS163 kıyı yolu",
+      "Il San Pietro, Amalfi'ye doğru Laurito'da, merkezin yürüyüş devresinin dışında bir uçuruma sahiptir. Mülkü, restoranları ve deniz seviyesindeki olanakları, kendi başlarına bir hedef oluşturur, ancak merkezi Positano'ya bir doğaçlama gezintisi yapmaz.",
+      "İlgili mevsim için servisleri, yemek saatlerini ve deniz seviyesindeki tesisleri onaylayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Positano'yu sudan görün",
+      "Spiaggia Grande iskelesinden bir kalkış, kasabanın belirgin uçurumlarını ve koylarını gösterir. Halka açık feribotları bağımsız gezilerle karşılaştırın ve geri dönüşü doğrulayın, çünkü kaba denizler geçişleri askıya alabilir."
+    ],
+    [
+      "Fornillo'nun kıyı yolu",
+      "Fornillo'ya doğru ana plajdan sahil yolu, bir dizi koy ve mevsimlik plaj kafesi verir. Adımlar ve düzensiz bölümler bekleyin; Grup seviye erişimine ihtiyaç duyarsa başka bir etkinlik seçin."
+    ],
+    [
+      "Santa Maria Assunta ve fayansları",
+      "Santa Maria Assunta'nın kiremitli kubbesi, Positano'nun kartpostal siluetini demirler. Komşu tarihi şeritleri ve ziyaret düzenlemelerinin izin verdiği kilise iç mekanlarını, yerel hizmetlere ve erişim saatlerine saygı göstererek keşfedin."
+    ],
+    [
+      "Praiano ya da Amalfi'ye doğru bir gün",
+      "Yakınlardaki Praiano ve Amalfi kıyı köylerine zıt özellikler sunar, ancak dar SS163 sezonda çok sıkışık olabilir. Gerçekçi kalkış sürelerini planlayın ve birçok durak zincirlemeden önce herhangi bir dönüş teknesini doğrulayın."
+    ],
+    [
+      "Çatıların üstünde Aperitivo",
+      "Gün yolculuğu telaşından sonra Positano'nun gerçek manzarasına sahip bir teras seçin. Muhteşem masalar genellikle bağımsız bir rezervasyon gerektirir ve bazı restoranlar ana sezonun dışında kapanır."
+    ]
+  ],
+  "checks": [
+    "Bir otel deniz panoraması, deniz manzaralı bir oda veya doğrudan plaj erişimini garanti etmez.",
+    "Önemli merdivenleri bekleyin: araç bırakma ve bagaj yardımını kontrol edin.",
+    "Capri ve Amalfi'ye giden feribotlar deniz koşullarına tabidir.",
+    "Fornillo ve Spiaggia Grande, farklı yaklaşımlara sahip ayrı plajlardır.",
+    "Plaj kulüpleri, restoranlar ve transferleri bağımsız rezervasyon olarak onaylayın.",
+    "Le Sirenuse'un yayınlanan koşulları altı yaş ve altı çocukları hariç tutar; rezervasyondan önce yaş politikasını doğrulayın."
+  ],
+  "hotels": [
+    [
+      "Via Cristoforo Colombo 30  Positano merkezi",
+      "Le Sirenuse, Positano'nun merkezi yamacındaki imza otelidir. Sersale ailesinin mülkü, sıcak tonlu teraslar, sanat, yemek ve Santa Maria Assunta'ya doğru özel bir ev hissi ile ünlü bir manzara sunmaktadır. La Sponda ve barlar kimliğinin bir parçası, ancak bir masanın fotoğrafı teyit edilmiş bir restoran rezervasyonu değildir. Oda tipleri, yerleşim, teras erişimi ve tam görünüm bakımından farklıdır; rezerve edilen kategoriden daha fazla talep edin.",
+      "Oda, balkon ve merdivenleri onaylayın; Otelin yayınlanan şartları altı ve altı yaş altı çocukları hariç tutar.",
+      "Oda, balkon ve merdivenleri onaylayın; Otelin yayınlanan şartları altı ve altı yaş altı çocukları hariç tutar.",
+      "Le Sirenuse, Positano'nun merkez yamacındaki imza otelidir. Sersale ailesinin mülkü, sıcak tonlu teraslar, sanat, yemek ve Santa Maria Assunta'ya doğru ünlü bir manzarayı, özel bir ev hissi ile birlikte sunmaktadır. La Sponda ve barlar kimliğinin bir parçası, ancak bir masanın fotoğrafı teyit edilmiş bir restoran rezervasyonu değildir. Oda tipleri, yerleşim, teras erişimi ve kesin görünümden farklıdır; rezerve edilen kategoriyi talep eder."
+    ],
+    [
+      "Via Pasitea 148  rota panoramik",
+      "Via Pasitea'daki Hotel Poseidon, geleneksel aile konukseverliği ve nispeten pratik yol erişimi ile bilinen uzun köklü, daha samimi bir seçimdir. Panoramik havuzu ve terası Positano'ya bakarken, gerçek odalar manzara, balkon ve konfigürasyona göre değişir. Akdeniz iç mekanları ve yerinde yemek yemek, bu dramatik uçurum kenarındaki villalardan farklı bir konaklama tarzı olarak kalır. Sürülebilir bir yolda olmak, gezginlere bagajla yardımcı olabilir, ancak gerçek kalkışları kontrol etmelidir.",
+      "Oda kategorilerini karşılaştırın ve araç bırakma, havuz erişimi ve plaja yürümeyi onaylayın.",
+      "Oda kategorilerini karşılaştırın ve araç bırakma, havuz erişimi ve plaja yürümeyi onaylayın.",
+      "Hotel Poseidon on Via Pasitea, geleneksel aile konukseverliği ve nispeten pratik yol erişimi ile bilinen uzun köklü, daha samimi bir seçimdir. Panoramik havuzu ve terası Positano'ya bakarken, gerçek odalar görünüm, balkon ve konfigürasyon açısından farklılık gösterir. Akdeniz iç mekanları ve tesis içi yemek, bunu dramatik uçurum kenarındaki mülklerden farklı bir konaklama tarzı haline getirir. Sürüklenebilir bir yolda olmak, gezginlere bagajla yardımcı olabilir, ancak gerçek inişleri kontrol etmelidir."
+    ],
+    [
+      "Via Arienzo 30  jardins sur la cte est",
+      "Villa TreVille, en işlek merkezi Positano şeritlerinden uzakta, Arienzo'da bir villa, teras ve bahçeler kümesini kaplar. Film yönetmeni Franco Zeffirelli ile ilişkili eski mülk, samimi odalar, yemyeşil ekim, mozaikler ve denize bakan dış mekanlarla alışılmadık bir özel konut gibi hissediyor. Kesin bina ve süit meselesi: tüm mülkün bir görüntüsü her odayı tanımlamaz ve bağımsız bir yemek hareketi veya zemin önemli adımlar içerebilir.",
+      "Tam süit ve villa, adımlar, su erişimi ve Arienzo transfer düzenlemelerini onaylayın.",
+      "Tam süit ve villa, adımlar, su erişimi ve Arienzo transfer düzenlemelerini onaylayın.",
+      "Villa TreVille, en işlek merkezi Positano şeritlerinden uzakta, Arienzo'da bir villa, teras ve bahçeler kümesini kaplar. Film yönetmeni Franco Zeffirelli ile ilişkili eski mülk, samimi odalar, yemyeşil ekim, mozaikler ve denize bakan açık alanlar ile alışılmadık bir özel konut gibi hissediyor. Kesin bina ve süit meselesi: Tüm mülkün bir görüntüsü, her odayı tanımlamaz ve bağımsız bir yemek teknesi içerebilir."
+    ],
+    [
+      "Via Laurito 2  cte orientale vers Amalfi",
+      "Il San Pietro di Positano, Laurito'da, günün lojistiğini şekillendirmek için merkez Positano'dan yeterince uzak bir uçurum kenarındaki mülktür. Teraslı mimari, bahçeler ve restoranlar aracılığıyla denize yakın tesislere doğru inerek, şehirdeki otellerden gerçekten farklı bir deneyim yaratıyor. Mülkün resmi bilgileri, özellikle Positano'ya bir misafir servisini, ancak ayrıntıları, zaman çizelgeleri ve servis kullanılabilirliği, planlanan tarihler, plaj kenarı su tesisleri ve servis olanakları ile birlikte onaylanmalıdır.",
+      "Şehir mekiği, deniz seviyesinden erişim, süit yönelimi ve mevsimlik hizmetleri kontrol edin.",
+      "Şehir mekiği, deniz seviyesinden erişim, süit yönelimi ve mevsimlik hizmetleri kontrol edin.",
+      "Il San Pietro di Positano, Laurito'da, günün lojistiğini şekillendirmek için merkez Positano'dan çok uzak bir kayalık alandır. Teraslı mimari, denize yakın tesislere doğru bahçeler ve restoranlar aracılığıyla iner ve şehirdeki otellerden gerçekten farklı bir deneyim yaratır. Otelin resmi bilgileri, özellikle Positano'ya bir konuk mekiği, ayrıntılar, zaman çizelgeleri ve servis kullanılabilirliği dahil edildiğinde, oteldeki su tesislerin onaylanması gerekir."
+    ]
+  ],
+  "faq": [
+    [
+      "Positano'nun klasik kartpostal manzarası hangi oteldedir?",
+      "Le Sirenuse, Santa Maria Assunta'nın renkli yamacına ve kubbesine bakan Via Cristoforo Colombo'daki Positano'nun merkezinin üzerinde duruyor. Bir restoran fotoğrafının her süiti temsil ettiğini varsaymak yerine, belirli denize bakan oda veya teras kategorisini onaylayın."
+    ],
+    [
+      "Hotel Poseidon'a araba ile ulaşmak daha kolay mı?",
+      "Hotel Poseidon, taksilerin ve izin verilen arabaların ulaşabileceği Via Pasitea'dadır. Bu, kesinlikle yaya şeritlerindeki otellerle karşılaştırıldığında bagaj bırakma işlemini basitleştirebilir. Hala gerçek sürüş rotasını, dik gradyanları ve durak noktasından rezerve edilen odaya olan mesafeyi kontrol edin."
+    ],
+    [
+      "Villa TreVille, Spiaggia Grande'de mi?",
+      "Hayır. Villa TreVille, Spiaggia Grande'den ziyade merkezi sahilin doğusunda Arienzo'da bir mülktür. Mülk farklı villalar ve bahçeler içerir. Alışveriş şeritlerine, plajlara ve dış restoranlara yapılan geziler, konaklama için gerçekten mevcut olan hizmetlere göre ulaşım gerektirir."
+    ],
+    [
+      "Il San Pietro, Positano'nun merkezinde mi?",
+      "Hayır. Il San Pietro, Amalfi'ye doğru sahil yolu boyunca Via Laurito 2'de, yaya köy merkezinin dışında. Resmi web sitesi, Positano'ya ücretsiz bir konuk servisini anlatıyor. Gerçek tarihler için deniz seviyesindeki tesislerin hizmet saatlerini ve erişilebilirliğini yeniden teyit edin."
+    ],
+    [
+      "Spiaggia Grande ve Fornillo arasındaki fark nedir?",
+      "Spiaggia Grande, yoğun ana plaj ve gezi iskelesidir. Fornillo, merkez sahilden yürüyüş yolu ile yaklaşılmış ayrı bir plajdır. Adımları, mevcut plaj kulübü şezlonglarını ve restoranların veya özel banyo tesislerinin bağımsız rezervasyonlar gerektirebileceğini düşünün."
+    ],
+    [
+      "Positano'dan Capri'ye ve Amalfi'ye tekneler garantili mi?",
+      "Feribot tarifeleri mevsimseldir ve kabarmaya veya yüksek rüzgarlara karşı savunmasızdır. Operatörler, özellikle zirve turistik ayların dışındaki kalkışları iptal edebilir veya değiştirebilir. Her zaman resmi tarifeleri, son dönüş yelkenini ve gerektiğinde alternatif bir yol güzergahını kontrol edin."
+    ],
+    [
+      "Bosphoras üzerinden dört oteli de anında rezerve edebilir miyim?",
+      "Bu, editoryal, endeksli olmayan hedef içerik bekleyen kalite ve tedarikçi incelemesidir. Canlı oda, fiyat, özel yat veya onaylanmış Bosphoras transfer envanteri talep etmez. Olaylı rezervasyon, doğrulanmış ortak dağıtım hakları ve gerçek kullanılabilirlik gerektirir."
+    ]
+  ],
+  "photoCaptions": [
+    "Positano'nun pastel yamaç köyü canlı bir turkuaz körfez üzerinde yükseliyor.",
+    "Santa Maria Assunta'nın derin mavi Tyrrhenian Denizi'nin üstündeki Majolica-tailed kubbesi.",
+    "Spiaggia Grande, Positano'nun pastel yamacının altında turuncu ve mavi şemsiyelerle.",
+    "Positano'nun yeşil uçurumlarının altındaki Fornillo Plajı'nın turkuaz suları.",
+    "Positano'nun köy ve plajına üst kıyı bakış açısıyla güneşli bir bakış.",
+    "Arienzo, Positano'nun yakınında, yemyeşil kayalıkların altındaki küçük plajı ile koy.",
+    "Temiz su, şezlonglar ve Amalfi Kıyısı'nın dik kayalıklarıyla Laurito plajı.",
+    "Positano'da fotoğraflanan dört adet limondan yapılmış seramik baş vazosu.",
+    "Praiano'nun kayalık sahil şeridinin parlak kıyı panoramaları ve mavi denizin üzerindeki evler."
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Le Sirenuse, Positano'daki mavi mozaik yüzme havuzunun tepeden görünümü.",
+      "Le Sirenuse'da parlak fildişi tonlu konuk süiti, klasik mobilyalar ve yumuşak beyaz perdeler.",
+      "Le Sirenuse terası, Positano'nun yamacına ve denize bakan beyaz şezlonglara sahiptir."
+    ],
+    [
+      "Hotel Poseidon'da güneşli teras, şezlonglar Positano'nun yamacına bakıyor.",
+      "Hotel Poseidon konuk süiti pembe perdeli, renkli kilimli ve terasına açılan bir odadır.",
+      "Poseidon'un havuzu ve akşamın erken saatlerinde sahile bakan yemek terası."
+    ],
+    [
+      "Villa TreVille'de özel dalış havuzu, Arienzo emlak bahçelerinde bir pergolanın altında.",
+      "Villa TreVille'de Akdeniz mobilyalarını sunan turkuaz-beyaz konuk süiti.",
+      "Kıyı şeridinin üstündeki Villa TreVille'de soluk pembe cephe ve mimari detaylar."
+    ],
+    [
+      "Il San Pietro di Positano'nun Tyrrhenian Denizi'nin üzerindeki kayalık arazide havadan görünümü.",
+      "Il San Pietro konuk odası, ağaç çerçeveli deniz manzaralı bir terasa açılıyor.",
+      "Laurito sahil şeridine bakan özel balkonlu Il San Pietro'da beyaz misafir odası."
+    ]
+  ],
+  "seoTitle": "Positano: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Positano'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Sudan Positano, kiremitli bir kilise kubbesinin etrafındaki pastel binaların tek bir duvar halısı gibi görünüyor. Yine de Laurito'daki bir uçurum kenarındaki mülk, Arienzo'daki bir villa ve Via Pasitea'daki bir otel olan Via Cristoforo Colombo'daki bir oda radikal bir şekilde farklı konaklamalar sunuyor. Gerçek farklılıklar arasında merdivenler, varış noktaları, plaj erişimi ve süit manzaraları kadar ulaşım yer alıyor. Bu kılavuz, sahilin tamamını tedavi etmekten ziyade dört tanımlanabilir otel ve gerçekçi mahalleyi karşılaştırmaktadır."
+}

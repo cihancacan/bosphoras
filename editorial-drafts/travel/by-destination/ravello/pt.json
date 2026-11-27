@@ -1,0 +1,162 @@
+{
+  "name": "Ravello",
+  "country": "Itália",
+  "eyebrow": "Ravello  jardins suspensos e palácios históricos",
+  "heading": "Ravello: a arte de ficar acima da Costa Amalfitana.",
+  "intro": "Ravello é uma cidade no topo da colina, não um resort à beira-mar. Jardins medievais, música, palácios históricos e vistas longas para o mar definem a experiência. Uma suíte em torno de San Giovanni del Toro, uma sala perto da catedral e uma estadia pelos jardins de Villa Cimbrone não envolvem os mesmos arranjos de bagagem ou acesso à costa. Este guia distingue quatro propriedades verificáveis e a logística real de chegar à costa.",
+  "editorial": "Em Ravello, a questão central não é simplesmente qual palácio tem vista para o mar, mas que ritmo e logística o viajante quer. Caruso, A Belzza Hotel, ocupa um palácio histórico na Piazza San Giovanni del Toro, na Piazza San Giovanni del Toro, na sua localização na praia. O hotel está fechado para a temporada e tem planos de reabrir em 13 de abril de 2027. Não implica uma reserva de hotéis mais cedo. O Palazzo Confalone na Via San Giovanni del Toro 16 oferece outra configuração histórica da cidade; seu anexo Villa Confalone fica a cerca de vinte metros do palácio principal, e um quarto em um prédio não deve ser vendido como um quarto no outro. Piazza Duomo e Villa Rufolo terno a pé, mas Amalfi e as praias exigem transporte. Um panorama terraço não é garantia de vista para o mar individual de um quarto. O Festival de Ravello funciona em datas de desempenho particulares com admissão separada.",
+  "hotelIntro": "Quatro estadias diferentes: Palácio Belmond, Palazzo Avino, jardins Villa Cimbrone ou Palazzo Confalone.",
+  "areas": [
+    [
+      "San Giovanni del Toro  o grande palazzi",
+      "Caruso, Palazzo Avino e Palazzo Confalone se agrupam em torno de San Giovanni del Toro. Seus endereços são próximos, mas suas entradas, jardins e categorias de quartos permanecem bastante distintas. O acesso ao tráfego é restrito em certas ruas.",
+      "Confirme o edifício exato, a entrega permitida do veículo e a assistência de bagagem."
+    ],
+    [
+      "Piazza Duomo e Villa Rufolo",
+      "A catedral de Ravello abre para uma praça compacta de cafés e lojas. Villa Rufolo oferece jardins e miradouros voltados para o mar, com concertos apenas em datas agendadas. Os visitantes do dia se concentram em torno desta área.",
+      "Horas de jardim, bilhetes, acesso à torre e concertos são separados do alojamento."
+    ],
+    [
+      "Via Santa Chiara  Villa Cimbrone",
+      "A abordagem ao Hotel Villa Cimbrone está a pé através de antigas pistas e jardins. Seu parque e Infinity Terrace oferecem vistas excepcionais, mas o hotel não é alcançado por um carro diretamente na porta da frente.",
+      "Organize porterage, sapatos adequados e mobilidade familiar para a abordagem somente para pedestres."
+    ],
+    [
+      "Scala e a perspectiva da montanha interior",
+      "Além das ruas centrais de Ravello, a perspectiva se volta para Scala e encostas arborizadas no interior. Uma sala virada para a montanha não é intercambiável com uma suíte voltada para o mar com vista para o Golfo.",
+      "Não prometa a costa das salas voltadas para Scala; confirme a orientação exata."
+    ],
+    [
+      "Marmorata e a água  abaixo de Ravello",
+      "O Palazzo Avino's Clubhouse by the Sea está lá, com condições sazonais e de disponibilidade, e requer uma transferência de estrada ou um serviço de transporte organizado.",
+      "Verifique datas de abertura, plataformas de praia e transporte; uma piscina do palácio não é o mar."
+    ]
+  ],
+  "experiences": [
+    [
+      "A inspiração do jardim de Wagner e Villa Rufolo",
+      "Explore os jardins e a arquitetura histórica da Villa Rufolo na Piazza Duomo. A fundação restringe o acesso à torre do museu para crianças com cinco anos ou mais. Verifique o horário de funcionamento sazonal e a admissão na entrada."
+    ],
+    [
+      "Terraço Infinito em Villa Cimbrone",
+      "O terraço de mármore e seu imenso panorama costeiro são destaques de Ravello. Os jardins são uma atração patrimonial com termos de visita, distintos de qualquer suíte ou amenidade privada do hotel."
+    ],
+    [
+      "Um concerto no Festival Ravello",
+      "Escolha uma performance real da Fundação Ravello no Belvedere ou auditório e reserve bilhetes separadamente. Os programas e as condições de acesso mudam por data; uma estadia no hotel não inclui uma cadeira de concerto."
+    ],
+    [
+      "Explore Amalfi e Atrani abaixo de Ravello",
+      "Contraste Ravello elevado com Amalfi e Atrani na costa. Alguns caminhos de descida são longos e íngremes, então use uma transferência rodoviária organizada quando crianças pequenas ou mobilidade reduzida tornam as caminhadas inadequadas."
+    ],
+    [
+      "Aperitivo sobre os telhados de Ravello",
+      "Desfrute de um terraço com um ponto de vista confirmado após a saída dos viajantes mais movimentados. Restaurantes de jantar requintados, bares de hotel e terraços acessíveis ao público têm políticas de reserva diferentes."
+    ]
+  ],
+  "checks": [
+    "O site de Caruso anuncia a reabertura em 13 de abril de 2027; reconfirmar antes de citar.",
+    "Ravello está acima do nível do mar: os quartos no topo da colina não têm acesso imediato à praia.",
+    "Villa Cimbrone requer uma abordagem pedonal, mesmo com bagagem e crianças.",
+    "O clube Marmorata do Palazzo Avino é sazonal e separado do palácio.",
+    "Palazzo Confalone e Villa Confalone são dois edifícios diferentes.",
+    "A torre do museu Villa Rufolo exclui crianças menores de cinco anos."
+  ],
+  "hotels": [
+    [
+      "Piazza San Giovanni del Toro 2  perché aldeia",
+      "Caruso é um palácio do século XI acima do Golfo com jardins exuberantes e uma piscina panorâmica de borda infinita celebrada. É um grande hotel no topo da colina, não um resort à beira-mar. Os quartos e suítes individuais podem variar em proporções, características históricas, varandas e perspectivas: o famoso panorama da piscina não é uma promessa sobre todos os quartos. Conforme verificado em 27 de outubro de 2026, o site oficial de Belmond afirma que Caruso está fechado para a temporada e reabre em 13 de abril 2027;",
+      "O fechamento sazonal é anunciado até 13 de abril de 2027; confirme datas, suíte exata e transferências.",
+      "O fechamento sazonal é anunciado até 13 de abril de 2027; confirme datas, suíte exata e transferências.",
+      "Caruso é um palácio do século XI acima do Golfo, com jardins exuberantes e uma piscina panorâmica de borda infinita celebrada. É um grande hotel no topo da colina, não um resort à beira-mar; Os quartos e suítes individuais podem nunca anunciar a categoria de uso da praia; Os quartos e suítes individuais podem variar em proporções, características históricas, varandas e perspectivas: o famoso panorama da piscina não é uma promessa sobre todos os quartos. Conforme verificado em 27 de outubro de 2026, o site oficial de Belmond afirma que Caruso está fechado para a temporada."
+    ],
+    [
+      "Via San Giovanni del Toro 28  palais historique",
+      "O Palazzo Avino habita um palácio histórico de Ravello e combina interiores artful, terraços virados para o mar, jantar e bem-estar. Rossellini, os bares e as datas de piscina do hotel formam automaticamente a experiência, mas não garantem uma mesa de restaurante ou tratamento sem confirmação prévia. Os quartos voltados para a montanha e voltados para o mar oferecem vistas diferentes; solicite a categoria reservada precisa. O Clubhouse by the Sea da propriedade não está disponível no topo da colina de Ravello, mas na costa da Marmora.",
+      "O Marmorata Clubhouse by the Sea é separado do palácio; verifique as datas de abertura e a elegibilidade.",
+      "O Marmorata Clubhouse by the Sea é separado do palácio; verifique as datas de abertura e a elegibilidade.",
+      "O Palazzo Avino habita um palácio histórico de Ravello e combina interiores artful, terraços voltados para o mar, restaurantes e bem-estar. Rossellini, os bares e as datas de abertura da piscina do hotel formam automaticamente a experiência, mas não garantem uma mesa de restaurante ou tratamento sem confirmação prévia. Os quartos voltados para a montanha e voltados para o mar oferecem vistas diferentes; solicite a categoria reservada precisa. O Clubhouse by the Sea da propriedade não está disponível no topo da Ravello."
+    ],
+    [
+      "Via Santa Chiara 26  accs piéton aux jardins",
+      "O Hotel Villa Cimbrone ocupa uma residência histórica cercada por jardins célebres em um dos ambientes mais atmosféricos de Ravello. Seus quartos e suítes refletem a arquitetura antiga, incluindo afrescos, lareiras ou pisos de majólica em categorias selecionadas. O famoso Infinity Terrace faz parte da identidade do jardim da propriedade, mas a vista desse ponto de vista público nunca deve ser apresentada como a vista de cada suíte. O hotel diz explicitamente que sua abordagem é apenas para pedestres, a cerca de dez minutos.",
+      "Abordagem apenas para pedestres; verifique porterage, pushchairs, passos e perspectivas de quarto.",
+      "Abordagem apenas para pedestres; verifique porterage, pushchairs, passos e perspectivas de quarto.",
+      "O Hotel Villa Cimbrone ocupa uma residência histórica cercada por jardins célebres em um dos ambientes mais atmosféricos de Ravello. Seus quartos e suítes refletem a arquitetura antiga, incluindo afrescos, lareiras e pisos de majólica em categorias selecionadas. O famoso Infinity Terrace faz parte da identidade do jardim da propriedade, mas a vista desse ponto de vista público nunca deve ser apresentada como a vista de cada suíte. O hotel diz explicitamente que sua abordagem é apenas para pedestres, a cerca de dez minutos."
+    ],
+    [
+      "Via San Giovanni del Toro 16  centro histórico",
+      "Palazzo Confalone é um palácio histórico de um palácio histórico a uma curta caminhada do centro de Ravello, com um átrio revestido de cerâmica e detalhes arquitetônicos preservados. Seu terraço jardim abre para a costa, enquanto os quartos ocupam diferentes partes e níveis da propriedade. O hotel distingue o Palazzo Confalone histórico da Villa Confalone, um anexo contemporâneo a cerca de vinte metros de distância. Confirme qual edifício o quarto reservado ocupa porque o layout, a perspectiva e a experiência de chegada diferem. Via San Giovanni delro",
+      "Palácio histórico ou Villa Confalone anexo 20 m de distância: check building e acesso restrito ao tráfego.",
+      "Palácio histórico ou Villa Confalone anexo 20 m de distância: check building e acesso restrito ao tráfego.",
+      "O Palazzo Confalone é um palácio histórico a uma curta caminhada do centro de Ravello, com um anexo de tráfego limitado de cerâmica e detalhes arquitetônicos preservados. Seu terraço jardim abre para a costa, enquanto os quartos ocupam diferentes partes e níveis da propriedade. O hotel distingue o histórico Palazzo Confalone da Villa Confalone, um anexo contemporâneo a cerca de vinte metros de distância. Confirme qual edifício o quarto reservado ocupa porque o layout, a perspectiva e a experiência de chegada diferem. Via San Giovanni delro"
+    ]
+  ],
+  "faq": [
+    [
+      "Ravello é um resort à beira-mar?",
+      "Não. Ravello é elevado acima da Costa Amalfitana e é valorizado por jardins, história e pontos de vista, em vez de acesso imediato à praia de areia. Chegar a Amalfi ou Marmorata requer uma transferência de estrada real ou outro arranjo confirmado."
+    ],
+    [
+      "Belmond Caruso está recebendo hóspedes no momento?",
+      "Em 27 de outubro de 2026, o site Belmond afirma que Caruso está sazonalmente fechado e reabrirá em 13 de abril de 2027. Seria enganoso oferecer novembro de 2026 quartos sem nova confirmação oficial. Os tipos de quartos, datas e taxas dependem da disponibilidade do fornecedor ao vivo."
+    ],
+    [
+      "Posso dirigir diretamente para o Hotel Villa Cimbrone?",
+      "Não. As instruções oficiais do hotel descrevem uma abordagem apenas para pedestres, a aproximadamente dez minutos do centro histórico de Ravello. Viajantes com crianças, carrinhos de bebê ou malas grandes devem confirmar a portabilidade de bagagem e os arranjos de acessibilidade com antecedência."
+    ],
+    [
+      "O clube de praia do Palazzo Avino está localizado no hotel?",
+      "Não. O Clubhouse by the Sea está em Marmorata, na costa abaixo de Ravello. O site do hotel descreve o uso do hóspede sujeito à disponibilidade, uma temporada operacional definida e arranjos de transporte. Serviços separados ou espreguiçadeiras devem ser reconfirmados para a estadia."
+    ],
+    [
+      "Palazzo Confalone e Villa Confalone são o mesmo edifício?",
+      "Não. O hotel descreve o seu palácio histórico e Villa Confalone como dois edifícios com cerca de vinte metros de distância. Um quarto reservado no anexo não pode ser representado pela fotografia de uma suite no palácio histórico. Verifique o edifício, a vista do quarto e a entrega de bagagem."
+    ],
+    [
+      "Crianças podem visitar Villa Rufolo?",
+      "O jardim é visitável durante as horas publicadas, mas Fondazione Ravello restringe a entrada na sua torre do museu para crianças com cinco anos ou mais. Admissão geral do jardim, ingressos para concertos e quaisquer arranjos de visitas guiadas são separados."
+    ],
+    [
+      "Bosphoras pode confirmar quartos disponíveis ou ingressos para concertos agora?",
+      "Esta página é um rascunho editorial mantido fora da indexação de pesquisa. Nenhuma acomodação, transferências, ingressos ou preços são reivindicados como confirmados sem a disponibilidade real do fornecedor e os arranjos de distribuição autorizados do hotel."
+    ]
+  ],
+  "photoCaptions": [
+    "Cama de flor e pérgola nos jardins históricos Villa Rufolo de Ravello.",
+    "Mármore sobre o mar no Terraço do Infinito em Villa Cimbrone.",
+    "A fachada da Catedral de Ravello e a Piazza Duomo cheia de visitantes.",
+    "Igreja de San Giovanni del Toro em Ravello, seu exterior medieval e torre sineira.",
+    "A costa costeira de Minori e o Mar Tirreno são vistos de Ravello elevado.",
+    "Aldeia Scala nas encostas esplanadas das montanhas Lattari perto de Ravello.",
+    "O Marmorata Clubhouse à beira-mar, separado do Palazzo Avino, com plataformas rochosas e caiaques.",
+    "Auditório Oscar Niemeyer de Ravello com vista para o mar ao pôr do sol.",
+    "Aldeia costeira de Atrani e arcadas perto de Amalfi, fotografada do nível do mar."
+  ],
+  "hotelCaptionGroups": [
+    [
+      "A piscina de beiral infinito da encosta de Caruso, com vista para a costa de Amalfi a partir de Ravello.",
+      "Sala de estar Suite em Caruso com um tecto abobadado pintado, livros e assentos azuis.",
+      "Quarto de hóspedes Caruso mobiliado em creme e ocre com detalhes esculpidos clássicos."
+    ],
+    [
+      "Piscina no Clubhouse separado do Palazzo Avino à beira-mar em Marmorata, não no hotel no topo da colina.",
+      "Banheira de hidromassagem privada virada para o mar no terraço Belvedere Suite no Palazzo Avino.",
+      "Fachada cor-de-rosa iluminada pelo sol do Palazzo Avino emparelhado com um close-up de folhagem citrina."
+    ],
+    [
+      "Vista aérea do crepúsculo da propriedade histórica de Villa Cimbrone, jardins e piscina iluminada.",
+      "Suíte histórica Villa Cimbrone com teto afresco, lareira esculpida e móveis de carmim.",
+      "Quarto de hóspedes Villa Cimbrone com teto abobadado decorado e mobiliário com decoração verde."
+    ],
+    [
+      "Atrium histórico do Palazzo Confalone com colunas medievais e piso de azulejos com padrão azul.",
+      "O jardim do Palazzo Confalone organizou uma cerimônia com cadeiras brancas sob a glicínia.",
+      "Terraço com forro de flores do Palazzo Confalone com vista para as montanhas e o mar."
+    ]
+  ],
+  "seoTitle": "Ravello: estadias de luxo, áreas e experiências",
+  "hotelSeoTitle": "Hotéis de luxo em Ravello: guia com curadoria",
+  "seoDescription": "Ravello é uma cidade no topo da colina, não um resort à beira-mar. Jardins medievais, música, palácios históricos e vistas longas para o mar definem a experiência. Uma suíte em torno de San Giovanni del Toro, uma sala perto da catedral e uma estadia pelos jardins de Villa Cimbrone não envolvem os mesmos arranjos de bagagem ou acesso à costa. Este guia distingue quatro propriedades verificáveis e a logística real de chegar à costa."
+}

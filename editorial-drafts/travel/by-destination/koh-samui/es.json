@@ -1,0 +1,148 @@
+{
+  "name": "Koh Samui",
+  "country": "Tailandia",
+  "eyebrow": "El lujo de la isla más tranquila de Tailandia",
+  "heading": "Koh Samui: más despacio, permanece extraordinario.",
+  "intro": "Koh Samui invita a un ritmo diferente: villas enmarcadas en coco, almuerzos lentos junto al mar y un horizonte dorado sobre el Golfo de Tailandia. Su elección de costa y hotel importa más que cualquier itinerario de isla genérico.",
+  "editorial": "Escoge tu costa antes de tu resort. Taling Ngam es sobre puestas de sol, el noreste sobre el acceso pacífico, Lamai sobre bahías protegidas y Bophut sobre la comida. Una villa de piscina no garantiza el acceso frente al mar o la misma vista al mar. Diciembre a abril es a menudo el período más confiable; finales del otoño es generalmente más húmedo.",
+  "hotelIntro": "Cuatro hoteles de lujo en Koh Samui, escogidos para cuatro experiencias distintas de la isla: hospitalidad atemporal frente a la playa, bienestar guiado por la naturaleza, una bahía privada y espectaculares puestas de sol.",
+  "areas": [
+    [
+      "Taling Ngam · costa de puesta del sol",
+      "En la orilla sudoccidental, las cinco islas se sientan en alta mar y las puestas de sol marcan el ritmo. Este es un lugar para quedarse, no para llenar todas las noches con salidas.",
+      "Permite traslados más largos a playas y restaurantes concurridos."
+    ],
+    [
+      "Plai Laem · pacífico noreste",
+      "Las cabeceras, las pequeñas calas y la vegetación exuberante dan al noreste una sensación de retiro tranquilo sin colocarlo lejos del aeropuerto.",
+      "Confirme pendientes, condiciones del mar y acceso a la playa nadable."
+    ],
+    [
+      "Lamai · bahías protegidas",
+      "El sureste combina playas, exuberantes laderas y refugios turísticos, adecuados para días de spa y salidas ocasionales al pueblo.",
+      "Un discurso Lamai puede estar demasiado lejos de la aldea para caminar."
+    ],
+    [
+      "Bophut · comida en la isla",
+      "Fisherman's Village ofrece restaurantes frente al mar y tiendas independientes, un contraste más animado con los complejos de piscina-villa.",
+      "El ambiente nocturno y la calma frente a la playa varían significativamente según la ubicación exacta."
+    ],
+    [
+      "Mae Nam · costa de coco",
+      "La costa norte ofrece una larga playa, palmeras y vistas hacia Koh Phangan: un entorno encantador para estancias sin prisas.",
+      "Las condiciones del mar y la profundidad del baño cambian con la temporada."
+    ]
+  ],
+  "experiences": [
+    [
+      "Un día en el agua",
+      "Alquilar un barco cuando las condiciones lo permitan y descubrir las islas costeras del Golfo, con la ruta y las inclusiones de combustible confirmadas de antemano."
+    ],
+    [
+      "Un ritual de bienestar más lento",
+      "Masaje tailandés, salas de tratamiento con jardín y una cena sin prisas hacen del bienestar una parte natural del ritmo de la isla."
+    ],
+    [
+      "Puesta del sol en la orilla occidental",
+      "Llegar a la costa occidental antes de la puesta del sol y ver las siluetas de las cinco islas; es un panorama regional, no una vista de villa garantizada."
+    ]
+  ],
+  "checks": [
+    "Verifique la villa exacta, piscina privada, verdadera vista al mar y configuración del dormitorio.",
+    "Elija una costa basada en los tiempos de traslado, playa utilizable y planes de noche.",
+    "Confirme las instalaciones que operan en sus fechas, particularmente en Six Senses a finales de 2026.",
+    "Verifica las condiciones de cancelación, impuestos, transferencias y extras antes de pagar."
+  ],
+  "hotels": [
+    [
+      "Ang Thong · côte nord-ouest",
+      "Situado en una colina cubierta de coco sobre una playa tranquila, Four Seasons combina villas de piscina privada, cálida hospitalidad tailandesa y vistas panorámicas al Golfo. La experiencia difiere entre villas de un dormitorio y residencias de varios dormitorios; confirme la perspectiva y el diseño exactos.",
+      "Verifique la categoría exacta de villa, accesibilidad a la ladera, traslados internos e instalaciones familiares.",
+      "Para servicio legendario, familias y villas tropicales frente al mar.",
+      "En la costa noroeste de Koh Samui, Four Seasons organiza sus villas a través de cocoteros que descienden al mar. El estado de ánimo equilibra la privacidad con una experiencia completa de resort: playa, restaurantes y una variedad de categorías de villas y residencias. No asuma una piscina fotografiada, perspectivas o disposición se aplica a cada villa."
+    ],
+    [
+      "Plai Laem · nórdico",
+      "En la aislada cabecera norteña, Six Senses Samui favorece los materiales naturales, las mañanas lentas y un enfoque de bienestar. Algunas villas tienen vistas al mar, otras a los jardines, y no todas las categorías tienen una piscina privada.",
+      "Confirme la categoría de la villa y las instalaciones de funcionamiento: la piscina principal y el comedor en la colina se pausan temporalmente del 7 de octubre al 30 de noviembre de 2026.",
+      "Para reconectarse con la naturaleza, ralentizarse y el bienestar.",
+      "En un tranquilo cabo norteño, Six Senses se siente como un pueblo de pescadores contemporáneo entre los jardines tropicales. Villas difieren en perspectiva y piscina privada. Mejoras en el complejo afectan a la piscina principal y Comer en la colina en octubre-noviembre 2026; reconfirmar las comodidades disponibles antes de comprometerse."
+    ],
+    [
+      "Lamai · baie privée",
+      "Banyan Tree Samui se encuentra en una bahía privada cerca de Lamai, con villas de piscina en la ladera, vistas tropicales y una fuerte identidad de spa. Se siente como un retiro autónomo en lugar de una dirección para caminar a la vida nocturna.",
+      "Las categorías de piscina-villa ofrecen diferentes vistas y diseños; el acceso alrededor de la ladera del complejo puede implicar traslados internos.",
+      "Para una escapada íntima en una bahía protegida con piscina privada y spa.",
+      "Enclavado en una bahía protegida cerca de Lamai, Banyan Tree gira alrededor de villas privadas, sus terrazas y piscinas. El spa y la playa privada lo convierten en un destino de estancia convincente. Compare cuidadosamente las categorías de villa: panorama, tamaño, acceso y diseños familiares pueden diferir significativamente."
+    ],
+    [
+      "Taling Ngam · côte sud-ouest",
+      "En la tranquila costa sudoccidental, Conrad Koh Samui enmarca las cinco islas y notables puestas de sol de las villas de ladera de piscina privada. Este es un paisaje-primer escape, deliberadamente eliminado de las playas del norte concurridas.",
+      "Espere un terreno empinado y viajes más largos a los principales distritos gastronómicos; verifique la vista real de la villa y los arreglos de transferencia.",
+      "Para espectaculares puestas de sol, piscinas privadas y aislamiento de laderas.",
+      "En la costa suroeste, las villas de Conrad tienen vistas al mar y a las cinco islas. Sundown es un ritual diario aquí, con una privacidad excepcional y vistas de largo alcance. La posición espectacular de la ladera y la distancia de los pueblos son parte de la experiencia y deben ser considerados para las familias."
+    ]
+  ],
+  "faq": [
+    [
+      "¿Dónde deberías quedarte en Koh Samui?",
+      "Elige Taling Ngam para atardeceres tranquilos, Plai Laem para un entorno aislado pero accesible, Lamai para bahías protegidas y Bophut para cenas frente al mar y paseos por la noche."
+    ],
+    [
+      "¿Qué hoteles de lujo vale la pena considerar en Koh Samui?",
+      "Four Seasons se adapta a las familias y el lujo tropical clásico; Six Senses se centra en el bienestar; Banyan Tree ofrece un retiro privado; Conrad es particularmente convincente para las espectaculares villas al atardecer. Siempre compare la categoría de villa exacta."
+    ],
+    [
+      "Koh Samui o Phuket para unas vacaciones de lujo?",
+      "Koh Samui a menudo se siente más suave y más centrado en la villa, mientras que Phuket ofrece una amplia variedad de barrios y vida nocturna."
+    ],
+    [
+      "¿Cuándo es el mejor momento para visitar Koh Samui?",
+      "Diciembre a abril es generalmente un momento popular para los viajes en la playa. Octubre y noviembre pueden ser más húmedos, y las condiciones varían año a año; ver pronósticos antes de reservar viajes en barco."
+    ],
+    [
+      "¿Cuánto tiempo deberías quedarte en Koh Samui?",
+      "De cuatro a seis noches ofrece tiempo para un descanso relajado de la isla. Seis a ocho noches permite más tiempo para spas, excursiones en barco privado y días no estructurados junto a la piscina."
+    ],
+    [
+      "¿Es Koh Samui adecuado para familias?",
+      "Sí, especialmente en villas más grandes con servicios familiares. Confirme los arreglos de dormitorio, seguridad de la piscina, gradientes internos e instalaciones adaptadas a los niños antes de reservar."
+    ]
+  ],
+  "photoCaptions": [
+    "Playa de Mae Nam sombreada por cocoteros en Koh Samui",
+    "Taling Ngam costa al atardecer",
+    "Templo Wat Plai Laem en el noreste de Koh Samui",
+    "Playa Lamai y paisaje tropical",
+    "Bophut Fisherman's Village, frente al mar",
+    "Islas y aguas turquesas en Ang Thong Marine Park",
+    "Gran templo de Buda en Koh Samui",
+    "Chaweng frente a la playa en Koh Samui",
+    "Playa de plata cerca de Lamai en Koh Samui"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Villa privada con vistas al Golfo en Four Seasons Koh Samui",
+      "Vista aérea de Four Seasons Resort Koh Samui playa y villas en laderas",
+      "Cena junto al mar en Four Seasons Resort Koh Samui"
+    ],
+    [
+      "Villa en piscina en Six Senses Samui",
+      "Seis sentidos Samui spa y bienestar",
+      "Entorno costero en Six Senses Samui"
+    ],
+    [
+      "Villa privada en la piscina Banyan Tree Samui",
+      "Banyan Tree Samui bahía privada",
+      "Banyan Tree Samui instalaciones de bienestar"
+    ],
+    [
+      "Piscina al atardecer en Conrad Koh Samui",
+      "Conrad Koh Samui piscina infinita frente a las cinco islas",
+      "Vista aérea de Conrad Koh Samui villas en la colina"
+    ]
+  ],
+  "seoTitle": "Koh Samui: estancias de lujo, áreas y experiencias",
+  "hotelSeoTitle": "Hoteles de lujo en Koh Samui: guía comisariada",
+  "seoDescription": "Koh Samui invita a un ritmo diferente: villas enmarcadas en coco, almuerzos lentos junto al mar y un horizonte dorado sobre el Golfo de Tailandia. Su elección de costa y hotel importa más que cualquier itinerario de isla genérico."
+}

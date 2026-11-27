@@ -1,0 +1,178 @@
+{
+  "name": "Langkawi",
+  "country": "Malezya",
+  "eyebrow": "Malezya  yağmur ormanları, koylar ve Andaman Denizi",
+  "heading": "Langkawi, yağmur ormanlarının Andaman Denizi ile buluştuğu yer.",
+  "intro": "Korunan koylardan parlak plajlara, manzaranın konaklama hızınızı belirlediği bir Malezya adasına.",
+  "editorial": "Langkawi sadece bir plaj yeri değildir. Malezya'nın kuzeybatısındaki bu takımadalar ormanlık araziler, sığ sular ve kireçtaşı adalarının ardışıkıdır. UNESCO Global Geoparkı dikkate değer bir doğa tarihini yansıtmaktadır. Varışta, en yararlı karar, yalnızca fotoğraflardaki otelleri karşılaştırmak yerine hangi koyda kalınacağıdır.\n\nTanjung Rhu çarpıcı bir giriştir: uzun bir plaj, açık su ve açık deniz adacıkları. Gelgit, kalıcı yollar olmayan kumbarları ortaya çıkarır. Kilim'in mangrovlarında yönlendirilmiş bir gezi, kireçtaşı duvarları, su yolları ve sular altında kalan ormanlık alan ile kıyının başka bir tarafını gösterir. Hayvanları besleyen bir gezi yerine vahşi yaşam bilinçli bir rota seçin.\n\nKuzeybatıda, Datai Bay ormanlık bir konaklama sunuyor. Kanopide yüksek bir oda ve doğrudan sahilde bir villa çok farklı deneyimlerdir. Büyük tatil köyleri içindeki yollar ve mesafeler, özellikle aileler için görünümden daha önemli olabilir. Pantai Kok ve Telaga Limanı çevresindeki batı kıyısı, Machinchang'a yakınlığı olan korunaklı ankrajları birleştirir. Hava durumu etrafında SkyCab ve SkyBridge'de yarım gün plan yapın: bulutlar ve hizmet kesintileri değişebilir.\n\nGüneybatıdaki Cenang ve Tengah, yemek ve dükkanlar için uygunken, Kuah yakınlarındaki koylar kasaba tesislerini ve sahili farklı bir şekilde dengeler. Dayang Bunting ve tatlı su gölü de dahil olmak üzere güney adaları, bir tekne gezisine kendilerini ödünç verir. Tatil yerinizin ve plajınızın tadını çıkarmak için en az bir gün transferlerden uzak tutun.\n\nDört ila beş gece, iki doğa gezisi, bir keşif ve rahatlama günü için ilk ziyaret alanı verir. Sadece adayı keşfetmek için otel değiştirmeye gerek yoktur. LGK havaalanı ve feribot terminalleri ayrı varış noktalarıdır; Sürücünüzle kesin buluşma yerini doğrulayın. Genellikle Aralık-Mart ayları genellikle plaj ziyaretlerine uygundur, ancak hiçbir dönem yağmursuz günleri garanti etmez. Gezinti koşullarını, şelale erişimini, çalışma saatlerini ve yerel rehberliği kontrol edin.\n\nKonaklamayı seçerken, mevcut olan kategoriyi kontrol edin: bahçe odaları, kısmi deniz manzaraları, yağmur ormanı villaları ve doğrudan plaj villaları değiştirilebilir değildir. Aileler için, doluluk, ekstra yataklar ve güvenli havuz erişimini düşünün. Fiyatlar, oda kullanılabilirliği ve iptal koşulları, rezervasyon ortağı tarafından satın alma sırasında gösterilenlerdir.",
+  "hotelIntro": "Ormanlık arazilerden kuzey sahillerine ve batı-koast koylarına kadar, seçimimiz her bir mülkün yerini ve karakterini önceliklendirir.",
+  "areas": [
+    [
+      "Tanjung Rhu",
+      "Kuzey kıyısı soluk kumu ve kireçtaşı adacıklarının siluetlerini birleştirir. Daha yavaş bir sahil kenarı konaklaması, değişen gelgitleri takdir etmek için zaman sağlar.",
+      "Erişim ve yüzme kısıtlamalarını kontrol edin; gelen bir gelgitte kum çubuklarını geçmeyin."
+    ],
+    [
+      "Datai Bay",
+      "Kuzeybatı körfezi, kıyı şeridine ulaşan ormanı için ayırt edicidir. Konaklama, plaj ve tesisler arasındaki mesafeler emlak düzenine bağlıdır.",
+      "Geziler için araba yolculukları planlayın ve plaja erişim koşullarını onaylayın."
+    ],
+    [
+      "Pantai Kok ve Telaga Limanı",
+      "Batı-koast ankrajları ve baş kısımları, teleferik ve şelaleler için pratik bir üs olan Machinchang aralığının yanında yer almaktadır.",
+      "Hava durumunu, çalışma saatlerini ve teleferik hizmetini kontrol edin."
+    ],
+    [
+      "Kilim ve Mangrovlar",
+      "Kilim'in kireçtaşı oluşumları mangrov su yollarını çerçeveler. Rehberli bir gezi parkın jeolojisini ve ekosistemlerini ortaya çıkarır.",
+      "Yaban hayatı bilinçli bir operatör seçin ve vahşi hayvanları beslemekten kaçının."
+    ],
+    [
+      "Pantai Cenang ve Pantai Tengah",
+      "Güneybatı sahilleri restoranlara, mağazalara ve hizmetlere yakındır. Cenang, tenha kuzey koylarından daha canlıdır.",
+      "Sessiz bir konaklama tercih ederseniz gürültü ve trafiği kontrol edin."
+    ],
+    [
+      "Kuah ve güney adaları",
+      "Kuah ana şehir merkezidir, Dayang Bunting ise jeopark içinde bir orman ve göl manzarası sunmaktadır.",
+      "Tekne programları ve doğal sitelere erişim koşullara bağlıdır."
+    ]
+  ],
+  "experiences": [
+    [
+      "SkyCab ve Machinchang yükseklikleri",
+      "Net havalarda dağ bakış açılarına yönelin. SkyBridge erişimi ayrı bir ziyarettir ve koşullara bağlıdır."
+    ],
+    [
+      "Kilim mangrovları",
+      "Su yollarını yerel bir rehberle keşfedin, yaban hayatı beslemeden kireçtaşı oluşumlarına zaman ayırın."
+    ],
+    [
+      "Tanjung Rhu'da bir plaj günü",
+      "Kumun ve değişen gelgit manzarasının tadını çıkarın, izin verilen yüzme alanlarında kalın."
+    ],
+    [
+      "Telaga Tujuh şelaleleri",
+      "Orman manzarasını ve şelaleleri uygun ayakkabılarla keşfedin. Islak kayalar ve şiddetli yağmur özel bakım gerektirir."
+    ],
+    [
+      "Dayang Bunting ve Andaman Denizi",
+      "Deniz koşullarına, göl erişimine ve park kurallarına bağlı olarak bir tekne gezisi düzenleyin."
+    ]
+  ],
+  "checks": [
+    "Varış noktasını onaylayın: LGK havaalanı veya feribot terminali.",
+    "Plaj erişimini ve odanın gerçek görünümünü karşılaştırın.",
+    "Çocukların tam yaşları için yatakları ve dolulukları kontrol edin.",
+    "Denize açılmadan önce hava durumunu ve gelgitleri kontrol edin.",
+    "Oran dahil edilmelerini ve iptal koşullarını onaylayın."
+  ],
+  "hotels": [
+    [
+      "Datai Körfezi  fort tropikale",
+      "Kanopi Koleksiyonu ana havuza yakındır; Yağmur Ormanı villaları ormana dağılmışken, Plaj Villaları özel havuzlarla kıyıya açılır.",
+      "Küçük çocuklarla seyahat ederken veya adımsız erişim ararken orman yollarını ve yükseklik değişikliklerini düşünün.",
+      "Yağmur ormanlarına dalmak için.",
+      "Canopy Koleksiyonu ana havuza yakındır; Yağmur Ormanı villaları ormana dağılırken, Plaj Villaları özel havuzlarla kıyıya açılır. Küçük çocuklarla seyahat ederken veya adımsız erişim ararken orman yollarını ve yükseklik değişikliklerini düşünün."
+    ],
+    [
+      "Tanjung Rhu  cte nord",
+      "Tanjung Rhu'daki Malay ve Mağribi esintili pavyonlar ve villalar. Havuzlu ve bahçe pavyonlu plaj Villaları farklı deneyimler sunar.",
+      "Aile villalarının kategoriye özgü doluluk ve yaş sınırları vardır; havuz güvenliğini de kontrol edin.",
+      "Geniş bir plaj ve aile villaları için.",
+      "Tanjung Rhu'daki Malay ve Mağribi esintili pavyonlar ve villalar. Havuzlu ve bahçe pavyonlu plaj villaları farklı deneyimler sunar. Aile villaları kategoriye özgü doluluk ve yaş sınırlarına sahiptir; havuz güvenliğini de kontrol edin."
+    ],
+    [
+      "Teluk Nibung  cte ouest",
+      "Yağmur ormanları ve Andaman Denizi arasında korunaklı bir koyda bir tatil beldesi. Okyanus Cephesi, Plaj ve Yağmur Ormanı villalarının her biri manzaraya farklı bir bağlantı sunar.",
+      "Okyanus manzarasını, doğrudan plaj erişimini ve özel havuzu ayırt edin; tam villa kategorisini onaylayın.",
+      "Korunmuş bir koy ve su üstü pavyonlar için.",
+      "Yağmur ormanları ve Andaman Denizi arasında korunaklı bir koyda bir tatil beldesi. Okyanus Cephesi, Plaj ve Yağmur Ormanı villalarının her biri manzaraya farklı bir bağlantı sunar. Okyanus manzaralarını, doğrudan plaj erişimini ve özel bir havuzu ayırt edin; tam villa kategorisini doğrulayın."
+    ],
+    [
+      "Jalan Pantai Beringin  Kuah",
+      "Kuah yakınlarında bir sahil adresi. Süitler, farklı manzaralı odalar ve gün batımı villalar otel konforları ve özel inzivalar arasında bir seçim sunuyor.",
+      "Görünümü, lagün erişimini, uşak servisini ve tarife dahillerini kontrol edin.",
+      "Süitler ve süpürme deniz manzarası için.",
+      "Kuah yakınlarında bir sahil adresi. Süitler, farklı görünümlere sahip odalar ve gün batımı villalar otel konforları ve özel inzivalar arasında bir seçim sunar. Görünümü, lagün erişimini, uşak hizmetini ve tarife dahiliyetlerini kontrol edin."
+    ]
+  ],
+  "faq": [
+    [
+      "Langkawi nerede?",
+      "Tayland sınırına yakın Andaman Denizi'nde Malezya'nın kuzeybatısında."
+    ],
+    [
+      "Hangi bölge plaja uygun?",
+      "Tanjung Rhu ada manzarası, orman için Datai Körfezi ve yemek ve dükkanlar için Cenang veya Tengah."
+    ],
+    [
+      "Kaç gece planlamalıyım?",
+      "Dört ila beş gece doğa gezileri ve otel saatleri için yararlı bir başlangıç noktası sağlar."
+    ],
+    [
+      "Hangi aylar daha iyi?",
+      "Aralık-Mart ayları genellikle daha kuraktır, ancak yağmur hala mümkündür."
+    ],
+    [
+      "Langkawi Jeoparkı Nedir?",
+      "Machinchang, Kilim ve Dayang Bunting'deki doğal alanları içeren bir UNESCO Küresel Jeoparkı."
+    ],
+    [
+      "SkyBridge'i her gün ziyaret edebilir miyim?",
+      "Hava durumu ve bakım erişimi etkileyebilir; resmi işletim bilgilerini kontrol edin."
+    ],
+    [
+      "Balıkçı köylerini ve mangrovları keşfedebilir miyim?",
+      "Rehberli geziler mevcuttur. Rotayı, navigasyon koşullarını ve yaban hayatı koruma kurallarını onaylayın."
+    ],
+    [
+      "Tüm villaların özel havuzları var mı?",
+      "Hayır. Oda kategorilerini ayırt edin ve tedarikçinin tam açıklamasını kontrol edin."
+    ],
+    [
+      "Otele nasıl gidebilirim?",
+      "Tedarikçiye kesin varış noktasını verin; havaalanı ve feribot terminalleri ayrıdır."
+    ],
+    [
+      "Fotoğraflar rezerve edilen odayı garanti ediyor mu?",
+      "Hayır. Fotoğraflar oteli gösterir; rezerve edilen kategori, olanaklar ve koşulları onaylayın."
+    ]
+  ],
+  "photoCaptions": [
+    "SkyBridge panorama",
+    "Datai Körfezi kıyı şeridi",
+    "Tanjung Rhu plajı",
+    "Cenang plajı",
+    "Kilim mangrov ormanı",
+    "Pantai Kok deniz feneri",
+    "Telaga Tujuh şelaleleri",
+    "Dayang Bunting Adası",
+    "Langkawi teleferik"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Datai Langkawi Havuzu ve tropikal yağmur ormanları",
+      "Datai Langkawi Yatak odası iç",
+      "Datai Langkawi Villa ve havuz yeşilliklerle çevrili"
+    ],
+    [
+      "Four Seasons Resort Langkawi Tatil köyü ve plajın havadan görünümü",
+      "Four Seasons Resort Langkawi Parlak yatak odası açık havada açılıyor",
+      "Four Seasons Resort Langkawi Denize sıfır teras ve havuz"
+    ],
+    [
+      "Ritz-Carlton, Langkawi Overwater spa pavyonları",
+      "The Ritz-Carlton, Langkawi Deniz manzaralı yatak odası",
+      "The Ritz-Carlton, Langkawi Havuz bahçeleri arasında"
+    ],
+    [
+      "St. Regis Langkawi Plajı ve palmiye ağaçları",
+      "Buranın yakınındaki restoranlar: St. Regis Langkawi Bright Bedroom and lounge",
+      "St. Regis Langkawi Teras körfeze bakan"
+    ]
+  ],
+  "seoTitle": "Langkawi: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Langkawi'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Korunan koylardan parlak plajlara, manzaranın konaklama hızınızı belirlediği bir Malezya adasına."
+}

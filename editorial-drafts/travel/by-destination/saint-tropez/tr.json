@@ -1,0 +1,110 @@
+{
+  "name": "Saint-Tropez",
+  "country": "Fransa",
+  "eyebrow": "Fransız Rivierası sanatı",
+  "heading": "Saint-Tropez: Riviera kendi hızınızda.",
+  "intro": "Eski limanda sabah, yat yelkenlerinde güneş ışığı, çamların altında öğle yemeği ve Pampelonne'un mavi suları: Saint-Tropez efsanevi köy yaşamını denizin sakinliği ile harmanlıyor. Adresiniz ve mevsim, konaklamayı tanımlar.",
+  "editorial": "Kısa listemiz Saint-Tropez'de yaşamanın dört farklı yolunu kutluyor: samimi bir deniz kenarı inzivası, bir köy kurumu, Ramatuelle'de bir yamaç sığınağı ve büyük bir şato arazisi. Bunlar değiştirilebilir değildir ve gerçek konum önemlidir.",
+  "hotelIntro": "Ayar, kişilik ve konuk deneyimi için seçilen dört ayırt edici özellik. Bağımsız editoryal kısa liste: Canlı oranlar, doğrulanmamış kullanılabilirlik veya tedarikçi ortaklığı iddia edilmez.",
+  "areas": [
+    [
+      "Old Port & Place des Lices yakınlarında yapılacak şeyler",
+      "Yatlar, liman terasları, pastel evler ve pazar, canlı köy kalbini tanımlar. Yemeğe yürüyerek ve yürüyerek dönmekten hoşlanan misafirler için idealdir.",
+      "Liman canlı ve trafik mevsimsel: oda sessizliğini ve araba erişimini onaylayın."
+    ],
+    [
+      "Pampelonne & Ramatuelle",
+      "Uzun kumlu bir plaj, plaj kulüpleri, üzüm bağları ve çam kaplı bir manzara, köyden ayrı. Kıyı şeridi öncelikli olduğunda en iyisi.",
+      "Pampelonne Ramatuelle'de, köyde değil: transferleri planlayın ve plaj kulübü erişimini kontrol edin."
+    ],
+    [
+      "Bouillabaisse Plajı ve Saint-Tropez tepeleri",
+      "Denize bakan maisonlar ve tepelik araziler, limandan daha fazla alan ve mahremiyete sahip daha sessiz bir Provençal ritmi sunar.",
+      "Doğrudan plaj erişimi ve transferleri olan bir tepe özelliği çok farklı deneyimlerdir."
+    ]
+  ],
+  "experiences": [
+    [
+      "Liman kenarında bir sabah",
+      "Kalabalıkların önünde yürüyün, yatlara bakan kahvenin tadını çıkarın ve köyün temposunda Place des Lices'i keşfedin."
+    ],
+    [
+      "Pampelonne'de bir gün",
+      "Plaj kenarında altın kum, berrak su ve öğle yemeği. Yalnız itibar değil, hizmet ve atmosfer için bir plaj kulübü seçin."
+    ],
+    [
+      "Denizden Riviera",
+      "Özel bir tekneye çıkın, koyları ve koyları keşfedin ve ışık altın rengine dönerken limana dönün."
+    ]
+  ],
+  "checks": [
+    "Köy yaşamını, Bouillabaisse sahilini, Saint-Tropez tepelerini veya Ramatuelle'yi seçin: mesafe günlük ritmi değiştirir.",
+    "Sezonluk açılış tarihlerini ve plaj erişiminin gerçek şartlarını kontrol edin.",
+    "Tam oda tipini, görünümünü ve terasını doğrulayın; villa görüntüleri standart odaları tanımlamaz.",
+    "Yaz trafiğine ve transferlere izin verin; kısa sürüş mesafeleri hızlı yolculukları garanti etmez."
+  ],
+  "hotels": [
+    [
+      "Plage de la Bouillabaisse  Saint-Tropez",
+      "Samimi bir deniz kenarı maison, çam korusu ve imza Riviera mavisi: doğrudan Saint-Tropez Körfezi tarafından saray düzeyinde dikkat.",
+      "Deniz, çam korusu veya köy görünümü ve tam süit tipini onaylayın. Mevsimlik deneyimler değişebilir.",
+      "Samimi bir deniz kenarı maisonunun mahremiyeti, son derece kişiselleştirilmiş hizmet, çam ağaçları ve körfezin az görülen güzelliği için.",
+      "Cheval Blanc St-Tropez, büyük bir tatil yerine daha çok özel bir maison gibi hissediyor. Bouillabaisse Plajı'nda, köy girişine yakın, Saint-Tropez'e erişimi kaybetmeden Körfez'in samimi bir deneyimini sunuyor. İmza Riviera mavisi, şemsiye çamları ve Jean-Michel Wilmotte'nin çağdaş iç mekanları, aydınlık bir kısıtlama atmosferi yaratır. Denize bakan süitler bireyseldir: teras, düzen ve görünüm, bir kategori seçmeden önce Gastronomi."
+    ],
+    [
+      "Köy  Place des Lices",
+      "Akdeniz evi, teraslar, ayırt edici tasarım ve canlı bir sosyal atmosfer hissine sahip bir köy kurumu.",
+      "Doğrudan Pampelonne'de bir tatil yerine bir köy oteli: plaj düzenlemelerini ve istediğiniz sessiz seviyesini onaylayın.",
+      "Köy enerjisi için akşamları, Saint-Tropez tarzının bir simgesi ve yürüyerek keşfetme kolaylığı.",
+      "Byblos, Saint-Tropez'in sosyal tarihine dokunmuştur. Köy benzeri teraslar, bahçeler ve Akdeniz cepheleri, geleneksel bir plaj tesisinin aksine bir atmosfer yaratır. Konuklar, köy ve akşamları için havuza göre olduğu kadar gelir. Bu, doğrudan Pampelonne'un kumunda bulunan bir otel değildir. Özellikle aileler için tercih edilen sessizlik ve düzen için bir oda seçin; sadece dekore edilmiş Dubleks Süit'in görüntüleri bunu göstermektedir."
+    ],
+    [
+      "Collines de Ramatuelle  vue Mditerrane",
+      "Akdeniz manzaraları, mahremiyet, sağlık ve geniş teraslar etrafında odaklı tenha bir tepe geri çekilme.",
+      "La Rserve limanda değil Ramatuelle'dedir. Otel ve villa tesisleri ve politikaları farklılık gösterebilir.",
+      "Köy gürültüsünden kaçmak ve Akdeniz manzaralarına, sağlıklı yaşama, teraslara ve alışılmadık derecede özel bir atmosfere öncelik vermek için.",
+      "La Rserve Ramatuelle, modern mimarinin merkez sahnesini çamlara, ışığa ve deniz ufkuna bıraktığı sahilden daha sessiz bir dünyayı kaplar. Temyiz, gizlilik, hizmet ve sağlıklı yaşam odaklı bir ritimdir. Otel odaları, teras süitleri ve ayrı olarak bulunan villalar aynı tesisleri veya yerleşim yerlerini sunmaz. Bu liman yerine Ramatuelle: her deneyimin kısa bir yürüyüş mesafesinde olduğunu varsaymak yerine plaj gezileri, köy yemekleri ve ulaşım planı."
+    ],
+    [
+      "Route de Tahiti  collines de Saint-Tropez",
+      "Saint-Tropez'in üzerinde peyzajlı bahçeler, havuzlar, aile deneyimleri ve mülkün şartlarına bağlı olarak Pampelonne'ye erişime sahip bir şato arazisi.",
+      "Oda kategorisini, havuz ve plaj erişimini, transferleri ve rezervasyon öncesi aile olanaklarını onaylayın.",
+      "Büyük bir Provençal mülkü, yemyeşil bahçeler ve aile odaklı bir konaklama için otel havuzlarını ve plaj zamanını dengelemek.",
+      "Château de la Messardire, Saint-Tropez'i büyük bir tepe arazisi ölçeğinde sunmaktadır: peyzajlı bahçeler, çam ağaçları ve Akdeniz görünümleri konaklamayı çerçeveliyor. Temyiz, Eski Liman'a hemen yürümek yerine uzayda, birden fazla havuzda ve organize aile deneyimlerinde yatıyor. Route de Tahiti'de yer alan, plaj, transferler ve yemek için gerçekçi bir plan çağrısında bulunur. Mevsimlik hizmetleri, spa ve çocuk tesislerini ve gerçek tip odayı onaylayın."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Saint-Tropez eski şehir ve liman Akdeniz ışığında yukarıdan görüntülendi",
+    "Saint-Tropez'in derin mavi Akdeniz körfezindeki yatlar",
+    "Saint-Tropez'in eski balıkçı limanında pastel evler ve geleneksel tekneler",
+    "Ramatuelle'de Pampelonne kumlu plaj ve turkuaz su",
+    "Ramatuelle tepelerinde Pampelonne'u çevreleyen bağlar",
+    "Yukarıdan görülen Pampelonne koy, plaj ve mavi su"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Cheval Blanc St-Tropez sahil şeridi maison, körfezde havuz ve çam ağaçları",
+      "Cheval Blanc St-Tropez havuzu ve Akdeniz'e bakan plaj",
+      "Cheval Blanc St-Tropez'de Dubleks Deniz Süiti yatak odası"
+    ],
+    [
+      "Htel Byblos Saint-Tropez Akdeniz köy tarzı mimari ve teraslar",
+      "Byblos Saint-Tropez açık havuz peyzajlı bahçeler arasında",
+      "Byblos Saint-Tropez'deki Dubleks Süit, Laura Gonzalez tarafından tasarlanmıştır."
+    ],
+    [
+      "Akdeniz'i çerçeveleyen La Rserve Ramatuelle'nin mimari girişi",
+      "La Rserve Ramatuelle açık havuz, şezlonglar ve Akdeniz panorama",
+      "Denize bakan La Rserve Ramatuelle'de Deluxe Junior Süit teras"
+    ],
+    [
+      "Airelles Château de la Messardire tepelik arazi ve peyzajlı bahçeler",
+      "Airelles Château de la Messardire'de güneş ışığı alan bahçe havuzu terasları",
+      "Château de la Messardire'deki Victoire Suite, farklı bir üst düzey oda kategorisi"
+    ]
+  ],
+  "seoTitle": "Saint-Tropez: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Saint-Tropez'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Eski limanda sabah, yat yelkenlerinde güneş ışığı, çamların altında öğle yemeği ve Pampelonne'un mavi suları: Saint-Tropez efsanevi köy yaşamını denizin sakinliği ile harmanlıyor. Adresiniz ve mevsim, konaklamayı tanımlar."
+}

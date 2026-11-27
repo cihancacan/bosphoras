@@ -1,0 +1,163 @@
+{
+  "name": "Kuzey Adası, Seyşeller",
+  "country": "Seyşeller",
+  "eyebrow": "Seyşeller  on bir villa, bir özel ada",
+  "heading": "Kuzey Adası Seyşeller: on bir villa ve bir olağanüstü özel ada.",
+  "intro": "On East Beach villası, eşsiz bir Villa North konutu ve tüm geri çekilmeyi özel olarak kiralama seçeneği. North Island, gösterinin üzerinde inziva ve koruma yer almaktadır.",
+  "editorial": "Kuzey Adası olağanüstü tenha Seyşeller Mah kapalı geri çekilme, ancak gerçek lüks envanter kasıtlı olarak sınırlıdır. Bir ada tatil beldesi on adet el yapımı özel villa içerir: Doğu Sahili'nde on adet 450 metrekarelik sahil manzaralı Villa ve Grand Paloss yakınında bir 750 metrekarelik amiral gemisi Villa North'u gezen bir çocuk. Dört ayrı otel icat önlemek için, bu editör kılavuz aynı özelliği yaşamanın dört gerçek yolunu araştırıyor: romantik bir sahil villası, aile tarafından uyarlanmış bir yerleşim alanı. Bir ada devralma, on bir villanın tümünü ve üzerinde anlaşmaya varılmış ortak alanları içerir, ayrı bir on ikinci özellik değildir. Daha geniş bir tatil beldesi, ortak bir sonsuzluk havuzu, kişiselleştirilmiş yemek, sağlık hizmetleri ve doğa etkinlikleri sunar. Her bir oranın kesin dahil edilmesi veya satın alma gerektiren yazılı onay gerektiren adanın açık hava koşullarına sahip olması gerekir. West Beach'in akşam görünümü, Doğu Sahili'ndeki şafakla çelişir; yüzme, su sporları ve ara sıra tekne gezileri tipik olarak rüzgar ve deniz koşullarına tabidir. Halka açık raporlar, tesisin Temmuz 2025'te Marriott's Luxury Collection'dan ayrıldığını göstermektedir; bağımsız olarak işletilen resmi web sitesi north-island.com şu anki konaklama referansımızdır. Canlı Bosphoras API envanteri, imzalı dağıtım anlaşması, helikopter dahil etme, garantili fiyatlar veya hemen rezervasyon yapılabilir ada satın alma bu iki dilli editoryal sunum tarafından talep edilmektedir. Kamu SEO sürümü ve ticari görüntü lisansları ayrı onaylara tabidir.",
+  "hotelIntro": "Sadece iki gerçek villa kategorisinin ve tüm adaların satın alınmasının tadını çıkarmanın dört yolu: bir çiftin sahilde konaklaması, ailece uyarlanmış bir düzen, Villa North ve Özel olarak Yours.",
+  "areas": [
+    [
+      "Doğu Sahili ve 10 villa",
+      "Vejetasyonlu doğu kıyı şeridi, plaja özel bahçe yollarına sahip on ayrı Beachfront Villa'ya ev sahipliği yapmaktadır.",
+      "Akıntılar ve yüzme koşulları garanti edilmez."
+    ],
+    [
+      "Grand Paloss & Villa North yakınlarında yapılacak şeyler",
+      "Granit yükseltisi, bir adet 750 metrekarelik Villa North'u ve yükseltilmiş güvertelerini çerçeveler.",
+      "Eğimler, basamaklar ve yükseltilmiş güverteler değerlendirmeye ihtiyaç duyar."
+    ],
+    [
+      "Günbatımında West Beach",
+      "Adanın batı kıyısı akşam ışığı, gezinti ve bazı düzenlenmiş açık hava yemekleri sunmaktadır.",
+      "Deniz koşulları rüzgar ve mevsime göre değişir."
+    ],
+    [
+      "Piazza ve paylaşılan alanlar",
+      "Tesisin Piazza ve ortak konukseverlik alanları her tenha villayı tamamlar.",
+      "Menüler ve katılımlar rezervasyon sözleşmesine göre değişir."
+    ],
+    [
+      "İzler, kaplumbağalar ve koruma",
+      "Granit patikaları, dev kaplumbağalar ve doğal yaşam alanı restorasyonu adanın doğa programını tanımlar.",
+      "Yaban hayatı sınırlarına ve operatör rehberliğine saygı gösterin."
+    ]
+  ],
+  "experiences": [
+    [
+      "Doğu Sahilinde Gündoğumu",
+      "Hassas yuvalama alanlarını rahatsız etmeden doğu kumuna erken çıkın."
+    ],
+    [
+      "Villa North ve Grand Paloss'u keşfedin",
+      "İşaretli rotalardaki granit oluşumlarını, diğer konukların mahremiyetine saygı göstererek keşfedin."
+    ],
+    [
+      "Günbatımında West Beach",
+      "Ekiple gün batımı yemeği isteyin ve hava durumunu, zamanlamasını ve ücretlerini yeniden onaylayın."
+    ],
+    [
+      "Rehberli yaban hayatı keşfi",
+      "Dev kaplumbağalar hakkında bilgi edinin ve vahşi yaşamı ele almadan veya beslemeden yeniden şekillendirin."
+    ],
+    [
+      "Spa, lagün ve Creole mutfağı",
+      "Nelerin dahil olduğunu kontrol ederken sağlıklı yaşam ve yerel olarak ilham verilen yemeği birleştirin."
+    ]
+  ],
+  "checks": [
+    "On bir adet gerçek villa: on adet 450 m2 Sahil Villa ve bir adet 750 m2 Villa North.",
+    "Aile varyantı, başka bir otel kategorisi değil, mevcut bir Beachfront Villa'nın bir konfigürasyonudur.",
+    "Sadece Yours, on ikinci bir villa değil, bütün bir ada satın almadır.",
+    "Mah helikopteri: zamanlama, maliyet, bagaj ve hava durumu doğrudan doğrulama gerektirir.",
+    "Özel havuzlar, basamaklar ve açık hava banyolarında çocuk güvenliği kontrolü talep edilmektedir.",
+    "Koruma ve yaban hayatı koruma rehberi erişimi.",
+    "Tedarikçi onayı olmadan iddia edilen canlı fiyatlar veya API envanteri yoktur."
+  ],
+  "hotels": [
+    [
+      "Doğu Plajı  villa prive de 450 m2",
+      "On bağımsız Beachfront Villas hattı East Beach gerçek gizlilik için her evi tarayan bitki örtüsü ile. Her 450 metrekarelik villa özel bir dalma havuzu, açık hava banyo, açık oturma ve doğrudan plaj erişimi içerir. Ana yatak odası ve salon, korunaklı bir tropik bahçeye açılır, açık duşlar ve tatil beldesinin yalınayak lüks atmosferini güçlendiren batık bir küvet ile birlikte sunulur. Bir dalış havuzu, adanın büyük bir eğlence havuzu olarak iki kişilik bir konaklama alanı olarak kabul edilmemelidir.",
+      "Uyarlanabilir çalışma ikinci tam boyutlu bir birincil yatak odası değildir.",
+      "Uyarlanabilir çalışma ikinci tam boyutlu bir birincil yatak odası değildir.",
+      "On bağımsız Beachfront Villas, gerçek gizlilik için her evi tarayan bitki örtüsü ile Doğu Sahili hattı. Her 450 metrekarelik villa, özel bir dalma havuzu, açık hava banyosu, açık hava oturma ve doğrudan plaj erişimi içerir. Ana yatak odası ve salon, korunaklı bir tropik bahçeye açılır, açık duşlar ve tesisin yalın ayak lüks atmosferini güçlendiren batık bir küvet ile birlikte sunulur. Bir dalış havuzu, adanın büyük bir eğlence havuzu olan dört kişilik bir havuzla aynı tesis olmamalıdır."
+    ],
+    [
+      "East Beach  mme catgorie de villa, yapılandırma familiale",
+      "Bu farklı bir otel veya ek bir konaklama kategorisi değil: bir aile konaklaması için uyarlanmış aynı 450 metrekarelik Beachfront Villa. North Island'ın resmi konaklama sayfası, ayrı çalışmanın, kararlaştırılan düzene bağlı olarak dört kişiye kadar toplam dolulukla çocuklar için yeniden yapılandırılabileceğini söylüyor. Özel dalış havuzu ve East Beach'e kolay erişim, rahat bir çok kuşaklı konaklama, ancak açık hava duşları, havuz kenarları, okyanus ve açık hava yürüyüş yolları için bireysel güvenlik gerektirir.",
+      "Aynı Beachfront Villa kategorisi, ayrı bir tatil köyü ürünü değil; çocuk güvenliği ve gerçek yatakları kontrol edin.",
+      "Aynı Beachfront Villa kategorisi, ayrı bir tatil köyü ürünü değil; çocuk güvenliği ve gerçek yatakları kontrol edin.",
+      "Bu farklı bir otel ya da ek bir konaklama kategorisi değildir: bir aile konaklaması için uyarlanmış aynı 450 metrekarelik Beachfront Villa. Kuzey Adası'nın resmi konaklama sayfası, ayrı çalışmanın çocuklar için yeniden yapılandırılabileceğini, kararlaştırılan düzene bağlı olarak toplam doluluk dört kişiye kadar olabileceğini söylüyor. Özel dalış havuzu ve East Beach'e kolay erişim, rahat bir çok kuşaklı konaklama, ancak açık hava duşları, havuz kenarları, okyanus ve açık yürüyüş yolları için bireysel güvenlik gerektirmelidir."
+    ],
+    [
+      "Grand Paloss  villa d'exception de 750 m2",
+      "Villa North, Grand Paloss'un granit yükselişinin yanında 750 metrekarelik bir amiral gemisi konutudur. Yükseltilmiş güverteler, özel bir dalma havuzu, tenha açık sala, ateş çukuru ve muhteşem denize bakan teraslara sahip, tüm on Beachfront Villa'dan daha büyük ve fiziksel olarak farklıdır. Büyük ölçekli çalışma, operatörün dört misafire kadar yayınlanmış limitine ve açıkça doğrulanmış bir uyku planına sahip olan tek bir ev tipi villaya uyarlanmalıdır.",
+      "Gerçek bir 750 m2 konut; merdivenleri, güverteleri ve gerçek dört konuklu düzenlemeyi kontrol edin.",
+      "Gerçek bir 750 m2 konut; merdivenleri, güverteleri ve gerçek dört konuklu düzenlemeyi kontrol edin.",
+      "Villa North, Grand Paloss'un granit yükselişinin yanında 750 metrekarelik bir amiral gemisi konutudur. Yükseltilmiş güverteler, özel bir dalma havuzu, tenha açık sala, şömine ve muhteşem denize bakan teraslara sahip olan tüm on Beachfront Villa'dan daha büyük ve fiziksel olarak farklıdır. Büyük ölçekli çalışma, operatörün dört misafire kadar yayınlanmış limitine ve açıkça doğrulanmış bir uyku planına sahip olan dört odalı villaya uyarlanmalıdır. Çok seviyeli teraslar, basamaklar, basamaklar ve teraslar."
+    ],
+    [
+      "le complte  özelleştirme des onze villas",
+      "Özel olarak Yours, dördüncü bir tatil köyü, on ikinci bir villa veya başka bir bağımsız villa türü değil, tamamen ada devralmadır. Ayrı bir satın alma sözleşmesine tabi olarak, on 450 metrekarelik Beachfront Villaları ve tek 750 metrekarelik Villa North'un yanı sıra kabul edilen ada olanaklarını da içerir. Büyük bir aile toplantısı veya istisnai bir özel grup inzivası için uygun değildir. Her villa, kendi düzenini ve özel dalış havuzunu, yiyecek, etkinliklerini muhafaza etmelidir.",
+      "On bir villanın hepsi birlikte, başka bir oda tipi değil; hizmetleri ve gerçek transfer düzenlemelerini onaylayın.",
+      "On bir villanın hepsi birlikte, başka bir oda tipi değil; hizmetleri ve gerçek transfer düzenlemelerini onaylayın.",
+      "Özel olarak Yours, dördüncü bir tatil köyü, on ikinci bir villa veya başka bir bağımsız villa tipi olmayan, tüm adaların devralınmasıdır. Ayrı bir satın alma sözleşmesine tabi olarak, on adet 450 metrekarelik Beachfront Villa ve tek 750 metrekarelik Villa North'un yanı sıra kabul edilen ada olanakları da dahildir. Her villa, kendi düzenini ve özel dalış havuzunu, yani yiyeceklerini, yiyeceklerini, özel dalışlarını muhafaza etmelidir."
+    ]
+  ],
+  "faq": [
+    [
+      "Kuzey Adası'nda kaç villa var?",
+      "Bağımsız resmi operatör on bir villa listeler: on 450 m2 Sahil Villası artı bir 750 m2 Villa Kuzey. Aile dostu bir düzenleme, uyku ihtiyaçlarına uyarlanmış aynı Sahil Villasıdır ve Özel olarak Yours, on ikinci bir villadan ziyade bir ada satın alma işlemidir."
+    ],
+    [
+      "Villa North'u normal bir Beachfront Villa'dan ayıran nedir?",
+      "Ten Beachfront Villaları 450 m2 alana sahip olup, direkt East Beach erişimi, özel dalma havuzları ve uyarlanabilir çalışmalar sunmaktadır. Villa North, Grand Paloss granit manzarasının yanında, teraslı, tenha bir sala ve şömineli tek 750 m2'lik bir konuttur. Bu olanaklar her villada söz verilmemelidir."
+    ],
+    [
+      "Çocuklar Beachfront Villa'da kalabilir mi?",
+      "Tatil beldesi, Beachfront Villa'nın ayrı çalışması uyarlandığında dört kişiye kadar konakladığını belirtir. Gerçek çocuğun yatağını, yaş kurallarını, havuz kenarlarını, açık yüzme alanlarını ve plaja güvenli erişimini, yeni yürümeye başlayan çocuklar veya çok nesilli aileler için yapılandırmaya güvenmeden önce doğrulayın."
+    ],
+    [
+      "Misafirler Mah'den Kuzey Adası'na nasıl seyahat ediyor?",
+      "Olağan yaklaşım, Mah'den yaklaşık yirmi dakikalık düzenlenmiş bir helikopter bağlantısıdır. Çalışma tarihleri, fiyatlar, bagaj limitleri ve hava durumu acil durumları doğrudan doğrulama gerektirir. Son tedarikçi teklifi açıkça belirtmediği sürece hiçbir helikopter bacağı dahil edilmemelidir."
+    ],
+    [
+      "On bir villayı özel olarak kiralamak mümkün mü?",
+      "Evet. Operatör tam ada devralma işlemini münhasıran sizin olarak adlandırır. Kiralama, mevcut on bir villayı ve ayrı bir ek otel yerine anlaşmalı ada tesislerini kapsar. Tam özel kullanım, etkinlikler, misafir limitleri, yemek, hizmetler ve iptal kuralları tedarikçi sözleşmesinde olmalıdır."
+    ],
+    [
+      "Yolcular kaplumbağalara ve korunaklı plajlara özgürce yaklaşabilir mi?",
+      "North Island, doğal yaşam alanını restore etmeye ve dev kaplumbağalar ve deniz kaplumbağaları da dahil olmak üzere vahşi yaşamı korumaya yatırım yapar. Ziyaretler, koruma ekibinin talimatlarını takip etmeli ve yuvalama alanlarına saygı göstermelidir. Yüzme, resif keşifleri ve açık hava gezileri hava koşullarına bağlı kalır."
+    ],
+    [
+      "North Island hala Marriott Luxury Collection ile bağlantılı mı?",
+      "Kamu misafirperverliği raporları, Temmuz 2025'te The Luxury Collection'dan ayrılmayı tanımlar. Marriott envanteri, sadakat ayrıcalıkları veya tarife erişimini varsaymak yerine, konaklama ve tedarikçi sorgulamaları için mevcut bağımsız resmi siteyi kuzey-island.com'u kullanın."
+    ]
+  ],
+  "photoCaptions": [
+    "East Beach ve ihtiyatlı özel villaları",
+    "Batı Sahili  a land shore walk",
+    "Kuzey Adası  aile gözlem bir Aldabra dev kaplumbağa",
+    "Kuzey Adası plajında deniz kaplumbağası koruma",
+    "West Beach Bar  kıyı yemek manzara",
+    "West Beach  deniz kenarı salıncak",
+    "Kuzey Adası  tropikal orman ve habitat restorasyonu",
+    "West Beach  palmiye, plaj ve salon",
+    "Kuzey Adası  Seyşeller beyaz gözlü kuş"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Plaja sıfır Villa  gerçek ana yatak odası",
+      "Sahil Villa  açık sala ve özel dalış havuzu",
+      "East Beach  yeşilliklerle çevrili sahil villası"
+    ],
+    [
+      "Aynı Beachfront Villa kategorisi  çocuk dostu çalışma düzeni",
+      "Beachfront Villa  aile yaşam alanı",
+      "Sahil Villa  tenha bahçe terası"
+    ],
+    [
+      "Granit yamaçlarına yakın eşsiz Villa North konutu",
+      "Villa North  orijinal yatak odası içinde Villa 11",
+      "Villa North  özel güverte ve itfaiye"
+    ],
+    [
+      "Bütün ada satın  North Island aerial",
+      "Tam ada ayarı  resif ve ada havası",
+      "Tüm Kuzey Adası  Honeymoon Beach perspektif"
+    ]
+  ],
+  "seoTitle": "Kuzey Adası, Seyşeller: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "North Island, Seyşeller'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "On East Beach villası, eşsiz bir Villa North konutu ve tüm geri çekilmeyi özel olarak kiralama seçeneği. North Island, gösterinin üzerinde inziva ve koruma yer almaktadır."
+}

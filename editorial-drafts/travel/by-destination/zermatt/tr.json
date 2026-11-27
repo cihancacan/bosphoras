@@ -1,0 +1,156 @@
+{
+  "name": "Zermatt",
+  "country": "İsviçre",
+  "eyebrow": "Valais  Günlük yoldaş olarak Matterhorn",
+  "heading": "Zermatt: Matterhorn her kalışı değiştirir.",
+  "intro": "Matterhorn, çoğu gezginin ilk önce Zermatt'ı hayal etmesinin nedenidir, ancak iki konaklama onunla aynı karşılaşmayı sunmaz. Çatıların üstünde üst düzey bir loca, tarihi bir köy sarayı, çağdaş bir dağ tesisi ve 2.222 metrede bir otel temelde farklıdır. Arabasız Zermatt nazik bir lojistik disiplin ekler: demiryoluyla gelin, yürüyün veya yerel transferleri düzenleyin ve havanın programa rehberlik etmesine izin verin.",
+  "editorial": "Zermatt esasen arabasızdır: bölgeye giden yolcular normalde Tsch'de durur ve trenle devam eder. Eski köy ve Bahnhofstrasse yürüyüş ve yemek ödüllendirirken, Sunnegga, Gornergrat ve Matterhorn Buzul Cenneti dağa ayrı yaklaşımlardır. Riffelalp, Gornerphot demiryoluna başka bir yolculuk ekler veya akşam saatlerinde ulaşım kısıtlamalarına sahiptir.",
+  "hotelIntro": "Tamamen farklı dört Zermatt kalır: Çatıların üstündeki OMNIA, köydeki Mont Cervin Sarayı, dağ ortamında çağdaş CERVO ve irtifada gerçek inziva için Riffelalp.",
+  "areas": [
+    [
+      "Bahnhofstrasse  köy enerjisi",
+      "Merkezi alışveriş ve yemek caddesi Zermatt'ın pratik kalbidir, otele yakın restoranlar ve akşam yürüyüşleri isteyen konukları ödüllendirir.",
+      "Sıradan özel arabalar Zermatt'a devam etmez; Tsch trenini ve son transferini planlayın."
+    ],
+    [
+      "Köyün üzerinde  yükseltilmiş bir görünüm",
+      "Yoğun caddelerin hemen üzerinde, yükseltilmiş localar yüksek manzaralar ve özel bir geri çekilmeye gelme hissi için sokak düzeyinde etkinlik alışverişinde bulunur.",
+      "Odaya bakan yönelimi ve pratik kaldırma veya aktarma erişimini doğrulayın."
+    ],
+    [
+      "Sunnegga  dağ erişimi",
+      "Sunnegga tarafına doğru yaklaşım, klasik köy cazibesi üzerinde yaşayan kaldırma erişimi, orman kenarları ve rahat dağ konutu lehinedir.",
+      "Tarih için füniküler ve operasyonel pistlere giden yolu onaylayın."
+    ],
+    [
+      "Gornergrat  farklı bir demiryolu",
+      "Cog demiryolu olağanüstü bir dağ panoramasına doğru tırmanır. Farklı bir ulaşım sistemidir ve her Riffelalp konaklamasının merkezidir.",
+      "Varıştan önce son trenleri, hava durumunu, bağlantıları ve bagaj düzenlemelerini kontrol edin."
+    ],
+    [
+      "Riffelp  toplam dağ geri çekilme",
+      "2.222 metrede otel, uygun bir şehir tarzı tabandan ziyade bir dağ inzivası haline gelir; ayar tempoyu belirler.",
+      "Gornergrat nakliyesi, son kış yürüyüşü ve geç dönme kısıtlamaları için hesap."
+    ]
+  ],
+  "experiences": [
+    [
+      "Kendi odandan Matterhorn",
+      "Bir otelin ünlü Matterhorn panoramasının her odaya ait olduğunu varsaymak yerine, belirli odaya bakan manzarayı, balkonu ve zemini onaylayın."
+    ],
+    [
+      "Gornergrat demiryolunda bir gün",
+      "Mümkünse açık hava gününü seçin, yayınlanan demiryolu tarifesiyle çalışın ve yüksek panoramanın tadını çıkarmak için yeterli zamana izin verin."
+    ],
+    [
+      "Köy hayatından sonra sağlık",
+      "Geleneksel köyü, uzun bir sağlıklı yaşam öğleden sonrasını ve konaklamanın tek amacı kayak yapmadan bir akşam yemeğini dengeleyin."
+    ],
+    [
+      "Yeşil sezonda Matterhorn",
+      "Alp yolları ve yüksek patikalar, her zaman koşullara ve bireysel yürüyüş kabiliyetine tabi olan yaz aylarında tamamen farklı bir Zermatt oluşturur."
+    ]
+  ],
+  "checks": [
+    "Sürücü ziyaretçiler normalde Tsch'de park eder ve arabasız Zermatt'a trenle devam eder.",
+    "Sunnegga, Gornergrat ve Buzul Cenneti'ne farklı ulaşım ve kayak yaklaşımları olarak davranın.",
+    "Riffelp için, bir köy yemeği planlamadan önce demiryolu zamanlarını ve bagajlarını düzenleyin.",
+    "Sadece tam olarak rezerve edilen kategori bu görünümü destekliyorsa bir Matterhorn-view odası seçin.",
+    "CERVO'nun dört ve beş yıldızlı loca ürünlerini ve gerçek aile süiti planlarını farklılaştırın.",
+    "Bu bağımsız olarak seçilen oteller, canlı Bosphoras oranları veya rezervasyon yapılabilirliği anlamına gelmez."
+  ],
+  "hotels": [
+    [
+      "Au-dessus du center  30 chambres pansiyonu",
+      "OMNIA, köyün üzerindeki bir kaya üzerinde yükselir, gizli bir giriş ve kaya içinde bir asansörle ulaşır. 18 odası ve 12 süiti, Matterhorn'a bakan sağlık tesisleri ve sessiz iç mekanları, mülkü mimari bir geri çekilme haline getirir. Köy manzarası ve Matterhorn manzaralı oda kategorileri açıkça farklıdır.",
+      "Gerçek oda görünümünü, asansör erişimini, aile kurallarını ve istasyondan ulaşımı onaylayın.",
+      "Gerçek oda görünümünü, asansör erişimini, aile kurallarını ve istasyondan ulaşımı onaylayın.",
+      "OMNIA, köyün üzerinde bir kaya üzerinde yükselir, gizli bir giriş ve kaya içinde bir asansörle ulaşır. 18 odası ve 12 süiti, Matterhorn'a bakan sağlık tesisleri ve sessiz iç mekanları, mülkü mimari bir geri çekilme haline getirir. Köy manzarası ve Matterhorn manzaralı oda kategorileri açıkça farklıdır. Gerçek oda görünümünü, asansör erişimini, aile kurallarını ve istasyondan ulaşımı onaylayın."
+    ],
+    [
+      "Merkez du köy  histoire depuis 1857",
+      "1857'den beri Zermatt konukseverliğinin bir amblemi olan Mont Cervin Sarayı, Bahnhofstrasse'ye yakın köy tarihine gömülüdür. Klasik büyük otel konforları ve özel aile süiti kategorileri, onu güçlü bir kasaba temelli seçim haline getirir, ancak oda görünümü, bina kanadı ve her asansöre giden yol dikkatli bir kontrole ihtiyaç duyar.",
+      "Gerekliyse Matterhorn'a bakan kategoriyi, bağlantı odalarını ve gerçek kaldırma yolculuğunu doğrulayın.",
+      "Gerekliyse Matterhorn'a bakan kategoriyi, bağlantı odalarını ve gerçek kaldırma yolculuğunu doğrulayın.",
+      "1857'den beri Zermatt konukseverliğinin bir amblemi olan Mont Cervin Sarayı, Bahnhofstrasse'ye yakın köy tarihine gömülüdür. Klasik büyük otel konforları ve özel aile süiti kategorileri, onu güçlü bir kasaba temelli seçim haline getirir, ancak oda görünümü, bina kanadı ve her asansöre giden yol dikkatli kontrol gerektirir. Gerekliyse Matterhorn'a bakan kategoriyi doğrulayın, odaları bağlayın ve gerçek kaldırma yolculuğu."
+    ],
+    [
+      "Au-dessus du köy  localar ve spa",
+      "CERVO, çağdaş bir dağ atmosferini birkaç locaya ve tman Mountain Spa'ya yayar. Resmi kataloğu, dört yıldızlı Göçebe odalarını, beş yıldızlı Alpinist ve Huntsman kategorilerini ve Overlook dairelerini açıkça ayırır. Eğim erişimi ve köy transferleri konaklamayı şekillendirir, ancak olanaklar ve gizlilik kategoriye göre maddi olarak değişir.",
+      "Nomad, Alpinist ve Huntsman'ı eşit standartlar, oda büyüklüğü, görünümler veya eğim erişimini varsaymadan önce karşılaştırın.",
+      "Nomad, Alpinist ve Huntsman'ı eşit standartlar, oda büyüklüğü, görünümler veya eğim erişimini varsaymadan önce karşılaştırın.",
+      "CERVO, çağdaş bir dağ atmosferini çeşitli localara ve tman Mountain Spa'ya yayar. Resmi kataloğu, dört yıldızlı Göçebe odalarını, beş yıldızlı Alpinist ve Huntsman kategorilerini ve Overlook dairelerini açıkça ayırır. Eğim erişimi ve köy transferleri konaklamayı şekillendirir, ancak olanaklar ve gizlilik kategoriye göre değişir. Eşit standartlar, oda büyüklüğü, görünümler veya eğim erişimini üstlenmeden önce Göçebe, Alpinist ve Huntsman'ı karşılaştırın."
+    ],
+    [
+      "Au-dessus de Zermatt  yükseklik 2 222 m",
+      "2,222 metrede Riffelp, Bahnhofstrasse çevresindeki başka bir otelden ziyade uygun bir dağ inzivasıdır. Spa, açık peyzaj ve kayak erişimi zorlayıcıdır, ancak demiryolu lojistiği esastır: Zermatt'a varın, Gornergrat demiryoluna binin ve Riffelp istasyonundan son transferi tamamlayın. Yayınladığı ayrıntılı kış 2026/27 takvim listeleri 11 Aralık - 5 Nisan tarihleri arasında yeniden teyite tabidir.",
+      "Gornergrat zaman çizelgesi, geç dönüş seçenekleri, kar yolu erişimi, çocuk politikası ve kesin Matterhorn görünümünü kontrol edin.",
+      "Gornergrat zaman çizelgesi, geç dönüş seçenekleri, kar yolu erişimi, çocuk politikası ve kesin Matterhorn görünümünü kontrol edin.",
+      "2,222 metrede Riffelp, Bahnhofstrasse çevresindeki başka bir otelden ziyade uygun bir dağ inzivasıdır. Spa, açık peyzaj ve kayak erişimi zorlayıcıdır, ancak demiryolu lojistiği esastır: Zermatt'a varın, Gornergrat demiryoluna binin ve Riffelp istasyonundan son transferi tamamlayın. Yayınladığı ayrıntılı kış 2026/27 takvim listesi, yeniden teyite tabi olarak 11 Aralık - 5 Nisan arası kar yolu, gerçek Gornergrat zaman dilimini kontrol edin."
+    ]
+  ],
+  "faq": [
+    [
+      "Zermatt'a özel bir araba sürebilir misin?",
+      "Sıradan özel trafik tatil beldesi dışında durur. Gezginler normalde Tsch'e park eder ve mekik treniyle devam eder."
+    ],
+    [
+      "Riffelp Zermatt'ın merkezinde mi?",
+      "Hayır. Tesis 2.222 metrede duruyor ve Gornergrat demiryolunun Riffelp istasyonuna gitmesini ve ardından mevsimsel son transferini gerektiriyor."
+    ],
+    [
+      "OMNIA'daki her oda Matterhorn'la yüzleşiyor mu?",
+      "Hayır. Otel köye bakan ve Matterhorn'a bakan kategorileri ayırt eder; kesin odayı doğrulayın."
+    ],
+    [
+      "CERVO locaları nasıl farklıdır?",
+      "CERVO, Göçebe dört yıldızlı odaları, beş yıldızlı Alpinist ve Huntsman ürünlerini ve farklı düzen ve hizmetlere sahip Overlook dairelerini ayırır."
+    ],
+    [
+      "Gornergrat'a nasıl gidilir?",
+      "Özel bir dişli demiryolu, Zermatt'ı dağa bağlar. Özellikle Riffelp'ten dönmek için zaman çizelgesini ve transferlerini kontrol edin."
+    ],
+    [
+      "Köy merkezi için en uygun otel hangisidir?",
+      "Mont Cervin Sarayı, Bahnhofstrasse'nin yakınında, merkezi restoranlar ve alışveriş ile birlikte yer alırken, OMNIA köyün üzerinde yer almaktadır."
+    ],
+    [
+      "Bu mülkleri doğrulanmış bir Bosphoras oranında rezerve edebilir miyim?",
+      "Bu bir editoryal kılavuzdur; gerçek oranlar ve rezervasyonlar yetkili, doğrulanmış tedarikçi envanterini gerektirir."
+    ]
+  ],
+  "photoCaptions": [
+    "Yaz aylarında Riffelsee Matterhorn Alp gölüne yansıdı",
+    "Zermatt'ın çiçek kutuları ve Matterhorn ile tarihi ahşap dağ evleri",
+    "Sunnegga bölgesindeki Grindjisee gölü, sonbaharda Matterhorn'u yansıtır.",
+    "Gornergrat geniş buzul panoraması ve karla kaplı alpin zirveleri",
+    "Matterhorn Buzulu Cenneti Klein Matterhorn'dan karlı Alpler boyunca parlak kış panoraması",
+    "Findeln Matterhorn manzaralı geleneksel alp dağ evi",
+    "Gün doğumunda Stellisee hala göl suyuna yansıyan altın Matterhorn"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "THE OMNIA Matterhorn'un güneşli yaz manzarasına sahip çağdaş mimari",
+      "Şömine ve çağdaş mobilyalarla OMNIA daylit Roof Suite salonu",
+      "Turkuaz ışıklı OMNIA cam cepheli kapalı yüzme havuzu"
+    ],
+    [
+      "Mont Cervin Palace Zermatt'ın kalbinde güneş ışığı alan otel",
+      "Mont Cervin Palace ayrı salonlu zarif misafir odası",
+      "Mont Cervin Palace Spa Nescens'de kapalı yüzme havuzu ve cam atrium"
+    ],
+    [
+      "CERVO Mountain Resort alp dağ evleri karla kaplı larvaların ortasında",
+      "CERVO Mountain Resort Nomad konuk odası - ranzalı",
+      "CERVO Mountain Resort alpine konuk odası ile çağdaş iç mekanlar"
+    ],
+    [
+      "Riffelap Resort yaz aylarında Matterhorn manzaralı panoramik açık havuz",
+      "Riffelap Resort geniş yatak ve kırmızı aksanlı sıcak çam ağacı süiti",
+      "Riffelalp Resort merkezi şömineli ışık dolu alpin salonu"
+    ]
+  ],
+  "seoTitle": "Zermatt: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Zermatt'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Matterhorn, çoğu gezginin ilk önce Zermatt'ı hayal etmesinin nedenidir, ancak iki konaklama onunla aynı karşılaşmayı sunmaz. Çatıların üstünde üst düzey bir loca, tarihi bir köy sarayı, çağdaş bir dağ tesisi ve 2.222 metrede bir otel temelde farklıdır. Arabasız Zermatt nazik bir lojistik disiplin ekler: demiryoluyla gelin, yürüyün veya yerel transferleri düzenleyin ve havanın programa rehberlik etmesine izin verin."
+}

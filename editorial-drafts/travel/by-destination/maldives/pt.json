@@ -1,0 +1,148 @@
+{
+  "name": "Maldivas",
+  "country": "Maldivas",
+  "eyebrow": "Oceano ndico, em sua forma mais pura",
+  "heading": "Maldivas: luxo medido em horizontes.",
+  "intro": "Nas Maldivas, a verdadeira questão não é apenas qual hotel escolher, mas qual ilha, qual villa e qual lagoa. Apenas um trecho do oceano pode separar um recife de casa vibrante de águas rasas turquesa calmas, praia descalça que vive de um santuário de água.",
+  "editorial": "Nossa coleção abrange Noonu, Baa e North Malé, onde as ilhas se sentem notavelmente diferentes. A transferência faz parte da decisão - hidroavião, barco ou conexão em diante - juntamente com a orientação da vila, acesso a recifes, correntes e adequação familiar. De dezembro a abril é geralmente mais seco, mas os encontros com o clima e a vida selvagem nunca são garantidos.",
+  "hotelIntro": "Quatro propriedades notáveis e quatro visões de luxo das Maldivas: liberdade sobre a água em Soneva Jani, hospitalidade francesa em Cheval Blanc, vida privada na One&Only e descoberta marinha em Landaa Giraavaru. Estas são referências editoriais, não ofertas de hotéis ao vivo.",
+  "areas": [
+    [
+      "Atol de Noonu  lagoas privadas",
+      "Uma região de lagoas azul-pálidas e ilhas isoladas, lar de duas expressões muito diferentes de luxo em Soneva Jani e Cheval Blanc Randheli.",
+      "Janelas de operação de hidroavião de luz do dia podem moldar os planos de chegada e partida."
+    ],
+    [
+      "Baa Atoll  oceano vivo",
+      "Uma Reserva da Biosfera da UNESCO onde recifes de coral, pesquisas marinhas e encontros sazonais de manta fazem parte do apelo do destino.",
+      "Os encontros com Manta são sazonais e nunca garantidos; o tempo governa as excursões."
+    ],
+    [
+      "North Malé Atoll  acesso mais fácil",
+      "Mais perto do aeroporto internacional, várias ilhas são alcançadas de barco, facilitando a logística de viagens, mantendo praias amplas e experiências de vila privada.",
+      "As transferências de barcos ainda dependem do tempo, da distância e das condições do operador."
+    ],
+    [
+      "Villas de Overwater  uma estadia diferente",
+      "Os degraus diretos da lagoa e os horizontes oceânicos intermináveis criam uma experiência especial, mas os decks abertos e as águas profundas exigem um pensamento adicional ao viajar com crianças pequenas.",
+      "Verifique a profundidade da água, correntes, barreiras de convés e regras de idade antes de selecionar uma vila."
+    ],
+    [
+      "villas  vida ilha descalça",
+      "Para famílias e viajantes descalços, as villas de praia geralmente oferecem espaço ao ar livre sem esforço e acesso direto à areia. As condições de privacidade, sombra e lagoa ainda dependem da costa exata.",
+      "Um terraço virado para o mar não garante uma natação fácil em linha reta no mar."
+    ]
+  ],
+  "experiences": [
+    [
+      "Explore o recife de forma responsável",
+      "Faça viagens guiadas de snorkelling quando apropriado, respeite as distâncias da vida selvagem e proteja os recifes frágeis para encontros marinhos mais gratificantes."
+    ],
+    [
+      "A chegada do hidroavião",
+      "As vistas dos atóis turquesa do ar podem ser inesquecíveis; janelas e conexões de operação diurna devem ser planejadas com cuidado."
+    ],
+    [
+      "Tempo como o verdadeiro luxo",
+      "Almoços descalços, pôr do sol de um deck de villa e sessões de spa sem pressa importam tanto quanto as excursões planejadas; deixe o tempo livre."
+    ]
+  ],
+  "checks": [
+    "Confirmar categoria de água ou praia villa, configuração, piscina e perspectiva exata.",
+    "Transferência de barco/avião marítimo, limites de bagagem, horários de funcionamento e potencial noite em Malé.",
+    "Verifique a segurança do convés, correntes, acesso a recifes e serviços para crianças.",
+    "Revise impostos, refeições, extras, condições de cancelamento e política climática antes de pagar."
+  ],
+  "hotels": [
+    [
+      "Atol de Noonu  lagon priva",
+      "Soneva Jani interpreta o luxo das Maldivas com uma sensação de liberdade e diversão: residências sobre a água em uma lagoa brilhante, espaços ao ar livre generosos e experiências familiares moldadas pelo oceano. Slides e telhados retráteis são específicos para certas categorias de villa em vez de recursos garantidos em todo o resort.",
+      "Confirmar a casa exata de água / ilha, slide ou características do telhado, segurança infantil e transferência para Noonu.",
+      "Para moradias excepcionais, espaço e férias familiares divertidas.",
+      "Soneva Jani interpreta o luxo das Maldivas com uma sensação de liberdade e diversão: residências sobre a água em uma lagoa brilhante, generosos espaços ao ar livre e experiências familiares moldadas pelo oceano. Slides e telhados retráteis são específicos para certas categorias de villa em vez de recursos garantidos em todo o resort. Nosso conselho é distinguir imagens editoriais das instalações realmente incluídas com a vila escolhida; este guia não garante nenhum quarto ou vista particular."
+    ],
+    [
+      "Atol de Noonu  les confrentielles",
+      "Cheval Blanc Randheli traz a arte francesa de recuperar para o Atol Noonu: espaçosas villas contemporâneas, serviço intuitivo, restaurantes de destino e um spa Guerlain em sua própria ilha. A experiência é deliberadamente curada e privada, com diferenças entre praia, lagoa e acomodação na ilha.",
+      "Comparar villas de praia, lagoa e jardim; verificar arranjos de hidroavião, termos de cancelamento e serviços incluídos.",
+      "Para hospitalidade intensamente privada, serviço personalizado e jantares requintados.",
+      "Cheval Blanc Randheli traz a arte francesa de recuperar para o Atol Noonu: espaçosas villas contemporâneas, serviço intuitivo, restaurantes de destino e um spa Guerlain em sua própria ilha. A experiência é deliberadamente curada e privada, com diferenças entre praia, lagoa e acomodação na ilha. Nosso conselho é distinguir imagens editoriais das instalações realmente incluídas na vila escolhida; este guia não garante nenhum quarto ou vista particular."
+    ],
+    [
+      "North Malé Atoll  le privée",
+      "One&Only Reethi Rah é sobre o espaço: uma ilha privada com longas praias, um ritmo de resort variado e espaço para desfrutar do ar livre. Villas de praia se adequam aos viajantes que valorizam a areia logo além do terraço; villas de água entregar uma perspectiva diferente e abordagem para a lagoa.",
+      "Confirmar categoria villa, condições imediatas de natação, layout familiar e a transferência de lancha de Malé.",
+      "Para praias expansivas, liberdade na ilha privada e experiências variadas de resort.",
+      "One&Only Reethi Rah é sobre o espaço: uma ilha privada com longas praias, um ritmo de resort variado e espaço para desfrutar do ar livre. Villas de praia se adequam aos viajantes que valorizam a areia logo além do terraço; villas de água entregar uma perspectiva diferente e abordagem para a lagoa. Nosso conselho é distinguir imagens editoriais das instalações realmente incluídas com a vila escolhida; este guia não garante qualquer quarto ou vista particular."
+    ],
+    [
+      "Baa Atoll  réserve UNESCO",
+      "O Four Seasons Landaa Giraavaru combina elegância descalça com descoberta marinha na Reserva da Biosfera da UNESCO de Baa Atoll. Suas praias arenosas, vilas sobre a água, programas de bem-estar e conservação AyurMa o tornam especialmente atraente para famílias curiosas e entusiastas do oceano. Os avistamentos de Manta são sazonais e nunca garantidos.",
+      "Verifique a orientação exata da vila, atividades marinhas infantis, encontros sazonais de manta e tempos de transferência de hidroavião.",
+      "Para descoberta marinha, famílias curiosas e bem-estar AyurMa.",
+      "O Four Seasons Landaa Giraavaru combina elegância descalça com a descoberta marinha na Reserva da Biosfera da UNESCO de Baa Atoll. Suas praias arenosas, moradias sobre a água, programas de bem-estar e conservação AyurMa o tornam especialmente atraente para famílias curiosas e entusiastas do oceano. Os avistamentos de Manta são sazonais e nunca garantidos. Nosso conselho é distinguir imagens editoriais das instalações realmente incluídas na villa escolhida; Este guia não garante nenhum quarto ou vista em particular."
+    ]
+  ],
+  "faq": [
+    [
+      "Qual é o melhor hotel de luxo nas Maldivas?",
+      "Depende da viagem: Soneva Jani para vilas imaginativas de overwater, Cheval Blanc Randheli para serviço privado refinado, One&Only Reethi Rah para vida na ilha liderada pela praia e Four Seasons Landaa Giraavaru para descoberta marinha e bem-estar."
+    ],
+    [
+      "Você deve reservar uma casa de água ou uma casa de praia?",
+      "As moradias sobre a água mergulham você na lagoa; as moradias de praia fornecem acesso direto à areia e muitas vezes são mais fáceis com crianças pequenas. Compare a segurança, a corrente, a profundidade e as vistas exatas do convés antes de decidir."
+    ],
+    [
+      "Qual atol das Maldivas os visitantes da primeira vez devem escolher?",
+      "North Malé pode ser mais simples para a chegada de lancha rápida, Baa é comemorado pela conservação marinha e mantas sazonais, enquanto Noonu oferece escapadas ilha extremamente isolada. Ilha e escolha villa importa mais do que um único ranking atol."
+    ],
+    [
+      "Qual é a melhor época para visitar as Maldivas?",
+      "De dezembro a abril é geralmente mais seco, mas bons dias de praia são possíveis fora desta janela. A chuva varia e os encontros com manta dependem do atol e da estação."
+    ],
+    [
+      "Como você transfere do aeroporto de Malé para um resort?",
+      "Os hotéis organizam lanchas rápidas, hidroaviões de luz do dia ou voos domésticos com conexões de barco em diante, dependendo da localização. Chegadas internacionais tardias podem exigir uma noite perto de Malé."
+    ],
+    [
+      "Quantas noites você deve ficar nas Maldivas?",
+      "Cinco a sete noites permite que você se estabeleça em uma única ilha sem pressa. Planeje mais tempo se combinar dois atóis, mergulho ou experiências de bem-estar estendidas."
+    ]
+  ],
+  "photoCaptions": [
+    "Lagoa azul turquesa e ilhas de coral das Maldivas",
+    "Vista aérea de Soneva Jani villas em Noonu Atoll",
+    "Águas e ilhas de Baa Atoll",
+    "Ilha dos Bandos em North Malé Atoll",
+    "Villas em Medhufushi em Meemu Atoll",
+    "Praia de areia branca nas Maldivas",
+    "Banco de areia das Maldivas isolado no Oceano ndico",
+    "Seaplane by W Retreat nas Maldivas",
+    "Raio Manta perto do recife Fushivaru Thila"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Villas de luxo em Soneva Jani na lagoa Noonu",
+      "Soneva Jani overwater villa com um slide",
+      "interior de luxo villa Soneva Jani"
+    ],
+    [
+      "Villa Lagoa Cheval Blanc Randheli em Atol de Noonu",
+      "Vista aérea de uma villa na ilha Cheval Blanc Randheli",
+      "Sala de tratamento no spa Cheval Blanc Randheli"
+    ],
+    [
+      "One&Only Reethi Rah villa à beira-mar",
+      "One&Only Reethi Rah vivenda overwater",
+      "Vista aérea da piscina e praia da ilha One&Only Reethi Rah"
+    ],
+    [
+      "Four Seasons Landaaa Giraavaru vivenda sobreaquática",
+      "Praia aérea e lagoa no Four Seasons Landaa Giraavaru",
+      "Programa de reabilitação de tartarugas marinhas no Four Seasons Maldives"
+    ]
+  ],
+  "seoTitle": "Maldivas: estadias de luxo, áreas e experiências",
+  "hotelSeoTitle": "Hotéis em Maldivas: guia com curadoria",
+  "seoDescription": "Nas Maldivas, a verdadeira questão não é apenas qual hotel escolher, mas qual ilha, qual villa e qual lagoa. Apenas um trecho do oceano pode separar um recife de casa vibrante de águas rasas turquesa calmas, praia descalça que vive de um santuário de água."
+}

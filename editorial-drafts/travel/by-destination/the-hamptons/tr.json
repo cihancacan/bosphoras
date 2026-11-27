@@ -1,0 +1,162 @@
+{
+  "name": "Hamptons",
+  "country": "Amerika Birleşik Devletleri",
+  "eyebrow": "Hamptons  Atlantik plajları, kumulları ve East End mülkleri",
+  "heading": "Hamptons: Bridgehampton'dan East Hampton ve Montauk'a kadar dört göze çarpan yer.",
+  "intro": "Long Island'ın doğu ucunda, Hamptons tek bir kasaba değildir. Bridgehampton'un tarihi mülkleri, East Hampton'ın köy galerileri ve Montauk'un vahşi sörfü her birinin kendi coğrafyası, sürüş gerçekleri ve yer duygusu vardır.",
+  "editorial": "Hamptons, tek bir yürünebilir tatil yeri oluşturmak yerine Long Island'ın South Fork'una uzanıyor. Yaz trafiği Bridgehampton, East Hampton, Amagansett ve Montauk'un yakınında, tarihi bir butik otel parkurları ile görünüşte kısa bir yolculuk yapabilir. Haritadan çok daha uzun bir süre boyunca, bu yüzden gerçek sürüş koşullarını, park ve plaj giriş izinlerini doğrulayın. Topping Rose House, Bridgehampton'da, şimdi samimi bir 22 anahtarlı bir konakta oturuyor. Düşük anahtarlı kimliği sörf, bisiklet ve Shadmoor Eyalet Parkı'nı odak noktasına getiriyor, ancak balkonlar, okyanusa maruz kalma ve erişim detayları konaklama kategorisine göre değişiyor; kitap sörf dersleri ve sağlık seansları gerçek şartlarında. Gurney'in Montauk Resort & Seawater Spa'sı, oda, yazlık ve rezidanslarla çok daha büyük bir tam hizmet seçeneği, 2.000 fit konuk odaklı plaj ve geniş bir okyanus odaklı spa. BathHouse kesinlikle bu 18 ve daha yaşlı gerektiriyor. Bu taslak, endeksli olmayan kılavuz, editoryal seçim, doğrulanmamış canlı otel stoku, onaylanmış bir restoran masası, plaj izni veya havaalanı transferidir.",
+  "hotelIntro": "Dört gerçek otel deneyimi: bir Bridgehampton tarihi mülkü, bir East Hampton butik adresi ve Montauk'un Atlantik kıyısında kalmanın iki farklı yolu.",
+  "areas": [
+    [
+      "Bridgehampton ve Sagaponack",
+      "Tarihi mülkler, çiftlik alanları ve özenle düzenlenmiş yemek, bu iç Hamptons koridoruna rafine edilmiş daha sessiz bir kişilik kazandırır.",
+      "Köy mülklerini doğrudan okyanus manzaralı otellerle birleştirmeyin."
+    ],
+    [
+      "East Hampton köyü ve Main Beach",
+      "Tarihi köy sokakları, galeriler ve büyük okyanus kumları, mevsimlik erişim ve park kuralları ile ayrı deneyimlerdir.",
+      "Plaj park izinlerini ve çalışma programlarını doğrulayın."
+    ],
+    [
+      "Amagansett ve korumalı kum tepeleri",
+      "Daha alçak anahtarlı bir köy ve Montauk'un batısında hassas kıyı bitki örtüsü ile korunan kumullar.",
+      "Fotoğraflar için kumul restorasyon alanlarından izinsiz girmeyin."
+    ],
+    [
+      "Montauk ve sörf plajları",
+      "Sörf kültürü, rahat kafeler ve okyanus kıyısındaki tatil beldesi konaklaması ile daha rüzgarlı bir Atlantik kıyısı.",
+      "Güçlü sörf ve akıntılara dikkat edin ve cankurtaran rehberliğine uyun."
+    ],
+    [
+      "Montauk Point ve Sag Limanı",
+      "Montauk'un ikonik deniz feneri Atlantik'e bakarken, tarihi Sag Limanı daha batıda korunaklı bir deniz köyü sunuyor.",
+      "Bunlar uzak alanlar, tek bir bağlantılı yürüyüş gezisi değil."
+    ]
+  ],
+  "experiences": [
+    [
+      "Tarihi bir mülkte kahvaltı",
+      "Yakındaki dükkanları keşfetmeden ve onaylanmış rezervasyonlarla yemek yemeden önce Bridgehampton çimleri arasında başlayın."
+    ],
+    [
+      "East Hampton köyü ve Main Beach",
+      "Yerel park kurallarını ve sörf koşullarını doğruladıktan sonra mimariyi, galerileri ve okyanusu birleştirin."
+    ],
+    [
+      "Montauk kumulları ve sörf kültürü",
+      "Korunan kumullara saygı gösterirken, sörf seansları için rezervasyon talimatı verirken Marram tarafından kıyıyı keşfedin."
+    ],
+    [
+      "Montauk Point Deniz Feneri",
+      "Onaylanmış yolları kullanarak ve çekim saatlerini kontrol ederek deniz fenerini ziyaret edin."
+    ],
+    [
+      "Sag Limanı deniz mirası",
+      "Sag Limanı'nın tarihi sahil sokakları arasında, engebeli Montauk'a karşı bir nokta olarak zaman geçirin."
+    ]
+  ],
+  "checks": [
+    "Hamptons birkaç kasabayı kapsar; asla kısa yaz sürüş süreleri vaat etmez.",
+    "Bridgehampton ve East Hampton köy otelleri doğrudan okyanus kumu üzerinde değildir.",
+    "Gurney's BathHouse yetişkin 18+'dır ve 50 dakikalık bir slot gerektirir.",
+    "Gurney's Beach Club sezonluk olarak kapalıdır ve Mayıs 2027'de yeniden açılacağı duyurulmuştur.",
+    "Marram ve Gurney's, Montauk'un farklı özellikleridir; otel görüntülerini asla değiştirme.",
+    "Plaj izinleri, çocuk erişimi, dersler ve transferler onay gerektirir."
+  ],
+  "hotels": [
+    [
+      "Bridgehampton  maison historique,  l'intrieur des terres (İngilizce).",
+      "Topping Rose House, 1842 Yunan Revival konağına, manikürlü Bridgehampton çimenleriyle çevrili çağdaş bir kanata katılıyor. On altı oda ve altı tek yatak odalı süiti görünüm, boyut ve konfigürasyon açısından farklılık göstermektedir. Jean-Georges yemek, mülkü mevsimlik bir havuz, sağlıklı yaşam seçenekleri ve özel bir mülkün sessiz hissi ile desteklenen bir mutfak varış noktası haline getirir. Doğrudan kum üzerinde değil, iç kısımlardadır, bu nedenle yakındaki plajlara herhangi bir lüks araba mek için tam olarak kontrol edilmelidir.",
+      "Inland Bridgehampton, okyanus kıyısında değil; mekiği, çocuk yataklarını ve yemek yemeyi doğrulayın.",
+      "Inland Bridgehampton, okyanus kıyısında değil; mekiği, çocuk yataklarını ve yemek yemeyi doğrulayın.",
+      "Topping Rose House, 1842 Yunan Revival konağına, manikürlü Bridgehampton çimenleriyle çevrili çağdaş bir kanata katılıyor. On altı oda ve altı tek yatak odalı süiti, görünüm, boyut ve konfigürasyon açısından farklılık göstermektedir. Jean-Georges yemek, mülkü mevsimlik bir havuz, sağlık seçenekleri ve özel bir mülkün sessiz bir yemek anlayışı ile desteklenen bir mutfak yeri haline getirir. Doğrudan kum üzerinde değil, bu nedenle yakındaki plajlara herhangi bir lüks araba mekiği doğrulanmalıdır."
+    ],
+    [
+      "Doğu Hampton  Main Street et center historique",
+      "Maidstone, Main Street'e yakın tarihi bir East Hampton evine çağdaş bir tasarım perspektifi getiriyor. Bireysel olarak stilize edilmiş odalar ve süitler, keyifli iç mekanlar ve hedef yemek, genişleyen bir plaj tesisi üzerinde köy yaşamını tercih ediyor. Son yeniden konumlandırılması, büyük bir havuz kompleksinden ziyade sanatsal detayları ve zarif iç mekanları vurgulamaktadır. Mağazalar ve galeriler tarihi merkezde değildir, ancak Atlantik plajları, mevsimlik park izinlerine ayrı bir ulaşım ve uyum gerektirmez. Aileler, oda içi oturma düzenini onaylamalı, oturma seçeneklerine sahiptir.",
+      "East Hampton köy oteli; plaj, otopark ve tam oda kategorisi farklıdır.",
+      "East Hampton köy oteli; plaj, otopark ve tam oda kategorisi farklıdır.",
+      "Maidstone, Main Street'e yakın tarihi bir East Hampton evine çağdaş bir tasarım perspektifi getiriyor. Bireysel olarak stilize edilmiş odalar ve süitler, keyifli iç mekanlar ve hedef yemek, genişleyen bir plaj tesisi üzerinde köy yaşamını tercih ediyor. Son yeniden konumlandırılması, büyük bir havuz kompleksi yerine zanaatkar ayrıntıları ve zarif iç mekanları öne çıkarıyor. Mağazalar ve galeriler tarihi merkezde yer almıyor, ancak Atlantik plajları doğrudan oda düzenlemesini onaylamalı, oda düzenlemesini sağlamalıdır."
+    ],
+    [
+      "Montauk  kum tepeleri yüz  l'ocan Atlantique",
+      "Marram, Montauk'un daha sessiz yalınayak okyanus manzaralı inziva yeridir, kum tepeleri arasında yer alan düşük binalarda doksan altı oda vardır. Doğal tekstiller, minimal mobilyalar ve Shadmoor Eyalet Parkı'na yakınlık, sörf, kolay bisiklet ve gün batımı yürüyüşleri günlerini davet eder. Bir kafe ve rahat toplanma alanları, mülke büyük tam hizmetli tatil köylerinden farklı bir enerji verir. Bununla birlikte, kum tepeleri ve okyanus manzaralı odalar, üst katlar, teraslar ve doğrudan kumlar olabilir.",
+      "96 adet kumul manzaralı oda; görünümler, sörf dersleri ve hizmetler mevsim/kategoriyeye göre değişiklik göstermektedir.",
+      "96 adet kumul manzaralı oda; görünümler, sörf dersleri ve hizmetler mevsim/kategoriyeye göre değişiklik göstermektedir.",
+      "Marram, Montauk'un daha sessiz yalınayak okyanus manzaralı inziva yeridir. Alt binalarda doksan altı oda kumullar arasında yer almaktadır. Doğal tekstiller, minimal mobilyalar ve Shadmoor State Park'a yakınlık, sörf, kolay bisiklet ve günbatımı yürüyüşleri günlerini davet eder. Bir kafe ve rahat toplanma alanları, mülke büyük tam hizmetli tatil köylerinden farklı bir enerji vermelidir. Bununla birlikte, kum tepeleri ve okyanus manzaralı odalar, üst katlar, teraslar ve doğrudan kumlar giremez."
+    ],
+    [
+      "Montauk  Old Montauk Highway, resort en front d'ocan yakınındaki oteller",
+      "Gurney's, Montauk'un daha büyük tam hizmetli okyanus kıyısındaki tatil beldesidir, yemek, geniş konaklama ve sahil sağlıklılığını bir araya getirir. Yaklaşık 2.000 fitlik konuklu plajı, çarpıcı şekilde farklı düzenleri sunan odalar, kır evleri ve rezidanslarla eşleştirilir, ayrıca ısıtmalı kapalı tuzlu su havuzu ve deniz odaklı Seawater Spa'da tatil yeri mevcuttur. Aile tesisi olanakları, 18 yaş ve üstü yetişkinlerle sınırlı olan BathHouse'dan ayırtılmalıdır; elli dakikalık oturumlar.",
+      "Konuk plaj; BathHouse yetişkinler 18+ rezervasyon; Beach Club Mayıs 2027'ye kadar kapalı.",
+      "Konuk plaj; BathHouse yetişkinler 18+ rezervasyon; Beach Club Mayıs 2027'ye kadar kapalı.",
+      "Gurney's, Montauk'un daha büyük tam hizmetli okyanus kıyısındaki tatil beldesidir, yemek, geniş konaklama ve sahil sağlıklılığını bir araya getirir. Yaklaşık 2.000 fitlik konuklu plajı, çarpıcı şekilde farklı düzenleri sunan odalar, kulübeler ve rezidanslarla eşleştirilir, ayrıca ısıtmalı kapalı tuzlu su havuzu ve deniz odaklı Seawater Spa'da konaklama imkanı sunar. Aile tesisi olanakları, 18 yaş ve üstü yetişkinlerle sınırlı olan BathHouse'dan ayırtılmalıdır; elli dakikalık oturumlar."
+    ]
+  ],
+  "faq": [
+    [
+      "Hamptons yürüme mesafesinde tüm otellerle tek bir kasaba mı?",
+      "Hayır. Hamptons, Bridgehampton, East Hampton, Amagansett ve Montauk dahil olmak üzere birçok Güney Çatal kasabasını kapsar. Oteller birbirinden uzak olabilir ve yaz trafiği veya park kuralları, uygun kısa transferleri üstlenmek yerine coğrafi alanla planlamayı önemli kılar."
+    ],
+    [
+      "Bu dört otelden hangisi Atlantik Okyanusu'nda doğru?",
+      "Marram ve Gurney's, manzaralar ve doğrudan plaj erişimi oda kategorisine göre farklılık gösterse de, okyanusa bakan Montauk otelleridir. Topping Rose House, doğrudan kum üzerinde değil, içeride Bridgehampton ve Doğu Hampton Köyü'ndeki The Maidstone'da oturuyor."
+    ],
+    [
+      "Gurney's Beach Club yıl boyunca açık mı?",
+      "Hayır. Gurney'in resmi web sitesi şu anda Beach Club'ın mevsimsel olarak kapalı olduğunu ve Mayıs 2027'de yeniden açılmasının beklendiğini söylüyor. Gecelik plaj erişimi ve yaz kulübü hizmetleri farklı haklardır; bir kış rezervasyonu kapalı bir mekan dahil olarak tanımlanmamalıdır."
+    ],
+    [
+      "Çocuklar Gurney's Seawater Spa BathHouse'u kullanabilir mi?",
+      "BathHouse, kapasiteye tabi elli dakikalık rezerve oturumlarda on sekiz yaş ve üstü yetişkinlerle sınırlıdır. Büyük tatil beldesinde, mevcut saatleri ve erişim kuralları ayrı ayrı kontrol edilmesi gereken kapalı havuz da dahil olmak üzere diğer aile odaklı tesisler bulunmaktadır."
+    ],
+    [
+      "Hangi otel sörf ve kum tepesi kaçamağı için daha iyidir?",
+      "Marram, Montauk'ta kum tepelerine ve sörf noktalarına yakın doksan altı odalı okyanus kıyısındaki butik bir mülktür. Ödünç alınan bisikletler ve herhangi bir sörf veya yoga deneyimi mevcut tarifelere ve rezervasyon koşullarına bağlıdır. Gurney's daha geniş bir tam hizmet tesisi ve spa deneyimi sunmaktadır."
+    ],
+    [
+      "Ziyaretçiler East Hampton Main Beach'te özgürce park edebilir mi?",
+      "Zorunlu değil. Park ve erişim kısıtlamaları belediye tarafından belirlenir ve özellikle yaz sezonunda izin gerektirebilir. Bir köy otel rezervasyonu bir plaj park izni oluşturmaz, bu nedenle mevcut kuralları ve yerel geçişi kontrol edin."
+    ],
+    [
+      "Bosphoras gerçek zamanlı envanter, fiyat veya transfer garantisi veriyor mu?",
+      "Hayır. Bu, endeksli olmayan bir editoryal rehber olarak kalır. Otel fotoğrafları ve açıklamaları, mevcut odalar, tedarikçi anlaşmaları, onaylanmış restoran tabloları, paket fiyatlandırması veya transferleri oluşturmaz. Herhangi bir ticari teklif yetkili tedarikçilerle doğrulanmalıdır."
+    ]
+  ],
+  "photoCaptions": [
+    "Montauk Point  Long Island'ın doğu ucunda ikonik deniz feneri",
+    "Doğu Hampton  Ana Plaj ve Atlantik kumu",
+    "Sag Limanı  tarihi deniz köyü",
+    "Southampton  Coopers Plajı Atlantik kıyı şeridi",
+    "Amagansett  korumalı kumul bitki örtüsü",
+    "Montauk  geniş Atlantik plajı",
+    "Montauk  sahil boyunca sabah ışığı",
+    "Hither Hills  okyanus plajına doğru yol",
+    "Sag Limanı  liman kasabası ve sahil mirası"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Topping Rose House  tarihi Bridgehampton emlak",
+      "Topping Rose House  resmi mülkiyet iç",
+      "Topping Rose House  Jean-Georges yemek atmosferi"
+    ],
+    [
+      "Maidstone  tarihi East Hampton butik ayarı",
+      "The Maidstone  tasarım odaklı konuk alanları",
+      "Maidstone  resmi otel fotoğrafçılığı"
+    ],
+    [
+      "Marram  kumullar arasında avlu konaklama",
+      "Marram  okyanus manzaralı konaklama kategorisi",
+      "Marram  resmi okyanus manzarası"
+    ],
+    [
+      "Gurney'in  tatil beldesinin sadece konuk plajının havadan görünümü",
+      "Gurney's  kapalı tuzlu su havuzu",
+      "Gurney's  Oceanfront tatil köyleri"
+    ]
+  ],
+  "seoTitle": "Hamptons: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Hamptons'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Long Island'ın doğu ucunda, Hamptons tek bir kasaba değildir. Bridgehampton'un tarihi mülkleri, East Hampton'ın köy galerileri ve Montauk'un vahşi sörfü her birinin kendi coğrafyası, sürüş gerçekleri ve yer duygusu vardır."
+}

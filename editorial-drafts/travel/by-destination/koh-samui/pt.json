@@ -1,0 +1,148 @@
+{
+  "name": "Koh Samui",
+  "country": "Tailândia Tailândia",
+  "eyebrow": "Ilha mais tranquila da Tailândia",
+  "heading": "Koh Samui: Devagar, fique extraordinário.",
+  "intro": "Koh Samui convida a um ritmo diferente: moradias emolduradas em coco, almoços lentos à beira-mar e um horizonte dourado sobre o Golfo da Tailândia. Sua escolha de costa e hotel é mais importante do que qualquer itinerário genérico da ilha.",
+  "editorial": "Escolha a sua costa antes do seu resort. Taling Ngam é sobre o pôr do sol, o nordeste sobre o acesso pacífico, Lamai sobre baías abrigadas e Bophut sobre jantar. Uma casa de piscina não garante acesso à beira-mar ou a mesma vista do mar. De dezembro a abril é muitas vezes o período mais confiável; o final do outono é geralmente mais úmido.",
+  "hotelIntro": "Quatro hotéis de luxo em Koh Samui, escolhidos para quatro experiências distintas na ilha: hospitalidade à beira-mar intemporal, bem-estar liderado pela natureza, uma baía privada e pôr do sol dramático. Esta é uma coleção editorial, não um inventário disponível para reservas ao vivo.",
+  "areas": [
+    [
+      "Taling Ngam  costa do pôr do sol",
+      "Na costa sudoeste, as cinco ilhas se sentam no mar e o pôr do sol define o ritmo. Este é um lugar para ficar, não para encher todas as noites com passeios.",
+      "Permitir transferências mais longas para praias e restaurantes movimentados."
+    ],
+    [
+      "Plai Laem  pacífico nordeste",
+      "As cabeceiras, as pequenas enseadas e a vegetação exuberante dão ao nordeste uma sensação pacífica de retiro sem colocá-lo longe do aeroporto.",
+      "Confirmar encostas, condições do mar e acesso real à praia."
+    ],
+    [
+      "Lamai  baías abrigadas",
+      "O sudeste combina praias, encostas exuberantes e refúgios de resort, adequados para dias de spa e passeios ocasionais na aldeia.",
+      "Um endereço Lamai ainda pode estar muito longe da aldeia para caminhar."
+    ],
+    [
+      "Bophut  jantar ilha",
+      "O Fisherman's Village oferece restaurantes à beira-mar e lojas independentes, um contraste mais animado com os resorts isolados da piscina.",
+      "A atmosfera noturna e a calma à beira-mar variam significativamente de acordo com a localização exata."
+    ],
+    [
+      "costa de coco",
+      "A costa norte oferece uma longa praia, palmeiras e vistas para Koh Phangan: um cenário encantador para estadias sem pressa.",
+      "As condições do mar e a profundidade do banho mudam com a estação."
+    ]
+  ],
+  "experiences": [
+    [
+      "Um dia na água",
+      "Um barco quando as condições permitem e descobrem as ilhas offshore do Golfo, com rotas e inclusões de combustível confirmadas com antecedência."
+    ],
+    [
+      "Um ritual de bem-estar mais lento",
+      "Massagem tailandesa, salas de tratamento de jardim e um jantar sem pressa fazem do bem-estar uma parte natural do ritmo da ilha."
+    ],
+    [
+      "Pôr do sol na costa ocidental",
+      "Alcance a costa oeste antes do pôr do sol e observe as silhuetas das Cinco Ilhas; é um panorama regional, não uma vista garantida da vila."
+    ]
+  ],
+  "checks": [
+    "Verifique a villa exata, piscina privada, verdadeira perspectiva do mar e configuração do quarto.",
+    "Escolha uma costa com base nos tempos de transferência, praia utilizável e planos noturnos.",
+    "Confirme as instalações que operam em suas datas, particularmente no Six Senses no final de 2026.",
+    "Verifique os termos, impostos, transferências e extras antes de pagar."
+  ],
+  "hotels": [
+    [
+      "Ang Thong  Côte nord-ouest",
+      "Situado em uma encosta coberta de coco acima de uma praia tranquila, o Four Seasons combina villas de piscina privada, hospitalidade tailandesa calorosa e vistas deslumbrantes do Golfo. A experiência difere entre moradias de um quarto e residências de vários quartos; confirme a perspectiva e o layout exatos.",
+      "Verifique a categoria de moradia exata, acessibilidade na encosta, transferências internas e instalações familiares.",
+      "Para serviço lendário, famílias e moradias tropicais de frente para o mar.",
+      "Na costa noroeste de Koh Samui, o Four Seasons organiza suas moradias através de coqueiros descendo para o mar. O clima equilibra a privacidade com uma experiência completa de resort: praia, jantar e uma variedade de categorias de moradia e residência. Não assuma que uma piscina, perspectiva ou layout fotografado se aplica a todas as moradias."
+    ],
+    [
+      "Plai Laem  nord-est",
+      "No isolado promontório do norte, Six Senses Samui favorece materiais naturais, manhãs lentas e uma abordagem liderada pelo bem-estar. Algumas villas têm vista para o mar, outras para os jardins, e nem todas as categorias têm uma piscina privada.",
+      "Confirme a categoria de villa e as instalações operacionais: a piscina principal e o Jantar na Colina estão temporariamente pausados de 7 de outubro a 30 de novembro de 2026.",
+      "Para se reconectar com a natureza, desacelerando e bem-estar.",
+      "Em um promontório do norte tranquilo, Six Senses se sente como uma vila de pescadores contemporânea entre jardins tropicais. Villas diferem em vistas e instalações de piscina privada. Melhorias no resort afetam a piscina principal e jantar na colina em outubro-novembro de 2026; reconfirmar as comodidades disponíveis antes de cometer."
+    ],
+    [
+      "baie privée",
+      "Banyan Tree Samui está enfiado em uma baía privada perto de Lamai, com villas de piscina na encosta, vistas tropicais e uma forte identidade de spa. Parece um retiro auto-suficiente, em vez de um endereço para caminhar até a vida noturna.",
+      "As categorias de villas de piscina oferecem diferentes vistas e layouts; o acesso ao redor do resort de encosta pode envolver transferências internas.",
+      "Para uma fuga íntima em uma baía abrigada com piscina privada e spa.",
+      "Escondido em uma baía abrigada perto de Lamai, Banyan Tree gira em torno de villas privadas, seus terraços e piscinas. O spa e a praia privada o tornam um destino atraente para ficar. Compare as categorias de villa cuidadosamente: panorama, tamanho, acesso e layouts familiares podem diferir significativamente."
+    ],
+    [
+      "Taling Ngam  côte sud-ouest",
+      "Na tranquila costa sudoeste, Conrad Koh Samui enquadra as cinco ilhas e pôr do sol notável de villas de encostas de piscina privada. Esta é uma fuga cenário-primeiro, deliberadamente removido das praias do norte movimentadas.",
+      "Esperar terrenos íngremes e viagens mais longas para os principais distritos de jantar; verificar a vista real villa e arranjos de transferência.",
+      "Para pôr-do-sol espetacular, piscinas privadas e reclusão encosta.",
+      "Na costa sudoeste, as villas de Conrad têm vista para o mar e as cinco ilhas. O pôr-do-sol é um ritual diário aqui, com privacidade excepcional e vistas de longo alcance. A posição dramática da encosta e a distância das aldeias fazem parte da experiência e devem ser consideradas para as famílias."
+    ]
+  ],
+  "faq": [
+    [
+      "Onde ficar em Koh Samui?",
+      "Escolha Taling Ngam para pôr do sol tranquilo, Plai Laem para um ambiente isolado, mas acessível, Lamai para baías abrigadas e Bophut para jantares à beira-mar e passeios noturnos."
+    ],
+    [
+      "Quais hotéis de luxo valem a pena considerar em Koh Samui?",
+      "O Four Seasons combina com famílias e luxo tropical clássico; Six Senses se concentra no bem-estar; Banyan Tree oferece um retiro privado; Conrad é particularmente atraente para moradias dramáticas ao pôr do sol. Compare sempre a categoria exata da villa."
+    ],
+    [
+      "Koh Samui ou Phuket para umas férias de luxo?",
+      "Koh Samui muitas vezes se sente mais gentil e mais centrado na vila, enquanto Phuket oferece uma escolha mais ampla de bairros e vida noturna. Ambos têm propriedades de luxo excepcionais."
+    ],
+    [
+      "Qual é a melhor época para visitar Koh Samui?",
+      "O mês de outubro e novembro podem ser mais úmidos, e as condições variam de ano para ano; verifique as previsões antes de reservar viagens de barco."
+    ],
+    [
+      "Quanto tempo você deve ficar em Koh Samui?",
+      "Seis a oito noites permite mais tempo para spas, excursões de barco privado e dias não estruturados pela piscina."
+    ],
+    [
+      "Koh Samui é adequado para famílias?",
+      "Sim, especialmente em villas de resort maiores com serviços familiares. Confirme os arranjos do quarto, a segurança da piscina, gradientes internos e instalações para crianças antes da reserva."
+    ]
+  ],
+  "photoCaptions": [
+    "Praia de Mae Nam sombreada por coqueiros em Koh Samui",
+    "Costa de Taling Ngam no pôr do sol",
+    "Templo Wat Laem no nordeste Koh Samui",
+    "Lamai Praia e paisagem tropical",
+    "Bophut Fisherman's Village orla",
+    "Ilhas e águas azul-turquesa em Ang Thong Marine Park",
+    "Templo de Buda grande em Koh Samui",
+    "Restaurantes em Koh Samui com culinária Café",
+    "Praia perto de Lamai em Koh Samui"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Villa com piscina privada com vista para o Golfo no Four Seasons Koh Samui",
+      "Vista aérea do Four Seasons Resort Koh Samui villas na praia e encosta",
+      "Restaurantes à beira-mar no Four Seasons Resort Koh Samui"
+    ],
+    [
+      "Villa piscina em Six Senses Samui",
+      "Seis sentidos Samui spa e bem-estar",
+      "Ambientação costeira em Six Senses Samui"
+    ],
+    [
+      "Villa piscina privada em Banyan Tree Samui",
+      "Baía privada de Banyan Tree Samui",
+      "Banyan Tree Samui instalações de bem-estar"
+    ],
+    [
+      "Restaurantes nas proximidades de Conrad Koh Samui",
+      "Piscina infinita em frente às cinco ilhas de Koh Samui",
+      "Vista aérea de Conrad Koh Samui villas encosta"
+    ]
+  ],
+  "seoTitle": "Koh Samui: estadias de luxo, áreas e experiências",
+  "hotelSeoTitle": "Hotéis em Koh Samui: guia com curadoria",
+  "seoDescription": "Koh Samui convida a um ritmo diferente: moradias emolduradas em coco, almoços lentos à beira-mar e um horizonte dourado sobre o Golfo da Tailândia. Sua escolha de costa e hotel é mais importante do que qualquer itinerário genérico da ilha."
+}

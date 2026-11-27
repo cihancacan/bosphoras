@@ -1,0 +1,148 @@
+{
+  "name": "Saint-Barthélemy",
+  "country": "Saint Barthélemy",
+  "eyebrow": "Isla francesa-caribeña viva",
+  "heading": "St Barth: una isla hecha para la elegancia sin prisas.",
+  "intro": "Pequeño en un mapa, pero infinitamente variado, San Bartolomé se desplaza del puerto de cubierta roja de Gustavia a la vida de playa de San Juan, la arena de Flamands y la laguna más suave de Grand Cul-de-Sac. Su elección de hotel establece el ritmo y la textura de todo el viaje.",
+  "editorial": "Nuestros cuatro hoteles representan cuatro estados de ánimo de isla contrastantes: la vida frente a la playa de Flamands subestimado, la escena social icónica de St Jean, las suites de villas privadas de Toiny y la península de Grand Cul-de-Sac familiar. Los viajes por carretera pueden ser más lentos de lo que sugieren las distancias debido a los carriles empinados y serpenteantes. Diciembre a abril es típicamente una temporada más seca popular; el mar Atlántico y las condiciones de agua todavía varían diariamente.",
+  "hotelIntro": "Cuatro direcciones distintivas de St Barth: Cheval Blanc para una vida refinada frente al mar Flamands, Eden Rock para un animado St Jean, Le Toiny para suites de villas aisladas y Rosewood Le Guanahani para la laguna y días de islas familiares. Estos son retratos editoriales, no inventario en vivo.",
+  "areas": [
+    [
+      "Flamands · barrer frente a la playa",
+      "Una bahía luminosa con un amplio tramo de arena y jardines descendiendo al mar, muy adecuado para días descalzos y un ambiente más residencial.",
+      "La hinchazón puede dificultar la natación; compare el acceso directo a la arena y la perspectiva real de la habitación."
+    ],
+    [
+      "San Juan · la bahía vivaz",
+      "Los famosos clubes de playa, calas y el promontorio de Eden Rock dan a St Jean un ambiente animado y social con un cómodo acceso a los restaurantes.",
+      "La pista de aterrizaje cercana y las populares direcciones de playa pueden añadir actividad y ruido de avión."
+    ],
+    [
+      "Gustavia · Puerto y comedor",
+      "Los tejados rojos, los yates y las calles íntimas hacen de Gustavia un lugar natural para cenar por la noche, ir de compras y pasear por el puerto.",
+      "El aparcamiento y el tráfico se tensan en temporada alta; las reservas de restaurantes ayudan."
+    ],
+    [
+      "Grand Cul-de-Sac · laguna protegida",
+      "La laguna del noreste ofrece aguas de aspecto más calmado y un ritmo suave, con actividades de agua guiadas donde las condiciones lo permiten.",
+      "Incluso las aguas protegidas pueden tener corrientes; siempre siga las directrices de seguridad locales."
+    ],
+    [
+      "Juguete · costa atlántica salvaje",
+      "Una costa atlántica indómita de surf, colinas escarpadas y villas privadas con vistas al horizonte.",
+      "Poderoso surf significa que Toiny no debe ser retratado como una suave playa de natación familiar."
+    ]
+  ],
+  "experiences": [
+    [
+      "Una mañana en Colombier",
+      "Llegar a la bahía aislada a través de un sendero o barco autorizado cuando las condiciones lo permitan; traer agua y tratar el entorno natural con cuidado."
+    ],
+    [
+      "Una noche en Gustavia",
+      "Mudarse de galerías y boutiques a una cena junto al puerto, descubriendo el ritmo fácil de las noches en la isla."
+    ],
+    [
+      "Barco privado entre calas",
+      "Planifique un barco privado alrededor del clima y la orientación de área protegida para una nueva perspectiva en las bahías de St Barth."
+    ]
+  ],
+  "checks": [
+    "Compare la categoría exacta de habitación, suite o villa y la perspectiva real.",
+    "Planifique la llegada a través de las islas vecinas, con conexiones de vuelo o ferry sujetas al tiempo.",
+    "Compruebe las condiciones de natación todos los días; el surf del Atlántico puede hacer que las playas sean inseguras.",
+    "Permita tiempo extra en carreteras sinuosas y confirme impuestos, inclusiones y términos de cancelación."
+  ],
+  "hotels": [
+    [
+      "Baie des Flamands",
+      "El Cheval Blanc St-Barth, situado en las arenas de Flamands, se siente como un elegante maison caribeño. Las habitaciones con jardín, las suites frente a la playa y la generosa Villa de Francia ofrecen un sentido diferente del espacio. El bienestar de Guerlain y la cena de La Case completan una visión claramente francesa del lujo de la isla.",
+      "Compare las categorías jardín, vista al mar y frente a la playa; verifique la habitación exacta, vista y diseño familiar.",
+      "Para la hospitalidad francesa refinada, la playa de Flamands y el servicio personal.",
+      "Ubicado en las arenas de Flamands, Cheval Blanc St-Barth se siente como un elegante maison caribeño. Habitaciones de jardín, suites frente a la playa y la generosa Villa de Francia ofrecen un sentido diferente del espacio. Guerlain wellness y La Case comedor completan una visión claramente francesa del lujo de la isla. Verifique la categoría precisa y las condiciones de acceso; el retrato editorial no garantiza una habitación o tarifa particular."
+    ],
+    [
+      "Baie de Saint-Jean · centro-norte",
+      "Eden Rock se levanta desde el cabo entre las dos curvas de la bahía de St Jean. Es tanto una institución insular y una animada dirección de playa, con habitaciones y suites diseñadas individualmente, impresionantes vistas al mar y el famoso Sand Bar. Aquellos que buscan un completo aislamiento pueden preferir la costa oriental más tranquila.",
+      "Compruebe si su habitación es ladera, junto a la roca o frente a la playa, además de pasos, acceso y actividades en el comedor.",
+      "Para el icónico St Jean, la comida de destino y un espíritu de isla sociable.",
+      "Eden Rock se eleva desde el cabo entre las dos curvas de la bahía de St Jean. Es tanto una institución insular como una animada dirección de playa, con habitaciones y suites diseñadas individualmente, impresionantes vistas al mar y el famoso Sand Bar. Aquellos que buscan un aislamiento completo pueden preferir la costa oriental más tranquila. Verifique la categoría precisa y las condiciones de acceso; el retrato editorial no garantiza una habitación o tarifa particular."
+    ],
+    [
+      "Anse de Toiny · côte est",
+      "Le Toiny se siente deliberadamente alejado de la zona de playa más ocupada de la isla. Amplias suites con piscinas privadas con vistas a una costa atlántica indómita, mientras que el Beach Club invita a largos almuerzos junto al surf. La playa es pintoresca, pero nadar puede ser peligroso y nunca debe ser asumido seguro.",
+      "Compruebe los tiempos de conducción a Gustavia, seguridad marítima, categoría de villa-suite y horarios de servicio de temporada.",
+      "Para suites de villa de piscina privada y el carácter salvaje del Atlántico de la isla.",
+      "Le Toiny se siente deliberadamente alejado de la zona de playa más ocupada de la isla. Amplias suites con piscinas privadas con vistas a una costa atlántica indomable, mientras que el Beach Club invita a largos almuerzos junto al surf. La playa es pintoresca, pero nadar puede ser peligroso y nunca debe ser asumido seguro. Verifique la categoría precisa y las condiciones de acceso; el retrato editorial no garantiza una habitación o tarifa particular."
+    ],
+    [
+      "Gran Cul-de-Sac · nord-est",
+      "Rosewood Le Guanahani se encuentra en una península privada entre Marigot y Grand Cul-de-Sac, sus pintorescas cabañas dispersas por jardines al lado de la laguna. Actividades acuáticas suaves, Sense Spa y un espíritu familiar acogedor lo diferencian de los retiros más espectaculares de la isla.",
+      "Confirme la orientación a la laguna o mar abierto, categoría exacta de piscina, instalaciones familiares y condiciones de deportes acuáticos.",
+      "Para vacaciones familiares entre jardines, playa y laguna.",
+      "Rosewood Le Guanahani se encuentra en una península privada entre Marigot y Grand Cul-de-Sac, sus cabañas coloridas dispersas por jardines junto a la laguna. Actividades acuáticas suaves, Sense Spa y un espíritu familiar acogedor lo diferencian de los retiros más dramáticos de la isla. Verifique la categoría precisa y las condiciones de acceso; el retrato editorial no garantiza una habitación o tarifa particular."
+    ]
+  ],
+  "faq": [
+    [
+      "¿Qué hoteles de lujo vale la pena considerar en St Barth?",
+      "Cheval Blanc para la elegancia frente a la playa Flamands, Eden Rock para la energía icónica de St Jean, Le Toiny para la reclusión y suites de piscina privada, y Rosewood Le Guanahani para la laguna y estancias familiares."
+    ],
+    [
+      "¿Cuál es la mejor zona para alojarse en St Barth?",
+      "Flamands es un hermoso refugio en la playa, St Jean es social, Grand Cul-de-Sac está centrado en la laguna y Toiny está aislado. Gustavia es atractivo para los restaurantes y tiendas del puerto."
+    ],
+    [
+      "¿Cómo llegas a St. Barth?",
+      "Muchos viajeros conectan a través de St Martin, continuando en un pequeño avión regional o ferry. Límites de equipaje, clima y ventanas de conexión requieren una planificación cuidadosa."
+    ],
+    [
+      "¿Cuándo es el mejor momento para visitar St Barth?",
+      "Diciembre a abril es a menudo más seco y más ocupado. El verano y principios de otoño puede traer lluvias más pesadas y tormenta tropical o riesgo de huracanes."
+    ],
+    [
+      "¿Nadar es seguro en todas las playas de St Barth?",
+      "No. El surf y las corrientes varían ampliamente, y playas como Toiny pueden ser peligrosas. Siempre siga las condiciones locales y consejos."
+    ],
+    [
+      "¿Necesitas un coche en St Barth?",
+      "Un coche de alquiler pequeño o conductor privado puede hacer que explorar más fácil. Carreteras estrechas, empinadas y estacionamiento de temporada alta merecen consideración."
+    ]
+  ],
+  "photoCaptions": [
+    "Vista aérea del puerto Gustavia en St Barth",
+    "Aguas Turquesas en Bahía Colombier, St Barth",
+    "Playa Flamands en la isla de St Barth",
+    "Bahía de San Juan y cabecera de Eden Rock",
+    "Calle comercial encogida y tejados rojos en Gustavia",
+    "Isla La Tortue frente a la costa de Grand Cul-de-Sac Bay",
+    "Costa rocosa vista desde las colinas",
+    "Playa Grande Salina en St Barth",
+    "Yates y veleros amarrados en el puerto deportivo Gustavia"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Cheval Blanc St-Barth y Flamands",
+      "Suite en Cheval Blanc St-Barth",
+      "Restaurante Cheval Blanc St-Barth"
+    ],
+    [
+      "Eden Rock en el promontorio de St Jean en St Barth",
+      "Colibri Rock Room en Eden Rock – St Barths",
+      "Sand Bar comedor terraza con vistas a la bahía de St Jean"
+    ],
+    [
+      "Suite de piscina en Le Toiny St Barth",
+      "Le Toiny St Barth vista al mar",
+      "Beach Club en el Hôtel Le Toiny"
+    ],
+    [
+      "Rosewood Le Guanahani",
+      "Rosewood Le Guanahani suite de piscina",
+      "Sala de tratamiento de Sense Spa en Rosewood Le Guanahani"
+    ]
+  ],
+  "seoTitle": "Saint-Barthélemy: estancias de lujo, zonas y experiencias",
+  "hotelSeoTitle": "Hoteles de lujo en Saint-Barthélemy: guía comisariada",
+  "seoDescription": "Pequeño en un mapa, pero infinitamente variado, San Bartolomé se desplaza del puerto de cubierta roja de Gustavia a la vida de playa de San Juan, la arena de Flamands y la laguna más suave de Grand Cul-de-Sac. Su elección de hotel establece el ritmo y la textura de todo el viaje."
+}

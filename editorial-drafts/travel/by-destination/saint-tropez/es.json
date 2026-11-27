@@ -1,0 +1,110 @@
+{
+  "name": "Saint-Tropez",
+  "country": "Francia",
+  "eyebrow": "El arte de la Riviera Francesa",
+  "heading": "Saint-Tropez: la Riviera a tu propio ritmo.",
+  "intro": "Mañana en el antiguo puerto, la luz del sol en las velas de yate, almuerzo bajo los pinos y las aguas azules de Pampelonne: Saint-Tropez combina la vida legendaria del pueblo con la calma del mar. Su dirección y la temporada definen la estancia.",
+  "editorial": "Nuestra lista de favoritos celebra cuatro formas distintas de vivir Saint-Tropez: un retiro íntimo frente al mar, una institución de pueblo, un santuario de ladera en Ramatuelle y una finca de gran castillo. No son intercambiables, y la ubicación real importa.",
+  "hotelIntro": "Cuatro propiedades distintivas elegidas para la configuración, la personalidad y la experiencia de los huéspedes. Lista de edición independiente: no se reclaman tarifas en vivo, disponibilidad no verificada o asociación de proveedores.",
+  "areas": [
+    [
+      "Antiguo Puerto y Plaza de las Lices",
+      "Yates, terrazas portuarias, casas pastel y el mercado definen el animado corazón del pueblo. Ideal para los huéspedes que disfrutan de caminar a la cena y volver a pie.",
+      "El puerto es animado y el tráfico es estacional: confirmar la tranquilidad de la habitación y el acceso al coche."
+    ],
+    [
+      "Pampelonne & Ramatuelle",
+      "Una larga playa de arena, clubes de playa, viñedos y paisaje cubierto de pinos, separados del pueblo. Lo mejor cuando la costa es la prioridad.",
+      "Pampelonne está en Ramatuelle, no en el pueblo: plan de traslados y ver el acceso al club de playa."
+    ],
+    [
+      "Playa Bouillabaisse y las colinas de Saint-Tropez",
+      "Los maisons costeros y las fincas en las colinas ofrecen un ritmo provenzal más tranquilo, con más espacio y privacidad que el puerto.",
+      "Acceso directo a la playa y una propiedad en lo alto de la colina con traslados son experiencias muy diferentes."
+    ]
+  ],
+  "experiences": [
+    [
+      "Una mañana temprano en el puerto",
+      "Caminar ante la multitud, disfrutar del café con vistas a los yates y descubrir la Place des Lices a paso del pueblo."
+    ],
+    [
+      "Un día en Pampelonne",
+      "Arena dorada, agua clara y almuerzo junto a la playa. Elija un club de playa para el servicio y el ambiente, no sólo la reputación."
+    ],
+    [
+      "La Riviera desde el mar",
+      "Salga en un barco privado, descubra bahías y calas y regrese al puerto mientras la luz se vuelve dorada."
+    ]
+  ],
+  "checks": [
+    "Elige la vida del pueblo, Bouillabaisse frente a la playa, las colinas de Saint-Tropez o Ramatuelle: la distancia cambia el ritmo diario.",
+    "Consulta las fechas de apertura de temporada y los términos reales de acceso a la playa.",
+    "Verifique el tipo exacto de habitación, vista y terraza; las imágenes de la villa no describen las habitaciones estándar.",
+    "Permitir el tráfico y traslados de verano; distancias cortas de conducción no garantizan viajes rápidos."
+  ],
+  "hotels": [
+    [
+      "Plage de la Bouillabaisse · Saint-Tropez",
+      "Un íntimo maison frente al mar, pino arbolado y la firma Riviera azul: atención a nivel de palacio directamente junto al Golfo de Saint-Tropez.",
+      "Confirme el mar, el pinar o la perspectiva del pueblo y el tipo exacto de suite.",
+      "Por la privacidad de una íntima maison frente al mar, un servicio altamente personalizado, pinos y la belleza subestimada del Golfo.",
+      "Cheval Blanc St-Tropez se siente más como un maison privado que como un gran resort. En la playa de Bouillabaisse, cerca de la entrada del pueblo, ofrece una experiencia íntima del Golfo sin perder el acceso a Saint-Tropez. La firma Riviera azul, los pinos paraguas y los interiores contemporáneos de Jean-Michel Wilmotte crean un ambiente de restricción luminosa. Las suites orientadas al mar son individuales: comparan terraza, distribución y perspectivas antes de seleccionar una categoría. Gastronomía, bienestar y la línea de agua completan la estancia, pero las inclusiones difieren según el alojamiento y la temporada."
+    ],
+    [
+      "Village · Place des Lices",
+      "Una institución de pueblo con la sensación de una casa mediterránea, terrazas, diseño distintivo y un ambiente social animado.",
+      "Un hotel de pueblo en lugar de un resort directamente en Pampelonne: confirmar los arreglos de la playa y el nivel de tranquilidad que desea.",
+      "Para la energía del pueblo, las noches fuera, un icono del estilo Saint-Tropez y la facilidad de explorar a pie.",
+      "Byblos está entretejido en la historia social de Saint-Tropez. Su composición como pueblo de terrazas, jardines y fachadas mediterráneas crea un ambiente diferente a un complejo de playa convencional. Los huéspedes vienen tanto para el pueblo y sus noches como para el tiempo junto a la piscina. Este no es un hotel situado directamente en la arena de Pampelonne. Elija una habitación para la tranquilidad y el diseño preferidos, especialmente para las familias; imágenes de la suite Dúplex decoradas ilustran esa categoría de habitación solo."
+    ],
+    [
+      "Collines de Ramatuelle · vue Méditerranée",
+      "Un retiro aislado en lo alto de la colina orientado alrededor de vistas al Mediterráneo, privacidad, bienestar y amplias terrazas.",
+      "La Réserve se encuentra en Ramatuelle, no en el puerto. Las instalaciones y las políticas de hotel y villa pueden diferir.",
+      "Para escapar del bullicio del pueblo y priorizar vistas al Mediterráneo, bienestar, terrazas y un ambiente inusualmente privado.",
+      "La Réserve Ramatuelle ocupa un mundo más tranquilo por encima de la costa, donde la arquitectura moderna deja el centro del escenario a los pinos, la luz y el horizonte marino. El atractivo es la privacidad, el servicio considerado y un ritmo orientado al bienestar. Las habitaciones de hotel, suites con terraza y villas separadas no ofrecen las mismas instalaciones o diseños. Se trata de Ramatuelle en lugar del puerto: paseos de playa plan, cenas de pueblo y transporte en lugar de asumir que cada experiencia está a un corto paseo."
+    ],
+    [
+      "Ruta de Tahití · colinas de Saint-Tropez",
+      "Una finca château sobre Saint-Tropez con jardines, piscinas, experiencias familiares y acceso a Pampelonne sujeto a los términos de la propiedad.",
+      "Confirme la categoría de habitación, acceso a la piscina y playa, traslados y comodidades familiares antes de reservar.",
+      "Para una gran finca provenzal, exuberantes jardines y una estancia orientada a la familia equilibrando las piscinas del hotel y el tiempo de playa.",
+      "El Château de la Messardière ofrece Saint-Tropez en la escala de una gran finca en la cima de una colina: jardines ajardinados, pinos y vistas al Mediterráneo enmarcan la estancia. El atractivo se encuentra en el espacio, múltiples piscinas y experiencias familiares organizadas en lugar de caminar inmediatamente hasta el Puerto Viejo. Situado en la Ruta de Tahití, requiere un plan realista para la playa, traslados y comedor. Confirme los servicios de temporada, spa e instalaciones para niños, y el tipo de habitación real: la imagen de Victoire Suite no es representativo de alojamiento estándar."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Saint-Tropez casco antiguo y puerto visto desde arriba en la luz mediterránea",
+    "Yates en la bahía mediterránea azul de Saint-Tropez",
+    "Casas de pastel y barcos tradicionales en el antiguo puerto pesquero de Saint-Tropez",
+    "Playa de arena de Pampelonne y agua turquesa en Ramatuelle",
+    "Viñedos que rodean Pampelonne en las colinas Ramatuelle",
+    "Bahía de Pampelonne, playa y agua azul vista desde arriba"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Cheval Blanc St-Tropez frente a la playa, piscina y pinos en el Golfo",
+      "Cheval Blanc Piscina St-Tropez y playa con vistas al Mediterráneo",
+      "Duplex Sea Suite dormitorio en Cheval Blanc St-Tropez"
+    ],
+    [
+      "Hôtel Byblos Saint-Tropez Arquitectura y terrazas de estilo mediterráneo",
+      "La piscina al aire libre de Byblos Saint-Tropez en medio de los jardines",
+      "Suite Duplex en Byblos Saint-Tropez diseñada por Laura González"
+    ],
+    [
+      "Entrada arquitectónica de La Réserve Ramatuelle enmarcando el Mediterráneo",
+      "La Réserve Ramatuelle piscina al aire libre, tumbonas y panorama mediterráneo",
+      "Deluxe Junior Suite terraza en La Réserve Ramatuelle frente al mar"
+    ],
+    [
+      "Airelles Château de la Messardière finca en lo alto de la colina y jardines",
+      "Terrazas con jardín soleado en Airelles Château de la Messardière",
+      "Suite Victoire en el Château de la Messardière, una categoría de habitación de gama alta distinta"
+    ]
+  ],
+  "seoTitle": "Saint-Tropez: estancias de lujo, zonas y experiencias",
+  "hotelSeoTitle": "Hoteles de lujo en Saint-Tropez: guía comisariada",
+  "seoDescription": "Mañana en el antiguo puerto, la luz del sol en las velas de yate, almuerzo bajo los pinos y las aguas azules de Pampelonne: Saint-Tropez combina la vida legendaria del pueblo con la calma del mar. Su dirección y la temporada definen la estancia."
+}

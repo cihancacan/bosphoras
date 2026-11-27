@@ -1,0 +1,162 @@
+{
+  "name": "Harbour Adası",
+  "country": "Bahamalar",
+  "eyebrow": "Harbour Adası  pembe kumlar ve Bahamalı yalınayak zarafet",
+  "heading": "Harbour Island: Pink Sands Plajı ve Dunmore Town arasında dört dikkate değer konaklama yeri.",
+  "intro": "Kuzey Eleuthera'dan sadece offshore olan Harbour Island, üç mil boyunca allık pembe Atlantik kumu, pastel sömürge yazlıkları ve samimi misafirperverliği bir araya getiriyor. Dunmore, Coral Sands ve Pink Sands Resort doğu sahiline doğru yol alırken, Landing limana bakan Dunmore Town'da oturuyor.",
+  "editorial": "Harbour Adası, Kuzey Eleuthera Havaalanı'ndan (ELH) karayolu köprüsü olmayan, açık denizden ayrı bir adadır. Ziyaretçiler genellikle Üç Ada Dock bölgesine kara taksisi ve su limanı ile çevrili üç adet özel deniz transferini yapar. Kanal koşulları, tekne tarifeleri ve hava koşulları bağlantıları bozabilir; Bir otel, inişten otuz dakika sonra otomatik olarak ulaşıldığında asla satılmamalıdır. Adada, konuklar genellikle yürüyüş veya golf arabası kiralar. Bahçe kulübeleri ve daha büyük konutları çok farklı ihtiyaçlara hizmet eder: seçkin konutlar özel havuzları içerebilir, ancak alakasız bir villada fotoğraflanan olanaklarla standart bir yazlık satılmamalıdır. 1960'lı yıllardan kalma tarihi bir yazlık olan Dunmore'un yazlık yazlık yazlık evi, mevcut açılış ve rezervasyon koşullarını da takip eder. Coral Sands Inn & Cottages, Inn'de, Briland House'daki süitlerde, bireysel bahçe kulübelerinde ve tam donanımlı King's Beach Homes'de bir resimle kaplıdır. Otel, Pink Sands Plajı'na kabaca beş dakikalık bir gezintiyi reklam ediyor, burada konuk sandalyeleri ve şemsiyeler düzenlemelerine tabi tutuluyor. Bununla birlikte İniş, fiziksel olarak okyanus kıyısında değildir ve bahçe manzaralı bir restoran, limana bakan bir süit olarak tanımlanmamalıdır. Kasabada, renkli evler, verandalar, küçük rıhtımlar, dükkanlar ve yerel restoranlar, özel konutlara saygı gösterilmesi nedeniyle telaşsız yürüyüşleri ödüllendirir. Atlantik doğu sahili dalgaları ve güncel durumları bile yaşayabilir.",
+  "hotelIntro": "Farklı güçlere sahip dört otantik özellik: üç pembe beach inzivası ve limana bakan bir miras misafirhanesi.",
+  "areas": [
+    [
+      "Pembe Kumlar Plajı",
+      "İnce allık renkli kumlu, kilometrelerce uzunluğunda bir Atlantik plajı, adaya tanınabilir kıyı kimliğini veriyor.",
+      "Kum renk tonu ve sörf değişir; kalıcı cankurtaran kapsamını garanti etmeyin."
+    ],
+    [
+      "Tarihi Dunmore Town",
+      "Pastel kereste kulübeleri, beyaz çitler ve yürünebilir bir dükkan, kafe ve miras binaları kümesi.",
+      "Özel kulübelere, yardlara ve sakin alanlara saygı gösterin."
+    ],
+    [
+      "Liman kıyısı ve rıhtımlar",
+      "Küçük limanlar, balıkçı tekneleri ve daha korunaklı batı kıyısındaki Kuzey Eleuthera'ya su-taksi bağlantıları.",
+      "Deniz havası, çocuk can yelekleri ve liman erişimi operatör onayına ihtiyaç duyar."
+    ],
+    [
+      "North Harbour Adası ve kıyı yolları",
+      "Daha sessiz alçak katlı evler, tropikal bitki örtüsü ve deniz uzantıları adanın küçük yol ağı boyunca ulaştı.",
+      "Özel plaj erişiminden uzak durun ve asla kırılgan kum tepelerini geçmeyin."
+    ],
+    [
+      "Southern Harbour Adası",
+      "Daha az meşgul güney kıyıları, tropikal yapraklar ve ada ile Eleuthera arasındaki kanallar.",
+      "Yüzmeden önce halka açık kıyı erişimini ve akıntıları doğrulayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Pink Sands Plajı'nda Gündoğumu",
+      "Doğal allık tonunu özel mülkten geçmeden görmek için erken bir yürüyüşe çıkın."
+    ],
+    [
+      "Dunmore Town bölgesindeki Pastel kır evleri",
+      "Yerel sakinleri rahatsız etmeden boyalı ahşap evleri ve ada dükkanlarını keşfedin."
+    ],
+    [
+      "Dunmore Clubhouse'da öğle yemeği",
+      "Dunmore'un retro clubhouse karakterini ayrı olarak onaylanmış bir yemek rezervasyonu ile yaşayın."
+    ],
+    [
+      "Liman kenarında altın saat",
+      "Liman boyunca uygun halka açık noktalardan küçük tekneleri ve akşam ışığını izleyin."
+    ],
+    [
+      "Dikkatlice planlanmış bir tekne gezisi",
+      "Akıntılara, hava koşullarına ve uygun aile güvenlik donanımına tabi ayrı bir lisanslı gezi düzenleyin."
+    ]
+  ],
+  "checks": [
+    "Harbour Island, Kuzey Eleuthera'dan bir tekne bağlantısı gerektirir ve havaalanı yol köprüsü yoktur.",
+    "Pembe Kumlar Plajı doğal olarak renk tonunda değişir ve asla evrensel olarak floresan pembe değildir.",
+    "Üç doğu sahil beldesi limana bakan The Landing'den farklıdır.",
+    "Evler, süitler, rezidanslar ve tüm evler ayrı konaklama alanlarıdır.",
+    "Atlantik sörfü, deniz geçişleri, çocuklar ve kasırga mevsimi önlem gerektirir.",
+    "Hiçbir feribot, golf arabası, tekne, restoran masası veya fiyat, tedarikçi doğrulaması olmadan garanti edilmez."
+  ],
+  "hotels": [
+    [
+      "Cte est  Pembe Kumlar Plajı",
+      "Dunmore, özel bir ada plaj kulübü hissini yakalar ve şu anda Harbour Adası'nın ünlü pembe kumları tarafından doğrudan sadece on dokuz odanın reklamını yapar. Samimi bahçe kulübeleri, bazıları ayrı oturma alanları ve özel havuzlar içeren daha büyük özel konutlarla kontrast oluşturur. Clubhouse, Riviera'dan esinlenerek çiftleşir, 1960'ların plaj kenarı öğle yemekleri ve rafine edilmiş akşam yemekleri ile göz kamaştırır, mevcut rezervasyon kurallarına tabi değildir. Konuklar Atlantik kıyı şeridine yakın, ancak tam yatak odası görünümüne sahiptir.",
+      "On dokuz oda; kır evleri daha büyük konutlardan farklıdır ve özel havuzlar evrensel değildir.",
+      "On dokuz oda; kır evleri daha büyük konutlardan farklıdır ve özel havuzlar evrensel değildir.",
+      "Dunmore, özel bir ada plaj kulübü hissini yakalar ve şu anda Harbour Adası'nın ünlü pembe kumlarının doğrudan on dokuz odasını reklamını yapar. Samimi bahçe kulübeleri, bazıları ayrı oturma alanları ve özel havuzlar içeren daha büyük özel konutlarla kontrast oluşturur. Clubhouse, Riviera'dan esinlenmiş, 1960'ların plaj kenarı öğle yemekleri ve rafine edilmiş akşam yemekleri ile daha büyük bir cazibeye sahiptir. Mevcut rezervasyon kurallarına bağlı olarak, konuklar Atlantik kıyı şeridine yakın, ancak tam olarak uyuyan görünümüne sahiptir."
+    ],
+    [
+      "Chapel Street  Pembe Kumlar Plajı",
+      "Coral Sands, Pink Sands Plajı'nın yanında değerli bir ayarı, gerçekten farklı birkaç konaklama formatıyla birleştirir: Inn'in odaları ve süitleri, Briland House'daki okyanusa bakan süitler, bağımsız bahçe kulübeleri ve konut King's Beach Evleri. Kategori bütünlüğü esastır: tam mutfak, teras ve cömert özel yaşam alanlarına sahip çok yatak odalı bir ev, Inn'deki standart King odası olarak sunulamaz. Havuzlar, kıyı şeridi, yemek ve racque sporlarına",
+      "Inn, Briland House, kır evleri ve King's Beach Evleri, manzara, mutfak ve doluluk açısından büyük farklılıklar gösterir.",
+      "Inn, Briland House, kır evleri ve King's Beach Evleri, manzara, mutfak ve doluluk açısından büyük farklılıklar gösterir.",
+      "Coral Sands, Pink Sands Plajı'nın yanında değerli bir ortamı, gerçekten farklı birkaç konaklama formatıyla birleştirir: Inn'in odaları ve süitleri, Briland House'daki okyanusa bakan süitler, bağımsız bahçe kulübeleri ve King's Beach Evleri. Kategori bütünlüğü esastır: tam mutfak, teras ve cömert özel yaşam alanlarına sahip çok yatak odalı bir ev, Inn'deki standart King odası olarak sunulamaz. Havuzlar, kıyı şeridi, yemek ve rakk sporlarına"
+    ],
+    [
+      "Chapel Street  littoral atlantique",
+      "Pink Sands Resort, adanın ünlü gül renkli Atlantik kıyısı yakınlarındaki tropikal bahçeler içinde özel yazlıklar, villalar ve daha büyük evler yerleştirir. Her format farklı bir konaklama yaratır: bir aile villası standart bir çiftlerin kulübesi değildir ve teras, yatak odası sayısı ve plaj yakınlığı, tatil alanı genelindeki fotoğraf galerisinden çıkarılamaz. Yemek, Malcolm 51'den Blue Bar & Kitchen'a kadar olan belirli katlara ve ayrı olarak düzenlenmiş özel deneyimlere sahiptir, ancak bu konuk odasında otomatik olarak masa veya yemek bulunmamaktadır.",
+      "Evler, villalar ve evler değiştirilebilir değildir; yemek ve plaj olanakları onay gerektirir.",
+      "Evler, villalar ve evler değiştirilebilir değildir; yemek ve plaj olanakları onay gerektirir.",
+      "Pink Sands Resort, adanın ünlü gül renkli Atlantik kıyısı yakınlarındaki tropik bahçeler içinde özel yazlıklar, villalar ve daha büyük evler yerleştirir. Her format farklı bir konaklama yaratır: bir aile villası standart bir çiftlerin kulübesi değildir ve teras, yatak odası sayısı ve plaj yakınlığı, tatil alanı genelindeki fotoğraf galerisinden çıkarılamaz. Yemek seçenekleri Malcolm 51'den Blue Bar & Kitchen'a kadar uzanmaktadır ve bu özel deneyimlere otomatik olarak hiçbir masa veya yemek dahil değildir."
+    ],
+    [
+      "Dunmore Kasabası  front de port, non ocanique",
+      "Landing, Dunmore Town'un kalbinde 1800'e dayanan, Atlantik sahilinden ziyade limana bakan tarihi bir misafirhaneyi kaplar. On üç Hindistan Hicks esintili, sömürge tarzı odaları, dört direkli yatakları, mumlu ahşap zeminleri ve canlı bir ada karakterine sahip hafif pamuklu kumaşları eşleştirir. Bazı konaklama birimlerinde verandalar veya liman görünümleri vardır, diğerleri ise sessiz bahçelerle karşı karşıyadır. Otel, Pink Sands Plajı'nın altında kabaca beş dakikalık bir yürüyüş ve konuklar sunmaktadır.",
+      "Doğrudan Atlantik okyanusa kıyısı olmayan on üç liman-şehir odası; plaj ayrı bir kısa yürüyüş mesafesindedir.",
+      "Doğrudan Atlantik okyanusa kıyısı olmayan on üç liman-şehir odası; plaj ayrı bir kısa yürüyüş mesafesindedir.",
+      "Landing, Dunmore Town'un kalbinde 1800'e dayanan, Atlantik sahilinden ziyade limana bakan tarihi bir misafirhaneyi kaplar. On üç Hindistan Hicks esintili, sömürge tarzı odaları, dört direkli yatakları, mumlu ahşap zeminleri ve canlı bir ada karakterine sahip hafif pamuklu kumaşları eşleştirir. Bazı konaklama birimleri verandalara veya liman görünümlerine sahipken, diğerleri sessiz bahçelerle karşı karşıyadır. Otel, Pink Sands Plajı'nın altında kabaca beş dakikalık bir yürüyüş mesafesindedir ve konuklar sunmaktadır."
+    ]
+  ],
+  "faq": [
+    [
+      "Ziyaretçiler Kuzey Eleuthera Havaalanı'ndan Harbour Adası'na nasıl ulaşır?",
+      "Yol köprüsü yoktur. Gezginler normalde Kuzey Eleuthera Havaalanı'ndan (ELH) Üç Ada Dock alanına, daha sonra Harbour Adası'na bir su taksisine binerler. Tekne zamanlaması, hava durumu, bagaj ve gerçek rıhtım, varsayılmak yerine operatörle doğrulanmalıdır."
+    ],
+    [
+      "Tüm önerilen oteller doğrudan Pink Sands Plajı'nda mı?",
+      "Hayır. Dunmore, Coral Sands ve Pink Sands Resort, doğu Atlantik kıyısında veya kıyısında oturur. Landing, liman tarafında Dunmore Town'da, Pink Sands Plajı'na kabaca beş dakikalık bir yürüyüş ve otel politikasına tabi olarak mevcut olan konuk sandalyeleri ile birlikte."
+    ],
+    [
+      "Harbour Adası'nın plaj kumu her zaman parlak pembe midir?",
+      "Doğal allık kısmen küçük foraminifera parçalarından gelir, ancak görünür renk ıslak kum, ışık ve mevsim ile değişir. Gün boyunca tekdüze floresan pembe kum vaat etmek veya tipik koşullar olarak yoğun doymuş fotoğraflar üretmek yanıltıcıdır."
+    ],
+    [
+      "Hangi otel çocuklarla seyahat eden aileler için en iyi şekilde çalışır?",
+      "Coral Sands, çok yatak odalı King's Beach Homes, The Dunmore'un daha büyük konutları ve Pink Sands Resort'un yazlıklar, villalar ve evler sunmaktadır. Tam yatak takımları, mutfaklar, özel havuzlar, çocuk güvenliği ve plaja olan mesafe rezervasyon kategorisine göre değişir ve kontrol edilmelidir."
+    ],
+    [
+      "Ziyaretçilerin dolaşmak için golf arabasına ihtiyacı var mı?",
+      "Dunmore Town gezilebilir, ancak bazı konaklama ve plajlar daha uzaktadır. Golf arabaları, kullanılabilirlik, yerel sürüş kuralları, çocuk sınırlamaları, sigorta ve gerçek kiralama koşullarına bağlı olarak popüler bir seçenektir. Bir tanesinin bir otel odasına dahil olduğunu varsaymayın."
+    ],
+    [
+      "Hangi hava ve yüzme önlemleri önemlidir?",
+      "Atlantik'e bakan plaj, değişen sörf, resifler ve akıntılara sahip olabilir ve resmi kasırga mevsimi tipik olarak Haziran'dan Kasım'a kadar sürer. Her gün hava durumu tavsiyelerini, deniz transferlerini, çocuğa uygun yüzme noktalarını ve mevcut güvenlik denetimini kontrol edin."
+    ],
+    [
+      "Fiyatlar, tekneler ve transferler zaten Bosphoras üzerinden rezerve edilebilir mi?",
+      "Hayır. Bu bir index olmayan editoryal sayfadır ve canlı oda envanteri, yat kiralama stoku, tedarikçi sözleşmeleri, onaylanmış tablolar veya dahil transferleri göstermez. Herhangi bir rezervasyon teklifi yetkili tedarikçi onayı gerektirir."
+    ]
+  ],
+  "photoCaptions": [
+    "Pembe Kumlar Plajı  allık renkli Atlantik kumu",
+    "Dunmore Town  dönem sokak manzarası (1989 arşiv fotoğrafı)",
+    "Harbour Island  Pink Sands Beach yakınlarında yapılacak şeyler",
+    "Harbour Island  tarihi liman manzarası (1989 fotoğraf)",
+    "Pembe Kumlar Plajı  sabah ışığında kıyı şeridi",
+    "Dunmore Town  miras kulübesi (tarihsel fotoğraf)",
+    "Harbour Adası  turkuaz deniz ve pembe kumlar",
+    "Harbour Adası  su kenarı sahnesi (1989 arşiv görünümü)",
+    "Harbour Adası  doğal kıyı manzarası"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Dunmore  sahil Clubhouse mimarisi",
+      "Dunmore  mülkiyet mimarisi ve yaşam alanları",
+      "Dunmore  vintage esintili otel iç"
+    ],
+    [
+      "Coral Sands  otel girişi ve bahçesi",
+      "Coral Sands  palmiye çerçeveli yüzme havuzu",
+      "Coral Sands  Sea Suite misafir odası kategorisi"
+    ],
+    [
+      "Pink Sands Resort  plaj tesisi ve yemyeşil bahçe",
+      "Pink Sands Resort  bireysel yazlık konaklama",
+      "Pink Sands Resort  farklı konaklama kategorisi"
+    ],
+    [
+      "Landing  tarihi misafirhane ve bahçe",
+      "Landing  sömürge dört katlı oda kategorisi",
+      "The Landing  Hindistan Hicks ilhamlı misafir odası"
+    ]
+  ],
+  "seoTitle": "Harbour Adası: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Harbour Island'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Kuzey Eleuthera'dan sadece offshore olan Harbour Island, üç mil boyunca allık pembe Atlantik kumu, pastel sömürge yazlıkları ve samimi misafirperverliği bir araya getiriyor. Dunmore, Coral Sands ve Pink Sands Resort doğu sahiline doğru yol alırken, Landing limana bakan Dunmore Town'da oturuyor."
+}

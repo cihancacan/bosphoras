@@ -1,0 +1,162 @@
+{
+  "name": "Mónaco",
+  "country": "Mónaco",
+  "eyebrow": "Principado de Mónaco - Mediterráneo",
+  "heading": "Mónaco: cuatro formas distintas de habitar la Riviera.",
+  "intro": "Mónaco comprime una extraordinaria gama de estados de ánimo en una costa muy pequeña. Una suite con vistas a la Plaza del Casino no ofrece la misma privacidad que un palacio Belle Époque, y tampoco replica un día entre un jardín mediterráneo y una laguna. Nuestra selección compara cuatro direcciones distintivas sin confundir una fotografía en la azotea con la vista desde su habitación reservada, o una escena de piscina de verano con una promesa durante todo el año.",
+  "editorial": "Casino Square y el Carré d’Or marcan el escenario para hoteles formales, boutiques de lujo y cenas importantes. A pocos pasos, Plaza Beaumarchais se siente más protegida, a pesar de la misma ubicación central. Port Hercule y La Condamine giran en torno al puerto, el mercado y el acceso a eventos importantes, con cambios sustanciales de elevación entre los distritos. El final de la costa Larvotto trae jardín y vida turística, mientras que Mónaco-Ville on the Rock recompensa una mirada sin prisa a las viejas calles, palacio y perspectivas Fontvieille. La mayoría de las llegadas internacionales utilizan el aeropuerto de Niza Côte d’Azur; traslados por carretera y cualquier opción de helicóptero dependen del tráfico, operadores y el clima. Acceso a la piscina, privilegios de club de playa e inclusión de spa difieren por propiedad, temporada y habitación reservada. Esta es una guía editorial independiente, no una declaración de inventario en vivo o tarifas.",
+  "hotelIntro": "Cuatro hoteles, cuatro intenciones diferentes: Hôtel de Paris para la ocasión completa de Mónaco, Hermitage para la elegancia de Belle Époque restringida, Métropole para interiores Jacques García y un mundo hotelero más íntimo, y Monte-Carlo Bay para jardines, piscinas y estancias costeras relajadas.",
+  "areas": [
+    [
+      "Carré d’Or · Plaza del Casino",
+      "El Casino y el Hôtel de Paris definen la dirección más teatral de la ciudad. Es ideal para cenar de forma formal, navegar por las boutiques One Monte-Carlo y regresar a un palacio emblemático.",
+      "Compruebe la seguridad del evento-noche y el acceso a la carretera, y confirme si la habitación realmente tiene vistas a Casino Square."
+    ],
+    [
+      "Beaumarchais · jardines y elegancia tranquila",
+      "El lado del Hermitage de Montecarlo se adapta a los huéspedes que prefieren un entorno histórico más discreto mientras que mantiene Casino Square a poca distancia.",
+      "Compare las vistas al mar, patio y jardín; la inclusión de instalaciones de spa no implica que los tratamientos sean gratuitos."
+    ],
+    [
+      "Puerto Hercule · La Condamine",
+      "El puerto es particularmente gratificante antes de las horas más concurridas. El mercado de La Condamine, los paseos por el mar y los amarres de yates dan a Mónaco un carácter más cotidiano.",
+      "Permitir cambios pronunciados en la elevación y posibles restricciones portuarias durante los eventos."
+    ],
+    [
+      "Larvotto · Jardines mediterráneos",
+      "En el extremo oriental, la playa de Larvotto y la bahía de Montecarlo cambian el ritmo: los jardines, las terrazas orientadas al mar y las piscinas tienen prioridad sobre pasar de una cita central a otra.",
+      "Verificar las aberturas estacionales para la laguna de fondo de arena y las instalaciones al aire libre en lugar de asumir el acceso durante todo el año."
+    ],
+    [
+      "Mónaco-Ville · La Roca y Fontvieille",
+      "Las calles históricas alrededor del Palacio del Príncipe, los jardines de Saint-Martin y las vistas hacia Fontvieille revelan el principado más allá de sus lobbies hoteleros.",
+      "Compruebe los períodos de visita al palacio, los escalones y gradientes de caminar; pueden aplicarse restricciones de acceso ceremonial."
+    ]
+  ],
+  "experiences": [
+    [
+      "Port Hercule ante la multitud",
+      "Comience en el mercado de La Condamine y acérquese al puerto deportivo mientras los muelles están tranquilos. Cualquier programa de yates o embarcaciones requiere un operador identificado, un buque confirmado y un control meteorológico."
+    ],
+    [
+      "Casino Square seguido de una cena adecuada",
+      "Combine la arquitectura de Casino Square con un clásico bar o restaurante de destino. Confirme las reservas de restaurantes y los códigos de vestimenta por separado; una estancia de noche no garantiza el acceso."
+    ],
+    [
+      "Una tarde planeada alrededor del agua",
+      "Compare la laguna de la bahía de Montecarlo, la piscina Odisea de Métropole y Thermes Marins. Son productos distintos con reglas de acceso, estaciones y políticas de tratamiento independientes."
+    ],
+    [
+      "La Roca a un ritmo más lento",
+      "Paseo Mónaco-Ville, los jardines de Saint-Martin y los miradores sobre Fontvieille en una luz más suave. Consulte los horarios de visitas públicas y prepárese para las escaleras."
+    ],
+    [
+      "Una llegada que preserva tu primer día",
+      "Match Niza Traslados al aeropuerto de equipaje, tamaño de la fiesta y restricciones de eventos. Helicópteros o barcos son propuestas sólo después de que el operador y las condiciones se confirman."
+    ]
+  ],
+  "checks": [
+    "Elija entre la plaza central del Casino/Beaumarchais y un complejo costero de Larvotto antes de comparar las calificaciones individuales de las estrellas del hotel.",
+    "Reserve el tipo exacto de habitación para la vista requerida; una fotografía junto a la piscina no garantiza que la vista desde su habitación.",
+    "Consulta la apertura estacional de la laguna, la piscina Odyssey y cualquier otra instalación al aire libre para tus fechas de viaje específicas.",
+    "Espere reglas de acceso inusuales y precios durante los eventos principales; la ocupación del hotel no garantiza una posición de visión Grand Prix.",
+    "Planifique traslados desde Niza y viajes interdistritales teniendo en cuenta los cambios en las necesidades de elevación y equipaje de Mónaco.",
+    "Reserva restaurantes y tratamientos por separado; la guía nunca representa el inventario confirmado de Bosphoras, la disponibilidad o las tarifas."
+  ],
+  "hotels": [
+    [
+      "Place du Casino · Palacio histórico",
+      "Fundado en 1864, el Hôtel de Paris es Mónaco en su momento más ceremonial. La entrada de la Plaza del Casino, las habitaciones públicas de historia, Le Louis XV – Alain Ducasse y el Bar Américain forman un destino completo en sí mismos. La orientación de la habitación importa: una habitación del patio no es un sustituto equivalente para una terraza específicamente reservada con orientación al mar o a la plaza. Thermes Marins, Sky Club y privilegios de instalaciones de temporada deben verificarse contra los términos reales de la estancia.",
+      "Para fechas de eventos mayores confirmar la categoría exacta de la suite, orientación, balcón, posible ruido y privilegios de bienestar incluidos.",
+      "Para fechas de eventos mayores confirmar la categoría exacta de la suite, orientación, balcón, posible ruido y privilegios de bienestar incluidos.",
+      "Fundado en 1864, el Hôtel de Paris es Mónaco en su momento más ceremonial. La entrada de la Plaza del Casino, las salas públicas de historia, Le Louis XV – Alain Ducasse y el Bar Américain forman un destino completo en sí mismos. La orientación de la habitación importa: una habitación del patio no es un sustituto equivalente para una terraza específicamente reservada con orientación al mar o a la plaza. Thermes Marins, Sky Club y privilegios de instalaciones de temporada deben verificarse contra los términos reales de la estancia."
+    ],
+    [
+      "Plaza Beaumarchais · Belle Époque",
+      "El Hermitage es la cara más restringida del centro de Montecarlo: la arquitectura de Belle Époque, un distintivo techo de cristal Winter Garden asociado a los talleres de Eiffel y una dirección tranquila junto al Carré d’Or. El acceso a Thermes Marins puede convertir una breve escapada en una estancia de bienestar. Las suites varían considerablemente en exposición, desde vistas al puerto o al mar hasta orientación al patio y al jardín, por lo que la categoría exacta reservada importa más que una galería genérica.",
+      "Distinguir el acceso a las instalaciones desde tratamientos de pago, comprobar las categorías de suite actualizadas y verificar la vista real de la habitación.",
+      "Distinguir el acceso a las instalaciones desde tratamientos de pago, comprobar las categorías de suite actualizadas y verificar la vista real de la habitación.",
+      "El Hermitage es la cara más restringida del centro de Montecarlo: la arquitectura Belle Époque, un techo de cristal de Winter Garden distintivo asociado con los talleres de Eiffel y una dirección tranquila junto al Carré d’Or. El acceso a Thermes Marins puede convertir una breve escapada en una estancia de bienestar. Las suites varían considerablemente en exposición, desde vistas al puerto o al mar hasta orientación al patio y al jardín, por lo que la categoría exacta reservada importa más que una galería genérica."
+    ],
+    [
+      "Carré d’Or · Avenue de la Madone",
+      "A pocos pasos del Casino, Métropole ofrece una interpretación íntima de Mónaco a través de los interiores ricamente texturados de Jacques García. Las categorías seleccionadas de habitaciones y suites fueron renovadas en 2026, por lo que los viajeros deben confirmar el producto específico reservado en lugar de asumir que cada habitación es idéntica. La piscina Odyssey concebida por Karl Lagerfeld, Spa Métropole de Guerlain y Les Ambassadeurs de Christophe Cussac hacen del hotel una razón para ralentizarse en lugar de sólo una base central.",
+      "Confirme si la habitación reservada está renovada, la distribución familiar, la admisión Odyssey, términos de tratamiento Guerlain y la terraza real.",
+      "Confirme si la habitación reservada está renovada, la distribución familiar, la admisión Odyssey, términos de tratamiento Guerlain y la terraza real.",
+      "A pocos pasos del Casino, Métropole ofrece una interpretación íntima de Mónaco a través de los interiores ricamente texturados de Jacques García. Las categorías de habitaciones y suites seleccionadas fueron renovadas en 2026, por lo que los viajeros deben confirmar el producto específico reservado en lugar de asumir que cada habitación es idéntica. La piscina Odyssey concebida por Karl Lagerfeld, Spa Métropole de Guerlain y Les Ambassadeurs de Christophe Cussac hacen del hotel una razón para ralentizar en lugar de sólo una base central. Confirme si la habitación reservada está renovada, diseño familiar, admisión Odyssey, términos de tratamiento Guerlain y terraza real."
+    ],
+    [
+      "Larvotto · avenida Princesa Gracia",
+      "La bahía de Montecarlo, alejada del escenario de Casino Square, ofrece jardines mediterráneos, balcones y largas tardes centradas en el agua. La laguna de fondo de arena es su firma, pero las temporadas de apertura al aire libre deben confirmarse antes de reservar un viaje en familia alrededor de esa promesa. Blue Bay Marcel Ravin añade una dimensión de destino-comedor, mientras que las terrazas miran hacia la costa. Este no es un gran palacio de Carré d’Or: es un complejo costero más relajado, con un viaje más largo a las citas centrales.",
+      "Confirme temporada de lagunas y acceso, categoría de balcón y dirección, horarios de comedor y transporte al centro de Mónaco.",
+      "Confirme temporada de lagunas y acceso, categoría de balcón y dirección, horarios de comedor y transporte al centro de Mónaco.",
+      "La bahía de Montecarlo, retirada del escenario de Casino Square, ofrece jardines mediterráneos, balcones y largas tardes centradas en el agua. La laguna de fondo de arena es su firma, pero las temporadas de apertura al aire libre deben confirmarse antes de reservar un viaje en familia alrededor de esa promesa. Blue Bay Marcel Ravin añade una dimensión de destino-comedor, mientras que las terrazas miran hacia la costa. Este no es un gran palacio de Carré d’Or: es un complejo costero más relajado, con un viaje más largo a citas centrales. Confirme la temporada de laguna y el acceso, categoría y dirección de balcón, horarios de apertura de restaurantes y transporte al centro de Mónaco."
+    ]
+  ],
+  "faq": [
+    [
+      "¿Qué hoteles están a poca distancia de Casino Square?",
+      "El Hôtel de Paris, el Hermitage y el Métropole ocupan la zona central de Carré d’Or, pero ofrecen experiencias diferentes: ceremonial en París, más discreto en el Hermitage e íntimo en Métropole. Consulta la ruta de acceso real si la movilidad es importante."
+    ],
+    [
+      "¿Está abierta la laguna de fondo de arena de la bahía de Montecarlo todo el año?",
+      "La laguna de fondo de arena es una característica de firma, pero su período de apertura y el acceso de los huéspedes son estacionales. Confirme las fechas de funcionamiento y la disponibilidad de la piscina antes de reservar, especialmente si los niños están viajando."
+    ],
+    [
+      "¿Una habitación viene automáticamente con una vista al mar o al puerto?",
+      "No. La perspectiva depende de la categoría, el piso y la dirección de la habitación reservada. Una fotografía en la azotea, piscina o terraza no es evidencia de la vista desde una habitación específica. Verifique la descripción exacta de la categoría."
+    ],
+    [
+      "¿Se puede explorar cómodamente todo Mónaco a pie?",
+      "Mónaco es compacto, pero los cambios en la elevación son sustanciales entre la Plaza Casino, el puerto, Mónaco-Ville y Fontvieille. Los ascensores públicos, autobuses y taxis pueden ayudar; considere gradientes con equipaje o un cochecito."
+    ],
+    [
+      "¿Qué deben comprobar los viajeros durante las fechas del Gran Premio de Mónaco?",
+      "Los eventos principales cambian las restricciones de vehículos, traslados, rutas peatonales y arreglos hoteleros. Una reserva de hotel no incluye entrada en la tribuna, acceso al paddock o vistas garantizadas del circuito."
+    ],
+    [
+      "¿Cómo llegar desde el aeropuerto de Niza Côte d’Azur?",
+      "Un transporte por carretera privado, taxi o conexiones ferroviarias pueden caber dependiendo de los horarios y el equipaje. Los servicios de helicóptero dependen de un operador identificado, la disponibilidad y el tiempo; esta guía no confirma ni vende ningún traslado."
+    ],
+    [
+      "¿Puede Bosphoras ya reservar los cuatro hoteles destacados?",
+      "No sólo con esta guía editorial. No se implica precio negociado, inventario de habitación, disponibilidad de pago o derecho de reserva. La reservabilidad en tiempo real debe ser confirmada independientemente a través de un canal de socios permitido."
+    ]
+  ],
+  "photoCaptions": [
+    "Casino de Montecarlo — fachada ornamentada, palmeras y fuente de espejo; vista fotográfica de la plaza",
+    "Port Hercule durante el Salón Náutico de Mónaco 2017 — panorama aéreo de los superyates",
+    "Mónaco-Ville — fachada del Palacio del Príncipe sobre la roca",
+    "Larvotto — playa iluminada por el sol, aguas turquesas del Mediterráneo y palmeras",
+    "Port de Fontvieille — yates y puerto deportivo bajo los acantilados de Mónaco-Ville",
+    "Jardines del Casino y la costa de Mónaco junto al Carré d’Or",
+    "Mónaco Jardín Japonés – estanque ajardinado y pasarela roja",
+    "Museo Oceanográfico — fachada monumental con vistas al Mediterráneo",
+    "Mareterra — panorama aéreo de la costa de Mónaco, recientemente recuperada"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Hôtel de Paris Monte-Carlo — fachada de Belle Époque iluminada junto a la plaza Casino",
+      "Hôtel de Paris Monte-Carlo — Diamond Suite Garnier terraza con vistas al Casino",
+      "Hôtel de Paris Monte-Carlo — cálidos interiores de madera en Le Bar Américain"
+    ],
+    [
+      "Hôtel Hermitage Monte-Carlo — Belle Époque fachada enmarcada por jardines",
+      "Hôtel Hermitage Monte-Carlo — salón Diamond Suite con orientación al mar y soleado",
+      "Hôtel Hermitage — Belle Époque Winter Garden bajo la cúpula de cristal"
+    ],
+    [
+      "Hôtel Métropole — patio de luz natural, fachada clásica y exuberante vegetación",
+      "Hôtel Métropole — salón de suites con tapizado púrpura con vistas a Montecarlo",
+      "Hôtel Métropole — piscina de Odyssey iluminada y terraza ajardinada"
+    ],
+    [
+      "Bahía de Montecarlo: laguna de fondo, pabellón y jardines mediterráneos ajardinados",
+      "Bahía de Montecarlo: jardines de hoteles y perspectivas mediterráneas",
+      "Bahía de Montecarlo: piscinas ajardinadas en el mar"
+    ]
+  ],
+  "seoTitle": "Mónaco: estancias de lujo, zonas y experiencias",
+  "hotelSeoTitle": "Hoteles de lujo en Mónaco: guía comisariada",
+  "seoDescription": "Mónaco comprime una extraordinaria gama de estados de ánimo en una costa muy pequeña. Una suite con vistas a la Plaza del Casino no ofrece la misma privacidad que un palacio Belle Époque, y tampoco replica un día entre un jardín mediterráneo y una laguna. Nuestra selección compara cuatro direcciones distintivas sin confundir una fotografía en la azotea con la vista desde su habitación reservada, o una escena de piscina de verano con una promesa durante todo el año."
+}

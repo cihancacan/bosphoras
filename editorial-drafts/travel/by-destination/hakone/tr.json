@@ -1,0 +1,168 @@
+{
+  "name": "Hakone",
+  "country": "Japonya",
+  "eyebrow": "Japonya  lüks ryokans, onsen ve dağ vadileri",
+  "heading": "Hakone: durgunluk sanatında lüks.",
+  "intro": "Gora, Kowakidani, Miyanoshita ve Sengokuhara'da dört istisnai ryokan - Fuji Dağı manzarasını vaat etmeden.",
+  "editorial": "Hakone'un çekiciliği Fuji Dağı'nın kartpostal fotoğraflarını toplamakta, doğru ritmi seçmekten daha az yatmaktadır. Odawara, Gora, Kowakidani, Miyanoshita ve Sengokuhara arasında lüks, özenle koreografili bir yatak odası olan klasik bir ryokran anlamına gelebilir. Kaiseki yemeği, baharla beslenen açık banyosuna sahip tenha bir süit, derin bir vadinin üzerindeki bir yamaç balkonu veya bambu yerler arasında yetişkinlere yönelik bir geri çekilme değildir.\n\nGora Kadan, sıcak bahar kasabasında eski bir Imperial Family yazlık villasının zeminini kaplar. Zarif mimari, iç ve dış arasındaki ilişki ve mevsimsel kaiseki, deneyimin kalbini oluşturur. Oda kategorileri önemlidir: Standart Odalar, açık hava banyolu odalar, Kadan Suites, Ek konaklama ve Bettei Suites'in kullanım alanları, boyutları ve olanakları farklıdır. Her odanın özel bir açık sıcak kaynak olduğu sonucuna varmayın.\n\nKowakidani'deki Hakone Suishoen, Momiji yemek mekanının etrafında benzersiz bir şekilde tasarlanmış yirmi üç konuk odasından oluşur. Her odada doğal kaynaklı kaplıca suyu bulunan özel bir açık banyo bulunmaktadır. Tarihi Mitsui ailesinin Taisho dönemi villası, şimdi yemek için kullanılan tescilli bir somut kültürel özelliktir; konaklama, binayı listeleyen içinde uyumak anlamına gelmez. Mimari, mevsimlik yemekler ve peyzajın ritmi.\n\nHakone Ginyu, Miyanoshita'daki Hayakawa Nehri geçidinin üzerinde, vadiye bakan terasları, açık hamamları ve yeşil dağ manzarası ile dinlenir. Operatör, özellikle Fuji Dağı manzaraları olarak yanlış etiketlenmemesi gereken Hakone dağ silsilesine ve Hayakawa'ya doğru görünümleri anlatıyor. Tam oda tipi, banyo alanının ne kadar özel hissetmediğini ve açık hava manzarasının nasıl çerçevelendiğini belirler. Bu ayar, bir çiftin yanı başında kalan bir yere çok uygundur.\n\nKinnotake Sengokuhara, Sengokuhara'daki bambu ve ormanlık alanlar arasında yetişkin gezginler için samimi bir kaçış olarak tasarlanmış, bilerek farklı bir deneyimdir. Dokuz bireysel oda tipinin tümü özel bir açık hava termal banyosu sunarken, yemekler sadece Kyoto tarzı kaiseki'den ilham alır ve konuk odasının mahremiyetinde servis edilir. Özellikle, mülkün resmi politikası, on iki yaş ve üstü konuklar kabul etmemelidir. Bu, küçük çocuklu aileler için uygun değildir.\n\nBeş ayrı alan Hakone'u daha kolay anlamasını sağlar. Gora ve Sounzan parkları, galerileri ve dağ demiryolu ve teleferiği bağlar. Kowakidani ve Açık Hava Müzesi heykel ve sanat sunuyor. Miyanoshita ve Hakone Tozan rotası, ormanlık vadileri ve klasik dağ mimarisini sergilemektedir. Sengokuhara, çayırlarla ve merkezi yaya keşiflerinden daha iyi bir şekilde ilişkilendirilebilir ve huzurlu kalır. Son olarak, Owakudani, Togendai Gölü ve Ashi Gölü'nin\n\nVarış lojistiği aldatıcı derecede önemlidir. Tokyo'dan, yolcular Shinjuku'dan Hakone-Yumoto'ya doğru Odawara'ya doğru Odakyu Romancecar'ı kullanabilir veya Odawara üzerinden bir Shinkansen'i kullanabilir, daha sonra yerel demiryolu, otobüs veya düzenlenmiş bir transferle devam edebilir. Her ryokan'ın kendi son yaklaşımı vardır. Hakone Freepass, çok duraklı bir devre için yardımcı olabilir, ancak her gezgin için otomatik olarak en iyi değer değildir; Rahat bir özellik için.\n\nDoğal kaplıca görgü kuralları, başarılı bir Hakone konaklamasının merkezidir. Bazı hamamlar komünaldir ve cinsiyete göre ayrılır, bazıları özel olarak rezerve edilir ve diğerleri tam bir oda kategorisine aittir. Küçük çocuklar, dövmeler, çıplak banyo, tıbbi rehberlik ve kapanış saatleri ile ilgili kurallar operatöre göre farklılık gösterir ve canlı olarak kontrol edilmelidir. Kaisepho yemek, belirli bir mevsimlik menü etrafında zamanlanmış ve hazırlanmış değildir; alerjiler, vejetaryen diyetler ve çocuk yemekleri, yalnızca Fuji'nin önceden onaylanmasına ihtiyaç duyabilir.",
+  "hotelIntro": "Gora Kadan, Suishoen, Ginyu ve Kinnotake: Onsen misafirperverliği, mahremiyet ve dağ manzarasını deneyimlemenin dört farklı yolu.",
+  "areas": [
+    [
+      "Gora ve Sounzan",
+      "Bahçeler, modern sanat, dağ demiryolu ve teleferik bağlantıları için pratik bir temel.",
+      "Tepeleri ve nakliye kavşaklarını bekleyin."
+    ],
+    [
+      "Kowakidani ve Açık Hava Müzesi",
+      "Bireysel ryokan inzivaları ve müzeleri olan bir sanat ve orman bölgesi.",
+      "Müze saatlerini ve ryokanınızın mekiğinin doğruluğunu onaylayın."
+    ],
+    [
+      "Miyanoshita ve Hayakawa vadisi",
+      "Derin dağ manzarası, tarihi demiryolu yolları ve vadiye bakan ryokan terasları.",
+      "Vadi görünümleri mutlaka Fuji Dağı görünümleri değildir."
+    ],
+    [
+      "Sengokuhara çayırları ve ormanlık",
+      "Bambu, çayırlar ve ormanlık alanlar büyük göl tatil yerlerinden uzaktadır.",
+      "Bazı ryokanların minimum misafir yaşı vardır."
+    ],
+    [
+      "Owakudani, Togendai ve Ashi Gölü",
+      "Ropeway, volkanik buhar, göl manzarası ve açık havalarda olası Fuji manzaraları.",
+      "Ropeway operasyonları rüzgar, bakım ve volkanik güvenliğe bağlıdır."
+    ]
+  ],
+  "experiences": [
+    [
+      "Ashi Gölü ve Torii",
+      "Fuji görünürlüğü vaat etmeden gölü ve türbeyi keşfedin."
+    ],
+    [
+      "Owakudani ve",
+      "Volkanik buharı sadece emniyet rehberliği ve halat yolu işlemleri izin verdiğinde sevindirin."
+    ],
+    [
+      "Onsen banyo ve görgü kuralları",
+      "Operatör kurallarına, çocuklara ve tercihlere göre özel veya ortak banyo seçin."
+    ],
+    [
+      "Açık hava heykel ve Gora bahçeleri",
+      "Rahat bir tempoda heykel ve dağ bahçelerini keşfedin."
+    ],
+    [
+      "Ryokanlar'da mevsimlik kaiseki",
+      "Yemek saatlerini, diyet ihtiyaçlarını ve çocuk menülerini çok önceden onaylayın."
+    ]
+  ],
+  "checks": [
+    "Gerçek oda kategorisini onaylayın: özel açık hava banyosu, oryantasyon ve boyut değişir.",
+    "Kinnotake Sengokuhara'nın 12+ minimum yaşına ve Gora Kadan'ın küçük çocuklar için ortak banyo / havuz kısıtlamalarına saygı gösterin.",
+    "Bir ryokan seçmeden önce Gora, Kowakidani, Miyanoshita ve Sengokuhara'yı karşılaştırın.",
+    "Odawara, Hakone-Yumoto veya bagaj dahil olmak üzere yerel istasyondan hassas mekikler düzenleyin.",
+    "Fuji Dağı manzarasını odalardan, Ashi Gölü'nden veya halat yolundan asla garanti etmeyin.",
+    "Güncel teleferik operasyonunu ve gün içindeki volkanik güvenlik durumunu kontrol edin.",
+    "Kaiseki zamanlamalarını, çocuk menülerini, alerjileri ve vejetaryen isteklerini onaylayın.",
+    "Bosphoras'ın canlı envanterini, doğrudan fiyatlandırmasını veya otel satış sonrası sözleşmelerini çıkarmayın."
+  ],
+  "hotels": [
+    [
+      "Gora  ancien domaine de villgiature impriale",
+      "Gora'daki eski bir İmparatorluk villası sitesinde seçkin bir ryokan, kaiseki, farklı süit kategorileri ve kaplıcalar.",
+      "Özel açık hava banyoları oda kategorisine bağımlıdır; tuvalet eğitimi almayan çocuklar ortak banyo veya havuz kullanamazlar.",
+      "Gora'nın mirası geri çekilmek için, rafine suit ve kaiseki.",
+      "Gora'daki eski bir İmparatorluk villa sitesinde, kaiseki, ayrı süit kategorileri ve kaplıcaları ile seçkin bir ryokan. Özel açık hava banyoları oda kategorisine bağımlıdır; tuvalet eğitimi almayan çocuklar ortak banyo veya havuz kullanamazlar."
+    ],
+    [
+      "Kowakidani  restoran patrimoni Momiji",
+      "Her biri doğal bir kaplıca açık banyoya ve yemek için kullanılan tarihi bir Mitsui villaya sahip 23 ayrı oda.",
+      "Rezervasyon yaparken Kowakidani servisini isteyin; listelenen tarihi villa, her konuk yatak odası değil, restorandır.",
+      "23 bireysel Kowakidani odası için, her biri özel açık onsen.",
+      "Her biri doğal bir kaplıca açık hamamı ve yemek için kullanılan tarihi bir Mitsui villası olan yirmi üç ayrı oda. Rezervasyon sırasında Kowakidani mekiği isteyin; Listelenen tarihi villa, her misafir yatak odası değil restorandır."
+    ],
+    [
+      "Miyanoshita  valle de Hayakawa",
+      "Miyanoshita'da açık hava banyolu bir yamaç ryokanı ve Hayakawa vadisi ve yakındaki dağlardan aşağı manzaralıdır.",
+      "Garantili bir Fuji panorama değil, vadi manzarasını bekleyin; banyo yönelimini, doluluk ve istasyon transferlerini onaylayın.",
+      "Miyanoshita'da ağaçlı Hayakawa vadisi manzarası için.",
+      "Miyanoshita'da açık hava banyolu ve Hayakawa vadisi ve yakındaki dağlardan aşağı bakan bir yamaç ryokanı. Garantili bir Fuji panorama değil, vadi manzarasını bekleyin; banyo yönelimini, doluluğu ve istasyon transferlerini onaylayın."
+    ],
+    [
+      "Sengokuhara  bambous et sığınak dökme yetişkin",
+      "Gözlerden uzak Sengokuhara, dokuz farklı oda tipi ve her odada özel bir açık hava onsen ile geri çekilir.",
+      "Konuklar 12 yaş ve üstü olmalıdır: küçük çocuklu aileler için bir seçenek değildir.",
+      "12 yaş ve üstü misafirler için tenha bir Sengokuhara inziva yeri.",
+      "Her odada dokuz farklı oda tipi ve özel bir açık hava onsen ile tenha bir Sengokuhara inziva. Konuklar 12 yaş veya daha büyük olmalıdır: küçük çocuklu aileler için bir seçenek değil."
+    ]
+  ],
+  "faq": [
+    [
+      "Bu Hakone rehberi hangi lüks ryokanları karşılaştırıyor?",
+      "Bağımsız seçim Gora'da Gora Kadan, Kowakidani'de Hakone Suishoen, Miyanoshita'da Hakone Ginyu ve Kinnotake Sengokuhara'yı içerir. Banyo, konum ve minimum yaş politikaları değişir; canlı envanter talep edilmez."
+    ],
+    [
+      "Küçük çocuklar Kinnotake Sengokuhara'da kalabilir mi?",
+      "Hayır. Kinnotake Sengokuhara'nın resmi politikası, on iki yaş ve üstü konukları kabul eder. Yeni yürümeye başlayan veya küçük çocuklarla seyahat eden ailelere sunulmamalıdır."
+    ],
+    [
+      "Gora Kadan'daki her odada özel bir açık hava salonu var mı?",
+      "Hayır. Gora Kadan, standart odalar, Kadan Suites, özellikle açık hava banyoları ve Bettei Suites içeren odalar dahil olmak üzere farklı kategoriler listeler. Açıkça adlandırılan özel banyo kategorisini ayırtın."
+    ],
+    [
+      "Suishoen ve Ginyu nasıl farklılaşır?",
+      "Kowakidani'deki Hakone Suishoen, özel açık hava kaplıcalarına ve tarihi bir yemek villasına sahip 23 ayrı ayrı tasarlanmış odaya sahiptir. Miyanoshita'daki Ginyu, ahşap Hayakawa gorge panoramalarına ve dağ teraslarına odaklanmaktadır."
+    ],
+    [
+      "Tokyo'dan Hakone'ye nasıl gidilir?",
+      "Tipik rotalar Odakyu'nun Romancecar'ını Shinjuku'dan Hakone-Yumoto'ya veya Odawara üzerinden Shinkansen'e doğru kullanır. Özel ryokanınız, son gerilme için yerel bir tren, mekik veya düzenlenmiş bir araba gerektirebilir."
+    ],
+    [
+      "Fuji Dağı manzarası Hakone'da garantili mi?",
+      "Hayır. Fuji, belli Ashi Gölü ve açık havalarda teleferik yerlerinden görülebilir, ancak bulut, sis ve odanın gerçek yönelimi, lüks bir konaklamanın bile manzarayı garanti edemeyeceği anlamına gelir."
+    ],
+    [
+      "Owakudani teleferiği her zaman çalışır mı?",
+      "Hayır. Hakone Ropeway, yüksek rüzgarlar, düzenli denetimler, mekanik sorunlar veya güvensiz volkanik faaliyetler sırasında hizmeti askıya alabilir. Resmi mevcut koşulları ve alternatif taşımayı kontrol edin."
+    ],
+    [
+      "Bosphoras bu ryokanları ayırtıp iptalleri kaldırabilir mi?",
+      "Bu bağımsız rehber, doğrudan oda envanteri, garantili tedarikçi fiyatları, ödeme koleksiyonu, bayi otoritesi veya otel iptali, geri ödeme ve satış sonrası destek konularında sözleşmeli bir rol oluşturmaz."
+    ]
+  ],
+  "photoCaptions": [
+    "Açık havalarda Ashi Gölü, Hakone Türbesi ve Fuji Dağı",
+    "Owakudani volkanik vadisinde kükürt delikleri",
+    "Gora Park peyzaj ve bahçe",
+    "Miyanoshita dağ tren istasyonu",
+    "Hakone Açık Hava Müzesi heykel peyzajı",
+    "Hakone Ropeway dağ yamaçları üzerinde",
+    "Hakone-Yumoto'daki dağ akışı",
+    "Ashinoko Gölü'nden İlkbahar Fuji manzarası",
+    "Bir başka ayırt edici Gora Park bahçe sahnesi"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Gora Kadan tarihi ayarı ve bahçesi",
+      "Gora Kadan ryokan mimarisi",
+      "Gora Kadan iç mekanları ve peyzajlı araziler"
+    ],
+    [
+      "Hakone Suishoen misafir odası",
+      "Hakone Suishoen oda ve banyo",
+      "Hakone Suishoen oda kategorisi"
+    ],
+    [
+      "Hakone Ginyu vadisi ayarı",
+      "Hakone Ginyu konuk süiti ve terası",
+      "Hakone Ginyu bahçeleri ve vadi"
+    ],
+    [
+      "Kinnotake Sengokuhara orman inziva",
+      "Kinnotake Sengokuhara özel konuk odası",
+      "Kinnotake Sengokuhara ryokan tesisleri"
+    ]
+  ],
+  "seoTitle": "Hakone: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Hakone'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Gora, Kowakidani, Miyanoshita ve Sengokuhara'da dört istisnai ryokan - Fuji Dağı manzarasını vaat etmeden."
+}

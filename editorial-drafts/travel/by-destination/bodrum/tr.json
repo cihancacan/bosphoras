@@ -1,0 +1,108 @@
+{
+  "name": "Bodrum",
+  "country": "Türkiye",
+  "eyebrow": "Ege Rivierası",
+  "heading": "Bodrum: Ege'nin hızında lüks.",
+  "intro": "Bodrum'da körfez, yıldız derecelendirmesinden daha önemli. Canlı Yalıkavak Marina'dan özel kuzey kıyılarına ve geniş aile tatil köylerine kadar her sahil şeridi farklı bir konaklama şekline bürünür.",
+  "editorial": "Bizim seçimimiz, gözlerden uzak koyları marina odaklı adreslerden ayırır. Özel plaj erişimi, havuz villası ve deniz manzaralı oda farklı önermelerdir; her biri rezervasyondan önce kontrol edilmelidir.",
+  "hotelIntro": "Kıyı çizgisi ve tarzı ile karşılaştırmak için dört özellik. Bunlar şu anda Bosphoras aracılığıyla satışa sunulan odalar değil, editoryal referanslardır.",
+  "areas": [
+    [
+      "Yalıkavak & marina",
+      "Yatlar, yemek, alışveriş ve yaz enerjisi; akşam gezintileri önemliyse gerçek marina yakınlığı seçin.",
+      "Yalıkavak adresi rıhtımlara yürüme mesafesinde olmak zorunda değildir."
+    ],
+    [
+      "Göltürkbükü & Cennet Koyu",
+      "Çam kaplı yamaçlar, plajlar ve tatil köyleri; bir otelde veya özel villada oyalanmaya çok uygundur.",
+      "Plaj erişimini, gradyanları, ulaşımı ve tam oda yönünü karşılaştırın."
+    ],
+    [
+      "Kaplankaya & Kuzey Kıyısı",
+      "Bodrum'un kendisinden ziyade Milas'a doğru daha tenha bir sağlıklı yaşam odaklı manzara.",
+      "İşlemeden önce transfer rotalarını ve yolculuk lojistiğini onaylayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Suda bir sabah",
+      "Bir koya bakan kahvaltı, sessiz bir yüzme ve koşullar izin verdiğinde isteğe bağlı bir tekne gezisi."
+    ],
+    [
+      "Yalıkavak ritmi",
+      "Uzun bir öğle yemeği, marina etrafında bir öğleden sonra ve atmosferi için seçilen bir restoran."
+    ],
+    [
+      "Villa konaklama olarak kabul edilir",
+      "Görünümü seçin, ancak yüzme erişimini, personeli, havuz gizliliğini ve gerçek inzivayı doğrulayın."
+    ]
+  ],
+  "checks": [
+    "Gerçek sezonluk operasyon ve tesisler tarihlerinizde mevcuttur.",
+    "Tam oda görünümü, özel olanaklar ve gerçek plaj erişimi.",
+    "Villa personeli, transferler, katılımlar ve su sporları terimleri.",
+    "Yat kalkış limanı ve akaryakıt politikası eğer su üzerinde bir gün planlama."
+  ],
+  "hotels": [
+    [
+      "Cennet Koyu  Göltürkbükü",
+      "Geniş bir Paradise Bay tesisi, görünüm ve dış mekan erişimine göre karşılaştırmak için odalar, süitler ve villalar ile birlikte.",
+      "Bahçe Manzaralı ve Deniz Manzaralı odalar değiştirilebilir değildir.",
+      "Koy, özel açık alanlar ve mülkte boş zaman şekilli bir konaklama için.",
+      "Teraslar, çam ağaçları ve Ege'nin hızını ayarlayan Paradise Bay'e doğru yeşil bir manzaradan adım atıyor. Burası, sadece geceleri için bir üs değil, tüm günlerini geçirmek için bir yer. Odaları, süitleri ve villaları gerçek dış mekanları ve belgelenmiş görünümleriyle karşılaştırın."
+    ],
+    [
+      "Yalıkavak",
+      "Sosyal, tasarım odaklı bir ruh haline sahip çağdaş bir sahil üssü; marina içinde kalmakla aynı değil.",
+      "Oda kategorisini, plaj düzenlemelerini ve transferlerini onaylayın.",
+      "Çağdaş tasarım dengesi, şık plaj günleri ve Yalıkavak akşamları için.",
+      "Bodrum EDITION, yarımadada sosyal bir yolculuğa doğru eğilir: güzel tasarlanmış bir plaj ayarı, sonsuzluk havuzu ve akşama iyi giden yemek. Tamamen izole bir sığınak olarak tasarlanmamıştır. Bahçeye bakan odaları deniz manzaralı süitlerden ve gerçekten özel havuz konaklamasından ayırt edin."
+    ],
+    [
+      "Gölköy  cte nord",
+      "Servis, yemek ve zamanın koy kenarında kaldığı bir suit-ve-villas tesisi konaklamayı şekillendirir.",
+      "Süitin veya villanın tesis içindeki tam konumunu doğrulayın.",
+      "Havuzlar, konfor ve mülkte boş günlere odaklanan tatil amaçlı bir kaçış için.",
+      "Teraslı mimari, peyzajlı alanlar ve tatil amaçlı bir ritim, havuzları, restoranları ve süitleri konaklamanın merkezine yerleştirir. Bir villa seçmeden önce, mülk içindeki konumunu, havuzunun mahremiyetini ve tam olarak hangi hizmetlerin dahil edildiğini doğrulayın. En muhteşem fotoğraf, seyahatiniz için her zaman doğru kategori değildir."
+    ],
+    [
+      "Bozbük  Milas",
+      "Yat limanı gece hayatından çok uzakta, rezidanslı tenha bir wellness-led sahil inzivası.",
+      "Transferi planlayın: tatil beldesi Bodrum kasabasında değil Milas'tadır.",
+      "Yalıkavak'ın gece hayatından uzakta spa deneyimleri, sakin plajlar ve Ege manzaraları ile tenha bir sağlıklı yaşam kaçışı için.",
+      "Six Senses Kaplankaya marina gece hayatı üzerinde yer, restorasyon ve daha yavaş bir ritim tercih ediyor. Milas ilçesinde Bozbük tepelerine inşa edilmiş, sakin plajları, yürüyüş parkurlarını, manzarayı takip eden mimariyi ve 10.000 metrekarelik bir kaplıcayı ısıtmalı kapalı havuz, hamam ve hidrotermal tesislerle bir araya getiriyor. Burada günler Ege, yoga ve özel terasta zaman transferleri arasında akabilir. Oda kategorisi önemlidir, belirli süitler ve rezidan oluşan bir program yoktur."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Turkuaz Bodrum körfezi yelkenli teknelerle",
+    "The Bodrum EDITION'da sonsuzluk havuzu",
+    "Yalıkavak Marina gün ışığında",
+    "Bodrum'un kaleden görülen tarihi limanı"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Mandarin Oriental, Bodrum'da Havuz",
+      "Mandarin Oriental tatil ve plajının havadan görünümü",
+      "Deniz kenarında teras ve havuz Mandarin Oriental, Bodrum"
+    ],
+    [
+      "Bodrum EDITION sonsuzluk havuzu",
+      "The Bodrum EDITION'da plaj kulübü",
+      "Bodrum EDITION'da suit teras"
+    ],
+    [
+      "Maxx Royal Bodrum'da havuz terasları",
+      "Maxx Royal Bodrum'da Villa",
+      "Maxx Royal Bodrum'da suitler ve yaşam alanları"
+    ],
+    [
+      "Altı Senses Kaplankaya ve yukardan turkuaz koy",
+      "Günbatımında Six Senses Kaplankaya terası",
+      "Six Senses Kaplankaya'da özel havuzlu bir deniz manzaralı süitin yaşam alanı"
+    ]
+  ],
+  "seoTitle": "Bodrum: Lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Bodrum'daki lüks oteller: küratörlü rehber",
+  "seoDescription": "Bodrum'da körfez, yıldız derecelendirmesinden daha önemli. Canlı Yalıkavak Marina'dan özel kuzey kıyılarına ve geniş aile tatil köylerine kadar her sahil şeridi farklı bir konaklama şekline bürünür."
+}

@@ -1,0 +1,167 @@
+{
+  "name": "Miami",
+  "country": "Amerika Birleşik Devletleri",
+  "eyebrow": "Miami  Atlantik ışığı, tasarım ve nefes almak için oda",
+  "heading": "Miami: Güneş ışığı sadece başlangıçtır. Mahalle konaklamayı sağlar.",
+  "intro": "Öğleden sonra kum, sanat ve mimaride yalınayak sabahlar, Atlantik'in yanında akşam yemeği: Miami aynı anda birçok şehirdir. Bosphoras, dört tekil oteli, beş zıt alanı ve güneşli bir kaçışı olağanüstü bir konaklamaya dönüştüren seçimleri araştırıyor.",
+  "editorial": "Miami, sürekli bir plaj tatili değildir. South Beach, Art Deco caddeleri ve sahil şeridinde yürümeyi ödüllendirir; Mid-Beach, geniş kumlar ve mimari odaklı tatil deneyimleri ekler; Surfside, daha sessiz bir okyanus kıyısı tabanı arayan gezginleri cezbediyor. Biscayne Körfezi'nin karşısında, Brickell, Atlantik plajına doğrudan erişim değil, kuleler, restoranlar ve şehir enerjisi getiriyor. Wynwood ve Tasarım Bölgesi, değiştirilebilir sahil konaklama yerine sanat ve tasarım için gündüz ziyaretlerine ilham veriyor. Standart otel odaları, bungalovlar ve konut süitleri farklı boyut ve özelliklere sahiptir. Aileler izin verilen doluluk, ekstra yataklar, havuz erişimi ve bağlantı odası düzenlemelerini doğrulamalıdır. Tatil yeri ücretlerini, vergileri, mevsimlik hava durumunu, kasırga-sezon risklerini ve transfer lojistiğini gözden geçirin. Bariyer adalar ile anakara arasındaki nedenler sıkışık olabilir, bu nedenle tek bir transfer süresi güvenilir değildir. Bu, bir oda tahsisi veya yetkili bir doğrudan rezervasyon hizmeti değil, bağımsız editör rehberliğidir.",
+  "hotelIntro": "Dört gerçek otel, dört çok farklı hassasiyet: çağdaş sakin, sanatsal tiyatro, kıyı yaşam tarzı veya miras geri çekilme. Editoryal dahil hiçbir zaman oranları, kullanılabilirliği veya tedarikçi ilişkisini garanti etmez.",
+  "areas": [
+    [
+      "South Beach & Collins Avenue yakınlarında yapılacak şeyler",
+      "Art Deco sokakları, okyanus kenarında yürüyüşler ve canlı restoranlar. Sahil ve şehirsel Miami Plajı'nı yürüyerek isteyen gezginler için ödüllendirici bir üs.",
+      "Odanızın denize, şehre veya avluya bakıp bakmadığını kontrol edin; mahalle enerjisi ve oda sessizliği aynı değildir."
+    ],
+    [
+      "Mid-Beach & Faena Bölgesi",
+      "Uzun kumlu plajlar, tasarım odaklı oteller ve kültürel deneyimler. Hem dinlendirici öğleden sonralar hem de unutulmaz akşamlar için bir yer.",
+      "Etkinlik programlamasını, restoran programlarını ve odaya özgü gürültü hususlarını kontrol edin."
+    ],
+    [
+      "Surfside & Bal Limanı",
+      "Miami Beach'in kuzeyindeki sakin bir okyanusa sıfır ruh hali ve konut sofistikeliği, bakımsız günlere ve az sayıdaki zarafete uygundur.",
+      "Surfside, South Beach değildir: gece hayatına veya daha güneyde yemek yemeye ek seyahatlere izin verin."
+    ],
+    [
+      "Brickell & Biscayne Körfezi",
+      "Skyline, yemek, çatılar ve kıyı yürüyüşleri, özellikle iş odaklı veya kentsel konaklamalar için anakarada.",
+      "Körfez manzaraları Atlantik sahiline erişim değildir; Brickell'i seçmeden önce kuma geziler planlayın."
+    ],
+    [
+      "Wynwood & Design District yakınlarındaki oteller",
+      "Sokak sanatı, galeriler, moda, mimari ve yaratıcı yemek, bunu plaj-resort ayarı yerine zorlayıcı bir gündüz gezisi haline getiriyor.",
+      "Galeri saatlerini ve ilçeler arasındaki seyahat saatlerini kontrol edin; etkinlikler her gün çalışmaz."
+    ]
+  ],
+  "experiences": [
+    [
+      "Güney Sahili kalabalıktan önce",
+      "Sıcaklık yükselmeden kıyıyı dolaşın ve hafif sabah ışığında Art Deco cephelerini görün."
+    ],
+    [
+      "Orta-Beach sonra karanlık",
+      "Tasarım liderliğindeki yemek ve kültür, mekanlar, programlar ve önceden kontrol edilen herhangi bir ayrı rezervasyon."
+    ],
+    [
+      "İlgisiz bir Tasarım Bölgesi ziyareti",
+      "Bir kontrol listesinde acele etmek yerine mimari ve galerilerle anlamlı zaman geçirin."
+    ],
+    [
+      "Biscayne Körfezi başka bir ışıkta",
+      "Deniz kıyısından gökyüzü manzarasını keşfedin; Herhangi bir seyir uygun hava ve nitelikli bir operatör gerektirir."
+    ],
+    [
+      "Surfside'da daha yavaş bir gün",
+      "Kum için zaman ayırın, kolay bir gezinti ve South Beach'in gürültüsünden uzak uzun bir öğle yemeği yapın."
+    ]
+  ],
+  "checks": [
+    "Önce bölgenizi seçin: hareketli South Beach, deniz kenarı Orta Sahil, sakin Sörf veya kentsel Brickell.",
+    "Tam olarak rezerve edilen kategori, oda konumu, görünüm ve oda içi garantili özellikleri onaylayın.",
+    "Vergileri, tatil ücretlerini, iptal kurallarını, otoparkı ve ek ücretleri karşılaştırın.",
+    "Aileler oda doluluğunu, çocuk yataklarını, havuz kurallarını ve bağlantı odalarını onaylamalıdır.",
+    "MIA veya FLL'den ve günün seçilen saati için geçitlerden gerçek yer yolculuğunu planlayın.",
+    "Deniz faaliyetlerini planlamadan önce kıyı havası ve kasırga mevsimi risklerini kontrol edin.",
+    "Spa tedavileri, performanslar, transferler ve yemekler yazılı onay olmadan dahil değildir."
+  ],
+  "hotels": [
+    [
+      "South Beach  Collins Avenue",
+      "Setai'nin Asya esintili atmosferi, havuz bahçeleri ve rafine iç mekanları, hareketli South Beach'e son derece sakin bir kontrpuan sağlar. Süit kategorileri, kanatlar ve manzaralar farklıdır; havuzlarının veya spa'sının görüntüleri evrensel bir katılım olarak okunmamalıdır.",
+      "Binayı, tam oda görünümünü, aile doluluğunu ve spa tedavilerinin ekstraya mal olup olmadığını onaylayın.",
+      "Binayı, tam oda görünümünü, aile doluluğunu ve spa tedavilerinin ekstraya mal olup olmadığını onaylayın.",
+      "Setai'nin Asya esintili atmosferi, havuz bahçeleri ve rafine iç mekanları, hareketli Güney Plajı'na olağanüstü sakin bir karşı nokta sağlar. Süit kategorileri, kanatları ve görünümleri farklıdır; havuzları veya spa'sının görüntüleri evrensel bir dahiliyet olarak okunmamalıdır. Binayı, tam oda görünümünü, aile doluluğunu ve spa tedavilerinin ekstraya mal olup olmadığını doğrulayın."
+    ],
+    [
+      "Mid-Beach  Collins Bulvarı",
+      "Faena sinematik renk, sanat, yemek ve kültürel olayları kucaklar. Onun Orta-Beach ayarı unutulmaz akşamları ile ayırt edici bir sahil kişiliği arayan gezginler içindir; eğlence ve erişim programları ve rezervasyon şartlarına bağlıdır.",
+      "Oda tipini, etkinlik programını, potansiyel gürültüyü ve ayrı yemek veya performans rezervasyonlarını kontrol edin.",
+      "Oda tipini, etkinlik programını, potansiyel gürültüyü ve ayrı yemek veya performans rezervasyonlarını kontrol edin.",
+      "Faena sinematik renk, sanat, yemek ve kültürel olayları kucaklar. Orta-Beach ayarı unutulmaz akşamları ile ayırt edici bir sahil kişiliği arayan gezginler içindir; eğlence ve erişim programları ve rezervasyon koşullarına bağlıdır. Oda tipini, etkinlik programını, potansiyel gürültüyü ve ayrı yemek veya performans rezervasyonlarını kontrol edin."
+    ],
+    [
+      "Mid-Beach  Collins Bulvarı",
+      "Bu tasarım-ileri okyanus manzaralı otel, sahil sakinliğini sosyal alanlarla ve daha canlı bir konukseverlik stiliyle karıştırır. Bungalovlar, süitler ve konuk odaları farklı düzenler sunar, bu nedenle gerçek rezervasyon kategorisine göre seçim yapın.",
+      "Seviyeyi, kategoriyi, mekan erişimini, herhangi bir gürültüyü ve aile politikalarını doğrulayın.",
+      "Seviyeyi, kategoriyi, mekan erişimini, herhangi bir gürültüyü ve aile politikalarını doğrulayın.",
+      "Bu tasarım-ileri okyanus manzaralı otel, sahil sakinliğini sosyal alanlarla ve daha canlı bir konukseverlik tarzıyla karıştırır. Bungalovlar, süitler ve konuk odaları farklı düzenler sunar, bu nedenle gerçek rezervasyon kategorisine göre seçim yapın. Seviyeyi, kategoriyi, mekan erişimini, herhangi bir gürültüyü ve aile politikalarını doğrulayın."
+    ],
+    [
+      "Surfside  9011 Collins Avenue",
+      "Tarihi Surf Kulübü etrafında inşa edilen bu zarif Surfside inziva ayrıcalıkları rafine deniz kenarında yaşam ve daha sessiz bir ritim. Otel odaları, bungalovlar ve konut süitleri tesislerde önemli ölçüde farklılık gösterir; Bir kategoride resmedilmiş özellikler bir başkası için söz edilemez.",
+      "Konaklama tipini, deniz görünümünü, çocuk doluluğunu ve kesin tesisleri onaylayın.",
+      "Konaklama tipini, deniz görünümünü, çocuk doluluğunu ve kesin tesisleri onaylayın.",
+      "Tarihi Surf Kulübü etrafında inşa edilen bu zarif Surfside inziva ayrıcalıkları rafine deniz kenarında yaşam ve daha sessiz bir ritim. Otel odaları, bungalovlar ve konut süitleri tesislerde önemli farklılıklar gösterir; bir kategoride resimlenen özellikler başka bir kategori için söz edilemez. Konaklama tipini, deniz görünümünü, çocuk doluluğunu ve kesin tesisleri onaylayın."
+    ]
+  ],
+  "faq": [
+    [
+      "İlk kez lüks seyahat edenler Miami'de nerede kalmalı?",
+      "South Beach, Atlantik kıyısı, Art Deco sokakları ve yürünebilir akşam yemeğini bir araya getiriyor. Mid-Beach, tatil hayatını, Surfside'ı daha sessiz bir sahil şeridini vurgularken, Brickell anakaradır ve doğrudan Atlantik plaj erişimi sunmaz."
+    ],
+    [
+      "South Beach, Mid-Beach ve Surfside arasındaki fark nedir?",
+      "South Beach daha canlıdır; Mid-Beach, okyanus kıyısındaki oteller ve tasarımlarla bilinir; Surfside, daha kuzeyde, daha yumuşak bir yerleşim ritmi sunar. Yolculuk süreleri trafiğe göre değişir."
+    ],
+    [
+      "Setai ve Faena aynı tip lüks otel mi?",
+      "Hayır. Setai, Güney Sahili'nde Asya'dan ilham alan sakin bir atmosfer sunuyor. Orta-Beach'teki Faena ön plan sanatı, cesur iç mekanlar ve kültürel programlama. Tesisler ve katılımlar konaklama ve tarihlere bağlıdır."
+    ],
+    [
+      "Four Seasons Hotel at The Surf Club, South Beach bölgesinde bulunmaktadır.",
+      "Hayır. Güney Sahili'nin kuzeyindeki 9011 Collins Bulvarı'nda Surfside'dadır. Daha sakin konaklamalara uygundur, ancak birçok South Beach akşam planı için ek geziler gerektirir."
+    ],
+    [
+      "Miami Beach EDITION'daki her odada özel havuz var mı?",
+      "Hayır. Özel dalış havuzları, tüm standart odalarda değil, seçilen bungalov veya süit kategorilerinde sunulmaktadır. Tam olarak rezerve edilen konaklama ve tesisleri onaylayın."
+    ],
+    [
+      "Miami Beach'te kalırken kiralık bir arabaya ihtiyacım var mı?",
+      "South Beach ve Mid-Beach'in çoğu yürüyerek keşfedilebilir. Wynwood, Tasarım Bölgesi, Brickell veya Surfside gezileri gerçekçi ulaşım planlarına ihtiyaç duyar; otopark masraflarını ve alternatifleri karşılaştırın."
+    ],
+    [
+      "Miami'yi ne zaman ziyaret etmeliyim ve kasırga mevsimi ne olacak?",
+      "Miami tropikal bir iklime sahiptir ve Atlantik kasırga mevsimi Haziran ayından Kasım ayına kadar sürer. Özellikle tekne faaliyetleri ve iptal koşulları için seyahat etmeden önce resmi tahminleri ve uyarıları kontrol edin."
+    ],
+    [
+      "Bosphoras doğrudan bu otelleri mi ayırtıyor?",
+      "Bu endeksli olmayan editoryal rehber, doğrulanmış bir envanter, canlı fiyatlar veya doğrudan tedarikçi anlaşması sunmaz. Ödemeler, rezervasyon onayları, değişiklikler, iptaller, geri ödemeler ve satış sonrası, doğrulanmış bir yetkili rezervasyon ortağı gerektirir."
+    ]
+  ],
+  "photoCaptions": [
+    "Miami Plajı ve Atlantik kıyı şeridinin havadan görünümü",
+    "South Beach'deki Art Deco sokakları",
+    "Miami Beach Atlantik kıyısı",
+    "Miami Beach yakınlarında sessiz Surfside sahil şeridi",
+    "Biscayne Körfezi'nin yanında yükselen Brickell kuleleri",
+    "Wynwood sokak sanatı, Miami",
+    "Biscayne Körfezi boyunca Miami silueti",
+    "Miami Tasarım Bölgesi Mimarisi",
+    "South Pointe Park ve Miami Beach sahil şeridi"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Setai Miami Beach – havuz başı otel ayarı",
+      "Setai Miami Beach – okyanus manzaralı süit iç",
+      "Setai Miami Beach – Art Deco lobisi"
+    ],
+    [
+      "Faena Hotel Miami Beach  mülk yayıncı fotoğrafı (görsel onay beklemede)",
+      "Faena Hotel Miami Beach  mülk yayıncı fotoğrafı (görsel onay beklemede)",
+      "Faena Hotel Miami Beach  mülk yayıncı fotoğrafı (görsel onay beklemede)"
+    ],
+    [
+      "Miami Beach EDITION – premier okyanus manzaralı bungalov balkon ve özel dalma havuzu",
+      "Miami Beach EDITION – Oceanfront bungalov iç",
+      "Miami Beach EDITION - otel yüzme havuzu"
+    ],
+    [
+      "Four Seasons Hotel at The Surf Club – gölgeli havuz ve tarihi mimari",
+      "Four Seasons Hotel at The Surf Club – havuzbaşı geri çekilme",
+      "Four Seasons Hotel at The Surf Club – manzaralı konuk odası (onaylanacak kategori)"
+    ]
+  ],
+  "seoTitle": "Miami: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Miami'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Öğleden sonra kum, sanat ve mimaride yalınayak sabahlar, Atlantik'in yanında akşam yemeği: Miami aynı anda birçok şehirdir. Bosphoras, dört tekil oteli, beş zıt alanı ve güneşli bir kaçışı olağanüstü bir konaklamaya dönüştüren seçimleri araştırıyor."
+}

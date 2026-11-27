@@ -1,0 +1,161 @@
+{
+  "name": "Como Gölü",
+  "country": "İtalya",
+  "eyebrow": "Como Gölü  tarihi villalar ve tenha kıyılar",
+  "heading": "Como Gölü: Saraydan önce kıyıyı seçin.",
+  "intro": "Como Gölü, göl kenarındaki sarayların sürekli bir hattı değildir. Cernobbio'nun klasik bahçelerinden ve Moltrasio'nun villalarından Torno'nun çağdaş mimarisine ve Tremezzina'nın sahil teraslarına kadar her kıyı farklı bir güzergah oluşturur. Gerçek lüks, doğru bir şekilde konumlanmış bir mülk ve kesin rezerve edilmiş süit ile başlar, özel bir tekne, havuza erişim hakkı veya Bellagio'ya doğru bir görünüm ima eden güzel bir fotoğraf değildir. Bu bağımsız olarak araştırılan beş pratik rehber, dört alanı karşılaştırır.",
+  "editorial": "Ünlü otel isimlerini sıralayarak değil, zaman geçirmek istediğiniz gölün bir kısmını seçerek başlayın. Cernobbio'daki Villa d'Este, tarihi bahçeler ve eski dünya büyük misafirperverliği sunar. Moltrasio'daki Passalacqua daha kuzeyde bir 18. yüzyıl villasının samimi hissini tercih edebilir. Suyun karşısında, Torno'daki Il Sereno, Patricia Urquiola'nın çağdaş göl kenarı tasarımını ve göle bakan süitlerini temsil eder. Bosphoras burada bir hedef rehberi düzenliyor, canlı envanter veya sözleşmeli tedarikçi hakları talep etmiyor.",
+  "hotelIntro": "Dört farklı yerde dört farklı deneyim: Cernobbio'daki Villa d'Este, Moltrasio'daki Passalacqua, Torno'daki Il Sereno ve orta-batı kıyısındaki Grand Hotel Tremezzo.",
+  "areas": [
+    [
+      "Como  eski şehir ve sahil",
+      "Como, demiryolu bağlantıları, katedral sokakları, gezinti alanları ve halka açık tekne terminalleri için kentsel bir geçittir. Göl kenarındaki mülklerin gizliliğini değil, kolaylık sunar.",
+      "Cernobbio veya Torno'daki otelleri merkezi Como olarak etiketlemeyin."
+    ],
+    [
+      "Cernobbio ve Moltrasio  emlak bahçeleri",
+      "Como'nun kuzeyindeki batı sahili, tarihi bahçelere, konut villalarına ve tenha mülklere doğru kaymaktadır. İskele konumları ve yol erişimi köye göre farklılık gösterir.",
+      "İskeleyi, mülk erişimini ve gerçek ulaşımı doğrulayın; Villa d'Este ve Passalacqua aynı mülk değildir."
+    ],
+    [
+      "Torno ve Blevio  doğu kıyısı tasarımı",
+      "Güneybatı kolunun doğu ucunda, Torno ve Blevio karşı yamaçta karşı karşıya. Il Sereno Torno'da; geçişler garantili otel mekiklerinden ziyade ayrı hizmetlerdir.",
+      "Gerçek feribot iskelelerini, yol yolculuklarını ve ayrı olarak düzenlenmiş özel lansmanları ayırt edin."
+    ],
+    [
+      "Tremezzina ve Lenno  sarayları ve bahçeleri",
+      "Merkez batı kıyı çiftleri Grand Hotel Tremezzo ile Villa Carlotta ve Lenno yakınlarındaki Villa del Balbianello'ya ulaşım. Müze ve tekne programları mevsime göre belirgin bir şekilde değişir.",
+      "Kitap mirası ayrı ayrı ziyaret eder; Villa del Balbianello'nun bir görüntüsü hiçbir giriş hakkı vermez."
+    ],
+    [
+      "Bellagio, Menaggio ve Varenna  merkezi göl üçgeni",
+      "Merkez-göl köyleri en büyük günlük gezi kalabalıklarını çeker. Bellagio, Menaggio, Cadenabbia ve Varenna arasındaki feribotlar kıyıları birbirine bağlamaya yardımcı olur, ancak her otel inişine hizmet etmez.",
+      "Navigazione Laghi'yi tam gün ve mevsim, özellikle de son dönüş yelkeni için kontrol edin."
+    ]
+  ],
+  "experiences": [
+    [
+      "Halk feribotundan göl",
+      "Sıradan tekneleri daha hızlı servislerle karşılaştırmak için resmi Navigazione Laghi zaman çizelgelerini kullanın, gerçek bir kalkış ve aynı gün dönüşü seçin. Özel bir lansman ayrı bir hizmettir."
+    ],
+    [
+      "Villa Carlotta botanik bahçeleri",
+      "Tremezzo'nun tarihi sanat koleksiyonlarını botanik bahçeleriyle eşleştirin, 2026 ziyaretçi saatini, biletini ve ayrı bir müze girişini kontrol edin."
+    ],
+    [
+      "Varsayımlar olmadan Villa del Balbianello",
+      "Lenno yakınlarındaki korunan villa, FAI düzenlemelerinin ardından önceden rezervasyon yaptırılmış bir ziyareti hak eder. Uygun bilet ve tarife olmadan tekneyle giriş veya varış garanti edilmez."
+    ],
+    [
+      "Bellagio ve Varenna arasında bir sabah",
+      "Tekrarlanan uzun sürücüler üzerinden basit bir merkez-göl geçişini seçin. Popüler üçgen yaz aylarında kalabalıktır; Bir restoran rezervasyonu feribot rezerve etmez."
+    ],
+    [
+      "Otel atmosferini seçin, sadece ismi değil",
+      "Villa d'Este'nin tarihi ihtişamını, Tremezzo'nun canlı göl kıyısını, Passalacqua'nın özel-villa ruhunu ve Il Sereno'nun modern tasarımını karşılaştırın. Tam süit tipleri ve servis kuralları en önemlisidir."
+    ]
+  ],
+  "checks": [
+    "Yüzen bir otel havuzu kamuya açık bir tesis veya garantili özel bir rezervasyon değildir.",
+    "Halka açık feribotlar her otelin özel iskelesinde otomatik olarak arama yapmaz.",
+    "Oteller, bahçeler, müzeler ve feribotlar için mevsimsel kapanışları doğrulayın.",
+    "Tam süitin manzarasını doğrulayın, sadece mülkün panoramasını değil.",
+    "Odaları özel villalardan ve ayrı ayrı sözleşmeli tekne deneyimlerinden ayırt edin."
+  ],
+  "hotels": [
+    [
+      "Cernobbio  rive sud-ouest, Via Regina 40 yakınlarında yapılacak şeyler",
+      "Villa d'Este, Cernobbio'nun eski bir aristokrat konutunun içinde yer alan sahilinde klasik büyük otel tercihidir. Resmi bahçeler, tarihi pavyonlar, teraslar ve göl kenarı mimarisi, genel bir tatil plajından ziyade imzadır. Konuk odaları, Kardinal Binası ve Kraliçe Pavyonu dahil olmak üzere farklı tarihi binaları işgal eder; Ne görünüm ne de ana tesislere olan mesafe aynı değildir. Ayrı özel villalar, pazarlanan ayrı bir konaklama kategorisidir.",
+      "Rezervasyon yapılan binayı ve gerçek göl manzaralı sınıfı, yalnızca yerleşik havuz kurallarını, bahçeleri, çalışma tarihlerini ve herhangi bir ayrı villa şartlarını onaylayın.",
+      "Rezervasyon yapılan binayı ve gerçek göl manzaralı sınıfı, yalnızca yerleşik havuz kurallarını, bahçeleri, çalışma tarihlerini ve herhangi bir ayrı villa şartlarını onaylayın.",
+      "Villa d'Este, Cernobbio'nun eski bir aristokrat konutunun içinde yer alan sahil şeridinde klasik büyük otel tercihidir. Resmi bahçeler, tarihi pavyonlar, teraslar ve göl kenarı mimarisi, genel bir tatil plajından ziyade imzadır. Konuk odaları, Kardinal Binası ve Kraliçe Pavyonu da dahil olmak üzere farklı tarihi binaları işgal eder; Ne görünüm ne de ana tesislere olan mesafe aynı değildir. Ayrı özel villalar, ayrı bir konaklama kategorisidir."
+    ],
+    [
+      "Tremezzina  Tremezzo, yüz  Bellagio",
+      "Grand Hotel Tremezzo, batı kıyısında, merkezi havzaya ve dağlara bakan renkli bir Belle poque sarayıdır. Peyzajlı bahçeleri, T Plajı ve çarpıcı Su üzerinde yüzen havuz, mülkün ikonik unsurlarıdır. Otelin resmi açıklaması üç farklı yüzme havuzuna sahiptir, ancak hiçbir fotoğraf, özel olarak rezervasyon yapılabilen bir duba veya her odadan hizmetlere sınırsız erişim anlamına gelmemelidir. Bahçeye bakan, uygun bir göl manzaralı bir oda.",
+      "Gerçek oda görünümünü, yüzen havuz ile T Beach arasındaki farkı, işletim sezonunu ve tekne taşımacılığını kontrol edin.",
+      "Gerçek oda görünümünü, yüzen havuz ile T Beach arasındaki farkı, işletim sezonunu ve tekne taşımacılığını kontrol edin.",
+      "Grand Hotel Tremezzo, batı kıyısında, merkezi havzaya ve dağlara bakan renkli bir Belle poque sarayıdır. Peyzajlı bahçeleri, T Beach ve çarpıcı Su üzerinde yüzen havuzları, mülkün ikonik unsurlarıdır. Otelin resmi açıklaması üç farklı yüzme havuzuna sahiptir, ancak hiçbir fotoğraf, özel olarak rezervasyon yapılabilen bir duba veya her odadan hizmetlere sınırsız erişim anlamına gelmemelidir. Bahçeye bakan, uygun bir göl görünümü"
+    ],
+    [
+      "Moltrasio  rive occidentale proche de Cernobbio",
+      "Moltrasio'daki Passalacqua, göl lüksünün derin bir yerleşim yorumu sunmaktadır: on sekizinci yüzyıldan kalma bir ev, teraslı bahçeler ve özel bir İtalyan villasının havasını koruyan yaşam alanları. Geniş, işlek bir tatil yerine, mülk samimiyet, bahçe ritmi ve sakin bir yemek etrafında inşa edilmiştir. Tam oda ve yapı maddesi; ana villanın bir görüntüsü, her süitin aynı zemini kapladığını veya aynı manzaraya bakan bir kanıt değildir.",
+      "Bina, süit ve gerçek görünüm, mevsimlik operasyon, bahçe erişimi ve ayrı olarak düzenlenmiş herhangi bir tekne transferini onaylayın.",
+      "Bina, süit ve gerçek görünüm, mevsimlik operasyon, bahçe erişimi ve ayrı olarak düzenlenmiş herhangi bir tekne transferini onaylayın.",
+      "Moltrasio'daki Passalacqua, göl lüksünün derin bir yerleşim yorumu sunar: on sekizinci yüzyıldan kalma bir ev, teraslı bahçeler ve özel bir İtalyan villasının havasını koruyan yaşam alanları. Geniş, işlek bir tatil yerine, mülk samimiyet, bahçe ritmi ve sakin bir yemek etrafında inşa edilmelidir. Tam oda ve yapı maddesi; Ana villanın bir görüntüsü, her süitin aynı zemini kapladığını veya aynı manzaraya bakan bir kanıt değildir."
+    ],
+    [
+      "Torno  rive orientale du bras de Cme",
+      "Torno'daki Il Sereno, Como Gölü'nün görkemli saraylarının çağdaş tasarım muadilidir. Patricia Urquiola, taş, kereste, cam ve manzarayı miras salonları yerine süitlerin etrafında düzenlenmiş bir göl kenarı binasına birleştirir. Mülk, 40 göle bakan süiti kamuya açık olarak tanımlar, ancak her terasta kendi açısı, gizliliği ve düzeni vardır; tek bir resim tüm süit kategorilerini temsil edemez. Kıyıya bakan yüzme havuzu, peyzajlı ayar ve yemek deneyimi Cerno'dan tamamen farklı.",
+      "Torno'dan kesin süit boyutları, teras görünümü, mevsimlik olanaklar ve transferleri onaylayın.",
+      "Torno'dan kesin süit boyutları, teras görünümü, mevsimlik olanaklar ve transferleri onaylayın.",
+      "Torno'daki Il Sereno, Como Gölü'nün görkemli saraylarının çağdaş tasarım muadilidir. Patricia Urquiola, taş, kereste, cam ve manzarayı miras salonları yerine süitlerin etrafında düzenlenmiş bir göl kenarı binasına birleştirir. Mülk, 40 göle bakan süiti kamuya açık olarak tanımlar, ancak her terasta kendi açısı, gizliliği ve düzeni vardır; tek bir resim tüm süit kategorilerini temsil edemez. Kıyıya bakan yüzme havuzu, peyzajlı ayar ve yemek deneyimi Cerno'dan tamamen farklı."
+    ]
+  ],
+  "faq": [
+    [
+      "Klasik Como Gölü saray konukseverliğini en iyi hangi otel yakalar?",
+      "Cernobbio'daki Villa d'Este, farklı binalar ve resmi bahçelere sahip tarihi bir mülktür. Grand Hotel Tremezzo, merkezi göl ve Villa Carlotta'nın yakınında ayrı bir Belle poque atmosferine sahiptir. Her iki otelde de kesin oda sınıflarını ve amenity erişimini kontrol edin."
+    ],
+    [
+      "Passalacqua Bellagio bölgesinde bulunmaktadır.",
+      "Hayır. Passalacqua, Moltrasio'da güneybatı kolunun batı kıyısında yer alırken, Bellagio gölün merkez çatalında daha kuzeydedir. Aralarında seyahat etmek, kısa bir gezinti değil, gerçek yol veya tekne düzenlemeleri gerektirir."
+    ],
+    [
+      "Como Gölü'nün hangi oteli en çağdaş tasarıma sahip?",
+      "Torno'daki Il Sereno, Patricia Urquiola'nın çağdaş mimarisiyle bilinir. Farklı düzen ve teraslara sahip göle bakan süitler sunar. Mülk Como'nun eski kasabasında veya Tremezzo'da değil; kesin süit ve transfer düzenlemelerini onaylayın."
+    ],
+    [
+      "Grand Hotel Tremezzo'nun yüzme havuzunu herkes kullanabilir mi?",
+      "Halka açık bir şekilde giriş yapmayı düşünmeyin. Otel, ünlü Water-on-the-Water yüzme havuzu ve ayrıca ayrı bir T Plajı da dahil olmak üzere birkaç farklı havuzu tanımlar. Konuk politikalarını, mevsimlik saatleri ve mülkle ilgili herhangi bir ziyaretçi kısıtlamasını onaylayın."
+    ],
+    [
+      "Tremezzo, Bellagio ve Varenna arasında seyahat etmek kolay mı?",
+      "Kamu hizmetleri merkez-göl bölgesini bağlar, ancak programlar gün ve mevsime bağlıdır. BellagioCadenabbiaVarennaMenaggio feribot üçgeni ve sıradan göl tekneleri farklı rotalarda çalışır. Navigazione Laghi'yi ve yola çıkmadan önceki son dönüşü kontrol edin."
+    ],
+    [
+      "Villa Carlotta ve Villa del Balbianello otel konaklama dahil mi?",
+      "Hayır. Villa Carlotta, Tremezzina'da ayrı ayrı biletli bir müze ve botanik bahçesidir. Lenno yakınlarındaki Villa del Balbianello'nun kendi ziyaret düzenlemeleri vardır. Otel rezervasyonları otomatik olarak kabul, tekne varışları veya rehberli turları kapsamaz."
+    ],
+    [
+      "Bosphoras bu otelleri, villaları veya özel tekneleri anında rezerve edebilir mi?",
+      "Bu, kalite ve tedarikçi hakları gözden geçirilirken editoryal, endeksli olmayan bir kılavuzdur. Yetkili bir ortaktan onay almadan canlı fiyatlar, oda kullanılabilirliği, sözleşmeli tekne transferleri veya otel dağıtım izinleri talep etmez."
+    ]
+  ],
+  "photoCaptions": [
+    "Como Gölü, merkez göl havzasının güneş ışığı alan havası, sahil köyü, dağlar ve tekneler",
+    "Cernobbio Como Gölü'nden görülen Villa d'Este ile ahşap sahil",
+    "Bellagio merkez Gölü Como dağları bir tekne geçişinden fotoğraflandı",
+    "Tremezzina'daki Villa Carlotta beyaz neoklasik cephe, göl kenarı bahçeleri ve dağ arka planı",
+    "Como Gölü mavi su ve Bellagio'nun Punta Spartivento'sundan görülen Alp tepeleri",
+    "Varenna Como Gölü boyunca renkli sahil evleri ve yürüyüş yolları",
+    "Villa del Balbianello ormanlık Lenno yarımadasında tarihi konut",
+    "Como kubbeli katedral ve yukarıdan bakıldığında eski şehir çatıları",
+    "Moltrasio waterfront jetty, pastel evler ve Como Gölü'nün yeşil dağları"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Villa d'Este, Cernobbio tarihi göl kenarındaki cephe, gün ışığında peyzajlı sahil bahçeleriyle",
+      "Villa d'Este süslü perdelik, oyulmuş mobilyalar ve dönem detaylarına sahip klasik süit",
+      "Villa d'Este çizgili şezlonglar ve bahçe şemsiyeleri ile göl kenarında açık havuz"
+    ],
+    [
+      "Grand Hotel Tremezzo, turuncu tenteli ve ikonik yüzen havuzlu Belle poque facade'yi güneşlendirdi",
+      "Grand Hotel Tremezzo göle bakan zarif yatak ve balkona sahip otantik altın tonlu süit",
+      "Grand Hotel Tremezzo gerçek Su üzerinde yüzen havuz, ahşap duba ve Como Gölü'ndeki turuncu şemsiyeler"
+    ],
+    [
+      "Passalacqua Moltrasio villa facade peyzajlı bahçeler ve güneş ışığı alan havuz terası üzerinde",
+      "Passalacqua Suite Agnese oturma odası, tarihi detaylar, antika mobilyalar ve şömine",
+      "Passalacqua teraslı bahçeler ve Como Gölü'ne bakan yüzme havuzu"
+    ],
+    [
+      "Il Sereno Torno çağdaş taş, cam ve kereste otel cephesi gölün yanında",
+      "Il Sereno gerçek Köşe Süiti modern salon ve göle bakan açık teras",
+      "Il Sereno göl kenarında sonsuzluk havuzu ve ponto tarafından demirlenen turuncu fırlatma tekneleri"
+    ]
+  ],
+  "seoTitle": "Como Gölü: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Como Gölü'ndeki lüks oteller: küratörlü rehber",
+  "seoDescription": "Como Gölü, göl kenarındaki sarayların sürekli bir hattı değildir. Cernobbio'nun klasik bahçelerinden ve Moltrasio'nun villalarından Torno'nun çağdaş mimarisine ve Tremezzina'nın sahil teraslarına kadar her kıyı farklı bir güzergah oluşturur. Gerçek lüks, doğru bir şekilde konumlanmış bir mülk ve kesin rezerve edilmiş süit ile başlar, özel bir tekne, havuza erişim hakkı veya Bellagio'ya doğru bir görünüm ima eden güzel bir fotoğraf değildir. Bu bağımsız olarak araştırılan beş pratik rehber, dört alanı karşılaştırır."
+}

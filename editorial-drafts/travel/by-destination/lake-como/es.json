@@ -1,0 +1,161 @@
+{
+  "name": "Lago de Como",
+  "country": "Italia",
+  "eyebrow": "Lago de Como · villas históricas y costas aisladas",
+  "heading": "Lago Como: elija la orilla antes que el palacio.",
+  "intro": "Lago Como no es una línea continua de palacios junto al lago. Desde los jardines clásicos de Cernobbio y las villas de Moltrasio hasta la arquitectura contemporánea de Torno y las terrazas frente al mar de Tremezzina, cada orilla crea un itinerario diferente. El verdadero lujo comienza con una propiedad situada con precisión y la suite reservada, no una hermosa foto que implica un barco privado, un acceso a la piscina o una vista hacia Bellagio. Esta guía independiente investigada compara cuatro hoteles identificables, cinco áreas prácticas y los límites reales del transporte estacional del lago.",
+  "editorial": "La Villa d’Este en Cernobbio ofrece jardines históricos y una gran hospitalidad en el antiguo mundo; Passalacqua más al norte en Moltrasio favorece la sensación íntima de una villa del siglo XVIII. Al otro lado del agua, Il Sereno en Torno representa el diseño contemporáneo de Patricia Urquiola junto al lago y suites orientadas al lago. El Grand Hotel Tremezzo está significativamente más al norte por la cuenca central frente a Bellagio: su piscina flotante y hermosos jardines no borran la distancia geográfica entre esas propiedades. Para las visitas al pueblo, los transbordadores públicos pueden ser más fáciles que navegar por carreteras estrechas, pero los servicios de Como-Colico y el triángulo Bellagio-Cadenabbia-Varenna-Menaggio no se detienen en todos los muelles de hotel privados. Un barco privado, villa independiente o traslado con chófer requieren un verdadero operador autorizado, no una reclamación editorial. En otoño e invierno, revise el horario de operación de cada hotel y los transbordadores actuales en lugar de reciclar las promesas de verano. Bosphoras está curando una guía de destino aquí, no reclamando el inventario en vivo o los derechos de proveedores contratados.",
+  "hotelIntro": "Cuatro experiencias distintivas en cuatro lugares: Villa d’Este en Cernobbio, Passalacqua en Moltrasio, Il Sereno en Torno y Grand Hotel Tremezzo en la costa centro-occidental.",
+  "areas": [
+    [
+      "Como · casco antiguo y costanera",
+      "Como es la puerta de entrada urbana para enlaces ferroviarios, calles catedrales, paseos y terminales de barcos públicos. Ofrece comodidad pero no la privacidad de las fincas junto al lago.",
+      "No tipifique los hoteles en Cernobbio o Torno como como centro."
+    ],
+    [
+      "Cernobbio y Moltrasio · jardines de fincas",
+      "La costa oeste al norte de Como se desplaza hacia jardines históricos, villas residenciales y propiedades aisladas. Dock ubicaciones y acceso a la carretera difieren por pueblo.",
+      "Verifique el muelle, el acceso a la finca y el transporte real; Villa d’Este y Passalacqua no son la misma propiedad."
+    ],
+    [
+      "Torno y Blevio · Diseño de la costa este",
+      "En el borde oriental del brazo suroeste, Torno y Blevio se enfrentan a la ladera opuesta. Il Sereno se encuentra en Torno; los cruces son servicios separados en lugar de traslados garantizados por el hotel.",
+      "Distinguir los muelles de ferry, los viajes por carretera y los lanzamientos privados organizados por separado."
+    ],
+    [
+      "Tremezzina y Lenno · palacios y jardines",
+      "La costa central occidental combina Grand Hotel Tremezzo con Villa Carlotta y el acceso hacia Villa del Balbianello cerca de Lenno. Museo y horarios de barco varían notablemente por temporada.",
+      "Visitas de patrimonio del libro por separado; una imagen de Villa del Balbianello no confiere ningún derecho de entrada."
+    ],
+    [
+      "Bellagio, Menaggio y Varenna · triángulo central del lago",
+      "Los pueblos del centro-lago atraen a las mayores multitudes de un día de viaje. Ferries entre Bellagio, Menaggio, Cadenabbia y Varenna ayudan a conectar las costas, pero no sirven a todos los hoteles de aterrizaje.",
+      "Compruebe Navigazione Laghi para el día exacto y la temporada, en particular el retorno final de la vela."
+    ]
+  ],
+  "experiences": [
+    [
+      "El lago desde el ferry público",
+      "Utilice los horarios oficiales de Navigazione Laghi para comparar barcos ordinarios con servicios más rápidos, seleccionando un embarque real y el mismo día de regreso. Un lanzamiento privado es un servicio separado."
+    ],
+    [
+      "Jardines botánicos de Villa Carlotta",
+      "Combina las colecciones históricas de arte de Tremezzo con los jardines botánicos, comprobando 2026 visitas, entradas y una entrada al museo separada."
+    ],
+    [
+      "Villa del Balbianello sin suposiciones",
+      "La villa protegida cerca de Lenno merece una visita pre-reservada después de los arreglos de la FAI. Ni la entrada ni la llegada en barco está garantizada sin el billete y horario adecuado."
+    ],
+    [
+      "Una mañana entre Bellagio y Varenna",
+      "Elija un simple cruce de lago central sobre repetidos paseos largos. El triángulo popular está lleno de gente en verano; una reserva de restaurante no reserva el ferry."
+    ],
+    [
+      "Elija el ambiente del hotel, no sólo el nombre",
+      "Compare la grandeza histórica de Villa d’Este, la animada fachada al lago de Tremezzo, el espíritu de villa privada de Passalacqua y el diseño moderno de Il Sereno. Los tipos exactos de suites y las reglas de servicio importan más."
+    ]
+  ],
+  "checks": [
+    "Una piscina flotante no es una instalación pública o una reserva privada garantizada.",
+    "Los ferries públicos no llaman automáticamente al muelle privado de cada hotel.",
+    "Verifique cierres estacionales para hoteles, jardines, museos y ferries.",
+    "Confirme la vista exacta de la suite, no sólo el panorama de la finca.",
+    "Distinguir habitaciones de villas privadas y experiencias de barco contratadas por separado."
+  ],
+  "hotels": [
+    [
+      "Cernobbio · rive sud-ouest, Via Regina 40",
+      "Villa d’Este es la clásica opción de gran hotel en la costanera de Cernobbio, situada dentro de una antigua residencia aristocrática. Jardines formales, pabellones históricos, terrazas y arquitectura junto al lago son la firma en lugar de una playa de resort genérica. Las habitaciones ocupan diferentes edificios históricos, incluyendo el Edificio Cardenal y el Pabellón de la Reina; ni la perspectiva ni la distancia a las instalaciones principales es idéntica. Las villas privadas separadas son una categoría de alojamiento distinta y no deben ser comercializadas como suites ordinarias. La famosa piscina flotante pertenece a la experiencia de hospitalidad de la propiedad, no una instalación de natación pública. Seleccione el edificio y el nivel real, verificar una verdadera categoría de vistas al lago, y comprobar las políticas de restaurante y servicio de temporada antes de tratar una fotografía como parte de cualquier reserva.",
+      "Confirme el edificio reservado y la clase genuina vista al lago, las reglas de la piscina sólo residentes, jardines, fechas de funcionamiento y cualquier términos de villa independiente.",
+      "Confirme el edificio reservado y la clase genuina vista al lago, las reglas de la piscina sólo residentes, jardines, fechas de funcionamiento y cualquier términos de villa independiente.",
+      "Villa d’Este es la clásica opción de gran hotel en la costanera de Cernobbio, situada dentro de una antigua residencia aristocrática. Jardines formales, pabellones históricos, terrazas y arquitectura junto al lago son la firma en lugar de una playa de resort genérica. Las habitaciones ocupan diferentes edificios históricos, incluyendo el Edificio Cardenal y el Pabellón de la Reina; ni la perspectiva ni la distancia a las instalaciones principales es idéntica. Las villas privadas separadas son una categoría de alojamiento distinta y no deben ser comercializadas como suites ordinarias. La famosa piscina flotante pertenece a la experiencia de hospitalidad de la propiedad, no una instalación de natación pública. Seleccione el edificio y el nivel real, verifique una verdadera categoría de vistas al lago, y comprobar las políticas de restaurante y servicio de temporada antes de tratar una fotografía como parte de cualquier reserva. Confirme el edificio reservado y la clase de vistas al lago, reglas de piscina residentes, jardines, fechas de funcionamiento y cualquier villa independiente."
+    ],
+    [
+      "Tremezzina · Tremezzo, cara a Bellagio",
+      "El Grand Hotel Tremezzo es un colorido palacio Belle Époque en la orilla occidental, frente a la cuenca central y las montañas. Sus jardines, la playa T y la impresionante piscina flotante Water-on-the-Water son elementos emblemáticos de la propiedad. La descripción oficial del hotel cuenta con tres piscinas diferentes, pero ninguna foto debe implicar un pontón reservable privado o acceso sin restricciones a los servicios de todas las habitaciones. Una habitación orientada al jardín, una habitación con vistas al lago y una suite con terraza son productos materiales diferentes. Villa Carlotta está cerca, mientras que Bellagio y Varenna se encuentran al otro lado del agua, no a lo largo de la misma costa. Antes de recomendar una estancia, confirme la categoría exacta de alojamiento, la operación de temporada de la playa y las piscinas, y las conexiones de ferry reales en lugar de prometer un tiempo fijo de cruce.",
+      "Compruebe la perspectiva real de la habitación, la diferencia entre la piscina flotante y la playa T, la temporada de operaciones y el transporte en barco.",
+      "Compruebe la perspectiva real de la habitación, la diferencia entre la piscina flotante y la playa T, la temporada de operaciones y el transporte en barco.",
+      "El Grand Hotel Tremezzo es un colorido palacio de Belle Époque en la orilla oeste frente a la cuenca central y las montañas. Sus jardines paisajistas, la playa T y la sorprendente piscina flotante Water-on-the-Water son elementos icónicos de la propiedad. La descripción oficial del hotel cuenta con tres piscinas diferentes, pero ninguna foto debe implicar un pontón reservable privado o acceso sin restricciones a los servicios de todas las habitaciones. Una habitación orientada al jardín, una habitación con vistas al lago y una suite de terraza son productos materiales diferentes. Villa Carlotta está cerca, mientras que Bellagio y Varenna se encuentran al otro lado del agua, no a lo largo de la misma costa. Antes de recomendar una estancia, confirme la categoría de alojamiento exacta, el funcionamiento estacional de la playa y las piscinas, y las conexiones de ferry reales en lugar de prometer un tiempo fijo de cruce."
+    ],
+    [
+      "Moltrasio · rive occidentale proche de Cernobbio",
+      "Passalacqua en Moltrasio ofrece una interpretación profundamente residencial del lujo del lago: una casa del siglo XVIII, jardines en cascada y espacios de vida que preservan el estado de ánimo de una villa privada italiana. En lugar de un complejo amplio y concurrido, la propiedad está construida alrededor de la intimidad, el ritmo del jardín y el ocio. La habitación exacta y la materia de construcción; una imagen de la villa principal no es prueba de que cada suite ocupa la misma planta o se enfrenta a la misma vista. Tamaño de la habitación, conexión a la terraza y orientación difieren entre las categorías de alojamiento. Moltrasio no es central Como ni Bellagio, y salidas independientes del barco deben ser verificadas en lugar de asumirse de una fotografía romántica junto al lago. Elija la propiedad para la hospitalidad estilo villa y la calma personalizada, sin sugerir que los chefs privados, yates o transferencias exclusivas son confirmados por Bosphoras.",
+      "Confirme la construcción, suite y perspectivas reales, operación de temporada, acceso al jardín y cualquier traslado de barco por separado.",
+      "Confirme la construcción, suite y perspectivas reales, operación de temporada, acceso al jardín y cualquier traslado de barco por separado.",
+      "Passalacqua en Moltrasio ofrece una interpretación profundamente residencial del lujo del lago: una casa del siglo XVIII, jardines en cascada y espacios de vida que preservan el estado de ánimo de una villa privada italiana. En lugar de un complejo amplio y concurrido, la propiedad está construida alrededor de la intimidad, el ritmo del jardín y el ocio de comer. La habitación exacta y la materia de construcción; una imagen de la villa principal no es prueba de que cada suite ocupa la misma planta o se enfrenta a la misma vista. Tamaño de la habitación, conexión con la terraza y la orientación difieren entre las categorías de alojamiento. Moltrasio no es central Como ni Bellagio, y las salidas independientes del barco deben ser verificadas en lugar de asumirse de una fotografía romántica junto al lago. Elija la propiedad para la hospitalidad estilo villa y la calma personalizada, sin sugerir que los chefs privados, yates o traslados exclusivos son confirmados por Bosphoras. Confirme el edificio, suite y perspectivas reales, operación de temporada, acceso al jardín y cualquier traslado de barco por separado."
+    ],
+    [
+      "Torno · rive orientale du bras de Côme",
+      "Il Sereno en Torno es la contraparte de diseño contemporáneo de los grandes palacios del lago Como. Patricia Urquiola combina piedra, madera, vidrio y paisaje en un edificio junto al lago dispuesto alrededor de suites en lugar de salones de patrimonio. La propiedad describe públicamente cuarenta suites orientadas al lago, pero cada terraza tiene su propio ángulo, privacidad y distribución; una sola imagen no puede representar todas las categorías de suite. La piscina frente al mar, paisaje y experiencia gastronómica se sienten materialmente diferentes de las villas clásicas de Cernobbio o el palacio deslumbrante de Tremezzo. Torno se sienta en la orilla oriental del brazo suroeste del lago, por lo que viajar a Moltrasio, Bellagio o Tremezzina requiere arreglos reales de barco o carretera. Confirme el tamaño de la suite reservada, configuración de terraza, servicio estacional y cualquier transporte en lugar de suponer que está incluido.",
+      "Confirme las dimensiones precisas de la suite, la vista de la terraza, las comodidades de temporada y los traslados desde Torno.",
+      "Confirme las dimensiones precisas de la suite, la vista de la terraza, las comodidades de temporada y los traslados desde Torno.",
+      "Il Sereno en Torno es la contraparte de diseño contemporáneo de los grandes palacios del lago Como. Patricia Urquiola combina piedra, madera, vidrio y paisaje en un edificio junto al lago dispuesto alrededor de suites en lugar de salones de patrimonio. La propiedad describe públicamente cuarenta suites orientadas al lago, pero cada terraza tiene su propio ángulo, privacidad y distribución; una sola imagen no puede representar todas las categorías de suite. La piscina frente al mar, paisaje y experiencia gastronómica se sienten materialmente diferentes de las villas clásicas de Cernobbio o el palacio deslumbrante de Tremezzo. Torno se sienta en la orilla oriental del brazo suroeste del lago, por lo que viajar a Moltrasio, Bellagio o Tremezzina requiere arreglos reales de barco o carretera. Confirme el tamaño de la suite reservada, configuración de la terraza, servicio estacional y cualquier transporte en barco en lugar de suponer que está incluido. Confirme las dimensiones precisas de la suite, perspectiva de terraza, comodidades de temporada y traslados desde Torno."
+    ]
+  ],
+  "faq": [
+    [
+      "¿Qué hotel captura mejor la clásica hospitalidad del palacio del Lago Como?",
+      "La Villa d’Este en Cernobbio es una finca histórica con edificios distintos y jardines formales. El Grand Hotel Tremezzo tiene un ambiente Belle Époque separado cerca del lago central y de Villa Carlotta. En ambos hoteles, consulte las clases exactas de habitaciones y el acceso a la amenidad."
+    ],
+    [
+      "¿Está Passalacqua en Bellagio?",
+      "No. Passalacqua está en Moltrasio en la orilla occidental del brazo suroeste, mientras que Bellagio está más al norte en la bifurcación central del lago. Viajar entre ellos requiere arreglos reales de carretera o barco, no un corto paseo."
+    ],
+    [
+      "¿Qué hotel en el Lago Como tiene el diseño más contemporáneo?",
+      "Il Sereno en Torno es conocido por la arquitectura contemporánea de Patricia Urquiola. Ofrece suites orientadas al lago con diferentes diseños y terrazas. La propiedad no se encuentra en el casco antiguo de Como o Tremezzo; confirme los arreglos precisos de la suite y el traslado."
+    ],
+    [
+      "¿Puede todo el mundo utilizar la piscina flotante del Grand Hotel Tremezzo?",
+      "No asuma el acceso público. El hotel describe varias piscinas diferentes, incluyendo la famosa piscina flotante Water-on-the-Water, además de una T Beach separada. Confirme las políticas de los huéspedes, las horas de temporada y las restricciones de los visitantes con la propiedad."
+    ],
+    [
+      "¿Es fácil viajar entre Tremezzo, Bellagio y Varenna?",
+      "Los servicios públicos conectan la zona central-lago, pero los horarios dependen del día y la temporada.El triángulo de ferry Bellagio-Cadenabbia-Varena-Menaggio y los lagos comunes operan en diferentes rutas."
+    ],
+    [
+      "¿Se incluyen Villa Carlotta y Villa del Balbianello con una estancia en el hotel?",
+      "No. Villa Carlotta es un museo con entradas por separado y jardín botánico en Tremezzina. Villa del Balbianello cerca de Lenno tiene sus propios arreglos de visita. Las reservas de hotel no cubren automáticamente la entrada, llegadas en barco o visitas guiadas."
+    ],
+    [
+      "¿Puede Bosphoras reservar estos hoteles, villas o barcos privados al instante?",
+      "Se trata de una guía editorial, no indexada, mientras que la calidad y los derechos del proveedor se revisan. No reclama precios en vivo, disponibilidad de habitaciones, traslados de barcos contratados o permisos de distribución de hoteles sin confirmación de un socio autorizado."
+    ]
+  ],
+  "photoCaptions": [
+    "Lago Como: antena iluminada por el sol de la cuenca central del lago, pueblo frente al mar, montañas y barcos",
+    "Cernobbio — frente a la playa arbolada con Villa d’Este vista desde el lago Como",
+    "Bellagio — montañas centrales del lago Como fotografiadas desde un cruce en barco",
+    "Villa Carlotta en Tremezzina — fachada neoclásica blanca, jardines junto al lago y fondo de montaña",
+    "Lago Como: agua azul y colinas alpinas vistas desde Punta Spartivento de Bellagio",
+    "Varenna: coloridas casas frente al mar y pasarelas a lo largo del lago Como",
+    "Villa del Balbianello — residencia histórica en la península boscosa de Lenno",
+    "Como: catedral abovedada y tejados antiguos vistos desde arriba",
+    "Moltrasio: embarcadero frente al mar, casas pastel y montañas verdes junto al lago Como"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Villa d’Este, Cernobbio: fachada histórica frente al lago con luz clara y jardines ajardinados",
+      "Villa d’Este - suite clásica con cortinas ornamentadas, muebles tallados y detalles de época",
+      "Villa d’Este - piscina al aire libre junto al lago con tumbonas a rayas y paraguas de jardín"
+    ],
+    [
+      "Grand Hotel Tremezzo — fachada de Belle Époque iluminada con toldos naranjas y piscina flotante icónica",
+      "Grand Hotel Tremezzo — auténtica suite de tonos dorados con elegante cama y balcón frente al lago",
+      "Grand Hotel Tremezzo — piscina flotante de agua sobre el agua, pontones de madera y sombrillas naranjas en el lago Como"
+    ],
+    [
+      "Passalacqua — Moltrasio villa fachada sobre jardines ajardinados y terraza con piscina iluminada",
+      "Passalacqua — Suite Agnese sala de estar con detalles históricos, muebles antiguos y chimenea",
+      "Passalacqua - jardines en terrazas y piscina con vistas al lago Como"
+    ],
+    [
+      "Il Sereno in Torno: fachada de hotel de piedra, cristal y madera contemporánea junto al lago",
+      "Il Sereno — actual Suite Corner con salón moderno y terraza abierta orientada al lago",
+      "Il Sereno: piscina infinita junto al lago y lanchas anaranjadas amarradas por el pontón"
+    ]
+  ],
+  "seoTitle": "Lago Como: estancias de lujo, áreas y experiencias",
+  "hotelSeoTitle": "Hoteles de lujo en Lago de Como: guía comisariada",
+  "seoDescription": "Lago Como no es una línea continua de palacios junto al lago. Desde los jardines clásicos de Cernobbio y las villas de Moltrasio hasta la arquitectura contemporánea de Torno y las terrazas frente al mar de Tremezzina, cada orilla crea un itinerario diferente. El verdadero lujo comienza con una propiedad situada con precisión y la suite reservada, no una hermosa foto que implica un barco privado, un acceso a la piscina o una vista hacia Bellagio. Esta guía independiente investigada compara cuatro hoteles identificables, cinco áreas prácticas y los límites reales del transporte estacional del lago."
+}

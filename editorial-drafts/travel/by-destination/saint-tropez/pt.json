@@ -1,0 +1,110 @@
+{
+  "name": "Saint-Tropez",
+  "country": "França",
+  "eyebrow": "A arte da Riviera Francesa",
+  "heading": "Saint-Tropez: a Riviera no seu próprio ritmo.",
+  "intro": "Manhã no porto velho, luz solar em velas de iate, almoço sob os pinheiros e as águas azuis de Pampelonne: Saint-Tropez combina a lendária vida da aldeia com a calma do mar. Seu endereço e a estação definem a estadia.",
+  "editorial": "A nossa lista de finalistas celebra quatro formas distintas de viver Saint-Tropez: um retiro à beira-mar íntimo, uma instituição de aldeia, um santuário de encostas em Ramatuelle e uma grande propriedade do castelo. Eles não são intercambiáveis e a localização real é importante.",
+  "hotelIntro": "Quatro propriedades distintas escolhidas para a definição, personalidade e experiência do hóspede. Lista editorial independente: sem taxas ao vivo, disponibilidade não verificada ou parceria com fornecedores é reivindicada.",
+  "areas": [
+    [
+      "Porto Velho & Place des Lices",
+      "Iates, terraços portuários, casas pastel e o mercado definem o animado coração da aldeia. Ideal para hóspedes que gostam de caminhar para jantar e voltar a pé.",
+      "O porto é animado e o tráfego é sazonal: confirme a tranquilidade do quarto e o acesso ao carro."
+    ],
+    [
+      "Pampelonne & Ramatuelle",
+      "Uma longa praia de areia, clubes de praia, vinhedos e paisagem coberta de pinheiros, separada da aldeia. Melhor quando a costa é a prioridade.",
+      "Pampelonne está em Ramatuelle, não na aldeia: planeje transferências e verifique o acesso ao clube de praia."
+    ],
+    [
+      "Bouillabaisse Beach e as colinas de Saint-Tropez",
+      "Maisons à beira-mar voltados para a baía e propriedades no topo da colina oferecem um ritmo provençal mais silencioso, com mais espaço e privacidade do que o porto.",
+      "O acesso direto à praia e uma propriedade no topo de uma colina com transferências são experiências muito diferentes."
+    ]
+  ],
+  "experiences": [
+    [
+      "Uma manhã perto do porto",
+      "Caminhe diante das multidões, aproveite o café com vista para os iates e descubra a Place des Lices no ritmo da aldeia."
+    ],
+    [
+      "Um dia em Pampelonne",
+      "Areia dourada, água limpa e almoço à beira da praia. Escolha um clube de praia para serviço e atmosfera, não apenas reputação."
+    ],
+    [
+      "A Riviera do mar",
+      "Vá em um barco particular, descubra baías e enseadas e retorne ao porto enquanto a luz se torna dourada."
+    ]
+  ],
+  "checks": [
+    "Escolha a vida da aldeia, Bouillabaisse à beira-mar, as colinas de Saint-Tropez ou Ramatuelle: a distância muda o ritmo diário.",
+    "Verifique as datas de abertura sazonais e os termos reais de acesso à praia.",
+    "Verifique o tipo de quarto exato, vista e terraço; imagens villa não descreve quartos padrão.",
+    "Permitir tráfego e transferências de verão; distâncias curtas de condução não garantem viagens rápidas."
+  ],
+  "hotels": [
+    [
+      "Plage de la Bouillabaisse  Saint-Tropez",
+      "Uma íntima maison à beira-mar, bosque de pinheiros e assinatura Riviera azul: a atenção ao nível do palácio diretamente pelo Golfo de Saint-Tropez.",
+      "Confirmar a perspectiva do mar, do pinheiro ou da aldeia e o tipo de suíte exato. As experiências sazonais podem variar.",
+      "Para a privacidade de uma maison à beira-mar íntima, serviço altamente personalizado, pinheiros e a beleza discreta do Golfo.",
+      "Cheval Blanc St-Tropez se sente mais como uma maison privada do que um grande resort. Na praia de Bouillabaisse, perto da entrada da aldeia, oferece uma experiência íntima do Golfo sem perder o acesso a Saint-Tropez. Assinatura Riviera azul, pinhos guarda-chuva e interiores contemporâneos de Jean-Michel Wilmotte criam uma atmosfera de contenção luminosa. Suítes viradas para o mar são individuais: compare terraço completo, layout e perspectiva antes de selecionar uma categoria."
+    ],
+    [
+      "Aldeia  Place des Lices",
+      "Uma instituição de aldeia com a sensação de uma casa mediterrânea, terraços, design distinto e uma atmosfera social animada.",
+      "Um hotel de aldeia em vez de um resort diretamente em Pampelonne: confirme os arranjos de praia e o nível de tranquilidade que você deseja.",
+      "Para a energia da aldeia, à noite, um ícone do estilo Saint-Tropez e a facilidade de explorar a pé.",
+      "Byblos é tecido na história social de Saint-Tropez. Sua composição de terraços, jardins e fachadas mediterrâneas cria uma atmosfera diferente de um resort de praia convencional. Os hóspedes vêm tanto para a aldeia e suas noites quanto para o tempo à beira da piscina. Este não é um hotel localizado diretamente na areia de Pampelonne. Escolha um quarto para a tranquilidade e layout preferidos, especialmente para famílias; imagens da suíte duplex decorada ilustram essa categoria."
+    ],
+    [
+      "Collines de Ramatuelle  vue Méditerranée",
+      "Um retiro isolado no topo da colina orientado em torno de vistas do Mediterrâneo, privacidade, bem-estar e terraços expansivos.",
+      "La Réserve está em Ramatuelle, não no porto. Facilidades e políticas de hotéis e moradias podem ser diferentes.",
+      "Para escapar da agitação da aldeia e priorizar vistas do Mediterrâneo, bem-estar, terraços e uma atmosfera incomumente privada.",
+      "La Réserve Ramatuelle ocupa um mundo mais calmo acima da costa, onde a arquitetura moderna deixa o centro do palco para os pinheiros, a luz e o horizonte do mar. O apelo é privacidade, serviço considerado e um ritmo orientado para o bem-estar. Os quartos de hotel, suítes de terraço e villas localizadas separadamente não oferecem as mesmas instalações ou layouts. Isto é Ramatuelle em vez do porto: planejar passeios na praia, jantares na aldeia e transporte em vez de assumir que cada experiência é uma curta distância."
+    ],
+    [
+      "Route de Tahiti  collines de Saint-Tropez",
+      "Uma propriedade de castelo acima de Saint-Tropez com jardins paisagísticos, piscinas, experiências familiares e acesso a Pampellenne sujeito aos termos da propriedade.",
+      "Confirme a categoria do quarto, piscina e acesso à praia, transfers e comodidades familiares antes da reserva.",
+      "Para uma grande propriedade provençal, jardins exuberantes e uma estadia orientada para a família equilibrando piscinas de hotel e tempo de praia.",
+      "O Château de la Messardire oferece Saint-Tropez na escala de uma grande propriedade no topo de uma colina: jardins paisagísticos, pinheiros e perspectivas mediterrâneas enquadram a estadia. O apelo está no espaço, várias piscinas e experiências familiares organizadas, em vez de caminhar imediatamente até o Porto Velho. Localizado na Route de Tahiti, ele exige um plano realista para a praia, transferências e jantar. Confirme os serviços sazonais, spa e instalações infantis, e o tipo de acomodação real:"
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Cidade velha de Saint-Tropez e porto visto de cima na luz do Mediterrâneo",
+    "Iates em Saint-Tropez's Deep Blue Mediterranean Bay",
+    "Casas de pastel e barcos tradicionais no antigo porto de pesca de Saint-Tropez",
+    "Praia de areia de Pampelonne e água azul-turquesa em Ramatuelle",
+    "Vinhedos em torno de Pampelonne nas colinas Ramatuelle",
+    "Baía de Pampelonne, praia e água azul vista de cima"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Cheval Blanc St-Tropez beira-mar maison, piscina e pinheiros no Golfo",
+      "Piscina e praia Cheval Blanc St-Tropez com vista para o Mediterrâneo",
+      "Quarto Duplex Sea Suite no Cheval Blanc St-Tropez"
+    ],
+    [
+      "Hôtel Byblos Saint-Tropez Arquitetura e terraços em estilo de vila mediterrânea",
+      "A piscina exterior Byblos Saint-Tropez em meio aos jardins paisagísticos",
+      "Suite Duplex no Byblos Saint-Tropez desenhada por Laura Gonzalez"
+    ],
+    [
+      "Entrada arquitetônica de La Réserve Ramatuelle emoldurando o Mediterrâneo",
+      "Piscina exterior, espreguiçadeiras e panorama mediterrânico La Réserve Ramatuelle",
+      "Terraço Suite Júnior Deluxe no La Réserve Ramatuelle de frente para o mar"
+    ],
+    [
+      "Airelles Château de la Messardire hilltop estate and landscaped gardens",
+      "Terraços com piscina de jardim iluminados pelo sol no Airelles Château de la Messardire",
+      "Suite Victoire no Château de la Messardire, uma categoria de quarto de alta qualidade distinta"
+    ]
+  ],
+  "seoTitle": "Saint-Tropez: estadias de luxo, áreas e experiências",
+  "hotelSeoTitle": "Hotéis de luxo em Saint-Tropez: guia com curadoria",
+  "seoDescription": "Manhã no porto velho, luz solar em velas de iate, almoço sob os pinheiros e as águas azuis de Pampelonne: Saint-Tropez combina a lendária vida da aldeia com a calma do mar. Seu endereço e a estação definem a estadia."
+}

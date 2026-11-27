@@ -1,0 +1,168 @@
+{
+  "name": "Mayakoba",
+  "country": "Meksika",
+  "eyebrow": "Mayakoba  zümrüt lagünleri, Maya doğası ve Karayipler",
+  "heading": "Mayakoba: 4 dikkate değer tatil yeri, bir olağanüstü lagün.",
+  "intro": "Meksika'nın Riviera Maya'sında Mayakoba bir plajdan çok daha fazlasıdır: Zümrüt kanalların Mangrov'lardan Karayiplere doğru estiği yemyeşil bir tatil beldesi topluluğu. Rosewood sanctuaries ve Banyan Tree villalarından Fairmont'un rahat ölçeğine ve yeni açılan Alila'ya kadar, sahil lüksünün dört farklı ifadesini keşfedin.",
+  "editorial": "Mayakoba, Playa del Carmen'in kuzeyindeki Riviera Maya koridoru boyunca uzanır, lagünler, mangrov ormanları ve Karayip kıyı şeridi boyunca dört bağımsız lüks tatil beldesini birleştirir. Ne geleneksel bir yürüyüşlü mahalle ne de tek bir otel değildir. Rosewood Mayakoba, özel, konut hissi veren süitler, kişiselleştirilmiş hizmet ve ayırt edici yemek; özel havuzlar, görünümler ve olanaklar, konaklama kategorisine bağlıdır. Banyan Ağacı Mayakoba, Tayland esintili misafirperverliği, cömert bir havuz ile harmana harmanlar. Beş farklı ayar konaklamayı şekillendirir: kanallar ve zümrüt lagün, Karayip sahil şeridi, mangrov parkurları, El Pueblito köy meydanı ve El Camalen Golf Sahası. Dahili elektrikli tekneler, golf arabaları ve bisikletler, canlı tarifelere ve işletme politikalarına uygun keşif sunmamalıdır. Tesis genelindeki yemek erişimi, her özel havuza veya kapsayıcı yiyeceğe sınırsız erişim anlamına gelmez; rezervasyonlar ve bireysel ücretler uygulanabilir.",
+  "hotelIntro": "Bugün dört hakiki Mayakoba otel markası, dört farklı stil. Broşür görüntülerinin uygulandığını varsaymak yerine her zaman ayrılmış oda tipini, tam havuzu ve okyanus görünümünü doğrulayın.",
+  "areas": [
+    [
+      "Mayakoba Lagoons & Waterways yakınlarındaki restoranlar",
+      "Hedefin belirleyici manzarası: hala zümrüt su yolları, tatil hayatını birbirine bağlayan elektrikli teknelerle mangrov kökleri etrafında örüyor.",
+      "Lagün manzaralı bir süit okyanus manzaralı bir oda değildir ve tekneler çalışma programlarına tabidir."
+    ],
+    [
+      "Caribbean Sahil",
+      "Farklı kişiliklere sahip beyaz kum, palmiye ve plaj kulüpleri, en çok bakımsız sabahlardan zevk aldı.",
+      "Sahile yakın konumu, kulüp erişimini, yüzme koşullarını ve mevsimlik sargassumu onaylayın."
+    ],
+    [
+      "Mangrove Forest & Nature Trail yakınlarındaki oteller",
+      "Ahşap köprüler ve sessiz yollar yaşayan tropikal manzaralardan geçer: doğa, vahşi yaşam manzaralarını garantilemek yerine izler.",
+      "Koruma işaretlerini takip edin, ısı ve nemi bekleyin ve iz kısıtlamalarını kontrol edin."
+    ],
+    [
+      "El Pueblito & Kültür Hayatı",
+      "Meksika'dan esinlenen bir köy meydanı, tatil deneyimine yemek, kültürel karşılaşmalar ve ara sıra etkinlikler getiriyor.",
+      "Canlı mekanları ve etkinlik zamanlamalarını kontrol edin; her etkinlik her gün çalışmaz."
+    ],
+    [
+      "El Camalen Golf & Open Landscapes yakınlarındaki oteller",
+      "Lagün ve sahil arasındaki tropik manzaraları geçen ünlü bir golf sahası, mülke farklı bir bakış açısı yaratıyor.",
+      "Tee süreleri, etkinlik kapanışları, yeşil ücretler ve ekipman ücretleri ayrı ayrı doğrulanmalıdır."
+    ]
+  ],
+  "experiences": [
+    [
+      "Zümrüt lagününü elektrikli tekneyle dolaşın",
+      "Mangrov kanallarını takip edin ve ücretsiz ulaşımı ücretli rehberli deneyimlerden ayıran su seviyesindeki mülkü keşfedin."
+    ],
+    [
+      "Sağlık için kendi öğleden sonrasını verin",
+      "Doğru mülkte bir tedavi seçin, ayrı ayrı rezervasyon yapın ve herhangi bir harici misafir erişimini doğrulayın."
+    ],
+    [
+      "Kaygısız bir Karayip plaj günü",
+      "Denizin yanında bir gün geçirin, bir plaj kulübü masası düzenleyin ve yüzmeyi yerel koşullara göre ayarlayın."
+    ],
+    [
+      "Mayakoba topluluğunda akşam yemeği",
+      "Önceden rezervasyon yaptırarak başka bir tatil beldesinin restoranını keşfedin, mekan erişiminin her şey dahil bir fayda olmadığını unutmayın."
+    ],
+    [
+      "Maya kültürü ve doğa ile bağlantı",
+      "Tarihlerinizde mevcut olan sorumlu bir doğa izi, kültür liderliğindeki etkinlik veya yerel olarak bilgilendirilmiş bir program seçin."
+    ]
+  ],
+  "checks": [
+    "Rosewood, Banyan Tree, Fairmont ve Alila'yı dört ayrı Mayakoba özelliği olarak karşılaştırın.",
+    "Lagün, mangrov ve gerçek sahil konaklamalarını karıştırmayın.",
+    "Rezervasyon ücretinin yemek, her şey dahil paket, havaalanı transferleri ve kazaları içerip içermediğini kontrol edin.",
+    "İç ulaşım tatil programlarını takip eder; belirli faaliyetler ve yemek ayrı rezervasyon gerektirebilir.",
+    "Doğal habitata saygı gösterin ve nem, gök gürültülü fırtınalar ve mevsimlik sargassum için izin verin.",
+    "Aileler izin verilen doluluk, ekstra yataklar, çocuk bakımı, havuz kuralları ve yaşa özel aktiviteleri doğrulamalıdır.",
+    "Cancn Havaalanı tatil beldesi topluluğunun dışındadır; karayolu transfer süreleri değişkendir.",
+    "Eski Andaz Mayakoba, Şubat 2026'da Alila Mayakoba olarak yeniden açıldı."
+  ],
+  "hotels": [
+    [
+      "Mayakoba  lagunes et mer des Carabes",
+      "Rosewood Mayakoba, özel kutsal mekanların bir koleksiyonu gibi hissediyor: Plaj kulüpleri ve Zapote Bar ve La Ceiba dahil olmak üzere ayırt edici yemeklerle desteklenen, dalma havuzları ve kişiselleştirilmiş hizmete sahip 129 tenha süit. Tam düzenleri, görünümleri, süit olanakları ve dahil olmak üzere rezervasyon yaptırdığınız ürüne bağlıdır.",
+      "Tam süit tipi, doluluk, görünüm, dalma havuzu, yemek dahil ve ücretli ekstraları onaylayın.",
+      "Tam süit tipi, doluluk, görünüm, dalma havuzu, yemek dahil ve ücretli ekstraları onaylayın.",
+      "Rosewood Mayakoba, özel kutsal alanların bir koleksiyonu gibi hissediyor: plaj kulüpleri ve Zapote Bar ve La Ceiba dahil olmak üzere ayırt edici yemeklerle desteklenen, dalma havuzları ve kişiselleştirilmiş hizmet içeren 129 tenha süit. Tam düzenleri, görünümleri, süit olanakları ve dahil olmak üzere rezervasyon yaptırdığınız ürüne bağlıdır. Tam süit tipi, doluluk, görünüm, dalma havuzu, yemek dahil ve ücretli ekstralar onaylayın."
+    ],
+    [
+      "Mayakoba  villalar, mangrov et plage",
+      "Banyan Tree, rafine edilmiş Asya misafirperverliğini yerel doğa ile karıştırarak kendine özgü bir özel havuz villa deneyimi sunar. Sahil, lagün ve bahçeye bakan villalar ölçek, ayar ve gizlilik açısından farklılık gösterir. Spa tedavisi ve restoran kullanılabilirliği onay gerektirir.",
+      "Villa konumunu, görünümünü, havuz boyutlarını, plaj erişimini ve odaya özel dahil edilmeleri kontrol edin.",
+      "Villa konumunu, görünümünü, havuz boyutlarını, plaj erişimini ve odaya özel dahil edilmeleri kontrol edin.",
+      "Banyan Tree, rafine edilmiş Asya misafirperverliğini yerel doğa ile karıştırarak, kendine özgü bir özel havuz villa deneyimi sunar. Sahil, lagün ve bahçeye bakan villalar ölçek, ayar ve gizlilik açısından farklılık gösterir. Spa tedavisi ve restoran kullanılabilirliği onay gerektirir. Villa konumunu, görünümünü, havuz boyutlarını, plaj erişimini ve odaya özel dahil edilmeleri kontrol edin."
+    ],
+    [
+      "Mayakoba  casitas et club de plage Maykana",
+      "Fairmont, yenilenmiş casitas, çeşitli yemekler, Maykana plaj kulübü ve kanallara ve doğaya erişim ile daha büyük, aile odaklı bir tatil deneyimi sunar. Konaklama kategorileri lagün, orman ve sahil ayarları arasında farklılık gösterir; Her şey dahil paketler, sunulan yerlerde, farklı fiyatlardır.",
+      "Gerçek sahil odası konumunu ve satın alınan fiyatın yemek, içecek veya aktivite içerip içermediğini doğrulayın.",
+      "Gerçek sahil odası konumunu ve satın alınan fiyatın yemek, içecek veya aktivite içerip içermediğini doğrulayın.",
+      "Fairmont, yenilenmiş casitas, çeşitli yemekler, Maykana plaj kulübü ve kanallara ve doğaya erişim ile daha büyük, aile odaklı bir tatil deneyimi sunar. Konaklama kategorileri lagün, orman ve sahil ayarları arasında farklılık gösterir; her şey dahil paketler, sunulan yerlerde, farklı fiyatlardır. Gerçek sahil odası konumunu ve satın alınan fiyatın yemek, içecek veya aktivite içerip içermediğini doğrulayın."
+    ],
+    [
+      "Mayakoba  bien-tre et architecture contemporaine ( bağlantılar değiştir)",
+      "Eski Andaz Mayakoba'nın dönüşümünden sonra Şubat 2026'da açılan Alila, markanın ilk Latin Amerika tatil beldesidir. Düşünceli mimarisi, refah programı, Alisio plaj kulübü ve yerel köklü deneyimleri onu Mayakoba'nın en taze eki yapmaktadır. Süit dalma havuzları ve tatil programları kategoriye göre değişir.",
+      "Eski Andaz listelerinden kaçının; Alila markasını, rezerve oda kategorisini, işletme hizmetlerini ve aile politikalarını onaylayın.",
+      "Eski Andaz listelerinden kaçının; Alila markasını, rezerve oda kategorisini, işletme hizmetlerini ve aile politikalarını onaylayın.",
+      "Eski Andaz Mayakoba'nın dönüşümünden sonra Şubat 2026'da açılan Alila, markanın ilk Latin Amerika tatil beldesidir. Düşünceli mimarisi, refah programı, Alisio plaj kulübü ve yerel köklü deneyimleri onu Mayakoba'nın en taze eki yapar. Süit dalma havuzları ve tatil programları kategoriye göre değişir. Eski Andaz listelerinden kaçının; Alila markasını, rezerve oda kategorisini, işletme hizmetlerini ve aile politikalarını doğrulayın."
+    ]
+  ],
+  "faq": [
+    [
+      "Mayakoba tam olarak nedir?",
+      "Mayakoba, Meksika'nın Riviera Maya'sında, Playa del Carmen'in kuzeyinde, bir lagün, mangrov, patika, Karayip plajı ve dört ayrı lüks oteli bir araya getiren bir tatil köyü topluluğudur."
+    ],
+    [
+      "2026'da Mayakoba'da hangi dört otel faaliyet gösteriyor?",
+      "Rosewood Mayakoba, Banyan Ağacı Mayakoba, Fairmont Mayakoba ve Alila Mayakoba. Alila, 2026 Şubat ayında eski Andaz'ın yerine şimdiki adıyla açıldı."
+    ],
+    [
+      "Andaz Mayakoba hala bu isimle mi çalışıyor?",
+      "Hayır. Eski Andaz, Şubat 2026'da Alila Mayakoba olarak yenilendi ve yeniden açıldı. Önceki Andaz tatil listeleri artık modası geçmiş olabilir."
+    ],
+    [
+      "Mayakoba her şey dahil bir tatil merkezi mi?",
+      "Varsayılan olarak değil. Fairmont, özellikle her şey dahil paketler satabilir, ancak diğer oda fiyatları ve özellikleri farklıdır. Yemekler, içecekler, aktiviteler ve tedaviler rezervasyon yapılan teklife tabidir."
+    ],
+    [
+      "Mayakoba konukları başka otellerde yemek yiyebilir mi?",
+      "Varış noktası, restoran rezervasyonları ve ücretleri ayrı kalır ve tüm özel kaplıcalar, havuzlar veya programlar ücretsiz olduğu anlamına gelmez."
+    ],
+    [
+      "Misafirler Mayakoba malikanesini nasıl gezer?",
+      "Dahili elektrikli tekneler, golf arabaları ve bisikletler mevcut rotalara ve çalışma programlarına tabidir. Ücretsiz ulaşım, özel olarak rezerve edilmiş bir rehberli gezi ile aynı değildir."
+    ],
+    [
+      "Hangi Mayakoba tesisi aileler için en iyisidir?",
+      "Fairmont daha büyük bir tatil planı sunarken Rosewood ve Banyan Tree samimi süitler veya villalar ve Alila refah merkezleri tercih ediyor. Tam oda doluluğu, çocuk tesisleri ve havuz kurallarını rezervasyondan önce karşılaştırın."
+    ],
+    [
+      "Bosphoras, Mayakoba otellerine doğrudan rezervasyon yapabilir mi?",
+      "Bu özel bir editoryal önizleme, hiçbir doğrulanmış canlı kullanılabilirlik, sözleşmeli rezervasyon envanteri veya kayıt tüccar anlaşması ile. Rezervasyon, ödeme, iptal, geri ödeme ve satış sonrası hizmetler yetkili bir ortak gerekir."
+    ]
+  ],
+  "photoCaptions": [
+    "Mayakoba  zümrüt lagün",
+    "Mayakoba su yolları ve doğa",
+    "Mayakoba Karayip kıyı şeridi",
+    "Mayakoba yaşayan mangrovlar",
+    "Mayakoba tropikal doğası",
+    "Mayakoba peyzaj ve tatil hayatı",
+    "Farklı bir ışıkta Mayakoba manzarası",
+    "Tesis villaları ve sakin sular",
+    "Bahçeler ve Karayip suyu"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Rosewood Mayakoba  mülk-yayıncı fotoğrafı (detay bekleyen inceleme)",
+      "Rosewood Mayakoba  mülk-yayıncı fotoğrafı (detay bekleyen inceleme)",
+      "Rosewood Mayakoba  mülk-yayıncı fotoğrafı (detay bekleyen inceleme)"
+    ],
+    [
+      "Banyan Tree Mayakoba  mülk-yayıncı fotoğrafı (detay bekleyen inceleme)",
+      "Banyan Ağacı Mayakoba  sahil kenarındaki havuz suitleri",
+      "Banyan Tree Mayakoba  mülk-yayıncı fotoğrafı (detay bekleyen inceleme)"
+    ],
+    [
+      "Fairmont Mayakoba  mülk-yayıncı fotoğrafı (detay bekleyen inceleme)",
+      "Fairmont Mayakoba  mülk-yayıncı fotoğrafı (detay bekleyen inceleme)",
+      "Fairmont Mayakoba  mülk-yayıncı fotoğrafı (detay bekleyen inceleme)"
+    ],
+    [
+      "Alila Mayakoba  mülk-yayıncı fotoğrafı (detay bekleyen inceleme)",
+      "Alila Mayakoba  mülk-yayıncı fotoğrafı (detay bekleyen inceleme)",
+      "Alila Mayakoba  mülk-yayıncı fotoğrafı (detay bekleyen inceleme)"
+    ]
+  ],
+  "seoTitle": "Mayakoba: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Mayakoba'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Meksika'nın Riviera Maya'sında Mayakoba bir plajdan çok daha fazlasıdır: Zümrüt kanalların Mangrov'lardan Karayiplere doğru estiği yemyeşil bir tatil beldesi topluluğu. Rosewood sanctuaries ve Banyan Tree villalarından Fairmont'un rahat ölçeğine ve yeni açılan Alila'ya kadar, sahil lüksünün dört farklı ifadesini keşfedin."
+}

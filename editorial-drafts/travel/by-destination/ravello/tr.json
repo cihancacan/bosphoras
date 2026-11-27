@@ -1,0 +1,162 @@
+{
+  "name": "Ravello",
+  "country": "İtalya",
+  "eyebrow": "Ravello  askıya alınmış bahçeler ve tarihi saraylar",
+  "heading": "Ravello: Amalfi Kıyısı'nın üstünde kalma sanatı.",
+  "intro": "Ravello bir tepe kasabasıdır, sahil kenarında bir tatil beldesi değildir. Ortaçağ bahçeleri, müzik, tarihi palazzi ve denize uzun manzaralar deneyimi tanımlar. San Giovanni del Toro'nun etrafındaki bir süit, katedrale yakın bir oda ve Villa Cimbone'un bahçelerinin yanında kalmak aynı bagaj düzenlemelerini veya sahil erişimini içermez. Bu kılavuz, dört doğrulanabilir özelliği ve kıyı şeridine ulaşmanın gerçek lojistiğini ayırt eder.",
+  "editorial": "Ravello'da merkezi soru basitçe hangi sarayın denize baktığı değil, gezginin hangi ritim ve lojistik istediğidir. Caruso, A Belmond Hotel, Piazza San Giovanni del Toro'da tarihi bir sarayı işgal eder, uçurum kenarındaki panoramik sonsuzluk havuzu ve tenha tepe atmosferi ile bilinir. 27 Ekim 2026'da kontrol edildiği gibi, resmi web sitesi otelin sezon için kapalı olduğunu ve 13 Nisan 2027'de yeniden açılmasını ima etmiyor; Via San Giovanni del Toro 16'daki Palazzo Confalone başka bir tarihi şehir ayarı sunar; Villa Confalone eki, ana palazzo'ya yaklaşık yirmi metre uzaklıktadır ve bir binadaki bir oda, diğerinde bir oda olarak satılmamalıdır. Piazza Duomo ve Villa Rufolo takım elbisesi yürüyüşü, ancak Amalfi ve plajlar ulaşım gerektirir. Teras panorama, bir odanın bireysel deniz manzarasının garantisi değildir. Ravello Festivali, bu ayrı performans tarihleriyle belirli performans tarihleriyle çalışır.",
+  "hotelIntro": "Dört farklı konaklama yeri: Belmond sarayı, Palazzo Avino, Villa Cimbone bahçeleri veya Palazzo Convalone.",
+  "areas": [
+    [
+      "San Giovanni del Toro  Büyük Palazzi",
+      "Caruso, Palazzo Avino ve Palazzo Confalone kümeleri San Giovanni del Toro civarındadır. Adresleri yakın ama girişleri, bahçeleri ve oda kategorileri oldukça belirgindir. Belirli sokaklarda trafik erişimi sınırlıdır.",
+      "Tam binayı, izin verilen araç bırakma ve bagaj yardımını onaylayın."
+    ],
+    [
+      "Piazza Duomo ve Villa Rufolo",
+      "Ravello'nun katedrali kompakt bir kafe ve dükkanlar meydanına açılır. Villa Rufolo, sadece planlanan tarihlerde konserler veren bahçeler ve denize bakan belvederes sunmaktadır. Gün ziyaretçileri bu alanda yoğunlaşıyor.",
+      "Bahçe saatleri, biletler, kule erişimi ve konserler konaklamadan ayrıdır."
+    ],
+    [
+      "Via Santa Chiara  Villa Cimbone",
+      "Hotel Villa Cimbone'a yaklaşım, eski şeritler ve bahçeler boyunca yürüyerek gidilmektedir. Parkı ve Infinity Terrace olağanüstü manzaralar sunmaktadır, ancak otele doğrudan ön kapıda bir araba ile ulaşılmamaktadır.",
+      "Sadece yaya yaklaşımı için porteraj, uygun ayakkabılar ve aile hareketliliğini düzenleyin."
+    ],
+    [
+      "Scala ve iç dağ görünümü",
+      "Ravello'nun merkezi caddelerinin ötesinde, görünüm Scala'ya ve ormanlık iç yamaçlara doğru döner. Dağa bakan bir oda, körfeze bakan gerçek bir denize bakan süitle değiştirilebilir değildir.",
+      "Scala'ya bakan odalardan sahile söz vermeyin; tam yönelimi doğrulayın."
+    ],
+    [
+      "Marmorata ve su  Ravello'nun altında",
+      "Marmorata, Ravello'nun altındaki sahilde, tepenin altındaki köyün bir parçası değil. Palazzo Avino'nun Deniz kenarındaki Clubhouse'u, mevsimsel ve müsaitlik koşulları ile oradadır ve bir yol transferi veya düzenlenmiş servis gerektirir.",
+      "Açılış tarihlerini, plaj platformlarını ve ulaşımı kontrol edin; bir saray havuzu deniz değildir."
+    ]
+  ],
+  "experiences": [
+    [
+      "Villa Rufolo ve Wagner'in bahçe ilhamı",
+      "Villa Rufolo'nun bahçelerini ve Piazza Duomo'daki tarihi mimarisini keşfedin. Vakıf, müze kulesine beş yaş ve üstü çocuklarla erişimi kısıtlar. Mevsimlik açılış saatlerini ve girişte kabulü doğrulayın."
+    ],
+    [
+      "Infinity Terrace at Villa Cimbone yakınlarında yapılacak şeyler",
+      "Mermer-büslü teras ve muazzam kıyı panorama Ravello öne çıkar. Bahçeler, herhangi bir özel otel süitinden veya aminity'den farklı olarak, ziyaret terimleriyle bir miras cazibe merkezidir."
+    ],
+    [
+      "Ravello Festivali'nde bir konser",
+      "Belvedere veya oditoryumda gerçek bir Foundation Ravello performansı seçin ve kitap biletleri ayrı ayrı. Programlar ve erişim koşulları tarihe göre değişir; Bir otel konaklaması konser koltuğu içermez."
+    ],
+    [
+      "Ravello'nun altında Amalfi ve Atrani'yi keşfedin",
+      "Karşıtlık Amalfi ve Atrani sahilde Ravello yükseltilmiş. Bazı yokuş aşağı yolları uzun ve dik, bu yüzden küçük çocuklar veya azaltılmış hareketlilik yürüyüş uygun hale geldiğinde organize bir yol transferi kullanın."
+    ],
+    [
+      "Ravello'nun çatıları üzerinde Aperitivo",
+      "En işlek günlük yolculukların ardından doğrulanmış bir bakış açısına sahip bir terasın keyfini çıkarın. İnce yemek restoranları, otel barları ve halka açık teraslar farklı rezervasyon politikalarına sahiptir."
+    ]
+  ],
+  "checks": [
+    "Caruso'nun web sitesi 13 Nisan 2027'de yeniden açıldığını duyurdu; alıntı yapmadan önce yeniden teyit edin.",
+    "Ravello deniz seviyesinden yüksektir: tepedeki odalar hemen plaj erişimine sahip değildir.",
+    "Villa Cimbone, bagaj ve çocuklarla bile yaya yaklaşımı gerektirir.",
+    "Palazzo Avino'nun Marmorata kulüp evi mevsimliktir ve saraydan ayrıdır.",
+    "Palazzo Confalone ve Villa Confalone iki farklı binadır.",
+    "Villa Rufolo müze kulesi, beş yaşın altındaki çocukları hariç tutuyor."
+  ],
+  "hotels": [
+    [
+      "Piazza San Giovanni del Toro 2  köy perch",
+      "Caruso, yemyeşil bahçeleri ve ünlü bir panoramik sonsuzluk havuzu ile körfezin üzerinde onbirinci yüzyıldan kalma bir saraydır. Deniz kenarındaki bir plaj tatil beldesi değil, tepe üstü bir büyük otel. Bireysel odalar ve süitler orantıları, tarihi özellikleri, balkonları ve görünümü bakımından farklılık gösterir: ünlü havuzlu panorama, her yatak odası hakkında bir söz vermemektedir. 27 Ekim 2026'da kontrol edildiği gibi, Belmond'un resmi web sitesi Caruso'nun sezon için kapalı olduğunu ve 13 Nisan'da yeniden açıldığını ima ediyor.",
+      "Sezon sonu kapanışı 13 Nisan 2027 tarihine kadar ilan edilir; tarihleri, kesin süiti ve transferleri onaylayın.",
+      "Sezon sonu kapanışı 13 Nisan 2027 tarihine kadar ilan edilir; tarihleri, kesin süiti ve transferleri onaylayın.",
+      "Caruso, yemyeşil bahçeleri ve ünlü bir panoramik sonsuzluk havuzu ile körfez üzerinde onbirinci yüzyıldan kalma bir saraydır. Deniz kenarındaki bir plaj tatil beldesi değil, tepe üstü bir büyük otel. Bireysel odalar ve süitler orantı, tarihi özellikler, balkonlar ve görünüm açısından farklılık gösterir: ünlü havuzlu panorama, her yatak odası hakkında bir söz vermemektedir. 27 Ekim 2026'da kontrol edildiği gibi, Belmond'un resmi web sitesi Caruso'nun sezon için kapalı olduğunu ve 13 Nisan'da yeniden açıldığını gösterir."
+    ],
+    [
+      "Via San Giovanni del Toro 28  palais historique",
+      "Palazzo Avino, tarihi bir Ravello sarayında ikamet eder ve sanatsal iç mekanları, denize bakan terasları, yemek ve sağlıklı yaşamı birleştirir. Rossellinis, barlar ve otelin havuzu deneyimi şekillendirir, ancak bir restoran masasını veya tedavisini önceden doğrulamadan garanti etmez. Dağa bakan ve denize bakan odalar farklı görünümler sunar; kesin rezervasyonlu kategoriyi talep eder. Otelin Clubhouse by the Sea, Ravello'nun tepe tepesinde değil, Marmor sahilindedir.",
+      "Deniz kenarındaki Marmorata Clubhouse saraydan ayrıdır; açılış tarihlerini ve uygunluğu kontrol edin.",
+      "Deniz kenarındaki Marmorata Clubhouse saraydan ayrıdır; açılış tarihlerini ve uygunluğu kontrol edin.",
+      "Palazzo Avino, tarihi bir Ravello sarayında ikamet eder ve sanatsal iç mekanları, denize bakan terasları, yemek ve sağlıklı yaşamı birleştirir. Rossellinis, barlar ve otelin havuzu deneyimi şekillendirir, ancak bir restoran masasını veya tedavisini önceden doğrulamadan garanti etmez. Dağa bakan ve denize bakan odalar, ayrı bir görünüm sunar; kesin rezervasyonlu kategoriyi talep eder. Otelin Clubhouse by the Sea, Ravello'nun tepesinde değil, Mar'ın kıyısındadır."
+    ],
+    [
+      "Via Santa Chiara 26  accs piton aux jardins",
+      "Hotel Villa Cimbone, Ravello'nun en atmosferik ayarlarından birinde ünlü bahçelerle çevrili tarihi bir ikametgahı kaplar. Odaları ve süitleri, seçilen kategorilerdeki freskler, şömineler veya majolica zeminler dahil olmak üzere eski mimariyi yansıtır. Ünlü Infinity Terrace, mülkün bahçe kimliğinin bir parçasıdır, ancak bu kamuya açık bakış açısından bakıldığında, her süitten görünüm olarak sunulmamalıdır. Otel, yaklaşımının sadece yaya açık, kabaca on dakikalık bir tarihi oda örtüsü olduğunu açıkça söylüyor.",
+      "Yayalara özgü yaklaşım; porteraj, şınav, basamaklar ve oda görünümünü kontrol edin.",
+      "Yayalara özgü yaklaşım; porteraj, şınav, basamaklar ve oda görünümünü kontrol edin.",
+      "Hotel Villa Cimbone, Ravello'nun en atmosferik ayarlarından birinde ünlü bahçelerle çevrili tarihi bir ikametgahı kaplar. Odaları ve süitleri, seçilen kategorilerdeki freskler, şömineler veya majolica zeminler dahil olmak üzere eski mimariyi yansıtır. Ünlü Infinity Terrace, mülkün bahçe kimliğinin bir parçasıdır, bu nedenle kamuya açık bakış açısıyla sunulan özel portatif odalar, her süitten görünüm olarak sunulmamalıdır. Otel, yaklaşımının sadece yaya açık, kabaca on dakika olduğunu söylüyor."
+    ],
+    [
+      "Via San Giovanni del Toro 16  merkez Historique",
+      "Palazzo Confalone, Ravello'nun merkezine kısa bir yürüyüş mesafesinde, seramik kaplı bir atrium ve korunmuş mimari detaylara sahip tarihi bir palazzo'dur. Bahçe terası sahile açılırken, odalar farklı parça ve seviyelerdeki mülkleri işgal eder. Otel, tarihi Palazzo Confalone'u, yaklaşık yirmi metre uzaklıktaki çağdaş bir ek bina olan Villa Confalone'den ayırt eder. Rezervasyon yapılan odanın yerleşim, görünüm ve varış deneyimi farklı olduğu için hangi binayı işgal ettiğini onaylayın.",
+      "Tarihi saray veya Villa Convalone eki 20 m uzakta: binayı kontrol edin ve trafik erişimini kısıtlayın.",
+      "Tarihi saray veya Villa Convalone eki 20 m uzakta: binayı kontrol edin ve trafik erişimini kısıtlayın.",
+      "Palazzo Confalone, Ravello'nun merkezine kısa bir yürüyüş mesafesinde, seramik kaplı bir atrium ve korunmuş mimari detaylara sahip tarihi bir palazzo'dur. Bahçe terası sahile açılırken, odalar mülkün farklı bölümlerini ve seviyelerini işgal eder. Otel, tarihi Palazzo Confalone'u, yaklaşık yirmi metre uzaklıktaki çağdaş bir ek bina olan Villa Confalone'den ayırt etmelidir."
+    ]
+  ],
+  "faq": [
+    [
+      "Ravello bir sahil beldesi mi?",
+      "Hayır. Ravello, Amalfi Kıyısı'nın üzerinde yükselmiştir ve hemen kum-kuyu erişimi yerine bahçeler, tarih ve manzaralar için ödüllendirilir. Amalfi veya Marmorata'ya ulaşmak, gerçek bir yol transferi veya onaylanmış başka bir düzenleme gerektirir."
+    ],
+    [
+      "Belmond Caruso şu anda misafir ağırlıyor mu?",
+      "27 Ekim 2026 tarihinden itibaren Belmond web sitesi Caruso'nun sezonluk olarak kapalı olduğunu ve 13 Nisan 2027 tarihinde yeniden açılacağını belirtmektedir. Yeni resmi onay olmadan Kasım 2026 odaları sunmak yanıltıcı olacaktır. Oda tipleri, tarihleri ve oranları canlı tedarikçi bulunabilirliğine bağlıdır."
+    ],
+    [
+      "Doğrudan Hotel Villa Cimbone'a gidebilir miyim?",
+      "Hayır. Otelin resmi talimatları, Ravello'nun tarihi merkezine yaklaşık on dakika uzaklıktaki yayalara özgü bir yaklaşımı tarif eder. Çocuklu, şınavlı veya büyük bavullu gezginler, bagaj taşıma ve erişilebilirlik düzenlemelerini önceden doğrulamalıdır."
+    ],
+    [
+      "Palazzo Avino'nun plaj kulübü otelde mi?",
+      "Hayır. Deniz kenarındaki Clubhouse, Ravello'nun altındaki sahil şeridinde Marmorata'dadır. Otelin web sitesi, müsaitlik durumuna, tanımlanmış bir işletim mevsimine ve servis düzenlemelerine bağlı olarak konuk kullanımını açıklar. Ayrı servisler veya salonlar, konaklama için yeniden teyit edilmelidir."
+    ],
+    [
+      "Palazzo Confalone ve Villa Confalone aynı bina mı?",
+      "Hayır. Otel, tarihi palazzo ve Villa Confalone'u yaklaşık yirmi metre uzaklıkta bulunan iki bina olarak tanımlamaktadır. Ek binada yer alan bir oda, tarihi sarayda bir süitin fotoğrafı ile temsil edilemez. Binayı, oda görünümünü ve bagajın düştüğünü doğrulayın."
+    ],
+    [
+      "Küçük çocuklar Villa Rufolo'yu ziyaret edebilir mi?",
+      "Bahçe, yayınlanan saatlerde ziyaret edilebilir, ancak Fondazione Ravello müze kulesine girişi beş yaş ve üstü çocuklarla sınırlandırır. Genel bahçe kabulü, konser biletleri ve rehberli tur düzenlemeleri ayrıdır."
+    ],
+    [
+      "Bosphoras şimdi müsait odaları veya konser biletlerini onaylayabilir mi?",
+      "Bu sayfa, arama indeksleme dışında tutulan bir editoryal taslaktır. Gerçek tedarikçi kullanılabilirliği ve yetkili otel dağıtım düzenlemeleri olmadan hiçbir konaklama, transfer, bilet veya fiyat teyit edildiği gibi iddia edilmez."
+    ]
+  ],
+  "photoCaptions": [
+    "Ravello'nun tarihi Villa Rufolo bahçelerinde çiçek yatağı ve pergola.",
+    "Villa Cimbone'daki Sonsuzluk Terası'nda deniz üstünde mermer büstler.",
+    "Ravello Katedrali'nin cephesi ve ziyaretçi dolu Piazza Duomo.",
+    "Ravello'daki San Giovanni del Toro kilisesi, ortaçağ dış ve çan kulesi.",
+    "Minori'nin kıyı şeridi ve Tyrrhenian Denizi, yükseltilmiş Ravello'dan görüntülendi.",
+    "Ravello yakınlarındaki Lattari dağlarının teraslı yamaçlarında Scala köyü.",
+    "Palazzo Avino'nun deniz kenarındaki ayrı Marmorata Clubhouse'u, kayalık platformlar ve kanolarla.",
+    "Ravello'nun Oscar Niemeyer Auditorium'u gün batımında denize bakıyor.",
+    "Atrani'nin Amalfi yakınlarındaki sahil köyü ve arcade'leri, deniz seviyesinden fotoğraflandı."
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Amalfi kıyı şeridine Ravello'dan bakan Caruso'nun yamaçtaki sonsuzluk havuzu.",
+      "Caruso'da oturma odası, boyalı tonozlu tavan, kitaplar ve mavi oturma alanı.",
+      "Caruso misafir odası klasik oyma detayları ile krem ve ochre döşenmiştir."
+    ],
+    [
+      "Palazzo Avino'nun Marmorata'daki ayrı Clubhouse'unda yüzme havuzu, tepedeki otelde değil.",
+      "Palazzo Avino'daki Belvedere Süit terasında denize bakan özel jakuzi.",
+      "Palazzo Avino'nun güneş ışığıyla aydınlatılmış pembe cephesi, narenciye yapraklarının yakın çekimleriyle eşleştirildi."
+    ],
+    [
+      "Villa Cimbone'un tarihi arazisinin, bahçelerinin ve aydınlatılmış havuzunun dusk hava manzarası.",
+      "Tarihi Villa Cimbone süiti, freskli tavan, oyulmuş şömine ve karmin mobilyalara sahiptir.",
+      "Villa Cimbone misafir odası, dekore edilmiş tonozlu tavan ve yeşil-aksanlı mobilyalarla donatılmıştır."
+    ],
+    [
+      "Ortaçağ sütunları ve mavi desenli kiremit zeminli tarihi Palazzo Convalone atrium.",
+      "Palazzo Convalone bahçesi, wisteria'nın altında beyaz sandalyelerle bir tören düzenledi.",
+      "Çiçeklerle kaplı Palazzo Convalone terası dağlara ve denize doğru bakıyor."
+    ]
+  ],
+  "seoTitle": "Ravello: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Ravello'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Ravello bir tepe kasabasıdır, sahil kenarında bir tatil beldesi değildir. Ortaçağ bahçeleri, müzik, tarihi palazzi ve denize uzun manzaralar deneyimi tanımlar. San Giovanni del Toro'nun etrafındaki bir süit, katedrale yakın bir oda ve Villa Cimbone'un bahçelerinin yanında kalmak aynı bagaj düzenlemelerini veya sahil erişimini içermez. Bu kılavuz, dört doğrulanabilir özelliği ve kıyı şeridine ulaşmanın gerçek lojistiğini ayırt eder."
+}

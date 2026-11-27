@@ -1,0 +1,162 @@
+{
+  "name": "Positano",
+  "country": "Italia",
+  "eyebrow": "Costa Amalfitana · terrazas sobre el mar Tirreno",
+  "heading": "Positano: elija la terraza, los escalones y la costa.",
+  "intro": "Desde el agua Positano se ve como un tapiz de edificios pastel alrededor de una cúpula de la iglesia de azulejos. Sin embargo, una habitación en Via Cristoforo Colombo, una finca junto al acantilado en Laurito, una villa en Arienzo y un hotel en Via Pasitea ofrecen estancias radicalmente diferentes. Las diferencias reales incluyen escaleras, puntos de llegada, acceso a la playa y el transporte tanto como vistas a las suites. Esta guía compara cuatro hoteles identificables y barrios realistas en lugar de tratar toda la costa como un solo resort.",
+  "editorial": "En Positano, una vista al mar no significa automáticamente acceso directo al mar. Le Sirenuse, en Via Cristoforo Colombo, tiene vistas al paisaje urbano central pastel, bien situado para comer y pasear por el pueblo, pero todavía por encima de las escaleras que conducen a Spiaggia Grande. Hotel Poseidon, en Via Pasitea 148, ofrece un ambiente de larga data, de gestión familiar y acceso por carretera comparativamente sencillo, con una piscina panorámica elevada: no es un complejo privado-playa o un palacio de cinco estrellas aislado. Villa TreVille ocupa jardines y antiguas villas hacia Arienzo, fuera del centro más concurrido; ubicación de suites y arreglos de transporte cambiar materialmente la experiencia de los huéspedes. Il San Pietro di Positano está más a lo largo de la SS163 en Laurito, con una finca de acantilados distintivos e instalaciones separadas a nivel de playa; confirmar los servicios operativos del hotel, traslados y habitaciones realmente reservadas en lugar de asumir que todo está disponible en todo momento. La playa principal de Spiaggia Grande y el muelle de excursiones, mientras que Fornillo se acerca por otro camino costero. Los ferries a Capri o Amalfi dependen de las condiciones del mar y el tráfico por carretera puede ser severo en verano. Las familias, los huéspedes menos móviles y cualquier persona que viaje con equipaje requieren un plan de entrega y transporte cuidadosamente revisado. Bosphoras no representa ninguna habitación, barco, mesa de comedor o playa como reservado o se vende sin inventario autorizado de proveedores.",
+  "hotelIntro": "Cuatro opciones distintas: panorama central, carretera-accesible Pasitea, aislado Arienzo y acantilado Laurito.",
+  "areas": [
+    [
+      "Via Cristoforo Colombo y el centro de Positano",
+      "Esta carretera central elevada incluye Le Sirenuse y su vista clásica hacia la cúpula de azulejos de Santa Maria Assunta. Tiendas y restaurantes se sienten cerca, pero descender a la playa todavía implica pendientes y escalones.",
+      "Confirme el acceso a peatones, la entrega de equipajes y el piso reservado."
+    ],
+    [
+      "Espiaggia Grande · playa y aterrizaje",
+      "Spiaggia Grande es la playa principal vista desde los hoteles de la colina, con zonas de baño, restaurantes y desembarcos de excursión. acceso privado de lido y salidas de barco son servicios separados, no derechos automáticos del hotel.",
+      "Consulta las condiciones del mar, las reglas de reserva de la playa, los últimos ferries y la congestión de visitantes."
+    ],
+    [
+      "Via Pasita, Fornillo y Chiesa Nuova",
+      "El Hotel Poseidon se encuentra en la Via Pasitea accesible en coche mientras se curva a través de la ladera. Fornillo es una playa separada conectada a la costa principal por un sendero costero; Chiesa Nuova se encuentra más alto que los carriles turísticos centrales.",
+      "No describa a Fornillo como adyacente a la entrada de cada hotel de ladera."
+    ],
+    [
+      "Arienzo · villas y pasos costeros",
+      "Al este del centro, Arienzo combina jardines aislados, villas y calas. Villa TreVille se encuentra aquí; es un establecimiento independiente, y cualquier servicio de transporte o acceso al agua necesita una verificación explícita.",
+      "Verifique el edificio de la suite, escalones, horario de transporte y acceso real a la playa."
+    ],
+    [
+      "Laurito y la carretera costera SS163",
+      "Il San Pietro ocupa un acantilado en Laurito hacia Amalfi, fuera del circuito a pie del centro. Su finca, restaurantes y servicios a nivel del mar crean un destino por derecho propio, pero no un paseo improvisado al centro de Positano.",
+      "Confirme los traslados, el horario de cena y las instalaciones a nivel del mar para la temporada correspondiente."
+    ]
+  ],
+  "experiences": [
+    [
+      "Ver Positano desde el agua",
+      "Una salida del muelle de la Spiaggia Grande muestra los distintos acantilados y calas de la ciudad. Comparar los ferries públicos con excursiones independientes y verificar el retorno, ya que los mares abruptos pueden suspender los cruces."
+    ],
+    [
+      "Camino costero de Fornillo",
+      "La ruta costera desde la playa principal hacia Fornillo ofrece una serie de calas y cafés de playa de temporada. Espere pasos y tramos desiguales; elija otra actividad si el grupo necesita acceso de nivel."
+    ],
+    [
+      "Santa Maria Assunta y sus azulejos",
+      "La cúpula alicatada de Santa Maria Assunta ancla el horizonte postal de Positano. Explore las calles históricas vecinas, así como el interior de la iglesia, donde los arreglos de visita lo permiten, respetando los servicios locales y las horas de acceso."
+    ],
+    [
+      "Un día hacia Praiano o Amalfi",
+      "Cerca de Praiano y Amalfi ofrecen pueblos costeros contrastantes, pero el estrecho TC163 puede estar muy congestionado en temporada. Planifique tiempos de salida realistas y confirme cualquier barco de vuelta antes de encadenar muchas paradas."
+    ],
+    [
+      "Aperitivo sobre los tejados",
+      "Escoja una terraza con una vista real sobre Positano después de la carrera de un día. Las mesas espectaculares a menudo requieren una reserva independiente, y algunos restaurantes cerca fuera de la temporada principal."
+    ]
+  ],
+  "checks": [
+    "Un panorama del mar del hotel no garantiza una habitación con vistas al mar o acceso directo a la playa.",
+    "Espere escaleras significativas: verifique la entrega del vehículo y la asistencia para equipaje.",
+    "Los ferries a Capri y Amalfi están sujetos a condiciones marítimas.",
+    "Fornillo y Spiaggia Grande son playas separadas con diferentes aproximaciones.",
+    "Confirme los clubes de playa, restaurantes y traslados como reservas independientes.",
+    "Los términos publicados por Le Sirenuse excluyen a los niños menores de 6 años; verifica la política de edad antes de reservar."
+  ],
+  "hotels": [
+    [
+      "Via Cristoforo Colombo 30 · Centro Positano",
+      "La propiedad de la familia Sersale combina terrazas de tonos cálidos, arte, comedor y una vista celebrada hacia Santa Maria Assunta con la sensación de una casa privada. La Sponda y los bares forman parte de su identidad, pero una fotografía de una mesa no es una reserva de restaurante confirmada. Los tipos de habitación difieren en distribución, acceso a la terraza y vista exacta; solicite la categoría reservada en lugar de inferir su perspectiva desde un retrato panorámico del hotel. Caminar hasta Spiaggia Grande implica las típicas pistas y escaleras de Positano. Este hotel elevado no es lo mismo que un complejo de arena frente al mar; las instalaciones de temporada deben ser verificadas para las fechas reales. Importante para las familias: los términos de la habitación publicada no permiten a los niños de seis años o menos.",
+      "Confirme habitación, balcón y escaleras; los términos publicados en el hotel excluyen a los niños menores de seis años.",
+      "Confirme habitación, balcón y escaleras; los términos publicados en el hotel excluyen a los niños menores de seis años.",
+      "La propiedad de la familia Sersale combina terrazas de tonos cálidos, arte, comedor y una vista célebre hacia Santa Maria Assunta con la sensación de una casa privada. La Sponda y los bares son parte de su identidad, pero una fotografía de una mesa no es una reserva de restaurante confirmada. Los tipos de habitación difieren en la distribución, el acceso a la terraza y la vista exacta; solicitar la categoría reservada en lugar de inferir su perspectiva desde un retrato panorámico del hotel. Los paseos hasta Spiaggia Grande implican las típicas pistas y escaleras de Positano. Este hotel elevado no es lo mismo que un complejo de arena frente al mar; las instalaciones de temporada deben ser verificadas para las fechas reales. Importante para las familias: los términos de habitación publicados en el hotel no permiten a los niños de 6 años o menos. Reconfirmar la política de edad precisa con la propiedad antes de proponer una estancia. Confirmar habitación, balcón y escaleras; los términos publicados del hotel excluyen a los niños de 6 años de edad."
+    ],
+    [
+      "Via Pasitea 148 · ruta panorámica",
+      "El Hotel Poseidon on Via Pasitea es una opción más íntima y de larga data conocida por la hospitalidad familiar tradicional y el acceso relativamente práctico a la carretera. Su piscina panorámica y su terraza dan a Positano, mientras que las habitaciones actuales varían en vista, balcón y configuración. Los interiores mediterráneos y la cena en el lugar hacen de este un estilo diferente de estancia desde las espectaculares fincas de acantilado. Estar en una carretera conductible puede ayudar a los viajeros con equipaje, pero comprobar la caída real, gradientes y categoría de habitación reservada. Su piscina no debe confundirse con una playa privada o acceso directo y sin escalones al mar. El acceso al restaurante y los detalles de funcionamiento siguen sujetos a confirmación para las fechas precisas.",
+      "Compare las categorías de la habitación y confirme la entrega del vehículo, el acceso a la piscina y el paseo a la playa.",
+      "Compare las categorías de la habitación y confirme la entrega del vehículo, el acceso a la piscina y el paseo a la playa.",
+      "El Hotel Poseidon on Via Pasitea es una opción más íntima y de larga data, conocida por la hospitalidad familiar tradicional y el acceso a la carretera relativamente práctico. Su piscina panorámica y su terraza dan a Positano, mientras que las habitaciones actuales varían en vista, balcón y configuración. Los interiores mediterráneos y la cena en el lugar hacen de este un estilo diferente de estancia de las espectaculares fincas de acantilado. Estar en una carretera conductible puede ayudar a los viajeros con equipaje, pero comprobar la categoría real de caída, gradientes y habitación reservada. Su piscina no debe confundirse con una playa privada o acceso directo y sin escalones al mar. El acceso al restaurante y los detalles operativos siguen sujetos a confirmación para las fechas precisas."
+    ],
+    [
+      "Via Arienzo 30 · jardins sur la côte est",
+      "Villa TreVille ocupa un grupo de villas, terrazas y jardines en Arienzo, lejos de las calles más concurridas del centro de Positano. La antigua finca asociada con el director de cine Franco Zeffirelli se siente como una residencia privada inusual, con habitaciones íntimas, exuberantes plantaciones, mosaicos y espacios exteriores orientados al mar. El edificio preciso y la suite importan: una imagen de toda la finca no describe todas las habitaciones, y los terrenos pueden implicar pasos sustanciales. Cualquier acceso a la orilla, movimiento de barco o comida asociada necesita confirmación independiente en lugar de ser asumido desde el prestigioso entorno de la propiedad.",
+      "Confirme la suite y villa exactas, escalones, acceso al agua y arreglos de transferencia Arienzo.",
+      "Confirme la suite y villa exactas, escalones, acceso al agua y arreglos de transferencia Arienzo.",
+      "Villa TreVille ocupa un grupo de villas, terrazas y jardines en Arienzo, lejos de las calles más concurridas del centro de Positano. La antigua finca asociada con el director de cine Franco Zeffirelli se siente como una residencia privada inusual, con habitaciones íntimas, exuberantes plantaciones, mosaicos y espacios exteriores orientados al mar. El edificio preciso y la suite importan: una imagen de toda la finca no describe todas las habitaciones, y los terrenos pueden implicar pasos sustanciales. Cualquier acceso a la orilla, movimiento de barco o comida asociada necesita confirmación independiente en lugar de ser asumido desde el prestigioso entorno de la propiedad. Elijalo para un ambiente más privado de la propiedad, no para paseos espontáneos sin esfuerzo a cada boutique del centro de la ciudad. Confirme la suite exacta y villa, escalones, acceso al agua y arreglos de transferencia Arienzo."
+    ],
+    [
+      "Via Laurito 2 · côte orientale vers Amalfi",
+      "Il San Pietro di Positano es una finca de Laurito, lo suficientemente lejos del centro de Positano como para dar forma a la logística del día. La arquitectura adosada desciende a través de jardines y restaurantes hacia instalaciones cercanas al mar, creando una experiencia verdaderamente diferente de los hoteles de la ciudad. La información oficial de la propiedad describe un traslado de huéspedes a Positano, pero detalles, horarios y disponibilidad de servicios todavía necesitan confirmación para las fechas previstas. Instalaciones de playa, experiencias junto al agua y mesas de restaurante no están necesariamente incluidas con un tipo de habitación determinado. Confirme el nivel de la habitación, vista, acceso al ascensor y el plan de traslado real, especialmente cuando viaja con niños o movilidad reducida.",
+      "Consulta el servicio de transporte urbano, acceso al mar, orientación a las suites y servicios de temporada.",
+      "Consulta el servicio de transporte urbano, acceso al mar, orientación a las suites y servicios de temporada.",
+      "Il San Pietro di Positano es una finca de acantilados en Laurito, lo suficientemente lejos del centro de Positano como para dar forma a la logística del día. La arquitectura adosada desciende a través de jardines y restaurantes hacia instalaciones cercanas al mar, creando una experiencia verdaderamente diferente de los hoteles de la ciudad. La información oficial del establecimiento describe un transporte de huéspedes a Positano, pero los detalles, horarios y disponibilidad de servicios todavía necesitan confirmación para las fechas previstas. Instalaciones de playa, experiencias en el agua y mesas de restaurantes no están necesariamente incluidas con un tipo de habitación determinado. Confirme el nivel de la habitación, vista, acceso al ascensor y el plan de traslado real, especialmente cuando viaja con niños o movilidad reducida. Consulta el servicio de transporte de la ciudad, acceso al mar, orientación a las suites y servicios de temporada."
+    ]
+  ],
+  "faq": [
+    [
+      "¿Qué hotel tiene la vista clásica de postal sobre Positano?",
+      "Le Sirenuse se encuentra sobre el centro de Positano en Via Cristoforo Colombo, con vistas a la colorida ladera y la cúpula de Santa María Assunta. Confirme la categoría específica de habitación o terraza orientada al mar, en lugar de asumir que una fotografía de restaurante representa cada suite."
+    ],
+    [
+      "¿Es el Hotel Poseidón más fácil de llegar en coche?",
+      "El Hotel Poseidon está en Via Pasitea, a la que pueden llegar los taxis y los coches permitidos, lo que puede simplificar la entrega de equipajes en comparación con los hoteles en carriles estrictamente peatonales."
+    ],
+    [
+      "¿Está Villa TreVille en Spiaggia Grande?",
+      "No. Villa TreVille es una finca en Arienzo, al este de la costa central en lugar de en Spiaggia Grande. La propiedad incluye diferentes villas y jardines. Los viajes a las calles comerciales, playas y restaurantes fuera de requieren transporte basado en los servicios realmente disponibles para la estancia."
+    ],
+    [
+      "¿Está Il San Pietro en el centro de Positano?",
+      "No. Il San Pietro se encuentra en la Via Laurito 2 en la carretera costera hacia Amalfi, fuera del centro de la aldea peatonal. Su sitio web oficial describe un servicio gratuito de transporte de huéspedes a Positano. Confirme el horario de servicio y la accesibilidad de las instalaciones a nivel del mar para las fechas reales."
+    ],
+    [
+      "¿Cuál es la diferencia entre Spiaggia Grande y Fornillo?",
+      "Especia Grande es la playa principal concurrida y el muelle de excursiones. Fornillo es una playa separada que se acerca desde la costa central por un sendero a pie. Considere los pasos, tumbonas disponibles en el club de playa y el hecho de que los restaurantes o instalaciones de baño privadas pueden requerir reservas independientes."
+    ],
+    [
+      "¿Están garantizados los barcos de Positano a Capri y Amalfi?",
+      "Los horarios de los ferries son estacionales y vulnerables al oleaje o a los fuertes vientos. Los operadores pueden cancelar o cambiar las salidas, especialmente fuera de los meses de máximo turismo."
+    ],
+    [
+      "¿Puedo reservar los cuatro hoteles al instante a través de Bosphoras?",
+      "Esto es editorial, contenido de destino no indizado pendiente de calidad y la revisión del proveedor. Afirma que no hay habitaciones en vivo, tarifas, yates privados o Bosphoras confirmado inventario de transferencia."
+    ]
+  ],
+  "photoCaptions": [
+    "El pueblo de la ladera pastel de Positano se eleva sobre una bahía de color turquesa.",
+    "Cúpula majolica de Santa Maria Assunta sobre el mar Tirreno, de color azul profundo.",
+    "Spiaggia Grande con sombrillas naranjas y azules bajo la ladera pastel de Positano.",
+    "Aguas turquesas de la playa de Fornillo bajo los verdes acantilados de Positano.",
+    "Vista panorámica de Positano desde un mirador costero superior.",
+    "Arienzo cala cerca de Positano, con su pequeña playa debajo de exuberantes acantilados.",
+    "Playa de Laurito con agua clara, tumbonas y acantilados empinados de la Costa Amalfitana.",
+    "Cuatro jarrones de cerámica coronada con limón fotografiados en Positano.",
+    "Brillante panorama costero de la costa rocosa de Praiano y casas sobre el mar azul."
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Vista panorámica de la piscina de mosaico azul en Le Sirenuse, Positano.",
+      "Suite de huéspedes de color marfil brillante en Le Sirenuse, con muebles clásicos y cortinas blancas suaves.",
+      "Terraza Le Sirenuse con tumbonas blancas con vistas a la ladera de Positano y al mar."
+    ],
+    [
+      "Terraza soleada en el Hotel Poseidón, con tumbonas frente a la ladera de Positano.",
+      "Hotel Poseidón suite de invitados con cortinas de color rosa, alfombras coloridas y una apertura a su terraza.",
+      "Piscina y terraza del Hotel Poseidón en la noche temprano con vistas a la costa."
+    ],
+    [
+      "Piscina privada en Villa TreVille, debajo de una pérgola en sus jardines de la finca Arienzo.",
+      "Suite Turquesa y Blanca en Villa TreVille con mobiliario mediterráneo.",
+      "Fachada rosa pálido y detalles arquitectónicos en Villa TreVille sobre la costa."
+    ],
+    [
+      "Vista aérea de Il San Pietro di Positano en el pedregale sobre el mar Tirreno.",
+      "Habitación Il San Pietro que da a una terraza con vistas al mar.",
+      "Habitación blanca en Il San Pietro con balcón privado con vistas a la costa de Laurito."
+    ]
+  ],
+  "seoTitle": "Positano: estancias de lujo, áreas y experiencias",
+  "hotelSeoTitle": "Hoteles de lujo en Positano: guía comisariada",
+  "seoDescription": "Desde el agua Positano se ve como un tapiz de edificios pastel alrededor de una cúpula de la iglesia de azulejos. Sin embargo, una habitación en Via Cristoforo Colombo, una finca junto al acantilado en Laurito, una villa en Arienzo y un hotel en Via Pasitea ofrecen estancias radicalmente diferentes. Las diferencias reales incluyen escaleras, puntos de llegada, acceso a la playa y el transporte tanto como vistas a las suites. Esta guía compara cuatro hoteles identificables y barrios realistas en lugar de tratar toda la costa como un solo resort."
+}

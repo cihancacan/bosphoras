@@ -1,0 +1,162 @@
+{
+  "name": "Saint-Jean-Cap-Ferrat",
+  "country": "Francia",
+  "eyebrow": "Costa Azul · península de jardines y calas",
+  "heading": "Saint-Jean-Cap-Ferrat: la Riviera en su más discreto.",
+  "intro": "Saint-Jean-Cap-Ferrat se trata de la sofisticación tranquila de los pinos paraguas, terrazas y una costa de colores cambiantes en lugar de un desfile interminable de hoteles emblemáticos. Un palacio legendario comparte la península con una gran dama frente al mar y propiedades independientes, más pequeñas que ofrecen un nivel de servicio totalmente diferente. Esta guía hace esas distinciones explícitas en lugar de pretender que cada hotel es un retiro de cinco estrellas. Orientación de la habitación, acceso a la playa, estacionalidad y condiciones de ruta costera dan forma a la estancia.",
+  "editorial": "El Grand-Hôtel du Cap-Ferrat, A Four Seasons Hotel, ocupa la cabecera: su finca, sus jardines y el Club Dauphin pueden definir un escape centrado en el palacio, sujeto a operaciones estacionales. Royal-Riviera mira a través de la Baie des Fourmis cerca de Beaulieu y ofrece un acceso más fácil a la ruta costera Maurice Rouvier. Por encima del pueblo, La Villa Cap Ferrat es un pequeño hotel de cuatro estrellas con su propia piscina y servicios de bienestar en lugar de gran palace. Brise Marine es un hotel de villa histórica de tres estrellas, una opción para el ambiente y vistas al mar sin reclamos de cinco estrellas de conserjería. La península se desarrolla en áreas distintas: el puerto del pueblo; Saint-Hospice y Paloma; la costa Pasable y Villefranche orientada al oeste; el faro y la punta de la cabecera; y los jardines de Ephrussi. Los caminos no son intercambiables: el paseo marítimo Maurice Rouvier es relativamente fácil, mientras que el circuito de la tapa es más exigente y puede tener un cierre prolongado entre el faro y el Pasable. Los establecimientos de playa privados operan de temporada, y una reserva de restaurante no incluye automáticamente tumbonas. No hay tasas de Bosphoras vivos o inventario están implícitos.",
+  "hotelIntro": "Cuatro niveles de alojamiento verdaderamente diferentes: Four Seasons palace, Royal-Riviera de cinco estrellas, hotel boutique La Villa de cuatro estrellas y Brise Marine de tres estrellas. Estas propiedades no son intercambiables.",
+  "areas": [
+    [
+      "Punta de la península · palacio y faro",
+      "En el extremo sur, las vistas al mar y los jardines de Four Seasons conforman el entorno más aislado. Los terrenos privados del hotel y la ruta costera pública tienen reglas de acceso separadas.",
+      "Confirme la apertura estacional del Club Dauphin y cualquier cierre de senderos de faro a paseable."
+    ],
+    [
+      "Pueblo y puerto · Cros deï Pin",
+      "El pequeño puerto y las calles del pueblo son adecuados para cafés relajados, barcos locales y restaurantes sin prisas. Las distancias a pie del hotel varían porque las calles se alejan del paseo marítimo.",
+      "Compruebe gradientes, pasos, disponibilidad de aparcamiento genuino y traslados en barco organizados de forma independiente."
+    ],
+    [
+      "Punto Saint-Hospice · Playa Paloma",
+      "Los pinos marítimos, la cala Scaletta y la playa Paloma definen la costa oriental. El bucle a través de la capilla de Saint-Hospice incluye escalones y secciones costeras expuestas.",
+      "Verifique la temporada playa-club, reservaciones de tumbonas, condiciones del mar y acceso al sendero."
+    ],
+    [
+      "Baie des Fourmis · Paseo Maurice Rouvier",
+      "La Royal-Riviera tiene vistas a la bahía de Fourmis y a la costa opuesta. El paseo Maurice Rouvier sigue la costa hacia Beaulieu y es más suave que los caminos rocosos.",
+      "Reserve el tipo exacto de habitación orientada a la bahía y distinga las instalaciones privadas de la playa del acceso público a la orilla."
+    ],
+    [
+      "· Jardines Villefranche y Ephrussi",
+      "El borde occidental se abre hacia la bahía de Villefranche. La playa transitable y los jardines de Ephrussi ofrecen dos razones separadas para visitar: natación y jardines marítimos por un lado, patrimonio arquitectónico por el otro.",
+      "Confirme el servicio de playa de temporada, las horas de visita al museo y los posibles cierres de caminos costeros."
+    ]
+  ],
+  "experiences": [
+    [
+      "Una mañana tranquila en los jardines de Ephrussi",
+      "Visite los jardines temáticos de Villa Ephrussi de Rothschild con una luz matutina más suave. Este monumento es un museo de visitantes, no un hotel o una propiedad privada de alquiler."
+    ],
+    [
+      "Camine por la bahía hacia Beaulieu",
+      "Tome el paseo marítimo más suave Maurice Rouvier a lo largo de Baie des Fourmis. Todavía cuenta con el calor de verano, los viajeros más jóvenes y cualquier mantenimiento temporal."
+    ],
+    [
+      "Paloma y las calas, con acceso realista",
+      "Disfrute de la costa de Paloma y de las vistas de Saint-Hospice en el clima adecuado. Las instalaciones privadas de la playa requieren confirmación separada; una fotografía de mar nunca representa una hamaca incluida."
+    ],
+    [
+      "Una tarde en el Club Dauphin",
+      "La famosa piscina de agua de mar del Grand-Hôtel es una experiencia por derecho propio. La apertura de temporada, las reglas de acceso y las posibles reservas dependen de las fechas y los arreglos reales de los huéspedes."
+    ],
+    [
+      "Un paseo en barco sólo cuando se ha confirmado",
+      "Desde el puerto, considerar una salida costera hacia Saint-Hospice o Villefranche sólo con un operador identificado. Condiciones, amarres, clima y precios nunca se infieren de imágenes."
+    ]
+  ],
+  "checks": [
+    "Compara las categorías de hotel actuales: Grand-Hôtel palace, Royal-Riviera de cinco estrellas, La Villa de cuatro estrellas y Brise Marine de tres estrellas.",
+    "Consulta la apertura estacional del palacio, Club Dauphin, establecimientos de playa y Brise Marine.",
+    "Reserve la categoría actual de la habitación orientada al mar; una fotografía Club Dauphin no es prueba de una terraza privada.",
+    "Los cierres de caminos costeros son importantes: el circuito de la cabecera puede cerrarse entre el faro y el Pasable durante las obras de estabilización.",
+    "Distinguir Pasable y Paloma: la orientación, las condiciones del mar y los servicios privados-club difieren.",
+    "Se trata de selecciones editoriales independientes, tasas de Wink no garantizadas, derechos de distribución Bosphoras o habitaciones disponibles."
+  ],
+  "hotels": [
+    [
+      "Pointe sud · palacio y jardines",
+      "En la cabecera, el Grand-Hôtel du Cap-Ferrat es un verdadero palacio de la Riviera y un destino por derecho propio. Amplios jardines mediterráneos, la famosa piscina de agua de mar Club Dauphin y refinados interiores dan a la propiedad una clara sensación de retiro. Las categorías de habitaciones y villas varían ampliamente en aspecto y privacidad; no todas las habitaciones tienen vistas al mar. Le Cap restaurantes y instalaciones de bienestar alientan un día entero en la finca. Four Seasons anunció una reapertura 6 marzo 2026, pero las fechas de temporada futuras deben confirmarse de forma independiente.",
+      "Distinguir edificio histórico, residencia, suites y villas; verificar el acceso Club Dauphin, vistas reales y servicios de temporada.",
+      "Distinguir edificio histórico, residencia, suites y villas; verificar el acceso Club Dauphin, vistas reales y servicios de temporada.",
+      "En la cabecera, el Grand-Hôtel du Cap-Ferrat es un verdadero palacio de la Riviera y un destino por derecho propio. Amplios jardines mediterráneos, la famosa piscina de agua de mar Club Dauphin y refinados interiores dan a la propiedad una clara sensación de retiro. Las categorías de habitación y villa varían ampliamente en aspecto y privacidad; no todas las habitaciones tienen vistas al mar. Le Cap restaurantes y instalaciones de bienestar alientan un día entero en la finca. Four Seasons anunció una reapertura 6 marzo 2026, pero las fechas de temporada futuras deben confirmarse de forma independiente. Distinguir edificio histórico, residencia, suites y villas; verificar el acceso Club Dauphin, vistas reales y servicios de temporada."
+    ],
+    [
+      "Baie des Fourmis · hôtel cinq étoiles",
+      "Con vistas a la Baie des Fourmis, Royal-Riviera ofrece una elegante estancia frente al mar de cinco estrellas en lugar de un palacio de cabecera aislado. Los jardines, la piscina, las terrazas y los comedores son el centro de su atractivo, con el paseo marítimo Maurice Rouvier cerca. Las habitaciones difieren por orientación, y el acceso privado a la playa o el uso de tumbonas no se deben asumir de las imágenes del hotel. Fuentes turísticas locales describen 94 habitaciones y suites y una temporada 2026 publicada hasta noviembre, sujeto a confirmación para fechas futuras.",
+      "Confirme la categoría exacta de vistas al mar, entrada a la playa, servicio de restaurante de temporada y arreglos de traslado desde Niza o Mónaco.",
+      "Confirme la categoría exacta de vistas al mar, entrada a la playa, servicio de restaurante de temporada y arreglos de traslado desde Niza o Mónaco.",
+      "Con vistas a la Baie des Fourmis, Royal-Riviera ofrece una elegante estancia frente al mar de cinco estrellas en lugar de un palacio de cabecera aislado. Los jardines, la piscina, las terrazas y los comedores son el centro de su atractivo, con el paseo marítimo Maurice Rouvier cerca. Las habitaciones difieren por orientación, y el acceso privado a la playa o uso de tumbonas no debe asumirse de las imágenes del hotel. Fuentes turísticas locales describen 94 habitaciones y suites y una temporada de 2026 publicada hasta noviembre, sujeto a confirmación para fechas futuras. Confirme la categoría exacta de vistas al mar, entrada a la playa, servicio de restaurante de temporada y arreglos de traslado desde Niza o Mónaco."
+    ],
+    [
+      "Haut du village · boutique-hôtel quatre étoiles",
+      "La Villa es un hotel boutique de 22 habitaciones, cuatro estrellas sobre el pueblo, a unos pocos pasos del puerto y de los restaurantes locales. Su piscina al aire libre, sauna y jacuzzi son comodidades atractivas, pero no lo hacen equivalente al palacio del Grand-Hôtel. La propia página web del hotel señala la ausencia de un ascensor, importante para las familias con equipaje y los huéspedes con movilidad limitada. Algunas habitaciones tienen terrazas y vistas al mar; la pequeña capacidad de aparcamiento requiere arreglos por adelantado.",
+      "No hay ascensor: verificar el piso, habitaciones accesibles, la terraza exacta y reservas de estacionamiento; confirmar los tiempos actuales de operación de bienestar.",
+      "No hay ascensor: verificar el piso, habitaciones accesibles, la terraza exacta y reservas de estacionamiento; confirmar los tiempos actuales de operación de bienestar.",
+      "La Villa es un hotel boutique de 22 habitaciones, cuatro estrellas por encima del pueblo, aproximadamente a un corto paseo del puerto y restaurantes locales. Su piscina al aire libre, sauna y baño-jacuzzi son comodidades atractivas, pero no lo hacen equivalente al palacio del Grand-Hôtel. La propia página web del hotel observa la ausencia de un ascensor, importante para las familias con equipaje y los huéspedes con movilidad limitada. Algunas habitaciones tienen terrazas y vistas al mar; pequeña capacidad de aparcamiento requiere arreglos por adelantado. No hay ascensor: verificar el piso, habitaciones accesibles, terraza exacta y reservas de aparcamiento; confirmar los tiempos actuales de funcionamiento de bienestar."
+    ],
+    [
+      "Avenida Jean Mermoz · maison de charme trois étoiles",
+      "Brise Marine no es un complejo de cinco estrellas disfrazado: es un hotel de tres estrellas de 16 habitaciones en una villa de estilo italiano del siglo XIX. Sus terrazas florales, ambiente íntimo y ciertas habitaciones orientadas al mar ofrecen una interpretación totalmente diferente de una estancia Cap-Ferrat. Las categorías de habitaciones van desde terrazas con vistas al jardín hasta vistas al mar, y los períodos de cierre de temporada significan que no es una alternativa durante todo el año. Elija para la autenticidad y la escala personal, no para las instalaciones de palacio o un spa grande.",
+      "Compruebe la apertura de temporada, el tipo exacto de habitación orientada al mar, pasos de acceso y la diferencia de servicio en comparación con los palacios de lujo.",
+      "Compruebe la apertura de temporada, el tipo exacto de habitación orientada al mar, pasos de acceso y la diferencia de servicio en comparación con los palacios de lujo.",
+      "Brise Marine no es un complejo de cinco estrellas disfrazado: es un hotel de tres estrellas de 16 habitaciones en una villa de estilo italiano del siglo XIX. Sus terrazas florales, su ambiente íntimo y ciertas habitaciones orientadas al mar ofrecen una interpretación totalmente diferente de una estancia Cap-Ferrat. Las categorías de habitaciones van desde terrazas con vistas al jardín hasta vistas al mar, y los períodos de cierre de temporada significan que no es una alternativa durante todo el año. Elija para la autenticidad y la escala personal, no para instalaciones de nivel de palacio o un spa grande. Compruebe la apertura de temporada, el tipo exacto de habitación con vistas al mar, escalones de acceso y la diferencia de servicio en comparación con los palacios de lujo."
+    ]
+  ],
+  "faq": [
+    [
+      "¿Son equivalentes el Grand-Hôtel du Cap-Ferrat y la Royal-Riviera?",
+      "No. Four Seasons Grand-Hôtel es un palacio de cabecera con jardines y Club Dauphin, mientras que Royal-Riviera es un hotel de cinco estrellas frente al mar con vistas a Baie des Fourmis."
+    ],
+    [
+      "¿Los huéspedes pueden pasar la noche en Villa Ephrussi de Rothschild?",
+      "No. Villa Ephrussi de Rothschild es una villa-museo y jardín que puede visitarse públicamente, no una propiedad de alojamiento a la venta en este sitio. Planee las horas de visita por separado de sus arreglos del hotel."
+    ],
+    [
+      "¿Está abierto el paseo costero completo del faro Cap-Ferrat?",
+      "No necesariamente. La oficina de turismo advierte de un cierre potencialmente prolongado entre el faro y la playa transitable para la estabilización costera. Siempre confirmar el acceso en vivo antes de establecer y respetar las barreras de seguridad."
+    ],
+    [
+      "¿Qué playa es mejor, Paloma o Pasable?",
+      "Paloma está en el lado oriental de Saint-Hospice, mientras que Passable se enfrenta a la bahía de Villefranche al oeste. Exposición, condiciones meteorológicas, clubes de playa privados, temporada y acceso práctico difieren."
+    ],
+    [
+      "¿El Club Dauphin opera todo el año para cada huésped?",
+      "No. Las fechas de temporada del Grand-Hôtel y las normas de acceso a las instalaciones deben ser verificadas para la estancia exacta. No asuma la apertura de la piscina, los tratamientos o las tumbonas privadas están incluidos con todos los tipos de alojamiento."
+    ],
+    [
+      "¿Qué pequeños hoteles independientes se adaptan a los viajeros que buscan privacidad?",
+      "La Villa Cap Ferrat es un hotel boutique de cuatro estrellas con piscina y servicios de bienestar; Brise Marine es un hotel histórico de tres estrellas. Tampoco ofrece servicios de palacio equivalentes, ni detalles prácticos como ascensores, escaleras y material de temporada."
+    ],
+    [
+      "¿Puede Bosphoras reservar inmediatamente los hoteles, villas y barcos que figuran en la lista?",
+      "No en virtud de esta página editorial. Los listados no constituyen inventario de proveedores confirmado, disponibilidad, derechos de reserva o tarifas. Todas las ofertas comerciales requieren autorización y disponibilidad actual de un proveedor válido."
+    ]
+  ],
+  "photoCaptions": [
+    "Saint-Jean-Cap-Ferrat — antena diurna de la península boscosa, faro blanco y costa rocosa mediterránea",
+    "Cap-Ferrat — Grand-Hôtel entre pinos y Club Delfín en la costa mediterránea escarpada",
+    "Paloma Beach, Saint-Jean-Cap-Ferrat — cala turquesa, pinos y yates mediterráneos frente a la costa",
+    "Villa Ephrussi de Rothschild y sus jardines formales",
+    "Puerto de Saint-Jean-Cap-Ferrat — yates y veleros amarrados contra el paseo marítimo del pueblo",
+    "Playa transitable en Saint-Jean-Cap-Ferrat — aguas cristalinas del Mediterráneo y costas protegidas de guijarros",
+    "Faro de Cap Ferrat: torre costera blanca sobre acantilados cubiertos de pino y aguas azules del Mediterráneo",
+    "Paseo Maurice Rouvier: sendero costero bordeado de pino",
+    "Baie des Fourmis — costa de la Riviera aérea entre Saint-Jean-Cap-Ferrat y Beaulieu-sur-Mer, jardines y mar turquesa"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Grand-Hôtel du Cap-Ferrat, A Four Seasons Hotel — blanco Belle Époque fachada, céspedes cuidados y cielo azul",
+      "Grand-Hôtel du Cap-Ferrat Four Seasons — elegante habitación de huéspedes con madera pálida, ropa de cama blanca y banco de salvia ligera",
+      "Grand-Hôtel du Cap-Ferrat Club Delfín — piscina de agua de mar infinito, sombrillas blancas y vistas mediterráneas"
+    ],
+    [
+      "Real-Riviera en Saint-Jean-Cap-Ferrat — Belle Époque fachada rosa y sendero de palmeras en exuberantes jardines",
+      "Royal-Riviera — sala de estar en suite iluminada por el sol con asientos de marfil, cortinas turquesas y ventanas de terraza de altura completa",
+      "Royal-Riviera: vista aérea del hotel Belle Époque, piscina y Baie des Fourmis"
+    ],
+    [
+      "La Villa Cap Ferrat — hotel, piscina y soleada costa mediterránea",
+      "La Villa Cap Ferrat — habitación iluminada por el sol con muebles de madera pálida y terraza abierta al mar",
+      "La Villa Cap Ferrat — terraza de desayuno con sol junto a la piscina con vistas al Mediterráneo"
+    ],
+    [
+      "Brise Marine — pabellón de jardín entre plantas mediterráneas con floración",
+      "Hôtel Brise Marine — jardín soleado desayuno terraza con mesas de color azul y blanco",
+      "Hôtel Brise Marine — villa histórica de color amarillo pálido y jardín mediterráneo de floración soleada"
+    ]
+  ],
+  "seoTitle": "Saint-Jean-Cap-Ferrat: estancias, zonas y experiencias de lujo",
+  "hotelSeoTitle": "Hoteles de lujo en Saint-Jean-Cap-Ferrat: guía comisariada",
+  "seoDescription": "Saint-Jean-Cap-Ferrat se trata de la sofisticación tranquila de los pinos paraguas, terrazas y una costa de colores cambiantes en lugar de un desfile interminable de hoteles emblemáticos. Un palacio legendario comparte la península con una gran dama frente al mar y propiedades independientes, más pequeñas que ofrecen un nivel de servicio totalmente diferente. Esta guía hace esas distinciones explícitas en lugar de pretender que cada hotel es un retiro de cinco estrellas. Orientación de la habitación, acceso a la playa, estacionalidad y condiciones de ruta costera dan forma a la estancia."
+}

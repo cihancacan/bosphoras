@@ -1,0 +1,156 @@
+{
+  "name": "Zermatt",
+  "country": "Svizzera",
+  "eyebrow": "Vallese · Il Cervino come compagno quotidiano",
+  "heading": "Zermatt: il Cervino cambia ogni soggiorno.",
+  "intro": "Il Cervino è il motivo per cui la maggior parte dei viaggiatori immagina per la prima volta Zermatt, ma non due soggiorni offrono lo stesso incontro con esso. Un rifugio di alto livello sopra i tetti, un palazzo storico del villaggio, una località di montagna contemporanea e un hotel a 2.222 metri sono fondamentalmente diversi. Zermatt senza auto aggiunge una delicata disciplina logistica: arrivare in treno, camminare o organizzare trasferimenti locali e lasciare che il programma guidi il tempo.",
+  "editorial": "Zermatt è essenzialmente privo di auto: i viaggiatori che guidano nella regione si fermano normalmente a Täsch e continuano in treno. Il vecchio villaggio e la Bahnhofstrasse premiano passeggiate e cene, mentre Sunnegga, Gornergrat e il Paradiso del ghiacciaio del Cervino sono approcci separati alla montagna. Riffelalp aggiunge un altro viaggio a bordo della ferrovia Gornergrat e ha vincoli di trasporto dopo le ore serali. Una stanza commercializzata come 'mountain-facing' non deve affrontare il Cervino, e anche l'orientamento giusto dipende dal tempo. I nostri quattro profili sono raccomandazioni editoriali, non verificato Bosfora stock o offerte di prezzo.",
+  "hotelIntro": "Quattro soggiorni Zermatt completamente diversi: L'OMNIA sopra i tetti, il Palazzo del Cervino nel paese, il moderno CERVO nella sua cornice montana e Riffelalp per una vera e propria solitudine in quota.",
+  "areas": [
+    [
+      "Bahnhofstrasse · energia del villaggio",
+      "La via centrale per lo shopping e la ristorazione è il cuore pratico di Zermatt, che premia gli ospiti che desiderano ristoranti e passeggiate serali vicino all'hotel.",
+      "Le auto private ordinarie non continuano a Zermatt; pianificano il treno Täsch e il trasferimento finale."
+    ],
+    [
+      "Sopra il villaggio · una prospettiva elevata",
+      "Appena sopra le strade trafficate, logge elevate si scambiano attività a livello di strada per le alte viste e il senso di arrivare ad un ritiro privato.",
+      "Verificare l'orientamento verso l'ambiente e l'accesso pratico all'ascensore o al trasferimento."
+    ],
+    [
+      "Sunnegga · accesso in montagna",
+      "L'approccio verso il lato Sunnegga favorisce l'accesso agli ascensori, i bordi della foresta e la rilassante montagna-resort che vivono sopra il fascino classico del villaggio.",
+      "Confermare la rotta per le piste funicolari e operative per la data."
+    ],
+    [
+      "Gornergrat · una ferrovia diversa",
+      "La ferrovia dentata si arrampica verso uno straordinario panorama montano. Si tratta di un sistema di trasporto distinto e centrale per ogni soggiorno Riffelalp.",
+      "Controllare treni finali, meteo, collegamenti e bagagli prima dell'arrivo."
+    ],
+    [
+      "Riffelalp · ritiro totale in montagna",
+      "A 2.222 metri l'hotel diventa un rifugio di montagna piuttosto che una comoda base in stile cittadino; l'impostazione detta il ritmo.",
+      "Conto per il trasporto Gornergrat, l'ultima passeggiata invernale e restrizioni al ritorno in ritardo."
+    ]
+  ],
+  "experiences": [
+    [
+      "Il Cervino dalla tua stanza",
+      "Confermare la vista specifica verso la camera, balcone e piano invece di supporre che il celebre panorama del Cervino di un hotel appartiene a ogni camera."
+    ],
+    [
+      "Un giorno sulla ferrovia Gornergrat",
+      "Scegliere una giornata in tempo libero se possibile, lavorare con l'orario ferroviario pubblicato e lasciare abbastanza tempo per godere l'alto panorama."
+    ],
+    [
+      "Benessere dopo la vita del villaggio",
+      "Equilibrare il villaggio tradizionale, un lungo pomeriggio di benessere e una cena senza fare sciare l'unico scopo del soggiorno."
+    ],
+    [
+      "Il Cervino nella stagione verde",
+      "I sentieri alpini e gli alti sentieri creano in estate una Zermatt completamente diversa, sempre soggetta a condizioni e possibilità di escursioni individuali."
+    ]
+  ],
+  "checks": [
+    "Guidare i visitatori di solito parcheggiare a Täsch e continuare in treno a Zermatt senza auto.",
+    "Trattate Sunnegga, Gornergrat e Glacier Paradise come diversi approcci di trasporto e sci.",
+    "Per Riffelalp, organizzare orari ferroviari e bagagli prima di pianificare una cena villaggio.",
+    "Scegliere una camera vista Matterhorn solo se la categoria prenotata esatta supporta quella prospettiva.",
+    "Differenziate i prodotti del lodge a quattro e cinque stelle del CERVO e i piani genuini della famiglia-suite.",
+    "Questi hotel selezionati indipendentemente non implicano tariffe Bosfora dal vivo o prenotazioni."
+  ],
+  "hotels": [
+    [
+      "Au-dessus du centre · lodge de 30 chambres",
+      "L'OMNIA sorge su una roccia sopra il paese, raggiungibile attraverso un ingresso discreto e un ascensore all'interno della roccia. Le sue 18 camere e 12 suite, strutture benessere rivolte al Cervino e interni tranquilli rendono la proprietà un rifugio architettonico. Villaggio-view e vista sul Cervino-view categorie di camere sono esplicitamente distinte.",
+      "Confermare la reale prospettiva della camera, ascensore di accesso, le regole della famiglia e il trasporto dalla stazione.",
+      "Confermare la reale prospettiva della camera, ascensore di accesso, le regole della famiglia e il trasporto dalla stazione.",
+      "L'OMNIA sorge su una roccia sopra il villaggio, raggiungibile attraverso un ingresso discreto e un ascensore all'interno della roccia. Le sue 18 camere e 12 suite, strutture benessere rivolte al Cervino e interni tranquilli fanno della proprietà un rifugio architettonico. Villaggio-view e le categorie di camere del Cervino-view sono esplicitamente distinte. Confermare l'aspetto reale della camera, ascensore di accesso, regole familiari e trasporto dalla stazione."
+    ],
+    [
+      "Centre du village · histoire depuis 1857",
+      "Un emblema dell'ospitalità Zermatt dal 1857, il Palazzo di Mont Cervin è incastonato nella storia del villaggio vicino alla Bahnhofstrasse. I comfort classici di grand-hotel e le categorie dedicate famiglia-suite ne fanno una scelta forte basata sulla città, ma la prospettiva delle camere, la costruzione ala e il percorso per ogni ascensore devono essere controllati attentamente.",
+      "Verificare la categoria di fronte al Cervino se necessario, camere comunicanti e il viaggio effettivo in ascensore.",
+      "Verificare la categoria di fronte al Cervino se necessario, camere comunicanti e il viaggio effettivo in ascensore.",
+      "Un emblema dell'ospitalità Zermatt dal 1857, il Palazzo di Mont Cervin è inserito nella storia del paese vicino alla Bahnhofstrasse. I comfort classici di grand-hotel e le categorie dedicate famiglia-suite la rendono una scelta forte della città-based, ma la prospettiva della stanza, la costruzione ala e il percorso ad ogni ascensore devono controllare attentamente. Verificare la categoria rivolta al Cervino se essenziale, camere comunicanti e il viaggio effettivo ascensore."
+    ],
+    [
+      "Au-dessus du village · lodges et spa",
+      "CERVO diffonde un'atmosfera montana contemporanea in diversi lodge e la Mountain Spa. Il suo catalogo ufficiale separa chiaramente le camere Nomad a quattro stelle, le categorie Alpinist e Huntsman a cinque stelle e gli appartamenti Overlook. L'accesso in pendenza e i trasferimenti di villaggio formano il soggiorno, ma le comodità e la privacy variano materialmente per categoria.",
+      "Confronta Nomad, Alpinist e Huntsman prima di assumere standard uguali, dimensioni delle camere, viste o accesso alla pista.",
+      "Confronta Nomad, Alpinist e Huntsman prima di assumere standard uguali, dimensioni delle camere, viste o accesso alla pista.",
+      "CERVO diffonde un'atmosfera di montagna contemporanea in diversi lodge e la Mountain Spa. Il suo catalogo ufficiale separa chiaramente le camere Nomad a quattro stelle, le categorie Alpinist e Huntsman a cinque stelle e gli appartamenti Overlook. L'accesso in pendenza e i trasferimenti di villaggio formano il soggiorno, ma le comodità e la privacy variano materialmente per categoria. Confronta Nomad, Alpinist e Huntsman prima di assumere gli stessi standard, dimensioni della camera, viste o accesso al pendio."
+    ],
+    [
+      "Au-dessus de Zermatt · altitudine 2 222 m",
+      "A 2.222 metri, Riffelalp è un vero e proprio rifugio di montagna piuttosto che un altro hotel intorno alla Bahnhofstrasse. Le sue terme, il paesaggio aperto e l'accesso agli sci sono interessanti, ma la logistica ferroviaria è fondamentale: arrivare a Zermatt, salire sulla ferrovia Gornergrat e completare il trasferimento finale dalla stazione Riffelalp. Il suo inverno dettagliato 2026/27 elenchi calendario 11 dicembre a 5 aprile, con riserva di riconferma.",
+      "Controllate l'orario attuale Gornergrat, le opzioni di ritorno tardivo, l'accesso al sentiero di neve, la politica per i bambini e la vista Matterhorn precisa.",
+      "Controllate l'orario attuale Gornergrat, le opzioni di ritorno tardivo, l'accesso al sentiero di neve, la politica per i bambini e la vista Matterhorn precisa.",
+      "A 2.222 metri, Riffelalp è un vero e proprio rifugio alpino piuttosto che un altro hotel intorno alla Bahnhofstrasse. Le sue terme, il paesaggio aperto e l'accesso agli sci sono interessanti, ma la logistica ferroviaria è fondamentale: arrivare a Zermatt, salire sulla ferrovia Gornergrat e completare il trasferimento finale dalla stazione Riffelalp. Il suo inverno dettagliato 2026/27 elenchi calendario 11 dicembre a 5 aprile, con riserva di riconferma. Controllate l'orario Gornergrat attuale, opzioni di ritorno tardivo, accesso innevamento, politica dei bambini e precisa vista sul Cervino."
+    ]
+  ],
+  "faq": [
+    [
+      "Puoi guidare un'auto privata verso Zermatt?",
+      "Il traffico privato ordinario si ferma fuori dal resort. I viaggiatori di solito parcheggiano a Täsch e continuano con il treno navetta."
+    ],
+    [
+      "Riffelalp è nel centro di Zermatt?",
+      "No. Il resort si trova a 2.222 metri e richiede la ferrovia Gornergrat per la stazione di Riffelalp, seguita da un ultimo trasferimento stagionale."
+    ],
+    [
+      "Tutte le stanze dell'OMNIA si affacciano sul Cervino?",
+      "No. L'hotel distingue le categorie di villaggio-fronte e Matterhorn-fronte; verificare la camera precisa."
+    ],
+    [
+      "In che modo le logge CERVO differiscono?",
+      "CERVO separa camere a quattro stelle Nomad, prodotti Alpinist e Huntsman a cinque stelle e appartamenti Overlook con diversi layout e servizi."
+    ],
+    [
+      "Come si viaggia alla Gornergrat?",
+      "Una ferrovia dentata collega Zermatt con la montagna. Controllate gli orari e i trasferimenti, soprattutto per il rientro da Riffelalp."
+    ],
+    [
+      "Quale hotel è più conveniente per il centro del paese?",
+      "Il Palazzo Mont Cervin si trova vicino alla Bahnhofstrasse, con ristoranti centrali e negozi, mentre l'OMNIA si trova sopra il paese."
+    ],
+    [
+      "Posso prenotare queste proprietà ad un tasso di Bosfora confermato?",
+      "Si tratta di una guida editoriale; le tariffe reali e le prenotazioni richiedono l'inventario dei fornitori autorizzato e verificato."
+    ]
+  ],
+  "photoCaptions": [
+    "Riffelsee in estate",
+    "Zermatt si affaccia su chalet storici con fioriere e il Cervino",
+    "Lago di Grindjisee nella zona di Sunnegga, che riflette il Cervino in autunno",
+    "Gornergrat Panorama di ghiacciai e cime alpine innevate",
+    "Paradiso del ghiacciaio del Cervino Panorama invernale luminoso attraverso le Alpi innevate da Klein Cervino",
+    "Chalet alpino tradizionale con vista sul Cervino",
+    "Stellisee all'alba • il Cervino dorato riflessa in acqua di lago"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "L'OMNIA © architettura contemporanea con una vista estiva illuminata dal sole del Cervino",
+      "LA OMNIA daylit Roof Suite salotto con camino e arredi contemporanei",
+      "LA piscina coperta OMNIA con vista sul vetro con luce turchese"
+    ],
+    [
+      "Hotel Mont Cervin Palace nel cuore di Zermatt",
+      "Mont Cervin Palace elegante camera con salotto separato",
+      "Mont Cervin Palace • Piscina coperta e atrio in vetro presso Spa Nescens"
+    ],
+    [
+      "CERVO Mountain Resort Case alpine tra larici innevati",
+      "CERVO Mountain Resort Camera Nomad con letti a castello",
+      "CERVO Mountain Resort Camera alpina con interni moderni"
+    ],
+    [
+      "Riffelalp Resort Piscina panoramica all'aperto con vista sul Cervino in estate",
+      "Riffelalp Resort suite di pineta calda con letto grande e accenti rossi",
+      "Riffelalp Resort Lounge alpino illuminato con camino centrale"
+    ]
+  ],
+  "seoTitle": "Zermatt: soggiorni di lusso, aree ed esperienze",
+  "hotelSeoTitle": "Hotel di lusso a Zermatt: guida a cura di",
+  "seoDescription": "Il Cervino è il motivo per cui la maggior parte dei viaggiatori immagina per la prima volta Zermatt, ma non due soggiorni offrono lo stesso incontro con esso. Un rifugio di alto livello sopra i tetti, un palazzo storico del villaggio, una località di montagna contemporanea e un hotel a 2.222 metri sono fondamentalmente diversi. Zermatt senza auto aggiunge una delicata disciplina logistica: arrivare in treno, camminare o organizzare trasferimenti locali e lasciare che il programma guidi il tempo."
+}

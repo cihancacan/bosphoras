@@ -1,0 +1,162 @@
+{
+  "name": "Ibiza",
+  "country": "İspanya",
+  "eyebrow": "İbiza  Akdeniz plajları ve ayırt edici geri çekilmeler",
+  "heading": "Ibiza: Gece hayatının ötesinde dört gerçek dünya.",
+  "intro": "İbiza bir parti adadan daha fazlasıdır. Eivissa'nın eski şeritleri, sahil şeridi Talamanca, batı yamaçları ve tenha Xarraca Körfezi dört gerçekten farklı konaklama stili sunmaktadır. Bir havuz fotoğrafı yerine coğrafya, mevsim, banyo erişimi ve gerçek ulaşıma göre mülk seçin.",
+  "editorial": "Ibiza'nın manşet deniz manzarası ve kumlu bir plaja gerçek bir yürüyüş çok farklı vaatlerdir. Adanın kuzeyinde, Six Senses Ibiza, Sant Joan de Labritja'nın yakınında yer alan bir Cala Xarraca'yı temsil ediyor. Wellness, sanat, müzik, havuz suitleri ve bağımsız konutlar, tatil karakterini tanımlar. Resmi sayfaları, büyük villaları ve konakları normal odalardan ayırır, bu nedenle özel bir villa havuzu her odaya dahil edilmemelidir. Standart, Ibiza Carrer de Bartomeu Vicent Ramon 9'da Eivissa'nın merkezinde gerçekten kentsel bir oteldir. Eski şehir şeritleri, Dalt Vila, akşamları ve çatı havuzu için seçin, özel kum erişimi için değil; ayrı Casa Privada konaklama kategorisi her odayı tanımlamaz. Yaz rüzgarları ve koşullar, Formentera'ya feribot yolculuklarını veya özel tekne gezilerini etkileyebilir; Dalt Vila'nın Arnavut kaldırımlı adımlarının çocuk plaj ve sandalyeleri ile bakıma ihtiyacı vardır.",
+  "hotelIntro": "Dört gerçek özellik ve dört ayrı konum: Cala Xarraca, Talamanca, batı yamaçları ve merkezi Eivissa.",
+  "areas": [
+    [
+      "Eivissa, Dalt Vila ve marina",
+      "Tarihi tahkim edilmiş Dalt Vila, The Standard yakınlarındaki limanın üzerinde yükselir. Eğimler, cobbles ve canlı kareler bu kentsel konaklamayı tanımlar.",
+      "Kabartılmış adımları, yaya şeritlerini ve gerçek araç inişini kontrol edin."
+    ],
+    [
+      "Talamanca ve Marina Botafoch",
+      "Nobu Hotel Ibiza Bay sınırları Talamanca'nın Marina Botafoch yakınlarındaki gerçek kumlu kıyısı. Restoran masaları ve şezlonglar ayrı rezervasyon koşullarını takip eder.",
+      "Deniz manzaralı bir oda otomatik olarak rezerve edilmiş bir şezlong içermez."
+    ],
+    [
+      "Cala Xarraca ve Sant Joan",
+      "Six Senses, Sant Joan yakınlarındaki çam çerçeveli koyların kuzey sahilini, şehir gece hayatından uzakta işgal eder.",
+      "Çocuklarla birlikte kayalık su erişimi ve özel havuz güvenliğini kontrol edin."
+    ],
+    [
+      "Cala Codolar, Cala Conta ve batı yamaçları",
+      "7Pines, ayrı koyların yakınındaki Es Vedr sahiline bakmaktadır; Cala Codolar gerçek bir yürüyüş gerektirir ve günbatımı süit görünümüne göre değişir.",
+      "Rezerve edilmiş balkon görünümünden ortak bir panoramik teras ayırtın."
+    ],
+    [
+      "Salinas ve Güney İbiza",
+      "Ses Salines'in ayrı plajları, kumulları ve korumalı kıyı erişimi vardır. Seçilen dört otelin hiçbiri doğrudan o sahilde yer almamaktadır.",
+      "Plaj kulübü sezonlarını ve doğal park erişim kurallarını kontrol edin."
+    ]
+  ],
+  "experiences": [
+    [
+      "Kalabalıktan önce Dalt Vila",
+      "Sabahın erken saatlerinde eski şehir duvarlarını, avluları ve liman manzaralarını keşfedin. Kabartılmış yamaçları ve adımları bekleyin ve rotayı daha az mobil gezgin için uyarlayın."
+    ],
+    [
+      "Formentera'ya feribot günlük gezi",
+      "İbiza limanından tarifeli yolcu feribotlarını karşılaştırın, gerçek dönüş biletlerini ayırtın ve deniz koşullarını izleyin. Özel bir yat otomatik olarak dahil değildir."
+    ],
+    [
+      "Batı-köşe günbatımı",
+      "Es Vedr ve Cala Conta kıyı şeridini yasal, güvenli bir şekilde erişilebilir bir bakış açısıyla izleyin. Fotoğraflar tekneleri, mekikleri veya belirli bir masayı garanti edemez."
+    ],
+    [
+      "Kuzey köyleri ve esnaf pazarları",
+      "Sant Joan'a, yerel üreticilere ve köy yemeklerine doğru daha sessiz yerleşim yerlerini keşfedin. Günlük bir etkinlik üstlenmek yerine gerçek pazar günlerini doğrulayın."
+    ],
+    [
+      "Ses Salines Natural Park yakınlarında yapılacak şeyler",
+      "İzin verilen yollarda kalırken tuz dairelerini, korumalı kumulları ve plajları keşfedin. Özellikle çocuklarla kırılgan bölgelere ve mevsimlik banyo koşullarına saygı gösterin."
+    ]
+  ],
+  "checks": [
+    "Nobu Ibiza Bay, 26 Ekim 2026'da sezonun sonunu ilan ediyor; daha sonra tekrar teyit edilir.",
+    "Six Senses Cala Xarraca: Havuz suitlerini bağımsız özel konutlardan ayırır.",
+    "7Pines: Cala Codolar'a yürümek, doğrudan kuma basmaktan farklıdır.",
+    "Standart şehirseldir ve çatı havuzu sahil kenarında değildir.",
+    "Formentera feribotları ve özel yatlar operatörlere ve deniz koşullarına bağlıdır.",
+    "Dalt Vila'nın arpacıkları ve merdivenleri uygun aile planlaması gerektirir."
+  ],
+  "hotels": [
+    [
+      "Cala Xarraca  Sant Joan de Labritja, cte nord",
+      "Six Senses Ibiza, Eivissa'nın en yoğun gece hayatı alanlarından uzakta, kuzey kıyısında Cala Xarraca'nın üzerinde yer almaktadır. Çam ağaçları, kaya oluşumları ve tenha koylar, sağlıklı yaşam, el sanatları, mutfak projeleri ve müzik liderliğindeki toplantılar etrafında inşa edilmiş bir tatil deneyimi yaratır. Mülkiyet pazarları otel odaları, havuz süitleri, konutlar ve büyük konaklar için ayrı kategoriler olarak tasarlanmıştır. Özel yüzme havuzuna sahip çok odalı bir villanın görüntüleri, giriş seviyesinde bir girişi temsil etmemelidir.",
+      "Cala Xarraca'da odaları, havuz suitlerini ve villaları ayırt edin; plaj erişimini ve transferlerini onaylayın.",
+      "Cala Xarraca'da odaları, havuz suitlerini ve villaları ayırt edin; plaj erişimini ve transferlerini onaylayın.",
+      "Six Senses Ibiza, Eivissa'nın en yoğun gece hayatı alanlarından uzakta, kuzey kıyısındaki Cala Xarraca'nın üzerinde yer almaktadır. Çam ağaçları, kaya oluşumları ve tenha koylar, sağlıklı yaşam, el sanatları, mutfak projeleri ve müzik odaklı toplantılar etrafında inşa edilmiş bir tatil deneyimi yaratır. Mülk pazarları otel odaları, havuz süitleri, konutlar ve büyük konaklar ayrı kategoriler olarak ayırt edilir. Özel yüzme havuzuna sahip çok odalı bir villanın görüntüleri, giriş seviyesinde bir süiti temsil edemez."
+    ],
+    [
+      "Playa de Talamanca  Cam de ses Feixes 52",
+      "Nobu Hotel Ibiza Bay, Talamanca'nın Marina Botafoch ve merkezi Eivissa yakınlarındaki gerçek kumlu sahil şeridinde oturuyor. Kuzeydeki bir geri çekilmenin inzivasından ziyade, restoran kültürü ve kasabaya uygun bir bağlantı ile plaj liderliğindeki bir tatil beldesi hissini birleştirir. Kumun yanında olmak, rezerve edilmiş bir salon, Nobu'daki bir masa veya her oda ile belirli bir deniz manzaralı süiti garanti etmez. Havuzlar, sağlık hizmetleri ve yemek alanları kendi rezervasyon kurallarını takip eder.",
+      "Gerçek Talamanca plajı; çalışma mevsimi, oda görünümü, şezlonglar ve Nobu masalarını onaylayın.",
+      "Gerçek Talamanca plajı; çalışma mevsimi, oda görünümü, şezlonglar ve Nobu masalarını onaylayın.",
+      "Nobu Hotel Ibiza Bay, Talamanca'nın Marina Botafoch ve merkezi Eivissa yakınlarındaki gerçek kumlu sahil şeridinde oturuyor. Kuzeydeki bir geri çekilmenin inzivasından ziyade, restoran kültürü ve kasabaya uygun bir bağlantı ile plaj liderliğindeki bir tatil beldesi hissini birleştirir. Kumun yanında olmak, 20 kişilik bir salonu, Nobu'daki bir masayı veya her oda ile belirli bir deniz manzaralı süiti garanti etmemelidir. Havuzlar, sağlık hizmetleri ve yemek alanları kendi rezervasyon kurallarını takip eder."
+    ],
+    [
+      "Puig Delfn  Cala Codolar et Cala Conta, cte ouest ( bağlantılar değiştir)",
+      "7Pines Resort Ibiza, Es Vedr deniz manzarasına bakan Puig Delfn çevresindeki batı uçurumlarını işgal eder. Süitleri, villaları, havuzları ve yemek terasları daha rahat bir tatil ortamı yaratır, ancak bireysel kategoriler farklı yerlerde oturur ve hepsi aynı batıya bakan panoramayı garanti edemez. Mülk, Cala Codolar'ı yaklaşık beş dakikalık bir yürüyüş mesafesinde, doğrudan her odadan ulaşılan kumlu bir plajdan farklı olarak tanıtır.",
+      "Batı kıyısı: gerçek Es Vedr görünümünü, süit kategorisini doğrulayın ve Cala Codolar'a yürüyün.",
+      "Batı kıyısı: gerçek Es Vedr görünümünü, süit kategorisini doğrulayın ve Cala Codolar'a yürüyün.",
+      "7Pines Resort Ibiza, Es Vedr deniz manzarasına bakan Puig Delfn çevresindeki batı uçurumlarını işgal eder. Süitleri, villaları, havuzları ve yemek terasları daha rahat bir tatil atmosferi yaratır, ancak bireysel kategoriler farklı konumlarda oturur ve hepsi aynı batıya bakan panoramayı garanti edemez. Tesis, Edolar'ı yaklaşık beş dakikalık bir yürüyüşle ilan eder, Cala Conta'yı doğrudan ayrı bir odadan farklı kılar."
+    ],
+    [
+      "Eivissa center  Carrer de Bartomeu Vicent Ramon 9",
+      "Standart, Ibiza, Eivissa'nın merkezinde, butiklere, marinaya ve tarihi Dalt Vila'ya yakın gerçek bir şehir otelidir. Çağdaş konuk odaları, canlı akşamlar ve izole bir plaj mülkünden ziyade bir çatı havuzu isteyen ziyaretçiler içindir. Standart odalar, daha büyük süitler ve Casa Privada koleksiyonu ayrı konaklama seçenekleridir; her bir banyo küveti ve büyük teraslı bir fotoğraf, her bir anahtar boyunca söz verilemez. Çatı havuzu özel bir plaj kulübü değildir.",
+      "Özel plajı olmayan şehir oteli: Casa Privada kategorisini, çatıyı ve bagaj erişimini doğrulayın.",
+      "Özel plajı olmayan şehir oteli: Casa Privada kategorisini, çatıyı ve bagaj erişimini doğrulayın.",
+      "Standart, Ibiza, Eivissa'nın merkezinde, butiklere, marinaya ve tarihi Dalt Vila'ya yakın gerçek bir şehir otelidir. Çağdaş konuk odaları, canlı akşamlar ve izole bir plaj mülkü yerine bir çatı havuzu isteyen ziyaretçiler içindir. Standart odalar, daha büyük süitler ve Casa Privada koleksiyonu ayrı konaklama seçenekleridir; Her bir anahtarda bir küvet veya büyük teras fotoğrafı vaat edilemez. Çatı havuzu özel bir plaj kulübü değildir."
+    ]
+  ],
+  "faq": [
+    [
+      "Ibiza Town gece hayatı için en iyi otel hangisidir?",
+      "Standart, marina ve Dalt Vila yakınlarındaki Eivissa'nın merkezindedir. Nobu Ibiza Körfezi, kısa bir yol yolculuğu olan Talamanca'dadır. Kuzey ve batı 7Pines'teki Altı His daha kasıtlı ulaşım planlaması gerektirir."
+    ],
+    [
+      "Nobu Ibiza Körfezi kışın açık mı?",
+      "Resmi web sitesi 26 Ekim 2026'da sona eren bir sezonun reklamını yapar. Kasım kullanılabilirliğini tahmin etmeyin; rezervasyon yapmadan önce güncel açılış tarihleri ve gerçek oda envanteri isteyin."
+    ],
+    [
+      "Six Senses Ibiza'nın sürekli kumlu bir plajı var mı?",
+      "Koyları ve denize erişim noktaları olan kayalık bir kuzey körfezi olan Cala Xarraca'yı kaplar. Kesintisiz bir kumlu plaj olarak tanımlanmamalıdır ve her süitte özel bir havuz bulunmamaktadır. Her rezerve oda kategorisini onaylayın."
+    ],
+    [
+      "7Pines'den Cala Codolar'a yürüyebilir miyim?",
+      "Tesis batı yamaçlarında durur ve Cala Codolar'ı yaklaşık beş dakikalık bir yürüyüş olarak ilan eder. Yol koşulları doğrudan bir plaja adım atmaktan farklıdır ve Es Vedr görünümü gerçek rezerve süite bağlıdır."
+    ],
+    [
+      "Standart'ın havuzu tam denizde mi?",
+      "Hayır. Standart, çatı yüzme havuzuna sahip kentsel bir Eivissa otelidir. Dalt Vila ve şehir yemeği için çalışır, ancak özel kumlu bir sahil şeridine sahip bir sahil tesisi değildir."
+    ],
+    [
+      "Formentera'ya giden feribotlar her gün çalışır mı?",
+      "Programlar mevsim, operatör ve deniz koşullarına bağlıdır. Tarihler, son dönüş feribotu ve tarifeli yolcu feribotu ile özel yat arasındaki fark için gerçek bir yelkenliyi onaylayın."
+    ],
+    [
+      "Bu dört otel hemen Bosphoras üzerinden rezervasyon yaptırılabilir mi?",
+      "Bu, endeksli olmayan editoryal içerik olarak kalır. Bosphoras, gerçek zamanlı oda, garantili plaj kulübü erişimi veya yetkili tedarikçi dağıtımı ve envanter doğrulaması olmadan onaylanmış yatlar talep etmez."
+    ]
+  ],
+  "photoCaptions": [
+    "İbiza Kasabası'nın güçlendirilmiş Dalt Vila ve katedralinin havadan görünümü.",
+    "Ibiza Town'un limanında marinanın üstünde tarihi Dalt Vila ile lüks yatlar.",
+    "Talamanca Körfezi ve Ibiza'daki kumlu kıyı şeridi, suyun kenarından görülüyor.",
+    "Ibiza'nın kuzeyindeki Cala Xarraca'da parlak turkuaz su ve kayalık kıyı şeridi.",
+    "Es Vedr silueti, akşam ışığında kayalık bir kıyı açıklığı ile çerçevelenmiştir.",
+    "Ibiza'nın batı kıyısında, kumlu plajın kendisinden ziyade Cala Codolar yakınlarındaki katmanlı jeolojik uçurumlar.",
+    "Cala Conta plajı, berrak turkuaz sığlıkları ve uzaklarda kayalık bir başlığa sahiptir.",
+    "Güney İbiza'daki Ses Salines Doğal Parkı'nın tuz buharlaşma göletleri.",
+    "Sant Joan de Labritja köyünde beyaza boyanmış kilise ve çan kulesi."
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Six Senses Ibiza'nın Cala Xarraca'nın kayalık sahiline bakan ana havuzunun havadan görünümü.",
+      "Açık denize bakan Six Senses Ibiza'da gün batımı süiti ve teras.",
+      "Six Senses Ibiza'nın turkuaz ana havuzunun, yüzücü ve teras şezlonglarının tepeden görünümü."
+    ],
+    [
+      "Nobu Hotel Ibiza Bay'de Talamanca'ya bakan özel deniz manzaralı daybed teras.",
+      "Nobu Hotel Ibiza Bay'de denize bakan kapılar ile beyaz-mavi konuk süiti ve oturma alanı.",
+      "Nobu Hotel Ibiza Bay yüzme havuzu, beyaz şemsiyeler ve plaj kenarındaki şezlonglar."
+    ],
+    [
+      "Adanın batı yamaçlarındaki beyaz 7Pines Resort Ibiza villalarına genel bakış.",
+      "Laguna Suite Sea View, 7Pines Resort Ibiza'da turkuaz yatak takımı ve uzak deniz görünümü ile konuk odası.",
+      "Es Vedr ve denize bakan 7Pines Resort Ibiza terasında hizmet veren bir garson."
+    ],
+    [
+      "Standart Ibiza çatısı beyaz şemsiyeler ve Dalt Vila'nın tarihi binalarının manzarası.",
+      "The Standard Ibiza'da modern süit banyo, ücretsiz banyo küveti ile donatılmıştır.",
+      "The Standard Ibiza'daki parlak Jara restoranı, masaları, heykel tavanları ve bol yeşilliği ile."
+    ]
+  ],
+  "seoTitle": "Ibiza: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Ibiza'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "İbiza bir parti adadan daha fazlasıdır. Eivissa'nın eski şeritleri, sahil şeridi Talamanca, batı yamaçları ve tenha Xarraca Körfezi dört gerçekten farklı konaklama stili sunmaktadır. Bir havuz fotoğrafı yerine coğrafya, mevsim, banyo erişimi ve gerçek ulaşıma göre mülk seçin."
+}

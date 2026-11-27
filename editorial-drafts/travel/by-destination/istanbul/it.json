@@ -1,0 +1,229 @@
+{
+  "name": "Istanbul",
+  "country": "Turchia",
+  "eyebrow": "Istanbul · Palazzi ottomani, quartieri vividi e due continenti",
+  "heading": "Istanbul: lusso tra Bosforo, palazzi e città vivente.",
+  "intro": "Dalle strutture alberghiere sul Bosforo al Sultanahmet ricco di storia, Istanbul offre modi molto diversi di soggiornare. Esplora nove hotel ricercati, cinque quartieri e ciò che conta prima di prenotare.",
+  "editorial": "A Karaköy, la Penisola di Istanbul occupa quattro edifici lungo il lungomare Galataport, tre dei quali restaurati nelle strutture storiche. Gli ospiti possono unire passeggiate nel Bosforo, gallerie e Istanbul Modern. Più a nord, Çırağan Palace Kempinski e Four Seasons Bosforus disegnano sull'eredità del palazzo ottomano, terrazze lungo il mare e giardini. La Grand Deluxe Bosforus Room di 50 metri quadrati del Kempinski non è la stessa esperienza di una storica suite di palazzo: l'ala della stanza, la prospettiva, il balcone e le inclusioni devono essere controllati. Il Mandarino Orientale di Kuruçeşme porta il lusso contemporaneo ad una costa più residenziale, con vista stretta e categorie di camere di collegamento che non sono universali. Shangri-La mette in contatto il quartiere dei traghetti di Beşiktaş; le torri di lotterie sopra Zorlu Center; St. Regis Nişantaşı favorisce gallerie ed elegante vita cittadina; Ritz-Carlton si affaccia sulla città vicino a Dolmabahçe. Un'etichetta vista Bosforus deve essere controllata contro la categoria di stanza effettiva, piano, area esterna e direzione. Le famiglie dovrebbero dare priorità ai collegamenti camera, letti supplementari, accessibilità e politiche di piscina rispetto a foto di marketing drammatico. Aeroporto di Istanbul (IST) e Sabiha Gökçen (SAW) sono porte diverse con diversi percorsi stradali e modelli di traffico. I traghetti pubblici offrono una vista superba su entrambi i continenti, ma nessun yacht privato dovrebbe essere implicato come inclusione di hotel. Primavera e autunno può essere bello per le passeggiate, soggette a venti, mete e regole di attrazione.",
+  "hotelIntro": "Nove veri hotel, già recensiti nel nostro hotel di Istanbul: palazzi, basi storiche camminabili e fughe contemporanee. Confrontate la camera prenotata e il quartiere.",
+  "areas": [
+    [
+      "Karaköy & Galataport",
+      "Una base di prima visita avvincente: gallerie, caffetterie, passeggiate in banchina e collegamenti attraverso lo stretto. Un ambiente vivace e camminabile rende un palazzo sul lungomare collegato alla città.",
+      "Meglio per: arte, ristoranti e passeggiate in città."
+    ],
+    [
+      "Çırağan & Beşiktaş",
+      "Tra le coste più memorabili della città: architettura palazzina, giardini e un quartiere attivo. L'esatta posizione costiera e la vista sulle camere acquistate contano più di un'etichetta a cinque stelle.",
+      "Meglio per: palazzi lungomare e romantiche fughe."
+    ],
+    [
+      "Kuruçeşme & Ortaköy",
+      "Una sensazione più residenziale mentre la costa europea continua a nord, con passeggiate lungo la riva e viste verso i ponti. Il traffico stradale pesante può influenzare i piani quotidiani.",
+      "Meglio per: più ampia vista sull'acqua e un umore residenziale."
+    ],
+    [
+      "Sultanahmet",
+      "Scegli questo quartiere per la storia prima: Hagia Sophia, la Moschea Azzurra, Palazzo Topkapı e la Basilica Cistern formano un breve soggiorno guidato dalla cultura. Non è il quartiere dei principali palazzi bosforesi.",
+      "Meglio per: patrimonio e passeggiate."
+    ],
+    [
+      "Nişantaşı & Zorlu",
+      "Pensate alla moda, al design, alla gastronomia e alle riunioni. Panoramica può essere impressionante da piani superiori, ma questo è contemporaneo urbano Istanbul piuttosto che la vita direttamente accanto allo stretto.",
+      "Meglio per: moda, business e suite moderne."
+    ]
+  ],
+  "experiences": [
+    [
+      "48 ore, camminabile Istanbul",
+      "Soggiornate nei dintorni di Karaköy per visitare musei, ristoranti e passeggiate lungo il lungomare, poi visitate la penisola storica e prenotate tempo per lo stretto."
+    ],
+    [
+      "La fuga del palazzo",
+      "Scegliete Çırağan o Beşiktaş, prenotate una categoria di Bosforo verificata e concedete tempo libero per i giardini, le terme e le terrazze."
+    ],
+    [
+      "Cultura, arte e design",
+      "Soggiornate a Sultanahmet per passeggiate storiche, o nei quartieri moderni per gallerie, shopping e ristoranti contemporanei."
+    ],
+    [
+      "Traversata dall'Europa all'Asia con traghetto pubblico",
+      "Traghetti di linea offrono una vista memorabile di palazzi lungomare, moschee e barche di passaggio senza promettere un charter privato."
+    ],
+    [
+      "Sultanahmet del mattino presto",
+      "Esplora Hagia Sophia, la Moschea Blu e il quartiere di Topkapı, controllando i tempi di ammissione e preghiera."
+    ],
+    [
+      "Tramonto del Bosforo",
+      "Scegliete un lungomare accessibile al pubblico o una terrazza dell'hotel confermata; distinguete le viste del ristorante dalle viste della categoria delle camere."
+    ]
+  ],
+  "checks": [
+    "Penisola ha diverse città, giardino e camere con vista Bosforo.",
+    "Çırağan e Four Seasons Bosforus palace ali, viste e inclusioni variano.",
+    "Mandarin Oriental camere di collegamento e Bosforo prospettive sono categoria-specifico.",
+    "Four Seasons Sultanahmet è un patrimonio camminabile, non un hotel lungomare.",
+    "Raffles e St. Regis sono proprietà urbane, non sullo stretto.",
+    "IST e SAW sono aeroporti separati con diverse rotte di trasferimento.",
+    "Le famiglie dovrebbero confermare i collegamenti, le piscine, le culle e i trasferimenti.",
+    "Non confermato Bosforas tariffe live, accordi di fornitore o prenotazione API."
+  ],
+  "hotels": [
+    [
+      "Karaköy · Galataport",
+      "Quattro edifici sul lungomare, tra cui tre strutture restaurate del patrimonio, ancorano questo indirizzo Karaköy. La sua distinzione è la possibilità di combinare il lungomare Galataport, gallerie vicine e la vita della città con un ambiente lungomare.",
+      "Non tutte le stanze si affacciano sullo stretto: distinguete le categorie della città, del giardino e del Bosforo.",
+      "Un soggiorno che bilancia il lungomare, l'arte, le passeggiate e la vita di città camminabile.",
+      "Quattro edifici lungomare, tra cui tre strutture restaurate patrimonio, ancorano questo indirizzo Karaköy. La sua distinzione è la possibilità di combinare il lungomare Galataport, gallerie nelle vicinanze e la vita della città con un ambiente lungomare. Non tutte le camere si affacciano sullo stretto: distinguere città, giardino e categorie di camere Bosforo."
+    ],
+    [
+      "Çırağan · Beşiktaş",
+      "Un palazzo imperiale ottomano proprio sullo stretto, con un'atmosfera simile a un resort e una spettacolare piscina all'aperto sul lungomare. L'ambiente si sente sostanzialmente diverso da un hotel tradizionale della città.",
+      "Confermare l'edificio e la vista reale della camera; ali del palazzo e le impostazioni di alloggio differiscono.",
+      "Un'esperienza guidata dal palazzo con il tempo trascorso accanto all'acqua.",
+      "Un palazzo imperiale ottomano proprio sullo stretto, con un'atmosfera resort-like e una piscina all'aperto sul lungomare drammatica. L'ambiente si sente sostanzialmente diverso da un hotel tradizionale della città. Confermare l'edificio e la vista reale delle camere; ali palazzo e gli ambienti di alloggio differiscono."
+    ],
+    [
+      "Çırağan · Beşiktaş",
+      "All'interno di un palazzo ottomano ottocentesco restaurato, Four Seasons combina giardini, terrazze Bosforus e ospitalità tradizionale grand-hotel. La posizione offre una base europea-shore vicino a Beşiktaş.",
+      "Le viste variano per categoria di suite: confermare la designazione Bosforo e la disposizione effettiva.",
+      "Un palazzo lungomare per coppie e famiglie che apprezzano lo spazio all'aperto.",
+      "All'interno di un palazzo ottomano del XIX secolo restaurato, Four Seasons combina giardini, terrazze Bosforus e ospitalità tradizionale grand-hotel. La posizione offre una base europea-shore vicino a Beşiktaş. Le viste variano per categoria suite: confermare la designazione Bosforus e la disposizione reale."
+    ],
+    [
+      "Kuruçeşme · Beşiktaş",
+      "Situato direttamente sul Bosforo a Kuruçeşme, accanto ai palazzi storici lungo il lungomare, questo hotel di lusso contemporaneo attira i viaggiatori alla ricerca di ampie viste sull'acqua e di un ambiente più residenziale.",
+      "Confrontate le viste e i viaggi successivi: il traffico stradale a terra può essere pesante.",
+      "Lusso moderno lungo il mare lontano dal trambusto del Galataport.",
+      "Situato direttamente sul Bosforo a Kuruçeşme, accanto ai palazzi storici lungo il lungomare, questo hotel di lusso contemporaneo attira i viaggiatori alla ricerca di ampie viste sull'acqua e di un ambiente più residenziale sulla riva. Confronta le viste e i viaggi successivi: il traffico stradale lungo la costa può essere pesante."
+    ],
+    [
+      "Sultanahmet · Vieille ville",
+      "Un intimo hotel di 65 camere situato intorno ad un cortile nel nucleo storico di Sultanahmet. Hagia Sophia, la Moschea Blu e diversi punti di riferimento sono raggiungibili a piedi.",
+      "Questo non è un Bosforus hotel lungomare: l'accesso storico-landmark e la vista sull'acqua sono diverse priorità.",
+      "Una prima visita a piedi, incentrata sulla cultura, con importanti attrazioni.",
+      "Un intimo hotel di 65 camere situato intorno a un cortile nel nucleo storico di Sultanahmet. Hagia Sophia, la Moschea Blu e diversi punti di riferimento principali sono raggiungibili a piedi. Questo non è un hotel lungomare Bosforus: l'accesso storico-landmark e la vista sull'acqua sono diverse priorità."
+    ],
+    [
+      "Beşiktaş · Dolmabahçe",
+      "Questo hotel occupa uno storico edificio Beşiktaş vicino al Palazzo Dolmabahçe. Offre sistemazioni a bordo mare raffinate con facile accesso al ritmo della città quotidiana del quartiere.",
+      "Alcune categorie si affacciano sulla città o sul cortile; verificare l'orientamento prima di pagare.",
+      "Un hotel in posizione centrale Beşiktaş con design internazionale e viste d'acqua selezionate.",
+      "Questo hotel occupa uno storico edificio Beşiktaş vicino al Palazzo Dolmabahçe. Offre sistemazioni raffinate lungo il mare con facile accesso al ritmo della città quotidiana del quartiere. Alcune categorie si affacciano sulla città o sul cortile; verificare l'orientamento prima di pagare."
+    ],
+    [
+      "Zorlu Center · Zincirlikuyu",
+      "Sopra Zorlu Center, Raffles combina spaziose sistemazioni contemporanee con una città a lungo raggio e panorami stretti. A differenza di un hotel litorale, le sue viste sull'acqua provengono da un ambiente elevato.",
+      "Un panorama elevato del Bosforo non significa accesso diretto sul lungomare.",
+      "Shopping, riunioni di lavoro, spaziose suite e un panorama sulla città.",
+      "Sopra Zorlu Center, Raffles combina spaziose sistemazioni contemporanee con una città a lungo raggio e panorami stretti. A differenza di un hotel litorale, le sue viste sull'acqua provengono da un ambiente elevato. Un panorama elevato Bosforo non significa accesso diretto lungomare."
+    ],
+    [
+      "Nişantaşı · Şişli",
+      "A Nişantaşı, St. Regis concentra il soggiorno in gallerie, boutique di design, ristoranti e il suo servizio di maggiordomo. Si tratta di una base urbana intelligente per i viaggiatori che trascorrono del tempo oltre l'hotel.",
+      "Non assumere che ogni camera include una vista di stretto senza ostacoli.",
+      "Moda, ristoranti, vita di quartiere e servizio personalizzato.",
+      "A Nişantaşı, St. Regis concentra il soggiorno in gallerie, boutique di design, sala da pranzo e il suo servizio maggiordomo. Si tratta di una base urbana intelligente per i viaggiatori che trascorrono del tempo oltre l'hotel. Non assumere che ogni camera include una vista senza ostacoli."
+    ],
+    [
+      "Dolmabahçe · Şişli",
+      "Vicino a Dolmabahçe, questo hotel di fondazione riunisce suite, ristoranti di destinazione e un tetto con piscina. Si adatta agli ospiti alla ricerca di un'esperienza urbana completa piuttosto che un palazzo direttamente sulla riva.",
+      "Controllate la suite esatta, la terrazza e la categoria vista prima di prenotare.",
+      "Un soggiorno in città che combina spa, ristoranti e viste elevate.",
+      "Vicino a Dolmabahçe, questo hotel di fondazione riunisce suite, ristoranti di destinazione e un tetto con una piscina. Si adatta agli ospiti che cercano un'esperienza urbana completa hotel piuttosto che un palazzo direttamente sulla riva. Controllate la suite esatta, terrazza e categoria di vista prima di prenotare."
+    ]
+  ],
+  "faq": [
+    [
+      "Quale zona è la migliore per un primo soggiorno di lusso a Istanbul?",
+      "Karaköy bilancia passeggiate lungomare con musei e ristoranti. Sultanahmet si adatta a una prima visita culturale a piedi. Per un palazzo storico direttamente sull'acqua, confronta Çırağan e Beşiktaş."
+    ],
+    [
+      "Tutti gli hotel Bosforus offrono camere con vista sull'acqua?",
+      "No. Lo stesso hotel può avere camere con vista sulla città, sul cortile, sul giardino e sullo stretto. Confermare l'esatta categoria di camera, il pavimento, l'orientamento e qualsiasi terrazza espressamente indicata nella prenotazione."
+    ],
+    [
+      "Sultanahmet o il Bosforo è meglio per un soggiorno di lusso?",
+      "Sultanahmet favorisce le passeggiate nel patrimonio e un breve programma di visite turistiche. Un hotel lungomare Bosforus dà la priorità a viste, terrazze e tempo accanto allo stretto. Scegli in base a quanto del tuo viaggio sarà speso in hotel."
+    ],
+    [
+      "Posso prenotare questi nove hotel direttamente attraverso il Bosfora?",
+      "Non ancora. Questa è una lista editoriale in corso di revisione. I link attuali portano alle informazioni ufficiali degli hotel. Bosforas prenotazione sarà disponibile solo quando i diritti di distribuzione e la disponibilità reale sono confermate."
+    ],
+    [
+      "Come dovrebbero scegliere le famiglie un hotel di lusso a Istanbul?",
+      "Guardate oltre il prestigio: confrontate le camere comunicanti, le suite multi-room, le politiche della piscina, la flessibilità del pranzo e i trasferimenti. Un palazzo impressionante può essere meno pratico di una suite ben progettata in una posizione comoda."
+    ],
+    [
+      "Quando è il momento migliore per godersi il Bosforo?",
+      "La primavera e l'autunno sono spesso confortevoli per passeggiate all'aperto e terrazze rispetto al picco estivo o invernale. Le condizioni variano ancora, quindi controllare le previsioni e l'accesso stagionale alle piscine e cenare all'aperto."
+    ],
+    [
+      "Devo arrivare all'aeroporto di Istanbul (IST) o Sabiha Gökçen (SAW)?",
+      "IST e SAW sono aeroporti separati sui lati opposti della città. I trasferimenti dipendono dall'indirizzo dell'hotel e dal traffico; confermano citazioni e rotte esatte."
+    ],
+    [
+      "Uno yacht privato è incluso negli hotel?",
+      "No. I viaggi pubblici dei traghetti e i charter privati sono diversi servizi. Ogni gita privata richiede un preventivo e un accordo separati verificati."
+    ]
+  ],
+  "photoCaptions": [
+    "Lungomare di Galataport a Karaköy",
+    "Palazzo Çırağan fotografato dal Bosforo",
+    "La Moschea di Ortaköy e il Ponte Bosforo",
+    "Hagia Sophia a Sultanahmet, in pieno giorno",
+    "Avenida Abdi İpekçi in Nişantaşı",
+    "Palazzo Dolmabahçe visto dal Bosforo"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "La penisola piscina all'aperto accanto al Bosforo",
+      "Piscina e skyline di Hagia Sophia",
+      "Piscina coperta"
+    ],
+    [
+      "Çırağan Palace piscina lungomare",
+      "Palazzo Çırağan galleria ufficiale vista",
+      "Fotografia dell'hotel"
+    ],
+    [
+      "Lungomare e piscina di Four Seasons",
+      "Cena a quattro stagioni Bosforo",
+      "Colazione a Four Seasons Bosforo"
+    ],
+    [
+      "Mandarino orientale Bosforo lungomare esterno",
+      "Suite Bosforus soggiorno",
+      "Suite con una camera da letto al mandarino orientale"
+    ],
+    [
+      "Veduta aerea della zona di Sultanahmet",
+      "Sala da pranzo sultanahmet quattro stagioni",
+      "Sala sultanahmet di Four Seasons"
+    ],
+    [
+      "Ingresso serale a Shangri-La Bosforo",
+      "Shangri-La Bosforo vista lungomare",
+      "Lobby Shangri-La Bosforo"
+    ],
+    [
+      "Panorama del Bosforo dalle lotterie",
+      "Installazione artistica a Raffles Istanbul",
+      "Panorama della suite Bosforo delle lotterie"
+    ],
+    [
+      "L'esterno di St. Regis Istanbul",
+      "Atrium dell'albergo",
+      "Suite St. Regis"
+    ],
+    [
+      "Vasca da bagno Ritz-Carlton con vista Bosforo",
+      "Camera degli ospiti Ritz-Carlton",
+      "Balcone vista Bosforo"
+    ]
+  ],
+  "seoTitle": "Istanbul: soggiorni di lusso, aree ed esperienze",
+  "hotelSeoTitle": "Hotel di lusso a Istanbul: guida curata",
+  "seoDescription": "Dalle strutture alberghiere sul Bosforo al Sultanahmet ricco di storia, Istanbul offre modi molto diversi di soggiornare. Esplora nove hotel ricercati, cinque quartieri e ciò che conta prima di prenotare."
+}

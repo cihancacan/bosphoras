@@ -1,0 +1,148 @@
+{
+  "name": "Los Cabos",
+  "country": "Messico",
+  "eyebrow": "Baja California Sur · Messico",
+  "heading": "Los Cabos: dove il deserto incontra due mari.",
+  "intro": "Nella punta meridionale di Baja, il lusso è diverso: giardini di cactus, pietra riscaldata dal sole, scogliere scolpite e due coste con stati d'animo radicalmente diversi. Tra Cabo San Lucas e San José del Cabo, l'hotel giusto dipende dal vostro rapporto con il mare, il vostro ritmo preferito e l'ambiente esatto.",
+  "editorial": "Los Cabos si trova tra il Pacifico e il Golfo della California, spesso chiamato il Mare di Cortez. Molte spiagge fotogeniche sono pericolose per il nuoto a causa delle correnti e la riva; un resort fronte mare non garantisce una spiaggia nuotabile. Whale watching è generalmente più forte in inverno e all'inizio della primavera. Equilibrare un viaggio a El Arco con il quartiere artistico di San José e il paesaggio Baja più tranquillo.",
+  "hotelIntro": "Quattro lati distinti di Los Cabos: una Palmilla per il patrimonio e la sua baia riparata, Waldorf Astoria Pedregal per scogliere drammatiche e privacy, Las Ventanas per la raffinatezza del resort senza tempo e Zadún per la calma del deserto contemporaneo. Si tratta di profili editoriali indipendenti, non offerte live o prenotazioni.",
+  "areas": [
+    [
+      "Palmilla · una baia riparata",
+      "Vicino a San José, Palmilla bilancia la privacy del resort con un tratto di spiaggia più riparato, attraente per le famiglie e gli amanti del mare.",
+      "Le condizioni di nuoto variano con l'abbondanza; controllare la guida di sicurezza quotidiana."
+    ],
+    [
+      "Pedregal · Falesie del Pacifico",
+      "I promontori rocciosi sopra il Pacifico offrono viste spettacolari appena fuori dal vivace Cabo San Lucas.",
+      "Le forti correnti e la pausa dal mare possono rendere le spiagge insicure per il nuoto."
+    ],
+    [
+      "Corridoio turistico · località isolate",
+      "Tra le principali città, i resort si trovano accanto a campi da golf, baie e dolci colline desertiche.",
+      "Pianifica un'auto o un autista privato per le escursioni serali in entrambe le città."
+    ],
+    [
+      "Puerto Los Cabos · Baja contemporaneo",
+      "Oltre San José del Cabo, il paesaggio del deserto scolpito incontra il Mare di Cortez. L'atmosfera è più residenziale, sottomesso e collegato all'artigianato locale.",
+      "Controllare gli orari di trasferimento al centro storico e l'accesso all'oceano."
+    ],
+    [
+      "San José del Cabo · arte e vita locale",
+      "Le strade costellate di gallerie, i ristoranti locali e un'atmosfera serale più misurata definiscono il nucleo storico di San José.",
+      "La maggior parte delle località balneari sono a pochi passi dal quartiere storico dell'arte."
+    ]
+  ],
+  "experiences": [
+    [
+      "Navigazione privata a El Arco",
+      "Prendere una barca privata presto a Land's End, adattando la rotta alle condizioni meteo e restrizioni di atterraggio locale."
+    ],
+    [
+      "Le strade piene d'arte di San José",
+      "Trascorrete una serata tra gallerie, ceramiche e ristoranti indipendenti per un'altra prospettiva Baja."
+    ],
+    [
+      "Guardare le balene, in stagione",
+      "In inverno scegli un operatore responsabile e segui le distanze della fauna selvatica: gli avvistamenti sono stagionali e mai garantiti."
+    ]
+  ],
+  "checks": [
+    "Chiedi se la spiaggia specifica del tuo hotel è sicura per nuotare; molte spiagge di Cabo non lo sono.",
+    "Confermare l'esatta categoria casita, suite o villa, vista e accesso alla piscina privata.",
+    "Pianifica i trasferimenti tra l'aeroporto SJD, Cabo San Lucas, San José e il corridoio del resort.",
+    "Rivedere inclusioni, tasse, suggerimenti, cancellazione e restrizioni stagionali."
+  ],
+  "hotels": [
+    [
+      "Palmilla · San José del Cabo",
+      "Un indirizzo Baja di riferimento, One&Only Palmilla combina generosa ospitalità, immacolati giardini tropicali-deserti e l'accesso a una baia riparata dove il nuoto può essere possibile quando le condizioni lo consentono. L'esperienza varia significativamente tra camere, casitas, suite e ville, quindi la categoria precisa conta.",
+      "Confermare l'accesso alla baia, le condizioni del mare giornaliera, la categoria esatta delle camere e l'organizzazione familiare.",
+      "Per ospitalità senza tempo, soggiorni in famiglia e una baia più riparata.",
+      "Un indirizzo Baja di riferimento, One&Only Palmilla unisce generosa ospitalità, immacolati giardini tropicali-deserti e l'accesso a una baia riparata dove il nuoto può essere possibile quando le condizioni lo consentono. L'esperienza varia notevolmente tra camere, casitas, suite e ville, quindi la categoria precisa è importante. La suite particolare o villa, la sua vista e le strutture incluse dovrebbero sempre essere controllati con l'hotel prima di impegnarsi."
+    ],
+    [
+      "Pedregal · Cabo San Lucas",
+      "Un tunnel privato separa il centro di Cabo San Lucas da un drammatico rifugio del Pacifico: terrazze esposte all'oceano, piscine private di immersione e isolamento scogliera. El Farallon è un'esperienza gastronomica eccezionale, arroccata sul surf. Le onde spettacolari fanno parte dell'atmosfera, ma la spiaggia non è automaticamente sicura per il nuoto.",
+      "Controllate l'orientamento esatto della suite, le eventuali restrizioni al nuoto oceanico e le modalità di trasferimento privato.",
+      "Per scogliere del Pacifico, isolamento e cena notevole.",
+      "Un tunnel privato separa il centro di Cabo San Lucas da un spettacolare rifugio del Pacifico: terrazze fronte mare, piscine immerse private e un'isola sulla scogliera. El Farallon è un'esperienza gastronomica indimenticabile, arroccata sul surf. Le onde spettacolari fanno parte dell'atmosfera, ma la spiaggia non è automaticamente sicura per nuotare. La particolare suite o villa, la sua vista e le strutture incluse dovrebbero sempre essere controllate con l'hotel prima di impegnarsi."
+    ],
+    [
+      "Corridoio turistico · Km 19.5",
+      "Las Ventanas al Paraíso incarna la raffinatezza classica di Los Cabos: piscine splendidamente composte, spaziose suite e architettura ispirata a Baja. Dettagli premurosi, rituali gastronomici e wellness rendono il resort una destinazione a sé stante, sia che si scelga una suite o una residenza privata.",
+      "Confronta le categorie suite e villa, servizi per la piscina, l'attuale vista e le condizioni del mare lungo la spiaggia.",
+      "Per un servizio raffinato ed eleganti suite vista oceano.",
+      "Las Ventanas al Paraíso incarna la raffinatezza classica di Los Cabos: piscine splendidamente composte, spaziose suite e architettura ispirata a Baja. Dettagli di pensiero, rituali gastronomici e benessere rendono il resort una destinazione a sé stante, sia che si scelga una suite o una residenza privata. La particolare suite o villa, la sua vista e le strutture incluse dovrebbero sempre essere controllate con l'hotel prima di impegnarsi."
+    ],
+    [
+      "Puerto Los Cabos · San José del Cabo",
+      "A est di San José del Cabo, Zadún offre uno spazio sobrio, artigianato messicano e architettura contemporanea dove il terreno deserto incontra il mare di Cortez. Suite immergersi piscine, Sensei benessere e cenare ispirati da Baja creare un'esperienza più tranquilla e residenziale.",
+      "Verificare le categorie di immersione-piscina, orari di viaggio a San José e le condizioni locali della spiaggia / nuoto.",
+      "Per il lusso sobrio, paesaggi Baja e benessere ristorativo.",
+      "A est di San José del Cabo, Zadún offre uno spazio sobrio, artigianato messicano e architettura contemporanea dove il terreno deserto incontra il mare di Cortez. Suite piscine immersione, Sensei benessere e ristoranti ispirati a Baja creare un'esperienza più tranquilla e residenziale. Piscina varia a seconda degli alloggi. La particolare suite o villa, la sua vista e le strutture incluse dovrebbero sempre essere controllati con l'hotel prima di impegnarsi."
+    ]
+  ],
+  "faq": [
+    [
+      "Quali hotel di lusso scegliere a Los Cabos?",
+      "La nostra selezione editoriale presenta One&Only Palmilla per l'ospitalità tradizionale e una baia riparata, Waldorf Astoria Pedregal per l'isolamento scogliera, Las Ventanas per l'eleganza classica del resort e Zadún per il lusso deserto contemporaneo."
+    ],
+    [
+      "È sicuro nuotare nell'oceano a Los Cabos?",
+      "Non su ogni spiaggia. Correnti, surf potenti e ripidi pendii subacquei rendono alcuni spettacolari tratti insicuri. Controlla le condizioni di nuoto sulla tua spiaggia specifica dell'hotel prima di entrare in acqua."
+    ],
+    [
+      "Dovete rimanere a Cabo San Lucas o a San José del Cabo?",
+      "Cabo San Lucas è più vivace, con un porto turistico e facile accesso alle escursioni El Arco. San José del Cabo attrae con il suo quartiere storico dell'arte, ristoranti più tranquilli e serate più rilassate."
+    ],
+    [
+      "Quand'e' la stagione di osservazione delle balene a Los Cabos?",
+      "L'osservazione delle balene è generalmente associata all'inverno e all'inizio della primavera, spesso da dicembre ad aprile a seconda della specie."
+    ],
+    [
+      "Quanto tempo dovresti passare a Los Cabos?",
+      "Da cinque a sette notti vi permette di godervi il vostro resort, una gita in barca a Land's End, una notte a San José e il tempo di rilassarvi senza fretta."
+    ],
+    [
+      "Los Cabos è adatto per una vacanza in famiglia di lusso?",
+      "Sì. Scegliete con attenzione la spiaggia e il resort esatti, confermate la sicurezza dell'oceano, le precauzioni della piscina privata, le attività adatte ai bambini e i tempi di trasferimento."
+    ]
+  ],
+  "photoCaptions": [
+    "Arco di El Arco al Land's End a Cabo San Lucas",
+    "Rocciose scogliere costiere e mare turchese a Cabo San Lucas, fotografato da Efrain Alonso",
+    "Palmilla Bay vicino a San José del Cabo",
+    "Falesie pedregane sulla costa del Pacifico",
+    "Veduta aerea della baia di Santa María e del Montage Los Cabos, Corridoio turistico",
+    "Puerto Los Cabos sul mare di Cortez",
+    "Centro storico e gallerie di San José del Cabo",
+    "Lungomare di Cabo San Lucas Marina",
+    "Balena fuori Baja California durante la stagione migratoria"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Villa Cortez e piscina al One&Only Palmilla",
+      "Vista aerea del mattino di fronte alla spiaggia di One&Only Palmilla",
+      "Piscina e giardini di un resort & Only Palmilla"
+    ],
+    [
+      "Waldorf Astoria Pedregal suite con piscina privata",
+      "Suite vista oceano al Waldorf Astoria Los Cabos Pedregal",
+      "Vista di Waldorf Astoria Los Cabos Pedregal"
+    ],
+    [
+      "Piscine principali con vista sul mare a Las Ventanas al Paraíso",
+      "Suite vista mare a Las Ventanas al Paraíso",
+      "Atmosfera del resort a Las Ventanas al Paraíso a Los Cabos"
+    ],
+    [
+      "Architettura del resort contemporaneo alla Zadún Ritz-Carlton Reserve",
+      "Grand Reserve Alloggio vicino al mare a Zadún",
+      "Dettaglio del resort alla Zadún Ritz-Carlton Reserve"
+    ]
+  ],
+  "seoTitle": "Los Cabos: soggiorni di lusso, aree ed esperienze",
+  "hotelSeoTitle": "Hotel di lusso a Los Cabos: guida a cura di",
+  "seoDescription": "Nella punta meridionale di Baja, il lusso è diverso: giardini di cactus, pietra riscaldata dal sole, scogliere scolpite e due coste con stati d'animo radicalmente diversi. Tra Cabo San Lucas e San José del Cabo, l'hotel giusto dipende dal vostro rapporto con il mare, il vostro ritmo preferito e l'ambiente esatto."
+}

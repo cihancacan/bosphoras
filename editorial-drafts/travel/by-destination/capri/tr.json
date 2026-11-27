@@ -1,0 +1,161 @@
+{
+  "name": "Capri",
+  "country": "İtalya",
+  "eyebrow": "Capri  uçurumlar ve dolce vita",
+  "heading": "Capri: Piazzetta ve Faraglioni arasında kalma sanatı.",
+  "intro": "Capri, Faraglioni'nin bir fotoğrafından daha fazlasıdır. Piazzetta ve Via Camerelle şekil sosyal akşamları, Marina Grande feribot alır, Tragara uçurumlara bakar ve Anacapri daha sessiz bir dağ kenarı havası sunar. Bu kılavuz, coğrafi olarak farklı dört oteli ve beş mahalleyi plaj erişimi veya özel transferleri icat etmeden karşılaştırır.",
+  "editorial": "Capri'de, bir otel seçmek büyük ölçüde akşamlarınızı nerede geçireceğiniz ve denize nasıl ulaşacağınız hakkında bir karardır. Hotel La Palma, Piazzetta ve yaya alışveriş caddelerinin yakınında yer alır. Marina Piccola'daki plaj kulübü ayrı bir sahil mekanıdır. J.K. Place, Marina Grande'nin üzerindeki Napoli Körfezi'ne doğru kuzeye bakar. Punta Tragara, Faraglioni'ye doğru doğal bir yürüyüş gerektirir: deniz yığınlarına bakan bir teras.",
+  "hotelIntro": "Dört gerçek otel, dört farklı ayar: Capri kasabası, Marina Grande, Tragara ve Anacapri.",
+  "areas": [
+    [
+      "Marina Grande  kuzey limanı",
+      "Marina Grande, anakara feribotlarını, plajlarını ve fünikülerini Capri kasabasına yoğunlaştırır. J.K. Place bu körfeze bakmaktadır ancak Piazzetta'da değildir.",
+      "Limandan dönüş yelken ve bagaj yardımını onaylayın."
+    ],
+    [
+      "Piazzetta ve Via Camerelle",
+      "Central Capri, kafeleri, butikleri ve akşam yürüyüşlerini bir araya getiriyor. Hotel La Palma, sahilden ziyade büyük ölçüde yaya şeritlerinin ortasında, burada kuruludur.",
+      "Yoğun yaya sokakları her zaman bir otel kapısına araba erişimine izin vermez."
+    ],
+    [
+      "Via Tragara ve Faraglioni",
+      "Tragara yürüyüşü, villa bahçelerini deniz-stack bakış açısına doğru geçer. Punta Tragara, bu ilçedeki suyun üzerinde yükselmektedir.",
+      "Deniz yığınlarının teras manzarası, her odadan aynı görünümü garanti etmez."
+    ],
+    [
+      "Marina Piccola  güney körfezi",
+      "Marina Piccola'nın koyları, küçük plajları ve mevsimsel kulüpleri vardır. Hotel La Palma'nın ilişkili plaj kulübü burada, Piazzetta'nın yanında değil.",
+      "Salonlar ve yemek, oda rezervasyonlarından ayrı olarak kendi erişim kurallarını izler."
+    ],
+    [
+      "Anacapri ve Monte Solaro",
+      "Anacapri Villa San Michele, Monte Solaro ve Jumeirah Capri Sarayı'nın daha huzurlu bir tempoya sahip yükseltilmiş köyüdür.",
+      "Capri kasabasına seyahati, hava durumunu ve tek koltuklu teleferiğin çocuklar için uygunluğunu doğrulayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Faraglioni'yi denizden görmek",
+      "Marina Grande'den tekne turları, koşullar izin verdiğinde uçurumları ve deniz mağaralarını ortaya çıkarır. Sözleşmesiz özel bir yat vaat etmek yerine operatörü ve kalkışı doğrulayın."
+    ],
+    [
+      "Mavi Grotto, sadece deniz izin verirse",
+      "Giriş, yetkili küçük kürek tekneleri gerektirir ve rüzgara ve kabarmaya bağlıdır. Mağaranın önünden geçen bir yolculuk, kabul veya ayrı olarak satın alınan bir bileti garanti edemez."
+    ],
+    [
+      "Augustus Bahçeleri ve Tragara yürüyüş",
+      "Bahçeler ve belvederes Marina Piccola ve deniz yığınlarına bakmaktadır. Özellikle Via Krupp'a doğru erişim saatlerini ve yol kısıtlamalarını kontrol edin."
+    ],
+    [
+      "Anacapri'de bir öğleden sonra",
+      "Villa San Michele ve Monte Solaro zamanı hak ediyor. Sandalyenin bireysel koltukları vardır ve her çocuk için uygun değildir, bu nedenle uygun olan yerde bir alternatif ayarlayın."
+    ],
+    [
+      "Capri gün yolculuğu kalabalıktan sonra",
+      "Piazzetta'ya ve merkez şeritlere günlük yolculuklardan sonra geri dönün. Restoranlar mevsimsel olabilir ve Anacapri veya Marina Grande'ye geri dönmek gerçek ulaşım planlaması gerektirir."
+    ]
+  ],
+  "checks": [
+    "Tüm tekne yolculukları için deniz koşullarını ve gerçek tarifeleri kontrol edin.",
+    "Capri kasabası, Marina Grande ve Anacapri otel konumlarını ayırtın.",
+    "Tam konuk odası manzarasını doğrulayın, otel terası panoramasını değil.",
+    "Plaj kulüplerini, restoranları ve ayrı ayrı ayrılmış hizmetleri ayrı tutun.",
+    "Yaya şeritleri, basamaklar, bagajlar ve çocuklar için plan."
+  ],
+  "hotels": [
+    [
+      "Capri merkezi  prs de la Piazzetta",
+      "Hotel La Palma, Piazzetta ve Via Camerelle'ye yakın, tenha bir sahil kenarından ziyade alışveriş caddeleri ve akşam yürüyüşleri için ideal bir kentsel Capri deneyimi sunuyor. Francis Sultana tarafından yeniden tasarlanan tarihi otel, rafine edilmiş zarif odalar ve süitler, bir havuz güvertesi, restoranlar ve zarif bir Akdeniz atmosferini bir araya getiriyor. Mare by Casa Tua, Marina Piccola'daki ayrı bir plaj kulübüdür: erişim şartları, şezlonglar, transferler ve açılış tarihleri farklı onay kategorilerine ihtiyaç duymaz.",
+      "Marina Piccola plaj kulübüne gerçek süit, mevsim ve ayrı ayrı erişim iznini onaylayın.",
+      "Marina Piccola plaj kulübüne gerçek süit, mevsim ve ayrı ayrı erişim iznini onaylayın.",
+      "Hotel La Palma, Piazzetta ve Via Camerelle'e yakın, alışveriş caddeleri ve akşam yürüyüşleri için gözlerden uzak bir sahil kenarında kalmak yerine ideal bir kentsel Capri deneyimi sunuyor. Francis Sultana tarafından yeniden tasarlanan tarihi otel, rafine edilmiş zarif odaları ve süitleri, bir havuz güvertesini, restoranları ve zarif bir Akdeniz atmosferini birleştiriyor. Mare by Casa Tua, Marina Piccola'da ayrı bir plaj kulübüdür; erişim şartları, şezlonglar, transferler ve açılış tarihleri farklı onaylara ihtiyaç duymaz."
+    ],
+    [
+      "Marina Grande  cte nord, Via Provinciale Marina Grande yakınlarında yapılacak şeyler",
+      "J.K. Place Capri, adanın kuzey sahilinde, Marina Grande'nin üzerinde, Napoli Körfezi'ne bakan bir konumda duruyor. Cilalı özel ikamet atmosferi, Piazzetta alışveriş bölgesindeki büyük bir tatil beldesinden veya bir otelden farklıdır. Salonlar, teraslar ve odalar, şehrin butiklerinden ayrı bir yolculuk olarak kalırken, daha samimi bir konaklama sağlar. Liman, otel ve köy arasında, özellikle bagaj veya küçük çocuklarla birlikte farklı zamanlarda varış yapın.",
+      "Liman transferi, mekik, bagaj yardımı ve gerçek oda görünümünü doğrulayın.",
+      "Liman transferi, mekik, bagaj yardımı ve gerçek oda görünümünü doğrulayın.",
+      "J.K. Place Capri, adanın kuzey sahilinde, Marina Grande'nin üzerinde, Napoli Körfezi'ne bakan bir konumda duruyor. Cilalı özel ikamet atmosferi, Piazzetta alışveriş bölgesinde büyük bir tatil beldesinden veya bir otelden farklıdır. Salonlar, teraslar ve odalar, şehrin butiklerinden farklı bir yolculuk kalırken daha samimi bir konaklama yeri sağlar. Liman, otel ve köy arasında, özellikle bagaj veya küçük çocuklarla birlikte farklı bir varış, gizlilik ve misafirlik, otel tanıtımı"
+    ],
+    [
+      "Via Tragara 57  belvdre des Faraglioni",
+      "Punta Tragara, yamaçlar, bahçeler ve dikkat çekici deniz panoramaları arasında Faraglioni bakış açısına manzaralı gezinti alanında yer alır. Mülkün mimari hikayesi Le Corbusier'e bağlıdır ve çekiciliği kolay liman erişimi yerine sakin yüksek ayardan gelir. Bireysel konaklama odası olarak temsil edilmemelidir, terasları ve havuzları mutlaka sahilin üzerinde yer alır, bu yüzden koylara ulaşmak farklı bir yolculuktur. Via Tragara'nın yaya ihtiyacı var.",
+      "Bagaj erişimini, adımları, kıyı hattı erişimini ve gerçek süitin Faraglioni görünümünü onaylayın.",
+      "Bagaj erişimini, adımları, kıyı hattı erişimini ve gerçek süitin Faraglioni görünümünü onaylayın.",
+      "Punta Tragara, yamaçlar, bahçeler ve dikkat çekici deniz panoramaları arasında Faraglioni bakış açısına manzaralı gezinti alanında yer almaktadır. Mülkün mimari hikayesi Le Corbusier'e bağlıdır ve çekiciliği, kolay liman erişimi yerine sakin bir yükseltilmiş ayardan gelir. Kumlu bir plaj oteli olarak temsil edilmemelidir: terasları ve havuzları sahilin üzerinde yer alırken, koylara ulaşmak farklı bir yolculuktur. Via Tragara'nın yaya bölümleri vardır."
+    ],
+    [
+      "Anacapri  Via Capodimonte 14",
+      "Jumeirah Capri Palace, Piazzetta'dan ziyade adanın farklı bir bölümünde yükselen bir Anacapri otelidir. Kimliği, değiştirilebilir olarak ele alınmaması gereken konaklama kategorileri ile çağdaş sanat, gastronomi ve sağlıklı yaşam üzerine odaklanmaktadır. Limana ulaşmak, merkezi alışveriş caddeleri veya plajlar ulaşım gerektirir. Il Riccio dahil olmak üzere sahil deneyimleri, ana binadan uzakta yer alır ve aynı işletme düzenlemelerine sahip değildir. Deniz manzarası, havuz veya spa fotoğrafı",
+      "Anacapri, Capri kasabasından farklıdır; çek transferleri, kıyı hizmetleri ve tam oda tipi.",
+      "Anacapri, Capri kasabasından farklıdır; çek transferleri, kıyı hizmetleri ve tam oda tipi.",
+      "Jumeirah Capri Palace, Piazzetta'dan ziyade adanın farklı bir bölümünde yükselen bir Anacapri otelidir. Kimliği, değiştirilebilir olarak ele alınmaması gereken konaklama kategorileri ile çağdaş sanat, gastronomi ve sağlıklı yaşam üzerine odaklanmaktadır. Limana ulaşmak, merkezi alışveriş caddeleri veya plajlar ulaşım gerektirir. Il Riccio dahil sahil deneyimleri, ana binadan uzaklaşır ve aynı işletme düzenlemelerine sahip değildir."
+    ]
+  ],
+  "faq": [
+    [
+      "Merkez Capri'nin yaya olarak tadını çıkarmak için nerede kalabilirim?",
+      "Hotel La Palma Piazzetta ve alışveriş şeritlerine yakın oturur. Punta Tragara manzaralı bir yürüyüş gerektirir, J.K. Place Marina Grande ve Jumeirah Capri Palace Anacapri'ye bakmaktadır. Yaya rotalarını ve bagaj düzenlemelerini seçmeden önce doğrulayın."
+    ],
+    [
+      "Punta Tragara her odadan Faraglioni manzarasını garanti ediyor mu?",
+      "Tesis, manzaraya yakın muhteşem bir ortama sahiptir, ancak bir teras fotoğrafı her konuk odasından aynı manzarayı garanti edemez. Rezervasyon yapmadan önce tam süit, zemin ve genel görünümü onaylayın."
+    ],
+    [
+      "Hotel La Palma doğrudan sahilde mi?",
+      "No. Hotel La Palma, Piazzetta yakınlarındaki Capri'nin merkezinde yer alırken, Casa Tua plaj kulübü tarafından ilişkili Mare Marina Piccola'dadır. Transferler, restoranlar, şezlonglar ve kabul politikaları bağımsız olarak kontrol edilmelidir."
+    ],
+    [
+      "Marina Grande'den Anacapri'ye nasıl gidilir?",
+      "Toplu taşıma ve taksiler Marina Grande'yi bazen Capri şehri üzerinden Anacapri'ye bağlar. Seyahat düzenlemeleri mevsime, kalabalığa ve bagaja bağlıdır. Anacapri oteli, Piazzetta merkezine kolay bir yürüyüş olarak tarif edilmemelidir."
+    ],
+    [
+      "Havadan bağımsız olarak Blue Grotto'ya girebilir miyim?",
+      "Hayır. Swell ve rüzgar her an girişi askıya alabilir. Erişim, ayrı bir girişe sahip küçük yetkili kürek tekneleri tarafından yapılır. Mağarada bir durak planlayan bir gezi bile iç ziyareti garanti edemez."
+    ],
+    [
+      "Capri kasabası ve Anacapri benzer yerler mi kalacak?",
+      "Capri kasabası Piazzetta ve butik sokaklar etrafında daha canlıdır. Yükseltilmiş Anacapri Villa San Michele ve Monte Solaro'ya yakındır ve genellikle daha sessiz bir ritim sunar. Seçiminiz akşam planlarına ve gerçekçi ada transferlerine bağlıdır."
+    ],
+    [
+      "Bosphoras mevcut otel ve özel tekneleri onaylıyor mu?",
+      "Bu, editoryal, endeksli olmayan bir rehber bekleyen kalite kontrolleridir. Canlı fiyatlar, mevcut odalar, otel tedarikçisi sözleşmeleri veya özel tekne envanteri iddia etmez. Herhangi bir nihai rezervasyon, doğrulanmış dağıtım hakları ve gerçek tedarikçi kullanılabilirliği gerektirir."
+    ]
+  ],
+  "photoCaptions": [
+    "Capri'nin Faraglioni deniz yığınları parlak gün ışığında canlı mavi sudan yükseliyor",
+    "Capri'nin Marina Grande limanının feribot, tekne ve rıhtım ile havadan görünümü",
+    "Capri's Piazzetta with caf şemsiyeleri ve pastel kasaba cepheleri güneş ışığında",
+    "Belvedere di Tragara'dan görülen Faraglioni kayalıkları",
+    "Capri's Marina Piccola koyunun Turkuaz suları ve banyo koyları",
+    "Anacapri'nin tarihi köy merkezinde Barok kilise ve güneş ışığı alan piazza",
+    "Monte Solaro'dan Capri'nin karşısındaki Faraglioni'ye doğru geniş panorama",
+    "Capri'nin Punta Cannone bakış açısından görülen Augustus'un Cliffside Bahçeleri",
+    "Capri'nin engebeli kayalık arazisinin üzerinde kırmızı-beyaz Punta Carena deniz feneri"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Hotel La Palma, Capri'de yeşilliklere tırmanan tarihi evin beyaz cephesi",
+      "Sunlit Hotel La Palma, adaçayı yeşili mobilyalar ve doğal dokulara sahip konuk süiti",
+      "Hotel La Palma yüzme havuzu ve Capri merkezinde beyaz arcade cephe"
+    ],
+    [
+      "J.K. Place Capri içinde deniz ve beyaz oturma odası kıyı tasarım detayları ile",
+      "Napoli Körfezi'ni çerçeveleyen açık pencereli zarif J.K. Place Capri salonu",
+      "J.K. Place Capri'nin Marina Grande kıyı şeridinin üzerindeki beyaz otel girişi"
+    ],
+    [
+      "Faraglioni kaya oluşumlarına ve denize bakan Punta Tragara terası",
+      "Faraglioni'ye doğru kemerli açıklıklı ışık dolu Punta Tragara süiti",
+      "Capri sahil şeridinin üzerindeki Punta Tragara'nın ochre teraslarında açık havuz"
+    ],
+    [
+      "Jumeirah Capri Palace Anacapri'de sarı şemsiyeli açık havuz",
+      "Jumeirah Capri Sarayı'nın körfeze bakan deniz kenarındaki yemek alanı",
+      "Jumeirah Capri Palace Akdeniz kemerleri ve mavi aksanlı beyaz salon"
+    ]
+  ],
+  "seoTitle": "Capri: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Capri'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Capri, Faraglioni'nin bir fotoğrafından daha fazlasıdır. Piazzetta ve Via Camerelle şekil sosyal akşamları, Marina Grande feribot alır, Tragara uçurumlara bakar ve Anacapri daha sessiz bir dağ kenarı havası sunar. Bu kılavuz, coğrafi olarak farklı dört oteli ve beş mahalleyi plaj erişimi veya özel transferleri icat etmeden karşılaştırır."
+}

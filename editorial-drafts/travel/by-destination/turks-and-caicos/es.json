@@ -1,0 +1,162 @@
+{
+  "name": "Turcas y Caicos",
+  "country": "Islas Turcas y Caicos",
+  "eyebrow": "Turcas y Caicos · elegir la isla, no sólo la vista",
+  "heading": "Turcas y Caicos: cuatro retiros excepcionales, cuatro estancias en islas muy diferentes.",
+  "intro": "Las Islas Turcas y Caicos se pueden celebrar por aguas azules imposiblemente claras, pero la geografía hace la diferencia entre una buena estancia y la correcta. Grace Bay, Long Bay y Northwest Point tienen cada uno un carácter diferente, mientras que el Cayo Parrot offshore cambia el ritmo por completo.",
+  "editorial": "Las Islas Turcas y Caicos son un archipiélago en lugar de un destino de playa intercambiable. La mayoría de las llegadas internacionales utilizan el Aeropuerto Internacional de Providenciales (PLS), seguido de un traslado por carretera a hoteles en Provo; llegar a Parrot Cay requiere un viaje en barco más. Grace Bay, en la costa norte, es la elegante costa hotelera y restaurante, con arena amplia y acceso comparativamente conveniente a los servicios de la isla. Wymara Resort está aquí, pero las Villas Sunset Cove de la marca se encuentran por separado en Turtle Tail en la orilla sur, no dentro de Grace Bay resort. En la costa sureste, Long Bay se siente muy diferente: aguas poco profundas Caicos Banks y vientos alisios crean uno de los entornos de kiteboarding de firma de la región. El Shore Club ofrece alojamiento hotelero así como diferentes villas de varios dormitorios Estate Villas, con diferentes niveles de privacidad y servicios. Amanyara anunció un cierre temporal para mejoras hasta el 1 de noviembre de 2026, por lo que la reapertura y operación real de todas las instalaciones debe ser reconfirmada antes de la reserva. Offshore, COMO Parrot Cay requiere una conexión terrestre y lancha cuidadosamente cronometrada; Garden View Rooms no son el mismo alojamiento que la piscina privada Beach Villas y Residencias. Agua cristalina no es una promesa de vientos tranquilos, natación supervisada o fácil acceso a todas partes. Zonas de cometas, corales, tráfico de barcos y las condiciones actuales, especialmente para los niños pequeños. La temporada oficial de huracanes del Atlántico se extiende de junio a noviembre y puede interrumpir vuelos y barcos.",
+  "hotelIntro": "Cuatro escenarios distintos en lugar de cuatro etiquetas de lujo intercambiables: el aislamiento de Amanyara, la isla privada de COMO, la Long Bay del Shore Club y el estilo de vida de Grace Bay de Wymara.",
+  "areas": [
+    [
+      "Grace Bay y Bight Reef",
+      "Esta costa norte trae largos paseos de arena blanca, centros turísticos de servicio completo y un acceso más fácil a los restaurantes. Bight Reef ofrece interés marino, pero requiere etiqueta de arrecife, condiciones adecuadas y el respeto por los hábitats protegidos.",
+      "Las condiciones de la playa cambian con el viento; nunca pise el coral ni garantice avistamientos de fauna."
+    ],
+    [
+      "Bancos de Long Bay y Caicos",
+      "En la orilla sureste, aguas poco profundas turquesas se extienden lejos de la arena y los vientos alisios atraen a los kiteboarders. Es un paisaje de villas y deportes acuáticos claramente diferente de Grace Bay.",
+      "Compruebe las zonas de cometas, el tráfico de barcos y la disponibilidad de salvavidas antes de nadar con los niños."
+    ],
+    [
+      "Northwest Point y el parque marino",
+      "Al oeste, calas rocosas, vegetación costera y paisajes marinos protegidos ofrecen un refugio mucho más tranquilo, más adecuado a la privacidad que a los restaurantes caminables.",
+      "Compruebe el acceso real a la unidad y a la playa; observe todas las reglas de área protegida."
+    ],
+    [
+      "Salidas de barcos y de barcos",
+      "Los puertos deportivos y canales de Providenciales oriental ofrecen acceso a excursiones guiadas y a determinados traslados entre islas privadas, organizados a través de operadores marítimos autorizados.",
+      "Confirme el muelle, el clima marino, la autorización del operador y la hora real de salida."
+    ],
+    [
+      "Loro Cay y los cayos privados",
+      "Parrot Cay recompensa a los viajeros listos para un cruce en barco y un ritmo verdaderamente más lento de la isla privada.",
+      "No hay regreso espontáneo a tierra firme; planes de vuelos, condiciones marítimas, equipaje y horarios de los niños."
+    ]
+  ],
+  "experiences": [
+    [
+      "Bahía Grace al amanecer",
+      "Disfrute de un paseo más tranquilo por la bahía de Grace antes de las horas más concurridas, respetando los puntos de acceso públicos y los límites de propiedad privada."
+    ],
+    [
+      "Kitesurf guiado en Long Bay",
+      "Aprender o refinar el kitesurfing con una escuela debidamente autorizada, equipo de seguridad adecuado y condiciones climáticas adecuadas."
+    ],
+    [
+      "Un paseo marítimo responsable",
+      "Organizar una excursión privada debidamente autorizada a los anclajes permitidos, manteniendo alejados de los arrecifes y respetando las normas de equilibrio de la fauna y la flora silvestres."
+    ],
+    [
+      "Bienestar en una isla privada",
+      "Permita un lento medio día sin conexiones para disfrutar del ambiente de bienestar de Lorot Cay, sujeto a las citas disponibles y las inclusiones reales."
+    ],
+    [
+      "Una noche cerca de Grace Bay",
+      "Elija un restaurante cerca del hotel principal en lugar de cruzar la isla por la noche, y reserve las mesas deseadas por separado."
+    ]
+  ],
+  "checks": [
+    "Elija Providenciales continentales frente a una isla privada; Cayo Loro requiere un cruce marítimo dependiente del clima.",
+    "Amanyara anunció el cierre temporal hasta el 1 de noviembre de 2026; confirma independientemente la reapertura real antes de una oferta.",
+    "Separar el Resort Grace Bay de Wymara de sus villas de cola de tortuga, y el Club Shore's Estate Villas de suites estándar.",
+    "Confirme el tipo de habitación y las perspectivas exactas; nunca implica una piscina privada, ubicación frente al mar o terraza de otra categoría.",
+    "Comprobar el viento, las condiciones del agua, la seguridad de la natación infantil y los operadores marítimos debidamente autorizados.",
+    "Verificar los requisitos de entrada específicos de la nacionalidad, las condiciones de la temporada de huracanes, las transferencias y los seguros; no se reclama ningún inventario en vivo."
+  ],
+  "hotels": [
+    [
+      "Punto Noroeste · côte occidental de Providenciales",
+      "Amanyara ocupa un tramo remoto de Northwest Point en Providenciales, donde los pabellones de madera se asientan en vegetación nativa cerca de un entorno marino protegido. Dependiendo de la categoría, un Pabellón puede mirar sobre estanques reflectantes, jardines o la costa, y una piscina privada no está incluida en cada Pabellón. Villas de tres a seis dormitorios ofrecen una experiencia residencial separada, más, a menudo arreglado alrededor de una piscina infinita con servicio de villa dedicado. Fotografías de esas fincas privadas más grandes nunca deben utilizarse para implicar instalaciones idénticas en un Pabellón estándar. Alcanzar el retiro es un viaje por carretera desde el aeropuerto PLS, mientras que los restaurantes de Grace Bay y la vida nocturna no están inmediatamente fuera de la puerta. Elija Amanyara para experiencias tranquilas, de privacidad y marinas en lugar de entretenimiento caminable, y reconfirme su calendario operativo, alojamiento exacto, acceso a la playa y arreglos para niños antes de cualquier propuesta de proveedor.",
+      "Reconfirmar las fechas de reapertura y operación; piscina privada y vistas al océano dependen del tipo de habitación.",
+      "Reconfirmar las fechas de reapertura y operación; piscina privada y vistas al océano dependen del tipo de habitación.",
+      "Amanyara ocupa un tramo remoto de Northwest Point en Providenciales, donde los pabellones de madera se asientan en vegetación nativa cerca de un entorno marino protegido. Dependiendo de la categoría, un Pabellón puede mirar sobre estanques reflectantes, jardines o la costa, y una piscina privada no está incluida en cada Pabellón. Villas de tres a seis dormitorios ofrecen una experiencia residencial separada, más a menudo arreglada alrededor de una piscina infinita con servicio de villa dedicado. Fotografías de esas fincas privadas más grandes nunca deben ser utilizadas para implicar instalaciones idénticas en un Pabellón estándar. Llegar al retiro es un viaje por carretera desde el aeropuerto PLS, mientras que los restaurantes Grace Bay y vida nocturna no están inmediatamente fuera de la puerta. Elija Amanyara para experiencias tranquilas, de privacidad y marinas en lugar de entretenimiento caminable, y reconfirme su calendario operativo, alojamiento exacto, acceso a la playa y arreglos para niños antes de cualquier propuesta de proveedor."
+    ],
+    [
+      "Loro Cayo île privée avec traversée maritime",
+      "COMO Parrot Cay es una auténtica isla privada de escape en lugar de un complejo de playa junto a la carretera de Providenciales. Al llegar a través de una conexión planeada tierra-mar, combina una extensa costa de arena blanca, alojamiento residencial contemporáneo y el programa restaurado COMO Shambhala. La propiedad describe un traslado de alrededor de quince minutos por carretera desde PLS y treinta y cinco minutos en barco, todos sujetos al vuelo real, arreglos de cruce y condiciones marinas. Sus habitaciones vista al jardín y al mar no deben confundirse con las casas de playa, villas y residencias de varios dormitorios; piscinas privadas y acceso directo a la playa se anuncian para estos últimos tipos de alojamiento, no para cada habitación. La razón principal para permanecer es la sensación rara de distancia y privacidad, no el acceso a restaurantes o vida nocturna en Providenciales continental.",
+      "La isla privada requiere un cruce en barco; las habitaciones ordinarias no garantizan piscinas privadas.",
+      "La isla privada requiere un cruce en barco; las habitaciones ordinarias no garantizan piscinas privadas.",
+      "El COMO Parrot Cay es una auténtica isla privada de escape en lugar de un complejo de playa junto a la carretera de Providenciales. Al llegar a través de una conexión terrestre y marítima planificada, combina una extensa costa de arena blanca, un alojamiento residencial contemporáneo y el programa restaurador COMO Shambhala. La propiedad describe un traslado de unos quince minutos por carretera desde PLS y treinta y cinco minutos en barco, todos sujetos al vuelo real, arreglos de cruce y condiciones marinas. Sus habitaciones con vistas al jardín y al mar no deben confundirse con las casas de playa, villas y residencias de varios dormitorios; se anuncian piscinas privadas y acceso directo a la playa para estos últimos tipos de alojamiento, no para cada habitación. La razón principal para permanecer es la sensación rara de distancia y privacidad, no el acceso a restaurantes o vida nocturna en Providenciales continental."
+    ],
+    [
+      "Long Bay Beach · rive sud-est de Providenciales",
+      "El Shore Club se encuentra en Long Bay Beach, el lado sureste de Providenciales, cuyos bancos y vientos alisios de aguas turquesas poco profundos se sienten marcadamente diferentes de Grace Bay. Este es un entorno gratificante para los días de playa espaciosos y kitesurf, pero las zonas de kitesurf activas y las cambiantes condiciones de viento importan cuando viaja con niños. El complejo ofrece habitaciones y suites, varias piscinas, restaurantes y un spa, mientras que sus Villas Estate son un producto completamente diferente: configuraciones de tres a seis dormitorios con piscinas individuales y más servicio privado. No utilice una amplia villa terraza, cocina o mayordomo que ofrece para describir una Suite Junior. Long Bay es atractivo para familias y entusiastas de los deportes acuáticos, no una garantía de un salvavidas o agua permanentemente quieta. Verifique la categoría exacta, dormitorios, arreglos para niños, acceso a la piscina, restricciones de deportes acuáticos y términos de apertura actuales antes de presentar una cita.",
+      "Windy Long Bay es una playa de kitesurf; suites de resort y Villas privadas son productos distintos.",
+      "Windy Long Bay es una playa de kitesurf; suites de resort y Villas privadas son productos distintos.",
+      "El Shore Club se encuentra en Long Bay Beach, el lado sureste de Providenciales, cuyos bancos de aguas turquesas y vientos alisios poco profundos se sienten notablemente diferentes de Grace Bay. Este es un entorno gratificante para los días de playa espaciosos y kitesurf, pero las zonas de kitesurf activas y las cambiantes condiciones de viento importan cuando viajan con niños. El complejo ofrece habitaciones y suites, varias piscinas, restaurantes y un spa, mientras que sus Villas Estate son un producto completamente diferente: configuraciones de tres a seis dormitorios con piscinas individuales y más servicio privado. No utilice una amplia terraza de villa, cocina o mayordomo ofreciendo para describir una Suite Junior. Long Bay es atractivo para familias y entusiastas de los deportes acuáticos, no una garantía de un salvavidas o agua permanentemente quieta. Verifique la categoría exacta, dormitorios, arreglos para niños, acceso a la piscina, restricciones de deportes acuáticos y términos de apertura actuales antes de presentar una cita."
+    ],
+    [
+      "Grace Bay Beach · hôtel / Turtle Tail · villas distintas",
+      "Wymara tiene dos direcciones deliberadamente diferentes en Providenciales. El Resort contemporáneo se encuentra en Grace Bay Beach con Estudios, Suites, áticos, una piscina infinita, restaurantes e instalaciones de bienestar; se adapta a los viajeros que valoran los servicios completos de resort y un acceso más fácil a la zona de Grace Bay. Wymara Villas Sunset Cove, por el contrario, ocupa una ubicación separada de Turtle Tail en la costa sur de la isla. Sus alojamientos más grandes de villa privada, piscinas y servicios compartidos específicos no deben presentarse como características incluidas en un jardín ordinario o Pool View Studio en el hotel Grace Bay. El catálogo de la propia habitación de la compañía diferencia las categorías de jardín, piscina, océano y frente al mar, cada una con una perspectiva diferente. Las familias deben confirmar las camas exactas y las posibilidades de conexión, la distancia entre sitios, restaurantes separados o reservas de spa, instalaciones de playa y transporte entre el Resort y Villas.",
+      "Dos sitios separados: Grace Bay Resort y Turtle Tail Villas; ver las perspectivas, servicios y traslados.",
+      "Dos sitios separados: Grace Bay Resort y Turtle Tail Villas; ver las perspectivas, servicios y traslados.",
+      "Wymara tiene dos direcciones deliberadamente diferentes en Providenciales. El Resort contemporáneo se encuentra en Grace Bay Beach con Estudios, Suites, áticos, una piscina infinita, restaurantes y servicios de bienestar; se adapta a los viajeros que valoran los servicios completos de resort y un acceso más fácil a la zona de Grace Bay. Wymara Villas Sunset Cove, por el contrario, ocupa una ubicación separada de Turtle Tail en la costa sur de la isla. Sus alojamientos más grandes de villa privada, piscinas y servicios compartidos específicos no se deben presentar como características incluidas en un jardín ordinario o Pool View Studio en el hotel Grace Bay. El catálogo de la propia habitación de la compañía diferencia las categorías de jardín, piscina, océano y frente al mar, cada una con una perspectiva diferente. Las familias deben confirmar las camas exactas y posibilidades de conexión, la distancia entre sitios, restaurantes separados o reservas de spa, instalaciones de playa y transporte entre el Resort y Villas."
+    ]
+  ],
+  "faq": [
+    [
+      "¿Qué aeropuerto deben utilizar los visitantes para estancias de lujo en Turcas y Caicos?",
+      "El Aeropuerto Internacional de Providenciales (PLS) es la principal puerta de entrada internacional. Los resorts Provo más recomendados requieren un traslado por carretera, mientras que el COMO Parrot Cay implica una conexión adicional de barco."
+    ],
+    [
+      "¿Cómo son diferentes Grace Bay y Long Bay Beach?",
+      "Grace Bay es la costa de la costa norte del complejo con hoteles y restaurantes convenientes, mientras que Long Bay en el lado sureste de Providenciales frente a las orillas de Caicos poco profundas. Los vientos de comercio hacen que Long Bay popular entre los kiteboarders, por lo que las áreas de deportes acuáticos y la materia meteorológica al seleccionar una playa para los niños."
+    ],
+    [
+      "¿Se puede conducir directamente a COMO Parrot Cay desde el aeropuerto?",
+      "No. COMO Parrot Cay es una isla privada. El hotel describe aproximadamente quince minutos por carretera seguido de treinta y cinco minutos en el agua de PLS. El barco real, el tiempo de llegada, el manejo del equipaje y el clima marino necesitan confirmación antes de que los vuelos o traslados privados se finalicen."
+    ],
+    [
+      "¿Son Wymara Resort y Wymara Villas el mismo lugar?",
+      "Los estudios y suites del Wymara Resort se encuentran en la playa de Grace Bay, mientras que la cala de Sunset de Wymara Villas se encuentra en la cola de tortuga en otra costa de Providenciales. Sus diseños, piscinas privadas y arreglos de acceso difieren, y un Resort Studio no incluye automáticamente privilegios de villas."
+    ],
+    [
+      "¿Qué opción funciona para una familia multigeneracional?",
+      "El Shore Club cuenta con Villas Estate con varios dormitorios, Amanyara ofrece Villas privadas, y COMO Parrot Cay tiene más grandes Casas de Playa y Residencias. Wymara también ofrece Suites y Villas en diferentes lugares. Confirme la ocupación real, ropa de cama, esgrima de piscina, accesibilidad, duración del traslado y políticas de niños por categoría reservada."
+    ],
+    [
+      "¿Amanyara está abierta para estancias a finales de octubre de 2026?",
+      "El sitio web oficial de Amanyara anunció un cierre temporal de mejoras hasta el 1 de noviembre de 2026. Esa fecha anunciada no confirma de forma independiente cuando todas las habitaciones, comedores o instalaciones de bienestar se reabran. Consulte directamente con el hotel antes de ofrecer cualquier reserva."
+    ],
+    [
+      "¿Se pueden reservar hoteles, yates y traslados de esta guía de Bosphoras?",
+      "No. Esta guía editorial no indexada no representa inventario de habitaciones en vivo, precios, disponibilidad, distribución de proveedores firmados o incluye traslados marítimos y aeroportuarios. Cada categoría de alojamiento, servicio de barco y tarifa requiere verificación con un proveedor autorizado."
+    ]
+  ],
+  "photoCaptions": [
+    "Bahía Grace · arena blanca y mar turquesa",
+    "Long Bay Beach · señales de playa coloridas junto a la orilla",
+    "Sonido de tiza · laguna natural (fotografía de archivo 2009)",
+    "Cala de Tortugas · costa cerca del puerto deportivo",
+    "Providenciales · playa tranquila (sector exacto no verificado)",
+    "Providenciales · horizonte azul claro",
+    "Punto noroeste · luz de la noche cerca de Amanyara",
+    "Grace Bay · una perspectiva alternativa en la playa",
+    "Providenciales · Atmosférica puesta de sol en la isla"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Amanyara · Residencia Villa privada con piscina, no un Pabellón",
+      "Amanyara · Arquitectura de pabellones e interiores",
+      "Amanyara · costa remota del Punto Noroeste"
+    ],
+    [
+      "COMO Parrot Cay · edificios de la isla privada y paisaje tropical",
+      "COMO Parrot Cay · playa privada-isla y turquesa poco profundo",
+      "COMO Parrot Cay · Residencia y terraza frente al mar"
+    ],
+    [
+      "El Shore Club · aeropuerto de Long Bay resort y playa",
+      "El Shore Club · arquitectura y terraza frente al mar",
+      "El Shore Club · piscina y paisaje frente al mar real"
+    ],
+    [
+      "Wymara Resort · Habitación de estudio con vista al mar en Grace Bay",
+      "Wymara Resort · distintos Penthouse Suite espacio de estar / comedor",
+      "Wymara Resort · Penthouse Suite lounge, no un estudio ordinario"
+    ]
+  ],
+  "seoTitle": "Turcas y Caicos: estancias de lujo, áreas y experiencias",
+  "hotelSeoTitle": "Hoteles de lujo en Turcas y Caicos: guía comisariada",
+  "seoDescription": "Las Islas Turcas y Caicos se pueden celebrar por aguas azules imposiblemente claras, pero la geografía hace la diferencia entre una buena estancia y la correcta. Grace Bay, Long Bay y Northwest Point tienen cada uno un carácter diferente, mientras que el Cayo Parrot offshore cambia el ritmo por completo."
+}

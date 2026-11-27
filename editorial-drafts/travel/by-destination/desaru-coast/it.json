@@ -1,0 +1,178 @@
+{
+  "name": "Costa di Desaru",
+  "country": "Malaysia",
+  "eyebrow": "Malesia · Johor, Mar Cinese Meridionale",
+  "heading": "Desaru Coast, una fuga tropicale sulle rive di Johor.",
+  "intro": "Sulla riva sud-orientale della Malesia, ampie spiagge, giardini tropicali e una manciata di resort distintivi fanno per una fuga a proprio diritto o una naturale aggiunta a Singapore.",
+  "editorial": "La Costa Desaru non è un'isola: questo tratto di Johor si affaccia sul Mar Cinese Meridionale. La vostra scelta di hotel imposta il ritmo del soggiorno. Suite immerse nella vegetazione favoriscono la privacy, mentre le località balneari si prestano al tempo vicino al mare, ristoranti e attività familiari.\n\nLe ville di Anantara possono unire generazioni conservando lo spazio privato. Il mandarino orientale, già The Sirēya e prima di quella One&Only, ha cambiato nome il 30 gennaio 2026. Confermare l'identità della proprietà in qualsiasi motore di prenotazione per evitare annunci obsoleti. Il Westin si adatta ad una pausa spiaggia rilassante; Hard Rock offre un ambiente più vivace vicino al parco acquatico.\n\nLa giornata sulla costa, poi, varia con il golf, le esperienze naturalistiche guidate e una passeggiata sulla spiaggia pubblica. Il nuoto dipende dalle correnti e dalle condizioni meteo, soprattutto durante il monsone nord-est. Le attività marine e i tragitti possono cambiare per motivi di sicurezza.\n\nDa Singapore, confrontate il traghetto con un trasferimento stradale transfrontaliero. Verificate orari, formalità di ingresso, porto di arrivo, collegamenti e ritardi di frontiera prima della partenza. Un trasferimento stradale collega l'aeroporto di Senai con la costa. Tre o quattro notti è un utile punto di partenza per bilanciare relax e scoperta. Confermate le categorie di camera, i prezzi e le inclusioni con il partner di prenotazione.",
+  "hotelIntro": "Quattro indirizzi distinti: un santuario della foresta pluviale, ville balneari, un soggiorno con guida benessere e una vivace fuga familiare.",
+  "areas": [
+    [
+      "Costa Desaru",
+      "I resort occupano diversi tratti di riva. Scegli la spiaggia e l'atmosfera prima della categoria camera.",
+      "Osservate le bandiere e le istruzioni locali."
+    ],
+    [
+      "Persiaran Damai",
+      "Un ambiente appartato dove la foresta pluviale incontra il mare.",
+      "Controllare il trasporto all'interno della tenuta."
+    ],
+    [
+      "Pantai Desaru",
+      "La spiaggia pubblica offre una prospettiva diversa sulla costa di Johor.",
+      "Organizzare il trasporto e verificare le condizioni del mare."
+    ],
+    [
+      "Adventure Waterpark e Riverside",
+      "Un'area dedicata al tempo libero particolarmente adatta alle famiglie.",
+      "Controllare i giorni di apertura, i termini di accesso e le restrizioni di altezza."
+    ],
+    [
+      "L'Els Club",
+      "I campi Ocean e Valley offrono due diverse impostazioni per il golf.",
+      "Prenotare i tempi del tee e confermare i requisiti di gioco."
+    ],
+    [
+      "Bandar Penawar e dintorni",
+      "Lascia l'enclave del resort per scoprire i mercati locali, i prodotti e i paesaggi Johor.",
+      "Conferma gli orari di apertura per le visite."
+    ]
+  ],
+  "experiences": [
+    [
+      "Un giorno al mare",
+      "Godetevi la spiaggia quando le condizioni lo consentono, senza trasferimenti inutili."
+    ],
+    [
+      "Golf all'Els Club",
+      "Scegli un corso per abbinare il tuo livello e prenota in anticipo gli orari del tee."
+    ],
+    [
+      "Adventure Waterpark con bambini",
+      "Pianifica un giorno intorno alle restrizioni di altezza e orari di apertura."
+    ],
+    [
+      "Mangrovia scoperta",
+      "Scegliete una gita guidata inconsapevole della fauna selvatica, soggetta alle condizioni di navigazione."
+    ],
+    [
+      "Sapori di Johor",
+      "Scopri la frutta tropicale e la cucina locale in un'escursione oltre il resort."
+    ]
+  ],
+  "checks": [
+    "Confermare l'identità attuale dell'hotel e la categoria esatta della camera.",
+    "Confrontate i trasferimenti da Singapore e Senai.",
+    "Controllare le formalità di frontiera e gli orari dei traghetti.",
+    "Controllare l'occupazione e la sicurezza della piscina quando si viaggia con i bambini.",
+    "Conferma inclusioni, termini di cancellazione e condizioni di nuoto."
+  ],
+  "hotels": [
+    [
+      "Persiaran Damai · forêt et littoral",
+      "Suite con piscine private e una villa con quattro camere da letto in una tenuta della foresta pluviale. L'ex One&Only, più tardi The Sirēya, ha portato il suo nome attuale dal 30 gennaio 2026.",
+      "Una parziale vista sull'oceano non è una vista panoramica o l'accesso diretto alla spiaggia.",
+      "Per un ritiro tropicale isolato.",
+      "Suite con piscine private e una villa con quattro camere da letto in una tenuta della foresta pluviale. L'ex One&Only, successivamente The Sirēya, ha portato il suo nome attuale dal 30 gennaio 2026. Una vista parziale sull'oceano non è una vista panoramica o accesso diretto sulla spiaggia."
+    ],
+    [
+      "Persiaran Pantai · plage",
+      "Camere, ville indipendenti e residenze più grandi incastonate tra giardini tropicali si adattano a coppie e famiglie.",
+      "Confronta tipo di piscina, numero di camere da letto e servizi inclusi per categoria.",
+      "Per un soggiorno in villa di famiglia.",
+      "Camere, ville indipendenti e residence più grandi incastonati tra giardini tropicali si adattano a coppie e famiglie. Confronta tipo piscina, numero di camere da letto e servizi inclusi per categoria."
+    ],
+    [
+      "Jalan Pantai · bord de mer",
+      "Le camere e suite Beach Resort con un'enfasi sul relax e sul benessere. Le categorie selezionate offrono balconi e viste sul mare.",
+      "Controllare le prospettive, biancheria da letto e ulteriori spese per gli ospiti.",
+      "Per una pausa spiaggia e benessere.",
+      "Camere e suite Beach Resort con particolare attenzione al relax e al benessere. Le categorie selezionate offrono balconi e viste sul mare. Controlla le prospettive, lenzuola e ulteriori spese per gli ospiti."
+    ],
+    [
+      "Jalan Pantai 3 · loisirs",
+      "Un hotel a tema musicale contemporaneo si è concentrato sulle famiglie e sul tempo libero vicino al parco acquatico. Le camere doppie e le suite duplex servono diverse esigenze.",
+      "Confermare i biglietti per il parco, l'accesso al club dei bambini e l'occupazione per la tariffa selezionata.",
+      "Per una vivace fuga di famiglia.",
+      "Un hotel a tema musicale contemporaneo si è concentrato sulle famiglie e sul tempo libero vicino al parco acquatico. Camere doppie e suite duplex servono diverse esigenze. Confermare i biglietti per il parco, l'accesso al club dei bambini e l'occupazione per la tariffa selezionata."
+    ]
+  ],
+  "faq": [
+    [
+      "Dov'è Desaru Coast?",
+      "Sulla costa sud-orientale di Johor, in Malesia, di fronte al Mar Cinese Meridionale."
+    ],
+    [
+      "Quante notti devo programmare?",
+      "Tre o quattro notti permettono il tempo per la spiaggia e le attività locali."
+    ],
+    [
+      "Come ci arrivo da Singapore?",
+      "Confrontare traghetti e trasferimenti stradali transfrontalieri, quindi verificare gli orari e requisiti di entrata."
+    ],
+    [
+      "Quale aeroporto dovrei scegliere?",
+      "Senai è un'opzione per l'accesso stradale a Johor; Singapore può soddisfare un itinerario combinato."
+    ],
+    [
+      "Cosa ha sostituito One&Only?",
+      "La proprietà, precedentemente conosciuta anche come The Sirēya, divenne Mandarin Oriental, Desaru Coast il 30 gennaio 2026."
+    ],
+    [
+      "Tutti gli hotel hanno ville private?",
+      "No. Controllate la categoria esatta e le strutture con il partner di prenotazione."
+    ],
+    [
+      "L'ingresso al parco acquatico è incluso?",
+      "Dipende dalla tariffa e dalle condizioni di ammissione. Verificare prima della prenotazione."
+    ],
+    [
+      "Posso nuotare tutto l'anno?",
+      "Il nuoto dipende dalle condizioni del mare e dalla guida locale, in particolare durante il monsone."
+    ],
+    [
+      "Posso giocare a golf?",
+      "L'Els Club offre corsi di oceano e Valle; controlla gli orari disponibili."
+    ],
+    [
+      "Le foto garantiscono la camera prenotata?",
+      "No. Confermate la categoria, le strutture, le tariffe e le condizioni di prenotazione."
+    ]
+  ],
+  "photoCaptions": [
+    "Spiaggia sulla costa di Johor",
+    "Costa di Desaru",
+    "Vegetazione costiera di Desaru",
+    "Tanjung Balau rocks",
+    "Tanjung Balau pescherecci",
+    "Albero sulla spiaggia di Desaru",
+    "Entrata parco acquatico Desaru Coast",
+    "Fattoria di struzzo Desaru",
+    "Spiaggia di Desaru"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Piscina nel verde tropicale",
+      "Costa e mare",
+      "Camera con vista sul verde"
+    ],
+    [
+      "Veduta aerea del resort",
+      "Piscina e padiglioni",
+      "Camera per gli ospiti"
+    ],
+    [
+      "Veduta aerea del resort",
+      "Camera per gli ospiti",
+      "Camera con vista"
+    ],
+    [
+      "Esterno dell'albergo",
+      "Pool",
+      "Camera per gli ospiti"
+    ]
+  ],
+  "seoTitle": "Desaru Coast: soggiorni di lusso, aree ed esperienze",
+  "hotelSeoTitle": "Hotel di lusso in Desaru Coast: guida a cura di",
+  "seoDescription": "Sulla riva sud-orientale della Malesia, ampie spiagge, giardini tropicali e una manciata di resort distintivi fanno per una fuga a proprio diritto o una naturale aggiunta a Singapore."
+}

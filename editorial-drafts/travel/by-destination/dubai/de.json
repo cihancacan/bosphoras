@@ -1,0 +1,110 @@
+{
+  "name": "Dubaï",
+  "country": "Vereinigte Arabische Emirate",
+  "eyebrow": "Stadtglamour & Küstenlinie",
+  "heading": "Dubai: Wählen Sie Ihren Horizont.",
+  "intro": "Palm Jumeirah für den Strand, Business Bay für raffiniertes Stadtleben, Downtown für Sehenswürdigkeiten und Dubai Marina für Strandwanderungen: in Dubai ändert die Lage alles.",
+  "editorial": "Wir trennen architektonische Spektakel von der tatsächlichen Erfahrung: Zugang zum Strand, bestätigte Zimmeransicht, Verkehr und in der Nähe Esserei mehr als ein Skyline-Foto.",
+  "hotelIntro": "Vier unverwechselbare Adressen, von einem polierten Stadthotel bis zu einem Statement Palm Jumeirah Resort. Eine unabhängige Shortlist ohne Live-Preise oder Verfügbarkeit.",
+  "areas": [
+    [
+      "Palmjumeirah",
+      "Strand Resorts, Ziel Essen und eine langsamere Küste Rhythmus; ermöglichen für Reisen weg von der Palme.",
+      "Überprüfen Sie den privaten Zugang zum Strand und nehmen Sie nie Sehenswürdigkeiten von jedem Zimmer."
+    ],
+    [
+      "Business Bay & Downtown",
+      "Moderne Hotels, Skyline-Architektur, Shopping und Urban Dining.",
+      "Ein \"skyline\" Zimmer steht nicht automatisch Burj Khalifa gegenüber."
+    ],
+    [
+      "Dubai Marina und Jumeirah",
+      "Promenaden, Stadtstrände, Essen und eine aktive Küstenurlaubsstimmung.",
+      "Distinguish Marina, JBR und Jumeirah: es sind getrennte Bereiche."
+    ]
+  ],
+  "experiences": [
+    [
+      "Eine Terrasse über der Stadt",
+      "Eine gut ausgerichtete Suite, ein Sonnenuntergangspanorama und ein Esstisch für seinen Ausblick gewählt."
+    ],
+    [
+      "Die Flucht am Strand",
+      "Privater Strand, Pool, Spa und ungeduldige Zeit statt einer gepackten Reiseroute."
+    ],
+    [
+      "Dubai mit der Familie",
+      "Wählen Sie praktische Suite-Layouts, altersgerechte Einrichtungen und realistische Transferwege."
+    ]
+  ],
+  "checks": [
+    "Verwechseln Sie Palm Jumeirah, Downtown, Business Bay, Marina und Jumeirah Beach nicht.",
+    "Bestätigen Sie den Zugang zum Strand/Pool und die Einrichtungen, die in Ihrem Zimmer enthalten sind.",
+    "Überprüfen Sie Steuern, Gebühren, Essen, Transfers und Stornierungsbedingungen vor der Zahlung.",
+    "Überprüfen Sie reale Zimmerblicke und ermöglichen Sie für Spitzen-Stunden-Verkehr."
+  ],
+  "hotels": [
+    [
+      "Marasi Bay · Business Bay",
+      "Eine elegante Stadt-Adresse, die Design, Essen und Downtown Ausblicke nach Zimmerkategorie kombiniert.",
+      "Bestätigen Sie genaue Ausblick, Balkon und Frühstücksbedingungen.",
+      "Für Gäste, die sich auf anspruchsvolles urbanes Wohnen, Design, Skyline-Schwimmbad und Stadtessen eher als ein riesiges Resort am Strand angezogen.",
+      "Die Lana ist für einen stilisierten Stadtglanz im Stil eines Badeorts. Zeitgenössische Räume blicken auf die Marasi Bay, mit unterschiedlichen Blicken auf die Innenstadt. Ihr Reiz liegt in der Bewegung zwischen einer luftigen Suite, dem Dachpool der High Society und einer nachdenklichen Essszene. Überprüfen Sie den Unterschied zwischen Yachthafen und direktem Blick auf Burj Khalifa, die genaue Suitekategorie und Restaurantzugang. Ein Hotelpool auf der Dachterrasse ist kein privater Pool im Zimmer."
+    ],
+    [
+      "Za'abeel · Zentrum von Dubai",
+      "Ein architektonischer urbaner Aufenthalt konzentrierte sich auf Stadterlebnisse und nicht auf das Strandleben.",
+      "Bestätigen Sie den Zugang und den Zimmertyp; dies ist kein Resort am Strand.",
+      "Für architekturgeführte Stadt Dubai, erhöhte Pools, Ziel-Essen und bequemen Zugang zu den wichtigsten Stadtteilen der Stadt.",
+      "One&Only only One Za-abeel bietet ein deutlich vertikales Erlebnis von Dubai, geprägt von zwei Türmen und der bemerkenswerten Verbindung, die zwischen ihnen suspendiert ist. Die Architektur, die erhöhten Außenräume und das Essen am Ziel sind Teil des Reizs. Dies ist kein Rückzugsort am Strand. Bestätigen Sie Altersbeschränkungen und den Zugang zu einzelnen Pools, Restaurantreservierungen und den genauen Raumausblick; Skyline-Ansichten ändern sich erheblich durch die Ausrichtung."
+    ],
+    [
+      "Palmjumeirah",
+      "Eine Erklärung am Strand Resort zentriert auf Pools, Essen und Palm Jumeirah leben.",
+      "Unterschiedliche Zimmeransicht, Suite Vorteile und tatsächliche Einschlüsse.",
+      "Für die theatralische Seite von Palm Jumeirah, mit Sehenswürdigkeiten Architektur, Ziel Essen, Zugang zum Meer und weitläufige Resort-Einrichtungen.",
+      "In Atlantis The Royal ist die Architektur untrennbar mit dem Aufenthalt verbunden. Terrassen mit Meerblick, dramatische Pools und kulinarische Erlebnisse machen es zu einem animierten Reiseziel und nicht zu einem kleinen Versteck. Bilder einer Sky Pool Villa beschreiben eine bestimmte Kategorie, kein Standardzimmer. Vergleichen Palm versus Meerblick, Poolzugang nach Alter und Öffnungszeiten, inklusive Dienstleistungen, Stornierungsbedingungen und die Fahrt in die Innenstadt."
+    ],
+    [
+      "Umm Suqeim · Jumeirah",
+      "Ein modernes Jumeirah Küstenhotel für diejenigen, die Strandleben und einen raffinierten Resort-Rhythmus suchen.",
+      "Überprüfen Sie Garten, Golf und Burj Al Arab Ansicht Kategorien sorgfältig.",
+      "Für das Strandleben, üppige Gärten und einen entspannten Aufenthalt am Meer für Paare oder Familien, abseits der Intensität der Skyline.",
+      "Jumeirah Al Naseem bietet eine sanftere Interpretation von Dubai Luxus: Grün, blasser Sand, Meer Licht und eine einfache Küstenrhythmus anstatt Wolkenkratzer Drama. Seine Jumeirah Küste Einstellung stellt Burj Al Arab innerhalb der breiteren Szene, obwohl das Wahrzeichen ist nicht sichtbar von jedem Raum. Distinguish Resort, Golf und Sehenswürdigkeiten-Kategorien; überprüfen Sie, welche Madinat Jumeirah Einrichtungen sind enthalten und vergleichen Schlaf-Arrangements für Familien."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Palm West Beach, eine lebhafte Luxus-Strandfront gegen Dubais warme Sonnenuntergang Skyline",
+    "Sonnige Luftansicht von Palm Jumeirahs Fronds und umliegendem blauen Golfwasser",
+    "Burj Khalifa über Downtown Dubais türkisfarbener Brunnensee bei Tageslicht",
+    "Luxusyachten in Dubai Marina in der hellen Skyline am Wasser reflektiert",
+    "Dubai Marina bei Tageslicht fotografiert",
+    "Ein Panoramablick über Dubai Marina"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Die Lana-Architektur auf der Dubai-Marasi-Bucht",
+      "Die Lana's High Society Dach-Infinity-Pool",
+      "Marina Royal Suite Wohnzimmer im The Lana"
+    ],
+    [
+      "Ein Za-Abeel-Türme und suspendiert Link über Dubai",
+      "Hängende Verbindung Infinity-Pool zwischen den Türmen von One Za .",
+      "Zeitgenössische Suite bei One&Only One Za ®abeel"
+    ],
+    [
+      "Atlantis Die königliche Sehenswürdigkeiten-Resort-Architektur auf Palm Jumeirah",
+      "Erhöhte Cloud 22 Pool im Atlantis The Royal",
+      "Meerblick Sky Pool Villa Wohnzimmer im Atlantis The Royal"
+    ],
+    [
+      "Jumeirah Al Naseem Resort Gärten, Pools und Strand",
+      "Jumeirah Al Naseem Pool mit einem Burj Al Arab Ausblick",
+      "Schlafzimmer der Golf Ocean Suite in Jumeirah Al Naseem"
+    ]
+  ],
+  "seoTitle": "Dubaï: Luxusaufenthalte, Gebiete und Erlebnisse",
+  "hotelSeoTitle": "Luxushotels in Dubaï: kuratierter Reiseführer",
+  "seoDescription": "Palm Jumeirah für den Strand, Business Bay für raffiniertes Stadtleben, Downtown für Sehenswürdigkeiten und Dubai Marina für Strandwanderungen: in Dubai ändert die Lage alles."
+}

@@ -1,0 +1,165 @@
+{
+  "name": "New York",
+  "country": "Stati Uniti",
+  "eyebrow": "New York · suite private e quartieri caratteristici",
+  "heading": "New York: quattro modi distinti per rimanere in città.",
+  "intro": "Il vero privilegio di New York è scegliere il proprio ritmo: svegliarsi accanto a Central Park, pranzare a NoMad, scoprire le gallerie Tribeca e ritirarsi nell'Upper East Side. Quattro hotel di lusso, cinque quartieri distinti e una città straordinaria senza compromettere il vostro senso di calma.",
+  "editorial": "Il lusso di New York non è sinonimo di una fotografia skyline. Aman New York occupa il famoso Crown Building a Fifth Avenue e 57th Street, a pochi passi da Central Park. Le sue spaziose suite e suite spa cercano una base serena Midtown, ma le categorie di camere, viste esatte e inclusioni richiedono la conferma. Più in basso, The Fifth Avenue Hotel combina una villa Gilded Age restaurata con una moderna torre a NoMad. La sua personalità, la sala da pranzo e la posizione vicino a Madison Square Park e la zona di Flatiron differiscono notevolmente dal quartiere dello shopping Fifth Avenue intorno alla 57th Street. Il Greenwich Hotel a Tribeca è un rifugio più discreto in centro città, con un cortile, sala da pranzo e la piscina riscaldata Shibui Spa &amp; Park. Le famiglie dovrebbero chiedere di collegare camere, letti supplementari, accesso ascensore e regole piscina. La pianificazione dell'aeroporto merita un'attenzione simile: JFK, LaGuardia e Newark sono diversi gateway, e le condizioni di trasferimento variano a seconda del traffico, tempo e destinazione. I quartieri di Manhattan sono spesso meglio esplorati a piedi e in metropolitana che in auto in tempi di punta. Attraverso l'East River, DUMBO e Brooklyn Bridge Park offrono iconiche passeggiate e viste, non garantiti panorami camere d'albergo. Tutti gli hotel sono referenze editoriali indipendenti; Bosforas sostiene nessuna tariffa dal vivo, assegnazione camera, incluso trasferimento, prenotazione ristorante o contratto fornitore esistente.",
+  "hotelIntro": "Quattro hotel veri e propri controllati contro le loro fonti ufficiali, ognuno con un carattere distinto. Si tratta di riferimenti editoriali, non di stanze tenute in vendita da Bosfora.",
+  "areas": [
+    [
+      "Midtown & Fifth Avenue",
+      "Alberghi storici urbani, musei e comodo accesso a Central Park rendono Midtown utile per soggiorni culturali e di lavoro.",
+      "Confermare il livello, l'orientamento e le prospettive delle camere; un indirizzo della Fifth Avenue non è una garanzia di visualizzazione."
+    ],
+    [
+      "NoMad & Flatiron",
+      "Architettura storica, ristorazione contemporanea e passeggiate intorno a Madison Square Park, con un'atmosfera vivace a sud di Midtown.",
+      "Controllare il rumore della strada e la configurazione reale della stanza, in particolare ai piani inferiori."
+    ],
+    [
+      "Tribeca & SoHo",
+      "Magazzini convertiti, gallerie, ristoranti e blocchi più tranquilli, con viaggi più lunghi verso alcune attrazioni di Midtown.",
+      "Un hotel Downtown non è automaticamente raggiungibile a piedi da Central Park."
+    ],
+    [
+      "Upper East Side & Central Park",
+      "Indirizzi residenziali, Madison Avenue e musei si adattano ai viaggiatori in cerca di passeggiate più tranquille piuttosto che folle di tarda notte.",
+      "Terrazze, caminetti e vista sul parco sono camera-specifico, mai universale."
+    ],
+    [
+      "DUMBO & Brooklyn Bridge Park",
+      "Panoramica sul lungomare di Brooklyn a Manhattan, ideale per un attraversamento dei traghetti e una passeggiata lungo il fiume.",
+      "Un'uscita separata: gli hotel sopra elencati si trovano tutti a Manhattan."
+    ]
+  ],
+  "experiences": [
+    [
+      "Buongiorno vicino a Central Park",
+      "Camminate sui sentieri del parco, poi esplorate gallerie e musei della Fifth Avenue, controllando i loro orari di apertura individuali."
+    ],
+    [
+      "NoMad pranzo e design",
+      "Esplora il Madison Square Park e le facciate storiche prima di una cena ristorante riservata separatamente."
+    ],
+    [
+      "Una Tribeca più tranquilla",
+      "Unire gallerie d'arte, blocchi tranquilli e un appuntamento benessere opzionale soggetto a conferma dell'hotel."
+    ],
+    [
+      "Attraversare a Brooklyn",
+      "Prendere un traghetto pubblico o metropolitana e camminare DUMBO e Brooklyn Bridge Park quando il tempo lo permette."
+    ],
+    [
+      "Tempo di famiglia nell'Upper East Side",
+      "Pianifica un ritmo più dolce intorno al parco, musei e pause pasto per famiglie."
+    ]
+  ],
+  "checks": [
+    "Confermare categorie di camere precise e viste piuttosto che contare su un nome di albergo.",
+    "Controllare le tasse, le tasse aggiunte e le politiche di cancellazione al momento della prenotazione.",
+    "Pianifica i trasferimenti effettivi da JFK, LGA o EWR al quartiere selezionato.",
+    "Per i bambini, confermare l'occupazione consentita, letti supplementari, politica piscina e collegamenti.",
+    "Nessun inventario vivo, trasferimento o trattamento termale è garantito da questa guida."
+  ],
+  "hotels": [
+    [
+      "Midtown · Crown Building, Fifth Avenue",
+      "Aman occupa lo storico Crown Building tra 57th Street e Fifth Avenue, combinando spaziose suite e strutture termali sopra il trambusto di Midtown. Esso rende una base serena per Central Park, cultura e riunioni. Suite hotel e residence commercializzati separatamente sono diversi prodotti: confermare l'esatta sistemazione, vista, accesso alle terme e politiche per i bambini.",
+      "Non confondere una suite per una residenza privata o garantire la vista su Central Park.",
+      "Non confondere una suite per una residenza privata o garantire la vista su Central Park.",
+      "Aman occupa lo storico Crown Building tra 57th Street e Fifth Avenue, combinando spaziose suite e strutture termali sopra il trambusto di Midtown. Esso rende una base serena per Central Park, cultura e riunioni. Suite hotel e residence commercializzati separatamente sono diversi prodotti: confermare l'esatta sistemazione, vista, accesso spa e politiche per i bambini. Non confondere una suite per una residenza privata o garantire vista Central Park."
+    ],
+    [
+      "NoMad · West 28th Street",
+      "A NoMad, una villa restaurata di età Gilded incontra una torre contemporanea. Il design colorato e l'ospitalità personalizzata rendono questo un'esperienza molto diversa Manhattan dagli hotel di Midtown. La sua posizione vicino a Madison Square Park è eccellente, ma le dimensioni della camera, pavimento e rumore della strada ancora meritano di essere controllati.",
+      "Confermare quale edificio, piano e categoria di camera sarà effettivamente prenotato.",
+      "Confermare quale edificio, piano e categoria di camera sarà effettivamente prenotato.",
+      "A NoMad, una villa restaurata di età Gilded incontra una torre contemporanea. Il design colorato e l'ospitalità personalizzata rendono questo un'esperienza molto diversa Manhattan dagli hotel di Midtown. La sua posizione vicino a Madison Square Park è eccellente, ma le dimensioni delle camere, pavimento e rumore della strada ancora meritano di essere controllati. Confermare quale edificio, pavimento e categoria di camera sarà effettivamente prenotato."
+    ],
+    [
+      "Tribeca · Greenwich Street",
+      "Questo intimo hotel Tribeca abbina un cortile riparato con sala da pranzo e Shibui Spa. La piscina interna riscaldata è un'affascinante comodità, ma le ore in famiglia, le regole di accesso e trattamenti sono specifici e non dovrebbero essere considerati inclusi in ogni soggiorno.",
+      "Controllare i bambini ore di piscina e se i servizi spa richiedono prenotazioni separate.",
+      "Controllare i bambini ore di piscina e se i servizi spa richiedono prenotazioni separate.",
+      "Questo intimo hotel Tribeca abbina un cortile riparato con sala da pranzo e Shibui Spa. La piscina interna riscaldata è un'affascinante comodità, ma le ore in famiglia, le regole di accesso e trattamenti sono specifici e non dovrebbero essere presunti inclusi in ogni soggiorno. Controllare gli orari della piscina dei bambini e se i servizi spa richiedono prenotazioni separate."
+    ],
+    [
+      "Upper East Side · East 63rd Street",
+      "Il Lowell indipendente ha uno spirito residenziale dell'Upper East Side, con suite selezionate che offrono terrazze o caminetti a legna. Vicino a Madison Avenue e Central Park, favorisce la privacy e i comfort di un appartamento a New York. Queste caratteristiche fotogeniche appartengono solo a specifiche categorie di alloggio.",
+      "Terrazze e caminetti sono limitati a camere e suite selezionate; confermare per iscritto.",
+      "Terrazze e caminetti sono limitati a camere e suite selezionate; confermare per iscritto.",
+      "Il Lowell indipendente ha uno spirito residenziale dell'Upper East Side, con suite selezionate che offrono terrazze o caminetti a legna. Vicino a Madison Avenue e Central Park, favorisce la privacy e i comfort di un appartamento di New York. Queste caratteristiche fotogeniche appartengono solo a specifiche categorie di alloggio. Terrazze e caminetti sono limitati a camere e suite selezionate; confermare per iscritto."
+    ]
+  ],
+  "faq": [
+    [
+      "La prima volta i visitatori dovrebbero scegliere Midtown o Downtown Manhattan?",
+      "Midtown è conveniente per Fifth Avenue, molti musei e Central Park. Quartieri del centro come Tribeca offrono gallerie e una diversa scena gastronomica. Scegliete da itinerario e logistica di viaggio realistica."
+    ],
+    [
+      "Ogni suite Aman New York si affaccia su Central Park?",
+      "No. La sua vicinanza Central Park e la foto suite non garantiscono una vista sul parco. Confermare la categoria di camera, direzione, piano e inclusioni prima di prenotare."
+    ],
+    [
+      "L'hotel Fifth Avenue si trova nello stesso quartiere di Aman New York?",
+      "No. Il Fifth Avenue Hotel si trova a NoMad nei pressi di West 28th Street; Aman New York è a Fifth Avenue e West 57th Street. I loro quartieri circostanti e modelli di viaggio differiscono."
+    ],
+    [
+      "I bambini possono utilizzare la piscina dell'Hotel Greenwich?",
+      "Shibui Spa pubblica attualmente le ore giornaliere di piscina famigliare di 7/07/200910 a.m. per i bambini di età pari o superiore a quattro anni, accompagnati da un adulto. I bambini sotto i quattro anni non possono utilizzare queste sessioni familiari."
+    ],
+    [
+      "Tutte le camere Lowell dispongono di terrazza e camino a legna?",
+      "No. L'hotel descrive terrazze e caminetti disponibili solo in alcune categorie di camere e suite. Richiedi conferma scritta dell'esatta sistemazione prenotata."
+    ],
+    [
+      "Quale aeroporto di New York è meglio: JFK, LGA o EWR?",
+      "Tutti e tre servono la regione di New York. Orari dei voli, traffico, posizione dell'hotel e trasporto terrestre contano più di una raccomandazione universale; confronta l'itinerario reale."
+    ],
+    [
+      "Possiamo andare a piedi a Brooklyn Bridge Park dai quattro hotel in vetrina?",
+      "Tutti e quattro gli hotel presenti si trovano a Manhattan; DUMBO e Brooklyn Bridge Park si trovano dall'altra parte dell'East River a Brooklyn. Controlla i mezzi pubblici o le opzioni dei traghetti per il viaggio."
+    ],
+    [
+      "Bosfora attualmente prenota direttamente questi hotel?",
+      "Nessun contratto con il fornitore, disponibilità in tempo reale della camera, tariffa o prenotazione è implicita in questa guida editoriale non indicizzata. Qualsiasi prenotazione, pagamento, modifiche, cancellazioni, rimborsi e post-vendita deve essere gestita tramite un partner di prenotazione autorizzato verificato."
+    ]
+  ],
+  "photoCaptions": [
+    "Midtown Manhattan skyline at blue hour",
+    "Central Park lago e Upper West Side skyline",
+    "Flatiron Building e orologio Fifth Avenue",
+    "Lower Manhattan skyline from Brooklyn Bridge Park",
+    "Tribeca streets, Manhattan",
+    "Lago Central Park in autunno",
+    "skyline di Manhattan da Top of the Rock",
+    "Lower Manhattan dal Molo 57",
+    "Strada residenziale nell'Upper East Side"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Premier Suite 56th Street ad Aman New York",
+      "Aman firma suite camera da letto e camino",
+      "Aman New York Premier Suite stile residenziale"
+    ],
+    [
+      "Il Fifth Avenue Hotel · immagine ufficiale della proprietà in attesa di recensione visiva individuale",
+      "Il Fifth Avenue Hotel · immagine ufficiale della proprietà in attesa di recensione visiva individuale",
+      "Il Fifth Avenue Hotel · immagine ufficiale della proprietà in attesa di recensione visiva individuale"
+    ],
+    [
+      "L'Hotel Greenwich · Immagini immobiliari ufficiali in attesa di una recensione visiva individuale",
+      "L'Hotel Greenwich · Immagini immobiliari ufficiali in attesa di una recensione visiva individuale",
+      "L'Hotel Greenwich · Immagini immobiliari ufficiali in attesa di una recensione visiva individuale"
+    ],
+    [
+      "Il Lowell: Garden Suite salotto",
+      "The Lowell: Hollywood Suite salotto e camino",
+      "Lowell: terrazza privata con Manhattan dintorni"
+    ]
+  ],
+  "seoTitle": "New York: soggiorni di lusso, aree ed esperienze",
+  "hotelSeoTitle": "Hotel di lusso a New York: guida a cura di",
+  "seoDescription": "Il vero privilegio di New York è scegliere il proprio ritmo: svegliarsi accanto a Central Park, pranzare a NoMad, scoprire le gallerie Tribeca e ritirarsi nell'Upper East Side. Quattro hotel di lusso, cinque quartieri distinti e una città straordinaria senza compromettere il vostro senso di calma."
+}

@@ -1,0 +1,229 @@
+{
+  "name": "İstanbul",
+  "country": "Türkiye",
+  "eyebrow": "İstanbul  Osmanlı sarayları, canlı mahalleler ve iki kıta",
+  "heading": "İstanbul: Boğaz, saraylar ve yaşayan şehir arasında lüks.",
+  "intro": "İstanbul, Boğaz'daki saray otellerinden miras zengini Sultanahmet'e kadar, kalmak için çok farklı yollar sunmaktadır. Dokuz araştırılmış oteli, beş mahalleyi ve rezervasyondan önce önemli olan şeyleri keşfedin.",
+  "editorial": "İstanbul, farklı semtlerin bir koleksiyonu olarak keşfedilmelidir. Karaköy'de, Peninsula İstanbul, dört Galataport sahili binasını kaplar, üçü restore edilmiş tarihi yapılardır. Konuklar Boğaz yürüyüşlerini, galerileri ve İstanbul Modern'i birleştirebilir; Daha kuzeyde, Çırağan Sarayı Kempinski ve Dört Mevsim Boğazları, Osmanlı saray mirası, sahil terasları ve bahçeleri üzerine çizilir. Kempinski'nin 50 metrekarelik Grand Deluxe Odası, tarihi bir deneyim değildir. Boğaz manzaralı bir etiket, gerçek oda kategorisi, zemin, açık alan ve yöne karşı kontrol edilmelidir. Aileler oda bağlantılarına, ekstra yataklara, erişilebilirlik ve havuz politikalarına dramatik pazarlama fotoğrafları üzerinde öncelik vermelidir. İstanbul Havalimanı (IST) ve Sabiha Gökçen (SAW) farklı yol erişim ve trafik modellerine sahip farklı geçitlerdir. Kamu feribotları her iki kıtanın da mükemmel bir manzarasını sunar, ancak bu özel yat bir otel dahiliyeti olarak ima edilmemelidir.",
+  "hotelIntro": "İstanbul otel amiral gemisinde zaten gözden geçirilmiş dokuz gerçek otel: saraylar, yürünebilir tarihi üsler ve çağdaş kaçışlar. Tam olarak rezerve edilen oda ve mahalleyi karşılaştırın.",
+  "areas": [
+    [
+      "Karaköy & Galataport",
+      "Zorlayıcı bir ilk ziyaret üssü: galeriler, kafeler, rıhtım yürüyüşleri ve boğaz boyunca bağlantılar. Canlı, yürünebilir bir çevre, bir sahil sarayının şehre bağlı hissetmesini sağlar.",
+      "En iyisi: sanat, yemek ve şehir yürüyüşleri."
+    ],
+    [
+      "Çırağan & Beşiktaş",
+      "Şehrin en unutulmaz otel kıyıları arasında: saray mimarisi, bahçeler ve aktif bir mahalle. Tam sahil konumu ve satın alınan oda görünümü beş yıldızlı bir etiketten daha önemlidir.",
+      "En iyisi: sahil sarayları ve romantik kaçışlar."
+    ],
+    [
+      "Kuruçeşme & Ortaköy",
+      "Avrupa kıyı şeridi kuzeye doğru devam ederken, su kenarında gezinti yerleri ve köprülere doğru manzaralar ile daha konut hissi. Yoğun karayolu trafiği günlük planları etkileyebilir.",
+      "En iyisi: daha geniş su manzaraları ve konut havası."
+    ],
+    [
+      "Sultanahmet",
+      "Tarih için önce bu çeyreği seçin: Ayasofya, Mavi Cami, Topkapı Sarayı ve Bazilika Sarnıcı kültüre dayalı kısa bir konaklama şeklini alır. Bu, başlıca Boğaz kıyı saraylarının bölgesi değildir.",
+      "En iyisi: miras ve gezilebilir gezi."
+    ],
+    [
+      "Nişantaşı & Zorlu",
+      "Moda, tasarım, hedef yemek ve toplantıları düşünün. Panoramik manzaralar daha yüksek katlardan etkileyici olabilir, ancak bu, doğrudan boğazın yanındaki yaşamdan ziyade çağdaş kentsel İstanbul.",
+      "En iyisi: moda, iş ve modern süitler."
+    ]
+  ],
+  "experiences": [
+    [
+      "48 saat, yürünebilir İstanbul",
+      "Müzeler, restoranlar ve sahil yürüyüşleri için Karaköy'de kalın, ardından tarihi yarımadayı ziyaret edin ve boğaz için zaman ayırın."
+    ],
+    [
+      "Saray kaçışı",
+      "Çırağan veya Beşiktaş'ı seçin, doğrulanmış bir Boğaz'a bakan kategori ayırtın ve bahçeler, spa ve teraslar için boş zaman ayırın."
+    ],
+    [
+      "Kültür, sanat ve tasarım",
+      "Miras yürüyüşleri için Sultanahmet'te veya galeriler, alışveriş ve çağdaş yemek için modern ilçelerde kalın."
+    ],
+    [
+      "Avrupa'dan Asya'ya toplu feribotla geçiş",
+      "Planlanan feribotlar, özel bir kiralama sözü vermeden sahil sarayları, camiler ve geçen teknelerin unutulmaz manzaralarını sunmaktadır."
+    ],
+    [
+      "Erken Sabah Sultanahmet",
+      "Ayasofya, Mavi Cami ve Topkapı mahallesini keşfedin, giriş ve namaz saatlerini kontrol edin."
+    ],
+    [
+      "Boğaz günbatımı",
+      "Halka açık bir sahil veya onaylanmış bir otel terası seçin; restoran manzaralarını oda kategorisi manzaralarından ayırt edin."
+    ]
+  ],
+  "checks": [
+    "Peninsula'nın farklı şehir, bahçe ve Boğaza bakan odaları vardır.",
+    "Çırağan ve Dört Mevsim Boğaz saray kanatları, görünümleri ve dahil edilmeleri farklılık gösterir.",
+    "Mandarin Oriental bağlantı odaları ve Boğaz görünümü kategoriye özgüdür.",
+    "Four Seasons Sultanahmet yürünebilir bir mirastır, denize sıfır bir otel değildir.",
+    "Raffles ve St. Regis şehir mülkleridir, boğazda değil.",
+    "IST ve SAW, farklı transfer rotalarına sahip ayrı havalimanlarıdır.",
+    "Aileler oda bağlantılarını, havuzları, karyolaları ve transferleri onaylamalıdır.",
+    "Bosphoras'ın canlı oranları, tedarikçi anlaşmaları veya API rezervasyonu doğrulanmadı."
+  ],
+  "hotels": [
+    [
+      "Karaköy  Galataport",
+      "Üç restore edilmiş miras yapısı da dahil olmak üzere dört sahil binası, bu Karaköy adresini demirliyor. Ayrımı, Galataport gezinti salonu, yakındaki galeriler ve şehir yaşamını bir deniz kenarı ayarı ile birleştirme olanağıdır.",
+      "Her oda boğaza bakmıyor: şehri, bahçeyi ve Boğaziçi oda kategorilerini ayırt edin.",
+      "Deniz kıyısını, sanatı, gezinti alanlarını ve yürünebilir şehir yaşamını dengeleyen bir konaklama.",
+      "Üç restore edilmiş miras yapısı da dahil olmak üzere dört sahil binası, bu Karaköy adresini demirliyor. Ayrımı, Galataport gezinti salonu, yakındaki galeriler ve şehir yaşamını bir sahil ayarı ile birleştirme olanağıdır. Her oda boğaza bakmıyor: şehri, bahçeyi ve Boğaz oda kategorilerini ayırt edin."
+    ],
+    [
+      "Çırağan  Beşiktaş",
+      "Boğazda, tatil köyü benzeri bir atmosfere ve dramatik bir sahil açık havuzuna sahip bir Osmanlı imparatorluk sarayı. Ayar, geleneksel bir şehir otelinden önemli ölçüde farklı hissettiriyor.",
+      "Gerçek oda binasını ve görünümünü onaylayın; saray kanatları ve konaklama ayarları farklıdır.",
+      "Suyun yanında geçirilen zaman ile saray liderliğindeki bir deneyim.",
+      "Boğazda, tatil köyü benzeri bir atmosfere ve dramatik bir sahil açık havuzuna sahip bir Osmanlı imparatorluk sarayı. Ayar, geleneksel bir şehir otelinden önemli ölçüde farklı hissettiriyor. Gerçek oda binasını ve manzarasını doğrulayın; saray kanatları ve konaklama ayarları farklıdır."
+    ],
+    [
+      "Çırağan  Beşiktaş",
+      "restore edilmiş bir 19. yüzyıl Osmanlı sarayı içinde, Four Seasons bahçeleri, Boğaz terasları ve geleneksel büyük otel misafirperverliği birleştirir. yer Beşiktaş yakınında bir Avrupa kıyı tabanı sunmaktadır.",
+      "Manzaralar süit kategorisine göre değişir: Boğaz tanımını ve gerçek düzenini onaylayın.",
+      "Açık alana değer veren çiftler ve aileler için bir sahil sarayı konaklaması.",
+      "restore edilmiş bir on dokuzuncu yüzyıl Osmanlı sarayı içinde, Four Seasons bahçeleri, Boğaz terasları ve geleneksel büyük otel misafirperverliği birleştirir. yer Beşiktaş yakınında bir Avrupa kıyı tabanı sunmaktadır. görünümler süit kategorisine göre değişir: Boğaz tanımını ve gerçek düzenini onaylayın."
+    ],
+    [
+      "Kuruçeşme  Beşiktaş",
+      "Kuruçeşme'deki Boğaz'da, tarihi sahil konaklarının yanında yer alan bu çağdaş lüks otel, geniş su manzaraları ve daha yerleşimli bir kıyı şeridi ortamı arayan gezginlere hitap ediyor.",
+      "Görüşleri ve ileriye dönük yolculukları karşılaştırın: kıyı yolu trafiği ağır olabilir.",
+      "Galataport'un karmaşasından uzakta çağdaş su kenarı lüksü.",
+      "Kuruçeşme'de doğrudan Boğaz'da yer alan bu çağdaş lüks otel, tarihi sahil konaklarının yanı sıra geniş su manzaraları ve daha yerleşimli bir sahil şeridi ayarı arayan gezginlere hitap ediyor. Görüşleri ve ileriye dönük yolculukları karşılaştırın: kıyı yolu trafiği ağır olabilir."
+    ],
+    [
+      "Sultanahmet  Vieille ville",
+      "Sultanahmet'in tarihi merkezinde bir avlu etrafında yer alan samimi 65 odalı bir otel. Ayasofya, Sultanahmet Camii ve birkaç önemli simgesel yapı yürüme mesafesindedir.",
+      "Burası bir Boğaz sahil oteli değil: tarihi-kara yolu ulaşımı ve su manzarası farklı öncelikler.",
+      "Yaya olarak büyük manzaraları olan kültür odaklı bir ilk ziyaret.",
+      "Sultanahmet'in tarihi çekirdeğinde bir avlu etrafında yer alan samimi 65 odalı bir otel. Ayasofya, Sultanahmet Camii ve birkaç önemli simgesel yapı yürüme mesafesindedir. Burası Boğaz sahili oteli değildir: tarihi-ileriye ulaşım ve su manzaraları farklı önceliklerdir."
+    ],
+    [
+      "Beşiktaş  Dolmabahçe",
+      "Bu otel Dolmabahçe Sarayı'na yakın tarihi bir Beşiktaş binasına sahiptir. Mahallenin günlük şehir ritmine daha kolay erişim sağlayan rafine su kenarında konaklama imkanı sunmaktadır.",
+      "Bazı kategoriler şehir veya avluya bakar; ödemeden önce oryantasyonu doğrulayın.",
+      "Uluslararası tasarıma ve seçilmiş su manzaralarına sahip merkezi bir Beşiktaş oteli.",
+      "Bu otel Dolmabahçe Sarayı'na yakın tarihi bir Beşiktaş binasına sahiptir. Mahallenin günlük şehir ritmine daha kolay erişim sağlayan rafine su kenarı konaklama imkanı sunmaktadır. Bazı kategoriler şehir veya avluya bakar; ödemeden önce oryantasyonu doğrulayın."
+    ],
+    [
+      "Zorlu Center  Zincirlikuyu",
+      "Zorlu Center'ın üzerinde, Raffles, uzun menzilli şehir ve boğaz panoramaları ile geniş çağdaş konaklama birimlerini çiftleştiriyor. Kıyı şeridindeki bir otelden farklı olarak, su manzaraları yükseltilmiş bir ortamdan geliyor.",
+      "Yükseltilmiş bir Boğaz panoraması, doğrudan kıyıya erişim anlamına gelmez.",
+      "Alışveriş, iş toplantıları, geniş süitler ve bir şehir panoraması.",
+      "Zorlu Center'ın üzerinde, Raffles, uzun menzilli şehir ve boğaz panoramaları ile geniş çağdaş konaklama birimlerini çiftleştiriyor. Kıyı şeridindeki bir otelin aksine, su manzarası yüksek bir ayardan geliyor. Yükseltilmiş bir Boğaz panorama doğrudan deniz kenarına erişim anlamına gelmez."
+    ],
+    [
+      "Nişantaşı Şişli",
+      "St. Regis, Nişantaşı'nda galeriler, tasarımcı butikleri, yemek ve imzalı uşak servisi ile konaklamaya odaklanmaktadır. Otelin ötesinde zaman geçiren gezginler için akıllı bir şehir merkezidir.",
+      "Her odanın engelsiz bir boğaz manzarası içerdiğini varsaymayın.",
+      "Moda, restoranlar, mahalle hayatı ve kişiselleştirilmiş hizmet.",
+      "St. Regis, Nişantaşı'nda galeriler, tasarımcı butikleri, yemek ve imzalı uşak hizmeti ile konaklamaya odaklanmaktadır. Otelin ötesinde zaman geçiren gezginler için akıllı bir şehir merkezidir. Her odanın engelsiz bir boğaz manzarası içerdiğini varsaymayın."
+    ],
+    [
+      "Dolmabahçe Şişli",
+      "Dolmabahçe'nin yakınında yer alan bu tesis, suitleri, hedef yemeği ve havuzlu bir çatıyı bir araya getiriyor. Doğrudan sahil şeridinde bir saray yerine tam bir şehir-otel deneyimi arayan konuklara uygundur.",
+      "Rezervasyon yapmadan önce tam süit, teras ve görünüm kategorisini kontrol edin.",
+      "Bir şehir spa, yemek ve yükseltilmiş manzaraları birleştirerek kalır.",
+      "Dolmabahçe'nin yakınında yer alan bu tesis, suitleri, hedef yemekleri ve havuzlu bir çatıyı bir araya getiriyor. Doğrudan sahil şeridinde bir saray yerine tam bir şehir-otel deneyimi arayan konuklara uygundur. Rezervasyon yapmadan önce tam süit, teras ve görünüm kategorisini kontrol edin."
+    ]
+  ],
+  "faq": [
+    [
+      "İstanbul'da ilk lüks konaklama için en uygun alan hangisidir?",
+      "Karaköy, sahil yürüyüşlerini müzeler ve restoranlarla dengeler. Sultanahmet, kültüre ilk ayak basan bir ziyaret için uygundur. Doğrudan su üzerinde bulunan tarihi bir saray için Çırağan ve Beşiktaş'ı karşılaştırın."
+    ],
+    [
+      "Tüm Boğaz otelleri denize bakan odalar sunuyor mu?",
+      "Hayır. Aynı otel şehir, avlu, bahçe ve boğaza bakan odalara sahip olabilir. Tam oda kategorisini, zemini, oryantasyonu ve rezervasyonda özel olarak belirtilen herhangi bir terası onaylayın."
+    ],
+    [
+      "Sultanahmet mi, Boğaz mı lüks bir konaklama için daha iyi?",
+      "Sultanahmet miras yürüyüşleri ve kısa bir gezi programı tercih eder. Boğaz kenarındaki bir sahil Boğaziçi oteli, boğaz kenarındaki manzaraları, terasları ve zamanı önceliklendirir. Seyahatinizin ne kadarının otelde harcanacağına göre seçin."
+    ],
+    [
+      "Bu dokuz oteli doğrudan Bosphoras'tan ayırtabilir miyim?",
+      "Henüz değil. Bu gözden geçirilmiş bir editoryal kısa listedir. Mevcut bağlantılar resmi otel bilgilerine yol açar. Bosphoras rezervasyon sadece dağıtım hakları ve gerçek kullanılabilirlik onaylandığında kullanılabilir hale gelecektir."
+    ],
+    [
+      "Aileler İstanbul'da nasıl lüks bir otel seçmeli?",
+      "Prestijin ötesine bakın: Bağlantı odaları, çok odalı süitler, havuz politikaları, yemek esnekliği ve transferleri karşılaştırın. Etkileyici bir saray, uygun bir konumda iyi planlanmış bir süitten daha az pratik olabilir."
+    ],
+    [
+      "Boğaz'ın tadını çıkarmak için en iyi zaman ne zaman?",
+      "İlkbahar ve sonbahar genellikle açık hava yürüyüşleri ve teraslar için en yoğun yaz veya kış ile karşılaştırıldığında rahattır. Koşullar hala değişir, bu nedenle tahminleri ve havuzlara ve açık hava yemeklerine mevsimsel erişimi kontrol edin."
+    ],
+    [
+      "İstanbul Havalimanı'na (IST) veya Sabiha Gökçen'e (SAW) varmalı mıyım?",
+      "IST ve SAW, şehrin karşı taraflarında ayrı havalimanlarıdır. Transferler otel adresine ve trafiğe bağlıdır; kesin alıntıları ve rotaları doğrulayın."
+    ],
+    [
+      "Otellere özel bir yat dahil mi?",
+      "Hayır. Halka açık feribot seferleri ve özel yat kiralamaları farklı hizmetlerdir. Herhangi bir özel gezi için ayrı bir doğrulanmış teklif ve düzenleme gerekir."
+    ]
+  ],
+  "photoCaptions": [
+    "Karaköy'de Galataport sahil gezintisi",
+    "Boğaz'dan fotoğraflanan Çırağan Sarayı",
+    "Ortaköy Camii ve Boğaziçi Köprüsü",
+    "Sultanahmet'te Ayasofya, gün ışığında",
+    "Abdi İpekçi Caddesi, Nişantaşı",
+    "Dolmabahçe Sarayı Boğazdan Görüldü"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Boğaziçi'nin yanındaki yarımada açık havuzu",
+      "Havuz ve Ayasofya silüeti",
+      "Kapalı havuz"
+    ],
+    [
+      "Çırağan Sarayı sahil havuzu",
+      "Çırağan Sarayı resmi galeri görünümü",
+      "Otel mülk fotoğrafı"
+    ],
+    [
+      "Four Seasons sahil ve havuz",
+      "Four Seasons Bosphorus yakınlarında yapılacak şeyler",
+      "Four Seasons Bosphorus'ta kahvaltı"
+    ],
+    [
+      "Mandarin Oriental Bosphorus dış cephe",
+      "Boğaz suit oturma odası",
+      "Mandarin Oriental'de tek yatak odalı süit"
+    ],
+    [
+      "Sultanahmet bölgesinin havadan görünümü",
+      "Four Seasons Sultanahmet yemek odası",
+      "Sultanahmet salonu"
+    ],
+    [
+      "Shangri-La Bosphorus'da akşam girişi",
+      "Shangri-La Boğaz manzaralı",
+      "Shangri-La Bosphorus lobi"
+    ],
+    [
+      "Raffles'den Boğaz panorama",
+      "Raffles İstanbul'da sanat enstalasyonu",
+      "Raffles Bosphorus süit panorama"
+    ],
+    [
+      "St. Regis İstanbul dış",
+      "Hotel Atrium",
+      "St. Regis süiti"
+    ],
+    [
+      "Boğaz manzaralı Ritz-Carlton küvet",
+      "Ritz-Carlton misafir odası",
+      "Boğaz manzaralı balkon"
+    ]
+  ],
+  "seoTitle": "İstanbul: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "İstanbul'daki lüks oteller: küratörlü rehber",
+  "seoDescription": "İstanbul, Boğaz'daki saray otellerinden miras zengini Sultanahmet'e kadar, kalmak için çok farklı yollar sunmaktadır. Dokuz araştırılmış oteli, beş mahalleyi ve rezervasyondan önce önemli olan şeyleri keşfedin."
+}

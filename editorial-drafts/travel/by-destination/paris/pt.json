@@ -1,0 +1,110 @@
+{
+  "name": "Paris",
+  "country": "França",
+  "eyebrow": "Uma Cidade Intimista de Luz",
+  "heading": "Paris: uma maneira excepcional de ficar.",
+  "intro": "O Sena ao amanhecer, os salões de um hotel palaciano e a alegria de vagar pela margem esquerda: uma estadia em Paris é definida pelo endereço que você escolher. Localização, a suíte certa e ser capaz de sair para o assunto da cidade.",
+  "editorial": "Nossa lista de finalistas é sobre quatro personalidades distintas, não um concurso de estrelas. Vista do Sena ou pátio privado, artesanato contemporâneo ou grandeza clássica, um jardim escondido ou Saint-Germain: essas decisões são importantes muito antes do marketing da categoria de sala.",
+  "hotelIntro": "Quatro endereços excepcionais de Paris com identidades distintas: Cheval Blanc acima do Sena, George V no Triângulo Dourado, Le Bristol no Faubourg e Mandarin Oriental Lutetia na margem esquerda. Nenhuma taxa ou inventário são apresentados como disponíveis.",
+  "areas": [
+    [
+      "Louvre, o Sena & Samaritaine",
+      "Centro histórico histórico de Paris, ideal para caminhar até o Louvre, Pont-Neuf, as margens do rio e em frente à margem esquerda. Ficar aqui transforma a caminhada diária em um evento.",
+      "Uma “visão de sena” depende do piso, da orientação e do tipo de quarto exato."
+    ],
+    [
+      "Triângulo Dourado & Faubourg Saint-Honoré",
+      "A Paris de hotéis-palácio de referência, alta costura e restaurantes de destino. Avenida George V e Faubourg Saint-Honoré têm ritmos distintos e distâncias a pé.",
+      "Confirme os níveis de ruído e de vista da sala: um pátio interno e uma grande avenida parecem muito diferentes."
+    ],
+    [
+      "Saint-Germain-des-Prés e a margem esquerda",
+      "Livrarias, galerias de arte, cafés e um elegante ritmo residencial. A Paris para os hóspedes que querem permanecer e explorar a pé.",
+      "Algumas vistas da suíte da Torre Eiffel são raras; nunca assuma que elas vêm com todas as categorias de quartos."
+    ]
+  ],
+  "experiences": [
+    [
+      "Paris do Sena",
+      "Um barco privado na hora certa, o Louvre vislumbrava os cais e a luz se movendo através de pontes históricas. Um luxo simples quando o tempo é considerado."
+    ],
+    [
+      "Refeição que vale a pena lembrar",
+      "Escolha uma grande sala de jantar para atmosfera e serviço, não apenas reputação. Reservas e qualquer código de vestuário precisam de confirmação."
+    ],
+    [
+      "A margem esquerda no seu ritmo",
+      "Café em Saint-Germain, uma livraria, uma galeria tranquila e uma caminhada sem pressa em direção aos Jardins do Luxemburgo."
+    ]
+  ],
+  "checks": [
+    "Escolha a Paris que você quer primeiro: a margem esquerda, o Louvre e o Triângulo Dourado produzem estadias muito diferentes.",
+    "Confirmar a categoria de quarto real, vista, piso, varanda, acesso ao spa e quaisquer quartos de conexão.",
+    "Planeje reservas de restaurantes, traslados e horários de chegada; até mesmo restaurantes de hotéis celebrados podem estar totalmente reservados.",
+    "Compare regras de cancelamento, impostos, café da manhã e inclusões específicas de categoria."
+  ],
+  "hotels": [
+    [
+      "La Seine  Samaritaine  1er",
+      "Uma maison contemporânea discreta acima do Sena, combinando interiores artful, bem-estar excepcional e vistas icônicas da cidade em suites selecionadas.",
+      "Verifique a vista, o chão, o layout e a categoria exata da suíte; as fotografias retratam tipos de quartos específicos.",
+      "Para uma estadia contemporânea discreta no centro histórico de Paris, com o Sena à sua porta e um senso de lugar intensamente pessoal.",
+      "Cheval Blanc Paris dá ao palácio tradicional uma personalidade contemporânea e discreta. Ocupando parte de La Samaritaine no Sena, ele torna o rio central para a estadia: passeios para o Louvre e Pont-Neuf, mudando a vista dos monumentos e um mundo cuidadosamente projetado de textura e luz. O spa e a piscina introduzem um ritmo mais lento após a cidade. A decisão crucial é a categoria de acomodação real: as suítes nunca têm a mesma vista, varanda ou layout."
+    ],
+    [
+      "Avenida George V  8e",
+      "Teatro clássico do palácio de Paris: flores extraordinárias, jantar de destino, um pátio de mármore e elegantes suítes no Triângulo Dourado.",
+      "Distinguir as categorias de avenida, pátio e horizonte; nem todos os quartos têm vista para a Torre Eiffel.",
+      "Para a cerimônia do grande hotel, flores espetaculares, jantar considerado e um famoso endereço Triângulo Dourado.",
+      "George V é a hospitalidade do palácio de Paris em grande escala: um lobby de mármore, instalações florais extraordinárias, pátios interiores e uma cultura de serviço graciosa. Os espaços públicos e a cena do jantar fazem parte da experiência, não apenas o alojamento. No entanto, o teatro do hotel não deve obscurecer os fatos específicos do quarto: as vistas da avenida, do pátio e do horizonte diferem muito e as perspectivas da Torre Eiffel pertencem apenas a certas categorias. Confirme o quarto exato e faça planos de restaurantes bem à frente."
+    ],
+    [
+      "Faubourg Saint-Honoré  8e",
+      "Uma instituição parisiense que casa elegância residencial clássica, um jardim isolado e jantar de destino no Faubourg Saint-Honoré.",
+      "Compare tipos de quartos remodelados, vistas de ruas ou jardins e acesso a instalações; os quartos nem todos têm a mesma vista.",
+      "Para Paris residencial refinada, um raro jardim secreto na cidade e um importante endereço de jantar.",
+      "O Le Bristol parece mais uma residência parisiense excepcionalmente graciosa do que um hotel de showpiece: quartos generosos, serviço considerado e o luxo incomum de um jardim isolado. De Faubourg Saint-Honoré, boutiques, galerias e restaurantes estão ao alcance. Escolha acomodação por seu espaço, tranquilidade e jardim ou aspecto de rua. A distinta imagem da Suite Eden ilustra essa suíte específica; suas instalações privadas não são comodidades padrão do quarto de hotel."
+    ],
+    [
+      "Boulevard Raspail  Saint-Germain  6e",
+      "Um ponto de referência da Left Bank Art Deco que combina patrimônio cultural, design contemporâneo, bem-estar e perspectivas especiais no telhado em suítes selecionadas.",
+      "Confirme a categoria da suíte, varanda e qualquer vista da Torre Eiffel; estas não são características padrão do quarto.",
+      "Para a Left Bank Paris literária, a cultura café de Saint-Germain e um marco Art Deco para explorar a pé.",
+      "A Lutetia expressa uma Paris diferente dos grandes palácios da margem direita: herança cultural, uma fachada instantaneamente reconhecível e a atmosfera intelectual e repleta de cafés de Saint-Germain. Livrarias e galerias convidam manhãs sem pressa, seguidas por uma tarde no spa. Certas suítes excepcionais enquadram a Torre Eiffel, mas essas vistas são categorias de quartos específicas, não um direito geral ao hotel. Verifique as perspectivas, a varanda e a planta de cada suíte."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "O Louvre e Pont des Arts na margem do rio Sena, em Paris",
+    "Um amplo panorama da Torre Eiffel visto do Sena",
+    "Vista da Torre Eiffel e Pont Alexandre III do Sena",
+    "Louvre e Pont des Arts visto de um barco no Sena",
+    "Champs-Élysées ao anoitecer visto do Arco do Triunfo",
+    "Igreja Saint-Germain-des-Prés e cafés clássicos de Paris"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Cheval Blanc Paris acima do Sena no edifício histórico Samaritaine",
+      "Área de piscina e relaxamento no Dior Spa, Cheval Blanc Paris",
+      "Sala de estar Cheval Blanc Paris com vista sobre os telhados e pontos turísticos de Paris"
+    ],
+    [
+      "Entrada clássica do Four Seasons Hotel George V na Avenida George V",
+      "Lobby de mármore e exposição floral assinatura no Four Seasons George V",
+      "Piscina infantil no Four Seasons Hotel George V, Paris"
+    ],
+    [
+      "Le Bristol Paris mesas sombreadas e terraço privado com jardim",
+      "Quarto luminoso de uma Suite Deluxe no Le Bristol Paris",
+      "Área de spa do terraço privado da Suite Eden at Le Bristol Paris"
+    ],
+    [
+      "Arte Nova e Art Déco iluminados fachada de Lutetia Oriental Mandarin ao anoitecer",
+      "Piscina interior com piscina no Lutetia em Saint-Germain",
+      "Suíte Lutetia com varanda e vista para a Torre Eiffel selecionada"
+    ]
+  ],
+  "seoTitle": "Paris: estadias de luxo, áreas e experiências",
+  "hotelSeoTitle": "hotéis de luxo em Paris: guia com curadoria",
+  "seoDescription": "O Sena ao amanhecer, os salões de um hotel palaciano e a alegria de vagar pela margem esquerda: uma estadia em Paris é definida pelo endereço que você escolher. Localização, a suíte certa e ser capaz de sair para o assunto da cidade."
+}

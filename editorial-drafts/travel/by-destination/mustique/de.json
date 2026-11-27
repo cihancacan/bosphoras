@@ -1,0 +1,149 @@
+{
+  "name": "Mustique",
+  "country": "St. Vincent und die Grenadinen",
+  "eyebrow": "Die Grenadinen · Eine private Insel",
+  "heading": "Mustique: die ruhige Kunst des karibischen Lebens.",
+  "intro": "Auf Mustique, das Privileg ist ruhig. Ein Gartenweg, ein Haus offen für die Passatwinde und eine geschützte Bucht definieren eine unscheinbare Art von Luxus. Wählen Sie Ihren Küstenabschnitt und Ihre Lebensweise auf der Insel vor der Wahl einer Adresse.",
+  "editorial": "Mustique verfügt über ein Hotel, The Cotton House, neben mehr als achtzig privaten Villen in seiner offiziellen Sammlung. Unser Führer verfügt über ein Hotel und drei Villen, nicht vier Hotels. Atlantische Macaroni Beach kann Surfen und Strömungen haben; westliche Buchten bieten unterschiedliche Bedingungen. Personal und Zugang zum Wasser unterscheiden sich von zu Hause zu Hause.",
+  "hotelIntro": "Vier Möglichkeiten zum Aufenthalt: The Cotton House, das einzige Hotel der Insel; The Beach House für das Leben am Meer; Macaroni Beach House für seinen atlantischen Ausblick; und Cottonwick für ein familiäres Retreat. Unabhängige Redaktionsprofile, nicht Live-Raten oder Inventar.",
+  "areas": [
+    [
+      "Endeavour Bay und das Baumwollhaus",
+      "Tropische Gärten, der Strand und das historische Clubhaus machen dieses Mustiques Hotel herz.",
+      "Sea View Zimmer sind für Arbeiten von April 2026 bis November 2027 geplant; bestätigen Sie die Auswirkungen."
+    ],
+    [
+      "Britannia Bucht und Sonnenuntergang",
+      "Moored Boote und Low-Key-Abende am Wasser geben dieser Bucht ihren sozialen Rhythmus.",
+      "Dienstleistungen und Ausflüge sind abhängig von den Meeresbedingungen und -regelungen."
+    ],
+    [
+      "Macaroni Strand, Atlantikküste",
+      "Surfen, blasser Sand und Vegetation zeigen die wilde atlantische Seite der Insel.",
+      "Surfen und Strömungen sind möglich; ruhiges Schwimmen kann nicht angenommen werden."
+    ],
+    [
+      "Gelliceaux Bay, private Villen am Meer",
+      "Eine einsame Bucht, wo einige Villen private Routen bis zum Wasser bieten.",
+      "Bestätigen Sie Treppen, Stege und die genauen Einrichtungen jeder Villa."
+    ],
+    [
+      "Lagoon Bay und Inselwege",
+      "Picknicks, Küstenpfade und sanfte Spaziergänge zeigen eine andere Seite des Insellebens.",
+      "Planen Sie für Hitze und Sonne; reservieren Sie Picknickplätze, wenn erforderlich."
+    ]
+  ],
+  "experiences": [
+    [
+      "Goldene Stunde in Britannia Bay",
+      "Uhr Segel drehen sich zu Silhouetten vor einem einfachen Abend neben dem Meer."
+    ],
+    [
+      "Mittagessen in Ihrer Villa vorbereitet",
+      "Lassen Sie das Villa-Team den Tag um die Gäste formen Wünsche und lokale Bedingungen."
+    ],
+    [
+      "Spaziergang durch die wilde Küste",
+      "Entdecken Sie Wanderwege und Strände mit passenden Schuhen und Respekt für das Meer."
+    ]
+  ],
+  "checks": [
+    "Mustique hat nur ein Hotel; die anderen kurzfristigen Eigenschaften sind private Villen.",
+    "Bestätigen Sie Flüge, Inseltransfers und Gepäckbeschränkungen.",
+    "Überprüfen Sie Villa Personal, Mahlzeiten, Fahrzeuge, Steuern und Stornierungsbedingungen.",
+    "Fragen Sie das Cotton House über Sea View Renovierungen angekündigt bis November 2027.",
+    "Überprüfen Sie Surfen, Fußwege und Zugang Sicherheit auf der genauen Eigenschaft."
+  ],
+  "hotels": [
+    [
+      "Endeavour-Bucht",
+      "Das einzige Hotel der Insel vereint Oliver Messel Erbe, tropische Gärten, ein Veranda-Restaurant, Suiten und Cottages. Es passt zu Reisenden, die Hotelservices schätzen, während Sie Mustique entdecken.",
+      "Verifizieren Sie Sea View Zimmer Renovierungsarbeiten angekündigt bis November 2027.",
+      "Für Erbe und volle Hotel-Stil Gastfreundschaft.",
+      "Das einzige Hotel der Insel vereint Oliver Messel Erbe, tropische Gärten und Endeavour Bay. Zimmer und Cottage-Kategorien unterscheiden sich; überprüfen Sie Ihre gewählte Kategorie und die laufenden Sea View Arbeiten."
+    ],
+    [
+      "Bucht Gelliceaux · Villa privée",
+      "Diese Bambusresidenz mit sechs Schlafzimmern bietet Terrassen, einen privaten Zugang am Wasser, einen Steg und eine Seilbahn bis zum Meer. Ein unverwechselbares Zuhause für das Leben am Wasser.",
+      "Der private Zugang garantiert nicht das sichere Schwimmen oder alle Wassersportarten an jedem Tag.",
+      "Für einen privaten Aufenthalt mit sechs Schlafzimmern am Meer.",
+      "Eine beeindruckende Bambusarchitektur, eine Standseilbahn bis zum Wasser und ein privater Anlegesteg an der Gelliceaux Bay definieren diese Villa mit sechs Schlafzimmern. Bestätigen Sie die genauen Wassersport-Arrangements vor der Buchung."
+    ],
+    [
+      "Macaroni Strand · Villa privée",
+      "Drei unabhängige Schlafzimmer-Suiten mit Blick auf die Atlantikküste, mit Terrassen mit Blick auf den Horizont und einen privaten Weg hinunter zum Strand. Es ist ein Landschafts-Retreat.",
+      "Der Atlantik kann rau sein und der Weg ist nicht unbedingt für jeden geeignet.",
+      "Für drei Schlafzimmer, Blick auf den Atlantik und unberührte Landschaft.",
+      "Drei separate Schlafzimmer-Suiten, großzügige Terrassen und ein privater Weg zum Macaroni Beach. Eine dramatische Umgebung, die von den atlantischen Winden, Surfen und lokalen Schwimmbedingungen beeinflusst wird."
+    ],
+    [
+      "Jardins de láîle · villa privée",
+      "Eine familienorientierte 3-Zimmer-Villa zwischen tropischen Gärten, mit einem Infinity-Pool und Cascading-Pools. Seine offizielle Auflistung beschreibt eine Zwei-Personen-Villa-Team.",
+      "Überprüfen Sie die Sicherheit um die mehrere Pools, vor allem mit Kindern.",
+      "Für Gärten, Privatsphäre und eine Familienvilla mit drei Schlafzimmern.",
+      "Cottonwick zentriert sein informelles tropisches Leben um einen Infinity-Pool und Kaskadierung Wasser-Funktionen. Garten Privatsphäre passt eng mit Gruppen; bewerten Sie die mehrere Pools sorgfältig auf Reisen mit Kindern."
+    ]
+  ],
+  "faq": [
+    [
+      "Hat Mustique mehrere Luxushotels?",
+      "Nein. Das Cotton House ist das einzige Hotel der Insel. Die anderen ausgewählten Adressen sind private Villen."
+    ],
+    [
+      "Soll ich ein Hotel oder eine Villa buchen?",
+      "Das Hotel bietet traditionelle Suite und Cottage Aufenthalte; Villen bieten ein ganzes Haus mit Personal und Einrichtungen in ihren Begriffen definiert."
+    ],
+    [
+      "Wird das Cotton House renoviert?",
+      "Die offizielle Website kündigt Sea View Zimmer Renovierungen von April 2026 bis November 2027. Fragen Sie nach Störungen."
+    ],
+    [
+      "Kannst du am Macaroni Beach schwimmen?",
+      "Der Strand steht vor dem Atlantik, und Wellen und Strömungen können das Schwimmen ungeeignet machen."
+    ],
+    [
+      "Wie kommst du nach Mustique?",
+      "Ordnen Sie Verbindungen und Transfers vor der Zeit, die Flugzeiten und Gepäckregeln bestätigen."
+    ],
+    [
+      "Kann ich diese Villen über Bosphoras buchen?",
+      "Dies ist nur eine redaktionelle Auswahl. Bosphoras Inventar, Raten und Zahlungen bleiben unbestätigt, bis die Lieferantenintegration validiert ist."
+    ]
+  ],
+  "photoCaptions": [
+    "Mustique · offizielle Insel Foto 1, Gegenstand ausstehende Überprüfung",
+    "Mustique · offizielle Insel Foto 2, Gegenstand ausstehende Überprüfung",
+    "Mustique · offizielle Insel Foto 3, Gegenstand ausstehende Überprüfung",
+    "Mustique · offizielle Insel Foto 4, Gegenstand ausstehende Überprüfung",
+    "Mustique · offizielles Inselfoto 5, Gegenstand ausstehende Überprüfung",
+    "Mustique · offizielle Insel Foto 6, Gegenstand ausstehende Überprüfung",
+    "Mustique · offizielle Insel Foto 7, Gegenstand ausstehende Überprüfung",
+    "Mustique · offizielle Insel Foto 8, Gegenstand ausstehende Überprüfung",
+    "Mustique · offizielle Insel Foto 9, Gegenstand ausstehende Überprüfung"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Das Baumwollhaus · verifizierte Eigenschaft Foto 1",
+      "Das Baumwollhaus · verifizierte Eigenschaft Foto 2",
+      "Das Baumwollhaus · verifizierte Eigenschaft Foto 3"
+    ],
+    [
+      "Das Strandhaus · verifizierte Eigenschaft Foto 1",
+      "Das Strandhaus · verifizierte Eigenschaft Foto 2",
+      "Das Strandhaus · verifizierte Eigenschaft Foto 3"
+    ],
+    [
+      "Macaroni Beach House · verifizierte Eigenschaft Foto 1",
+      "Macaroni Beach House · verifizierte Eigenschaft Foto 2",
+      "Macaroni Beach House · verifizierte Eigenschaft Foto 3"
+    ],
+    [
+      "Cottonwick · verifiziertes Eigentum Foto 1",
+      "Cottonwick · verifiziertes Eigentum Foto 2",
+      "Cottonwick · verifiziertes Eigentum Foto 3"
+    ]
+  ],
+  "seoTitle": "Mustique: Luxusaufenthalte, Gebiete und Erlebnisse",
+  "hotelSeoTitle": "Luxushotels in Mustique: kuratierter Reiseführer",
+  "seoDescription": "Auf Mustique, das Privileg ist ruhig. Ein Gartenweg, ein Haus offen für die Passatwinde und eine geschützte Bucht definieren eine unscheinbare Art von Luxus. Wählen Sie Ihren Küstenabschnitt und Ihre Lebensweise auf der Insel vor der Wahl einer Adresse."
+}

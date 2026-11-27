@@ -1,0 +1,149 @@
+{
+  "name": "Mustique",
+  "country": "Saint Vincent ve Grenadinler",
+  "eyebrow": "Grenadinler  Özel bir ada",
+  "heading": "Mustique: Karayipler'de yaşayan sessiz sanat.",
+  "intro": "Mustique'de ayrıcalık sessizdir. Bir bahçe yolu, ticaret rüzgarlarına açık bir ev ve korunaklı bir körfez, gösterişli bir lüksü tanımlar. Bir adres seçmeden önce sahil şeridinizi ve adada yaşama şeklinizi seçin.",
+  "editorial": "Mustique'nin resmi koleksiyonunda 80'den fazla özel villanın yanı sıra bir otel, The Cotton House bulunmaktadır. Rehberimiz bir otel ve dört otel değil üç villaya sahiptir. Atlantik'e bakan Macaroni Plajı sörf ve akıntılara sahip olabilir; batı koyları farklı koşullar sunar. Personel ve suya erişim evden eve farklılık gösterir.",
+  "hotelIntro": "Kalmanın dört yolu: Adanın tek oteli olan Cotton House; Deniz kenarında yaşamak için Plaj Evi; Atlantik görünümü için Macaroni Beach House; ve samimi bir aile inzivası için Cottonwick. Canlı oranlar veya envanter değil, bağımsız editoryal profiller.",
+  "areas": [
+    [
+      "Endeavour Körfezi ve Pamuk Evi",
+      "Tropikal bahçeler, plaj ve tarihi kulüp evi bu Mustique'nin otel kalbini oluşturur.",
+      "Deniz Manzaralı odalar Nisan 2026'dan Kasım 2027'ye kadar olan çalışmalar için planlanmıştır; etkiyi doğrulayın."
+    ],
+    [
+      "Britannia Körfezi ve günbatımı",
+      "Moored tekneler ve düşük anahtarlı rıhtım akşamları bu koya sosyal ritmini verir.",
+      "Hizmetler ve geziler deniz koşullarına ve düzenlemelere bağlıdır."
+    ],
+    [
+      "Makarna Plajı, Atlantik kıyısı",
+      "Sörf, soluk kum ve bitki örtüsü adanın vahşi Atlantik'e bakan tarafını ortaya çıkarır.",
+      "Sörf ve akıntılar mümkündür; sakin yüzme varsayılamaz."
+    ],
+    [
+      "Gellicaux Körfezi, özel deniz kenarı villalar",
+      "Bazı villaların suya kadar özel yollar sunduğu tenha bir koy.",
+      "Merdivenleri, jettileri ve her villanın tam tesislerini onaylayın."
+    ],
+    [
+      "Lagoon Körfezi ve ada yolları",
+      "Piknikler, kıyı yolları ve nazik yürüyüşler ada yaşamının farklı bir yönünü ortaya koymaktadır.",
+      "Isı ve güneş için plan; gerekirse piknik yerleri rezerve edin."
+    ]
+  ],
+  "experiences": [
+    [
+      "Britannia Bay'de altın saat",
+      "Denizin yanındaki basit bir akşamdan önce yelkenlerin siluetlere dönüşmesini izleyin."
+    ],
+    [
+      "Villanızda hazırlanan öğle yemeği",
+      "Villa ekibinin günün misafirlerin istekleri ve yerel koşullar etrafında şekillenmesine izin verin."
+    ],
+    [
+      "Vahşi kıyı şeridinde yürüyün",
+      "Uygun ayakkabılar ve okyanusa saygı ile patikaları ve plajları keşfedin."
+    ]
+  ],
+  "checks": [
+    "Mustique'de sadece bir otel vardır; diğer kısa listeye alınmış mülkler özel villalardır.",
+    "Uçuşları, ada transferlerini ve bagaj kısıtlamalarını onaylayın.",
+    "Villa personeli, yemekler, araçlar, vergiler ve iptal koşullarını doğrulayın.",
+    "Cotton House'a, 2027 Kasım'ına kadar duyurulan Sea View yenilemelerini sorun.",
+    "Tam mülkte sörf, patika ve erişim güvenliğini kontrol edin."
+  ],
+  "hotels": [
+    [
+      "Endeavour Körfezi  htel",
+      "Adanın tek oteli Oliver Messel mirasını, tropikal bahçeleri, veranda restoranını, süitleri ve kır evlerini harmanlıyor. Mustique'yi keşfederken otel hizmetlerine değer veren gezginlere uygun.",
+      "Teekked Sea View oda yenileme çalışmaları Kasım 2027'ye kadar duyurulmuştur.",
+      "Miras ve tam otel tarzı misafirperverlik için.",
+      "Adanın tek oteli Oliver Messel mirasını, tropikal bahçeleri ve Endeavour Körfezi'ni birleştiriyor. Oda ve kır evi kategorileri farklıdır; seçtiğiniz kategoriyi ve devam eden Sea View çalışmalarını doğrulayın."
+    ],
+    [
+      "Gellicaux Körfezi  villa prive",
+      "Bu altı yatak odalı bambu rezidans teraslar, özel sahil erişimi, denize kadar bir jetty ve bir funiküler sunmaktadır. Su kenarında yaşamak için ayırt edici bir ev.",
+      "Özel erişim, her tarihte güvenli yüzme veya tüm su sporları garanti etmez.",
+      "Denizin yanında altı odalı özel bir konaklama için.",
+      "Çarpıcı bambu mimarisi, suya doğru bir füniküler ve Gellicaux Körfezi'ndeki özel bir jetty, bu altı odalı villayı tanımlar. Rezervasyondan önce kesin su sporları düzenlemelerini onaylayın."
+    ],
+    [
+      "Makarna Plajı  villa prive",
+      "Üç bağımsız yatak odası süiti, ufuklara bakan teraslar ve sahile doğru uzanan özel bir patika ile Atlantik kıyısına bakmaktadır. Peyzaj odaklı bir geri çekilmedir.",
+      "Atlantik sert olabilir ve yol herkes için uygun değildir.",
+      "Üç yatak odası, Atlantik manzarası ve bozulmamış manzara için.",
+      "Üç ayrı yatak odası süiti, cömert teraslar ve Makarna Plajı'na özel bir patika. Atlantik rüzgarları, sörf ve yerel yüzme koşullarından etkilenen dramatik bir ortam."
+    ],
+    [
+      "Jardins de l'île  villa prive",
+      "Tropikal bahçeler arasında aile odaklı üç yatak odalı bir villa, sonsuzluk havuzu ve basamaklı havuzları vardır. Resmi liste, iki kişilik bir villa ekibini anlatıyor.",
+      "Özellikle çocuklarla birlikte birden fazla havuzun etrafındaki güvenliği kontrol edin.",
+      "Bahçeler, mahremiyet ve üç odalı bir aile villası için.",
+      "Cottonwick, gayriresmi tropikal yaşamını sonsuzluk havuzu ve basamaklı su özellikleri etrafında merkezler. Bahçe mahremiyeti yakın bağlı gruplara uygundur; Çocuklarla seyahat ederken birden fazla havuzu dikkatlice değerlendirin."
+    ]
+  ],
+  "faq": [
+    [
+      "Mustique'nin birkaç lüks oteli var mı?",
+      "Hayır. Cotton House adanın tek otelidir. Seçilen diğer adresler özel villalardır."
+    ],
+    [
+      "Bir otel mi yoksa villa mı ayırtmalıyım?",
+      "Otel, geleneksel süit ve yazlık konaklamalar sunmaktadır; villalar, kendi şartlarında tanımlanmış personel ve olanaklarla bütün bir ev sağlar."
+    ],
+    [
+      "Pamuk Evi yenileniyor mu?",
+      "Resmî site Nisan 2026'dan Kasım 2027'ye kadar Deniz Manzaralı oda tadilatlarını duyurur. Herhangi bir aksaklık hakkında soru sorun."
+    ],
+    [
+      "Makarna Plajı'nda yüzebilir misiniz?",
+      "Plaj Atlantik'e bakar ve dalgalar ve akıntılar yüzmeyi uygun hale getirmeyebilir. Koşulları yerel olarak kontrol edin."
+    ],
+    [
+      "Mustique'ye nasıl gidilir?",
+      "Uçuş sürelerini ve bagaj kurallarını onaylayan ada bağlantılarını ve transferlerini önceden düzenleyin."
+    ],
+    [
+      "Bu villaları Bosphoras aracılığıyla rezerve edebilir miyim?",
+      "Bu sadece bir editoryal seçimdir. Bosphoras envanteri, oranları ve ödemeleri, tedarikçi entegrasyonu doğrulanana kadar doğrulanmamış olarak kalır."
+    ]
+  ],
+  "photoCaptions": [
+    "Mustique  resmi ada fotoğrafı 1, konu inceleme bekliyor",
+    "Mustique  resmi ada fotoğrafı 2, konu inceleme bekliyor",
+    "Mustique  resmi ada fotoğrafı 3, konu inceleme bekliyor",
+    "Mustique  resmi ada fotoğrafı 4, konu inceleme bekliyor",
+    "Mustique  resmi ada fotoğrafı 5, konu inceleme bekliyor",
+    "Mustique  resmi ada fotoğrafı 6, konu inceleme bekliyor",
+    "Mustique  resmi ada fotoğrafı 7, konu inceleme bekliyor",
+    "Mustique  resmi ada fotoğrafı 8, konu inceleme bekliyor",
+    "Mustique  resmi ada fotoğrafı 9, konu inceleme bekliyor"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Cotton House  doğrulanmış mülk fotoğrafı 1",
+      "Cotton House  doğrulanmış mülk fotoğrafı 2",
+      "Cotton House  doğrulanmış mülk fotoğrafı 3"
+    ],
+    [
+      "Plaj Evi  doğrulanmış mülk fotoğrafı 1",
+      "Plaj Evi  doğrulanmış mülk fotoğrafı 2",
+      "Plaj Evi  doğrulanmış mülk fotoğrafı 3"
+    ],
+    [
+      "Makarna Plaj Evi  doğrulanmış mülk fotoğrafı 1",
+      "Macaroni Beach House  doğrulanmış mülk fotoğrafı 2",
+      "Makarna Plaj Evi  doğrulanmış mülk fotoğrafı 3"
+    ],
+    [
+      "Cottonwick  doğrulanmış özellik fotoğrafı 1",
+      "Cottonwick  doğrulanmış özellik fotoğrafı 2",
+      "Cottonwick  doğrulanmış özellik fotoğrafı 3"
+    ]
+  ],
+  "seoTitle": "Mustique: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Mustique'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Mustique'de ayrıcalık sessizdir. Bir bahçe yolu, ticaret rüzgarlarına açık bir ev ve korunaklı bir körfez, gösterişli bir lüksü tanımlar. Bir adres seçmeden önce sahil şeridinizi ve adada yaşama şeklinizi seçin."
+}

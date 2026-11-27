@@ -1,0 +1,178 @@
+{
+  "name": "Langkawi",
+  "country": "Malasia",
+  "eyebrow": "Malasia · selva tropical, bahías y el mar de Andamán",
+  "heading": "Langkawi, donde la selva se encuentra con el mar Andamán.",
+  "intro": "Desde bahías protegidas hasta playas brillantes, una isla malaya donde el paisaje marca el ritmo de su estancia.",
+  "editorial": "Langkawi no es sólo un destino de playa. Este archipiélago del noroeste de Malasia es una sucesión de cabeceras boscosas, aguas poco profundas e islas de piedra caliza. Su Geoparque Global UNESCO refleja una historia natural notable. A su llegada, la decisión más útil es qué bahía para permanecer en, en lugar de comparar hoteles en fotografías solamente.\n\nTanjung Rhu es una introducción llamativa: una larga playa, aguas abiertas e islotes offshore. La marea revela barras de arena que no son caminos permanentes. Una excursión guiada en los manglares de Kilim muestra otro lado de la costa, con paredes de piedra caliza, cursos de agua y bosques inundados. Elija una ruta consciente de la vida silvestre en lugar de una excursión construida alrededor de los animales de alimentación.\n\nEn el noroeste, la bahía de Datai ofrece una estancia en el bosque. Una habitación alta en el dosel y una villa directamente en la playa son experiencias muy diferentes. Senderos y distancias dentro de grandes resorts pueden importar más que las perspectivas, especialmente para las familias. La costa oeste alrededor de Pantai Kok y el puerto de Telaga combina anclajes protegidos con la proximidad a Machinchang. Planear un medio día en SkyCab y SkyBridge alrededor del tiempo: las nubes y las interrupciones de servicio pueden cambiar el itinerario.\n\nCenang y Tengah en el suroeste son convenientes para restaurantes y tiendas, mientras que las bahías cerca de Kuah equilibran las instalaciones de la ciudad y el paseo marítimo de una manera diferente. Las islas del sur, incluyendo Dayang Bunting y su lago de agua dulce, se prestan a una excursión en barco. Mantener al menos un día libre de traslados para disfrutar de su resort y playa.\n\nCuatro o cinco noches dan un primer espacio de visita para dos salidas naturales, un día de descubrimiento y relajación. No hay necesidad de cambiar los hoteles sólo para explorar la isla. LGK aeropuerto y terminales de ferry son puntos de llegada separados; confirmar el lugar de reunión precisa con su conductor. Los meses generalmente más secos de diciembre a marzo a menudo se adaptan a las visitas a la playa, pero no hay período garantiza días sin lluvia. Compruebe las condiciones de navegación, acceso a cascadas, horas de operación y orientación local antes de partir.\n\nAl elegir el alojamiento, consulte la categoría realmente disponible: habitaciones con jardín, vistas parciales al mar, villas de la selva tropical y villas directas de playa no son intercambiables. Para las familias, considere la ocupación, camas supletorias y acceso seguro a la piscina. Tarifas, disponibilidad de la habitación y condiciones de cancelación son los mostrados por el socio de reserva en la compra.",
+  "hotelIntro": "Desde fincas forestales hasta playas del norte y bahías de costa oeste, nuestra selección prioriza la ubicación y el carácter de cada propiedad.",
+  "areas": [
+    [
+      "Tanjung Rhu",
+      "La costa norte combina arena pálida y siluetas de islotes de piedra caliza. Una estancia más lenta frente al mar permite apreciar las mareas cambiantes.",
+      "Verifique las restricciones de acceso y natación; no cruce las barras de arena en una marea entrante."
+    ],
+    [
+      "Datai Bay",
+      "La bahía noroeste es distintiva por su bosque que llega a la costa. Las distancias entre alojamiento, playa e instalaciones dependen de la disposición de la finca.",
+      "Planifique viajes en coche para excursiones y confirme las condiciones de acceso a la playa."
+    ],
+    [
+      "Puerto de Pantai Kok y Telaga",
+      "Los anclajes y cabeceras de la costa oeste se sientan junto a la gama Machinchang, una práctica base para el teleférico y las cascadas.",
+      "Compruebe el tiempo, los tiempos de operación y el servicio de teleférico."
+    ],
+    [
+      "Kilim y los manglares",
+      "Las formaciones calizas de Kilim enmarcan las vías fluviales de los manglares. Una excursión guiada revela la geología y los ecosistemas del parque.",
+      "Elija un operador consciente de la vida silvestre y evite alimentar animales salvajes."
+    ],
+    [
+      "Pantai Cenang y Pantai Tengah",
+      "Las playas del suroeste están cerca de restaurantes, tiendas y servicios. Cenang es más animada que las bahías del norte.",
+      "Compruebe el ruido y el tráfico si prefiere una estancia tranquila."
+    ],
+    [
+      "Kuah y las islas del sur",
+      "Kuah es el principal centro urbano, mientras que Dayang Bunting ofrece un bosque y un paisaje lacustre dentro del geoparque.",
+      "Los horarios de los barcos y el acceso a los sitios naturales dependen de las condiciones."
+    ]
+  ],
+  "experiences": [
+    [
+      "SkyCab y las alturas de Machinchang",
+      "Diríjase a los miradores de montaña en clima despejado. El acceso a SkyBridge es una visita independiente y depende de las condiciones."
+    ],
+    [
+      "Manglares Kilim",
+      "Explore las vías fluviales con un guía local, haciendo tiempo para las formaciones de piedra caliza sin alimentar la vida silvestre."
+    ],
+    [
+      "Un día de playa en Tanjung Rhu",
+      "Disfrute de la arena y el cambiante paisaje de mareas, permaneciendo dentro de zonas de baño permitidas."
+    ],
+    [
+      "Cataratas de Telaga Tujuh",
+      "Descubre paisajes forestales y cascadas en zapatos apropiados. Las rocas húmedas y la lluvia fuerte requieren un cuidado especial."
+    ],
+    [
+      "Dayang Bunting y el mar Andamán",
+      "Organizar un paseo en barco dependiendo de las condiciones del mar, acceso al lago y reglas del parque."
+    ]
+  ],
+  "checks": [
+    "Confirme el punto de llegada: aeropuerto LGK o terminal de ferry.",
+    "Compare el acceso a la playa y la perspectiva real de la habitación.",
+    "Verifique las camas y la ocupación para las edades exactas de los niños.",
+    "Compruebe el clima y las mareas antes de las salidas marinas.",
+    "Confirme las inclusiones de tarifas y los términos de cancelación."
+  ],
+  "hotels": [
+    [
+      "Datai Bay · forêt tropicale",
+      "La colección Canopy está cerca de la piscina principal; las villas de la selva tropical están dispersas por el bosque, mientras que las villas de la playa se abren a la orilla con piscinas privadas.",
+      "Considere los senderos forestales y los cambios en la elevación cuando viaje con niños pequeños o busque acceso libre de pasos.",
+      "Para una estancia inmerso en la selva tropical.",
+      "La colección Canopy está cerca de la piscina principal; las villas de la selva tropical están dispersas por el bosque, mientras que las villas de la playa se abren a la orilla con piscinas privadas. Considere los caminos forestales y los cambios en la elevación cuando viaje con niños pequeños o busque acceso libre de pasos."
+    ],
+    [
+      "Tanjung Rhu · côte nord",
+      "Pabellóns y villas de inspiración malaya y musulmana en Tanjung Rhu. Villas de playa con piscinas y pabellones de jardín ofrecen experiencias claramente diferentes.",
+      "Las villas familiares tienen límites de ocupación y edad específicos para cada categoría; también comprueba la seguridad de la piscina.",
+      "Para una amplia playa y villas familiares.",
+      "Los pabellones y villas de inspiración malaya y musulmana en Tanjung Rhu. Las villas de playa con piscinas y pabellones de jardín ofrecen experiencias claramente diferentes. Las villas familiares tienen límites de edad y ocupación específicos para cada categoría."
+    ],
+    [
+      "Teluk Nibung · côte ouest",
+      "Un resort en una bahía protegida entre la selva tropical y el mar de Andaman. Frente al mar, playa y villas de bosque tropical ofrecen una conexión diferente con el paisaje.",
+      "Distinguir las vistas al océano, acceso directo a la playa y una piscina privada; confirmar la categoría de villa exacta.",
+      "Para una bahía protegida y pabellones sobre el agua.",
+      "Un resort en una bahía protegida entre la selva tropical y el mar de Andaman. Frente al mar, Playa y Rainforest villas cada uno ofrecen una conexión diferente con el paisaje. Distinguir vistas al mar, acceso directo a la playa y una piscina privada; confirmar la categoría de villa exacta."
+    ],
+    [
+      "Jalan Pantai Beringin · Kuah",
+      "Una dirección frente al mar cerca de Kuah. Suites, habitaciones con diferentes perspectivas y villas al atardecer ofrecen una opción entre las comodidades del hotel y retiros privados.",
+      "Revise las perspectivas, acceso a la laguna, servicio de mayordomo y tarifas de inclusiones.",
+      "Para suites y vistas panorámicas al mar.",
+      "Una dirección frente al mar cerca de Kuah. Suites, habitaciones con diferentes perspectivas y villas al atardecer ofrecen una opción entre las comodidades del hotel y retiros privados. Revise las perspectivas, acceso a la laguna, servicio de mayordomo y tarifas inclusiones."
+    ]
+  ],
+  "faq": [
+    [
+      "¿Dónde está Langkawi?",
+      "En el noroeste de Malasia, en el mar de Andamán, cerca de la frontera tailandesa."
+    ],
+    [
+      "¿Qué área se adapta a una estancia en la playa?",
+      "Tanjung Rhu para el paisaje de la isla, Datai Bay para el bosque, y Cenang o Tengah para restaurantes y tiendas."
+    ],
+    [
+      "¿Cuántas noches debo planear?",
+      "Cuatro a cinco noches proporcionan un punto de partida útil para excursiones naturales y tiempo de hotel."
+    ],
+    [
+      "¿Qué meses son los mejores?",
+      "Diciembre a marzo es a menudo más seco, pero la lluvia sigue siendo posible."
+    ],
+    [
+      "¿Qué es el geoparque Langkawi?",
+      "Un Geoparque Mundial de la UNESCO que incluye sitios naturales en Machinchang, Kilim y Dayang Bunting."
+    ],
+    [
+      "¿Puedo visitar SkyBridge todos los días?",
+      "El tiempo y el mantenimiento pueden afectar el acceso; compruebe la información oficial de funcionamiento."
+    ],
+    [
+      "¿Puedo explorar pueblos pesqueros y manglares?",
+      "Hay excursiones guiadas disponibles. Confirme la ruta, las condiciones de navegación y las normas de protección de la fauna."
+    ],
+    [
+      "¿Todas las villas tienen piscinas privadas?",
+      "No. Distinguir categorías de habitación y comprobar la descripción exacta del proveedor."
+    ],
+    [
+      "¿Cómo llego al hotel?",
+      "Dé al proveedor el punto de llegada preciso; el aeropuerto y las terminales de ferry están separados."
+    ],
+    [
+      "¿Las fotografías garantizan la habitación reservada?",
+      "No. Las fotografías ilustran el hotel; confirme la categoría, comodidades y condiciones reservadas."
+    ]
+  ],
+  "photoCaptions": [
+    "Panorama SkyBridge",
+    "Costa de la bahía de Dati",
+    "Playa de Tanjung Rhu",
+    "Playa de Cenang",
+    "Bosque de manglares Kilim",
+    "Faro de Pantai Kok",
+    "Cataratas de Telaga Tujuh",
+    "Dayang Bunting isla",
+    "Teleférico Langkawi"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "El Datai Langkawi — Pool y selva tropical",
+      "El Dati Langkawi — Interior del dormitorio",
+      "El Datai Langkawi — Villa y piscina rodeada de vegetación"
+    ],
+    [
+      "Four Seasons Resort Langkawi: vista aérea del complejo y la playa",
+      "Four Seasons Resort Langkawi: luminoso dormitorio abierto al aire libre",
+      "Four Seasons Resort Langkawi — Terraza y piscina frente al mar"
+    ],
+    [
+      "Ritz-Carlton, Langkawi — Pabellónes de spa sobre el agua",
+      "El Ritz-Carlton, Langkawi — dormitorio con vistas al mar",
+      "El Ritz-Carlton, Langkawi — Piscina en medio de jardines"
+    ],
+    [
+      "St. Regis Langkawi — Playa y palmeras",
+      "El St. Regis Langkawi — dormitorio y salón luminosos",
+      "St. Regis Langkawi — Terraza con vistas a la bahía"
+    ]
+  ],
+  "seoTitle": "Langkawi: estancias de lujo, áreas y experiencias",
+  "hotelSeoTitle": "Hoteles de lujo en Langkawi: guía comisariada",
+  "seoDescription": "Desde bahías protegidas hasta playas brillantes, una isla malaya donde el paisaje marca el ritmo de su estancia."
+}

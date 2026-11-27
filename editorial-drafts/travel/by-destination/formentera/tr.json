@@ -1,0 +1,162 @@
+{
+  "name": "Formentera",
+  "country": "İspanya",
+  "eyebrow": "Formentera  daha sessiz Balear sanatı",
+  "heading": "Formentera: dört ayrı konaklama yeri, bir kayda değer ada.",
+  "intro": "Formentera'da gerçek lüksün, sahilin doğru gerilmesi, sessiz ve telaşsız hareketlerle gösteriden daha fazla ilgisi vardır. Yürünebilir Es Puls, Migjorn'un çam kaplı kıyıları ve gün batımına bakan Cala Saona'nın her biri farklı bir konaklama türünü davet ediyor.",
+  "editorial": "Formentera'nın havaalanı yoktur: çoğu ziyaretçi Ibiza'dan feribotla gelir, daha sonra La Savina limanından seçtikleri mülklere devam eder. Yelken saatleri, bağlantılar ve deniz koşulları, özellikle geç bir uçuştan sonra her yolculuk için kontrol edilmesi gerekir. Ada korumalıdır ve resmi turizm rehberliği, 1 Haziran - 30 Eylül arasında bir araç getirmek için yetkilendirmeyi gerektirir. Transferler ve düşük etkili yerel ulaşım, Farlijo Çiçekleri'nde Adanın dört bir yanında Hotel Cala Saona & Spa, günbatımları için kutlanan küçük batı koyunu karşılarken, Bahçe Manzarası, Çam Manzarası, Deniz Manzarası ve süit kategorileri belirgin bir şekilde farklı deneyimler sunar. Aileler, korunaklı yüzme günlerini daha zorlu koşullardan, kayalık koylardan ve yürüme mesafelerinden ayırt etmelidir. Ses Illetes'teki demirli yatların görüntüleri ne bir charter ne de otel rezervasyonu olmadığını kanıtlıyor. Bu dört özellik yalnızca editörlük referanslarıdır; hiçbir oran, canlı kullanılabilirlik veya talep edilen haklar dağılımıdır.",
+  "hotelIntro": "Farklı önceliklere sahip dört gerçek özellik: Es Pujols'ta tasarım, Ca Mar'da sahil kenarında, Es Arenals yakınlarında geri çekilme ve Cala Saona'da gün batımı.",
+  "areas": [
+    [
+      "Es Pujols ve onun gezinti yeri",
+      "Canlı, rahat bir sahil köyü olan restoranlar, mağazalar ve küçük plajlar; özellikle yürüyerek rahat akşamlar için pratik.",
+      "Yaz akşamları meşgul olabilir; her köy adresi denize bakmıyor."
+    ],
+    [
+      "Ca Mar ve merkezi Migjorn",
+      "Uzun güney kıyı şeridi, kum, kum tepeleri ve sahil kenarı yemeklerini değiştirerek, yavaş günleri su ile davet eder.",
+      "Plaja ulaşım, rüzgar ve deniz durumu koylar arasında farklılık gösterir."
+    ],
+    [
+      "Es Arenals ve Es Cal",
+      "Eastern Migjorn geniş manzaralara ve daha sessiz bir manzaraya açılırken, Es Cal küçük kayalık koylar ve samimi bir balıkçılık-köy hissi sunmaktadır.",
+      "Çocuklarla yüzmeyi planlamadan önce jetties, kayalar ve deniz koşullarını kontrol edin."
+    ],
+    [
+      "Cala Saona ve batı kıyıları",
+      "Batı kıyısındaki kayalıklar arasında kumlu bir koy, akşam ışığı ve daha yavaş kıyı yürüyüşleri için ödüllendirildi.",
+      "Sunset ziyaretçileri çeker ve uçurumun üst yolları bakım gerektirir."
+    ],
+    [
+      "La Savina, Ses Illetes ve kuzey",
+      "Varış limanı, korunan Ses Illetes'e ve soluk kumlarına, açık sığlıklara ve düzenlenmiş erişime doğru yol alır.",
+      "Düzenlenen park erişimini, park etmeyi ve sorumlu tekne demirlemesini farklılaştırın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Ses Illetes kalabalıklar önünde",
+      "Işık yumuşakken, işaretli yollar kullanarak ve korunan Posidonia deniz otlarına saygı duyarken soluk kum bankalarını yürüyün."
+    ],
+    [
+      "Migjorn boyunca yemek",
+      "Otelinizin yakınında bir sahil masası seçin ve gereksiz bir akşam sürüşünden kaçının; mevsimsel açılışını kontrol edin ve restoranı ayrı olarak ayırtın."
+    ],
+    [
+      "Cala Saona günbatımında",
+      "Son ışığın küçük körfez ve batı kayalıklarına düşmesini izleyin; asla her odadan aynı gün batımı manzarasını varsaymayın."
+    ],
+    [
+      "La Mola'ya giden yol",
+      "Erişim, yol koşulları ve site açılış saatlerini kontrol ederken daha sessiz doğu manzaralarını ve gözcü noktalarını keşfedin."
+    ],
+    [
+      "Bisikletle yavaş yolculuk",
+      "Uygun bisiklet yolları ve kısa yerel transferler, rüzgar, ısı ve genç gezginlerin yaşları etrafında planlama kullanın."
+    ]
+  ],
+  "checks": [
+    "Muhteşem bir fotoğrafı yargılamadan önce sahil ve tam oda kategorisini seçin; Teranka'nın 12 yaşının minimum çocuk yaşını yeniden teyit edin.",
+    "IbizaLa Savina feribotlarını doğrulayın ve yeterli uçuş bağlantı süresini bırakın.",
+    "1 Haziran'dan 30 Eylül'e kadar, adaya bir araç getirmek için yetkilendirme kurallarını onaylayın.",
+    "Konaklamanın kendisinden ayrı plaj kulübü, spa ve yemek erişimi.",
+    "Rüzgar, kayalık kıyılar, çocuk güvenliği ve mevsimlik açıklıkları göz önünde bulundurun.",
+    "Onaylanmış tedarikçi envanteri olmadan konaklama, transfer veya yat hizmetleri için asla söz vermeyin."
+  ],
+  "hotels": [
+    [
+      "Es Pujols  köy et plage",
+      "Beş Çiçek, yürünebilir Es Pujols'a canlı, tasarım bilinçli bir lüks getiriyor. Renkli iç mekanlar, çatı katı Sky alanı ve tam hizmet ayarı, bir plaj gününden sonra restoranların ve mağazaların el altında olmasını isteyen konuklara hitap ediyor. Resmi web sitesi Es Pujols plajını yaklaşık 150 metre uzağa yerleştirir; otel doğrudan kum üzerinde değildir. Oda kategorileri, standart konaklamadan Grand Flower Suite'e kadar, farklı görüş ve düzenlere sahip olan spa'da başlar.",
+      "Plaja yaklaşık 150 metre, doğrudan sahile değil; 16 yaşından itibaren spa ve oda görünümleri değişir.",
+      "Plaja yaklaşık 150 metre, doğrudan sahile değil; 16 yaşından itibaren spa ve oda görünümleri değişir.",
+      "Beş Çiçek, yürünebilir Es Pujols'a canlı, tasarım bilinciyle lüks bir görünüm getiriyor. Renkli iç mekanlar, çatı katındaki bir Sky alanı ve tam hizmet ayarı, bir plaj gününden sonra restoran ve dükkanların el altında olmasını isteyen konuklara hitap ediyor. Resmi web sitesi Es Pujols plajını 150 metre kadar uzağa yerleştirir; otel doğrudan kum üzerinde değildir. Oda kategorileri, standart konaklamadan Grand Flower Suite'e kadar, farklı görüş ve düzenlere sahip olan spa'da başlar."
+    ],
+    [
+      "Ca Mar  Playa de Migjorn",
+      "Gecko, Ca Mar'de Playa de Migjorn'da, deniz, Orilla restoranı, peyzajlı alanlar ve bir plaj kulübü etrafında kasıtlı olarak inşa edilmiş bir deneyimle duruyor. Sosyal deniz kenarı karakteri, uzak bir özel konuttan farklı bir tekliftir ve atmosfer, etkinliklere ve günün saatine göre değişebilir. Sahil tanıtım fotoğrafları, her odanın görünümünü belirlemez veya salon ve yemekhanelerin dahil edildiği herhangi bir plajın görünümünü garanti etmez. Aileler, gerçek plaj yaklaşımını, oda ve gürültü yapılandırmasını onaylamalıdır.",
+      "Konaklamadan ayrı plaj kulübü erişimi; oda, şezlong, yemek ve atmosferi doğrulayın.",
+      "Konaklamadan ayrı plaj kulübü erişimi; oda, şezlong, yemek ve atmosferi doğrulayın.",
+      "Gecko, Ca Mar'deki Playa de Migjorn'da, deniz, Orilla restoranı, peyzajlı alanlar ve bir plaj kulübü etrafında kasıtlı olarak inşa edilmiş bir deneyimle duruyor. Sosyal deniz kenarı karakteri, uzak bir özel konuttan farklı bir tekliftir ve atmosfer, etkinliklere ve günün saatine göre değişebilir. Plaj kenarındaki tanıtım fotoğrafları, her odanın görünümünü belirlemez ve şezlongların ve yemeğin dahil olduğu herhangi bir plajın görünümünü garanti etmez. Aileler, gerçek plaj yaklaşımını, oda ve gürültü yapılandırmasını onaylamalıdır."
+    ],
+    [
+      "Es Arenals  Migjorn oryantal",
+      "Teranka, Es Arenals yakınlarındaki çamlar ve korumalı kum tepeleri tarafından az sayıda belirtilen Akdeniz saklanma yeridir. 35 oda ve süiti, Mar, Tierra ve Cielo genelinde, sanat, okuma, refah ve manzara ile daha yavaş bir ilişki ile şekillenen bir konaklamayı yansıtan bir konaklama sunmaktadır. Bu, kapıdaki gece hayatı olan küçük bir köy oteli değildir. Bahçe alanları, yemek ayarları, görünümler ve denize yaklaşım, konaklama kategorisine göre farklılık gösterebilir.",
+      "SLH, çocuklar için yaşları 12+ olarak gösterir; politika, plaj erişimi ve tedavileri onaylayın.",
+      "SLH, çocuklar için yaşları 12+ olarak gösterir; politika, plaj erişimi ve tedavileri onaylayın.",
+      "Teranka, Es Arenals yakınlarındaki çamlar ve korumalı kum tepeleri tarafından az tanımlanmış bir Akdeniz saklanma yeridir. 35 oda ve süiti, Mar, Tierra ve Cielo'da, sanat, okuma, refah ve manzara ile daha yavaş bir ilişki ile şekillenen bir konaklamayı yansıtan bir konaklama sunar. Bu, her mevsimlik gece hayatı olan bir merkez köy oteli değildir. Bahçe alanları, yemek ayarları, görünümler ve denize yaklaşım, konaklama kategorisine göre farklılık gösterebilir."
+    ],
+    [
+      "Cala Saona  cte occidentale",
+      "Hotel Cala Saona & Spa, uçurumlar, berrak su ve batıya bakan günbatımları ile bilinen Cala Saona'nın korunaklı batı koyunu karşı karşıya getiriyor. Otel, bir havuz, yemek, spa ve özellikle farklı oda kategorilerini bir araya getiriyor: bahçe, çam, havuz ve deniz görünümleri, daha büyük süitlerin yanında. Resmi oda kataloğunda ayrıca, oda içi erişim seçenekleri ve ayrı aile konfigürasyonları da listeleniyor. Bir junior süitte süitte view'da resimli teras jakuzi, otel genelinde standart bir özellik değildir.",
+      "Deniz manzarası ve jakuzi oda tipine bağlıdır; kesin kategori ve aile düzenini onaylayın.",
+      "Deniz manzarası ve jakuzi oda tipine bağlıdır; kesin kategori ve aile düzenini onaylayın.",
+      "Hotel Cala Saona & Spa, uçurumlar, berrak su ve batıya bakan günbatımları ile bilinen Cala Saona'nın korunaklı batı koyunu karşı karşıya getiriyor. Otel, bir havuz, yemek, spa ve özellikle farklı oda kategorilerini bir araya getiriyor: bahçe, çam, havuz ve deniz görünümleri, daha büyük süitlerin yanında. Resmi oda kataloğu ayrıca, bağlantı odası seçenekleri ve ayrı aile konfigürasyonları için de listeler. Küçük bir süitte resmedilenilen teraslı jakuzi, otel genelinde standart bir özellik değildir."
+    ]
+  ],
+  "faq": [
+    [
+      "Ibiza Havalimanı'ndan Formentera'ya nasıl seyahat edebilirim?",
+      "Formentera'nın havaalanı yoktur. İbiza limanına ulaşın, La Savina'ya bir feribota binin ve taksi veya önceden ayarlanmış bir transferle devam edin. Günün son feribotunu kontrol edin ve inişten sonra yeterli zaman bırakın; deniz koşulları ve tarifeleri bağlantıları bozabilir."
+    ],
+    [
+      "Hangi bölge yürüme mesafesindeki restoranlar için en iyisidir?",
+      "Es Pujols, akşam restoranları, mağazalar ve deniz kenarındaki bir gezinti yeri için en kolay seçimdir. Beş Çiçek, buradaki plaja yaklaşık 150 metre uzaklıktadır. Teranka, Gecko ve Cala Saona, farklı, daha kıyı veya tenha konaklamalara hitap eder ve akşam mekanlarının daha geniş bir seçimi için ulaşım gerektirebilir."
+    ],
+    [
+      "Gecko ve Teranka, Migjorn'un aynı bölgesinde mi?",
+      "Her ikisi de Formentera'nın uzun güney kıyısına aittir, ancak farklı alanları işgal eder: Gecko Ca Mar'da, Teranka ise Es Arenals'ın yakınındadır. Erişim noktaları, yakındaki tesisler ve pratik yolculukları farklıdır. Aynı adlı plajda olmak iki otel arasında kolay yaya erişimi sağlamaz."
+    ],
+    [
+      "Her Hotel Cala Saona odası denize bakar mı?",
+      "Hayır. Resmi oda kataloğu Bahçe Manzaralı, Çam Manzaralı, Havuz Manzaralı, Deniz Manzaralı ve birden fazla süit tipini ayırt eder. Teraslı jakuzi, kategoriye özgü bir özelliktir, her odaya dahil olan bir şey değildir. Tam olarak rezerve edilen oda ve görünümün yazılı onayını alın."
+    ],
+    [
+      "Küçük çocuklar beş çiçek kaplıcasını kullanabilir mi?",
+      "Beş Çiçek spa erişiminin 16 yaş ve üstü misafirler için olduğunu belirtir. Seyahat eden aileler mevcut politikayı yeniden teyit etmeli, alternatif havuz erişimini belirlemeli ve rezervasyon yapmadan önce seçenekleri ve yaş kısıtlamalarını bağlayan gerçek oda düzenlerini sormalıdır."
+    ],
+    [
+      "Yazın Formentera'ya araba getirebilir miyim?",
+      "Resmi ada turizm rehberliği, formentera.eco aracılığıyla 1 Haziran ve 30 Eylül tarihleri arasında Formentera'ya getirilen araçlar için yetkilendirme gerektirir. Kurallar ve izin verilen numaralar değişebilir, bu nedenle mevcut sezon kriterlerini gözden geçirin ve bir transfer veya uygun yerel ulaşımı düşünün."
+    ],
+    [
+      "Bosphoras şu anda burada gösterilen otel veya yatları ayırtabilir mi?",
+      "Bu, endeksli olmayan bir editoryal kılavuzdur, canlı rezervasyon arayüzü değildir. Fotoğraf oda kullanılabilirliğini, onaylanmış yat kiralamalarını, plaj kulübü erişimini veya oranları kanıtlamaz. Tedarikçi dağıtım hakları, gerçek envanter ve geçerli şartlar istenen tarihler için doğrulanmalıdır."
+    ]
+  ],
+  "photoCaptions": [
+    "Ses Illetes  plaj koruma alanında",
+    "Es Pujols  sahil şeridinde gezinti",
+    "Migjorn Plajı  Formentera'nın güney kıyısı",
+    "Es Arenals  doğu Migjorn plajı",
+    "Cala Saona  koy üzerinde akşam ışığı",
+    "Far de la Mola  doğu platosunda deniz feneri",
+    "Es Cal de Sant Agust  küçük balıkçı limanı",
+    "Formentera'nın feribot limanında La Savina  tekneleri ve iskeleleri",
+    "Cap de Barbaria  deniz feneri ve güney batı manzarası"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Beş Çiçek  otel mimarisi ve paylaşılan alanlar",
+      "Beş Çiçek  tasarım liderliğindeki otel iç mekanları",
+      "Beş Çiçek  ışık dolu misafir odası ve çağdaş tasarım"
+    ],
+    [
+      "Gecko  Migjorn'daki mülkün havadan görünümü",
+      "Gecko  otel tarafından yayınlanan Gecko Çift kişilik oda",
+      "Gecko  plaj kulübü yüzme havuzu"
+    ],
+    [
+      "Teranka  Akdeniz mimarisi ve mülkiyet ayarı",
+      "Teranka  misafir odası resmi web sitesinden iç mekan",
+      "Teranka  otel atmosferi ve paylaşılan alanlar"
+    ],
+    [
+      "Cala Saona  resmi oda-gallery fotoğrafı",
+      "Cala Saona  otel zeminleri ve ayarı",
+      "Cala Saona  misafir odası ve iç stil"
+    ]
+  ],
+  "seoTitle": "Formentera: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Formentera'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Formentera'da gerçek lüksün, sahilin doğru gerilmesi, sessiz ve telaşsız hareketlerle gösteriden daha fazla ilgisi vardır. Yürünebilir Es Puls, Migjorn'un çam kaplı kıyıları ve gün batımına bakan Cala Saona'nın her biri farklı bir konaklama türünü davet ediyor."
+}

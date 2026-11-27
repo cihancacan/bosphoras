@@ -1,0 +1,156 @@
+{
+  "name": "Jackson Hole",
+  "country": "Estados Unidos",
+  "eyebrow": "Bosphoras · Estancias de lujo · Selección independiente",
+  "heading": "Jackson Hole: Tetons salvajes, considerado el lujo y la atracción del oeste.",
+  "intro": "Los Teton tienen una escala que hace que incluso el albergue más grande se sienta íntimo. Antes de comparar habitaciones, decidir si sus días giran en torno al tranvía y la montaña de Teton Village o la plaza histórica de Jackson, galerías y restaurantes. Estos son dos ritmos de viaje separados dentro del mismo valle.",
+  "editorial": "Four Seasons y Caldera House pertenecen a Teton Village, donde la logística del esquí establece la agenda. Four Seasons funciona como un complejo de servicio completo; Caldera House es una colección íntima de ocho suites sustanciales con cocinas reales. Hotel Jackson es una opción del centro con traslados del resort y un spa moderno, mientras que The Wort expresa la hospitalidad histórica de Jackson. Jackson Hole Mountain Resort, la ciudad y los parques nacionales son experiencias geográficamente diferentes, con conducción y acceso dependientes del clima.",
+  "hotelIntro": "Cuatro estancias genuinamente diferentes verificadas en los sitios oficiales: Four Seasons Resort Jackson Hole, Caldera House, Hotel Jackson, The Wort Hotel. Ubicación, nivel de servicio y el ambiente del hotel no son intercambiables.",
+  "areas": [
+    [
+      "Teton Village",
+      "La base más simple para los primeros días de montaña y el acceso al tranvía.",
+      "Jackson Town Square no está a un paseo."
+    ],
+    [
+      "Plaza de la ciudad",
+      "Calles históricas y restaurantes independientes crean más opciones nocturnas.",
+      "El centro de la ciudad no es esquí-en/ski-out."
+    ],
+    [
+      "Río serpiente",
+      "Paisajes fluviales amplios para excursiones guiadas cuidadosamente planificadas.",
+      "Las actividades dependen de las condiciones del río, el clima y los permisos."
+    ],
+    [
+      "Grand Teton",
+      "Espectacular paisaje de montaña y senderos de temporada.",
+      "El acceso al invierno y la observación de vida silvestre siguen las reglas del parque."
+    ],
+    [
+      "Wilson y Moose",
+      "Bases de alojamiento más tranquilas y tiempos de viaje más largos en el mundo real.",
+      "Consulta las condiciones de la carretera y los planes de traslado."
+    ]
+  ],
+  "experiences": [
+    [
+      "Comience con el tranvía de montaña",
+      "Coordine el equipo y el tiempo de elevación desde la base correcta."
+    ],
+    [
+      "Una noche en la Plaza de la Ciudad",
+      "Galerías y una experiencia de pueblo independiente después de la montaña."
+    ],
+    [
+      "Vida silvestre con cuidado",
+      "La observación ética de la vida silvestre protege a los animales y a los visitantes."
+    ],
+    [
+      "Un viaje de verano occidental",
+      "Ríos y senderos ofrecen una experiencia totalmente diferente."
+    ]
+  ],
+  "checks": [
+    "Confirme la dirección real de la propiedad y las necesidades de transporte.",
+    "Compruebe las operaciones estacionales para sus fechas específicas.",
+    "Comparar habitaciones, suites, cabañas y residencias familiares.",
+    "No asumas que todas las propiedades tienen acceso a esquí-in/ski-out.",
+    "Verifique que las actividades deseadas operen durante su visita.",
+    "No se reclama ninguna tasa de Bosphoras en vivo o inventario de reserva."
+  ],
+  "hotels": [
+    [
+      "Teton Village",
+      "En Teton Village, Four Seasons combina un entorno orientado a la pendiente con servicio completo de resort, habitaciones, residencias y restaurantes. La experiencia es un retiro de montaña cuidadosamente orquestado, no una dirección entre las galerías y restaurantes independientes de Jackson Town Square.",
+      "Confirme las fechas estacionales, la categoría exacta de alojamiento, los servicios incluidos y el viaje real desde Teton Village; no se reclama ningún inventario de Bosphoras verificado.",
+      "Confirme las fechas estacionales, la categoría exacta de alojamiento, los servicios incluidos y el viaje real desde Teton Village; no se reclama ningún inventario de Bosphoras verificado.",
+      "En Teton Village, Four Seasons combina un entorno orientado a la pendiente con servicio completo de resort, habitaciones, residencias y restaurantes. La experiencia es un retiro de montaña cuidadosamente orquestado, no una dirección entre las galerías y restaurantes independientes de Jackson Town Square."
+    ],
+    [
+      "Teton Village",
+      "A pocos pasos del tranvía de Teton Village, Caldera House es una dirección muy íntima con sólo ocho suites.Diseños de dos y cuatro dormitorios, cocinas adecuadas y grandes áreas de estar lo hacen particularmente atractivo para estancias familiares y de grupo que se sienten más como una residencia privada.",
+      "Confirme las fechas estacionales, la categoría exacta de alojamiento, los servicios incluidos y el viaje real desde Teton Village; no se reclama ningún inventario de Bosphoras verificado.",
+      "Confirme las fechas estacionales, la categoría exacta de alojamiento, los servicios incluidos y el viaje real desde Teton Village; no se reclama ningún inventario de Bosphoras verificado.",
+      "A pocos pasos del tranvía de Teton Village, Caldera House es una dirección muy íntima con sólo ocho suites.Diseños de dos y cuatro dormitorios, cocinas adecuadas y grandes áreas de estar lo hacen particularmente atractivo para estancias familiares y de grupo que se sienten más como una residencia privada."
+    ],
+    [
+      "Centro de Jackson",
+      "El Hotel Jackson está firmemente arraigado junto a Town Square, con restaurantes, galerías de arte y calles del centro a sus puertas. Su estación de esquí organizada y modernas instalaciones de bienestar permiten a los huéspedes combinar días de montaña con una auténtica noche de la ciudad de Jackson; no está al pie de los ascensores.",
+      "Confirme las fechas estacionales, la categoría exacta de alojamiento, los servicios incluidos y el viaje real desde el centro de Jackson; no se reclama inventario de Bosphoras verificado.",
+      "Confirme las fechas estacionales, la categoría exacta de alojamiento, los servicios incluidos y el viaje real desde el centro de Jackson; no se reclama inventario de Bosphoras verificado.",
+      "El Hotel Jackson está firmemente arraigado junto a Town Square, con restaurantes, galerías de arte y calles del centro a sus puertas. Su estación de esquí organizada y modernas instalaciones de bienestar permiten a los huéspedes combinar días de montaña con una auténtica noche de la ciudad de Jackson; no está al pie de los ascensores."
+    ],
+    [
+      "Centro de Jackson",
+      "El Wort es un hito histórico de Jackson, mejor para los visitantes atraídos por el patrimonio de la ciudad de Wyoming y el ambiente del centro de la ciudad que para un complejo de montaña construido a propósito. Su carácter es el punto; los tipos de habitación y el bullicio de la noche deben evaluarse en sus propios méritos.",
+      "Confirme las fechas estacionales, la categoría exacta de alojamiento, los servicios incluidos y el viaje real desde el centro de Jackson; no se reclama inventario de Bosphoras verificado.",
+      "Confirme las fechas estacionales, la categoría exacta de alojamiento, los servicios incluidos y el viaje real desde el centro de Jackson; no se reclama inventario de Bosphoras verificado.",
+      "El Wort es un hito histórico de Jackson, mejor para los visitantes atraídos por el patrimonio de la ciudad de Wyoming y el ambiente del centro de la ciudad que para un complejo de montaña construido a propósito. Su carácter es el punto; los tipos de habitación y el bullicio de la noche deben evaluarse en sus propios méritos."
+    ]
+  ],
+  "faq": [
+    [
+      "¿Dónde deberían alojarse los visitantes por primera vez en Jackson Hole?",
+      "Elija por acceso a la montaña, restaurantes a poca distancia, privacidad y logística familiar. Teton Village y Town Square no son la misma base."
+    ],
+    [
+      "¿Los cuatro hoteles son equivalentes?",
+      "No. Four Seasons Resort Jackson Hole y Hotel Jackson, por ejemplo, ofrecen diferentes estilos de alojamiento y arreglos de acceso."
+    ],
+    [
+      "¿Qué alojamiento es el mejor para familias?",
+      "Mire de cerca las habitaciones de conexión, residencias y diseños de cabinas. Confirme edades, camas, instalaciones incluidas y tiempos de viaje reales."
+    ],
+    [
+      "¿Puedo esquiar directamente desde mi hotel?",
+      "Sólo algunas propiedades particulares proporcionan esto, dependiendo de las condiciones de montaña y la apertura del ascensor. Cerca no es lo mismo que el esquí-en / esquí-salida."
+    ],
+    [
+      "¿Qué puedo hacer en Jackson Hole sin esquiar?",
+      "El destino gastronómico, el spa, el paisaje y las actividades guiadas pueden ser gratificantes más allá de las pistas, con apertura y acceso sujeto a temporada."
+    ],
+    [
+      "¿Debo arreglar el transporte por adelantado?",
+      "Para propiedades aisladas, carreteras de invierno, traslados al aeropuerto o cenas nocturnas, organizar el transporte basado en direcciones precisas y el tiempo actual."
+    ],
+    [
+      "¿Los hoteles ya son reservables en Bosphoras?",
+      "No hay disponibilidad o precio se representa como reservable sin inventario de proveedores verificado. Esto sigue siendo una lista editorial independiente."
+    ]
+  ],
+  "photoCaptions": [
+    "Montañas de Teton — Fotografía de origen de Jackson Hole pendiente de revisión",
+    "Jackson Town Square — Fotografía de origen de Jackson Hole pendiente de revisión",
+    "Snake River — Fotografía de origen de Jackson Hole pendiente de revisión",
+    "Grand Teton — Fotografía de origen de Jackson Hole pendiente de revisión",
+    "Parque Nacional — Fotografía de origen de Jackson Hole pendiente de revisión",
+    "Vida silvestre · vista verificada de Jackson Hole",
+    "Cámaras cubiertas de nieve · vista verificada de Jackson Hole"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Fotografía de Four Seasons Resort Jackson Hole",
+      "Fotografía de Four Seasons Resort Jackson Hole",
+      "Fotografía de Four Seasons Resort Jackson Hole"
+    ],
+    [
+      "Fotografía de Caldera House",
+      "Fotografía de Caldera House",
+      "Fotografía de Caldera House"
+    ],
+    [
+      "Fotografía del Hotel Jackson",
+      "Suite de invitados con chimenea y balcón en el Hotel Jackson",
+      "Fotografía del Hotel Jackson"
+    ],
+    [
+      "El histórico salón junto a la chimenea del Wort Hotel",
+      "Fotografía de The Wort Hotel",
+      "Habitación de estilo occidental en The Wort Hotel"
+    ]
+  ],
+  "seoTitle": "Jackson Hole: estancias, áreas y experiencias de lujo",
+  "hotelSeoTitle": "Hoteles de lujo en Jackson Hole: guía comisariada",
+  "seoDescription": "Los Teton tienen una escala que hace que incluso el albergue más grande se sienta íntimo. Antes de comparar habitaciones, decidir si sus días giran en torno al tranvía y la montaña de Teton Village o la plaza histórica de Jackson, galerías y restaurantes. Estos son dos ritmos de viaje separados dentro del mismo valle."
+}

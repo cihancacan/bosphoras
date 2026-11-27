@@ -1,0 +1,107 @@
+{
+  "name": "Antália",
+  "country": "Turquia",
+  "eyebrow": "O Mediterrâneo Turco",
+  "heading": "Antalya: o Mediterrâneo, considerado.",
+  "intro": "Luxo de resort à beira-mar, estadias familiares espaçosas, golfe de campeonato e ruas históricas: Antalya não é um destino. Belek, Kemer e a cidade velha criam experiências muito diferentes.",
+  "editorial": "Escolha o seu ritmo antes do seu hotel: considerado luxo com tudo incluído, uma baía abaixo das montanhas ou uma pequena base da cidade. Os tempos de transferência variam significativamente por área.",
+  "hotelIntro": "Quatro referências de hotel que refletem diferentes experiências de Antalya-coast. Verifique as datas e as instalações operacionais diretamente com cada propriedade.",
+  "areas": [
+    [
+      "Belek & Kadriye",
+      "Praias de areia, campos de golfe e resorts de serviço completo com muito o que fazer no terreno.",
+      "Espere umas férias conduzidas pelo resort, não necessariamente um bairro da cidade a pé."
+    ],
+    [
+      "Kemer & a costa da montanha",
+      "Enseadas abaixo das montanhas verdes, com uma atmosfera paisagem-primeiro.",
+      "Verifique o tipo de praia e as distâncias para atividades além da propriedade."
+    ],
+    [
+      "Kaleiçi & Konyaalt",
+      "Ruas históricas, restaurantes, um porto antigo e praias da cidade para os visitantes que querem explorar Antalya.",
+      "Esta é uma experiência diferente dos grandes resorts Belek."
+    ]
+  ],
+  "experiences": [
+    [
+      "O refinado resort familiar",
+      "Compare layouts de suítes, restaurantes, instalações para crianças e piscinas realmente aquecidas em sua temporada."
+    ],
+    [
+      "Golf pelo Mediterrâneo",
+      "Uma estadia de golfe Belek com tempos de tee e horários de manutenção do curso verificados com antecedência."
+    ],
+    [
+      "Tempo na Cidade Velha",
+      "Explore Kaleiçi e seu porto, depois retorne à relativa calma de sua acomodação."
+    ]
+  ],
+  "checks": [
+    "Localização real: O centro de Belek, Kemer e Antália não são intercambiáveis.",
+    "O escopo all-inclusive real, reservas de restaurantes e inclusões premium.",
+    "Piscinas aquecidas e operação sazonal de instalações familiares.",
+    "Transferências do aeroporto, acesso ao golfe e qualquer manutenção do campo."
+  ],
+  "hotels": [
+    [
+      "Kadriye  Belek",
+      "Uma base de resort high-end combinando suítes, moradias e experiências focadas em golfe.",
+      "Confirme o acesso ao golfe, instalações familiares e serviços sazonais.",
+      "Para uma fuga Belek de serviço completo combinando golfe, instalações familiares, piscinas e moradias, com grande parte da estadia ocorrendo no resort.",
+      "O Regnum Carya se destaca pela amplitude de suas instalações e sua forte conexão com a cena do golfe em Belek. É um resort em que os hóspedes podem passar confortavelmente dias inteiros, movendo-se entre a praia, piscinas e acomodações variadas. Uma característica de piscina nunca deve ser assumida para se aplicar a quartos padrão. Antes de escolher, verifique o plano de tabuleiro preciso, arranjos de golfe, instalações sazonais e a posição de um quarto em relação às zonas de resort movimentadas."
+    ],
+    [
+      "Kadriye  Belek",
+      "Um resort à beira-mar contemporâneo para estadias focadas em amenidades na propriedade.",
+      "Verifique o tipo de quarto e o plano exato ou serviços incluídos.",
+      "Para a vida contemporânea resort mediterrâneo, com suites, piscinas e opções de refeições perto da costa de golfe Belek.",
+      "Cullinan Belek oferece arquitetura de resort contemporânea e espaço ao ar livre substancial: é um lugar para se instalar em vez de usar simplesmente como uma base da cidade. Lagoa, natação e vista para o mar categorias descrevem experiências diferentes; comparar privacidade terraço, orientação quarto e acesso à piscina real. Um nome de categoria por si só não garante uma piscina privada. Confirme reserva de jantar, entretenimento e instalações familiares para as datas de viagem reais."
+    ],
+    [
+      "Belek",
+      "Um resort de praia substancial com entretenimento e atividades orientadas para a família.",
+      "Confirmar salas de conexão e se atividades específicas estão incluídas.",
+      "Para umas férias de praia com a família ou amigos, e uma grande variedade de instalações em um grande resort de serviço completo.",
+      "O Rixos Premium Belek é o fim energético do espectro de resorts de luxo: praia, atividades, restaurantes e acomodações construídas em torno de vários estilos de viagem. É melhor para os hóspedes que valorizam a escolha do que aqueles que procuram um pequeno refúgio isolado. Confirme exatamente o que está incluído, qualquer acesso a instalações de lazer parceiras, distâncias internas a pé e orientação do quarto. As famílias devem comparar layouts reais de dormir em vez de metros quadrados sozinhas."
+    ],
+    [
+      "Kemer  côte ouest",
+      "Uma alternativa com um cenário dramático de montanha e Mediterrâneo, em vez da costa de golfe de Belek.",
+      "Verifique a logística de transferência do aeroporto e sua categoria de quarto real.",
+      "Para uma fuga orientada pela paisagem entre montanhas, enseadas, suítes espaçosas e moradias à beira-mar, em vez dos resorts Belek liderados pelo golfe.",
+      "Maxx Royal Kemer tem uma personalidade muito diferente dos grandes resorts Belek: falésias, encostas verdes e a costa de Kemer definem o cenário. Algumas categorias são projetadas para dias inteiros entre o espaço ao ar livre privado e o mar, mas as vistas, layouts e acesso à praia variam. Para villas, confirme a configuração do quarto, privacidade, serviços associados e transferências. Uma fotografia da Beach Villa não deve ser tratada como representante de uma suíte regular."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Ilustração editorial do pôr-do-sol quente gerada por AI inspirada na costa de Antalya",
+    "Antalya Hotel em Antália",
+    "O histórico porto de Kaleiçi em Antália"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Resort Regnum Carya em Belek",
+      "Piscina com piscina no Regnum Carya",
+      "A Suíte Jade no Regnum Carya"
+    ],
+    [
+      "Cullinan Belek resort e cena da piscina",
+      "Piscinas e terraços ao ar livre em Cullinan Belek",
+      "Suíte duplex de natação em Cullinan Belek"
+    ],
+    [
+      "Rixos Premium Belek Mediterranean resort view",
+      "Praia e piscina em Rixos Premium Belek",
+      "Quarto Deluxe em Rixos Premium Belek"
+    ],
+    [
+      "Vista aérea de Maxx Royal Kemer entre floresta de pinheiros e mar",
+      "Piscinas e villas em Maxx Royal Kemer",
+      "Interior e terraço em Maxx Royal Kemer"
+    ]
+  ],
+  "seoTitle": "Antalya: estadias de luxo, áreas e experiências",
+  "hotelSeoTitle": "Hotéis de luxo em Antália: guia com curadoria",
+  "seoDescription": "Luxo de resort à beira-mar, estadias familiares espaçosas, golfe de campeonato e ruas históricas: Antalya não é um destino. Belek, Kemer e a cidade velha criam experiências muito diferentes."
+}

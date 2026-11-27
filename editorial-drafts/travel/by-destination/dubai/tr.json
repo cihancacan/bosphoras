@@ -1,0 +1,110 @@
+{
+  "name": "Duba",
+  "country": "Birleşik Arap Emirlikleri",
+  "eyebrow": "Şehir cazibesi ve kıyı şeridi",
+  "heading": "Dubai: ufkunuzu seçin.",
+  "intro": "Plaj için Palm Jumeirah, rafine şehir yaşamı için Business Bay, dönüm noktası manzaraları için Downtown ve sahil yürüyüşleri için Dubai Marina: Dubai'de konum her şeyi değiştirir.",
+  "editorial": "Mimari gösteriyi gerçek deneyimden ayırıyoruz: plaj erişimi, doğrulanmış oda görünümü, trafik ve yakındaki yemek konusu, bir gökyüzü fotoğrafından daha fazla.",
+  "hotelIntro": "Cilalı bir şehir otelinden Palm Jumeirah tesisine kadar dört farklı adres. Canlı fiyatlar veya kullanılabilirlik olmadan bağımsız bir kısa liste.",
+  "areas": [
+    [
+      "Palm Jumeirah",
+      "Plaj tatil köyleri, hedef yemek ve daha yavaş bir kıyı çizgisi ritmi; Palm'dan uzaklaşmaya izin verir.",
+      "Özel plaj erişimini kontrol edin ve asla her odadan simgesel manzaralar almayın."
+    ],
+    [
+      "Business Bay & Downtown yakınlarında yapılacak şeyler",
+      "Çağdaş oteller, silüet mimarisi, alışveriş ve şehir yemeği.",
+      "Bir 'skyline' odası otomatik olarak Burj Khalifa ile karşı karşıya gelmez."
+    ],
+    [
+      "Dubai Marina & Jumeirah",
+      "Promenades, şehir plajları, yemek ve aktif bir sahil tatili havası.",
+      "Marina, JBR ve Jumeirah'ı ayırt edin: bunlar ayrı alanlardır."
+    ]
+  ],
+  "experiences": [
+    [
+      "Şehrin üzerinde bir teras",
+      "İyi odaklı bir süit, gün batımı panorama ve görünümü için seçilen bir yemek masası."
+    ],
+    [
+      "Sahilden kaçış",
+      "Özel plaj, havuz, spa ve boş zaman yerine dolu bir seyahat programı."
+    ],
+    [
+      "Aile ile Dubai",
+      "Pratik süit düzenlerini, yaşa uygun tesisleri ve gerçekçi transfer rotalarını seçin."
+    ]
+  ],
+  "checks": [
+    "Palm Jumeirah, Downtown, Business Bay, Marina ve Jumeirah Plajı'nı karıştırmayın.",
+    "Plaj / havuz erişimini ve aslında odanıza dahil olan tesisleri onaylayın.",
+    "Ödemeden önce vergi, ücret, yemek, transfer ve iptal koşullarını kontrol edin.",
+    "Gerçek oda görünümlerini doğrulayın ve yoğun saat trafiğine izin verin."
+  ],
+  "hotels": [
+    [
+      "Marasi Körfezi  Business Bay",
+      "Oda kategorisine göre tasarım, yemek ve Downtown görünümlerini birleştiren zarif bir şehir adresi.",
+      "Tam görünüm, balkon ve kahvaltı şartlarını onaylayın.",
+      "Sofistike kentsel yaşama, tasarıma, silüet yüzmeye ve şehir yemeklerine çekilen konuklar için geniş bir sahil kenarı tesisi yerine.",
+      "Lana, bir plaj tesisinin ölçeğinde şehir cazibesinden oluşur. Çağdaş alanlar, oda yönelimine göre değişen Downtown manzaralarıyla Marasi Körfezi'ne bakar. Temyizi, bir aity süiti, High Society çatı havuzu ve düşünceli bir yemek sahnesi arasında hareket etmekten ibarettir. Marina ve doğrudan Burj Khalifa manzaraları, kesin süit kategorisi ve restoran erişimi arasındaki farkı kontrol edin. Çatıdaki bir otel havuzu, özel bir oda içi havuz değildir."
+    ],
+    [
+      "Za'abeel  merkezi Dubai",
+      "Mimari bir kentsel konaklama, plaj yaşamı yerine şehir deneyimlerine odaklanmıştır.",
+      "Erişim ve oda tipini onaylayın; Burası sahil kenarı tesisi değildir.",
+      "Mimari liderliğindeki şehir Dubai için, yükseltilmiş havuzlar, hedef yemek ve şehrin büyük ilçelerine rahat erişim.",
+      "One&Only One Za'abeel, ikiz kuleler ve aralarında asılı duran dikkat çekici Link ile şekillenen Dubai'nin belirgin bir dikey deneyimini sunuyor. Mimari, yükseltilmiş açık alanlar ve hedef yemek, çekiciliğin bir parçasıdır. Bu bir sahil kenarı geri çekilme değildir. Yaş kısıtlamalarını ve bireysel havuzlara, restoran rezervasyonlarına ve kesin oda görünümüne erişimi onaylayın; Skyline görünümleri oryantasyonla önemli ölçüde değişir."
+    ],
+    [
+      "Palm Jumeirah",
+      "Plaj kenarındaki bir tatil beldesi havuzlar, yemek ve Palm Jumeirah'ın yaşamasına odaklandı.",
+      "Oda manzarasını, süit faydalarını ve gerçek katılımları farklılaştırın.",
+      "Palm Jumeirah'ın tiyatro tarafı için, dönüm noktası mimarisi, hedef yemek, deniz erişimi ve geniş tatil tesisleri.",
+      "Atlantis The Royal'de mimari, konaklamadan ayrılmaz. Denize bakan teraslar, dramatik havuzlar ve yemek deneyimleri, onu küçük bir saklanma yerine animasyonlu bir yer haline getirir. Bir Sky Pool Villa'nın görüntüleri, standart bir konuk odası değil, belirli bir kategoriyi tanımlar. Palm'a karşı deniz görünümlerini, havuza yaş ve açılış saatlerine göre erişimi, hizmetler, iptal koşulları ve Downtown'a yolculuğu karşılaştırın."
+    ],
+    [
+      "Umm Suqeim  Jumeirah",
+      "Plaj hayatı ve rafine bir tatil ritmi arayanlar için çağdaş bir Jumeirah sahil oteli.",
+      "Bahçe, Körfez ve Burj Al Arab görünüm kategorilerini dikkatlice kontrol edin.",
+      "Plaj yaşamı için yemyeşil bahçeler ve çiftler veya aileler için gökyüzü çizgisinin yoğunluğundan uzak rahat bir deniz kenarı konaklaması.",
+      "Jumeirah Al Naseem, Dubai lüksünün daha yumuşak bir yorumunu sunar: yeşillik, soluk kum, deniz ışığı ve gökdelen dramasından ziyade kolay bir kıyı ritmi. Jumeirah kıyı şeridi ayarı, Burj Al Arab'ı her odadan görünmemesine rağmen daha geniş bir sahne içine yerleştirir. Seçici tatil köyü, Körfez ve dönüm noktası odaklı kategoriler; Madinat Jumeirah tesislerinin hangileri dahil edildiğini kontrol edin ve aileler için uyku düzenlemelerini karşılaştırın."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Palm West Beach, Dubai'nin sıcak günbatımı silüetine karşı canlı bir lüks sahil şeridi",
+    "Palm Jumeirah'ın köpükleri ve çevresindeki mavi körfez sularının güneşli hava manzarası",
+    "Burj Khalifa, Downtown Dubai'nin turkuaz çeşme gölünün üzerinde gün ışığında",
+    "Dubai Marina'daki lüks yatlar, parlak sahil silüetine yansıdı",
+    "Dubai Marina gün ışığında fotoğraflandı",
+    "Dubai Marina'nın panoramik manzarası"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Dubai'nin Marasi Körfezi kıyısındaki Lana mimarisi",
+      "Lana's High Society çatı sonsuzluk havuzu",
+      "Marina Royal Suite Lana'da oturma odası"
+    ],
+    [
+      "Bir Za'abeel kuleleri ve Dubai'nin üzerinde askıya alınan bağlantı",
+      "One Za'abeel kuleleri arasında asılı bağlantı sonsuzluk havuzu",
+      "Buranın yakınındaki restoranlar: One&Only One Za'abeel"
+    ],
+    [
+      "Atlantis Palm Jumeirah üzerinde Kraliyet dönüm noktası tatil mimarisi",
+      "Yükseltilmiş Bulut 22 havuz Atlantis The Royal",
+      "Atlantis The Royal'de denize bakan Sky Pool Villa oturma odası"
+    ],
+    [
+      "Jumeirah Al Naseem tatil bahçeleri, havuzlar ve plaj",
+      "Jumeirah Al Naseem havuz ile bir Burj Al Arap görünüm",
+      "Jumeirah Al Naseem'deki Körfez Okyanusu Süiti'nin yatak odası"
+    ]
+  ],
+  "seoTitle": "Duba: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Duba'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Plaj için Palm Jumeirah, rafine şehir yaşamı için Business Bay, dönüm noktası manzaraları için Downtown ve sahil yürüyüşleri için Dubai Marina: Dubai'de konum her şeyi değiştirir."
+}

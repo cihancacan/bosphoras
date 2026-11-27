@@ -1,0 +1,110 @@
+{
+  "name": "Paris",
+  "country": "Fransa",
+  "eyebrow": "Samimi bir Işık Şehri",
+  "heading": "Paris: Kalmanın istisnai bir yolu.",
+  "intro": "Gün ağarırken Seine, bir saray otelinin salonları ve Sol Banka'da dolaşmanın keyfi: Paris'te kalmak seçtiğiniz adresle tanımlanır. Konum, doğru süit ve şehir meselesine çıkabilmek.",
+  "editorial": "Kısa listemiz dört farklı kişilik hakkındadır, yıldızlar yarışması değil. Seine görünümü veya özel avlu, çağdaş zanaat veya klasik ihtişam, gizli bir bahçe veya Saint-Germain: Bu kararlar oda kategorisi pazarlamasından çok önce önemlidir.",
+  "hotelIntro": "Farklı kimliklere sahip dört istisnai Paris adresi: Seine'nin üzerindeki Cheval Blanc, Altın Üçgen'deki George V, Faubourg'daki Le Bristol ve Sol Banka'daki Mandarin Oriental Lutetia. Hiçbir oran veya envanter mevcut olarak sunulmaz.",
+  "areas": [
+    [
+      "Louvre, Seine & Samaritaine yakınındaki oteller",
+      "Louvre, Pont-Neuf, nehir kıyılarına ve Sol Banka'ya yürümek için ideal olan tarihi merkezi Paris. Burada kalmak günlük yürüyüşü bir etkinliğe dönüştürüyor.",
+      "Bir 'Seine view' zemine, oryantasyona ve tam oda tipine bağlıdır."
+    ],
+    [
+      "Altın Üçgen ve Faubourg Saint-Honor",
+      "Simgesel saray otelleri, couture ve hedef yemek Paris. Avenue George V ve Faubourg Saint-Honor farklı ritimleri ve yürüme mesafeleri vardır.",
+      "Oda görünümünü ve gürültü seviyelerini onaylayın: bir iç avlu ve büyük bir cadde çok farklı hissettiriyor."
+    ],
+    [
+      "Saint-Germain-des-Prs ve Sol Banka",
+      "Kitapçılar, sanat galerileri, kafeler ve zarif bir yerleşim temposu. Yaya olarak oyalanmak ve keşfetmek isteyen misafirler için Paris.",
+      "Bazı Eyfel Kulesi süit manzaraları nadirdir; asla her oda kategorisiyle geldiklerini varsaymayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Seine'den Paris",
+      "Doğru saatte özel bir tekne olan Louvre, tarihi köprüler arasında hareket eden rıhtımlardan ve ışıktan göz attı. Zamanlama dikkate alındığında basit bir lüks."
+    ],
+    [
+      "Yemek hatırlamaya değer",
+      "Sadece itibar değil, atmosfer ve hizmet için harika bir yemek odası seçin. Rezervasyonlar ve herhangi bir kıyafet kodunun onaylanması gerekir."
+    ],
+    [
+      "Sol Banka senin hızınla",
+      "Saint-Germain'deki kahve, bir kitapçı, sessiz bir galeri ve Lüksemburg Bahçeleri'ne doğru telaşsız bir yürüyüş."
+    ]
+  ],
+  "checks": [
+    "Önce istediğiniz Paris'i seçin: Sol Banka, Louvre ve Altın Üçgen çok farklı konaklamalar üretir.",
+    "Gerçek oda kategorisini, görünümü, zemini, balkonu, spa erişimini ve herhangi bir bağlantı odasını onaylayın.",
+    "Restoran rezervasyonlarını, transferleri ve varış saatlerini planlayın; Ünlü otel restoranları bile tamamen rezerve edilebilir.",
+    "İptal kurallarını, vergileri, kahvaltıyı ve kategoriye özel dahil edilmeleri karşılaştırın."
+  ],
+  "hotels": [
+    [
+      "La Seine  Samaritaine  1er",
+      "Seine'nin üzerinde, sanatsal iç mekanları, olağanüstü sağlıklı yaşamı ve seçilen süitlerdeki ikonik şehir manzaralarını birleştiren sağduyulu bir çağdaş maison.",
+      "Görünümü, zemini, düzeni ve tam süit kategorisini doğrulayın; fotoğraflar belirli oda tiplerini tasvir eder.",
+      "Paris'in tarihi merkezinde, kapınızın önünde Seine'nin olduğu ve yoğun bir kişisel yer anlayışıyla ihtiyatlı bir çağdaş kalmak için.",
+      "Cheval Blanc Paris, geleneksel saraya çağdaş ve sağduyulu bir kişilik kazandırır. Seine'de La Samaritaine'nin bir kısmını işgal ederek, nehrin merkezi kalmasını sağlar: Louvre ve Pont-Neuf'a yürüyüşler, anıt manzaralarını değiştirir ve dikkatlice tasarlanmış bir doku ve ışık dünyası. Spa ve havuz, şehirden sonra daha yavaş bir tempo sunar. Önemli karar, gerçek konaklama kategorisidir: süitlerin hepsi aynı manzaraya, balkona veya manzaraya sahip değildir."
+    ],
+    [
+      "Avenue George V  8e",
+      "Klasik Paris saray tiyatrosu: olağanüstü çiçekler, hedef yemek, mermer bir avlu ve Altın Üçgen'deki zarif süitler.",
+      "Seçkin bulvar, avlu ve silüet kategorileri; her oda Eyfel Kulesi'ne bakmıyor.",
+      "Büyük otel töreni için, muhteşem çiçekler, yemek ve ünlü bir Altın Üçgen adresi olarak kabul edilir.",
+      "George V tam ölçekli Paris saray misafirperverliği: mermer lobi, olağanüstü çiçek tesisatları, iç avlular ve zarif bir hizmet kültürü. Kamu alanları ve yemek sahnesi, sadece konaklamanın değil, deneyimin bir parçasıdır. Yine de otelin tiyatrosu odaya özgü gerçekleri gizlememelidir: bulvar, avlu ve silüet manzaraları büyük ölçüde farklılık gösterir ve Eyfel Kulesi görünümleri yalnızca belirli kategorilere aittir. Tam odayı doğrulayın ve restoran planlarını iyi bir şekilde yapın."
+    ],
+    [
+      "Faubourg Saint-Honor  8e",
+      "Klasik konut zarafetiyle evlenen Parisli bir kurum, Faubourg Saint-Honor'da tenha bir bahçe ve hedef yemek.",
+      "Yenilenen oda tiplerini, sokak veya bahçe görünümlerini ve tesis erişimini karşılaştırın; Odaların hepsi aynı manzaraya sahip değildir.",
+      "Rafine konut Paris için, şehirde nadir bir gizli bahçe ve önemli bir yemek adresi.",
+      "Le Bristol, gösterişli bir otelden çok son derece zarif bir Paris konutu gibi hissediyor: cömert odalar, hizmet olarak kabul edilen ve tenha bir bahçenin alışılmadık lüksü. Faubourg Saint-Honor'den, butiklere, galerilere ve restoranlara ulaşılabilir. Mekanı, sakinliği ve bahçesi veya sokak yönü için konaklama birimi seçin. Ayırt edici Suite Eden görüntüsü, belirli bir süiti göstermektedir; özel tesisleri standart otel odası olanakları değildir."
+    ],
+    [
+      "Boulevard Raspail  Saint-Germain  6e",
+      "Seçilen süitlerde kültürel mirası, çağdaş tasarımı, sağlıklı yaşamı ve özel çatı görünümlerini harmanlayan bir Sol Banka Art Deco simgesi.",
+      "Süit kategorisini, balkonu ve herhangi bir Eyfel Kulesi manzarasını onaylayın; bunlar standart oda özellikleri değildir.",
+      "Edebi Sol Banka Paris için, Saint-Germain kafe kültürü ve yürüyerek keşfetmek için bir Art Deco dönüm noktası.",
+      "Lutetia, büyük sağ banka saraylarından farklı bir Paris'i ifade eder: kültürel miras, anında tanınabilir bir cephe ve Saint-Germain'in entelektüel, kafe-çizgili atmosferi. Kitapçılar ve galeriler telaşsız sabahları davet eder, ardından spa'da bir öğleden sonra. Bazı istisnai süitler Eyfel Kulesi'ni çerçeveler, ancak bu görüşler genel bir otel hakkı değil, belirli oda kategorileridir. Her süitin görünümünü, balkonunu ve kat planını kontrol edin."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Louvre ve Pont des Arts Paris'in Seine nehir kıyısında",
+    "Seine'den görülen Eyfel Kulesi'nin geniş parlak bir panoraması",
+    "Seine'den Eyfel Kulesi ve Pont Alexandre III'ün görünümü",
+    "Louvre ve Pont des Arts, Seine'deki bir tekneden görüldü",
+    "Arc de Triomphe'den görülen şafakta Champs-lyses",
+    "Saint-Germain-des-Prs kilisesi ve yakınındaki klasik Paris kafeleri"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Tarihi Samaritaine binasında Seine üzerinde Cheval Blanc Paris",
+      "Dior Spa'da havuz ve dinlenme alanı, Cheval Blanc Paris",
+      "Cheval Blanc Paris süiti oturma odası, Paris çatıları ve simgesel yapılar üzerinde bir manzara ile"
+    ],
+    [
+      "Buranın yakınındaki restoranlar: Four Seasons Hotel George V on Avenue George V",
+      "Four Seasons George V'de mermer lobi ve imza çiçek sergisi",
+      "Buranın yakınındaki restoranlar: Four Seasons Hotel George V, Paris"
+    ],
+    [
+      "Le Bristol Paris gölgeli masalar ve özel bahçe terası",
+      "Le Bristol Paris'te Deluxe Süitin Işık dolu yatak odası",
+      "Le Bristol Paris'te Suite Eden'in özel teras kaplıca alanı"
+    ],
+    [
+      "Aydınlanmış Art Nouveau ve Mandarin Oriental Lutetia'nın Art Deco cephesi",
+      "Saint-Germain'deki Lutetia'da kapalı spa yüzme havuzu",
+      "Balkonlu Lutetia süiti ve seçilmiş Eyfel Kulesi manzarası"
+    ]
+  ],
+  "seoTitle": "Paris: lüks konaklamalar, alanlar ve deneyimler",
+  "hotelSeoTitle": "Paris'deki lüks oteller: küratörlü rehber",
+  "seoDescription": "Gün ağarırken Seine, bir saray otelinin salonları ve Sol Banka'da dolaşmanın keyfi: Paris'te kalmak seçtiğiniz adresle tanımlanır. Konum, doğru süit ve şehir meselesine çıkabilmek."
+}

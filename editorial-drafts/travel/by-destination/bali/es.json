@@ -1,0 +1,119 @@
+{
+  "name": "Bali",
+  "country": "Indonesia",
+  "eyebrow": "La isla de los contrastes",
+  "heading": "Bali: de la selva a los océanos.",
+  "intro": "Bali tiene muchas caras: los valles de Ubud, los acantilados de Uluwatu sobre el Océano Índico, las suaves puestas de sol de Jimbaran y la animada playa de Seminyak ofrecen cuatro viajes muy diferentes. Las estancias excepcionales comienzan con la elección del lugar correcto.",
+  "editorial": "Nuestras cuatro direcciones ofrecen un Bali distinto: un santuario de selva tropical sobre el río Ayung, un exclusivo resort en los acantilados de Bukit, una colección aislada de villas Jimbaran y un elegante retiro frente a la playa de Seminyak. Esta es una lista de favoritos editada, no un inventario interminable de villas de aspecto similar.",
+  "hotelIntro": "Cuatro estancias distintivas elegidas por su entorno, servicio y atmósfera: Four Seasons Sayan, Bvlgari Bali, Raffles Bali y The Legian Seminyak. Recomendaciones editoriales independientes, sin inventario en vivo, tarifas o disponibilidad.",
+  "areas": [
+    [
+      "Ubud y el valle de Sayan",
+      "Terrazas de arroz, exuberante bosque, el río Ayung, artes tradicionales y templos. Un viaje más introspectivo, lejos de la playa y con forma de la luz de la mañana.",
+      "Ubud es tierra adentro, no frente a la playa; plan de transporte entre terrazas de arroz, resorts y lugares de interés cultural."
+    ],
+    [
+      "Uluwatu y la península de Bukit",
+      "Los acantilados de piedra caliza, un horizonte ininterrumpido del Océano Índico y villas de piscina privada. Espectacular paisaje, con algunas calas alcanzadas por largos paseos o paseos.",
+      "Un hotel en el acantilado no ofrece automáticamente acceso directo, fácil o sin restricciones a la playa."
+    ],
+    [
+      "Jimbaran y la bahía sur",
+      "Ocasos dorados, escenas de playa, restaurantes casuales frente al mar y villas tranquilamente aisladas. Un equilibrio entre la vida costera relajada y el acceso al sur de Bali.",
+      "Las villas de laderas orientadas a la bahía no están necesariamente en la playa; confirme los traslados a la playa y la vista exacta."
+    ],
+    [
+      "Seminyak y las playas de la costa oeste",
+      "Boutiques, restaurantes, clubes de playa y hoteles a lo largo del océano. Ideal para combinar tiempo en la costa con la vida gastronómica y social.",
+      "La orilla puede ser animada y las corrientes fuertes; comparar la tranquilidad de la habitación y condiciones de baño seguras."
+    ]
+  ],
+  "experiences": [
+    [
+      "Amanecer sobre las terrazas",
+      "Salga temprano a las terrazas de arroz de Tegallalang antes de la multitud, luego deje el resto del día para el valle de Ubud."
+    ],
+    [
+      "Un acantilado sobre el océano",
+      "Siga la espectacular costa de Uluwatu, explore el patrimonio del templo respetuosamente y permanezca sobre la última luz sobre el océano."
+    ],
+    [
+      "Cena con los pies en la arena",
+      "Llegar a Jimbaran a la hora dorada, encontrar una mesa frente a la playa y dejar que la noche se desacelere de forma natural."
+    ],
+    [
+      "Una noche elegante de Seminyak",
+      "Disfrute de boutiques y cenas reflexivas antes de retirarse a una terraza privada y el sonido del mar."
+    ]
+  ],
+  "checks": [
+    "Elija entre Ubud, Uluwatu, Jimbaran y Seminyak antes de decidir sobre el hotel; los traslados pueden ser sustanciales.",
+    "Verifique la villa o suite exacta, vista garantizada de la habitación, piscina privada y términos de servicio personalizados.",
+    "Confirme el verdadero acceso a la playa, las condiciones de baño y el transporte, especialmente desde los resorts de acantilados.",
+    "Considere las condiciones de la estación de lluvias, estado del mar, políticas de cancelación y servicios incluidos."
+  ],
+  "hotels": [
+    [
+      "Sayan · Ubud · vallée de la rivière Ayung",
+      "Un santuario arquitectónico de selva tropical sobre el río Ayung, celebrado por su espectacular llegada al puente y al estanque de loto en la azotea.",
+      "Confirme la categoría villa contra suite, piscina privada y acceso al río: las distribuciones e inclusiones difieren.",
+      "Para la tranquilidad del Valle de Sayan, una arquitectura notable y una estancia de bienestar dirigida por la naturaleza.",
+      "Cuatro estaciones Sayan abre con una llegada inolvidable a través de las copas de los árboles a un estanque de loto circular en la azotea. Abajo, el valle del río Ayung se desarrolla a través de exuberantes jardines y villas privadas. Esto no es un complejo de playa: elija para la tranquilidad, el bienestar y los paisajes culturales alrededor de Ubud. Piscinas privadas y vistas difieren por categoría; fotografías de una villa no prometen las mismas características en otra."
+    ],
+    [
+      "Pecatu · falaises d’Uluwatu",
+      "Diseño italiano-balinesa sobre los acantilados de Bukit, con villas privadas, exuberantes jardines y panoramas de gran alcance del Océano Índico.",
+      "Verifique la categoría exacta de villa y vista, y distinga el acceso a la playa de una propiedad directamente frente a la playa.",
+      "Para el diseño italiano-balinesa, la privacidad de las villas de piscina y vistas al océano Índico.",
+      "Encaramado sobre la costa de Bukit, el Bvlgari Resort Bali combina piedra, madera oscura, jardines tropicales y vistas al océano. Un entorno de acantilados no debe confundirse con un hotel directamente en la playa. Las villas Ocean View y Ocean Cliff tienen diferentes diseños, aspectos y grados de aislamiento. Compare la villa exacta antes de reservar en lugar de asumir que cada característica fotografiada está incluida."
+    ],
+    [
+      "Jimbaran · Colline face à la baie",
+      "Un íntimo refugio en toda la villa, cada villa con su propia piscina y jardín en medio de la ladera con vistas a la bahía de Jimbaran.",
+      "Compare las perspectivas reales del océano, el tamaño de la villa y los arreglos para llegar a la playa.",
+      "Para una estancia aislada villa Jimbaran, piscina privada, jardín y servicio personalizado.",
+      "Raffles Bali se siente como una pequeña colección de villas aisladas en las laderas sobre la bahía de Jimbaran. El placer se encuentra en piscinas privadas, jardines y noches sin prisas. Todas las villas tienen piscinas, pero el aspecto, la distribución y las vistas varían según la categoría. Confirme los arreglos para el acceso a la playa en lugar de asumir una villa en las laderas se encuentra directamente en la arena."
+    ],
+    [
+      "Seminyak · Front de mer",
+      "Un elegante refugio frente a la playa con sorprendentes piscinas infinitas, vistas al mar abierto y fácil acceso a la escena gastronómica de Seminyak.",
+      "Confirme las perspectivas exactas de la suite, la privacidad de la terraza y las diferencias entre el hotel y las villas del Club ubicadas por separado.",
+      "Para una estancia frente al mar con piscinas, restaurantes cercanos y el animado ambiente del barrio de Seminyak.",
+      "El Legian Seminyak combina amplias piscinas orientadas al mar con la facilidad de salir a pie a los restaurantes y boutiques de Seminyak. Es un refugio urbano frente a la playa, no un santuario de selva aislado. Distinguir las principales suites del hotel de las villas Club y confirmar la vista real de la habitación. Las corrientes de mar y surf deben ser revisados independientemente de las instalaciones del complejo."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Acantilados de piedra caliza Uluwatu sobre el océano Índico azul",
+    "Terrazas de arroz Tegallalang en el exuberante campo de Ubud de Bali",
+    "Playa Jimbaran y cena frente al mar al atardecer",
+    "Playa Seminyak en Bali bajo cálida luz de la puesta del sol",
+    "Cala Padang Padang en la costa sur de Bali",
+    "Campos de arroz con terrazas verdes en Tegallalang cerca de Ubud"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "La azotea del estanque de loto sobre la selva del valle de Sayan",
+      "Villa frente al río entre bambú y árboles en Four Seasons Sayan",
+      "Villa spa de cuatro estaciones Sayan rodeada de estanques de loto"
+    ],
+    [
+      "Bvlgari Balí piscina de la cima del acantilado sobre el Océano Índico",
+      "Espacio de dos dormitorios Ocean Cliff Villa en Bvlgari Bali",
+      "Habitación de una villa de un dormitorio Ocean Cliff en Bvlgari Bali"
+    ],
+    [
+      "Raffles Bali, ladera del complejo sobre Jimbaran Bay",
+      "Piscina privada de la Villa Panoramica de una habitación en la piscina de Raffles Bali",
+      "Interior de la Villa Panoramica de un dormitorio en la piscina de Raffles Bali"
+    ],
+    [
+      "La piscina Legian Seminyak infinito con vistas al Océano Índico",
+      "La piscina frente a la playa Legian Seminyak y la costa de palmeras",
+      "La Legian Seminyak habitación balcón con vistas a la piscina y el mar"
+    ]
+  ],
+  "seoTitle": "Bali: estancias de lujo, áreas y experiencias",
+  "hotelSeoTitle": "Hoteles de lujo en Bali: guía comisariada",
+  "seoDescription": "Bali tiene muchas caras: los valles de Ubud, los acantilados de Uluwatu sobre el Océano Índico, las suaves puestas de sol de Jimbaran y la animada playa de Seminyak ofrecen cuatro viajes muy diferentes. Las estancias excepcionales comienzan con la elección del lugar correcto."
+}

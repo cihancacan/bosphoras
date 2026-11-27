@@ -1,0 +1,168 @@
+{
+  "name": "Tóquio",
+  "country": "Japão Japão",
+  "eyebrow": "Japão  uma cidade de contrastes",
+  "heading": "Tóquio: escolha o seu próprio horizonte.",
+  "intro": "Da serenidade do horizonte de Otemachi às vistas de Shinjuku, quatro hotéis distintos para experimentar Tóquio no seu próprio ritmo.",
+  "editorial": "Tóquio é muito mais do que um horizonte de luzes de néon. Uma noite com vista para os jardins do Palácio Imperial, um grande hotel acima de Yaesu ou um pôr do sol em West Shinjuku pode produzir viagens muito diferentes. A primeira decisão de luxo é o endereço: proximidade com viagens ferroviárias, jardins tranquilos, compras e restaurantes, ou a energia dos distritos de entretenimento ocidentais. Nossa coleção independente de quatro hotéis abrange propriedades genuinamente operacionais com locais e tipos de quartos claramente diferenciados. Nós não listamos hotéis planejados para os próximos anos.\n\nAlto acima de Otemachi, Aman Tokyo ocupa os andares superiores da Torre Otemachi. Papel de madeira, pedra e washi criam um santuário japonês discreto muito longe do nível da rua. Uma piscina coberta de trinta metros e vistas generosas do horizonte ajudam a moldar sua identidade, enquanto o acesso à Estação de Tóquio torna prático para um itinerário mais longo por Shinkansen. A perspectiva real do Palácio Imperial depende do quarto reservado e sua orientação; uma fotografia aérea icônica que parece bem não é uma promessa de que todos vejam a suíte.\n\nApenas a leste da Estação de Tóquio, o Bvlgari Hotel Tokyo ocupa igualmente o piso de quarenta a quarenta e cinco do Tokyo Midtown Yaesu com noventa e oito quartos e suites. glamour italiano, detalhes japoneses trabalhados também, restaurantes de destino e um spa de alto nível devem tornar este um estilo de estadia bastante diferente. A área é conveniente para Nihombashi, Ginza, trem de alta velocidade e um grande número de itinerários de negócios e compras. Seus vinte e cinco metros de spa interior piscina não é um hotel compartilhado,\n\nO parque Hyatt Tokyo reabriu em 9 de dezembro de 2025 após uma restauração de dezenove meses, retornando aos andares superiores da distinta Torre Parque Fujijuku. As acomodações redesenhadas e os quartos públicos celebrados oferecem uma perspectiva importante dos distritos financeiros. Ele se adequa aos hóspedes que buscam vistas amplas da noite e da gastronomia, cultura e vida noturna de Shinjuku, com um lugar tranquilo para se retirar no final do dia. Este não é um hotel imediatamente no topo das plataformas de trem Shinjuku.\n\nInaugurado em 5 de março de 2026 na Akasaka Trust Tower, o 1 Hotel Tokyo cria uma alternativa liderada pela natureza com materiais recuperados, interiores plantados e vistas de alto nível em toda a cidade. Sua identidade biofílica é distinta da contenção japonesa de Aman e do glamour metropolitano de Bvlgari. O operador lista uma variedade de tipos de quartos, incluindo opções com duas camas queen e arranjos de conexão para grupos maiores. As vistas para a torre e jardim não são as mesmas.\n\nAlém desses hotéis, planeje Tóquio em capítulos memoráveis, mas gerenciáveis. Visite o fosso do Palácio Imperial e jardins cedo, compare as lojas de design de Ginza com o artesanato de Nihombashi, caminhe em direção a Meiji Jingu sob árvores maduras e explore Asakusa e bairros históricos próximos sem tratar a vida cultural diária como uma atração para privatizar. Reservas especiais de refeições e encontros guiados podem enriquecer a experiência, mas dependem da disponibilidade genuína, da política do restaurante e da etiqueta local.\n\nHaneda (HND) e Narita (NRT) são dois gateways de aeroporto muito diferentes. Haneda é geralmente mais perto do centro de Tóquio, mas a melhor conexão depende do seu hotel, tempo de voo, bagagem e festa. O Narita Express e Keisei Skyliner servem diferentes nós ferroviários, e cartões Suica ou PASMO simplificam muitas viagens urbanas. Um veículo pré-arranjado pode ser mais conveniente com crianças pequenas e várias malas, especialmente depois de um hotel.",
+  "hotelIntro": "Aman Tokyo, Bvlgari Hotel Tokyo, Park Hyatt Tokyo e 1 Hotel Tokyo: quatro identidades distintas e bases da cidade.",
+  "areas": [
+    [
+      "Otemachi, Marunouchi e Palácio Imperial",
+      "Torres de negócios tranquilas, trens intermunicipais e tranquilos passeios na área do palácio.",
+      "Os sites da área do palácio têm suas próprias regras de acesso e abertura."
+    ],
+    [
+      "Yaesu, Nihombashi e Ginza",
+      "Hubs ferroviários, artesanato, compras e restaurantes; Bvlgari tem vista para a área de Midtown Yaesu.",
+      "Reserve restaurantes procurados e verifique a saída da estação."
+    ],
+    [
+      "Nishi-Shinjuku e Shinjuku",
+      "Vistas de arranha-céus, restaurantes e parques; Park Hyatt não está situado nas plataformas da estação.",
+      "As transferências locais e a visibilidade de Fuji variam."
+    ],
+    [
+      "Akaka, Toranomon e Roppongi",
+      "Distritos montanhosos centrais que misturam negócios, design e galerias, lar de 1 Hotel Tokyo.",
+      "Escolha as saídas de metrô com cuidado, especialmente com a bagagem."
+    ],
+    [
+      "Asakusa, Ueno e Yanaka",
+      "Ruas históricas, templos e museus que recompensam um dia cultural dedicado.",
+      "Respeite o culto e a vida cotidiana da comunidade."
+    ]
+  ],
+  "experiences": [
+    [
+      "Passeio pelos jardins do Palácio Imperial",
+      "Desfrute de fossos e jardins enquanto observa as regras oficiais de acesso ao site."
+    ],
+    [
+      "Explore o design de Ginza e Nihombashi",
+      "Combine artesanato, galerias e restaurantes com reservas, conforme necessário."
+    ],
+    [
+      "Visite Meiji Jingu respeitosamente",
+      "Caminhe a abordagem florestal sem interferir na atividade religiosa."
+    ],
+    [
+      "Experiência Shinjuku de cima",
+      "Escolha a luz certa e nunca garanta a visibilidade do Monte Fuji."
+    ],
+    [
+      "Explore Asakusa e Yanaka",
+      "Desfrute de templos, ruas estreitas e artesanato, respeitando os moradores."
+    ]
+  ],
+  "checks": [
+    "Escolha Otemachi, Yaesu, Shinjuku ou Akasaka por itinerário, em vez de apenas reputação.",
+    "Compare HND e NRT para a chegada e distrito sem prometer horários de viagem fixos.",
+    "Confirme a categoria e a orientação exatas; as vistas do horizonte, do palácio ou Fuji nunca são universais.",
+    "Verifique a ocupação familiar, camas de ligação e acesso ao spa ou à piscina.",
+    "Reserve refeições e experiências especiais em vez de disponibilidade promissora.",
+    "Respeite templos, jardins, residentes e regras de fotografia.",
+    "Use trem, Suica / PASMO ou carros organizados de acordo com bagagem e crianças.",
+    "Não Bosphoras inventário, reserva, pagamento ou fornecedor pós-venda é reivindicado."
+  ],
+  "hotels": [
+    [
+      "Torre Otemachi  Otemachi / Marunouchi",
+      "Um santuário japonês de alto nível de pedra, madeira, washi, quartos espaçosos, spa e uma piscina coberta de trinta metros.",
+      "Confirmar a vista exata da sala em direção ao Palácio Imperial e acesso à piscina compartilhada.",
+      "Para tranquilidade japonesa em Otemachi perto da Estação de Tóquio.",
+      "Um santuário japonês de alto nível de pedra, madeira, washi, quartos espaçosos, spa e uma piscina coberta de trinta metros. Confirme a perspectiva exata do quarto em direção ao Palácio Imperial e o acesso à piscina compartilhada."
+    ],
+    [
+      "Tóquio Midtown Yaesu  Yaesu / Ginza",
+      "Noventa e oito quartos e suítes nos andares quarenta a quarenta e cinco com jantares distintos e experiências de spa perto da Estação de Tóquio.",
+      "A piscina de spa de vinte e cinco metros não é uma piscina de quarto privada; verifique as reservas de restaurantes e spa.",
+      "Para luxo ítalo-japonês acima de Yaesu e Ginza.",
+      "Noventa e oito quartos e suites nos pisos quarenta a quarenta e cinco com jantar e experiências de spa distintas perto da Estação de Tóquio. A piscina de spa de vinte e cinco metros não é uma piscina de quarto privada; verifique reservas de restaurantes e spa."
+    ],
+    [
+      "Torre do Parque Shinjuku  Nishi-Shinjuku",
+      "O retiro de arranha-céus foi reaberto em dezembro de 2025 após uma grande restauração, com vistas amplas da Shinjuku Park Tower.",
+      "As vistas Fuji dependem do clima e da orientação do quarto; confirme a conexão da estação e a categoria da suíte renovada.",
+      "Para vistas de Shinjuku de um marco restaurado em 2025.",
+      "O retiro de arranha-céus foi reaberto em dezembro de 2025 após uma grande restauração, com vistas expansivas da Shinjuku Park Tower. As vistas Fuji dependem da orientação do tempo e do quarto; confirme a conexão da estação e a categoria da suíte renovada."
+    ],
+    [
+      "Akasaka Trust Tower  Akasaka",
+      "Um hotel liderado pela natureza abriu em março de 2026 com materiais recuperados, vegetação viva, piscina coberta e configurações distintas de quartos.",
+      "Verifique a roupa de cama, a ocupação de crianças, as vistas Tower versus Garden e as condições da piscina interior.",
+      "O design natural de Akasaka em um hotel abriu em 2026.",
+      "Um hotel liderado pela natureza abriu em março de 2026 com materiais recuperados, vegetação viva, piscina coberta e configurações distintas de quartos. Verifique a roupa de cama, a ocupação infantil, as vistas Tower versus Garden e as condições da piscina interna."
+    ]
+  ],
+  "faq": [
+    [
+      "Qual bairro de Tóquio é melhor para um hotel de luxo?",
+      "Otemachi é calmo e amigável para os trilhos; Yaesu oferece acesso à Estação de Tóquio e Ginza; Nishi-Shinjuku oferece vistas de arranha-céus; e Akasaka favorece o design central moderno. Escolha por itinerário em vez de reputação do hotel sozinho."
+    ],
+    [
+      "Quais são os quatro hotéis de luxo em Tóquio?",
+      "A nossa comparação editorial independente abrange Aman Tokyo em Otemachi, Bvlgari Hotel Tokyo em Yaesu, Park Hyatt Tokyo em West Shinjuku e 1 Hotel Tokyo em Akasaka. Bosphoras não reivindica inventário ao vivo para reserva."
+    ],
+    [
+      "O Park Hyatt Tokyo reabriu após a renovação?",
+      "Sim. Hyatt confirmou a reabertura em 9 de dezembro de 2025 após uma restauração de dezenove meses. Confirme a categoria exata de quarto renovado, serviços e políticas atuais dos hóspedes, em vez de confiar em fotografias mais antigas."
+    ],
+    [
+      "O 1 Hotel Tokyo está operando em 2026?",
+      "Sim. Seu operador anunciou a abertura em 5 de março de 2026 na Akasaka Trust Tower. As vistas e a ocupação familiar variam por categoria e os arranjos de conexão devem ser reservados explicitamente."
+    ],
+    [
+      "Como Aman Tokyo e Bvlgari Hotel Tokyo diferem?",
+      "Aman enfatiza interiores japoneses tranquilos, uma piscina coberta de trinta metros e acesso Otemachi, enquanto Bvlgari traz glamour ítalo-japonês e um spa em Yaesu. Vistas e serviços de quarto dependem da categoria selecionada."
+    ],
+    [
+      "Haneda ou Narita é melhor para um hotel em Tóquio?",
+      "Haneda está geralmente mais perto do centro de Tóquio, mas a transferência ideal varia de acordo com o hotel, bolsas e hora de chegada. Narita Express e Keisei Skyliner chegam a estações diferentes, então verifique a rota para o seu hotel exato."
+    ],
+    [
+      "Os hotéis de luxo em Tóquio são adequados para famílias?",
+      "Algumas propriedades oferecem quartos de duas camas de queen-cama ou opções de conexão, mas a ocupação de crianças, acesso à piscina, restrições de restaurante e suplementos diferem. Confirme o quarto exato e as idades das crianças antes da reserva."
+    ],
+    [
+      "A Bosphoras vende diretamente esses quartos ou fornece pós-venda?",
+      "Este guia editorial não estabelece tais direitos. Inventário garantido, processamento de pagamentos, contratos de reserva e responsabilidades pós-venda do fornecedor exigem uma integração comercial autenticada separada."
+    ]
+  ],
+  "photoCaptions": [
+    "Terrenos do Palácio Imperial com horizonte Otemachi",
+    "Estação histórica de Tóquio e horizonte Marunouchi",
+    "Ginza ruas de compras no crepúsculo",
+    "Shinjuku arranha-céu horizonte",
+    "Torre de Tóquio sobe acima de Minato",
+    "Akasaka skyline distrito",
+    "Portão Hozomon em Sensoji em Asakusa",
+    "Entrada do santuário Meiji Jingu e torii",
+    "Ponte histórica de Tokiwa através do rio Nihonbashi"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Aman Tokyo lobby em Otemachi",
+      "Aman Tóquio piscina coberta com panorama da cidade",
+      "Aman Tokyo suite interior"
+    ],
+    [
+      "Foto de abertura oficial do Bvlgari Hotel Tokyo",
+      "Bvlgari Hotel Tokyo imagem de imprensa oficial",
+      "Imagem oficial do Bvlgari Hotel Tóquio"
+    ],
+    [
+      "Suíte Ambassador renovada no Park Hyatt Tokyo",
+      "Restaurante no Park Hyatt Tokyo restaurado",
+      "Park Hyatt Hotel em Nova Iorque - reservar agora;"
+    ],
+    [
+      "1 Hotel Tokyo em Akasaka",
+      "Arquitetura e materiais em 1 Hotel Tokyo",
+      "1 Hotel Rio de Janeiro design interior"
+    ]
+  ],
+  "seoTitle": "Tóquio: estadias de luxo, áreas e experiências",
+  "hotelSeoTitle": "Hotéis de luxo em Tóquio: guia com curadoria",
+  "seoDescription": "Da serenidade do horizonte de Otemachi às vistas de Shinjuku, quatro hotéis distintos para experimentar Tóquio no seu próprio ritmo."
+}
