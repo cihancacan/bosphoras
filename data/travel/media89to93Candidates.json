@@ -4000,28 +4000,28 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "le-blanc-7",
-        "sourcePage": "https://www.fivestaralliance.com/gallery/le-blanc-spa-resort-gallery-images",
-        "sourceResolvedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2010/15022/15022_0_leblancsparesort_fsa-g.jpg?itok=YRakEHBx",
-        "sourceRequestedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2010/15022/15022_0_leblancsparesort_fsa-g.jpg?itok=YRakEHBx",
-        "originalAlt": "Le Blanc Spa Resort Cancun exterior",
-        "originalCaption": "Five Star Alliance / Le Blanc Spa Resort",
-        "credit": "Five Star Alliance / Le Blanc Spa Resort",
+        "key": "le-blanc-8",
+        "sourcePage": "https://sportvac.com/en/hotels/le-blanc-spa-resort-adult-only/",
+        "sourceResolvedUrl": "https://sportvac.com/wp-content/uploads/2026/11/old_loans_exterior_entrance.jpg",
+        "sourceRequestedUrl": "https://sportvac.com/wp-content/uploads/2026/11/old_loans_exterior_entrance.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Le Blanc Spa Resort Cancun",
         "publisher": "Le Blanc Spa Resort Cancun",
         "hotel": "Le Blanc Spa Resort Cancun",
-        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-7.webp",
-        "sourceSHA256": "d61e0b5edd3db05c0617cc3d1dc3a76b4808ac5253d60ab7433d208165f4840c",
-        "webpSHA256": "2170a704e2c5b70facd0240ace152247ae9f7f2ac34f03d3890f9f9115edbfca",
+        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-8.webp",
+        "sourceSHA256": "7f34f7c401819dab1d2dbe3591e02417e53ca7afb5a21c1715900ac6415ddbcd",
+        "webpSHA256": "0f9b394380f319ec47021e1693523cc5428cdf24f9711a6bf03cf727d7c32b5c",
         "sourcePixels": [
-          815,
-          459
+          1000,
+          641
         ],
         "webpPixels": [
-          815,
-          459
+          1000,
+          641
         ],
-        "webpBytes": 54910,
-        "pixelFingerprint": "92ac8c909387878f",
+        "webpBytes": 146750,
+        "pixelFingerprint": "69e9d3d7c944b5f1",
         "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
@@ -4741,10 +4741,41 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "le-blanc-7",
+        "sourcePage": "https://www.fivestaralliance.com/gallery/le-blanc-spa-resort-gallery-images",
+        "sourceResolvedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2010/15022/15022_0_leblancsparesort_fsa-g.jpg?itok=YRakEHBx",
+        "sourceRequestedUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2010/15022/15022_0_leblancsparesort_fsa-g.jpg?itok=YRakEHBx",
+        "originalAlt": "Le Blanc Spa Resort Cancun exterior",
+        "originalCaption": "Five Star Alliance / Le Blanc Spa Resort",
+        "credit": "Five Star Alliance / Le Blanc Spa Resort",
+        "publisher": "Le Blanc Spa Resort Cancun",
+        "hotel": "Le Blanc Spa Resort Cancun",
+        "localPath": "/images/travel/cancun-premium/le-blanc/le-blanc-7.webp",
+        "sourceSHA256": "d61e0b5edd3db05c0617cc3d1dc3a76b4808ac5253d60ab7433d208165f4840c",
+        "webpSHA256": "2170a704e2c5b70facd0240ace152247ae9f7f2ac34f03d3890f9f9115edbfca",
+        "sourcePixels": [
+          815,
+          459
+        ],
+        "webpPixels": [
+          815,
+          459
+        ],
+        "webpBytes": 54910,
+        "pixelFingerprint": "92ac8c909387878f",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "cityCount": 9,
     "hotelCount": 11,
-    "totalBytes": 2195476
+    "totalBytes": 2287316
   }
 }
