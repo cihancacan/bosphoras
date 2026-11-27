@@ -13,16 +13,16 @@
         "hotel": null,
         "localPath": "/images/travel/kuala-lumpur-premium/destination/scene-1.webp",
         "sourceSHA256": "07275d5741ecb35a03837aab46d9e5b754e0154da0af75aecc346c011e71a900",
-        "webpSHA256": "014227f0b8f15091d1b052b58e3bbf45d4a8a7b4851213990ee312bbd0e626aa",
+        "webpSHA256": "5bdc9384f51e108fba88e04abf109e190db7ee271cf044f83adca265a7d4b241",
         "sourcePixels": [
           5698,
           3799
         ],
         "webpPixels": [
-          1600,
-          1067
+          1275,
+          850
         ],
-        "webpBytes": 412560,
+        "webpBytes": 255864,
         "pixelFingerprint": "c0e0b07070f1e060",
         "candidateSubject": "petronas|twin towers|klcc park",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
@@ -787,6 +787,6 @@
     ],
     "cityCount": 9,
     "hotelCount": 12,
-    "totalBytes": 3180644
+    "totalBytes": 3023948
   }
 }
