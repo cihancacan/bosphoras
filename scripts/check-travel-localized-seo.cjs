@@ -41,3 +41,37 @@ assert.equal(travelPageMetadata('ru',['destinations','nonexistent']).robots.inde
 for(const locale of ['tr','de','es','it','pt','zh'])for(const d of travelDestinations)for(const variant of ['destinations','hotels']){const m=travelPageMetadata(locale,[variant,d.slug]),ready=reviewedLocalizedGuides.has(d.slug+'/'+locale);assert.equal(m.robots.index,ready,d.slug+'/'+locale+'/'+variant);if(ready){assert.ok(known.has(m.alternates.canonical));assert.deepEqual(m.alternates.languages,expectedAlternates(d.slug,variant));assert.equal(m.alternates.languages[travelText(locale).hreflang],m.alternates.canonical);assert.ok(m.title&&m.description&&m.description.length<=160&&m.openGraph&&m.twitter);}}
 const pilot=getLocalizedGuide('istanbul','tr');assert.equal(pilot.areas.length,5);assert.equal(pilot.hotels.length,9);assert.equal(pilot.experiences.length,6);assert.equal(pilot.faq.length,8);
 console.log('1760 public guide and hotel routes, including Istanbul, Paris, Dubai, New York, Maldives, Bali, Phuket, Tokyo, Miami, Los Angeles, Bodrum, Antalya, Saint-Tropez, Monaco and Cap d’Antibes and Saint-Jean-Cap-Ferrat and Lake Como, Capri, Positano, Ravello, Mykonos, Antiparos, Ibiza, Formentera, Deià, Port d’Andratx, Comporta, Melides, Tivat, St. Moritz, Aspen, Jackson Hole, Big Sky, the Hamptons, Palm Beach, Nantucket, Harbour Island, Turks and Caicos, Canouan, Los Cabos, Costa Careyes, Mayakoba, San Miguel de Allende, Niseko, Kyoto, Hakone, Singapore, Sentosa, Langkawi, Bangkok, Chiang Mai, Koh Samui, Krabi, Koh Yao Noi, Hoi An, Da Nang, Phu Quoc, Vinh Hy Bay, Siem Reap, Koh Rong, Luang Prabang, Galle, Tangalle, Sumba, Rajasthan, Jaipur, Udaipur, Paro, Punakha, Gangtey, Palawan, Pamalican Island, Laucala Island, Jumby Bay, Okavango Delta, Punta Mita, Necker Island, North Island, Mustique, Porto Cervo, Saint-Barthélemy, Zermatt, Gstaad, Verbier, Val d’Isère, Megève, Courchevel 1850 and Desaru Coast in ten languages: robots, sitemap, reciprocal hreflang, localized metadata and image URLs verified.',urls.length,'travel URLs');
+
+ // Audit every published language and keep unfinished destinations out of the sitemap.
+ const auditTitles=new Map(),auditDescriptions=new Map(),auditWarnings=[];
+ for(const d of travelDestinations)for(const locale of editorialTravelLocales)for(const variant of ['destinations','hotels']){
+   if(!isTravelGuideIndexable(d.slug,variant,locale))continue;
+   const id=d.slug+'/'+locale+'/'+variant,m=travelPageMetadata(locale,[variant,d.slug]);
+   assert.ok(m.title&&typeof m.title==='string'&&m.description&&typeof m.description==='string',id+' metadata');
+   assert.ok(m.description.length<=160,id+' description limit');
+   assert.equal(m.alternates.canonical,root+travelHref(locale,variant+'/'+d.slug),id+' canonical');
+   assert.equal(m.alternates.languages[travelText(locale).hreflang],m.alternates.canonical,id+' self hreflang');
+   for(const [value,seen,field] of [[m.title,auditTitles,'title'],[m.description,auditDescriptions,'description']]){
+     const key=locale+'/'+value.trim().toLowerCase();
+     if(seen.has(key))auditWarnings.push({field,first:seen.get(key),second:id});
+     else seen.set(key,id);
+   }
+ }
+ for(const [slug,areaCount] of [['london',6],['las-vegas',5]]){
+   for(const locale of ['tr','de','es','it','pt','zh','ru','ar']){
+     const d=require('../data/travel/localized/'+slug+'-'+locale+'.json'),id=slug+'/'+locale;
+     for(const field of ['name','country','eyebrow','heading','intro','editorial','hotelIntro','seoTitle','hotelSeoTitle','seoDescription'])assert.ok(typeof d[field]==='string'&&d[field].trim(),id+' '+field);
+     for(const [field,count,width] of [['areas',areaCount,3],['experiences',4,2],['hotels',4,5],['faq',7,2]]){
+       assert.equal(d[field].length,count,id+' '+field);
+       assert.ok(d[field].every(row=>row.length===width&&row.every(s=>typeof s==='string'&&s.trim())),id+' '+field+' fields');
+     }
+     assert.equal(d.checks.length,5,id+' checks');
+     assert.ok(d.seoDescription.length<=160,id+' description limit');
+     const script={ru:/[\u0400-\u052f]/,ar:/[\u0600-\u06ff]/,zh:/[\u3400-\u9fff]/}[locale];
+     if(script)for(const field of ['heading','editorial','seoTitle','hotelSeoTitle','seoDescription'])assert.ok(script.test(d[field]),id+' '+field+' language');
+     for(const variant of ['destinations','hotels'])assert.ok(!known.has(root+travelHref(locale,variant+'/'+slug)),id+' draft must remain out of sitemap');
+   }
+ }
+ console.log('All-language metadata audit:',auditTitles.size,'unique language/title pairs;',auditDescriptions.size,'unique language/description pairs;',auditWarnings.length,'duplicate metadata warnings.');
+ if(auditWarnings.length)console.warn(JSON.stringify(auditWarnings.slice(0,30)));
+ console.log('London and Las Vegas: sixteen draft locale files checked; publication gate maintained.');
