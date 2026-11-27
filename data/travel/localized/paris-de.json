@@ -1,0 +1,110 @@
+{
+  "name": "Paris",
+  "country": "Frankreich",
+  "eyebrow": "Die Stadt des Lichts · Kunst, Gastronomie und besondere Hotels",
+  "heading": "Wo in Paris übernachten? Die besten Viertel und Luxushotels",
+  "intro": "Ein Spaziergang an der Seine am Morgen, historische Palasthotels und die Cafés von Saint-Germain: Die Lage Ihres Hotels prägt Ihren Paris-Aufenthalt. Vergleichen Sie drei Viertel und vier besondere Adressen.",
+  "editorial": "Entscheiden Sie zuerst, in welchem Viertel Sie die meiste Zeit verbringen möchten. Rund um Louvre und Seine liegen Museen, historische Brücken und Spazierwege nahe beieinander. Cheval Blanc Paris bietet im Gebäude La Samaritaine ein modernes Hotelerlebnis direkt am Fluss.\n\nDas Goldene Dreieck und die Rue du Faubourg Saint-Honoré am rechten Seineufer stehen für Mode, Gastronomie und klassische Luxushotels. Four Seasons Hotel George V beeindruckt mit prachtvollen Räumen und Restaurants, Le Bristol Paris mit seinem Innenhofgarten und der ruhigeren Atmosphäre eines Stadthauses. Auf der linken Seine-Seite liegt Mandarin Oriental Lutetia nahe den Buchhandlungen, Galerien und Cafés von Saint-Germain-des-Prés.\n\nNicht jedes Zimmer bietet Seine- oder Eiffelturmblick. Prüfen Sie Zimmerkategorie, Stockwerk, Ausrichtung, Balkon, Spa-Zugang und Verbindungstüren. Planen Sie Restaurantbesuche und Transfers im Voraus und vergleichen Sie aktuelle Preise, Steuern und Stornierungsbedingungen beim Buchungspartner.",
+  "hotelIntro": "Cheval Blanc Paris, Four Seasons Hotel George V, Le Bristol Paris und Mandarin Oriental Lutetia: Vergleichen Sie vier besondere Adressen nach Lage, Zimmern und Ausstattung.",
+  "areas": [
+    [
+      "Louvre, Seine und Samaritaine",
+      "Louvre, Pont Neuf, Flussufer und Rive Gauche lassen sich zu Fuß erkunden. Im historischen Zentrum gehört der Spaziergang zum Aufenthalt.",
+      "Seineblick hängt von Stockwerk, Ausrichtung und Zimmerkategorie ab."
+    ],
+    [
+      "Goldenes Dreieck und Faubourg Saint-Honoré",
+      "Renommierte Hotels, Modeboutiquen und Gastronomie. Avenue George V und Faubourg Saint-Honoré bieten unterschiedliche Lagen und Atmosphäre.",
+      "Zimmer zum Innenhof können ruhiger sein als Zimmer zur belebten Straße."
+    ],
+    [
+      "Saint-Germain-des-Prés und Rive Gauche",
+      "Buchhandlungen, Kunstgalerien, Cafés und elegante Wohnstraßen laden zu entspannten Spaziergängen ein.",
+      "Eiffelturmblick ist nur in bestimmten Suiten verfügbar."
+    ]
+  ],
+  "experiences": [
+    [
+      "Paris von der Seine aus erleben",
+      "Bei einer privaten Bootsfahrt lassen sich Louvre, Uferpromenaden und historische Brücken aus einer anderen Perspektive entdecken."
+    ],
+    [
+      "Ein besonderes Abendessen",
+      "Wählen Sie Restaurants nach Atmosphäre und Service, nicht nur nach Bekanntheit. Prüfen Sie Reservierung und Kleiderordnung."
+    ],
+    [
+      "Die Rive Gauche im eigenen Tempo",
+      "Genießen Sie einen Kaffee in Saint-Germain, besuchen Sie eine Buchhandlung oder Galerie und spazieren Sie zum Jardin du Luxembourg."
+    ]
+  ],
+  "checks": [
+    "Wählen Sie zuerst das Viertel: Rive Gauche, Louvre und Goldenes Dreieck stehen für unterschiedliche Erlebnisse.",
+    "Bestätigen Sie Zimmerkategorie, Stockwerk, Blick, Balkon, Spa-Zugang und Verbindungstüren.",
+    "Planen Sie Restaurants, Transfer und Ankunftszeit vorab.",
+    "Vergleichen Sie Stornierung, Steuern, Frühstück und eingeschlossene Leistungen."
+  ],
+  "hotels": [
+    [
+      "Seine · Samaritaine · 1. Arrondissement",
+      "Modernes Hotel mit intimer Atmosphäre am Seineufer, kunstvollen Innenräumen, Spa und Parisblick aus bestimmten Suiten.",
+      "Prüfen Sie Aussicht, Stockwerk, Grundriss und Suitenklasse; Fotos zeigen bestimmte Zimmer.",
+      "Für einen ruhigen Aufenthalt am Fluss im historischen Zentrum.",
+      "Cheval Blanc Paris interpretiert im historischen Gebäude La Samaritaine die Pariser Palasthotel-Tradition neu. Spaziergänge zum Louvre und Pont Neuf, Architektur und ausgesuchte Materialien prägen den Aufenthalt. Nach der Stadtbesichtigung locken Pool und Dior Spa. Balkon, Aussicht und Grundriss hängen von der Kategorie ab."
+    ],
+    [
+      "Avenue George V · 8. Arrondissement",
+      "Klassischer Pariser Luxus im Goldenen Dreieck mit Blumenschmuck, Gastronomie, Marmorhof und eleganten Suiten.",
+      "Unterscheiden Sie Straßen-, Innenhof- und Dachlandschaftsblick; nicht jedes Zimmer bietet Eiffelturmblick.",
+      "Für prachtvolle Palasthotel-Atmosphäre und Gastronomie.",
+      "George V ist für die große Marmorlobby, Blumenarrangements, Innenhöfe und aufmerksamen Service bekannt. Restaurants und öffentliche Räume sind ein wichtiger Teil des Erlebnisses. Prüfen Sie die Zimmerausstattung und reservieren Sie Restaurants rechtzeitig."
+    ],
+    [
+      "Faubourg Saint-Honoré · 8. Arrondissement",
+      "Berühmtes Pariser Hotel, das klassische Eleganz mit einem ruhigen Innenhofgarten und gehobener Gastronomie verbindet.",
+      "Vergleichen Sie renovierte Zimmerkategorien, Straßen- oder Gartenblick und Zugang zu den Einrichtungen.",
+      "Für Stadthaus-Atmosphäre und einen seltenen Garten mitten in Paris.",
+      "Le Bristol setzt auf Komfort, Ruhe, aufmerksamen Service und seinen Garten. Boutiquen, Galerien und Restaurants liegen in der Nähe. Beachten Sie Zimmergröße und Ausrichtung. Das private Spa der Eden Suite gehört nicht zur Ausstattung der Standardzimmer."
+    ],
+    [
+      "Boulevard Raspail · Saint-Germain · 6. Arrondissement",
+      "Ikonisches Art-déco-Hotel der Rive Gauche mit Kulturerbe, zeitgenössischem Design, Spa und Dachlandschaftsblick aus ausgewählten Suiten.",
+      "Bestätigen Sie Suitenklasse, Balkon und gegebenenfalls Eiffelturmblick.",
+      "Für die Cafés, Literatur und Art-déco-Architektur von Saint-Germain.",
+      "Lutetia bietet eine andere Seite von Paris als die großen Palasthotels am rechten Ufer. Historische Fassade und das kulturelle Umfeld von Saint-Germain prägen das Erlebnis. Verbringen Sie den Morgen in Buchhandlungen und Galerien und den Nachmittag im Spa. Eiffelturmpanoramen gehören zu bestimmten Suiten."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Louvre und Pont des Arts am Seineufer",
+    "Eiffelturmpanorama von der Seine",
+    "Eiffelturm und Pont Alexandre III",
+    "Louvre und Pont des Arts vom Fluss",
+    "Abendlicher Blick auf die Champs-Élysées vom Triumphbogen",
+    "Kirche Saint-Germain-des-Prés und umliegende Cafés"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "La Samaritaine und Cheval Blanc Paris am Seineufer",
+      "Pool und Ruhebereich des Dior Spa",
+      "Wohnbereich einer Suite mit Blick über die Dächer von Paris"
+    ],
+    [
+      "Eingang des Four Seasons Hotel George V",
+      "Marmorlobby und Blumenarrangements",
+      "Innenpool des Spa"
+    ],
+    [
+      "Terrasse und Innenhofgarten des Le Bristol",
+      "Helles Schlafzimmer der Deluxe Suite",
+      "Privater Spa-Bereich der Eden Suite"
+    ],
+    [
+      "Abendfassade des Mandarin Oriental Lutetia",
+      "Innenpool des Lutetia Spa",
+      "Suite mit Balkon und Eiffelturmblick"
+    ]
+  ],
+  "seoTitle": "Wo in Paris übernachten? Beste Viertel und Hotels",
+  "hotelSeoTitle": "Die besten Luxushotels in Paris: Cheval Blanc, George V & mehr",
+  "seoDescription": "Vergleichen Sie Louvre, Goldenes Dreieck und Saint-Germain. Entdecken Sie vier Luxushotels in Paris, Zimmer mit Aussicht und Buchungstipps."
+}

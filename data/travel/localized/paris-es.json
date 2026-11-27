@@ -1,0 +1,110 @@
+{
+  "name": "París",
+  "country": "Francia",
+  "eyebrow": "La Ciudad de la Luz · Arte, gastronomía y hoteles excepcionales",
+  "heading": "Dónde alojarse en París: mejores barrios y hoteles de lujo",
+  "intro": "Paseos matinales junto al Sena, palacios históricos y cafés de Saint-Germain: la ubicación del hotel define buena parte de tu estancia en París. Compara tres zonas y cuatro hoteles excepcionales.",
+  "editorial": "Antes de reservar, decide en qué barrio quieres pasar la mayor parte del tiempo. La zona del Louvre y del Sena destaca por la proximidad de museos, puentes históricos y paseos a pie. Cheval Blanc Paris ofrece una experiencia contemporánea junto al río, en el edificio de La Samaritaine.\n\nEl Triángulo de Oro y Faubourg Saint-Honoré, en la orilla derecha, son conocidos por la moda, la gastronomía y los grandes hoteles clásicos. Four Seasons Hotel George V destaca por sus interiores y restaurantes, mientras Le Bristol Paris ofrece un jardín interior y una atmósfera más tranquila de residencia urbana. En la orilla izquierda, Mandarin Oriental Lutetia está cerca de las librerías, galerías y cafés de Saint-Germain-des-Prés.\n\nNo todas las habitaciones ofrecen vistas al Sena o a la Torre Eiffel. Comprueba categoría, planta, orientación, balcón, acceso al spa y habitaciones comunicadas. Planifica restaurantes y traslados con antelación y compara precios, impuestos y condiciones de cancelación con el proveedor de reservas.",
+  "hotelIntro": "Cheval Blanc Paris, Four Seasons Hotel George V, Le Bristol Paris y Mandarin Oriental Lutetia: compara cuatro direcciones excepcionales por ubicación, habitaciones y servicios.",
+  "areas": [
+    [
+      "Louvre, Sena y Samaritaine",
+      "El Louvre, Pont Neuf, las riberas y la orilla izquierda se pueden descubrir a pie. Los paseos forman parte de la estancia en el centro histórico.",
+      "Las vistas al Sena dependen de la planta, orientación y categoría."
+    ],
+    [
+      "Triángulo de Oro y Faubourg Saint-Honoré",
+      "Hoteles emblemáticos, boutiques de moda y gastronomía. Avenue George V y Faubourg Saint-Honoré ofrecen ubicaciones y ambientes distintos.",
+      "Una habitación hacia el patio puede ser más tranquila que una orientada a la avenida."
+    ],
+    [
+      "Saint-Germain-des-Prés y orilla izquierda",
+      "Librerías, galerías de arte, cafés y elegantes calles residenciales, ideales para pasear sin prisas.",
+      "Las suites con vistas a la Torre Eiffel pertenecen a categorías concretas."
+    ]
+  ],
+  "experiences": [
+    [
+      "Descubre París desde el Sena",
+      "Un paseo privado en barco permite admirar el Louvre, las riberas y los puentes históricos desde otra perspectiva."
+    ],
+    [
+      "Una cena memorable",
+      "Elige el restaurante por su ambiente y servicio, no solo por su fama. Confirma reserva y código de vestimenta."
+    ],
+    [
+      "La orilla izquierda a tu ritmo",
+      "Toma un café en Saint-Germain, visita una librería o galería y pasea hasta el Jardín de Luxemburgo."
+    ]
+  ],
+  "checks": [
+    "Elige primero la zona: orilla izquierda, Louvre y Triángulo de Oro ofrecen experiencias distintas.",
+    "Confirma categoría, planta, vistas, balcón, acceso al spa y habitaciones comunicadas.",
+    "Planifica restaurantes, traslados y hora de llegada.",
+    "Compara cancelación, impuestos, desayuno y servicios incluidos."
+  ],
+  "hotels": [
+    [
+      "Sena · Samaritaine · Distrito 1",
+      "Hotel contemporáneo e íntimo a orillas del Sena, con interiores artísticos, spa y vistas de París desde algunas suites.",
+      "Comprueba vistas, planta, distribución y categoría de suite; las fotos corresponden a habitaciones concretas.",
+      "Para una estancia tranquila junto al río en el centro histórico.",
+      "Cheval Blanc Paris reinterpreta la tradición palaciega parisina en el edificio histórico de La Samaritaine. Los paseos al Louvre y Pont Neuf, la arquitectura y los materiales seleccionados definen la experiencia. Tras descubrir la ciudad, disfruta de la piscina y Dior Spa. Balcón, vistas y distribución varían según la categoría."
+    ],
+    [
+      "Avenue George V · Distrito 8",
+      "Lujo parisino clásico en el Triángulo de Oro, con composiciones florales, gastronomía, patio de mármol y elegantes suites.",
+      "Distingue habitaciones hacia la avenida, el patio interior o los tejados; no todas tienen vistas a la Torre Eiffel.",
+      "Para disfrutar de la majestuosidad de un palacio y la gastronomía.",
+      "George V destaca por su amplio vestíbulo de mármol, arreglos florales, patios y servicio atento. Los espacios comunes y restaurantes forman parte esencial de la experiencia. Revisa las características de la habitación y reserva restaurantes con antelación."
+    ],
+    [
+      "Faubourg Saint-Honoré · Distrito 8",
+      "Reconocido hotel parisino que combina elegancia clásica, un jardín interior tranquilo y alta gastronomía.",
+      "Compara categorías renovadas, vistas a la calle o jardín y acceso a instalaciones.",
+      "Para una estancia con ambiente de residencia elegante y jardín en pleno París.",
+      "Le Bristol destaca por su comodidad, tranquilidad, servicio atento y jardín. Está cerca de boutiques, galerías y restaurantes. Comprueba tamaño y orientación del cuarto. El spa privado de la suite Eden no pertenece a las habitaciones estándar."
+    ],
+    [
+      "Boulevard Raspail · Saint-Germain · Distrito 6",
+      "Icono art déco de la orilla izquierda, con patrimonio cultural, diseño contemporáneo, spa y vistas a los tejados desde suites concretas.",
+      "Confirma categoría de suite, balcón y posibles vistas a la Torre Eiffel.",
+      "Para cafés, literatura y arquitectura art déco en Saint-Germain.",
+      "Lutetia ofrece una experiencia distinta de los grandes palacios de la orilla derecha. Su fachada histórica y el ambiente cultural de Saint-Germain marcan la estancia. Dedica la mañana a librerías y galerías y la tarde al spa. Las panorámicas de la Torre Eiffel pertenecen a suites específicas."
+    ]
+  ],
+  "faq": [],
+  "photoCaptions": [
+    "Louvre y Pont des Arts junto al Sena",
+    "Panorámica de la Torre Eiffel desde el Sena",
+    "Torre Eiffel y puente Alexandre III",
+    "Louvre y Pont des Arts desde el río",
+    "Vista nocturna de los Campos Elíseos desde el Arco del Triunfo",
+    "Iglesia de Saint-Germain-des-Prés y cafés cercanos"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "La Samaritaine y Cheval Blanc Paris junto al Sena",
+      "Piscina y zona de descanso de Dior Spa",
+      "Salón de suite con vistas a los tejados de París"
+    ],
+    [
+      "Entrada de Four Seasons Hotel George V",
+      "Vestíbulo de mármol y arreglos florales",
+      "Piscina cubierta del spa"
+    ],
+    [
+      "Terraza y jardín interior de Le Bristol",
+      "Dormitorio luminoso de la suite Deluxe",
+      "Spa privado de la suite Eden"
+    ],
+    [
+      "Fachada nocturna de Mandarin Oriental Lutetia",
+      "Piscina cubierta del spa Lutetia",
+      "Suite con balcón y vistas a la Torre Eiffel"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en París: mejores barrios y hoteles",
+  "hotelSeoTitle": "Mejores hoteles de lujo en París: Cheval Blanc, George V y más",
+  "seoDescription": "Compara Louvre, Triángulo de Oro y Saint-Germain. Descubre cuatro hoteles de lujo en París, habitaciones con vistas y consejos de reserva."
+}
