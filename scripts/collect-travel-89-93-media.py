@@ -49,9 +49,9 @@ def collect_pages(pages):
   try:
    final,raw=get(page,12_000_000)
    soup=BeautifulSoup(raw,'html.parser'); pairs=[]
-   for tag in soup.find_all(['img','source','meta']):
+   for tag in soup.find_all(['img','source','meta','a']):
     if tag.name=='meta' and tag.get('property') not in ('og:image','og:image:secure_url') and tag.get('name')!='twitter:image':continue
-    alt=tag.get('alt') or tag.get('title') or ''
+    alt=tag.get('alt') or tag.get('title') or (tag.get_text(' ',strip=True)[:300] if tag.name=='a' else '')
     parent=tag.find_parent('figure')
     cap=parent.find('figcaption') if parent else None
     credit=cap.get_text(' ',strip=True)[:350] if cap else ''
@@ -59,7 +59,7 @@ def collect_pages(pages):
      alt=tag.parent.get('aria-label') or tag.parent.get('title') or ''
     if tag.name=='source' and tag.parent:
      img=tag.parent.find('img');alt=alt or (img.get('alt','') if img else '')
-    for attr in ('src','data-src','data-lazy-src','data-original','data-image','data-url','data-full','data-large','data-lazy','srcset','data-srcset','content'):
+    for attr in ('src','data-src','data-lazy-src','data-original','data-image','data-url','data-full','data-large','data-lazy','data-background','data-original-src','data-fullsize','href','srcset','data-srcset','content'):
      value=tag.get(attr)
      if not isinstance(value,str):continue
      if 'srcset' in attr:
@@ -70,6 +70,7 @@ def collect_pages(pages):
    for url in re.findall(r'https?://[^\s"<>\\]+?\.(?:jpe?g|webp|png|avif)(?:\?[^\s"<>\\]*)?',rawtext,re.I):
     pairs.append((url,'',''))
    for path,alt,credit in pairs:
+    if not isinstance(path,str):continue
     if not path or path.startswith(('data:','javascript:','#')):continue
     path=html.unescape(path)
     # Simpleview publishes transformation-relative paths that belong to its image CDN.
@@ -87,6 +88,72 @@ def collect_pages(pages):
   except Exception as e:
    errors.append({'page':page,'error':str(e)[:300]});print('PAGE_GAP',page,str(e)[:200],flush=True)
  return result,errors
+DIRECT = {
+  "london/city": [
+    [
+      "https://www.visitlondon.com/-/media/images/london/visit/things-to-do/sightseeing/westminster-best-view-jon-reid-visitlondon640x360jpg.jpg?hash=A6B2CD9D60FD11EA3CB9AFAD2194B354&mw=640&rev=a29c4693de6e4585bbe7f6692117a4f6",
+      "Westminster Bridge and Houses of Parliament on a sunny day",
+      "https://www.visitlondon.com/things-to-do/sightseeing/top-10-photo-opportunities-in-london",
+      "Jon Reid / Visit London"
+    ],
+    [
+      "https://www.visitlondon.com/-/media/images/london/visit/things-to-do/sightseeing/london-attractions/piccadilly-circus/piccadillycircus_copyright_jonreid640x360.jpg?hash=47CB55D08D1E9CF010F861E3E1A6B7B1&mw=640&rev=67f70d48df1745ef9b6815f0065442a3",
+      "Piccadilly Circus at dusk",
+      "https://www.visitlondon.com/things-to-do/sightseeing/top-10-photo-opportunities-in-london",
+      "Jon Reid / Visit London"
+    ]
+  ],
+  "rome/bvlgari": [
+    [
+      "https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/The-Hotel/Bulgari-Hotel-Roma-2.jpg1/jcr%3Acontent",
+      "Bvlgari Hotel Roma - The Hotel",
+      "https://www.bulgarihotels.com/en_US/rome/image-gallery",
+      "Bvlgari Hotels & Resorts"
+    ],
+    [
+      "https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/Accommodation/Bulgari-Hotel-Roma-7.jpg/jcr%3Acontent",
+      "Bvlgari Hotel Roma Premium Suite",
+      "https://www.bulgarihotels.com/en_US/rome/image-gallery",
+      "Bvlgari Hotels & Resorts"
+    ],
+    [
+      "https://www.bulgarihotels.com/.imaging/bhr-thumbnail-jpg/dam/ROMA/Image-Gallery/Bulgari-Spa/Bulgari-Hotel-Roma-1.jpg/jcr%3Acontent",
+      "Bvlgari Hotel Roma Spa",
+      "https://www.bulgarihotels.com/en_US/rome/image-gallery",
+      "Bvlgari Hotels & Resorts"
+    ]
+  ],
+  "rome/eden": [
+    [
+      "https://www.dorchestercollection.com/media/x04deanq/hotel-eden-roma-bellavista-penthouse-suite-living-room-view.jpg?format=webp&height=540&rmode=crop&rxy=0.48621553884711777%2C0.5767808303807276&width=1600",
+      "Bellavista Penthouse Suite living room with city view",
+      "https://www.dorchestercollection.com/rome/hotel-eden",
+      "Dorchester Collection"
+    ],
+    [
+      "https://www.dorchestercollection.com/media/s10do3um/hotel-eden-la-libreria-lobby-lounge-hero-dorchester-collection.jpg?format=webp&height=765&rmode=crop&width=1200",
+      "La Libreria lobby lounge",
+      "https://www.dorchestercollection.com/rome/hotel-eden",
+      "Dorchester Collection"
+    ],
+    [
+      "https://www.dorchestercollection.com/media/ojkbcz3j/hotel-eden-exterior-facade-sign-dorchester-collection.jpg?format=webp&height=612&rmode=crop&width=612",
+      "Hotel Eden exterior facade detail",
+      "https://www.dorchestercollection.com/rome/hotel-eden",
+      "Dorchester Collection"
+    ]
+  ],
+  "cancun/hyatt-ziva": [
+    [
+      "https://newsroom.hyatt.com/download/Hyatt%2BZiva%2BCancun%2B-%2BAerial.jpg",
+      "Hyatt Ziva Cancun aerial",
+      "https://newsroom.hyatt.com/media-gallery?cat=2774",
+      "Hyatt Newsroom"
+    ]
+  ]
+}
+def direct_candidates(slug,key):
+ return [{'url':u,'sourcePage':page,'originalAlt':alt,'originalCaption':credit,'targeted':True} for u,alt,page,credit in DIRECT.get(slug+'/'+key,[])]
 def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing=(),avoid=()):
  results=list(existing)
  used={r['sourceRequestedUrl'] for r in list(existing)+list(avoid)}
@@ -99,15 +166,17 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
   for r in candidates:
    label=unquote(r['url']+' '+r['originalAlt']+' '+r['originalCaption'])
    if OTHER.search(label) or not re.search(pattern,label,re.I):continue
-   if not property_name and re.search(r'selfie|group of friends|tourist[s]? (?:in|at|admiring|taking)|people (?:walking|buying|standing)|friends buying|person (?:in|standing|riding)|portrait',r['originalAlt'],re.I):continue
+   if not property_name and re.search(r'left:|right:|centre:|girls sitting|three women|selfie|group of friends|tourist[s]? (?:in|at|admiring|taking)|people (?:walking|buying|standing)|friends buying|person (?:in|standing|riding)|portrait',r['originalAlt'],re.I):continue
    if property_name and re.search(r'il.palazzetto|salon.?entrance|registration desk|/salon/|(?:beauty|hair).?salon',label,re.I):continue
    if property_name=='Wynn Las Vegas' and re.search(r'\bencore\b',label,re.I):continue
+   if property_name=='Hyatt Ziva Cancun' and 'newsroom.hyatt.com' in r['sourcePage'] and not re.search(r'cancun|cancún',label,re.I):continue
+   if property_name=='Hotel de Russie' and 'press.roccofortehotels.com' in r['sourcePage'] and not re.search(r'de.russie|nijinsky|stravinskij',label,re.I):continue
    if property_name and re.search(r'sant.?pau|/dining/|/restaurants?/|city.?attraction|city.?guide|/explore/|destination.?guide',label,re.I):continue
    if property_name and pattern==EXTERIOR.pattern and (ROOM.search(label) or re.search(r'\b(?:lobby|salon|spa|interior|restaurant|bar|terrace|reception|registration|desk)\b',label,re.I)):continue
    if property_name and pattern==FACILITY.pattern and ROOM.search(label):continue
    # Group-wide galleries require property identity in the actual asset label.
    if property_name and (('press.mandarinoriental.com' in r['sourcePage'] and 'barcelona' not in label.lower()) or ('leblancsparesorts.com/gallery' in r['sourcePage'] and 'cancun' not in label.lower() and 'cancún' not in label.lower())):continue
-   score=8*bool(re.search(pattern,r['originalAlt'],re.I))+4*bool(re.search(pattern,unquote(r['url']),re.I))+2*bool(r['originalCaption'])
+   score=30*bool(r.get('targeted'))+8*bool(re.search(pattern,r['originalAlt'],re.I))+4*bool(re.search(pattern,unquote(r['url']),re.I))+2*bool(r['originalCaption'])
    if re.search(r'night|dusk|sunset|evening|nuit|notte',label,re.I):score-=3
    ranked.append((score,r))
   ranked.sort(key=lambda x:-x[0])
@@ -138,7 +207,7 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
     key=f'{prefix}-{next_index}'; dest=folder/f'{key}.webp'
     dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(b)
     seen_bytes.add(sourcehash);fingerprints.append(dh)
-    row={'key':key,'sourcePage':r['sourcePage'],'sourceResolvedUrl':resolved,'sourceRequestedUrl':r['url'],'originalAlt':r['originalAlt'],'originalCaption':r['originalCaption'],'credit':publisher,'publisher':publisher,'hotel':property_name,'localPath':'/'+str(dest).removeprefix('public/'),'sourceSHA256':sourcehash,'webpSHA256':hashlib.sha256(b).hexdigest(),'sourcePixels':[w,h],'webpPixels':list(im.size),'webpBytes':len(b),'pixelFingerprint':f'{dh:016x}','candidateSubject':pattern,'rightsEvidenceType':'owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed','ownerPermissionDeclared':True,'commercialRightsCleared':False,'visuallyVerified':False,'previewVisualApproved':False,'status':'candidate_pending_visual_review_and_credit'}
+    row={'key':key,'sourcePage':r['sourcePage'],'sourceResolvedUrl':resolved,'sourceRequestedUrl':r['url'],'originalAlt':r['originalAlt'],'originalCaption':r['originalCaption'],'credit':r['originalCaption'] if r.get('targeted') else publisher,'publisher':publisher,'hotel':property_name,'localPath':'/'+str(dest).removeprefix('public/'),'sourceSHA256':sourcehash,'webpSHA256':hashlib.sha256(b).hexdigest(),'sourcePixels':[w,h],'webpPixels':list(im.size),'webpBytes':len(b),'pixelFingerprint':f'{dh:016x}','candidateSubject':pattern,'rightsEvidenceType':'owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed','ownerPermissionDeclared':True,'commercialRightsCleared':False,'visuallyVerified':False,'previewVisualApproved':False,'status':'candidate_pending_visual_review_and_credit'}
     results.append(row)
     next_index+=1
     print('WEBP',property_name or publisher,key,w,h,len(b),flush=True)
@@ -150,9 +219,10 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
 def city_job(c):
  base=ROOT/(c['slug']+'-premium')
  old=PREVIOUS.get(c['slug'],{})
- existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='las-vegas' and r['key']=='scene-5') and not (c['slug']=='cancun' and r['key']=='scene-4') and not (c['slug']=='rome' and r['key']=='scene-3')]
+ existing=[r for r in old.get('destinationScenes',[]) if not (c['slug']=='las-vegas' and r['key']=='scene-5') and not (c['slug']=='cancun' and r['key']=='scene-4') and not (c['slug']=='rome' and r['key'] in ('scene-3','scene-7')) and not (c['slug']=='london' and r['key'] in ('scene-1','scene-2')) and not (c['slug']=='barcelona' and r['key'] in ('scene-3','scene-5'))]
  if len(existing)>=9:return c['slug'],'city',existing,[]
  cand,errors=collect_pages(c['cityPages'])
+ cand=direct_candidates(c['slug'],'city')+cand
  result,failed=pick(cand,c['subjects'],base/'destination','scene',c['publisher'],existing=existing,avoid=[r for r in old.get('destinationScenes',[]) if r not in existing])
  return c['slug'],'city',result,errors+failed
 def hotel_job(c,h):
@@ -160,11 +230,12 @@ def hotel_job(c,h):
  old=PREVIOUS.get(c['slug'],{})
  allprevious=[r for r in old.get('hotels',[]) if r['hotel']==name]
  # These were specifically identified by source filenames/alt as unsuitable or ambiguous.
- bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3'}
+ bad={'claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3'}
  rejected=[r for r in allprevious if r['key'] in bad]
  existing=[r for r in allprevious if r['key'] not in bad]
  if len(existing)>=3:return c['slug'],key,existing,[]
  cand,errors=collect_pages(pages)
+ cand=direct_candidates(c['slug'],key)+cand
  patterns=[EXTERIOR.pattern,ROOM.pattern,FACILITY.pattern]
  result,failed=pick(cand,patterns,ROOT/(c['slug']+'-premium')/key,key,name,name,existing=existing,avoid=rejected)
  return c['slug'],key,result,errors+failed
