@@ -1,0 +1,229 @@
+{
+  "name": "Istambul",
+  "country": "Turquia",
+  "eyebrow": "Istambul · Palácios otomanos e dois continentes",
+  "heading": "Onde ficar em Istambul: os melhores bairros e hotéis",
+  "intro": "Dos palácios às margens do Bósforo às ruas históricas de Sultanahmet, Istambul oferece experiências bem diferentes. Compare cinco regiões e nove hotéis de luxo selecionados.",
+  "editorial": "A escolha do bairro faz toda a diferença na viagem. The Peninsula Istanbul ocupa quatro edifícios à beira-mar em Galataport, três deles históricos e restaurados. A partir de Karaköy, é fácil explorar o calçadão, as galerias e o Istanbul Modern.\n\nMais ao norte, Çırağan Palace Kempinski e Four Seasons Hotel Istanbul at the Bosphorus combinam arquitetura palaciana, jardins e terraços à beira d'água. O quarto Grand Deluxe Bosphorus de 50 m² do Çırağan não equivale a uma suíte na ala histórica do palácio. Confira o edifício, a vista, a varanda e os serviços inclusos. O Mandarin Oriental, em Kuruçeşme, une arquitetura contemporânea a uma região mais tranquila. Vista para o Bósforo e quartos conjugados dependem da categoria.\n\nFour Seasons Sultanahmet facilita as visitas a pé à Santa Sofia, à Mesquita Azul e ao Palácio Topkapı, mas não fica às margens do Bósforo. Shangri-La está no animado Beşiktaş, Raffles no Zorlu Center, St. Regis nas ruas elegantes de Nişantaşı e The Ritz-Carlton próximo a Dolmabahçe.\n\nPara garantir a vista desejada, confirme categoria, andar, orientação e varanda. Famílias devem verificar camas, quartos conjugados, acessibilidade e regras das piscinas. IST fica no lado europeu e SAW no asiático; organize o traslado conforme o hotel. As balsas regulares permitem conhecer os dois continentes; um iate privativo é um serviço à parte. Primavera e outono costumam ser agradáveis para passeios, mas clima e horários sazonais variam. Preços e disponibilidade atualizados são confirmados pelo parceiro de reservas.",
+  "hotelIntro": "Nove hotéis de luxo em Istambul: palácios históricos no Bósforo, hospedagem no centro antigo e hotéis urbanos contemporâneos. Compare localização, quartos e serviços.",
+  "areas": [
+    [
+      "Karaköy e Galataport",
+      "Galerias, cafés, calçadão à beira d'água e terminais de balsas tornam a região atraente para conhecer a cidade pela primeira vez.",
+      "Para arte, gastronomia e passeios a pé."
+    ],
+    [
+      "Çırağan e Beşiktaş",
+      "Palácios, jardins e vida de bairro. Localização e categoria do quarto podem ser mais importantes que o número de estrelas.",
+      "Para uma estadia romântica em um palácio no Bósforo."
+    ],
+    [
+      "Kuruçeşme e Ortaköy",
+      "Ambiente residencial mais tranquilo, caminhadas à beira d'água e vistas das pontes. Considere o trânsito da via costeira.",
+      "Para amplas vistas do Bósforo e tranquilidade."
+    ],
+    [
+      "Sultanahmet",
+      "Santa Sofia, Mesquita Azul, Topkapı e Cisterna da Basílica ficam a uma curta caminhada. O centro histórico oferece uma experiência diferente dos palácios no Bósforo.",
+      "Para história e cultura a pé."
+    ],
+    [
+      "Nişantaşı e Zorlu",
+      "Boutiques, design, restaurantes e reuniões de negócios. Alguns andares altos oferecem vistas urbanas, mas os hotéis não ficam diretamente à beira d'água.",
+      "Para compras, negócios e suítes modernas."
+    ]
+  ],
+  "experiences": [
+    [
+      "Istambul a pé em 48 horas",
+      "Hospede-se em Karaköy, conheça museus e restaurantes, visite o centro histórico e reserve tempo para o Bósforo."
+    ],
+    [
+      "Uma estadia em um palácio",
+      "Escolha Çırağan ou Beşiktaş, confirme a categoria com vista para o Bósforo e aproveite jardins, spa e terraços."
+    ],
+    [
+      "Cultura, arte e design",
+      "Explore Sultanahmet pela história e os bairros modernos pelas galerias, boutiques e gastronomia."
+    ],
+    [
+      "Da Europa à Ásia de balsa",
+      "As balsas regulares oferecem vistas de palácios, mesquitas e embarcações. Um iate privativo não está automaticamente incluído na diária."
+    ],
+    [
+      "Sultanahmet logo cedo",
+      "Visite Santa Sofia, Mesquita Azul e os arredores de Topkapı; confira os horários de visita e de oração."
+    ],
+    [
+      "Pôr do sol no Bósforo",
+      "Escolha um calçadão público ou um terraço do hotel. A vista do restaurante não equivale à vista do quarto."
+    ]
+  ],
+  "checks": [
+    "The Peninsula oferece categorias com vista para a cidade, o jardim ou o Bósforo.",
+    "No Çırağan e no Four Seasons Bosphorus, confirme edifício, vista e serviços inclusos.",
+    "No Mandarin Oriental, a vista e os quartos conjugados dependem da categoria.",
+    "Four Seasons Sultanahmet fica próximo aos monumentos, não às margens do Bósforo.",
+    "Raffles e St. Regis são hotéis urbanos sem acesso direto à margem do Bósforo.",
+    "IST e SAW são aeroportos diferentes; planeje o traslado.",
+    "Famílias devem verificar a configuração do quarto, regras da piscina, berço e traslados.",
+    "Compare preços atualizados e condições com o parceiro de reservas."
+  ],
+  "hotels": [
+    [
+      "Karaköy · Galataport",
+      "Quatro edifícios à beira d'água, três históricos e restaurados. Galataport, arte e vida urbana se unem às margens do Bósforo.",
+      "Nem todos os quartos têm vista para o Bósforo; confira as categorias cidade, jardim ou água.",
+      "Para arte, caminhadas à beira d'água e passeios a pé.",
+      ""
+    ],
+    [
+      "Çırağan · Beşiktaş",
+      "Antigo palácio otomano com jardins e uma grande piscina externa às margens do Bósforo.",
+      "Os quartos na ala histórica e nos demais edifícios diferem em localização e vista.",
+      "Para o ambiente de um palácio e descanso no Bósforo.",
+      ""
+    ],
+    [
+      "Çırağan · Beşiktaş",
+      "Palácio otomano do século XIX restaurado, com jardins, terraços no Bósforo e hospitalidade clássica perto de Beşiktaş.",
+      "Confirme a categoria da suíte, a vista e a configuração.",
+      "Para casais e famílias que valorizam jardins e áreas externas.",
+      ""
+    ],
+    [
+      "Kuruçeşme · Beşiktaş",
+      "Hotel contemporâneo junto ao Bósforo, perto de residências históricas, com amplas vistas e ambiente residencial mais tranquilo.",
+      "Compare vistas e trajetos; a via costeira pode ter trânsito intenso.",
+      "Para uma experiência contemporânea no Bósforo, longe do movimento de Galataport.",
+      ""
+    ],
+    [
+      "Sultanahmet · Península histórica",
+      "Hotel de 65 quartos em um edifício histórico com pátio interno. Santa Sofia, Mesquita Azul e outros monumentos ficam a uma curta caminhada.",
+      "Não fica à beira do Bósforo; a proximidade dos monumentos não garante vista para a água.",
+      "Para uma primeira visita cultural a Istambul.",
+      ""
+    ],
+    [
+      "Beşiktaş · Dolmabahçe",
+      "Hotel em edifício histórico perto do Palácio Dolmabahçe, com elegância, ruas animadas e terminais de balsas próximos.",
+      "Alguns quartos têm vista para a cidade ou o pátio; confirme a orientação.",
+      "Para vivenciar Beşiktaş com possibilidade de vista para a água.",
+      ""
+    ],
+    [
+      "Zorlu Center · Zincirlikuyu",
+      "Quartos e suítes modernos e espaçosos acima do Zorlu Center, com panoramas da cidade e do Bósforo. Localização elevada, não à beira-mar.",
+      "A vista panorâmica do Bósforo não significa acesso direto à água.",
+      "Para compras, negócios e suítes amplas.",
+      ""
+    ],
+    [
+      "Nişantaşı · Şişli",
+      "Hotel urbano elegante para explorar galerias, boutiques de design e restaurantes, com serviço pessoal de mordomo.",
+      "Nem todos os quartos têm vista desobstruída do Bósforo.",
+      "Para moda, vida urbana e serviço personalizado.",
+      ""
+    ],
+    [
+      "Dolmabahçe · Şişli",
+      "Hotel urbano com suítes amplas, restaurantes e área de lazer com piscina na cobertura; não é um palácio à beira d'água.",
+      "Confirme categoria da suíte, terraço e vista antes de reservar.",
+      "Para spa, gastronomia e vistas da cidade.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Qual é o melhor bairro para a primeira visita a Istambul?",
+      "Karaköy reúne calçadão, museus e restaurantes. Sultanahmet é prático para visitar monumentos a pé; Çırağan e Beşiktaş oferecem o ambiente dos palácios no Bósforo."
+    ],
+    [
+      "Todos os quartos dos hotéis no Bósforo têm vista para a água?",
+      "Não. Podem ter vista para a cidade, o pátio, o jardim ou o Bósforo. Confira categoria, andar, orientação e terraço."
+    ],
+    [
+      "Sultanahmet ou Bósforo?",
+      "Sultanahmet é ideal para história; as margens do Bósforo para descansar em terraços junto à água. Escolha conforme seu roteiro."
+    ],
+    [
+      "Como reservar os hotéis selecionados?",
+      "Compare preços no Bosphoras e use os links de reserva. O parceiro confirma preços, disponibilidade e condições atualizadas."
+    ],
+    [
+      "O que as famílias devem verificar?",
+      "Quartos conjugados, suítes com dormitórios separados, regras das piscinas, alimentação e traslados."
+    ],
+    [
+      "Qual é a melhor época para ficar no Bósforo?",
+      "Primavera e outono costumam ser agradáveis para caminhadas e terraços. Confira a previsão do tempo e os horários sazonais de piscinas e restaurantes."
+    ],
+    [
+      "IST ou SAW?",
+      "IST fica no lado europeu, SAW no asiático. Escolha conforme a localização do hotel e o trânsito."
+    ],
+    [
+      "Um iate privativo está incluído na hospedagem?",
+      "Não. Balsas regulares e iates privativos são serviços distintos. O aluguel do iate deve ser organizado e pago separadamente."
+    ]
+  ],
+  "photoCaptions": [
+    "Calçadão de Galataport em Karaköy",
+    "Palácio Çırağan visto do Bósforo",
+    "Mesquita de Ortaköy e ponte do Bósforo",
+    "Santa Sofia em Sultanahmet",
+    "Rua Abdi İpekçi em Nişantaşı",
+    "Palácio Dolmabahçe visto do Bósforo"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Piscina externa do Peninsula no Bósforo",
+      "Piscina e silhueta de Santa Sofia",
+      "Piscina coberta"
+    ],
+    [
+      "Piscina do Çırağan Palace no Bósforo",
+      "Palácio Çırağan",
+      "Vista do hotel"
+    ],
+    [
+      "Palácio e piscina Four Seasons no Bósforo",
+      "Restaurante Four Seasons Bosphorus",
+      "Café da manhã Four Seasons Bosphorus"
+    ],
+    [
+      "Mandarin Oriental no Bósforo",
+      "Sala de suíte com vista do Bósforo",
+      "Suíte de um dormitório"
+    ],
+    [
+      "Vista aérea de Sultanahmet",
+      "Restaurante Four Seasons Sultanahmet",
+      "Sala Four Seasons Sultanahmet"
+    ],
+    [
+      "Entrada noturna do Shangri-La Bosphorus",
+      "Vista do Bósforo do Shangri-La",
+      "Lobby do Shangri-La"
+    ],
+    [
+      "Panorama do Bósforo do Raffles",
+      "Obra de arte no Raffles Istanbul",
+      "Suíte Raffles com vista do Bósforo"
+    ],
+    [
+      "Fachada do St. Regis Istanbul",
+      "Átrio do hotel",
+      "Suíte St. Regis"
+    ],
+    [
+      "Banheira com vista do Bósforo no Ritz-Carlton",
+      "Quarto Ritz-Carlton",
+      "Varanda com vista do Bósforo"
+    ]
+  ],
+  "seoTitle": "Onde ficar em Istambul: melhores bairros e hotéis",
+  "hotelSeoTitle": "Os melhores hotéis de luxo em Istambul e no Bósforo",
+  "seoDescription": "Compare Karaköy, Sultanahmet e Beşiktaş. Descubra nove hotéis de luxo em Istambul, quartos com vista do Bósforo e dicas de reserva."
+}
