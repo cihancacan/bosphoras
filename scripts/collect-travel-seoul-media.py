@@ -92,7 +92,150 @@ def collect_pages(pages):
   except Exception as e:
    errors.append({'page':page,'error':str(e)[:300]});print('PAGE_GAP',page,str(e)[:200],flush=True)
  return result,errors
-DIRECT = {}
+DIRECT = {
+  "seoul/city": [
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Front_view_of_the_Imperial_Throne_Hall_Geunjeongjeon_at_Gyeongbokgung_Palace_with_blue_sky_in_Seoul.jpg",
+      "Gyeongbokgung Palace throne hall",
+      "https://commons.wikimedia.org/wiki/File:Front_view_of_the_Imperial_Throne_Hall_Geunjeongjeon_at_Gyeongbokgung_Palace_with_blue_sky_in_Seoul.jpg",
+      "Basile Morin / licence to verify against file page"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bukchon-ro_11-gil_street_with_hanok_houses_and_blue_sky_in_Bukchon_Hanok_Village_Seoul.jpg",
+      "Bukchon Hanok Village street",
+      "https://commons.wikimedia.org/wiki/File:Bukchon-ro_11-gil_street_with_hanok_houses_and_blue_sky_in_Bukchon_Hanok_Village_Seoul.jpg",
+      "Basile Morin / licence to verify against file page"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Streets_in_Myeong-dong_Seoul.jpg",
+      "Myeongdong shopping street",
+      "https://commons.wikimedia.org/wiki/File:Streets_in_Myeong-dong_Seoul.jpg",
+      "Dquai / licence to verify against file page"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/N_Seoul_Tower_view_1.jpg",
+      "N Seoul Tower view of Seoul city panorama",
+      "https://commons.wikimedia.org/wiki/File:N_Seoul_Tower_view_1.jpg",
+      "Wikimedia Commons author pending confirmation / licence to verify against file page"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Dongdaemun_Design_Plaza_grass.jpg",
+      "Dongdaemun Design Plaza grass and neighbouring buildings",
+      "https://commons.wikimedia.org/wiki/File:Dongdaemun_Design_Plaza_grass.jpg",
+      "Wikimedia Commons author and architectural rights pending confirmation / licence to verify against file page"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Seokchon_Lake_in_Seoul.jpg",
+      "Seokchon Lake",
+      "https://commons.wikimedia.org/wiki/File:Seokchon_Lake_in_Seoul.jpg",
+      "Christian Bolz / licence to verify against file page"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Bongeun_Temple%2C_Seoul.jpg",
+      "Bongeunsa Temple Seoul",
+      "https://commons.wikimedia.org/wiki/File:Bongeun_Temple%2C_Seoul.jpg",
+      "Wikimedia Commons author pending confirmation / licence to verify against file page"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Cheonggyecheon_tree-lined_stream_and_footbridge_at_sunrise_in_Seoul.jpg",
+      "Cheonggyecheon stream at sunrise",
+      "https://commons.wikimedia.org/wiki/File:Cheonggyecheon_tree-lined_stream_and_footbridge_at_sunrise_in_Seoul.jpg",
+      "Basile Morin / licence to verify against file page"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hongdae_Main_Road%2C_Seoul.jpg",
+      "Hongdae main road",
+      "https://commons.wikimedia.org/wiki/File:Hongdae_Main_Road%2C_Seoul.jpg",
+      "Keneckert / licence to verify against file page"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Hongdae_Streets.jpg",
+      "Hongdae streets",
+      "https://commons.wikimedia.org/wiki/File:Hongdae_Streets.jpg",
+      "U0894629 / licence to verify against file page"
+    ]
+  ],
+  "seoul/four-seasons": [
+    [
+      "https://images.trvl-media.com/lodging/12000000/11920000/11918400/11918302/92dd12f7.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Hotel Seoul exterior",
+      "https://www.expedia.com/Seoul-Hotels-Four-Seasons-Hotel-Seoul.h11918302.Hotel-Information",
+      "Expedia / Four Seasons Hotel Seoul"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/12000000/11920000/11918400/11918302/5e9cee27.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Hotel Seoul Deluxe King guest room",
+      "https://www.expedia.com/Seoul-Hotels-Four-Seasons-Hotel-Seoul.h11918302.Hotel-Information",
+      "Expedia / Four Seasons Hotel Seoul"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/12000000/11920000/11918400/11918302/278f6e55.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Hotel Seoul lobby",
+      "https://www.expedia.com/Seoul-Hotels-Four-Seasons-Hotel-Seoul.h11918302.Hotel-Information",
+      "Expedia / Four Seasons Hotel Seoul"
+    ]
+  ],
+  "seoul/signiel": [
+    [
+      "https://www.thehotelguru.com/_images/23/18/2318e63b9719c453413500eac6a22ad1/s1654x900.jpg",
+      "SIGNIEL Seoul exterior Lotte World Tower",
+      "https://www.thehotelguru.com/en-us/hotel/signiel-seoul-seoul",
+      "The Hotel Guru / SIGNIEL Seoul"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/19000000/18070000/18060400/18060379/82b776c9.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "SIGNIEL Seoul Premier King guest room",
+      "https://www.expedia.com/Seoul-Hotels-Signiel-Seoul.h18060379.Hotel-Information",
+      "Expedia / SIGNIEL Seoul"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/19000000/18070000/18060400/18060379/5ec61d45.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "SIGNIEL Seoul indoor pool",
+      "https://www.expedia.com/Seoul-Hotels-Signiel-Seoul.h18060379.Hotel-Information",
+      "Expedia / SIGNIEL Seoul"
+    ]
+  ],
+  "seoul/josun-palace": [
+    [
+      "https://cache.marriott.com/content/dam/marriott-renditions/SELLC/sellc-palace-gate-4762-hor-clsc.jpg?downsize=1336px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "Josun Palace exterior Palace Gate",
+      "https://www.marriott.com/en-us/hotels/sellc-josun-palace-a-luxury-collection-hotel-seoul-gangnam/photos/",
+      "Marriott / Josun Palace"
+    ],
+    [
+      "https://cache.marriott.com/content/dam/marriott-renditions/SELLC/sellc-state-guestroom-4770-hor-clsc.jpg?downsize=1336px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "Josun Palace State guest room",
+      "https://www.marriott.com/en-us/hotels/sellc-josun-palace-a-luxury-collection-hotel-seoul-gangnam/photos/",
+      "Marriott / Josun Palace"
+    ],
+    [
+      "https://cache.marriott.com/content/dam/marriott-renditions/SELLC/sellc-indoor-pool-4795-hor-clsc.jpg?downsize=1336px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "Josun Palace indoor pool",
+      "https://www.marriott.com/en-us/hotels/sellc-josun-palace-a-luxury-collection-hotel-seoul-gangnam/photos/",
+      "Marriott / Josun Palace"
+    ]
+  ],
+  "seoul/shilla": [
+    [
+      "https://images.trvl-media.com/lodging/1000000/20000/15100/15031/90e9261b.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "The Shilla Seoul exterior at night",
+      "https://www.expedia.com/Seoul-Hotels-The-Shilla-Seoul.h15031.Hotel-Information",
+      "Expedia / The Shilla Seoul"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/1000000/20000/15100/15031/a9d55657.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "The Shilla Seoul Executive Grand Deluxe guest room",
+      "https://www.expedia.com/Seoul-Hotels-The-Shilla-Seoul.h15031.Hotel-Information",
+      "Expedia / The Shilla Seoul"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/1000000/20000/15100/15031/101fc459.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "The Shilla Seoul outdoor pool",
+      "https://www.expedia.com/Seoul-Hotels-The-Shilla-Seoul.h15031.Hotel-Information",
+      "Expedia / The Shilla Seoul"
+    ]
+  ]
+}
 def direct_candidates(slug,key):
  return [{'url':u,'sourcePage':page,'originalAlt':alt,'originalCaption':credit,'targeted':True} for u,alt,page,credit in DIRECT.get(slug+'/'+key,[])]
 
@@ -278,7 +421,7 @@ def hotel_job(c,h):
  # These were specifically identified by source filenames/alt as unsuitable or ambiguous.
  bad={'ritz-carlton-2','portofino-2','claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4','savoy-2','shangri-la-2','shangri-la-3','venetian-3','le-blanc-1','le-blanc-3','coral-beach-3','nizuc-4','hyatt-ziva-2','coral-beach-4','coral-beach-5','le-blanc-5','le-blanc-6','le-blanc-7','le-blanc-8'}
  rejected=[r for r in allprevious if r['key'] in bad]
- existing=[r for r in allprevious if r['key'] not in bad and not (c['slug']=='kuala-lumpur' and key=='eq' and r['key'] in ('eq-1','eq-4'))]
+ existing=[r for r in allprevious if not (c['slug']=='seoul' and key=='josun-palace' and r['key']=='josun-palace-1') and r['key'] not in bad and not (c['slug']=='kuala-lumpur' and key=='eq' and r['key'] in ('eq-1','eq-4'))]
  if len(existing)>=3:return c['slug'],key,existing,[]
  avoid=rejected+[r for r in old.get('excludedCandidates',[]) if r.get('hotel')==name]
  patterns=[EXTERIOR.pattern,ROOM.pattern,FACILITY.pattern]
