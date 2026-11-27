@@ -417,6 +417,12 @@
     "city": "Cancún",
     "publisher": "Mexican Caribbean / Quintana Roo tourism",
     "cityPages": [
+      "https://commons.wikimedia.org/wiki/File:Punta_Canc%C3%BAn,_Quintana_Roo_(30530674653).jpg",
+      "https://commons.wikimedia.org/wiki/File:Another_lighthouse_(6902886929).jpg",
+      "https://commons.wikimedia.org/wiki/File:Evento_Parque_Palapas_Cancun.JPG",
+      "https://commons.wikimedia.org/wiki/File:Parque_de_las_Palapas_3.jpg",
+      "https://commons.wikimedia.org/wiki/File:Playa_Delfines.jpg",
+      "https://commons.wikimedia.org/wiki/File:Playa_Delfines,_Canc%C3%BAn_-_Panorama.jpg",
       "https://commons.wikimedia.org/wiki/File:Playa_Tortugas_cancun.jpg",
       "https://commons.wikimedia.org/wiki/File:Parque_de_las_Palapas_1.jpg",
       "https://commons.wikimedia.org/wiki/File:Parque_de_las_Palapas_2.jpg",
@@ -442,11 +448,11 @@
       "cancun|cancún|hotel zone|zona hotelera",
       "delfines",
       "nizuc",
-      "punta canc",
+      "punta canc|another lighthouse|faro de punta",
       "lagoon|nichupt",
       "caracol|tortugas",
       "playa|beach",
-      "downtown|centro|parque de las palapas|central.square",
+      "downtown|centro|parque de las palapas|parque palapas|central.square",
       "caribbean|caribe"
     ],
     "hotels": [
