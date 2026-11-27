@@ -1,0 +1,51 @@
+name: Travel 94 — Orlando official photo candidates
+on:
+  push:
+    branches: [feature/travel-destinations-89-93-drafts]
+    paths:
+      - scripts/collect-travel-orlando-media.py
+      - data/travel/orlandoMediaSources.json
+      - data/travel/orlandoMediaOtaFallback.json
+      - .github/workflows/travel-orlando-media.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-orlando-media
+  cancel-in-progress: false
+jobs:
+  candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    env:
+      TRAVEL_DESTINATION: orlando
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/travel-destinations-89-93-drafts
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=11,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -m py_compile scripts/collect-travel-orlando-media.py
+      - run: python -u scripts/collect-travel-orlando-media.py
+      - name: Persist candidate assets only, never publish unreviewed photos
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/travel/orlandoMediaCandidates.json
+          if [ -d public/images/travel/orlando-premium ]; then git add public/images/travel/orlando-premium; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): Orlando 94 WebP candidates pending visual and rights QA [skip ci]'
+            git pull --rebase origin feature/travel-destinations-89-93-drafts
+            git push origin HEAD:feature/travel-destinations-89-93-drafts
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: travel-orlando-photo-review
+          path: |
+            data/travel/orlandoMediaCandidates.json
+            public/images/travel/orlando-premium/source-review-contact-sheet.webp
+          if-no-files-found: ignore

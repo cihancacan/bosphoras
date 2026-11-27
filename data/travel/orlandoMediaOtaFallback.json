@@ -1,0 +1,26 @@
+{
+  "four-seasons": [
+    "Four Seasons Resort Orlando",
+    [
+      "https://www.expedia.com/Orlando-Hotels-Four-Seasons-Resort-Orlando-At-WALT-DISNEY-WORLD-Resort.h7374428.Hotel-Information"
+    ]
+  ],
+  "waldorf": [
+    "Waldorf Astoria Orlando",
+    [
+      "https://www.expedia.com/Orlando-Hotels-Waldorf-Astoria-Orlando.h2432727.Hotel-Information"
+    ]
+  ],
+  "ritz-carlton": [
+    "The Ritz-Carlton Orlando",
+    [
+      "https://www.expedia.com/Orlando-Hotels-The-Ritz-Carlton-Orlando.h914146.Hotel-Information"
+    ]
+  ],
+  "portofino": [
+    "Loews Portofino Bay Hotel",
+    [
+      "https://www.expedia.com/Orlando-Hotels-Universals-Loews-Portofino-Bay-Hotel.h201033.Hotel-Information"
+    ]
+  ]
+}

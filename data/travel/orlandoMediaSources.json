@@ -1,0 +1,63 @@
+[
+  {
+    "slug": "orlando",
+    "city": "Orlando",
+    "publisher": "Visit Orlando",
+    "cityPages": [
+      "https://www.visitorlando.com/plan/get-to-know-orlando/interactive-map-city-guide/",
+      "https://www.visitorlando.com/things-to-do/beyond-theme-parks/neighborhoods/",
+      "https://www.visitorlando.com/things-to-do/beyond-theme-parks/neighborhoods/winter-park/",
+      "https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/disney-springs/",
+      "https://www.visitorlando.com/things-to-do/beyond-theme-parks/attractions/",
+      "https://www.visitorlando.com/things-to-do/beyond-theme-parks/shopping/",
+      "https://www.visitorlando.com/things-to-do/free-things-to-do/",
+      "https://www.visitorlando.com/"
+    ],
+    "subjects": [
+      "lake eola|downtown orlando|orlando skyline",
+      "cinderella castle|magic kingdom",
+      "disney springs|lake buena vista",
+      "universal citywalk|universal studios florida",
+      "epic universe|celestial park",
+      "icon park|orlando eye|international drive",
+      "winter park|park avenue",
+      "celebration|kissimmee|old town",
+      "islands of adventure|universal globe"
+    ],
+    "hotels": [
+      [
+        "four-seasons",
+        "Four Seasons Resort Orlando at Walt Disney World Resort",
+        [
+          "https://www.fourseasons.com/orlando/photos-and-videos/",
+          "https://www.fourseasons.com/orlando/"
+        ]
+      ],
+      [
+        "waldorf",
+        "Waldorf Astoria Orlando",
+        [
+          "https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/gallery/",
+          "https://disneyworld.disney.go.com/resorts/more/waldorf-astoria-orlando/"
+        ]
+      ],
+      [
+        "ritz-carlton",
+        "The Ritz-Carlton Orlando, Grande Lakes",
+        [
+          "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/photos/",
+          "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/overview/"
+        ]
+      ],
+      [
+        "portofino",
+        "Loews Portofino Bay Hotel",
+        [
+          "https://www.loewshotels.com/portofino-bay-hotel/photos-videos",
+          "https://www.loewshotels.com/portofino-bay-hotel",
+          "https://www.universalorlando.com/web/en/us/places-to-stay/loews-portofino-bay-hotel"
+        ]
+      ]
+    ]
+  }
+]
