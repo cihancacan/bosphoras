@@ -1,0 +1,168 @@
+{
+  "name": "Krabi",
+  "country": "Tailândia",
+  "eyebrow": "Krabi · Ilhas calcárias do mar de Andamão",
+  "heading": "Onde ficar em Krabi: primeiro a enseada, depois o hotel",
+  "intro": "Rochedos calcários emergem do mar de Andamão, barcos de cauda longa se reúnem na areia e ilhas aparecem no horizonte. Escolher a costa é tão importante quanto escolher o quarto.",
+  "editorial": "Krabi reúne diferentes estilos de férias. Railay e península Phra Nang são separadas da rede viária por rochedos; último trecho para Rayavadee é de barco. Chegada impressionante, que exige planejamento de bagagem, horários e mar.\n\nCosta noroeste de Tubkaek oferece sossego entre jardins, terraços e vistas das ilhas Hong. Banyan Tree Krabi e The Tubkaak ficam ali, mas diferem: Banyan Tree informa piscina privativa em todas as suítes e villas, The Tubkaak só em certas categorias. Na vizinha Nong Thale, Phulay Bay, a Ritz-Carlton Reserve destaca pavilhões e villas amplos, arquitetura tailandesa e serviço personalizado. Foto de villa Reserve não representa planta e vista de todo pavilhão.\n\nKlong Muang oferece base continental com acesso rodoviário. Ao Nang facilita restaurantes e saídas de barco, mas não substitui resort tranquilo. Ilhas Hong, lagoas e paisagens marinhas exigem respeito a parques nacionais, conservação e marés. Em Tubkaek, maré baixa pode deixar água muito rasa; cor em foto não indica condições de banho.\n\nFamílias devem conferir capacidade, segurança das piscinas, idades e camas. Spa, refeições, traslados marítimos, passeios e cancelamento são separados. Compare na Bosphoras primeiro localização, depois categoria e serviços; preços e disponibilidade confirmados pelo fornecedor autorizado.",
+  "hotelIntro": "Quatro resorts de luxo: Rayavadee em Phra Nang, Phulay Bay em Nong Thale, Banyan Tree e The Tubkaak na tranquila costa Tubkaek.",
+  "areas": [
+    [
+      "Railay e Phra Nang · Península acessível por barco",
+      "Rochedos, enseadas e trilhas florestais; traslado marítimo faz parte da experiência.",
+      "Confira píer, horário, mar, bagagem e acesso à praia conforme marés."
+    ],
+    [
+      "Tubkaek · Silhuetas de ilhas",
+      "Costa tranquila com vista das ilhas Hong, sobretudo ao pôr do sol; panorama não garante água profunda o dia todo.",
+      "Confira categorias piscina, profundidade e restaurantes externos."
+    ],
+    [
+      "Nong Thale · Área Phulay Bay",
+      "Montanhas e jardins cercam resorts tranquilos onde arquitetura e serviço se destacam.",
+      "Diferencie pavilhões e villas; confirme serviços pessoais e chegada."
+    ],
+    [
+      "Klong Muang · Praia com acesso rodoviário",
+      "Base continental tranquila com estradas para restaurantes e passeios, sem depender de barcos.",
+      "Confira distâncias, marés e transporte noturno."
+    ],
+    [
+      "Ao Nang e píeres",
+      "Ponto animado de saída para passeios marítimos e restaurantes, não resort tranquilo.",
+      "Confira píer, permissões, mar, tamanho do barco e cancelamento."
+    ]
+  ],
+  "experiences": [
+    [
+      "Chegada a Railay pela água",
+      "Organize trechos de carro e barco para Rayavadee conforme horários."
+    ],
+    [
+      "Vista das ilhas Hong de Tubkaek",
+      "Observe cores das ilhas ao nascer ou pôr do sol; para passeio escolha operador responsável e confirme acesso."
+    ],
+    [
+      "Tempo de spa",
+      "Compare tratamentos aquáticos Banyan Tree, programas Phulay Bay e outros spas; podem ser pagos à parte."
+    ],
+    [
+      "Caminhada sob rochedos calcários",
+      "Explore trilhas costeiras e florestais considerando umidade, terreno e fechamentos."
+    ],
+    [
+      "Jantar no ambiente certo",
+      "Jantar perto da caverna Phra Nang tem logística diferente de Tubkaek; planeje retorno."
+    ]
+  ],
+  "checks": [
+    "Compare Railay por barco e costa continental Tubkaek/Nong Thale.",
+    "Confirme píer, horários, mar, bagagem e transporte de crianças.",
+    "Compare categorias específicas: piscinas, terraços, vista e comodidades.",
+    "Considere marés; foto não garante profundidade o dia todo.",
+    "Confira acesso a parques, fechamentos sazonais e clima marítimo.",
+    "Confirme refeições, spa, atividades, barco e cancelamento separadamente.",
+    "Famílias: camas, capacidade, supervisão e segurança das piscinas.",
+    "Preços, disponibilidade e reserva confirmados pelo fornecedor autorizado."
+  ],
+  "hotels": [
+    [
+      "Railay · Península Phra Nang",
+      "Pavilhões de dois andares e villas Rayavadee entre vegetação, rochedos e praias. Para hóspedes que gostam de chegada marítima e não precisam de estrada até o hotel.",
+      "Confira categoria, acesso à praia, fechamentos temporários e barco do píer combinado.",
+      "Para paisagem única de Railay e chegada pelo mar.",
+      ""
+    ],
+    [
+      "Nong Thale · Área Tubkaek",
+      "Phulay Bay, a Ritz-Carlton Reserve reúne detalhes tailandeses, pavilhões e villas amplos, jardins e serviço pessoal. Planta das piscinas e vista nas fotos dependem da categoria.",
+      "Diferencie pavilhão e villa; confirme vista, mordomo, refeições e passeios marítimos pagos.",
+      "Para arquitetura tailandesa e serviço personalizado.",
+      ""
+    ],
+    [
+      "Praia Tubkaek · Nong Thale",
+      "Banyan Tree Krabi é resort moderno com piscina privativa em todas as suítes e villas segundo catálogo oficial. Vistas de jardim, parciais do mar e oceano aberto diferem muito. Spa e refeições separados.",
+      "Confira capacidade infantil, categoria, segurança de piscina, vista e preço do spa.",
+      "Para piscina privativa e villas contemporâneas.",
+      ""
+    ],
+    [
+      "Praia Tubkaek",
+      "The Tubkaak Krabi Boutique Resort é resort intimista na praia com vista das ilhas. Destaca-se pela tranquilidade, não tamanho. Quartos de jardim, suítes marítimas e villas com piscina são diferentes.",
+      "Nem todo quarto padrão tem vista do mar ou piscina; confira categoria e regras familiares.",
+      "Para descanso boutique junto ao mar.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Krabi e Railay são o mesmo lugar?",
+      "Krabi é província com várias áreas costeiras. Railay e Phra Nang por água, Tubkaek, Nong Thale e Klong Muang por estrada."
+    ],
+    [
+      "Onde ficar entre rochedos de Railay?",
+      "Rayavadee fica na península Phra Nang. Combine píer, horário do barco, bagagem e retorno."
+    ],
+    [
+      "Todos os hotéis têm piscinas privativas?",
+      "Não. Banyan Tree informa piscinas em todas as suítes e villas, The Tubkaak em categorias específicas. Rayavadee e Phulay Bay também oferecem opções diferentes."
+    ],
+    [
+      "Qual diferença entre Phulay Bay e Banyan Tree Krabi?",
+      "Phulay Bay prioriza design tailandês, espaço e serviço em Nong Thale, Banyan Tree suítes e villas com piscina em Tubkaek. Compare categorias."
+    ],
+    [
+      "Pode nadar em Tubkaek a qualquer hora?",
+      "Nem sempre: maré baixa deixa água rasa, mar depende do clima. Foto na maré alta não garante condições iguais."
+    ],
+    [
+      "Pode visitar ilhas Hong?",
+      "Sim, com clima adequado e operador. Confirme píer, permissões, fechamentos, taxas e conservação."
+    ],
+    [
+      "Krabi é adequada a famílias com crianças pequenas?",
+      "Sim, escolhendo resort e quarto adequados. Confira capacidade, barcos, bagagem, camas, piscinas e idades."
+    ],
+    [
+      "Como reservar na Bosphoras?",
+      "Compare hospedagens; fornecedor autorizado confirma preço, disponibilidade, pagamento e suporte."
+    ]
+  ],
+  "photoCaptions": [
+    "Railay West, rocha calcária e areia clara",
+    "Formações calcárias e praia Phra Nang",
+    "Praia tranquila Tubkaek e ilhas",
+    "Koh Kwang, palmeiras em Klong Muang",
+    "Enseada arenosa Ao Nang e rochedos",
+    "Rochedos Railay West e barcos de cauda longa",
+    "Ilhas Hong, barco tradicional diante das rochas",
+    "Rochedos Phra Nang sobre enseada",
+    "Koh Poda, barcos e ilhota calcária"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Piscina e jardim Pool Pavilion Rayavadee",
+      "Sala Spa Pavilion Rayavadee",
+      "Quarto Terrace Pavilion Rayavadee"
+    ],
+    [
+      "Piscina panorâmica Phulay Bay e ilhas",
+      "Quarto villa Phulay Bay com nicho",
+      "Espaço villa Phulay Bay junto ao mar"
+    ],
+    [
+      "Área Banyan Tree Krabi em Tubkaek",
+      "Villa Banyan Tree Krabi com piscina privativa",
+      "Recepção spa Banyan Tree Krabi"
+    ],
+    [
+      "Restaurante de praia The Tubkaak com vista das ilhas",
+      "Piscina e jardim villa The Tubkaak",
+      "Restaurante na orla e panorama costeiro The Tubkaak"
+    ]
+  ],
+  "seoTitle": "Onde ficar em Krabi: hotéis de luxo e melhores praias",
+  "hotelSeoTitle": "Hotéis de Krabi: Rayavadee, Phulay Bay, Banyan Tree e Tubkaak",
+  "seoDescription": "Compare quatro hotéis de luxo em Krabi: Railay, Tubkaek, villas com piscina privativa, traslados de barco e praias."
+}

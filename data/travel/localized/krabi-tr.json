@@ -1,0 +1,168 @@
+{
+  "name": "Krabi",
+  "country": "Tayland",
+  "eyebrow": "Krabi · Andaman Denizi'nin kireçtaşı adaları",
+  "heading": "Krabi'de nerede kalınır? Önce koy, sonra otel",
+  "intro": "Andaman Denizi'nden kireçtaşı kayalıkları yükselir, kumlu kıyıda uzun kuyruklu tekneler toplanır, ufukta adalar görünür. Kıyı seçimi oda seçimi kadar önemlidir.",
+  "editorial": "Krabi adı farklı tatil biçimlerini kapsar. Railay ve Phra Nang yarımadası kayalıklarla karayolundan ayrılır; Rayavadee'ye son ulaşım tekneyle yapılır. Etkileyici bir varıştır ancak bagaj, sefer ve deniz koşullarını önceden planlamak gerekir.\n\nKuzeybatıdaki Tubkaek kıyısı bahçeler, teraslar ve Hong Adaları manzarasıyla daha sakindir. Banyan Tree Krabi ve The Tubkaak buradadır ancak farklıdır: Banyan Tree tüm süit ve villalarda özel havuz belirtirken The Tubkaak yalnızca bazı kategorilerde sunar. Komşu Nong Thale'de Phulay Bay, a Ritz-Carlton Reserve geniş pavyon ve villaları, Tay mimarisi ve kişisel hizmetiyle ayrılır. Reserve villa fotoğrafı her pavyonun plan ve manzarasını yansıtmaz.\n\nKlong Muang karayolu bağlantılı anakara tatili sunar. Ao Nang restoranlar ve tekne kalkışları için uygundur ancak sakin resort atmosferinin yerini tutmaz. Hong Adaları, lagünler ve deniz manzaralarında milli park kurallarına, doğa korumasına ve gelgitlere dikkat edin. Tubkaek'te çekilme sırasında su çok sığ olabilir; fotoğraftaki deniz rengi yüzme koşullarını göstermez.\n\nAileler kapasite, havuz güvenliği, yaş sınırı ve yatakları doğrulamalıdır. Spa, yemek, tekne transferi, geziler ve iptali ayrı teyit edin. Bosphoras'ta coğrafyaya göre konaklamaları, sonra oda kategorisi ve dahil hizmetleri karşılaştırın; güncel fiyat ve müsaitliği yetkili sağlayıcı doğrular.",
+  "hotelIntro": "Dört lüks resort: Phra Nang'da Rayavadee, Nong Thale'de Phulay Bay, sakin Tubkaek kıyısında Banyan Tree ve The Tubkaak.",
+  "areas": [
+    [
+      "Railay ve Phra Nang · Tekneyle ulaşılan yarımada",
+      "Dik kayalıklar, koylar ve orman yolları; deniz transferi deneyimin parçasıdır.",
+      "İskele, sefer, deniz, bagaj ve gelgitte plaj erişimini doğrulayın."
+    ],
+    [
+      "Tubkaek · Ada siluetleri",
+      "Sakin kıyıdan özellikle gün batımında Hong Adaları görünür; panorama tüm gün derin su garantilemez.",
+      "Havuzlu kategorileri, su derinliğini ve dış restoranları kontrol edin."
+    ],
+    [
+      "Nong Thale · Phulay Bay bölgesi",
+      "Dağ ve bahçeler mimari ve hizmetin öne çıktığı sakin resortları çevreler.",
+      "Pavyon ve villayı ayırın; kişisel hizmet ve varışı doğrulayın."
+    ],
+    [
+      "Klong Muang · Karayolu bağlantılı plaj",
+      "Restoran ve gezilere karayoluyla bağlanan sakin anakara üssü; tekneye bağımlı olmak istemeyenler için.",
+      "Mesafe, gelgit ve akşam ulaşımını kontrol edin."
+    ],
+    [
+      "Ao Nang ve iskeleler",
+      "Deniz gezileri ve restoranlar için hareketli kalkış noktası, sakin resort değil.",
+      "İskele, park izni, deniz, tekne büyüklüğü ve iptali doğrulayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Railay'e denizden varış",
+      "Rayavadee için araç ve tekne transferini tarifeye göre düzenleyin."
+    ],
+    [
+      "Tubkaek'ten Hong Adaları",
+      "Ada renklerinin değişimini gün doğumu veya batımında izleyin; gezi için sorumlu operatör seçip erişimi doğrulayın."
+    ],
+    [
+      "Spa zamanı",
+      "Banyan Tree su terapileri, Phulay Bay programları ve diğer spaları karşılaştırın; hizmetler ücretli olabilir."
+    ],
+    [
+      "Kireçtaşı kayalıklarının altında yürüyüş",
+      "Nem, arazi ve kapanışları dikkate alarak kıyı ve orman patikalarını keşfedin."
+    ],
+    [
+      "Doğru atmosferde akşam yemeği",
+      "Phra Nang mağarası yakınında yemek ile Tubkaek restoranının ulaşımı farklıdır; dönüşü planlayın."
+    ]
+  ],
+  "checks": [
+    "Railay'in tekne erişimi ile Tubkaek/Nong Thale anakara kıyısını karşılaştırın.",
+    "İskele, sefer, deniz, bagaj ve çocuk ulaşımını doğrulayın.",
+    "Kesin kategoriyi karşılaştırın: havuz, teras, manzara ve donanım farklıdır.",
+    "Gelgitleri dikkate alın; fotoğraf tüm gün yüzme derinliği garantilemez.",
+    "Milli park erişimi, sezonluk kapanış ve deniz havasını kontrol edin.",
+    "Yemek, spa, etkinlik, tekne kiralama ve iptali ayrı doğrulayın.",
+    "Aileler yatak, kapasite, gözetim ve havuz güvenliğini kontrol etmeli.",
+    "Fiyat, müsaitlik ve rezervasyon yetkili sağlayıcı tarafından doğrulanır."
+  ],
+  "hotels": [
+    [
+      "Railay · Phra Nang yarımadası",
+      "Rayavadee'nin iki katlı pavyon ve villaları yeşillik, kireçtaşı kayalıkları ve plajlar arasındadır. Denizden varışı seven ve otele doğrudan karayolu gerektirmeyen misafirlere uygundur.",
+      "Pavyon kategorisi, plaj erişimi, geçici kapanış ve belirlenen iskeleden tekneyi doğrulayın.",
+      "Railay'in eşsiz manzarası ve denizden varış için.",
+      ""
+    ],
+    [
+      "Nong Thale · Tubkaek bölgesi",
+      "Phulay Bay, a Ritz-Carlton Reserve Tay detayları, geniş pavyon ve villalar, bahçeler ve kişisel hizmet sunar. Fotoğraftaki havuz planı ve manzara kategoriye bağlıdır.",
+      "Pavyon ve villayı ayırın; manzara, uşak hizmeti, yemek ve ücretli tekne gezisini doğrulayın.",
+      "Tay mimarisi ve kişisel hizmet için.",
+      ""
+    ],
+    [
+      "Tubkaek plajı · Nong Thale",
+      "Banyan Tree Krabi resmî kataloğuna göre bütün süit ve villalarında özel havuz sunan modern resorttur. Bahçe, kısmi deniz ve açık deniz manzaraları belirgin biçimde farklıdır; spa ve yemek ayrı teyit edilir.",
+      "Çocuk kapasitesi, kategori, havuz güvenliği, manzara ve spa ücretini doğrulayın.",
+      "Özel havuz ve çağdaş villalar için.",
+      ""
+    ],
+    [
+      "Tubkaek plajı",
+      "The Tubkaak Krabi Boutique Resort ada manzaralı küçük bir plaj resortudur. Ölçekten çok sakinliğiyle tanınır. Bahçe odaları, deniz süitleri ve havuzlu villalar farklı deneyimler sunar.",
+      "Her standart oda denize bakmaz veya havuzlu değildir; kategori ve aile koşullarını kontrol edin.",
+      "Sakin butik plaj tatili için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Krabi ve Railay aynı yer mi?",
+      "Krabi farklı kıyı bölgeleri olan ildir. Railay ve Phra Nang denizden, Tubkaek, Nong Thale ve Klong Muang karayolundan ulaşılır."
+    ],
+    [
+      "Railay kayalıkları arasında nerede kalınır?",
+      "Rayavadee Phra Nang yarımadasındadır. İskele, tekne saati, bagaj ve dönüş transferini planlayın."
+    ],
+    [
+      "Her otelde özel havuz var mı?",
+      "Hayır. Banyan Tree tüm süit ve villalarda, The Tubkaak bazı kategorilerde havuz sunar. Rayavadee ve Phulay Bay de farklı seçeneklere sahiptir."
+    ],
+    [
+      "Phulay Bay ve Banyan Tree farkı nedir?",
+      "Phulay Bay Nong Thale'de Tay tasarımı, genişlik ve hizmete; Banyan Tree Tubkaek'te havuzlu süit ve villalara odaklanır. Kesin kategoriyi karşılaştırın."
+    ],
+    [
+      "Tubkaek'te her saat yüzülebilir mi?",
+      "Her zaman değil; çekilmede su sığdır, deniz hava durumuna bağlıdır. Yükselme fotoğrafı aynı koşulları garanti etmez."
+    ],
+    [
+      "Hong Adaları ziyaret edilebilir mi?",
+      "Uygun hava ve operatör varsa evet. İskele, park izinleri, kapanış, ücret ve koruma kurallarını doğrulayın."
+    ],
+    [
+      "Krabi küçük çocuklu ailelere uygun mu?",
+      "Uygun resort ve oda seçilirse evet. Kapasite, tekneler, bagaj, yatak, havuz ve yaş kurallarını doğrulayın."
+    ],
+    [
+      "Bosphoras'ta nasıl rezervasyon yapılır?",
+      "Karşılaştırın; fiyat, müsaitlik, ödeme ve destek yetkili sağlayıcıya bağlıdır."
+    ]
+  ],
+  "photoCaptions": [
+    "Railay West, kireçtaşı kayalığı ve açık renk kum",
+    "Phra Nang plajı ve kireçtaşı oluşumları",
+    "Tubkaek sakin plajı ve adalar",
+    "Koh Kwang, Klong Muang kıyısında palmiyeler",
+    "Ao Nang kumlu koyu ve kayalıklar",
+    "Railay West kayalıkları ve uzun kuyruklu tekneler",
+    "Hong Adaları, kayalıklar önünde geleneksel tekne",
+    "Phra Nang koyunun üzerindeki kayalıklar",
+    "Koh Poda, tekneler ve kireçtaşı adacığı"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Rayavadee Pool Pavilion havuz ve bahçesi",
+      "Rayavadee Spa Pavilion salonu",
+      "Rayavadee Terrace Pavilion yatak odası"
+    ],
+    [
+      "Phulay Bay panoramik havuzu ve adalar",
+      "Phulay Bay villa yatak odası ve nişi",
+      "Phulay Bay deniz kıyısında villa alanı"
+    ],
+    [
+      "Banyan Tree Krabi Tubkaek tesisi",
+      "Banyan Tree Krabi özel havuzlu villa",
+      "Banyan Tree Krabi spa resepsiyonu"
+    ],
+    [
+      "The Tubkaak plaj restoranı ve ada manzarası",
+      "The Tubkaak ayrı villa havuz ve bahçesi",
+      "The Tubkaak deniz kıyısı restoran ve panorama"
+    ]
+  ],
+  "seoTitle": "Krabi'de Nerede Kalınır? Lüks Oteller ve En Güzel Plajlar",
+  "hotelSeoTitle": "Krabi Otelleri: Rayavadee, Phulay Bay, Banyan Tree ve Tubkaak",
+  "seoDescription": "Krabi'de dört lüks oteli, Railay ve Tubkaek plajları, özel havuzlu villalar, tekne transferleri ve koylara göre karşılaştırın."
+}
