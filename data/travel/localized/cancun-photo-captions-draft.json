@@ -7,7 +7,8 @@
       "scene-3",
       "scene-5",
       "scene-6",
-      "scene-7"
+      "scene-7",
+      "scene-10"
     ],
     [
       "nizuc-1",
@@ -18,11 +19,14 @@
       "le-blanc-4"
     ],
     [
-      "hyatt-ziva-1"
+      "hyatt-ziva-1",
+      "hyatt-ziva-3",
+      "hyatt-ziva-4"
     ],
     [
       "coral-beach-1",
-      "coral-beach-2"
+      "coral-beach-2",
+      "coral-beach-6"
     ]
   ],
   "captions": {
@@ -39,7 +43,11 @@
       "coral-beach-1": "Piscines et plage du Coral Beach",
       "coral-beach-2": "Suite avec vue sur la mer au Coral Beach",
       "scene-6": "Lagune Nichupté",
-      "scene-7": "Playa Tortugas"
+      "scene-7": "Playa Tortugas",
+      "scene-10": "Playa Delfines et les hôtels du littoral",
+      "hyatt-ziva-3": "Chambre de la suite Oceanfront Lighthouse",
+      "hyatt-ziva-4": "Piscine Punta Vista de la tour Turquoize, réservée aux adultes",
+      "coral-beach-6": "Coral Beach au crépuscule"
     },
     "en": {
       "scene-1": "Delfines Beach",
@@ -54,7 +62,11 @@
       "coral-beach-1": "Coral Beach pools and beach",
       "coral-beach-2": "Coral Beach ocean-view suite",
       "scene-6": "Nichupté Lagoon",
-      "scene-7": "Tortugas Beach"
+      "scene-7": "Tortugas Beach",
+      "scene-10": "Playa Delfines and beachfront hotels",
+      "hyatt-ziva-3": "Oceanfront Lighthouse Suite bedroom",
+      "hyatt-ziva-4": "Adults-only Turquoize Tower Punta Vista pool",
+      "coral-beach-6": "Coral Beach at dusk"
     },
     "tr": {
       "scene-1": "Delfines Plajı",
@@ -69,7 +81,11 @@
       "coral-beach-1": "Coral Beach havuzları ve plajı",
       "coral-beach-2": "Coral Beach deniz manzaralı süiti",
       "scene-6": "Nichupté Lagünü",
-      "scene-7": "Tortugas Plajı"
+      "scene-7": "Tortugas Plajı",
+      "scene-10": "Playa Delfines ve sahil otelleri",
+      "hyatt-ziva-3": "Oceanfront Lighthouse süit yatak odası",
+      "hyatt-ziva-4": "Yetişkinlere özel Turquoize Tower Punta Vista havuzu",
+      "coral-beach-6": "Alacakaranlıkta Coral Beach"
     },
     "de": {
       "scene-1": "Strand Delfines",
@@ -84,7 +100,11 @@
       "coral-beach-1": "Pools und Strand des Coral Beach",
       "coral-beach-2": "Suite mit Meerblick im Coral Beach",
       "scene-6": "Lagune Nichupté",
-      "scene-7": "Strand Playa Tortugas"
+      "scene-7": "Strand Playa Tortugas",
+      "scene-10": "Playa Delfines und Strandhotels",
+      "hyatt-ziva-3": "Schlafzimmer der Oceanfront Lighthouse Suite",
+      "hyatt-ziva-4": "Punta Vista Pool im Turquoize Tower nur für Erwachsene",
+      "coral-beach-6": "Coral Beach in der Abenddämmerung"
     },
     "es": {
       "scene-1": "Playa Delfines",
@@ -99,7 +119,11 @@
       "coral-beach-1": "Piscinas y playa de Coral Beach",
       "coral-beach-2": "Suite con vista al mar en Coral Beach",
       "scene-6": "Laguna Nichupté",
-      "scene-7": "Playa Tortugas"
+      "scene-7": "Playa Tortugas",
+      "scene-10": "Playa Delfines y hoteles del litoral",
+      "hyatt-ziva-3": "Dormitorio de la suite Oceanfront Lighthouse",
+      "hyatt-ziva-4": "Piscina Punta Vista de la torre Turquoize, solo para adultos",
+      "coral-beach-6": "Coral Beach al atardecer"
     },
     "it": {
       "scene-1": "Spiaggia Delfines",
@@ -114,7 +138,11 @@
       "coral-beach-1": "Piscine e spiaggia del Coral Beach",
       "coral-beach-2": "Suite con vista mare del Coral Beach",
       "scene-6": "Laguna Nichupté",
-      "scene-7": "Spiaggia Tortugas"
+      "scene-7": "Spiaggia Tortugas",
+      "scene-10": "Playa Delfines e hotel sul litorale",
+      "hyatt-ziva-3": "Camera della suite Oceanfront Lighthouse",
+      "hyatt-ziva-4": "Piscina Punta Vista della torre Turquoize, riservata agli adulti",
+      "coral-beach-6": "Coral Beach al crepuscolo"
     },
     "pt": {
       "scene-1": "Praia Delfines",
@@ -129,7 +157,11 @@
       "coral-beach-1": "Piscinas e praia do Coral Beach",
       "coral-beach-2": "Suite com vista para o mar no Coral Beach",
       "scene-6": "Lagoa Nichupté",
-      "scene-7": "Praia Tortugas"
+      "scene-7": "Praia Tortugas",
+      "scene-10": "Playa Delfines e hotéis do litoral",
+      "hyatt-ziva-3": "Quarto da suite Oceanfront Lighthouse",
+      "hyatt-ziva-4": "Piscina Punta Vista da torre Turquoize, exclusiva para adultos",
+      "coral-beach-6": "Coral Beach ao anoitecer"
     },
     "zh": {
       "scene-1": "海豚海滩",
@@ -144,7 +176,11 @@
       "coral-beach-1": "Coral Beach 酒店泳池与海滩",
       "coral-beach-2": "Coral Beach 酒店海景套房",
       "scene-6": "尼丘普特潟湖",
-      "scene-7": "托尔图加斯海滩"
+      "scene-7": "托尔图加斯海滩",
+      "scene-10": "海豚海滩与海滨酒店",
+      "hyatt-ziva-3": "Oceanfront Lighthouse 套房卧室",
+      "hyatt-ziva-4": "Turquoize 塔楼成人专属 Punta Vista 泳池",
+      "coral-beach-6": "暮色中的 Coral Beach"
     },
     "ru": {
       "scene-1": "Пляж Дельфинес",
@@ -159,7 +195,11 @@
       "coral-beach-1": "Бассейны и пляж Coral Beach",
       "coral-beach-2": "Люкс Coral Beach с видом на море",
       "scene-6": "Лагуна Ничупте",
-      "scene-7": "Пляж Тортугас"
+      "scene-7": "Пляж Тортугас",
+      "scene-10": "Пляж Дельфинес и отели побережья",
+      "hyatt-ziva-3": "Спальня люкса Oceanfront Lighthouse",
+      "hyatt-ziva-4": "Бассейн Punta Vista в башне Turquoize только для взрослых",
+      "coral-beach-6": "Coral Beach в сумерках"
     },
     "ar": {
       "scene-1": "شاطئ دلفينيس",
@@ -174,7 +214,11 @@
       "coral-beach-1": "مسابح وشاطئ Coral Beach",
       "coral-beach-2": "جناح في Coral Beach بإطلالة على البحر",
       "scene-6": "بحيرة نيشوبتي",
-      "scene-7": "شاطئ تورتوغاس"
+      "scene-7": "شاطئ تورتوغاس",
+      "scene-10": "شاطئ دلفينيس والفنادق الساحلية",
+      "hyatt-ziva-3": "غرفة نوم جناح Oceanfront Lighthouse",
+      "hyatt-ziva-4": "مسبح Punta Vista في برج Turquoize المخصص للبالغين",
+      "coral-beach-6": "Coral Beach عند الغسق"
     }
   },
   "visualReview": {
@@ -183,7 +227,11 @@
       "coral-beach-4",
       "scene-8",
       "le-blanc-5",
-      "coral-beach-5"
+      "coral-beach-5",
+      "scene-9",
+      "scene-11",
+      "scene-12",
+      "le-blanc-6"
     ],
     "reason": "Rejected watermarked pool, repeated lifestyle portrait, non-landmark ice cream image, and unverified property aerial."
   },
