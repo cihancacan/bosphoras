@@ -124,9 +124,226 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-5",
+        "sourcePage": "https://www.suito-osaka.jp/en/gallery/",
+        "sourceResolvedUrl": "https://www.suito-osaka.jp/wp-content/uploads/2024/11/dotonbori_ukiniwabashi_cruise_day_2016.jpg",
+        "sourceRequestedUrl": "https://www.suito-osaka.jp/wp-content/uploads/2024/11/dotonbori_ukiniwabashi_cruise_day_2016.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Japan National Tourism Organization / Osaka Convention & Tourism Bureau",
+        "publisher": "Japan National Tourism Organization / Osaka Convention & Tourism Bureau",
+        "hotel": null,
+        "localPath": "/images/travel/osaka-premium/destination/scene-5.webp",
+        "sourceSHA256": "1a22261fedf1bf21c609052e675ba52c9fc5f31a2a6072b4a8b7e5e4a311b4bc",
+        "webpSHA256": "491ecab9cd5236b92549c9772d4afda1e49053893ab9c9cb2da5ad30566dc9d1",
+        "sourcePixels": [
+          1600,
+          1066
+        ],
+        "webpPixels": [
+          1276,
+          850
+        ],
+        "webpBytes": 194884,
+        "pixelFingerprint": "5efa911590d21f3f",
+        "candidateSubject": "dotonbori|dōtonbori",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-6",
+        "sourcePage": "https://osaka-info.jp/en/special/kita-minami/course01/",
+        "sourceResolvedUrl": "https://osaka-info.jp/en/special/kita-minami/course01/common/img/shitennoji-temple-01.jpg",
+        "sourceRequestedUrl": "https://osaka-info.jp/en/special/kita-minami/course01/common/img/shitennoji-temple-01.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Japan National Tourism Organization / Osaka Convention & Tourism Bureau",
+        "publisher": "Japan National Tourism Organization / Osaka Convention & Tourism Bureau",
+        "hotel": null,
+        "localPath": "/images/travel/osaka-premium/destination/scene-6.webp",
+        "sourceSHA256": "329257fbaafc999900740763fd17c03cec5173c40a6fc9197ece136ca035b530",
+        "webpSHA256": "796d021dbc34006ae1dc68d9bdf30c7e164b59a6ac47cf9497d212de125825f5",
+        "sourcePixels": [
+          800,
+          450
+        ],
+        "webpPixels": [
+          800,
+          450
+        ],
+        "webpBytes": 42676,
+        "pixelFingerprint": "252646c6c6c6c4b0",
+        "candidateSubject": "shitennoji|shitenno-ji",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-7",
+        "sourcePage": "https://osaka-info.jp/en/special/kita-minami/course01/",
+        "sourceResolvedUrl": "https://osaka-info.jp/en/special/kita-minami/course01/common/img/nakanoshima-01.jpg",
+        "sourceRequestedUrl": "https://osaka-info.jp/en/special/kita-minami/course01/common/img/nakanoshima-01.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Japan National Tourism Organization / Osaka Convention & Tourism Bureau",
+        "publisher": "Japan National Tourism Organization / Osaka Convention & Tourism Bureau",
+        "hotel": null,
+        "localPath": "/images/travel/osaka-premium/destination/scene-7.webp",
+        "sourceSHA256": "a6783719b58e52987fdb5f4bc65c6df1d98ef8cd83b9fe2a9d7973b2cfa23dbe",
+        "webpSHA256": "c451db3f11f01d8da234c677acc8f2965084bd00c4c2ac4964dfb370216b1262",
+        "sourcePixels": [
+          800,
+          450
+        ],
+        "webpPixels": [
+          800,
+          450
+        ],
+        "webpBytes": 74960,
+        "pixelFingerprint": "546933d4ccc9c9f6",
+        "candidateSubject": "nakanoshima",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
+      {
+        "key": "conrad-1",
+        "sourcePage": "https://www.expedia.com/Osaka-Hotels-Conrad-Osaka.h17310194.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/db3f1c58.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/db3f1c58.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Conrad Osaka lobby lounge",
+        "originalCaption": "Expedia / Conrad Osaka",
+        "credit": "Expedia / Conrad Osaka",
+        "publisher": "Conrad Osaka",
+        "hotel": "Conrad Osaka",
+        "localPath": "/images/travel/osaka-premium/conrad/conrad-1.webp",
+        "sourceSHA256": "ecda83d4c38ced2e926f9408bfc3d187f1fd67f0db6bd6d69b1063c23d815762",
+        "webpSHA256": "0e441f940d7b1982e92d34ca1e756077d7edec96f3c0cf5dc533d5f1d932981d",
+        "sourcePixels": [
+          1280,
+          854
+        ],
+        "webpPixels": [
+          1274,
+          850
+        ],
+        "webpBytes": 190816,
+        "pixelFingerprint": "05454a1a4e4f4f0e",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "four-seasons-1",
+        "sourcePage": "https://www.travelandleisure.com/four-seasons-hotel-osaka-japan-review-8704951",
+        "sourceResolvedUrl": "https://www.travelandleisure.com/thmb/1PIMBSVnHZjs4_KQCO9BrKpsCJM%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29%3Aformat%28webp%29/TAL-header-exterior-four-seasons-osaka-hotel-FSOSAKA0924-d3c82a5643e747518a5a83533d9fdcee.jpg",
+        "sourceRequestedUrl": "https://www.travelandleisure.com/thmb/1PIMBSVnHZjs4_KQCO9BrKpsCJM%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29%3Aformat%28webp%29/TAL-header-exterior-four-seasons-osaka-hotel-FSOSAKA0924-d3c82a5643e747518a5a83533d9fdcee.jpg",
+        "originalAlt": "Four Seasons Hotel Osaka exterior during cherry blossom season",
+        "originalCaption": "Courtesy Four Seasons Hotel Osaka / Travel + Leisure",
+        "credit": "Courtesy Four Seasons Hotel Osaka / Travel + Leisure",
+        "publisher": "Four Seasons Hotel Osaka",
+        "hotel": "Four Seasons Hotel Osaka",
+        "localPath": "/images/travel/osaka-premium/four-seasons/four-seasons-1.webp",
+        "sourceSHA256": "d599f74b6395d1a09da1955dfd7ddcc6d0186e51ca1d2a0bb776b4340f1b568e",
+        "webpSHA256": "17153ca7a86f5fc16f67030cd320215f6e915ef45767df9f243e23f24995be42",
+        "sourcePixels": [
+          1500,
+          1000
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 255228,
+        "pixelFingerprint": "77653171d110343c",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "four-seasons-2",
+        "sourcePage": "https://www.expedia.com/Osaka-Hotels-Four-Seasons-Hotel-Osaka.h104193036.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/105000000/104200000/104193100/104193036/7c93bdd1.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/105000000/104200000/104193100/104193036/7c93bdd1.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Four Seasons Hotel Osaka guest room with city view",
+        "originalCaption": "Expedia / Four Seasons Hotel Osaka",
+        "credit": "Expedia / Four Seasons Hotel Osaka",
+        "publisher": "Four Seasons Hotel Osaka",
+        "hotel": "Four Seasons Hotel Osaka",
+        "localPath": "/images/travel/osaka-premium/four-seasons/four-seasons-2.webp",
+        "sourceSHA256": "b846ff818de7eb959fb3e9f69ff2b650a3d6e428ce232334a3f10ca1790bacd9",
+        "webpSHA256": "13eeab41e17774fb81f7da71839f3c4582138c7b67e989cdaa3fd3a6cd613faa",
+        "sourcePixels": [
+          1280,
+          862
+        ],
+        "webpPixels": [
+          1262,
+          850
+        ],
+        "webpBytes": 115746,
+        "pixelFingerprint": "198c3c7220e87886",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "four-seasons-3",
+        "sourcePage": "https://www.expedia.com/Osaka-Hotels-Four-Seasons-Hotel-Osaka.h104193036.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/105000000/104200000/104193100/104193036/4cdc8c39.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/105000000/104200000/104193100/104193036/4cdc8c39.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Four Seasons Hotel Osaka indoor pool with city view",
+        "originalCaption": "Expedia / Four Seasons Hotel Osaka",
+        "credit": "Expedia / Four Seasons Hotel Osaka",
+        "publisher": "Four Seasons Hotel Osaka",
+        "hotel": "Four Seasons Hotel Osaka",
+        "localPath": "/images/travel/osaka-premium/four-seasons/four-seasons-3.webp",
+        "sourceSHA256": "2441d9f1178550fc0834760aa6f6fa334d2cfe6aa170655a7ca3427f7b7b291a",
+        "webpSHA256": "35e1372c0b06486ee7def9afab53e43c206aeb11b8479ed4d4744b45a5bbdac7",
+        "sourcePixels": [
+          1280,
+          853
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 175422,
+        "pixelFingerprint": "783c3a92b01dbda0",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
       {
         "key": "ritz-carlton-1",
         "sourcePage": "https://www.ritzcarlton.com/en/hotels/osarz-the-ritz-carlton-osaka/photos/",
@@ -159,37 +376,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "ritz-carlton-2",
-        "sourcePage": "https://www.ritzcarlton.com/en/hotels/osarz-the-ritz-carlton-osaka/photos/",
-        "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/rz-osarz-deluxe-king-25923:Classic-Hor?wid=1336&fit=constrain",
-        "sourceRequestedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/rz-osarz-deluxe-king-25923:Classic-Hor?wid=1336&fit=constrain",
-        "originalAlt": "Lower Floor Deluxe King",
-        "originalCaption": "",
-        "credit": "The Ritz-Carlton, Osaka",
-        "publisher": "The Ritz-Carlton, Osaka",
-        "hotel": "The Ritz-Carlton, Osaka",
-        "localPath": "/images/travel/osaka-premium/ritz-carlton/ritz-carlton-2.webp",
-        "sourceSHA256": "434bb42b193ee4f4ab47c7266c6b8edf4c0e68cfd4cd0c57c2be18c5a15787fb",
-        "webpSHA256": "c2a927cb531e18fe4d021b7ab18bed659c8cb4c564742de7ee57c0865b5128e7",
-        "sourcePixels": [
-          1336,
-          893
-        ],
-        "webpPixels": [
-          1272,
-          850
-        ],
-        "webpBytes": 97388,
-        "pixelFingerprint": "c7f1e9c1f1e1cbbf",
-        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "ritz-carlton-3",
         "sourcePage": "https://www.ritzcarlton.com/en/hotels/osarz-the-ritz-carlton-osaka/photos/",
         "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/rz-osarz-lounge-reception-28775:Classic-Hor?wid=1336&fit=constrain",
@@ -213,6 +399,37 @@
         "webpBytes": 94616,
         "pixelFingerprint": "d4262b272b393332",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "ritz-carlton-4",
+        "sourcePage": "https://www.ritzcarlton.com/en/hotels/osarz-the-ritz-carlton-osaka/photos/",
+        "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/rz-osarz-deluxe-king-18231:Classic-Hor?wid=1336&fit=constrain",
+        "sourceRequestedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/rz-osarz-deluxe-king-18231:Classic-Hor?wid=1336&fit=constrain",
+        "originalAlt": "Upper Floor Deluxe King",
+        "originalCaption": "",
+        "credit": "The Ritz-Carlton, Osaka",
+        "publisher": "The Ritz-Carlton, Osaka",
+        "hotel": "The Ritz-Carlton, Osaka",
+        "localPath": "/images/travel/osaka-premium/ritz-carlton/ritz-carlton-4.webp",
+        "sourceSHA256": "23398b2329f08eb4211231c7b46a71d2c046d84e67b86da04896598bac105cf2",
+        "webpSHA256": "c04907f9b55738a0323d5762decc7e8865e6194d5642c671886bfcfeed6b4914",
+        "sourcePixels": [
+          1336,
+          894
+        ],
+        "webpPixels": [
+          1270,
+          850
+        ],
+        "webpBytes": 87598,
+        "pixelFingerprint": "1860687c61788c06",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -318,42 +535,73 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 4
+        "found": 7
       },
       {
         "group": "conrad",
         "expected": 3,
-        "found": 0
-      },
-      {
-        "group": "four-seasons",
-        "expected": 3,
-        "found": 0
+        "found": 1
       }
     ],
     "errors": [
+      {
+        "page": "https://web-japan.org/trends/11_food/jfd202312_tourist-attractions-in-osaka.html",
+        "error": "403 Client Error: Forbidden for url: https://web-japan.org/trends/11_food/jfd202312_tourist-attractions-in-osaka.html"
+      },
       {
         "page": "https://www.hilton.com/en/hotels/osacici-conrad-osaka/gallery/",
         "error": "403 Client Error: Forbidden for url: https://www.hilton.com/en/hotels/osacici-conrad-osaka/gallery/"
       },
       {
+        "url": "https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/69a89a73.jpg?h=800&impolicy=fcrop&w=1200",
+        "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/18000000/17320000/17310200/17310194/69a89a73.jpg?h=800&impolicy=fcrop&w=1200"
+      },
+      {
+        "page": "https://www.expedia.com/Osaka-Hotels-Conrad-Osaka.h17310194.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Osaka-Hotels-Conrad-Osaka.h17310194.Hotel-Information"
+      },
+      {
         "page": "https://www.fourseasons.com/osaka/photos-and-videos/",
         "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/osaka/photos-and-videos/"
-      },
-      {
-        "url": "https://press.fourseasons.com/osaka/hotel-news/2025/winter-offerings",
-        "error": "cannot identify image file <_io.BytesIO object at 0x75f0d2130770>"
-      },
-      {
-        "url": "https://press.fourseasons.com/osaka/hotel-news/2026/naniwa-yodogawa-fireworks",
-        "error": "cannot identify image file <_io.BytesIO object at 0x75f0d15da1b0>"
       }
     ],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
-    "excludedCandidates": [],
-    "cityCount": 4,
-    "hotelCount": 6,
-    "totalBytes": 1323900
+    "excludedCandidates": [
+      {
+        "key": "ritz-carlton-2",
+        "sourcePage": "https://www.ritzcarlton.com/en/hotels/osarz-the-ritz-carlton-osaka/photos/",
+        "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/rz-osarz-deluxe-king-25923:Classic-Hor?wid=1336&fit=constrain",
+        "sourceRequestedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/rz-osarz-deluxe-king-25923:Classic-Hor?wid=1336&fit=constrain",
+        "originalAlt": "Lower Floor Deluxe King",
+        "originalCaption": "",
+        "credit": "The Ritz-Carlton, Osaka",
+        "publisher": "The Ritz-Carlton, Osaka",
+        "hotel": "The Ritz-Carlton, Osaka",
+        "localPath": "/images/travel/osaka-premium/ritz-carlton/ritz-carlton-2.webp",
+        "sourceSHA256": "434bb42b193ee4f4ab47c7266c6b8edf4c0e68cfd4cd0c57c2be18c5a15787fb",
+        "webpSHA256": "c2a927cb531e18fe4d021b7ab18bed659c8cb4c564742de7ee57c0865b5128e7",
+        "sourcePixels": [
+          1336,
+          893
+        ],
+        "webpPixels": [
+          1272,
+          850
+        ],
+        "webpBytes": 97388,
+        "pixelFingerprint": "c7f1e9c1f1e1cbbf",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
+    "cityCount": 7,
+    "hotelCount": 10,
+    "totalBytes": 2363842
   }
 }
