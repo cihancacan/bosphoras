@@ -4,6 +4,7 @@
     "city": "Londres",
     "publisher": "Visit London / London & Partners",
     "cityPages": [
+      "https://www.mayfairldn.com/mount-street/",
       "https://www.bondstreet.co.uk/articles/explore-these-green-spaces-near-bond-street",
       "https://www.bondstreet.co.uk/your-visit/albemarle-street",
       "https://www.bondstreet.co.uk/articles/bond-streets-captivating-origin-story",
@@ -57,7 +58,7 @@
       "buckingham palace",
       "st paul",
       "borough market",
-      "mayfair|bond street",
+      "mayfair|bond street|mount street|grosvenor square",
       "thames|london skyline"
     ],
     "hotels": [
@@ -105,6 +106,7 @@
         "shangri-la",
         "Shangri-La The Shard, London",
         [
+          "https://www.the-shard.com/about/vision/",
           "https://www.the-shard.com/shangri-la-the-shard-london/hotel-amenities",
           "https://www.the-shard.com/shangri-la-the-shard-london",
           "https://www.the-shard.com/about/level-guide",
@@ -127,6 +129,9 @@
     "city": "Las Vegas",
     "publisher": "Visit Las Vegas / LVCVA",
     "cityPages": [
+      "https://www.blm.gov/visit/red-rock-canyon-national-conservation-area",
+      "https://www.visitlasvegas.com/experience/post/beginners-guide-to-the-las-vegas-downtown-arts-scene/",
+      "https://www.visitlasvegas.com/experience/post/national-plan-for-vacation-day/",
       "https://www.visitlasvegas.com/experience/post/intro-to-the-18b-arts-district/",
       "https://www.visitlasvegas.com/experience/post/vegas-weekend-getaway/",
       "https://www.visitlasvegas.com/experience/post/running-in-las-vegas-strip-routes-trails-races/",
@@ -167,6 +172,7 @@
         "wynn",
         "Wynn Las Vegas",
         [
+          "https://www.newsroom.wynnresorts.com/en/wynnresorts/wynn-las-vegas-resort-fact-sheet/s/d68e3fea-7a3a-44d1-8a15-c445ecfedc30",
           "https://www.wynnlasvegas.com/stories/most-instagrammable-spots-at-wynn-las-vegas",
           "https://www.wynnlasvegas.com/stories/why-wynn-las-vegas-sets-luxury-hospitality-standard",
           "https://www.wynnlasvegas.com/experiences/pools",
@@ -178,6 +184,9 @@
         "venetian",
         "The Venetian Resort Las Vegas",
         [
+          "https://www.venetianlasvegas.com/resort/pools/pool-garden.html",
+          "https://www.venetianlasvegas.com/resort/pools/venetian-pools.html",
+          "https://www.venetianlasvegas.com/resort/pools.html",
           "https://www.venetianlasvegas.com/hotel/suites.html",
           "https://www.venetianlasvegas.com/"
         ]
