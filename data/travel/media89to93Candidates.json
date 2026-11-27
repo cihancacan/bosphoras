@@ -3789,6 +3789,99 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-10",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Playa_Delfines.jpg",
+        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Playa_Delfines.jpg/960px-Playa_Delfines.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20250218232629",
+        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Playa_Delfines.jpg/960px-Playa_Delfines.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20250218232629",
+        "originalAlt": "File:Playa Delfines.jpg",
+        "originalCaption": "",
+        "credit": "Mexican Caribbean / Quintana Roo tourism",
+        "publisher": "Mexican Caribbean / Quintana Roo tourism",
+        "hotel": null,
+        "localPath": "/images/travel/cancun-premium/destination/scene-10.webp",
+        "sourceSHA256": "c3967df4e6495cf305bacdae2f6710606df7494bf8834c4bb5e3d563de093af6",
+        "webpSHA256": "14a5faad073e263ed898c81802a4897670314c45ccbbea0b6b491715308930bf",
+        "sourcePixels": [
+          960,
+          720
+        ],
+        "webpPixels": [
+          960,
+          720
+        ],
+        "webpBytes": 144272,
+        "pixelFingerprint": "c47508c910050a18",
+        "candidateSubject": "delfines",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-11",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Punta_Canc%C3%BAn,_Quintana_Roo_(30530674653).jpg",
+        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Punta_Canc%C3%BAn%2C_Quintana_Roo_%2830530674653%29.jpg/960px-Punta_Canc%C3%BAn%2C_Quintana_Roo_%2830530674653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20220214012755",
+        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Punta_Canc%C3%BAn%2C_Quintana_Roo_%2830530674653%29.jpg/960px-Punta_Canc%C3%BAn%2C_Quintana_Roo_%2830530674653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20220214012755",
+        "originalAlt": "File:Punta Cancún, Quintana Roo (30530674653).jpg",
+        "originalCaption": "",
+        "credit": "Mexican Caribbean / Quintana Roo tourism",
+        "publisher": "Mexican Caribbean / Quintana Roo tourism",
+        "hotel": null,
+        "localPath": "/images/travel/cancun-premium/destination/scene-11.webp",
+        "sourceSHA256": "a86ca0126aeff2dac4806239f92c892a1fb9303029ad726349b5056a20fffe02",
+        "webpSHA256": "b3e137b93e7a9d05bb51e3d117e59d7722dc460435f314516275c9e45df1693d",
+        "sourcePixels": [
+          960,
+          720
+        ],
+        "webpPixels": [
+          960,
+          720
+        ],
+        "webpBytes": 32422,
+        "pixelFingerprint": "032201162069c0c0",
+        "candidateSubject": "punta canc|another lighthouse|faro de punta",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-12",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Evento_Parque_Palapas_Cancun.JPG",
+        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Evento_Parque_Palapas_Cancun.JPG/960px-Evento_Parque_Palapas_Cancun.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150415052146",
+        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Evento_Parque_Palapas_Cancun.JPG/960px-Evento_Parque_Palapas_Cancun.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150415052146",
+        "originalAlt": "File:Evento Parque Palapas Cancun.JPG",
+        "originalCaption": "",
+        "credit": "Mexican Caribbean / Quintana Roo tourism",
+        "publisher": "Mexican Caribbean / Quintana Roo tourism",
+        "hotel": null,
+        "localPath": "/images/travel/cancun-premium/destination/scene-12.webp",
+        "sourceSHA256": "8967ba9086d28b2d0ee50e830dc4263a568281a2a6b8e16ba2e29ce54425d1c4",
+        "webpSHA256": "bfbced68d3258150b9e468026ec16e5c92a8fd2f9c6153e206d41c6e10825300",
+        "sourcePixels": [
+          960,
+          720
+        ],
+        "webpPixels": [
+          960,
+          720
+        ],
+        "webpBytes": 119948,
+        "pixelFingerprint": "db92e0e2c0c81090",
+        "candidateSubject": "downtown|centro|parque de las palapas|parque palapas|central.square",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -4136,11 +4229,6 @@
     ],
     "gaps": [
       {
-        "group": "city",
-        "expected": 9,
-        "found": 7
-      },
-      {
         "group": "nizuc",
         "expected": 3,
         "found": 2
@@ -4158,74 +4246,6 @@
       {
         "page": "https://www.expedia.com/Cancun-Hotels-Nizuc-Resort-And-Spa.h5531551.Hotel-Information",
         "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Nizuc-Resort-And-Spa.h5531551.Hotel-Information"
-      },
-      {
-        "page": "https://www.travelweekly.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun-p3711940",
-        "error": "403 Client Error: Forbidden for url: https://www.travelweekly.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun-p3711940"
-      },
-      {
-        "page": "https://www.businesstravelnews.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun/Images-p3236606",
-        "error": "403 Client Error: Forbidden for url: https://www.businesstravelnews.com/Hotels/Cancun/Le-Blanc-Spa-Resort-Cancun/Images-p3236606"
-      },
-      {
-        "page": "https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information?equalTargetTab=tab-0",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Le-Blanc-Spa-Resort-Cancun-Adults-Only-All-Inclusive.h27301.Hotel-Information?equalTargetTab=tab-0"
-      },
-      {
-        "page": "https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun",
-        "error": "403 Client Error: HTTP Forbidden for url: https://www.palaceproagents.com/destinations-resorts/le-blanc-spa-resort-cancun"
-      },
-      {
-        "page": "https://www.palaceproagents.com/es/destinos-resorts/le-blanc-spa-resort-cancun",
-        "error": "403 Client Error: HTTP Forbidden for url: https://www.palaceproagents.com/es/destinos-resorts/le-blanc-spa-resort-cancun"
-      },
-      {
-        "page": "https://cancun.leblancsparesorts.com/es/galeria",
-        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/es/galeria"
-      },
-      {
-        "page": "https://cancun.leblancsparesorts.com/gallery",
-        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/gallery"
-      },
-      {
-        "page": "https://www.leblancsparesorts.com/gallery",
-        "error": "403 Client Error: HTTP Forbidden for url: https://www.leblancsparesorts.com/gallery"
-      },
-      {
-        "page": "https://cancun.leblancsparesorts.com/",
-        "error": "403 Client Error: HTTP Forbidden for url: https://cancun.leblancsparesorts.com/"
-      },
-      {
-        "page": "https://www.businesstravelnews.com/Hotels/Cancun/Hyatt-Ziva-Cancun/Images-p56569871",
-        "error": "403 Client Error: Forbidden for url: https://www.businesstravelnews.com/Hotels/Cancun/Hyatt-Ziva-Cancun/Images-p56569871"
-      },
-      {
-        "page": "https://www.travelweekly.com/Hotels/Cancun/Hyatt-Ziva-Cancun-p56570042",
-        "error": "403 Client Error: Forbidden for url: https://www.travelweekly.com/Hotels/Cancun/Hyatt-Ziva-Cancun-p56570042"
-      },
-      {
-        "page": "https://www.expedia.com/Cancun-Hotels-Hyatt-Ziva-Cancun-All-Inclusive.h11669114.Hotel-Information?langid=1033",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Cancun-Hotels-Hyatt-Ziva-Cancun-All-Inclusive.h11669114.Hotel-Information?langid=1033"
-      },
-      {
-        "page": "https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/photos-reviews",
-        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/photos-reviews"
-      },
-      {
-        "page": "https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/rooms",
-        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-cancun/canif/rooms"
-      },
-      {
-        "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/gallery",
-        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/gallery"
-      },
-      {
-        "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun",
-        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun"
-      },
-      {
-        "page": "https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms",
-        "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/ziva/en-US/canif-hyatt-ziva-cancun/rooms"
       }
     ],
     "publicUseApproved": false,
@@ -4573,8 +4593,8 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 7,
+    "cityCount": 10,
     "hotelCount": 11,
-    "totalBytes": 1922078
+    "totalBytes": 2218720
   }
 }
