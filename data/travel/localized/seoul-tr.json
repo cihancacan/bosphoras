@@ -123,12 +123,38 @@
       "Aynı tarih, kişi, kategori, manzara, vergi, hizmet ve iptal şartlarını karşılaştırın."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Gyeongbokgung Sarayı taht salonu",
+    "Bukchon Hanok Köyü geleneksel evleri",
+    "Myeongdong alışveriş caddesi",
+    "Namsan'dan Seul panoraması",
+    "Dongdaemun'da tarihi Heunginjimun Kapısı",
+    "Jamsil'de Seokchon Gölü",
+    "Bongeunsa Tapınağı",
+    "Cheonggyecheon deresi yürüyüş yolu",
+    "Hongdae alışveriş caddesi"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Four Seasons Hotel Seoul dış cephesi",
+      "Four Seasons Seoul misafir odası",
+      "Four Seasons Seoul lobisi"
+    ],
+    [
+      "SIGNIEL Seoul'ün bulunduğu Lotte World Tower",
+      "SIGNIEL Seoul misafir odası",
+      "SIGNIEL Seoul kapalı havuzu"
+    ],
+    [
+      "Josun Palace Palace Gate girişi",
+      "Josun Palace State odası",
+      "Josun Palace kapalı havuzu"
+    ],
+    [
+      "The Shilla Seoul dış cephesi",
+      "The Shilla Seoul misafir odası",
+      "The Shilla Seoul açık havuzu"
+    ]
   ],
   "seoTitle": "Seul'de nerede kalınır? Jongno, Myeongdong ve Gangnam",
   "hotelSeoTitle": "Seul lüks otelleri: Four Seasons, SIGNIEL, Josun ve Shilla",

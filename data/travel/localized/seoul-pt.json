@@ -123,12 +123,38 @@
       "Compare datas, hóspedes, categorias, vistas, impostos, serviços e cancelamento equivalentes."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Salão do trono do palácio Gyeongbokgung",
+    "Casas tradicionais de Bukchon Hanok Village",
+    "Rua comercial de Myeongdong",
+    "Panorama de Seul a partir de Namsan",
+    "Porta histórica Heunginjimun em Dongdaemun",
+    "Lago Seokchon em Jamsil",
+    "Templo Bongeunsa",
+    "Passeio junto ao Cheonggyecheon",
+    "Rua comercial de Hongdae"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Exterior do Four Seasons Hotel Seoul",
+      "Quarto do Four Seasons Seoul",
+      "Átrio do Four Seasons Seoul"
+    ],
+    [
+      "Lotte World Tower onde fica o SIGNIEL Seoul",
+      "Quarto do SIGNIEL Seoul",
+      "Piscina interior do SIGNIEL Seoul"
+    ],
+    [
+      "Entrada Palace Gate do Josun Palace",
+      "Quarto State do Josun Palace",
+      "Piscina interior do Josun Palace"
+    ],
+    [
+      "Exterior do The Shilla Seoul",
+      "Quarto do The Shilla Seoul",
+      "Piscina exterior do The Shilla Seoul"
+    ]
   ],
   "seoTitle": "Onde ficar em Seul: Jongno, Myeongdong e Gangnam",
   "hotelSeoTitle": "Hotéis de luxo em Seul: Four Seasons, SIGNIEL, Josun e Shilla",

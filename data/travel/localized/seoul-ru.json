@@ -123,12 +123,38 @@
       "Сравнивайте одинаковые даты, гостей, категории, виды, налоги, услуги и отмену."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Тронный зал дворца Кёнбоккун",
+    "Традиционные дома деревни Букчон",
+    "Торговая улица Мёндона",
+    "Панорама Сеула с Намсана",
+    "Исторические ворота Хынинчжимун в Тондэмуне",
+    "Озеро Сокчхон в Чамсиле",
+    "Храм Понынса",
+    "Прогулочная зона вдоль Чхонгечхона",
+    "Торговая улица Хондэ"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Внешний вид Four Seasons Hotel Seoul",
+      "Номер Four Seasons Seoul",
+      "Лобби Four Seasons Seoul"
+    ],
+    [
+      "Lotte World Tower, где расположен SIGNIEL Seoul",
+      "Номер SIGNIEL Seoul",
+      "Крытый бассейн SIGNIEL Seoul"
+    ],
+    [
+      "Вход Palace Gate в Josun Palace",
+      "Номер State в Josun Palace",
+      "Крытый бассейн Josun Palace"
+    ],
+    [
+      "Внешний вид The Shilla Seoul",
+      "Номер The Shilla Seoul",
+      "Открытый бассейн The Shilla Seoul"
+    ]
   ],
   "seoTitle": "Где остановиться в Сеуле: Чонно, Мёндон и Каннам",
   "hotelSeoTitle": "Роскошные отели Сеула: Four Seasons, SIGNIEL, Josun и Shilla",
