@@ -123,12 +123,38 @@
       "Сравнивайте одинаковые даты, гостей, категории, кровати, налоги и отмену."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Замок Осаки",
+    "Канал Дотонбори",
+    "Umeda Sky Building ночью",
+    "Башня Цутэнкаку в Синсэкай",
+    "Храм Ситэннодзи",
+    "Колесо обозрения Темподзан в заливе Осаки",
+    "Район Наканосима",
+    "Рынок Куромон",
+    "Башня Abeno Harukas в Тэннодзи"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Festival Tower West, где расположен Conrad Osaka",
+      "Номер King Executive в Conrad Osaka",
+      "Лаунж Conrad Osaka"
+    ],
+    [
+      "Внешний вид Four Seasons Hotel Osaka",
+      "Номер Four Seasons Osaka",
+      "Крытый бассейн Four Seasons Osaka"
+    ],
+    [
+      "Вход в Ritz-Carlton Osaka",
+      "Номер Deluxe King в Ritz-Carlton Osaka",
+      "Ресепшен Club Lounge Ritz-Carlton Osaka"
+    ],
+    [
+      "Фасад W Osaka",
+      "Номер Premier в W Osaka",
+      "Living Room в W Osaka"
+    ]
   ],
   "seoTitle": "Где остановиться в Осаке: Умэда, Намба и лучшие районы",
   "hotelSeoTitle": "Роскошные отели Осаки: Conrad, Four Seasons, Ritz-Carlton и W",

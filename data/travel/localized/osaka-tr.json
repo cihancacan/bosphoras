@@ -123,12 +123,38 @@
       "Aynı tarih, kişi, oda, yatak, vergi ve iptal şartlarını karşılaştırın."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Osaka Kalesi",
+    "Dotonbori kanalı",
+    "Gece Umeda Sky Building",
+    "Shinsekai'de Tsutenkaku Kulesi",
+    "Shitennoji Tapınağı",
+    "Osaka Körfezi'nde Tempozan dönme dolabı",
+    "Nakanoshima bölgesi",
+    "Kuromon Pazarı",
+    "Tennoji'de Abeno Harukas kulesi"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Conrad Osaka'nın bulunduğu Festival Tower West",
+      "Conrad Osaka King Executive odası",
+      "Conrad Osaka salonu"
+    ],
+    [
+      "Four Seasons Hotel Osaka dış cephesi",
+      "Four Seasons Osaka misafir odası",
+      "Four Seasons Osaka kapalı havuzu"
+    ],
+    [
+      "Ritz-Carlton Osaka girişi",
+      "Ritz-Carlton Osaka Deluxe King odası",
+      "Ritz-Carlton Osaka Club Lounge resepsiyonu"
+    ],
+    [
+      "W Osaka dış cephesi",
+      "W Osaka Premier odası",
+      "W Osaka Living Room salonu"
+    ]
   ],
   "seoTitle": "Osaka'da nerede kalınır? Umeda, Namba ve en iyi bölgeler",
   "hotelSeoTitle": "Osaka lüks otelleri: Conrad, Four Seasons, Ritz-Carlton ve W",

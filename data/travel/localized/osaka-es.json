@@ -123,12 +123,38 @@
       "Compara fechas, viajeros, categorías, camas, impuestos y cancelación equivalentes."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Castillo de Osaka",
+    "Canal de Dotonbori",
+    "Umeda Sky Building de noche",
+    "Torre Tsutenkaku en Shinsekai",
+    "Templo Shitennoji",
+    "Noria de Tempozan en la bahía de Osaka",
+    "Barrio de Nakanoshima",
+    "Mercado Kuromon",
+    "Torre Abeno Harukas en Tennoji"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Festival Tower West que alberga Conrad Osaka",
+      "Habitación King Executive del Conrad Osaka",
+      "Salón del Conrad Osaka"
+    ],
+    [
+      "Exterior del Four Seasons Hotel Osaka",
+      "Habitación del Four Seasons Osaka",
+      "Piscina cubierta del Four Seasons Osaka"
+    ],
+    [
+      "Entrada del Ritz-Carlton Osaka",
+      "Habitación Deluxe King del Ritz-Carlton Osaka",
+      "Recepción del Club Lounge del Ritz-Carlton Osaka"
+    ],
+    [
+      "Fachada del W Osaka",
+      "Habitación Premier del W Osaka",
+      "Living Room del W Osaka"
+    ]
   ],
   "seoTitle": "Dónde alojarse en Osaka: Umeda, Namba y mejores barrios",
   "hotelSeoTitle": "Hoteles de lujo en Osaka: Conrad, Four Seasons, Ritz-Carlton y W",
