@@ -1,0 +1,149 @@
+{
+  "name": "Mustique",
+  "country": "Saint Vincent ve Grenadinler",
+  "eyebrow": "Grenadinler · Özel ada",
+  "heading": "Mustique: Karayipler'de huzurlu yaşam sanatı",
+  "intro": "Mustique'in gerçek ayrıcalığı sessizliktir. Bahçe patikaları, alize rüzgârlarına açılan evler ve saklı koylar gösterişsiz lüksü tanımlar. Konaklamadan önce kıyıyı ve günlük tatil ritminizi seçin.",
+  "editorial": "Mustique'te tek otel The Cotton House'tur; adanın resmî koleksiyonunda seksenden fazla özel villa vardır. Seçkimiz dört otel değil, bir otel ve üç villadır. Atlantik'e açık Macaroni Beach'te güçlü dalga ve akıntılar olabilir; batı koylarının koşulları farklıdır. Personel hizmetlerini ve suya erişimi her ev için ayrı doğrulayın.",
+  "hotelIntro": "The Cotton House otel hizmeti, The Beach House deniz kenarında özel rezidans, Macaroni Beach House Atlantik manzarası, Cottonwick ise sakin aile tatili sunar. Seçki fiyat veya müsaitlik doğrulaması değildir.",
+  "areas": [
+    [
+      "Endeavour Bay ve The Cotton House",
+      "Tropik bahçeler, plaj ve tarihî kulüp binası otel yaşamının merkezidir.",
+      "Kaynak açıklamada Sea View odalarının Nisan 2026–Kasım 2027 arasında yenileneceği belirtilir; tatilinize etkisini doğrulayın."
+    ],
+    [
+      "Britannia Bay · Gün batımı",
+      "Demirli tekneler ve deniz kenarında sakin akşamlar koyun ritmini oluşturur.",
+      "Aktiviteler ve hizmetler deniz koşulları ve ön anlaşmalara bağlıdır."
+    ],
+    [
+      "Macaroni Beach · Atlantik kıyısı",
+      "Dalgalar, açık renk kum ve yeşillik doğu kıyısının doğal güzelliğini vurgular.",
+      "Dalga ve akıntılar olabilir; güvenli yüzme garanti değildir."
+    ],
+    [
+      "Gelliceaux Bay · Deniz kenarında özel villalar",
+      "Bazı villaların suya özel erişimi olan sakin koy.",
+      "Merdivenleri, iskeleleri ve villanın gerçek olanaklarını kontrol edin."
+    ],
+    [
+      "Lagoon Bay ve ada patikaları",
+      "Piknik, kıyı patikaları ve sakin yürüyüşler ada yaşamının diğer yönünü gösterir.",
+      "Sıcaklık ve güneşi dikkate alın; gerekirse piknik yerini önceden ayarlayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Britannia Bay gün batımı",
+      "Altın ışıkta yelkenlileri izleyin ve deniz kenarında sakin akşam geçirin."
+    ],
+    [
+      "Kendi villanızda öğle yemeği",
+      "Misafir tercihleri ve yerel koşullara göre menü ve günü personelle planlayın."
+    ],
+    [
+      "Doğal kıyıda yürüyüş",
+      "Okyanusun gücüne ve doğaya saygı göstererek uygun ayakkabıyla patika ve plajları keşfedin."
+    ]
+  ],
+  "checks": [
+    "Adada tek otel vardır; seçkinin diğer adresleri özel villalardır.",
+    "Uçuş, ada transferleri ve bagaj sınırlarını doğrulayın.",
+    "Personel, yemek, ulaşım, vergi ve iptal şartlarını teyit edin.",
+    "The Cotton House'ta Kasım 2027'ye kadar açıklanan Sea View yenilemesini sorun.",
+    "Seçilen villanın dalga, patika ve suya erişim güvenliğini kontrol edin."
+  ],
+  "hotels": [
+    [
+      "Endeavour Bay · Otel",
+      "Adanın tek oteli Oliver Messel'in mimari mirası, tropik bahçeler, veranda restoranı, süitler ve cottage'ları birleştirir. Mustique'i otel hizmetiyle keşfetmek isteyenlere uygundur.",
+      "Kasım 2027'ye kadar açıklanan Sea View yenilemesinin durumunu ve olası rahatsızlıkları doğrulayın.",
+      "Tarihî mimari ve kapsamlı otel hizmeti için.",
+      "Oda ve cottage kategorileri farklıdır; rezervasyondan önce konumu ve gerekli hizmetleri doğrulayın."
+    ],
+    [
+      "Gelliceaux Bay · Özel villa",
+      "Altı yatak odalı bambu rezidans; teraslar, özel su erişimi, iskele ve kıyıya füniküler sunar. Deniz kenarında büyük aile veya grup tatiline uygundur.",
+      "Özel su erişimi güvenli yüzme veya tüm su sporlarını garanti etmez.",
+      "Altı yatak odalı evde özel deniz tatili için.",
+      "Kiralama koşullarına dahil su aktivitelerini ve personel hizmetlerini doğrulayın."
+    ],
+    [
+      "Macaroni Beach · Özel villa",
+      "Atlantik'e bakan üç bağımsız yatak odası süiti, ufuk manzaralı teraslar ve plaja özel patika. Doğal manzaraları sevenlere uygundur.",
+      "Dalgalar güçlü olabilir, patika her misafire uygun değildir.",
+      "Üç yatak odası, Atlantik manzarası ve mahremiyet için.",
+      "Grubunuz için yatak odalarının erişilebilirliğini ve kıyı yolunun güvenliğini doğrulayın."
+    ],
+    [
+      "Tropik bahçeler · Özel villa",
+      "Üç yatak odalı aile villası, yeşillikler arasında sonsuzluk kenarlı havuz ve kademeli havuzlar sunar. Resmî açıklamada iki kişilik personel ekibi belirtilir.",
+      "Özellikle çocuklarla tüm havuzların güvenliğini kontrol edin.",
+      "Bahçede sakin ve özel aile tatili için.",
+      "Yemek ve ev hizmetlerini personelle ayarlayın. Küçük çocuklarla kademeli havuzların çevresine özellikle dikkat edin."
+    ]
+  ],
+  "faq": [
+    [
+      "Mustique'te birden fazla lüks otel var mı?",
+      "Hayır, The Cotton House tek oteldir; seçkideki diğer konaklamalar özel villalardır."
+    ],
+    [
+      "Otel mi villa mı seçilmeli?",
+      "Otel oda, süit ve cottage sunar; villa, kiralama sözleşmesine göre personel ve hizmetleri olan bağımsız evdir."
+    ],
+    [
+      "The Cotton House yenileniyor mu?",
+      "Kaynak resmî site açıklamasına göre Sea View odaları Nisan 2026–Kasım 2027 arasında yenilenecektir. Olası rahatsızlıkları doğrulayın."
+    ],
+    [
+      "Macaroni Beach'te yüzülebilir mi?",
+      "Atlantik'e açık plajda dalga ve akıntılar tehlikeli olabilir; yerinde koşulları kontrol edin."
+    ],
+    [
+      "Mustique'e nasıl gidilir?",
+      "Ada uçuşlarını ve transferleri önceden ayarlayın; saat ve bagaj kurallarını doğrulayın."
+    ],
+    [
+      "Villa nasıl rezerve edilir?",
+      "Bağımsız editoryal seçkidir. Fiyat ve müsaitliği yetkili sağlayıcı doğrular; yayın rezervasyon onayı değildir."
+    ]
+  ],
+  "photoCaptions": [
+    "Mustique Adası fotoğrafı",
+    "Mustique gün batımı",
+    "Mustique ada manzarası",
+    "Mustique ada yaşamı",
+    "Mustique doğal yaşamı",
+    "Yeşil kıyı ve turkuaz koy, kesin koy adı doğrulanmadı",
+    "Mustique'te tenis",
+    "Mustique akşam yaşamı",
+    "Mustique ada atmosferi"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "The Cotton House fotoğrafı",
+      "The Cotton House görünümü",
+      "The Cotton House tesis fotoğrafı"
+    ],
+    [
+      "The Beach House fotoğrafı",
+      "The Beach House görünümü",
+      "The Beach House tesis fotoğrafı"
+    ],
+    [
+      "Macaroni Beach House fotoğrafı",
+      "Macaroni Beach House görünümü",
+      "Macaroni Beach House tesis fotoğrafı"
+    ],
+    [
+      "Cottonwick fotoğrafı",
+      "Cottonwick görünümü",
+      "Cottonwick tesis fotoğrafı"
+    ]
+  ],
+  "seoTitle": "Mustique: Karayipler'de Özel Villalar ve Lüks Tatil",
+  "hotelSeoTitle": "Mustique: The Cotton House ve En İyi Özel Villalar",
+  "seoDescription": "Mustique'te The Cotton House ve üç özel villayı karşılaştırın: kıyılar, yatak odaları, personel hizmetleri ve ada transferleri."
+}

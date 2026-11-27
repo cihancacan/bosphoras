@@ -1,0 +1,149 @@
+{
+  "name": "Mustique",
+  "country": "Saint Vincent e Grenadine",
+  "eyebrow": "Grenadine · Isola privata",
+  "heading": "Mustique: l'arte di vivere senza fretta ai Caraibi",
+  "intro": "A Mustique il vero privilegio è la quiete. Sentieri tra giardini, case aperte agli alisei e baie appartate evocano lusso discreto. Scegli prima costa e ritmo della giornata.",
+  "editorial": "Mustique ha un solo hotel, The Cotton House, mentre la collezione ufficiale dell'isola comprende oltre ottanta ville private. La selezione propone un hotel e tre ville, non quattro hotel. A Macaroni Beach, sull'Atlantico, onde e correnti possono essere forti; le baie occidentali hanno condizioni diverse. Verifica personale e accesso all'acqua per ogni casa.",
+  "hotelIntro": "The Cotton House offre servizio alberghiero; The Beach House residenza privata sul mare; Macaroni Beach House panorami atlantici; Cottonwick soggiorno familiare intimo. Selezione senza conferma prezzi o disponibilità.",
+  "areas": [
+    [
+      "Endeavour Bay e The Cotton House",
+      "Giardini tropicali, spiaggia e storico edificio del club sono centro della vita alberghiera.",
+      "Descrizione originale indica ristrutturazione Sea View aprile 2026–novembre 2027; verifica impatto."
+    ],
+    [
+      "Britannia Bay · Tramonto",
+      "Barche all'ancora e serate tranquille sul mare scandiscono il ritmo.",
+      "Attività e servizi secondo mare e accordi."
+    ],
+    [
+      "Macaroni Beach · Costa atlantica",
+      "Onde, sabbia chiara e vegetazione mostrano bellezza selvaggia dell'est.",
+      "Onde e correnti possibili; bagno sicuro non garantito."
+    ],
+    [
+      "Gelliceaux Bay · Ville private sul mare",
+      "Baia appartata, alcune ville con accesso privato all'acqua.",
+      "Verifica scale, moli e dotazioni reali."
+    ],
+    [
+      "Lagoon Bay e sentieri",
+      "Picnic, percorsi costieri e passeggiate tranquille rivelano altro volto dell'isola.",
+      "Considera caldo e sole; concorda picnic se necessario."
+    ]
+  ],
+  "experiences": [
+    [
+      "Tramonto a Britannia Bay",
+      "Ammira vele nella luce dorata e trascorri serata tranquilla sul mare."
+    ],
+    [
+      "Pranzo nella propria villa",
+      "Concorda menu e ritmo con personale secondo preferenze e condizioni locali."
+    ],
+    [
+      "Passeggiata sulla costa selvaggia",
+      "Esplora sentieri e spiagge con calzature adatte, rispettando oceano e natura."
+    ]
+  ],
+  "checks": [
+    "Un solo hotel; altri indirizzi selezionati sono ville private.",
+    "Conferma voli, transfer insulari e limiti bagagli.",
+    "Verifica personale, pasti, trasporto, tasse e cancellazione.",
+    "Chiedi a The Cotton House dei lavori Sea View annunciati fino a novembre 2027.",
+    "Verifica onde, sentieri e sicurezza dell'accesso all'acqua della villa."
+  ],
+  "hotels": [
+    [
+      "Endeavour Bay · Hotel",
+      "Unico hotel dell'isola unisce eredità architettonica di Oliver Messel, giardini tropicali, ristorante in veranda, suite e cottage. Per chi preferisce servizio alberghiero durante la scoperta di Mustique.",
+      "Verifica stato lavori Sea View annunciati fino a novembre 2027 e possibili disagi.",
+      "Per architettura storica e servizio alberghiero completo.",
+      "Categorie di camere e cottage diverse; conferma posizione e servizi necessari prima di prenotare."
+    ],
+    [
+      "Gelliceaux Bay · Villa privata",
+      "Residenza in bambù con sei camere, terrazze, accesso privato all'acqua, molo e funicolare alla costa. Adatta a grande famiglia o gruppo sul mare.",
+      "Accesso privato non garantisce bagno sicuro né tutte attività acquatiche.",
+      "Per privacy sul mare in casa con sei camere.",
+      "Verifica attività acquatiche e personale inclusi nell'affitto."
+    ],
+    [
+      "Macaroni Beach · Villa privata",
+      "Tre suite notte indipendenti affacciate sull'Atlantico. Terrazze con orizzonte marino e sentiero privato alla spiaggia. Per amanti del paesaggio naturale.",
+      "Onde possono essere forti, sentiero non adatto a tutti.",
+      "Per tre camere, panorami atlantici e privacy.",
+      "Conferma accessibilità delle camere e sicurezza del percorso costiero per il gruppo."
+    ],
+    [
+      "Giardini tropicali · Villa privata",
+      "Villa familiare con tre camere nel verde, piscina a sfioro e piscine a cascata. Descrizione ufficiale indica due addetti.",
+      "Verifica sicurezza di tutte piscine, soprattutto con bambini.",
+      "Per quiete familiare e privacy nel giardino.",
+      "Concorda pasti e servizi domestici con personale. Zone attorno a piscine a cascata richiedono particolare attenzione con piccoli."
+    ]
+  ],
+  "faq": [
+    [
+      "Ci sono più hotel di lusso a Mustique?",
+      "No, The Cotton House è unico hotel; altri indirizzi selezionati sono ville private."
+    ],
+    [
+      "Hotel o villa?",
+      "Hotel offre camere, suite e cottage; villa è casa indipendente con personale e servizi secondo contratto."
+    ],
+    [
+      "The Cotton House è in ristrutturazione?",
+      "Secondo descrizione ufficiale originale, lavori Sea View annunciati aprile 2026–novembre 2027. Verifica possibili disagi."
+    ],
+    [
+      "Si può nuotare a Macaroni Beach?",
+      "Spiaggia aperta all'Atlantico; onde e correnti possono rendere bagno pericoloso. Verifica sul posto."
+    ],
+    [
+      "Come arrivare a Mustique?",
+      "Organizza voli insulari e transfer in anticipo, conferma orari e regole bagagli."
+    ],
+    [
+      "Come prenotare villa?",
+      "Selezione editoriale indipendente. Prezzi e disponibilità da confermare con fornitore autorizzato; pubblicazione non conferma prenotazione."
+    ]
+  ],
+  "photoCaptions": [
+    "Mustique · Foto dell'isola",
+    "Mustique · Tramonto",
+    "Mustique · Paesaggio insulare",
+    "Mustique · Vita insulare",
+    "Mustique · Natura",
+    "Costa verde e baia turchese, nome esatto non confermato",
+    "Tennis a Mustique",
+    "Mustique · Vita serale",
+    "Mustique · Atmosfera insulare"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Foto The Cotton House",
+      "Vista The Cotton House",
+      "Immagine The Cotton House"
+    ],
+    [
+      "Foto The Beach House",
+      "Vista The Beach House",
+      "Immagine The Beach House"
+    ],
+    [
+      "Foto Macaroni Beach House",
+      "Vista Macaroni Beach House",
+      "Immagine Macaroni Beach House"
+    ],
+    [
+      "Foto Cottonwick",
+      "Vista Cottonwick",
+      "Immagine Cottonwick"
+    ]
+  ],
+  "seoTitle": "Mustique: ville private e vacanze di lusso ai Caraibi",
+  "hotelSeoTitle": "Mustique: The Cotton House e le migliori ville private",
+  "seoDescription": "Confronta The Cotton House e tre ville private a Mustique: coste, camere, personale e transfer insulari."
+}
