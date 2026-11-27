@@ -471,6 +471,18 @@ def main():
    (a['destinationScenes'] if r['hotel'] is None else a['hotels']).remove(r)
    a['excludedCandidates'].append(r) # retain source file on the draft branch
   a['cityCount']=len(a['destinationScenes']);a['hotelCount']=len(a['hotels']);a['totalBytes']=sum(x['webpBytes'] for x in a['destinationScenes']+a['hotels'])
+  # Normalize oversized existing assets, preserving the source hash and attribution.
+  for r in a['destinationScenes']+a['hotels']:
+   if r['webpBytes']<=260000:continue
+   p=Path('public'+r['localPath'])
+   im=Image.open(p).convert('RGB')
+   im.thumbnail((1280,850),Image.Resampling.LANCZOS)
+   for quality in (82,78,74,70,66,62):
+    buf=io.BytesIO();im.save(buf,'WEBP',quality=quality,method=6);b=buf.getvalue()
+    if len(b)<=260000:break
+   if len(b)>260000:raise ValueError('Oversized asset: '+r['key'])
+   p.write_bytes(b);r['webpBytes']=len(b);r['webpSHA256']=hashlib.sha256(b).hexdigest();r['webpPixels']=list(im.size)
+  a['totalBytes']=sum(x['webpBytes'] for x in a['destinationScenes']+a['hotels'])
   contact_sheet(c['slug'],a['destinationScenes']+a['hotels'])
   print('MEDIA_SUMMARY',c['slug'],a['cityCount'],a['hotelCount'],a['totalBytes'],json.dumps(a['gaps']),flush=True)
  REPORT.write_text(json.dumps({**PREVIOUS,**audit},ensure_ascii=False,indent=2)+'\n')
