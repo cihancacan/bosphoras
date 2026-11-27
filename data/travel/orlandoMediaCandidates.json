@@ -1,0 +1,296 @@
+{
+  "orlando": {
+    "destinationScenes": [
+      {
+        "key": "scene-1",
+        "sourcePage": "https://www.visitorlando.com/plan/get-to-know-orlando/interactive-map-city-guide/",
+        "sourceResolvedUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,g_xy_center,h_650,q_65,w_980,x_4569,y_1651/v1/clients/orlandofl/gcm_architectural_2013_sign_4_27c1060d-58c3-4314-a23e-93fb000ac1a4.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,g_xy_center,h_650,q_65,w_980,x_4569,y_1651/v1/clients/orlandofl/gcm_architectural_2013_sign_4_27c1060d-58c3-4314-a23e-93fb000ac1a4.jpg",
+        "originalAlt": "Orlando sign in downtown Orlando",
+        "originalCaption": "",
+        "credit": "Visit Orlando",
+        "publisher": "Visit Orlando",
+        "hotel": null,
+        "localPath": "/images/travel/orlando-premium/destination/scene-1.webp",
+        "sourceSHA256": "08e826f4d48d00c9d0e7aae918c0ced1d2a6f99d806639dce4cc9e3b5c5775b3",
+        "webpSHA256": "912b9bbc5b1e443db25c0cc09719d6b37ae55830c9c70e56a31f9fc9c073c7be",
+        "sourcePixels": [
+          980,
+          650
+        ],
+        "webpPixels": [
+          980,
+          650
+        ],
+        "webpBytes": 103550,
+        "pixelFingerprint": "c08e8ddeccceddda",
+        "candidateSubject": "lake eola|downtown orlando|orlando skyline",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-2",
+        "sourcePage": "https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/disney-springs/",
+        "sourceResolvedUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,g_xy_center,h_650,q_65,w_980,x_1006,y_573/v1/clients/orlandofl-redesign/2441_DisneySprings_2024_efd44c43-dad2-4369-ad36-86072c43bdfc.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,g_xy_center,h_650,q_65,w_980,x_1006,y_573/v1/clients/orlandofl-redesign/2441_DisneySprings_2024_efd44c43-dad2-4369-ad36-86072c43bdfc.jpg",
+        "originalAlt": "Water tower at Disney Springs®",
+        "originalCaption": "",
+        "credit": "Visit Orlando",
+        "publisher": "Visit Orlando",
+        "hotel": null,
+        "localPath": "/images/travel/orlando-premium/destination/scene-2.webp",
+        "sourceSHA256": "82335ba76e54e9188cc5112b5c958e371ab0ebbcb3de81531b4359bbfc826f6c",
+        "webpSHA256": "d75ccf8f2a5ca9df89ced19634d0483220d04071ece2782e9bc9811a4a7aa98a",
+        "sourcePixels": [
+          980,
+          650
+        ],
+        "webpPixels": [
+          980,
+          650
+        ],
+        "webpBytes": 41266,
+        "pixelFingerprint": "16960f0d0d040c18",
+        "candidateSubject": "disney springs|lake buena vista",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-3",
+        "sourcePage": "https://www.visitorlando.com/things-to-do/beyond-theme-parks/neighborhoods/winter-park/",
+        "sourceResolvedUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,g_xy_center,h_650,q_65,w_980,x_2557,y_656/v1/clients/orlandofl/Winter_Park_com_winter_park_park_ave_1055778_ac9d4883-90fe-4245-9b33-280df8851b22.jpg",
+        "sourceRequestedUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,g_xy_center,h_650,q_65,w_980,x_2557,y_656/v1/clients/orlandofl/Winter_Park_com_winter_park_park_ave_1055778_ac9d4883-90fe-4245-9b33-280df8851b22.jpg",
+        "originalAlt": "Park Avenue in Winter Park",
+        "originalCaption": "",
+        "credit": "Visit Orlando",
+        "publisher": "Visit Orlando",
+        "hotel": null,
+        "localPath": "/images/travel/orlando-premium/destination/scene-3.webp",
+        "sourceSHA256": "967b9221fc57b477210f7fc53f9cd5668d8ddb688f7af5ce70ab1fa49be89018",
+        "webpSHA256": "579fd3941b80de8e729e97c79c5b0b4efcf5364f7130271f7b9bb60a5234b4af",
+        "sourcePixels": [
+          980,
+          650
+        ],
+        "webpPixels": [
+          980,
+          650
+        ],
+        "webpBytes": 200322,
+        "pixelFingerprint": "4983c1f0d6b6b4e1",
+        "candidateSubject": "winter park|park avenue",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
+    "hotels": [
+      {
+        "key": "ritz-carlton-1",
+        "sourcePage": "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/photos/",
+        "sourceResolvedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-exterior-0016-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+        "sourceRequestedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-exterior-0016-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+        "originalAlt": "Exterior",
+        "originalCaption": "",
+        "credit": "The Ritz-Carlton Orlando, Grande Lakes",
+        "publisher": "The Ritz-Carlton Orlando, Grande Lakes",
+        "hotel": "The Ritz-Carlton Orlando, Grande Lakes",
+        "localPath": "/images/travel/orlando-premium/ritz-carlton/ritz-carlton-1.webp",
+        "sourceSHA256": "66ea5a29a393ad90e67ab102d5bcca6340a7212b79a8c8d598c1bc524423c4db",
+        "webpSHA256": "a3800b6fe9b34cf38007945cb067d82bceabe1603d28d72da8c4104a986b8e61",
+        "sourcePixels": [
+          1336,
+          890
+        ],
+        "webpPixels": [
+          1276,
+          850
+        ],
+        "webpBytes": 118282,
+        "pixelFingerprint": "0c1433100c6ec58f",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "ritz-carlton-2",
+        "sourcePage": "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/photos/",
+        "sourceResolvedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-guestroom-tub-2488-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+        "sourceRequestedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-guestroom-tub-2488-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+        "originalAlt": "Guest Room with ADA Tub",
+        "originalCaption": "",
+        "credit": "The Ritz-Carlton Orlando, Grande Lakes",
+        "publisher": "The Ritz-Carlton Orlando, Grande Lakes",
+        "hotel": "The Ritz-Carlton Orlando, Grande Lakes",
+        "localPath": "/images/travel/orlando-premium/ritz-carlton/ritz-carlton-2.webp",
+        "sourceSHA256": "3e2ad0c0ad687889f36c0eb3ceaebd435ec3767c859700cdff50598d6fc546c4",
+        "webpSHA256": "e76bde79af6ecf9610da50d94d0bbc7a6cd083abdf9eb7a90a692c659410f767",
+        "sourcePixels": [
+          1336,
+          890
+        ],
+        "webpPixels": [
+          1276,
+          850
+        ],
+        "webpBytes": 55934,
+        "pixelFingerprint": "e1f3d2d391999997",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "portofino-1",
+        "sourcePage": "https://www.loewshotels.com/portofino-bay-hotel/photos-videos",
+        "sourceResolvedUrl": "https://cdn.loewshotels.com/loewshotels.com-2466770763/cms/cache/v2/55d4e0db2e41a.jpg/1920x1080/fit/80/09b39d74965b4070ef6adc6b8a0f4f93.webp",
+        "sourceRequestedUrl": "https://cdn.loewshotels.com/loewshotels.com-2466770763/cms/cache/v2/55d4e0db2e41a.jpg/1920x1080/fit/80/09b39d74965b4070ef6adc6b8a0f4f93.webp",
+        "originalAlt": "Portofino Bay Exterior | Loews Portofino Bay Hotel",
+        "originalCaption": "",
+        "credit": "Loews Portofino Bay Hotel",
+        "publisher": "Loews Portofino Bay Hotel",
+        "hotel": "Loews Portofino Bay Hotel",
+        "localPath": "/images/travel/orlando-premium/portofino/portofino-1.webp",
+        "sourceSHA256": "f4fb985ca4bb83ae2bce11fe51397905780019393b3068e95dae00f61e61e62f",
+        "webpSHA256": "053ab65cc889683d58fa6334393a9290fa1b5573e000c4cb7a1d6c76c285c0ea",
+        "sourcePixels": [
+          1920,
+          1080
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 126216,
+        "pixelFingerprint": "3991f1e1e0e1f1db",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "portofino-2",
+        "sourcePage": "https://www.loewshotels.com/portofino-bay-hotel",
+        "sourceResolvedUrl": "https://cdn.loewshotels.com/loewshotels.com-2466770763/cms/cache/v2/55d4e0bc66799.jpg/1920x1080/fit;c:0,304,2560,1402/80/915ee84270edc57b163bfacbf27513a6.webp",
+        "sourceRequestedUrl": "https://cdn.loewshotels.com/loewshotels.com-2466770763/cms/cache/v2/55d4e0bc66799.jpg/1920x1080/fit;c:0,304,2560,1402/80/915ee84270edc57b163bfacbf27513a6.webp",
+        "originalAlt": "Kids enjoy the pool at Loews Portofino Bay Hotel",
+        "originalCaption": "",
+        "credit": "Loews Portofino Bay Hotel",
+        "publisher": "Loews Portofino Bay Hotel",
+        "hotel": "Loews Portofino Bay Hotel",
+        "localPath": "/images/travel/orlando-premium/portofino/portofino-2.webp",
+        "sourceSHA256": "2fac02fb3273d349f46b1b51dc34a57ac10f06eeabec50709e62e0b727e72846",
+        "webpSHA256": "4e29da24bd9302b47b83833e78efcd7437189cf3528715fa81f22285266a6159",
+        "sourcePixels": [
+          1920,
+          1080
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 116082,
+        "pixelFingerprint": "20081c3e2e2db8b8",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
+    "gaps": [
+      {
+        "group": "city",
+        "expected": 9,
+        "found": 3
+      },
+      {
+        "group": "four-seasons",
+        "expected": 3,
+        "found": 0
+      },
+      {
+        "group": "waldorf",
+        "expected": 3,
+        "found": 0
+      },
+      {
+        "group": "ritz-carlton",
+        "expected": 3,
+        "found": 2
+      },
+      {
+        "group": "portofino",
+        "expected": 3,
+        "found": 2
+      }
+    ],
+    "errors": [
+      {
+        "page": "https://www.fourseasons.com/orlando/photos-and-videos/",
+        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/orlando/photos-and-videos/"
+      },
+      {
+        "page": "https://www.fourseasons.com/orlando/",
+        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/orlando/"
+      },
+      {
+        "page": "https://www.expedia.com/Orlando-Hotels-Four-Seasons-Resort-Orlando-At-WALT-DISNEY-WORLD-Resort.h7374428.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Orlando-Hotels-Four-Seasons-Resort-Orlando-At-WALT-DISNEY-WORLD-Resort.h7374428.Hotel-Information"
+      },
+      {
+        "page": "https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/gallery/",
+        "error": "403 Client Error: Forbidden for url: https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/gallery/"
+      },
+      {
+        "page": "https://www.expedia.com/Orlando-Hotels-Waldorf-Astoria-Orlando.h2432727.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Orlando-Hotels-Waldorf-Astoria-Orlando.h2432727.Hotel-Information"
+      },
+      {
+        "page": "https://www.expedia.com/Orlando-Hotels-The-Ritz-Carlton-Orlando.h914146.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Orlando-Hotels-The-Ritz-Carlton-Orlando.h914146.Hotel-Information"
+      },
+      {
+        "url": "https://www.loewshotels.com/portofino-bay-hotel/rooms-showcase",
+        "error": "cannot identify image file <_io.BytesIO object at 0x72d1c020a340>"
+      },
+      {
+        "url": "https://www.loewshotels.com/special-offers/a-suite-deal",
+        "error": "cannot identify image file <_io.BytesIO object at 0x72d1b8bd8040>"
+      },
+      {
+        "page": "https://www.expedia.com/Orlando-Hotels-Universals-Loews-Portofino-Bay-Hotel.h201033.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Orlando-Hotels-Universals-Loews-Portofino-Bay-Hotel.h201033.Hotel-Information"
+      }
+    ],
+    "publicUseApproved": false,
+    "ownerPermissionDeclared": true,
+    "excludedCandidates": [],
+    "cityCount": 3,
+    "hotelCount": 4,
+    "totalBytes": 761652
+  }
+}
