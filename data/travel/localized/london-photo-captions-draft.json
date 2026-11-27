@@ -28,7 +28,8 @@
     ],
     [
       "shangri-la-1",
-      "shangri-la-4"
+      "shangri-la-4",
+      "shangri-la-5"
     ]
   ],
   "captions": {
@@ -51,7 +52,8 @@
       "shangri-la-1": "Salon de suite avec vue sur Londres",
       "scene-11": "Cathédrale Saint-Paul depuis le Millennium Bridge",
       "savoy-4": "Piscine intérieure du Savoy",
-      "shangri-la-4": "Salle de soins du spa Shangri-La avec vue sur Londres"
+      "shangri-la-4": "Salle de soins du spa Shangri-La avec vue sur Londres",
+      "shangri-la-5": "The Shard, bâtiment du Shangri-La, vu depuis la Tamise"
     },
     "en": {
       "scene-4": "Westminster Abbey and historic buildings",
@@ -72,7 +74,8 @@
       "shangri-la-1": "Suite living room with London views",
       "scene-11": "St Paul’s Cathedral from Millennium Bridge",
       "savoy-4": "The Savoy indoor pool",
-      "shangri-la-4": "Shangri-La spa treatment room overlooking London"
+      "shangri-la-4": "Shangri-La spa treatment room overlooking London",
+      "shangri-la-5": "The Shard, home to Shangri-La, seen from the Thames"
     },
     "tr": {
       "scene-4": "Westminster Abbey ve tarihi yapılar",
@@ -93,7 +96,8 @@
       "shangri-la-1": "Londra manzaralı süit salonu",
       "scene-11": "Millennium Bridge'den St Paul Katedrali",
       "savoy-4": "The Savoy kapalı havuzu",
-      "shangri-la-4": "Shangri-La Londra manzaralı spa bakım odası"
+      "shangri-la-4": "Shangri-La Londra manzaralı spa bakım odası",
+      "shangri-la-5": "Shangri-La'nın bulunduğu The Shard, Thames kıyısından"
     },
     "de": {
       "scene-4": "Westminster Abbey und historische Gebäude",
@@ -114,7 +118,8 @@
       "shangri-la-1": "Wohnzimmer einer Suite mit Londonblick",
       "scene-11": "St Paul’s Cathedral von der Millennium Bridge",
       "savoy-4": "Innenpool des Savoy",
-      "shangri-la-4": "Spa-Behandlungsraum des Shangri-La mit Londonblick"
+      "shangri-la-4": "Spa-Behandlungsraum des Shangri-La mit Londonblick",
+      "shangri-la-5": "The Shard mit dem Shangri-La, von der Themse aus gesehen"
     },
     "es": {
       "scene-4": "Abadía de Westminster y edificios históricos",
@@ -135,7 +140,8 @@
       "shangri-la-1": "Salón de suite con vistas a Londres",
       "scene-11": "Catedral de San Pablo desde el Millennium Bridge",
       "savoy-4": "Piscina cubierta de The Savoy",
-      "shangri-la-4": "Sala de tratamientos del spa Shangri-La con vistas a Londres"
+      "shangri-la-4": "Sala de tratamientos del spa Shangri-La con vistas a Londres",
+      "shangri-la-5": "The Shard, edificio del Shangri-La, visto desde el Támesis"
     },
     "it": {
       "scene-4": "Abbazia di Westminster ed edifici storici",
@@ -156,7 +162,8 @@
       "shangri-la-1": "Soggiorno della suite con vista su Londra",
       "scene-11": "Cattedrale di St Paul dal Millennium Bridge",
       "savoy-4": "Piscina coperta del Savoy",
-      "shangri-la-4": "Sala trattamenti della spa Shangri-La con vista su Londra"
+      "shangri-la-4": "Sala trattamenti della spa Shangri-La con vista su Londra",
+      "shangri-la-5": "The Shard, sede dello Shangri-La, visto dal Tamigi"
     },
     "pt": {
       "scene-4": "Abadia de Westminster e edifícios históricos",
@@ -177,7 +184,8 @@
       "shangri-la-1": "Sala da suite com vista para Londres",
       "scene-11": "Catedral de São Paulo vista da Millennium Bridge",
       "savoy-4": "Piscina interior do Savoy",
-      "shangri-la-4": "Sala de tratamentos do spa Shangri-La com vista para Londres"
+      "shangri-la-4": "Sala de tratamentos do spa Shangri-La com vista para Londres",
+      "shangri-la-5": "The Shard, edifício do Shangri-La, visto do Tamisa"
     },
     "zh": {
       "scene-4": "威斯敏斯特教堂及历史建筑",
@@ -198,7 +206,8 @@
       "shangri-la-1": "伦敦景观套房客厅",
       "scene-11": "从千禧桥眺望圣保罗大教堂",
       "savoy-4": "萨沃伊酒店室内泳池",
-      "shangri-la-4": "香格里拉酒店俯瞰伦敦的水疗护理室"
+      "shangri-la-4": "香格里拉酒店俯瞰伦敦的水疗护理室",
+      "shangri-la-5": "从泰晤士河畔眺望香格里拉酒店所在的碎片大厦"
     },
     "ru": {
       "scene-4": "Вестминстерское аббатство и исторические здания",
@@ -219,7 +228,8 @@
       "shangri-la-1": "Гостиная люкса с видом на Лондон",
       "scene-11": "Собор Святого Павла с моста Миллениум",
       "savoy-4": "Крытый бассейн The Savoy",
-      "shangri-la-4": "Кабинет спа-процедур Shangri-La с видом на Лондон"
+      "shangri-la-4": "Кабинет спа-процедур Shangri-La с видом на Лондон",
+      "shangri-la-5": "Небоскрёб The Shard, где расположен Shangri-La, со стороны Темзы"
     },
     "ar": {
       "scene-4": "دير وستمنستر والمباني التاريخية",
@@ -240,7 +250,8 @@
       "shangri-la-1": "صالة جناح بإطلالة على لندن",
       "scene-11": "كاتدرائية القديس بولس من جسر الألفية",
       "savoy-4": "المسبح الداخلي في The Savoy",
-      "shangri-la-4": "غرفة علاجات السبا في Shangri-La بإطلالة على لندن"
+      "shangri-la-4": "غرفة علاجات السبا في Shangri-La بإطلالة على لندن",
+      "shangri-la-5": "برج ذا شارد الذي يضم Shangri-La من جهة نهر التايمز"
     }
   },
   "visualReview": {
