@@ -1,0 +1,148 @@
+{
+  "name": "Porto Cervo",
+  "country": "İtalya",
+  "eyebrow": "Sardinya · Zümrüt Sahili",
+  "heading": "Porto Cervo: Costa Smeralda'da Sardinya zarafeti",
+  "intro": "Sıcak granit kayalar, saklı koylara uzanan patikalar, Akdeniz makilerinin kokusu ve zümrüt sularda beyaz yelkenler. Piazzetta'dan Pevero plajlarına ve tarihî otellere kadar kıyının her bölümü farklı bir ritme sahip.",
+  "editorial": "Costa Smeralda tek köy değil, bir kıyı şerididir. Porto Cervo, Liscia di Vacca, Cala di Volpe ve Romazzino atmosfer ve plaj erişimi bakımından farklıdır. Temmuz ve ağustos en yoğun dönem; haziran ve eylül genellikle daha sakindir. Bazı koylara patika veya dar yollarla, bazılarına tekneyle daha kolay ulaşılır. Ulaşımı, otoparkı ve yüzme koşullarını önceden planlayın.",
+  "hotelIntro": "Dört farklı seçenek: mimari mirasıyla Cala di Volpe, aile tatili için Romazzino, saklı granit koylarıyla Pitrizza ve köy yaşamı için Cervo Hotel.",
+  "areas": [
+    [
+      "Porto Cervo · Piazzetta ve marina",
+      "Pastel cepheler, butikler, galeriler ve yatlar. Özel koydan çok restoranlara yürüyerek ulaşmayı tercih edenlere uygun.",
+      "Plaj ulaşımını planlayın, yoğun sezonda popüler restoranları önceden ayarlayın."
+    ],
+    [
+      "Cala di Volpe · Tarihî koy",
+      "Otellerin mimarisi taş ve çamlarla bütünleşir. Costa Smeralda'nın güney plajlarına iyi bir başlangıç noktası.",
+      "Marina veya iskele manzarası doğrudan plaj erişimi anlamına gelmez."
+    ],
+    [
+      "Romazzino ve Capriccioli · Plaj tatili",
+      "Kumlu koylar, berrak su ve Akdeniz bahçeleri sakin deniz günlerine uygundur.",
+      "Yazın halk plajlarına erişim ve park sınırlı olabilir."
+    ],
+    [
+      "Liscia di Vacca · Saklı kıyı",
+      "Granit kayalar, aromatik bitkiler ve alçak yapılar huzurlu bir ortam yaratır.",
+      "Araç veya şoför köy ve marinaya akşam ulaşımını kolaylaştırır."
+    ],
+    [
+      "Pevero ve Spiaggia del Principe · Ünlü plajlar",
+      "Sardinya'nın etkileyici manzaralarından bazıları; her otelden yürüyerek ulaşılamaz.",
+      "Patikaları, park yerlerini, yüzme koşullarını ve çocuk olanaklarını kontrol edin."
+    ]
+  ],
+  "experiences": [
+    [
+      "Denizden varış",
+      "Hava ve koruma alanı kurallarına uyarak özel tekneyle koyları keşfedin."
+    ],
+    [
+      "Piazzetta'da aperitif",
+      "Plajdan dönüşte liman ışıkları yanarken galerilerin arasındaki teraslarda dinlenin."
+    ],
+    [
+      "Sabah erken saatlerde sakin koy",
+      "Daha az kalabalık plaj seçin, yaya veya tekne erişimini kontrol edin ve hassas doğayı koruyun."
+    ]
+  ],
+  "checks": [
+    "Oda, süit veya villa kategorisini, manzara, havuz ve plaj erişimini karşılaştırın.",
+    "Porto Cervo köyü ile komşu koylardaki otelleri ayırın.",
+    "Yaz trafiği ve popüler plaj otoparklarının yoğunluğunu dikkate alın.",
+    "Restoran, özel plaj ve çocuk kulüplerinin sezon tarihlerini doğrulayın."
+  ],
+  "hotels": [
+    [
+      "Cala di Volpe koyu · Güney kıyısı",
+      "Jacques Couëlle'in Akdeniz köyü gibi tasarladığı Cala di Volpe açık renkli koyu çevreler. Pastel cepheler, kıvrımlı geçitler ve bahçe terasları Costa Smeralda'nın ilk yıllarını hatırlatır. Konaklama kategorileri tarz ve konuma göre farklıdır.",
+      "Koy manzarası, teras ve plaj erişimini doğrulayın; genel fotoğraf her odayı göstermez.",
+      "Tarihî mimari ve Cala di Volpe atmosferi için.",
+      ""
+    ],
+    [
+      "Romazzino koyu · Plaj ve bahçeler",
+      "Romazzino, A Belmond Hotel, 1960'ların mimari romantizmini Akdeniz bahçeleri ve özel kumlu plajla birleştirir. Tenis, deniz ve uzun öğle yemekleri ailelere ve açık hava sevenlere hitap eder. Havuzlu villalar oda ve süitlerden farklıdır.",
+      "Konaklama türünü, sezonluk çocuk kulübünü ve dahil hizmetleri doğrulayın.",
+      "Deniz kenarında aile tatili için.",
+      ""
+    ],
+    [
+      "Liscia di Vacca · Kuzey koyları",
+      "Hotel Pitrizza granit kayalar ve Akdeniz bitkileri arasındadır. Mimari araziyi takip eder; teras ve koylar suya bakar. Bazı süit ve villaların özel havuzu vardır, kategori önemlidir.",
+      "Özel havuz kategorisini, koy erişimini ve köy ile marinaya ulaşımı doğrulayın.",
+      "Mahrem villalar ve saklı granit koylar için.",
+      ""
+    ],
+    [
+      "Piazzetta · Porto Cervo merkezi",
+      "Cervo Hotel sakin plaj resortlarına canlı bir alternatiftir. Pembe cepheler Piazzetta'ya açılır; kafeler, butikler, restoranlar ve marina yakındadır. Köy yaşamı ve akşam yürüyüşleri öne çıkar.",
+      "Oda konumunu gürültü tercihine göre seçin; uzak plajlara ulaşımı planlayın.",
+      "Yürüyüş, restoranlar ve marina atmosferi için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Porto Cervo'da hangi lüks oteller seçilmeli?",
+      "Cala di Volpe tarihî mimarisi, Romazzino plaj ve aile olanakları, Pitrizza mahremiyet, Cervo Hotel Piazzetta ve marina yaşamıyla öne çıkar."
+    ],
+    [
+      "Köyde mi kıyıda mı kalınmalı?",
+      "Köy alışveriş ve restoranlara yürüyüş için; Cala di Volpe, Romazzino ve Liscia di Vacca deniz ve bahçe tatili için, genellikle araç gerekir."
+    ],
+    [
+      "Costa Smeralda'ya ne zaman gidilmeli?",
+      "Haziran ve eylül genellikle daha sakin ve hava keyiflidir. Temmuz ve ağustos yoğun sezondur; sezonluk açılışları kontrol edin."
+    ],
+    [
+      "Araba gerekli mi?",
+      "Plaj ve köy dışındaki otellere araç veya şoför yararlıdır. Yazın dar yollar ve otoparklar kalabalık olabilir."
+    ],
+    [
+      "Hangi plajlar yakında?",
+      "Grande Pevero, Piccolo Pevero, Capriccioli ve Spiaggia del Principe. Erişim, park ve deniz durumunu kontrol edin."
+    ],
+    [
+      "Aile tatiline uygun mu?",
+      "Evet, özellikle plaj ve çocuk etkinlikleri olan resortlar; oda planı, havuz, yürüyüş yolları ve sezonluk hizmetleri karşılaştırın."
+    ]
+  ],
+  "photoCaptions": [
+    "Porto Cervo yat marinası havadan",
+    "Cala di Volpe turkuaz suyu ve kumu",
+    "Porto Cervo pastel sokakları",
+    "Romazzino plajı ve kıyısı",
+    "Liscia di Vacca Hotel Pitrizza plajı",
+    "Grande Pevero plajı havadan",
+    "Spiaggia del Principe plajı",
+    "Capriccioli plajı",
+    "Maxi Yacht Rolex Cup yelkenlileri"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Cala di Volpe koyu üzerinde mimari",
+      "Cala di Volpe havuzu ve koyu",
+      "Premium Suite yatak odası"
+    ],
+    [
+      "Romazzino, A Belmond Hotel plajı",
+      "Romazzino havuzu ve bahçeleri",
+      "Romazzino iç mekânı"
+    ],
+    [
+      "Hotel Pitrizza ve koylar havadan",
+      "Kayalar arasında deniz suyu havuzu",
+      "Deniz manzaralı yemek terası"
+    ],
+    [
+      "Porto Cervo Bar Cervo",
+      "Cervo Hotel ve marina havadan",
+      "Cervo Hotel havuz terası"
+    ]
+  ],
+  "seoTitle": "Porto Cervo: Costa Smeralda Lüks Otelleri, Plajlar ve Villalar",
+  "hotelSeoTitle": "Porto Cervo Otelleri: Cala di Volpe, Romazzino, Pitrizza ve Cervo",
+  "seoDescription": "Porto Cervo'da dört lüks oteli karşılaştırın: Costa Smeralda plajları, villalar, marina, aile tatili ve Sardinya'nın en iyi bölgeleri."
+}

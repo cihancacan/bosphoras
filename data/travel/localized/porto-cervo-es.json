@@ -1,0 +1,148 @@
+{
+  "name": "Porto Cervo",
+  "country": "Italia",
+  "eyebrow": "Cerdeña · Costa Esmeralda",
+  "heading": "Porto Cervo: elegancia sarda en la Costa Smeralda",
+  "intro": "Granito cálido, senderos hacia calas escondidas, aroma de la vegetación mediterránea y velas blancas sobre aguas esmeralda. De la Piazzetta a las playas de Pevero y los hoteles históricos, cada tramo tiene su ritmo.",
+  "editorial": "La Costa Smeralda no es un solo pueblo, sino un litoral. Porto Cervo, Liscia di Vacca, Cala di Volpe y Romazzino tienen ambientes y accesos a playa diferentes. Julio y agosto son muy populares; junio y septiembre suelen ser más tranquilos. Algunas calas requieren senderos o carreteras estrechas; otras son más accesibles en barco. Planifica transporte, aparcamiento y condiciones de baño.",
+  "hotelIntro": "Cuatro opciones: Cala di Volpe por su arquitectura histórica, Romazzino para familias junto al mar, Pitrizza por sus calas de granito y Cervo Hotel por la vida del pueblo.",
+  "areas": [
+    [
+      "Porto Cervo · Piazzetta y marina",
+      "Fachadas pastel, boutiques, galerías y yates. Ideal si prefieres restaurantes a pie a una cala propia.",
+      "Planifica transporte a playas y reserva restaurantes populares en temporada alta."
+    ],
+    [
+      "Cala di Volpe · Bahía histórica",
+      "Arquitectura hotelera integrada entre piedra y pinos. Buena base para playas del sur de Costa Smeralda.",
+      "Vistas a muelle o marina no garantizan acceso directo a playa."
+    ],
+    [
+      "Romazzino y Capriccioli · Vacaciones de playa",
+      "Calas de arena, aguas claras y jardines mediterráneos para días tranquilos.",
+      "Acceso a playas públicas y aparcamiento pueden limitarse en verano."
+    ],
+    [
+      "Liscia di Vacca · Costa reservada",
+      "Rocas de granito, matorral aromático y edificios bajos crean tranquilidad.",
+      "Coche o conductor facilita desplazamientos nocturnos a pueblo y marina."
+    ],
+    [
+      "Pevero y Spiaggia del Principe · Playas famosas",
+      "Paisajes inolvidables de Cerdeña, no accesibles a pie desde todos los hoteles.",
+      "Comprueba senderos, aparcamiento, baño y servicios infantiles."
+    ]
+  ],
+  "experiences": [
+    [
+      "Llegada por mar",
+      "Descubre calas en barco privado respetando clima y normas de zonas protegidas."
+    ],
+    [
+      "Aperitivo en la Piazzetta",
+      "Regresa de playa al encenderse luces del puerto y descansa en terrazas entre galerías."
+    ],
+    [
+      "Cala tranquila a primera hora",
+      "Elige playa menos concurrida, comprueba acceso a pie o barco y protege naturaleza mediterránea."
+    ]
+  ],
+  "checks": [
+    "Compara categoría de habitación, suite o villa, vistas, piscina y acceso a playa.",
+    "Distingue pueblo Porto Cervo de hoteles en calas vecinas.",
+    "Considera tráfico estival y aparcamientos saturados.",
+    "Comprueba fechas de apertura de restaurantes, playas privadas y clubes infantiles."
+  ],
+  "hotels": [
+    [
+      "Cala di Volpe · Costa sur",
+      "Concebido por Jacques Couëlle como pueblo mediterráneo y no hotel convencional, Cala di Volpe abraza la luminosa bahía. Fachadas pastel, pasajes sinuosos y terrazas ajardinadas evocan los inicios de Costa Smeralda. Categorías difieren en estilo y ubicación.",
+      "Confirma vistas, terraza y acceso a playa; foto general no describe cada habitación.",
+      "Para amantes de arquitectura histórica y ambiente Cala di Volpe.",
+      ""
+    ],
+    [
+      "Romazzino · Playa y jardines",
+      "Romazzino, A Belmond Hotel combina arquitectura romántica de los años sesenta con jardines mediterráneos y playa privada de arena. Tenis, mar y almuerzos pausados atraen familias y aficionados al aire libre. Villas con piscina son distintas de habitaciones y suites.",
+      "Confirma tipo de alojamiento, club infantil estacional y servicios incluidos.",
+      "Para vacaciones familiares junto al mar y jardines.",
+      ""
+    ],
+    [
+      "Liscia di Vacca · Calas del norte",
+      "Hotel Pitrizza se integra entre granito y vegetación mediterránea. Arquitectura sigue el terreno; terrazas y calas miran al agua. Algunas suites y villas tienen piscina privada; importa categoría exacta.",
+      "Confirma categoría con piscina, acceso a cala y tiempo hasta pueblo y marina.",
+      "Para villas privadas y calas de granito apartadas.",
+      ""
+    ],
+    [
+      "Piazzetta · Centro Porto Cervo",
+      "Cervo Hotel es alternativa animada a resorts aislados. Fachadas rosas hacia Piazzetta, cafés, boutiques, restaurantes y marina cerca. Destacan vida del pueblo y paseos nocturnos.",
+      "Elige ubicación de habitación según silencio deseado y organiza transporte a playas alejadas.",
+      "Para paseos, restaurantes y ambiente de marina.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Qué hoteles de lujo elegir en Porto Cervo?",
+      "Cala di Volpe por arquitectura histórica, Romazzino por playa y familia, Pitrizza por intimidad y Cervo Hotel por Piazzetta y marina."
+    ],
+    [
+      "¿Pueblo o costa?",
+      "Pueblo para tiendas y restaurantes a pie. Cala di Volpe, Romazzino y Liscia di Vacca para mar y jardines, normalmente con transporte."
+    ],
+    [
+      "¿Cuándo visitar Costa Smeralda?",
+      "Junio y septiembre suelen ser más tranquilos y agradables. Julio y agosto temporada alta; comprueba fechas de apertura."
+    ],
+    [
+      "¿Hace falta coche?",
+      "Coche o conductor facilita playas y hoteles fuera del pueblo. Carreteras estrechas y aparcamientos se saturan en verano."
+    ],
+    [
+      "¿Qué playas hay cerca?",
+      "Grande Pevero, Piccolo Pevero, Capriccioli y Spiaggia del Principe. Comprueba acceso, aparcamiento y mar."
+    ],
+    [
+      "¿Adecuado para familias?",
+      "Sí, especialmente resorts con playa y actividades infantiles. Compara distribución, piscinas, caminos y servicios estacionales."
+    ]
+  ],
+  "photoCaptions": [
+    "Marina de yates Porto Cervo desde aire",
+    "Agua turquesa y arena Cala di Volpe",
+    "Calles pastel de Porto Cervo",
+    "Playa y costa Romazzino",
+    "Playa Hotel Pitrizza en Liscia di Vacca",
+    "Playa Grande Pevero desde aire",
+    "Playa Spiaggia del Principe",
+    "Playa Capriccioli",
+    "Veleros Maxi Yacht Rolex Cup"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Arquitectura Cala di Volpe sobre bahía",
+      "Piscina y bahía Cala di Volpe",
+      "Dormitorio Premium Suite"
+    ],
+    [
+      "Playa Romazzino, A Belmond Hotel",
+      "Piscina y jardines Romazzino",
+      "Interior Romazzino"
+    ],
+    [
+      "Hotel Pitrizza y calas desde aire",
+      "Piscina de agua salada entre rocas",
+      "Terraza comedor vista mar"
+    ],
+    [
+      "Bar Cervo en Porto Cervo",
+      "Cervo Hotel y marina desde aire",
+      "Terraza piscina Cervo Hotel"
+    ]
+  ],
+  "seoTitle": "Porto Cervo: hoteles de lujo, playas y villas de Costa Smeralda",
+  "hotelSeoTitle": "Hoteles de Porto Cervo: Cala di Volpe, Romazzino, Pitrizza y Cervo",
+  "seoDescription": "Compara cuatro hoteles de lujo en Porto Cervo: playas, villas, marina, vacaciones familiares y zonas de Costa Smeralda."
+}
