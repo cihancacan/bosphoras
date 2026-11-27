@@ -1,0 +1,136 @@
+{
+  "name": "Seul",
+  "country": "Güney Kore",
+  "eyebrow": "Güney Kore · Saraylar, yaratıcı semtler ve şehir otelleri",
+  "heading": "Seul'de konaklama: saraylar, gastronomi ve panoramik manzaralar.",
+  "intro": "Seul, Jongno'nun saraylarını, Myeongdong'un alışverişini, Hongdae'nin yaratıcı sokaklarını ve Gangnam ile Jamsil'in kulelerini buluşturur. Otelinizi gezilecek yerlere ve metro hatlarına göre seçin.",
+  "editorial": "Jongno ve Gwanghwamun saraylar, müzeler ve tarihi sokaklar için uygundur. Myeongdong ve Chungmuro alışveriş, yemek ve Namsan yürüyüşleri sunar. Dongdaemun tasarım ve pazarları, Hongdae ve Yeonnam ise kafeleri ve müziğiyle öne çıkar. Han Nehri'nin güneyinde Gangnam ve COEX iş ve alışveriş, Jamsil aileler ve manzaralar için uygundur.\n\nDört veya beş gece iki yakayı keşfetmek için iyi bir başlangıçtır. Yakın noktaları aynı gün ziyaret edin, yoğun saatlerde gereksiz nehir geçişlerinden kaçının. Metro çıkışlarını, aktarmaları ve otele yürüyüşü kontrol edin. Geleneksel konut bölgelerinde ziyaret kurallarına ve sakinlere saygı gösterin.\n\nIncheon'dan AREX ile Seoul Station, havalimanı otobüsleri ve özel transferi karşılaştırın. Gimpo bazı bölgesel uçuşlar için uygun olabilir. Pasaportunuza göre giriş şartlarını, oda büyüklüğünü, yatakları, kapasiteyi, manzarayı ve vergiler ile iptal dahil fiyatı kontrol edin. Çocukların havuz ve salon erişimini ayrıca doğrulayın.",
+  "hotelIntro": "Dört seçenek: saraylar için Four Seasons, Jamsil manzaraları için SIGNIEL, Gangnam için Josun Palace ve Jangchung'da klasik lüks için The Shilla.",
+  "areas": [
+    [
+      "Jongno ve Gwanghwamun",
+      "Gyeongbokgung Sarayı, Bukchon, müzeler ve tarihi sokaklar.",
+      "Saray saatlerine ve konut bölgelerine saygı gösterin."
+    ],
+    [
+      "Myeongdong ve Chungmuro",
+      "Alışveriş, restoranlar ve Namsan'a erişim.",
+      "Yaya bölgelerini ve bagajla erişimi kontrol edin."
+    ],
+    [
+      "Dongdaemun ve Jangchung",
+      "Design Plaza, pazarlar, Cheonggyecheon ve tepeler.",
+      "Aktarmaları ve yokuşları karşılaştırın."
+    ],
+    [
+      "Hongdae ve Yeonnam",
+      "Kafeler, butikler, müzik ve yaratıcı sokaklar.",
+      "Gece gürültüsünü ve metro çıkışlarını değerlendirin."
+    ],
+    [
+      "Gangnam ve COEX",
+      "İş bölgesi, mağazalar, Bongeunsa ve COEX.",
+      "Nehrin kuzeyindeki saraylara ulaşımı planlayın."
+    ],
+    [
+      "Jamsil ve Songpa",
+      "Lotte World Tower, Seokchon Gölü ve eğlence.",
+      "Biletleri, ulaşımı ve aile koşullarını kontrol edin."
+    ]
+  ],
+  "experiences": [
+    [
+      "Sarayları keşfetmek",
+      "Gyeongbokgung ile Jongno'nun tarihi sokaklarını birleştirin."
+    ],
+    [
+      "Pazarları ve mutfağı keşfetmek",
+      "Rotaya göre Myeongdong, Gwangjang Market ve Cheonggyecheon'u ziyaret edin."
+    ],
+    [
+      "Şehir manzaralarını izlemek",
+      "Hava ve konuma göre Namsan veya Lotte World Tower'ı seçin."
+    ],
+    [
+      "Tasarım ve çağdaş kültürü keşfetmek",
+      "İlginize göre Dongdaemun Design Plaza, Hongdae veya Gangnam'ı seçin."
+    ]
+  ],
+  "checks": [
+    "Ziyaretleri Han Nehri'nin yakalarına göre gruplayın.",
+    "Manzarayı, yatakları ve kapasiteyi doğrulayın.",
+    "Pasaporta göre giriş şartlarını kontrol edin.",
+    "Vergi, kahvaltı ve iptal dahil toplam fiyatları karşılaştırın.",
+    "Çocukların havuz ve salon erişimini kontrol edin."
+  ],
+  "hotels": [
+    [
+      "Gwanghwamun · Jongno",
+      "Gwanghwamun'da odalar, süitler, kapalı havuz, spa ve restoranlar sunan çağdaş otel.",
+      "Oda kategorisini, saray manzarasını ve aile koşullarını doğrulayın.",
+      "Saraylar ve tarihi merkez için.",
+      "Gwanghwamun'da odalar, süitler, kapalı havuz, spa ve restoranlar sunan çağdaş otel. Oda kategorisini, saray manzarasını ve aile koşullarını doğrulayın."
+    ],
+    [
+      "Jamsil · Lotte World Tower",
+      "Lotte World Tower'ın üst katlarında panoramik odalar, restoranlar ve kapalı havuz.",
+      "Oda yönünü ve salon erişimini kontrol edin.",
+      "Panoramik manzaralar ve Jamsil için.",
+      "Lotte World Tower'ın üst katlarında panoramik odalar, restoranlar ve kapalı havuz. Oda yönünü ve salon erişimini kontrol edin."
+    ],
+    [
+      "Gangnam · Teheran-ro",
+      "Yüksek kat odaları ve süitler, restoranlar, ısıtmalı kapalı havuz ve fitness merkezi.",
+      "Kategorileri, dahil hizmetleri ve tarihi merkeze ulaşımı karşılaştırın.",
+      "Çağdaş lüks ve iş seyahatleri için.",
+      "Yüksek kat odaları ve süitler, restoranlar, ısıtmalı kapalı havuz ve fitness merkezi. Kategorileri, dahil hizmetleri ve tarihi merkeze ulaşımı karşılaştırın."
+    ],
+    [
+      "Jangchung · Jung-gu",
+      "Zarif konaklama, gastronomi ve dinlenme alanları sunan klasik otel.",
+      "Mevsimsel havuz koşullarını ve ulaşımı kontrol edin.",
+      "Klasik lüks ve dinlenme için.",
+      "Zarif konaklama, gastronomi ve dinlenme alanları sunan klasik otel. Mevsimsel havuz koşullarını ve ulaşımı kontrol edin."
+    ]
+  ],
+  "faq": [
+    [
+      "İlk Seul ziyaretinde nerede kalınır?",
+      "Jongno veya Myeongdong saraylar ve merkez için pratiktir."
+    ],
+    [
+      "Gangnam mı Myeongdong mu?",
+      "Gangnam güney ve iş seyahatleri, Myeongdong tarihi merkez için uygundur."
+    ],
+    [
+      "Kaç gece kalınmalı?",
+      "Ana bölgeler için dört beş gece; geziler için daha fazla."
+    ],
+    [
+      "Çocuklarla hangi bölge?",
+      "Eğlence ve göl için Jamsil, kültür için Jongno; yatakları ve ulaşımı karşılaştırın."
+    ],
+    [
+      "Incheon'dan Seul'e nasıl gidilir?",
+      "Otelin konumuna göre AREX, havalimanı otobüsü veya transferi karşılaştırın."
+    ],
+    [
+      "Araç kiralamak gerekir mi?",
+      "Çoğu ziyaret için hayır; metro, yürüyüş ve gerektiğinde taksi pratiktir."
+    ],
+    [
+      "Oteller nasıl karşılaştırılır?",
+      "Aynı tarih, kişi, kategori, manzara, vergi, hizmet ve iptal şartlarını karşılaştırın."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Seul'de nerede kalınır? Jongno, Myeongdong ve Gangnam",
+  "hotelSeoTitle": "Seul lüks otelleri: Four Seasons, SIGNIEL, Josun ve Shilla",
+  "seoDescription": "Seul otelleri ve semtleri: Jongno, Myeongdong, Gangnam, Jamsil, ulaşım ve konaklama önerileri."
+}
