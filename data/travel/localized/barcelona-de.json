@@ -1,0 +1,131 @@
+{
+  "name": "Barcelona",
+  "country": "Spanien",
+  "eyebrow": "Katalonien · Modernisme, Gastronomie und Mittelmeer",
+  "heading": "Barcelona: zwischen Jugendstilboulevards und Mittelmeer.",
+  "intro": "Barcelona vereint Architektur, Stadtstrände, Gastronomie und charaktervolle Viertel. Ein Aufenthalt am Passeig de Gràcia oder am Meer verändert die täglichen Wege und den Rhythmus der Reise.",
+  "editorial": "Eixample eignet sich mit Boulevards, Gaudí-Bauten und Verkehrsanbindung für den ersten Besuch. Barri Gòtic und El Born bieten Geschichte und lebhafte Gassen. Barceloneta und Vila Olímpica liegen nahe den Stränden; Gràcia hat rund um seine Plätze ein wohnlicheres Flair.\n\nDrei bis vier Nächte lassen Zeit für Modernisme, Altstadt, Strand und Montjuïc. Reservieren Sie die gewünschten Zeitfenster für Sagrada Família, Park Güell und bedeutende Jugendstilhäuser. Die Strände sind öffentlich; ein Hotelpool bedeutet keinen Privatstrand. Planen Sie zu Stoßzeiten und bei großen Messen mehr Zeit ein und vergleichen Sie Reisedaten.\n\nAm Flughafen Josep Tarradellas Barcelona-El Prat unterscheiden Sie T1 und T2 und vergleichen Flughafenbus, Bahn ab T2, Metro und Straßentransfer. Eine separate Touristensteuer kann hinzukommen. Hotel Arts kündigt eine letzte Umbauphase bis Mai 2027 an; prüfen Sie die während Ihres Aufenthalts verfügbaren Einrichtungen.",
+  "hotelIntro": "Zwei Adressen am Passeig de Gràcia, ein Hotel am Meer und ein ehemaliges Textilpalais: vier Möglichkeiten, Barcelona zu erleben.",
+  "areas": [
+    [
+      "Eixample und Passeig de Gràcia",
+      "Modernistische Architektur, Boutiquen, Restaurants und Verkehrsanbindung.",
+      "Lärm und Ausrichtung zur Hauptstraße prüfen."
+    ],
+    [
+      "Barri Gòtic und El Born",
+      "Historische Gassen, Museen und kleine Plätze.",
+      "Manche Zugänge sind Fußgängerzonen; abends kann es lebhaft sein."
+    ],
+    [
+      "Barceloneta und Vila Olímpica",
+      "Uferpromenade und öffentliche Strände.",
+      "Entfernung zur Altstadt und Badebedingungen vergleichen."
+    ],
+    [
+      "Gràcia",
+      "Nachbarschaftsplätze, Cafés und Wohnviertelflair.",
+      "Wege zu Sehenswürdigkeiten und Stränden planen."
+    ],
+    [
+      "Montjuïc und Poble-sec",
+      "Gärten, Kultur, Ausblicke und lokale Restaurants.",
+      "Steigungen und Verkehrsmittel berücksichtigen."
+    ]
+  ],
+  "experiences": [
+    [
+      "Gaudís Modernisme",
+      "Zeitfenster für Sagrada Família und die Häuser am Passeig de Gràcia wählen."
+    ],
+    [
+      "Ein Tag in der Altstadt",
+      "Barri Gòtic und El Born zu Fuß erkunden."
+    ],
+    [
+      "Das Mittelmeer",
+      "Öffentlichen Strand, Promenade und Mittagessen am Meer verbinden."
+    ],
+    [
+      "Montjuïc",
+      "Gärten und Museum nach Öffnungszeiten und Wetter planen."
+    ]
+  ],
+  "checks": [
+    "Innenstadt und Uferlage vergleichen.",
+    "Sehenswürdigkeiten mit Zeitfenstern reservieren.",
+    "Hotelumbau und geöffnete Einrichtungen prüfen.",
+    "Gesamtpreis und Touristensteuer vergleichen.",
+    "Flughafenterminal, Betten und Stornobedingungen prüfen."
+  ],
+  "hotels": [
+    [
+      "Eixample · Passeig de Gràcia",
+      "Das ehemalige Bankgebäude beherbergt moderne Zimmer und Suiten, teilweise mit Blick auf den Passeig de Gràcia oder Mimosa Garden. Modernisme und Boutiquen sind zu Fuß erreichbar.",
+      "Garten-, Straßen- und Terrassenkategorien vergleichen.",
+      "Für Modernisme, Shopping und zeitgemäßes Design.",
+      "Das ehemalige Bankgebäude beherbergt moderne Zimmer und Suiten, teilweise mit Blick auf den Passeig de Gràcia oder Mimosa Garden. Modernisme und Boutiquen sind zu Fuß erreichbar.\n\nGarten-, Straßen- und Terrassenkategorien vergleichen."
+    ],
+    [
+      "Vila Olímpica · am Meer",
+      "Modernes großes Hotel am Meer mit Zimmern zur Stadt oder zum Mittelmeer. Das Hotel kündigt eine letzte Umbauphase bis Mai 2027 an.",
+      "Geöffnete Bereiche, mögliche Beeinträchtigungen und Leistungen für die Reisedaten prüfen.",
+      "Für einen Aufenthalt am Mittelmeer.",
+      "Modernes großes Hotel am Meer mit Zimmern zur Stadt oder zum Mittelmeer. Das Hotel kündigt eine letzte Umbauphase bis Mai 2027 an.\n\nGeöffnete Bereiche, mögliche Beeinträchtigungen und Leistungen für die Reisedaten prüfen."
+    ],
+    [
+      "Eixample · Passeig de Gràcia",
+      "Klassisches Grandhotel am Modernista-Boulevard. Manche Zimmer und Suiten blicken auf den Passeig de Gràcia; Residence-Apartments liegen in einem separaten Gebäude gegenüber.",
+      "Residence, Zimmer und Suite unterscheiden und Servicezugang bestätigen.",
+      "Für klassische Eleganz im Herzen von Eixample.",
+      "Klassisches Grandhotel am Modernista-Boulevard. Manche Zimmer und Suiten blicken auf den Passeig de Gràcia; Residence-Apartments liegen in einem separaten Gebäude gegenüber.\n\nResidence, Zimmer und Suite unterscheiden und Servicezugang bestätigen."
+    ],
+    [
+      "Eixample · Gran Via",
+      "Im ehemaligen Sitz eines Textilverbands setzt Cotton House auf historische Innenräume, Bibliothek, Terrasse und Boutique-Ambiente.",
+      "Zimmerkategorien und Poolzugang vergleichen.",
+      "Für ein Boutiquehotel mit historischem Charakter.",
+      "Im ehemaligen Sitz eines Textilverbands setzt Cotton House auf historische Innenräume, Bibliothek, Terrasse und Boutique-Ambiente.\n\nZimmerkategorien und Poolzugang vergleichen."
+    ]
+  ],
+  "faq": [
+    [
+      "Wo übernachten beim ersten Besuch?",
+      "Eixample ist günstig für Modernisme und Verkehrsanbindung, Barri Gòtic für historisches Flair."
+    ],
+    [
+      "Welches Viertel liegt am Strand?",
+      "Barceloneta und Vila Olímpica liegen nahe öffentlichen Stränden."
+    ],
+    [
+      "Welches Hotel eignet sich für Familien?",
+      "Zimmer mit Verbindungstüren, Suiten und Apartments einschließlich Majestic-Kategorien vergleichen."
+    ],
+    [
+      "Wird Hotel Arts umgebaut?",
+      "Das Hotel kündigt eine letzte Phase bis Mai 2027 an; Auswirkungen auf die Reisedaten prüfen."
+    ],
+    [
+      "Wie viele Nächte einplanen?",
+      "Drei bis vier für Architektur, Altstadt und Strand, länger für Ausflüge."
+    ],
+    [
+      "Wie kommt man vom Flughafen ins Zentrum?",
+      "Bus, Metro, Bahn ab T2 oder Transfer je nach Terminal und Hotel vergleichen."
+    ],
+    [
+      "Wie vergleicht man Preise?",
+      "Auf Bosphoras Gesamtpreis, Touristensteuer, Leistungen und Stornobedingungen vergleichen."
+    ]
+  ],
+  "seoTitle": "Barcelona: beste Viertel, Strände und Luxushotels",
+  "hotelSeoTitle": "Luxushotels Barcelona: Mandarin, Arts, Majestic und Cotton House",
+  "seoDescription": "Vergleichen Sie Barcelonas Hotels, Eixample, Gotisches Viertel und Strände mit Tipps zu Anreise und Gesamtpreisen.",
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ]
+}

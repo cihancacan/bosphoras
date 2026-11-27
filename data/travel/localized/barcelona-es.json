@@ -1,0 +1,131 @@
+{
+  "name": "Barcelona",
+  "country": "España",
+  "eyebrow": "Cataluña · Modernismo, gastronomía y Mediterráneo",
+  "heading": "Barcelona: entre las avenidas modernistas y el Mediterráneo.",
+  "intro": "Barcelona combina arquitectura, playas urbanas, gastronomía y barrios con personalidad propia. Alojarse en Passeig de Gràcia o junto al mar cambia los desplazamientos y el ritmo de cada día.",
+  "editorial": "Eixample es práctico para una primera visita por sus avenidas, edificios de Gaudí y transporte. El Barri Gòtic y El Born ofrecen patrimonio y callejuelas animadas. Barceloneta y Vila Olímpica acercan a las playas, mientras Gràcia conserva un ambiente residencial alrededor de sus plazas.\n\nTres o cuatro noches permiten repartir el tiempo entre modernismo, casco antiguo, playa y Montjuïc. Reserva los horarios deseados de la Sagrada Família, el Park Güell y las principales casas modernistas. Las playas son públicas: la piscina de un hotel no implica playa privada. En horas punta y durante grandes ferias, prevé más tiempo y compara fechas.\n\nDesde el aeropuerto Josep Tarradellas Barcelona-El Prat, distingue T1 y T2 y compara autobús de aeropuerto, tren desde T2, metro y traslado por carretera. El importe final puede incluir una tasa turística aparte. Hotel Arts anuncia una fase final de transformación hasta mayo de 2027; confirma las instalaciones abiertas para tu estancia.",
+  "hotelIntro": "Dos direcciones en Passeig de Gràcia, un hotel junto al mar y un antiguo palacio textil: cuatro formas de descubrir Barcelona.",
+  "areas": [
+    [
+      "Eixample y Passeig de Gràcia",
+      "Arquitectura modernista, boutiques, restaurantes y transporte.",
+      "Comprueba el ruido y la orientación de las habitaciones que dan a grandes avenidas."
+    ],
+    [
+      "Barri Gòtic y El Born",
+      "Callejuelas históricas, museos y pequeñas plazas.",
+      "Algunos accesos son peatonales y las calles se animan de noche."
+    ],
+    [
+      "Barceloneta y Vila Olímpica",
+      "Paseo marítimo y playas públicas.",
+      "Compara la distancia al casco antiguo y las condiciones de baño."
+    ],
+    [
+      "Gràcia",
+      "Plazas de barrio, cafeterías y vida residencial.",
+      "Planifica los trayectos a monumentos y playas."
+    ],
+    [
+      "Montjuïc y Poble-sec",
+      "Jardines, cultura, vistas y restaurantes de barrio.",
+      "Ten en cuenta las pendientes y el transporte."
+    ]
+  ],
+  "experiences": [
+    [
+      "Modernismo de Gaudí",
+      "Elige horarios para la Sagrada Família y las casas de Passeig de Gràcia."
+    ],
+    [
+      "Un día en el casco antiguo",
+      "Explora a pie Barri Gòtic y El Born."
+    ],
+    [
+      "El Mediterráneo",
+      "Combina playa pública, paseo y almuerzo junto al mar."
+    ],
+    [
+      "Montjuïc",
+      "Organiza jardines y museo según horarios y tiempo."
+    ]
+  ],
+  "checks": [
+    "Compara centro y litoral.",
+    "Reserva atracciones con horario.",
+    "Comprueba reformas del hotel e instalaciones abiertas.",
+    "Compara precio total y tasa turística.",
+    "Comprueba terminal, camas y condiciones de cancelación."
+  ],
+  "hotels": [
+    [
+      "Eixample · Passeig de Gràcia",
+      "El antiguo edificio bancario alberga habitaciones y suites contemporáneas, algunas orientadas a Passeig de Gràcia o al jardín Mimosa. Permite recorrer a pie el modernismo y las boutiques.",
+      "Compara vistas al jardín, avenida y categorías con terraza.",
+      "Para modernismo, compras y diseño contemporáneo.",
+      "El antiguo edificio bancario alberga habitaciones y suites contemporáneas, algunas orientadas a Passeig de Gràcia o al jardín Mimosa. Permite recorrer a pie el modernismo y las boutiques.\n\nCompara vistas al jardín, avenida y categorías con terraza."
+    ],
+    [
+      "Vila Olímpica · Frente marítimo",
+      "Gran hotel contemporáneo junto al mar con habitaciones orientadas a la ciudad o el Mediterráneo. El hotel anuncia una fase final de reforma hasta mayo de 2027.",
+      "Confirma zonas abiertas, posibles molestias e instalaciones para las fechas elegidas.",
+      "Para una estancia junto al Mediterráneo.",
+      "Gran hotel contemporáneo junto al mar con habitaciones orientadas a la ciudad o el Mediterráneo. El hotel anuncia una fase final de reforma hasta mayo de 2027.\n\nConfirma zonas abiertas, posibles molestias e instalaciones para las fechas elegidas."
+    ],
+    [
+      "Eixample · Passeig de Gràcia",
+      "Una gran dirección clásica en la avenida modernista. Algunas habitaciones y suites dan a Passeig de Gràcia; los apartamentos Residence ocupan otro edificio enfrente.",
+      "Distingue residencia, habitación y suite y confirma el acceso a los servicios.",
+      "Para la elegancia clásica en pleno Eixample.",
+      "Una gran dirección clásica en la avenida modernista. Algunas habitaciones y suites dan a Passeig de Gràcia; los apartamentos Residence ocupan otro edificio enfrente.\n\nDistingue residencia, habitación y suite y confirma el acceso a los servicios."
+    ],
+    [
+      "Eixample · Gran Via",
+      "Instalado en la antigua sede de una corporación textil, Cotton House destaca por sus interiores históricos, biblioteca, terraza y ambiente boutique.",
+      "Compara categorías y condiciones de acceso a la piscina.",
+      "Para un hotel boutique con patrimonio arquitectónico.",
+      "Instalado en la antigua sede de una corporación textil, Cotton House destaca por sus interiores históricos, biblioteca, terraza y ambiente boutique.\n\nCompara categorías y condiciones de acceso a la piscina."
+    ]
+  ],
+  "faq": [
+    [
+      "¿Dónde alojarse en Barcelona por primera vez?",
+      "Eixample es práctico para modernismo y transporte; Barri Gòtic para el ambiente histórico."
+    ],
+    [
+      "¿Qué barrio elegir para la playa?",
+      "Barceloneta y Vila Olímpica están cerca de playas públicas."
+    ],
+    [
+      "¿Qué hotel elegir en familia?",
+      "Compara habitaciones comunicadas, suites y apartamentos, incluidas las categorías del Majestic."
+    ],
+    [
+      "¿Hotel Arts está en obras?",
+      "El hotel anuncia una fase final hasta mayo de 2027; confirma el impacto en tus fechas."
+    ],
+    [
+      "¿Cuántas noches reservar?",
+      "Tres o cuatro noches para arquitectura, casco antiguo y playa; más para excursiones."
+    ],
+    [
+      "¿Cómo llegar al centro desde el aeropuerto?",
+      "Compara autobús, metro, tren desde T2 o traslado según terminal y hotel."
+    ],
+    [
+      "¿Cómo comparar los precios?",
+      "Compara el total, la tasa turística, los servicios y las condiciones de cancelación en Bosphoras."
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Barcelona: barrios, playas y hoteles de lujo",
+  "hotelSeoTitle": "Hoteles de lujo en Barcelona: Mandarin, Arts, Majestic y Cotton House",
+  "seoDescription": "Compara hoteles en Barcelona, Eixample, barrio Gótico y playas, con consejos de transporte, estancia y precios totales.",
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "name": "Barselona",
+  "country": "İspanya",
+  "eyebrow": "Katalonya · Modernisme, gastronomi ve Akdeniz",
+  "heading": "Barselona: modernist caddeler ve Akdeniz arasında.",
+  "intro": "Barselona mimariyi, şehir plajlarını, gastronomiyi ve farklı kimliklere sahip semtleri bir araya getirir. Passeig de Gràcia'da veya deniz kıyısında konaklamak günlük ulaşımı ve tatilin temposunu değiştirir.",
+  "editorial": "Eixample geniş caddeleri, Gaudí yapıları ve ulaşım bağlantılarıyla ilk ziyaret için uygundur. Barri Gòtic ve El Born tarihi miras ve hareketli sokaklarıyla öne çıkar. Barceloneta ve Vila Olímpica plajlara yakındır; Gràcia ise meydanları etrafında daha yerel bir atmosfer sunar.\n\nÜç veya dört gece modernist mimari, eski şehir, plaj ve Montjuïc arasında zaman ayırmak için iyi bir başlangıçtır. Sagrada Família, Park Güell ve önemli modernist evlere giriş saatlerini önceden ayırtın. Plajlar halka açıktır; otel havuzu özel plaj anlamına gelmez. Yoğun saatlerde ve büyük fuarlarda daha fazla zaman ayırın ve alternatif tarihleri karşılaştırın.\n\nJosep Tarradellas Barcelona-El Prat Havalimanı'nda T1 ve T2 terminallerini ayırt edin; havalimanı otobüsü, T2'den tren, metro ve karayolu transferlerini karşılaştırın. Toplam fiyata ayrı bir turizm vergisi eklenebilir. Hotel Arts, Mayıs 2027'ye kadar sürecek son yenileme aşamasını duyurmuştur; konaklamanızda hangi tesislerin açık olacağını doğrulayın.",
+  "hotelIntro": "Passeig de Gràcia'da iki otel, deniz kıyısında bir adres ve eski bir tekstil kuruluşunun sarayı: Barselona'yı keşfetmenin dört yolu.",
+  "areas": [
+    [
+      "Eixample ve Passeig de Gràcia",
+      "Modernist mimari, butikler, restoranlar ve ulaşım.",
+      "Ana caddelere bakan odalarda gürültüyü ve yönü kontrol edin."
+    ],
+    [
+      "Barri Gòtic ve El Born",
+      "Tarihi sokaklar, müzeler ve küçük meydanlar.",
+      "Bazı giriş yolları yayalara ayrılmıştır; akşamları sokaklar hareketlidir."
+    ],
+    [
+      "Barceloneta ve Vila Olímpica",
+      "Deniz kıyısı ve halka açık plajlar.",
+      "Eski şehre mesafeyi ve yüzme koşullarını karşılaştırın."
+    ],
+    [
+      "Gràcia",
+      "Mahalle meydanları, kafeler ve yerel yaşam.",
+      "Anıtlara ve plajlara ulaşımı planlayın."
+    ],
+    [
+      "Montjuïc ve Poble-sec",
+      "Bahçeler, kültür, manzaralar ve mahalle restoranları.",
+      "Yokuşları ve ulaşımı hesaba katın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Gaudí'nin modernist mimarisi",
+      "Sagrada Família ve Passeig de Gràcia'daki evler için giriş saatlerini seçin."
+    ],
+    [
+      "Eski şehirde bir gün",
+      "Barri Gòtic ve El Born'u yürüyerek keşfedin."
+    ],
+    [
+      "Akdeniz",
+      "Halka açık plajı, sahil yürüyüşünü ve deniz kenarında öğle yemeğini birleştirin."
+    ],
+    [
+      "Montjuïc",
+      "Bahçeleri ve müzeyi açılış saatleri ve hava durumuna göre planlayın."
+    ]
+  ],
+  "checks": [
+    "Şehir merkezi ve deniz kıyısı konumlarını karşılaştırın.",
+    "Saatli giriş gerektiren yerleri önceden ayırtın.",
+    "Otel yenileme çalışmalarını ve açık tesisleri kontrol edin.",
+    "Toplam fiyatı ve turizm vergisini karşılaştırın.",
+    "Havalimanı terminalini, yatak düzenini ve iptal koşullarını kontrol edin."
+  ],
+  "hotels": [
+    [
+      "Eixample · Passeig de Gràcia",
+      "Eski banka binasında çağdaş oda ve süitler bulunur; bazıları Passeig de Gràcia veya Mimosa Bahçesi'ne bakar. Modernist mimariye ve butiklere yürüyerek ulaşabilirsiniz.",
+      "Bahçe ve cadde manzaralı, teraslı kategorileri karşılaştırın.",
+      "Modernist mimari, alışveriş ve çağdaş tasarım için.",
+      "Eski banka binasında çağdaş oda ve süitler bulunur; bazıları Passeig de Gràcia veya Mimosa Bahçesi'ne bakar. Modernist mimariye ve butiklere yürüyerek ulaşabilirsiniz.\n\nBahçe ve cadde manzaralı, teraslı kategorileri karşılaştırın."
+    ],
+    [
+      "Vila Olímpica · Deniz kıyısı",
+      "Şehir veya Akdeniz manzaralı odalara sahip çağdaş bir sahil oteli. Otel Mayıs 2027'ye kadar süren son yenileme aşamasını duyurmuştur.",
+      "Seçilen tarihlerde açık alanları, olası rahatsızlıkları ve hizmetleri doğrulayın.",
+      "Akdeniz kıyısında konaklamak için.",
+      "Şehir veya Akdeniz manzaralı odalara sahip çağdaş bir sahil oteli. Otel Mayıs 2027'ye kadar süren son yenileme aşamasını duyurmuştur.\n\nSeçilen tarihlerde açık alanları, olası rahatsızlıkları ve hizmetleri doğrulayın."
+    ],
+    [
+      "Eixample · Passeig de Gràcia",
+      "Modernist cadde üzerinde klasik bir otel. Bazı oda ve süitler Passeig de Gràcia'ya bakar; Residence daireleri otelin karşısındaki ayrı binadadır.",
+      "Daire, oda ve süit farkını ve hizmetlere erişimi kontrol edin.",
+      "Eixample'ın merkezinde klasik zarafet için.",
+      "Modernist cadde üzerinde klasik bir otel. Bazı oda ve süitler Passeig de Gràcia'ya bakar; Residence daireleri otelin karşısındaki ayrı binadadır.\n\nDaire, oda ve süit farkını ve hizmetlere erişimi kontrol edin."
+    ],
+    [
+      "Eixample · Gran Via",
+      "Eski tekstil birliğinin merkezinde yer alan Cotton House, tarihi iç mekânları, kütüphanesi, terası ve butik otel atmosferiyle öne çıkar.",
+      "Oda kategorilerini ve havuz erişim koşullarını karşılaştırın.",
+      "Tarihi mimariye sahip butik otel deneyimi için.",
+      "Eski tekstil birliğinin merkezinde yer alan Cotton House, tarihi iç mekânları, kütüphanesi, terası ve butik otel atmosferiyle öne çıkar.\n\nOda kategorilerini ve havuz erişim koşullarını karşılaştırın."
+    ]
+  ],
+  "faq": [
+    [
+      "Barselona'ya ilk kez gelenler nerede kalmalı?",
+      "Eixample modernist yapılar ve ulaşım; Barri Gòtic tarihi atmosfer için uygundur."
+    ],
+    [
+      "Plaj için hangi semt tercih edilmeli?",
+      "Barceloneta ve Vila Olímpica halka açık plajlara yakındır."
+    ],
+    [
+      "Aileler için hangi otel uygun?",
+      "Bağlantılı odaları, süitleri ve Majestic dahil daire seçeneklerini karşılaştırın."
+    ],
+    [
+      "Hotel Arts'ta yenileme var mı?",
+      "Otel Mayıs 2027'ye kadar son aşamayı duyurmuştur; seyahat tarihlerinizdeki etkisini doğrulayın."
+    ],
+    [
+      "Kaç gece ayırmalı?",
+      "Mimari, eski şehir ve plaj için üç-dört gece; çevre gezileriyle daha uzun süre."
+    ],
+    [
+      "Havalimanından merkeze nasıl gidilir?",
+      "Terminale ve otele göre otobüs, metro, T2'den tren veya transferi karşılaştırın."
+    ],
+    [
+      "Fiyatlar nasıl karşılaştırılır?",
+      "Bosphoras'ta toplam fiyatı, turizm vergisini, hizmetleri ve iptal koşullarını karşılaştırın."
+    ]
+  ],
+  "seoTitle": "Barselona'da Nerede Kalınır? Semtler, Plajlar ve Lüks Oteller",
+  "hotelSeoTitle": "Barselona Lüks Otelleri: Mandarin, Arts, Majestic ve Cotton House",
+  "seoDescription": "Barselona otellerini, Eixample, Gotik Mahalle ve plajları; ulaşım, konaklama koşulları ve toplam fiyatlarla karşılaştırın.",
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ]
+}
