@@ -438,6 +438,37 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
+        "key": "waldorf-3",
+        "sourcePage": "https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/events/signature-offers/",
+        "sourceResolvedUrl": "https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill%2Cw_1080%2Ch_970%2Cq_80%2Cf_auto%2Cg_auto/Imagery/Property%20Photography/Waldorf%20Astoria/O/ORLBCWA/Waldorf_Astoria_Orlando___Exterior___Front_Drive___MBHR.jpg",
+        "sourceRequestedUrl": "https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill%2Cw_1080%2Ch_970%2Cq_80%2Cf_auto%2Cg_auto/Imagery/Property%20Photography/Waldorf%20Astoria/O/ORLBCWA/Waldorf_Astoria_Orlando___Exterior___Front_Drive___MBHR.jpg",
+        "originalAlt": "Waldorf Astoria Orlando exterior front drive at dusk",
+        "originalCaption": "Hilton / Waldorf Astoria Orlando official photography",
+        "credit": "Hilton / Waldorf Astoria Orlando official photography",
+        "publisher": "Waldorf Astoria Orlando",
+        "hotel": "Waldorf Astoria Orlando",
+        "localPath": "/images/travel/orlando-premium/waldorf/waldorf-3.webp",
+        "sourceSHA256": "ac1f71472d041e9c8f1392b9474562f64cce737ad61ef88242a1ba1cb809e47e",
+        "webpSHA256": "110e50b84904ddb0cf2998e2a56899c185d7dc7a9565b4034d715cbd749e94c5",
+        "sourcePixels": [
+          1080,
+          970
+        ],
+        "webpPixels": [
+          946,
+          850
+        ],
+        "webpBytes": 151746,
+        "pixelFingerprint": "662e88e0672319d8",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "ritz-carlton-1",
         "sourcePage": "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/photos/",
         "sourceResolvedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/MCORZ/mcorz-exterior-0016-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
@@ -624,18 +655,8 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "gaps": [
-      {
-        "group": "waldorf",
-        "expected": 3,
-        "found": 2
-      }
-    ],
+    "gaps": [],
     "errors": [
-      {
-        "page": "https://www.experiencekissimmee.com/things-to-do/celebration",
-        "error": "403 Client Error: Forbidden for url: https://www.experiencekissimmee.com/things-to-do/celebration"
-      },
       {
         "page": "https://www.waldorfastoriaorlando.com/gallery/",
         "error": "404 Client Error: Not Found for url: https://www.waldorfastoriaorlando.com/gallery/waldorf-astoria-orlando/"
@@ -647,14 +668,6 @@
       {
         "page": "https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/gallery/",
         "error": "403 Client Error: Forbidden for url: https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/gallery/"
-      },
-      {
-        "url": "https://images.trvl-media.com/lodging/3000000/2440000/2432800/2432727/0589fd64.jpg?impolicy=resizecrop&ra=fit&rw=1280",
-        "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/3000000/2440000/2432800/2432727/0589fd64.jpg?impolicy=resizecrop&ra=fit&rw=1280"
-      },
-      {
-        "page": "https://www.expedia.com/Orlando-Hotels-Waldorf-Astoria-Orlando.h2432727.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Orlando-Hotels-Waldorf-Astoria-Orlando.h2432727.Hotel-Information"
       }
     ],
     "publicUseApproved": false,
@@ -693,7 +706,7 @@
       }
     ],
     "cityCount": 9,
-    "hotelCount": 11,
-    "totalBytes": 2500088
+    "hotelCount": 12,
+    "totalBytes": 2651834
   }
 }
