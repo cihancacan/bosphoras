@@ -2980,6 +2980,37 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-10",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia.jpg",
+        "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia.jpg/1920px-Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20180831212228",
+        "sourceRequestedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia.jpg/1920px-Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20180831212228",
+        "originalAlt": "File:Plaça de la Vila de Gràcia.jpg",
+        "originalCaption": "",
+        "credit": "Turisme de Barcelona",
+        "publisher": "Turisme de Barcelona",
+        "hotel": null,
+        "localPath": "/images/travel/barcelona-premium/destination/scene-10.webp",
+        "sourceSHA256": "547de9f93a63da6957d3d81c53a2175a1899ef41ec1b9876b61f3919cdf7704f",
+        "webpSHA256": "b4a8a25f9a881436c25a4116cd7b38b3ad8db36821c30035cdff16e7bdca55d9",
+        "sourcePixels": [
+          1920,
+          630
+        ],
+        "webpPixels": [
+          1280,
+          420
+        ],
+        "webpBytes": 112362,
+        "pixelFingerprint": "a664d0a3939934f4",
+        "candidateSubject": "gracia|gràcia",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -3329,7 +3360,7 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 7
+        "found": 8
       },
       {
         "group": "majestic",
@@ -3339,12 +3370,16 @@
     ],
     "errors": [
       {
+        "url": "https://commons.wikimedia.org/wiki/Category:Marina_Port_Vell",
+        "error": "cannot identify image file <_io.BytesIO object at 0x732868352ed0>"
+      },
+      {
         "url": "https://commons.wikimedia.org/wiki/Category:Port_Vell",
-        "error": "cannot identify image file <_io.BytesIO object at 0x744fde30e480>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x732868ae6e80>"
       },
       {
         "url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona,_Spain.jpg",
-        "error": "cannot identify image file <_io.BytesIO object at 0x744fde30f470>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x73286163d990>"
       },
       {
         "url": "https://commons.wikimedia.org/wiki/Special:WhatLinksHere/File:Aerial_view_of_Barceloneta_Beach_and_Port_Vell_in_Barcelona,_Spain.jpg",
@@ -3360,23 +3395,7 @@
       },
       {
         "url": "https://commons.wikimedia.org/wiki/Category:Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia",
-        "error": "cannot identify image file <_io.BytesIO object at 0x744fdec43a60>"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/File:Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia_01.jpg",
-        "error": "cannot identify image file <_io.BytesIO object at 0x744fe433f100>"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:WhatLinksHere/File:Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia_01.jpg",
-        "error": "404 Client Error: Not Found for url: https://commons.wikimedia.org/wiki/Special:WhatLinksHere/File:Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia_01.jpg"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:RecentChangesLinked/File:Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia_01.jpg",
-        "error": "404 Client Error: Not Found for url: https://commons.wikimedia.org/wiki/Special:RecentChangesLinked/File:Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia_01.jpg"
-      },
-      {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia_01.jpg",
-        "error": "400 Client Error: Use thumbnail sizes listed on https://w.wiki/GHai for url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Pla%C3%A7a_de_la_Vila_de_Gr%C3%A0cia_01.jpg"
+        "error": "cannot identify image file <_io.BytesIO object at 0x73286163d3f0>"
       },
       {
         "page": "https://myconciergehotel.com/en/hotel/majestic-hotel-and-spa-barcelona",
@@ -3550,9 +3569,9 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 7,
+    "cityCount": 8,
     "hotelCount": 11,
-    "totalBytes": 2505586
+    "totalBytes": 2617948
   },
   "cancun": {
     "destinationScenes": [
