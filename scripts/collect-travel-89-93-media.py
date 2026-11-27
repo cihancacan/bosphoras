@@ -162,6 +162,7 @@ DIRECT['london/savoy']=[['https://www.ahstatic.com/photos/a597_br_00_p_2048x1536
 DIRECT['london/shangri-la']=[['https://www.the-shard.com/media/gm2ljfv2/shangri-la-the-shard-london-sky-sauna.jpg?quality=95&rmode=crop&rxy=0%2C0&width=457','Shangri-La London Sky Sauna','https://www.the-shard.com/news-events/events/2026/summer-above-the-clouds-at-shangri-la','The Shard / Shangri-La']]
 
 DIRECT['las-vegas/wynn']=DIRECT.get('las-vegas/wynn',[])+[['https://preview.thenewsmarket.com/Previews/WYNN/StillAssets/1920x1080/495812_v2.jpg','Wynn Las Vegas exterior and gardens with Encore tower in background','https://www.newsroom.wynnresorts.com/en/wynnresorts/wynn-las-vegas-resort-fact-sheet/s/d68e3fea-7a3a-44d1-8a15-c445ecfedc30','Wynn Resorts newsroom / Exterior – Daytime']]
+DIRECT['london/city'].insert(0,['https://upload.wikimedia.org/wikipedia/commons/e/e0/Mount_Street_and_Carlos_Place%2C_Mayfair.jpg','Mayfair Mount Street and Carlos Place streetscape','https://commons.wikimedia.org/wiki/File:Mount_Street_and_Carlos_Place,_Mayfair.jpg','Davvike / Wikimedia Commons / CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0/; resized and converted to WebP'])
 def direct_candidates(slug,key):
  return [{'url':u,'sourcePage':page,'originalAlt':alt,'originalCaption':credit,'targeted':True} for u,alt,page,credit in DIRECT.get(slug+'/'+key,[])]
 
