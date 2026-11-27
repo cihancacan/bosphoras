@@ -1,7 +1,39 @@
 {
   "seoul": {
     "destinationScenes": [],
-    "hotels": [],
+    "hotels": [
+      {
+        "key": "josun-palace-1",
+        "sourcePage": "https://www.marriott.com/en-us/hotels/sellc-josun-palace-a-luxury-collection-hotel-seoul-gangnam/photos/",
+        "sourceResolvedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SELLC/sellc-eatanic-garden-4781-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+        "sourceRequestedUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SELLC/sellc-eatanic-garden-4781-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+        "originalAlt": "Eatanic Garden",
+        "originalCaption": "",
+        "credit": "Josun Palace, a Luxury Collection Hotel, Seoul Gangnam",
+        "publisher": "Josun Palace, a Luxury Collection Hotel, Seoul Gangnam",
+        "hotel": "Josun Palace, a Luxury Collection Hotel, Seoul Gangnam",
+        "localPath": "/images/travel/seoul-premium/josun-palace/josun-palace-1.webp",
+        "sourceSHA256": "1c9f39490f1c2c40d5358d86896a5d6110098d67c901899e3b7d13fcb5cd3ef7",
+        "webpSHA256": "95252c30d3f937734f6408fcca16d05e1689ebd2d787749dad567b25e4c364a9",
+        "sourcePixels": [
+          1336,
+          890
+        ],
+        "webpPixels": [
+          1276,
+          850
+        ],
+        "webpBytes": 124068,
+        "pixelFingerprint": "3232339637333333",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
     "gaps": [
       {
         "group": "city",
@@ -21,7 +53,7 @@
       {
         "group": "josun-palace",
         "expected": 3,
-        "found": 0
+        "found": 1
       },
       {
         "group": "shilla",
@@ -31,56 +63,24 @@
     ],
     "errors": [
       {
-        "page": "https://english.visitseoul.net/attractions/Gyeongbokgung-Palace_/54",
-        "error": "404 Client Error: 404 for url: https://english.visitseoul.net/attractions/Gyeongbokgung-Palace_/54"
-      },
-      {
-        "page": "https://english.visitseoul.net/attractions/Bukchon-Hanok-Village_/267",
-        "error": "404 Client Error: 404 for url: https://english.visitseoul.net/attractions/Bukchon-Hanok-Village_/267"
-      },
-      {
-        "page": "https://english.visitseoul.net/attractions/N-Seoul-Tower_/57",
-        "error": "404 Client Error: 404 for url: https://english.visitseoul.net/attractions/N-Seoul-Tower_/57"
-      },
-      {
-        "page": "https://english.visitseoul.net/attractions/Myeongdong_/50",
-        "error": "404 Client Error: 404 for url: https://english.visitseoul.net/attractions/Myeongdong_/50"
-      },
-      {
-        "page": "https://english.visitseoul.net/attractions/Dongdaemun-Design-Plaza-DDP_/99",
-        "error": "404 Client Error: 404 for url: https://english.visitseoul.net/attractions/Dongdaemun-Design-Plaza-DDP_/99"
-      },
-      {
-        "page": "https://english.visitseoul.net/attractions/Seokchon-Lake_/286",
-        "error": "404 Client Error: 404 for url: https://english.visitseoul.net/attractions/Seokchon-Lake_/286"
-      },
-      {
-        "page": "https://english.visitseoul.net/attractions/Bongeunsa-Temple_/264",
-        "error": "404 Client Error: 404 for url: https://english.visitseoul.net/attractions/Bongeunsa-Temple_/264"
-      },
-      {
-        "page": "https://english.visitseoul.net/attractions/Cheonggyecheon-Stream_/55",
-        "error": "404 Client Error: 404 for url: https://english.visitseoul.net/attractions/Cheonggyecheon-Stream_/55"
-      },
-      {
-        "page": "https://english.visitseoul.net/attractions/Hongdae_/83",
-        "error": "404 Client Error: 404 for url: https://english.visitseoul.net/attractions/Hongdae_/83"
-      },
-      {
         "page": "https://www.fourseasons.com/seoul/photos-and-videos/",
         "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/seoul/photos-and-videos/"
       },
       {
+        "page": "https://www.fourseasons.com/en/seoul/",
+        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/en/seoul/"
+      },
+      {
+        "page": "https://www.fourseasons.com/seoul/accommodations/",
+        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/seoul/accommodations/"
+      },
+      {
         "url": "https://press.fourseasons.com/seoul/hotel-news/2026/in-suite-wellness",
-        "error": "cannot identify image file <_io.BytesIO object at 0x742684b41e40>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x7ed8406b64d0>"
       },
       {
         "url": "https://press.fourseasons.com/seoul/hotel-news/2026/urban-picnic2",
-        "error": "cannot identify image file <_io.BytesIO object at 0x742684b2a980>"
-      },
-      {
-        "page": "https://www.marriott.com/en-us/hotels/selgl-josun-palace-a-luxury-collection-hotel-seoul-gangnam/photos/",
-        "error": "404 Client Error: Not Found for url: https://www.marriott.com/en-us/hotels/selgl-josun-palace-a-luxury-collection-hotel-seoul-gangnam/photos/"
+        "error": "cannot identify image file <_io.BytesIO object at 0x7ed84050dfd0>"
       },
       {
         "page": "https://www.shilla.net/seoul/index.do?lang=en",
@@ -95,7 +95,7 @@
     "ownerPermissionDeclared": true,
     "excludedCandidates": [],
     "cityCount": 0,
-    "hotelCount": 0,
-    "totalBytes": 0
+    "hotelCount": 1,
+    "totalBytes": 124068
   }
 }
