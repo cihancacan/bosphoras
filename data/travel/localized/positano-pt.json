@@ -1,0 +1,162 @@
+{
+  "name": "Positano",
+  "country": "Itália",
+  "eyebrow": "Costa Amalfitana · Terraços sobre o mar Tirreno",
+  "heading": "Onde ficar em Positano: terraços, escadas e enseadas",
+  "intro": "Vista do mar, Positano parece um mosaico de casas em tons pastel ao redor da cúpula de Santa Maria Assunta. Via Cristoforo Colombo, Laurito, Arienzo e Via Pasitea oferecem estadias distintas. Além da vista, considere escadas, acesso à praia e transporte.",
+  "editorial": "Vista para o mar não significa acesso direto à água. Le Sirenuse fica acima do centro; a descida à Spiaggia Grande inclui escadas. O Hotel Poseidon, de gestão familiar na Via Pasitea 148, tem acesso mais conveniente por estrada, mas a piscina panorâmica não o torna um resort de praia. Villa TreVille reúne villas e jardins em Arienzo, longe das ruas movimentadas. Il San Pietro fica mais adiante, nas rochas de Laurito junto à SS163 rumo a Amalfi; confirme acesso ao mar e traslados.\n\nFornillo, Chiesa Nuova e Montepertuso são diferentes do centro. Spiaggia Grande concentra praia principal e píer de excursões; Fornillo tem outra trilha costeira. Barcos para Capri e Amalfi dependem do mar e as estradas podem congestionar no verão. Famílias, pessoas com mobilidade reduzida e viajantes com bagagem devem planejar desembarque e transporte das malas. Preços e disponibilidade são confirmados pelo fornecedor autorizado.",
+  "hotelIntro": "Quatro opções: panorama do centro, acesso por estrada na Via Pasitea, jardins tranquilos de Arienzo e costa rochosa de Laurito.",
+  "areas": [
+    [
+      "Via Cristoforo Colombo e centro",
+      "Rua elevada com Le Sirenuse e vista da cúpula de Santa Maria Assunta. Restaurantes e lojas ficam próximos, mas é preciso descer à praia.",
+      "Confirme caminho a pé, bagagem e andar do quarto."
+    ],
+    [
+      "Spiaggia Grande · Praia e píer",
+      "Praia principal com áreas de banho, restaurantes e partidas de excursões. Serviços privados de praia e barcos são reservados separadamente.",
+      "Confira mar, regras, últimos barcos e movimento."
+    ],
+    [
+      "Via Pasitea, Fornillo e Chiesa Nuova",
+      "Hotel Poseidon fica na Via Pasitea, acessível por estrada. Fornillo é outra praia com trilha costeira; Chiesa Nuova fica acima do centro.",
+      "Não presuma que Fornillo seja a praia mais próxima de todo hotel na encosta."
+    ],
+    [
+      "Arienzo · Villas e escadas costeiras",
+      "A leste do centro há jardins, villas e pequenas enseadas; Villa TreVille fica aqui.",
+      "Confirme prédio da suíte, degraus, horários de traslado e acesso à praia."
+    ],
+    [
+      "Laurito e estrada SS163",
+      "Il San Pietro ocupa uma propriedade rochosa rumo a Amalfi. Jardins, restaurantes e espaços à beira-mar formam um destino próprio.",
+      "Confirme traslados, temporada dos restaurantes e acesso às instalações costeiras."
+    ]
+  ],
+  "experiences": [
+    [
+      "Positano visto do mar",
+      "Barcos e excursões costeiras saem da Spiaggia Grande. Confira retorno; ondas podem alterar horários."
+    ],
+    [
+      "Trilha costeira de Fornillo",
+      "O caminho passa por enseadas e cafés sazonais. Considere degraus e trechos irregulares."
+    ],
+    [
+      "Maiólica de Santa Maria Assunta",
+      "A cúpula marca a paisagem de Positano. Explore ruas antigas e igreja respeitando cultos e horários."
+    ],
+    [
+      "Um dia em Praiano ou Amalfi",
+      "As cidades vizinhas mostram outras facetas da costa. A estreita SS163 pode congestionar; confira estrada e retorno."
+    ],
+    [
+      "Aperitivo acima dos telhados",
+      "Escolha um terraço com vista confirmada depois da saída dos visitantes de um dia. Reserve mesas à parte; alguns restaurantes fecham fora da temporada."
+    ]
+  ],
+  "checks": [
+    "Panorama geral do hotel não garante vista do quarto nem acesso direto à praia.",
+    "Considere escadas, ponto de desembarque e transporte de bagagem.",
+    "Barcos para Capri e Amalfi dependem das condições do mar.",
+    "Fornillo e Spiaggia Grande são praias diferentes.",
+    "Confirme beach clubs, restaurantes e traslados separadamente.",
+    "Segundo as condições publicadas do Le Sirenuse, crianças de seis anos ou menos não são aceitas; confirme a regra antes de reservar."
+  ],
+  "hotels": [
+    [
+      "Via Cristoforo Colombo 30 · Centro",
+      "Le Sirenuse, da família Sersale, combina terraços de tons quentes, arte, gastronomia e vista de Santa Maria Assunta. La Sponda e bares definem o ambiente; mesas são reservadas separadamente. Planta, terraço e orientação variam. A descida à Spiaggia Grande inclui escadas e ladeiras. É hotel acima do mar, não na praia. As condições publicadas não aceitam crianças de seis anos ou menos; confirme a regra vigente.",
+      "Confirme categoria, varanda, escadas, serviços sazonais e limite de idade.",
+      "Para a vista clássica de Positano e hospitalidade italiana.",
+      ""
+    ],
+    [
+      "Via Pasitea 148 · Estrada panorâmica",
+      "Hotel Poseidon é conhecido pela hospitalidade familiar e acesso relativamente fácil por estrada. Piscina e terraço panorâmicos olham para a cidade; vista, varanda e planta variam. Interiores mediterrâneos e restaurante o diferenciam de propriedades isoladas. Acesso de carro facilita bagagem, mas não elimina escadas até o mar.",
+      "Confirme categoria, desembarque, piscina e caminho à praia.",
+      "Para hospitalidade tradicional e acesso conveniente.",
+      ""
+    ],
+    [
+      "Via Arienzo 30 · Jardins da costa leste",
+      "Villa TreVille reúne villas, jardins e terraços longe das ruas mais movimentadas. A antiga propriedade do cineasta Franco Zeffirelli lembra uma residência privada com mosaicos, vegetação e áreas abertas acima do mar. Suítes ficam em prédios diferentes, com possíveis desníveis. Confirme acesso ao litoral, barcos e restaurantes.",
+      "Confira suíte, villa, escadas, acesso à água e transporte de Arienzo.",
+      "Para tranquilidade em uma propriedade privada.",
+      ""
+    ],
+    [
+      "Via Laurito 2 · Costa rumo a Amalfi",
+      "Il San Pietro di Positano fica nas rochas de Laurito, fora do centro de pedestres. Terraços, jardins e restaurantes descem até áreas à beira-mar. O hotel informa traslado gratuito a Positano para hóspedes; confirme horários e condições nas datas da viagem. Acesso à praia e restaurantes depende da hospedagem. Confira andar, vista, elevadores e transporte sobretudo com crianças ou mobilidade reduzida.",
+      "Confirme traslado ao centro, acesso à costa, orientação da suíte e serviços sazonais.",
+      "Para descansar em uma propriedade isolada sobre as rochas.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Qual hotel oferece a vista clássica de Positano?",
+      "Le Sirenuse fica acima do centro na Via Cristoforo Colombo. Confirme quarto ou terraço com a vista desejada."
+    ],
+    [
+      "É mais fácil chegar de carro ao Hotel Poseidon?",
+      "Fica na Via Pasitea, acessível a táxis e veículos autorizados. Confira desembarque, ladeiras e distância até o quarto."
+    ],
+    [
+      "Villa TreVille fica na Spiaggia Grande?",
+      "Não, fica em Arienzo, a leste. Planeje transporte à vila e outras praias."
+    ],
+    [
+      "Il San Pietro fica no centro?",
+      "Não, fica na Via Laurito 2 rumo a Amalfi. Confirme traslado gratuito anunciado para hóspedes e acesso ao mar."
+    ],
+    [
+      "Qual a diferença entre Spiaggia Grande e Fornillo?",
+      "A primeira é a praia principal com píer; Fornillo é outra praia ligada por trilha costeira. Considere degraus e serviços."
+    ],
+    [
+      "Os barcos para Capri e Amalfi são garantidos?",
+      "Não. Horários são sazonais, e vento e ondas podem causar cancelamentos. Confira último retorno e alternativas."
+    ],
+    [
+      "Como reservar os quatro hotéis?",
+      "Compare opções na Bosphoras; parceiro autorizado confirma preços, disponibilidade e condições."
+    ]
+  ],
+  "photoCaptions": [
+    "Casas em tons pastel de Positano sobre baía turquesa",
+    "Cúpula de Santa Maria Assunta sobre o Tirreno",
+    "Spiaggia Grande e guarda-sóis coloridos",
+    "Praia de Fornillo sob rochas verdes",
+    "Panorama da estrada superior",
+    "Baía de Arienzo",
+    "Praia de Laurito sob as rochas",
+    "Vasos de cerâmica com limões",
+    "Costa rochosa de Praiano"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Piscina de mosaicos do Le Sirenuse vista do alto",
+      "Suíte iluminada com móveis clássicos",
+      "Terraço do Le Sirenuse com vista da cidade"
+    ],
+    [
+      "Terraço do Hotel Poseidon acima de Positano",
+      "Suíte com cortinas rosas e terraço",
+      "Piscina e terraço de jantar à noite"
+    ],
+    [
+      "Pequena piscina privativa de Villa TreVille",
+      "Suíte turquesa e branca",
+      "Fachada rosa de Villa TreVille acima do mar"
+    ],
+    [
+      "Il San Pietro sobre o promontório visto do alto",
+      "Quarto com terraço e vista para o mar",
+      "Quarto branco com varanda sobre Laurito"
+    ]
+  ],
+  "seoTitle": "Onde ficar em Positano: melhores regiões e hotéis de luxo",
+  "hotelSeoTitle": "Melhores hotéis de Positano: Le Sirenuse, Poseidon e Il San Pietro",
+  "seoDescription": "Compare centro, Fornillo, Arienzo e Laurito. Conheça quatro hotéis de luxo em Positano, praias e transporte na Costa Amalfitana."
+}
