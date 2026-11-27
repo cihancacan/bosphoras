@@ -187,6 +187,12 @@ DIRECT = {
   ],
   "kuala-lumpur/eq": [
     [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/EQ_FACADE_SUNSET.jpg",
+      "EQ Kuala Lumpur exterior facade at sunset",
+      "https://commons.wikimedia.org/wiki/File:EQ_FACADE_SUNSET.jpg",
+      "Sundae1970 / CC BY-SA 4.0 / resized WebP"
+    ],
+    [
       "https://www.eqkualalumpur.com/wp-content/uploads/sites/10/2019/04/2019-04-01_Architecture-Malaysia-EQ-Shot2.jpg",
       "EQ Kuala Lumpur exterior Equatorial Plaza tower",
       "https://www.eqkualalumpur.equatorial.com/press-media/the-grand-opening-of-equatorial-plaza/",
@@ -262,6 +268,7 @@ def pick(candidates,patterns,folder,prefix,publisher,property_name=None,existing
   for r in candidates:
    label=unquote(r['url']+' '+r['originalAlt']+' '+r['originalCaption']).replace('_',' ')
    if OTHER.search(label) or not re.search(pattern,label,re.I):continue
+   if property_name=='EQ Kuala Lumpur' and pattern==EXTERIOR.pattern and re.search(r'sky51|entrance2|lobby|reception',label,re.I):continue
    if not property_name and re.search(r'mother and son|father and|family in front|child in front',label,re.I):continue
    if property_name and pattern==ROOM.pattern and re.search(r'\b(?:bathroom|tub|shower|vanity)\b',label,re.I):continue
    if property_name and pattern==FACILITY.pattern and re.search(r'kids enjoy|children enjoy|family enjoying',label,re.I):continue
@@ -377,7 +384,7 @@ def hotel_job(c,h):
  # These were specifically identified by source filenames/alt as unsuitable or ambiguous.
  bad={'ritz-carlton-2','portofino-2','claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4','savoy-2','shangri-la-2','shangri-la-3','venetian-3','le-blanc-1','le-blanc-3','coral-beach-3','nizuc-4','hyatt-ziva-2','coral-beach-4','coral-beach-5','le-blanc-5','le-blanc-6','le-blanc-7','le-blanc-8'}
  rejected=[r for r in allprevious if r['key'] in bad]
- existing=[r for r in allprevious if r['key'] not in bad and not (c['slug']=='kuala-lumpur' and key=='eq' and r['key']=='eq-1')]
+ existing=[r for r in allprevious if r['key'] not in bad and not (c['slug']=='kuala-lumpur' and key=='eq' and r['key'] in ('eq-1','eq-4'))]
  if len(existing)>=3:return c['slug'],key,existing,[]
  avoid=rejected+[r for r in old.get('excludedCandidates',[]) if r.get('hotel')==name]
  patterns=[EXTERIOR.pattern,ROOM.pattern,FACILITY.pattern]
