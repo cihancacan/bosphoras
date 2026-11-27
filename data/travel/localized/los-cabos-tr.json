@@ -1,0 +1,148 @@
+{
+  "name": "Los Cabos",
+  "country": "Meksika",
+  "eyebrow": "Baja California Sur · Meksika",
+  "heading": "Los Cabos'ta nerede kalınır? Çölün iki denizle buluştuğu yer",
+  "intro": "Baja Yarımadası'nın güney ucunda kaktüs bahçeleri, sıcak taş dokuları, altın kumlar ve kayalık sahiller lüks tatili şekillendirir. Cabo San Lucas ile San José del Cabo arasında atmosfer, deniz erişimi ve konuma göre seçim yapın.",
+  "editorial": "Los Cabos, Pasifik Okyanusu ile Cortez Denizi olarak bilinen Kaliforniya Körfezi arasındadır. Güzel bir plaj güvenli yüzme anlamına gelmez; güçlü dalga, akıntı ve ani derinleşme günlük kontrol gerektirir. Palmilla daha korunaklı koy, Pedregal Pasifik kayalıkları, turizm koridoru sakin resortlar, Puerto Los Cabos ise San José'nin doğusunda çöl manzaraları sunar.\n\nOne&Only Palmilla geleneksel misafirperverlik ve korunaklı koyuyla öne çıkar. Waldorf Astoria Pedregal'e Cabo San Lucas'tan özel tünelle ulaşılır; okyanus terasları ve belirli kategorilerde küçük havuzlar bulunur. Las Ventanas al Paraíso Baja mimarisini geniş süitler, restoran ve wellness ile birleştirir. Zadún, a Ritz-Carlton Reserve, Meksika el sanatları, dingin mimari ve Sensei bakımlarına odaklanır. Kategori, manzara, havuz ve plaj erişimini karşılaştırın.\n\nKış ve ilkbahar başında, türe göre genellikle aralık–nisan arasında balina gözlemi mümkündür, ancak garanti değildir. El Arco tekne gezisi, San José galerileri ve resortta serbest gün planlayın. Çocuklarla deniz, özel havuz güvenliği, çocuk programı ve mesafeleri kontrol edin. Beş–yedi gece acele etmeden keşfetmek için uygundur. SJD transferi, vergiler, bahşişler, dahil hizmetler ve iptal koşullarını doğrulayın.",
+  "hotelIntro": "Pasifik ile Cortez Denizi arasında dört resort: aile tatili, kayalık panoramalar, gastronomi ve mahremiyet.",
+  "areas": [
+    [
+      "Palmilla · Korunaklı koy",
+      "San José'ye yakın, nispeten sakin sahil ve özel atmosfer.",
+      "Yüzme dalgalara bağlıdır; yerel talimatları izleyin."
+    ],
+    [
+      "Pedregal · Pasifik kayalıkları",
+      "Hareketli Cabo San Lucas yakınında kayalık burunlar ve etkileyici manzaralar.",
+      "Güçlü dalga ve akıntılar yüzmeyi tehlikeli kılabilir."
+    ],
+    [
+      "Turizm koridoru · Sakin resortlar",
+      "İki şehir arasında golf sahaları, koylar ve çöl tepeleri yakınında resortlar.",
+      "Akşam gezileri için araç veya şoför ayarlayın."
+    ],
+    [
+      "Puerto Los Cabos · Modern Baja",
+      "Çölün Cortez Denizi ile buluştuğu sakin konut bölgesi, yerel zanaat.",
+      "Tarihî merkeze yolu ve deniz erişimini kontrol edin."
+    ],
+    [
+      "San José del Cabo · Sanat",
+      "Tarihî merkezde galeriler, restoranlar ve sakin akşamlar.",
+      "Çoğu plaj resortu galeriler bölgesinden uzaktadır."
+    ]
+  ],
+  "experiences": [
+    [
+      "El Arco tekne gezisi",
+      "Hava ve karaya çıkış kurallarına göre sabah Land's End'e gidin."
+    ],
+    [
+      "San José sokakları",
+      "Galeriler, seramik ve bağımsız restoranlar arasında akşam geçirin."
+    ],
+    [
+      "Sezonunda balinalar",
+      "Kışın sorumlu operatör seçip mesafeyi koruyun; gözlem garanti değildir."
+    ]
+  ],
+  "checks": [
+    "Belirli plajda yüzme güvenliğini kontrol edin.",
+    "Casita, süit veya villa kategorisini, manzarayı ve özel havuzu doğrulayın.",
+    "SJD havalimanı ve şehirler arası ulaşımı planlayın.",
+    "Hizmet, vergi, bahşiş, iptal ve sezon koşullarını doğrulayın."
+  ],
+  "hotels": [
+    [
+      "Palmilla · San José del Cabo",
+      "One&Only Palmilla, çöl ortasında tropik bahçeler ve uygun koşullarda yüzülebilen daha korunaklı koya erişim sunan klasik resorttur.",
+      "Koy erişimi, deniz durumu, kategori ve aile kapasitesini doğrulayın.",
+      "Geleneksel hizmet ve korunaklı koyda aile tatili için.",
+      ""
+    ],
+    [
+      "Pedregal · Cabo San Lucas",
+      "Waldorf Astoria Pedregal'e özel tünel ile ulaşılır; Pasifik üzerindeki teraslar ve havuzlar öne çıkar. El Farallon restoranı dalgaların üzerinde konumlanır.",
+      "Süit yönü, yüzme kısıtları ve transferi doğrulayın.",
+      "Pasifik panoramaları, mahremiyet ve gastronomi için.",
+      ""
+    ],
+    [
+      "Turizm koridoru · km 19,5",
+      "Las Ventanas al Paraíso geniş süitler, özenle tasarlanmış havuzlar, Baja mimarisi, restoranlar ve wellness sunar; özel rezidanslar da vardır.",
+      "Kategori, havuz, manzara ve deniz durumunu karşılaştırın.",
+      "Zarif süitler ve özenli hizmet için.",
+      ""
+    ],
+    [
+      "Puerto Los Cabos · San José del Cabo",
+      "Zadún çağdaş mimariyi Meksika el sanatları, Sensei wellness ve yerel mutfakla çöl ve deniz arasında buluşturur.",
+      "Havuzlu kategori, San José'ye ulaşım ve yüzme koşullarını doğrulayın.",
+      "Çöl manzaraları arasında sakin tatil için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Hangi lüks oteller karşılaştırılmalı?",
+      "Koy için One&Only Palmilla, kayalıklar için Waldorf Astoria Pedregal, klasik zarafet için Las Ventanas, modern sakinlik için Zadún."
+    ],
+    [
+      "Denizde yüzülebilir mi?",
+      "Her plajda değil; akıntı, dalga ve ani derinleşme tehlikelidir. Belirli sahili kontrol edin."
+    ],
+    [
+      "Cabo San Lucas mı San José mi?",
+      "İlki marina ve El Arco gezileriyle hareketli; ikincisi galeriler ve sakin akşamlarla bilinir."
+    ],
+    [
+      "Balina sezonu ne zaman?",
+      "Türe göre genellikle aralık–nisan; gözlem garanti değildir."
+    ],
+    [
+      "Kaç gece kalınmalı?",
+      "Resort, tekne gezisi, San José ve dinlenme için beş–yedi gece."
+    ],
+    [
+      "Ailelere uygun mu?",
+      "Evet, plaj ve özel havuz güvenliği, çocuk aktiviteleri ve transfer doğrulanırsa."
+    ]
+  ],
+  "photoCaptions": [
+    "El Arco kayalık kemeri",
+    "Cabo San Lucas kayalıkları ve turkuaz deniz, Efraín Alonso fotoğrafı",
+    "San José yakınında Palmilla koyu",
+    "Pasifik'te Pedregal kayalıkları",
+    "Santa María koyu ve Montage Los Cabos havadan",
+    "Cortez Denizi'nde Puerto Los Cabos kıyısı",
+    "San José tarihî merkezi ve galerileri",
+    "Cabo San Lucas marina yakınında plaj",
+    "Göç sezonunda Baja açıklarında balina"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "One&Only Palmilla Cortez villası ve havuzu",
+      "One&Only Palmilla sabah plajı havadan",
+      "One&Only Palmilla havuz ve bahçeleri"
+    ],
+    [
+      "Waldorf Astoria Pedregal özel havuzlu süit",
+      "Waldorf Astoria Pedregal okyanus manzaralı süit",
+      "Waldorf Astoria Los Cabos Pedregal görünümü"
+    ],
+    [
+      "Las Ventanas deniz manzaralı ana havuzları",
+      "Las Ventanas okyanus manzaralı süit",
+      "Las Ventanas resort atmosferi"
+    ],
+    [
+      "Zadún çağdaş mimarisi",
+      "Zadún Grand Reserve plaj villası",
+      "Zadún resort detayları"
+    ]
+  ],
+  "seoTitle": "Los Cabos'ta Nerede Kalınır? Meksika Lüks Otelleri ve Plajları",
+  "hotelSeoTitle": "Los Cabos Otelleri: Palmilla, Waldorf Astoria, Las Ventanas ve Zadún",
+  "seoDescription": "Los Cabos'ta dört resortu, Palmilla, Pedregal, Cortez Denizi, yüzme koşulları, villalar ve SJD transferlerini karşılaştırın."
+}

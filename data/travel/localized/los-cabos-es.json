@@ -1,0 +1,148 @@
+{
+  "name": "Los Cabos",
+  "country": "México",
+  "eyebrow": "Baja California Sur · México",
+  "heading": "Dónde alojarse en Los Cabos: donde el desierto se encuentra con dos mares",
+  "intro": "En el extremo sur de la península de Baja California, jardines de cactus, piedra cálida, arena dorada y costas rocosas definen el lujo. Elige entre Cabo San Lucas y San José del Cabo según ambiente, acceso al mar y ubicación.",
+  "editorial": "Los Cabos se encuentra entre el Pacífico y el golfo de California, conocido como mar de Cortés. Una playa hermosa no es necesariamente segura: oleaje fuerte, corrientes y desniveles exigen comprobación diaria. Palmilla ofrece una bahía más protegida, Pedregal acantilados del Pacífico, el corredor turístico resorts apartados y Puerto Los Cabos paisajes desérticos al este de San José.\n\nOne&Only Palmilla destaca por hospitalidad tradicional y su bahía. Waldorf Astoria Pedregal se alcanza desde Cabo San Lucas por túnel privado, con terrazas oceánicas y piscinas pequeñas en ciertas categorías. Las Ventanas al Paraíso combina arquitectura de Baja, suites amplias, restaurantes y bienestar. Zadún, a Ritz-Carlton Reserve, apuesta por artesanía mexicana, arquitectura serena y tratamientos Sensei. Compara categoría, vistas, piscina y playa.\n\nEn invierno y principios de primavera, generalmente diciembre a abril según especie, es posible observar ballenas, sin garantía. Dedica tiempo a El Arco en barco, galerías de San José y un día libre en el resort. Con niños, verifica seguridad del mar y piscinas privadas, actividades y distancias. Cinco a siete noches permiten viajar sin prisas. Confirma traslado SJD, impuestos, propinas, inclusiones y cancelación con el vendedor.",
+  "hotelIntro": "Cuatro resorts entre el Pacífico y el mar de Cortés para familias, panorámicas rocosas, gastronomía y tranquilidad.",
+  "areas": [
+    [
+      "Palmilla · Bahía protegida",
+      "Cerca de San José, costa más tranquila y ambiente privado.",
+      "El baño depende del oleaje; sigue recomendaciones locales."
+    ],
+    [
+      "Pedregal · Acantilados del Pacífico",
+      "Promontorios rocosos y panorámicas cerca del animado Cabo San Lucas.",
+      "Oleaje y corrientes pueden hacer peligroso el baño."
+    ],
+    [
+      "Corredor turístico · Resorts apartados",
+      "Resorts entre las ciudades, junto a golf, bahías y colinas desérticas.",
+      "Organiza coche o conductor para salidas nocturnas."
+    ],
+    [
+      "Puerto Los Cabos · Baja contemporánea",
+      "Desierto y mar de Cortés, zona residencial tranquila y artesanía local.",
+      "Comprueba trayecto al centro histórico y acceso al mar."
+    ],
+    [
+      "San José del Cabo · Arte",
+      "Galerías, restaurantes y tardes tranquilas en el centro histórico.",
+      "La mayoría de resorts de playa queda fuera del barrio de galerías."
+    ]
+  ],
+  "experiences": [
+    [
+      "Paseo en barco a El Arco",
+      "Visita Land's End por la mañana según clima y reglas de desembarco."
+    ],
+    [
+      "Calles de San José",
+      "Pasa una tarde entre galerías, cerámica y restaurantes independientes."
+    ],
+    [
+      "Ballenas en temporada",
+      "Elige operador responsable en invierno y mantén distancia; avistamientos no garantizados."
+    ]
+  ],
+  "checks": [
+    "Comprueba seguridad del baño en cada playa.",
+    "Confirma categoría de casita, suite o villa, vistas y piscina privada.",
+    "Planifica transporte desde SJD y entre ciudades.",
+    "Aclara servicios, impuestos, propinas, cancelación y restricciones estacionales."
+  ],
+  "hotels": [
+    [
+      "Palmilla · San José del Cabo",
+      "One&Only Palmilla es un resort clásico con jardines tropicales entre el desierto y acceso a una bahía más protegida donde se puede nadar en condiciones adecuadas.",
+      "Confirma acceso a la bahía, estado del mar, categoría y capacidad familiar.",
+      "Para hospitalidad tradicional y vacaciones familiares junto a una bahía protegida.",
+      ""
+    ],
+    [
+      "Pedregal · Cabo San Lucas",
+      "Un túnel privado lleva al apartado Waldorf Astoria Pedregal sobre el Pacífico, con terrazas y piscinas. El restaurante El Farallon se sitúa sobre el oleaje.",
+      "Comprueba orientación de suite, restricciones de baño y traslado.",
+      "Para panorámicas del Pacífico, privacidad y gastronomía.",
+      ""
+    ],
+    [
+      "Corredor turístico · km 19,5",
+      "Las Ventanas al Paraíso ofrece suites amplias, piscinas cuidadas, arquitectura de Baja, restaurantes y bienestar; hay residencias privadas.",
+      "Compara categorías, piscinas, vistas y estado del mar.",
+      "Para suites elegantes y servicio refinado.",
+      ""
+    ],
+    [
+      "Puerto Los Cabos · San José del Cabo",
+      "Zadún combina arquitectura contemporánea, artesanía mexicana, bienestar Sensei y cocina local entre desierto y mar.",
+      "Confirma categoría con piscina, trayecto a San José y condiciones de baño.",
+      "Para tranquilidad entre paisajes desérticos.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Qué hoteles de lujo comparar?",
+      "One&Only Palmilla por la bahía, Waldorf Astoria Pedregal por acantilados, Las Ventanas por elegancia clásica y Zadún por tranquilidad moderna."
+    ],
+    [
+      "¿Se puede nadar en el mar?",
+      "No en todas las playas. Corrientes, oleaje y desniveles son peligrosos; comprueba cada playa."
+    ],
+    [
+      "¿Cabo San Lucas o San José?",
+      "El primero es animado, con marina y excursiones a El Arco; el segundo destaca por galerías y tardes tranquilas."
+    ],
+    [
+      "¿Cuándo es temporada de ballenas?",
+      "Invierno y principios de primavera, generalmente diciembre a abril según especie; avistamientos no garantizados."
+    ],
+    [
+      "¿Cuántas noches pasar?",
+      "Cinco a siete para resort, barco, San José y descanso."
+    ],
+    [
+      "¿Los Cabos es apto para familias?",
+      "Sí, si se verifica seguridad de playa y piscina, actividades infantiles y traslados."
+    ]
+  ],
+  "photoCaptions": [
+    "Arco rocoso El Arco en Cabo San Lucas",
+    "Rocas y mar turquesa de Cabo San Lucas, foto Efraín Alonso",
+    "Bahía Palmilla cerca de San José",
+    "Acantilados de Pedregal en el Pacífico",
+    "Bahía Santa María y Montage Los Cabos desde el aire",
+    "Costa de Puerto Los Cabos en el mar de Cortés",
+    "Centro histórico y galerías de San José",
+    "Playa cerca de la marina de Cabo San Lucas",
+    "Ballena frente a Baja durante la migración"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Villa Cortez y piscina One&Only Palmilla",
+      "Playa One&Only Palmilla desde el aire por la mañana",
+      "Piscina y jardines One&Only Palmilla"
+    ],
+    [
+      "Suite Waldorf Astoria Pedregal con piscina privada",
+      "Suite Waldorf Astoria Pedregal con vistas al océano",
+      "Vista Waldorf Astoria Los Cabos Pedregal"
+    ],
+    [
+      "Piscinas principales Las Ventanas con vistas al mar",
+      "Suite Las Ventanas con vistas al océano",
+      "Ambiente Las Ventanas"
+    ],
+    [
+      "Arquitectura contemporánea Zadún",
+      "Villa Grand Reserve junto a playa Zadún",
+      "Detalles Zadún"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Los Cabos: hoteles de lujo y playas de Baja",
+  "hotelSeoTitle": "Hoteles de Los Cabos: Palmilla, Waldorf Astoria, Las Ventanas y Zadún",
+  "seoDescription": "Compara cuatro resorts de Los Cabos, Palmilla, Pedregal, mar de Cortés, playas aptas para nadar, villas y traslados."
+}
