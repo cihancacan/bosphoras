@@ -1,0 +1,169 @@
+{
+  "status": "draft_pending_final_gallery",
+  "imageKeys": [
+    [
+      "scene-1",
+      "scene-2",
+      "scene-3",
+      "scene-5"
+    ],
+    [
+      "nizuc-1",
+      "nizuc-3"
+    ],
+    [
+      "le-blanc-2",
+      "le-blanc-4"
+    ],
+    [
+      "hyatt-ziva-1"
+    ],
+    [
+      "coral-beach-1",
+      "coral-beach-2"
+    ]
+  ],
+  "captions": {
+    "fr": {
+      "scene-1": "Plage Delfines",
+      "scene-2": "Plage de Nizuc",
+      "scene-3": "Plage Las Perlas",
+      "scene-5": "Vue aérienne du littoral de Cancún",
+      "nizuc-1": "Chambre du NIZUC",
+      "nizuc-3": "Terrasse et bassin privé du NIZUC",
+      "le-blanc-2": "Chambre Royale Deluxe avec vue partielle sur la mer",
+      "le-blanc-4": "Hall du Le Blanc Spa Resort",
+      "hyatt-ziva-1": "Vue aérienne du Hyatt Ziva à Punta Cancún",
+      "coral-beach-1": "Piscines et plage du Coral Beach",
+      "coral-beach-2": "Suite avec vue sur la mer au Coral Beach"
+    },
+    "en": {
+      "scene-1": "Delfines Beach",
+      "scene-2": "Nizuc Beach",
+      "scene-3": "Las Perlas Beach",
+      "scene-5": "Aerial view of Cancún's coastline",
+      "nizuc-1": "NIZUC bedroom",
+      "nizuc-3": "NIZUC terrace and private pool",
+      "le-blanc-2": "Royale Deluxe Partial Ocean View room",
+      "le-blanc-4": "Le Blanc Spa Resort lobby",
+      "hyatt-ziva-1": "Aerial view of Hyatt Ziva at Punta Cancún",
+      "coral-beach-1": "Coral Beach pools and beach",
+      "coral-beach-2": "Coral Beach ocean-view suite"
+    },
+    "tr": {
+      "scene-1": "Delfines Plajı",
+      "scene-2": "Nizuc Plajı",
+      "scene-3": "Las Perlas Plajı",
+      "scene-5": "Cancún kıyısının havadan görünümü",
+      "nizuc-1": "NIZUC yatak odası",
+      "nizuc-3": "NIZUC terası ve özel havuzu",
+      "le-blanc-2": "Kısmi deniz manzaralı Royale Deluxe oda",
+      "le-blanc-4": "Le Blanc Spa Resort lobisi",
+      "hyatt-ziva-1": "Punta Cancún'daki Hyatt Ziva'nın havadan görünümü",
+      "coral-beach-1": "Coral Beach havuzları ve plajı",
+      "coral-beach-2": "Coral Beach deniz manzaralı süiti"
+    },
+    "de": {
+      "scene-1": "Strand Delfines",
+      "scene-2": "Strand Nizuc",
+      "scene-3": "Strand Las Perlas",
+      "scene-5": "Luftaufnahme der Küste von Cancún",
+      "nizuc-1": "Schlafzimmer im NIZUC",
+      "nizuc-3": "Terrasse und Privatpool im NIZUC",
+      "le-blanc-2": "Royale Deluxe Zimmer mit seitlichem Meerblick",
+      "le-blanc-4": "Lobby des Le Blanc Spa Resort",
+      "hyatt-ziva-1": "Luftaufnahme des Hyatt Ziva an Punta Cancún",
+      "coral-beach-1": "Pools und Strand des Coral Beach",
+      "coral-beach-2": "Suite mit Meerblick im Coral Beach"
+    },
+    "es": {
+      "scene-1": "Playa Delfines",
+      "scene-2": "Playa Nizuc",
+      "scene-3": "Playa Las Perlas",
+      "scene-5": "Vista aérea de la costa de Cancún",
+      "nizuc-1": "Dormitorio del NIZUC",
+      "nizuc-3": "Terraza y piscina privada del NIZUC",
+      "le-blanc-2": "Habitación Royale Deluxe con vista parcial al mar",
+      "le-blanc-4": "Vestíbulo de Le Blanc Spa Resort",
+      "hyatt-ziva-1": "Vista aérea de Hyatt Ziva en Punta Cancún",
+      "coral-beach-1": "Piscinas y playa de Coral Beach",
+      "coral-beach-2": "Suite con vista al mar en Coral Beach"
+    },
+    "it": {
+      "scene-1": "Spiaggia Delfines",
+      "scene-2": "Spiaggia Nizuc",
+      "scene-3": "Spiaggia Las Perlas",
+      "scene-5": "Veduta aerea della costa di Cancún",
+      "nizuc-1": "Camera da letto del NIZUC",
+      "nizuc-3": "Terrazza e piscina privata del NIZUC",
+      "le-blanc-2": "Camera Royale Deluxe con vista parziale sul mare",
+      "le-blanc-4": "Hall del Le Blanc Spa Resort",
+      "hyatt-ziva-1": "Veduta aerea di Hyatt Ziva a Punta Cancún",
+      "coral-beach-1": "Piscine e spiaggia del Coral Beach",
+      "coral-beach-2": "Suite con vista mare del Coral Beach"
+    },
+    "pt": {
+      "scene-1": "Praia Delfines",
+      "scene-2": "Praia Nizuc",
+      "scene-3": "Praia Las Perlas",
+      "scene-5": "Vista aérea do litoral de Cancún",
+      "nizuc-1": "Quarto do NIZUC",
+      "nizuc-3": "Terraço e piscina privada do NIZUC",
+      "le-blanc-2": "Quarto Royale Deluxe com vista parcial para o mar",
+      "le-blanc-4": "Átrio do Le Blanc Spa Resort",
+      "hyatt-ziva-1": "Vista aérea do Hyatt Ziva em Punta Cancún",
+      "coral-beach-1": "Piscinas e praia do Coral Beach",
+      "coral-beach-2": "Suite com vista para o mar no Coral Beach"
+    },
+    "zh": {
+      "scene-1": "海豚海滩",
+      "scene-2": "尼苏克海滩",
+      "scene-3": "拉斯佩拉斯海滩",
+      "scene-5": "坎昆海岸航拍",
+      "nizuc-1": "NIZUC 酒店卧室",
+      "nizuc-3": "NIZUC 酒店露台与私人泳池",
+      "le-blanc-2": "Royale Deluxe 部分海景客房",
+      "le-blanc-4": "Le Blanc 水疗度假村大堂",
+      "hyatt-ziva-1": "坎昆角 Hyatt Ziva 酒店航拍",
+      "coral-beach-1": "Coral Beach 酒店泳池与海滩",
+      "coral-beach-2": "Coral Beach 酒店海景套房"
+    },
+    "ru": {
+      "scene-1": "Пляж Дельфинес",
+      "scene-2": "Пляж Нисук",
+      "scene-3": "Пляж Лас-Перлас",
+      "scene-5": "Побережье Канкуна с высоты",
+      "nizuc-1": "Спальня NIZUC",
+      "nizuc-3": "Терраса и частный бассейн NIZUC",
+      "le-blanc-2": "Номер Royale Deluxe с частичным видом на море",
+      "le-blanc-4": "Вестибюль Le Blanc Spa Resort",
+      "hyatt-ziva-1": "Hyatt Ziva на Пунта-Канкун с высоты",
+      "coral-beach-1": "Бассейны и пляж Coral Beach",
+      "coral-beach-2": "Люкс Coral Beach с видом на море"
+    },
+    "ar": {
+      "scene-1": "شاطئ دلفينيس",
+      "scene-2": "شاطئ نيزوك",
+      "scene-3": "شاطئ لاس بيرلاس",
+      "scene-5": "صورة جوية لساحل كانكون",
+      "nizuc-1": "غرفة نوم في NIZUC",
+      "nizuc-3": "تراس ومسبح خاص في NIZUC",
+      "le-blanc-2": "غرفة Royale Deluxe بإطلالة جزئية على البحر",
+      "le-blanc-4": "ردهة Le Blanc Spa Resort",
+      "hyatt-ziva-1": "صورة جوية لفندق Hyatt Ziva في بونتا كانكون",
+      "coral-beach-1": "مسابح وشاطئ Coral Beach",
+      "coral-beach-2": "جناح في Coral Beach بإطلالة على البحر"
+    }
+  },
+  "visualReview": {
+    "rejected": [
+      "hyatt-ziva-2",
+      "coral-beach-4"
+    ],
+    "reason": "Visible third-party watermark; lifestyle portrait rather than facility."
+  },
+  "publicationRights": {
+    "ownerConfirmed": true,
+    "note": "Retain source credits and individual licences."
+  }
+}
