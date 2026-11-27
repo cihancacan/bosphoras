@@ -7,13 +7,13 @@ const {getLocalizedGuide,reviewedLocalizedGuides}=require('../data/travel/locali
 const {travelText,travelHref}=require('../lib/travel/i18n');
 const root='https://www.bosphoras.com';
 const expectedAlternates=(slug,variant)=>Object.fromEntries(editorialTravelLocales.filter(locale=>isTravelGuideIndexable(slug,variant,locale)).map(locale=>[travelText(locale).hreflang,root+travelHref(locale,variant+'/'+slug)]));
-assert.equal(Object.keys(nativeTravelNames).length,91);
-assert.equal(travelDestinations.length,91);
+assert.equal(Object.keys(nativeTravelNames).length,93);
+assert.equal(travelDestinations.length,93);
 assert.equal(reviewedLocalizedGuides.size,704);
 const urls=indexedTravelUrls(root), known=new Set(urls);
 assert.equal(urls.length,known.size);
 const titles=new Set();
-for(const d of travelDestinations.filter(d=>!['london','las-vegas','rome'].includes(d.slug))){
+for(const d of travelDestinations.filter(d=>!['london','las-vegas','rome','barcelona','cancun'].includes(d.slug))){
  const n=nativeTravelNames[d.slug];assert.ok(n&&/[\u0600-\u06ff]/.test(n.ar)&&/[\u0400-\u052f]/.test(n.ru),d.slug);
  for(const locale of ['fr','en','ru','ar'])for(const variant of ['destinations','hotels']){
   const id=d.slug+'/'+locale+'/'+variant;
@@ -57,7 +57,7 @@ console.log('1760 public guide and hotel routes, including Istanbul, Paris, Duba
      else seen.set(key,id);
    }
  }
- for(const [slug,areaCount] of [['london',6],['las-vegas',5],['rome',5]]){
+ for(const [slug,areaCount] of [['london',6],['las-vegas',5],['rome',5],['barcelona',5],['cancun',5]]){
    for(const locale of ['tr','de','es','it','pt','zh','ru','ar']){
      const d=require('../data/travel/localized/'+slug+'-'+locale+'.json'),id=slug+'/'+locale;
      for(const field of ['name','country','eyebrow','heading','intro','editorial','hotelIntro','seoTitle','hotelSeoTitle','seoDescription'])assert.ok(typeof d[field]==='string'&&d[field].trim(),id+' '+field);
@@ -95,3 +95,15 @@ assert.equal(romeMedia.destinationScenes.length,9);assert.equal(romeMedia.hotels
 for(const p of [...romeMedia.destinationScenes,...romeMedia.hotels]){assert.ok(p.commercialRightsCleared&&p.visuallyVerified&&p.previewVisualApproved&&p.credit&&p.licenseUrl);const b=fs.readFileSync('public'+p.localPath);assert.equal(b.toString('ascii',0,4),'RIFF');assert.equal(b.toString('ascii',8,12),'WEBP');assert.equal(crypto.createHash('sha256').update(b).digest('hex'),p.webpSHA256);assert.ok(!seenRome.has(p.webpSHA256));seenRome.add(p.webpSHA256);assert.ok(b.length<=260000);}
 for(const locale of editorialTravelLocales){assert.equal(Object.keys(romeCaptions.captions[locale]).length,21);for(const variant of ['destinations','hotels']){assert.equal(travelPageMetadata(locale,[variant,'rome']).robots.index,false);assert.ok(!known.has(root+travelHref(locale,variant+'/rome')));}}
 console.log('Rome preview: 21 WebP hashes, 210 captions and noindex gate verified.');
+
+const barcelonaMedia=require('../data/travel/barcelonaReviewedMedia.json'),barcelonaCaptions=require('../data/travel/localized/barcelona-photo-captions-draft.json');
+assert.equal(barcelonaMedia.destinationScenes.length,9);assert.equal(barcelonaMedia.hotels.length,12);const seenBarcelona=new Set();
+for(const p of [...barcelonaMedia.destinationScenes,...barcelonaMedia.hotels]){assert.ok(p.commercialRightsCleared&&p.visuallyVerified&&p.previewVisualApproved&&p.credit&&p.licenseUrl);const b=fs.readFileSync('public'+p.localPath);assert.equal(b.toString('ascii',0,4),'RIFF');assert.equal(b.toString('ascii',8,12),'WEBP');assert.equal(crypto.createHash('sha256').update(b).digest('hex'),p.webpSHA256);assert.ok(!seenBarcelona.has(p.webpSHA256));seenBarcelona.add(p.webpSHA256);assert.ok(b.length<=260000);}
+for(const locale of editorialTravelLocales){assert.equal(Object.keys(barcelonaCaptions.captions[locale]).length,21);for(const variant of ['destinations','hotels']){assert.equal(travelPageMetadata(locale,[variant,'barcelona']).robots.index,false);assert.ok(!known.has(root+travelHref(locale,variant+'/barcelona')));}}
+console.log('Barcelona preview: 21 WebP hashes, 210 captions and noindex gate verified.');
+
+const cancunMedia=require('../data/travel/cancunReviewedMedia.json'),cancunCaptions=require('../data/travel/localized/cancun-photo-captions-draft.json');
+assert.equal(cancunMedia.destinationScenes.length,9);assert.equal(cancunMedia.hotels.length,12);const seenCancun=new Set();
+for(const p of [...cancunMedia.destinationScenes,...cancunMedia.hotels]){assert.ok(p.commercialRightsCleared&&p.visuallyVerified&&p.previewVisualApproved&&p.credit&&p.licenseUrl);const b=fs.readFileSync('public'+p.localPath);assert.equal(b.toString('ascii',0,4),'RIFF');assert.equal(b.toString('ascii',8,12),'WEBP');assert.equal(crypto.createHash('sha256').update(b).digest('hex'),p.webpSHA256);assert.ok(!seenCancun.has(p.webpSHA256));seenCancun.add(p.webpSHA256);assert.ok(b.length<=260000);}
+for(const locale of editorialTravelLocales){assert.equal(Object.keys(cancunCaptions.captions[locale]).length,21);for(const variant of ['destinations','hotels']){assert.equal(travelPageMetadata(locale,[variant,'cancun']).robots.index,false);assert.ok(!known.has(root+travelHref(locale,variant+'/cancun')));}}
+console.log('Cancun preview: 21 WebP hashes, 210 captions and noindex gate verified.');
