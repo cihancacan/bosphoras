@@ -1,0 +1,157 @@
+{
+  "name": "Gstaad",
+  "country": "İsviçre",
+  "eyebrow": "Bern Alpleri · Gösterişsiz lüks ve Alp gelenekleri",
+  "heading": "Gstaad: lüksün sadeliğiyle değer kazandığı köy",
+  "intro": "Ünlü oteller, yaya caddesi ve geleneksel şaleler yan yanadır. Gstaad'da dağ manzaraları, uzun öğle yemekleri ve kişisel alan önemlidir. Tarihî otel, çağdaş sanat, kapsamlı spa veya özel rezidans konforunu seçebilir, kayak programınızı ayrıca planlayabilirsiniz.",
+  "editorial": "Yaya Promenade butikler ve akşam restoranları için elverişlidir. Tepelerdeki oteller manzara ve mahremiyet sunar ancak yokuş ve transfer gerektirir. Eggli, Wispile ve Wasserngrat ayrı dağ sektörleridir; Schönried ve Saanenmöser ek kayak seçenekleri sunar. Kaynak rehberde 2026/27 açılış tarihleri The Alpina 11 Aralık, Gstaad Palace 15 Aralık, Le Grand Bellevue 18 Aralık olarak belirtilir; güncel takvimi doğrulayın. Ultima hizmetli süit ve rezidanslar sunar.",
+  "hotelIntro": "Dört tatil anlayışı: tarih ve gelenek için Gstaad Palace, çağdaş sanat ve tasarım için The Alpina, geniş spa için Le Grand Bellevue, geniş süit ve rezidanslar için Ultima.",
+  "areas": [
+    [
+      "Gstaad Promenade · Yaya merkezi",
+      "Şale cepheleri, restoranlar ve özenle seçilmiş butikler sakin akşam yürüyüşlerine uygundur.",
+      "Merkez ve tepe otellerinde merkeze mesafe ve gürültü farklıdır."
+    ],
+    [
+      "Köy üstü tepeler · Panorama ve mahremiyet",
+      "Yüksekteki tarihî büyük oteller dağ manzarası ve mahremiyet sunar; merkezle aralarında belirgin kot farkı vardır.",
+      "Eğim, servis aracı, bebek arabası erişimi ve lift ulaşımını kontrol edin."
+    ],
+    [
+      "Eggli ve Wispile · İki dağ sektörü",
+      "Pistler ve yürüyüş alanları liftler, kar ve deneyime bağlıdır.",
+      "Açık liftleri ve eğitmenleri kontrol edin."
+    ],
+    [
+      "Wasserngrat · Sportif dağ",
+      "Tiger Run dahil daha dik pistler, başlangıç seviyesi aile kayaklarından farklı beceri ister.",
+      "Beceri ve koşulları dikkate almadan zorlu pist seçmeyin."
+    ],
+    [
+      "Schönried ve Saanen · Gstaad dışında",
+      "Komşu köyler Saanenland günlük yaşamını ve diğer dağ sektörlerini gösterir.",
+      "Akşam dönüşü için tren ve servis saatlerini kontrol edin."
+    ]
+  ],
+  "experiences": [
+    [
+      "Tarihî otelde sakin gün",
+      "Masa veya salon ziyareti ayırtın; hepsini bir kerede görmeye çalışmadan atmosferin tadını çıkarın."
+    ],
+    [
+      "Her gün farklı dağ",
+      "Ders ayarlamadan önce hava ve becerinize göre Eggli, Wispile veya Wasserngrat seçin."
+    ],
+    [
+      "Sanat ve spa",
+      "The Alpina'nın sanat koleksiyonu ve Six Senses bakımları, Le Grand Bellevue termal alanlarından farklıdır."
+    ],
+    [
+      "Saanenland'da yaz",
+      "Köyler, teraslar ve dağ yolları sıcak aylarda güzeldir; sezonluk lift takvimini kontrol edin."
+    ]
+  ],
+  "checks": [
+    "Kaynak 2026 kış açılışları The Alpina 11 Aralık, Palace 15 Aralık, Bellevue 18 Aralık; güncel tarihleri doğrulayın.",
+    "Yaya merkezini, otel tepelerini ve lift istasyonlarını ayırın.",
+    "Eggli, Wispile ve Wasserngrat liftleri ve derslerini kontrol edin.",
+    "Ultima rezidanslarında personel ve dahil hizmetleri doğrulayın.",
+    "Popüler restoran, spa bakımı ve tepe transferlerini önceden planlayın.",
+    "Güncel fiyat ve müsaitliği rezervasyon partneri doğrular."
+  ],
+  "hotels": [
+    [
+      "Köy üstü · Tarihî otel",
+      "Gstaad Palace tepede tanınmış, çeşitli restoranları ve sosyal buluşma gelenekleri olan oteldir. Kaynak takvimde sezon 15 Aralık 2026–7 Mart 2027'dir. Sadece kayak üssü değil, seyahatin başlı başına parçasıdır.",
+      "Kategori, manzara, sezon, transfer, kıyafet kuralları ve restoran rezervasyonlarını doğrulayın.",
+      "Tarihî atmosfer ve geleneksel hizmet için.",
+      ""
+    ],
+    [
+      "Güneşli tepe · Tasarım ve Six Senses Spa",
+      "The Alpina 56 oda ve süit sunar. Çağdaş sanat ve yerel zanaat iç mekânları şekillendirir. Bahçeler ve İsviçre'nin ilk Six Senses Spa'sı oteli ayırır. Kaynak kış sezonu 11 Aralık 2026–7 Mart 2027'dir.",
+      "Oda yönü, dahil bakımlar ve yaya caddesine transferi doğrulayın.",
+      "Çağdaş sanat, huzur ve spa için.",
+      ""
+    ],
+    [
+      "Promenade yakınında · Geniş spa",
+      "Le Grand Bellevue modern hafif atmosferi 3000 m² yenilenmiş spa ve 17 wellness alanıyla birleştirir. LEONARD’s, lounge ve fondü şalesi farklı gastronomik deneyimler sunar. Kaynak sezon 18 Aralık 2026–29 Mart 2027'dir.",
+      "Spa erişimi, bakım randevuları, manzara ve açık tarihleri kontrol edin.",
+      "Wellness ve gastronomi odaklı tatil için.",
+      ""
+    ],
+    [
+      "Lift yakınında · Süit ve rezidanslar",
+      "Üç bağlantılı ahşap şalede 11 süit ve altı özel rezidans bulunur. Ultima geniş alan, özel ev hizmeti, çağdaş sanat, spa ve merkez Gstaad transferi isteyenlere uygundur. Lift yakınlığı kapıdan kayak garantisi değildir.",
+      "Süit veya rezidans planını, yatak odalarını, şoför veya aşçı hizmetini ve pist erişimini doğrulayın.",
+      "Kişisel hizmetli geniş rezidans için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Bu otellerden Promenade'a yürümek kolay mı?",
+      "Le Grand Bellevue köye yakın, Palace ve Alpina tepede, Ultima şoförlü transfer sunar. Kot farkını dikkate alın."
+    ],
+    [
+      "Aralık 2026 açılışları ne zaman?",
+      "Kaynak takvim The Alpina 11 Aralık, Palace 15 Aralık, Le Grand Bellevue 18 Aralık belirtir; seyahat öncesi doğrulayın."
+    ],
+    [
+      "Gstaad Palace ski-in/ski-out mu?",
+      "Otel köyün üzerindeki tepededir. Seçilen lifte servisi teyit edin, doğrudan pist erişimini varsaymayın."
+    ],
+    [
+      "Eggli, Wispile ve Wasserngrat farkı nedir?",
+      "Farklı dağ sektörleridir. Wasserngrat daha dik yamaçlıdır; her sektörün koşullarını kontrol edin."
+    ],
+    [
+      "Spa için hangi otel?",
+      "The Alpina Six Senses Spa, Le Grand Bellevue büyük yenilenmiş termal kompleks sunar; bakımları ve erişimi karşılaştırın."
+    ],
+    [
+      "Ultima Gstaad otel mi rezidans mı?",
+      "İkisi de: üç şalede 11 süit ve altı özel rezidans. Hizmet ve planları farklıdır."
+    ],
+    [
+      "Fiyat ve rezervasyon nasıl doğrulanır?",
+      "Güncel koşul ve müsaitlik için yetkili rezervasyon partnerine başvurun."
+    ]
+  ],
+  "photoCaptions": [
+    "Karlı Gstaad yaya caddesi",
+    "Kışın Gstaad şale çatıları ve yamaçları",
+    "Saanen tarihî sokağı",
+    "Eggli ve Sanetschpass kış panoraması",
+    "Yazın Wispile'den Giferspitz",
+    "Schönried–Rellerli yaz manzarası",
+    "Hornberg–Gstaad kış yürüyüşü",
+    "Lauenensee gölü ve orman yansıması"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Yazın Gstaad Palace ve bahçeleri",
+      "Alp manzaralı Deluxe Junior Suite salonu",
+      "Karlı bahçeye bakan kapalı havuz"
+    ],
+    [
+      "Şömineli çağdaş Alp tarzı The Alpina süiti",
+      "Karlı zirve manzaralı balkon",
+      "The Alpina salonu ve barı"
+    ],
+    [
+      "Le Grand Bellevue tarihî cephesi ve bahçesi",
+      "Le Grand Bellevue aydınlık restoranı",
+      "Suite Étoile banyosu"
+    ],
+    [
+      "Ultima karlı şale manzaralı balkonu",
+      "Signature Suite iç mekânı",
+      "Ultima kapalı havuz ve spa"
+    ]
+  ],
+  "seoTitle": "Gstaad: İsviçre Alpleri'nde Lüks Oteller, Şaleler ve Tatil",
+  "hotelSeoTitle": "Gstaad Otelleri: Palace, The Alpina, Le Grand Bellevue ve Ultima",
+  "seoDescription": "Gstaad'da dört lüks oteli karşılaştırın: tarihî saraylar, Six Senses Spa, özel rezidanslar, Promenade ve kayak bölgeleri."
+}

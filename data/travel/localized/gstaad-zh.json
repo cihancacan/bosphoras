@@ -1,0 +1,157 @@
+{
+  "name": "格施塔德",
+  "country": "瑞士",
+  "eyebrow": "伯尔尼高地 · 低调奢华与阿尔卑斯传统",
+  "heading": "格施塔德：以低调为奢华的山间村庄",
+  "intro": "知名酒店、步行街及传统木屋相邻。格施塔德注重山景、悠闲午餐及个人空间。可选择历史酒店、当代艺术、深度水疗或私人住宅的舒适，并独立规划滑雪行程。",
+  "editorial": "步行 Promenade 便于逛精品店与晚餐。山坡酒店提供全景和私密性，但需考虑坡度及接送。Eggli、Wispile 和 Wasserngrat 为独立山地雪区；Schönried 及 Saanenmöser 提供更多滑雪选择。原指南列2026/27季开业日期：The Alpina 12月11日、Gstaad Palace 12月15日、Le Grand Bellevue 12月18日，确认最新日历。Ultima 提供服务式套房及住宅。",
+  "hotelIntro": "四种风格：Gstaad Palace 历史传统，The Alpina 当代艺术与设计，Le Grand Bellevue 大型水疗，Ultima 宽敞套房及住宅。",
+  "areas": [
+    [
+      "格施塔德 Promenade · 步行中心",
+      "木屋立面、餐厅及精选精品店适合悠闲夜间散步。",
+      "村内与山坡酒店距中心及噪声不同。"
+    ],
+    [
+      "村庄上方山丘 · 全景与私密",
+      "高处历史豪华酒店拥有山景和私密性，但与中心有明显高差。",
+      "确认坡度、接驳车、婴儿车通行及缆车接送。"
+    ],
+    [
+      "Eggli 与 Wispile · 两个雪区",
+      "雪道及步行区域依缆车运行、积雪及技术水平。",
+      "确认开放缆车及教练。"
+    ],
+    [
+      "Wasserngrat · 运动型山地",
+      "包括 Tiger Run 的较陡雪道需要不同于家庭初学滑雪的技术。",
+      "勿忽视技术与条件选择高难度下坡。"
+    ],
+    [
+      "Schönried 与 Saanen · 格施塔德周边",
+      "邻村呈现 Saanenland 日常生活及其他雪区。",
+      "确认晚归火车与接驳车时刻。"
+    ]
+  ],
+  "experiences": [
+    [
+      "历史酒店悠闲一日",
+      "预约餐桌或休息厅，品味酒店氛围，不必一次游遍所有酒店。"
+    ],
+    [
+      "每日不同山峰",
+      "按天气与技术选择 Eggli、Wispile 或 Wasserngrat，再预约课程。"
+    ],
+    [
+      "艺术与水疗",
+      "The Alpina 艺术收藏及 Six Senses 护理不同于 Bellevue 热疗区。"
+    ],
+    [
+      "Saanenland 夏季",
+      "温暖季节村庄、露台及山间小径格外迷人，确认缆车季节时刻。"
+    ]
+  ],
+  "checks": [
+    "原2026年冬季开放：Alpina 12月11日、Palace 15日、Bellevue 18日，重新确认日期。",
+    "区分步行中心、酒店山丘及缆车站。",
+    "确认 Eggli、Wispile 及 Wasserngrat 缆车运行和课程。",
+    "确认 Ultima 住宅包含人员及服务。",
+    "提前规划热门餐厅、护理与山丘接送。",
+    "实时价格和房量由预订合作方确认。"
+  ],
+  "hotels": [
+    [
+      "村庄上方 · 历史酒店",
+      "Gstaad Palace 为山丘标志酒店，设多家餐厅并有社交传统。原日历季节为2026年12月15日至2027年3月7日。酒店本身即旅行目的，而不仅是滑雪基地。",
+      "确认类别、景观、开放季节、接送、着装及餐厅预订。",
+      "适合历史氛围及传统服务。",
+      ""
+    ],
+    [
+      "阳光山坡 · 设计与 Six Senses Spa",
+      "The Alpina 有56间客房及套房。当代艺术及当地工艺塑造个性内饰。花园及瑞士首家 Six Senses Spa 为特色。原冬季日历为2026年12月11日至2027年3月7日。",
+      "确认客房朝向、包含护理及步行街接送。",
+      "适合当代艺术、宁静与水疗。",
+      ""
+    ],
+    [
+      "Promenade 附近 · 大型水疗中心",
+      "Le Grand Bellevue 融合轻松现代氛围与翻新3000平方米水疗及17个康养区域。LEONARD’s、休息厅及奶酪火锅木屋提供不同美食体验。原日历为2026年12月18日至2027年3月29日。",
+      "确认水疗准入、护理预约、景观及开放日期。",
+      "适合康养与美食旅行。",
+      ""
+    ],
+    [
+      "缆车附近 · 套房及住宅",
+      "三栋连通木屋提供11间套房及六栋私人住宅。Ultima 适合重视空间、私人住宅服务、当代艺术、水疗及中心接送的宾客。靠近缆车不保证滑雪进出。",
+      "确认套房或住宅布局、卧室数、司机或厨师服务及雪道通行。",
+      "适合宽敞住宅及个性化服务。",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "从这些酒店步行到 Promenade 方便吗？",
+      "Bellevue 靠近村庄，Palace 与 Alpina 在山丘，Ultima 提供司机接送，考虑高差。"
+    ],
+    [
+      "2026年12月何时开业？",
+      "原日历 Alpina 11日、Palace 15日、Bellevue 18日，出发前确认。"
+    ],
+    [
+      "Gstaad Palace 可滑雪进出吗？",
+      "酒店位于山丘，确认所选缆车接驳，不应假设直接通向雪道。"
+    ],
+    [
+      "Eggli、Wispile 与 Wasserngrat 有何区别？",
+      "不同雪区，Wasserngrat 较陡，确认各区开放及条件。"
+    ],
+    [
+      "哪家水疗更适合？",
+      "The Alpina 提供 Six Senses Spa，Bellevue 有大型翻新热疗区，比较护理与准入。"
+    ],
+    [
+      "Ultima Gstaad 是酒店还是住宅？",
+      "两种形式：三栋木屋内11间套房与六栋私人住宅，服务和布局不同。"
+    ],
+    [
+      "如何查价并预订？",
+      "授权预订合作方确认实时条件与房量。"
+    ]
+  ],
+  "photoCaptions": [
+    "积雪格施塔德步行街",
+    "冬季木屋屋顶与山坡",
+    "Saanen 历史街道",
+    "Eggli 与 Sanetschpass 冬季全景",
+    "夏季 Wispile 远眺 Giferspitz",
+    "Schönried 至 Rellerli 夏季景观",
+    "Hornberg 至格施塔德冬季徒步",
+    "Lauenensee 湖及森林倒影"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "夏季 Gstaad Palace 及花园",
+      "阿尔卑斯景 Deluxe Junior Suite 客厅",
+      "雪景花园室内泳池"
+    ],
+    [
+      "The Alpina 现代阿尔卑斯壁炉套房",
+      "雪峰景阳台",
+      "The Alpina 休息厅及酒吧"
+    ],
+    [
+      "Le Grand Bellevue 历史立面及花园",
+      "Le Grand Bellevue 明亮餐厅",
+      "Suite Étoile 浴室"
+    ],
+    [
+      "Ultima 雪景木屋阳台",
+      "Signature Suite 内饰",
+      "Ultima 室内泳池与水疗"
+    ]
+  ],
+  "seoTitle": "格施塔德住哪里？瑞士阿尔卑斯豪华酒店与木屋",
+  "hotelSeoTitle": "格施塔德酒店：Palace、The Alpina、Le Grand Bellevue 与 Ultima",
+  "seoDescription": "比较格施塔德四家豪华酒店，了解历史酒店、Six Senses 水疗、私人住宅、步行街及滑雪区域。"
+}

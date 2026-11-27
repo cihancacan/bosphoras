@@ -1,0 +1,157 @@
+{
+  "name": "Gstaad",
+  "country": "Suíça",
+  "eyebrow": "Oberland bernês · Luxo discreto e tradições alpinas",
+  "heading": "Gstaad: a vila onde o luxo vale pela discrição",
+  "intro": "Hotéis famosos convivem com rua de pedestres e chalés tradicionais. Gstaad valoriza vistas alpinas, almoços sem pressa e privacidade. Escolha hotel histórico, arte contemporânea, spa completo ou conforto de residência privativa, organizando o esqui separadamente.",
+  "editorial": "A Promenade de pedestres é prática para boutiques e jantares. Hotéis nas colinas oferecem vista e privacidade, mas exigem considerar subidas e traslados. Eggli, Wispile e Wasserngrat são setores distintos; Schönried e Saanenmöser ampliam opções de esqui. O guia original indica aberturas 2026/27: The Alpina 11 de dezembro, Gstaad Palace 15 e Le Grand Bellevue 18. Confirme calendário vigente. Ultima oferece suítes e residências com serviço.",
+  "hotelIntro": "Quatro propostas: Gstaad Palace pela história e tradição, The Alpina por arte e design, Le Grand Bellevue pelo amplo spa e Ultima por suítes e residências espaçosas.",
+  "areas": [
+    [
+      "Promenade Gstaad · Centro de pedestres",
+      "Fachadas de chalés, restaurantes e boutiques selecionadas convidam a passeios tranquilos à noite.",
+      "Distância ao centro e ruído variam entre hotéis na vila e colinas."
+    ],
+    [
+      "Colinas acima da vila · Panoramas e privacidade",
+      "Grandes hotéis históricos elevados oferecem vistas e privacidade, com desnível significativo até centro.",
+      "Confira inclinação, traslados, acesso com carrinho de bebê e transporte aos meios de elevação."
+    ],
+    [
+      "Eggli e Wispile · Dois setores",
+      "Pistas e áreas de caminhada dependem de funcionamento, neve e habilidade.",
+      "Confira meios de elevação abertos e instrutores."
+    ],
+    [
+      "Wasserngrat · Montanha esportiva",
+      "Pistas mais íngremes, incluindo Tiger Run, exigem habilidade diferente de esqui familiar iniciante.",
+      "Não escolha descidas difíceis sem considerar habilidade e condições."
+    ],
+    [
+      "Schönried e Saanen · Além de Gstaad",
+      "Vilas vizinhas revelam cotidiano Saanenland e outros setores de montanha.",
+      "Confira horários de trens e traslados para retorno noturno."
+    ]
+  ],
+  "experiences": [
+    [
+      "Dia tranquilo em hotel histórico",
+      "Reserve mesa ou visita ao lounge e aprecie ambiente sem tentar visitar tudo de uma vez."
+    ],
+    [
+      "Uma montanha por dia",
+      "Escolha Eggli, Wispile ou Wasserngrat conforme clima e habilidade antes de reservar aulas."
+    ],
+    [
+      "Arte e spa",
+      "Coleção de arte e tratamentos Six Senses de The Alpina diferem das áreas termais Bellevue."
+    ],
+    [
+      "Verão em Saanenland",
+      "Vilas, terraços e trilhas ficam atraentes nos meses quentes; confira horários sazonais."
+    ]
+  ],
+  "checks": [
+    "Calendário original inverno 2026: Alpina 11, Palace 15, Bellevue 18 de dezembro; confirme datas.",
+    "Diferencie centro de pedestres, colinas e estações dos meios de elevação.",
+    "Confira meios de elevação e aulas em Eggli, Wispile e Wasserngrat.",
+    "Confirme equipe e serviços inclusos nas residências Ultima.",
+    "Planeje restaurantes populares, tratamentos e traslados às colinas.",
+    "Parceiro confirma preços e disponibilidade atuais."
+  ],
+  "hotels": [
+    [
+      "Acima da vila · Hotel histórico",
+      "Gstaad Palace é hotel icônico na colina, com restaurantes e tradição social. Calendário original: 15 dezembro 2026–7 março 2027. É destino em si, não só base de esqui.",
+      "Confirme categoria, vista, temporada, traslados, vestimenta e reservas em restaurantes.",
+      "Para atmosfera histórica e serviço tradicional.",
+      ""
+    ],
+    [
+      "Colina ensolarada · Design e Six Senses Spa",
+      "The Alpina tem 56 quartos e suítes. Arte contemporânea e artesanato local dão personalidade. Jardins e primeiro Six Senses Spa da Suíça o distinguem. Temporada original: 11 dezembro 2026–7 março 2027.",
+      "Confira orientação, tratamentos inclusos e traslado à Promenade.",
+      "Para arte contemporânea, sossego e spa.",
+      ""
+    ],
+    [
+      "Perto da Promenade · Grande spa",
+      "Le Grand Bellevue combina ambiente moderno com spa renovado de 3000 m² e dezessete áreas de bem-estar. LEONARD’s, lounge e chalé de fondue oferecem experiências gastronômicas diversas. Calendário original: 18 dezembro 2026–29 março 2027.",
+      "Confirme acesso spa, agendamento, vista e datas de funcionamento.",
+      "Para bem-estar e gastronomia.",
+      ""
+    ],
+    [
+      "Perto dos meios de elevação · Suítes e residências",
+      "Três chalés de madeira conectados reúnem onze suítes e seis residências privativas. Ultima oferece espaço, serviço de casa privada, arte, spa e traslado ao centro. Proximidade às pistas não garante ski-in/ski-out.",
+      "Confira planta, quartos, motorista ou cozinheiro e acesso às pistas.",
+      "Para residência ampla com serviço pessoal.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Dá para caminhar à Promenade dos hotéis?",
+      "Bellevue perto da vila, Palace e Alpina na colina, Ultima oferece motorista. Considere desnível."
+    ],
+    [
+      "Quando abrem em dezembro de 2026?",
+      "Calendário original: Alpina dia 11, Palace 15, Bellevue 18. Confirme antes da viagem."
+    ],
+    [
+      "Gstaad Palace tem ski-in/ski-out?",
+      "Fica na colina; confirme traslado ao meio de elevação escolhido, não presuma saída direta."
+    ],
+    [
+      "Qual diferença Eggli, Wispile e Wasserngrat?",
+      "Setores distintos; Wasserngrat mais íngreme. Confira acesso e condições de cada um."
+    ],
+    [
+      "Qual hotel para spa?",
+      "The Alpina oferece Six Senses Spa, Bellevue grande complexo termal renovado. Compare tratamentos e acesso."
+    ],
+    [
+      "Ultima Gstaad é hotel ou residência?",
+      "Ambos: onze suítes e seis residências privativas em três chalés. Serviços e plantas diferentes."
+    ],
+    [
+      "Como conferir preços e reservar?",
+      "Parceiro autorizado confirma condições e disponibilidade atuais."
+    ]
+  ],
+  "photoCaptions": [
+    "Promenade nevada de Gstaad",
+    "Telhados de chalés e encostas no inverno",
+    "Rua histórica de Saanen",
+    "Panorama invernal Eggli e Sanetschpass",
+    "Giferspitz visto de Wispile no verão",
+    "Paisagem de verão Schönried–Rellerli",
+    "Caminhada de inverno Hornberg–Gstaad",
+    "Lago Lauenensee e reflexo da floresta"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Gstaad Palace e jardins no verão",
+      "Sala Deluxe Junior Suite com vista alpina",
+      "Piscina coberta com vista de jardim nevado"
+    ],
+    [
+      "Suíte alpina moderna The Alpina com lareira",
+      "Varanda com vista de picos nevados",
+      "Lounge e bar The Alpina"
+    ],
+    [
+      "Fachada histórica e jardim Le Grand Bellevue",
+      "Restaurante iluminado Le Grand Bellevue",
+      "Banheiro Suite Étoile"
+    ],
+    [
+      "Varanda Ultima vista chalés nevados",
+      "Interior Signature Suite",
+      "Piscina coberta e spa Ultima"
+    ]
+  ],
+  "seoTitle": "Gstaad: hotéis de luxo, chalés e férias nos Alpes suíços",
+  "hotelSeoTitle": "Hotéis de Gstaad: Palace, The Alpina, Le Grand Bellevue e Ultima",
+  "seoDescription": "Compare quatro hotéis de luxo em Gstaad: palácios, Six Senses Spa, residências privativas, Promenade e áreas de esqui."
+}
