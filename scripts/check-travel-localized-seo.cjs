@@ -7,13 +7,13 @@ const {getLocalizedGuide,reviewedLocalizedGuides}=require('../data/travel/locali
 const {travelText,travelHref}=require('../lib/travel/i18n');
 const root='https://www.bosphoras.com';
 const expectedAlternates=(slug,variant)=>Object.fromEntries(editorialTravelLocales.filter(locale=>isTravelGuideIndexable(slug,variant,locale)).map(locale=>[travelText(locale).hreflang,root+travelHref(locale,variant+'/'+slug)]));
-assert.equal(Object.keys(nativeTravelNames).length,97);
-assert.equal(travelDestinations.length,97);
+assert.equal(Object.keys(nativeTravelNames).length,98);
+assert.equal(travelDestinations.length,98);
 assert.equal(reviewedLocalizedGuides.size,704);
 const urls=indexedTravelUrls(root), known=new Set(urls);
 assert.equal(urls.length,known.size);
 const titles=new Set();
-for(const d of travelDestinations.filter(d=>!['london','las-vegas','rome','barcelona','cancun','orlando','hong-kong','kuala-lumpur','osaka'].includes(d.slug))){
+for(const d of travelDestinations.filter(d=>!['london','las-vegas','rome','barcelona','cancun','orlando','hong-kong','kuala-lumpur','osaka','seoul'].includes(d.slug))){
  const n=nativeTravelNames[d.slug];assert.ok(n&&/[\u0600-\u06ff]/.test(n.ar)&&/[\u0400-\u052f]/.test(n.ru),d.slug);
  for(const locale of ['fr','en','ru','ar'])for(const variant of ['destinations','hotels']){
   const id=d.slug+'/'+locale+'/'+variant;
@@ -57,7 +57,7 @@ console.log('1760 public guide and hotel routes, including Istanbul, Paris, Duba
      else seen.set(key,id);
    }
  }
- for(const [slug,areaCount] of [['london',6],['las-vegas',5],['rome',5],['barcelona',5],['cancun',5],['orlando',6],['hong-kong',6],['kuala-lumpur',6],['osaka',6]]){
+ for(const [slug,areaCount] of [['london',6],['las-vegas',5],['rome',5],['barcelona',5],['cancun',5],['orlando',6],['hong-kong',6],['kuala-lumpur',6],['osaka',6],['seoul',6]]){
    for(const locale of ['tr','de','es','it','pt','zh','ru','ar']){
      const d=require('../data/travel/localized/'+slug+'-'+locale+'.json'),id=slug+'/'+locale;
      for(const field of ['name','country','eyebrow','heading','intro','editorial','hotelIntro','seoTitle','hotelSeoTitle','seoDescription'])assert.ok(typeof d[field]==='string'&&d[field].trim(),id+' '+field);
@@ -131,3 +131,9 @@ assert.equal(osakaMedia.destinationScenes.length,9);assert.equal(osakaMedia.hote
 for(const p of [...osakaMedia.destinationScenes,...osakaMedia.hotels]){assert.ok(p.commercialRightsCleared&&p.visuallyVerified&&p.previewVisualApproved&&p.credit&&p.licenseUrl);const b=fs.readFileSync('public'+p.localPath);assert.equal(b.toString('ascii',0,4),'RIFF');assert.equal(b.toString('ascii',8,12),'WEBP');assert.equal(crypto.createHash('sha256').update(b).digest('hex'),p.webpSHA256);assert.ok(!seenOsaka.has(p.webpSHA256));seenOsaka.add(p.webpSHA256);assert.ok(b.length<=260000);}
 for(const locale of editorialTravelLocales){assert.equal(Object.keys(osakaCaptions.captions[locale]).length,21);for(const variant of ['destinations','hotels']){assert.equal(travelPageMetadata(locale,[variant,'osaka']).robots.index,false);assert.ok(!known.has(root+travelHref(locale,variant+'/orlando')));}}
 console.log('Osaka preview: 21 WebP hashes, 210 captions and noindex gate verified.');
+
+const seoulMedia=require('../data/travel/seoulReviewedMedia.json'),seoulCaptions=require('../data/travel/localized/seoul-photo-captions-draft.json');
+assert.equal(seoulMedia.destinationScenes.length,9);assert.equal(seoulMedia.hotels.length,12);const seenSeoul=new Set();
+for(const p of [...seoulMedia.destinationScenes,...seoulMedia.hotels]){assert.ok(p.commercialRightsCleared&&p.visuallyVerified&&p.previewVisualApproved&&p.credit&&p.licenseUrl);const b=fs.readFileSync('public'+p.localPath);assert.equal(b.toString('ascii',0,4),'RIFF');assert.equal(b.toString('ascii',8,12),'WEBP');assert.equal(crypto.createHash('sha256').update(b).digest('hex'),p.webpSHA256);assert.ok(!seenSeoul.has(p.webpSHA256));seenSeoul.add(p.webpSHA256);assert.ok(b.length<=260000);}
+for(const locale of editorialTravelLocales){assert.equal(Object.keys(seoulCaptions.captions[locale]).length,21);for(const variant of ['destinations','hotels']){assert.equal(travelPageMetadata(locale,[variant,'seoul']).robots.index,false);assert.ok(!known.has(root+travelHref(locale,variant+'/seoul')));}}
+console.log('Seoul preview: 21 WebP hashes, 210 captions and noindex gate verified.');
