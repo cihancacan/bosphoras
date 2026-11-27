@@ -95,7 +95,9 @@ import bodrumTr from './localized/bodrum-tr.json';
 import antalyaTr from './localized/antalya-tr.json';
 import parisTr from './localized/paris-tr.json';
 import dubaiTr from './localized/dubai-tr.json';
-const reviewedTurkish:Record<string,LocalizedGuide>={istanbul:istanbulTr,bodrum:bodrumTr,antalya:antalyaTr,paris:parisTr,dubai:dubaiTr};
+import baliTr from './localized/bali-tr.json';
+import phuketTr from './localized/phuket-tr.json';
+const reviewedTurkish:Record<string,LocalizedGuide>={istanbul:istanbulTr,bodrum:bodrumTr,antalya:antalyaTr,paris:parisTr,dubai:dubaiTr,bali:baliTr,phuket:phuketTr};
 export type EditorialLocale='ru'|'ar'|'tr';
 type LegacyEditorialLocale='ru'|'ar';
 export type LocalizedGuide={
