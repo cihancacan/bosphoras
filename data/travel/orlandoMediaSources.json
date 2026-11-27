@@ -4,6 +4,13 @@
     "city": "Orlando",
     "publisher": "Visit Orlando",
     "cityPages": [
+      "https://www.visitorlando.com/things-to-do/theme-parks/walt-disney-world-resort/magic-kingdom/",
+      "https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/epic-universe/",
+      "https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/universal-studios-florida/",
+      "https://www.visitorlando.com/things-to-do/theme-parks/universal-orlando-resort/",
+      "https://www.visitorlando.com/blog/post/reasons-to-visit-icon-park-orlando/",
+      "https://www.visitorlando.com/blog/post/insider-guide-epic-universe/",
+      "https://media.universalparksusa.com/photos/?park=orlando",
       "https://www.visitorlando.com/plan/get-to-know-orlando/interactive-map-city-guide/",
       "https://www.visitorlando.com/things-to-do/beyond-theme-parks/neighborhoods/",
       "https://www.visitorlando.com/things-to-do/beyond-theme-parks/neighborhoods/winter-park/",
@@ -29,6 +36,8 @@
         "four-seasons",
         "Four Seasons Resort Orlando at Walt Disney World Resort",
         [
+          "https://press.fourseasons.com/orlando/hotel-images/",
+          "https://www.travelandleisure.com/four-seasons-resort-orlando-at-disney-world-review-8702769",
           "https://www.fourseasons.com/orlando/photos-and-videos/",
           "https://www.fourseasons.com/orlando/"
         ]
@@ -37,6 +46,11 @@
         "waldorf",
         "Waldorf Astoria Orlando",
         [
+          "https://www.waldorfastoriaorlando.com/",
+          "https://www.waldorfastoriaorlando.com/reimagined/",
+          "https://www.waldorfastoriaorlando.com/accommodations/suites/",
+          "https://www.waldorfastoriaorlando.com/accommodations/deluxe/",
+          "https://www.waldorfastoriaorlando.com/experiences/pool/",
           "https://www.hilton.com/en/hotels/orlbcwa-waldorf-astoria-orlando/gallery/",
           "https://disneyworld.disney.go.com/resorts/more/waldorf-astoria-orlando/"
         ]
@@ -45,6 +59,8 @@
         "ritz-carlton",
         "The Ritz-Carlton Orlando, Grande Lakes",
         [
+          "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/rooms/",
+          "https://www.grandelakes.com/rooms-suites/the-ritz-carlton-club",
           "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/photos/",
           "https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/overview/"
         ]
@@ -53,6 +69,9 @@
         "portofino",
         "Loews Portofino Bay Hotel",
         [
+          "https://www.loewshotels.com/portofino-bay-hotel/rooms-showcase/portofino-parlor-suite-with-connecting-king-bay-view-room",
+          "https://www.loewshotels.com/portofino-bay-hotel/rooms-showcase/portofino-parlor-suite-with-connecting-2-queen-bay-view-room",
+          "https://www.loewshotels.com/portofino-bay-hotel/rooms-showcase/standard-rooms",
           "https://www.loewshotels.com/portofino-bay-hotel/photos-videos",
           "https://www.loewshotels.com/portofino-bay-hotel",
           "https://www.universalorlando.com/web/en/us/places-to-stay/loews-portofino-bay-hotel"
