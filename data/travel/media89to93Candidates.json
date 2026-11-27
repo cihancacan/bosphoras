@@ -124,6 +124,99 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-8",
+        "sourcePage": "https://www.visitbritain.com/en/things-to-do/londons-markets",
+        "sourceResolvedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/u372wyfclp28br3trjuta8614320ld3t/t/re_w_1380,re_h_1035,re_rm_Stretch/c_w_1380,c_h_776,c_whu_Pixel,c_x_0.0000,c_y_0.1251/VB8MLD.jpeg",
+        "sourceRequestedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/u372wyfclp28br3trjuta8614320ld3t/t/re_w_1380,re_h_1035,re_rm_Stretch/c_w_1380,c_h_776,c_whu_Pixel,c_x_0.0000,c_y_0.1251/VB8MLD.jpeg",
+        "originalAlt": "Wimbledon public viewing at Covent Garden",
+        "originalCaption": "",
+        "credit": "Visit London / London & Partners",
+        "publisher": "Visit London / London & Partners",
+        "hotel": null,
+        "localPath": "/images/travel/london-premium/destination/scene-8.webp",
+        "sourceSHA256": "725ed5c4f9264d9547a6c8e612257a0b24d4a0989cfccd6447bd973766aee95c",
+        "webpSHA256": "f66a3db2bb927103a4edab0a23caebf6fb45f35b6e91f4c25f1d2eaf353455f8",
+        "sourcePixels": [
+          1380,
+          776
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 248306,
+        "pixelFingerprint": "a2fe599be3e1a581",
+        "candidateSubject": "covent garden",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-9",
+        "sourcePage": "https://www.royalparks.org.uk/visit/parks/hyde-park",
+        "sourceResolvedUrl": "https://www.royalparks.org.uk/sites/default/files/styles/5by3_lg_x2/public/2026-09/Aerial%20photograph%20of%20Hyde%20Park%20in%20autumn.jpg.webp?h=3c48d45d&itok=Ik1lf3j8",
+        "sourceRequestedUrl": "https://www.royalparks.org.uk/sites/default/files/styles/5by3_lg_x2/public/2026-09/Aerial%20photograph%20of%20Hyde%20Park%20in%20autumn.jpg.webp?h=3c48d45d&itok=Ik1lf3j8",
+        "originalAlt": "Aerial photograph of Hyde Park in autumn",
+        "originalCaption": "",
+        "credit": "Visit London / London & Partners",
+        "publisher": "Visit London / London & Partners",
+        "hotel": null,
+        "localPath": "/images/travel/london-premium/destination/scene-9.webp",
+        "sourceSHA256": "f6d420c1de921222f5b8aec739998e16e0a4bfb1a029dc86ed87ccbbdd1759bc",
+        "webpSHA256": "b4c83f91585ee6e80116f208e6ee55141cbae41566e54f20a33cca962dfa468c",
+        "sourcePixels": [
+          2048,
+          1229
+        ],
+        "webpPixels": [
+          1280,
+          768
+        ],
+        "webpBytes": 243030,
+        "pixelFingerprint": "9d999934d473f361",
+        "candidateSubject": "hyde park|kensington gardens",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-10",
+        "sourcePage": "https://www.visitbritain.com/en/things-to-do/londons-markets",
+        "sourceResolvedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/1jo4f0to5l0phv3x357h61q75vmbtk4r/t/re_w_1380,re_h_921,re_rm_Stretch/c_w_1380,c_h_776,c_whu_Pixel,c_x_0.0000,c_y_0.0787/VB8LX3.jpg",
+        "sourceRequestedUrl": "https://dam-cdn.vb0.orangelogic.com/AssetLink/1jo4f0to5l0phv3x357h61q75vmbtk4r/t/re_w_1380,re_h_921,re_rm_Stretch/c_w_1380,c_h_776,c_whu_Pixel,c_x_0.0000,c_y_0.0787/VB8LX3.jpg",
+        "originalAlt": "Entrance to Borough market, London",
+        "originalCaption": "",
+        "credit": "Visit London / London & Partners",
+        "publisher": "Visit London / London & Partners",
+        "hotel": null,
+        "localPath": "/images/travel/london-premium/destination/scene-10.webp",
+        "sourceSHA256": "92167ad7e3537ae704176d963d6a408dc14dad1b2841b49da712c0d4b3450d0a",
+        "webpSHA256": "2eb9ba9f897fb5b16f966cc76b4689edb96e1cb244b848f9864700661012d278",
+        "sourcePixels": [
+          1380,
+          776
+        ],
+        "webpPixels": [
+          1280,
+          720
+        ],
+        "webpBytes": 200120,
+        "pixelFingerprint": "78f9c9d9fde9e998",
+        "candidateSubject": "borough market",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -275,6 +368,37 @@
         "webpBytes": 97356,
         "pixelFingerprint": "acf0c0c8e8cce8ec",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "savoy-3",
+        "sourcePage": "https://all.accor.com/hotel/A597/index.en.shtml",
+        "sourceResolvedUrl": "https://www.ahstatic.com/photos/a597_br_00_p_2048x1536.jpg",
+        "sourceRequestedUrl": "https://www.ahstatic.com/photos/a597_br_00_p_2048x1536.jpg",
+        "originalAlt": "The Savoy London exterior entrance and canopy",
+        "originalCaption": "Accor / The Savoy",
+        "credit": "Accor / The Savoy",
+        "publisher": "The Savoy",
+        "hotel": "The Savoy",
+        "localPath": "/images/travel/london-premium/savoy/savoy-3.webp",
+        "sourceSHA256": "a46abaa41d0f3c2e0513f1615b281e13e3a5d77165a3b02b23621e77a2015f4d",
+        "webpSHA256": "6ad0df27dd5610e6a91ed6503dec7c19f3c9ae0eaf8d7157824593bb91c1220d",
+        "sourcePixels": [
+          2048,
+          1536
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 173580,
+        "pixelFingerprint": "793694b2f16168c8",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -436,26 +560,55 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "shangri-la-3",
+        "sourcePage": "https://www.the-shard.com/about/",
+        "sourceResolvedUrl": "https://www.the-shard.com/media/32sagomk/theshardexterior_hollywren_jan2020-31.jpg?mode=crop&upscale=true&width=1200&height=630",
+        "sourceRequestedUrl": "https://www.the-shard.com/media/32sagomk/theshardexterior_hollywren_jan2020-31.jpg?mode=crop&upscale=true&width=1200&height=630",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Shangri-La The Shard, London",
+        "publisher": "Shangri-La The Shard, London",
+        "hotel": "Shangri-La The Shard, London",
+        "localPath": "/images/travel/london-premium/shangri-la/shangri-la-3.webp",
+        "sourceSHA256": "5f4f0eb6ef16c5b07e27b81210232c86fca307160142bfb5377dd359d9c1d6b2",
+        "webpSHA256": "45db100fd0e10726ac1d3b72832846784c6cb80f5d7cc8a60f408ecd5c2d37d8",
+        "sourcePixels": [
+          1200,
+          630
+        ],
+        "webpPixels": [
+          1200,
+          630
+        ],
+        "webpBytes": 92744,
+        "pixelFingerprint": "2600c8cd8c9c8462",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "gaps": [
       {
         "group": "city",
         "expected": 9,
-        "found": 4
-      },
-      {
-        "group": "savoy",
-        "expected": 3,
-        "found": 2
-      },
-      {
-        "group": "shangri-la",
-        "expected": 3,
-        "found": 2
+        "found": 7
       }
     ],
     "errors": [
+      {
+        "page": "https://www.stpauls.co.uk/press-and-media",
+        "error": "403 Client Error: Forbidden for url: https://www.stpauls.co.uk/press-and-media"
+      },
+      {
+        "page": "https://www.stpauls.co.uk/",
+        "error": "403 Client Error: Forbidden for url: https://www.stpauls.co.uk/"
+      },
       {
         "page": "https://www.visitlondon.com/things-to-do",
         "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do"
@@ -545,14 +698,6 @@
         "error": "404 Client Error: Not Found for url: https://www.thesavoylondon.com/rooms-and-suites"
       },
       {
-        "page": "https://www.expedia.com/London-Hotels-The-Savoy.h27158.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/London-Hotels-The-Savoy.h27158.Hotel-Information"
-      },
-      {
-        "page": "https://uk.hotels.com/ho172847/the-savoy-london-united-kingdom/?equalTargetTab=tab-0",
-        "error": "429 Client Error: Too Many Requests for url: https://uk.hotels.com/ho172847/the-savoy-london-united-kingdom/?equalTargetTab=tab-0"
-      },
-      {
         "page": "https://www.shangri-la.com/london/shangrila/photos-videos/",
         "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/london/shangrila/photos-videos/"
       },
@@ -563,18 +708,6 @@
       {
         "page": "https://www.shangri-la.com/en/london/shangrila/rooms-suites/",
         "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/en/london/shangrila/rooms-suites/"
-      },
-      {
-        "page": "https://www.expedia.com/London-Hotels-Shangri-La-The-Shard.h8035714.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/London-Hotels-Shangri-La-The-Shard.h8035714.Hotel-Information"
-      },
-      {
-        "page": "https://www.booking.com/hotel/gb/shangri-la-at-the-shard-london.html",
-        "error": "exact property identity not confirmed on page"
-      },
-      {
-        "page": "https://www.hotels.com/ho456469/shangri-la-the-shard-london-london-united-kingdom/",
-        "error": "429 Client Error: Too Many Requests for url: https://www.hotels.com/ho456469/shangri-la-the-shard-london-london-united-kingdom/"
       }
     ],
     "publicUseApproved": false,
@@ -705,9 +838,9 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 4,
-    "hotelCount": 10,
-    "totalBytes": 1556484
+    "cityCount": 7,
+    "hotelCount": 12,
+    "totalBytes": 2514264
   },
   "las-vegas": {
     "destinationScenes": [
