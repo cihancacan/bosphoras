@@ -1,0 +1,131 @@
+{
+  "name": "Roma",
+  "country": "İtalya",
+  "eyebrow": "İtalya · Tarih, meydanlar ve seçkin oteller",
+  "heading": "Roma: doğru semti seçerek Ebedi Şehir'i keşfedin.",
+  "intro": "Tarihi merkezin meydanları, Pincio bahçeleri ve Trastevere'nin dar sokakları Roma'yı yürüyerek keşfetmek için ideal kılar. Piazza di Spagna yakınındaki bir otel, tepelerde veya Vatikan çevresinde konaklamaktan farklı bir deneyim sunar.",
+  "editorial": "Tarihi merkezde Pantheon, Piazza Navona ve Trevi Çeşmesi arasında yürüyebilirsiniz. Campo Marzio ve Piazza di Spagna çevresinde seçkin oteller ve butikler bulunur. Prati, Vatikan ziyaretleri; Monti, Kolezyum ve forumlar için elverişlidir. Trastevere ise akşam gezileri ve geleneksel restoranlarıyla öne çıkar.\n\nDört gecelik bir konaklamada antik Roma, Vatikan, tarihi merkez ve bahçeler ya da konut semtleri için birer gün ayırabilirsiniz. Sınırlı kapasiteli yerlerin resmi giriş biletlerini önceden alın. Yazın gezileri sabah erken saatlere planlayın ve gölgede mola verin.\n\nFiumicino Havalimanı'ndan Termini'ye tren, resmi taksi ve özel transfer seçeneklerini karşılaştırın. Ciampino için farklı bir ulaşım planı gerekir. Arnavut kaldırımları, yokuşlar ve sınırlı trafik bölgeleri, valiz veya bebek arabasıyla ulaşımı zorlaştırabilir. Seçilen oda kategorisinin toplam fiyatını, konaklama vergisini ve dahil olan hizmetleri karşılaştırın.",
+  "hotelIntro": "Dört tarihi ve çağdaş adres: Bvlgari Hotel Roma, Hotel de Russie, Hassler Roma ve Hotel Eden.",
+  "areas": [
+    [
+      "Tarihi merkez",
+      "Pantheon, Piazza Navona, Trevi Çeşmesi ve meydanlar arası yürüyüşler.",
+      "Taş döşeli yollar ve trafik sınırlamaları bazı transferleri zorlaştırabilir."
+    ],
+    [
+      "Campo Marzio ve Piazza di Spagna",
+      "Butikler, saraylar, seçkin oteller ve Pincio'ya erişim.",
+      "Otelden itibaren merdivenleri ve yokuşları kontrol edin."
+    ],
+    [
+      "Monti ve Kolezyum",
+      "Antik miras, kafeler ve küçük sokaklar.",
+      "Saatli giriş biletlerini önceden alın."
+    ],
+    [
+      "Prati ve Vatikan",
+      "Geniş caddeler, mağazalar ve Vatikan Müzeleri'ne yakınlık.",
+      "Vatikan'a yakın olmak Kolezyum'a yakın olmak anlamına gelmez."
+    ],
+    [
+      "Trastevere",
+      "Dar sokaklar, restoranlar ve akşam atmosferi.",
+      "Gürültü ve taş döşemeler sokağa göre değişebilir."
+    ]
+  ],
+  "experiences": [
+    [
+      "Antik Roma",
+      "Bilet durumuna göre Kolezyum ve Roma Forumu'na en az yarım gün ayırın."
+    ],
+    [
+      "Tarihi meydanlar",
+      "Pantheon, Trevi Çeşmesi ve Piazza Navona'yı gereksiz ulaşım olmadan keşfedin."
+    ],
+    [
+      "Villa Borghese",
+      "Bilet bulabilirseniz galeri ziyaretini bahçelerle birleştirin."
+    ],
+    [
+      "Trastevere'de bir akşam",
+      "Bir trattoria seçin ve Tiber kıyısında yürüyün."
+    ]
+  ],
+  "checks": [
+    "Otelin erişilebilirliğini ve yokuşları karşılaştırın.",
+    "Sınırlı kapasiteli turistik yerleri önceden ayırtın.",
+    "Yatak düzenini ve bağlantılı odaları kontrol edin.",
+    "Vergiler, konaklama vergisi ve hizmetler dahil toplam fiyatı karşılaştırın.",
+    "Havalimanı transferini ve tarihi merkeze varışı planlayın."
+  ],
+  "hotels": [
+    [
+      "Campo Marzio · Piazza Augusto Imperatore",
+      "İtalyan malzemeleri, farklı tarzlarda oda ve süitler ve gastronomiyle öne çıkan çağdaş bir adres. Via del Corso ve butikler yakındadır.",
+      "Meydan ve yan sokak manzaralarını karşılaştırın.",
+      "Çağdaş İtalyan tasarımı ve alışveriş için.",
+      "Bvlgari Hotel Roma, Piazza Augusto Imperatore'de İtalyan malzemelerini, farklı oda ve süitleri ve gastronomiyi öne çıkarır. Via del Corso ve butikler yakındadır. Meydan ve yan sokak manzaralarını karşılaştırın."
+    ],
+    [
+      "Via del Babuino · Piazza del Popolo",
+      "İç bahçe, Piazza del Popolo yakınında sakin bir ortam sunar. Odalar, süitler ve restoranlar Campo Marzio ile Pincio'yu keşfetmek için iyi bir başlangıç noktasıdır.",
+      "Bahçe manzarasını ve ailelere uygun oda düzenini doğrulayın.",
+      "Tarihi merkezde yeşil bir kaçamak için.",
+      "Hotel de Russie, Piazza del Popolo yakınında iç bahçesi, odaları, süitleri ve restoranlarıyla öne çıkar. Campo Marzio ve Pincio için iyi bir başlangıç noktasıdır. Bahçe manzarasını ve ailelere uygun oda düzenini doğrulayın."
+    ],
+    [
+      "Trinità dei Monti · Piazza di Spagna",
+      "İspanyol Merdivenleri'nin üst kısmındaki Hassler, geleneksel atmosferi farklı dekorasyona sahip odalarla birleştirir. Bazı kategoriler teras veya geniş manzara sunar.",
+      "Merdivenleri, erişim yollarını ve oda kategorisini kontrol edin.",
+      "Piazza di Spagna üzerindeki panoramik konum için.",
+      "Hassler Roma, İspanyol Merdivenleri'nin üst kısmında geleneksel atmosfer ve farklı dekorasyona sahip odalar sunar. Bazı kategoriler teraslı veya geniş manzaralıdır. Merdivenleri, erişim yollarını ve oda kategorisini kontrol edin."
+    ],
+    [
+      "Via Ludovisi · Villa Borghese",
+      "Klasik atmosfer, spa ve Roma'nın çatı manzaraları. Villa Borghese yakınındaki konumu tarihi meydanların üzerindeki otellerden farklıdır.",
+      "Oda yönünü, terası, yürüyüş güzergâhlarını ve dahil hizmetleri karşılaştırın.",
+      "Klasik zarafet ve Roma panoraması için.",
+      "Hotel Eden klasik atmosferi, spa hizmetleri ve Roma'nın çatı manzaralarıyla öne çıkar. Villa Borghese yakınındaki konumu merkez meydanlarındaki otellerden farklı bir deneyim sunar. Oda yönünü, terası, yürüyüş güzergâhlarını ve dahil hizmetleri karşılaştırın."
+    ]
+  ],
+  "faq": [
+    [
+      "Roma'ya ilk kez gelenler nerede kalmalı?",
+      "Centro Storico ve Campo Marzio merkezi konumlar sunar; Monti antik yerleri gezmek için uygundur."
+    ],
+    [
+      "Vatikan'a yakın hangi semt seçilmeli?",
+      "Prati, Vatikan Müzeleri'ne ulaşımı kolaylaştırır."
+    ],
+    [
+      "Kaç gece ayırmalı?",
+      "Dört gece iyi bir başlangıçtır; müzeler ve diğer semtler için daha uzun süre ayırabilirsiniz."
+    ],
+    [
+      "Panoramik manzara için hangi oteli seçmeli?",
+      "Hassler ve Hotel Eden oda kategorilerini karşılaştırın; belirli bir manzara her odada garanti değildir."
+    ],
+    [
+      "Araba gerekli mi?",
+      "Tarihi merkezde trafik sınırlamaları nedeniyle yürümek ve toplu taşıma genellikle daha uygundur."
+    ],
+    [
+      "Fiumicino'dan nasıl gidilir?",
+      "Termini'ye tren, resmi taksi ve özel transfer seçeneklerini karşılaştırın."
+    ],
+    [
+      "Oteller nasıl karşılaştırılır?",
+      "Bosphoras'ta aynı tarihler için oda kategorilerini, manzaraları, yatakları, konaklama vergisini ve koşulları karşılaştırın."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Roma'da Nerede Kalınır? En İyi Semtler ve Lüks Oteller",
+  "hotelSeoTitle": "Roma Lüks Otelleri: Bvlgari, de Russie, Hassler ve Eden",
+  "seoDescription": "Roma'nın tarihi merkezi, Piazza di Spagna ve Vatikan çevresindeki semtleri, lüks otelleri ve toplam konaklama fiyatlarını karşılaştırın."
+}
