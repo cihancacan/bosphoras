@@ -80,7 +80,7 @@ def collect_pages(pages):
     # Simpleview publishes transformation-relative paths that belong to its image CDN.
     if re.match(r'^(?:[a-z]_[^/]+/)+v1/clients/',path) and (hostmatch(domain(final),'visitlasvegas.com') or hostmatch(domain(final),'visitorlando.com')):
      path='https://assets.simpleviewcms.com/simpleview/image/upload/'+path
-    u=urljoin(final,path);u=u.replace(' ','%20')
+    u=urljoin(final,('/'+path if hostmatch(domain(final),'theruma.com') and path.startswith('file/') else path));u=u.replace(' ','%20')
     h=domain(u); pagehost=domain(final)
     if not (hostmatch(h,pagehost) or hostmatch(pagehost,h) or any(hostmatch(h,c) for c in CDN) or publisher_cdn(h,pagehost) or h.split('.')[-2:]==pagehost.split('.')[-2:]):continue
     if BAD.search(u+' '+alt) or not (publisher_cdn(h,pagehost) or re.search(r'jpe?g|webp|png|avif|image|media|photo|asset|/img/',u,re.I)):continue
@@ -92,7 +92,76 @@ def collect_pages(pages):
   except Exception as e:
    errors.append({'page':page,'error':str(e)[:300]});print('PAGE_GAP',page,str(e)[:200],flush=True)
  return result,errors
-DIRECT = {}
+DIRECT = {
+  "kuala-lumpur/city": [
+    [
+      "https://upload.wikimedia.org/wikipedia/commons/1/10/Little_India%2C_Brickfields%2C_Kuala_Lumpur.jpg",
+      "Little India Brickfields Kuala Lumpur Jalan Tun Sambanthan",
+      "https://commons.wikimedia.org/wiki/File:Little_India,_Brickfields,_Kuala_Lumpur.jpg",
+      "Yun Huang Yong / CC BY 2.0 / resized WebP"
+    ]
+  ],
+  "kuala-lumpur/mandarin-oriental": [
+    [
+      "https://d19lgisewk9l6l.cloudfront.net/wexas/www/images/largeimages/destinations/Malaysia/mandarin_oriental_kl/kuala-03pc_lo_autoresized.jpg",
+      "Mandarin Oriental Kuala Lumpur exterior beside Petronas towers",
+      "https://www.wexas.com/accommodation-offers/mandarin-oriental-kuala-lumpur--102302",
+      "Wexas Travel / property photography"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/1000000/210000/200600/200564/032e9b29.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Mandarin Oriental Kuala Lumpur Deluxe City View King room",
+      "https://www.expedia.com/Kuala-Lumpur-Hotels-Mandarin-Oriental-Kuala-Lumpur.h200564.Hotel-Information",
+      "Expedia / Mandarin Oriental Kuala Lumpur"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/1000000/210000/200600/200564/2ff9e531.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Mandarin Oriental Kuala Lumpur outdoor pool overlooking park",
+      "https://www.expedia.com/Kuala-Lumpur-Hotels-Mandarin-Oriental-Kuala-Lumpur.h200564.Hotel-Information",
+      "Expedia / Mandarin Oriental Kuala Lumpur"
+    ]
+  ],
+  "kuala-lumpur/four-seasons": [
+    [
+      "https://millionlighting.com/assets/general/project-four-seasons-kl-01.jpg",
+      "Four Seasons Hotel Kuala Lumpur exterior tower beside Petronas Towers",
+      "https://millionlighting.com/four-seasons-hotel-kuala-lumpur-external",
+      "Million Lighting / project photography"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/22000000/21130000/21122700/21122615/cf81feb6.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Hotel Kuala Lumpur King Park View guest room",
+      "https://www.expedia.com/Kuala-Lumpur-Hotels-Four-Seasons-Hotel-Kuala-Lumpur.h21122615.Hotel-Information",
+      "Expedia / Four Seasons Hotel Kuala Lumpur"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/22000000/21130000/21122700/21122615/c0c2d6fd.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Kuala Lumpur cocktail bar lounge overlooking city",
+      "https://www.expedia.com/Kuala-Lumpur-Hotels-Four-Seasons-Hotel-Kuala-Lumpur.h21122615.Hotel-Information",
+      "Expedia / Four Seasons Hotel Kuala Lumpur"
+    ]
+  ],
+  "kuala-lumpur/ruma": [
+    [
+      "https://theruma.com/file/webpage/shared/banner/Port-Cochere%20The%20RuMa.webp",
+      "The RuMa Hotel and Residences porte-cochere entrance",
+      "https://theruma.com/en/kuala-lumpur-luxury-hotel/photo-gallery/",
+      "The RuMa official photography"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/32000000/31930000/31929900/31929867/2920ca51.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "The RuMa Hotel and Residences Deluxe King guest room",
+      "https://www.expedia.com/Kuala-Lumpur-Hotels-The-RuMa-Hotel-And-Residences.h31929867.Hotel-Information",
+      "Expedia / The RuMa Hotel and Residences"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/32000000/31930000/31929900/31929867/7cb0a386.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "The RuMa Hotel and Residences outdoor infinity pool",
+      "https://www.expedia.com/Kuala-Lumpur-Hotels-The-RuMa-Hotel-And-Residences.h31929867.Hotel-Information",
+      "Expedia / The RuMa Hotel and Residences"
+    ]
+  ]
+}
 def direct_candidates(slug,key):
  return [{'url':u,'sourcePage':page,'originalAlt':alt,'originalCaption':credit,'targeted':True} for u,alt,page,credit in DIRECT.get(slug+'/'+key,[])]
 
