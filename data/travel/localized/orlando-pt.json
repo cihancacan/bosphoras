@@ -1,0 +1,136 @@
+{
+  "name": "Orlando",
+  "country": "Estados Unidos",
+  "eyebrow": "Flórida · Parques temáticos, resorts e lagos",
+  "heading": "Orlando: escolha o hotel conforme os parques e o seu estilo de viagem.",
+  "intro": "Entre Walt Disney World, Universal Orlando e os lagos da Flórida central, as distâncias influenciam cada dia. Escolha o hotel segundo os parques prioritários, as necessidades da família e o tempo que deseja passar no resort.",
+  "editorial": "Lake Buena Vista e Bonnet Creek são práticos para Disney. Universal e o norte da International Drive facilitam visitas à Universal Studios Florida e Islands of Adventure; verifique separadamente o transporte para Epic Universe. International Drive e Grande Lakes oferecem variedade, Kissimmee alojamentos familiares e Downtown e Winter Park passeios fora dos parques.\n\nNuma semana, alterne parques e descanso. Dividir a estadia entre dois hotéis pode reduzir deslocações. Confirme horários dos transportes, parques servidos e benefícios conforme a reserva.\n\nA partir do aeroporto MCO, compare carro alugado, transporte partilhado e transfer privado. Considere estacionamento, portagens e cadeiras infantis. Preveja pausas em espaços interiores devido ao calor e tempestades. Compare o total com impostos, taxas do resort, camas e condições de cancelamento.",
+  "hotelIntro": "Quatro estilos: Four Seasons para Disney, Waldorf Astoria em Bonnet Creek, Ritz-Carlton junto aos lagos e Loews Portofino Bay para Universal.",
+  "areas": [
+    [
+      "Walt Disney World e Lake Buena Vista",
+      "Parques Disney, Disney Springs e resorts familiares.",
+      "Verifique o trajeto para cada parque."
+    ],
+    [
+      "Universal e International Drive norte",
+      "Universal Studios Florida, Islands of Adventure e CityWalk.",
+      "Verifique Epic Universe separadamente."
+    ],
+    [
+      "International Drive e Grande Lakes",
+      "Atrações, restaurantes, centro de convenções e resorts junto ao lago.",
+      "Confira distâncias e estacionamento."
+    ],
+    [
+      "Bonnet Creek",
+      "Resorts com piscinas, golfe e acesso rodoviário a Disney.",
+      "Transportes e benefícios variam conforme o hotel."
+    ],
+    [
+      "Kissimmee e Celebration",
+      "Villas, apartamentos e estadias familiares longas.",
+      "Verifique portagens, limpeza e trajetos."
+    ],
+    [
+      "Downtown Orlando e Winter Park",
+      "Lake Eola, comércio, museus e restaurantes independentes.",
+      "Mais distantes dos grandes parques."
+    ]
+  ],
+  "experiences": [
+    [
+      "Um dia na Disney",
+      "Escolha o parque conforme as idades e atrações; confira bilhetes e transporte."
+    ],
+    [
+      "Universal e CityWalk",
+      "Combine atrações e jantar na mesma zona; planeie Epic Universe à parte."
+    ],
+    [
+      "Descanso no resort",
+      "Reserve um dia de piscina entre visitas intensas."
+    ],
+    [
+      "Explorar os bairros",
+      "Combine Lake Eola ou Winter Park com comércio e restaurantes locais."
+    ]
+  ],
+  "checks": [
+    "Compare parques servidos pelos transportes.",
+    "Confirme benefícios para datas e bilhetes.",
+    "Compare impostos, taxas e estacionamento.",
+    "Verifique camas e ocupação máxima.",
+    "Planeie transfer MCO e cadeiras infantis."
+  ],
+  "hotels": [
+    [
+      "Golden Oak · Walt Disney World",
+      "Resort de luxo para famílias com piscinas, golfe e descanso entre visitas.",
+      "Confirme quartos familiares, transportes e benefícios Disney.",
+      "Para Disney e famílias.",
+      "Resort de luxo para famílias com piscinas, golfe e descanso entre visitas. Confirme quartos familiares, transportes e benefícios Disney."
+    ],
+    [
+      "Bonnet Creek",
+      "Resort elegante com suites, golfe e espaços tranquilos perto de Disney.",
+      "Compare vistas, taxas e transportes.",
+      "Para descansar perto de Disney.",
+      "Resort elegante com suites, golfe e espaços tranquilos perto de Disney. Compare vistas, taxas e transportes."
+    ],
+    [
+      "Grande Lakes",
+      "Resort junto ao lago com golfe, spa e espaços exteriores; alguns quartos têm varanda.",
+      "Verifique ocupação, vista e trajetos aos parques.",
+      "Para descansar junto ao lago.",
+      "Resort junto ao lago com golfe, spa e espaços exteriores; alguns quartos têm varanda. Verifique ocupação, vista e trajetos aos parques."
+    ],
+    [
+      "Universal Orlando Resort",
+      "Hotel familiar inspirado na vila italiana de Portofino, com baía e proximidade aos parques clássicos Universal.",
+      "Confirme vantagens e restrições por parque e bilhete.",
+      "Para visitar Universal.",
+      "Hotel familiar inspirado na vila italiana de Portofino, com baía e proximidade aos parques clássicos Universal. Confirme vantagens e restrições por parque e bilhete."
+    ]
+  ],
+  "faq": [
+    [
+      "Onde ficar para visitar Disney?",
+      "Compare Lake Buena Vista, Bonnet Creek e hotéis da zona Disney."
+    ],
+    [
+      "Qual a melhor zona para Universal?",
+      "Universal e International Drive norte; verifique Epic Universe à parte."
+    ],
+    [
+      "Quantas noites planear?",
+      "Uma semana permite combinar vários parques e descanso."
+    ],
+    [
+      "É necessário alugar carro?",
+      "Nem sempre se os transportes forem suficientes; é útil para maiores distâncias."
+    ],
+    [
+      "Qual hotel escolher em família?",
+      "Compare Four Seasons, Waldorf Astoria e Loews por parques, camas e serviços."
+    ],
+    [
+      "Os bilhetes dos parques estão incluídos?",
+      "Não necessariamente; consulte as condições da oferta."
+    ],
+    [
+      "Como comparar preços?",
+      "Compare os totais para as mesmas datas, hóspedes, quartos, taxas e cancelamento."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Onde ficar em Orlando: Disney, Universal e melhores zonas",
+  "hotelSeoTitle": "Hotéis em Orlando: Disney, Universal e resorts de luxo",
+  "seoDescription": "Compare hotéis e zonas de Orlando conforme os parques, transportes, famílias e custo total."
+}

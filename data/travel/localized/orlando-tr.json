@@ -1,0 +1,136 @@
+{
+  "name": "Orlando",
+  "country": "Amerika Birleşik Devletleri",
+  "eyebrow": "Florida · Tema parkları, tatil köyleri ve göller",
+  "heading": "Orlando'da konaklama: parklarınıza ve tatil tarzınıza uygun oteli seçin.",
+  "intro": "Walt Disney World, Universal Orlando ve Orta Florida'nın gölleri arasında mesafeler günlük programı belirler. Otelinizi öncelikli parklar, aile ihtiyaçları ve tesiste geçirmek istediğiniz zamana göre seçin.",
+  "editorial": "Lake Buena Vista ve Bonnet Creek Disney için uygundur. Universal ve International Drive'ın kuzeyi Universal Studios Florida ve Islands of Adventure'a ulaşımı kolaylaştırır; Epic Universe ulaşımını ayrıca inceleyin. International Drive ve Grande Lakes farklı etkinliklere, Kissimmee aile konaklamalarına, Downtown ve Winter Park park dışı gezilere uygundur.\n\nBir haftada park günleriyle dinlenme günlerini dengeleyin. İki park grubunu ziyaret edecekseniz iki farklı otel yolculukları azaltabilir. Servis saatlerini, güzergâhlarını ve bilet avantajlarını rezervasyon şartlarına göre kontrol edin.\n\nMCO havalimanından araç kiralama, servis ve özel transfer seçeneklerini karşılaştırın. Otopark, otoyol ücretleri ve çocuk koltuklarını hesaba katın. Sıcaklık ve fırtınalara karşı kapalı alan molaları planlayın. Vergiler, tesis ücretleri, yataklar ve iptal koşulları dahil toplam fiyatı karşılaştırın.",
+  "hotelIntro": "Disney için Four Seasons, Bonnet Creek için Waldorf Astoria, göl kenarı için Ritz-Carlton ve Universal için Loews Portofino Bay.",
+  "areas": [
+    [
+      "Walt Disney World ve Lake Buena Vista",
+      "Disney parkları, Disney Springs ve aile tatil köyleri.",
+      "Her parka ulaşım süresini kontrol edin."
+    ],
+    [
+      "Universal ve kuzey International Drive",
+      "Universal Studios Florida, Islands of Adventure ve CityWalk.",
+      "Epic Universe ulaşımını ve avantajlarını ayrıca kontrol edin."
+    ],
+    [
+      "International Drive ve Grande Lakes",
+      "Etkinlikler, restoranlar, kongre merkezi ve göl kenarı tesisleri.",
+      "Mesafeleri ve otopark ücretlerini kontrol edin."
+    ],
+    [
+      "Bonnet Creek",
+      "Havuzlu, golf olanaklı ve Disney'e karayolu bağlantılı tesisler.",
+      "Servis ve avantajlar otele göre değişir."
+    ],
+    [
+      "Kissimmee ve Celebration",
+      "Villalar, daireler ve uzun aile tatilleri.",
+      "Geçiş ücretleri, temizlik ve yolculuk sürelerini inceleyin."
+    ],
+    [
+      "Downtown Orlando ve Winter Park",
+      "Lake Eola, mağazalar, müzeler ve bağımsız restoranlar.",
+      "Büyük tema parklarından daha uzaktır."
+    ]
+  ],
+  "experiences": [
+    [
+      "Disney'de bir gün",
+      "Yaşlara ve ilgi alanlarına göre park seçip bilet ve ulaşımı kontrol edin."
+    ],
+    [
+      "Universal ve CityWalk",
+      "Gezileri ve akşam yemeğini aynı bölgede planlayın; Epic Universe için ayrı plan yapın."
+    ],
+    [
+      "Tesiste dinlenme",
+      "Yoğun park günleri arasına havuz ve dinlenme günü ekleyin."
+    ],
+    [
+      "Mahalleleri keşfetmek",
+      "Lake Eola veya Winter Park'ı yerel restoran ve mağazalarla birleştirin."
+    ]
+  ],
+  "checks": [
+    "Servislerin gittiği parkları karşılaştırın.",
+    "Tarih ve bilete göre avantajları doğrulayın.",
+    "Vergi, tesis ve otopark ücretlerini karşılaştırın.",
+    "Yatakları ve azami kişi sayısını kontrol edin.",
+    "MCO transferini ve çocuk koltuklarını planlayın."
+  ],
+  "hotels": [
+    [
+      "Golden Oak · Walt Disney World",
+      "Park günlerini havuz, golf ve dinlenmeyle birleştiren lüks aile tesisi.",
+      "Aile odalarını, servisleri ve Disney avantajlarını doğrulayın.",
+      "Disney ve aile tatili için.",
+      "Park günlerini havuz, golf ve dinlenmeyle birleştiren lüks aile tesisi. Aile odalarını, servisleri ve Disney avantajlarını doğrulayın."
+    ],
+    [
+      "Bonnet Creek",
+      "Süitleri, golfü ve sakin dinlenme alanlarıyla zarif tesis.",
+      "Manzaraları, tesis ücretlerini ve servisleri karşılaştırın.",
+      "Disney yakınında huzurlu konaklama için.",
+      "Süitleri, golfü ve sakin dinlenme alanlarıyla zarif tesis. Manzaraları, tesis ücretlerini ve servisleri karşılaştırın."
+    ],
+    [
+      "Grande Lakes",
+      "Golf, spa ve açık alanları olan göl kenarı tesisi; bazı odalarda balkon bulunur.",
+      "Kapasiteyi, manzarayı ve park ulaşımını kontrol edin.",
+      "Göl kenarında dinlenmek için.",
+      "Golf, spa ve açık alanları olan göl kenarı tesisi; bazı odalarda balkon bulunur. Kapasiteyi, manzarayı ve park ulaşımını kontrol edin."
+    ],
+    [
+      "Universal Orlando Resort",
+      "İtalyan Portofino köyünden esinlenen, liman manzaralı aile oteli.",
+      "Park ve bilet bazında Universal avantajlarını kontrol edin.",
+      "Universal gezileri için.",
+      "İtalyan Portofino köyünden esinlenen, liman manzaralı aile oteli. Park ve bilet bazında Universal avantajlarını kontrol edin."
+    ]
+  ],
+  "faq": [
+    [
+      "Disney için Orlando'da nerede kalınır?",
+      "Lake Buena Vista, Bonnet Creek veya Disney bölgesindeki otelleri karşılaştırın."
+    ],
+    [
+      "Universal için en iyi bölge hangisi?",
+      "Universal ve kuzey International Drive; Epic Universe ulaşımını ayrıca inceleyin."
+    ],
+    [
+      "Orlando'da kaç gece kalınmalı?",
+      "Bir hafta birkaç park ve dinlenme gününe imkân verir."
+    ],
+    [
+      "Araç kiralamak gerekli mi?",
+      "Servisler yeterliyse şart değildir; uzak bölgelerde araç faydalıdır."
+    ],
+    [
+      "Aileler için hangi otel uygun?",
+      "Four Seasons, Waldorf Astoria ve Loews'u park, yatak ve tesis olanaklarına göre karşılaştırın."
+    ],
+    [
+      "Park biletleri otel fiyatına dahil mi?",
+      "Her zaman değil; rezervasyon şartlarını kontrol edin."
+    ],
+    [
+      "Fiyatlar nasıl karşılaştırılır?",
+      "Aynı tarih, kişi sayısı, oda, ücret ve iptal şartlarıyla toplam fiyatları karşılaştırın."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Orlando'da nerede kalınır? Disney, Universal ve en iyi bölgeler",
+  "hotelSeoTitle": "Orlando otelleri: Disney, Universal ve lüks tatil köyleri",
+  "seoDescription": "Tema parklarına, servislere, aile ihtiyaçlarına ve toplam maliyete göre Orlando otellerini karşılaştırın."
+}

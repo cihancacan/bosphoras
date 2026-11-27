@@ -1,0 +1,136 @@
+{
+  "name": "Orlando",
+  "country": "Stati Uniti",
+  "eyebrow": "Florida · Parchi tematici, resort e laghi",
+  "heading": "Orlando: scegli l'hotel in base ai parchi e al tuo stile di viaggio.",
+  "intro": "Tra Walt Disney World, Universal Orlando e i laghi della Florida centrale, le distanze influenzano ogni giornata. Scegli l'hotel in base ai parchi prioritari, alle esigenze della famiglia e al tempo da trascorrere nel resort.",
+  "editorial": "Lake Buena Vista e Bonnet Creek sono comodi per Disney. Universal e la parte nord di International Drive facilitano le visite a Universal Studios Florida e Islands of Adventure; verifica separatamente i collegamenti per Epic Universe. International Drive e Grande Lakes offrono varietà, Kissimmee alloggi familiari e Downtown e Winter Park attività fuori dai parchi.\n\nPer una settimana alterna visite e riposo. Dividere il soggiorno fra due hotel può ridurre gli spostamenti. Verifica orari delle navette, parchi serviti e vantaggi secondo le condizioni della prenotazione.\n\nDall'aeroporto MCO confronta auto a noleggio, navette e transfer privati. Considera parcheggi, pedaggi e seggiolini. Prevedi pause al coperto in caso di caldo e temporali. Confronta il prezzo totale, tasse, supplementi, letti e cancellazione.",
+  "hotelIntro": "Quattro stili: Four Seasons per Disney, Waldorf Astoria a Bonnet Creek, Ritz-Carlton sul lago e Loews Portofino Bay per Universal.",
+  "areas": [
+    [
+      "Walt Disney World e Lake Buena Vista",
+      "Parchi Disney, Disney Springs e resort per famiglie.",
+      "Controlla il tragitto verso ogni parco."
+    ],
+    [
+      "Universal e International Drive nord",
+      "Universal Studios Florida, Islands of Adventure e CityWalk.",
+      "Verifica Epic Universe separatamente."
+    ],
+    [
+      "International Drive e Grande Lakes",
+      "Attrazioni, ristoranti, centro congressi e resort sul lago.",
+      "Controlla distanze e parcheggi."
+    ],
+    [
+      "Bonnet Creek",
+      "Resort con piscine, golf e collegamenti stradali per Disney.",
+      "Navette e vantaggi variano secondo l'hotel."
+    ],
+    [
+      "Kissimmee e Celebration",
+      "Ville, appartamenti e soggiorni familiari lunghi.",
+      "Verifica pedaggi, pulizie e tragitti."
+    ],
+    [
+      "Downtown Orlando e Winter Park",
+      "Lake Eola, negozi, musei e ristoranti indipendenti.",
+      "Più lontani dai grandi parchi."
+    ]
+  ],
+  "experiences": [
+    [
+      "Una giornata a Disney",
+      "Scegli il parco per età e attrazioni; verifica biglietti e trasporti."
+    ],
+    [
+      "Universal e CityWalk",
+      "Combina attrazioni e cena nella stessa zona; pianifica Epic Universe a parte."
+    ],
+    [
+      "Relax al resort",
+      "Inserisci una giornata in piscina tra le visite."
+    ],
+    [
+      "Esplorare i quartieri",
+      "Abbina Lake Eola o Winter Park a negozi e ristoranti locali."
+    ]
+  ],
+  "checks": [
+    "Confronta i parchi serviti dalle navette.",
+    "Conferma i vantaggi per date e biglietti.",
+    "Confronta tasse, supplementi e parcheggi.",
+    "Verifica letti e occupazione massima.",
+    "Organizza il transfer MCO e i seggiolini."
+  ],
+  "hotels": [
+    [
+      "Golden Oak · Walt Disney World",
+      "Resort di lusso per famiglie con piscine, golf e relax tra le visite.",
+      "Conferma camere familiari, navette e vantaggi Disney.",
+      "Per Disney e le famiglie.",
+      "Resort di lusso per famiglie con piscine, golf e relax tra le visite. Conferma camere familiari, navette e vantaggi Disney."
+    ],
+    [
+      "Bonnet Creek",
+      "Resort elegante con suite, golf e spazi tranquilli vicino a Disney.",
+      "Confronta viste, supplementi e navette.",
+      "Per il relax vicino a Disney.",
+      "Resort elegante con suite, golf e spazi tranquilli vicino a Disney. Confronta viste, supplementi e navette."
+    ],
+    [
+      "Grande Lakes",
+      "Resort sul lago con golf, spa e spazi all'aperto; alcune camere hanno balconi.",
+      "Verifica occupazione, vista e collegamenti ai parchi.",
+      "Per il relax sul lago.",
+      "Resort sul lago con golf, spa e spazi all'aperto; alcune camere hanno balconi. Verifica occupazione, vista e collegamenti ai parchi."
+    ],
+    [
+      "Universal Orlando Resort",
+      "Hotel familiare ispirato a Portofino, con baia e vicinanza ai parchi storici Universal.",
+      "Verifica vantaggi e restrizioni per parco e biglietto.",
+      "Per visitare Universal.",
+      "Hotel familiare ispirato a Portofino, con baia e vicinanza ai parchi storici Universal. Verifica vantaggi e restrizioni per parco e biglietto."
+    ]
+  ],
+  "faq": [
+    [
+      "Dove dormire per visitare Disney?",
+      "Confronta Lake Buena Vista, Bonnet Creek e gli hotel della zona Disney."
+    ],
+    [
+      "Quale zona scegliere per Universal?",
+      "Universal e International Drive nord; verifica Epic Universe separatamente."
+    ],
+    [
+      "Quante notti programmare?",
+      "Una settimana permette di visitare più parchi e riposarsi."
+    ],
+    [
+      "Serve un'auto a noleggio?",
+      "Non sempre se le navette sono adeguate; utile per distanze maggiori."
+    ],
+    [
+      "Quale hotel per famiglie?",
+      "Confronta Four Seasons, Waldorf Astoria e Loews secondo parchi, letti e servizi."
+    ],
+    [
+      "I biglietti dei parchi sono inclusi?",
+      "Non necessariamente; verifica l'offerta."
+    ],
+    [
+      "Come confrontare i prezzi?",
+      "Confronta i totali a parità di date, ospiti, camere, supplementi e cancellazione."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Dove dormire a Orlando: Disney, Universal e zone migliori",
+  "hotelSeoTitle": "Hotel a Orlando: Disney, Universal e resort di lusso",
+  "seoDescription": "Confronta zone e hotel a Orlando in base ai parchi, navette, esigenze familiari e costo totale."
+}

@@ -1,0 +1,136 @@
+{
+  "name": "Orlando",
+  "country": "Vereinigte Staaten",
+  "eyebrow": "Florida · Freizeitparks, Resorts und Seen",
+  "heading": "Orlando: das passende Hotel für Ihre Parks und Ihren Reisestil.",
+  "intro": "Zwischen Walt Disney World, Universal Orlando und den Seen Zentralfloridas bestimmen Entfernungen den Tagesablauf. Wählen Sie Ihr Hotel nach den wichtigsten Parks, den Bedürfnissen Ihrer Familie und der gewünschten Zeit im Resort.",
+  "editorial": "Lake Buena Vista und Bonnet Creek eignen sich für Disney-Reisen. Universal und der nördliche International Drive erleichtern Besuche der Universal Studios Florida und Islands of Adventure; die Anreise zu Epic Universe separat prüfen. International Drive und Grande Lakes bieten Abwechslung, Kissimmee Familienunterkünfte und Downtown sowie Winter Park Ausflüge außerhalb der Parks.\n\nBei einer Woche Parkbesuche und Erholungstage abwechseln. Zwei Hotels können bei Besuchen beider Parkkomplexe Wege verkürzen. Shuttlefahrpläne, Ziele und Ticketvorteile nach Buchungsbedingungen prüfen.\n\nAb Flughafen MCO Mietwagen, Shuttle und Privattransfer vergleichen. Parkgebühren, Maut und Kindersitze berücksichtigen. Bei Hitze und Gewittern Pausen in Innenräumen einplanen. Gesamtpreis einschließlich Steuern, Resortgebühren, Betten und Stornobedingungen vergleichen.",
+  "hotelIntro": "Vier Varianten: Four Seasons für Disney, Waldorf Astoria am Bonnet Creek, Ritz-Carlton am See und Loews Portofino Bay für Universal.",
+  "areas": [
+    [
+      "Walt Disney World und Lake Buena Vista",
+      "Disney-Parks, Disney Springs und Familienresorts.",
+      "Fahrtzeit zu jedem Park prüfen."
+    ],
+    [
+      "Universal und nördlicher International Drive",
+      "Universal Studios Florida, Islands of Adventure und CityWalk.",
+      "Transport und Vorteile für Epic Universe separat prüfen."
+    ],
+    [
+      "International Drive und Grande Lakes",
+      "Attraktionen, Restaurants, Kongresszentrum und Resorts am See.",
+      "Entfernungen und Parkgebühren prüfen."
+    ],
+    [
+      "Bonnet Creek",
+      "Resorts mit Pools, Golf und Straßenanbindung zu Disney.",
+      "Shuttles und Vorteile variieren je nach Hotel."
+    ],
+    [
+      "Kissimmee und Celebration",
+      "Villen, Apartments und längere Familienaufenthalte.",
+      "Maut, Reinigung und Fahrtzeiten prüfen."
+    ],
+    [
+      "Downtown Orlando und Winter Park",
+      "Lake Eola, Einkaufsviertel, Museen und unabhängige Restaurants.",
+      "Weiter von großen Freizeitparks entfernt."
+    ]
+  ],
+  "experiences": [
+    [
+      "Ein Tag bei Disney",
+      "Park nach Alter und Attraktionen auswählen; Tickets und Transport prüfen."
+    ],
+    [
+      "Universal und CityWalk",
+      "Attraktionen und Abendessen in derselben Gegend verbinden; Epic Universe separat planen."
+    ],
+    [
+      "Erholung im Resort",
+      "Zwischen intensiven Parktagen einen Pooltag einplanen."
+    ],
+    [
+      "Viertel erkunden",
+      "Lake Eola oder Winter Park mit lokalen Geschäften und Restaurants verbinden."
+    ]
+  ],
+  "checks": [
+    "Shuttleziele vergleichen.",
+    "Vorteile für Reisedaten und Tickets bestätigen.",
+    "Steuern, Resort- und Parkgebühren vergleichen.",
+    "Betten und maximale Belegung prüfen.",
+    "MCO-Transfer und Kindersitze planen."
+  ],
+  "hotels": [
+    [
+      "Golden Oak · Walt Disney World",
+      "Luxusresort für Familien mit Pools, Golf und Entspannung zwischen Parkbesuchen.",
+      "Familienzimmer, Shuttles und Disney-Vorteile bestätigen.",
+      "Für Disney und Familien.",
+      "Luxusresort für Familien mit Pools, Golf und Entspannung zwischen Parkbesuchen. Familienzimmer, Shuttles und Disney-Vorteile bestätigen."
+    ],
+    [
+      "Bonnet Creek",
+      "Elegantes Resort mit Suiten, Golf und ruhigen Bereichen nahe Disney.",
+      "Ausblick, Resortgebühren und Shuttle vergleichen.",
+      "Für Erholung nahe Disney.",
+      "Elegantes Resort mit Suiten, Golf und ruhigen Bereichen nahe Disney. Ausblick, Resortgebühren und Shuttle vergleichen."
+    ],
+    [
+      "Grande Lakes",
+      "Resort am See mit Golf, Spa und Außenbereichen; einzelne Zimmer haben Balkone.",
+      "Belegung, Ausblick und Parkanbindung prüfen.",
+      "Für Erholung am See.",
+      "Resort am See mit Golf, Spa und Außenbereichen; einzelne Zimmer haben Balkone. Belegung, Ausblick und Parkanbindung prüfen."
+    ],
+    [
+      "Universal Orlando Resort",
+      "Familienhotel nach Vorbild des italienischen Portofino mit Hafen und Nähe zu den klassischen Universal-Parks.",
+      "Universal-Vorteile und Einschränkungen nach Park und Ticket prüfen.",
+      "Für Universal-Besuche.",
+      "Familienhotel nach Vorbild des italienischen Portofino mit Hafen und Nähe zu den klassischen Universal-Parks. Universal-Vorteile und Einschränkungen nach Park und Ticket prüfen."
+    ]
+  ],
+  "faq": [
+    [
+      "Wo übernachtet man für Disney?",
+      "Lake Buena Vista, Bonnet Creek und Hotels im Disney-Gebiet vergleichen."
+    ],
+    [
+      "Welches Viertel eignet sich für Universal?",
+      "Universal und der nördliche International Drive; Epic Universe separat prüfen."
+    ],
+    [
+      "Wie viele Nächte sollte man planen?",
+      "Eine Woche erlaubt mehrere Parks und Erholungstage."
+    ],
+    [
+      "Braucht man einen Mietwagen?",
+      "Nicht unbedingt bei passenden Shuttles; für weitere Strecken ist er hilfreich."
+    ],
+    [
+      "Welches Hotel eignet sich für Familien?",
+      "Four Seasons, Waldorf Astoria und Loews nach Parks, Betten und Angeboten vergleichen."
+    ],
+    [
+      "Sind Parktickets im Hotelpreis enthalten?",
+      "Nicht automatisch; Angebotsbedingungen prüfen."
+    ],
+    [
+      "Wie vergleicht man Preise?",
+      "Gesamtpreise für gleiche Termine, Gäste, Zimmer, Gebühren und Stornobedingungen vergleichen."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Orlando: die besten Viertel für Disney und Universal",
+  "hotelSeoTitle": "Orlando Hotels: Disney, Universal und Luxusresorts",
+  "seoDescription": "Orlandos Hotels nach Freizeitparks, Shuttles, Familienbedarf und Gesamtpreis vergleichen."
+}
