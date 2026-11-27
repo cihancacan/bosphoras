@@ -1,0 +1,168 @@
+{
+  "name": "Singapura",
+  "country": "Singapura",
+  "eyebrow": "Singapura · Panoramas urbanos, jardins e arquitetura",
+  "heading": "Onde ficar em Singapura: quatro hotéis urbanos especiais",
+  "intro": "Marina Bay Sands, Raffles, Fullerton Bay e EDITION: escolha conforme localização, ambiente e categoria exata.",
+  "editorial": "Singapura combina orla futurista, fachadas históricas, jardins tropicais e bairros comerciais conectados pelo MRT. Não escolha apenas pela piscina de cobertura: pense em arranha-céus, arquitetura histórica, hotel intimista à beira da água ou design contemporâneo perto de Orchard Road. Foto de Marina Bay não garante vista de todo quarto.\n\nMarina Bay Sands, com três torres e Sands SkyPark, é símbolo da cidade. Coleções renovadas Sands e Paiza diferem em espaço e serviço. Paiza privilegia suítes e benefícios especiais; Sands oferece quartos elegantes e opções familiares. Confirme torre, andar, orientação e acesso a serviços. Piscina famosa na cobertura não é atração pública; confira regras dos hóspedes.\n\nRaffles Singapore, fundado em 1887, oferece 115 suítes no centro cultural. Pátios sombreados, varandas, tetos altos e mordomos criam ambiente histórico. Courtyard, Palm Court e residências maiores variam em camas e planta; chá, restaurantes e Long Bar não estão automaticamente inclusos.\n\nThe Fullerton Bay Hotel Singapore é hotel intimista de 100 quartos junto à baía, 80 Collyer Quay. Não confunda com The Fullerton Hotel Singapore, antiga agência central dos correios em 1 Fullerton Square. Confirme vista integral, parcial ou sem baía e regras da piscina. The Singapore EDITION, 38 Cuscaden Road, oferece 204 quartos e suítes, cobertura, design discreto, piscina e restaurantes perto de Upper Orchard e Tanglin. Confirme capacidade e quartos conjugados.\n\nComece em Merlion e orla Fullerton, depois Esplanade, museus e Gardens by the Bay. Supertree Grove, Flower Dome e Cloud Forest têm condições distintas. Jardins Botânicos UNESCO complementam cidade moderna; Chinatown e rio revelam história comercial e comida de rua, Kampong Gelam oferece Mesquita do Sultão e Haji Lane. Evite excesso de deslocamentos num dia.\n\nChuvas tropicais o ano todo. MRT atende muitos trajetos, mas carro pode ser mais confortável com crianças e malas. Confira passaporte, declaração eletrônica de chegada, impostos e taxas. Três a cinco noites para baía, cultura, Orchard e jardins; Sentosa tem guia de praia separado. Compare na Bosphoras; preço, camas, regras familiares, vista, impostos, cancelamento e suporte confirmados pelo fornecedor autorizado.",
+  "hotelIntro": "Quatro endereços: Marina Bay Sands para panorama, Raffles para história, Fullerton Bay para orla e EDITION para design.",
+  "areas": [
+    [
+      "Marina Bay e Bayfront",
+      "Arquitetura icônica, Gardens by the Bay, museus e orla.",
+      "Vista só com categoria confirmada; ingressos dos jardins à parte."
+    ],
+    [
+      "Centro cultural e Beach Road",
+      "Raffles, museus, arquitetura histórica e caminhadas.",
+      "Suítes variam em camas, planta e varandas."
+    ],
+    [
+      "Collyer Quay e rio Singapura",
+      "Hotéis à baía, história portuária e restaurantes na orla.",
+      "Fullerton Bay e Fullerton Hotel são distintos."
+    ],
+    [
+      "Upper Orchard e Tanglin",
+      "EDITION, lojas, Jardins Botânicos e ruas verdes.",
+      "Mais longe da baía; confira distância MRT."
+    ],
+    [
+      "Chinatown e Kampong Gelam",
+      "Centros gastronômicos, casas comerciais, Mesquita do Sultão e cultura.",
+      "Passeios urbanos, não férias de praia."
+    ]
+  ],
+  "experiences": [
+    [
+      "Manhã em Marina Bay",
+      "Caminhe à beira da água entre construções históricas e arranha-céus."
+    ],
+    [
+      "Gardens by the Bay",
+      "Explore Supertree Grove e escolha estufas com ingressos separados."
+    ],
+    [
+      "Raffles e centro cultural",
+      "Conheça museus, arquitetura e jardins da Beach Road."
+    ],
+    [
+      "Orchard e Jardins Botânicos",
+      "Reserve tempo para vegetação tropical, galerias, lojas e cafés Tanglin."
+    ],
+    [
+      "Gastronomia dos bairros",
+      "Experimente pratos de Chinatown e Kampong Gelam sem pressa."
+    ]
+  ],
+  "checks": [
+    "Confira nome exato e categoria.",
+    "Diferencie Sands e Paiza; confirme acesso à piscina SkyPark.",
+    "Não confunda Fullerton Bay e Fullerton Hotel.",
+    "Confirme vista da baía, cidade, jardim ou parcial.",
+    "Confira camas, capacidade, quartos conjugados e crianças.",
+    "Considere chuvas, distância MRT e traslados.",
+    "Verifique passaporte, entrada, impostos e taxas.",
+    "Confirme pagamento, cancelamento e suporte com fornecedor."
+  ],
+  "hotels": [
+    [
+      "Marina Bay · Bayfront",
+      "Marina Bay Sands reúne três torres, Sands SkyPark e coleções Sands e Paiza.",
+      "Confirme coleção, andar, vista e piscina SkyPark.",
+      "Para panorama arquitetônico e hotel icônico.",
+      ""
+    ],
+    [
+      "Centro cultural · Beach Road",
+      "Raffles, hotel histórico de 1887, oferece 115 suítes, jardins e mordomos.",
+      "Compare categorias, camas e varandas; restaurantes e chá não inclusos automaticamente.",
+      "Para história e serviço tradicional.",
+      ""
+    ],
+    [
+      "Marina Bay · 80 Collyer Quay",
+      "Fullerton Bay é hotel intimista de 100 quartos diretamente na baía.",
+      "Não confunda com Fullerton Hotel; confirme vista do quarto.",
+      "Para descanso à beira da água.",
+      ""
+    ],
+    [
+      "Upper Orchard · Cuscaden Road",
+      "The Singapore EDITION oferece 204 quartos e suítes modernos perto de Orchard e Tanglin.",
+      "Confira quartos conjugados, capacidade e comodidades.",
+      "Para design contemporâneo e bairros verdes.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Qual hotel escolher na primeira visita?",
+      "Marina Bay Sands para panorama, Raffles para história, Fullerton Bay para orla e EDITION para design."
+    ],
+    [
+      "Qualquer visitante pode usar piscina Marina Bay Sands?",
+      "Não, piscina difere do mirante público SkyPark; confira regras dos hóspedes."
+    ],
+    [
+      "Fullerton Bay e Fullerton Hotel são o mesmo?",
+      "Não. Fullerton Bay de 100 quartos fica em 80 Collyer Quay, Fullerton Hotel nos antigos correios em 1 Fullerton Square."
+    ],
+    [
+      "Raffles só tem suítes?",
+      "Sim, hotel informa 115 suítes incluindo Courtyard e Palm Court; plantas variam."
+    ],
+    [
+      "Qual bairro facilita passeios?",
+      "Marina Bay e centro cultural para arquitetura e museus, Orchard e Tanglin para lojas e jardins."
+    ],
+    [
+      "EDITION é adequado para famílias?",
+      "204 quartos e suítes; confirme conjugados, camas extras e capacidade."
+    ],
+    [
+      "Quantas noites antes de Sentosa?",
+      "Três a cinco para cidade; Sentosa exige plano separado de praia e transporte."
+    ],
+    [
+      "Bosphoras garante preços e disponibilidade?",
+      "Fornecedor autorizado confirma valor final, impostos, cancelamento, regras familiares e suporte."
+    ]
+  ],
+  "photoCaptions": [
+    "Marina Bay do alto",
+    "Panorama Singapura e orla",
+    "Cloud Forest em Gardens by the Bay",
+    "Merlion Park e centro cultural do alto",
+    "Jardins Botânicos de Singapura",
+    "Arquitetura histórica Kampong Gelam",
+    "Casas comerciais tradicionais Chinatown",
+    "Vegetação tropical Jardins Botânicos",
+    "Supertrees e estufas de vidro Gardens by the Bay"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Sala de suíte renovada Marina Bay Sands",
+      "Arquitetura e terraços Marina Bay Sands do alto",
+      "Banheiro renovado com duas cubas e pedra clara"
+    ],
+    [
+      "Histórico Raffles Singapore e varandas",
+      "Piscina de cobertura Raffles",
+      "Fonte do pátio e galeria histórica Raffles"
+    ],
+    [
+      "Fachada Fullerton Bay vista da água",
+      "Quarto Fullerton Bay View Corner",
+      "Quarto Fullerton Bay com vista da orla"
+    ],
+    [
+      "Fachada moderna The Singapore EDITION",
+      "Lobby luminoso The Singapore EDITION",
+      "Piscina de cobertura EDITION com espreguiçadeiras"
+    ]
+  ],
+  "seoTitle": "Onde ficar em Singapura: hotéis de luxo, Marina Bay e bairros",
+  "hotelSeoTitle": "Hotéis de Singapura: Marina Bay Sands, Raffles, Fullerton Bay e EDITION",
+  "seoDescription": "Compare quatro hotéis de luxo em Singapura: Marina Bay, suítes históricas, Orchard, piscinas e opções para famílias."
+}
