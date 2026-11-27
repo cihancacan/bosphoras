@@ -118,12 +118,38 @@
       "Su Bosphoras confronta categorie, viste, letti, contributo di soggiorno e condizioni per le stesse date."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Il Colosseo",
+    "Il Pantheon e la sua piazza",
+    "Dettaglio della Fontana di Trevi",
+    "Piazza Navona dall'alto",
+    "Lago di Villa Borghese",
+    "Panorama di Roma e del Colosseo",
+    "Scalinata di Trinità dei Monti",
+    "Architettura storica di Trastevere",
+    "Piazza San Pietro dall'alto"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Ingresso del Bvlgari e statua di Augusto",
+      "Camera del Bvlgari Hotel Roma",
+      "Piscina coperta della spa Bvlgari"
+    ],
+    [
+      "Facciata dell'Hotel de Russie",
+      "Terrazza della suite Nijinsky",
+      "Sala trattamenti della spa Irene Forte"
+    ],
+    [
+      "Facciata dell'Hassler Roma",
+      "Camera dell'Hassler Roma",
+      "Terrazza dell'Hassler con vista su Roma"
+    ],
+    [
+      "Facciata dell'Hotel Eden",
+      "Salotto della suite Bellavista Penthouse",
+      "Salone La Libreria"
+    ]
   ],
   "seoTitle": "Dove dormire a Roma: migliori quartieri e hotel di lusso",
   "hotelSeoTitle": "Hotel di lusso a Roma: Bvlgari, de Russie, Hassler ed Eden",

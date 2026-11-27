@@ -118,12 +118,38 @@
       "Bosphoras'ta aynı tarihler için oda kategorilerini, manzaraları, yatakları, konaklama vergisini ve koşulları karşılaştırın."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Kolezyum",
+    "Pantheon ve meydanı",
+    "Trevi Çeşmesi'nden detay",
+    "Piazza Navona'nın yukarıdan görünümü",
+    "Villa Borghese gölü",
+    "Roma ve Kolezyum panoraması",
+    "İspanyol Merdivenleri",
+    "Trastevere'nin tarihi mimarisi",
+    "Aziz Petrus Meydanı'nın yukarıdan görünümü"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Bvlgari girişi ve Augustus heykeli",
+      "Bvlgari Hotel Roma yatak odası",
+      "Bvlgari spa kapalı havuzu"
+    ],
+    [
+      "Hotel de Russie dış cephesi",
+      "Nijinsky Suite terası",
+      "Irene Forte Spa bakım odası"
+    ],
+    [
+      "Hassler Roma dış cephesi",
+      "Hassler Roma yatak odası",
+      "Hassler'in Roma manzaralı terası"
+    ],
+    [
+      "Hotel Eden dış cephesi",
+      "Bellavista Penthouse süit salonu",
+      "La Libreria salonu"
+    ]
   ],
   "seoTitle": "Roma'da Nerede Kalınır? En İyi Semtler ve Lüks Oteller",
   "hotelSeoTitle": "Roma Lüks Otelleri: Bvlgari, de Russie, Hassler ve Eden",

@@ -1,3 +1,11 @@
+import romePreviewTR from './localized/rome-tr.json';
+import romePreviewDE from './localized/rome-de.json';
+import romePreviewES from './localized/rome-es.json';
+import romePreviewIT from './localized/rome-it.json';
+import romePreviewPT from './localized/rome-pt.json';
+import romePreviewZH from './localized/rome-zh.json';
+import romePreviewRU from './localized/rome-ru.json';
+import romePreviewAR from './localized/rome-ar.json';
 import lasVegasPreviewTR from './localized/las-vegas-tr.json';
 import lasVegasPreviewDE from './localized/las-vegas-de.json';
 import lasVegasPreviewES from './localized/las-vegas-es.json';
@@ -649,6 +657,7 @@ const drafts:Record<LegacyEditorialLocale,Record<string,LocalizedGuide>>={ru:ruD
 const localized:Record<string,Partial<Record<LegacyEditorialLocale,LocalizedGuide>>>={'desaru-coast':desaru,istanbul,paris,bodrum,antalya,dubai,'saint-tropez':saintTropez,bali,phuket,'new-york':newYork,miami,'los-angeles':losAngeles,'courchevel-1850':courchevel,megeve,'val-disere':valDisere,verbier,gstaad,zermatt,'saint-barthelemy':saintBarthelemy,'porto-cervo':portoCervo,mustique,monaco,'saint-jean-cap-ferrat':capFerrat,'cap-dantibes':capDAntibes,'lake-como':lakeComo,capri,positano,ravello,mykonos,antiparos,ibiza,formentera,deia,'port-andratx':portAndratx,comporta,melides,tivat,'st-moritz':stMoritz,aspen,'jackson-hole':jacksonHole,'big-sky':bigSky,'the-hamptons':theHamptons,'palm-beach':palmBeach,nantucket,'harbour-island':harbourIsland,'turks-and-caicos':turksAndCaicos,'canouan':canouan,'necker-island':neckerIsland,'north-island-seychelles':northIslandSeychelles,'pamalican-island':pamalicanIsland,'laucala-island':laucalaIsland,'jumby-bay':jumbyBay,'okavango-delta':okavangoDelta,'punta-mita':puntaMita,'costa-careyes':costaCareyes,'mayakoba':mayakoba,'san-miguel-de-allende':sanMiguelDeAllende,'koh-samui':kohSamui,'krabi':krabi,'koh-yao-noi':kohYaoNoi,'bangkok':bangkok,'chiang-mai':chiangMai,'sumba':sumba,'palawan':palawan,'tokyo':tokyo,'kyoto':kyoto,'hakone':hakone,'vinh-hy-bay':vinhHyBay,'da-nang':daNang,'jaipur':jaipur,'galle':galle,'tangalle':tangalle,'paro':paro,'punakha':punakha,'gangtey':gangtey,'siem-reap':siemReap,'koh-rong':kohRong,'luang-prabang':luangPrabang,'langkawi':langkawi,'rajasthan':rajasthan,'udaipur':udaipur,'sentosa':sentosa,'singapore':singapore,'phu-quoc':phuQuoc,'hoi-an':hoiAn,'maldives':maldives,'los-cabos':losCabos,'niseko':niseko};
 export function getLocalizedGuide(slug:string|undefined,locale:string):LocalizedGuide|undefined{
  if(!slug||!isEditorialLocale(locale))return undefined;
+ if(slug==='rome')return {tr:romePreviewTR,de:romePreviewDE,es:romePreviewES,it:romePreviewIT,pt:romePreviewPT,zh:romePreviewZH,ru:romePreviewRU,ar:romePreviewAR}[locale];
  if(slug==='london')return {tr:londonPreviewTR,de:londonPreviewDE,es:londonPreviewES,it:londonPreviewIT,pt:londonPreviewPT,zh:londonPreviewZH,ru:londonPreviewRU,ar:londonPreviewAR}[locale];
  if(slug==='las-vegas')return {tr:lasVegasPreviewTR,de:lasVegasPreviewDE,es:lasVegasPreviewES,it:lasVegasPreviewIT,pt:lasVegasPreviewPT,zh:lasVegasPreviewZH,ru:lasVegasPreviewRU,ar:lasVegasPreviewAR}[locale];
  if(locale==='tr')return reviewedTurkish[slug];
