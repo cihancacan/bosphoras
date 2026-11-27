@@ -1,0 +1,162 @@
+{
+  "name": "Port d’Andratx",
+  "country": "España",
+  "eyebrow": "Mallorca · Puerto natural",
+  "heading": "Dónde alojarse en Port d’Andratx: puerto, calas y cuatro hoteles especiales",
+  "intro": "El antiguo puerto pesquero se ha convertido en una marina elegante donde las barcas tradicionales conviven con yates, restaurantes y villas sobre acantilados. En el vecino Camp de Mar esperan una playa de arena y hoteles resort.",
+  "editorial": "Port d’Andratx es ante todo un puerto natural, no un destino de playa de arena. Pasea desde la lonja La Llotja hasta el club náutico. Para disfrutar de arena con niños, considera Camp de Mar o Sant Elm. Cala Llamp y Cala d’Egos son calas rocosas con escalones y caminos irregulares en algunos accesos.\n\nMon Port ofrece tranquilidad, piscina y spa cerca del puerto; el aparthotel de cuatro estrellas La Pérgola está a unos 700 metros. El cinco estrellas Zafiro Palace y THE CAMP DE MAR están en el vecino Camp de Mar, junto a Golf de Andratx. Las piscinas privadas de Zafiro corresponden solo a ciertas categorías. Para visitar el parque natural de Sa Dragonera, llega a Sant Elm y utiliza una embarcación autorizada. Comprueba temporada, tiempo, accesibilidad y servicios; el proveedor autorizado confirma precios y disponibilidad.",
+  "hotelIntro": "Dos hoteles en la zona portuaria y dos resorts en Camp de Mar: la ubicación exacta importa más que una foto de la bahía.",
+  "areas": [
+    [
+      "Muelles pesqueros y paseo marítimo",
+      "Barcas, mercado y restaurantes junto al agua animan los paseos nocturnos.",
+      "El puerto no es playa de arena; las fotos de yates no garantizan disponibilidad de alquiler."
+    ],
+    [
+      "Club náutico y Cala d’Egos",
+      "Colinas de pinos, veleros y calas rocosas apartadas.",
+      "Comprueba bajadas, piedras y acceso seguro al agua."
+    ],
+    [
+      "Cala Llamp y costa rocosa",
+      "Mar transparente junto a plataformas de piedra y acantilados.",
+      "Hay escaleras en algunos tramos; considera oleaje."
+    ],
+    [
+      "Camp de Mar y bahía de arena",
+      "Playa de arena, golf y dos resorts de la selección.",
+      "Es otro núcleo; los restaurantes del puerto requieren transporte."
+    ],
+    [
+      "Sant Elm y Sa Dragonera",
+      "Parque natural insular frente a Sant Elm, accesible en barcos autorizados.",
+      "Comprueba horarios del parque, salidas y tiempo."
+    ]
+  ],
+  "experiences": [
+    [
+      "Almuerzo junto a los muelles",
+      "Elige restaurante cerca de La Llotja y observa la vida portuaria."
+    ],
+    [
+      "Paseo al club náutico",
+      "Recorre la orilla con la luz suave del atardecer."
+    ],
+    [
+      "Cala Llamp con calzado adecuado",
+      "Admira rocas y agua transparente según tiempo y accesibilidad."
+    ],
+    [
+      "Día de arena en Camp de Mar",
+      "Descansa en la bahía y vuelve al puerto para cenar."
+    ],
+    [
+      "Sa Dragonera desde Sant Elm",
+      "Elige salida autorizada, lleva agua y considera posibles cancelaciones."
+    ]
+  ],
+  "checks": [
+    "Port d’Andratx es un puerto con calas rocosas, no una gran playa de arena.",
+    "Mon Port y La Pérgola están en el puerto; Zafiro y THE CAMP DE MAR, en Camp de Mar.",
+    "Confirma categoría, vistas, cocina, capacidad y normas infantiles.",
+    "Las minipiscinas privadas no tienen socorrista; requieren supervisión adulta.",
+    "Sa Dragonera exige traslado a Sant Elm y embarcación autorizada.",
+    "Yates, traslados, restaurantes, tratamientos y paquetes de comidas se confirman aparte."
+  ],
+  "hotels": [
+    [
+      "Port d’Andratx · Cala d’Egos",
+      "Mon Port combina arquitectura mallorquina, patios, piscina ajardinada y spa. El catálogo incluye habitaciones dobles, familiares y triples, Junior Suites y suites. El hotel indica acceso al spa para huéspedes; tratamientos, horarios y restricciones infantiles se confirman aparte. No está en una playa de arena.",
+      "Confirma categoría, vistas, camas y reglas del spa.",
+      "Para descanso tranquilo cerca del puerto.",
+      ""
+    ],
+    [
+      "Port d’Andratx · Avinguda s’Almudaina",
+      "La Pérgola, de cuatro estrellas, ofrece estudios y apartamentos, piscinas y servicios familiares. Según el hotel, el puerto queda a unos 700 metros. Es una base práctica, no un hotel palaciego en primera línea. Cocina, balcón, capacidad y spa dependen de categoría.",
+      "Confirma cocina, camas, balcón, capacidad y servicios.",
+      "Para viajes independientes y familiares.",
+      ""
+    ],
+    [
+      "Camp de Mar · Golf de Andratx",
+      "Zafiro Palace Andratx, cinco estrellas, ofrece suites amplias, varias piscinas y restaurantes y All Inclusive Redefined bajo condiciones concretas. Las minipiscinas privadas corresponden a ciertas Junior Suites y Penthouse Suites; otras pueden tener hidromasaje. Vista lateral al mar puede llevar suplemento. Club infantil estacional; piscinas privadas sin socorrista. El traslado de aeropuerto de reserva directa no es automáticamente servicio de Bosphoras.",
+      "Confirma categoría, condiciones del paquete, club infantil y seguridad de piscina.",
+      "Para una estancia completa en resort.",
+      ""
+    ],
+    [
+      "Camp de Mar · Playa y golf",
+      "THE CAMP DE MAR combina habitaciones luminosas con balcón o terraza, jardines, piscinas, cocina mediterránea y spa. Está junto a bahía de arena y golf, no en el paseo del puerto. La información familiar publicada indica piscina cubierta climatizada para familias de 10:00 a 18:00. No dispone de tumbonas propias en la playa. Confirma temporada y condiciones vigentes.",
+      "Confirma categoría, vistas, normas infantiles, temporada y transporte.",
+      "Para playa, golf y días tranquilos.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Hay playa de arena para niños en el puerto?",
+      "El puerto está rodeado de pequeñas calas rocosas. Para arena considera Camp de Mar o Sant Elm según el mar."
+    ],
+    [
+      "¿Qué hoteles están en el puerto?",
+      "Mon Port y La Pérgola; Zafiro Palace y THE CAMP DE MAR están en Camp de Mar."
+    ],
+    [
+      "¿Todas las suites Zafiro tienen piscina?",
+      "No, las minipiscinas privadas pertenecen a ciertas categorías y no tienen socorrista."
+    ],
+    [
+      "¿Está incluido el spa de Mon Port?",
+      "El hotel anuncia acceso para huéspedes; tratamientos, horarios y condiciones infantiles deben confirmarse."
+    ],
+    [
+      "¿La Pérgola es un hotel palaciego?",
+      "No, es aparthotel de cuatro estrellas a unos 700 metros del puerto."
+    ],
+    [
+      "¿Cómo visitar Sa Dragonera?",
+      "Desplázate a Sant Elm y utiliza embarcación autorizada; comprueba horarios del parque y mar."
+    ],
+    [
+      "¿Cómo reservar hotel, yate o traslado?",
+      "Compara alojamientos en Bosphoras; el proveedor autorizado confirma precios, disponibilidad y condiciones."
+    ]
+  ],
+  "photoCaptions": [
+    "Yates en el puerto protegido de Port d’Andratx",
+    "Panorámica del puerto natural",
+    "Barcas en los muelles",
+    "Cala d’Egos apartada",
+    "Costa rocosa de Cala Llamp",
+    "Playa de arena de Camp de Mar",
+    "Isla protegida Sa Dragonera",
+    "Sant Elm e islote Pantaleu",
+    "Pinos y rocas de Cala d’Egos"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Jardines y arquitectura Mon Port",
+      "Spa Mon Port",
+      "Interior Mon Port"
+    ],
+    [
+      "La Pérgola cerca del puerto",
+      "Piscina y jardines de La Pérgola",
+      "Apartamentos La Pérgola"
+    ],
+    [
+      "Owner Suite, categoría independiente",
+      "Ático con minipiscina",
+      "Suite con piscina Zafiro"
+    ],
+    [
+      "Habitación luminosa THE CAMP DE MAR",
+      "Restaurante mediterráneo",
+      "Bahía de Camp de Mar"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Port d’Andratx: hoteles y playas de Mallorca",
+  "hotelSeoTitle": "Hoteles de Port d’Andratx y Camp de Mar: Mon Port, La Pérgola y resorts",
+  "seoDescription": "Compara cuatro hoteles, el puerto de Andratx y la playa de Camp de Mar. Descubre opciones para familias, golf, spa y transporte."
+}
