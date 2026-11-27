@@ -376,37 +376,6 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "savoy-2",
-        "sourcePage": "https://www.thesavoylondon.com/rooms",
-        "sourceResolvedUrl": "https://cdn.prod.website-files.com/68f4d1c2a6858f0bfbded044/6aabcee98350978f411a81fe_Will-Pryce-The-Savoy-Aug-26-28883-FL%20copy-WEB.jpg",
-        "sourceRequestedUrl": "https://cdn.prod.website-files.com/68f4d1c2a6858f0bfbded044/6aabcee98350978f411a81fe_Will-Pryce-The-Savoy-Aug-26-28883-FL%20copy-WEB.jpg",
-        "originalAlt": "Luxury King Garden View Room ",
-        "originalCaption": "",
-        "credit": "The Savoy",
-        "publisher": "The Savoy",
-        "hotel": "The Savoy",
-        "localPath": "/images/travel/london-premium/savoy/savoy-2.webp",
-        "sourceSHA256": "2319c6abaf92f38515b16e8dcaf961819c3503caa1581f09fd21c6c2eaa8b2ad",
-        "webpSHA256": "a0a5ccd0b34a7b856eb0b6955b5f2aaf609ea3b7493843e99eee57bb7311fdae",
-        "sourcePixels": [
-          3000,
-          2239
-        ],
-        "webpPixels": [
-          1139,
-          850
-        ],
-        "webpBytes": 97356,
-        "pixelFingerprint": "acf0c0c8e8cce8ec",
-        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
-        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
         "key": "savoy-3",
         "sourcePage": "https://all.accor.com/hotel/A597/index.en.shtml",
         "sourceResolvedUrl": "https://www.ahstatic.com/photos/a597_br_00_p_2048x1536.jpg",
@@ -430,6 +399,37 @@
         "webpBytes": 173580,
         "pixelFingerprint": "793694b2f16168c8",
         "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "savoy-4",
+        "sourcePage": "https://press.thesavoylondon.com/section/images/",
+        "sourceResolvedUrl": "https://press.thesavoylondon.com/wp-content/uploads/2024/01/6c775978056e2da34af18c11bbe63828-2000x1500.jpg.webp",
+        "sourceRequestedUrl": "https://press.thesavoylondon.com/wp-content/uploads/2024/01/6c775978056e2da34af18c11bbe63828-2000x1500.jpg.webp",
+        "originalAlt": "ASSETS-The_Savoy_Pool_1_Jack_Hardy_2023-jpg",
+        "originalCaption": "",
+        "credit": "The Savoy",
+        "publisher": "The Savoy",
+        "hotel": "The Savoy",
+        "localPath": "/images/travel/london-premium/savoy/savoy-4.webp",
+        "sourceSHA256": "6c0e7f8fc98de9d315ec20080667403b986a3ebcbecbbf1cc14cf8dfff14663f",
+        "webpSHA256": "d3b9f7364244b754720ab811f4add99581b620e0b7a6c9349c7aa7a9d0bdb0cf",
+        "sourcePixels": [
+          2000,
+          1500
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 94998,
+        "pixelFingerprint": "6123d2b4cc3cf2ab",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -562,18 +562,18 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
-        "key": "shangri-la-2",
-        "sourcePage": "https://www.the-shard.com/shangri-la-the-shard-london/",
-        "sourceResolvedUrl": "https://www.the-shard.com/media/pbddoc5a/shangri-la-the-shard-london-love-skypool-landscape.jpg?height=731&heightratio=0.6756007393715342&quality=95&rmode=crop&rxy=0%2C0&width=1082",
-        "sourceRequestedUrl": "https://www.the-shard.com/media/pbddoc5a/shangri-la-the-shard-london-love-skypool-landscape.jpg?height=731&heightratio=0.6756007393715342&quality=95&rmode=crop&rxy=0%2C0&width=1082",
-        "originalAlt": "",
+        "key": "shangri-la-4",
+        "sourcePage": "https://www.the-shard.com/shangri-la-the-shard-london/hotel-amenities",
+        "sourceResolvedUrl": "https://www.the-shard.com/media/nqmmxahd/spa_residence_-_shangri-la_hotel__at_the_shard__london.jpg?height=731&heightratio=0.6756007393715342&quality=95&rmode=crop&rxy=0.5%2C0.5&width=1082",
+        "sourceRequestedUrl": "https://www.the-shard.com/media/nqmmxahd/spa_residence_-_shangri-la_hotel__at_the_shard__london.jpg?height=731&heightratio=0.6756007393715342&quality=95&rmode=crop&rxy=0.5%2C0.5&width=1082",
+        "originalAlt": "Spa Residence - Shangri La Hotel",
         "originalCaption": "",
         "credit": "Shangri-La The Shard, London",
         "publisher": "Shangri-La The Shard, London",
         "hotel": "Shangri-La The Shard, London",
-        "localPath": "/images/travel/london-premium/shangri-la/shangri-la-2.webp",
-        "sourceSHA256": "5956045eebd78e1bb674357906bd467704e671a78d568d8d3891064cfe82975a",
-        "webpSHA256": "8be4a08f52bf11c0714676d48b239b1971dd95e3a8608e39372e9265c2c2a322",
+        "localPath": "/images/travel/london-premium/shangri-la/shangri-la-4.webp",
+        "sourceSHA256": "07715e9520dbdecb36c6e9cea8994f589a312aa5bb1795c08a8084a248935d6e",
+        "webpSHA256": "938e83f7b021818d8d7f674231268aef2344a2907b693cbae43e7376934d1dd1",
         "sourcePixels": [
           1082,
           731
@@ -582,40 +582,9 @@
           1082,
           731
         ],
-        "webpBytes": 42298,
-        "pixelFingerprint": "852783812123a324",
+        "webpBytes": 55386,
+        "pixelFingerprint": "7a6bcdada595f0f8",
         "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
-        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
-        "ownerPermissionDeclared": true,
-        "commercialRightsCleared": false,
-        "visuallyVerified": false,
-        "previewVisualApproved": false,
-        "status": "candidate_pending_visual_review_and_credit"
-      },
-      {
-        "key": "shangri-la-3",
-        "sourcePage": "https://www.the-shard.com/about/",
-        "sourceResolvedUrl": "https://www.the-shard.com/media/32sagomk/theshardexterior_hollywren_jan2020-31.jpg?mode=crop&upscale=true&width=1200&height=630",
-        "sourceRequestedUrl": "https://www.the-shard.com/media/32sagomk/theshardexterior_hollywren_jan2020-31.jpg?mode=crop&upscale=true&width=1200&height=630",
-        "originalAlt": "",
-        "originalCaption": "",
-        "credit": "Shangri-La The Shard, London",
-        "publisher": "Shangri-La The Shard, London",
-        "hotel": "Shangri-La The Shard, London",
-        "localPath": "/images/travel/london-premium/shangri-la/shangri-la-3.webp",
-        "sourceSHA256": "5f4f0eb6ef16c5b07e27b81210232c86fca307160142bfb5377dd359d9c1d6b2",
-        "webpSHA256": "45db100fd0e10726ac1d3b72832846784c6cb80f5d7cc8a60f408ecd5c2d37d8",
-        "sourcePixels": [
-          1200,
-          630
-        ],
-        "webpPixels": [
-          1200,
-          630
-        ],
-        "webpBytes": 92744,
-        "pixelFingerprint": "2600c8cd8c9c8462",
-        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -629,6 +598,11 @@
         "group": "city",
         "expected": 9,
         "found": 8
+      },
+      {
+        "group": "shangri-la",
+        "expected": 3,
+        "found": 2
       }
     ],
     "errors": [
@@ -715,6 +689,34 @@
       {
         "page": "https://www.visitlondon.com/things-to-do/london-areas/kensington-and-south-kensington/things-to-do-south-kensington",
         "error": "403 Client Error: Forbidden for url: https://www.visitlondon.com/things-to-do/london-areas/kensington-and-south-kensington/things-to-do-south-kensington"
+      },
+      {
+        "page": "https://www.thesavoylondon.com/rooms-and-suites/",
+        "error": "404 Client Error: Not Found for url: https://www.thesavoylondon.com/rooms-and-suites"
+      },
+      {
+        "page": "https://www.shangri-la.com/london/shangrila/photos-videos/",
+        "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/london/shangrila/photos-videos/"
+      },
+      {
+        "page": "https://www.shangri-la.com/en/london/shangrila/",
+        "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/en/london/shangrila/"
+      },
+      {
+        "page": "https://www.shangri-la.com/en/london/shangrila/rooms-suites/",
+        "error": "403 Client Error: Forbidden for url: https://www.shangri-la.com/en/london/shangrila/rooms-suites/"
+      },
+      {
+        "page": "https://www.expedia.com/London-Hotels-Shangri-La-The-Shard.h8035714.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/London-Hotels-Shangri-La-The-Shard.h8035714.Hotel-Information"
+      },
+      {
+        "page": "https://www.booking.com/hotel/gb/shangri-la-at-the-shard-london.html",
+        "error": "exact property identity not confirmed on page"
+      },
+      {
+        "page": "https://www.hotels.com/ho456469/shangri-la-the-shard-london-london-united-kingdom/",
+        "error": "429 Client Error: Too Many Requests for url: https://www.hotels.com/ho456469/shangri-la-the-shard-london-london-united-kingdom/"
       }
     ],
     "publicUseApproved": false,
@@ -843,11 +845,104 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "savoy-2",
+        "sourcePage": "https://www.thesavoylondon.com/rooms",
+        "sourceResolvedUrl": "https://cdn.prod.website-files.com/68f4d1c2a6858f0bfbded044/6aabcee98350978f411a81fe_Will-Pryce-The-Savoy-Aug-26-28883-FL%20copy-WEB.jpg",
+        "sourceRequestedUrl": "https://cdn.prod.website-files.com/68f4d1c2a6858f0bfbded044/6aabcee98350978f411a81fe_Will-Pryce-The-Savoy-Aug-26-28883-FL%20copy-WEB.jpg",
+        "originalAlt": "Luxury King Garden View Room ",
+        "originalCaption": "",
+        "credit": "The Savoy",
+        "publisher": "The Savoy",
+        "hotel": "The Savoy",
+        "localPath": "/images/travel/london-premium/savoy/savoy-2.webp",
+        "sourceSHA256": "2319c6abaf92f38515b16e8dcaf961819c3503caa1581f09fd21c6c2eaa8b2ad",
+        "webpSHA256": "a0a5ccd0b34a7b856eb0b6955b5f2aaf609ea3b7493843e99eee57bb7311fdae",
+        "sourcePixels": [
+          3000,
+          2239
+        ],
+        "webpPixels": [
+          1139,
+          850
+        ],
+        "webpBytes": 97356,
+        "pixelFingerprint": "acf0c0c8e8cce8ec",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "shangri-la-2",
+        "sourcePage": "https://www.the-shard.com/shangri-la-the-shard-london/",
+        "sourceResolvedUrl": "https://www.the-shard.com/media/pbddoc5a/shangri-la-the-shard-london-love-skypool-landscape.jpg?height=731&heightratio=0.6756007393715342&quality=95&rmode=crop&rxy=0%2C0&width=1082",
+        "sourceRequestedUrl": "https://www.the-shard.com/media/pbddoc5a/shangri-la-the-shard-london-love-skypool-landscape.jpg?height=731&heightratio=0.6756007393715342&quality=95&rmode=crop&rxy=0%2C0&width=1082",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Shangri-La The Shard, London",
+        "publisher": "Shangri-La The Shard, London",
+        "hotel": "Shangri-La The Shard, London",
+        "localPath": "/images/travel/london-premium/shangri-la/shangri-la-2.webp",
+        "sourceSHA256": "5956045eebd78e1bb674357906bd467704e671a78d568d8d3891064cfe82975a",
+        "webpSHA256": "8be4a08f52bf11c0714676d48b239b1971dd95e3a8608e39372e9265c2c2a322",
+        "sourcePixels": [
+          1082,
+          731
+        ],
+        "webpPixels": [
+          1082,
+          731
+        ],
+        "webpBytes": 42298,
+        "pixelFingerprint": "852783812123a324",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission, source publisher retained; individual licence not independently inspected",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "shangri-la-3",
+        "sourcePage": "https://www.the-shard.com/about/",
+        "sourceResolvedUrl": "https://www.the-shard.com/media/32sagomk/theshardexterior_hollywren_jan2020-31.jpg?mode=crop&upscale=true&width=1200&height=630",
+        "sourceRequestedUrl": "https://www.the-shard.com/media/32sagomk/theshardexterior_hollywren_jan2020-31.jpg?mode=crop&upscale=true&width=1200&height=630",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Shangri-La The Shard, London",
+        "publisher": "Shangri-La The Shard, London",
+        "hotel": "Shangri-La The Shard, London",
+        "localPath": "/images/travel/london-premium/shangri-la/shangri-la-3.webp",
+        "sourceSHA256": "5f4f0eb6ef16c5b07e27b81210232c86fca307160142bfb5377dd359d9c1d6b2",
+        "webpSHA256": "45db100fd0e10726ac1d3b72832846784c6cb80f5d7cc8a60f408ecd5c2d37d8",
+        "sourcePixels": [
+          1200,
+          630
+        ],
+        "webpPixels": [
+          1200,
+          630
+        ],
+        "webpBytes": 92744,
+        "pixelFingerprint": "2600c8cd8c9c8462",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "cityCount": 8,
-    "hotelCount": 12,
-    "totalBytes": 2600854
+    "hotelCount": 11,
+    "totalBytes": 2518840
   },
   "las-vegas": {
     "destinationScenes": [
