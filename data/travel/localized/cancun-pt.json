@@ -1,0 +1,131 @@
+{
+  "name": "Cancún",
+  "country": "México",
+  "eyebrow": "Quintana Roo · Caraíbas mexicanas",
+  "heading": "Cancún: escolha a praia e a modalidade do seu resort.",
+  "intro": "Entre a lagoa Nichupté e o mar das Caraíbas, Cancún oferece resorts à beira-mar, estadias com tudo incluído e retiros mais intimistas. A orientação da praia, as condições de banho e os serviços incluídos são tão importantes como a categoria do quarto.",
+  "editorial": "A Zona Hotelera concentra grandes resorts numa faixa entre o mar e a lagoa. Punta Cancún facilita o acesso a restaurantes e atividades no norte; Punta Nizuc é mais recatada. O centro oferece vida local e diferentes orçamentos, mas não o mesmo acesso imediato à praia. Playa Mujeres fica a norte e Isla Mujeres exige uma travessia: não fazem parte da Zona Hotelera.\n\nUma semana permite desfrutar de vários dias de praia e uma ou duas excursões a Isla Mujeres, cenotes ou sítios arqueológicos. O sargaço, as ondas e as correntes variam conforme a praia e a estação. Respeite as bandeiras locais e não entre na água em condições perigosas. A época de furacões no Atlântico decorre geralmente de junho a novembro; considere condições flexíveis.\n\nAs modalidades com tudo incluído não são iguais: confirme suplementos de restaurantes, spa, atividades, bebidas, transfers e clubes infantis. Le Blanc é exclusivo para adultos, tal como algumas categorias NIZUC; Hyatt Ziva e Grand Fiesta Americana recebem famílias. Compare o total com as idades reais das crianças, impostos aplicáveis, transfer de CUN e vista do quarto.",
+  "hotelIntro": "Quatro estilos: intimidade no NIZUC, Le Blanc para adultos e férias familiares com tudo incluído no Hyatt Ziva e Grand Fiesta Americana.",
+  "areas": [
+    [
+      "Zona Hotelera · zona central",
+      "Grandes resorts entre o mar e a lagoa com diferentes orientações.",
+      "O banho depende das condições e bandeiras."
+    ],
+    [
+      "Punta Cancún",
+      "Extremo norte com resorts, restaurantes e atividades.",
+      "Confirme a orientação da praia e o ruído do quarto."
+    ],
+    [
+      "Punta Nizuc",
+      "Extremo sul mais tranquilo para descansar.",
+      "Planeie o transporte para atividades distantes."
+    ],
+    [
+      "Centro de Cancún",
+      "Restaurantes locais, comércio e preços variados.",
+      "Preveja deslocações até à praia."
+    ],
+    [
+      "Playa Mujeres e Isla Mujeres",
+      "Alternativas a norte e ao largo da cidade.",
+      "Isla Mujeres exige ferry; Playa Mujeres não é a Zona Hotelera."
+    ]
+  ],
+  "experiences": [
+    [
+      "Um dia de praia",
+      "Escolha a praia segundo as bandeiras e as condições do dia."
+    ],
+    [
+      "Isla Mujeres",
+      "Organize a travessia e o regresso conforme a meteorologia."
+    ],
+    [
+      "Cenotes e património maia",
+      "Planeie uma excursão com transporte e condições de acesso adequados."
+    ],
+    [
+      "Bem-estar no resort",
+      "Compare tratamentos, atividades incluídas e suplementos."
+    ]
+  ],
+  "checks": [
+    "Compare tudo incluído, apenas alojamento e pequeno-almoço.",
+    "Confirme idades admitidas e camas para crianças.",
+    "Verifique o total e impostos aplicáveis.",
+    "Planeie o transfer de CUN e as excursões.",
+    "Respeite os avisos marítimos e considere condições flexíveis na época de furacões."
+  ],
+  "hotels": [
+    [
+      "Punta Nizuc · sul",
+      "Retiro à beira-mar com suites e villas privadas. Algumas Ocean Suites são exclusivas para adultos; a regra não se aplica automaticamente ao resort inteiro.",
+      "Confirme idades, tipo de piscina e regime de refeições.",
+      "Para privacidade e descanso.",
+      "Retiro à beira-mar com suites e villas privadas. Algumas Ocean Suites são exclusivas para adultos; a regra não se aplica automaticamente ao resort inteiro.\n\nConfirme idades, tipo de piscina e regime de refeições."
+    ],
+    [
+      "Zona Hotelera · praia",
+      "Resort com tudo incluído exclusivo para adultos, focado no bem-estar e serviço personalizado. Adequado a casais.",
+      "Confirme tratamentos, suplementos e transfers incluídos.",
+      "Para casais e bem-estar.",
+      "Resort com tudo incluído exclusivo para adultos, focado no bem-estar e serviço personalizado. Adequado a casais.\n\nConfirme tratamentos, suplementos e transfers incluídos."
+    ],
+    [
+      "Punta Cancún · norte",
+      "Grande resort familiar com tudo incluído. As categorias e atividades variam segundo a idade e composição do grupo.",
+      "Confirme as idades das crianças, camas e áreas exclusivas para adultos.",
+      "Para férias em família.",
+      "Grande resort familiar com tudo incluído. As categorias e atividades variam segundo a idade e composição do grupo.\n\nConfirme as idades das crianças, camas e áreas exclusivas para adultos."
+    ],
+    [
+      "Punta Cancún · praia",
+      "Resort de suites com tudo incluído, espaços familiares e spa. As categorias com vários quartos podem servir famílias numerosas, conforme a lotação.",
+      "Compare tipo de suite, ocupação e serviços incluídos.",
+      "Para famílias que procuram suites.",
+      "Resort de suites com tudo incluído, espaços familiares e spa. As categorias com vários quartos podem servir famílias numerosas, conforme a lotação.\n\nCompare tipo de suite, ocupação e serviços incluídos."
+    ]
+  ],
+  "faq": [
+    [
+      "Onde ficar em Cancún para a praia?",
+      "Zona Hotelera, Punta Cancún e Punta Nizuc oferecem experiências diferentes."
+    ],
+    [
+      "Que hotéis recebem crianças?",
+      "Hyatt Ziva e Grand Fiesta Americana são orientados para famílias; NIZUC tem regras por categoria."
+    ],
+    [
+      "Le Blanc aceita crianças?",
+      "Não, Le Blanc Cancun é exclusivo para adultos."
+    ],
+    [
+      "Todos os hotéis têm tudo incluído?",
+      "Não. Compare o regime exato; NIZUC não é automaticamente tudo incluído."
+    ],
+    [
+      "Quando se pode nadar?",
+      "Depende da meteorologia, correntes e praia; respeite as bandeiras."
+    ],
+    [
+      "Quantas noites reservar?",
+      "Cinco a sete noites para praia e excursões."
+    ],
+    [
+      "Como comparar preços em família?",
+      "Use idades reais das crianças, o mesmo regime, ocupação e total com impostos."
+    ]
+  ],
+  "seoTitle": "Onde ficar em Cancún: praias e resorts com tudo incluído",
+  "hotelSeoTitle": "Hotéis de Cancún: NIZUC, Le Blanc, Hyatt Ziva e Coral Beach",
+  "seoDescription": "Compare resorts de Cancún, praias, modalidades tudo incluído, hotéis exclusivos para adultos e estadias em família.",
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ]
+}
