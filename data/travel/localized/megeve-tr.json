@@ -1,0 +1,156 @@
+{
+  "name": "Megève",
+  "country": "Fransa",
+  "eyebrow": "Fransız Alpleri · Köy sıcaklığı",
+  "heading": "Megève: Alplerde daha uzun kalmak isteyeceğiniz köy",
+  "intro": "Megève'in karakteri liftlerden önce eski köy sokaklarında kendini gösterir. Geleneksel şaleler, samimi restoranlar, spa ve dağ ışığı özel bir ev atmosferi yaratır. Mont d’Arbois, tarihî merkez, Rochebrune ve sakin çevre mahalleler farklı tatil seçenekleridir.",
+  "editorial": "Mont d’Arbois'daki dağ resortu ile köydeki şale oteli aynı deneyim değildir. Four Seasons uygun koşullarda pist erişimiyle kapsamlı lüks tatil sunar. Les Fermes de Marie küçük bir köyü andırır, Lodge Park butik ve restoranlara yakındır, L’Alpaga mahremiyetiyle öne çıkar. Açılış tarihlerini, pist ulaşımını, aile olanaklarını ve oda kategorilerini doğrulayın. Güncel fiyat ve müsaitliği rezervasyon partneri teyit eder.",
+  "hotelIntro": "Four Seasons Resort Megève, Les Fermes de Marie, L’Alpaga ve Lodge Park: konumu, atmosferi ve hizmet anlayışı farklı dört otel.",
+  "areas": [
+    [
+      "Tarihî köy",
+      "Mağazalar, restoranlar ve Chamois gondoluna yürüyerek ulaşılır.",
+      "Belirli lifte giden rota sokağa göre değişir."
+    ],
+    [
+      "Mont d’Arbois",
+      "Dağ tatiline yönelik şaleler ve otellerle ormanlık bölge.",
+      "Her otel doğrudan pist üzerinde değildir."
+    ],
+    [
+      "Rochebrune",
+      "Kendi liftleri olan ayrı kayak sektörü.",
+      "Liftlerin ve sektörler arası bağlantıların çalışmasını kontrol edin."
+    ],
+    [
+      "Jaillet",
+      "Aravis Dağları ve köy manzaralı daha sakin bölge.",
+      "Rota ve aile etkinliklerini hava ve kar koşullarına göre seçin."
+    ],
+    [
+      "Praz-sur-Arly ve çevre tepeler",
+      "Tarihî merkezden uzakta daha geniş alan ve huzur.",
+      "Harita mesafesine güvenmek yerine akşam transferini önceden ayarlayın."
+    ]
+  ],
+  "experiences": [
+    [
+      "Planlı kayak sabahı",
+      "Liftleri otelin gerçek konumuna göre seçin."
+    ],
+    [
+      "Köyde akşam",
+      "Son servise yetişme telaşı olmadan butiklerde dolaşıp yemek yiyin."
+    ],
+    [
+      "Spa ve şömine başı",
+      "Bakımlar ve salonda dinlenmek için zaman ayırın."
+    ],
+    [
+      "Sıcak mevsimde Alpler",
+      "Yürüyüş rotaları ve golf, Megève'in kış dışındaki yüzünü gösterir."
+    ]
+  ],
+  "checks": [
+    "Kesin adresi ve ulaşım ihtiyacını kontrol edin.",
+    "Seyahat tarihlerindeki sezonluk çalışma düzenini doğrulayın.",
+    "Oda, süit, şale ve aile rezidanslarını karşılaştırın.",
+    "Her otelde doğrudan pist erişimi olduğunu varsaymayın.",
+    "İstediğiniz etkinliklerin seyahat döneminde sunulduğunu teyit edin.",
+    "Fiyat ve müsaitliği rezervasyon partnerinden öğrenin."
+  ],
+  "hotels": [
+    [
+      "Mont d’Arbois",
+      "Four Seasons 55 oda ve süit, geniş spa, restoranlar ve dağ rotalarına erişim sunan kapsamlı lüks dağ resortudur. Rothschild ailesinin mirası ve sakin konum, otelin kendisini seyahatin merkezine dönüştürür.",
+      "Açılış tarihleri, kategori, hizmetler ve liftlere gerçek rotayı kontrol edin.",
+      "Kapsamlı dağ resortu tatili için.",
+      ""
+    ],
+    [
+      "Köy · Özel park",
+      "Dokuz geleneksel Alp şalesi sıcak bir küçük köy oluşturur. Ahşap iç mekânlar, salonlar ve La Ferme de Beauté spa, köy yakınında gerçek dağ evi atmosferi sunar.",
+      "Oda konumu, spa hizmetleri, sezon koşulları ve pist ulaşımını kontrol edin.",
+      "Geleneksel Alp konukseverliği için.",
+      ""
+    ],
+    [
+      "Sakin çevre",
+      "Hareketli sokaklardan uzakta L’Alpaga Alp manzaraları, sıcak ahşap iç mekânlar ve şale huzuru sunar. Samimi ölçek yavaş tempolu tatil için idealdir.",
+      "Lift ve restoran transferlerini, kategori ve dahil hizmetleri önceden doğrulayın.",
+      "Merkezden uzakta mahrem tatil için.",
+      ""
+    ],
+    [
+      "Köy merkezi",
+      "Lodge Park hareketli bir Alp kulübünü andırır. 2025 sonundaki yenileme ekose kumaşlar, eskitilmiş deri ve sıcak ortak alanlar getirdi. Restoranlar, butikler ve Chamois lifti yakındır.",
+      "Lifte yakınlık ski-in/ski-out garantisi değildir; rotayı, kategoriyi ve sezon koşullarını kontrol edin.",
+      "Dağ tatili ile köyün akşam hayatını birleştirmek için.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "İlk Megève ziyaretinde nerede kalınmalı?",
+      "Dağ erişimi, yürüyerek ulaşılabilen restoranlar, mahremiyet ve aile ihtiyaçlarını değerlendirin. Eski merkez ve Mont d’Arbois farklıdır."
+    ],
+    [
+      "Dört otel aynı tatili mi sunar?",
+      "Hayır, örneğin Four Seasons Resort Megève ve L’Alpaga konaklama biçimi ve ulaşım açısından farklıdır."
+    ],
+    [
+      "Aile için ne seçilmeli?",
+      "Bağlantılı odalarla şale ve rezidans planlarını karşılaştırın; yaş koşulları, yataklar, hizmetler ve yolculuk sürelerini doğrulayın."
+    ],
+    [
+      "Otelden doğrudan kayak yapılabilir mi?",
+      "Yalnızca bazı otellerde, kar ve liftlerin çalışmasına bağlıdır. Piste yakınlık ski-in/ski-out anlamına gelmez."
+    ],
+    [
+      "Kayaksız Megève'de ne yapılır?",
+      "Restoran, spa, dağ manzarası ve geziler sezona bağlı olarak mümkündür."
+    ],
+    [
+      "Ulaşım önceden planlanmalı mı?",
+      "Evet, özellikle uzak oteller, kış yolları, havalimanı ve akşam transferleri için."
+    ],
+    [
+      "Oteller nasıl rezerve edilir?",
+      "Yetkili partner güncel fiyat, müsaitlik ve koşulları doğrular."
+    ]
+  ],
+  "photoCaptions": [
+    "Yazın Megève tarihî merkezi ve kilisesi",
+    "Mont d’Arbois",
+    "Megève Rochebrune",
+    "Tête du Torraz dağ panoraması",
+    "Mart 2025 Megève kilise meydanı",
+    "Kış sonunda Mont d’Arbois sektörü",
+    "Mont Joly sırtından Megève",
+    "Megève yönünden Mont Blanc"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Kışın Four Seasons Resort Megève cephesi",
+      "Four Seasons süit iç mekânı",
+      "Otel kapalı havuzu"
+    ],
+    [
+      "Les Fermes de Marie",
+      "Les Fermes de Marie spa",
+      "Yazın Les Fermes de Marie"
+    ],
+    [
+      "L’Alpaga yatak odası",
+      "Ahşap kaplamalı salon",
+      "L’Alpaga dinlenme alanı"
+    ],
+    [
+      "Megève'de Lodge Park",
+      "Lodge Park fotoğrafı"
+    ]
+  ],
+  "seoTitle": "Megève: Fransız Alpleri’nde Lüks Oteller ve Şaleler",
+  "hotelSeoTitle": "Megève Otelleri: Four Seasons, Les Fermes de Marie, L’Alpaga ve Lodge Park",
+  "seoDescription": "Megève'de dört lüks oteli karşılaştırın: Mont d’Arbois, tarihî merkez, özel şaleler, spa ve kayak erişimi."
+}

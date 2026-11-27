@@ -1,0 +1,156 @@
+{
+  "name": "Megève",
+  "country": "França",
+  "eyebrow": "Alpes franceses · Aconchego de vila",
+  "heading": "Megève: uma vila alpina para ficar mais tempo",
+  "intro": "O caráter de Megève aparece primeiro nas ruas da vila histórica, não nos meios de elevação. Chalés tradicionais, restaurantes intimistas, spa e luz da montanha criam ambiente de residência privativa. Mont d’Arbois, centro histórico, Rochebrune e arredores tranquilos oferecem estadias diferentes.",
+  "editorial": "Um resort de montanha em Mont d’Arbois não equivale a hotel em chalé na vila. Four Seasons oferece férias de luxo completas com acesso às pistas em condições favoráveis; Les Fermes de Marie lembra uma pequena vila, Lodge Park fica perto de boutiques e restaurantes, L’Alpaga destaca-se pela privacidade. Confirme abertura, transporte às pistas, serviços familiares e categorias. O parceiro confirma preços e disponibilidade.",
+  "hotelIntro": "Four Seasons Resort Megève, Les Fermes de Marie, L’Alpaga e Lodge Park: quatro hotéis distintos em localização, ambiente e serviço.",
+  "areas": [
+    [
+      "Vila histórica",
+      "Lojas, restaurantes e gôndola Chamois a pé.",
+      "Trajeto ao meio de elevação específico depende da rua."
+    ],
+    [
+      "Mont d’Arbois",
+      "Área arborizada com chalés e hotéis voltados à montanha.",
+      "Nem todo hotel fica diretamente na pista."
+    ],
+    [
+      "Rochebrune",
+      "Setor independente de esqui com meios de elevação próprios.",
+      "Confira funcionamento e conexões entre setores."
+    ],
+    [
+      "Jaillet",
+      "Área mais tranquila com vista do maciço Aravis e da vila.",
+      "Escolha rotas e atividades familiares conforme clima e neve."
+    ],
+    [
+      "Praz-sur-Arly e colinas vizinhas",
+      "Mais espaço e sossego longe do centro histórico.",
+      "Organize traslados noturnos sem confiar apenas na distância do mapa."
+    ]
+  ],
+  "experiences": [
+    [
+      "Manhã de esqui planejada",
+      "Escolha meios de elevação conforme localização real do hotel."
+    ],
+    [
+      "Noite na vila",
+      "Passeie por boutiques e jante sem pressa para pegar último traslado."
+    ],
+    [
+      "Spa e descanso junto à lareira",
+      "Reserve tempo para tratamentos e relaxar no lounge."
+    ],
+    [
+      "Alpes na estação quente",
+      "Trilhas e golfe revelam outro lado de Megève fora do inverno."
+    ]
+  ],
+  "checks": [
+    "Confira endereço exato e necessidade de transporte.",
+    "Confirme funcionamento sazonal nas suas datas.",
+    "Compare quartos, suítes, chalés e residências familiares.",
+    "Não presuma acesso direto às pistas em todo hotel.",
+    "Confirme atividades desejadas no período da viagem.",
+    "Consulte preços e disponibilidade com parceiro."
+  ],
+  "hotels": [
+    [
+      "Mont d’Arbois",
+      "Four Seasons é um grande resort de luxo de montanha com 55 quartos e suítes, amplo spa, restaurantes e acesso a rotas alpinas. O legado Rothschild e a localização reservada tornam o hotel o centro da viagem.",
+      "Confira abertura, categoria, serviços e trajeto real aos meios de elevação.",
+      "Para férias completas em resort alpino.",
+      ""
+    ],
+    [
+      "Vila · Parque privativo",
+      "Nove chalés alpinos tradicionais formam pequena vila acolhedora. Interiores de madeira, lounges e spa La Ferme de Beauté criam ambiente de casa de montanha perto da vila.",
+      "Confira localização do quarto, spa, condições sazonais e transporte às pistas.",
+      "Para hospitalidade alpina tradicional.",
+      ""
+    ],
+    [
+      "Arredores tranquilos",
+      "Longe das ruas movimentadas, L’Alpaga oferece vistas alpinas, interiores de madeira acolhedores e sossego de chalé. Escala intimista convida ao descanso.",
+      "Confirme antecipadamente traslados a pistas e restaurantes, categoria e serviços inclusos.",
+      "Para privacidade longe do movimento central.",
+      ""
+    ],
+    [
+      "Centro da vila",
+      "Lodge Park lembra um clube alpino animado. A renovação no fim de 2025 trouxe tecidos xadrez, couro envelhecido e espaços comuns acolhedores. Restaurantes, boutiques e gôndola Chamois ficam perto.",
+      "Proximidade não garante ski-in/ski-out; confira trajeto, categoria e temporada.",
+      "Para combinar montanha e vida noturna da vila.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "Onde ficar na primeira visita?",
+      "Considere acesso à montanha, restaurantes a pé, privacidade e necessidades familiares. Centro histórico e Mont d’Arbois são diferentes."
+    ],
+    [
+      "Os quatro hotéis oferecem a mesma experiência?",
+      "Não. Four Seasons Resort Megève e L’Alpaga, por exemplo, diferem em hospedagem e transporte."
+    ],
+    [
+      "O que escolher para famílias?",
+      "Compare quartos comunicantes e plantas de chalés e residências. Confira idades, camas, serviços e tempos de traslado."
+    ],
+    [
+      "Dá para sair esquiando do hotel?",
+      "Só alguns oferecem acesso direto, conforme neve e meios de elevação. Pista próxima não equivale a ski-in/ski-out."
+    ],
+    [
+      "O que fazer sem esqui?",
+      "Restaurantes, spa, paisagens alpinas e passeios conforme temporada."
+    ],
+    [
+      "É preciso organizar transporte antes?",
+      "Sim, sobretudo hotéis reservados, estradas de inverno, aeroporto e saídas noturnas."
+    ],
+    [
+      "Como reservar?",
+      "Parceiro autorizado confirma preços, disponibilidade e condições."
+    ]
+  ],
+  "photoCaptions": [
+    "Centro histórico e igreja de Megève no verão",
+    "Mont d’Arbois",
+    "Rochebrune em Megève",
+    "Panorama Tête du Torraz",
+    "Praça da igreja em março de 2025",
+    "Mont d’Arbois no fim do inverno",
+    "Megève da crista Mont Joly",
+    "Mont Blanc visto de Megève"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Fachada Four Seasons Resort Megève no inverno",
+      "Interior suíte Four Seasons",
+      "Piscina coberta"
+    ],
+    [
+      "Les Fermes de Marie",
+      "Spa Les Fermes de Marie",
+      "Les Fermes de Marie no verão"
+    ],
+    [
+      "Quarto L’Alpaga",
+      "Sala revestida em madeira",
+      "Área de descanso L’Alpaga"
+    ],
+    [
+      "Lodge Park em Megève",
+      "Foto Lodge Park"
+    ]
+  ],
+  "seoTitle": "Megève: hotéis de luxo e chalés nos Alpes franceses",
+  "hotelSeoTitle": "Hotéis em Megève: Four Seasons, Les Fermes de Marie, L’Alpaga e Lodge Park",
+  "seoDescription": "Compare quatro hotéis de luxo em Megève: Mont d’Arbois, centro histórico, chalés privativos, spa e acesso às pistas."
+}
