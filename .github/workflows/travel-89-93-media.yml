@@ -29,16 +29,18 @@ jobs:
   candidates:
     runs-on: ubuntu-latest
     timeout-minutes: 18
+    env:
+      TRAVEL_DESTINATION: ${{ inputs.destination || (contains(github.event.head_commit.message, '[media:las-vegas]') && 'las-vegas') || (contains(github.event.head_commit.message, '[media:rome]') && 'rome') || (contains(github.event.head_commit.message, '[media:barcelona]') && 'barcelona') || (contains(github.event.head_commit.message, '[media:cancun]') && 'cancun') || 'london' }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: feature/travel-destinations-89-93-drafts
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=11,<12' 'beautifulsoup4>=4.12,<5' 'PyMuPDF>=1.24,<2'
       - run: python -m py_compile scripts/collect-travel-89-93-media.py
       - name: Fill remaining destination and hotel gallery gaps
-        env:
-          TRAVEL_DESTINATION: ${{ inputs.destination || 'london' }}
         run: python -u scripts/collect-travel-89-93-media.py
       - name: Save candidate images and provenance on draft branch only
         if: success()
@@ -46,18 +48,19 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add "public/images/travel/${{ inputs.destination || 'london' }}-premium"
+          git add "public/images/travel/${{ env.TRAVEL_DESTINATION }}-premium"
           git add data/travel/media89to93Candidates.json data/travel/media89to93BrochureCandidates.json
           if ! git diff --cached --quiet; then
             git commit -m 'assets(travel): source audited 89-93 WebP candidates pending visual QA [skip ci]'
+            git pull --rebase origin feature/travel-destinations-89-93-drafts
             git push origin HEAD:feature/travel-destinations-89-93-drafts
           fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: travel-${{ inputs.destination || 'london' }}-photo-review
+          name: travel-${{ env.TRAVEL_DESTINATION }}-photo-review
           path: |
             data/travel/media89to93Candidates.json
             data/travel/media89to93BrochureCandidates.json
-            public/images/travel/${{ inputs.destination || 'london' }}-premium/source-review-contact-sheet.webp
+            public/images/travel/${{ env.TRAVEL_DESTINATION }}-premium/source-review-contact-sheet.webp
           if-no-files-found: ignore
