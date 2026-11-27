@@ -1,0 +1,158 @@
+{
+  "name": "St. Moritz",
+  "country": "Suiza",
+  "eyebrow": "Alta Engadina · Elegancia alpina",
+  "heading": "Dónde alojarse en St. Moritz: hoteles históricos y luz invernal de Engadina",
+  "intro": "La hospitalidad de St. Moritz nació en torno a hoteles célebres, lago y paisaje alpino, no a un solo remonte. Boutiques, terrazas soleadas y pistas parecen próximas en el mapa, pero importa el trayecto real desde el hotel.",
+  "editorial": "St. Moritz Dorf, en altura, Bad, en la parte baja, y las laderas boscosas de Suvretta ofrecen estancias diferentes. Celerina y Pontresina amplían las rutas por Engadina. Badrutt’s Palace y Kulm encarnan tradiciones distintas de gran hotel en el centro; Carlton ofrece intimidad con vistas al lago y Suvretta House se orienta al esquí. Según calendarios publicados, Palace abre el 3 de diciembre de 2026, Kulm y Suvretta House el 4, Carlton el 11. Confirma fechas, nieve, remontes, categoría y transporte.",
+  "hotelIntro": "Cuatro direcciones: Palace para historia, Kulm para tradición y spa, Suvretta House para tranquilidad y pistas, Carlton para vistas al lago.",
+  "areas": [
+    [
+      "St. Moritz Dorf · Hoteles históricos",
+      "Via Serlas, boutiques, galerías y salones hoteleros crean el ambiente clásico.",
+      "El pueblo está por encima del lago; vistas bonitas no implican paseo llano."
+    ],
+    [
+      "St. Moritz Bad · Paseos junto al lago",
+      "Parte baja con caminos junto al agua y paisajes abiertos lejos de calles comerciales.",
+      "Considera pendientes y transporte invernal hacia Dorf."
+    ],
+    [
+      "Suvretta · Laderas apartadas",
+      "Colinas boscosas y chalets rodean Suvretta House.",
+      "Confirma acceso a pistas, traslados y temporada."
+    ],
+    [
+      "Corviglia · Día de esquí",
+      "Elige rutas según nivel, nieve y remontes abiertos.",
+      "El acceso a Corviglia difiere entre los cuatro hoteles."
+    ],
+    [
+      "Celerina y Pontresina · Engadina",
+      "Pueblos vecinos con trenes, restaurantes de montaña y arquitectura tradicional.",
+      "Comprueba horarios y apertura."
+    ]
+  ],
+  "experiences": [
+    [
+      "Lago a primera hora",
+      "Pasea por caminos permitidos y toma un café. No salgas al hielo sin autorización oficial."
+    ],
+    [
+      "Mañana de esquí sin prisas",
+      "Prepara equipo y confirma remontes y ruta desde hotel."
+    ],
+    [
+      "Engadina fuera de pistas",
+      "Visita un pueblo vecino o restaurante de montaña y descansa en el spa."
+    ],
+    [
+      "El hotel como destino",
+      "Leer, nadar y conversar junto a la chimenea también forman parte del viaje."
+    ]
+  ],
+  "checks": [
+    "Considera desniveles entre Dorf, Bad y Suvretta.",
+    "Compara calendarios 2026/27 especialmente a principios de diciembre y finales de marzo.",
+    "Confirma categoría con vistas al lago, balcón y habitaciones comunicadas.",
+    "Comprueba acceso real a pistas y remontes.",
+    "Organiza restaurantes, spa, instructores y traslados con antelación.",
+    "Proveedor autorizado confirma precios y disponibilidad."
+  ],
+  "hotels": [
+    [
+      "St. Moritz Dorf · Via Serlas",
+      "Desde 1896 la torre de Badrutt’s Palace y su ubicación en Via Serlas definen la estación. Salones y restaurantes conservan el ambiente de gran hotel histórico. Vistas al lago, balcones y distribución dependen de categoría. Temporada publicada 2026/27: 3 de diciembre a 30 de marzo.",
+      "Confirma categoría, balcón, condiciones infantiles, calendario y ruta al remonte.",
+      "Para hospitalidad histórica y vida céntrica.",
+      ""
+    ],
+    [
+      "St. Moritz Dorf · Tradición y panorámicas",
+      "Kulm Hotel es uno de los históricos de Engadina. Hospitalidad clásica y spa de unos 2.000 m². Zonas de bienestar y algunas habitaciones ofrecen grandes vistas. Temporada publicada: 4 de diciembre de 2026 a 29 de marzo de 2027.",
+      "Confirma categoría con vistas al lago, tratamientos y temporada.",
+      "Para gran hotel clásico, montañas y spa.",
+      ""
+    ],
+    [
+      "Suvretta · Colinas boscosas y pistas",
+      "Suvretta House recibe huéspedes desde 1912. Laderas apartadas y arquitectura histórica lo distinguen de los hoteles céntricos. La descripción oficial destaca acceso directo a pistas y spa ampliado. Temporada 4 de diciembre de 2026 a 29 de marzo de 2027. Acceso con esquís depende de nieve, pistas abiertas y nivel.",
+      "Confirma ruta a pistas, traslado al centro y funcionamiento de nuevas zonas de spa.",
+      "Para esquí y descanso tranquilo.",
+      ""
+    ],
+    [
+      "Sobre el lago · Hotel íntimo",
+      "Carlton ofrece 60 habitaciones y suites. Según la guía de la estación, se orientan al sur hacia el lago; vistas y plantas varían. Terraza, Bel Etage y restaurantes invitan a descansar. Fechas invernales: 11 de diciembre de 2026 a 21 de marzo de 2027.",
+      "Confirma categoría, pendientes, traslado, restaurantes y apertura posterior.",
+      "Para privacidad y panorámicas del lago.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Dónde alojarse en la primera visita?",
+      "Dorf para hoteles históricos, boutiques y paseos nocturnos; Suvretta para tranquilidad alpina; Bad para el lago. Considera el relieve."
+    ],
+    [
+      "¿Palace y Kulm abren todo el año?",
+      "No. Fechas publicadas: Palace del 3 de diciembre al 30 de marzo, Kulm del 4 de diciembre al 29 de marzo. Confirma fechas."
+    ],
+    [
+      "¿Qué hotel abre más tarde en diciembre de 2026?",
+      "Carlton el 11, Palace el 3, Kulm y Suvretta House el 4."
+    ],
+    [
+      "¿Suvretta House tiene acceso directo a pistas?",
+      "Hotel y guía de estación indican ski-in/ski-out. Comprueba nieve, remontes y nivel de pistas."
+    ],
+    [
+      "¿Se puede reservar vista al lago?",
+      "Sí, hay categorías en varios hoteles. Confirma vista exacta, planta y balcón."
+    ],
+    [
+      "¿Qué hacer sin esquiar?",
+      "Paseos seguros junto al lago, pueblos de Engadina, spa y restaurantes. Actividades de hielo y montaña dependen del tiempo y temporada."
+    ],
+    [
+      "¿Cómo reservar los cuatro hoteles?",
+      "Compara en Bosphoras; proveedor autorizado confirma precios y disponibilidad."
+    ]
+  ],
+  "photoCaptions": [
+    "Lago y ciudad de St. Moritz en otoño",
+    "St. Moritz Dorf desde el lago",
+    "St. Moritz Bad",
+    "Suvretta",
+    "Zona de esquí Corviglia",
+    "Celerina en Engadina",
+    "Pontresina",
+    "St. Moritz en invierno",
+    "Paisaje de Engadina"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Signature Double Room Lake View con balcón",
+      "Vista al lago desde el balcón",
+      "Baño de Signature Double Room"
+    ],
+    [
+      "Kulm Hotel St. Moritz",
+      "Spa alpino Kulm",
+      "Salón Corvatsch Suite con montañas nevadas"
+    ],
+    [
+      "Suvretta House",
+      "Vista exterior Suvretta House",
+      "Interior y ambiente Suvretta House"
+    ],
+    [
+      "Dormitorio Carlton con vigas de madera",
+      "Salón de suite Carlton",
+      "Restaurante Carlton"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en St. Moritz: hoteles de lujo y esquí",
+  "hotelSeoTitle": "Mejores hoteles de St. Moritz: Palace, Kulm, Suvretta y Carlton",
+  "seoDescription": "Compara cuatro hoteles de lujo en St. Moritz, acceso a pistas, vistas al lago y fechas de la temporada de invierno 2026/27."
+}
