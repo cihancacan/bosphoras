@@ -1,0 +1,131 @@
+{
+  "name": "Roma",
+  "country": "Italia",
+  "eyebrow": "Italia · Patrimonio, piazze e grand hotel",
+  "heading": "Roma: vivi la Città Eterna scegliendo il quartiere giusto.",
+  "intro": "Le piazze del centro storico, i giardini del Pincio e i vicoli di Trastevere compongono una capitale da scoprire a piedi. Soggiornare vicino a Piazza di Spagna è un'esperienza diversa da quella di un hotel in collina o nei pressi del Vaticano.",
+  "editorial": "Il centro storico permette di collegare Pantheon, Piazza Navona e Fontana di Trevi. Campo Marzio e i dintorni di Piazza di Spagna ospitano grandi alberghi e boutique. Prati è comodo per visitare il Vaticano, Monti per il Colosseo e i Fori, mentre Trastevere è particolarmente piacevole per le serate e le trattorie.\n\nQuattro notti permettono di dedicare una giornata alla Roma antica, una al Vaticano, una al centro e una ai giardini o ai quartieri residenziali. Prenota i biglietti ufficiali dei siti con accesso a numero limitato ed evita spostamenti inutili. In estate privilegia le visite al mattino presto e le pause all'ombra.\n\nDa Fiumicino confronta il treno per Termini, i taxi ufficiali e i transfer privati; da Ciampino occorre organizzare diversamente il viaggio. Nel centro, i sampietrini, le salite e le zone a traffico limitato possono complicare gli spostamenti con bagagli o passeggini. Confronta il prezzo finale, il contributo di soggiorno e i servizi inclusi nella categoria scelta.",
+  "hotelIntro": "Quattro indirizzi storici o contemporanei: Bvlgari Hotel Roma, Hotel de Russie, Hassler Roma e Hotel Eden.",
+  "areas": [
+    [
+      "Centro storico",
+      "Pantheon, Piazza Navona, Fontana di Trevi e passeggiate tra le piazze.",
+      "Sampietrini e limitazioni al traffico complicano alcuni trasferimenti."
+    ],
+    [
+      "Campo Marzio e Piazza di Spagna",
+      "Boutique, palazzi, grandi alberghi e accesso al Pincio.",
+      "Verifica scale e pendenze a partire dall'hotel."
+    ],
+    [
+      "Monti e Colosseo",
+      "Patrimonio antico, caffè e piccole vie.",
+      "Prenota le visite con ingresso a orario."
+    ],
+    [
+      "Prati e Vaticano",
+      "Viali, negozi e vicinanza ai Musei Vaticani.",
+      "Essere vicini al Vaticano non significa essere vicini al Colosseo."
+    ],
+    [
+      "Trastevere",
+      "Vicoli, ristoranti e atmosfera serale.",
+      "Rumore e pavimentazione variano da una strada all'altra."
+    ]
+  ],
+  "experiences": [
+    [
+      "Roma antica",
+      "Dedica almeno mezza giornata al Colosseo e al Foro in funzione dei biglietti disponibili."
+    ],
+    [
+      "Le piazze del centro",
+      "Collega Pantheon, Trevi e Piazza Navona senza moltiplicare gli spostamenti."
+    ],
+    [
+      "Villa Borghese",
+      "Alterna i giardini alla visita della galleria se trovi disponibilità."
+    ],
+    [
+      "Una serata a Trastevere",
+      "Scegli una trattoria e passeggia lungo il Tevere."
+    ]
+  ],
+  "checks": [
+    "Confronta pendenze e accessibilità dell'indirizzo.",
+    "Prenota le attrazioni a capienza limitata.",
+    "Verifica letti e camere comunicanti.",
+    "Confronta prezzo finale, contributo di soggiorno e servizi inclusi.",
+    "Organizza il trasferimento aeroportuale e l'arrivo nel centro storico."
+  ],
+  "hotels": [
+    [
+      "Campo Marzio · Piazza Augusto Imperatore",
+      "Un indirizzo contemporaneo che valorizza materiali italiani, camere e suite di stili diversi e gastronomia. Via del Corso e le boutique sono vicine.",
+      "Confronta le viste sulla piazza e sulle vie laterali.",
+      "Per il design italiano contemporaneo e lo shopping.",
+      "Bvlgari Hotel Roma valorizza materiali italiani, camere e suite diverse e gastronomia in Piazza Augusto Imperatore. Via del Corso e le boutique sono vicine. Confronta le viste sulla piazza e sulle vie laterali."
+    ],
+    [
+      "Via del Babuino · Piazza del Popolo",
+      "Il giardino interno crea un'oasi di tranquillità vicino a Piazza del Popolo. Camere, suite e ristoranti offrono una base per scoprire Campo Marzio e il Pincio.",
+      "Conferma vista sul giardino e configurazione familiare.",
+      "Per un'oasi verde nel centro storico.",
+      "Hotel de Russie offre un giardino interno vicino a Piazza del Popolo, camere, suite e ristorazione. È un punto di partenza per Campo Marzio e il Pincio. Conferma vista sul giardino e configurazione familiare."
+    ],
+    [
+      "Trinità dei Monti · Piazza di Spagna",
+      "In cima alla scalinata di Trinità dei Monti, l'Hassler unisce tradizione e camere arredate individualmente. Alcune categorie offrono terrazze o ampie vedute.",
+      "Verifica scale, accessi e categoria esatta.",
+      "Per la posizione panoramica sopra Piazza di Spagna.",
+      "Hassler Roma unisce tradizione e camere arredate individualmente sopra Piazza di Spagna. Alcune categorie dispongono di terrazze o ampie vedute. Verifica scale, accessi e categoria esatta."
+    ],
+    [
+      "Via Ludovisi · Villa Borghese",
+      "Hotel Eden propone un'atmosfera classica, una spa e prospettive sui tetti romani. La posizione vicino a Villa Borghese è diversa da quella di un hotel direttamente su una piazza centrale.",
+      "Confronta orientamento, terrazza, percorsi a piedi e servizi inclusi.",
+      "Per l'eleganza classica e i panorami di Roma.",
+      "Hotel Eden propone un'atmosfera classica, spa e prospettive sui tetti. La posizione vicino a Villa Borghese offre un'esperienza diversa da quella di un hotel su una piazza del centro. Confronta orientamento, terrazza, percorsi a piedi e servizi inclusi."
+    ]
+  ],
+  "faq": [
+    [
+      "Dove dormire a Roma per la prima visita?",
+      "Centro storico e Campo Marzio sono centrali; Monti è comodo per i siti antichi."
+    ],
+    [
+      "Quale quartiere scegliere vicino al Vaticano?",
+      "Prati riduce gli spostamenti verso i Musei Vaticani."
+    ],
+    [
+      "Quante notti prevedere?",
+      "Quattro notti sono una buona base, con più tempo per musei e altri quartieri."
+    ],
+    [
+      "Quali hotel offrono panorami sulla città?",
+      "Confronta le categorie dell'Hassler e dell'Hotel Eden: una vista specifica non è garantita per tutte le camere."
+    ],
+    [
+      "Serve un'auto?",
+      "Nel centro storico, camminare e utilizzare i mezzi pubblici è spesso preferibile per le limitazioni al traffico."
+    ],
+    [
+      "Come arrivare da Fiumicino?",
+      "Confronta treno per Termini, taxi ufficiali e transfer privati."
+    ],
+    [
+      "Come confrontare gli hotel?",
+      "Su Bosphoras confronta categorie, viste, letti, contributo di soggiorno e condizioni per le stesse date."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Dove dormire a Roma: migliori quartieri e hotel di lusso",
+  "hotelSeoTitle": "Hotel di lusso a Roma: Bvlgari, de Russie, Hassler ed Eden",
+  "seoDescription": "Confronta i quartieri di Roma e gli hotel di lusso: centro storico, Piazza di Spagna, Vaticano, panorami e prezzi del soggiorno."
+}
