@@ -175,8 +175,6 @@ import { destinationBySlug, travelCategories, travelDestinations, travelRegions,
 import type { TravelCategory, TravelDestination } from '@/data/travel/destinations';
 import { travelHref, travelLocaleCodes, travelKeywordTitles, travelText } from '@/lib/travel/i18n';
 import { BosphorasTravelGuideHeader, BosphorasTravelFooter } from '@/components/travel/BosphorasTravelChrome';
-import { BosphorasTravelGuideHeader, BosphorasTravelFooter } from '@/components/travel/BosphorasTravelChcancun';
-import { BosphorasTravelGuideHeader, BosphorasTravelFooter } from '@/components/travel/BosphorasTravelChbarcelona';
 import { collectionBookingEnabled } from '@/lib/travel/collectionPresentation';
 import { DestinationFlightLink } from './DestinationFlightLink';
 import { TravelContextualSearch } from '@/components/travel/TravelContextualSearch';
