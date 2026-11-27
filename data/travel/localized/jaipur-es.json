@@ -1,0 +1,165 @@
+{
+  "name": "Jaipur",
+  "country": "India",
+  "eyebrow": "Rajastán · Palacios y tradiciones artesanales",
+  "heading": "Dónde alojarse en Jaipur: cuatro formas de descubrir la Ciudad Rosa",
+  "intro": "Palacio histórico Rambagh, jardines Oberoi, arquitectura contemporánea Raffles y amplio resort Leela: cuatro direcciones muy distintas.",
+  "editorial": "Jaipur merece una estancia propia, no una breve escala entre Delhi y Agra. Ciudad Rosa, talleres de joyería, jardines palaciegos y fuertes en colinas ocupan zonas diferentes. Elige primero ubicación, después categoría y ruta.\n\nRambagh Palace en Bhawani Singh Road es antigua residencia real, hoy hotel Taj de 78 habitaciones y suites. Tras recorrer el centro, apetece volver al jardín palaciego. Superficie, terrazas y vistas varían. The Oberoi Rajvilas está al este en Goner Road, a unos ocho kilómetros del centro según el hotel. Finca independiente con jardines, habitaciones, tiendas de lujo y villas, no junto al fuerte Amber. Considera transporte, accesibilidad y capacidad familiar.\n\nRaffles Jaipur en Kukas es palacio moderno de mármol blanco con 50 habitaciones y suites, no edificio del siglo XVIII. Detalles artesanales, balcones, mayordomo y spa dependen de categoría; foto de piscina no garantiza piscina privada. The Leela Palace Jaipur es resort independiente en carretera Jaipur–Delhi, a unos 22 km del centro según el hotel. Patios, zonas de descanso, spa y villas invitan a ritmo pausado. Royal Villa con pequeña piscina no equivale a habitación palaciega normal.\n\nEn casco antiguo combina City Palace, Jantar Mantar, Hawa Mahal y mercados. Calor, ruido y tráfico aconsejan caminar con pausas. Fuerte Amber, a unos 11 km de Jaipur según Rajasthan Tourism, merece una mañana aparte; Jaigarh y Nahargarh son otros fuertes. Considera escaleras, sol y horarios. Jal Mahal parece flotar en lago Man Sagar; verlo desde orilla no significa entrar. Elige talleres textiles, estampación y joyería con condiciones transparentes; bazares Johari y Bapu ofrecen surtidos distintos.\n\nOctubre–marzo suele ser agradable, pero calor, monzón y clima exigen flexibilidad. Tres o cuatro noches para casco antiguo, Amber, hotel y artesanía. Traslado desde aeropuerto a Kukas difiere del centro; Udaipur o Jodhpur requieren etapas propias. Bosphoras ofrece selección editorial independiente; proveedor de reserva confirma tarifa, impuestos, categoría, vistas, piscina, camas, traslados, cancelación y asistencia.",
+  "hotelIntro": "Cuatro direcciones: Rambagh histórico, Oberoi ajardinado, Raffles artesanal y Leela de resort.",
+  "areas": [
+    [
+      "Ciudad Rosa y Hawa Mahal",
+      "Fachadas rosas, arcadas y mercados históricos en corazón de Jaipur.",
+      "Considera multitudes, tráfico, calor y horarios."
+    ],
+    [
+      "Rambagh y centro",
+      "Jardines palaciegos y base práctica para ciudad.",
+      "Estar en centro no implica todos monumentos cerca."
+    ],
+    [
+      "Goner Road · Este",
+      "Jardines Oberoi lejos de bazares y fuertes del norte.",
+      "Comprueba tiempos reales de trayecto."
+    ],
+    [
+      "Amber y fuertes de colinas",
+      "Palacio Amber, Jaigarh y monumentos en cresta.",
+      "Distintos accesos, horarios y condiciones."
+    ],
+    [
+      "Kukas y carretera Delhi",
+      "Palacios modernos Raffles y Leela en norte más tranquilo.",
+      "Hace falta coche al centro."
+    ]
+  ],
+  "experiences": [
+    [
+      "Mañana en Ciudad Rosa",
+      "Combina City Palace y Hawa Mahal con visita a taller."
+    ],
+    [
+      "Amber sin prisas",
+      "Explora patios y colinas por la mañana con descansos."
+    ],
+    [
+      "Artesanía y joyería",
+      "Visita talleres textiles y joyeros con condiciones de compra transparentes."
+    ],
+    [
+      "Jal Mahal con luz cambiante",
+      "Admira palacio desde orilla pública sin presuponer entrada."
+    ],
+    [
+      "Descanso en hotel",
+      "Reserva media jornada a jardines, spa o piscina incluida."
+    ]
+  ],
+  "checks": [
+    "Compara centro, Goner Road y Kukas.",
+    "Confirma categoría, vistas, terraza y piscina privada.",
+    "Organiza aeropuerto y Amber según tráfico.",
+    "Comprueba horarios, temporada y calor.",
+    "Confirma vendedor, impuestos, cancelación y asistencia."
+  ],
+  "hotels": [
+    [
+      "Bhawani Singh Road · Centro",
+      "Palacio histórico convertido por Taj en hotel de 78 habitaciones y suites.",
+      "Confirma categoría, tamaño y vistas; fotos no garantizan habitación.",
+      "Para dormir en auténtico palacio real.",
+      ""
+    ],
+    [
+      "Goner Road · Este",
+      "Resort ajardinado con habitaciones, tiendas y villas variadas.",
+      "No está en Ciudad Rosa ni Amber; servicios según categoría.",
+      "Para intimidad entre jardines.",
+      ""
+    ],
+    [
+      "Kukas · Norte hacia Amber",
+      "Palacio moderno de mármol con 50 habitaciones y suites inspirado en artesanía local.",
+      "Comprueba piscina, balcón, vistas a colinas y traslado.",
+      "Para arquitectura palaciega contemporánea.",
+      ""
+    ],
+    [
+      "Carretera Jaipur–Delhi · Kukas",
+      "Amplio resort palaciego con habitaciones, suites y villas.",
+      "Kukas fuera del centro; confirma villa, piscina y transporte.",
+      "Para descanso cerca de colinas Aravalli.",
+      ""
+    ]
+  ],
+  "faq": [
+    [
+      "¿Centro o Kukas?",
+      "Rambagh céntrico, Oberoi al este, Raffles y Leela en Kukas; compara traslados."
+    ],
+    [
+      "¿Rambagh es palacio auténtico?",
+      "Sí, antigua residencia real Taj con 78 habitaciones y suites; categorías varían."
+    ],
+    [
+      "¿Oberoi está junto al fuerte Amber?",
+      "No, Goner Road al este; Amber al norte."
+    ],
+    [
+      "¿Raffles y Leela son mismo hotel?",
+      "No, independientes en Kukas; piscinas y balcones según categoría."
+    ],
+    [
+      "¿Se puede dormir en Hawa Mahal o Jal Mahal?",
+      "No, son monumentos. Vista de Jal Mahal desde orilla no garantiza entrada."
+    ],
+    [
+      "¿Cuánto tiempo para Amber?",
+      "Una mañana propia; unos 11 km de Jaipur, comprueba carretera, clima y horarios."
+    ],
+    [
+      "¿Cuándo viajar?",
+      "Octubre–marzo suele ser cómodo; clima y acceso no garantizados."
+    ],
+    [
+      "¿Bosphoras garantiza precios y servicio?",
+      "No, vendedor confirma tarifa, impuestos, categoría, traslado, cancelación y asistencia."
+    ]
+  ],
+  "photoCaptions": [
+    "Fachada Hawa Mahal",
+    "Panorama fuerte Amber y lago Maota",
+    "Jal Mahal y lago Man Sagar",
+    "Patio City Palace",
+    "Instrumentos astronómicos Jantar Mantar",
+    "Jaipur desde fuerte Nahargarh",
+    "Pozo escalonado Panna Meena ka Kund cerca de Amber",
+    "Hawa Mahal desde calle",
+    "Otra vista fachada histórica Amber"
+  ],
+  "hotelCaptionGroups": [
+    [
+      "Fachada histórica Rambagh desde jardín",
+      "Patio y vestíbulo Rambagh Palace",
+      "Dormitorio Rambagh con madera tallada y dos camas"
+    ],
+    [
+      "Arquitectura finca Oberoi Rajvilas",
+      "Otra vista Oberoi Rajvilas",
+      "Dormitorio Premier Room con dosel"
+    ],
+    [
+      "Columnata tallada y estanque reflejante Raffles",
+      "Zona privada de piscina villa Raffles",
+      "Suite Raffles con detalles artesanales"
+    ],
+    [
+      "Fachada Leela Palace al anochecer",
+      "Piscina y pabellones de jardín Leela",
+      "Salón Maharaja Suite"
+    ]
+  ],
+  "seoTitle": "Dónde alojarse en Jaipur: mejores hoteles palacio y zonas",
+  "hotelSeoTitle": "Hoteles de Jaipur: Rambagh, Oberoi, Raffles y Leela",
+  "seoDescription": "Compara cuatro hoteles palacio en Jaipur: centro y Kukas, villas, piscinas, fuerte Amber y traslados."
+}
