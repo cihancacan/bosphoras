@@ -1,0 +1,302 @@
+{
+  "madrid": {
+    "destinationScenes": [
+      {
+        "key": "scene-1",
+        "sourcePage": "https://www.esmadrid.com/en/10-selfies-madrid",
+        "sourceResolvedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/ftm0l6_xrRjXeDyBILnXVxu3li8PPYN1Ks-hoDLTQnU/mtime:1729621122/sites/default/files/styles/responsive_1024x768/public/styles/content_type_full/public/mirador_de_la_cornisa_del_palacio_real.jpg?itok=OSukngEk",
+        "sourceRequestedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/ftm0l6_xrRjXeDyBILnXVxu3li8PPYN1Ks-hoDLTQnU/mtime:1729621122/sites/default/files/styles/responsive_1024x768/public/styles/content_type_full/public/mirador_de_la_cornisa_del_palacio_real.jpg?itok=OSukngEk",
+        "originalAlt": "Mirador de la Cornisa del Palacio Real",
+        "originalCaption": "",
+        "credit": "Madrid Tourism / Turespaña",
+        "publisher": "Madrid Tourism / Turespaña",
+        "hotel": null,
+        "localPath": "/images/travel/madrid-premium/destination/scene-1.webp",
+        "sourceSHA256": "755775695154235d612952f24ee4f68f1e5e5af45040beca6163053ad0dead38",
+        "webpSHA256": "1155fb158f29302bef3da077603200a175e4574138d88b654803fbc6a95bd3fa",
+        "sourcePixels": [
+          1024,
+          768
+        ],
+        "webpPixels": [
+          1024,
+          768
+        ],
+        "webpBytes": 149880,
+        "pixelFingerprint": "e9f0fa3c2a2d2191",
+        "candidateSubject": "royal palace|palacio real|palacio_real",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-2",
+        "sourcePage": "https://www.esmadrid.com/en/10-selfies-madrid",
+        "sourceResolvedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/SVM8dZiyZRSy3MhtG1AhH1GqfYehshgCSCI3DLAEuw0/mtime:1729621111/sites/default/files/styles/responsive_1024x768/public/styles/content_type_full/public/widgets/items/images/la_gran_via.jpg?itok=3sRQy1Pl",
+        "sourceRequestedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/SVM8dZiyZRSy3MhtG1AhH1GqfYehshgCSCI3DLAEuw0/mtime:1729621111/sites/default/files/styles/responsive_1024x768/public/styles/content_type_full/public/widgets/items/images/la_gran_via.jpg?itok=3sRQy1Pl",
+        "originalAlt": "La Gran Vía",
+        "originalCaption": "",
+        "credit": "Madrid Tourism / Turespaña",
+        "publisher": "Madrid Tourism / Turespaña",
+        "hotel": null,
+        "localPath": "/images/travel/madrid-premium/destination/scene-2.webp",
+        "sourceSHA256": "7f1c79a22913e96c95d434ad0fed6a4a2854ec91c9db218ae70c0f31b9c9a679",
+        "webpSHA256": "cf1189401d940e5eb8aaa0cf6c71f1dcc69b485ac3d96aca83b765e2fc5ce562",
+        "sourcePixels": [
+          1024,
+          768
+        ],
+        "webpPixels": [
+          1024,
+          768
+        ],
+        "webpBytes": 151130,
+        "pixelFingerprint": "73339387b3f3e6e2",
+        "candidateSubject": "gran v[ií]a|gran_via",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-3",
+        "sourcePage": "https://www.esmadrid.com/en/10-selfies-madrid",
+        "sourceResolvedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/SmhYddaJjufDPx7C-e6j80gZCvCLtIRgOr8aj13YAsM/mtime:1619450415/sites/default/files/styles/responsive_1024x768/public/styles/content_type_full/public/recursosturisticos/infoturistica/estanque_parquedeelretiro.jpg?itok=fFoQNLu5",
+        "sourceRequestedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/SmhYddaJjufDPx7C-e6j80gZCvCLtIRgOr8aj13YAsM/mtime:1619450415/sites/default/files/styles/responsive_1024x768/public/styles/content_type_full/public/recursosturisticos/infoturistica/estanque_parquedeelretiro.jpg?itok=fFoQNLu5",
+        "originalAlt": "Estanque del Parque de El Retiro / Monumento a Alfonso XII",
+        "originalCaption": "",
+        "credit": "Madrid Tourism / Turespaña",
+        "publisher": "Madrid Tourism / Turespaña",
+        "hotel": null,
+        "localPath": "/images/travel/madrid-premium/destination/scene-3.webp",
+        "sourceSHA256": "08e808dbe86e53cc6b7248f8764bc151036b49edfa2972ab2cf59831ce4c0bf8",
+        "webpSHA256": "9cb82b563dce27694e285b3b3541b3dc927b8d7ef153071ef584d6968531cd9c",
+        "sourcePixels": [
+          1024,
+          768
+        ],
+        "webpPixels": [
+          1024,
+          768
+        ],
+        "webpBytes": 90022,
+        "pixelFingerprint": "aa9b37a7b98b4c09",
+        "candidateSubject": "retiro|alfonso xii",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
+    "hotels": [
+      {
+        "key": "four-seasons-1",
+        "sourcePage": "https://www.esmadrid.com/en/accommodation/four-seasons-hotel-madrid",
+        "sourceResolvedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/4SIhIWkINxUxsFyEUv7miVqg75sIkYV5a_jS3b76ScM/mtime:1625124954/sites/default/files/recursosturisticos/alojamientos/4_fourseasonsmadrid_fourseasonsterracesuite_1.jpg",
+        "sourceRequestedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/4SIhIWkINxUxsFyEUv7miVqg75sIkYV5a_jS3b76ScM/mtime:1625124954/sites/default/files/recursosturisticos/alojamientos/4_fourseasonsmadrid_fourseasonsterracesuite_1.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Four Seasons Hotel Madrid",
+        "publisher": "Four Seasons Hotel Madrid",
+        "hotel": "Four Seasons Hotel Madrid",
+        "localPath": "/images/travel/madrid-premium/four-seasons/four-seasons-1.webp",
+        "sourceSHA256": "9cfa6f9e9790314eef72a54c3edc77441a178eb7d94a99f8a41cba5d3959bd31",
+        "webpSHA256": "a6ddd9363eb1a1f68de55c7726423ea707d9899eb22cf3f4c1e4024a5706f8fe",
+        "sourcePixels": [
+          3500,
+          2336
+        ],
+        "webpPixels": [
+          1274,
+          850
+        ],
+        "webpBytes": 130424,
+        "pixelFingerprint": "f8cd55f2acf6b4a6",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "rosewood-1",
+        "sourcePage": "https://www.rosewoodhotels.com/en/villa-magna",
+        "sourceResolvedUrl": "https://images.rosewoodhotels.com/is/image/rwhg/RWVMM_ACCOMMODATION_ANGLADAHOUSE_1_HIGH",
+        "sourceRequestedUrl": "https://images.rosewoodhotels.com/is/image/rwhg/RWVMM_ACCOMMODATION_ANGLADAHOUSE_1_HIGH",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Rosewood Villa Magna",
+        "publisher": "Rosewood Villa Magna",
+        "hotel": "Rosewood Villa Magna",
+        "localPath": "/images/travel/madrid-premium/rosewood/rosewood-1.webp",
+        "sourceSHA256": "21517cf9979a609ca3b758a1b480a69e3db82319eaa7842fe91ac469b64c3c51",
+        "webpSHA256": "8f28e73ef2815dfe154cdd792f17908e7e67e0d0711e045268f3f71beebf758d",
+        "sourcePixels": [
+          3500,
+          2310
+        ],
+        "webpPixels": [
+          1280,
+          845
+        ],
+        "webpBytes": 128836,
+        "pixelFingerprint": "0d2e0c9c3e39e5ca",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "edition-1",
+        "sourcePage": "https://www.marriott.com/en-us/hotels/madeb-the-madrid-edition/photos/",
+        "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/eb-madeb-hotel-main-entrance-25277:Classic-Hor?wid=1336&fit=constrain",
+        "sourceRequestedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/eb-madeb-hotel-main-entrance-25277:Classic-Hor?wid=1336&fit=constrain",
+        "originalAlt": "Hotel Main Entrance",
+        "originalCaption": "",
+        "credit": "The Madrid EDITION",
+        "publisher": "The Madrid EDITION",
+        "hotel": "The Madrid EDITION",
+        "localPath": "/images/travel/madrid-premium/edition/edition-1.webp",
+        "sourceSHA256": "f77fd0e25248e548e87024dc54e4780ee66779525a531dc92d83c99d55e54f62",
+        "webpSHA256": "2a7a4f20428f1df6446a0c78631df560734d88d9d77b94e2577bb7f8b72e8702",
+        "sourcePixels": [
+          1336,
+          892
+        ],
+        "webpPixels": [
+          1273,
+          850
+        ],
+        "webpBytes": 154358,
+        "pixelFingerprint": "e13672e19cb8a811",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "edition-2",
+        "sourcePage": "https://www.marriott.com/en-us/hotels/madeb-the-madrid-edition/photos/",
+        "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/eb-madeb-deluxe-room-18525:Classic-Hor?wid=1336&fit=constrain",
+        "sourceRequestedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/eb-madeb-deluxe-room-18525:Classic-Hor?wid=1336&fit=constrain",
+        "originalAlt": "Deluxe Room ",
+        "originalCaption": "",
+        "credit": "The Madrid EDITION",
+        "publisher": "The Madrid EDITION",
+        "hotel": "The Madrid EDITION",
+        "localPath": "/images/travel/madrid-premium/edition/edition-2.webp",
+        "sourceSHA256": "01b36301f984d38030ef92bfac99f33582660480a96952baa915adc9e54f0062",
+        "webpSHA256": "ff0af0a89947d9e5e5a45be11207403660ace5decd38f15d363f9e6a85332dfd",
+        "sourcePixels": [
+          1336,
+          893
+        ],
+        "webpPixels": [
+          1272,
+          850
+        ],
+        "webpBytes": 60156,
+        "pixelFingerprint": "e4e2b29cacbaca78",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "edition-3",
+        "sourcePage": "https://www.marriott.com/en-us/hotels/madeb-the-madrid-edition/photos/",
+        "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/eb-madeb-lobby-area-and-bar--21412:Classic-Hor?wid=1336&fit=constrain",
+        "sourceRequestedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/eb-madeb-lobby-area-and-bar--21412:Classic-Hor?wid=1336&fit=constrain",
+        "originalAlt": "Lobby Area and Bar",
+        "originalCaption": "",
+        "credit": "The Madrid EDITION",
+        "publisher": "The Madrid EDITION",
+        "hotel": "The Madrid EDITION",
+        "localPath": "/images/travel/madrid-premium/edition/edition-3.webp",
+        "sourceSHA256": "fbd545e806ed2d57c71fc61933a98936d9c970122bb96eb82297bf4f1c4d8442",
+        "webpSHA256": "f98caebb17643481d4f168514ec0e069245322f363fcbf99aad4d04a5be23abe",
+        "sourcePixels": [
+          1336,
+          889
+        ],
+        "webpPixels": [
+          1277,
+          850
+        ],
+        "webpBytes": 67640,
+        "pixelFingerprint": "48498168146043c3",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
+    "gaps": [
+      {
+        "group": "city",
+        "expected": 9,
+        "found": 3
+      },
+      {
+        "group": "mandarin-oriental",
+        "expected": 3,
+        "found": 0
+      },
+      {
+        "group": "four-seasons",
+        "expected": 3,
+        "found": 1
+      },
+      {
+        "group": "rosewood",
+        "expected": 3,
+        "found": 1
+      }
+    ],
+    "errors": [
+      {
+        "page": "https://www.fourseasons.com/madrid/photos-and-videos/",
+        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/madrid/photos-and-videos/"
+      },
+      {
+        "url": "https://press.fourseasons.com/madrid/hotel-news/2026/spa-garcon-eclat-experience",
+        "error": "cannot identify image file <_io.BytesIO object at 0x75ced58a7330>"
+      },
+      {
+        "url": "https://press.fourseasons.com/madrid/hotel-news/2026/new-spa-treatments",
+        "error": "cannot identify image file <_io.BytesIO object at 0x75cee4479350>"
+      },
+      {
+        "url": "https://press.fourseasons.com/madrid/hotel-news/2026/dani-cinema-club",
+        "error": "cannot identify image file <_io.BytesIO object at 0x75cee44792b0>"
+      }
+    ],
+    "publicUseApproved": false,
+    "ownerPermissionDeclared": true,
+    "excludedCandidates": [],
+    "cityCount": 3,
+    "hotelCount": 5,
+    "totalBytes": 932446
+  }
+}
