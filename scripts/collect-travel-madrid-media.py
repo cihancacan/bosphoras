@@ -92,7 +92,62 @@ def collect_pages(pages):
   except Exception as e:
    errors.append({'page':page,'error':str(e)[:300]});print('PAGE_GAP',page,str(e)[:200],flush=True)
  return result,errors
-DIRECT = {}
+DIRECT = {
+  "madrid/mandarin-oriental": [
+    [
+      "https://estaticos.esmadrid.com/cdn/farfuture/ltG0Q62eddAu7Z0cSZgDHmLlV6mNRx1l5R40NVTdpBc/mtime:1646729715/sites/default/files/styles/content_type_full/public/recursosturisticos/alojamientos/mrmad_facade.jpg?itok=fDneR-ae",
+      "Mandarin Oriental Ritz Madrid exterior facade",
+      "https://www.esmadrid.com/en/accommodation/mandarin-oriental-ritz",
+      "Madrid Destino / Mandarin Oriental Ritz"
+    ],
+    [
+      "https://estaticos.esmadrid.com/cdn/farfuture/X48CPY5R-CIidZH7qe_FQZctYtncJCIIePESE_CJ8BE/mtime:1646729716/sites/default/files/styles/content_type_full/public/recursosturisticos/alojamientos/mrmad_deluxe_room.jpg?itok=ute-oUu4",
+      "Mandarin Oriental Ritz Madrid Deluxe guest room",
+      "https://www.esmadrid.com/en/accommodation/mandarin-oriental-ritz",
+      "Madrid Destino / Mandarin Oriental Ritz"
+    ],
+    [
+      "https://estaticos.esmadrid.com/cdn/farfuture/mPjyxAPkBA6GZHXJyU0FoSelWWZ13Qn--ho1PWj6UGc/mtime:1646729717/sites/default/files/styles/content_type_full/public/recursosturisticos/alojamientos/mrmad_wellnes_facilities.jpg?itok=hf32wmK0",
+      "Mandarin Oriental Ritz Madrid spa wellness facilities",
+      "https://www.esmadrid.com/en/accommodation/mandarin-oriental-ritz",
+      "Madrid Destino / Mandarin Oriental Ritz"
+    ]
+  ],
+  "madrid/four-seasons": [
+    [
+      "https://estaticos.esmadrid.com/cdn/farfuture/7nSS6vdJxbQuJnaTJzdIEAq0OHn30yOPpmwFoNqCd9c/mtime:1671197851/sites/default/files/styles/content_type_full/public/recursosturisticos/alojamientos/canalejas.jpg?itok=CiqEovlB",
+      "Four Seasons Hotel Madrid Canalejas exterior facade",
+      "https://www.esmadrid.com/en/accommodation/four-seasons-hotel-madrid",
+      "Madrid Destino / Four Seasons Madrid"
+    ],
+    [
+      "https://estaticos.esmadrid.com/cdn/farfuture/RUvyR9mWbo_afrpFcKxcywZQcx_AkiCU57I5hIUgtPY/mtime:1646729709/sites/default/files/styles/content_type_full/public/recursosturisticos/alojamientos/2_deluxe_room.jpg?itok=7N006eaK",
+      "Four Seasons Hotel Madrid Deluxe guest room",
+      "https://www.esmadrid.com/en/accommodation/four-seasons-hotel-madrid",
+      "Madrid Destino / Four Seasons Madrid"
+    ],
+    [
+      "https://estaticos.esmadrid.com/cdn/farfuture/TYvE50gBnWoWu5d1mrC8S-neNb3zHkyRgbt5hLP7EjE/mtime:1646729712/sites/default/files/styles/content_type_full/public/recursosturisticos/alojamientos/9_fourseasonsmadrid_spa_1.jpg?itok=WhmeXkXQ",
+      "Four Seasons Hotel Madrid spa",
+      "https://www.esmadrid.com/en/accommodation/four-seasons-hotel-madrid",
+      "Madrid Destino / Four Seasons Madrid"
+    ]
+  ],
+  "madrid/rosewood": [
+    [
+      "https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1572815.jpg",
+      "Rosewood Villa Magna exterior entrance",
+      "https://guide.michelin.com/de/de/hotels-stays/madrid/hotel-villa-magna-5307",
+      "MICHELIN Guide / Tablet Hotels"
+    ],
+    [
+      "https://images.rosewoodhotels.com/is/image/rwhg/RWVMM_WELLNESS_SENSESPA_III",
+      "Rosewood Villa Magna spa treatment room",
+      "https://www.rosewoodhotels.com/es/villa-magna/experiences/wellness-experiences",
+      "Rosewood Villa Magna"
+    ]
+  ]
+}
 def direct_candidates(slug,key):
  return [{'url':u,'sourcePage':page,'originalAlt':alt,'originalCaption':credit,'targeted':True} for u,alt,page,credit in DIRECT.get(slug+'/'+key,[])]
 
@@ -278,7 +333,7 @@ def hotel_job(c,h):
  # These were specifically identified by source filenames/alt as unsuitable or ambiguous.
  bad={'ritz-carlton-2','portofino-2','claridges-1','wynn-1','fontainebleau-1','arts-1','nizuc-2','majestic-2','bellagio-1','hassler-2','majestic-3','wynn-3','wynn-4','savoy-2','shangri-la-2','shangri-la-3','venetian-3','le-blanc-1','le-blanc-3','coral-beach-3','nizuc-4','hyatt-ziva-2','coral-beach-4','coral-beach-5','le-blanc-5','le-blanc-6','le-blanc-7','le-blanc-8'}
  rejected=[r for r in allprevious if r['key'] in bad]
- existing=[r for r in allprevious if not (c['slug']=='seoul' and key=='josun-palace' and r['key']=='josun-palace-1') and r['key'] not in bad and not (c['slug']=='kuala-lumpur' and key=='eq' and r['key'] in ('eq-1','eq-4'))]
+ existing=[r for r in allprevious if not (c['slug']=='madrid' and key=='four-seasons' and r['key']=='four-seasons-1') and not (c['slug']=='seoul' and key=='josun-palace' and r['key']=='josun-palace-1') and r['key'] not in bad and not (c['slug']=='kuala-lumpur' and key=='eq' and r['key'] in ('eq-1','eq-4'))]
  if len(existing)>=3:return c['slug'],key,existing,[]
  avoid=rejected+[r for r in old.get('excludedCandidates',[]) if r.get('hotel')==name]
  patterns=[EXTERIOR.pattern,ROOM.pattern,FACILITY.pattern]

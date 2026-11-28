@@ -4,6 +4,10 @@
     "city": "Madrid",
     "publisher": "Madrid Tourism / Turespaña",
     "cityPages": [
+      "https://www.esmadrid.com/en/tourist-information/plaza-mayor-madrid",
+      "https://www.esmadrid.com/en/tourist-information/museo-del-prado",
+      "https://www.esmadrid.com/en/tourist-information/madrid-rio-park",
+      "https://www.esmadrid.com/en/madrid-neighbourhoods/madrid-rio",
       "https://www.esmadrid.com/en/madrid-top-10",
       "https://www.esmadrid.com/en/72-hours-madrid",
       "https://www.esmadrid.com/en/10-selfies-madrid",
@@ -49,7 +53,9 @@
         [
           "https://www.rosewoodhotels.com/en/villa-magna/overview/gallery",
           "https://www.rosewoodhotels.com/en/villa-magna/overview",
-          "https://www.rosewoodhotels.com/en/villa-magna/accommodation"
+          "https://www.rosewoodhotels.com/en/villa-magna/accommodation",
+          "https://www.esmadrid.com/en/accommodation/rosewood-villa-magna",
+          "https://www.rosewoodhotels.com/es/villa-magna/experiences/wellness-experiences"
         ]
       ],
       [
