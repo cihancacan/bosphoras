@@ -5,7 +5,7 @@
   "identityMethod": "Search authenticated static hotel data API or official white-label UI; verify name, address and city; never infer hotel ID.",
   "existingMappingRows": 330,
   "editorialHotels": 44,
-  "verifiedMappingCount": 32,
+  "verifiedMappingCount": 41,
   "hotels": [
     {
       "destination": "london",
@@ -14,8 +14,15 @@
       "countryCode": "GB",
       "hotelId": null,
       "status": "requires_supplier_identity_verification",
-      "reason": "not_found_in_supplier",
-      "candidates": []
+      "reason": "alias_or_inventory_requires_review",
+      "candidates": [
+        {
+          "id": "lp2a32c",
+          "name": "Claridge's, Maybourne",
+          "city": "London",
+          "address": "Brook Street"
+        }
+      ]
     },
     {
       "destination": "london",
@@ -76,18 +83,11 @@
       "name": "Fontainebleau Las Vegas",
       "city": "Las Vegas",
       "countryCode": "US",
-      "hotelId": null,
-      "status": "requires_supplier_identity_verification",
-      "reason": "not_found_in_supplier",
-      "candidates": [
-        {
-          "id": "lp656bbd6b",
-          "name": "Fontainebleau Las Vegas, MICHELIN Key Award Hotel",
-          "city": "Las Vegas",
-          "address": "",
-          "country": "us"
-        }
-      ]
+      "hotelId": "lp656bbd6b",
+      "status": "supplier_identity_verified",
+      "address": "2777 South Las Vegas Boulevard",
+      "supplierName": "Fontainebleau Las Vegas, MICHELIN Key Award Hotel",
+      "officialAddressSource": "https://www.fontainebleaulasvegas.com/information/business-center/"
     },
     {
       "destination": "rome",
@@ -103,18 +103,11 @@
       "name": "Hotel de Russie",
       "city": "Rome",
       "countryCode": "IT",
-      "hotelId": null,
-      "status": "requires_supplier_identity_verification",
-      "reason": "not_found_in_supplier",
-      "candidates": [
-        {
-          "id": "lp60049",
-          "name": "Rocco Forte Hotel De Russie",
-          "city": "Rome",
-          "address": "Via del Babuino 9",
-          "country": "it"
-        }
-      ]
+      "hotelId": "lp60049",
+      "status": "supplier_identity_verified",
+      "address": "Via Del Babuino 9",
+      "supplierName": "Rocco Forte Hotel De Russie",
+      "officialAddressSource": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/"
     },
     {
       "destination": "rome",
@@ -130,95 +123,11 @@
       "name": "Hotel Eden",
       "city": "Rome",
       "countryCode": "IT",
-      "hotelId": null,
-      "status": "requires_supplier_identity_verification",
-      "reason": "ambiguous_name",
-      "candidates": [
-        {
-          "id": "lp40003",
-          "name": "Hotel Eden",
-          "city": "Sorrento",
-          "address": "Via Correale 25",
-          "country": "it"
-        },
-        {
-          "id": "lp44a75",
-          "name": "Hotel Eden",
-          "city": "Florence",
-          "address": "Via Nazionale 55",
-          "country": "it"
-        },
-        {
-          "id": "lp3a9e6",
-          "name": "Hotel Eden",
-          "city": "Naples",
-          "address": "Corso Novara, 9",
-          "country": "it"
-        },
-        {
-          "id": "lp44416",
-          "name": "Hotel Eden",
-          "city": "Sirmione",
-          "address": "Piazza Carducci 19",
-          "country": "it"
-        },
-        {
-          "id": "lp7545d",
-          "name": "Hotel Eden",
-          "city": "Lido di Jesolo",
-          "address": "via Bafile, 604",
-          "country": "it"
-        },
-        {
-          "id": "lp7587e",
-          "name": "Hotel Eden",
-          "city": "Viareggio",
-          "address": "Viale Manin 27",
-          "country": "it"
-        },
-        {
-          "id": "lp4ce2b",
-          "name": "Hotel Eden",
-          "city": "Baveno",
-          "address": "Viale della Vittoria, 16",
-          "country": "it"
-        },
-        {
-          "id": "lp4ce43",
-          "name": "Hotel Eden",
-          "city": "Brenzone sul Garda",
-          "address": "Via G.Zanardelli 6",
-          "country": "it"
-        },
-        {
-          "id": "lp6eae1",
-          "name": "Hotel Eden",
-          "city": "Toscolano Maderno",
-          "address": "P.zza S.Marco, 27",
-          "country": "it"
-        },
-        {
-          "id": "lp657ea827",
-          "name": "Hotel Eden",
-          "city": "Valeggio sul Mincio",
-          "address": "Via Don Giovanni Beltrame 10",
-          "country": "it"
-        },
-        {
-          "id": "lp636d3",
-          "name": "Hotel Eden",
-          "city": "Sistiana",
-          "address": "Via Sistiana 42/a",
-          "country": "it"
-        },
-        {
-          "id": "lp655b0633",
-          "name": "Hotel Eden",
-          "city": "Lignano Sabbiadoro",
-          "address": "Viale Delle Palme 38",
-          "country": "it"
-        }
-      ]
+      "hotelId": "lp1aaed",
+      "status": "supplier_identity_verified",
+      "address": "Via Ludovisi 49",
+      "supplierName": "Hotel Eden - Dorchester Collection",
+      "officialAddressSource": "https://www.dorchestercollection.com/rome/hotel-eden/about"
     },
     {
       "destination": "barcelona",
@@ -243,18 +152,11 @@
       "name": "Majestic Hotel & Spa Barcelona",
       "city": "Barcelona",
       "countryCode": "ES",
-      "hotelId": null,
-      "status": "requires_supplier_identity_verification",
-      "reason": "not_found_in_supplier",
-      "candidates": [
-        {
-          "id": "lp1c589",
-          "name": "Majestic Hotel & Spa Barcelona GL",
-          "city": "Barcelona",
-          "address": "Passeig De Gracia, 68",
-          "country": "es"
-        }
-      ]
+      "hotelId": "lp1c589",
+      "status": "supplier_identity_verified",
+      "address": "Passeig de Gracia, 68",
+      "supplierName": "Majestic Hotel & Spa Barcelona GL",
+      "officialAddressSource": "https://majestichotelgroup.com/en/barcelona/hotel-majestic/location-and-contact"
     },
     {
       "destination": "barcelona",
@@ -279,18 +181,11 @@
       "name": "Le Blanc Spa Resort Cancun",
       "city": "Cancun",
       "countryCode": "MX",
-      "hotelId": null,
-      "status": "requires_supplier_identity_verification",
-      "reason": "not_found_in_supplier",
-      "candidates": [
-        {
-          "id": "lp1d505",
-          "name": "Le Blanc Spa Resort Cancun - Adults Only - All-Inclusive",
-          "city": "Cancún",
-          "address": "Boulevard Kukulcan Km 10",
-          "country": "mx"
-        }
-      ]
+      "hotelId": "lp1d505",
+      "status": "supplier_identity_verified",
+      "address": "Boulevard Kukulcan Km 10 Hotel Zone",
+      "supplierName": "Le Blanc Spa Resort Cancun - Adults Only - All-Inclusive",
+      "officialAddressSource": "https://cancun.leblancsparesorts.com/"
     },
     {
       "destination": "cancun",
@@ -299,14 +194,13 @@
       "countryCode": "MX",
       "hotelId": null,
       "status": "requires_supplier_identity_verification",
-      "reason": "not_found_in_supplier",
+      "reason": "alias_or_inventory_requires_review",
       "candidates": [
         {
           "id": "lp82eff",
           "name": "Turquoize at Hyatt Ziva Cancun - Adults Only - All Inclusive",
           "city": "Cancún",
-          "address": "Blvd. Kukulcan, Manzana 51, Lote 7",
-          "country": "mx"
+          "address": "Blvd. Kukulcan, Manzana 51, Lote 7"
         }
       ]
     },
@@ -315,18 +209,11 @@
       "name": "Grand Fiesta Americana Coral Beach Cancún",
       "city": "Cancun",
       "countryCode": "MX",
-      "hotelId": null,
-      "status": "requires_supplier_identity_verification",
-      "reason": "not_found_in_supplier",
-      "candidates": [
-        {
-          "id": "lp3536e",
-          "name": "Grand Fiesta Americana Coral Beach Cancun - All Inclusive",
-          "city": "Cancún",
-          "address": "Blvd. Kukulcan km. 9.5",
-          "country": "mx"
-        }
-      ]
+      "hotelId": "lp3536e",
+      "status": "supplier_identity_verified",
+      "address": "Boulevard Kukulcan Km 9.5",
+      "supplierName": "Grand Fiesta Americana Coral Beach Cancun - All Inclusive",
+      "officialAddressSource": "https://www.fiestamericanatravelty.com/en/grand-fiesta-americana/hotels/grand-fiesta-americana-coral-beach-cancun-all-inclusive-spa-resort"
     },
     {
       "destination": "orlando",
@@ -342,18 +229,11 @@
       "name": "Waldorf Astoria Orlando",
       "city": "Orlando",
       "countryCode": "US",
-      "hotelId": null,
-      "status": "requires_supplier_identity_verification",
-      "reason": "not_found_in_supplier",
-      "candidates": [
-        {
-          "id": "lp4b248",
-          "name": "Waldorf Astoria Orlando - An Official Walt Disney World Hotel",
-          "city": "Orlando",
-          "address": "14200 Bonnet Creek Resort Lane",
-          "country": "us"
-        }
-      ]
+      "hotelId": "lp4b248",
+      "status": "supplier_identity_verified",
+      "address": "14200 Bonnet Creek Resort Lane",
+      "supplierName": "Waldorf Astoria Orlando - An Official Walt Disney World Hotel",
+      "officialAddressSource": "https://www.waldorfastoriaorlando.com/map-and-directions/our-location/"
     },
     {
       "destination": "orlando",
@@ -369,18 +249,11 @@
       "name": "Loews Portofino Bay Hotel",
       "city": "Orlando",
       "countryCode": "US",
-      "hotelId": null,
-      "status": "requires_supplier_identity_verification",
-      "reason": "not_found_in_supplier",
-      "candidates": [
-        {
-          "id": "lp2b6c7",
-          "name": "Universal's Loews Portofino Bay Hotel",
-          "city": "Orlando",
-          "address": "5601 Universal Blvd",
-          "country": "us"
-        }
-      ]
+      "hotelId": "lp2b6c7",
+      "status": "supplier_identity_verified",
+      "address": "5601 Universal Boulevard",
+      "supplierName": "Universal's Loews Portofino Bay Hotel",
+      "officialAddressSource": "https://www.loewshotels.com/portofino-bay-hotel"
     },
     {
       "destination": "hong-kong",
@@ -470,7 +343,7 @@
       "countryCode": "JP",
       "hotelId": null,
       "status": "requires_supplier_identity_verification",
-      "reason": "not_found_in_supplier",
+      "reason": "alias_or_inventory_requires_review",
       "candidates": []
     },
     {
@@ -478,10 +351,11 @@
       "name": "The Ritz-Carlton, Osaka",
       "city": "Osaka",
       "countryCode": "JP",
-      "hotelId": null,
-      "status": "requires_supplier_identity_verification",
-      "reason": "not_found_in_supplier",
-      "candidates": []
+      "hotelId": "lp1ebca",
+      "status": "supplier_identity_verified",
+      "address": "Kita-ku Umeda 2-5-25",
+      "supplierName": "The Ritz-Carlton Osaka",
+      "officialAddressSource": "https://www.ritzcarlton.com/en/hotels/osarz-the-ritz-carlton-osaka/overview/"
     },
     {
       "destination": "osaka",
@@ -565,6 +439,7 @@
       "address": "Plaza de Celenque 2"
     }
   ],
-  "remainingCount": 12,
-  "sourceDeployment": "dpl_6mkw8W2ZFZTYBLsdcpPLHTpkrWoV"
+  "remainingCount": 3,
+  "sourceDeployment": "dpl_6mkw8W2ZFZTYBLsdcpPLHTpkrWoV",
+  "aliasSourceDeployment": "dpl_GX4SuuUZDenuyvVi5ongMq5DGnGc"
 }

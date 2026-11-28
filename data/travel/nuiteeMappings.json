@@ -491,6 +491,105 @@
       "address": "249, Dongho-ro, Jung-gu",
       "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 249, Dongho-ro, Jung-gu, KR",
       "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp22859 route. Live property page still to be checked."
+    },
+    {
+      "destination": "las-vegas",
+      "editorialKeys": [
+        "las-vegas:Fontainebleau Las Vegas"
+      ],
+      "name": "Fontainebleau Las Vegas",
+      "hotelId": "lp656bbd6b",
+      "address": "2777 South Las Vegas Boulevard",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact reviewed supplier alias Fontainebleau Las Vegas, MICHELIN Key Award Hotel; country, city and address confirmed 2026-11-28: 2777 South Las Vegas Boulevard. Address reference: https://www.fontainebleaulasvegas.com/information/business-center/",
+      "deepLinkEvidence": "Supplier hotel detail API confirmed ID; white-label /hotels/lp656bbd6b route; live property page not yet checked."
+    },
+    {
+      "destination": "rome",
+      "editorialKeys": [
+        "rome:Hotel de Russie"
+      ],
+      "name": "Hotel de Russie",
+      "hotelId": "lp60049",
+      "address": "Via Del Babuino 9",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact reviewed supplier alias Rocco Forte Hotel De Russie; country, city and address confirmed 2026-11-28: Via Del Babuino 9. Address reference: https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/",
+      "deepLinkEvidence": "Supplier hotel detail API confirmed ID; white-label /hotels/lp60049 route; live property page not yet checked."
+    },
+    {
+      "destination": "rome",
+      "editorialKeys": [
+        "rome:Hotel Eden"
+      ],
+      "name": "Hotel Eden",
+      "hotelId": "lp1aaed",
+      "address": "Via Ludovisi 49",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact reviewed supplier alias Hotel Eden - Dorchester Collection; country, city and address confirmed 2026-11-28: Via Ludovisi 49. Address reference: https://www.dorchestercollection.com/rome/hotel-eden/about",
+      "deepLinkEvidence": "Supplier hotel detail API confirmed ID; white-label /hotels/lp1aaed route; live property page not yet checked."
+    },
+    {
+      "destination": "barcelona",
+      "editorialKeys": [
+        "barcelona:Majestic Hotel & Spa Barcelona"
+      ],
+      "name": "Majestic Hotel & Spa Barcelona",
+      "hotelId": "lp1c589",
+      "address": "Passeig de Gracia, 68",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact reviewed supplier alias Majestic Hotel & Spa Barcelona GL; country, city and address confirmed 2026-11-28: Passeig de Gracia, 68. Address reference: https://majestichotelgroup.com/en/barcelona/hotel-majestic/location-and-contact",
+      "deepLinkEvidence": "Supplier hotel detail API confirmed ID; white-label /hotels/lp1c589 route; live property page not yet checked."
+    },
+    {
+      "destination": "cancun",
+      "editorialKeys": [
+        "cancun:Le Blanc Spa Resort Cancun"
+      ],
+      "name": "Le Blanc Spa Resort Cancun",
+      "hotelId": "lp1d505",
+      "address": "Boulevard Kukulcan Km 10 Hotel Zone",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact reviewed supplier alias Le Blanc Spa Resort Cancun - Adults Only - All-Inclusive; country, city and address confirmed 2026-11-28: Boulevard Kukulcan Km 10 Hotel Zone. Address reference: https://cancun.leblancsparesorts.com/",
+      "deepLinkEvidence": "Supplier hotel detail API confirmed ID; white-label /hotels/lp1d505 route; live property page not yet checked."
+    },
+    {
+      "destination": "cancun",
+      "editorialKeys": [
+        "cancun:Grand Fiesta Americana Coral Beach Cancún"
+      ],
+      "name": "Grand Fiesta Americana Coral Beach Cancún",
+      "hotelId": "lp3536e",
+      "address": "Boulevard Kukulcan Km 9.5",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact reviewed supplier alias Grand Fiesta Americana Coral Beach Cancun - All Inclusive; country, city and address confirmed 2026-11-28: Boulevard Kukulcan Km 9.5. Address reference: https://www.fiestamericanatravelty.com/en/grand-fiesta-americana/hotels/grand-fiesta-americana-coral-beach-cancun-all-inclusive-spa-resort",
+      "deepLinkEvidence": "Supplier hotel detail API confirmed ID; white-label /hotels/lp3536e route; live property page not yet checked."
+    },
+    {
+      "destination": "orlando",
+      "editorialKeys": [
+        "orlando:Waldorf Astoria Orlando"
+      ],
+      "name": "Waldorf Astoria Orlando",
+      "hotelId": "lp4b248",
+      "address": "14200 Bonnet Creek Resort Lane",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact reviewed supplier alias Waldorf Astoria Orlando - An Official Walt Disney World Hotel; country, city and address confirmed 2026-11-28: 14200 Bonnet Creek Resort Lane. Address reference: https://www.waldorfastoriaorlando.com/map-and-directions/our-location/",
+      "deepLinkEvidence": "Supplier hotel detail API confirmed ID; white-label /hotels/lp4b248 route; live property page not yet checked."
+    },
+    {
+      "destination": "orlando",
+      "editorialKeys": [
+        "orlando:Loews Portofino Bay Hotel"
+      ],
+      "name": "Loews Portofino Bay Hotel",
+      "hotelId": "lp2b6c7",
+      "address": "5601 Universal Boulevard",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact reviewed supplier alias Universal's Loews Portofino Bay Hotel; country, city and address confirmed 2026-11-28: 5601 Universal Boulevard. Address reference: https://www.loewshotels.com/portofino-bay-hotel",
+      "deepLinkEvidence": "Supplier hotel detail API confirmed ID; white-label /hotels/lp2b6c7 route; live property page not yet checked."
+    },
+    {
+      "destination": "osaka",
+      "editorialKeys": [
+        "osaka:The Ritz-Carlton, Osaka"
+      ],
+      "name": "The Ritz-Carlton, Osaka",
+      "hotelId": "lp1ebca",
+      "address": "Kita-ku Umeda 2-5-25",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact reviewed supplier alias The Ritz-Carlton Osaka; country, city and address confirmed 2026-11-28: Kita-ku Umeda 2-5-25. Address reference: https://www.ritzcarlton.com/en/hotels/osarz-the-ritz-carlton-osaka/overview/",
+      "deepLinkEvidence": "Supplier hotel detail API confirmed ID; white-label /hotels/lp1ebca route; live property page not yet checked."
     }
   ]
 }
