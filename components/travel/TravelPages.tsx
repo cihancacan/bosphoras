@@ -297,6 +297,119 @@ function isApproved(route: TravelRoute, locale: TravelLocale): boolean {
   }
   return false;
 }
+// Destination-specific, independently written search snippets for the 89–99 series.
+const recentSearchDescriptions: Record<string,{fr:[string,string];en:[string,string]}> = {
+  "london": {
+    "fr": [
+      "Mayfair, Covent Garden ou Kensington ? Découvrez où séjourner à Londres, les quartiers les plus pratiques et quatre hôtels de luxe à comparer.",
+      "Claridge’s, Savoy, Peninsula ou Shangri-La ? Comparez les hôtels de luxe de Londres, leurs chambres, vues et conditions de réservation."
+    ],
+    "en": [
+      "Mayfair, Covent Garden or Kensington? Find the right London neighbourhood, discover four luxury hotels and plan your stay from Heathrow.",
+      "Claridge’s, The Savoy, Peninsula or Shangri-La? Compare London luxury hotels, room types, views and booking conditions."
+    ]
+  },
+  "las-vegas": {
+    "fr": [
+      "Au cœur du Strip ou au calme ? Choisissez où dormir à Las Vegas selon vos spectacles, piscines et budget total, frais de resort compris.",
+      "Bellagio, Wynn, Venetian ou Fontainebleau ? Comparez suites, piscines, emplacement et frais de resort avant de réserver à Las Vegas."
+    ],
+    "en": [
+      "On the Strip or somewhere quieter? Find the right Las Vegas location for shows, pools and your budget, including resort fees.",
+      "Bellagio, Wynn, Venetian or Fontainebleau? Compare suites, pools, locations and mandatory resort fees before booking in Las Vegas."
+    ]
+  },
+  "rome": {
+    "fr": [
+      "Du Panthéon à la Piazza di Spagna, trouvez le quartier idéal pour découvrir Rome à pied. Hôtels de luxe, visites et conseils de séjour.",
+      "Bvlgari Roma, Hotel de Russie, Hassler ou Eden ? Comparez quatre hôtels de luxe à Rome, leurs chambres, vues et emplacements."
+    ],
+    "en": [
+      "From the Pantheon to the Spanish Steps, find the best area for exploring Rome on foot. Discover luxury hotels and practical stay tips.",
+      "Bvlgari Roma, Hotel de Russie, Hassler or Eden? Compare four luxury hotels in Rome, their rooms, views and locations."
+    ]
+  },
+  "barcelona": {
+    "fr": [
+      "Eixample, quartier gothique ou bord de mer ? Trouvez où dormir à Barcelone selon vos visites, vos envies de plage et votre style de séjour.",
+      "Mandarin Oriental, Hotel Arts, Majestic ou Cotton House ? Comparez quatre hôtels de luxe à Barcelone, du centre-ville au bord de mer."
+    ],
+    "en": [
+      "Eixample, Gothic Quarter or the beach? Find where to stay in Barcelona for sightseeing, seaside escapes and your preferred pace.",
+      "Mandarin Oriental, Hotel Arts, Majestic or Cotton House? Compare four Barcelona luxury hotels from the city centre to the waterfront."
+    ]
+  },
+  "cancun": {
+    "fr": [
+      "Plages turquoise, séjour en famille ou escapade entre adultes ? Découvrez les zones de Cancún et comparez les resorts et formules tout compris.",
+      "NIZUC, Le Blanc, Hyatt Ziva ou Coral Beach ? Comparez les resorts de Cancún, plages, chambres, formules et conditions de séjour."
+    ],
+    "en": [
+      "Turquoise beaches, a family holiday or an adults-only escape? Discover Cancún’s hotel zones and compare resorts and all-inclusive options.",
+      "NIZUC, Le Blanc, Hyatt Ziva or Coral Beach? Compare Cancún resorts, beaches, rooms, meal plans and stay conditions."
+    ]
+  },
+  "orlando": {
+    "fr": [
+      "Disney, Universal ou un resort au calme ? Choisissez où dormir à Orlando selon vos parcs, les navettes et le budget de votre famille.",
+      "Four Seasons, Waldorf Astoria, Ritz-Carlton ou Loews Portofino Bay ? Comparez quatre resorts d’Orlando, chambres et accès aux parcs."
+    ],
+    "en": [
+      "Disney, Universal or a quiet resort? Find where to stay in Orlando based on your theme parks, shuttle options and family budget.",
+      "Four Seasons, Waldorf Astoria, Ritz-Carlton or Loews Portofino Bay? Compare Orlando resorts, rooms and theme park access."
+    ]
+  },
+  "hong-kong": {
+    "fr": [
+      "Central, Kowloon ou vue sur Victoria Harbour ? Découvrez les quartiers de Hong Kong, quatre palaces et les trajets utiles à votre séjour.",
+      "Rosewood, Four Seasons, Peninsula ou Mandarin Oriental ? Comparez les hôtels de luxe à Hong Kong, leurs chambres et vues sur la baie."
+    ],
+    "en": [
+      "Central, Kowloon or Victoria Harbour views? Explore Hong Kong’s neighbourhoods, four luxury hotels and practical transport options.",
+      "Rosewood, Four Seasons, Peninsula or Mandarin Oriental? Compare Hong Kong luxury hotels, room types and harbour views."
+    ]
+  },
+  "kuala-lumpur": {
+    "fr": [
+      "KLCC, Bukit Bintang ou Chinatown ? Trouvez le quartier idéal à Kuala Lumpur entre tours Petronas, shopping et hôtels de luxe.",
+      "Mandarin Oriental, Four Seasons, The RuMa ou EQ ? Comparez quatre hôtels de luxe à Kuala Lumpur, leurs vues, chambres et piscines."
+    ],
+    "en": [
+      "KLCC, Bukit Bintang or Chinatown? Find the right Kuala Lumpur neighbourhood for the Petronas Towers, shopping and luxury stays.",
+      "Mandarin Oriental, Four Seasons, The RuMa or EQ? Compare four Kuala Lumpur luxury hotels, skyline views, rooms and pools."
+    ]
+  },
+  "osaka": {
+    "fr": [
+      "Umeda, Namba ou Nakanoshima ? Choisissez où dormir à Osaka entre gastronomie, shopping et excursions au Japon. Découvrez les hôtels à comparer.",
+      "Conrad, Four Seasons, Ritz-Carlton ou W Osaka ? Comparez quatre hôtels de luxe à Osaka, leurs chambres, vues et accès aux quartiers."
+    ],
+    "en": [
+      "Umeda, Namba or Nakanoshima? Find where to stay in Osaka for food, shopping and day trips across Japan. Discover four luxury hotels.",
+      "Conrad, Four Seasons, Ritz-Carlton or W Osaka? Compare four luxury hotels in Osaka, rooms, views and neighbourhood access."
+    ]
+  },
+  "seoul": {
+    "fr": [
+      "Palais de Jongno, boutiques de Myeongdong ou Gangnam ? Trouvez où dormir à Séoul et comparez quatre hôtels de luxe selon votre itinéraire.",
+      "Four Seasons, SIGNIEL, Josun Palace ou The Shilla ? Comparez quatre hôtels de luxe à Séoul, chambres, vues et quartiers."
+    ],
+    "en": [
+      "Jongno palaces, Myeongdong shopping or Gangnam? Find where to stay in Seoul and compare four luxury hotels for your itinerary.",
+      "Four Seasons, SIGNIEL, Josun Palace or The Shilla? Compare four Seoul luxury hotels, rooms, views and neighbourhoods."
+    ]
+  },
+  "madrid": {
+    "fr": [
+      "Sol, Retiro ou Salamanca ? Trouvez où dormir à Madrid entre musées, palais et shopping. Découvrez les quartiers et quatre hôtels de luxe.",
+      "Ritz, Four Seasons, Rosewood ou The Madrid EDITION ? Comparez quatre hôtels de luxe à Madrid, leurs chambres, quartiers et prestations."
+    ],
+    "en": [
+      "Sol, Retiro or Salamanca? Find where to stay in Madrid for museums, palaces and shopping. Explore neighbourhoods and four luxury hotels.",
+      "Ritz, Four Seasons, Rosewood or The Madrid EDITION? Compare four Madrid luxury hotels, room types, neighbourhoods and facilities."
+    ]
+  }
+};
 export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): Metadata {
   const route = resolveTravelRoute(parts);
   if (!route) return { title: 'Not found', robots: { index: false } };
@@ -361,7 +474,8 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     : localizedIntro
     ? (pageTitle + '. ' + localizedIntro)
     : (route.destination ? pageTitle + '. ' + t.value + ' ' + t.approach : t.slogan + ' ' + t.value);
-  const description = seoulSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Four Seasons, SIGNIEL, Josun Palace et The Shilla à Séoul : quartiers, chambres et prestations.':'Compare Four Seasons, SIGNIEL, Josun Palace and The Shilla in Seoul: neighbourhoods, rooms and facilities.') : seoulSeo.description) : osakaSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Conrad, Four Seasons, Ritz-Carlton et W Osaka : quartiers, chambres, vues et prestations.':'Compare Conrad, Four Seasons, Ritz-Carlton and W Osaka: neighbourhoods, rooms, views and facilities.') : osakaSeo.description) : kualaLumpurSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Mandarin Oriental, Four Seasons, The RuMa et EQ à Kuala Lumpur : KLCC, chambres, vues et piscines.':'Compare Mandarin Oriental, Four Seasons, The RuMa and EQ in Kuala Lumpur: KLCC, rooms, views and pools.') : kualaLumpurSeo.description) : hongKongSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Rosewood, Four Seasons, Peninsula et Mandarin Oriental à Hong Kong : quartiers, vue sur la baie et chambres.':'Compare Rosewood, Four Seasons, Peninsula and Mandarin Oriental in Hong Kong: neighbourhoods, harbour views and rooms.') : hongKongSeo.description) : orlandoSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Four Seasons, Waldorf Astoria, Ritz-Carlton et Loews Portofino Bay : parcs, chambres et navettes.':'Compare Four Seasons, Waldorf Astoria, Ritz-Carlton and Loews Portofino Bay: parks, rooms and shuttles.') : orlandoSeo.description) : barcelonaSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?"Comparez Mandarin Oriental, Hotel Arts, Majestic et Cotton House : quartiers, chambres et prestations.":"Compare Mandarin Oriental, Hotel Arts, Majestic and Cotton House: neighbourhoods, rooms and facilities.") : barcelonaSeo.description) : cancunSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?"Comparez NIZUC, Le Blanc, Hyatt Ziva et Coral Beach : plages, tout compris et séjours en famille.":"Compare NIZUC, Le Blanc, Hyatt Ziva and Coral Beach: beaches, all-inclusive and family stays.") : cancunSeo.description) : romeSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Bvlgari, de Russie, Hassler et Eden : quartiers, chambres, vues et conditions de réservation.':'Compare Bvlgari, de Russie, Hassler and Eden: neighbourhoods, rooms, views and booking conditions.') : romeSeo.description) : lasVegasSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Bellagio, Wynn, Venetian et Fontainebleau : suites, piscines, localisation et frais de séjour.':'Compare Bellagio, Wynn, Venetian and Fontainebleau: suites, pools, locations and mandatory resort fees.') : lasVegasSeo.description) : londonSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Claridge’s, le Savoy, le Peninsula et le Shangri-La : quartiers, chambres, prestations et conditions de réservation.':'Compare Claridge’s, the Savoy, Peninsula and Shangri-La: neighbourhoods, rooms, facilities and booking conditions.') : londonSeo.description) : route.kind==='directory' ? directorySearchMetadata(locale).description : route.kind==='destination'&&route.destination ? destinationSearchDescription(locale,route.destination.slug,seoSnippet(rawDescription)) : route.kind==='keyword'&&route.category==='hotels'&&route.destination ? hotelSearchDescription(locale,route.destination.slug,seoSnippet(rawDescription)) : seoSnippet(rawDescription);
+  const recentCopy = route.destination && (locale==='fr'||locale==='en') && (route.kind==='destination'||(route.kind==='keyword'&&route.category==='hotels')) ? recentSearchDescriptions[route.destination.slug]?.[locale] : undefined;
+  const description = recentCopy?.[route.kind==='keyword'?1:0] ?? (seoulSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Four Seasons, SIGNIEL, Josun Palace et The Shilla à Séoul : quartiers, chambres et prestations.':'Compare Four Seasons, SIGNIEL, Josun Palace and The Shilla in Seoul: neighbourhoods, rooms and facilities.') : seoulSeo.description) : osakaSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Conrad, Four Seasons, Ritz-Carlton et W Osaka : quartiers, chambres, vues et prestations.':'Compare Conrad, Four Seasons, Ritz-Carlton and W Osaka: neighbourhoods, rooms, views and facilities.') : osakaSeo.description) : kualaLumpurSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Mandarin Oriental, Four Seasons, The RuMa et EQ à Kuala Lumpur : KLCC, chambres, vues et piscines.':'Compare Mandarin Oriental, Four Seasons, The RuMa and EQ in Kuala Lumpur: KLCC, rooms, views and pools.') : kualaLumpurSeo.description) : hongKongSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Rosewood, Four Seasons, Peninsula et Mandarin Oriental à Hong Kong : quartiers, vue sur la baie et chambres.':'Compare Rosewood, Four Seasons, Peninsula and Mandarin Oriental in Hong Kong: neighbourhoods, harbour views and rooms.') : hongKongSeo.description) : orlandoSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Four Seasons, Waldorf Astoria, Ritz-Carlton et Loews Portofino Bay : parcs, chambres et navettes.':'Compare Four Seasons, Waldorf Astoria, Ritz-Carlton and Loews Portofino Bay: parks, rooms and shuttles.') : orlandoSeo.description) : barcelonaSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?"Comparez Mandarin Oriental, Hotel Arts, Majestic et Cotton House : quartiers, chambres et prestations.":"Compare Mandarin Oriental, Hotel Arts, Majestic and Cotton House: neighbourhoods, rooms and facilities.") : barcelonaSeo.description) : cancunSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?"Comparez NIZUC, Le Blanc, Hyatt Ziva et Coral Beach : plages, tout compris et séjours en famille.":"Compare NIZUC, Le Blanc, Hyatt Ziva and Coral Beach: beaches, all-inclusive and family stays.") : cancunSeo.description) : romeSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Bvlgari, de Russie, Hassler et Eden : quartiers, chambres, vues et conditions de réservation.':'Compare Bvlgari, de Russie, Hassler and Eden: neighbourhoods, rooms, views and booking conditions.') : romeSeo.description) : lasVegasSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Bellagio, Wynn, Venetian et Fontainebleau : suites, piscines, localisation et frais de séjour.':'Compare Bellagio, Wynn, Venetian and Fontainebleau: suites, pools, locations and mandatory resort fees.') : lasVegasSeo.description) : londonSeo ? (isFeaturedHotelGuide ? seoSnippet(locale==='fr'?'Comparez Claridge’s, le Savoy, le Peninsula et le Shangri-La : quartiers, chambres, prestations et conditions de réservation.':'Compare Claridge’s, the Savoy, Peninsula and Shangri-La: neighbourhoods, rooms, facilities and booking conditions.') : londonSeo.description) : route.kind==='directory' ? directorySearchMetadata(locale).description : route.kind==='destination'&&route.destination ? destinationSearchDescription(locale,route.destination.slug,seoSnippet(rawDescription)) : route.kind==='keyword'&&route.category==='hotels'&&route.destination ? hotelSearchDescription(locale,route.destination.slug,seoSnippet(rawDescription)) : seoSnippet(rawDescription));
   const approvedPhotos=featureGuide?getApprovedDestinationPhotos(featureGuide):[];
   const sharePhoto=featureGuide?(approvedPhotos.find(photo=>photo.src===featureGuide.photos[featureGuide.hero]?.src)||approvedPhotos[0]):undefined;
   const shareImages=sharePhoto?[{url:new URL(sharePhoto.src,ORIGIN).href,alt:featureGuide?.name||pageTitle}]:undefined;
