@@ -123,12 +123,38 @@
       "Compare datas, hóspedes, categorias, impostos, pequeno-almoço, cancelamento e serviços equivalentes."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Vista do miradouro do Palácio Real",
+    "Gran Vía",
+    "Lago do parque do Retiro",
+    "Ponte pedonal no parque Madrid Río",
+    "Plaza Mayor",
+    "Exterior do Museu do Prado",
+    "Calle de Serrano em Salamanca",
+    "Plaza de Olavide em Chamberí",
+    "Plaza de la Paja em La Latina"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Quarto do Mandarin Oriental Ritz",
+      "Fachada do Mandarin Oriental Ritz vista do jardim",
+      "Piscina interior do spa do Mandarin Oriental Ritz"
+    ],
+    [
+      "Sala de estar do Four Seasons Madrid",
+      "Entrada do Four Seasons Madrid",
+      "Piscina interior do Four Seasons Madrid"
+    ],
+    [
+      "Salão do Rosewood Villa Magna",
+      "Sala de tratamentos do Rosewood Villa Magna",
+      "Vista de uma varanda do Rosewood Villa Magna"
+    ],
+    [
+      "Entrada do The Madrid EDITION",
+      "Quarto Deluxe do The Madrid EDITION",
+      "Átrio e bar do The Madrid EDITION"
+    ]
   ],
   "seoTitle": "Onde ficar em Madrid: Sol, Retiro e Salamanca",
   "hotelSeoTitle": "Hotéis de luxo em Madrid: Ritz, Four Seasons, Rosewood e EDITION",

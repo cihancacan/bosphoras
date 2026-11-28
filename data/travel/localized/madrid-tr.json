@@ -123,12 +123,38 @@
       "Aynı tarih, kişi, oda kategorisi, vergi, kahvaltı, iptal ve tesis erişimini karşılaştırın."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Kraliyet Sarayı seyir terasından manzara",
+    "Gran Vía",
+    "Retiro Parkı göleti",
+    "Madrid Río parkındaki yaya köprüsü",
+    "Plaza Mayor",
+    "Prado Müzesi dış cephesi",
+    "Salamanca'da Serrano Caddesi",
+    "Chamberí'de Olavide Meydanı",
+    "La Latina'da Plaza de la Paja"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Mandarin Oriental Ritz odası",
+      "Mandarin Oriental Ritz'in bahçeden görülen cephesi",
+      "Mandarin Oriental Ritz spa kapalı havuzu"
+    ],
+    [
+      "Four Seasons Madrid oturma alanı",
+      "Four Seasons Madrid girişi",
+      "Four Seasons Madrid kapalı havuzu"
+    ],
+    [
+      "Rosewood Villa Magna salonu",
+      "Rosewood Villa Magna bakım odası",
+      "Rosewood Villa Magna balkonundan manzara"
+    ],
+    [
+      "The Madrid EDITION girişi",
+      "The Madrid EDITION Deluxe odası",
+      "The Madrid EDITION lobi ve barı"
+    ]
   ],
   "seoTitle": "Madrid'de nerede kalınır? Sol, Retiro ve Salamanca",
   "hotelSeoTitle": "Madrid lüks otelleri: Ritz, Four Seasons, Rosewood ve EDITION",

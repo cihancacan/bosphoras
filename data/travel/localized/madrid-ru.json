@@ -123,12 +123,38 @@
       "Сравнивайте одинаковые даты, гостей, категории, налоги, завтрак, отмену и услуги."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Вид со смотровой площадки Королевского дворца",
+    "Гран-Виа",
+    "Пруд парка Ретиро",
+    "Пешеходный мост в парке Мадрид-Рио",
+    "Пласа-Майор",
+    "Музей Прадо снаружи",
+    "Улица Серрано в Саламанке",
+    "Площадь Олавиде в Чамбери",
+    "Площадь Паха в Ла-Латине"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Номер Mandarin Oriental Ritz",
+      "Фасад Mandarin Oriental Ritz со стороны сада",
+      "Крытый бассейн спа Mandarin Oriental Ritz"
+    ],
+    [
+      "Гостиная Four Seasons Madrid",
+      "Вход в Four Seasons Madrid",
+      "Крытый бассейн Four Seasons Madrid"
+    ],
+    [
+      "Гостиная Rosewood Villa Magna",
+      "Процедурный кабинет Rosewood Villa Magna",
+      "Вид с балкона Rosewood Villa Magna"
+    ],
+    [
+      "Вход в The Madrid EDITION",
+      "Номер Deluxe в The Madrid EDITION",
+      "Лобби и бар The Madrid EDITION"
+    ]
   ],
   "seoTitle": "Где остановиться в Мадриде: Соль, Ретиро и Саламанка",
   "hotelSeoTitle": "Роскошные отели Мадрида: Ritz, Four Seasons, Rosewood и EDITION",

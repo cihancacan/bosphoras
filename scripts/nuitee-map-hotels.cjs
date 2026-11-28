@@ -55,7 +55,7 @@ function countryCode(value) {
 const scopeFlag=[...flags].find(x=>x.startsWith('--destinations='));
 const selectedSlugs=scopeFlag?new Set(scopeFlag.slice('--destinations='.length).split(',')):null;
 const newDrafts=selectedSlugs?[require('../data/travel/londonDraftGuide').londonDraftGuide,require('../data/travel/lasVegasDraftGuide').lasVegasDraftGuide,require('../data/travel/romeDraftGuide').romeDraftGuide,require('../data/travel/barcelonaDraftGuide').barcelonaDraftGuide,require('../data/travel/cancunDraftGuide').cancunDraftGuide,require('../data/travel/madridDraftGuide').madridDraftGuide]:[];
-const supplierLocations={london:['London','GB'],'las-vegas':['Las Vegas','US'],rome:['Rome','IT'],barcelona:['Barcelona','ES'],cancun:['Cancun','MX'],madrid:['Madrid','ES']};
+const supplierLocations={london:['London','GB'],'las-vegas':['Las Vegas','US'],rome:['Rome','IT'],barcelona:['Barcelona','ES'],cancun:['Cancun','MX'],orlando:['Orlando','US'],'hong-kong':['Hong Kong','HK'],'kuala-lumpur':['Kuala Lumpur','MY'],osaka:['Osaka','JP'],seoul:['Seoul','KR'],madrid:['Madrid','ES']};
 const guidePool={...featuredCityGuides,...Object.fromEntries(newDrafts.map(d=>[d.slug,d]))};
 const hotels=Object.values(guidePool).filter(city=>!selectedSlugs||selectedSlugs.has(city.slug)).flatMap(city=>
   city.hotels.map(hotel=>({destination:city.slug,city: selectedSlugs&&supplierLocations[city.slug]?supplierLocations[city.slug][0]:city.name,country:selectedSlugs&&supplierLocations[city.slug]?supplierLocations[city.slug][1]:city.country,

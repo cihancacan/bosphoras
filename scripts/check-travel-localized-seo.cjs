@@ -7,13 +7,13 @@ const {getLocalizedGuide,reviewedLocalizedGuides}=require('../data/travel/locali
 const {travelText,travelHref}=require('../lib/travel/i18n');
 const root='https://www.bosphoras.com';
 const expectedAlternates=(slug,variant)=>Object.fromEntries(editorialTravelLocales.filter(locale=>isTravelGuideIndexable(slug,variant,locale)).map(locale=>[travelText(locale).hreflang,root+travelHref(locale,variant+'/'+slug)]));
-assert.equal(Object.keys(nativeTravelNames).length,98);
-assert.equal(travelDestinations.length,98);
+assert.equal(Object.keys(nativeTravelNames).length,99);
+assert.equal(travelDestinations.length,99);
 assert.equal(reviewedLocalizedGuides.size,704);
 const urls=indexedTravelUrls(root), known=new Set(urls);
 assert.equal(urls.length,known.size);
 const titles=new Set();
-for(const d of travelDestinations.filter(d=>!['london','las-vegas','rome','barcelona','cancun','orlando','hong-kong','kuala-lumpur','osaka','seoul'].includes(d.slug))){
+for(const d of travelDestinations.filter(d=>!['london','las-vegas','rome','barcelona','cancun','orlando','hong-kong','kuala-lumpur','osaka','seoul','madrid'].includes(d.slug))){
  const n=nativeTravelNames[d.slug];assert.ok(n&&/[\u0600-\u06ff]/.test(n.ar)&&/[\u0400-\u052f]/.test(n.ru),d.slug);
  for(const locale of ['fr','en','ru','ar'])for(const variant of ['destinations','hotels']){
   const id=d.slug+'/'+locale+'/'+variant;

@@ -123,12 +123,38 @@
       "Gleiche Termine, Gäste, Kategorien, Steuern, Frühstück, Stornierung und Leistungen vergleichen."
     ]
   ],
-  "photoCaptions": [],
+  "photoCaptions": [
+    "Blick vom Aussichtspunkt am Königspalast",
+    "Gran Vía",
+    "See im Retiro-Park",
+    "Fußgängerbrücke im Madrid-Río-Park",
+    "Plaza Mayor",
+    "Außenansicht des Prado-Museums",
+    "Calle de Serrano in Salamanca",
+    "Plaza de Olavide in Chamberí",
+    "Plaza de la Paja in La Latina"
+  ],
   "hotelCaptionGroups": [
-    [],
-    [],
-    [],
-    []
+    [
+      "Zimmer im Mandarin Oriental Ritz",
+      "Fassade des Mandarin Oriental Ritz vom Garten aus",
+      "Innenpool des Spas im Mandarin Oriental Ritz"
+    ],
+    [
+      "Wohnbereich im Four Seasons Madrid",
+      "Eingang des Four Seasons Madrid",
+      "Innenpool des Four Seasons Madrid"
+    ],
+    [
+      "Lounge im Rosewood Villa Magna",
+      "Behandlungsraum im Rosewood Villa Magna",
+      "Blick vom Balkon des Rosewood Villa Magna"
+    ],
+    [
+      "Eingang des The Madrid EDITION",
+      "Deluxe-Zimmer im The Madrid EDITION",
+      "Lobby und Bar im The Madrid EDITION"
+    ]
   ],
   "seoTitle": "Madrid: beste Viertel für Sol, Retiro und Salamanca",
   "hotelSeoTitle": "Luxushotels Madrid: Ritz, Four Seasons, Rosewood und EDITION",
