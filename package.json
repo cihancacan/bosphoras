@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/fix-transfer-booking-wording.mjs && node scripts/add-transfer-vehicle-premium-proof.mjs && node scripts/fix-transfer-seo-routes.mjs && node scripts/generate-bosphoras-programmatic-seo-pages.mjs && npm run guides:check && npm run seo:check && npm run travel:seo:check",
+    "prebuild": "if [ \"$VERCEL_ENV\" = \"preview\" ] && [ \"$VERCEL_GIT_COMMIT_REF\" = \"feature/travel-destinations-89-93-drafts\" ]; then (node -r ./scripts/register-ts.cjs scripts/nuitee-map-hotels.cjs --destinations=madrid --lookup && node -e \"const r=require('./docs/travel-nuitee-89-93-coverage.json');console.log('MADRID_NUITEE_RESULT '+JSON.stringify({verified:r.newVerified,unresolved:r.unresolved.map(x=>({name:x.name,reason:x.reason}))}))\") || echo 'Madrid supplier verification unavailable'; fi; node scripts/fix-transfer-booking-wording.mjs && node scripts/add-transfer-vehicle-premium-proof.mjs && node scripts/fix-transfer-seo-routes.mjs && node scripts/generate-bosphoras-programmatic-seo-pages.mjs && npm run guides:check && npm run seo:check && npm run travel:seo:check",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
