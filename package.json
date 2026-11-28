@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "if [ \"$VERCEL_ENV\" = \"preview\" ] && [ \"$VERCEL_GIT_COMMIT_REF\" = \"feature/travel-destinations-89-93-drafts\" ]; then node scripts/nuitee-verify-89-99-aliases.cjs || echo 'Alias audit unavailable'; fi; node scripts/fix-transfer-booking-wording.mjs && node scripts/add-transfer-vehicle-premium-proof.mjs && node scripts/fix-transfer-seo-routes.mjs && node scripts/generate-bosphoras-programmatic-seo-pages.mjs && npm run guides:check && npm run seo:check && npm run travel:seo:check",
+    "prebuild": "node scripts/fix-transfer-booking-wording.mjs && node scripts/add-transfer-vehicle-premium-proof.mjs && node scripts/fix-transfer-seo-routes.mjs && node scripts/generate-bosphoras-programmatic-seo-pages.mjs && npm run guides:check && npm run seo:check && npm run travel:seo:check",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

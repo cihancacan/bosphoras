@@ -590,6 +590,17 @@
       "address": "Kita-ku Umeda 2-5-25",
       "matchEvidence": "Nuitée Static Hotel Data API: exact reviewed supplier alias The Ritz-Carlton Osaka; country, city and address confirmed 2026-11-28: Kita-ku Umeda 2-5-25. Address reference: https://www.ritzcarlton.com/en/hotels/osarz-the-ritz-carlton-osaka/overview/",
       "deepLinkEvidence": "Supplier hotel detail API confirmed ID; white-label /hotels/lp1ebca route; live property page not yet checked."
+    },
+    {
+      "destination": "london",
+      "editorialKeys": [
+        "london:Claridge’s"
+      ],
+      "name": "Claridge’s",
+      "hotelId": "lp2a32c",
+      "address": "41 - 43 Brook Street",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact reviewed supplier alias Claridge's, Maybourne; country, city and address confirmed 2026-11-28: 41 - 43 Brook Street. Address reference: https://www.maybourne.com/en/hotels/claridges/about/getting-here",
+      "deepLinkEvidence": "Supplier hotel detail API confirmed ID; white-label /hotels/lp2a32c route; live property page not yet checked."
     }
   ]
 }

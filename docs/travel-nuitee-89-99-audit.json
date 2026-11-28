@@ -5,24 +5,18 @@
   "identityMethod": "Search authenticated static hotel data API or official white-label UI; verify name, address and city; never infer hotel ID.",
   "existingMappingRows": 330,
   "editorialHotels": 44,
-  "verifiedMappingCount": 41,
+  "verifiedMappingCount": 42,
   "hotels": [
     {
       "destination": "london",
       "name": "Claridge’s",
       "city": "London",
       "countryCode": "GB",
-      "hotelId": null,
-      "status": "requires_supplier_identity_verification",
-      "reason": "alias_or_inventory_requires_review",
-      "candidates": [
-        {
-          "id": "lp2a32c",
-          "name": "Claridge's, Maybourne",
-          "city": "London",
-          "address": "Brook Street"
-        }
-      ]
+      "hotelId": "lp2a32c",
+      "status": "supplier_identity_verified",
+      "address": "41 - 43 Brook Street",
+      "supplierName": "Claridge's, Maybourne",
+      "officialAddressSource": "https://www.maybourne.com/en/hotels/claridges/about/getting-here"
     },
     {
       "destination": "london",
@@ -193,14 +187,26 @@
       "city": "Cancun",
       "countryCode": "MX",
       "hotelId": null,
-      "status": "requires_supplier_identity_verification",
-      "reason": "alias_or_inventory_requires_review",
+      "status": "unresolved_no_exact_supplier_id",
+      "reason": "exact_property_not_returned_by_authenticated_supplier_catalogue",
       "candidates": [
         {
           "id": "lp82eff",
           "name": "Turquoize at Hyatt Ziva Cancun - Adults Only - All Inclusive",
           "city": "Cancún",
           "address": "Blvd. Kukulcan, Manzana 51, Lote 7"
+        },
+        {
+          "id": "lp36080",
+          "name": "Hyatt Ziva Los Cabos- All Inclusive",
+          "city": "San José del Cabo",
+          "address": "Paseo del Malecón l-5 D"
+        },
+        {
+          "id": "lp655d760f",
+          "name": "Hyatt Ziva Puerto Vallarta - All Inclusive",
+          "city": "Puerto Vallarta",
+          "address": "Playa Las Estacas  S/N, Puerto Vallarta Jalisco"
         }
       ]
     },
@@ -342,9 +348,64 @@
       "city": "Osaka",
       "countryCode": "JP",
       "hotelId": null,
-      "status": "requires_supplier_identity_verification",
-      "reason": "alias_or_inventory_requires_review",
-      "candidates": []
+      "status": "unresolved_no_exact_supplier_id",
+      "reason": "exact_property_not_returned_by_authenticated_supplier_catalogue",
+      "candidates": [
+        {
+          "id": "lp6554d43a",
+          "name": "Four Seasons Hotel Tokyo at Otemachi",
+          "city": "Tokyo",
+          "address": "1-2-1 Otemachi"
+        },
+        {
+          "id": "lp94151",
+          "name": "Four Seasons Hotel Kyoto",
+          "city": "Kyoto",
+          "address": "445-3 Myohoin Maekawa-cho"
+        },
+        {
+          "id": "lp322a0",
+          "name": "Four Seasons Hotel Tokyo at Marunouchi",
+          "city": "Tokyo",
+          "address": "1-11-1 Marunouchi"
+        },
+        {
+          "id": "lp75b64",
+          "name": "Four Seasons Yuzawa Quattro",
+          "city": "Yuzawa",
+          "address": "1926-4 Yuzawa"
+        },
+        {
+          "id": "lp9805e",
+          "name": "Takayama City Hotel Four Seasons",
+          "city": "Takayama",
+          "address": "1-1 Kanda-machi"
+        },
+        {
+          "id": "lp6556f321",
+          "name": "Four Seasons Resort Kouri",
+          "city": "Nakijin",
+          "address": "187-1,187-4 Kouri"
+        },
+        {
+          "id": "lp656df052",
+          "name": "Four Seasons Oasis MIYAGI ZAO - Zao Sansuien - Gai - Vacation STAY 54220v",
+          "city": "To-katta",
+          "address": "4−263 HachiyamaTogattaonsen Zaomachi Four Seasons Oasis MIYAGI ZAO - Zao Sansuien - Gai"
+        },
+        {
+          "id": "lp657d780f",
+          "name": "Nasu Four Seasons House",
+          "city": "Nasu",
+          "address": "高久甲５６６３ー５"
+        },
+        {
+          "id": "lp65581d44",
+          "name": "FOUR SEASONS INN KYOTO",
+          "city": "Kyoto",
+          "address": "282-1 Higuchicho Shimogyo Ward"
+        }
+      ]
     },
     {
       "destination": "osaka",
@@ -439,7 +500,8 @@
       "address": "Plaza de Celenque 2"
     }
   ],
-  "remainingCount": 3,
+  "remainingCount": 2,
   "sourceDeployment": "dpl_6mkw8W2ZFZTYBLsdcpPLHTpkrWoV",
-  "aliasSourceDeployment": "dpl_GX4SuuUZDenuyvVi5ongMq5DGnGc"
+  "aliasSourceDeployment": "dpl_GX4SuuUZDenuyvVi5ongMq5DGnGc",
+  "finalAliasSourceDeployment": "dpl_4NMUrBwbSsWCQoY7htEGzDzzZNF2"
 }
