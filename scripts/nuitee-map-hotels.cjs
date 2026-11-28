@@ -49,7 +49,9 @@ for(const [name,code] of Object.entries({
 }))countryCodeByName.set(normalize(name),code);
 function countryCode(value) {
   const v=String(value||'').trim();
-  if(/^[A-Z]{2}$/.test(v))return v;
+  if(/^[A-Za-z]{2}$/.test(v))return v.toUpperCase()==='UK'?'GB':v.toUpperCase();
+  const iso3={ESP:'ES',GBR:'GB',USA:'US',ITA:'IT',MEX:'MX',HKG:'HK',MYS:'MY',JPN:'JP',KOR:'KR'};
+  if(iso3[v.toUpperCase()])return iso3[v.toUpperCase()];
   return countryCodeByName.get(normalize(v))||null;
 }
 const scopeFlag=[...flags].find(x=>x.startsWith('--destinations='));
@@ -110,8 +112,8 @@ function verifyIdentity(hotel,supplier) {
     return {valid:false,reason:'name_mismatch'};
   if(!supplier.address||String(supplier.address).trim().length<6)
     return {valid:false,reason:'missing_supplier_address'};
-  const supplierCountry=countryCode(supplier.country)||supplier.country;
-  if(supplierCountry!==code)return {valid:false,reason:'country_mismatch'};
+  const codes=[supplier.country,supplier.countryCode,supplier.listCountry,supplier.listCountryCode].map(countryCode).filter(Boolean);
+  if(!codes.length||codes.some(value=>value!==code))return {valid:false,reason:'country_mismatch'};
   const supplierCity=normalize(supplier.city).replace(/ city$/,'');
   const editorialCity=normalize(hotel.city).replace(/ city$/,'');
   const supplierAddress=normalize(supplier.address);
@@ -169,16 +171,19 @@ function verifyIdentity(hotel,supplier) {
       if(!catalog){
         const details=await api('/data/hotel',{hotelId:candidate.id,language:'en'});
         await sleep(300);
-        candidate={...candidate,...details};
+        const listed=candidate;
+        if(!details||Array.isArray(details)||typeof details!=='object')throw new Error('Unexpected hotel detail response');
+        if(details.id&&details.id!==listed.id)throw new Error('Supplier detail ID differs from list ID');
+        candidate={...listed,...Object.fromEntries(Object.entries(details).filter(([,v])=>v!==null&&v!==undefined&&v!=='')),listCountry:listed.country,listCountryCode:listed.countryCode};
       }
       const identity=verifyIdentity(hotel,candidate);
       if(!identity.valid){
         report.unresolved.push({...hotel,reason:identity.reason,supplierName:candidate.name,
-          supplierCity:candidate.city,supplierAddress:candidate.address,supplierId:candidate.id});
+          supplierCity:candidate.city,supplierAddress:candidate.address,supplierId:candidate.id,supplierCountry:candidate.country,supplierCountryCode:candidate.countryCode,listCountry:candidate.listCountry,listCountryCode:candidate.listCountryCode});
         continue;
       }
       if(existing.concat(newMappings).some(item=>item.hotelId===candidate.id&&
-          item.destination!==hotel.destination)){
+          (item.destination!==hotel.destination||item.name!==hotel.name))){
         report.unresolved.push({...hotel,reason:'hotel_id_already_in_another_destination'});
         continue;
       }
@@ -191,7 +196,7 @@ function verifyIdentity(hotel,supplier) {
         deepLinkEvidence:'Supplier-issued hotelId confirmed by '+(catalog?'account catalogue':'hotel detail API')+
           '; supported Whitelabel hotel route /hotels/'+candidate.id};
       newMappings.push(mapped);
-      report.newVerified.push({destination:hotel.destination,name:hotel.name,hotelId:candidate.id,address:candidate.address});
+      report.newVerified.push({destination:hotel.destination,name:hotel.name,hotelId:candidate.id,address:candidate.address,country:code,editorialKey:hotel.editorialKey});
     }catch(error){
       report.unresolved.push({...hotel,reason:'supplier_lookup_failed',detail:String(error.message||error).slice(0,130)});
     }
