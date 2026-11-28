@@ -1,5 +1,5 @@
 {
-  "status": "draft captions for 19 visually reviewed candidates; publication not approved",
+  "status": "21 authentic candidates visually reviewed; publication rights and preview page review pending",
   "imageKeys": [
     "scene-1",
     "scene-2",
@@ -19,7 +19,9 @@
     "rosewood-3",
     "edition-1",
     "edition-2",
-    "edition-3"
+    "edition-3",
+    "mandarin-oriental-2",
+    "mandarin-oriental-3"
   ],
   "captions": {
     "fr": {
@@ -41,7 +43,9 @@
       "rosewood-3": "Vue depuis un balcon du Rosewood Villa Magna",
       "edition-1": "Entrée de The Madrid EDITION",
       "edition-2": "Chambre Deluxe de The Madrid EDITION",
-      "edition-3": "Hall et bar de The Madrid EDITION"
+      "edition-3": "Hall et bar de The Madrid EDITION",
+      "mandarin-oriental-2": "Façade du Mandarin Oriental Ritz depuis le jardin",
+      "mandarin-oriental-3": "Piscine intérieure du spa du Mandarin Oriental Ritz"
     },
     "en": {
       "scene-1": "View from the Royal Palace lookout",
@@ -62,7 +66,9 @@
       "rosewood-3": "View from a Rosewood Villa Magna balcony",
       "edition-1": "The Madrid EDITION entrance",
       "edition-2": "The Madrid EDITION Deluxe room",
-      "edition-3": "The Madrid EDITION lobby and bar"
+      "edition-3": "The Madrid EDITION lobby and bar",
+      "mandarin-oriental-2": "Mandarin Oriental Ritz facade seen from the garden",
+      "mandarin-oriental-3": "Mandarin Oriental Ritz spa indoor pool"
     },
     "tr": {
       "scene-1": "Kraliyet Sarayı seyir terasından manzara",
@@ -83,7 +89,9 @@
       "rosewood-3": "Rosewood Villa Magna balkonundan manzara",
       "edition-1": "The Madrid EDITION girişi",
       "edition-2": "The Madrid EDITION Deluxe odası",
-      "edition-3": "The Madrid EDITION lobi ve barı"
+      "edition-3": "The Madrid EDITION lobi ve barı",
+      "mandarin-oriental-2": "Mandarin Oriental Ritz'in bahçeden görülen cephesi",
+      "mandarin-oriental-3": "Mandarin Oriental Ritz spa kapalı havuzu"
     },
     "de": {
       "scene-1": "Blick vom Aussichtspunkt am Königspalast",
@@ -104,7 +112,9 @@
       "rosewood-3": "Blick vom Balkon des Rosewood Villa Magna",
       "edition-1": "Eingang des The Madrid EDITION",
       "edition-2": "Deluxe-Zimmer im The Madrid EDITION",
-      "edition-3": "Lobby und Bar im The Madrid EDITION"
+      "edition-3": "Lobby und Bar im The Madrid EDITION",
+      "mandarin-oriental-2": "Fassade des Mandarin Oriental Ritz vom Garten aus",
+      "mandarin-oriental-3": "Innenpool des Spas im Mandarin Oriental Ritz"
     },
     "es": {
       "scene-1": "Vista desde el mirador del Palacio Real",
@@ -125,7 +135,9 @@
       "rosewood-3": "Vista desde un balcón del Rosewood Villa Magna",
       "edition-1": "Entrada de The Madrid EDITION",
       "edition-2": "Habitación Deluxe de The Madrid EDITION",
-      "edition-3": "Vestíbulo y bar de The Madrid EDITION"
+      "edition-3": "Vestíbulo y bar de The Madrid EDITION",
+      "mandarin-oriental-2": "Fachada del Mandarin Oriental Ritz desde el jardín",
+      "mandarin-oriental-3": "Piscina cubierta del spa del Mandarin Oriental Ritz"
     },
     "it": {
       "scene-1": "Vista dal belvedere del Palazzo Reale",
@@ -146,7 +158,9 @@
       "rosewood-3": "Vista da un balcone del Rosewood Villa Magna",
       "edition-1": "Ingresso del The Madrid EDITION",
       "edition-2": "Camera Deluxe del The Madrid EDITION",
-      "edition-3": "Hall e bar del The Madrid EDITION"
+      "edition-3": "Hall e bar del The Madrid EDITION",
+      "mandarin-oriental-2": "Facciata del Mandarin Oriental Ritz vista dal giardino",
+      "mandarin-oriental-3": "Piscina coperta della spa del Mandarin Oriental Ritz"
     },
     "pt": {
       "scene-1": "Vista do miradouro do Palácio Real",
@@ -167,7 +181,9 @@
       "rosewood-3": "Vista de uma varanda do Rosewood Villa Magna",
       "edition-1": "Entrada do The Madrid EDITION",
       "edition-2": "Quarto Deluxe do The Madrid EDITION",
-      "edition-3": "Átrio e bar do The Madrid EDITION"
+      "edition-3": "Átrio e bar do The Madrid EDITION",
+      "mandarin-oriental-2": "Fachada do Mandarin Oriental Ritz vista do jardim",
+      "mandarin-oriental-3": "Piscina interior do spa do Mandarin Oriental Ritz"
     },
     "ru": {
       "scene-1": "Вид со смотровой площадки Королевского дворца",
@@ -188,7 +204,9 @@
       "rosewood-3": "Вид с балкона Rosewood Villa Magna",
       "edition-1": "Вход в The Madrid EDITION",
       "edition-2": "Номер Deluxe в The Madrid EDITION",
-      "edition-3": "Лобби и бар The Madrid EDITION"
+      "edition-3": "Лобби и бар The Madrid EDITION",
+      "mandarin-oriental-2": "Фасад Mandarin Oriental Ritz со стороны сада",
+      "mandarin-oriental-3": "Крытый бассейн спа Mandarin Oriental Ritz"
     },
     "ar": {
       "scene-1": "إطلالة من منصة القصر الملكي",
@@ -209,7 +227,9 @@
       "rosewood-3": "إطلالة من شرفة روزوود فيلا ماغنا",
       "edition-1": "مدخل ذا مدريد إديشن",
       "edition-2": "غرفة ديلوكس في ذا مدريد إديشن",
-      "edition-3": "ردهة وبار ذا مدريد إديشن"
+      "edition-3": "ردهة وبار ذا مدريد إديشن",
+      "mandarin-oriental-2": "واجهة ماندارين أورينتال ريتز من الحديقة",
+      "mandarin-oriental-3": "المسبح الداخلي في سبا ماندارين أورينتال ريتز"
     },
     "zh": {
       "scene-1": "皇家宫殿观景台景色",
@@ -230,7 +250,9 @@
       "rosewood-3": "瑰丽维拉玛格纳酒店阳台景色",
       "edition-1": "马德里艾迪逊酒店入口",
       "edition-2": "马德里艾迪逊酒店豪华客房",
-      "edition-3": "马德里艾迪逊酒店大堂及酒吧"
+      "edition-3": "马德里艾迪逊酒店大堂及酒吧",
+      "mandarin-oriental-2": "从花园望向文华东方丽兹酒店外观",
+      "mandarin-oriental-3": "文华东方丽兹酒店水疗中心室内泳池"
     }
   }
 }
