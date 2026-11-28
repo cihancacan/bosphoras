@@ -11,7 +11,7 @@ type HotelBookingProps = {
  * Links only to Nuitée: exact verified supplier hotel pages for mapped hotels;
  * otherwise to the supplier's general search, without inventing a property ID.
  */
-export function bookingTarget(hotelKey: string, locale: 'fr' | 'en') {
+export function bookingTarget(hotelKey: string, locale: string) {
   const supplierLink = getNuiteeHotelLinks(hotelKey, locale).find(
     (link) => link.providerId === 'nuitee-connect'
   );

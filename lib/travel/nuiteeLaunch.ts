@@ -2,7 +2,7 @@ import mappings from '@/data/travel/nuiteeMappings.json';
 import resolvedHotelMappings from '@/data/travel/nuiteeResolvedMappings.json';
 import { hotelProviders, supplierResponsibilities, getHotelPartnerLinks, hotelPartnerKey, type HotelProvider, type HotelPartnerLink } from './hotelPartners';
 import type { NuiteeSearchConnection } from './nuiteeSearchHandoff';
-import { NUITEE_WHITE_LABEL_ORIGIN, getNuiteeWhiteLabelSearchHref } from './nuiteeWhiteLabel';
+import { NUITEE_WHITE_LABEL_ORIGIN, getNuiteeWhiteLabelSearchHref, getNuiteeProviderLocale } from './nuiteeWhiteLabel';
 
 const bookingHosts = ['bosphoras.nuitee.link'];
 
@@ -67,7 +67,7 @@ export function getNuiteeReservationStart(locale: 'fr' | 'en', selection: { hote
     const hotel = allHotelMappings.find(item => item.hotelId === selection.hotel);
     if (!hotel) return null;
     const url = new URL(`/hotels/${hotel.hotelId}`, nuiteeLaunch.origin);
-    url.searchParams.set('language', locale);
+    url.searchParams.set('language', getNuiteeProviderLocale(locale));
     url.searchParams.set('currency', 'EUR');
     url.searchParams.set('clientReference', `bosphoras_${hotel.destination}_${hotel.hotelId}`);
     return url.toString();
@@ -78,7 +78,7 @@ export function getNuiteeReservationStart(locale: 'fr' | 'en', selection: { hote
     const url = new URL('/hotels', nuiteeLaunch.origin);
     url.searchParams.set('placeId', destination.placeId);
     url.searchParams.set('name', destination.displayName);
-    url.searchParams.set('language', locale);
+    url.searchParams.set('language', getNuiteeProviderLocale(locale));
     url.searchParams.set('currency', 'EUR');
     url.searchParams.set('clientReference', 'bosphoras_destinations');
     return url.toString();
@@ -107,7 +107,7 @@ export function getNuiteeSearchConnection(now = Date.now()): NuiteeSearchConnect
 }
 
 /** Candidates are not commercial links until account activation and tracking are verified. */
-export function getNuiteeHotelLinks(hotelKey: string, locale: 'fr' | 'en', now = Date.now()): HotelPartnerLink[] {
+export function getNuiteeHotelLinks(hotelKey: string, locale: string, now = Date.now()): HotelPartnerLink[] {
   if (!isNuiteeBookingLive(now)) return [];
   const candidates: HotelPartnerLink[] = allHotelMappings.filter(item => item.editorialKeys.includes(hotelKey) || hotelPartnerKey(item.destination, item.name) === hotelKey).flatMap((hotel: {
     destination: string; editorialKeys: string[]; hotelId: string; name: string;
@@ -116,7 +116,7 @@ export function getNuiteeHotelLinks(hotelKey: string, locale: 'fr' | 'en', now =
     if (!/^lp[a-zA-Z0-9]+$/.test(hotel.hotelId) || !hotel.matchEvidence.trim() || !hotel.deepLinkEvidence.trim()) return [];
     return [...new Set([...hotel.editorialKeys, hotelPartnerKey(hotel.destination, hotel.name)])].map(key => {
       const url = new URL(`/hotels/${hotel.hotelId}`, nuiteeLaunch.origin);
-      url.searchParams.set('language', locale);
+      url.searchParams.set('language', getNuiteeProviderLocale(locale));
       url.searchParams.set('currency', 'EUR');
       url.searchParams.set('clientReference', `bosphoras_${hotel.destination}_${hotel.hotelId}`);
       return {
