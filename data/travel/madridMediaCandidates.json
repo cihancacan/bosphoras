@@ -124,9 +124,133 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-5",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Madrid_-_Plaza_Mayor.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Madrid_-_Plaza_Mayor.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Madrid_-_Plaza_Mayor.jpg",
+        "originalAlt": "Plaza Mayor Madrid",
+        "originalCaption": "Zarateman / CC0 1.0 / resized WebP",
+        "credit": "Zarateman / CC0 1.0 / resized WebP",
+        "publisher": "Madrid Tourism / Turespaña",
+        "hotel": null,
+        "localPath": "/images/travel/madrid-premium/destination/scene-5.webp",
+        "sourceSHA256": "97cd00e5e425fdd2ba9affdf2cb5333e848e89793426eb8f725c952cf19425a2",
+        "webpSHA256": "8d2f01910f16e180c8a34157c520072292c67ce537c1202748b950771ae66361",
+        "sourcePixels": [
+          2298,
+          1596
+        ],
+        "webpPixels": [
+          1224,
+          850
+        ],
+        "webpBytes": 138512,
+        "pixelFingerprint": "b1adbe6f58102500",
+        "candidateSubject": "plaza mayor|plaza_mayor",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-6",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Madrid-1758045.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Madrid-1758045.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Madrid-1758045.jpg",
+        "originalAlt": "Prado Museum exterior",
+        "originalCaption": "Pixabay contributor / CC0 1.0 / creator to confirm",
+        "credit": "Pixabay contributor / CC0 1.0 / creator to confirm",
+        "publisher": "Madrid Tourism / Turespaña",
+        "hotel": null,
+        "localPath": "/images/travel/madrid-premium/destination/scene-6.webp",
+        "sourceSHA256": "c7f26b70fde112689e2464fd018ae01d9ac23b10ef9aef91c86fde7fc82883c4",
+        "webpSHA256": "8d3a1a586ef21c6ea7a3f3dd4009b32c6b117063bf7fa826ee0eed5e80780359",
+        "sourcePixels": [
+          6000,
+          4000
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 175208,
+        "pixelFingerprint": "d81c0ec83f1f98dc",
+        "candidateSubject": "prado museum|museo del prado|museo_prado",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-7",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:01b_Madrid_Calle_de_Serrano_by_Lou.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/01b_Madrid_Calle_de_Serrano_by_Lou.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/01b_Madrid_Calle_de_Serrano_by_Lou.jpg",
+        "originalAlt": "Calle Serrano in Salamanca",
+        "originalCaption": "Lourdes Cardenal / CC BY-SA 4.0 / resized WebP",
+        "credit": "Lourdes Cardenal / CC BY-SA 4.0 / resized WebP",
+        "publisher": "Madrid Tourism / Turespaña",
+        "hotel": null,
+        "localPath": "/images/travel/madrid-premium/destination/scene-7.webp",
+        "sourceSHA256": "7d701e5fbbcaae341db6d76933e255e3c62460f39d8770dabc00fe493e23ea71",
+        "webpSHA256": "89879419f4dc83c29b9887148dbf5108bbb4d6511b36cd7a64ca2349f2793a4e",
+        "sourcePixels": [
+          3264,
+          2448
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 144344,
+        "pixelFingerprint": "e6f4b0b4b4f8f870",
+        "candidateSubject": "salamanca|calle serrano|ortega y gasset",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
+      {
+        "key": "mandarin-oriental-1",
+        "sourcePage": "https://www.expedia.com/Madrid-Hotels-Mandarin-Oriental-Ritz.h26286.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/1000000/30000/26300/26286/9015aacd.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/1000000/30000/26300/26286/9015aacd.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Mandarin Oriental Ritz Madrid Deluxe King guest room",
+        "originalCaption": "Expedia / Mandarin Oriental Ritz",
+        "credit": "Expedia / Mandarin Oriental Ritz",
+        "publisher": "Mandarin Oriental Ritz, Madrid",
+        "hotel": "Mandarin Oriental Ritz, Madrid",
+        "localPath": "/images/travel/madrid-premium/mandarin-oriental/mandarin-oriental-1.webp",
+        "sourceSHA256": "af74e3f11c336ae54b6ab6a885320107ba0ac2b2709136081d68e0dceb2c0ccc",
+        "webpSHA256": "c32b6695512fbc000e0ee1d4f9e3e84585b62ccd69451b2406a6a161756e97a5",
+        "sourcePixels": [
+          1280,
+          939
+        ],
+        "webpPixels": [
+          1159,
+          850
+        ],
+        "webpBytes": 91978,
+        "pixelFingerprint": "c63761262e2524e4",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
       {
         "key": "four-seasons-2",
         "sourcePage": "https://www.esmadrid.com/en/accommodation/four-seasons-hotel-madrid",
@@ -151,6 +275,68 @@
         "webpBytes": 130424,
         "pixelFingerprint": "f8cd55f2acf6b4a6",
         "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "four-seasons-3",
+        "sourcePage": "https://www.expedia.com/Madrid-Hotels-Four-Seasons-Hotel-Madrid.h41046184.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/42000000/41050000/41046200/41046184/1f116cb8.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/42000000/41050000/41046200/41046184/1f116cb8.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Four Seasons Hotel Madrid property entrance",
+        "originalCaption": "Expedia / Four Seasons Madrid",
+        "credit": "Expedia / Four Seasons Madrid",
+        "publisher": "Four Seasons Hotel Madrid",
+        "hotel": "Four Seasons Hotel Madrid",
+        "localPath": "/images/travel/madrid-premium/four-seasons/four-seasons-3.webp",
+        "sourceSHA256": "700552c9b92ad0b5fbd1905f2049f812236e1de2b4eced822e476035d3b44275",
+        "webpSHA256": "5ea197f4f28bb524be196a8d4a748371ef133433e05e1ea8947196320110b00e",
+        "sourcePixels": [
+          1280,
+          960
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 204128,
+        "pixelFingerprint": "d5aaaa2aaaaaad2a",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "four-seasons-4",
+        "sourcePage": "https://www.expedia.com/Madrid-Hotels-Four-Seasons-Hotel-Madrid.h41046184.Hotel-Information",
+        "sourceResolvedUrl": "https://images.trvl-media.com/lodging/42000000/41050000/41046200/41046184/852c7b51.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "sourceRequestedUrl": "https://images.trvl-media.com/lodging/42000000/41050000/41046200/41046184/852c7b51.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "originalAlt": "Four Seasons Hotel Madrid indoor pool",
+        "originalCaption": "Expedia / Four Seasons Madrid",
+        "credit": "Expedia / Four Seasons Madrid",
+        "publisher": "Four Seasons Hotel Madrid",
+        "hotel": "Four Seasons Hotel Madrid",
+        "localPath": "/images/travel/madrid-premium/four-seasons/four-seasons-4.webp",
+        "sourceSHA256": "731ff73ab589161c47d65f8f448eabba8b3e4d2e2c7665da2192e051eededc96",
+        "webpSHA256": "6c963cd884714037c410e369c8431fe6572967e213f5bb4f645c026fe33497a6",
+        "sourcePixels": [
+          1280,
+          853
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 195372,
+        "pixelFingerprint": "612a881532cc9a31",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -318,15 +504,10 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 4
+        "found": 7
       },
       {
         "group": "mandarin-oriental",
-        "expected": 3,
-        "found": 0
-      },
-      {
-        "group": "four-seasons",
         "expected": 3,
         "found": 1
       },
@@ -338,20 +519,40 @@
     ],
     "errors": [
       {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vista_de_la_Plaza_de_Olavide_de_Madrid.jpg",
+        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/d/d0/Vista_de_la_Plaza_de_Olavide_de_Madrid.jpg?utm_source=commons.wikimedia.o"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_de_la_Paja%2C_Madrid.jpg",
+        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/3/35/Plaza_de_la_Paja%2C_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campa"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Paja_Madrid.jpg",
+        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Plaza_Paja_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campaign=index"
+      },
+      {
+        "url": "https://images.trvl-media.com/lodging/1000000/30000/26300/26286/890be56b.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/1000000/30000/26300/26286/890be56b.jpg?impolicy=resizecrop&ra=fit&rw=1280"
+      },
+      {
+        "url": "https://images.trvl-media.com/lodging/1000000/30000/26300/26286/20f1005f.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+        "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/1000000/30000/26300/26286/20f1005f.jpg?impolicy=resizecrop&ra=fit&rw=1280"
+      },
+      {
+        "page": "https://www.expedia.com/Madrid-Hotels-Mandarin-Oriental-Ritz.h26286.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Madrid-Hotels-Mandarin-Oriental-Ritz.h26286.Hotel-Information"
+      },
+      {
         "page": "https://www.fourseasons.com/madrid/photos-and-videos/",
         "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/madrid/photos-and-videos/"
       },
       {
-        "url": "https://press.fourseasons.com/madrid/hotel-news/2026/spa-garcon-eclat-experience",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72899411c090>"
+        "page": "https://www.travelweekly.com/Hotels/Madrid/Rosewood-Villa-Magna-p56474883",
+        "error": "403 Client Error: Forbidden for url: https://www.travelweekly.com/Hotels/Madrid/Rosewood-Villa-Magna-p56474883"
       },
       {
-        "url": "https://press.fourseasons.com/madrid/hotel-news/2026/new-spa-treatments",
-        "error": "cannot identify image file <_io.BytesIO object at 0x7289942a4860>"
-      },
-      {
-        "url": "https://press.fourseasons.com/madrid/hotel-news/2026/dani-cinema-club",
-        "error": "cannot identify image file <_io.BytesIO object at 0x72899411c180>"
+        "page": "https://www.expedia.com/Madrid-Hotels-Rosewood-Villa-Magna.h16416.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Madrid-Hotels-Rosewood-Villa-Magna.h16416.Hotel-Information"
       }
     ],
     "publicUseApproved": false,
@@ -389,8 +590,8 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 4,
-    "hotelCount": 6,
-    "totalBytes": 1229406
+    "cityCount": 7,
+    "hotelCount": 9,
+    "totalBytes": 2178948
   }
 }
