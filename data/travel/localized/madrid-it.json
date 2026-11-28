@@ -1,0 +1,136 @@
+{
+  "name": "Madrid",
+  "country": "Spagna",
+  "eyebrow": "Spagna · Palazzi, arte e hotel urbani",
+  "heading": "Madrid: scegli il quartiere per patrimonio, musei e vita urbana.",
+  "intro": "Madrid si scopre a piedi tra le piazze del centro storico, i musei del Paseo del Prado, i giardini del Retiro e le boutique di Salamanca. Scegli l'hotel secondo visite, serate e tranquillità desiderata.",
+  "editorial": "Sol e la Madrid degli Asburgo sono una base centrale per Palazzo Reale, Plaza Mayor e vie storiche. Gran Vía e Callao offrono spettacoli, negozi e quartieri vivaci. Prado, Jerónimos e Retiro sono ideali per arte e passeggiate: il paesaggio culturale del Paseo del Prado e del Buen Retiro è Patrimonio mondiale UNESCO. Salamanca offre boutique, ristoranti e vie residenziali eleganti. Chamberí propone piazze e gastronomia locale; La Latina è nota per vicoli e taverne, vivaci soprattutto nel fine settimana.\n\nTre o quattro notti sono una buona base per musei, centro storico e Retiro. Per Toledo o Segovia aggiungi un giorno e verifica la stazione di partenza. Metro e passeggiate sono pratiche; controlla accesso con bagagli e ultimi collegamenti. In estate pianifica visite mattutine e pause nelle ore più calde.\n\nDa Madrid-Barajas (MAD) confronta metro, treni suburbani da T4, autobus express e transfer secondo l'hotel. Verifica requisiti d'ingresso per il passaporto. A date e occupazione uguali confronta colazione, tasse, climatizzazione, insonorizzazione, cancellazione e accesso stagionale a terrazze e piscine.",
+  "hotelIntro": "Quattro stili: Mandarin Oriental Ritz per patrimonio e Prado, Four Seasons per il lusso centrale di Canalejas, Rosewood Villa Magna per Salamanca e The Madrid EDITION per il design contemporaneo vicino a Sol.",
+  "areas": [
+    [
+      "Sol e Madrid degli Asburgo",
+      "Plaza Mayor, Palazzo Reale, Puerta del Sol e vicoli storici.",
+      "Verifica zone pedonali e rumore serale."
+    ],
+    [
+      "Gran Vía e Callao",
+      "Teatri, negozi, terrazze e accesso a Chueca e Malasaña.",
+      "Confronta insonorizzazione e vista delle camere."
+    ],
+    [
+      "Prado, Jerónimos e Retiro",
+      "Musei, giardini, Cibeles e patrimonio culturale.",
+      "Pianifica biglietti dei musei e distanze a piedi."
+    ],
+    [
+      "Salamanca",
+      "Boutique di Serrano, gallerie, ristoranti e viali eleganti.",
+      "Verifica l'accesso alle stazioni secondo l'itinerario."
+    ],
+    [
+      "Chamberí",
+      "Piazze residenziali, caffè, architettura e ristoranti locali.",
+      "Prevedi i tempi per raggiungere i principali musei."
+    ],
+    [
+      "La Latina",
+      "Vicoli, piazze storiche, tapas e vicinanza a El Rastro.",
+      "Considera l'animazione e il rumore del fine settimana."
+    ]
+  ],
+  "experiences": [
+    [
+      "Esplorare la Madrid storica",
+      "Combina Palazzo Reale, Plaza de Oriente e Plaza Mayor secondo gli orari."
+    ],
+    [
+      "Scoprire il Paseo dell'Arte",
+      "Scegli Prado, Thyssen-Bornemisza o Reina Sofía secondo gli interessi."
+    ],
+    [
+      "Godersi giardini e passeggiate",
+      "Prevedi il Retiro e, se hai tempo, Madrid Río."
+    ],
+    [
+      "Esplorare quartieri e gastronomia",
+      "Scegli Salamanca, Chamberí o La Latina secondo shopping e cucina."
+    ]
+  ],
+  "checks": [
+    "Scegli il quartiere secondo visite e serate.",
+    "Conferma letti, insonorizzazione e aria condizionata.",
+    "Verifica requisiti d'ingresso per il passaporto.",
+    "Confronta totale con tasse, colazione e cancellazione.",
+    "Verifica biglietti dei musei e accesso stagionale alle piscine."
+  ],
+  "hotels": [
+    [
+      "Prado · Jerónimos",
+      "Palazzo storico vicino al Prado con camere e suite raffinate, ristoranti, giardino e benessere.",
+      "Conferma orientamento e servizi inclusi.",
+      "Per patrimonio, arte e lusso classico.",
+      "Palazzo storico vicino al Prado con camere e suite raffinate, ristoranti, giardino e benessere. Conferma orientamento e servizi inclusi."
+    ],
+    [
+      "Canalejas · Centro",
+      "Hotel nel complesso storico Canalejas vicino a Sol, con camere, suite, spa, piscina interna e ristorazione in altura.",
+      "Confronta categorie, panorami e accesso alla spa.",
+      "Per lusso centrale e visite a piedi.",
+      "Hotel nel complesso storico Canalejas vicino a Sol, con camere, suite, spa, piscina interna e ristorazione in altura. Confronta categorie, panorami e accesso alla spa."
+    ],
+    [
+      "Salamanca · Paseo de la Castellana",
+      "Hotel di stile residenziale vicino alle boutique, con camere e suite eleganti, ristoranti, giardino e spa.",
+      "Verifica categorie, vista e tempi per il centro storico.",
+      "Per shopping e relax.",
+      "Hotel di stile residenziale vicino alle boutique, con camere e suite eleganti, ristoranti, giardino e spa. Verifica categorie, vista e tempi per il centro storico."
+    ],
+    [
+      "Centro · Plaza de Celenque",
+      "Hotel di design contemporaneo vicino a Sol, con camere, suite, ristoranti, spa e piscina sul tetto.",
+      "Verifica disponibilità stagionale della piscina e atmosfera serale.",
+      "Per design e vita urbana.",
+      "Hotel di design contemporaneo vicino a Sol, con camere, suite, ristoranti, spa e piscina sul tetto. Verifica disponibilità stagionale della piscina e atmosfera serale."
+    ]
+  ],
+  "faq": [
+    [
+      "Dove dormire alla prima visita a Madrid?",
+      "Sol o Prado per monumenti e musei, Salamanca per lo shopping."
+    ],
+    [
+      "Salamanca o Gran Vía?",
+      "Salamanca per boutique e vie residenziali; Gran Vía per spettacoli e animazione centrale."
+    ],
+    [
+      "Quante notti prevedere?",
+      "Tre o quattro per Madrid, di più per Toledo o Segovia."
+    ],
+    [
+      "Quale zona con bambini?",
+      "Retiro è comodo per passeggiate; verifica letti e distanze."
+    ],
+    [
+      "Come arrivare da Barajas?",
+      "Confronta metro, treni da T4, autobus express e transfer secondo l'hotel."
+    ],
+    [
+      "Serve noleggiare un'auto?",
+      "Non per le visite centrali; metro, passeggiate e taxi occasionali sono pratici."
+    ],
+    [
+      "Come confrontare gli hotel?",
+      "Confronta date, ospiti, categorie, tasse, colazione, cancellazione e servizi equivalenti."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Dove dormire a Madrid: Sol, Retiro e Salamanca",
+  "hotelSeoTitle": "Hotel di lusso a Madrid: Ritz, Four Seasons, Rosewood e EDITION",
+  "seoDescription": "Confronta quartieri e hotel di Madrid: Sol, Gran Vía, Prado, Retiro, Salamanca, trasporti e consigli."
+}

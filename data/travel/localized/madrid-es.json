@@ -1,0 +1,136 @@
+{
+  "name": "Madrid",
+  "country": "España",
+  "eyebrow": "España · Palacios, arte y hoteles urbanos",
+  "heading": "Madrid: elige barrio para disfrutar del patrimonio, los museos y la vida urbana.",
+  "intro": "Madrid se descubre a pie entre las plazas del casco antiguo, los museos del Paseo del Prado, los jardines del Retiro y las boutiques de Salamanca. Elige hotel según tus visitas, tus planes nocturnos y la tranquilidad que busques.",
+  "editorial": "Sol y el Madrid de los Austrias son una base céntrica para el Palacio Real, la Plaza Mayor y las calles históricas. Gran Vía y Callao facilitan el acceso a espectáculos, tiendas y barrios animados. Prado, Jerónimos y Retiro son ideales para el arte y los paseos: el paisaje cultural del Paseo del Prado y Buen Retiro es Patrimonio Mundial de la UNESCO. Salamanca destaca por sus boutiques, restaurantes y calles residenciales elegantes. Chamberí ofrece plazas y gastronomía local. La Latina es conocida por sus callejuelas y tabernas, especialmente animadas los fines de semana.\n\nTres o cuatro noches permiten visitar los principales museos, el centro histórico y el Retiro. Para Toledo o Segovia, añade un día y comprueba la estación de salida. El metro y los paseos son prácticos; comprueba el acceso con equipaje y los últimos servicios. En verano, programa visitas por la mañana y descansos en las horas de más calor.\n\nDesde Madrid-Barajas (MAD), compara metro, Cercanías desde la T4, autobús exprés y traslados según tu hotel. Comprueba los requisitos de entrada según el pasaporte. Compara fechas y ocupación equivalentes, desayuno, impuestos, aire acondicionado, insonorización, cancelación y acceso estacional a terrazas y piscinas.",
+  "hotelIntro": "Cuatro estilos: Mandarin Oriental Ritz para el patrimonio y el Prado, Four Seasons para el lujo de Canalejas, Rosewood Villa Magna para Salamanca y The Madrid EDITION para el diseño contemporáneo cerca de Sol.",
+  "areas": [
+    [
+      "Sol y Madrid de los Austrias",
+      "Plaza Mayor, Palacio Real, Puerta del Sol y calles históricas.",
+      "Comprueba zonas peatonales y ruido nocturno."
+    ],
+    [
+      "Gran Vía y Callao",
+      "Teatros, tiendas, terrazas y acceso a Chueca y Malasaña.",
+      "Compara insonorización y vistas."
+    ],
+    [
+      "Prado, Jerónimos y Retiro",
+      "Museos, jardines, Cibeles y patrimonio cultural.",
+      "Planifica las entradas a museos y distancias a pie."
+    ],
+    [
+      "Salamanca",
+      "Boutiques de Serrano, galerías, restaurantes y avenidas elegantes.",
+      "Comprueba las estaciones según el itinerario."
+    ],
+    [
+      "Chamberí",
+      "Plazas residenciales, cafés, arquitectura y restaurantes locales.",
+      "Prevé desplazamientos a los principales museos."
+    ],
+    [
+      "La Latina",
+      "Callejuelas, plazas históricas, tapas y cercanía a El Rastro.",
+      "Ten en cuenta el ambiente y ruido del fin de semana."
+    ]
+  ],
+  "experiences": [
+    [
+      "Explorar el Madrid histórico",
+      "Combina Palacio Real, Plaza de Oriente y Plaza Mayor según los horarios."
+    ],
+    [
+      "Descubrir el Paseo del Arte",
+      "Elige el Prado, Thyssen-Bornemisza o Reina Sofía según tus intereses."
+    ],
+    [
+      "Disfrutar de jardines y paseos",
+      "Reserva tiempo para el Retiro y, si es posible, Madrid Río."
+    ],
+    [
+      "Explorar los barrios y la gastronomía",
+      "Elige Salamanca, Chamberí o La Latina según compras y cocina."
+    ]
+  ],
+  "checks": [
+    "Elige barrio según visitas y planes nocturnos.",
+    "Confirma camas, insonorización y aire acondicionado.",
+    "Comprueba requisitos de entrada según pasaporte.",
+    "Compara total con impuestos, desayuno y cancelación.",
+    "Comprueba entradas a museos y acceso estacional a piscinas."
+  ],
+  "hotels": [
+    [
+      "Prado · Jerónimos",
+      "Palacio histórico junto al Prado con habitaciones y suites refinadas, restaurantes, jardín y bienestar.",
+      "Confirma orientación y servicios incluidos.",
+      "Para patrimonio, arte y lujo clásico.",
+      "Palacio histórico junto al Prado con habitaciones y suites refinadas, restaurantes, jardín y bienestar. Confirma orientación y servicios incluidos."
+    ],
+    [
+      "Canalejas · Centro",
+      "Hotel en el complejo histórico Canalejas cerca de Sol, con habitaciones, suites, spa, piscina cubierta y restauración en altura.",
+      "Compara categorías, vistas y acceso al spa.",
+      "Para lujo céntrico y paseos.",
+      "Hotel en el complejo histórico Canalejas cerca de Sol, con habitaciones, suites, spa, piscina cubierta y restauración en altura. Compara categorías, vistas y acceso al spa."
+    ],
+    [
+      "Salamanca · Paseo de la Castellana",
+      "Hotel de estilo residencial cerca de boutiques con habitaciones y suites elegantes, restaurantes, jardín y spa.",
+      "Comprueba categorías, vistas y tiempo hasta el casco antiguo.",
+      "Para compras y descanso.",
+      "Hotel de estilo residencial cerca de boutiques con habitaciones y suites elegantes, restaurantes, jardín y spa. Comprueba categorías, vistas y tiempo hasta el casco antiguo."
+    ],
+    [
+      "Centro · Plaza de Celenque",
+      "Hotel de diseño contemporáneo cerca de Sol, con habitaciones, suites, restaurantes, spa y piscina en la azotea.",
+      "Comprueba la disponibilidad estacional de la piscina y el ambiente nocturno.",
+      "Para diseño y vida urbana.",
+      "Hotel de diseño contemporáneo cerca de Sol, con habitaciones, suites, restaurantes, spa y piscina en la azotea. Comprueba la disponibilidad estacional de la piscina y el ambiente nocturno."
+    ]
+  ],
+  "faq": [
+    [
+      "¿Dónde alojarse en la primera visita a Madrid?",
+      "Sol o Prado son prácticos para monumentos y museos; Salamanca para compras."
+    ],
+    [
+      "¿Salamanca o Gran Vía?",
+      "Salamanca ofrece boutiques y calles residenciales; Gran Vía, espectáculos y animación céntrica."
+    ],
+    [
+      "¿Cuántas noches hacen falta?",
+      "Tres o cuatro para Madrid, más para Toledo o Segovia."
+    ],
+    [
+      "¿Qué barrio conviene con niños?",
+      "Retiro es práctico para paseos; comprueba camas y distancias."
+    ],
+    [
+      "¿Cómo llegar desde Barajas?",
+      "Compara metro, Cercanías desde T4, autobús exprés y traslados según hotel."
+    ],
+    [
+      "¿Es necesario alquilar coche?",
+      "No para visitas céntricas; metro, caminar y taxis puntuales son prácticos."
+    ],
+    [
+      "¿Cómo comparar hoteles?",
+      "Compara fechas, huéspedes, categorías, impuestos, desayuno, cancelación y servicios equivalentes."
+    ]
+  ],
+  "photoCaptions": [],
+  "hotelCaptionGroups": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "seoTitle": "Dónde alojarse en Madrid: Sol, Retiro y Salamanca",
+  "hotelSeoTitle": "Hoteles de lujo en Madrid: Ritz, Four Seasons, Rosewood y EDITION",
+  "seoDescription": "Compara barrios y hoteles de Madrid: Sol, Gran Vía, Prado, Retiro, Salamanca, transporte y consejos."
+}
