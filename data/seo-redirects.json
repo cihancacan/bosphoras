@@ -788,5 +788,355 @@
     "source": "/zh/travel/private-collection",
     "destination": "/zh/trips",
     "permanent": true
+  },
+  {
+    "source": "/zashchita-konfidentsialnoy-informatsii",
+    "destination": "/protection-informations-confidentielles",
+    "permanent": true
+  },
+  {
+    "source": "/en/zashchita-konfidentsialnoy-informatsii",
+    "destination": "/en/protection-of-confidential-information",
+    "permanent": true
+  },
+  {
+    "source": "/usloviya-ispolzovaniya",
+    "destination": "/cgu",
+    "permanent": true
+  },
+  {
+    "source": "/ru/about",
+    "destination": "/ru/o-nas",
+    "permanent": true
+  },
+  {
+    "source": "/ar/partnery-set",
+    "destination": "/ar/%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9",
+    "permanent": true
+  },
+  {
+    "source": "/en/partnery-set",
+    "destination": "/en/partners-network",
+    "permanent": true
+  },
+  {
+    "source": "/ru/partners-network",
+    "destination": "/ru/partnery-set",
+    "permanent": true
+  },
+  {
+    "source": "/ru/عضوية/البطاقة",
+    "destination": "/ru/chlenstvo/zayavka",
+    "permanent": true
+  },
+  {
+    "source": "/ar/partners-network",
+    "destination": "/ar/%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9",
+    "permanent": true
+  },
+  {
+    "source": "/en/usloviya-ispolzovaniya",
+    "destination": "/en/terms-of-use",
+    "permanent": true
+  },
+  {
+    "source": "/en/napravleniya/stambul",
+    "destination": "/en/destinations/istanbul",
+    "permanent": true
+  },
+  {
+    "source": "/napravleniya/stambul",
+    "destination": "/destinations/istanbul",
+    "permanent": true
+  },
+  {
+    "source": "/ru/legal-notice",
+    "destination": "/ru/pravovaya-informatsiya",
+    "permanent": true
+  },
+  {
+    "source": "/عضوية/البطاقة",
+    "destination": "/adhesion/demande-membre",
+    "permanent": true
+  },
+  {
+    "source": "/en/عضوية/البطاقة",
+    "destination": "/en/membership/application",
+    "permanent": true
+  },
+  {
+    "source": "/ar/zashchita-konfidentsialnoy-informatsii",
+    "destination": "/ar/protection-of-confidential-information",
+    "permanent": true
+  },
+  {
+    "source": "/partners-network",
+    "destination": "/partenaires-reseau",
+    "permanent": true
+  },
+  {
+    "source": "/en/en/peninsula-istanbul",
+    "destination": "/en/peninsula-istanbul",
+    "permanent": true
+  },
+  {
+    "source": "/terms-of-use",
+    "destination": "/cgu",
+    "permanent": true
+  },
+  {
+    "source": "/من-نحن",
+    "destination": "/a-propos",
+    "permanent": true
+  },
+  {
+    "source": "/خدمات",
+    "destination": "/services",
+    "permanent": true
+  },
+  {
+    "source": "/ar/napravleniya/stambul",
+    "destination": "/ar/%D9%88%D8%AC%D9%87%D8%A7%D8%AA/%D8%A5%D8%B3%D8%B7%D9%86%D8%A8%D9%88%D9%84",
+    "permanent": true
+  },
+  {
+    "source": "/ru/خدمات",
+    "destination": "/ru/uslugi",
+    "permanent": true
+  },
+  {
+    "source": "/terms-of-sale",
+    "destination": "/cgv",
+    "permanent": true
+  },
+  {
+    "source": "/ru/terms-of-sale",
+    "destination": "/ru/usloviya-prodazhi",
+    "permanent": true
+  },
+  {
+    "source": "/en/خدمات",
+    "destination": "/en/services",
+    "permanent": true
+  },
+  {
+    "source": "/ru/terms-of-use",
+    "destination": "/ru/usloviya-ispolzovaniya",
+    "permanent": true
+  },
+  {
+    "source": "/ar/services/legal-tax-advisory",
+    "destination": "/ar/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA/%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA-%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9-%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9",
+    "permanent": true
+  },
+  {
+    "source": "/services/legal-tax-advisory",
+    "destination": "/services/conseil-juridique-fiscal",
+    "permanent": true
+  },
+  {
+    "source": "/ru/services/legal-tax-advisory",
+    "destination": "/ru/uslugi/yuridicheskie-nalogovye-konsultatsii",
+    "permanent": true
+  },
+  {
+    "source": "/chastnaya-konsultatsiya",
+    "destination": "/diagnostic-prive",
+    "permanent": true
+  },
+  {
+    "source": "/عضوية/طلب",
+    "destination": "/adhesion/demande-membre",
+    "permanent": true
+  },
+  {
+    "source": "/ru/napravleniya/antaliya",
+    "destination": "/ru/napravleniya/antalya",
+    "permanent": true
+  },
+  {
+    "source": "/ar/services/business-setup",
+    "destination": "/ar/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA/%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA",
+    "permanent": true
+  },
+  {
+    "source": "/ar/ru/peninsula-istanbul",
+    "destination": "/ar/peninsula-istanbul",
+    "permanent": true
+  },
+  {
+    "source": "/partnery-set",
+    "destination": "/partenaires-reseau",
+    "permanent": true
+  },
+  {
+    "source": "/en/الامتثال-والثقة",
+    "destination": "/en/compliance-trust",
+    "permanent": true
+  },
+  {
+    "source": "/ar/faq",
+    "destination": "/ar/%D8%A3%D8%B3%D8%A6%D9%84%D8%A9-%D8%B4%D8%A7%D8%A6%D8%B9%D8%A9",
+    "permanent": true
+  },
+  {
+    "source": "/ar/uslugi/sozdanie-kompanii",
+    "destination": "/ar/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA/%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA",
+    "permanent": true
+  },
+  {
+    "source": "/en/chlenstvo/zayavka",
+    "destination": "/en/membership/application",
+    "permanent": true
+  },
+  {
+    "source": "/تقييم-خاص",
+    "destination": "/diagnostic-prive",
+    "permanent": true
+  },
+  {
+    "source": "/ru/private-access-club",
+    "destination": "/ru/chastnyy-klub",
+    "permanent": true
+  },
+  {
+    "source": "/ar/private-assessment",
+    "destination": "/ar/%D8%AA%D9%82%D9%8A%D9%8A%D9%85-%D8%AE%D8%A7%D8%B5",
+    "permanent": true
+  },
+  {
+    "source": "/ru/private-assessment",
+    "destination": "/ru/chastnaya-konsultatsiya",
+    "permanent": true
+  },
+  {
+    "source": "/private-access-club",
+    "destination": "/cercle-prive",
+    "permanent": true
+  },
+  {
+    "source": "/ru/من-نحن",
+    "destination": "/ru/o-nas",
+    "permanent": true
+  },
+  {
+    "source": "/pravovaya-informatsiya",
+    "destination": "/mentions-legales",
+    "permanent": true
+  },
+  {
+    "source": "/en/من-نحن",
+    "destination": "/en/about",
+    "permanent": true
+  },
+  {
+    "source": "/ar/pravovaya-informatsiya",
+    "destination": "/ar/legal-notice",
+    "permanent": true
+  },
+  {
+    "source": "/en/الشركاء-والشبكة",
+    "destination": "/en/partners-network",
+    "permanent": true
+  },
+  {
+    "source": "/ru/الشركاء-والشبكة",
+    "destination": "/ru/partnery-set",
+    "permanent": true
+  },
+  {
+    "source": "/الشركاء-والشبكة",
+    "destination": "/partenaires-reseau",
+    "permanent": true
+  },
+  {
+    "source": "/en/pravovaya-informatsiya",
+    "destination": "/en/legal-notice",
+    "permanent": true
+  },
+  {
+    "source": "/en/النادي-الخاص",
+    "destination": "/en/private-access-club",
+    "permanent": true
+  },
+  {
+    "source": "/النادي-الخاص",
+    "destination": "/cercle-prive",
+    "permanent": true
+  },
+  {
+    "source": "/ru/النادي-الخاص",
+    "destination": "/ru/chastnyy-klub",
+    "permanent": true
+  },
+  {
+    "source": "/uslugi/sozdanie-kompanii",
+    "destination": "/creation-entreprise-turquie",
+    "permanent": true
+  },
+  {
+    "source": "/ar/private-access-club",
+    "destination": "/ar/%D8%A7%D9%84%D9%86%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5",
+    "permanent": true
+  },
+  {
+    "source": "/ru/rent-or-buy-in-turkey-before-relocating",
+    "destination": "/ru/arendovat-ili-pokupat-v-turtsii",
+    "permanent": true
+  },
+  {
+    "source": "/ru/company-setup-turkey-foreigner",
+    "destination": "/ru/otkryt-kompaniyu-v-turtsii-inostrantsu",
+    "permanent": true
+  },
+  {
+    "source": "/en/investory-dubaya-pochemu-turtsiya",
+    "destination": "/en/dubai-investors-why-look-at-turkey",
+    "permanent": true
+  },
+  {
+    "source": "/investory-dubaya-pochemu-turtsiya",
+    "destination": "/investisseurs-dubai-pourquoi-regarder-turquie",
+    "permanent": true
+  },
+  {
+    "source": "/rent-or-buy-in-turkey-before-relocating",
+    "destination": "/louer-ou-acheter-en-turquie-avant-s-installer",
+    "permanent": true
+  },
+  {
+    "source": "/moving-to-istanbul-as-a-foreigner",
+    "destination": "/s-installer-a-istanbul-en-tant-qu-etranger",
+    "permanent": true
+  },
+  {
+    "source": "/ru/moving-to-istanbul-as-a-foreigner",
+    "destination": "/ru/pereezd-v-stambul-dlya-inostrantsev",
+    "permanent": true
+  },
+  {
+    "source": "/relocate-to-turkey-istanbul-bodrum-antalya",
+    "destination": "/comment-s-installer-en-turquie-istanbul-bodrum-antalya",
+    "permanent": true
+  },
+  {
+    "source": "/ru/relocate-to-turkey-istanbul-bodrum-antalya",
+    "destination": "/ru/kak-pereehat-v-turtsiyu-stambul-bodrum-antalia",
+    "permanent": true
+  },
+  {
+    "source": "/kak-pereehat-v-turtsiyu-stambul-bodrum-antalia",
+    "destination": "/comment-s-installer-en-turquie-istanbul-bodrum-antalya",
+    "permanent": true
+  },
+  {
+    "source": "/ar/kak-pereehat-v-turtsiyu-stambul-bodrum-antalia",
+    "destination": "/ar/relocate-to-turkey-istanbul-bodrum-antalya",
+    "permanent": true
+  },
+  {
+    "source": "/en/kak-pereehat-v-turtsiyu-stambul-bodrum-antalia",
+    "destination": "/en/relocate-to-turkey-istanbul-bodrum-antalya",
+    "permanent": true
   }
 ]
