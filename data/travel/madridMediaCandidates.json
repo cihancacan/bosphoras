@@ -602,6 +602,10 @@
     ],
     "errors": [
       {
+        "page": "https://www.hotels.com/ho173754/mandarin-oriental-ritz-madrid-madrid-spain/",
+        "error": "429 Client Error: Too Many Requests for url: https://www.hotels.com/ho173754/mandarin-oriental-ritz-madrid-madrid-spain/"
+      },
+      {
         "url": "https://images.trvl-media.com/lodging/1000000/30000/26300/26286/890be56b.jpg?impolicy=resizecrop&ra=fit&rw=1280",
         "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/1000000/30000/26300/26286/890be56b.jpg?impolicy=resizecrop&ra=fit&rw=1280"
       },
@@ -610,12 +614,12 @@
         "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/1000000/30000/26300/26286/20f1005f.jpg?impolicy=resizecrop&ra=fit&rw=1280"
       },
       {
-        "page": "https://www.expedia.com/Madrid-Hotels-Mandarin-Oriental-Ritz.h26286.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Madrid-Hotels-Mandarin-Oriental-Ritz.h26286.Hotel-Information"
+        "url": "https://www.trip.com/hot/hotel-photo/araliya-beach-resort-and-spa-photo.html",
+        "error": "cannot identify image file <_io.BytesIO object at 0x70717d6983b0>"
       },
       {
-        "page": "https://www.travelweekly.com/Hotels/Madrid/Rosewood-Villa-Magna-p56474883",
-        "error": "403 Client Error: Forbidden for url: https://www.travelweekly.com/Hotels/Madrid/Rosewood-Villa-Magna-p56474883"
+        "page": "https://www.expedia.com/Madrid-Hotels-Mandarin-Oriental-Ritz.h26286.Hotel-Information",
+        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Madrid-Hotels-Mandarin-Oriental-Ritz.h26286.Hotel-Information"
       }
     ],
     "publicUseApproved": false,
