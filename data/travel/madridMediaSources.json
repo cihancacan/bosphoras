@@ -1,0 +1,64 @@
+[
+  {
+    "slug": "madrid",
+    "city": "Madrid",
+    "publisher": "Madrid Tourism / Turespaña",
+    "cityPages": [
+      "https://www.esmadrid.com/en/madrid-top-10",
+      "https://www.esmadrid.com/en/72-hours-madrid",
+      "https://www.esmadrid.com/en/10-selfies-madrid",
+      "https://www.esmadrid.com/en/madrid-neighbourhoods/barrio-salamanca",
+      "https://www.esmadrid.com/en/madrid-neighbourhoods/chamberi",
+      "https://www.esmadrid.com/en/discover-chamberi",
+      "https://www.esmadrid.com/en/madrid-neighbourhoods/latina",
+      "https://www.esmadrid.com/en/madrid-neighbourhoods/retiro",
+      "https://www.spain.info/en/destination/madrid/"
+    ],
+    "subjects": [
+      "royal palace|palacio real|palacio_real",
+      "plaza mayor|plaza_mayor",
+      "gran v[ií]a|gran_via",
+      "retiro|alfonso xii",
+      "prado museum|museo del prado|museo_prado",
+      "salamanca|calle serrano|ortega y gasset",
+      "chamber[ií]|plaza de olavide",
+      "la latina|cava baja|plaza de la paja",
+      "madrid r[ií]o|madrid_rio|puente de toledo"
+    ],
+    "hotels": [
+      [
+        "mandarin-oriental",
+        "Mandarin Oriental Ritz, Madrid",
+        [
+          "https://www.mandarinoriental.com/en/madrid/hotel-ritz/gallery",
+          "https://www.esmadrid.com/en/accommodation/mandarin-oriental-ritz"
+        ]
+      ],
+      [
+        "four-seasons",
+        "Four Seasons Hotel Madrid",
+        [
+          "https://www.fourseasons.com/madrid/photos-and-videos/",
+          "https://press.fourseasons.com/madrid/hotel-images/",
+          "https://www.esmadrid.com/en/accommodation/four-seasons-hotel-madrid"
+        ]
+      ],
+      [
+        "rosewood",
+        "Rosewood Villa Magna",
+        [
+          "https://www.rosewoodhotels.com/en/villa-magna/overview/gallery",
+          "https://www.rosewoodhotels.com/en/villa-magna/overview",
+          "https://www.rosewoodhotels.com/en/villa-magna/accommodation"
+        ]
+      ],
+      [
+        "edition",
+        "The Madrid EDITION",
+        [
+          "https://www.marriott.com/en-us/hotels/madeb-the-madrid-edition/photos/"
+        ]
+      ]
+    ]
+  }
+]
