@@ -1,4 +1,4 @@
-name: Travel 89–93 — verify direct Nuitée hotel links
+name: Travel 89–99 — verify direct Nuitée hotel links
 on:
   push:
     branches: [feature/travel-destinations-89-93-drafts]
@@ -28,7 +28,7 @@ jobs:
           NUITEE_API_KEY: ${{ secrets.NUITEE_API_KEY }}
         run: |
           set -euo pipefail
-          SCOPE=london,las-vegas,rome,barcelona,cancun
+          SCOPE=london,las-vegas,rome,barcelona,cancun,orlando,hong-kong,kuala-lumpur,osaka,seoul,madrid
           node -r ./scripts/register-ts.cjs scripts/nuitee-map-hotels.cjs --destinations="$SCOPE"
           if [ -z "${NUITEE_API_KEY:-}" ]; then
             echo "::error::Nuitée API key not configured in repository Actions; no hotel IDs assigned."
@@ -43,14 +43,14 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/travel/nuiteeMappings.json docs/travel-nuitee-89-93-coverage.json docs/travel-nuitee-89-93-unmapped.csv
           if ! git diff --cached --quiet; then
-            git commit -m 'travel: verified Nuitée hotel identities for 89–93 [skip ci]'
+            git commit -m 'travel: verified Nuitée hotel identities for 89–99 [skip ci]'
             git pull --rebase origin feature/travel-destinations-89-93-drafts
             git push origin HEAD:feature/travel-destinations-89-93-drafts
           fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: travel-89-93-nuitee-coverage
+          name: travel-89-99-nuitee-coverage
           path: |
             docs/travel-nuitee-89-93-coverage.json
             docs/travel-nuitee-89-93-unmapped.csv
