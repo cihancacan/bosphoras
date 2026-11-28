@@ -95,6 +95,36 @@ def collect_pages(pages):
 DIRECT = {
   "madrid/mandarin-oriental": [
     [
+      "https://images.trvl-media.com/lodging/1000000/30000/26300/26286/890be56b.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Mandarin Oriental Ritz Madrid property entrance",
+      "https://www.expedia.com/Madrid-Hotels-Mandarin-Oriental-Ritz.h26286.Hotel-Information",
+      "Expedia / Mandarin Oriental Ritz"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/1000000/30000/26300/26286/9015aacd.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Mandarin Oriental Ritz Madrid Deluxe King guest room",
+      "https://www.expedia.com/Madrid-Hotels-Mandarin-Oriental-Ritz.h26286.Hotel-Information",
+      "Expedia / Mandarin Oriental Ritz"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/1000000/30000/26300/26286/20f1005f.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Mandarin Oriental Ritz Madrid indoor pool",
+      "https://www.expedia.com/Madrid-Hotels-Mandarin-Oriental-Ritz.h26286.Hotel-Information",
+      "Expedia / Mandarin Oriental Ritz"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/1000000/30000/26300/26286/d3c9d2cd.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Mandarin Oriental Ritz Madrid Junior Suite bedroom",
+      "https://www.expedia.com/Madrid-Hotels-Mandarin-Oriental-Ritz.h26286.Hotel-Information",
+      "Expedia / Mandarin Oriental Ritz"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Madrid_-_Hotel_Ritz_01.jpg",
+      "Mandarin Oriental Ritz Madrid exterior",
+      "https://commons.wikimedia.org/wiki/File:Madrid_-_Hotel_Ritz_01.jpg",
+      "Zarateman / licence to verify"
+    ],
+    [
       "https://estaticos.esmadrid.com/cdn/farfuture/ltG0Q62eddAu7Z0cSZgDHmLlV6mNRx1l5R40NVTdpBc/mtime:1646729715/sites/default/files/styles/content_type_full/public/recursosturisticos/alojamientos/mrmad_facade.jpg?itok=fDneR-ae",
       "Mandarin Oriental Ritz Madrid exterior facade",
       "https://www.esmadrid.com/en/accommodation/mandarin-oriental-ritz",
@@ -114,6 +144,18 @@ DIRECT = {
     ]
   ],
   "madrid/four-seasons": [
+    [
+      "https://images.trvl-media.com/lodging/42000000/41050000/41046200/41046184/1f116cb8.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Hotel Madrid property entrance",
+      "https://www.expedia.com/Madrid-Hotels-Four-Seasons-Hotel-Madrid.h41046184.Hotel-Information",
+      "Expedia / Four Seasons Madrid"
+    ],
+    [
+      "https://images.trvl-media.com/lodging/42000000/41050000/41046200/41046184/852c7b51.jpg?impolicy=resizecrop&ra=fit&rw=1280",
+      "Four Seasons Hotel Madrid indoor pool",
+      "https://www.expedia.com/Madrid-Hotels-Four-Seasons-Hotel-Madrid.h41046184.Hotel-Information",
+      "Expedia / Four Seasons Madrid"
+    ],
     [
       "https://estaticos.esmadrid.com/cdn/farfuture/7nSS6vdJxbQuJnaTJzdIEAq0OHn30yOPpmwFoNqCd9c/mtime:1671197851/sites/default/files/styles/content_type_full/public/recursosturisticos/alojamientos/canalejas.jpg?itok=CiqEovlB",
       "Four Seasons Hotel Madrid Canalejas exterior facade",
@@ -135,6 +177,18 @@ DIRECT = {
   ],
   "madrid/rosewood": [
     [
+      "https://picasso.rosewoodhotelgroup.com/transform/b3117f4c-34a2-43c1-abeb-bf0cf0226d9e/RWVMM_3-0_Brand-com_Assets_Global_3-0_Brand-com_Assets_Facilities_ExteriorsandFacades_44",
+      "Rosewood Villa Magna exterior entrance",
+      "https://www.rosewoodhotels.com/en/villa-magna/overview/gallery",
+      "Rosewood Villa Magna"
+    ],
+    [
+      "https://www.cfmedia.vfmleonardo.com/imageRepo/7/0/160/242/263/rosewood_villamagna_-terrace_82A5581_O",
+      "Rosewood Villa Magna exterior garden terrace",
+      "https://www.travelweekly.com/Hotels/Madrid/Rosewood-Villa-Magna-p56474883",
+      "Travel Weekly / Leonardo"
+    ],
+    [
       "https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1572815.jpg",
       "Rosewood Villa Magna exterior entrance",
       "https://guide.michelin.com/de/de/hotels-stays/madrid/hotel-villa-magna-5307",
@@ -145,6 +199,44 @@ DIRECT = {
       "Rosewood Villa Magna spa treatment room",
       "https://www.rosewoodhotels.com/es/villa-magna/experiences/wellness-experiences",
       "Rosewood Villa Magna"
+    ]
+  ],
+  "madrid/city": [
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Madrid_-_Plaza_Mayor.jpg",
+      "Plaza Mayor Madrid",
+      "https://commons.wikimedia.org/wiki/File:Madrid_-_Plaza_Mayor.jpg",
+      "Zarateman / CC0 1.0 / resized WebP"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Madrid-1758045.jpg",
+      "Prado Museum exterior",
+      "https://commons.wikimedia.org/wiki/File:Madrid-1758045.jpg",
+      "Pixabay contributor / CC0 1.0 / creator to confirm"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/01b_Madrid_Calle_de_Serrano_by_Lou.jpg",
+      "Calle Serrano in Salamanca",
+      "https://commons.wikimedia.org/wiki/File:01b_Madrid_Calle_de_Serrano_by_Lou.jpg",
+      "Lourdes Cardenal / CC BY-SA 4.0 / resized WebP"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Vista_de_la_Plaza_de_Olavide_de_Madrid.jpg",
+      "Plaza de Olavide Chamberí",
+      "https://commons.wikimedia.org/wiki/File:Vista_de_la_Plaza_de_Olavide_de_Madrid.jpg",
+      "Jotaemec / CC0 1.0 / resized WebP"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_de_la_Paja%2C_Madrid.jpg",
+      "Plaza de la Paja La Latina",
+      "https://commons.wikimedia.org/wiki/File:Plaza_de_la_Paja%2C_Madrid.jpg",
+      "CC BY-SA 2.0 / creator to confirm"
+    ],
+    [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Paja_Madrid.jpg",
+      "Plaza de la Paja La Latina",
+      "https://commons.wikimedia.org/wiki/File:Plaza_Paja_Madrid.jpg",
+      "Esetena / licence to verify"
     ]
   ]
 }
