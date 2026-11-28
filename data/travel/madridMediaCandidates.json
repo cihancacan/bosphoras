@@ -314,6 +314,68 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
+        "key": "mandarin-oriental-2",
+        "sourcePage": "https://www.flickr.com/photos/travelive/albums/72177720302117569",
+        "sourceResolvedUrl": "https://live.staticflickr.com/65535/52359680693_6026a22a5e_h.jpg",
+        "sourceRequestedUrl": "https://live.staticflickr.com/65535/52359680693_6026a22a5e_h.jpg",
+        "originalAlt": "Mandarin Oriental Ritz Madrid exterior facade",
+        "originalCaption": "Travelive / Mandarin Oriental Ritz",
+        "credit": "Travelive / Mandarin Oriental Ritz",
+        "publisher": "Mandarin Oriental Ritz, Madrid",
+        "hotel": "Mandarin Oriental Ritz, Madrid",
+        "localPath": "/images/travel/madrid-premium/mandarin-oriental/mandarin-oriental-2.webp",
+        "sourceSHA256": "0df1b3494947bde6d666ae7b92ebf7fb2f2b4b09595b1f040490286c08c0ecdf",
+        "webpSHA256": "c1b093987c3e13156c031ea5a46bcbde8187a1e352c2fff7365bc5e45dbea819",
+        "sourcePixels": [
+          1599,
+          898
+        ],
+        "webpPixels": [
+          1280,
+          719
+        ],
+        "webpBytes": 258028,
+        "pixelFingerprint": "c9a150e2c2f28290",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "mandarin-oriental-3",
+        "sourcePage": "https://www.flickr.com/photos/travelive/albums/72177720302117569",
+        "sourceResolvedUrl": "https://live.staticflickr.com/65535/52359446681_6aca25a67a_h.jpg",
+        "sourceRequestedUrl": "https://live.staticflickr.com/65535/52359446681_6aca25a67a_h.jpg",
+        "originalAlt": "Mandarin Oriental Ritz Madrid spa",
+        "originalCaption": "Travelive / Mandarin Oriental Ritz",
+        "credit": "Travelive / Mandarin Oriental Ritz",
+        "publisher": "Mandarin Oriental Ritz, Madrid",
+        "hotel": "Mandarin Oriental Ritz, Madrid",
+        "localPath": "/images/travel/madrid-premium/mandarin-oriental/mandarin-oriental-3.webp",
+        "sourceSHA256": "74a844a2c0cfa052faa1f5b27f79445b4493280efe25090958d3399b976fbbd8",
+        "webpSHA256": "2843f3c220b7da18f6f46a7b85f6c68355db675fe57e02f66b151ef6e549b7b1",
+        "sourcePixels": [
+          1500,
+          1000
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 194780,
+        "pixelFingerprint": "d95d6f2561810f0e",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "four-seasons-2",
         "sourcePage": "https://www.esmadrid.com/en/accommodation/four-seasons-hotel-madrid",
         "sourceResolvedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/4SIhIWkINxUxsFyEUv7miVqg75sIkYV5a_jS3b76ScM/mtime:1625124954/sites/default/files/recursosturisticos/alojamientos/4_fourseasonsmadrid_fourseasonsterracesuite_1.jpg",
@@ -593,33 +655,15 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "gaps": [
-      {
-        "group": "mandarin-oriental",
-        "expected": 3,
-        "found": 1
-      }
-    ],
+    "gaps": [],
     "errors": [
       {
         "page": "https://www.hotels.com/ho173754/mandarin-oriental-ritz-madrid-madrid-spain/",
         "error": "429 Client Error: Too Many Requests for url: https://www.hotels.com/ho173754/mandarin-oriental-ritz-madrid-madrid-spain/"
       },
       {
-        "url": "https://images.trvl-media.com/lodging/1000000/30000/26300/26286/890be56b.jpg?impolicy=resizecrop&ra=fit&rw=1280",
-        "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/1000000/30000/26300/26286/890be56b.jpg?impolicy=resizecrop&ra=fit&rw=1280"
-      },
-      {
-        "url": "https://images.trvl-media.com/lodging/1000000/30000/26300/26286/20f1005f.jpg?impolicy=resizecrop&ra=fit&rw=1280",
-        "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/1000000/30000/26300/26286/20f1005f.jpg?impolicy=resizecrop&ra=fit&rw=1280"
-      },
-      {
-        "url": "https://www.trip.com/hot/hotel-photo/araliya-beach-resort-and-spa-photo.html",
-        "error": "cannot identify image file <_io.BytesIO object at 0x70717d6983b0>"
-      },
-      {
-        "page": "https://www.expedia.com/Madrid-Hotels-Mandarin-Oriental-Ritz.h26286.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Madrid-Hotels-Mandarin-Oriental-Ritz.h26286.Hotel-Information"
+        "url": "https://www.cfmedia.vfmleonardo.com/imageRepo/7/0/140/56/694/Mandarin_Oriental_Ritz%2CMadrid%2C_Lobby_O",
+        "error": "404 Client Error: Not Found for url: https://www.cfmedia.vfmleonardo.com/imageRepo/7/0/140/56/694/Mandarin_Oriental_Ritz%2CMadrid%2C_Lobby_O"
       }
     ],
     "publicUseApproved": false,
@@ -658,7 +702,7 @@
       }
     ],
     "cityCount": 9,
-    "hotelCount": 10,
-    "totalBytes": 2572538
+    "hotelCount": 12,
+    "totalBytes": 3025346
   }
 }
