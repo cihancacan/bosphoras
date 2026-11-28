@@ -94,6 +94,10 @@ def collect_pages(pages):
  return result,errors
 DIRECT = {
   "madrid/mandarin-oriental": [
+    ["https://live.staticflickr.com/65535/52359680693_6026a22a5e_h.jpg","Mandarin Oriental Ritz Madrid exterior facade","https://www.flickr.com/photos/travelive/albums/72177720302117569","Travelive / Mandarin Oriental Ritz"],
+    ["https://live.staticflickr.com/65535/52359446681_6aca25a67a_h.jpg","Mandarin Oriental Ritz Madrid spa","https://www.flickr.com/photos/travelive/albums/72177720302117569","Travelive / Mandarin Oriental Ritz"],
+    ["https://www.cfmedia.vfmleonardo.com/imageRepo/7/0/140/56/610/Mandarin_Oriental_Ritz%2CMadrid%2C_Fa_ade_O","Mandarin Oriental Ritz Madrid exterior facade","https://www.travelweekly.com/Hotels/Madrid/Mandarin-Oriental-Ritz-Madrid-p55137339","Travel Weekly / Leonardo"],
+    ["https://www.cfmedia.vfmleonardo.com/imageRepo/7/0/140/56/694/Mandarin_Oriental_Ritz%2CMadrid%2C_Lobby_O","Mandarin Oriental Ritz Madrid lobby","https://www.travelweekly.com/Hotels/Madrid/Mandarin-Oriental-Ritz-Madrid-p55137339","Travel Weekly / Leonardo"],
     ["https://d89wdvrh3yrgq.cloudfront.net/resized/L__clv0tyg0i03c715u7xfal6zsj1713348240712_ba51e716-f339-43d9-898a-c1249e746783.jpeg","Mandarin Oriental Ritz Madrid exterior facade","https://www.pressbeyond.com/hotels/spain/madrid/mandarin-oriental-ritz","PressBeyond / Mandarin Oriental Ritz"],
     ["https://d89wdvrh3yrgq.cloudfront.net/resized/L__clv0tyrmv05g315u7fyi373n61713348241476_e8737a57-6784-4422-9988-d53cbc876a21.jpeg","Mandarin Oriental Ritz Madrid lobby lounge","https://www.pressbeyond.com/hotels/spain/madrid/mandarin-oriental-ritz","PressBeyond / Mandarin Oriental Ritz"],
     ["https://d89wdvrh3yrgq.cloudfront.net/resized/L__clv0tz38c07jz15u7gpqv6pft1713348243090_06f29035-266b-45c5-90fd-5f595c432343.jpeg","Mandarin Oriental Ritz Madrid lounge","https://www.pressbeyond.com/hotels/spain/madrid/mandarin-oriental-ritz","PressBeyond / Mandarin Oriental Ritz"],
