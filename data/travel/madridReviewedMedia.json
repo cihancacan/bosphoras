@@ -3,7 +3,7 @@
   "destinationNumber": 99,
   "reviewedDate": "2026-11-28",
   "ownerPermissionDeclared": true,
-  "publicUseApproved": false,
+  "publicUseApproved": true,
   "previewPageReviewed": false,
   "destinationScenes": [
     {
@@ -744,5 +744,6 @@
       "enCaption": "The Madrid EDITION lobby and bar"
     }
   ],
-  "ownerPermissionConfirmationDate": "2026-11-28"
+  "ownerPermissionConfirmationDate": "2026-11-28",
+  "publicUseApprovalBasis": "Bosphoras owner confirmed photo permissions on 2026-11-28 and requested production release; independent licence verification is not claimed."
 }
