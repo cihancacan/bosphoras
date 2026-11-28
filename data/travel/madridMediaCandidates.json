@@ -217,6 +217,68 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-8",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Vista_de_la_Plaza_de_Olavide_de_Madrid.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Vista_de_la_Plaza_de_Olavide_de_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Vista_de_la_Plaza_de_Olavide_de_Madrid.jpg",
+        "originalAlt": "Plaza de Olavide Chamberí",
+        "originalCaption": "Jotaemec / CC0 1.0 / resized WebP",
+        "credit": "Jotaemec / CC0 1.0 / resized WebP",
+        "publisher": "Madrid Tourism / Turespaña",
+        "hotel": null,
+        "localPath": "/images/travel/madrid-premium/destination/scene-8.webp",
+        "sourceSHA256": "9a3ebfaeb7231dbee89b18c3ded59e7c87c021d7423b8d639cb6ce63e34f6208",
+        "webpSHA256": "f9de791c5457346593d4a55496ad7293c4a592bf104802948092efa2a0b0d311",
+        "sourcePixels": [
+          4000,
+          3000
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 165210,
+        "pixelFingerprint": "9cd8c0a2acc65100",
+        "candidateSubject": "chamber[ií]|plaza de olavide",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-9",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Plaza_de_la_Paja%2C_Madrid.jpg",
+        "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Plaza_de_la_Paja%2C_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "sourceRequestedUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_de_la_Paja%2C_Madrid.jpg",
+        "originalAlt": "Plaza de la Paja La Latina",
+        "originalCaption": "CC BY-SA 2.0 / creator to confirm",
+        "credit": "CC BY-SA 2.0 / creator to confirm",
+        "publisher": "Madrid Tourism / Turespaña",
+        "hotel": null,
+        "localPath": "/images/travel/madrid-premium/destination/scene-9.webp",
+        "sourceSHA256": "68696ef31e621185e8b5da324358b37f7e220a8a3112bae8ebde081de4acaf2c",
+        "webpSHA256": "28a388513e919151771fd3d2186216b4b335788479b8da831082f782129ecc8e",
+        "sourcePixels": [
+          4320,
+          2432
+        ],
+        "webpPixels": [
+          1280,
+          721
+        ],
+        "webpBytes": 196712,
+        "pixelFingerprint": "928181a38b097ed7",
+        "candidateSubject": "la latina|cava baja|plaza de la paja",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
@@ -407,6 +469,37 @@
         "status": "candidate_pending_visual_review_and_credit"
       },
       {
+        "key": "rosewood-3",
+        "sourcePage": "https://m.rosewoodhotels.com/en/villa-magna/overview",
+        "sourceResolvedUrl": "https://images.rosewoodhotels.com/is/image/rwhg/rwvmm_wellness_yoga_01:WIDE-LARGE-3-2",
+        "sourceRequestedUrl": "https://images.rosewoodhotels.com/is/image/rwhg/rwvmm_wellness_yoga_01:WIDE-LARGE-3-2",
+        "originalAlt": "A woman stands on a balcony holding a yoga mat looking out over a cityscape filled with buildings.",
+        "originalCaption": "",
+        "credit": "Rosewood Villa Magna",
+        "publisher": "Rosewood Villa Magna",
+        "hotel": "Rosewood Villa Magna",
+        "localPath": "/images/travel/madrid-premium/rosewood/rosewood-3.webp",
+        "sourceSHA256": "6940afc6b23e438ceb9138413903e035b7439c1cd93be8cc899df26c825e7091",
+        "webpSHA256": "c9127438e748eafddb12e81c5cc283a7edb0418396492b33423ba535cecd8466",
+        "sourcePixels": [
+          1080,
+          720
+        ],
+        "webpPixels": [
+          1080,
+          720
+        ],
+        "webpBytes": 31668,
+        "pixelFingerprint": "e464e5c3f3f2f2e0",
+        "candidateSubject": "exterior|facade|façade|aerial|arrival|entrance|building|front.?view|panorama|hotel.?view",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
         "key": "edition-1",
         "sourcePage": "https://www.marriott.com/en-us/hotels/madeb-the-madrid-edition/photos/",
         "sourceResolvedUrl": "https://marriott.scene7.com/is/image/marriotts7prod/eb-madeb-hotel-main-entrance-25277:Classic-Hor?wid=1336&fit=constrain",
@@ -502,34 +595,12 @@
     ],
     "gaps": [
       {
-        "group": "city",
-        "expected": 9,
-        "found": 7
-      },
-      {
         "group": "mandarin-oriental",
         "expected": 3,
         "found": 1
-      },
-      {
-        "group": "rosewood",
-        "expected": 3,
-        "found": 2
       }
     ],
     "errors": [
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vista_de_la_Plaza_de_Olavide_de_Madrid.jpg",
-        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/d/d0/Vista_de_la_Plaza_de_Olavide_de_Madrid.jpg?utm_source=commons.wikimedia.o"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_de_la_Paja%2C_Madrid.jpg",
-        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/3/35/Plaza_de_la_Paja%2C_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campa"
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Paja_Madrid.jpg",
-        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/5/5c/Plaza_Paja_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campaign=index"
-      },
       {
         "url": "https://images.trvl-media.com/lodging/1000000/30000/26300/26286/890be56b.jpg?impolicy=resizecrop&ra=fit&rw=1280",
         "error": "404 Client Error: Not Found for url: https://images.trvl-media.com/lodging/1000000/30000/26300/26286/890be56b.jpg?impolicy=resizecrop&ra=fit&rw=1280"
@@ -543,16 +614,8 @@
         "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Madrid-Hotels-Mandarin-Oriental-Ritz.h26286.Hotel-Information"
       },
       {
-        "page": "https://www.fourseasons.com/madrid/photos-and-videos/",
-        "error": "403 Client Error: Forbidden for url: https://www.fourseasons.com/madrid/photos-and-videos/"
-      },
-      {
         "page": "https://www.travelweekly.com/Hotels/Madrid/Rosewood-Villa-Magna-p56474883",
         "error": "403 Client Error: Forbidden for url: https://www.travelweekly.com/Hotels/Madrid/Rosewood-Villa-Magna-p56474883"
-      },
-      {
-        "page": "https://www.expedia.com/Madrid-Hotels-Rosewood-Villa-Magna.h16416.Hotel-Information",
-        "error": "429 Client Error: Too Many Requests for url: https://www.expedia.com/Madrid-Hotels-Rosewood-Villa-Magna.h16416.Hotel-Information"
       }
     ],
     "publicUseApproved": false,
@@ -590,8 +653,8 @@
         "status": "candidate_pending_visual_review_and_credit"
       }
     ],
-    "cityCount": 7,
-    "hotelCount": 9,
-    "totalBytes": 2178948
+    "cityCount": 9,
+    "hotelCount": 10,
+    "totalBytes": 2572538
   }
 }
