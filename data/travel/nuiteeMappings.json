@@ -139,6 +139,358 @@
       "address": "Suzer Plaza, Askerocagi Caddesi, No:6, Elmadag/Sisli, Istanbul",
       "matchEvidence": "Supplier title and address verified 2026-11-02: The Ritz-Carlton, Istanbul; Suzer Plaza, Askerocagi Caddesi, No:6, Elmadag/Sisli, Istanbul. Editorial identity: data/travel/istanbulFlagship.ts:ritz-carlton",
       "deepLinkEvidence": "Supplier direct page title and Suzer Plaza address checked 2026-11-02; exact-name entry selected from two same-address suggestions"
+    },
+    {
+      "destination": "london",
+      "editorialKeys": [
+        "london:https://www.thesavoylondon.com/"
+      ],
+      "hotelId": "lp2a32f",
+      "name": "The Savoy",
+      "address": "Strand",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Strand, GB",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp2a32f route. Live property page still to be checked."
+    },
+    {
+      "destination": "london",
+      "editorialKeys": [
+        "london:https://www.peninsula.com/en/london/luxury-hotel-room-suite-types"
+      ],
+      "hotelId": "lp656d2433",
+      "name": "The Peninsula London",
+      "address": "1 Grosvenor Place",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 1 Grosvenor Place, GB",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp656d2433 route. Live property page still to be checked."
+    },
+    {
+      "destination": "london",
+      "editorialKeys": [
+        "london:https://www.shangri-la.com/en/london/shangrila/rooms-suites/"
+      ],
+      "hotelId": "lp6f715",
+      "name": "Shangri-La The Shard, London",
+      "address": "31 St Thomas Street",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 31 St Thomas Street, GB",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp6f715 route. Live property page still to be checked."
+    },
+    {
+      "destination": "las-vegas",
+      "editorialKeys": [
+        "las-vegas:https://bellagio.mgmresorts.com/en/hotel.html"
+      ],
+      "hotelId": "lp1d30e",
+      "name": "Bellagio",
+      "address": "3600 Las Vegas Boulevard South",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 3600 Las Vegas Boulevard South, US",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp1d30e route. Live property page still to be checked."
+    },
+    {
+      "destination": "las-vegas",
+      "editorialKeys": [
+        "las-vegas:https://www.wynnlasvegas.com/rooms-and-suites"
+      ],
+      "hotelId": "lp37b49",
+      "name": "Wynn Las Vegas",
+      "address": "3131 Las Vegas Boulevard",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 3131 Las Vegas Boulevard, US",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp37b49 route. Live property page still to be checked."
+    },
+    {
+      "destination": "las-vegas",
+      "editorialKeys": [
+        "las-vegas:https://www.venetianlasvegas.com/hotel/suites.html"
+      ],
+      "hotelId": "lp2408a",
+      "name": "The Venetian Resort Las Vegas",
+      "address": "3355 Las Vegas Blvd S, Las Vegas, Nevada, 89109",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 3355 Las Vegas Blvd S, Las Vegas, Nevada, 89109, US",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp2408a route. Live property page still to be checked."
+    },
+    {
+      "destination": "rome",
+      "editorialKeys": [
+        "rome:https://www.bulgarihotels.com/en-US/rome/the-hotel"
+      ],
+      "hotelId": "lp656cb317",
+      "name": "Bvlgari Hotel Roma",
+      "address": "Piazza Augusto Imperatore, 10",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Piazza Augusto Imperatore, 10, IT",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp656cb317 route. Live property page still to be checked."
+    },
+    {
+      "destination": "rome",
+      "editorialKeys": [
+        "rome:https://www.hotelhasslerroma.com/stay/"
+      ],
+      "hotelId": "lpaab61",
+      "name": "Hassler Roma",
+      "address": "Piazza Trinita Dei Monti 6, Rome, RM, 00187",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Piazza Trinita Dei Monti 6, Rome, RM, 00187, IT",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lpaab61 route. Live property page still to be checked."
+    },
+    {
+      "destination": "cancun",
+      "editorialKeys": [
+        "cancun:https://www.nizuc.com/accommodations/"
+      ],
+      "hotelId": "lp6799a",
+      "name": "NIZUC Resort & Spa",
+      "address": "Boulevard Kukulcan Km 21 Punta Nizuc",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Boulevard Kukulcan Km 21 Punta Nizuc, MX",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp6799a route. Live property page still to be checked."
+    },
+    {
+      "destination": "barcelona",
+      "editorialKeys": [
+        "barcelona:https://www.mandarinoriental.com/en/barcelona/passeig-de-gracia/stay"
+      ],
+      "hotelId": "lp8a395",
+      "name": "Mandarin Oriental, Barcelona",
+      "address": "Passeig de Gràcia, 38 - 40",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Passeig de Gràcia, 38 - 40, ES",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp8a395 route. Live property page still to be checked."
+    },
+    {
+      "destination": "barcelona",
+      "editorialKeys": [
+        "barcelona:https://www.ritzcarlton.com/en/hotels/bcnrz-hotel-arts-barcelona/overview/"
+      ],
+      "hotelId": "lp1ed9f",
+      "name": "Hotel Arts Barcelona",
+      "address": "Marina, 19-21",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Marina, 19-21, ES",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp1ed9f route. Live property page still to be checked."
+    },
+    {
+      "destination": "barcelona",
+      "editorialKeys": [
+        "barcelona:https://hotelcottonhouse.com/en/hotel/"
+      ],
+      "hotelId": "lp7923a",
+      "name": "Cotton House Hotel, Autograph Collection",
+      "address": "Gran Vía de les Corts Catalanes, 670",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Gran Vía de les Corts Catalanes, 670, ES",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp7923a route. Live property page still to be checked."
+    },
+    {
+      "destination": "orlando",
+      "editorialKeys": [
+        "orlando:https://www.fourseasons.com/orlando/"
+      ],
+      "hotelId": "lp6dab6",
+      "name": "Four Seasons Resort Orlando at Walt Disney World Resort",
+      "address": "10100 Dream Tree Boulevard",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 10100 Dream Tree Boulevard, US",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp6dab6 route. Live property page still to be checked."
+    },
+    {
+      "destination": "orlando",
+      "editorialKeys": [
+        "orlando:https://www.ritzcarlton.com/en/hotels/mcorz-the-ritz-carlton-orlando-grande-lakes/overview/"
+      ],
+      "hotelId": "lp2cc73",
+      "name": "The Ritz-Carlton Orlando, Grande Lakes",
+      "address": "4012 Central Florida Parkway",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 4012 Central Florida Parkway, US",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp2cc73 route. Live property page still to be checked."
+    },
+    {
+      "destination": "hong-kong",
+      "editorialKeys": [
+        "hong-kong:https://www.rosewoodhotels.com/en/hong-kong/overview/gallery"
+      ],
+      "hotelId": "lp19a4d3",
+      "name": "Rosewood Hong Kong",
+      "address": "Victoria Dockside, 18 Salisbury Road, Tsim Sha Tsui, Kowloon",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Victoria Dockside, 18 Salisbury Road, Tsim Sha Tsui, Kowloon, HK",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp19a4d3 route. Live property page still to be checked."
+    },
+    {
+      "destination": "hong-kong",
+      "editorialKeys": [
+        "hong-kong:https://www.fourseasons.com/hongkong/photos-and-videos/"
+      ],
+      "hotelId": "lp38abd",
+      "name": "Four Seasons Hotel Hong Kong",
+      "address": "8 Finance Street",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 8 Finance Street, HK",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp38abd route. Live property page still to be checked."
+    },
+    {
+      "destination": "hong-kong",
+      "editorialKeys": [
+        "hong-kong:https://www.peninsula.com/en/hong-kong/photos-and-videos"
+      ],
+      "hotelId": "lp2a7d1",
+      "name": "The Peninsula Hong Kong",
+      "address": "Salibury Road",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Salibury Road, HK",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp2a7d1 route. Live property page still to be checked."
+    },
+    {
+      "destination": "hong-kong",
+      "editorialKeys": [
+        "hong-kong:https://www.mandarinoriental.com/en/hong-kong/victoria-harbour"
+      ],
+      "hotelId": "lp34358",
+      "name": "Mandarin Oriental, Hong Kong",
+      "address": "5 Connaught Road, Central",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 5 Connaught Road, Central, HK",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp34358 route. Live property page still to be checked."
+    },
+    {
+      "destination": "kuala-lumpur",
+      "editorialKeys": [
+        "kuala-lumpur:https://www.mandarinoriental.com/en/kuala-lumpur/petronas-towers"
+      ],
+      "hotelId": "lp1f707",
+      "name": "Mandarin Oriental, Kuala Lumpur",
+      "address": "Kuala Lumpur City Centre",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Kuala Lumpur City Centre, MY",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp1f707 route. Live property page still to be checked."
+    },
+    {
+      "destination": "kuala-lumpur",
+      "editorialKeys": [
+        "kuala-lumpur:https://www.fourseasons.com/kualalumpur/"
+      ],
+      "hotelId": "lpc35fb",
+      "name": "Four Seasons Hotel Kuala Lumpur",
+      "address": "145 Jalan Ampang, Kuala Lumpur, Wp Kuala Lumpur, 50450",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 145 Jalan Ampang, Kuala Lumpur, Wp Kuala Lumpur, 50450, MY",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lpc35fb route. Live property page still to be checked."
+    },
+    {
+      "destination": "kuala-lumpur",
+      "editorialKeys": [
+        "kuala-lumpur:https://theruma.com/en/"
+      ],
+      "hotelId": "lpfe3b1",
+      "name": "The RuMa Hotel and Residences",
+      "address": "7 Jalan Kia Peng",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 7 Jalan Kia Peng, MY",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lpfe3b1 route. Live property page still to be checked."
+    },
+    {
+      "destination": "kuala-lumpur",
+      "editorialKeys": [
+        "kuala-lumpur:https://www.eqkualalumpur.equatorial.com/"
+      ],
+      "hotelId": "lp6556a9f4",
+      "name": "EQ Kuala Lumpur",
+      "address": "Equatorial Plaza, Jalan Sultan Ismail",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Equatorial Plaza, Jalan Sultan Ismail, MY",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp6556a9f4 route. Live property page still to be checked."
+    },
+    {
+      "destination": "osaka",
+      "editorialKeys": [
+        "osaka:https://www.hilton.com/en/hotels/osacici-conrad-osaka/"
+      ],
+      "hotelId": "lpa2346",
+      "name": "Conrad Osaka",
+      "address": "Kita-ku Nakanoshima 3-2-4 Nakanoshima Festival Tower West",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Kita-ku Nakanoshima 3-2-4 Nakanoshima Festival Tower West, JP",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lpa2346 route. Live property page still to be checked."
+    },
+    {
+      "destination": "osaka",
+      "editorialKeys": [
+        "osaka:https://www.marriott.com/en-us/hotels/osaow-w-osaka/overview/"
+      ],
+      "hotelId": "lp6556de13",
+      "name": "W Osaka",
+      "address": "Chuo-ku Minami Semba 4-1-3",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Chuo-ku Minami Semba 4-1-3, JP",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp6556de13 route. Live property page still to be checked."
+    },
+    {
+      "destination": "madrid",
+      "editorialKeys": [
+        "madrid:https://www.mandarinoriental.com/en/madrid/hotel-ritz"
+      ],
+      "hotelId": "lp2a6ba",
+      "name": "Mandarin Oriental Ritz, Madrid",
+      "address": "Plaza de la Lealtad, 5",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Plaza de la Lealtad, 5, ES",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp2a6ba route. Live property page still to be checked."
+    },
+    {
+      "destination": "madrid",
+      "editorialKeys": [
+        "madrid:https://www.fourseasons.com/madrid/"
+      ],
+      "hotelId": "lp6554793d",
+      "name": "Four Seasons Hotel Madrid",
+      "address": "Sevilla, 3",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Sevilla, 3, ES",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp6554793d route. Live property page still to be checked."
+    },
+    {
+      "destination": "madrid",
+      "editorialKeys": [
+        "madrid:https://www.rosewoodhotels.com/en/villa-magna"
+      ],
+      "hotelId": "lp1e041",
+      "name": "Rosewood Villa Magna",
+      "address": "Paseo de la Castellana, 22",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Paseo de la Castellana, 22, ES",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp1e041 route. Live property page still to be checked."
+    },
+    {
+      "destination": "madrid",
+      "editorialKeys": [
+        "madrid:https://www.marriott.com/en-us/hotels/madeb-the-madrid-edition/overview/"
+      ],
+      "hotelId": "lp6557a0c0",
+      "name": "The Madrid EDITION",
+      "address": "Plaza de Celenque 2",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Plaza de Celenque 2, ES",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp6557a0c0 route. Live property page still to be checked."
+    },
+    {
+      "destination": "seoul",
+      "editorialKeys": [
+        "seoul:https://www.fourseasons.com/seoul/"
+      ],
+      "hotelId": "lp87528",
+      "name": "Four Seasons Hotel Seoul",
+      "address": "97, Saemunan-ro, Jongno-gu",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 97, Saemunan-ro, Jongno-gu, KR",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp87528 route. Live property page still to be checked."
+    },
+    {
+      "destination": "seoul",
+      "editorialKeys": [
+        "seoul:https://app.lottehotel.com/seoul-signiel/en"
+      ],
+      "hotelId": "lpa75d2",
+      "name": "SIGNIEL Seoul",
+      "address": "Lotte World Tower 76F-101F, 300 Olympic-ro, Songpa-gu, Seoul, 05551",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; Lotte World Tower 76F-101F, 300 Olympic-ro, Songpa-gu, Seoul, 05551, KR",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lpa75d2 route. Live property page still to be checked."
+    },
+    {
+      "destination": "seoul",
+      "editorialKeys": [
+        "seoul:https://www.marriott.com/en-us/hotels/sellc-josun-palace-a-luxury-collection-hotel-seoul-gangnam/overview/"
+      ],
+      "hotelId": "lp6556b4e9",
+      "name": "Josun Palace, a Luxury Collection Hotel, Seoul Gangnam",
+      "address": "231 Teheran-ro, Gangnam-gu, Seoul, South Korea",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 231 Teheran-ro, Gangnam-gu, Seoul, South Korea, KR",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp6556b4e9 route. Live property page still to be checked."
+    },
+    {
+      "destination": "seoul",
+      "editorialKeys": [
+        "seoul:https://www.shilla.net/seoul/index.do?lang=en"
+      ],
+      "hotelId": "lp22859",
+      "name": "The Shilla Seoul",
+      "address": "249, Dongho-ro, Jung-gu",
+      "matchEvidence": "Nuitée Static Hotel Data API: exact name, supplier country and city/address verified 2026-11-28; 249, Dongho-ro, Jung-gu, KR",
+      "deepLinkEvidence": "Supplier-issued hotel ID confirmed by hotel detail API; documented white-label /hotels/lp22859 route. Live property page still to be checked."
     }
   ]
 }
