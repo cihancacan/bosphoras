@@ -16,7 +16,11 @@
       "https://www.esmadrid.com/en/discover-chamberi",
       "https://www.esmadrid.com/en/madrid-neighbourhoods/latina",
       "https://www.esmadrid.com/en/madrid-neighbourhoods/retiro",
-      "https://www.spain.info/en/destination/madrid/"
+      "https://www.spain.info/en/destination/madrid/",
+      "https://www.esmadrid.com/en/chamberi-restaurants-madrid",
+      "https://www.esmadrid.com/fr/offres-gastronomiques-chamberi",
+      "https://www.esmadrid.com/en/tourist-information/capilla-del-obispo-en-la-iglesia-de-san-andres",
+      "https://www.esmadrid.com/en/tourist-information/jardines-del-palacio-del-principe-de-anglona"
     ],
     "subjects": [
       "royal palace|palacio real|palacio_real",
@@ -35,7 +39,10 @@
         "Mandarin Oriental Ritz, Madrid",
         [
           "https://www.mandarinoriental.com/en/madrid/hotel-ritz/gallery",
-          "https://www.esmadrid.com/en/accommodation/mandarin-oriental-ritz"
+          "https://www.esmadrid.com/en/accommodation/mandarin-oriental-ritz",
+          "https://www.mandarinoriental.com/es/madrid/hotel-ritz/gallery",
+          "https://www.mandarinoriental.com/fr/madrid/hotel-ritz/gallery",
+          "https://www.mandarinoriental.com/fr/madrid/hotel-ritz/about"
         ]
       ],
       [
@@ -56,7 +63,10 @@
           "https://www.rosewoodhotels.com/en/villa-magna/accommodation",
           "https://www.esmadrid.com/en/accommodation/rosewood-villa-magna",
           "https://www.rosewoodhotels.com/es/villa-magna/experiences/wellness-experiences",
-          "https://www.travelweekly.com/Hotels/Madrid/Rosewood-Villa-Magna-p56474883"
+          "https://www.travelweekly.com/Hotels/Madrid/Rosewood-Villa-Magna-p56474883",
+          "https://m.rosewoodhotels.com/en/villa-magna/overview",
+          "https://www.rosewoodhotels.com/en/villa-magna/overview/our-story",
+          "https://www.rosewoodhotels.com/en/villa-magna"
         ]
       ],
       [
