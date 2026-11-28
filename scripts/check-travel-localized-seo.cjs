@@ -57,7 +57,7 @@ console.log('1760 public guide and hotel routes, including Istanbul, Paris, Duba
      else seen.set(key,id);
    }
  }
- for(const [slug,areaCount] of [['london',6],['las-vegas',5],['rome',5],['barcelona',5],['cancun',5],['orlando',6],['hong-kong',6],['kuala-lumpur',6],['osaka',6],['seoul',6]]){
+ for(const [slug,areaCount] of [['london',6],['las-vegas',5],['rome',5],['barcelona',5],['cancun',5],['orlando',6],['hong-kong',6],['kuala-lumpur',6],['osaka',6],['seoul',6],['madrid',6]]){
    for(const locale of ['tr','de','es','it','pt','zh','ru','ar']){
      const d=require('../data/travel/localized/'+slug+'-'+locale+'.json'),id=slug+'/'+locale;
      for(const field of ['name','country','eyebrow','heading','intro','editorial','hotelIntro','seoTitle','hotelSeoTitle','seoDescription'])assert.ok(typeof d[field]==='string'&&d[field].trim(),id+' '+field);
@@ -74,7 +74,7 @@ console.log('1760 public guide and hotel routes, including Istanbul, Paris, Duba
  }
  console.log('All-language metadata audit:',auditTitles.size,'unique language/title pairs;',auditDescriptions.size,'unique language/description pairs;',auditWarnings.length,'duplicate metadata warnings.');
  if(auditWarnings.length)console.warn(JSON.stringify(auditWarnings.slice(0,30)));
- console.log('London and Las Vegas: sixteen draft locale files checked; publication gate maintained.');
+ console.log('Destinations 89–99: 88 localized draft files checked; publication gate maintained.');
 
 // London preview: all images and ten-language captions exist, but no search index release yet.
 const londonMedia=require('../data/travel/londonReviewedMedia.json');const londonCaptions=require('../data/travel/localized/london-photo-captions-draft.json');
@@ -123,13 +123,13 @@ console.log('Hong Kong preview: 21 WebP hashes, 210 captions and noindex gate ve
 const kualaLumpurMedia=require('../data/travel/kualaLumpurReviewedMedia.json'),kualaLumpurCaptions=require('../data/travel/localized/kuala-lumpur-photo-captions-draft.json');
 assert.equal(kualaLumpurMedia.destinationScenes.length,9);assert.equal(kualaLumpurMedia.hotels.length,12);const seenKualaLumpur=new Set();
 for(const p of [...kualaLumpurMedia.destinationScenes,...kualaLumpurMedia.hotels]){assert.ok(p.commercialRightsCleared&&p.visuallyVerified&&p.previewVisualApproved&&p.credit&&p.licenseUrl);const b=fs.readFileSync('public'+p.localPath);assert.equal(b.toString('ascii',0,4),'RIFF');assert.equal(b.toString('ascii',8,12),'WEBP');assert.equal(crypto.createHash('sha256').update(b).digest('hex'),p.webpSHA256);assert.ok(!seenKualaLumpur.has(p.webpSHA256));seenKualaLumpur.add(p.webpSHA256);assert.ok(b.length<=260000);}
-for(const locale of editorialTravelLocales){assert.equal(Object.keys(kualaLumpurCaptions.captions[locale]).length,21);for(const variant of ['destinations','hotels']){assert.equal(travelPageMetadata(locale,[variant,'kuala-lumpur']).robots.index,false);assert.ok(!known.has(root+travelHref(locale,variant+'/orlando')));}}
+for(const locale of editorialTravelLocales){assert.equal(Object.keys(kualaLumpurCaptions.captions[locale]).length,21);for(const variant of ['destinations','hotels']){assert.equal(travelPageMetadata(locale,[variant,'kuala-lumpur']).robots.index,false);assert.ok(!known.has(root+travelHref(locale,variant+'/kuala-lumpur')));}}
 console.log('Kuala Lumpur preview: 21 WebP hashes, 210 captions and noindex gate verified.');
 
 const osakaMedia=require('../data/travel/osakaReviewedMedia.json'),osakaCaptions=require('../data/travel/localized/osaka-photo-captions-draft.json');
 assert.equal(osakaMedia.destinationScenes.length,9);assert.equal(osakaMedia.hotels.length,12);const seenOsaka=new Set();
 for(const p of [...osakaMedia.destinationScenes,...osakaMedia.hotels]){assert.ok(p.commercialRightsCleared&&p.visuallyVerified&&p.previewVisualApproved&&p.credit&&p.licenseUrl);const b=fs.readFileSync('public'+p.localPath);assert.equal(b.toString('ascii',0,4),'RIFF');assert.equal(b.toString('ascii',8,12),'WEBP');assert.equal(crypto.createHash('sha256').update(b).digest('hex'),p.webpSHA256);assert.ok(!seenOsaka.has(p.webpSHA256));seenOsaka.add(p.webpSHA256);assert.ok(b.length<=260000);}
-for(const locale of editorialTravelLocales){assert.equal(Object.keys(osakaCaptions.captions[locale]).length,21);for(const variant of ['destinations','hotels']){assert.equal(travelPageMetadata(locale,[variant,'osaka']).robots.index,false);assert.ok(!known.has(root+travelHref(locale,variant+'/orlando')));}}
+for(const locale of editorialTravelLocales){assert.equal(Object.keys(osakaCaptions.captions[locale]).length,21);for(const variant of ['destinations','hotels']){assert.equal(travelPageMetadata(locale,[variant,'osaka']).robots.index,false);assert.ok(!known.has(root+travelHref(locale,variant+'/osaka')));}}
 console.log('Osaka preview: 21 WebP hashes, 210 captions and noindex gate verified.');
 
 const seoulMedia=require('../data/travel/seoulReviewedMedia.json'),seoulCaptions=require('../data/travel/localized/seoul-photo-captions-draft.json');
@@ -137,3 +137,14 @@ assert.equal(seoulMedia.destinationScenes.length,9);assert.equal(seoulMedia.hote
 for(const p of [...seoulMedia.destinationScenes,...seoulMedia.hotels]){assert.ok(p.commercialRightsCleared&&p.visuallyVerified&&p.previewVisualApproved&&p.credit&&p.licenseUrl);const b=fs.readFileSync('public'+p.localPath);assert.equal(b.toString('ascii',0,4),'RIFF');assert.equal(b.toString('ascii',8,12),'WEBP');assert.equal(crypto.createHash('sha256').update(b).digest('hex'),p.webpSHA256);assert.ok(!seenSeoul.has(p.webpSHA256));seenSeoul.add(p.webpSHA256);assert.ok(b.length<=260000);}
 for(const locale of editorialTravelLocales){assert.equal(Object.keys(seoulCaptions.captions[locale]).length,21);for(const variant of ['destinations','hotels']){assert.equal(travelPageMetadata(locale,[variant,'seoul']).robots.index,false);assert.ok(!known.has(root+travelHref(locale,variant+'/seoul')));}}
 console.log('Seoul preview: 21 WebP hashes, 210 captions and noindex gate verified.');
+
+// Madrid is not yet released: verify its actual media and source content without relaxing the rights gate.
+const madridMedia=require('../data/travel/madridReviewedMedia.json'),madridCaptions=require('../data/travel/localized/madrid-photo-captions-draft.json');
+assert.equal(madridMedia.destinationScenes.length,9);assert.equal(madridMedia.hotels.length,12);assert.equal(madridMedia.publicUseApproved,false);
+const seenMadrid=new Set();
+for(const p of [...madridMedia.destinationScenes,...madridMedia.hotels]){assert.ok(p.visuallyVerified&&p.credit&&p.sourcePage);const b=fs.readFileSync('public'+p.localPath);assert.equal(b.toString('ascii',0,4),'RIFF');assert.equal(b.toString('ascii',8,12),'WEBP');assert.equal(crypto.createHash('sha256').update(b).digest('hex'),p.webpSHA256);assert.ok(!seenMadrid.has(p.webpSHA256));seenMadrid.add(p.webpSHA256);assert.ok(b.length<=260000);}
+for(const locale of editorialTravelLocales){assert.equal(Object.keys(madridCaptions.captions[locale]).length,21);for(const variant of ['destinations','hotels']){assert.equal(travelPageMetadata(locale,[variant,'madrid']).robots.index,false);assert.ok(!known.has(root+travelHref(locale,variant+'/madrid')));}}
+const recentSeoSources=[['london','london'],['las-vegas','lasVegas'],['rome','rome'],['barcelona','barcelona'],['cancun','cancun'],['orlando','orlando'],['hong-kong','hongKong'],['kuala-lumpur','kualaLumpur'],['osaka','osaka'],['seoul','seoul'],['madrid','madrid']];
+const recentTitles=new Set(),recentDescriptions=new Set();
+for(const [slug,name] of recentSeoSources){const bilingual=require('../data/travel/'+name+'DraftGuide')[name+'DraftSeo'];for(const locale of editorialTravelLocales){const source=locale==='fr'||locale==='en'?bilingual[locale]:require('../data/travel/localized/'+slug+'-'+locale+'.json');const title=source.title||source.seoTitle,hotelTitle=source.hotelTitle||source.hotelSeoTitle,description=source.description||source.seoDescription;for(const val of [title,hotelTitle]){assert.ok(typeof val==='string'&&val.trim()&&val.length<=100,slug+'/'+locale+' title');const key=locale+'/'+val.trim().toLowerCase();assert.ok(!recentTitles.has(key),slug+'/'+locale+' duplicate title');recentTitles.add(key);}assert.ok(description.trim()&&description.length<=160,slug+'/'+locale+' description');const key=locale+'/'+description.trim().toLowerCase();assert.ok(!recentDescriptions.has(key),slug+'/'+locale+' duplicate description');recentDescriptions.add(key);}}
+console.log('89–99 SEO sources:',recentTitles.size,'distinct localized titles;',recentDescriptions.size,'distinct destination descriptions; Madrid 21 WebP hashes and 210 captions verified.');
