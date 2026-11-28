@@ -139,12 +139,11 @@ function verifyIdentity(hotel,supplier) {
     candidatesByName.get(key).push(item);
   }
   for(let i=0;i<pending.length;i++){
-    const hotel=pending[i];let matches=[];
+    const hotel=pending[i];const code=countryCode(hotel.country);let matches=[];
     try{
       if(catalog){
         matches=candidatesByName.get(normalize(hotel.name))||[];
       }else{
-        const code=countryCode(hotel.country);
         if(!code){report.unresolved.push({...hotel,reason:'unknown_country'});continue}
         const list=await api('/data/hotels',{
           countryCode:code,cityName:hotel.city,hotelName:hotel.name,limit:35,language:'en'
@@ -162,9 +161,10 @@ function verifyIdentity(hotel,supplier) {
           await sleep(300);
         }
       }
-      const exact=matches.filter(item=>normalize(item.name)===normalize(hotel.name));
+      const exact=[...new Map(matches.filter(item=>normalize(item.name)===normalize(hotel.name)).map(item=>[item.id,item])).values()];
       if(exact.length!==1){
-        report.unresolved.push({...hotel,reason:exact.length>1?'ambiguous_name':'not_found_in_supplier',candidateCount:exact.length});
+        const candidates=(exact.length?exact:matches).slice(0,12).map(item=>({id:item.id,name:item.name,city:item.city,address:item.address,country:item.country,countryCode:item.countryCode}));
+        report.unresolved.push({...hotel,reason:exact.length>1?'ambiguous_name':'not_found_in_supplier',candidateCount:exact.length,candidates});
         continue;
       }
       let candidate=exact[0];
@@ -195,12 +195,14 @@ function verifyIdentity(hotel,supplier) {
         matchEvidence:evidence,
         deepLinkEvidence:'Supplier-issued hotelId confirmed by '+(catalog?'account catalogue':'hotel detail API')+
           '; supported Whitelabel hotel route /hotels/'+candidate.id};
+      const verified={destination:hotel.destination,name:hotel.name,hotelId:candidate.id,address:candidate.address,country:code,editorialKey:hotel.editorialKey};
+      report.newVerified.push(verified);
       newMappings.push(mapped);
-      report.newVerified.push({destination:hotel.destination,name:hotel.name,hotelId:candidate.id,address:candidate.address,country:code,editorialKey:hotel.editorialKey});
     }catch(error){
       report.unresolved.push({...hotel,reason:'supplier_lookup_failed',detail:String(error.message||error).slice(0,130)});
     }
   }
+  if(newMappings.length!==report.newVerified.length||newMappings.length+report.unresolved.length!==pending.length)throw new Error('Inconsistent supplier audit totals');
   report.unresolvedCount=report.unresolved.length;
   report.newVerifiedCount=newMappings.length;
   report.editorialEntriesWithDirectLink+=newMappings.length;
