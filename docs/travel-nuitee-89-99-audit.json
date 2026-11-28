@@ -1,0 +1,363 @@
+{
+  "checkedDate": "2026-11-28",
+  "scope": "destinations 89–99",
+  "supplierOrigin": "https://bosphoras.nuitee.link",
+  "identityMethod": "Search authenticated static hotel data API or official white-label UI; verify name, address and city; never infer hotel ID.",
+  "existingMappingRows": 330,
+  "editorialHotels": 44,
+  "verifiedMappingCount": 0,
+  "hotels": [
+    {
+      "destination": "london",
+      "name": "Claridge’s",
+      "city": "London",
+      "countryCode": "GB",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "london",
+      "name": "The Savoy",
+      "city": "London",
+      "countryCode": "GB",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "london",
+      "name": "The Peninsula London",
+      "city": "London",
+      "countryCode": "GB",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "london",
+      "name": "Shangri-La The Shard, London",
+      "city": "London",
+      "countryCode": "GB",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "las-vegas",
+      "name": "Bellagio",
+      "city": "Las Vegas",
+      "countryCode": "US",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "las-vegas",
+      "name": "Wynn Las Vegas",
+      "city": "Las Vegas",
+      "countryCode": "US",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "las-vegas",
+      "name": "The Venetian Resort Las Vegas",
+      "city": "Las Vegas",
+      "countryCode": "US",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "las-vegas",
+      "name": "Fontainebleau Las Vegas",
+      "city": "Las Vegas",
+      "countryCode": "US",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "rome",
+      "name": "Bvlgari Hotel Roma",
+      "city": "Rome",
+      "countryCode": "IT",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "rome",
+      "name": "Hotel de Russie",
+      "city": "Rome",
+      "countryCode": "IT",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "rome",
+      "name": "Hassler Roma",
+      "city": "Rome",
+      "countryCode": "IT",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "rome",
+      "name": "Hotel Eden",
+      "city": "Rome",
+      "countryCode": "IT",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "barcelona",
+      "name": "Mandarin Oriental, Barcelona",
+      "city": "Barcelona",
+      "countryCode": "ES",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "barcelona",
+      "name": "Hotel Arts Barcelona",
+      "city": "Barcelona",
+      "countryCode": "ES",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "barcelona",
+      "name": "Majestic Hotel & Spa Barcelona",
+      "city": "Barcelona",
+      "countryCode": "ES",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "barcelona",
+      "name": "Cotton House Hotel, Autograph Collection",
+      "city": "Barcelona",
+      "countryCode": "ES",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "cancun",
+      "name": "NIZUC Resort & Spa",
+      "city": "Cancun",
+      "countryCode": "MX",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "cancun",
+      "name": "Le Blanc Spa Resort Cancun",
+      "city": "Cancun",
+      "countryCode": "MX",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "cancun",
+      "name": "Hyatt Ziva Cancun",
+      "city": "Cancun",
+      "countryCode": "MX",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "cancun",
+      "name": "Grand Fiesta Americana Coral Beach Cancún",
+      "city": "Cancun",
+      "countryCode": "MX",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "orlando",
+      "name": "Four Seasons Resort Orlando at Walt Disney World Resort",
+      "city": "Orlando",
+      "countryCode": "US",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "orlando",
+      "name": "Waldorf Astoria Orlando",
+      "city": "Orlando",
+      "countryCode": "US",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "orlando",
+      "name": "The Ritz-Carlton Orlando, Grande Lakes",
+      "city": "Orlando",
+      "countryCode": "US",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "orlando",
+      "name": "Loews Portofino Bay Hotel",
+      "city": "Orlando",
+      "countryCode": "US",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "hong-kong",
+      "name": "Rosewood Hong Kong",
+      "city": "Hong Kong",
+      "countryCode": "HK",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "hong-kong",
+      "name": "Four Seasons Hotel Hong Kong",
+      "city": "Hong Kong",
+      "countryCode": "HK",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "hong-kong",
+      "name": "The Peninsula Hong Kong",
+      "city": "Hong Kong",
+      "countryCode": "HK",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "hong-kong",
+      "name": "Mandarin Oriental, Hong Kong",
+      "city": "Hong Kong",
+      "countryCode": "HK",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "kuala-lumpur",
+      "name": "Mandarin Oriental, Kuala Lumpur",
+      "city": "Kuala Lumpur",
+      "countryCode": "MY",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "kuala-lumpur",
+      "name": "Four Seasons Hotel Kuala Lumpur",
+      "city": "Kuala Lumpur",
+      "countryCode": "MY",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "kuala-lumpur",
+      "name": "The RuMa Hotel and Residences",
+      "city": "Kuala Lumpur",
+      "countryCode": "MY",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "kuala-lumpur",
+      "name": "EQ Kuala Lumpur",
+      "city": "Kuala Lumpur",
+      "countryCode": "MY",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "osaka",
+      "name": "Conrad Osaka",
+      "city": "Osaka",
+      "countryCode": "JP",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "osaka",
+      "name": "Four Seasons Hotel Osaka",
+      "city": "Osaka",
+      "countryCode": "JP",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "osaka",
+      "name": "The Ritz-Carlton, Osaka",
+      "city": "Osaka",
+      "countryCode": "JP",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "osaka",
+      "name": "W Osaka",
+      "city": "Osaka",
+      "countryCode": "JP",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "seoul",
+      "name": "Four Seasons Hotel Seoul",
+      "city": "Seoul",
+      "countryCode": "KR",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "seoul",
+      "name": "SIGNIEL Seoul",
+      "city": "Seoul",
+      "countryCode": "KR",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "seoul",
+      "name": "Josun Palace, a Luxury Collection Hotel, Seoul Gangnam",
+      "city": "Seoul",
+      "countryCode": "KR",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "seoul",
+      "name": "The Shilla Seoul",
+      "city": "Seoul",
+      "countryCode": "KR",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "madrid",
+      "name": "Mandarin Oriental Ritz, Madrid",
+      "city": "Madrid",
+      "countryCode": "ES",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "madrid",
+      "name": "Four Seasons Hotel Madrid",
+      "city": "Madrid",
+      "countryCode": "ES",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "madrid",
+      "name": "Rosewood Villa Magna",
+      "city": "Madrid",
+      "countryCode": "ES",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    },
+    {
+      "destination": "madrid",
+      "name": "The Madrid EDITION",
+      "city": "Madrid",
+      "countryCode": "ES",
+      "hotelId": null,
+      "status": "requires_supplier_identity_verification"
+    }
+  ]
+}
