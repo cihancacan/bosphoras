@@ -93,11 +93,42 @@
         "visuallyVerified": false,
         "previewVisualApproved": false,
         "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "scene-4",
+        "sourcePage": "https://www.esmadrid.com/en/madrid-neighbourhoods/madrid-rio",
+        "sourceResolvedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/cy0GqBJ_NEzj8ywcuD_8k5pA-6IK_rz1MfoYdX_xXUE/mtime:1487809324/sites/default/files/editorial/descubremadrid/susbarrios/puente_madrid_rio.jpg",
+        "sourceRequestedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/cy0GqBJ_NEzj8ywcuD_8k5pA-6IK_rz1MfoYdX_xXUE/mtime:1487809324/sites/default/files/editorial/descubremadrid/susbarrios/puente_madrid_rio.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Madrid Tourism / Turespaña",
+        "publisher": "Madrid Tourism / Turespaña",
+        "hotel": null,
+        "localPath": "/images/travel/madrid-premium/destination/scene-4.webp",
+        "sourceSHA256": "d6867a48613006b93fbdc68950437bf912c21ffd747cbbb4f7a9ebc9768cf3fd",
+        "webpSHA256": "a98a6214876784ee773c068705ef7915c3f3be8ec67da76b319bdef74b296c5f",
+        "sourcePixels": [
+          3056,
+          2292
+        ],
+        "webpPixels": [
+          1133,
+          850
+        ],
+        "webpBytes": 148088,
+        "pixelFingerprint": "32dcdd3434b22c68",
+        "candidateSubject": "madrid r[ií]o|madrid_rio|puente de toledo",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
       }
     ],
     "hotels": [
       {
-        "key": "four-seasons-1",
+        "key": "four-seasons-2",
         "sourcePage": "https://www.esmadrid.com/en/accommodation/four-seasons-hotel-madrid",
         "sourceResolvedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/4SIhIWkINxUxsFyEUv7miVqg75sIkYV5a_jS3b76ScM/mtime:1625124954/sites/default/files/recursosturisticos/alojamientos/4_fourseasonsmadrid_fourseasonsterracesuite_1.jpg",
         "sourceRequestedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/4SIhIWkINxUxsFyEUv7miVqg75sIkYV5a_jS3b76ScM/mtime:1625124954/sites/default/files/recursosturisticos/alojamientos/4_fourseasonsmadrid_fourseasonsterracesuite_1.jpg",
@@ -106,7 +137,7 @@
         "credit": "Four Seasons Hotel Madrid",
         "publisher": "Four Seasons Hotel Madrid",
         "hotel": "Four Seasons Hotel Madrid",
-        "localPath": "/images/travel/madrid-premium/four-seasons/four-seasons-1.webp",
+        "localPath": "/images/travel/madrid-premium/four-seasons/four-seasons-2.webp",
         "sourceSHA256": "9cfa6f9e9790314eef72a54c3edc77441a178eb7d94a99f8a41cba5d3959bd31",
         "webpSHA256": "a6ddd9363eb1a1f68de55c7726423ea707d9899eb22cf3f4c1e4024a5706f8fe",
         "sourcePixels": [
@@ -151,6 +182,37 @@
         "webpBytes": 128836,
         "pixelFingerprint": "0d2e0c9c3e39e5ca",
         "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      },
+      {
+        "key": "rosewood-2",
+        "sourcePage": "https://www.rosewoodhotels.com/es/villa-magna/experiences/wellness-experiences",
+        "sourceResolvedUrl": "https://images.rosewoodhotels.com/is/image/rwhg/RWVMM_WELLNESS_SENSESPA_III",
+        "sourceRequestedUrl": "https://images.rosewoodhotels.com/is/image/rwhg/RWVMM_WELLNESS_SENSESPA_III",
+        "originalAlt": "Rosewood Villa Magna spa treatment room",
+        "originalCaption": "Rosewood Villa Magna",
+        "credit": "Rosewood Villa Magna",
+        "publisher": "Rosewood Villa Magna",
+        "hotel": "Rosewood Villa Magna",
+        "localPath": "/images/travel/madrid-premium/rosewood/rosewood-2.webp",
+        "sourceSHA256": "7e127552887d9235defccdd4ae865b70c3e805edf21be2b14b307f769b077f12",
+        "webpSHA256": "16cf50347f4bab94b5527ed1627acdbeacefeb51cd23026f438c07562623db40",
+        "sourcePixels": [
+          3500,
+          2333
+        ],
+        "webpPixels": [
+          1275,
+          850
+        ],
+        "webpBytes": 148872,
+        "pixelFingerprint": "b87058586cec8501",
+        "candidateSubject": "pool|spa|lobby|terrace|garden|lounge|courtyard|conservatory|piscin",
         "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
         "ownerPermissionDeclared": true,
         "commercialRightsCleared": false,
@@ -256,7 +318,7 @@
       {
         "group": "city",
         "expected": 9,
-        "found": 3
+        "found": 4
       },
       {
         "group": "mandarin-oriental",
@@ -271,7 +333,7 @@
       {
         "group": "rosewood",
         "expected": 3,
-        "found": 1
+        "found": 2
       }
     ],
     "errors": [
@@ -281,22 +343,54 @@
       },
       {
         "url": "https://press.fourseasons.com/madrid/hotel-news/2026/spa-garcon-eclat-experience",
-        "error": "cannot identify image file <_io.BytesIO object at 0x75ced58a7330>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x72899411c090>"
       },
       {
         "url": "https://press.fourseasons.com/madrid/hotel-news/2026/new-spa-treatments",
-        "error": "cannot identify image file <_io.BytesIO object at 0x75cee4479350>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x7289942a4860>"
       },
       {
         "url": "https://press.fourseasons.com/madrid/hotel-news/2026/dani-cinema-club",
-        "error": "cannot identify image file <_io.BytesIO object at 0x75cee44792b0>"
+        "error": "cannot identify image file <_io.BytesIO object at 0x72899411c180>"
       }
     ],
     "publicUseApproved": false,
     "ownerPermissionDeclared": true,
-    "excludedCandidates": [],
-    "cityCount": 3,
-    "hotelCount": 5,
-    "totalBytes": 932446
+    "excludedCandidates": [
+      {
+        "key": "four-seasons-1",
+        "sourcePage": "https://www.esmadrid.com/en/accommodation/four-seasons-hotel-madrid",
+        "sourceResolvedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/4SIhIWkINxUxsFyEUv7miVqg75sIkYV5a_jS3b76ScM/mtime:1625124954/sites/default/files/recursosturisticos/alojamientos/4_fourseasonsmadrid_fourseasonsterracesuite_1.jpg",
+        "sourceRequestedUrl": "https://estaticos.esmadrid.com/cdn/farfuture/4SIhIWkINxUxsFyEUv7miVqg75sIkYV5a_jS3b76ScM/mtime:1625124954/sites/default/files/recursosturisticos/alojamientos/4_fourseasonsmadrid_fourseasonsterracesuite_1.jpg",
+        "originalAlt": "",
+        "originalCaption": "",
+        "credit": "Four Seasons Hotel Madrid",
+        "publisher": "Four Seasons Hotel Madrid",
+        "hotel": "Four Seasons Hotel Madrid",
+        "localPath": "/images/travel/madrid-premium/four-seasons/four-seasons-1.webp",
+        "sourceSHA256": "9cfa6f9e9790314eef72a54c3edc77441a178eb7d94a99f8a41cba5d3959bd31",
+        "webpSHA256": "a6ddd9363eb1a1f68de55c7726423ea707d9899eb22cf3f4c1e4024a5706f8fe",
+        "sourcePixels": [
+          3500,
+          2336
+        ],
+        "webpPixels": [
+          1274,
+          850
+        ],
+        "webpBytes": 130424,
+        "pixelFingerprint": "f8cd55f2acf6b4a6",
+        "candidateSubject": "bedroom|guest.?room|suite|king.?room|deluxe|premier|accommodation|chambre|habita|camera|zimmer",
+        "rightsEvidenceType": "owner declaration of permission; original source and caption retained; individual licence and named photo credit must be confirmed",
+        "ownerPermissionDeclared": true,
+        "commercialRightsCleared": false,
+        "visuallyVerified": false,
+        "previewVisualApproved": false,
+        "status": "candidate_pending_visual_review_and_credit"
+      }
+    ],
+    "cityCount": 4,
+    "hotelCount": 6,
+    "totalBytes": 1229406
   }
 }
